@@ -1,24 +1,32 @@
-{% extends "base.html" %}
-
-{% block title %}KONA - AI 자율 취재 시스템{% endblock %}
-
-{% block content %}
-<h2>AI가 발견한 심층 기사</h2>
-<div class="articles">
-    {% for article in articles %}
-    <article>
-        <h3><a href="articles/{{ article.id }}.html">{{ article.title }}</a></h3>
-        <p class="meta">
-            {{ article.generated_at[:10] }} | 
-            주제: {{ article.topic }} | 
-            취재 깊이: {{ article.investigation_depth }}
-        </p>
-        <p class="lead">{{ article.lead }}</p>
-        <div class="article-stats">
-            <span>📊 발견된 취재 공백: {{ article.coverage_gaps }}개</span>
-            <span>📚 활용된 소스: {{ article.sources_count }}개</span>
-        </div>
-    </article>
-    {% endfor %}
-</div>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONA - Korean Open News by AI</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f8f9fa; }
+        header { text-align: center; padding: 40px 0; background: white; margin-bottom: 30px; border-radius: 8px; }
+        h1 { color: #1a73e8; font-size: 2.5rem; margin: 0 0 10px 0; }
+        .tagline { color: #5f6368; font-size: 1.1rem; }
+        .content { background: white; padding: 40px; border-radius: 8px; text-align: center; }
+        .time { color: #5f6368; font-size: 0.9rem; margin-top: 20px; }
+        footer { text-align: center; margin-top: 50px; color: #5f6368; }
+        a { color: #1a73e8; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KONA</h1>
+        <p class="tagline">Korean Open News by AI - AI가 만드는 투명한 한국 뉴스</p>
+    </header>
+    <div class="content">
+        <h2>아직 생성된 뉴스가 없습니다</h2>
+        <p>KONA 시스템이 다음 업데이트 시간에 새로운 뉴스를 생성할 예정입니다.</p>
+        <p class="time">생성 시간: 2025-07-21 01:44:07 KST</p>
+    </div>
+    <footer>
+        <p>© 2025 KONA Project | <a href="https://github.com/pjeehoon/kona-news">GitHub</a></p>
+    </footer>
+</body>
+</html>
