@@ -1,208 +1,24 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KONA - Korean Open News by AI</title>
-    <style>
-        :root {
-            --primary-color: #1a73e8;
-            --text-color: #202124;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --border-color: #dadce0;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background-color: var(--card-bg);
-            border-bottom: 1px solid var(--border-color);
-            padding: 20px 0;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
-        .tagline {
-            color: #5f6368;
-            font-size: 1.1rem;
-        }
-        
-        .update-info {
-            background: #e8f0fe;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .update-info .badge {
-            background: var(--primary-color);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        
-        .time-info {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-        }
-        
-        .article-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 1px solid var(--border-color);
-        }
-        
-        .article-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-        }
-        
-        .article-card h2 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            line-height: 1.4;
-            color: var(--text-color);
-        }
-        
-        .article-meta {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-            color: #5f6368;
-        }
-        
-        footer {
-            background: var(--card-bg);
-            border-top: 1px solid var(--border-color);
-            padding: 30px 0;
-            margin-top: 60px;
-            text-align: center;
-            color: #5f6368;
-        }
-        
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>KONA</h1>
-            <p class="tagline">Korean Open News by AI - AI가 만드는 투명한 한국 뉴스</p>
+{% extends "base.html" %}
+
+{% block title %}KONA - AI 자율 취재 시스템{% endblock %}
+
+{% block content %}
+<h2>AI가 발견한 심층 기사</h2>
+<div class="articles">
+    {% for article in articles %}
+    <article>
+        <h3><a href="articles/{{ article.id }}.html">{{ article.title }}</a></h3>
+        <p class="meta">
+            {{ article.generated_at[:10] }} | 
+            주제: {{ article.topic }} | 
+            취재 깊이: {{ article.investigation_depth }}
+        </p>
+        <p class="lead">{{ article.lead }}</p>
+        <div class="article-stats">
+            <span>📊 발견된 취재 공백: {{ article.coverage_gaps }}개</span>
+            <span>📚 활용된 소스: {{ article.sources_count }}개</span>
         </div>
-    </header>
-    
-    <main class="container">
-        <div class="update-info">
-            <span class="badge">BETA</span>
-            <span>이 페이지는 AI가 자동으로 생성한 뉴스를 제공합니다. 매일 오전 9시 업데이트됩니다.</span>
-        </div>
-        
-        <div class="time-info">
-            <p><strong>현재 시간 정보:</strong></p>
-            <p>KST (한국 시간): <span id="kst-time"></span></p>
-            <p>페이지 생성 시간: <span id="generated-time"></span></p>
-        </div>
-        
-        <div class="articles-grid">
-            <article class="article-card">
-                <h2>KONA 프로젝트 공식 런칭</h2>
-                <div class="article-meta">
-                    <span>📅 2025년 7월 20일</span>
-                    <span>📰 1개 출처</span>
-                    <span>🏷️ 기술</span>
-                </div>
-                <p>AI 기반 한국어 뉴스 생성 플랫폼 KONA가 공식적으로 서비스를 시작했습니다. 투명하고 신뢰할 수 있는 AI 저널리즘을 목표로 합니다.</p>
-            </article>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>© 2025 KONA Project | 
-            <a href="https://github.com/pjeehoon/kona-news" target="_blank">GitHub</a> | 
-            <a href="https://github.com/pjeehoon/kona-news/blob/main/LICENSE" target="_blank">License</a>
-            </p>
-        </div>
-    </footer>
-    
-    <script>
-        // KST 시간 표시
-        function updateKSTTime() {
-            const now = new Date();
-            const kstTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Seoul"}));
-            document.getElementById('kst-time').textContent = 
-                kstTime.toLocaleString('ko-KR', {
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit',
-                    timeZoneName: 'short'
-                });
-        }
-        
-        // 페이지 생성 시간 (GitHub Actions가 실행된 시간)
-        document.getElementById('generated-time').textContent = 
-            new Date().toLocaleString('ko-KR', {
-                timeZone: 'Asia/Seoul',
-                year: 'numeric',
-                month: '2-digit',
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit'
-            }) + ' KST';
-        
-        // 1초마다 시간 업데이트
-        updateKSTTime();
-        setInterval(updateKSTTime, 1000);
-    </script>
-</body>
-</html>
+    </article>
+    {% endfor %}
+</div>
+{% endblock %}
