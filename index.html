@@ -86,6 +86,7 @@
             text-decoration: none;
             color: inherit;
             display: block;
+            position: relative;
         }
         .article-card:hover {
             transform: translateY(-3px);
@@ -108,6 +109,17 @@
             color: #5f6368;
             line-height: 1.6;
             font-size: 0.95rem;
+        }
+        .version-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #17a2b8;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
         }
         .no-articles {
             text-align: center;
@@ -133,6 +145,20 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .admin-link {
+            margin-top: 20px;
+        }
+        .admin-link a {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .admin-link a:hover {
+            background: #1557b0;
+        }
     </style>
 </head>
 <body>
@@ -146,11 +172,88 @@
     <main class="container">
         <div class="update-info">
             <span class="badge">LIVE</span>
-            <span>최신 AI 생성 뉴스 - 2025년 07월 21일 15:53 업데이트</span>
-            <span class="articles-count">총 6개 기사</span>
+            <span>최신 AI 생성 뉴스 - 2025년 07월 21일 19:27 업데이트</span>
+            <span class="articles-count">총 13개 기사</span>
         </div>
         <div class="articles-grid">
+            <a href="smart_articles/article_20250721_164421.html" class="article-card">
+                
+                <h2>경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:44</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 정치권과 공공기관을 둘러싼 복합적 논란이 동시에 제기되고 있다. 경찰은 오늘 강선우 의원의 병원 갑질 및 위장 전입 의혹에 대한 수사를 진행 중이며, 동시에 정은경 전 질병관리청장 배우자의 코로나 관련주 매입 혐의와 이준석 국민의힘 대표의 성폭력성 발언 논란도 지속되고 있다. 이번 사건들은 각각의 구체적 사실과 의혹, 그리고 당사자...</p>
+            </a>
+            <a href="smart_articles/article_20250721_164223.html" class="article-card">
+                
+                <h2>"하라면 하는 거지 무슨 말이 많냐"... 강선우, 文정부 여가부 장관에게도 '갑질'</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:42</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 정치권을 강타한 강선우 후보자 갑질 논란이 여전히 뜨거운 이슈로 부상하고 있다. 이번 논란은 지난 7월 14일 정영애 전 여성가족부 장관이 공개한 증언과, 최근 새롭게 밝혀진 ‘테스트: 새로운 증언’에 따른 추가 사실들이 복합적으로 얽히면서 더욱 복잡해지고 있다. 강선우 후보자는 현재 여성가족부 장관으로 임명된 상태이며, 이번 사건...</p>
+            </a>
+            <a href="smart_articles/article_20250721_164128.html" class="article-card">
+                
+                <h2>사우디 ‘잠자는 왕자’, 20년 혼수상태 끝에 결국 사망</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:41</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 사우디아라비아 왕실은 ‘잠자는 왕자’로 알려졌던 왈리드 빈 칼리드 왕자가 20년간의 혼수상태 끝에 결국 사망했다고 공식 발표하였다. 이 사건은 사우디 내외의 관심을 집중시키며, 왕실 내부의 건강 문제와 관련 논란, 그리고 왕실과 언론 간의 입장 차이를 둘러싼 복잡한 논의를 촉발하고 있다.
+
+### 사건 개요 및 핵심 내용
+
+왈리드 ...</p>
+            </a>
+            <a href="smart_articles/test_version2_20250721_163947.html" class="article-card">
+                
+                <h2>"하라면 하는 거지 무슨 말이 많냐"... 강선우, 文정부 여가부 장관에게도 '갑질'</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:39</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 정치권과 사회 전반에 충격을 주는 갑질 논란이 불거지고 있다. 강선우 더불어민주당 의원이 과거 정영애 전 여성가족부 장관에게 ‘하라면 하는 거지 무슨 말이 많냐’라는 발언과 함께 예산 삭감 등 갑질 행위를 했다는 증언이 공개되면서 논란이 확산되고 있다. 이번 사건은 강선우 후보자가 7월 14일 국회 인사청문회에 출석한 이후, 정 전...</p>
+            </a>
+            <a href="smart_articles/test_version2_20250721_163919.html" class="article-card">
+                
+                <h2>"하라면 하는 거지 무슨 말이 많냐"... 강선우, 文정부 여가부 장관에게도 '갑질'</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:39</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 정치권과 사회 전반에 충격을 주는 갑질 논란이 불거지고 있다. 강선우 더불어민주당 의원이 과거 정영애 전 여성가족부 장관에게 ‘하라면 하는 거지 무슨 말이 많냐’라는 발언과 함께 예산 삭감 등 갑질 행위를 했다는 증언이 공개되면서 논란이 확산되고 있다. 이번 사건은 강선우 후보자가 7월 14일 국회 인사청문회에 출석한 이후, 정 전...</p>
+            </a>
+            <a href="smart_articles/article_20250721_163627.html" class="article-card">
+                
+                <h2>‘김혜경 여사 담당’ 2부속실장에 ‘대통령 최측근’ 윤기천 전 분당구청장</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:36</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 07월 21일, 윤기천 전 성남시 분당구청장이 대통령실 제2부속실장으로 내정되면서 정치권과 시민사회에서 논란이 일고 있다. 이번 인사는 김혜경 여사 담당 업무를 맡게 될 것으로 알려지면서 관심이 집중되고 있으며, 윤 실장의 과거 경력과 법적 혐의 여부를 둘러싼 논란이 동시에 부각되고 있다. 본 기사는 이번 사건의 핵심 내용을 팩트 중심으로 분석하...</p>
+            </a>
+            <a href="smart_articles/article_20250721_163553.html" class="article-card">
+                
+                <h2>“총기 제작 유튜브로 배웠다”…아들 살해한 60대의 충격 범행</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:35</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 인천 송도에서 발생한 충격적인 사건이 세간의 이목을 집중시키고 있다. 60대 남성 A씨는 유튜브를 통해 총기 제작법을 배워 사제 총기를 제작, 아들을 살해하는 범행을 저지른 것으로 드러났다. 경찰은 이날 오후 2시 43분 인천에서 A씨를 체포했으며, 이후 차량에서 추가 총기와 탄환을 발견하는 등 범행 수법과 동기를 파악하는 데 주력...</p>
+            </a>
+            <a href="smart_articles/article_20250721_163014.html" class="article-card">
+                
+                <h2>"하라면 하는 거지 무슨 말이 많냐"... 강선우, 文정부 여가부 장관에게도 '갑질'</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 21일 16:30</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 21일, 정치권을 강타한 강선우 후보자 갑질 논란이 여전히 뜨거운 이슈로 부상하고 있다. 강선우 후보자가 2025년 7월 14일 정영애 전 여성가족부 장관에게 민원 해결 과정에서 화를 내며 예산 일부를 삭감하는 행위가 있었다는 정 전 장관의 증언이 공개되면서 논란이 확산되고 있다. 강 후보자는 현재 여성가족부 장관으로 임명된 상태이며, 이번...</p>
+            </a>
             <a href="smart_articles/article_20250721_152506.html" class="article-card">
+                
                 <h2>"조종사, 왼쪽 정상 엔진 껐다"…제주항공 참사 사조위 결론</h2>
                 <div class="article-meta">
                     <span>📅 2025년 07월 21일 15:25</span>
@@ -159,6 +262,7 @@
                 <p class="article-summary">2025년 7월 21일, 제주항공 여객기 참사와 관련된 중간 조사 결과를 둘러싼 논란이 계속되고 있다. 사조위(사고조사위원회)는 7월 19일 무안공항에서 발표하려던 조사 결과를 유가족의 반발로 인해 공개하지 못했고, 이로 인해 조사 과정의 투명성과 신뢰성에 대한 의문이 제기되고 있다. 이번 사건은 2024년 발생한 참사 이후 진행된 조사의 핵심 쟁점들을 둘...</p>
             </a>
             <a href="smart_articles/article_20250721_151252.html" class="article-card">
+                
                 <h2>"하라면 하는 거지 무슨 말이 많냐"... 강선우, 文정부 여가부 장관에게도 '갑질'</h2>
                 <div class="article-meta">
                     <span>📅 2025년 07월 21일 15:12</span>
@@ -167,6 +271,7 @@
                 <p class="article-summary">2025년 7월 21일, 정치권과 사회 전반에 충격을 주는 갑질 논란이 불거지고 있다. 강선우 더불어민주당 의원이 과거 정영애 전 여성가족부 장관에게 ‘하라면 하는 거지 무슨 말이 많냐’라는 발언과 함께 예산 삭감 등 갑질 행위를 했다는 증언이 공개되면서 논란이 확산되고 있다. 이번 사건은 강선우 후보자가 7월 14일 국회 인사청문회에 출석한 이후, 정 전...</p>
             </a>
             <a href="smart_articles/article_20250720_224015.html" class="article-card">
+                
                 <h2>이 대통령, 이진숙만 지명 철회…강선우는 임명 수순</h2>
                 <div class="article-meta">
                     <span>📅 2025년 07월 20일 22:40</span>
@@ -177,30 +282,7 @@
 2025년 7월 20일, 이재명 대통령이 이진숙 교육부장관 후보자의 지명을 철회하기로 결정했다. 이 후보자는 2025년 7월 16일 국회 인사청문회에 참석한 후, 자녀 조기 유학 의혹과 제자 논문 가로채기 의혹 등으로 논란에 휘말렸다. 반면 강선우 후보자는 임명 수순을 밟고 있으며, 보좌관 갑질 ...</p>
             </a>
             <a href="smart_articles/article_20250720_223603.html" class="article-card">
-                <h2>"이혼해서 가전 급처분합니다" 늘어나는 당근 사기, 해결책은</h2>
-                <div class="article-meta">
-                    <span>📅 2025년 07월 20일 22:36</span>
-                    <span>🤖 AI 생성</span>
-                </div>
-                <p class="article-summary">### “이혼해서 가전 급처분합니다” 늘어나는 당근 사기, 해결책은
-
-2025년 7월 20일, 중고 거래 앱에서 파혼과 이혼을 이유로 고가의 가전제품을 저렴하게 판매하는 사기 행각이 급증하고 있다는 보도가 나왔다. 이러한 사기 사건은 사용자들의 신뢰를 저하시키고 있으며, 해결책 마련이 시급하다.
-
-#### 논란의 구체적 내용
-
-중고 거래 앱인 당근에서 발생...</p>
-            </a>
-            <a href="smart_articles/article_20250720_223640.html" class="article-card">
-                <h2>20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가</h2>
-                <div class="article-meta">
-                    <span>📅 2025년 07월 20일 22:36</span>
-                    <span>🤖 AI 생성</span>
-                </div>
-                <p class="article-summary">### 20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가
-
-2025년 7월 20일, 최근 발생한 폭우로 인해 사망자 수가 17명으로 증가하고 실종자 수는 11명에 달하는 것으로 집계되었다. 특히, 2025년 7월 19일 경남 산청에서 발생한 산사태로 인해 10명이 숨진 것으로 파악되며, 전국적으로 9782세대 1만 3,492명이 대피하는 등 ...</p>
-            </a>
-            <a href="smart_articles/article_20250720_223603.html" class="article-card">
+                
                 <h2>“이혼해서 가전 급처분합니다” 늘어나는 당근 사기, 해결책은</h2>
                 <div class="article-meta">
                     <span>📅 2025년 07월 20일 22:36</span>
@@ -214,6 +296,20 @@
 
 중고 거래 앱인 당근에서 발생...</p>
             </a>
+            <a href="smart_articles/article_20250720_223640.html" class="article-card">
+                
+                <h2>20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 07월 20일 22:36</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">### 20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가
+
+2025년 7월 20일, 최근 발생한 폭우로 인해 사망자 수가 17명으로 증가하고 실종자 수는 11명에 달하는 것으로 집계되었다. 특히, 2025년 7월 19일 경남 산청에서 발생한 산사태로 인해 10명이 숨진 것으로 파악되며, 전국적으로 9782세대 1만 3,492명이 대피하는 등 ...</p>
+            </a>
+        </div>
+        <div class="admin-link">
+            <a href="admin/">관리자 페이지</a>
         </div>
     </main>
     
@@ -224,7 +320,7 @@
             <a href="https://github.com/pjeehoon/kona-news/blob/main/LICENSE" target="_blank">License</a>
             </p>
             <p style="margin-top: 10px; font-size: 0.85rem;">
-                생성 시간: 2025-07-21 15:53:16 KST
+                생성 시간: 2025-07-21 19:27:57 KST
             </p>
         </div>
     </footer>

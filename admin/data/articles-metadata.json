@@ -1,132 +1,114 @@
 [
   {
-    "id": "b7dfbfe6ec08",
+    "id": "652b571af887",
     "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
-    "created_at": "2025-07-21T16:44:21.081250",
+    "created_at": "2025-07-21T15:12:52.520227",
+    "last_updated": "2025-07-21T19:20:02.988775",
+    "version": 6,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 555,
     "total_tokens": 2555,
-    "cost_usd": 0.00042200000000000007
+    "cost_usd": 0.00042200000000000007,
+    "version_count": 6
   },
   {
     "id": "3e5e8e527564",
     "title": "사우디 ‘잠자는 왕자’, 20년 혼수상태 끝에 결국 사망",
     "created_at": "2025-07-21T16:41:28.090140",
+    "last_updated": "2025-07-21T16:41:28.090164",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 668,
     "total_tokens": 2668,
-    "cost_usd": 0.0004672000000000001
+    "cost_usd": 0.0004672000000000001,
+    "version_count": 2
   },
   {
     "id": "d7d6457ecf3f",
     "title": "‘김혜경 여사 담당’ 2부속실장에 ‘대통령 최측근’ 윤기천 전 분당구청장",
     "created_at": "2025-07-21T16:36:27.742308",
+    "last_updated": "2025-07-21T16:36:27.742317",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 571,
     "total_tokens": 2571,
-    "cost_usd": 0.0004284
+    "cost_usd": 0.0004284,
+    "version_count": 2
   },
   {
     "id": "19541fa3c8c3",
     "title": "“총기 제작 유튜브로 배웠다”…아들 살해한 60대의 충격 범행",
     "created_at": "2025-07-21T16:35:53.514797",
+    "last_updated": "2025-07-21T16:35:53.514816",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 645,
     "total_tokens": 2645,
-    "cost_usd": 0.0004580000000000001
-  },
-  {
-    "id": "a28985af473f",
-    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
-    "created_at": "2025-07-21T16:30:14.464135",
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 676,
-    "total_tokens": 2676,
-    "cost_usd": 0.00047040000000000005
-  },
-  {
-    "id": "8268937bb198",
-    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
-    "created_at": "2025-07-21T16:30:14.464135",
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 623,
-    "total_tokens": 2623,
-    "cost_usd": 0.00044919999999999997
+    "cost_usd": 0.0004580000000000001,
+    "version_count": 2
   },
   {
     "id": "7f5103c9cfda",
     "title": "\"조종사, 왼쪽 정상 엔진 껐다\"…제주항공 참사 사조위 결론",
     "created_at": "2025-07-21T15:25:06.220599",
+    "last_updated": "2025-07-21T15:25:06.220613",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 434,
     "total_tokens": 2434,
-    "cost_usd": 0.00037360000000000003
-  },
-  {
-    "id": "aa9d247ca493",
-    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
-    "created_at": "2025-07-21T15:12:52.520227",
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 518,
-    "total_tokens": 2518,
-    "cost_usd": 0.00040720000000000003
-  },
-  {
-    "id": "d85859fad3f1",
-    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
-    "created_at": "2025-07-21T15:12:52.520227",
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 513,
-    "total_tokens": 2513,
-    "cost_usd": 0.00040520000000000004
-  },
-  {
-    "id": "31ba15bc309f",
-    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
-    "created_at": "2025-07-21T15:12:52.520227",
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 518,
-    "total_tokens": 2518,
-    "cost_usd": 0.00040720000000000003
+    "cost_usd": 0.00037360000000000003,
+    "version_count": 1
   },
   {
     "id": "5eb50d90561b",
     "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
     "created_at": "2025-07-20T22:40:15.725043",
+    "last_updated": "2025-07-20T22:40:15.725049",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 376,
     "total_tokens": 2376,
-    "cost_usd": 0.0003504
+    "cost_usd": 0.0003504,
+    "version_count": 1
   },
   {
     "id": "3d1930b1790b",
     "title": "20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가",
     "created_at": "2025-07-20T22:36:40.227284",
+    "last_updated": "2025-07-20T22:36:40.227293",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 347,
     "total_tokens": 2347,
-    "cost_usd": 0.0003388
+    "cost_usd": 0.0003388,
+    "version_count": 1
   },
   {
     "id": "17f4644bd0ff",
     "title": "“이혼해서 가전 급처분합니다” 늘어나는 당근 사기, 해결책은",
     "created_at": "2025-07-20T22:36:03.310751",
+    "last_updated": "2025-07-20T22:36:03.310765",
+    "version": 1,
+    "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
     "completion_tokens": 357,
     "total_tokens": 2357,
-    "cost_usd": 0.0003428
+    "cost_usd": 0.0003428,
+    "version_count": 1
   }
 ]
