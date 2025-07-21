@@ -1,0 +1,142 @@
+[
+  {
+    "id": "test_article_7",
+    "title": "테스트 뉴스 기사 8",
+    "created_at": "2025-07-21T13:18:28.430787",
+    "model": "gpt-3.5-turbo",
+    "prompt_tokens": 1063,
+    "completion_tokens": 1866,
+    "total_tokens": 2929,
+    "cost_usd": 0.003331,
+    "pricing": {
+      "prompt_price": 0.0005,
+      "completion_price": 0.0015
+    }
+  },
+  {
+    "id": "test_article_9",
+    "title": "테스트 뉴스 기사 10",
+    "created_at": "2025-07-20T13:18:28.431033",
+    "model": "gpt-4",
+    "prompt_tokens": 560,
+    "completion_tokens": 1431,
+    "total_tokens": 1991,
+    "cost_usd": 0.10266,
+    "pricing": {
+      "prompt_price": 0.03,
+      "completion_price": 0.06
+    }
+  },
+  {
+    "id": "test_article_0",
+    "title": "테스트 뉴스 기사 1",
+    "created_at": "2025-07-20T13:18:28.429510",
+    "model": "gpt-3.5-turbo",
+    "prompt_tokens": 1809,
+    "completion_tokens": 2381,
+    "total_tokens": 4190,
+    "cost_usd": 0.004476,
+    "pricing": {
+      "prompt_price": 0.0005,
+      "completion_price": 0.0015
+    }
+  },
+  {
+    "id": "test_article_8",
+    "title": "테스트 뉴스 기사 9",
+    "created_at": "2025-07-19T13:18:28.430874",
+    "model": "gpt-4o-mini",
+    "prompt_tokens": 757,
+    "completion_tokens": 2872,
+    "total_tokens": 3629,
+    "cost_usd": 0.001837,
+    "pricing": {
+      "prompt_price": 0.00015,
+      "completion_price": 0.0006
+    }
+  },
+  {
+    "id": "test_article_3",
+    "title": "테스트 뉴스 기사 4",
+    "created_at": "2025-07-19T13:18:28.430394",
+    "model": "gpt-4o-mini",
+    "prompt_tokens": 788,
+    "completion_tokens": 2326,
+    "total_tokens": 3114,
+    "cost_usd": 0.001514,
+    "pricing": {
+      "prompt_price": 0.00015,
+      "completion_price": 0.0006
+    }
+  },
+  {
+    "id": "test_article_5",
+    "title": "테스트 뉴스 기사 6",
+    "created_at": "2025-07-18T13:18:28.430596",
+    "model": "gpt-4",
+    "prompt_tokens": 1730,
+    "completion_tokens": 1792,
+    "total_tokens": 3522,
+    "cost_usd": 0.15942,
+    "pricing": {
+      "prompt_price": 0.03,
+      "completion_price": 0.06
+    }
+  },
+  {
+    "id": "test_article_6",
+    "title": "테스트 뉴스 기사 7",
+    "created_at": "2025-07-16T13:18:28.430698",
+    "model": "gpt-3.5-turbo",
+    "prompt_tokens": 1666,
+    "completion_tokens": 2608,
+    "total_tokens": 4274,
+    "cost_usd": 0.004745,
+    "pricing": {
+      "prompt_price": 0.0005,
+      "completion_price": 0.0015
+    }
+  },
+  {
+    "id": "test_article_1",
+    "title": "테스트 뉴스 기사 2",
+    "created_at": "2025-07-16T13:18:28.430009",
+    "model": "gpt-4",
+    "prompt_tokens": 1873,
+    "completion_tokens": 2243,
+    "total_tokens": 4116,
+    "cost_usd": 0.19077,
+    "pricing": {
+      "prompt_price": 0.03,
+      "completion_price": 0.06
+    }
+  },
+  {
+    "id": "test_article_2",
+    "title": "테스트 뉴스 기사 3",
+    "created_at": "2025-07-15T13:18:28.430259",
+    "model": "gpt-4",
+    "prompt_tokens": 763,
+    "completion_tokens": 2123,
+    "total_tokens": 2886,
+    "cost_usd": 0.15027,
+    "pricing": {
+      "prompt_price": 0.03,
+      "completion_price": 0.06
+    }
+  },
+  {
+    "id": "test_article_4",
+    "title": "테스트 뉴스 기사 5",
+    "created_at": "2025-07-14T13:18:28.430500",
+    "model": "gpt-4o-mini",
+    "prompt_tokens": 834,
+    "completion_tokens": 2943,
+    "total_tokens": 3777,
+    "cost_usd": 0.001891,
+    "pricing": {
+      "prompt_price": 0.00015,
+      "completion_price": 0.0006
+    }
+  }
+]
