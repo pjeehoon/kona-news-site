@@ -115,6 +115,15 @@
         .chart-container canvas {
             max-height: 350px !important;
         }
+        .chart-container.donut-chart {
+            height: 450px;
+        }
+        .chart-wrapper {
+            position: relative;
+            height: 350px;
+            margin: 0 auto;
+            max-width: 350px;
+        }
         .chart-container h2 {
             margin-bottom: 20px;
             color: #333;
@@ -144,12 +153,13 @@
         }
         .delete-btn {
             padding: 4px 8px;
-            background: #dc3545;
+            background: #6c757d;
             color: white;
             border: none;
             border-radius: 4px;
-            cursor: pointer;
+            cursor: not-allowed;
             font-size: 12px;
+            opacity: 0.6;
         }
         .cost {
             color: #28a745;
@@ -206,14 +216,19 @@
             <canvas id="dailyCostChart"></canvas>
         </div>
 
-        <div class="chart-container">
+        <div class="chart-container donut-chart">
             <h2>토큰 사용량 (Prompt vs Completion)</h2>
-            <canvas id="tokenChart"></canvas>
+            <div class="chart-wrapper">
+                <canvas id="tokenChart"></canvas>
+            </div>
         </div>
 
         <!-- 기사 목록 테이블 -->
         <div class="articles-table">
             <h2>최근 기사 목록</h2>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                ※ 이 페이지는 정적으로 생성됩니다. 삭제 기능은 추후 서버 연동 시 활성화됩니다.
+            </p>
             <table>
                 <thead>
                     <tr>
@@ -321,9 +336,36 @@
 
         // 일별 비용 차트
         function drawDailyCostChart() {
+            console.log('Drawing daily cost chart...');
+            console.log('dailyStats:', dailyStats);
+            
             const ctx = document.getElementById('dailyCostChart').getContext('2d');
             const dates = Object.keys(dailyStats).sort();
             const costs = dates.map(date => dailyStats[date].total_cost);
+            
+            console.log('dates:', dates);
+            console.log('costs:', costs);
+            
+            // 동적으로 Y축 범위 계산
+            const maxCost = Math.max(...costs);
+            const minCost = Math.min(...costs);
+            
+            // 적절한 스텝 크기 계산
+            let stepSize;
+            if (maxCost < 0.001) {
+                stepSize = 0.0001;
+            } else if (maxCost < 0.01) {
+                stepSize = 0.001;
+            } else if (maxCost < 0.1) {
+                stepSize = 0.01;
+            } else {
+                stepSize = 0.1;
+            }
+            
+            // Y축 최대값 설정 (최대값의 1.2배)
+            const yMax = maxCost * 1.2 || stepSize * 5;
+            
+            console.log('Max cost:', maxCost, 'Step size:', stepSize, 'Y max:', yMax);
             
             new Chart(ctx, {
                 type: 'line',
@@ -334,7 +376,14 @@
                         data: costs,
                         borderColor: '#1a73e8',
                         backgroundColor: 'rgba(26, 115, 232, 0.1)',
-                        tension: 0.1
+                        borderWidth: 3,
+                        pointRadius: 6,
+                        pointBackgroundColor: '#1a73e8',
+                        pointBorderColor: '#fff',
+                        pointBorderWidth: 2,
+                        pointHoverRadius: 8,
+                        tension: 0.1,
+                        fill: true
                     }]
                 },
                 options: {
@@ -343,9 +392,38 @@
                     scales: {
                         y: {
                             beginAtZero: true,
+                            min: 0,
+                            max: yMax,
                             ticks: {
                                 callback: function(value) {
-                                    return '$' + value.toFixed(2);
+                                    if (value < 0.01) {
+                                        return '$' + value.toFixed(4);
+                                    } else if (value < 1) {
+                                        return '$' + value.toFixed(3);
+                                    } else {
+                                        return '$' + value.toFixed(2);
+                                    }
+                                },
+                                stepSize: stepSize,
+                                count: 6  // 대략적인 틱 개수
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: true,
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': $' + context.parsed.y.toFixed(4);
                                 }
                             }
                         }
@@ -390,7 +468,7 @@
                     <td>${(article.prompt_tokens || 0).toLocaleString()}</td>
                     <td>${(article.completion_tokens || 0).toLocaleString()}</td>
                     <td class="cost">${article.cost_usd ? '$' + article.cost_usd.toFixed(3) : '-'}</td>
-                    <td><button class="delete-btn" onclick="deleteArticle('${article.id}')">삭제</button></td>
+                    <td><button class="delete-btn" disabled title="정적 페이지에서는 삭제 불가">삭제</button></td>
                 `;
             });
         }

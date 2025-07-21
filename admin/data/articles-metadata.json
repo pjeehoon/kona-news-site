@@ -1,142 +1,52 @@
 [
   {
-    "id": "test_article_7",
-    "title": "테스트 뉴스 기사 8",
-    "created_at": "2025-07-21T13:18:28.430787",
-    "model": "gpt-3.5-turbo",
-    "prompt_tokens": 1063,
-    "completion_tokens": 1866,
-    "total_tokens": 2929,
-    "cost_usd": 0.003331,
-    "pricing": {
-      "prompt_price": 0.0005,
-      "completion_price": 0.0015
-    }
+    "id": "7f5103c9cfda",
+    "title": "\"조종사, 왼쪽 정상 엔진 껐다\"…제주항공 참사 사조위 결론",
+    "created_at": "2025-07-21T15:25:06.220599",
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 434,
+    "total_tokens": 2434,
+    "cost_usd": 0.00037360000000000003
   },
   {
-    "id": "test_article_9",
-    "title": "테스트 뉴스 기사 10",
-    "created_at": "2025-07-20T13:18:28.431033",
-    "model": "gpt-4",
-    "prompt_tokens": 560,
-    "completion_tokens": 1431,
-    "total_tokens": 1991,
-    "cost_usd": 0.10266,
-    "pricing": {
-      "prompt_price": 0.03,
-      "completion_price": 0.06
-    }
+    "id": "d85859fad3f1",
+    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
+    "created_at": "2025-07-21T15:12:52.520227",
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 513,
+    "total_tokens": 2513,
+    "cost_usd": 0.00040520000000000004
   },
   {
-    "id": "test_article_0",
-    "title": "테스트 뉴스 기사 1",
-    "created_at": "2025-07-20T13:18:28.429510",
-    "model": "gpt-3.5-turbo",
-    "prompt_tokens": 1809,
-    "completion_tokens": 2381,
-    "total_tokens": 4190,
-    "cost_usd": 0.004476,
-    "pricing": {
-      "prompt_price": 0.0005,
-      "completion_price": 0.0015
-    }
+    "id": "5eb50d90561b",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-20T22:40:15.725043",
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 376,
+    "total_tokens": 2376,
+    "cost_usd": 0.0003504
   },
   {
-    "id": "test_article_8",
-    "title": "테스트 뉴스 기사 9",
-    "created_at": "2025-07-19T13:18:28.430874",
-    "model": "gpt-4o-mini",
-    "prompt_tokens": 757,
-    "completion_tokens": 2872,
-    "total_tokens": 3629,
-    "cost_usd": 0.001837,
-    "pricing": {
-      "prompt_price": 0.00015,
-      "completion_price": 0.0006
-    }
+    "id": "3d1930b1790b",
+    "title": "20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가",
+    "created_at": "2025-07-20T22:36:40.227284",
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 347,
+    "total_tokens": 2347,
+    "cost_usd": 0.0003388
   },
   {
-    "id": "test_article_3",
-    "title": "테스트 뉴스 기사 4",
-    "created_at": "2025-07-19T13:18:28.430394",
-    "model": "gpt-4o-mini",
-    "prompt_tokens": 788,
-    "completion_tokens": 2326,
-    "total_tokens": 3114,
-    "cost_usd": 0.001514,
-    "pricing": {
-      "prompt_price": 0.00015,
-      "completion_price": 0.0006
-    }
-  },
-  {
-    "id": "test_article_5",
-    "title": "테스트 뉴스 기사 6",
-    "created_at": "2025-07-18T13:18:28.430596",
-    "model": "gpt-4",
-    "prompt_tokens": 1730,
-    "completion_tokens": 1792,
-    "total_tokens": 3522,
-    "cost_usd": 0.15942,
-    "pricing": {
-      "prompt_price": 0.03,
-      "completion_price": 0.06
-    }
-  },
-  {
-    "id": "test_article_6",
-    "title": "테스트 뉴스 기사 7",
-    "created_at": "2025-07-16T13:18:28.430698",
-    "model": "gpt-3.5-turbo",
-    "prompt_tokens": 1666,
-    "completion_tokens": 2608,
-    "total_tokens": 4274,
-    "cost_usd": 0.004745,
-    "pricing": {
-      "prompt_price": 0.0005,
-      "completion_price": 0.0015
-    }
-  },
-  {
-    "id": "test_article_1",
-    "title": "테스트 뉴스 기사 2",
-    "created_at": "2025-07-16T13:18:28.430009",
-    "model": "gpt-4",
-    "prompt_tokens": 1873,
-    "completion_tokens": 2243,
-    "total_tokens": 4116,
-    "cost_usd": 0.19077,
-    "pricing": {
-      "prompt_price": 0.03,
-      "completion_price": 0.06
-    }
-  },
-  {
-    "id": "test_article_2",
-    "title": "테스트 뉴스 기사 3",
-    "created_at": "2025-07-15T13:18:28.430259",
-    "model": "gpt-4",
-    "prompt_tokens": 763,
-    "completion_tokens": 2123,
-    "total_tokens": 2886,
-    "cost_usd": 0.15027,
-    "pricing": {
-      "prompt_price": 0.03,
-      "completion_price": 0.06
-    }
-  },
-  {
-    "id": "test_article_4",
-    "title": "테스트 뉴스 기사 5",
-    "created_at": "2025-07-14T13:18:28.430500",
-    "model": "gpt-4o-mini",
-    "prompt_tokens": 834,
-    "completion_tokens": 2943,
-    "total_tokens": 3777,
-    "cost_usd": 0.001891,
-    "pricing": {
-      "prompt_price": 0.00015,
-      "completion_price": 0.0006
-    }
+    "id": "17f4644bd0ff",
+    "title": "“이혼해서 가전 급처분합니다” 늘어나는 당근 사기, 해결책은",
+    "created_at": "2025-07-20T22:36:03.310751",
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 357,
+    "total_tokens": 2357,
+    "cost_usd": 0.0003428
   }
 ]

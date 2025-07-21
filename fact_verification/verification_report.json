@@ -1,0 +1,112 @@
+{
+  "timestamp": "2025-07-20T21:43:14.614441",
+  "original_article": {
+    "url": "https://n.news.naver.com/article/055/0001276875",
+    "title": "이 대통령, 이진숙 지명 철회…강선우 임명 수순",
+    "press": "SBS",
+    "date": "2025.07.20. 오후 6:34"
+  },
+  "extracted_facts": {
+    "people": [
+      {
+        "name": "이진숙",
+        "current_position": null,
+        "nominated_position": "교육부 장관 후보자",
+        "party": null
+      },
+      {
+        "name": "이재명",
+        "current_position": "대통령",
+        "nominated_position": null,
+        "party": null
+      },
+      {
+        "name": "우상호",
+        "current_position": "대통령실 정무수석",
+        "nominated_position": null,
+        "party": null
+      },
+      {
+        "name": "강선우",
+        "current_position": null,
+        "nominated_position": "여성가족부 장관 후보자",
+        "party": null
+      },
+      {
+        "name": "김병기",
+        "current_position": "더불어민주당 원내대표",
+        "nominated_position": null,
+        "party": "더불어민주당"
+      },
+      {
+        "name": "송언석",
+        "current_position": "국민의힘 원내대표",
+        "nominated_position": null,
+        "party": "국민의힘"
+      }
+    ],
+    "ministries": [
+      "교육부",
+      "여성가족부"
+    ],
+    "events": [
+      {
+        "type": "지명 철회",
+        "date": "2023-10-20",
+        "description": "이진숙 교육부 장관 후보자의 지명이 철회됨."
+      },
+      {
+        "type": "의견 수렴",
+        "date": "2023-10-19",
+        "description": "이재명 대통령이 김병기와 송언석을 만나 의견을 수렴함."
+      },
+      {
+        "type": "청문회",
+        "date": null,
+        "description": "17명의 후보자 가운데 6명의 인사청문보고서가 채택됨."
+      }
+    ],
+    "key_facts": [
+      "이진숙 후보자는 논문 표절 의혹과 자녀 조기 불법 유학 의혹으로 비판받음.",
+      "강선우 후보자는 지명 철회되지 않음.",
+      "이진숙 후보자의 지명이 철회됨."
+    ]
+  },
+  "corrections_made": [
+    {
+      "type": "person",
+      "name": "이재명",
+      "correct_info": "이재명은(는) 현재 대통령",
+      "nominated_for": null
+    },
+    {
+      "type": "person",
+      "name": "우상호",
+      "correct_info": "우상호은(는) 현재 대통령실 정무수석",
+      "nominated_for": null
+    },
+    {
+      "type": "person",
+      "name": "김병기",
+      "correct_info": "김병기은(는) 현재 더불어민주당 원내대표",
+      "nominated_for": null
+    },
+    {
+      "type": "person",
+      "name": "송언석",
+      "correct_info": "송언석은(는) 현재 국민의힘 원내대표",
+      "nominated_for": null
+    },
+    {
+      "type": "ministry",
+      "name": "교육부",
+      "english": "Ministry of Education"
+    },
+    {
+      "type": "ministry",
+      "name": "여성가족부",
+      "english": "Ministry of Gender Equality and Family"
+    }
+  ],
+  "corrected_article": "윤석열 대통령은 이진숙 전 교육부 장관 후보자의 지명을 철회하였다. 이진숙 후보자는 논문 표절 의혹과 자녀 조기 불법 유학 의혹으로 비판받아 지명이 철회되었다. \n\n현재 강선우 전 국회의원은 여성가족부 장관 후보자로 지명되어 있으며, 교육부 장관 후보자로 임명될 예정이 아니다. \n\n이재명 대통령은 2023년 10월 19일 김병기 더불어민주당 원내대표와 송언석 국민의힘 원내대표를 만나 의견을 수렴하였고, 10월 20일 이진숙 후보자의 지명이 공식적으로 철회되었다. \n\n현재 17명의 후보자 가운데 6명의 인사청문보고서가 채택된 상태이다."
+}
