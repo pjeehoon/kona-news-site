@@ -211,6 +211,77 @@
             font-size: 14px;
             color: #666;
         }
+        /* 태그 필터링 스타일 */
+        .tag-filter-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .tag-filter-section h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .tag-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .tag-button {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .tag-button:hover {
+            background: #f0f0f0;
+        }
+        .tag-button.active {
+            background: #1a73e8;
+            color: white;
+            border-color: #1a73e8;
+        }
+        .tag-reset-button {
+            padding: 6px 16px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 10px;
+            display: none;
+        }
+        .tag-reset-button:hover {
+            background: #5a6268;
+        }
+        .tag-reset-button.visible {
+            display: inline-block;
+        }
+        .tag-section-title {
+            font-weight: 600;
+            color: #666;
+            margin: 10px 0 5px 0;
+            font-size: 14px;
+        }
+        .tag-info {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #e3f2fd;
+            color: #1565c0;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+        .tag-info.content-tag {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
     </style>
 </head>
 <body>
@@ -272,6 +343,23 @@
             </div>
         </div>
 
+        <!-- 태그 필터 섹션 -->
+        <div class="tag-filter-section">
+            <h3>태그 필터
+                <button class="tag-reset-button" id="tagResetButton" onclick="resetTagFilter()">필터 초기화</button>
+            </h3>
+            
+            <div class="tag-section-title">카테고리 태그</div>
+            <div class="tag-buttons" id="categoryTagButtons">
+                <!-- JavaScript로 채워짐 -->
+            </div>
+            
+            <div class="tag-section-title">콘텐츠 태그 (상위 20개)</div>
+            <div class="tag-buttons" id="contentTagButtons">
+                <!-- JavaScript로 채워짐 -->
+            </div>
+        </div>
+
         <!-- 주제별 통계 -->
         <div class="topic-stats">
             <h2>주제별 버전 현황</h2>
@@ -291,6 +379,7 @@
                     <tr>
                         <th>날짜</th>
                         <th>제목</th>
+                        <th>태그</th>
                         <th>버전</th>
                         <th>모델</th>
                         <th>Prompt 토큰</th>
@@ -309,9 +398,12 @@
     <script>
         const ADMIN_PASSWORD_HASH = 'af6fd599323725634351e3bb8c6851c02909031ae5ef43fcb13d3b2e2e9752f1';
         let articlesData = [];
+        let filteredArticlesData = [];
         let dailyStats = {};
         let monthlyStats = {};
         let topicStats = {};
+        let selectedTags = new Set();
+        let allTags = { category_tags: {}, content_tags: {} };
 
         // SHA256 해시 함수
         async function sha256(message) {
@@ -390,6 +482,15 @@
                 articlesData.reduce((sum, a) => sum + (a.total_tokens || 0), 0).toLocaleString();
             document.getElementById('totalCost').textContent = 
                 articlesData.reduce((sum, a) => sum + (a.cost_usd || 0), 0).toFixed(2);
+            
+            // 태그 수집
+            collectAllTags();
+            
+            // 태그 버튼 렌더링
+            renderTagButtons();
+            
+            // 초기 필터링된 데이터 설정
+            filteredArticlesData = [...articlesData];
             
             // 차트 그리기
             drawDailyCostChart();
@@ -540,15 +641,30 @@
             const tbody = document.getElementById('articlesTableBody');
             tbody.innerHTML = '';
             
-            articlesData.slice(0, 20).forEach(article => {
+            // 필터링된 데이터 사용
+            const displayArticles = selectedTags.size > 0 ? filteredArticlesData : articlesData;
+            
+            displayArticles.slice(0, 20).forEach(article => {
                 const row = tbody.insertRow();
                 const versionBadge = article.version > 1 ? 
                     `<span class="version-badge">v${article.version}</span>` : 'v1';
+                
+                // 태그 렌더링
+                const tags = article.tags || {category_tags: [], content_tags: []};
+                const categoryTags = tags.category_tags.map(tag => 
+                    `<span class="tag-info">${tag}</span>`
+                ).join('');
+                const contentTags = tags.content_tags.slice(0, 3).map(tag => 
+                    `<span class="tag-info content-tag">${tag}</span>`
+                ).join('');
+                const moreContentTags = tags.content_tags.length > 3 ? 
+                    `<span class="tag-info content-tag">+${tags.content_tags.length - 3}</span>` : '';
                 
                 row.innerHTML = `
                     <td>${article.last_updated ? article.last_updated.split('T')[0] : 
                          article.created_at ? article.created_at.split('T')[0] : '-'}</td>
                     <td>${article.title || '제목 없음'}</td>
+                    <td>${categoryTags} ${contentTags} ${moreContentTags}</td>
                     <td>${versionBadge}</td>
                     <td>${article.model || 'GPT-4'}</td>
                     <td>${(article.prompt_tokens || 0).toLocaleString()}</td>
@@ -557,6 +673,137 @@
                     <td><button class="delete-btn" disabled title="정적 페이지에서는 삭제 불가">삭제</button></td>
                 `;
             });
+        }
+        
+        // 모든 태그 수집
+        function collectAllTags() {
+            allTags = { category_tags: {}, content_tags: {} };
+            
+            articlesData.forEach(article => {
+                if (article.tags) {
+                    // 카테고리 태그 수집
+                    article.tags.category_tags?.forEach(tag => {
+                        allTags.category_tags[tag] = (allTags.category_tags[tag] || 0) + 1;
+                    });
+                    
+                    // 콘텐츠 태그 수집
+                    article.tags.content_tags?.forEach(tag => {
+                        allTags.content_tags[tag] = (allTags.content_tags[tag] || 0) + 1;
+                    });
+                }
+            });
+        }
+        
+        // 태그 버튼 렌더링
+        function renderTagButtons() {
+            // 카테고리 태그 버튼
+            const categoryContainer = document.getElementById('categoryTagButtons');
+            categoryContainer.innerHTML = '';
+            
+            Object.entries(allTags.category_tags)
+                .sort((a, b) => b[1] - a[1])  // 빈도순 정렬
+                .forEach(([tag, count]) => {
+                    const button = document.createElement('button');
+                    button.className = 'tag-button';
+                    button.textContent = `${tag} (${count})`;
+                    button.setAttribute('data-tag', tag);
+                    button.onclick = () => toggleTag(button);
+                    categoryContainer.appendChild(button);
+                });
+            
+            // 콘텐츠 태그 버튼 (상위 20개)
+            const contentContainer = document.getElementById('contentTagButtons');
+            contentContainer.innerHTML = '';
+            
+            Object.entries(allTags.content_tags)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 20)
+                .forEach(([tag, count]) => {
+                    const button = document.createElement('button');
+                    button.className = 'tag-button';
+                    button.textContent = `${tag} (${count})`;
+                    button.setAttribute('data-tag', tag);
+                    button.onclick = () => toggleTag(button);
+                    contentContainer.appendChild(button);
+                });
+        }
+        
+        // 태그 토글
+        function toggleTag(button) {
+            const tag = button.getAttribute('data-tag');
+            
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+                selectedTags.delete(tag);
+            } else {
+                button.classList.add('active');
+                selectedTags.add(tag);
+            }
+            
+            // 리셋 버튼 표시/숨김
+            const resetButton = document.getElementById('tagResetButton');
+            if (selectedTags.size > 0) {
+                resetButton.classList.add('visible');
+            } else {
+                resetButton.classList.remove('visible');
+            }
+            
+            // 필터링 수행
+            applyTagFilter();
+        }
+        
+        // 태그 필터 적용
+        function applyTagFilter() {
+            if (selectedTags.size === 0) {
+                filteredArticlesData = [...articlesData];
+            } else {
+                filteredArticlesData = articlesData.filter(article => {
+                    if (!article.tags) return false;
+                    
+                    // OR 연산 - 선택된 태그 중 하나라도 있으면 표시
+                    const allArticleTags = [
+                        ...(article.tags.category_tags || []),
+                        ...(article.tags.content_tags || [])
+                    ];
+                    
+                    return Array.from(selectedTags).some(tag => allArticleTags.includes(tag));
+                });
+            }
+            
+            // 테이블 다시 그리기
+            fillArticlesTable();
+            
+            // 통계 업데이트
+            updateFilteredStats();
+        }
+        
+        // 필터링된 통계 업데이트
+        function updateFilteredStats() {
+            const displayArticles = selectedTags.size > 0 ? filteredArticlesData : articlesData;
+            
+            // 필터링된 기사 수 표시 (선택적)
+            const totalArticlesElem = document.getElementById('totalArticles');
+            if (selectedTags.size > 0) {
+                totalArticlesElem.textContent = `${displayArticles.length} / ${articlesData.length}`;
+            } else {
+                totalArticlesElem.textContent = articlesData.length;
+            }
+        }
+        
+        // 태그 필터 리셋
+        function resetTagFilter() {
+            selectedTags.clear();
+            
+            // 모든 태그 버튼의 active 클래스 제거
+            document.querySelectorAll('.tag-button.active').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // 리셋 버튼 숨김
+            document.getElementById('tagResetButton').classList.remove('visible');
+            
+            // 필터 초기화
+            applyTagFilter();
         }
     </script>
 </body>
