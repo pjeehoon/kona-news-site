@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_171450</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 17:14:50</p>
+        <p>오후 주요 이슈 (17시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">정부</span> <span class="keyword">속보</span> <span class="keyword">강선우</span> <span class="keyword">살해</span> <span class="keyword">맞아요</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/009/0005529003?ntype=RANKING" target="_blank">[단독] “한국 골프장들 다 죽겠네”…4박5일 72홀 ‘30만원대’ 패키지 나왔다는데</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/009/0005529054?ntype=RANKING" target="_blank">“음식사진 잘 나오게 물감 섞어서”…‘납 범벅 급식’ 제공한 유치원 원장이 한 말</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/009/0005529079?ntype=RANKING" target="_blank">“고점에 물렸어요”…소문에 뜨겁다가 한순간에 식은 ‘이 동네’</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/009/0005529104?ntype=RANKING" target="_blank">그날 이후, 우리 가족은…리딩방 사기에 무너진 지영이네</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/009/0005529053?ntype=RANKING" target="_blank">“동생 맞아요?금감원 맞아요?”…이 은행 직원들, 고객 예금 2억7천만원 지켰다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/079/0004047746?ntype=RANKING" target="_blank">"문재인 같이 무능한 인간들"…신임 인사혁신처장 발언·주장 논란</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/079/0004047832?ntype=RANKING" target="_blank">'악취' 화장실 앞에서 무너지는 버스기사…"요의 참고 운전대 잡는 게 일상"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/079/0004047806?ntype=RANKING" target="_blank">[속보]李대통령, 강선우 등 4명 인청보고서 재송부 요청</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/079/0004047785?ntype=RANKING" target="_blank">강선우, 文정부 여가부에 '예산 갑질' 정황…野 "임명 철회하라"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/079/0004047795?ntype=RANKING" target="_blank">여야, 지난 대선 때 얼마 썼나…민주당 535억, 국힘 449억</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/366/0001094592?ntype=RANKING" target="_blank">알츠하이머병 고칠 약, 이미 있었다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/366/0001094554?ntype=RANKING" target="_blank">동탄 신도시에 1만3000평 규모 종합병원 들어선다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/366/0001094610?ntype=RANKING" target="_blank">‘과즙세연 고소’ 유튜버 뻑가, 첫 변론기일서 “개인 의견… 사실 적시 아냐”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/366/0001094541?ntype=RANKING" target="_blank">인천 송도 ‘아들 총격 살해’ 아버지, 이유 묻자 “알려고 하지 마”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/366/0001094655?ntype=RANKING" target="_blank">[사건 포커스] ‘인천 총기 살해 사건’ 난무하는 소문의 진실은?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/029/0002970089?ntype=RANKING" target="_blank">[속보] “스스로 교육 거부해놓고”…의대 총장들 “졸업 못한 4학년 위한 추가 의사국시, 정부 건의키로”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/029/0002970006?ntype=RANKING" target="_blank">‘폭우로 난리인데 춤추며 노래’ 구리시장…“정신나간 공직자” 비판에 결국 사과</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/029/0002969898?ntype=RANKING" target="_blank">“6억 매매 커녕 전세도 빠듯”…아파트 전세가 상승폭 훌쩍</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/029/0002970031?ntype=RANKING" target="_blank">사제 총기로 자식 살해…“전 부인에 아들 상실 고통 주려는 일종의 복수심 일수도”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/029/0002969830?ntype=RANKING" target="_blank">‘콘서트장 불륜 커플’ 생중계 후폭풍…콜드플레이 “화면에 얼굴 주의”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/214/0001437990?ntype=RANKING" target="_blank">[속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/214/0001438027?ntype=RANKING" target="_blank">'아직 남은' 尹정부 장관들, 새 정부 각료 나타나자‥ [현장영상]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/214/0001438016?ntype=RANKING" target="_blank">이재명 대통령, 강선우 후보자 등 4명 청문보고서 재송부 요청</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/214/0001437996?ntype=RANKING" target="_blank">김계환 전 해병대사령관, 구속심사서 "'尹 화났다' 들었다" 인정</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/214/0001437993?ntype=RANKING" target="_blank">'김건희 국정농단' 특검 "도주한 이기훈 삼부토건 부회장 체포영장 발부"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/277/0005626051?ntype=RANKING" target="_blank">울릉도 '비계 삼겹살' 정체 밝혀졌다…"찌개용 고기 잘못 내놔" 업주 사과</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/277/0005625863?ntype=RANKING" target="_blank">"갖다 놓으면 불티나게 팔린다"… 전 세계 냉동고 점령 중인 K아이스크림</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/277/0005625886?ntype=RANKING" target="_blank">첫날 700만명 몰리더니…"15만원 소비쿠폰 13만원에 팔아요"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/277/0005626071?ntype=RANKING" target="_blank">"집주인 아니었어?"…60억 저택서 파티 열고 입장료 장사한 남성의 정체</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/277/0005626343?ntype=RANKING" target="_blank">틱톡서 7000만 이상 조회…'불륜 생중계' 영상 올린 여성 얼마나 벌었나</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] “한국 골프장들 다 죽겠네”…4박5일 72홀 ‘30만원대’ 패키지 나왔다는데
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “음식사진 잘 나오게 물감 섞어서”…‘납 범벅 급식’ 제공한 유치원 원장이 한 말
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “고점에 물렸어요”…소문에 뜨겁다가 한순간에 식은 ‘이 동네’
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            그날 이후, 우리 가족은…리딩방 사기에 무너진 지영이네
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “동생 맞아요?금감원 맞아요?”…이 은행 직원들, 고객 예금 2억7천만원 지켰다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "문재인 같이 무능한 인간들"…신임 인사혁신처장 발언·주장 논란
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '악취' 화장실 앞에서 무너지는 버스기사…"요의 참고 운전대 잡는 게 일상"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보]李대통령, 강선우 등 4명 인청보고서 재송부 요청
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            강선우, 文정부 여가부에 '예산 갑질' 정황…野 "임명 철회하라"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            여야, 지난 대선 때 얼마 썼나…민주당 535억, 국힘 449억
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            알츠하이머병 고칠 약, 이미 있었다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            동탄 신도시에 1만3000평 규모 종합병원 들어선다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            ‘과즙세연 고소’ 유튜버 뻑가, 첫 변론기일서 “개인 의견… 사실 적시 아냐”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            인천 송도 ‘아들 총격 살해’ 아버지, 이유 묻자 “알려고 하지 마”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [사건 포커스] ‘인천 총기 살해 사건’ 난무하는 소문의 진실은?
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] “스스로 교육 거부해놓고”…의대 총장들 “졸업 못한 4학년 위한 추가 의사국시, 정부 건의키로”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            ‘폭우로 난리인데 춤추며 노래’ 구리시장…“정신나간 공직자” 비판에 결국 사과
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “6억 매매 커녕 전세도 빠듯”…아파트 전세가 상승폭 훌쩍
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            사제 총기로 자식 살해…“전 부인에 아들 상실 고통 주려는 일종의 복수심 일수도”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            ‘콘서트장 불륜 커플’ 생중계 후폭풍…콜드플레이 “화면에 얼굴 주의”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '아직 남은' 尹정부 장관들, 새 정부 각료 나타나자‥ [현장영상]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이재명 대통령, 강선우 후보자 등 4명 청문보고서 재송부 요청
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            김계환 전 해병대사령관, 구속심사서 "'尹 화났다' 들었다" 인정
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '김건희 국정농단' 특검 "도주한 이기훈 삼부토건 부회장 체포영장 발부"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            울릉도 '비계 삼겹살' 정체 밝혀졌다…"찌개용 고기 잘못 내놔" 업주 사과
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "갖다 놓으면 불티나게 팔린다"… 전 세계 냉동고 점령 중인 K아이스크림
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            첫날 700만명 몰리더니…"15만원 소비쿠폰 13만원에 팔아요"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "집주인 아니었어?"…60억 저택서 파티 열고 입장료 장사한 남성의 정체
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            틱톡서 7000만 이상 조회…'불륜 생중계' 영상 올린 여성 얼마나 벌었나
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">정부 (4)</span> <span class="keyword">속보 (3)</span> <span class="keyword">강선우 (3)</span> <span class="keyword">살해 (3)</span> <span class="keyword">맞아요 (2)</span> <span class="keyword">대통령 (2)</span> <span class="keyword">재송부 (2)</span> <span class="keyword">요청 (2)</span> <span class="keyword">인천 (2)</span> <span class="keyword">아들 (2)</span> <span class="keyword">사건 (2)</span> <span class="keyword">사과 (2)</span> <span class="keyword">불륜 (2)</span> <span class="keyword">생중계 (2)</span> <span class="keyword">특검 (2)</span>
+        </div>
+    </div>
+</body>
+</html>
