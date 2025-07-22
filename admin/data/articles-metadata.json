@@ -1,131 +1,183 @@
 [
   {
-    "id": "554bf19a4990",
-    "title": "尹, 아내 소환 통보날 “정치 탄압, 나 하나로 족하다”",
-    "created_at": "2025-07-22T17:11:55.405624",
-    "last_updated": "2025-07-22T17:11:55.405628",
+    "id": "526534704ccb",
+    "title": "[인사이드 스토리]쉰들러, '칼 든 우군'서 '조용한 이탈자'로 돌아섰나",
+    "created_at": "2025-07-22T17:28:31.055979",
+    "last_updated": "2025-07-22T17:28:31.055983",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11221,
-    "completion_tokens": 2237,
-    "total_tokens": 13458,
-    "cost_usd": 0.002017,
+    "prompt_tokens": 12510,
+    "completion_tokens": 2659,
+    "total_tokens": 15169,
+    "cost_usd": 0.002315,
     "tags": {
       "category_tags": [
-        "정치"
+        "경제"
       ],
       "content_tags": [
-        "윤석열",
-        "김건희",
-        "특검",
-        "소환 통보",
-        "정치 탄압",
-        "내란 혐의",
-        "수사",
-        "법적 절차",
-        "옥중 메시지",
-        "수사 반발"
+        "쉰들러",
+        "현대엘리베이터",
+        "지분매각",
+        "지배구조",
+        "시장 긴장",
+        "지분율",
+        "대법원 판결",
+        "배상 판결",
+        "경영권",
+        "재무구조",
+        "시장 유동성",
+        "경영권 공격",
+        "경영권 방어",
+        "전략적 결정",
+        "시장 영향력"
       ]
     },
     "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "8d4745697fed",
-    "title": "군 관계자 \"김용현 전 장관이 '무인기' 지시...군은 처음부터 반대\"",
-    "created_at": "2025-07-22T17:11:09.521891",
-    "last_updated": "2025-07-22T17:11:09.521896",
+    "id": "8e2461b65add",
+    "title": "강선우, '예산 징벌적 삭감' 요구했었다…임명 강행 수순",
+    "created_at": "2025-07-22T17:27:40.845256",
+    "last_updated": "2025-07-22T17:27:40.845261",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11221,
-    "completion_tokens": 2237,
-    "total_tokens": 13458,
-    "cost_usd": 0.002017,
+    "prompt_tokens": 12510,
+    "completion_tokens": 2659,
+    "total_tokens": 15169,
+    "cost_usd": 0.002315,
     "tags": {
       "category_tags": [
         "정치"
       ],
       "content_tags": [
-        "김용현 전 장관",
-        "무인기 지시",
-        "북한 무인기 침투",
-        "남포 무인기 보내기",
-        "군 내부 증언",
-        "책임 소재 논란",
-        "계엄 전",
-        "외환 의혹",
-        "북풍 의혹",
-        "군 전략적 모호성",
-        "여당과 야당 입장 차이",
-        "국가 안보",
-        "군 책임성",
-        "정치적 논란"
+        "강선우",
+        "여성가족부",
+        "예산 징벌적 삭감",
+        "예산 삭감 요구",
+        "2021년 예산심사",
+        "정영애 전 장관",
+        "갑질 의혹",
+        "임명 강행",
+        "여야 충돌",
+        "국민의힘",
+        "더불어민주당",
+        "청문회",
+        "정책 논란",
+        "예산 삭감 사실",
+        "폭로"
       ]
     },
     "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "896237cc4517",
-    "title": "송기호 국정상황실장, 임명 한달 만에 교체",
-    "created_at": "2025-07-22T17:10:33.758690",
-    "last_updated": "2025-07-22T17:10:33.758697",
+    "id": "f5774938e8e2",
+    "title": "'조사 안 받고 재판 안 나오더니…' 윤, 돌연 옥중 입장문",
+    "created_at": "2025-07-22T17:26:54.803721",
+    "last_updated": "2025-07-22T17:26:54.803725",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11075,
-    "completion_tokens": 2013,
-    "total_tokens": 13088,
-    "cost_usd": 0.001913,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "송기호",
-        "국정상황실장",
-        "임명 교체",
-        "인사 논란",
-        "대통령실 인사 이동",
-        "경제안보",
-        "대미 관세 협상",
-        "강유정 대변인",
-        "김정우",
-        "야권 의혹"
-      ]
-    },
-    "api_calls": 4,
-    "version_count": 2
-  },
-  {
-    "id": "b560a7e025ee",
-    "title": "부인 소환하자 낸 옥중 입장…국힘서도 \"왜 이제 와서?\"",
-    "created_at": "2025-07-22T17:09:45.082972",
-    "last_updated": "2025-07-22T17:09:45.082977",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 11356,
-    "completion_tokens": 2828,
-    "total_tokens": 14184,
-    "cost_usd": 0.002267,
+    "prompt_tokens": 11693,
+    "completion_tokens": 2496,
+    "total_tokens": 14189,
+    "cost_usd": 0.002168,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
         "윤석열",
-        "김건희",
         "옥중 입장문",
-        "정치적 탄압",
-        "수사 논란",
+        "정치 탄압",
+        "법적 공방",
+        "구속",
+        "계엄 위법",
+        "헌법재판소",
+        "김계환 전 해병대 사령관",
+        "격노설",
+        "명예 훼손",
+        "구속영장",
+        "공직자 명예 훼손 혐의",
+        "법정 증언",
+        "정치적 음모"
+      ]
+    },
+    "api_calls": 4,
+    "version_count": 2
+  },
+  {
+    "id": "d96fb1859cfa",
+    "title": "가평 캠핑장 참변 가족 수색 사흘째…실종자 수색·복구 총력전",
+    "created_at": "2025-07-22T17:26:04.340298",
+    "last_updated": "2025-07-22T17:26:04.340308",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11931,
+    "completion_tokens": 2796,
+    "total_tokens": 14727,
+    "cost_usd": 0.002312,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "가평 캠핑장 참변",
+        "실종자 수색",
+        "폭우 사고",
+        "수색 작업",
+        "안전 조치 미흡",
+        "캠핑장 관리 부실",
+        "안전경보 미작동",
+        "잔해물 유속",
+        "기상 조건",
+        "수색 지연",
+        "전기·통신 복구",
+        "경찰 수색",
+        "가평군 당국",
+        "사고 책임 논란",
+        "실종자 가족"
+      ]
+    },
+    "api_calls": 4,
+    "version_count": 2
+  },
+  {
+    "id": "466d3503fa2a",
+    "title": "[사설] 유튜버 한 명에 휘둘리는 국힘",
+    "created_at": "2025-07-22T17:25:22.269467",
+    "last_updated": "2025-07-22T17:25:22.269471",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11029,
+    "completion_tokens": 2162,
+    "total_tokens": 13191,
+    "cost_usd": 0.001968,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
         "국민의힘",
-        "소환 통보",
+        "유튜버 전한길",
+        "윤석열",
+        "계엄 12·3",
+        "탄핵 부당 주장",
+        "당내 갈등",
+        "송언석",
+        "조사 지시",
+        "이재명",
+        "대장동",
+        "강선우",
+        "여성가족부 장관 후보자",
+        "정치적 영향력",
         "당내 분열",
-        "전한길 의원",
-        "정치권 긴장"
+        "정당성 논란"
       ]
     },
     "api_calls": 4,
@@ -1680,6 +1732,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_171110",
+    "title": "군 관계자 \"김용현 전 장관이 '무인기' 지시...군은 처음부터 반대\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_184440",
     "title": "동탄 신도시에 1만3000평 규모 종합병원 들어선다",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -1754,6 +1824,24 @@
   {
     "id": "20250722_162522",
     "title": "[르포] \"쿠폰 특수 기대\", \"늘어봤자\" 소비쿠폰에 사장님들 기대반 우려반",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_170945",
+    "title": "부인 소환하자 낸 옥중 입장…국힘서도 \"왜 이제 와서?\"",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -2220,6 +2308,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_171034",
+    "title": "송기호 국정상황실장, 임명 한달 만에 교체",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_125559",
     "title": "여친 하반신 마비 됐는데…사고 낸 남친은 결혼하자더니 잠적",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -2438,6 +2544,24 @@
   {
     "id": "20250722_181914",
     "title": "국민들 폭발하고 李도 '버럭'‥'야유회 춤판' 시장님 \"사과\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171156",
+    "title": "尹, 아내 소환 통보날 “정치 탄압, 나 하나로 족하다”",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
