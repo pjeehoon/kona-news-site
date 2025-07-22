@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‘방 비번도 알려주고, 계약서도 썼는데’···당근마켓 부동산 사기 주의보 - 2025-07-22 17:28:53</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>‘방 비번도 알려주고, 계약서도 썼는데’···당근마켓 부동산 사기 주의보</h1>
+            <p>
+                분석 시간: 2025-07-22 17:28:53
+                
+            </p>
+        </div>
+        
+        <div class="meta">
+            <h3>📝 세 줄 요약</h3>
+            <p>요약을 생성하는 중 오류가 발생했습니다.</p>
+        </div>
+        
+        <div class="article-content">
+<h2 style="font-size: 1.8rem; margin-bottom: 30px; color: #212529;">‘당근마켓 부동산 사기 조직, 허위 매물·계약금 편취·집 비밀번호 변경 등 체계적 범행’ 경찰 수사 확대</h2>
+<p>2025년 7월 22일, 경찰은 당근마켓을 이용한 부동산 사기 조직의 실체를 공개하며, 피해자 51명에 달하는 피해금액이 3억 5000만원에 이른다고 밝혔다. 범행은 2월부터 6월까지 서울 강서구와 인천 등 수도권 일대에서 집중적으로 벌어졌으며, 조직은 허위 매물 게시와 함께 집 비밀번호를 바꾸고 연락이 끊어지는 수법으로 피해를 확산시키고 있다.</p>
+<h3>논란의 구체적 내용</h3>
+<p>조선일보에 따르면, 이번 사건의 핵심 인물인 A씨는 당근마켓에 허위 부동산 매물을 올리고 계약금을 편취하는 범죄를 저지른 것으로 드러났다. 피해자들은 계약 후 집 출입문 비밀번호를 알려주거나 집주인 주민등록증을 위조하는 수법으로 피해를 입었으며, 피해 규모는 최소 51명, 피해금액은 3억 5000만원에 달한다. 이 범죄는 2월부터 시작되어 6월까지 계속되었으며, 서울 강서구와 서남권, 인천 지역에서 집중적으로 발생한 것으로 조사됐다.</p>
+<p>▶ 새로운 사실: 경찰 수사 결과, **A씨는 집 비밀번호를 확보하기 위해 실시간으로 거래 매물의 비밀번호를 제공받는 수법을 사용한 것으로 확인되었다**. 또한, 피해자들이 계약 후 집 비밀번호를 바꾸거나 연락이 두절되는 일이 반복되어, 조직의 체계적 범행임이 드러났다.</p>
+<p>B씨는 A씨와 함께 허위 매물 사기 조직의 말단 행동책으로 검찰에 송치되었으며, 휴대전화 포렌식을 통해 추가 피해자와 피해금액이 더 늘어날 가능성도 제기되고 있다. 조직의 총책은 대화방에서 지시를 내리고, 거래 매물과 비밀번호를 실시간으로 제공하는 등 체계적인 운영을 하고 있는 것으로 밝혀졌다. 경찰은 이들이 자금 세탁 등 불법 행위와 연계되어 있다고 보고 엄중히 수사 중이다.</p>
+<h3>당사자들의 해명과 입장</h3>
+<p>A씨는 경찰 수사 중임을 알리면서도 아직 공식 해명은 하지 않고 있으며, B씨 역시 수사 진행 중이라는 입장만 밝힌 상태다. 경찰 관계자는 “범행 수법이 매우 정교하며, 조직적이고 체계적임이 드러났다”고 평가하면서도, 아직 범행의 전모를 파악하기 위해 수사를 계속하고 있다고 전했다.</p>
+<p>▶ 새로운 입장: A씨와 B씨는 각각의 혐의에 대해 “수사 중”이라는 입장을 고수하고 있으며, 구체적인 해명은 아직 나오지 않고 있다.</p>
+<h3>사실 vs 의혹 구분</h3>
+<p>확인된 사실은, 당근마켓에 허위 부동산 매물이 게시되었으며, 계약금 편취와 집 비밀번호 변경이 반복되었다는 점이다. 피해자 수와 피해금액, 범행 기간, 조직의 최소 인원수도 경찰 발표를 통해 확정되었다. 그러나, 집 비밀번호 확보 방법의 구체적 수단, 조직의 전체 역할 분담, 자금 세탁 조직의 상세 구조 등은 아직 의혹 단계에 있으며, 추가 수사를 통해 밝혀질 예정이다.</p>
+<h3>전문가 및 정치권 반응</h3>
+<p>경찰 관계자는 “범행 수법이 매우 정교하며, 조직적이고 체계적”이라며 강력한 수사 의지를 표명했다. 언론사 전문가들은 이번 사건이 온라인 부동산 거래의 안전성 문제를 다시 한 번 부각시키며, 사기 조직의 기술적 수법이 발전하고 있음을 보여준다고 분석한다. 시민사회는 온라인 거래의 신뢰성 확보와 피해 예방을 위한 제도적 개선이 시급하다고 지적한다.</p>
+<p>여야 정치권은 이번 사건의 엄중한 수사와 함께, 온라인 부동산 거래 관련 법률 강화 방안을 검토 중이다. 특히, 허위 매물 게시와 계약금 편취 방지책 마련이 필요하다는 목소리가 높아지고 있다.</p>
+<h3>향후 전망과 시사점</h3>
+<p>이번 사건은 온라인 부동산 거래의 안전성을 강화하는 정책적 필요성을 다시 한 번 일깨운다. 정부는 이미 부동산 거래 안전 가이드라인을 강화하는 방안을 검토 중이며, 경찰은 조직의 실체를 명확히 밝혀내어 엄벌에 처할 방침이다. 국민들은 온라인 거래 시 신뢰할 수 있는 플랫폼과 공인중개사 확인, 계약서 작성 시 반드시 신중을 기하는 자세가 요구된다.</p>
+<h3>YouTube 및 추가 정보</h3>
+<p>현재 관련 영상이나 추가 정보가 없습니다.</p>
+<h3>참고 사항</h3>
+<p>이번 사건은 부동산 사기 수법이 점차 조직화되고 기술화되고 있음을 보여주는 사례로, 온라인 부동산 거래의 안전성 확보와 법적 제도 정비가 시급하다는 점을 시사한다. 피해 예방을 위해서는 허위 매물에 대한 신속한 신고와, 계약 시 반드시 계약서 내용을 꼼꼼히 검토하는 것이 중요하다. 또한, 정부와 관련 기관은 온라인 거래의 투명성을 높이기 위한 정책 강화를 지속해야 할 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=bfXI8TlbSAM" target="_blank">이 문구가 있으면 사기 계약입니다. 이미 많은 분들이 ...</a><a href="https://www.youtube.com/watch?v=aEm3t_bDRVQ" target="_blank">아파트 매매계약 신종사기 주의보!</a><a href="https://www.youtube.com/watch?v=wpzG2Edt6dk" target="_blank">&quot;현 상태의 계약임&quot;  이거 꼭 넣어...</a><a href="https://www.youtube.com/watch?v=fPOrhtlO0a4" target="_blank">부동산 계약사기 베스트 5...부동산 거래할 때 주의하...</a><a href="https://www.youtube.com/watch?v=AUG74sOYagk" target="_blank">중도금 지급 이후에 계약파기를 할 수 있나요? ( 공인...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://www.khan.co.kr/article/202507221209001" target="_blank">'방 비번도 알려주고, 계약서도 썼는데'···당근마켓 ...</a><a href="https://v.daum.net/v/20250722121126558" target="_blank">'방 비번도 알려주고, 계약서도 썼는데'···당근마켓 ...</a><a href="https://www.hankookilbo.com/News/Read/201711062064259970" target="_blank">계약서 쓰길래 공인중개사인 줄 알았더니… 부동산 중개보...</a><a href="https://www.inews24.com/view/1862672" target="_blank">"토지거래허가 전 매매계약서 작성 안돼"⋯주의보 발령</a><a href="https://www.bizhankook.com/bk/article/14786" target="_blank">주식도 부동산도 암호화폐도 맘대로 시세조종 '뻥거래' ...</a>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+</body>
+</html>
