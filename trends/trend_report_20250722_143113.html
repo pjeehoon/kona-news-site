@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_143113</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 14:31:13</p>
+        <p>오후 주요 이슈 (14시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 25개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">확인</span> <span class="keyword">논란</span> <span class="keyword">속보</span> <span class="keyword">대통령</span> <span class="keyword">예산</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/032/0003384590?ntype=RANKING" target="_blank">박찬욱 ‘어쩔수가없다’ 베니스국제영화제 경쟁부문 초청···김기덕 ‘피에타’ 이후 13년만</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/032/0003384586?ntype=RANKING" target="_blank">국힘, ‘전광훈 정당서 출마’ 지영준 새 인권위원으로 추천 ‘논란’</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/032/0003384672?ntype=RANKING" target="_blank">내란 특검, ‘경향신문 등 단전·단수 지시 의혹’ 이상민 전 장관 25일 소환</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/032/0003384588?ntype=RANKING" target="_blank">[속보] 이 대통령, 가평·서산·예산·담양·산청·합천 ‘특별재난지역’ 선포</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/032/0003384671?ntype=RANKING" target="_blank">[속보]김계환 전 해병대사령관 구속영장 기각···법원 “도망·증거인멸 우려 인정 어려워”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/031/0000950636?ntype=RANKING" target="_blank">"항문 가려워 벅벅 긁었더니⋯전파력 강한 '기생충 알'이 한가득"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/031/0000950661?ntype=RANKING" target="_blank">"식사 전 '이 음식' 먹었더니⋯당뇨 싹 없어지고, 체중 쑥쑥 빠졌다!"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/031/0000950735?ntype=RANKING" target="_blank">"3일 뒤 돌아온다"던 딸, 日 병원 퇴원 후 한 달 가까이 '감감무소식'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/031/0000950910?ntype=RANKING" target="_blank">일본여행 중 한달 실종됐던 韓여성, 안전 확인⋯"현지 경찰 확인"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/031/0000950900?ntype=RANKING" target="_blank">소비쿠폰 받자마자 '당근' 거래?…"걸리면 큰일 나요"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/469/0000877480?ntype=RANKING" target="_blank">일본 여행 도중 한 달간 묘연했던 20대 한국인 여성 안전 확인</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/469/0000877477?ntype=RANKING" target="_blank">손주들 앞서 아들 총기 살해… 전문가들 "전처 향한 분노·자괴감 폭발한 듯"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/469/0000877471?ntype=RANKING" target="_blank">"이사 갔다고 5만원 더 못 받아요?" 민생쿠폰 혼란 계속</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/469/0000877462?ntype=RANKING" target="_blank">'바가지 논란' 울릉도 비계 삼겹살 정체는… "찌개용 앞다리살"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/469/0000877452?ntype=RANKING" target="_blank">비만치료제, 끊으면 어김없이 '요요' 온다... "중단 두 달 지나자 체중 증가"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/011/0004512058?ntype=RANKING" target="_blank">생일잔치 열어준 아들 왜 쐈나? '루머' 확산…"유명 에스테틱 대표 전처 소중한 것 노렸나"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/011/0004512305?ntype=RANKING" target="_blank">“온 동네에 소문 났다”…주말부부 휘말린 '불륜 스캔들' 전말은</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/011/0004511895?ntype=RANKING" target="_blank">“점심 같이 먹자고요? 왜요?”…말 못하던 신입사원이 달라졌다는데, 왜?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/011/0004512195?ntype=RANKING" target="_blank">"150만원짜리 폰이 6만원"…조용히 시작된 '할인 국지전'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/011/0004512308?ntype=RANKING" target="_blank">“청소년 요금은 일절 안받습니다”…전국 최초 대중교통 ‘완전 무료’ 내건 이곳</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/008/0005225271?ntype=RANKING" target="_blank">청와대 돌아오는 대통령, 애매해진 청와대재단…운명은</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/008/0005225142?ntype=RANKING" target="_blank">"찌개용 고기인데 잘못 팔아"…울릉도 '비계 삼겹살', 알고보니</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/008/0005225158?ntype=RANKING" target="_blank">'아나운서→CEO' 김소영 회사 매출 대박 나더니…70억 투자유치</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/008/0005225392?ntype=RANKING" target="_blank">'직장 내 괴롭힘' 숨진 영주시청 6급 공무원…동료 4명 檢송치</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/008/0005225121?ntype=RANKING" target="_blank">"내가 집주인, 나가라" 이사 하자마자 날벼락…51명이 당한 신종 사기</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/055/0001277467?ntype=RANKING" target="_blank">[자막뉴스] "150만 원 보내달라고 했는데…" 일본 여행 갔다 한 달째 실종된 20대 한국인</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/055/0001277579?ntype=RANKING" target="_blank">[단독] 한국에 일하러 왔다 날벼락…인신매매 인정됐다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/055/0001277571?ntype=RANKING" target="_blank">'조사 안 받고 재판 안 나오더니…' 윤, 돌연 옥중 입장문</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/055/0001277574?ntype=RANKING" target="_blank">"입소문 타고 퍼졌다"…불법인데 27억 원 팔린 앱 결국</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/055/0001277594?ntype=RANKING" target="_blank">강선우, '예산 징벌적 삭감' 요구했었다…임명 강행 수순</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            박찬욱 ‘어쩔수가없다’ 베니스국제영화제 경쟁부문 초청···김기덕 ‘피에타’ 이후 13년만
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            국힘, ‘전광훈 정당서 출마’ 지영준 새 인권위원으로 추천 ‘논란’
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            내란 특검, ‘경향신문 등 단전·단수 지시 의혹’ 이상민 전 장관 25일 소환
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] 이 대통령, 가평·서산·예산·담양·산청·합천 ‘특별재난지역’ 선포
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보]김계환 전 해병대사령관 구속영장 기각···법원 “도망·증거인멸 우려 인정 어려워”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "항문 가려워 벅벅 긁었더니⋯전파력 강한 '기생충 알'이 한가득"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "식사 전 '이 음식' 먹었더니⋯당뇨 싹 없어지고, 체중 쑥쑥 빠졌다!"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "3일 뒤 돌아온다"던 딸, 日 병원 퇴원 후 한 달 가까이 '감감무소식'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            일본여행 중 한달 실종됐던 韓여성, 안전 확인⋯"현지 경찰 확인"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            소비쿠폰 받자마자 '당근' 거래?…"걸리면 큰일 나요"
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            생일잔치 열어준 아들 왜 쐈나? '루머' 확산…"유명 에스테틱 대표 전처 소중한 것 노렸나"
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            “온 동네에 소문 났다”…주말부부 휘말린 '불륜 스캔들' 전말은
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            “점심 같이 먹자고요? 왜요?”…말 못하던 신입사원이 달라졌다는데, 왜?
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            "150만원짜리 폰이 6만원"…조용히 시작된 '할인 국지전'
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            “청소년 요금은 일절 안받습니다”…전국 최초 대중교통 ‘완전 무료’ 내건 이곳
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            청와대 돌아오는 대통령, 애매해진 청와대재단…운명은
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "찌개용 고기인데 잘못 팔아"…울릉도 '비계 삼겹살', 알고보니
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '아나운서→CEO' 김소영 회사 매출 대박 나더니…70억 투자유치
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '직장 내 괴롭힘' 숨진 영주시청 6급 공무원…동료 4명 檢송치
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "내가 집주인, 나가라" 이사 하자마자 날벼락…51명이 당한 신종 사기
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [자막뉴스] "150만 원 보내달라고 했는데…" 일본 여행 갔다 한 달째 실종된 20대 한국인
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] 한국에 일하러 왔다 날벼락…인신매매 인정됐다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '조사 안 받고 재판 안 나오더니…' 윤, 돌연 옥중 입장문
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "입소문 타고 퍼졌다"…불법인데 27억 원 팔린 앱 결국
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            강선우, '예산 징벌적 삭감' 요구했었다…임명 강행 수순
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">확인 (3)</span> <span class="keyword">논란 (2)</span> <span class="keyword">속보 (2)</span> <span class="keyword">대통령 (2)</span> <span class="keyword">예산 (2)</span> <span class="keyword">체중 (2)</span> <span class="keyword">여성 (2)</span> <span class="keyword">안전 (2)</span> <span class="keyword">일본 (2)</span> <span class="keyword">여행 (2)</span> <span class="keyword">20 (2)</span> <span class="keyword">한국인 (2)</span> <span class="keyword">아들 (2)</span> <span class="keyword">전처 (2)</span> <span class="keyword">이사 (2)</span>
+        </div>
+    </div>
+</body>
+</html>
