@@ -1,183 +1,137 @@
 [
   {
-    "id": "526534704ccb",
-    "title": "[인사이드 스토리]쉰들러, '칼 든 우군'서 '조용한 이탈자'로 돌아섰나",
-    "created_at": "2025-07-22T17:28:31.055979",
-    "last_updated": "2025-07-22T17:28:31.055983",
+    "id": "ba7b0e989929",
+    "title": "쇼핑몰까지 사용 OK… 지역 상권 ‘기대반 우려반’ [현장, 그곳&]",
+    "created_at": "2025-07-22T17:36:00.779452",
+    "last_updated": "2025-07-22T17:36:00.779456",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 12510,
-    "completion_tokens": 2659,
-    "total_tokens": 15169,
-    "cost_usd": 0.002315,
+    "prompt_tokens": 11312,
+    "completion_tokens": 2408,
+    "total_tokens": 13720,
+    "cost_usd": 0.002094,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "지역 상권",
+        "전통시장",
+        "쇼핑몰",
+        "소비쿠폰",
+        "수원특례시",
+        "의왕시",
+        "대형마트",
+        "골목상권 침체 우려",
+        "상인 반발",
+        "소비쿠폰 차별",
+        "정부 정책",
+        "상권 불균형",
+        "유동인구 증가",
+        "소비쿠폰 활용 차이",
+        "정책 보완 필요"
+      ]
+    },
+    "api_calls": 4,
+    "version_count": 2
+  },
+  {
+    "id": "6e457ba3ae9b",
+    "title": "출고가 164만원 플립7이 9만원…단통법 폐지 첫날 '성지' 가보니 [팩플]",
+    "created_at": "2025-07-22T17:35:13.576951",
+    "last_updated": "2025-07-22T17:35:13.576955",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11312,
+    "completion_tokens": 2408,
+    "total_tokens": 13720,
+    "cost_usd": 0.002094,
     "tags": {
       "category_tags": [
         "경제"
       ],
       "content_tags": [
-        "쉰들러",
-        "현대엘리베이터",
-        "지분매각",
-        "지배구조",
-        "시장 긴장",
-        "지분율",
-        "대법원 판결",
-        "배상 판결",
-        "경영권",
-        "재무구조",
-        "시장 유동성",
-        "경영권 공격",
-        "경영권 방어",
-        "전략적 결정",
-        "시장 영향력"
+        "단통법 폐지",
+        "가격 폭락",
+        "갤럭시Z 플립7",
+        "지원금 부정 지원",
+        "시장 혼란",
+        "통신사 경쟁",
+        "지원금 경쟁",
+        "알뜰폰 시장",
+        "유통점",
+        "정부 규제"
       ]
     },
     "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "8e2461b65add",
-    "title": "강선우, '예산 징벌적 삭감' 요구했었다…임명 강행 수순",
-    "created_at": "2025-07-22T17:27:40.845256",
-    "last_updated": "2025-07-22T17:27:40.845261",
+    "id": "e5b136807d52",
+    "title": "인천 총기 유족 “이혼 탓 아냐, 며느리·손자도 해치려 해”[전문]",
+    "created_at": "2025-07-22T17:33:39.605239",
+    "last_updated": "2025-07-22T17:33:39.605243",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 12510,
-    "completion_tokens": 2659,
-    "total_tokens": 15169,
-    "cost_usd": 0.002315,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "강선우",
-        "여성가족부",
-        "예산 징벌적 삭감",
-        "예산 삭감 요구",
-        "2021년 예산심사",
-        "정영애 전 장관",
-        "갑질 의혹",
-        "임명 강행",
-        "여야 충돌",
-        "국민의힘",
-        "더불어민주당",
-        "청문회",
-        "정책 논란",
-        "예산 삭감 사실",
-        "폭로"
-      ]
-    },
-    "api_calls": 4,
-    "version_count": 2
-  },
-  {
-    "id": "f5774938e8e2",
-    "title": "'조사 안 받고 재판 안 나오더니…' 윤, 돌연 옥중 입장문",
-    "created_at": "2025-07-22T17:26:54.803721",
-    "last_updated": "2025-07-22T17:26:54.803725",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 11693,
-    "completion_tokens": 2496,
-    "total_tokens": 14189,
-    "cost_usd": 0.002168,
+    "prompt_tokens": 12203,
+    "completion_tokens": 3111,
+    "total_tokens": 15314,
+    "cost_usd": 0.002465,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "윤석열",
-        "옥중 입장문",
-        "정치 탄압",
-        "법적 공방",
-        "구속",
-        "계엄 위법",
-        "헌법재판소",
-        "김계환 전 해병대 사령관",
-        "격노설",
-        "명예 훼손",
-        "구속영장",
-        "공직자 명예 훼손 혐의",
-        "법정 증언",
-        "정치적 음모"
+        "인천 송도 사건",
+        "총기 살인",
+        "피의자 A씨",
+        "가정불화 부인",
+        "범행 동기 왜곡",
+        "무차별 공격",
+        "총기 및 폭발물 소지",
+        "아들 살해",
+        "신상 공개 반대",
+        "2차 피해 우려"
       ]
     },
     "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "d96fb1859cfa",
-    "title": "가평 캠핑장 참변 가족 수색 사흘째…실종자 수색·복구 총력전",
-    "created_at": "2025-07-22T17:26:04.340298",
-    "last_updated": "2025-07-22T17:26:04.340308",
+    "id": "c015e82385b3",
+    "title": "“내 옷이 불쾌해?” 비행기 탑승 거절당한 美여성, 항의하다 체포되기까지",
+    "created_at": "2025-07-22T17:32:24.425411",
+    "last_updated": "2025-07-22T17:32:24.425415",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11931,
-    "completion_tokens": 2796,
-    "total_tokens": 14727,
-    "cost_usd": 0.002312,
+    "prompt_tokens": 12023,
+    "completion_tokens": 2636,
+    "total_tokens": 14659,
+    "cost_usd": 0.002257,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "가평 캠핑장 참변",
-        "실종자 수색",
-        "폭우 사고",
-        "수색 작업",
-        "안전 조치 미흡",
-        "캠핑장 관리 부실",
-        "안전경보 미작동",
-        "잔해물 유속",
-        "기상 조건",
-        "수색 지연",
-        "전기·통신 복구",
-        "경찰 수색",
-        "가평군 당국",
-        "사고 책임 논란",
-        "실종자 가족"
-      ]
-    },
-    "api_calls": 4,
-    "version_count": 2
-  },
-  {
-    "id": "466d3503fa2a",
-    "title": "[사설] 유튜버 한 명에 휘둘리는 국힘",
-    "created_at": "2025-07-22T17:25:22.269467",
-    "last_updated": "2025-07-22T17:25:22.269471",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 11029,
-    "completion_tokens": 2162,
-    "total_tokens": 13191,
-    "cost_usd": 0.001968,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "국민의힘",
-        "유튜버 전한길",
-        "윤석열",
-        "계엄 12·3",
-        "탄핵 부당 주장",
-        "당내 갈등",
-        "송언석",
-        "조사 지시",
-        "이재명",
-        "대장동",
-        "강선우",
-        "여성가족부 장관 후보자",
-        "정치적 영향력",
-        "당내 분열",
-        "정당성 논란"
+        "미국 여성",
+        "복장 규정 강화",
+        "비행기 탑승 거부",
+        "체포 사건",
+        "마이애미 공항",
+        "스피릿 항공",
+        "부적절한 복장",
+        "노출 규제",
+        "승객 항의",
+        "인권 논란",
+        "규정 위반 논란",
+        "승객 차별",
+        "공항 경찰",
+        "반바지",
+        "민소매 티셔츠"
       ]
     },
     "api_calls": 4,
@@ -600,6 +554,24 @@
   {
     "id": "20250722_181649",
     "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172832",
+    "title": "[인사이드 스토리]쉰들러, '칼 든 우군'서 '조용한 이탈자'로 돌아섰나",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -1104,6 +1076,24 @@
   {
     "id": "20250722_165241",
     "title": "결혼 약속한 여친, 車사고로 ‘하반신 마비’…사고 낸 남친은 돌연 ‘잠적’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172523",
+    "title": "[사설] 유튜버 한 명에 휘둘리는 국힘",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -2128,6 +2118,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_172605",
+    "title": "가평 캠핑장 참변 가족 수색 사흘째…실종자 수색·복구 총력전",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_163945",
     "title": "\"그동안 왜 안 썼을까\"...폭염에 미국서도 양산 '유행'",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -2650,6 +2658,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_172655",
+    "title": "'조사 안 받고 재판 안 나오더니…' 윤, 돌연 옥중 입장문",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_162437",
     "title": "평당 1억 '헬리오시티' 따돌렸다...규제 이후 거래 1위 단지 보니 [부동산 아토즈]",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -2760,6 +2786,24 @@
   {
     "id": "20250722_193654",
     "title": "\"50만번 접었다 펴도 끄떡없어\"…폴드7, 방탄유리 원리 OLED 탑재",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172741",
+    "title": "강선우, '예산 징벌적 삭감' 요구했었다…임명 강행 수순",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
