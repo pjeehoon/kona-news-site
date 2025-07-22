@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_122141</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 12:21:41</p>
+        <p>점심시간 화제 (12시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">논란</span> <span class="keyword">방시혁</span> <span class="keyword">재난</span> <span class="keyword">단독</span> <span class="keyword">13</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/009/0005529114?ntype=RANKING" target="_blank">이번엔 방시혁·과즙세연…온라인 또 뒤집은 의정부고 패러디</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/009/0005529455?ntype=RANKING" target="_blank">“재난 상황에 무슨 휴가”…대통령실, 이진숙 여름휴가 신청 반려</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/009/0005529468?ntype=RANKING" target="_blank">[단독] 퇴직 후 인생 2막, 열자마자 망한다…5060 개인파산 역대 최대</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/009/0005529465?ntype=RANKING" target="_blank">“59㎡가 13억 찍었어요”...서울 동북권 뉴타운, 이제부턴 여기가 ‘대장주’</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/009/0005529469?ntype=RANKING" target="_blank">특검팀, ‘김건희 선물용’ 6천만원대 다이아 목걸이 영수증 확보…통일교 입장은?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/469/0000877414?ntype=RANKING" target="_blank">이 대통령, 재난 중 '음주가무' 구리시장 직격... "정신 나간 공직자 엄히 단속해야"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/469/0000877462?ntype=RANKING" target="_blank">'바가지 논란' 울릉도 비계 삼겹살 정체는… "찌개용 앞다리살"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/469/0000877477?ntype=RANKING" target="_blank">손주들 앞서 아들 총기 살해… 전문가들 "전처 향한 분노·자괴감 폭발한 듯"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/469/0000877452?ntype=RANKING" target="_blank">비만치료제, 끊으면 어김없이 '요요' 온다... "중단 두 달 지나자 체중 증가"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/469/0000877471?ntype=RANKING" target="_blank">"이사 갔다고 5만원 더 못 받아요?" 민생쿠폰 혼란 계속</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/277/0005626014?ntype=RANKING" target="_blank">의사, 건축가 다음이 회계사?…"AI 대체 불가능한 이유 있어"[K-INVESTORS]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/277/0005626382?ntype=RANKING" target="_blank">승무원 면접 보며 "기내 성적인 파티 참여했으면"…美 슈퍼리치들의 민낯</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/277/0005626444?ntype=RANKING" target="_blank">"남자친구가 운전한 차 탔다가 사고"…하반신 마비 얻은 여성의 사연</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/277/0005626240?ntype=RANKING" target="_blank">"무섭게 폭증"…벌써 135조 원 '돌파'한 중국, '고성장' 전망 AI산업</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/277/0005626388?ntype=RANKING" target="_blank">"이대로 가면 '4개 도시' 제외하고 소멸할 것"…日경제연구소 교수의 경고</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/023/0003918670?ntype=RANKING" target="_blank">[단독] 李대통령, 임명 한달만에 송기호 국정상황실장 교체</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/023/0003918645?ntype=RANKING" target="_blank">방시혁·과즙세연이 의정부고에 나타났다?...졸업사진 보니</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/023/0003918599?ntype=RANKING" target="_blank">“찌개용인데 잘못 줬다”… 울릉도 ‘비계 삼겹살’ 업주의 해명</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/023/0003918650?ntype=RANKING" target="_blank">前보위부 요원 “국정원 방송 보고 탈북 결심… 北에서 많이 봐”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/023/0003918672?ntype=RANKING" target="_blank">김건희 특검, ‘다이아 목걸이’ 영수증 확보</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/052/0002222979?ntype=RANKING" target="_blank">"갑질이 미담? 2차 가해"...국민의힘, 강선우 논란 맹폭</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/052/0002222983?ntype=RANKING" target="_blank">'북한 무인기' 덮으려 허위보고서?...'김용현 비선 보고' 의혹도</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/052/0002222972?ntype=RANKING" target="_blank">산사태에 고꾸라진 자동차..."수도·전기 다 끊겼다"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/052/0002222626?ntype=RANKING" target="_blank">"소비쿠폰 13만 원에 팝니다" 당근에 벌써...걸리면 '처벌'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/052/0002222981?ntype=RANKING" target="_blank">인사혁신처장, 과거 박원순 사건 '기획' 주장...자질 논란</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/648/0000038108?ntype=RANKING" target="_blank">아이폰도 이제 교통카드 되네…시기 절묘했지만 떨어지는 힘</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/648/0000038109?ntype=RANKING" target="_blank">[슬소생]자취생에게 '생선조림'을!…백설 '10분쿡'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/648/0000038105?ntype=RANKING" target="_blank">차기 여신협회장 하마평 솔솔…관료 3인 vs 카드사장 출신 3인</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/648/0000038089?ntype=RANKING" target="_blank">박스 좋아하는 고양이와 닮은 '코스피'...다시 박스권 가나</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/648/0000038088?ntype=RANKING" target="_blank">'부자 감세' 논란에 1년반 표류 ISA '드디어 빛 볼까'</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            ↑20
+            이번엔 방시혁·과즙세연…온라인 또 뒤집은 의정부고 패러디
+        </div>
+        
+        <div class="emerging">
+            ↑20
+            “재난 상황에 무슨 휴가”…대통령실, 이진숙 여름휴가 신청 반려
+        </div>
+        
+        <div class="emerging">
+            ↑20
+            [단독] 퇴직 후 인생 2막, 열자마자 망한다…5060 개인파산 역대 최대
+        </div>
+        
+        <div class="emerging">
+            ↑20
+            “59㎡가 13억 찍었어요”...서울 동북권 뉴타운, 이제부턴 여기가 ‘대장주’
+        </div>
+        
+        <div class="emerging">
+            ↑20
+            특검팀, ‘김건희 선물용’ 6천만원대 다이아 목걸이 영수증 확보…통일교 입장은?
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령, 재난 중 '음주가무' 구리시장 직격... "정신 나간 공직자 엄히 단속해야"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '바가지 논란' 울릉도 비계 삼겹살 정체는… "찌개용 앞다리살"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            손주들 앞서 아들 총기 살해… 전문가들 "전처 향한 분노·자괴감 폭발한 듯"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            비만치료제, 끊으면 어김없이 '요요' 온다... "중단 두 달 지나자 체중 증가"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "이사 갔다고 5만원 더 못 받아요?" 민생쿠폰 혼란 계속
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            의사, 건축가 다음이 회계사?…"AI 대체 불가능한 이유 있어"[K-INVESTORS]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            승무원 면접 보며 "기내 성적인 파티 참여했으면"…美 슈퍼리치들의 민낯
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "남자친구가 운전한 차 탔다가 사고"…하반신 마비 얻은 여성의 사연
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "무섭게 폭증"…벌써 135조 원 '돌파'한 중국, '고성장' 전망 AI산업
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "이대로 가면 '4개 도시' 제외하고 소멸할 것"…日경제연구소 교수의 경고
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] 李대통령, 임명 한달만에 송기호 국정상황실장 교체
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            방시혁·과즙세연이 의정부고에 나타났다?...졸업사진 보니
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “찌개용인데 잘못 줬다”… 울릉도 ‘비계 삼겹살’ 업주의 해명
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            前보위부 요원 “국정원 방송 보고 탈북 결심… 北에서 많이 봐”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            김건희 특검, ‘다이아 목걸이’ 영수증 확보
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            "갑질이 미담? 2차 가해"...국민의힘, 강선우 논란 맹폭
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            '북한 무인기' 덮으려 허위보고서?...'김용현 비선 보고' 의혹도
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            산사태에 고꾸라진 자동차..."수도·전기 다 끊겼다"
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            "소비쿠폰 13만 원에 팝니다" 당근에 벌써...걸리면 '처벌'
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            인사혁신처장, 과거 박원순 사건 '기획' 주장...자질 논란
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            아이폰도 이제 교통카드 되네…시기 절묘했지만 떨어지는 힘
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [슬소생]자취생에게 '생선조림'을!…백설 '10분쿡'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            차기 여신협회장 하마평 솔솔…관료 3인 vs 카드사장 출신 3인
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            박스 좋아하는 고양이와 닮은 '코스피'...다시 박스권 가나
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '부자 감세' 논란에 1년반 표류 ISA '드디어 빛 볼까'
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">논란 (3)</span> <span class="keyword">방시혁 (2)</span> <span class="keyword">재난 (2)</span> <span class="keyword">단독 (2)</span> <span class="keyword">13 (2)</span> <span class="keyword">김건희 (2)</span> <span class="keyword">다이아 (2)</span> <span class="keyword">목걸이 (2)</span> <span class="keyword">영수증 (2)</span> <span class="keyword">확보 (2)</span> <span class="keyword">대통령 (2)</span> <span class="keyword">울릉도 (2)</span> <span class="keyword">비계 (2)</span> <span class="keyword">삼겹살 (2)</span> <span class="keyword">AI (2)</span>
+        </div>
+    </div>
+</body>
+</html>
