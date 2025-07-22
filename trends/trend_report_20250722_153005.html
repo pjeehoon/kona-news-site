@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_153005</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 15:30:05</p>
+        <p>오후 주요 이슈 (15시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">대통령</span> <span class="keyword">음주가무</span> <span class="keyword">공직자</span> <span class="keyword">일본</span> <span class="keyword">여행</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/422/0000762401?ntype=RANKING" target="_blank">한국 여성, 일본 여행 중 사라져…병원 치료 뒤 한 달째 연락 두절</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/422/0000762455?ntype=RANKING" target="_blank">이 대통령 "폭우로 국민 죽어가는데…음주가무 공직자 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/422/0000762469?ntype=RANKING" target="_blank">폭우로 비상근무 중인데…야유회서 춤 추고 노래한 구리시장</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/422/0000762485?ntype=RANKING" target="_blank">'계엄 옹호' 강준욱, 이틀 만에 자진사퇴…강선우는 임명 수순</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/422/0000762464?ntype=RANKING" target="_blank">돌연변이 장마 진땀 뺀 기상청…신(新) 장마 시대 개념 바뀌나</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/025/0003456781?ntype=RANKING" target="_blank">아들은 만들고 엄마는 배달…12억어치 팔린 '수상한 약' 정체</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/025/0003456787?ntype=RANKING" target="_blank">일본 여행 간 딸 사라졌다…"엄마 150만원만" 통화 후 무슨 일이</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/025/0003456790?ntype=RANKING" target="_blank">李대통령 "재난 상황에 음주가무, 정신 나간 공직자 신상필벌"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/025/0003456801?ntype=RANKING" target="_blank">폭우 비상근무 중 춤판…구리시장 "전적으로 제 잘못" 고개 숙였다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/025/0003456561?ntype=RANKING" target="_blank">콘서트장서 불륜 들통난 CEO 잘렸지만…회사는 유명세 얻었다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/005/0001791225?ntype=RANKING" target="_blank">“열사병 치료 후 사라져”…일본 여행 한국인 여성 실종</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/005/0001791188?ntype=RANKING" target="_blank">‘벌집 제거’ 나선 소방차 10m 아래로 추락…소방관 3명 중상</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/005/0001791240?ntype=RANKING" target="_blank">이대통령 “국민 죽어간 현장서 음주가무 즐긴 정신나간 공직자 엄히 단속”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/005/0001791249?ntype=RANKING" target="_blank">72시간 골든타임 지나갔는데…경남 실종자 4명 오리무중</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/005/0001791239?ntype=RANKING" target="_blank">이 대통령 ‘대북송금’ 재판도 연기…형사재판 모두 중단</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/001/0015522175?ntype=RANKING" target="_blank">대통령실, '이진숙·강준욱 사퇴' 인사잡음 진화…姜고비 넘을까</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/001/0015521225?ntype=RANKING" target="_blank">[샷!] 암, 젊다고 방심하다가는…</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/001/0015521913?ntype=RANKING" target="_blank">생일잔치 열어준 아들 왜 쐈을까…추궁에도 "알려고 하지마"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/001/0015522156?ntype=RANKING" target="_blank">구리시장, 비상근무 중 야유회 참석 비판 일자 사과</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/001/0015522157?ntype=RANKING" target="_blank">'국제수학올림피아드 1위' 중국팀의 뇌성마비 고교생 '화제'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/437/0000449587?ntype=RANKING" target="_blank">이 대통령 "'재난에 음주가무' 정신 나간 공직자, 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/437/0000449386?ntype=RANKING" target="_blank">"그동안 왜 안 썼을까"...폭염에 미국서도 양산 '유행'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/437/0000449560?ntype=RANKING" target="_blank">정청래, '윤 옥중 페북'에 "망상 접고 감옥서 반성 여생 보내길"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/437/0000449585?ntype=RANKING" target="_blank">[단독]김용현 취임 2주만에 '합참-드론사' 무인기 작전 직보…"실패 아니니 힘내라" 전화도</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/437/0000449586?ntype=RANKING" target="_blank">[단독]'김건희 공천개입 연루' 김상민 전 검사 출국금지...'코인왕 존버킴' 일당과 연관성 수사중</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/052/0002222791?ntype=RANKING" target="_blank">강준욱 비서관, 자진 사퇴..."강선우 인청 보고서 오늘 재송부 요청"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/052/0002222756?ntype=RANKING" target="_blank">주말부터 대이동 시작...여름휴가 7월 26일∼8월 1일 '절정'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/052/0002222754?ntype=RANKING" target="_blank">소비쿠폰 첫날 698만 명 신청...오늘은 '출생연도 2·7' 가능</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/052/0002222793?ntype=RANKING" target="_blank">민주, '예산 갑질' 강선우 엄호...국민의힘 "2차 가해" 비판</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/052/0002222748?ntype=RANKING" target="_blank">홍준표 "국민의힘 복당 없다"...9월 초 복귀 시사</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            한국 여성, 일본 여행 중 사라져…병원 치료 뒤 한 달째 연락 두절
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령 "폭우로 국민 죽어가는데…음주가무 공직자 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            폭우로 비상근무 중인데…야유회서 춤 추고 노래한 구리시장
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '계엄 옹호' 강준욱, 이틀 만에 자진사퇴…강선우는 임명 수순
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            돌연변이 장마 진땀 뺀 기상청…신(新) 장마 시대 개념 바뀌나
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            아들은 만들고 엄마는 배달…12억어치 팔린 '수상한 약' 정체
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            일본 여행 간 딸 사라졌다…"엄마 150만원만" 통화 후 무슨 일이
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            李대통령 "재난 상황에 음주가무, 정신 나간 공직자 신상필벌"
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            폭우 비상근무 중 춤판…구리시장 "전적으로 제 잘못" 고개 숙였다
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            콘서트장서 불륜 들통난 CEO 잘렸지만…회사는 유명세 얻었다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “열사병 치료 후 사라져”…일본 여행 한국인 여성 실종
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            ‘벌집 제거’ 나선 소방차 10m 아래로 추락…소방관 3명 중상
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이대통령 “국민 죽어간 현장서 음주가무 즐긴 정신나간 공직자 엄히 단속”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            72시간 골든타임 지나갔는데…경남 실종자 4명 오리무중
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령 ‘대북송금’ 재판도 연기…형사재판 모두 중단
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            대통령실, '이진숙·강준욱 사퇴' 인사잡음 진화…姜고비 넘을까
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [샷!] 암, 젊다고 방심하다가는…
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            생일잔치 열어준 아들 왜 쐈을까…추궁에도 "알려고 하지마"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            구리시장, 비상근무 중 야유회 참석 비판 일자 사과
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '국제수학올림피아드 1위' 중국팀의 뇌성마비 고교생 '화제'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령 "'재난에 음주가무' 정신 나간 공직자, 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "그동안 왜 안 썼을까"...폭염에 미국서도 양산 '유행'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            정청래, '윤 옥중 페북'에 "망상 접고 감옥서 반성 여생 보내길"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독]김용현 취임 2주만에 '합참-드론사' 무인기 작전 직보…"실패 아니니 힘내라" 전화도
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독]'김건희 공천개입 연루' 김상민 전 검사 출국금지...'코인왕 존버킴' 일당과 연관성 수사중
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            강준욱 비서관, 자진 사퇴..."강선우 인청 보고서 오늘 재송부 요청"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            주말부터 대이동 시작...여름휴가 7월 26일∼8월 1일 '절정'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            소비쿠폰 첫날 698만 명 신청...오늘은 '출생연도 2·7' 가능
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            민주, '예산 갑질' 강선우 엄호...국민의힘 "2차 가해" 비판
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            홍준표 "국민의힘 복당 없다"...9월 초 복귀 시사
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">대통령 (4)</span> <span class="keyword">음주가무 (4)</span> <span class="keyword">공직자 (4)</span> <span class="keyword">일본 (3)</span> <span class="keyword">여행 (3)</span> <span class="keyword">엄히 (3)</span> <span class="keyword">단속 (3)</span> <span class="keyword">비상근무 (3)</span> <span class="keyword">구리시장 (3)</span> <span class="keyword">강준욱 (3)</span> <span class="keyword">여성 (2)</span> <span class="keyword">사라져 (2)</span> <span class="keyword">치료 (2)</span> <span class="keyword">폭우로 (2)</span> <span class="keyword">국민 (2)</span>
+        </div>
+    </div>
+</body>
+</html>
