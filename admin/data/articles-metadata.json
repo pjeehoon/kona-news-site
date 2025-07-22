@@ -1,175 +1,135 @@
 [
   {
-    "id": "94e0afb12101",
-    "title": "벌어서 다 줬는데…'월급 850만원' 남편의 하소연",
-    "created_at": "2025-07-22T13:39:16.269669",
-    "last_updated": "2025-07-22T13:39:16.269673",
+    "id": "0acee8bde352",
+    "title": "이 대통령, 가평, 서산·예산, 담양, 산청·합천 특별재난지역 선포",
+    "created_at": "2025-07-22T13:47:08.781242",
+    "last_updated": "2025-07-22T13:47:08.781246",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
-    "completion_tokens": 537,
-    "total_tokens": 2537,
-    "cost_usd": 0.0004148,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "가계 재정 논란",
-        "월급 850만원",
-        "가족 지출 구조",
-        "아내 불만",
-        "가계 부채",
-        "대출 이자",
-        "저축 내역",
-        "가정 내 기대 수준",
-        "온라인 커뮤니티",
-        "언론 보도"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "c8e5a4b6c57d",
-    "title": "[자막뉴스] \"150만 원 보내달라고 했는데…\" 일본 여행 갔다 한 달째 실종된 20대 한국인",
-    "created_at": "2025-07-22T13:38:27.751667",
-    "last_updated": "2025-07-22T13:38:27.751670",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 581,
-    "total_tokens": 2581,
-    "cost_usd": 0.0004324,
+    "completion_tokens": 456,
+    "total_tokens": 2456,
+    "cost_usd": 0.0003824,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "일본 여행",
-        "20대 한국인 실종",
-        "최 모 씨",
-        "도쿄",
-        "병원 치료",
+        "이재명 대통령",
+        "특별재난지역 선포",
+        "가평",
+        "서산",
+        "예산",
+        "담양",
+        "산청",
+        "합천",
+        "수해 복구",
+        "집중호우",
+        "산사태",
+        "피해 규모",
+        "현장 방문",
+        "정부 정책",
+        "재난 지원"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "0baa5b4a450b",
+    "title": "“재난 상황에 무슨 휴가”…대통령실, 이진숙 여름휴가 신청 반려",
+    "created_at": "2025-07-22T13:46:31.498670",
+    "last_updated": "2025-07-22T13:46:31.498674",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 588,
+    "total_tokens": 2588,
+    "cost_usd": 0.0004352,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "이진숙",
+        "방송통신위원장",
+        "여름휴가 신청",
+        "재난 상황",
+        "풍수해 위기경보 심각",
+        "대통령실 반려",
+        "재난 대응 체계",
+        "공무원 윤리",
+        "재난 상황 휴가 정책",
+        "국무회의",
+        "풍수해 피해"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "7e96b5551fc4",
+    "title": "“군대서 비극 경험”…장교 출신 최태원 차녀, 美서 창업한 이유",
+    "created_at": "2025-07-22T13:45:36.967852",
+    "last_updated": "2025-07-22T13:45:36.967855",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 651,
+    "total_tokens": 2651,
+    "cost_usd": 0.0004604,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "최태원",
+        "최민정",
+        "군 복무 비극",
+        "군 정신건강",
+        "미국 창업",
+        "인테그럴 헬스",
+        "정신건강 플랫폼",
+        "인공지능 심리상담",
+        "심리치료",
+        "비극 경험",
+        "군 내부 사건",
+        "심리적 충격",
+        "투자 유치",
+        "비영리 건강보험사",
+        "인디펜던트 헬스"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "37de458b4b91",
+    "title": "日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼",
+    "created_at": "2025-07-22T13:44:39.396072",
+    "last_updated": "2025-07-22T13:44:39.396076",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 576,
+    "total_tokens": 2576,
+    "cost_usd": 0.0004304,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "일본 도쿄",
+        "한국 여성",
         "열사병",
-        "금융 요청",
-        "송금 사기 의혹",
-        "가족 연락 두절",
-        "범죄 연루 부인",
-        "일본 경찰 조사",
-        "행방불명",
-        "실종 사건",
-        "한국인 여성",
-        "병원 목격자"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "fb7c8faaca6d",
-    "title": "오늘부터 폰 돈주면 호구?…“갤폴드7·갤S25 月10만원 이상 요금제만 가능, ‘공짜폰’ 힘들어” [투자360]",
-    "created_at": "2025-07-22T13:37:43.262583",
-    "last_updated": "2025-07-22T13:37:43.262587",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 562,
-    "total_tokens": 2562,
-    "cost_usd": 0.0004248,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "단통법 폐지",
-        "이동통신 시장",
-        "지원금 정책",
-        "가격 인상",
-        "삼성전자",
-        "갤럭시 Z 폴드7",
-        "갤럭시 S25",
-        "출고가",
-        "무게 경량화",
-        "기술 혁신",
-        "공짜폰 어려움",
-        "통신사 경쟁",
-        "시장 변화",
-        "규제 강화",
-        "소비자 선택권"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "88ec34126be2",
-    "title": "“아무도 모르던 회사, 세계가 다 알아” 전광판 불륜 들통에 뜻밖의 유명세",
-    "created_at": "2025-07-22T13:36:49.288385",
-    "last_updated": "2025-07-22T13:36:49.288389",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 505,
-    "total_tokens": 2505,
-    "cost_usd": 0.000402,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "콜드플레이",
-        "전광판 영상",
-        "CEO 불륜",
-        "앤디 바이런",
-        "크리스틴 캐벗",
-        "사임 발표",
-        "개인 사생활",
-        "기업 평판",
-        "브랜드 신뢰도",
-        "영국 보스턴",
-        "콘서트 현장",
-        "SNS 확산",
-        "영상 유포 논란",
-        "기업 이미지",
-        "주가 영향"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "983734da8f44",
-    "title": "‘캡틴’ 김동현, 팀 K리그 승선…뉴캐슬 상대 중원 지휘",
-    "created_at": "2025-07-22T13:35:59.278342",
-    "last_updated": "2025-07-22T13:35:59.278346",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 512,
-    "total_tokens": 2512,
-    "cost_usd": 0.00040480000000000003,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "김동현",
-        "강원FC",
-        "K리그 대표팀",
-        "뉴캐슬 유나이티드",
-        "친선경기",
-        "대표팀 발탁",
-        "팬 투표",
-        "선발 과정 논란",
-        "한국축구연맹",
-        "김판곤 감독",
-        "이정효 코치",
-        "축구 전문가 의견",
-        "공정성 논란",
-        "선수 선정 과정",
-        "국제 축구 경기"
+        "병원 치료",
+        "실종 신고",
+        "경찰 확인",
+        "대사관 안전확인",
+        "귀국 추정",
+        "여행객 안전",
+        "의료 후 관리"
       ]
     },
     "version_count": 2
@@ -553,6 +513,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_133600",
+    "title": "‘캡틴’ 김동현, 팀 K리그 승선…뉴캐슬 상대 중원 지휘",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_150835",
     "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -643,6 +621,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_133917",
+    "title": "벌어서 다 줬는데…'월급 850만원' 남편의 하소연",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_121955",
     "title": "“20년 전 이혼 뒤 열등감 가능성… 아내가 아낀 대상에 분노 표출”",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -681,6 +677,24 @@
   {
     "id": "20250722_183016",
     "title": "'김건희 국정농단' 특검 \"도주한 이기훈 삼부토건 부회장 체포영장 발부\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133650",
+    "title": "“아무도 모르던 회사, 세계가 다 알아” 전광판 불륜 들통에 뜻밖의 유명세",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -1221,6 +1235,24 @@
   {
     "id": "20250722_160218",
     "title": "\"완전 선 넘었다\" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133744",
+    "title": "오늘부터 폰 돈주면 호구?…“갤폴드7·갤S25 月10만원 이상 요금제만 가능, ‘공짜폰’ 힘들어” [투자360]",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -1851,6 +1883,24 @@
   {
     "id": "20250722_160234",
     "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133828",
+    "title": "[자막뉴스] \"150만 원 보내달라고 했는데…\" 일본 여행 갔다 한 달째 실종된 20대 한국인",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
