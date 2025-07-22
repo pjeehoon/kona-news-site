@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_122945</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 12:29:45</p>
+        <p>점심시간 화제 (12시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">아들</span> <span class="keyword">논란</span> <span class="keyword">60</span> <span class="keyword">송도</span> <span class="keyword">강선우</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/629/0000409551?ntype=RANKING" target="_blank">송도 총기 살해범, '약손명가' 대표인 전처(前妻)의 ‘소중한 것’ 노렸다[이슈클립]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/629/0000409484?ntype=RANKING" target="_blank">與 문진석, 강선우 갑질 논란에 "너무 가까워 거리낌 없이 심부름"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/629/0000409746?ntype=RANKING" target="_blank">폭우 비상 속 음주가무…김민석, 복무기강 긴급 점검 지시</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/629/0000409741?ntype=RANKING" target="_blank">최태원 차녀 민정 씨, 해군 전역 후 '정신건강 회사' 차린 이유는</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/629/0000409721?ntype=RANKING" target="_blank">아버지가 쏜 사제총기에 살해된 아들 부검…"총상으로 장기손상"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/001/0015523309?ntype=RANKING" target="_blank">日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/001/0015523231?ntype=RANKING" target="_blank">검찰, '쯔양 공갈 혐의' 구제역 항소심도 징역 4년 구형</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/001/0015522936?ntype=RANKING" target="_blank">인천 사제총기 아들 살해 사건 두고 루머 난무</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/001/0015523278?ntype=RANKING" target="_blank">가평·산청·서산·예산·담양·합천, 특별재난지역 선포(종합)</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/001/0015523209?ntype=RANKING" target="_blank">'公私 구분 모호' 의원-보좌진…姜논란 계기 관계재정립 목소리(종합)</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/055/0001277467?ntype=RANKING" target="_blank">"150만 원 보내달라고 했는데…" 일본 여행 갔다 한 달째 실종된 20대 한국인</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/055/0001277500?ntype=RANKING" target="_blank">아버지 사제총기에 살해된 아들 부검…"총상으로 장기 손상"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/055/0001277401?ntype=RANKING" target="_blank">버스정류장 옆에서 죽어간 70대…숨어있던 운전자 체포</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/055/0001277532?ntype=RANKING" target="_blank">주인 눈앞에서 대놓고 훔쳤다…추격전 끝 잡고 봤더니?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/055/0001277563?ntype=RANKING" target="_blank">산청 실종자 2명 숨진 채 발견…'더딘 복구'에 주민 고통</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/052/0002222979?ntype=RANKING" target="_blank">"갑질이 미담? 2차 가해"...국민의힘, 강선우 논란 맹폭</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/052/0002222983?ntype=RANKING" target="_blank">'북한 무인기' 덮으려 허위보고서?...'김용현 비선 보고' 의혹도</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/052/0002222972?ntype=RANKING" target="_blank">산사태에 고꾸라진 자동차..."수도·전기 다 끊겼다"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/052/0002222626?ntype=RANKING" target="_blank">"소비쿠폰 13만 원에 팝니다" 당근에 벌써...걸리면 '처벌'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/052/0002222981?ntype=RANKING" target="_blank">인사혁신처장, 과거 박원순 사건 '기획' 주장...자질 논란</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/421/0008385359?ntype=RANKING" target="_blank">"해군서 비극 겪어"…SK 최태원 차녀, 미국서 스타트업 설립 이유</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/421/0008384716?ntype=RANKING" target="_blank">軍마트도 난리나겠네…병사들은 '5년짜리' 소비쿠폰 받는다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/421/0008385954?ntype=RANKING" target="_blank">송도 총격 아버지 "폭발물에 잘 붙는 이불 덮어…직접 실험"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/421/0008385405?ntype=RANKING" target="_blank">"3억 빚 때문에" 수면제 먹여 30대 딸 살해한 60대 친모</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/421/0008386096?ntype=RANKING" target="_blank">[단독] 아들 총격범, 이혼 1년 전 성폭력 전과…징역형 집유</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/586/0000107889?ntype=RANKING" target="_blank">사제총기로 아들 살해한 60대 신상은…'오패산 성병대'는 공개</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/586/0000107871?ntype=RANKING" target="_blank">특검 'A급 지명수배' 이기훈 삼부토건 부회장 신병 확보에 총력전</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/586/0000107869?ntype=RANKING" target="_blank">이재명 대통령 5개 재판 모두 멈춤…'2030년 재개' 가능할까?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/586/0000107890?ntype=RANKING" target="_blank">[단독] 박찬대 "'검찰의 정치 관여 금지법' 추진…'실무형 리더' 필요한 시대"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/586/0000107845?ntype=RANKING" target="_blank">생일잔치 열어준 아들 총으로 쏜 60대…범행동기 묻자 "알려하지 말라"</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            송도 총기 살해범, '약손명가' 대표인 전처(前妻)의 ‘소중한 것’ 노렸다[이슈클립]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            與 문진석, 강선우 갑질 논란에 "너무 가까워 거리낌 없이 심부름"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            폭우 비상 속 음주가무…김민석, 복무기강 긴급 점검 지시
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            최태원 차녀 민정 씨, 해군 전역 후 '정신건강 회사' 차린 이유는
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            아버지가 쏜 사제총기에 살해된 아들 부검…"총상으로 장기손상"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            검찰, '쯔양 공갈 혐의' 구제역 항소심도 징역 4년 구형
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            인천 사제총기 아들 살해 사건 두고 루머 난무
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            가평·산청·서산·예산·담양·합천, 특별재난지역 선포(종합)
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '公私 구분 모호' 의원-보좌진…姜논란 계기 관계재정립 목소리(종합)
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            "150만 원 보내달라고 했는데…" 일본 여행 갔다 한 달째 실종된 20대 한국인
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            아버지 사제총기에 살해된 아들 부검…"총상으로 장기 손상"
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            버스정류장 옆에서 죽어간 70대…숨어있던 운전자 체포
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            주인 눈앞에서 대놓고 훔쳤다…추격전 끝 잡고 봤더니?
+        </div>
+        
+        <div class="emerging">
+            ↑15
+            산청 실종자 2명 숨진 채 발견…'더딘 복구'에 주민 고통
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            "갑질이 미담? 2차 가해"...국민의힘, 강선우 논란 맹폭
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            '북한 무인기' 덮으려 허위보고서?...'김용현 비선 보고' 의혹도
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            산사태에 고꾸라진 자동차..."수도·전기 다 끊겼다"
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            "소비쿠폰 13만 원에 팝니다" 당근에 벌써...걸리면 '처벌'
+        </div>
+        
+        <div class="emerging">
+            ↑5
+            인사혁신처장, 과거 박원순 사건 '기획' 주장...자질 논란
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "해군서 비극 겪어"…SK 최태원 차녀, 미국서 스타트업 설립 이유
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            軍마트도 난리나겠네…병사들은 '5년짜리' 소비쿠폰 받는다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            송도 총격 아버지 "폭발물에 잘 붙는 이불 덮어…직접 실험"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "3억 빚 때문에" 수면제 먹여 30대 딸 살해한 60대 친모
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] 아들 총격범, 이혼 1년 전 성폭력 전과…징역형 집유
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            사제총기로 아들 살해한 60대 신상은…'오패산 성병대'는 공개
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            특검 'A급 지명수배' 이기훈 삼부토건 부회장 신병 확보에 총력전
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이재명 대통령 5개 재판 모두 멈춤…'2030년 재개' 가능할까?
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] 박찬대 "'검찰의 정치 관여 금지법' 추진…'실무형 리더' 필요한 시대"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            생일잔치 열어준 아들 총으로 쏜 60대…범행동기 묻자 "알려하지 말라"
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">아들 (6)</span> <span class="keyword">논란 (3)</span> <span class="keyword">60 (3)</span> <span class="keyword">송도 (2)</span> <span class="keyword">강선우 (2)</span> <span class="keyword">최태원 (2)</span> <span class="keyword">차녀 (2)</span> <span class="keyword">사제총기에 (2)</span> <span class="keyword">살해된 (2)</span> <span class="keyword">부검 (2)</span> <span class="keyword">총상으로 (2)</span> <span class="keyword">20 (2)</span> <span class="keyword">사건 (2)</span> <span class="keyword">산청 (2)</span> <span class="keyword">종합 (2)</span>
+        </div>
+    </div>
+</body>
+</html>
