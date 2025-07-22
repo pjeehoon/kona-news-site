@@ -143,16 +143,35 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed;
         }
         th, td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         th {
             background: #f8f9fa;
             font-weight: 600;
         }
+        /* 열 너비 조정 */
+        th:nth-child(1), td:nth-child(1) { width: 110px; } /* 날짜 */
+        th:nth-child(2), td:nth-child(2) { 
+            width: 35%; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 0;
+        } /* 제목 */
+        th:nth-child(3), td:nth-child(3) { width: 25%; } /* 태그 */
+        th:nth-child(4), td:nth-child(4) { width: 60px; } /* 버전 */
+        th:nth-child(5), td:nth-child(5) { width: 50px; } /* 모델 */
+        th:nth-child(6), td:nth-child(6) { width: 80px; } /* P-T */
+        th:nth-child(7), td:nth-child(7) { width: 80px; } /* C-T */
+        th:nth-child(8), td:nth-child(8) { width: 80px; } /* 비용 */
         .version-badge {
             background: #17a2b8;
             color: white;
@@ -384,7 +403,7 @@
                         <th>M</th>
                         <th>P-T</th>
                         <th>C-T</th>
-                        <th>비용(¢)</th>
+                        <th>비용</th>
                     </tr>
                 </thead>
                 <tbody id="articlesTableBody">
@@ -403,6 +422,7 @@
         let topicStats = {};
         let selectedTags = new Set();
         let allTags = { category_tags: {}, content_tags: {} };
+        let USD_TO_KRW_RATE = 1400; // 기본값
 
         // SHA256 해시 함수
         async function sha256(message) {
@@ -446,6 +466,11 @@
         // 데이터 로드
         async function loadData() {
             try {
+                // 설정 로드
+                const configResponse = await fetch('data/config.json');
+                const config = await configResponse.json();
+                USD_TO_KRW_RATE = config.USD_TO_KRW_RATE || 1400;
+                
                 // 메타데이터 로드
                 const metadataResponse = await fetch('data/articles-metadata.json');
                 articlesData = await metadataResponse.json();
@@ -480,7 +505,7 @@
             document.getElementById('totalTokens').textContent = 
                 articlesData.reduce((sum, a) => sum + (a.total_tokens || 0), 0).toLocaleString();
             document.getElementById('totalCost').textContent = 
-                (articlesData.reduce((sum, a) => sum + (a.cost_usd || 0), 0) * 100).toFixed(1) + '¢';
+                '₩' + (articlesData.reduce((sum, a) => sum + (a.cost_usd || 0), 0) * USD_TO_KRW_RATE).toFixed(1);
             
             // 태그 수집
             collectAllTags();
@@ -628,7 +653,7 @@
                     <div class="topic-meta">
                         <span>버전: <strong>v${stats.latest_version}</strong></span>
                         <span>총 ${stats.count}개</span>
-                        <span>비용: ${(stats.total_cost * 100).toFixed(1)}¢</span>
+                        <span>비용: ₩${(stats.total_cost * USD_TO_KRW_RATE).toFixed(1)}</span>
                     </div>
                 `;
                 container.appendChild(div);
@@ -659,28 +684,32 @@
                 const moreContentTags = tags.content_tags.length > 3 ? 
                     `<span class="tag-info content-tag">+${tags.content_tags.length - 3}</span>` : '';
                 
-                // 날짜 포맷팅 (년도 제거)
+                // 날짜와 시간 포맷팅 (년도 제거, 시:분 추가)
                 let dateStr = '-';
                 if (article.last_updated) {
-                    const date = article.last_updated.split('T')[0];
-                    dateStr = date.substring(5); // YYYY-MM-DD에서 MM-DD만 추출
+                    const [date, time] = article.last_updated.split('T');
+                    const monthDay = date.substring(5); // MM-DD
+                    const hourMin = time.substring(0, 5); // HH:MM
+                    dateStr = `${monthDay} ${hourMin}`;
                 } else if (article.created_at) {
-                    const date = article.created_at.split('T')[0];
-                    dateStr = date.substring(5);
+                    const [date, time] = article.created_at.split('T');
+                    const monthDay = date.substring(5); // MM-DD
+                    const hourMin = time.substring(0, 5); // HH:MM
+                    dateStr = `${monthDay} ${hourMin}`;
                 }
                 
-                // 비용을 센트로 변환
-                const costInCents = article.cost_usd ? (article.cost_usd * 100).toFixed(1) : '-';
+                // 비용을 원화로 변환
+                const costInKRW = article.cost_usd ? (article.cost_usd * USD_TO_KRW_RATE).toFixed(1) : '-';
                 
                 row.innerHTML = `
                     <td>${dateStr}</td>
-                    <td>${article.title || '제목 없음'}</td>
+                    <td title="${article.title || '제목 없음'}">${article.title || '제목 없음'}</td>
                     <td>${categoryTags} ${contentTags} ${moreContentTags}</td>
                     <td>${versionBadge}</td>
                     <td>${article.model === 'gpt-4.1-nano' ? 'n' : (article.model || 'GPT-4')}</td>
                     <td>${(article.prompt_tokens || 0).toLocaleString()}</td>
                     <td>${(article.completion_tokens || 0).toLocaleString()}</td>
-                    <td class="cost">${costInCents !== '-' ? costInCents : '-'}</td>
+                    <td class="cost">${costInKRW !== '-' ? '₩' + costInKRW : '-'}</td>
                 `;
             });
         }
