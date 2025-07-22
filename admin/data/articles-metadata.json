@@ -1,5 +1,156 @@
 [
   {
+    "id": "30ba35586062",
+    "title": "대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
+    "created_at": "2025-07-22T15:09:53.569823",
+    "last_updated": "2025-07-22T18:55:44.938520",
+    "version": 2,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 475,
+    "total_tokens": 2475,
+    "cost_usd": 0.00039000000000000005,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "강선우",
+        "인사청문보고서",
+        "임명 절차",
+        "대통령실",
+        "국회"
+      ]
+    },
+    "version_count": 3
+  },
+  {
+    "id": "beb2ccb9a941",
+    "title": "\"韓 극단적 상황, 지역 대부분 소멸할 것\" 日 석학의 경고",
+    "created_at": "2025-07-22T18:55:29.092535",
+    "last_updated": "2025-07-22T18:55:29.092580",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 542,
+    "total_tokens": 2542,
+    "cost_usd": 0.00041680000000000005,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "인구감소",
+        "지방소멸",
+        "도시 집중화",
+        "한국 인구감소",
+        "일본 도시 축소",
+        "지방소멸대응기금",
+        "서울",
+        "청년 출산율",
+        "인구 구조 변화",
+        "모리 토모야",
+        "도시 역할 분담",
+        "지방 유출",
+        "한국 일본 인구 비교"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "0426530cb790",
+    "title": "동탄 신도시에 1만3000평 규모 종합병원 들어선다",
+    "created_at": "2025-07-22T18:44:39.831800",
+    "last_updated": "2025-07-22T18:44:39.831844",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 528,
+    "total_tokens": 2528,
+    "cost_usd": 0.0004112,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "화성동탄2 신도시",
+        "종합병원 건립",
+        "LH공사",
+        "병원 유치",
+        "민간사업자 공모",
+        "무상 건물 건축비",
+        "병상 수 300병상 이상",
+        "사업 재공모",
+        "지역 의료 수요",
+        "사업성 악화 우려"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "f31d3bdcf3a3",
+    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
+    "created_at": "2025-07-22T16:53:38.113049",
+    "last_updated": "2025-07-22T18:43:41.734232",
+    "version": 2,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 481,
+    "total_tokens": 2481,
+    "cost_usd": 0.0003924,
+    "tags": {
+      "category_tags": [
+        "사회",
+        "생활/문화"
+      ],
+      "content_tags": [
+        "의정부고 졸업사진",
+        "방시혁",
+        "권은비",
+        "BJ 과즙세연",
+        "백범 김구"
+      ]
+    },
+    "version_count": 3
+  },
+  {
+    "id": "cf36355368d8",
+    "title": "전북지사 완주로 이사 가는 날...\"멱살 잡고 잡히고 난장판\"",
+    "created_at": "2025-07-22T18:43:18.910518",
+    "last_updated": "2025-07-22T18:43:18.910549",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 569,
+    "total_tokens": 2569,
+    "cost_usd": 0.0004276,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "전북도지사 김관영",
+        "완주군 이사",
+        "지역 통합 논란",
+        "주민 충돌",
+        "몸싸움",
+        "완주군 행정복지센터",
+        "지역민 반대",
+        "주민투표",
+        "지역 갈등",
+        "재정 지원",
+        "지역 통합 추진",
+        "민심 극단화"
+      ]
+    },
+    "version_count": 2
+  },
+  {
     "id": "ba516fbfbf1d",
     "title": "李 대통령 대북송금 재판도 연기... 형사재판 모두 중단",
     "created_at": "2025-07-22T18:32:21.620324",
