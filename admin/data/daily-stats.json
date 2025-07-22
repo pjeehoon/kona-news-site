@@ -1,11 +1,19 @@
 {
   "2025-07-22": {
-    "articles": 62,
-    "versions": 6,
-    "total_tokens": 157908,
-    "prompt_tokens": 124000,
-    "completion_tokens": 33908,
-    "total_cost": 0.0259632
+    "articles": 66,
+    "versions": 7,
+    "total_tokens": 168010,
+    "prompt_tokens": 132000,
+    "completion_tokens": 36010,
+    "total_cost": 0.027603999999999993
+  },
+  "2025-07-21": {
+    "articles": 19,
+    "versions": 5,
+    "total_tokens": 50140,
+    "prompt_tokens": 38000,
+    "completion_tokens": 12140,
+    "total_cost": 0.008656
   },
   "2025-07-20": {
     "articles": 14,
@@ -14,13 +22,5 @@
     "prompt_tokens": 28000,
     "completion_tokens": 6306,
     "total_cost": 0.005322400000000001
-  },
-  "2025-07-21": {
-    "articles": 18,
-    "versions": 4,
-    "total_tokens": 47350,
-    "prompt_tokens": 36000,
-    "completion_tokens": 11350,
-    "total_cost": 0.008140000000000001
   }
 }

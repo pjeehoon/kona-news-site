@@ -1,5 +1,159 @@
 [
   {
+    "id": "ba516fbfbf1d",
+    "title": "李 대통령 대북송금 재판도 연기... 형사재판 모두 중단",
+    "created_at": "2025-07-22T18:32:21.620324",
+    "last_updated": "2025-07-22T18:32:21.620327",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 526,
+    "total_tokens": 2526,
+    "cost_usd": 0.0004104,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "이재명",
+        "대북송금",
+        "수원지법",
+        "형사재판 연기",
+        "쌍방울그룹",
+        "이화영",
+        "김성태",
+        "법원 일정 조정",
+        "법적 절차 중단",
+        "정치적 긴장",
+        "사법권 독립",
+        "헌법 제84조",
+        "재판 연기 이유",
+        "정치권 논란"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "68bdeec4dca5",
+    "title": "한동훈 \"전한길, 극우 프레임 아니라 극우 맞다\"",
+    "created_at": "2025-07-22T18:31:40.789693",
+    "last_updated": "2025-07-22T18:31:40.789703",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 488,
+    "total_tokens": 2488,
+    "cost_usd": 0.0003952,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "한동훈",
+        "전한길",
+        "극우 성향",
+        "극우 프레임",
+        "부정선거",
+        "계엄 옹호",
+        "부정선거 음모론",
+        "정치 논란",
+        "국민의힘",
+        "언론 보도"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "c1e80339d70a",
+    "title": "당근서 부동산 직거래했다가 계약금 3.5억 날렸다",
+    "created_at": "2025-07-22T18:30:59.644831",
+    "last_updated": "2025-07-22T18:30:59.644847",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 584,
+    "total_tokens": 2584,
+    "cost_usd": 0.0004336,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "당근마켓",
+        "부동산 허위 매물",
+        "계약금 사기",
+        "허위 매물 게시",
+        "계약금 3억5천만원",
+        "피해자 51명",
+        "경찰 구속",
+        "범죄 수법",
+        "개인정보 유출",
+        "음란물 유포 협박",
+        "온라인 부동산 거래 안전",
+        "범행 동기",
+        "허위 매물 유통 방지"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "be48ba5cc3d1",
+    "title": "'김건희 국정농단' 특검 \"도주한 이기훈 삼부토건 부회장 체포영장 발부\"",
+    "created_at": "2025-07-22T18:06:20.085364",
+    "last_updated": "2025-07-22T18:30:14.796691",
+    "version": 2,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 506,
+    "total_tokens": 2506,
+    "cost_usd": 0.0004024,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "사회"
+      ],
+      "content_tags": [
+        "김건희 국정농단",
+        "이기훈 삼부토건 부회장",
+        "체포영장",
+        "민중기 특검",
+        "조현상 부회장"
+      ]
+    },
+    "version_count": 3
+  },
+  {
+    "id": "1ece32bd7f09",
+    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
+    "created_at": "2025-07-21T21:09:14.387153",
+    "last_updated": "2025-07-22T18:29:57.980709",
+    "version": 2,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 790,
+    "total_tokens": 2790,
+    "cost_usd": 0.0005160000000000001,
+    "tags": {
+      "category_tags": [
+        "사회",
+        "IT/과학"
+      ],
+      "content_tags": [
+        "인천 송도 아파트 사건",
+        "사제 총기 살해",
+        "가족 폭력",
+        "무기 소지",
+        "정신 건강 조사"
+      ]
+    },
+    "version_count": 3
+  },
+  {
     "id": "b13b769d416b",
     "title": "국민들 폭발하고 李도 '버럭'‥'야유회 춤판' 시장님 \"사과\"",
     "created_at": "2025-07-22T18:19:10.206502",
@@ -1172,9 +1326,9 @@
     "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
-    "completion_tokens": 547,
-    "total_tokens": 2547,
-    "cost_usd": 0.00041880000000000004,
+    "completion_tokens": 546,
+    "total_tokens": 2546,
+    "cost_usd": 0.00041840000000000003,
     "tags": {
       "category_tags": [
         "사회"
@@ -2309,9 +2463,9 @@
     "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
-    "completion_tokens": 591,
-    "total_tokens": 2591,
-    "cost_usd": 0.0004364,
+    "completion_tokens": 590,
+    "total_tokens": 2590,
+    "cost_usd": 0.00043599999999999997,
     "tags": {
       "category_tags": [
         "사회"
