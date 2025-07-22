@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_163947</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 16:39:47</p>
+        <p>오후 주요 이슈 (16시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">대통령</span> <span class="keyword">소비쿠폰</span> <span class="keyword">지금뉴스</span> <span class="keyword">강선우</span> <span class="keyword">한국</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/056/0011993842?ntype=RANKING" target="_blank">이 대통령, 강선우 등 4명 청문보고서 24일까지 재송부 요청</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/056/0011993777?ntype=RANKING" target="_blank">“애들한테 고기 한 번 먹인다고” 이 대통령이 밝힌 소비쿠폰 취지 [지금뉴스]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/056/0011993775?ntype=RANKING" target="_blank">20대 한국 여성 일본 여행갔다 한 달 가까이 실종…경찰 “수소문 중” [지금뉴스]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/056/0011993776?ntype=RANKING" target="_blank">“주식·코인 사고 싶다”…소비쿠폰 중고거래 잇따르지만 [지금뉴스]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/056/0011993835?ntype=RANKING" target="_blank">‘VIP 격노설 부인’ 김계환 전 해병대사령관 구속 기로</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/011/0004511895?ntype=RANKING" target="_blank">“점심 같이 먹자고요? 왜요?”…말 못하던 신입사원이 달라졌다는데, 왜?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/011/0004512058?ntype=RANKING" target="_blank">생일잔치 열어준 아들 왜 쐈나? '루머' 확산…"유명 에스테틱 대표 전처 소중한 것 노렸나"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/011/0004512048?ntype=RANKING" target="_blank">李대통령 “재난에 음주가무 즐긴 정신나간 공직자 엄히 단속”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/011/0004511847?ntype=RANKING" target="_blank">"살 쭉쭉 빠지고 혈당도 떨어진다?"…일본인 매일 먹는 '이 반찬' 놀라운 효과</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/011/0004512128?ntype=RANKING" target="_blank">"매일 ‘치팅데이’ 즐겨도 살 안 찐다?"…기막힌 ‘비만 예방법’ 나왔다는데</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/047/0002481906?ntype=RANKING" target="_blank">대형로펌 곳곳에 포진한  '한덕수들'...고액연봉 받고 그들이 하는 일</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/047/0002481901?ntype=RANKING" target="_blank">달라진 김성태 측 "대북 송금, 이재명과 공범 관계 부인"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/047/0002481899?ntype=RANKING" target="_blank">유흥식 추기경 DMZ 방문 무산시킨 유엔사... 마음 콩밭에 가 있나 [김종성의 '히, 스토리']</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/047/0002481917?ntype=RANKING" target="_blank">강선우 감싼 문진석... 민주당 이소영 "동의 않는다", "차별적 논리"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/047/0002481919?ntype=RANKING" target="_blank">김장환 목사 등 압수수색에 '종교인 수사 절제' 논평...민주당은 왜?</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/214/0001437990?ntype=RANKING" target="_blank">[속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/214/0001437993?ntype=RANKING" target="_blank">'김건희 국정농단' 특검 "도주한 이기훈 삼부토건 부회장 체포영장 발부"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/214/0001437987?ntype=RANKING" target="_blank">"너무 썰렁하잖아‥한마디씩?" 새 장관들 '두근두근' 긴장 [현장영상]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/214/0001437995?ntype=RANKING" target="_blank">이 대통령, 재난 현장에서 "음주 가무 즐기는 정신 나간 공직자들 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/214/0001437952?ntype=RANKING" target="_blank">"완전 선 넘었다" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/015/0005161125?ntype=RANKING" target="_blank">방시혁-과즙세연, 의정부고에 떴다…이번에도 대박 조짐</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/015/0005161089?ntype=RANKING" target="_blank">'이거 사려고 한국 왔어요'…中 1020 몰려들더니 '초대박'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/015/0005161096?ntype=RANKING" target="_blank">최태원 차녀, 군대서 무슨 일 겪었길래…"충격받아 창업 결심"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/015/0005160915?ntype=RANKING" target="_blank">하루아침에 대출 다 갚은 치킨집 사장님…로또 된 줄 알았더니 [일확연금 노후부자]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/015/0005161130?ntype=RANKING" target="_blank">10억 넘던 송도 아파트, 3개월 만에…'무슨 일이야' 술렁</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/053/0000051264?ntype=RANKING" target="_blank">전한길 "이순신처럼 백의종군...우파의 개딸 만들겠다"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/053/0000051266?ntype=RANKING" target="_blank">[속보] 대통령실 "강준욱 국민통합비서관 자진 사퇴"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/053/0000051262?ntype=RANKING" target="_blank">당근에 올라온 소비쿠폰 "15만원 쿠폰 13만원에 팔아요"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/053/0000051258?ntype=RANKING" target="_blank">"정자, 난자도 이제 실험실에서 만든다"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/053/0000051260?ntype=RANKING" target="_blank">[현장] "사람부터 살려야지"... 괴물폭우 실종자 4명 수색 난항</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            ↑10
+            이 대통령, 강선우 등 4명 청문보고서 24일까지 재송부 요청
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            “애들한테 고기 한 번 먹인다고” 이 대통령이 밝힌 소비쿠폰 취지 [지금뉴스]
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            20대 한국 여성 일본 여행갔다 한 달 가까이 실종…경찰 “수소문 중” [지금뉴스]
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            “주식·코인 사고 싶다”…소비쿠폰 중고거래 잇따르지만 [지금뉴스]
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            ‘VIP 격노설 부인’ 김계환 전 해병대사령관 구속 기로
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            “점심 같이 먹자고요? 왜요?”…말 못하던 신입사원이 달라졌다는데, 왜?
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            생일잔치 열어준 아들 왜 쐈나? '루머' 확산…"유명 에스테틱 대표 전처 소중한 것 노렸나"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            李대통령 “재난에 음주가무 즐긴 정신나간 공직자 엄히 단속”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "살 쭉쭉 빠지고 혈당도 떨어진다?"…일본인 매일 먹는 '이 반찬' 놀라운 효과
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "매일 ‘치팅데이’ 즐겨도 살 안 찐다?"…기막힌 ‘비만 예방법’ 나왔다는데
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            대형로펌 곳곳에 포진한  '한덕수들'...고액연봉 받고 그들이 하는 일
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            달라진 김성태 측 "대북 송금, 이재명과 공범 관계 부인"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            유흥식 추기경 DMZ 방문 무산시킨 유엔사... 마음 콩밭에 가 있나 [김종성의 '히, 스토리']
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            강선우 감싼 문진석... 민주당 이소영 "동의 않는다", "차별적 논리"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            김장환 목사 등 압수수색에 '종교인 수사 절제' 논평...민주당은 왜?
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '김건희 국정농단' 특검 "도주한 이기훈 삼부토건 부회장 체포영장 발부"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "너무 썰렁하잖아‥한마디씩?" 새 장관들 '두근두근' 긴장 [현장영상]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령, 재난 현장에서 "음주 가무 즐기는 정신 나간 공직자들 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "완전 선 넘었다" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            방시혁-과즙세연, 의정부고에 떴다…이번에도 대박 조짐
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '이거 사려고 한국 왔어요'…中 1020 몰려들더니 '초대박'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            최태원 차녀, 군대서 무슨 일 겪었길래…"충격받아 창업 결심"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            하루아침에 대출 다 갚은 치킨집 사장님…로또 된 줄 알았더니 [일확연금 노후부자]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            10억 넘던 송도 아파트, 3개월 만에…'무슨 일이야' 술렁
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            전한길 "이순신처럼 백의종군...우파의 개딸 만들겠다"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] 대통령실 "강준욱 국민통합비서관 자진 사퇴"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            당근에 올라온 소비쿠폰 "15만원 쿠폰 13만원에 팔아요"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "정자, 난자도 이제 실험실에서 만든다"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [현장] "사람부터 살려야지"... 괴물폭우 실종자 4명 수색 난항
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">대통령 (3)</span> <span class="keyword">소비쿠폰 (3)</span> <span class="keyword">지금뉴스 (3)</span> <span class="keyword">강선우 (2)</span> <span class="keyword">한국 (2)</span> <span class="keyword">부인 (2)</span> <span class="keyword">엄히 (2)</span> <span class="keyword">단속 (2)</span> <span class="keyword">매일 (2)</span> <span class="keyword">수사 (2)</span> <span class="keyword">속보 (2)</span> <span class="keyword">특검 (2)</span> <span class="keyword">강준욱 (2)</span> <span class="keyword">사퇴 (2)</span> <span class="keyword">무슨 (2)</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_163730</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 16:37:30</p>
+        <p>오후 주요 이슈 (16시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">대통령</span> <span class="keyword">속보</span> <span class="keyword">구리시장</span> <span class="keyword">엄히</span> <span class="keyword">단속</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/214/0001437990?ntype=RANKING" target="_blank">[속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/214/0001437993?ntype=RANKING" target="_blank">'김건희 국정농단' 특검 "도주한 이기훈 삼부토건 부회장 체포영장 발부"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/214/0001437987?ntype=RANKING" target="_blank">"너무 썰렁하잖아‥한마디씩?" 새 장관들 '두근두근' 긴장 [현장영상]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/214/0001437995?ntype=RANKING" target="_blank">이 대통령, 재난 현장에서 "음주 가무 즐기는 정신 나간 공직자들 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/214/0001437952?ntype=RANKING" target="_blank">"완전 선 넘었다" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/088/0000960301?ntype=RANKING" target="_blank">"성공한 전처가 아끼는 아들 총격 살해…열등감 탓 계획 범행" 전문가 분석</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/088/0000960240?ntype=RANKING" target="_blank">'총기 살해' 60대 "아들이 엄마와 이혼 책임 내탓이라고"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/088/0000960335?ntype=RANKING" target="_blank">이소영, 같은 당 문진석 '직장갑질과 보좌진·의원 관계 다르다' 언급에 소신발언 "본질 같아"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/088/0000960310?ntype=RANKING" target="_blank">구리시장 "집중호우에 야유회 참석, 전적으로 잘못 인정"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/088/0000960372?ntype=RANKING" target="_blank">李 대통령, 강선우 등 4명 장관후보자 청문보고서 24일까지 재송부 요청</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/422/0000762401?ntype=RANKING" target="_blank">한국 여성, 일본 여행 중 사라져…병원 치료 뒤 한 달째 연락 두절</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/422/0000762555?ntype=RANKING" target="_blank">[속보] 경남 산청읍에서 70대 실종자 추가 발견…실종자 3명 남아</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/422/0000762455?ntype=RANKING" target="_blank">이 대통령 "폭우로 국민 죽어가는데…음주가무 공직자 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/422/0000762523?ntype=RANKING" target="_blank">김건희특검,  '집사게이트' 투자사 신한은행 등 내일 소환</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/422/0000762469?ntype=RANKING" target="_blank">폭우로 비상근무 중인데…야유회서 춤 추고 노래한 구리시장</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/018/0006071003?ntype=RANKING" target="_blank">"아들 때문에 산다"는 성공한 전처...'총기 살인' 60대 "알려고 하지마"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/018/0006070863?ntype=RANKING" target="_blank">"이상형이다, 술 한잔"…태권도 관장과 아내의 불륜 결국</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/018/0006071056?ntype=RANKING" target="_blank">[단독]또 '1.8점 감점'이 결정적?…현대重·한화오션, 이번엔 '수중전'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/018/0006070591?ntype=RANKING" target="_blank">"소비쿠폰 싸게 팔아요"…혹해서 당근 거래했다간</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/018/0006071054?ntype=RANKING" target="_blank">[속보]김건희특검 "23일 신한은행·경남스틸·JB우리캐피탈 조사"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/028/0002757317?ntype=RANKING" target="_blank">[단독] 김건희 6천만원 ‘다이아 목걸이’ 영수증, 통일교 본부서 나왔다</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/028/0002757291?ntype=RANKING" target="_blank">이 대통령 “정신 나간 공직자”…폭우에도 야유회 구리시장 겨눴나</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/028/0002757318?ntype=RANKING" target="_blank">구속 기로 김계환, 뒤늦게 “누군가로부터 VIP 격노설 들어”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/028/0002757350?ntype=RANKING" target="_blank">[속보] 이 대통령, 강선우 임명 강행…“24일까지 청문보고서 달라”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/028/0002757319?ntype=RANKING" target="_blank">‘폭우 중 야유회’ 뭇매 맞고 고개 숙인 구리시장…“음주는 안 했다”</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/421/0008384049?ntype=RANKING" target="_blank">청도서 집중호우로 급류 휩쓸린 60대, 고교 교사 2명이 구조</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/421/0008384352?ntype=RANKING" target="_blank">일본 여행 간 20대 韓여성 한달 째 실종…"150만원 보내" 마지막 통화</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/421/0008384611?ntype=RANKING" target="_blank">송도 총격범, 전처 소유 70평집 18년째 거주…가정불화 맞나(종합)</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/421/0008384694?ntype=RANKING" target="_blank">李대통령 "국민 죽어가는데 음주가무, 정신나간 공직자 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/421/0008384685?ntype=RANKING" target="_blank">李대통령 "어렵게 사는 사람들 소비쿠폰으로 애들 고기 먹인다 해"</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '김건희 국정농단' 특검 "도주한 이기훈 삼부토건 부회장 체포영장 발부"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "너무 썰렁하잖아‥한마디씩?" 새 장관들 '두근두근' 긴장 [현장영상]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령, 재난 현장에서 "음주 가무 즐기는 정신 나간 공직자들 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "완전 선 넘었다" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "성공한 전처가 아끼는 아들 총격 살해…열등감 탓 계획 범행" 전문가 분석
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '총기 살해' 60대 "아들이 엄마와 이혼 책임 내탓이라고"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이소영, 같은 당 문진석 '직장갑질과 보좌진·의원 관계 다르다' 언급에 소신발언 "본질 같아"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            구리시장 "집중호우에 야유회 참석, 전적으로 잘못 인정"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            李 대통령, 강선우 등 4명 장관후보자 청문보고서 24일까지 재송부 요청
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            한국 여성, 일본 여행 중 사라져…병원 치료 뒤 한 달째 연락 두절
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            [속보] 경남 산청읍에서 70대 실종자 추가 발견…실종자 3명 남아
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            이 대통령 "폭우로 국민 죽어가는데…음주가무 공직자 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            김건희특검,  '집사게이트' 투자사 신한은행 등 내일 소환
+        </div>
+        
+        <div class="emerging">
+            ↑10
+            폭우로 비상근무 중인데…야유회서 춤 추고 노래한 구리시장
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "아들 때문에 산다"는 성공한 전처...'총기 살인' 60대 "알려고 하지마"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "이상형이다, 술 한잔"…태권도 관장과 아내의 불륜 결국
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독]또 '1.8점 감점'이 결정적?…현대重·한화오션, 이번엔 '수중전'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "소비쿠폰 싸게 팔아요"…혹해서 당근 거래했다간
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보]김건희특검 "23일 신한은행·경남스틸·JB우리캐피탈 조사"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] 김건희 6천만원 ‘다이아 목걸이’ 영수증, 통일교 본부서 나왔다
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령 “정신 나간 공직자”…폭우에도 야유회 구리시장 겨눴나
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            구속 기로 김계환, 뒤늦게 “누군가로부터 VIP 격노설 들어”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] 이 대통령, 강선우 임명 강행…“24일까지 청문보고서 달라”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            ‘폭우 중 야유회’ 뭇매 맞고 고개 숙인 구리시장…“음주는 안 했다”
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            청도서 집중호우로 급류 휩쓸린 60대, 고교 교사 2명이 구조
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            일본 여행 간 20대 韓여성 한달 째 실종…"150만원 보내" 마지막 통화
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            송도 총격범, 전처 소유 70평집 18년째 거주…가정불화 맞나(종합)
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            李대통령 "국민 죽어가는데 음주가무, 정신나간 공직자 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            李대통령 "어렵게 사는 사람들 소비쿠폰으로 애들 고기 먹인다 해"
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">대통령 (7)</span> <span class="keyword">속보 (4)</span> <span class="keyword">구리시장 (4)</span> <span class="keyword">엄히 (3)</span> <span class="keyword">단속 (3)</span> <span class="keyword">60 (3)</span> <span class="keyword">야유회 (3)</span> <span class="keyword">공직자 (3)</span> <span class="keyword">특검 (2)</span> <span class="keyword">김건희 (2)</span> <span class="keyword">정신 (2)</span> <span class="keyword">나간 (2)</span> <span class="keyword">18 (2)</span> <span class="keyword">성공한 (2)</span> <span class="keyword">아들 (2)</span>
+        </div>
+    </div>
+</body>
+</html>
