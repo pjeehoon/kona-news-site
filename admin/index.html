@@ -355,10 +355,18 @@
             <canvas id="dailyCostChart"></canvas>
         </div>
 
-        <div class="chart-container donut-chart">
-            <h2>토큰 사용량 (Prompt vs Completion)</h2>
-            <div class="chart-wrapper">
-                <canvas id="tokenChart"></canvas>
+        <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+            <div class="chart-container donut-chart" style="flex: 1;">
+                <h2>토큰 사용량 기준</h2>
+                <div class="chart-wrapper">
+                    <canvas id="tokenChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container donut-chart" style="flex: 1;">
+                <h2>토큰 비용 기준</h2>
+                <div class="chart-wrapper">
+                    <canvas id="costChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -391,7 +399,7 @@
         <div class="articles-table">
             <h2>최근 기사 목록</h2>
             <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
-                ※ 이 페이지는 정적으로 생성됩니다. 삭제 기능은 추후 서버 연동 시 활성화됩니다.
+                ※ M: Model (모델), P-T: Prompt Tokens (프롬프트 토큰), C-T: Completion Tokens (완성 토큰), n: gpt-4.1-nano
             </p>
             <table>
                 <thead>
@@ -545,6 +553,7 @@
             // 차트 그리기
             drawDailyCostChart();
             drawTokenChart();
+            drawCostChart();
             
             // 주제별 통계 표시
             fillTopicStats();
@@ -656,7 +665,75 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((value / total) * 100).toFixed(1);
+                                    return `${label}: ${value.toLocaleString()} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 토큰 비용 차트
+        function drawCostChart() {
+            const ctx = document.getElementById('costChart').getContext('2d');
+            
+            // 각 기사별로 prompt와 completion 비용 계산
+            let totalPromptCost = 0;
+            let totalCompletionCost = 0;
+            
+            last30DaysArticles.forEach(article => {
+                const promptTokens = article.prompt_tokens || 0;
+                const completionTokens = article.completion_tokens || 0;
+                const totalCost = article.cost_usd || 0;
+                
+                // 총 비용과 토큰 수를 이용해 단가 역산
+                if (promptTokens + completionTokens > 0) {
+                    // 일반적으로 completion이 prompt보다 비싸므로 이를 고려한 비율 계산
+                    // GPT-4.1-nano 기준: prompt $0.0001/1K, completion $0.0004/1K
+                    const promptCost = (promptTokens / 1000) * 0.0001;
+                    const completionCost = (completionTokens / 1000) * 0.0004;
+                    
+                    totalPromptCost += promptCost;
+                    totalCompletionCost += completionCost;
+                }
+            });
+            
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Prompt 비용', 'Completion 비용'],
+                    datasets: [{
+                        data: [totalPromptCost, totalCompletionCost],
+                        backgroundColor: ['#4285f4', '#34a853']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((value / total) * 100).toFixed(1);
+                                    const krwValue = (value * USD_TO_KRW_RATE).toFixed(1);
+                                    return `${label}: ₩${krwValue} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
                 }
             });
         }
