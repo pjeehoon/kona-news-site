@@ -832,8 +832,8 @@
                     <td>${categoryTags} ${contentTags} ${moreContentTags}</td>
                     <td>${versionBadge}</td>
                     <td>${article.model === 'gpt-4.1-nano' ? 'n' : (article.model || 'GPT-4')}</td>
-                    <td>${(article.prompt_tokens || 0).toLocaleString()}</td>
-                    <td>${(article.completion_tokens || 0).toLocaleString()}</td>
+                    <td>${article.prompt_tokens ? article.prompt_tokens.toLocaleString() : '-'}</td>
+                    <td>${article.completion_tokens ? article.completion_tokens.toLocaleString() : '-'}</td>
                     <td class="cost">${costInKRW !== '-' ? '₩' + costInKRW : '-'}</td>
                 `;
             });
