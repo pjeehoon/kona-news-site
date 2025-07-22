@@ -1,19 +1,19 @@
 {
-  "2025-07-20": {
-    "articles": 6,
-    "versions": 3,
-    "total_tokens": 14565,
-    "prompt_tokens": 12000,
-    "completion_tokens": 2565,
-    "total_cost": 0.002226
-  },
   "2025-07-22": {
-    "articles": 6,
+    "articles": 10,
     "versions": 0,
-    "total_tokens": 15532,
-    "prompt_tokens": 12000,
-    "completion_tokens": 3532,
-    "total_cost": 0.0026128
+    "total_tokens": 25549,
+    "prompt_tokens": 20000,
+    "completion_tokens": 5549,
+    "total_cost": 0.0042196000000000004
+  },
+  "2025-07-20": {
+    "articles": 7,
+    "versions": 4,
+    "total_tokens": 17055,
+    "prompt_tokens": 14000,
+    "completion_tokens": 3055,
+    "total_cost": 0.002622
   },
   "2025-07-21": {
     "articles": 18,
