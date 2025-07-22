@@ -1,4 +1,12 @@
 {
+  "2025-07-20": {
+    "articles": 4,
+    "versions": 1,
+    "total_tokens": 9555,
+    "prompt_tokens": 8000,
+    "completion_tokens": 1555,
+    "total_cost": 0.001422
+  },
   "2025-07-21": {
     "articles": 18,
     "versions": 4,
@@ -14,13 +22,5 @@
     "prompt_tokens": 6000,
     "completion_tokens": 1704,
     "total_cost": 0.0012816
-  },
-  "2025-07-20": {
-    "articles": 3,
-    "versions": 0,
-    "total_tokens": 7080,
-    "prompt_tokens": 6000,
-    "completion_tokens": 1080,
-    "total_cost": 0.001032
   }
 }
