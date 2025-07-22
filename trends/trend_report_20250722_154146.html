@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 트렌드 분석 - 20250722_154146</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .trend-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+        .rank {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .emerging {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .new-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔥 실시간 트렌드 분석</h1>
+        <p>분석 시간: 2025-07-22 15:41:46</p>
+        <p>오후 주요 이슈 (15시)</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 트렌드 요약</h2>
+        <p>총 30개의 핫 이슈 감지</p>
+        <p>급상승 이슈: 30개</p>
+        <div>
+            <strong>TOP 키워드:</strong>
+            <span class="keyword">대통령</span> <span class="keyword">단독</span> <span class="keyword">셀트리온</span> <span class="keyword">사업</span> <span class="keyword">사상</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🏆 실시간 인기 뉴스</h2>
+        
+        <div class="trend-item">
+            <span class="rank">1</span>
+            <a href="https://n.news.naver.com/article/437/0000449587?ntype=RANKING" target="_blank">이 대통령 "'재난에 음주가무' 정신 나간 공직자, 엄히 단속"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">2</span>
+            <a href="https://n.news.naver.com/article/437/0000449386?ntype=RANKING" target="_blank">"그동안 왜 안 썼을까"...폭염에 미국서도 양산 '유행'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">3</span>
+            <a href="https://n.news.naver.com/article/437/0000449560?ntype=RANKING" target="_blank">정청래, '윤 옥중 페북'에 "망상 접고 감옥서 반성 여생 보내길"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">4</span>
+            <a href="https://n.news.naver.com/article/437/0000449585?ntype=RANKING" target="_blank">[단독]김용현 취임 2주만에 '합참-드론사' 무인기 작전 직보…"실패 아니니 힘내라" 전화도</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">5</span>
+            <a href="https://n.news.naver.com/article/437/0000449586?ntype=RANKING" target="_blank">[단독]'김건희 공천개입 연루' 김상민 전 검사 출국금지...'코인왕 존버킴' 일당과 연관성 수사중</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">6</span>
+            <a href="https://n.news.naver.com/article/293/0000070096?ntype=RANKING" target="_blank">[테일러메이드 M&A] F&F 자금동원력 충분하지만…관건은 '몸값'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">7</span>
+            <a href="https://n.news.naver.com/article/293/0000070099?ntype=RANKING" target="_blank">대웅제약, 셀트리온 핵심인력 홍승서 영입…'바이오시밀러' 사업 도전</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">8</span>
+            <a href="https://n.news.naver.com/article/293/0000070095?ntype=RANKING" target="_blank">[바이오사 리포트] '사상 최대 2Q' 셀트리온, 다음 과제는 '수익성 회복세'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">9</span>
+            <a href="https://n.news.naver.com/article/293/0000070098?ntype=RANKING" target="_blank">[삼성바이오 실적 대해부] 2분기 사상 최대 매출 전망… 4공장 램프업 빛 보나</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">10</span>
+            <a href="https://n.news.naver.com/article/293/0000070083?ntype=RANKING" target="_blank">가평 테슬라 'V4 슈퍼차저', 고속도로 전기차 충전 새 시대 열었다 [카미경]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">11</span>
+            <a href="https://n.news.naver.com/article/014/0005380593?ntype=RANKING" target="_blank">"찌개용 앞다리살이었다"…울릉도 '비계 삼겹살' 업주 사과</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">12</span>
+            <a href="https://n.news.naver.com/article/014/0005380366?ntype=RANKING" target="_blank">71세 트랜스 여성, 사무라이 검으로 남편 50회 찌르고 베고</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">13</span>
+            <a href="https://n.news.naver.com/article/014/0005380598?ntype=RANKING" target="_blank">스트레스 탓에 맥주만 먹던 40대男…결국 사망 [헬스톡]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">14</span>
+            <a href="https://n.news.naver.com/article/014/0005380307?ntype=RANKING" target="_blank">"실수령 월 850만원인데 아내가 빠듯하다고" 40대 중반 가장 "진짜 현타왔다"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">15</span>
+            <a href="https://n.news.naver.com/article/014/0005380661?ntype=RANKING" target="_blank">"갤Z폴드7 싸게 사는 법?"...단통법 끝, '보조금 전쟁' 얼마까지 받나</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">16</span>
+            <a href="https://n.news.naver.com/article/586/0000107845?ntype=RANKING" target="_blank">생일잔치 열어준 아들 총으로 쏜 60대…범행동기 묻자 "알려하지 말라"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">17</span>
+            <a href="https://n.news.naver.com/article/586/0000107849?ntype=RANKING" target="_blank">與, 강선우 임명 수순에 "부정여론 있지만 대통령 판단 존중"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">18</span>
+            <a href="https://n.news.naver.com/article/586/0000107838?ntype=RANKING" target="_blank">[단독] 尹정부 국가산단 사업 추진 본격화 후 그린벨트 거래 집중</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">19</span>
+            <a href="https://n.news.naver.com/article/586/0000107857?ntype=RANKING" target="_blank">"사형 내려달라"…'부모·아내·딸들' 5명 살해한 가장의 최후진술</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">20</span>
+            <a href="https://n.news.naver.com/article/586/0000107842?ntype=RANKING" target="_blank">李대통령 "추가 소비진작 프로그램 준비해달라…물가 엄정 관리"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">21</span>
+            <a href="https://n.news.naver.com/article/015/0005161125?ntype=RANKING" target="_blank">방시혁-과즙세연, 의정부고에 떴다…이번에도 대박 조짐</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">22</span>
+            <a href="https://n.news.naver.com/article/015/0005161089?ntype=RANKING" target="_blank">'이거 사려고 한국 왔어요'…中 1020 몰려들더니 '초대박'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">23</span>
+            <a href="https://n.news.naver.com/article/015/0005161096?ntype=RANKING" target="_blank">최태원 차녀, 군대서 무슨 일 겪었길래…"충격받아 창업 결심"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">24</span>
+            <a href="https://n.news.naver.com/article/015/0005161102?ntype=RANKING" target="_blank">일 안 해도 통장에 따박따박…국민 재테크 뭐길래 '불티' [분석+]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">25</span>
+            <a href="https://n.news.naver.com/article/015/0005160915?ntype=RANKING" target="_blank">하루아침에 대출 다 갚은 치킨집 사장님…로또 된 줄 알았더니 [일확연금 노후부자]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">26</span>
+            <a href="https://n.news.naver.com/article/214/0001437952?ntype=RANKING" target="_blank">"완전 선 넘었다" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">27</span>
+            <a href="https://n.news.naver.com/article/214/0001437928?ntype=RANKING" target="_blank">P예고생 3명 사망사건, 어른들의 위험한 공생 관계 [PD수첩 예고]</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">28</span>
+            <a href="https://n.news.naver.com/article/214/0001437990?ntype=RANKING" target="_blank">[속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">29</span>
+            <a href="https://n.news.naver.com/article/214/0001437981?ntype=RANKING" target="_blank">'일가족 5명 살해' 가장에 사형 구형‥"지극히 반인륜·반사회적"</a>
+        </div>
+        
+        <div class="trend-item">
+            <span class="rank">30</span>
+            <a href="https://n.news.naver.com/article/214/0001437987?ntype=RANKING" target="_blank">"너무 썰렁하잖아‥한마디씩?" 새 장관들 '두근두근' 긴장 [현장영상]</a>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🚀 급상승 이슈</h2>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            이 대통령 "'재난에 음주가무' 정신 나간 공직자, 엄히 단속"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "그동안 왜 안 썼을까"...폭염에 미국서도 양산 '유행'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            정청래, '윤 옥중 페북'에 "망상 접고 감옥서 반성 여생 보내길"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독]김용현 취임 2주만에 '합참-드론사' 무인기 작전 직보…"실패 아니니 힘내라" 전화도
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독]'김건희 공천개입 연루' 김상민 전 검사 출국금지...'코인왕 존버킴' 일당과 연관성 수사중
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [테일러메이드 M&A] F&F 자금동원력 충분하지만…관건은 '몸값'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            대웅제약, 셀트리온 핵심인력 홍승서 영입…'바이오시밀러' 사업 도전
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [바이오사 리포트] '사상 최대 2Q' 셀트리온, 다음 과제는 '수익성 회복세'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [삼성바이오 실적 대해부] 2분기 사상 최대 매출 전망… 4공장 램프업 빛 보나
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            가평 테슬라 'V4 슈퍼차저', 고속도로 전기차 충전 새 시대 열었다 [카미경]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "찌개용 앞다리살이었다"…울릉도 '비계 삼겹살' 업주 사과
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            71세 트랜스 여성, 사무라이 검으로 남편 50회 찌르고 베고
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            스트레스 탓에 맥주만 먹던 40대男…결국 사망 [헬스톡]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "실수령 월 850만원인데 아내가 빠듯하다고" 40대 중반 가장 "진짜 현타왔다"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "갤Z폴드7 싸게 사는 법?"...단통법 끝, '보조금 전쟁' 얼마까지 받나
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            생일잔치 열어준 아들 총으로 쏜 60대…범행동기 묻자 "알려하지 말라"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            與, 강선우 임명 수순에 "부정여론 있지만 대통령 판단 존중"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [단독] 尹정부 국가산단 사업 추진 본격화 후 그린벨트 거래 집중
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "사형 내려달라"…'부모·아내·딸들' 5명 살해한 가장의 최후진술
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            李대통령 "추가 소비진작 프로그램 준비해달라…물가 엄정 관리"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            방시혁-과즙세연, 의정부고에 떴다…이번에도 대박 조짐
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '이거 사려고 한국 왔어요'…中 1020 몰려들더니 '초대박'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            최태원 차녀, 군대서 무슨 일 겪었길래…"충격받아 창업 결심"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            일 안 해도 통장에 따박따박…국민 재테크 뭐길래 '불티' [분석+]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            하루아침에 대출 다 갚은 치킨집 사장님…로또 된 줄 알았더니 [일확연금 노후부자]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "완전 선 넘었다" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            P예고생 3명 사망사건, 어른들의 위험한 공생 관계 [PD수첩 예고]
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            [속보] '내란' 특검 "김용대 영장 기각은 외환 혐의와 무관‥수사 문제 없어"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            '일가족 5명 살해' 가장에 사형 구형‥"지극히 반인륜·반사회적"
+        </div>
+        
+        <div class="emerging">
+            <span class="new-badge">NEW</span>
+            "너무 썰렁하잖아‥한마디씩?" 새 장관들 '두근두근' 긴장 [현장영상]
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>🏷️ 트렌딩 키워드</h2>
+        <div>
+            <span class="keyword">대통령 (3)</span> <span class="keyword">단독 (3)</span> <span class="keyword">셀트리온 (2)</span> <span class="keyword">사업 (2)</span> <span class="keyword">사상 (2)</span> <span class="keyword">최대 (2)</span> <span class="keyword">40 (2)</span> <span class="keyword">사형 (2)</span> <span class="keyword">재난에 (1)</span> <span class="keyword">음주가무 (1)</span> <span class="keyword">정신 (1)</span> <span class="keyword">나간 (1)</span> <span class="keyword">공직자 (1)</span> <span class="keyword">엄히 (1)</span> <span class="keyword">단속 (1)</span>
+        </div>
+    </div>
+</body>
+</html>
