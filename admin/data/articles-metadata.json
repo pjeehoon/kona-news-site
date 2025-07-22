@@ -1,135 +1,177 @@
 [
   {
-    "id": "0acee8bde352",
-    "title": "이 대통령, 가평, 서산·예산, 담양, 산청·합천 특별재난지역 선포",
-    "created_at": "2025-07-22T13:47:08.781242",
-    "last_updated": "2025-07-22T13:47:08.781246",
+    "id": "c00177cf9c8d",
+    "title": "\"'국뽕'도 정도껏\"…단속 나선 中",
+    "created_at": "2025-07-22T14:15:30.727742",
+    "last_updated": "2025-07-22T14:15:30.727746",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
-    "completion_tokens": 456,
-    "total_tokens": 2456,
-    "cost_usd": 0.0003824,
+    "completion_tokens": 571,
+    "total_tokens": 2571,
+    "cost_usd": 0.0004284,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "이재명 대통령",
-        "특별재난지역 선포",
-        "가평",
-        "서산",
-        "예산",
-        "담양",
-        "산청",
-        "합천",
-        "수해 복구",
-        "집중호우",
-        "산사태",
-        "피해 규모",
-        "현장 방문",
+        "중국 정부",
+        "항일전쟁 드라마",
+        "규제 강화",
+        "역사 왜곡",
+        "과장된 묘사",
+        "광전총국",
+        "드라마 제작 규범",
+        "사실성 확보",
+        "허황된 전투 능력",
+        "콘텐츠 검열",
+        "역사적 책임성",
+        "창작 자유 우려",
+        "문화 정책",
+        "청소년 가치관",
+        "정부 규제"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "052b8b76b37c",
+    "title": "[르포] “여긴 소비쿠폰 못 써요?” 오락가락 사용처에 헷갈리는 시민들",
+    "created_at": "2025-07-22T14:05:47.318624",
+    "last_updated": "2025-07-22T14:05:47.318628",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 623,
+    "total_tokens": 2623,
+    "cost_usd": 0.00044919999999999997,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "소비쿠폰",
+        "사용처 혼란",
+        "서울 시내",
+        "결제 방식",
+        "배달 주문",
+        "소상공인",
+        "명동 식당",
+        "정모",
+        "최모",
+        "배달앱",
+        "정부 정책 안내",
+        "소비쿠폰 적용 제한",
+        "결제 시스템",
+        "소비쿠폰 정책",
+        "혼란 사례"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "ccb5eb797595",
+    "title": "쇼핑몰까지 사용 OK… 지역 상권 ‘기대반 우려반’ [현장, 그곳&]",
+    "created_at": "2025-07-22T14:04:47.715132",
+    "last_updated": "2025-07-22T14:04:47.715136",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 570,
+    "total_tokens": 2570,
+    "cost_usd": 0.000428,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "지역상권",
+        "지역화폐",
+        "소비쿠폰",
+        "전통시장",
+        "쇼핑몰",
+        "유동인구 감소",
+        "매출 증가",
+        "시장 활성화",
+        "정책 차별 논란",
+        "상인 반발",
         "정부 정책",
-        "재난 지원"
+        "유통 채널 집중",
+        "지역경제",
+        "상권 균형 발전",
+        "지원책 검토"
       ]
     },
     "version_count": 2
   },
   {
-    "id": "0baa5b4a450b",
-    "title": "“재난 상황에 무슨 휴가”…대통령실, 이진숙 여름휴가 신청 반려",
-    "created_at": "2025-07-22T13:46:31.498670",
-    "last_updated": "2025-07-22T13:46:31.498674",
+    "id": "924c3bfd6df5",
+    "title": "이번엔 방시혁·과즙세연…온라인 또 뒤집은 의정부고 패러디",
+    "created_at": "2025-07-22T14:03:54.995448",
+    "last_updated": "2025-07-22T14:03:54.995452",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
-    "completion_tokens": 588,
-    "total_tokens": 2588,
-    "cost_usd": 0.0004352,
+    "completion_tokens": 556,
+    "total_tokens": 2556,
+    "cost_usd": 0.0004224000000000001,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "이진숙",
-        "방송통신위원장",
-        "여름휴가 신청",
-        "재난 상황",
-        "풍수해 위기경보 심각",
-        "대통령실 반려",
-        "재난 대응 체계",
-        "공무원 윤리",
-        "재난 상황 휴가 정책",
-        "국무회의",
-        "풍수해 피해"
+        "의정부고",
+        "졸업사진 패러디",
+        "방시혁",
+        "과즙세연",
+        "온라인 논란",
+        "학교 풍자 문화",
+        "SNS 공개",
+        "LA 방문",
+        "풍자와 유머",
+        "사생활 논란",
+        "학교 문화",
+        "인물 관계"
       ]
     },
     "version_count": 2
   },
   {
-    "id": "7e96b5551fc4",
-    "title": "“군대서 비극 경험”…장교 출신 최태원 차녀, 美서 창업한 이유",
-    "created_at": "2025-07-22T13:45:36.967852",
-    "last_updated": "2025-07-22T13:45:36.967855",
+    "id": "495dc8f6f800",
+    "title": "국힘, ‘전광훈 정당서 출마’ 지영준 새 인권위원으로 추천 ‘논란’",
+    "created_at": "2025-07-22T14:02:43.527584",
+    "last_updated": "2025-07-22T14:02:43.527588",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
     "prompt_tokens": 2000,
-    "completion_tokens": 651,
-    "total_tokens": 2651,
-    "cost_usd": 0.0004604,
+    "completion_tokens": 506,
+    "total_tokens": 2506,
+    "cost_usd": 0.0004024,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "최태원",
-        "최민정",
-        "군 복무 비극",
-        "군 정신건강",
-        "미국 창업",
-        "인테그럴 헬스",
-        "정신건강 플랫폼",
-        "인공지능 심리상담",
-        "심리치료",
-        "비극 경험",
-        "군 내부 사건",
-        "심리적 충격",
-        "투자 유치",
-        "비영리 건강보험사",
-        "인디펜던트 헬스"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "37de458b4b91",
-    "title": "日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼",
-    "created_at": "2025-07-22T13:44:39.396072",
-    "last_updated": "2025-07-22T13:44:39.396076",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 2000,
-    "completion_tokens": 576,
-    "total_tokens": 2576,
-    "cost_usd": 0.0004304,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "일본 도쿄",
-        "한국 여성",
-        "열사병",
-        "병원 치료",
-        "실종 신고",
-        "경찰 확인",
-        "대사관 안전확인",
-        "귀국 추정",
-        "여행객 안전",
-        "의료 후 관리"
+        "국민의힘",
+        "전광훈",
+        "지영준",
+        "박형명",
+        "인권위원 추천",
+        "극우 성향",
+        "군내 불온서적 헌법소원",
+        "자유통일당",
+        "윤석열 지지",
+        "서울남부지법",
+        "무지개행동",
+        "성소수자 혐오",
+        "내란 동조",
+        "인사 논란",
+        "정치권 반응"
       ]
     },
     "version_count": 2
@@ -173,6 +215,24 @@
   {
     "id": "20250722_165339",
     "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134440",
+    "title": "日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -819,6 +879,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_134709",
+    "title": "이 대통령, 가평, 서산·예산, 담양, 산청·합천 특별재난지역 선포",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_121242",
     "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -1235,6 +1313,24 @@
   {
     "id": "20250722_160218",
     "title": "\"완전 선 넘었다\" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134633",
+    "title": "“재난 상황에 무슨 휴가”…대통령실, 이진숙 여름휴가 신청 반려",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -2099,6 +2195,24 @@
   {
     "id": "20250722_193604",
     "title": "아내 미용실서 100만원 ‘슬쩍’한 못난 남편···경찰 “절도 처벌 가능”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 2000,
+    "completion_tokens": 0,
+    "total_tokens": 2000,
+    "cost_usd": 0.0002,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134538",
+    "title": "“군대서 비극 경험”…장교 출신 최태원 차녀, 美서 창업한 이유",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
