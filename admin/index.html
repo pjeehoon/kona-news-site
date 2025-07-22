@@ -317,7 +317,7 @@
     <!-- 어드민 대시보드 -->
     <div class="admin-container" id="adminContainer">
         <div class="admin-header">
-            <h1>KONA Admin Dashboard</h1>
+            <h1>KONA Admin Dashboard <span style="font-size: 0.5em; color: #666;">(지난 30일)</span></h1>
             <button class="logout-btn" onclick="handleLogout()">로그아웃</button>
         </div>
 
@@ -345,7 +345,7 @@
             </div>
             <div class="stat-card">
                 <h3>총 비용</h3>
-                <div class="value">$<span id="totalCost">0.00</span></div>
+                <div class="value"><span id="totalCost">₩0</span></div>
             </div>
         </div>
 
@@ -417,6 +417,7 @@
         const ADMIN_PASSWORD_HASH = 'af6fd599323725634351e3bb8c6851c02909031ae5ef43fcb13d3b2e2e9752f1';
         let articlesData = [];
         let filteredArticlesData = [];
+        let last30DaysArticles = []; // 30일 내 기사들
         let dailyStats = {};
         let monthlyStats = {};
         let topicStats = {};
@@ -493,19 +494,44 @@
 
         // 대시보드 업데이트
         function updateDashboard() {
-            // 통계 카드 업데이트
-            const today = new Date().toISOString().split('T')[0];
-            const todayData = dailyStats[today] || {};
+            // 30일 전 날짜 계산
+            const today = new Date();
+            const thirtyDaysAgo = new Date(today);
+            thirtyDaysAgo.setDate(today.getDate() - 30);
             
-            document.getElementById('totalArticles').textContent = articlesData.length;
-            document.getElementById('uniqueTopics').textContent = Object.keys(topicStats).length;
+            // 30일 내 기사만 필터링
+            last30DaysArticles = articlesData.filter(article => {
+                const articleDate = new Date(article.created_at || article.last_updated);
+                return articleDate >= thirtyDaysAgo;
+            });
+            
+            // 30일 내 고유 주제 수 계산
+            const last30DaysTopics = new Set();
+            last30DaysArticles.forEach(article => {
+                if (article.title) {
+                    last30DaysTopics.add(article.title);
+                }
+            });
+            
+            // 오늘 통계
+            const todayStr = today.toISOString().split('T')[0];
+            const todayData = dailyStats[todayStr] || {};
+            
+            // 30일 내 버전 업데이트된 기사 수
+            const last30DaysVersions = last30DaysArticles.filter(a => a.version > 1).length;
+            
+            // 30일 내 총 토큰과 비용
+            const last30DaysTokens = last30DaysArticles.reduce((sum, a) => sum + (a.total_tokens || 0), 0);
+            const last30DaysCost = last30DaysArticles.reduce((sum, a) => sum + (a.cost_usd || 0), 0);
+            
+            // UI 업데이트
+            document.getElementById('totalArticles').textContent = last30DaysArticles.length;
+            document.getElementById('uniqueTopics').textContent = last30DaysTopics.size;
             document.getElementById('todayArticles').textContent = todayData.articles || 0;
-            document.getElementById('totalVersions').textContent = 
-                articlesData.filter(a => a.version > 1).length;
-            document.getElementById('totalTokens').textContent = 
-                articlesData.reduce((sum, a) => sum + (a.total_tokens || 0), 0).toLocaleString();
+            document.getElementById('totalVersions').textContent = last30DaysVersions;
+            document.getElementById('totalTokens').textContent = last30DaysTokens.toLocaleString();
             document.getElementById('totalCost').textContent = 
-                '₩' + (articlesData.reduce((sum, a) => sum + (a.cost_usd || 0), 0) * USD_TO_KRW_RATE).toFixed(1);
+                '₩' + (last30DaysCost * USD_TO_KRW_RATE).toFixed(1);
             
             // 태그 수집
             collectAllTags();
@@ -616,8 +642,8 @@
         // 토큰 사용량 차트
         function drawTokenChart() {
             const ctx = document.getElementById('tokenChart').getContext('2d');
-            const totalPrompt = articlesData.reduce((sum, a) => sum + (a.prompt_tokens || 0), 0);
-            const totalCompletion = articlesData.reduce((sum, a) => sum + (a.completion_tokens || 0), 0);
+            const totalPrompt = last30DaysArticles.reduce((sum, a) => sum + (a.prompt_tokens || 0), 0);
+            const totalCompletion = last30DaysArticles.reduce((sum, a) => sum + (a.completion_tokens || 0), 0);
             
             new Chart(ctx, {
                 type: 'doughnut',
@@ -640,8 +666,30 @@
             const container = document.getElementById('topicStatsContainer');
             container.innerHTML = '';
             
+            // 30일 내 기사로부터 주제별 통계 재계산
+            const last30DaysTopicStats = {};
+            
+            last30DaysArticles.forEach(article => {
+                const title = article.title;
+                if (title) {
+                    if (!last30DaysTopicStats[title]) {
+                        last30DaysTopicStats[title] = {
+                            count: 0,
+                            latest_version: 0,
+                            total_cost: 0
+                        };
+                    }
+                    last30DaysTopicStats[title].count += 1;
+                    last30DaysTopicStats[title].latest_version = Math.max(
+                        last30DaysTopicStats[title].latest_version,
+                        article.version || 1
+                    );
+                    last30DaysTopicStats[title].total_cost += (article.cost_usd || 0);
+                }
+            });
+            
             // 최신 버전이 높은 순으로 정렬
-            const sortedTopics = Object.entries(topicStats)
+            const sortedTopics = Object.entries(last30DaysTopicStats)
                 .sort((a, b) => b[1].latest_version - a[1].latest_version)
                 .slice(0, 10);  // 상위 10개만
             
@@ -718,7 +766,7 @@
         function collectAllTags() {
             allTags = { category_tags: {}, content_tags: {} };
             
-            articlesData.forEach(article => {
+            last30DaysArticles.forEach(article => {
                 if (article.tags) {
                     // 카테고리 태그 수집
                     article.tags.category_tags?.forEach(tag => {
