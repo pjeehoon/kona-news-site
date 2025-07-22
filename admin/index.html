@@ -826,6 +826,12 @@
                 // 비용을 원화로 변환
                 const costInKRW = article.cost_usd ? (article.cost_usd * USD_TO_KRW_RATE).toFixed(1) : '-';
                 
+                // API 호출 횟수 포함한 completion tokens 표시
+                let completionDisplay = article.completion_tokens ? article.completion_tokens.toLocaleString() : '-';
+                if (article.api_calls && article.api_calls > 1) {
+                    completionDisplay += ` <small style="color: #666;">({{article.api_calls}}회)</small>`;
+                }
+                
                 row.innerHTML = `
                     <td>${dateStr}</td>
                     <td title="${article.title || '제목 없음'}">${article.title || '제목 없음'}</td>
@@ -833,7 +839,7 @@
                     <td>${versionBadge}</td>
                     <td>${article.model === 'gpt-4.1-nano' ? 'n' : (article.model || 'GPT-4')}</td>
                     <td>${article.prompt_tokens ? article.prompt_tokens.toLocaleString() : '-'}</td>
-                    <td>${article.completion_tokens ? article.completion_tokens.toLocaleString() : '-'}</td>
+                    <td>${completionDisplay}</td>
                     <td class="cost">${costInKRW !== '-' ? '₩' + costInKRW : '-'}</td>
                 `;
             });

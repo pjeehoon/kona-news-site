@@ -1,166 +1,134 @@
 [
   {
-    "id": "71715f3d7d48",
-    "title": "“돈 적게 번다고 파혼 당했다” 40대 남성에 “조상님이 도우셨다” 응원 쇄도",
-    "created_at": "2025-07-22T16:41:31.484498",
-    "last_updated": "2025-07-22T16:41:31.484502",
+    "id": "554bf19a4990",
+    "title": "尹, 아내 소환 통보날 “정치 탄압, 나 하나로 족하다”",
+    "created_at": "2025-07-22T17:11:55.405624",
+    "last_updated": "2025-07-22T17:11:55.405628",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "파혼 사연",
-        "40대 남성",
-        "연봉 6000만원",
-        "재산 3000만원 미만",
-        "결혼 실패",
-        "사회적 논란",
-        "경제적 안정",
-        "직업 안정성",
-        "사회 안전망",
-        "개인 재산"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "b323d48375c8",
-    "title": "“정년은 65세로, 노조법은 약속대로”…한국노총, 총리에 3대 개혁 과제 정조준",
-    "created_at": "2025-07-22T16:40:51.365229",
-    "last_updated": "2025-07-22T16:40:51.365233",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "한국노총",
-        "정년 65세",
-        "노조법 개정",
-        "노동개혁",
-        "노동시장 유연성",
-        "고령자 고용",
-        "김동명",
-        "김민석",
-        "청년 고용 문제",
-        "사회적 공감대",
-        "노동권 보호",
-        "정부 간담회",
-        "정책 충돌",
-        "사회 안정"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "abd4c43eb2ce",
-    "title": "'아나운서→CEO' 김소영 회사 매출 대박 나더니…70억 투자유치",
-    "created_at": "2025-07-22T16:40:05.703323",
-    "last_updated": "2025-07-22T16:40:05.703327",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "김소영",
-        "아나운서",
-        "스타트업",
-        "비플랜트",
-        "투자유치",
-        "70억 원",
-        "알토스벤처스",
-        "경력논란",
-        "연예인 출신",
-        "시장 성장",
-        "브론테",
-        "세렌",
-        "커브드",
-        "유니콘팩토리",
-        "기업 성장"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "00a9fa8bf3dd",
-    "title": "청와대 돌아오는 대통령, 애매해진 청와대재단…운명은",
-    "created_at": "2025-07-22T16:39:25.706954",
-    "last_updated": "2025-07-22T16:39:25.706959",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
+    "prompt_tokens": 11221,
+    "completion_tokens": 2237,
+    "total_tokens": 13458,
+    "cost_usd": 0.002017,
     "tags": {
       "category_tags": [
         "정치"
       ],
       "content_tags": [
-        "이재명",
-        "청와대 복귀",
-        "청와대재단",
-        "청와대 개방 종료",
-        "재단 역할 축소",
-        "재단 폐지 위기",
-        "2025년 7월 22일",
-        "청와대 관람 종료",
-        "인력 재배치",
-        "정부 역할 전환"
+        "윤석열",
+        "김건희",
+        "특검",
+        "소환 통보",
+        "정치 탄압",
+        "내란 혐의",
+        "수사",
+        "법적 절차",
+        "옥중 메시지",
+        "수사 반발"
       ]
     },
+    "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "8beb6cd960ac",
-    "title": "퇴직 후 인생 2막, 열자마자 망한다…5060 개인파산 역대 최대",
-    "created_at": "2025-07-22T16:38:23.943642",
-    "last_updated": "2025-07-22T16:38:23.943646",
+    "id": "8d4745697fed",
+    "title": "군 관계자 \"김용현 전 장관이 '무인기' 지시...군은 처음부터 반대\"",
+    "created_at": "2025-07-22T17:11:09.521891",
+    "last_updated": "2025-07-22T17:11:09.521896",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
+    "prompt_tokens": 11221,
+    "completion_tokens": 2237,
+    "total_tokens": 13458,
+    "cost_usd": 0.002017,
     "tags": {
       "category_tags": [
-        "경제"
+        "정치"
       ],
       "content_tags": [
-        "개인워크아웃",
-        "고령층 금융취약성",
-        "50대 이상 신청자",
-        "신용회복위원회",
-        "감면액",
-        "노후 빈곤",
-        "경기 침체",
-        "소득 감소",
-        "재무 위기",
-        "정책 대응"
+        "김용현 전 장관",
+        "무인기 지시",
+        "북한 무인기 침투",
+        "남포 무인기 보내기",
+        "군 내부 증언",
+        "책임 소재 논란",
+        "계엄 전",
+        "외환 의혹",
+        "북풍 의혹",
+        "군 전략적 모호성",
+        "여당과 야당 입장 차이",
+        "국가 안보",
+        "군 책임성",
+        "정치적 논란"
       ]
     },
+    "api_calls": 4,
+    "version_count": 2
+  },
+  {
+    "id": "896237cc4517",
+    "title": "송기호 국정상황실장, 임명 한달 만에 교체",
+    "created_at": "2025-07-22T17:10:33.758690",
+    "last_updated": "2025-07-22T17:10:33.758697",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11075,
+    "completion_tokens": 2013,
+    "total_tokens": 13088,
+    "cost_usd": 0.001913,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "송기호",
+        "국정상황실장",
+        "임명 교체",
+        "인사 논란",
+        "대통령실 인사 이동",
+        "경제안보",
+        "대미 관세 협상",
+        "강유정 대변인",
+        "김정우",
+        "야권 의혹"
+      ]
+    },
+    "api_calls": 4,
+    "version_count": 2
+  },
+  {
+    "id": "b560a7e025ee",
+    "title": "부인 소환하자 낸 옥중 입장…국힘서도 \"왜 이제 와서?\"",
+    "created_at": "2025-07-22T17:09:45.082972",
+    "last_updated": "2025-07-22T17:09:45.082977",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11356,
+    "completion_tokens": 2828,
+    "total_tokens": 14184,
+    "cost_usd": 0.002267,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "윤석열",
+        "김건희",
+        "옥중 입장문",
+        "정치적 탄압",
+        "수사 논란",
+        "국민의힘",
+        "소환 통보",
+        "당내 분열",
+        "전한길 의원",
+        "정치권 긴장"
+      ]
+    },
+    "api_calls": 4,
     "version_count": 2
   },
   {
@@ -490,6 +458,42 @@
   {
     "id": "20250722_142730",
     "title": "라부부, 수백만원 번다 난리더니…\"가지고 있으면 위험\" 음모론에 '화형식'까지",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_163926",
+    "title": "청와대 돌아오는 대통령, 애매해진 청와대재단…운명은",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164132",
+    "title": "“돈 적게 번다고 파혼 당했다” 40대 남성에 “조상님이 도우셨다” 응원 쇄도",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -850,6 +854,24 @@
   {
     "id": "20250722_133650",
     "title": "“아무도 모르던 회사, 세계가 다 알아” 전광판 불륜 들통에 뜻밖의 유명세",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164007",
+    "title": "'아나운서→CEO' 김소영 회사 매출 대박 나더니…70억 투자유치",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
@@ -1694,6 +1716,24 @@
     "version_count": 1
   },
   {
+    "id": "20250722_163825",
+    "title": "퇴직 후 인생 2막, 열자마자 망한다…5060 개인파산 역대 최대",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
     "id": "20250722_163728",
     "title": "전문가 “아들 총격 살해 父, 성공한 전처에 열등감 느껴 계획 범행 가능성\"",
     "created_at": "2025-07-22T00:00:00+00:00",
@@ -2002,6 +2042,24 @@
   {
     "id": "20250722_163945",
     "title": "\"그동안 왜 안 썼을까\"...폭염에 미국서도 양산 '유행'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164052",
+    "title": "“정년은 65세로, 노조법은 약속대로”…한국노총, 총리에 3대 개혁 과제 정조준",
     "created_at": "2025-07-22T00:00:00+00:00",
     "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
