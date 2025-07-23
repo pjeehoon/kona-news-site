@@ -1,175 +1,254 @@
 [
   {
-    "id": "7fc04047c187",
-    "title": "“대출 묶였는데 부동산 오르겠나”…집값 상승 기대감 3년 만에 ‘최대폭’ 하락",
-    "created_at": "2025-07-23T05:31:38.296136",
-    "last_updated": "2025-07-23T05:31:38.296140",
+    "id": "561eece301c1",
+    "title": "일본차 美관세 '깜짝 합의'…한국차 '15% 데드라인' 총력",
+    "created_at": "2025-07-23T05:59:59.510910",
+    "last_updated": "2025-07-23T05:59:59.510914",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11055,
-    "completion_tokens": 1999,
-    "total_tokens": 13054,
-    "cost_usd": 0.001905,
+    "prompt_tokens": 10410,
+    "completion_tokens": 2174,
+    "total_tokens": 12584,
+    "cost_usd": 0.001911,
     "tags": {
       "category_tags": [
         "경제"
       ],
       "content_tags": [
-        "한국은행",
-        "소비자동향조사",
-        "집값 하락 기대심리",
-        "가계부채전망지수",
-        "가계저축전망지수",
-        "금리 인상",
-        "대출 규제",
-        "부동산 시장 위축",
-        "금융 지표 악화",
-        "수도권 집값 하락 기대",
-        "부동산 정책",
-        "금융 불안"
+        "미국 일본 무역협상",
+        "일본차 관세 인하",
+        "15% 관세 데드라인",
+        "대미 투자",
+        "한국 자동차 수출",
+        "관세율 인상",
+        "글로벌 무역 환경",
+        "한국 정부 정책",
+        "도널드 트럼프",
+        "자동차 시장 경쟁력"
       ]
     },
     "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "569f1b2738a0",
-    "title": "“인천 총기사건은 ‘선천성 땡큐결핍증’”…박선영 진실화해위원장이 욕먹을 각오로 썼다는 글 보니",
-    "created_at": "2025-07-23T05:30:48.659526",
-    "last_updated": "2025-07-23T05:30:48.659530",
+    "id": "6474b6760122",
+    "title": "대만 GD 콘서트서 9억원 챙긴 암표상 적발…10배 이상 웃돈 얹어",
+    "created_at": "2025-07-23T05:57:34.485777",
+    "last_updated": "2025-07-23T05:58:54.328203",
+    "version": 2,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11155,
+    "completion_tokens": 2157,
+    "total_tokens": 13312,
+    "cost_usd": 0.001978,
+    "tags": {
+      "category_tags": [
+        "사회",
+        "IT/과학"
+      ],
+      "content_tags": [
+        "대만 GD 콘서트",
+        "암표상 적발",
+        "해킹",
+        "위조 신분증",
+        "조직범죄"
+      ]
+    },
+    "api_calls": 4,
+    "version_count": 3
+  },
+  {
+    "id": "3981fba6fc6b",
+    "title": "15살과 3년간 성매매한 30대男 2심서 ‘대폭 감형’ 왜",
+    "created_at": "2025-07-23T05:58:30.776723",
+    "last_updated": "2025-07-23T05:58:30.776727",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11055,
-    "completion_tokens": 1999,
-    "total_tokens": 13054,
-    "cost_usd": 0.001905,
+    "prompt_tokens": 3595,
+    "completion_tokens": 1253,
+    "total_tokens": 4848,
+    "cost_usd": 0.000861,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "인천 총기사건",
-        "박선영 진실화해위원장",
-        "선천성 땡큐결핍증",
-        "사회문화적 문제",
-        "감사 문화 부재",
-        "혐오 조장 논란",
-        "인종 혐오",
-        "사회비판",
-        "가정 폭력",
-        "페이스북 발언"
+        "성범죄",
+        "미성년자 성매매",
+        "법원 판결",
+        "감형",
+        "집행유예",
+        "피해자 합의",
+        "성범죄 처벌",
+        "서울고등법원",
+        "성매매 혐의",
+        "피해자 처벌 원치"
+      ]
+    },
+    "api_calls": 3,
+    "version_count": 2
+  },
+  {
+    "id": "3baaa860ddcc",
+    "title": "대만 GD 콘서트서 9억원 챙긴 암표상 적발…10배 이상 웃돈 얹어",
+    "created_at": "2025-07-23T05:57:34.485777",
+    "last_updated": "2025-07-23T05:57:34.485781",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11155,
+    "completion_tokens": 2157,
+    "total_tokens": 13312,
+    "cost_usd": 0.001978,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "암표상",
+        "대만 GD 콘서트",
+        "입장권 불법 거래",
+        "해킹",
+        "위조 신분증",
+        "조직 범죄",
+        "수익 9억 원",
+        "티켓 사기",
+        "경찰 적발",
+        "암표 거래 규제",
+        "공연 입장권 실명제"
       ]
     },
     "api_calls": 4,
     "version_count": 2
   },
   {
-    "id": "9667451121d6",
+    "id": "c39c32d26d85",
+    "title": "검찰, '강제 키스 혀 절단' 사건 최말자씨 재심서 무죄 구형",
+    "created_at": "2025-07-23T05:56:48.595831",
+    "last_updated": "2025-07-23T05:56:48.595835",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 11441,
+    "completion_tokens": 1998,
+    "total_tokens": 13439,
+    "cost_usd": 0.001943,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "최말자",
+        "강제 키스 혀 절단 사건",
+        "재심",
+        "무죄 구형",
+        "법적 오판",
+        "정당방위",
+        "1964년 사건",
+        "성폭행 시도",
+        "법원 판결",
+        "대법원 파기환송",
+        "사법부 판단",
+        "인권",
+        "사법 정의",
+        "시대적 맥락"
+      ]
+    },
+    "api_calls": 4,
+    "version_count": 2
+  },
+  {
+    "id": "20250723_052951",
     "title": "“이자 5%인데 주거래가 무슨 상관”…서울 사는데 지방은행 계좌 튼 이유",
-    "created_at": "2025-07-23T05:29:50.370723",
-    "last_updated": "2025-07-23T05:29:50.370727",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 11181,
-    "completion_tokens": 2120,
-    "total_tokens": 13301,
-    "cost_usd": 0.001966,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "지방은행",
-        "시장금리 하락",
-        "우대금리 경쟁",
-        "금리 상품",
-        "최고금리 연 5%",
-        "수신금리 경쟁",
-        "요구불예금 잔액 감소",
-        "은행 유치 전략",
-        "금리 경쟁 과열",
-        "금융당국 감시",
-        "은행 수익성",
-        "고객 혜택",
-        "금리 경쟁 영향",
-        "금융시장 안정",
-        "지역은행"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "api_calls": 4,
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "ab27ba2a881a",
+    "id": "20250723_052912",
     "title": "\"점심 먹고 커피 한 잔 필수인데\"…오후에 마시는 커피, 뇌에 ‘이런’ 영향 미친다",
-    "created_at": "2025-07-23T05:29:11.061453",
-    "last_updated": "2025-07-23T05:29:11.061457",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 10645,
-    "completion_tokens": 1803,
-    "total_tokens": 12448,
-    "cost_usd": 0.001786,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "커피 섭취",
-        "카페인",
-        "수면 질 저하",
-        "뇌파 불규칙성",
-        "오후 커피",
-        "캐나다 몬트리올대학교",
-        "연구 결과",
-        "수면 방해",
-        "뇌 건강",
-        "개인 차이"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "api_calls": 4,
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "9b04d3a6f156",
-    "title": "“올리브영보다 더 좋아요”…여성들이 가장 많이 쓴 쇼핑앱 뭐길래",
-    "created_at": "2025-07-23T05:28:33.174076",
-    "last_updated": "2025-07-23T05:28:33.174080",
+    "id": "20250723_053049",
+    "title": "“인천 총기사건은 ‘선천성 땡큐결핍증’”…박선영 진실화해위원장이 욕먹을 각오로 썼다는 글 보니",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 10673,
-    "completion_tokens": 1550,
-    "total_tokens": 12223,
-    "cost_usd": 0.001687,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "온라인 쇼핑앱",
-        "버티컬 커머스",
-        "여성 소비자",
-        "뷰티 플랫폼",
-        "시장 조사",
-        "사용자 증가율",
-        "20~30대 여성",
-        "온라인 시장 변화",
-        "올리브영",
-        "시장 경쟁",
-        "추천 시스템",
-        "배송 서비스",
-        "가격 정책",
-        "시장 점유율",
-        "유튜버 리뷰"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "api_calls": 4,
-    "version_count": 2
+    "version_count": 1
+  },
+  {
+    "id": "20250723_052834",
+    "title": "“올리브영보다 더 좋아요”…여성들이 가장 많이 쓴 쇼핑앱 뭐길래",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_053139",
+    "title": "“대출 묶였는데 부동산 오르겠나”…집값 상승 기대감 3년 만에 ‘최대폭’ 하락",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
   },
   {
     "id": "20250722_161157",
