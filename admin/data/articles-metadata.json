@@ -1,2747 +1,769 @@
 [
   {
-    "id": "5edc284e6b3a",
-    "title": "\"50만번 접었다 펴도 끄떡없어\"…폴드7, 방탄유리 원리 OLED 탑재",
-    "created_at": "2025-07-22T19:36:53.545047",
-    "last_updated": "2025-07-22T19:36:53.545076",
+    "id": "a948c1679e1f",
+    "title": "1년 전 쇠파이프 구매와 온라인 무기 제작법 습득, 인천 송도 사제총기 사건의 실체와 사회적 파장",
+    "created_at": "2025-07-24T14:55:41.587208",
+    "last_updated": "2025-07-24T14:55:41.587211",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 1067,
-    "completion_tokens": 48,
-    "total_tokens": 1115,
-    "cost_usd": 0.000126,
-    "tags": {
-      "category_tags": [
-        "IT/과학"
-      ],
-      "content_tags": [
-        "폴더블 OLED",
-        "갤럭시 Z 폴드7",
-        "삼성디스플레이",
-        "방탄유리 원리",
-        "내구성 강화",
-        "50만 회 폴딩 테스트",
-        "UTG",
-        "티타늄 소재",
-        "첨단 점착제",
-        "폴드 스마트폰"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "e41b16aacbd7",
-    "title": "아내 미용실서 100만원 ‘슬쩍’한 못난 남편···경찰 “절도 처벌 가능”",
-    "created_at": "2025-07-22T19:36:02.887968",
-    "last_updated": "2025-07-22T19:36:02.888005",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1067,
-    "completion_tokens": 48,
-    "total_tokens": 1115,
-    "cost_usd": 0.000126,
+    "prompt_tokens": 9656,
+    "completion_tokens": 2281,
+    "total_tokens": 11937,
+    "cost_usd": 0.001878,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "절도",
-        "가족 간 범죄",
-        "미용실 침입",
-        "경찰 조사",
-        "야간주거침입",
-        "현금 100만원",
-        "경북 상주시",
-        "소방공무원 남편",
-        "법적 책임",
-        "가정 신뢰",
+        "무기 제작법",
+        "온라인 플랫폼",
+        "사제총기",
+        "쇠파이프 구매",
         "범행 동기",
-        "형사처벌",
-        "가족 범죄 논란",
-        "가정 내 신뢰 회복",
-        "경찰 검거"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "d95561b9e232",
-    "title": "아들에 총 쏜 父 '살벌 실험'…\"폭발물엔 목화솜 덮었다\"",
-    "created_at": "2025-07-22T19:35:25.195509",
-    "last_updated": "2025-07-22T19:35:25.195520",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1067,
-    "completion_tokens": 48,
-    "total_tokens": 1115,
-    "cost_usd": 0.000126,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "인천 송도",
-        "아파트 사건",
-        "아들 총격",
-        "사제 총기",
-        "폭발물 설치",
-        "군 복무 경험",
-        "인터넷 폭발물 제작",
-        "가족 불화",
-        "범행 동기",
-        "경찰 수사",
-        "구속"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "cd0add1e1d44",
-    "title": "태국 풀빌라에 수상한 한국인 19명…'이 짓' 하다가 딱 걸렸다",
-    "created_at": "2025-07-22T19:34:43.386207",
-    "last_updated": "2025-07-22T19:34:43.386214",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1067,
-    "completion_tokens": 48,
-    "total_tokens": 1115,
-    "cost_usd": 0.000126,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "태국 파타야",
-        "풀빌라 검거",
-        "한국인 조직원",
-        "로맨스 스캠",
-        "보이스피싱",
-        "범죄 수법",
-        "전자기기 증거",
-        "투자 유도 문구",
-        "국제 공조",
-        "송환 절차",
-        "범죄 조직",
-        "수익 구조",
-        "경찰 수사",
-        "범죄 혐의 인정",
-        "범죄 동기"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "252fb9abc19b",
-    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
-    "created_at": "2025-07-22T15:09:11.490730",
-    "last_updated": "2025-07-22T19:34:04.273427",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "경제"
-      ],
-      "content_tags": [
-        "최태원",
-        "최민정",
-        "군 복무",
-        "정신건강 충격",
-        "스타트업 창업"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "db406122fcf7",
-    "title": "외국인 건보 무임승차 방지법 1년, 중국인서 약발 톡톡",
-    "created_at": "2025-07-22T19:19:32.733007",
-    "last_updated": "2025-07-22T19:19:32.733059",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "외국인 건강보험",
-        "무임승차 방지법",
-        "중국인 피부양자",
-        "보험 재정개선",
-        "피부양자 수 감소",
-        "보험 적자 흑자 전환",
-        "정부 정책",
-        "보험 혜택",
-        "제도 개선",
-        "무임승차 사례"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "30a7fd09f28e",
-    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
-    "created_at": "2025-07-22T16:53:38.113049",
-    "last_updated": "2025-07-22T19:08:50.162035",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "생활/문화"
-      ],
-      "content_tags": [
-        "의정부고 졸업사진",
-        "권은비",
-        "방시혁",
-        "BJ 과즙세연",
-        "백범 김구 재현"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "1335410a5f8a",
-    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
-    "created_at": "2025-07-22T15:09:11.490730",
-    "last_updated": "2025-07-22T19:08:31.959395",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "경제"
-      ],
-      "content_tags": [
-        "최태원 차녀",
-        "최민정",
-        "군 복무 정신적 충격",
-        "창업",
-        "인테그랄 헬스"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "387778715252",
-    "title": "DMZ서 ‘귀순자 유도작전’한 병사들 ‘최장 포상휴가’ 갔다···몇 박 며칠?",
-    "created_at": "2025-07-22T19:08:01.727541",
-    "last_updated": "2025-07-22T19:08:01.727606",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1073,
-    "completion_tokens": 53,
-    "total_tokens": 1126,
-    "cost_usd": 0.000129,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "DMZ",
-        "귀순자 유도작전",
-        "포상휴가",
-        "군사 성과",
-        "군 규정",
-        "군 내부 의혹",
-        "작전 성공",
-        "휴가 기간 행동",
-        "군사적 검증",
-        "군 내부 논란"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "e198aeb4475f",
-    "title": "코스피, 연고점 찍고 '털썩'…외국인 '매도 폭탄'",
-    "created_at": "2025-07-22T19:06:51.605338",
-    "last_updated": "2025-07-22T19:06:51.605406",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1073,
-    "completion_tokens": 53,
-    "total_tokens": 1126,
-    "cost_usd": 0.000129,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "코스피",
-        "연고점",
-        "급락",
-        "외국인 매도",
-        "기관 매도",
-        "선물시장",
-        "코스피200",
-        "삼성전자",
-        "코스닥",
-        "시장 변동성",
-        "글로벌 금융시장",
-        "미국 금리 인상",
-        "중국 증시",
-        "외국인 투자자",
-        "포트폴리오 조정"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "30ba35586062",
-    "title": "대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
-    "created_at": "2025-07-22T15:09:53.569823",
-    "last_updated": "2025-07-22T18:55:44.938520",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "강선우",
-        "인사청문보고서",
-        "임명 절차",
-        "대통령실",
-        "국회"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "beb2ccb9a941",
-    "title": "\"韓 극단적 상황, 지역 대부분 소멸할 것\" 日 석학의 경고",
-    "created_at": "2025-07-22T18:55:29.092535",
-    "last_updated": "2025-07-22T18:55:29.092580",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1078,
-    "completion_tokens": 44,
-    "total_tokens": 1122,
-    "cost_usd": 0.000125,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "인구감소",
-        "지방소멸",
-        "도시 집중화",
-        "한국 인구감소",
-        "일본 도시 축소",
-        "지방소멸대응기금",
-        "서울",
-        "청년 출산율",
-        "인구 구조 변화",
-        "모리 토모야",
-        "도시 역할 분담",
-        "지방 유출",
-        "한국 일본 인구 비교"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "0426530cb790",
-    "title": "동탄 신도시에 1만3000평 규모 종합병원 들어선다",
-    "created_at": "2025-07-22T18:44:39.831800",
-    "last_updated": "2025-07-22T18:44:39.831844",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1108,
-    "completion_tokens": 61,
-    "total_tokens": 1169,
-    "cost_usd": 0.000135,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "화성동탄2 신도시",
-        "종합병원 건립",
-        "LH공사",
-        "병원 유치",
-        "민간사업자 공모",
-        "무상 건물 건축비",
-        "병상 수 300병상 이상",
-        "사업 재공모",
-        "지역 의료 수요",
-        "사업성 악화 우려"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "f31d3bdcf3a3",
-    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
-    "created_at": "2025-07-22T16:53:38.113049",
-    "last_updated": "2025-07-22T18:43:41.734232",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "생활/문화"
-      ],
-      "content_tags": [
-        "의정부고 졸업사진",
-        "방시혁",
-        "권은비",
-        "BJ 과즙세연",
-        "백범 김구"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "cf36355368d8",
-    "title": "전북지사 완주로 이사 가는 날...\"멱살 잡고 잡히고 난장판\"",
-    "created_at": "2025-07-22T18:43:18.910518",
-    "last_updated": "2025-07-22T18:43:18.910549",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1108,
-    "completion_tokens": 61,
-    "total_tokens": 1169,
-    "cost_usd": 0.000135,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "전북도지사 김관영",
-        "완주군 이사",
-        "지역 통합 논란",
-        "주민 충돌",
-        "몸싸움",
-        "완주군 행정복지센터",
-        "지역민 반대",
-        "주민투표",
-        "지역 갈등",
-        "재정 지원",
-        "지역 통합 추진",
-        "민심 극단화"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "ba516fbfbf1d",
-    "title": "李 대통령 대북송금 재판도 연기... 형사재판 모두 중단",
-    "created_at": "2025-07-22T18:32:21.620324",
-    "last_updated": "2025-07-22T18:32:21.620327",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1094,
-    "completion_tokens": 61,
-    "total_tokens": 1155,
-    "cost_usd": 0.000134,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이재명",
-        "대북송금",
-        "수원지법",
-        "형사재판 연기",
-        "쌍방울그룹",
-        "이화영",
-        "김성태",
-        "법원 일정 조정",
-        "법적 절차 중단",
-        "정치적 긴장",
-        "사법권 독립",
-        "헌법 제84조",
-        "재판 연기 이유",
-        "정치권 논란"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "68bdeec4dca5",
-    "title": "한동훈 \"전한길, 극우 프레임 아니라 극우 맞다\"",
-    "created_at": "2025-07-22T18:31:40.789693",
-    "last_updated": "2025-07-22T18:31:40.789703",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1094,
-    "completion_tokens": 61,
-    "total_tokens": 1155,
-    "cost_usd": 0.000134,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "한동훈",
-        "전한길",
-        "극우 성향",
-        "극우 프레임",
-        "부정선거",
-        "계엄 옹호",
-        "부정선거 음모론",
-        "정치 논란",
-        "국민의힘",
-        "언론 보도"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "c1e80339d70a",
-    "title": "당근서 부동산 직거래했다가 계약금 3.5억 날렸다",
-    "created_at": "2025-07-22T18:30:59.644831",
-    "last_updated": "2025-07-22T18:30:59.644847",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1094,
-    "completion_tokens": 61,
-    "total_tokens": 1155,
-    "cost_usd": 0.000134,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "당근마켓",
-        "부동산 허위 매물",
-        "계약금 사기",
-        "허위 매물 게시",
-        "계약금 3억5천만원",
-        "피해자 51명",
-        "경찰 구속",
-        "범죄 수법",
-        "개인정보 유출",
-        "음란물 유포 협박",
-        "온라인 부동산 거래 안전",
-        "범행 동기",
-        "허위 매물 유통 방지"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "be48ba5cc3d1",
-    "title": "'김건희 국정농단' 특검 \"도주한 이기훈 삼부토건 부회장 체포영장 발부\"",
-    "created_at": "2025-07-22T18:06:20.085364",
-    "last_updated": "2025-07-22T18:30:14.796691",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1109,
-    "completion_tokens": 57,
-    "total_tokens": 1166,
-    "cost_usd": 0.000134,
-    "tags": {
-      "category_tags": [
-        "정치",
-        "사회"
-      ],
-      "content_tags": [
-        "김건희 국정농단",
-        "이기훈 삼부토건 부회장",
-        "체포영장",
-        "민중기 특검",
-        "조현상 부회장"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "1ece32bd7f09",
-    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
-    "created_at": "2025-07-21T21:09:14.387153",
-    "last_updated": "2025-07-22T18:29:57.980709",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "IT/과학"
-      ],
-      "content_tags": [
-        "인천 송도 아파트 사건",
-        "사제 총기 살해",
-        "가족 폭력",
-        "무기 소지",
-        "정신 건강 조사"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "b13b769d416b",
-    "title": "국민들 폭발하고 李도 '버럭'‥'야유회 춤판' 시장님 \"사과\"",
-    "created_at": "2025-07-22T18:19:10.206502",
-    "last_updated": "2025-07-22T18:19:10.206518",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1066,
-    "completion_tokens": 72,
-    "total_tokens": 1138,
-    "cost_usd": 0.000135,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "구리시 백경현 시장",
-        "집중호우",
-        "홍천 피해",
-        "야유회 논란",
-        "공직자 처신",
-        "비상근무",
-        "시민 분노",
-        "정부 사과",
-        "재난 대응 체계",
-        "이재명 대통령",
-        "공개 영상",
-        "시민 비판",
-        "정치적 책임론"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "42550aeedab2",
-    "title": "6·27 대출규제 후 서울 부동산 쓸어 담은 중국인, 무려…",
-    "created_at": "2025-07-22T18:18:24.104357",
-    "last_updated": "2025-07-22T18:18:24.104360",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1066,
-    "completion_tokens": 72,
-    "total_tokens": 1138,
-    "cost_usd": 0.000135,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "서울 부동산",
-        "외국인 부동산 매수",
-        "중국인 매수자",
-        "6·27 부동산 규제",
-        "부동산 등기 신청",
-        "외국인 투기",
-        "강남권 부동산",
-        "시장 규제",
-        "자금 조달 검증",
-        "시장 왜곡"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "b3f5c2878e4a",
-    "title": "아들은 만들고 엄마는 배달…12억어치 팔린 '수상한 약' 정체",
-    "created_at": "2025-07-22T18:17:37.917254",
-    "last_updated": "2025-07-22T18:17:37.917256",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1066,
-    "completion_tokens": 72,
-    "total_tokens": 1138,
-    "cost_usd": 0.000135,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "불법 의약품",
-        "무허가 제조",
-        "온라인 유통",
-        "텔레그램 판매",
-        "성장호르몬",
-        "에페드린",
-        "스테로이드",
-        "중국 원료 수입",
-        "제조시설",
-        "검찰 송치",
-        "식약처",
-        "아들 A씨",
-        "어머니",
-        "약 12억 원 이익",
-        "의약품 안전성"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "be8ddd7eb018",
-    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
-    "created_at": "2025-07-22T15:09:11.490730",
-    "last_updated": "2025-07-22T18:16:47.856346",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "경제"
-      ],
-      "content_tags": [
-        "최태원 차녀",
-        "최민정",
-        "군 복무",
-        "정신건강 충격",
-        "스타트업 창업"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "12326baec44a",
-    "title": "'김건희 국정농단' 특검 \"도주한 이기훈 삼부토건 부회장 체포영장 발부\"",
-    "created_at": "2025-07-22T18:06:20.085364",
-    "last_updated": "2025-07-22T18:06:20.085379",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1109,
-    "completion_tokens": 57,
-    "total_tokens": 1166,
-    "cost_usd": 0.000134,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "김건희 국정농단",
-        "특검",
-        "이기훈 부회장",
-        "체포영장",
-        "삼부토건",
-        "조현상 부회장",
-        "도주",
-        "수사",
-        "법치주의",
-        "귀국",
-        "조사 요청",
-        "민중기 특검팀"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "730514ed297f",
-    "title": "‘VIP 격노설 부인’ 김계환 전 해병대사령관 구속 기로",
-    "created_at": "2025-07-22T16:41:42.358941",
-    "last_updated": "2025-07-22T18:05:42.975754",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회",
-        "정치"
-      ],
-      "content_tags": [
-        "김계환 전 해병대사령관",
-        "구속영장",
-        "수사 외압",
-        "위증 혐의",
-        "VIP 격노설"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "f379b475be4c",
-    "title": "[속보]대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
-    "created_at": "2025-07-22T15:09:53.569823",
-    "last_updated": "2025-07-22T18:05:19.956572",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "강선우",
-        "여성가족부 장관 후보자",
-        "인사청문보고서 재송부",
-        "대통령실",
-        "임명 절차"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "0e433496eea6",
-    "title": "[단독] 김재원 아나운서, '아침마당' 하차… 후임은 '50기 황금 막내' 박철규",
-    "created_at": "2025-07-22T18:04:56.857937",
-    "last_updated": "2025-07-22T18:04:56.857970",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1075,
-    "completion_tokens": 54,
-    "total_tokens": 1129,
-    "cost_usd": 0.000129,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "김재원 아나운서",
-        "아침마당",
-        "KBS",
-        "세대교체",
-        "후임 박철규",
-        "방송인 교체",
-        "김재원 하차",
-        "박철규 신임 진행자",
-        "가족사 공개",
-        "유튜브 영상",
-        "내부 결정",
-        "연령대 33세",
-        "젊은 세대",
-        "방송 프로그램",
-        "MC 교체 논란"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "7eea79f56712",
-    "title": "“아들 총격 살해, 성공한 前부인 열등감·복수심 탓”",
-    "created_at": "2025-07-22T17:58:26.820361",
-    "last_updated": "2025-07-22T17:58:26.820392",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "인천 송도 사제 총기 사건",
-        "아들 살해",
-        "범행 동기",
-        "전 부인",
-        "열등감",
-        "복수심",
-        "금속 파이프 총기 제작",
-        "폭발물 준비",
-        "심리적 배경",
-        "범행 계획",
-        "이혼 후 복수심",
-        "전 부인 유명 미용 프랜차이즈 대표",
-        "범행 당시 정신 상태",
-        "범죄심리학자 오윤성 교수",
-        "가족 갈등"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "fdad0a01bbfa",
-    "title": "'왼뺨? 오른뺨?' 거듭된 진술 번복…추행 혐의 경찰관 혐의 벗어",
-    "created_at": "2025-07-22T17:53:59.857141",
-    "last_updated": "2025-07-22T17:53:59.857166",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1078,
-    "completion_tokens": 50,
-    "total_tokens": 1128,
-    "cost_usd": 0.000128,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "경찰관 A씨",
-        "추행 혐의 무죄 판결",
-        "전주지법",
-        "피해자 진술 번복",
-        "객관적 증거 부재",
-        "CCTV 영상",
-        "목격자 진술",
-        "알리바이",
-        "법적 증명",
-        "성범죄 혐의 논란"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "854ac5128646",
-    "title": "그날 이후, 우리 가족은…리딩방 사기에 무너진 지영이네",
-    "created_at": "2025-07-22T17:53:29.088254",
-    "last_updated": "2025-07-22T17:53:29.088261",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1078,
-    "completion_tokens": 50,
-    "total_tokens": 1128,
-    "cost_usd": 0.000128,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "리딩방 사기",
-        "가족 비극",
-        "금융 사기",
-        "피해자 가족",
-        "사기 피해",
-        "조작된 수익 화면",
-        "가짜 홈페이지",
-        "경찰 조사",
-        "범인 신원 미공개",
-        "중장년층 피해자",
-        "불법 리딩방 예방 캠페인",
-        "심리 치료",
-        "이상원씨",
-        "가족 사고",
-        "피해 복구"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "34858797a256",
-    "title": "[속보]대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
-    "created_at": "2025-07-22T15:09:53.569823",
-    "last_updated": "2025-07-22T17:52:34.812514",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "정치",
-        "사회"
-      ],
-      "content_tags": [
-        "강선우",
-        "인사청문보고서 재송부",
-        "대통령실",
-        "임명 절차",
-        "국회"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "9d65874ecd4e",
-    "title": "의자 893개가 늘어선 해변…슬픔이 머문 자리 [G리포트]",
-    "created_at": "2025-07-22T17:41:51.858810",
-    "last_updated": "2025-07-22T17:41:51.858883",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1086,
-    "completion_tokens": 93,
-    "total_tokens": 1179,
-    "cost_usd": 0.000146,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "가자지구 전쟁",
-        "이슬람전쟁 희생자",
-        "전사자 수",
-        "전사자 추모 의자",
-        "2023년 이후 사망자",
-        "팔레스타인 하마스 공격",
-        "이스라엘 군사작전",
-        "희생자 집계",
-        "전쟁 비극",
-        "전사자 명단"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "d5be5b14d727",
-    "title": "침수 피해 속 '덩실덩실'…구리시장, 홍수 날 야유회 참석에 뭇매",
-    "created_at": "2025-07-22T17:41:18.081478",
-    "last_updated": "2025-07-22T17:41:18.081493",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1086,
-    "completion_tokens": 93,
-    "total_tokens": 1179,
-    "cost_usd": 0.000146,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "구리시",
-        "백경현 시장",
-        "홍수 피해",
-        "야유회 참석",
-        "홍수주의보",
-        "비상근무 무시",
-        "재난 책임감 논란",
-        "홍천 야유회",
-        "공무원 행동",
-        "시민 안전",
-        "언론 보도",
-        "해명 및 여론",
-        "정치권 반응"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "46e5a02acc0d",
-    "title": "20대 한국 여성 일본 여행갔다 한 달 가까이 실종…경찰 “수소문 중” [지금뉴스]",
-    "created_at": "2025-07-22T17:40:17.292116",
-    "last_updated": "2025-07-22T17:40:17.292189",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1086,
-    "completion_tokens": 93,
-    "total_tokens": 1179,
-    "cost_usd": 0.000146,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "일본 도쿄",
-        "한국 여성 실종",
-        "여행자 실종 사건",
-        "최 모 씨",
-        "병원 열사병 치료",
-        "행방 묘연",
-        "한국 경찰 수사",
-        "범죄 연루 정황 없음",
-        "일본 후지뉴스네트워크",
-        "경찰 수사 진행"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "0843d5c6b6f9",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T17:39:25.857942",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치",
-        "사회"
-      ],
-      "content_tags": [
-        "이재명 대통령",
-        "이진숙 교육부장관 후보자",
-        "강선우 후보자",
-        "인사청문회",
-        "자녀 조기 유학 의혹"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "4959375533e6",
-    "title": "‘방 비번도 알려주고, 계약서도 썼는데’···당근마켓 부동산 사기 주의보",
-    "created_at": "2025-07-22T17:28:53.185519",
-    "last_updated": "2025-07-22T17:28:53.185546",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "당근마켓",
-        "부동산 사기",
-        "허위 매물",
-        "계약금 편취",
-        "집 비밀번호 변경",
-        "조직적 범행",
-        "실시간 비밀번호 제공",
-        "피해자 51명",
-        "피해금액 3억 5000만원",
-        "서울 강서구",
-        "인천",
-        "수사 확대",
-        "범죄 조직",
-        "자금 세탁",
-        "수사 진행 중"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "994696b2c365",
-    "title": "민주당 이소영, ‘강선우 옹호’ 문진석 비판···“우리만 예외란 차별 논리”",
-    "created_at": "2025-07-22T17:27:51.944432",
-    "last_updated": "2025-07-22T17:27:51.944440",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "민주당",
-        "이소영",
-        "문진석",
-        "강선우",
-        "여성가족부 장관 후보자",
-        "갑질 의혹",
-        "보좌진 갑질",
-        "차별 논리",
-        "당내 갈등",
-        "정치 논란",
-        "페이스북",
-        "CBS 라디오",
-        "갑질 옹호 발언",
-        "이슈 재점화"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "c4f5daea9065",
-    "title": "\"갖다 놓으면 불티나게 팔린다\"… 전 세계 냉동고 점령 중인 K아이스크림",
-    "created_at": "2025-07-22T17:27:05.621979",
-    "last_updated": "2025-07-22T17:27:05.622017",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "K아이스크림",
-        "수출액 최대치",
-        "글로벌 시장 점유율",
-        "미국 수출시장",
-        "빙과업체",
-        "롯데웰푸드",
-        "빙그레",
-        "원자재 가격 하락",
-        "코코아 가격",
-        "인도 시장",
-        "롯데 인디아",
-        "하브모어",
-        "수익성 회복",
-        "신제품 개발",
-        "시장 확대"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "e883f8a9f8fe",
-    "title": "[단독] “한국 골프장들 다 죽겠네”…4박5일 72홀 ‘30만원대’ 패키지 나왔다는데",
-    "created_at": "2025-07-22T17:26:24.205251",
-    "last_updated": "2025-07-22T17:26:24.205273",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "국내 골프장",
-        "해외 골프 패키지",
-        "중국 무비자 정책",
-        "72홀 4박5일 패키지",
-        "30만원대 가격",
-        "일본 골프 패키지",
-        "제주권역 골프장",
-        "골프 시장 경쟁",
-        "그린피 인하",
-        "시장 구조 변화"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "c1cd11d4be67",
-    "title": "“동생 맞아요?금감원 맞아요?”…이 은행 직원들, 고객 예금 2억7천만원 지켰다",
-    "created_at": "2025-07-22T17:15:20.532144",
-    "last_updated": "2025-07-22T17:15:20.532155",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "수협",
-        "보이스피싱",
-        "고객 예금 보호",
-        "금감원",
-        "금융사기 예방",
-        "영업점 직원",
-        "금융권 신뢰 회복",
-        "피해 방지 사례",
-        "금융당국 협력",
-        "금융사고 예방",
-        "자산 보호"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "f0936e88c3df",
-    "title": "李 “국민 죽어간 현장서 음주가무 즐긴 정신나간 공직자 엄히 단속”",
-    "created_at": "2025-07-22T17:14:43.327909",
-    "last_updated": "2025-07-22T17:14:43.327913",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "이재명",
-        "공무원 음주가무 논란",
-        "폭우 피해 현장",
-        "공무원 근무 태도",
-        "국무회의",
-        "피해 복구",
-        "공직자 단속",
-        "국민 안전",
-        "정부 조치",
-        "공무원 해명"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "304237575437",
-    "title": "“열사병 치료 후 사라져”…일본 여행 한국인 여성 실종",
-    "created_at": "2025-07-22T17:13:54.621700",
-    "last_updated": "2025-07-22T17:13:54.621713",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "한국인 여성",
-        "일본 여행",
-        "열사병 치료",
-        "실종 사건",
-        "행방 미확인",
-        "일본 후지뉴스네트워크",
-        "한국 경찰",
-        "일본 경찰",
-        "병원 CCTV",
-        "의혹과 논란",
-        "외교부",
-        "범죄 가능성",
-        "병원 개인정보 보호",
-        "최모(29세)",
-        "전북 정읍"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "236e5ec56bfc",
-    "title": "[단독]김용현 취임 2주만에 '합참-드론사' 무인기 작전 직보…\"실패 아니니 힘내라\" 전화도",
-    "created_at": "2025-07-22T17:02:49.254654",
-    "last_updated": "2025-07-22T17:02:49.254659",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "김용현",
-        "합참",
-        "드론사령관",
-        "무인기 작전",
-        "작전 승인",
-        "북한 무인기 추락",
-        "작전 실패 논란",
-        "군 내부 충돌",
-        "군사 긴장",
-        "작전 중단 건의",
-        "군사 책임",
-        "군 내부 규정",
-        "군사 도발",
-        "합참의장 김명수",
-        "군사 정책"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "0a32e70dae1e",
-    "title": "일본 여행 간 딸 사라졌다…\"엄마 150만원만\" 통화 후 무슨 일이",
-    "created_at": "2025-07-22T17:02:03.156011",
-    "last_updated": "2025-07-22T17:02:03.156037",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "일본 여행",
-        "여성 실종",
-        "병원 치료",
-        "금전 요구",
-        "가족 수사",
-        "행방 묘연",
-        "딸 송금",
-        "열사병",
-        "최모 씨",
-        "일본 경찰",
-        "실종 사건",
-        "여행 중 건강 악화"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "9775166d0178",
-    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
-    "created_at": "2025-07-22T16:53:38.113049",
-    "last_updated": "2025-07-22T16:53:38.113103",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "의정부고",
-        "졸업사진",
-        "풍자 문화",
-        "방시혁",
-        "권은비",
-        "BJ 과즙세연",
-        "백범 김구",
-        "사회적 논란",
-        "명예훼손",
-        "학생자치회",
-        "미국 LA",
-        "베벌리힐스",
-        "재현 사진",
-        "학교 해명",
-        "풍자 문화 연장"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "69c3f9f137a7",
-    "title": "결혼 약속한 여친, 車사고로 ‘하반신 마비’…사고 낸 남친은 돌연 ‘잠적’",
-    "created_at": "2025-07-22T16:52:40.302170",
-    "last_updated": "2025-07-22T16:52:40.302223",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "중국 간쑤성",
-        "교통사고",
-        "하반신 마비",
-        "백씨",
-        "장씨",
-        "운전 사고",
-        "법규 위반",
-        "책임 인정",
-        "지원 약속",
-        "잠적",
-        "법적 조치",
-        "재활 치료",
-        "척수 손상",
-        "다발성 골절",
-        "가족 지원"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "beea85806c84",
-    "title": "‘VIP 격노설 부인’ 김계환 전 해병대사령관 구속 기로",
-    "created_at": "2025-07-22T16:41:42.358941",
-    "last_updated": "2025-07-22T16:41:42.358947",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "김계환",
-        "해병대사령관",
-        "구속영장",
-        "수사 외압",
-        "허위 증언",
-        "VIP 격노",
-        "군사법원",
-        "수사 조작 의혹",
-        "검찰",
-        "법원",
-        "정치권 논란",
-        "군 내부 사건"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "cc670c7fbd48",
-    "title": "\"그동안 왜 안 썼을까\"...폭염에 미국서도 양산 '유행'",
-    "created_at": "2025-07-22T16:39:43.827151",
-    "last_updated": "2025-07-22T16:39:43.827208",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "양산 유행",
-        "자외선 차단",
-        "폭염",
-        "기후변화",
-        "앰버 퍼거슨",
-        "여름 패션",
-        "더위 피하기",
-        "도시 미관 문제",
-        "교통 안전",
-        "UPF 50+",
-        "기상청",
-        "기후학자"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "b3a14fdf12a5",
-    "title": "\"너무 썰렁하잖아‥한마디씩?\" 새 장관들 '두근두근' 긴장 [현장영상]",
-    "created_at": "2025-07-22T16:38:52.152299",
-    "last_updated": "2025-07-22T16:38:52.152370",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이재명 대통령",
-        "새 정부 인사",
-        "국무회의",
-        "장관 임명 논란",
-        "인사 검증",
-        "인사청문회",
-        "법무부 정성호",
-        "환경부 김성환",
-        "보건복지부 정은경",
-        "정책 기대",
-        "인사 투명성",
-        "정당성 주장",
-        "사회안전망 강화",
-        "기후위기 대응",
-        "자연재해"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "6a576a373796",
-    "title": "전문가 “아들 총격 살해 父, 성공한 전처에 열등감 느껴 계획 범행 가능성\"",
-    "created_at": "2025-07-22T16:37:26.920182",
-    "last_updated": "2025-07-22T16:37:26.920231",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
         "인천 송도 사건",
-        "아들 총격 살인",
-        "범행 계획",
-        "가족 폭력",
-        "심리 분석",
-        "복수심",
-        "열등감",
-        "폭탄 설치",
-        "경찰 체포",
-        "전문가 분석"
+        "범죄 예방",
+        "법적 규제",
+        "사회적 파장",
+        "가정불화",
+        "경제적 어려움"
       ]
     },
+    "api_calls": 6,
     "version_count": 2
   },
   {
-    "id": "9d81f164788c",
-    "title": "[르포] \"쿠폰 특수 기대\", \"늘어봤자\" 소비쿠폰에 사장님들 기대반 우려반",
-    "created_at": "2025-07-22T16:25:21.020705",
-    "last_updated": "2025-07-22T16:25:21.020741",
+    "id": "e59973e2662d",
+    "title": "대통령과 재계 총수, 연쇄 만찬 회동…이재용 삼성 회장과의 만남으로 대미 투자 현안 논의",
+    "created_at": "2025-07-24T14:54:31.693258",
+    "last_updated": "2025-07-24T14:54:31.693261",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 1079,
-    "completion_tokens": 49,
-    "total_tokens": 1128,
-    "cost_usd": 0.000128,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "소비쿠폰",
-        "쿠폰 정책",
-        "사장님 기대와 우려",
-        "소비진작",
-        "소상공인",
-        "소비촉진",
-        "정부 정책",
-        "소비자심리",
-        "경제회복"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "81ec39def0ce",
-    "title": "평당 1억 '헬리오시티' 따돌렸다...규제 이후 거래 1위 단지 보니 [부동산 아토즈]",
-    "created_at": "2025-07-22T16:24:36.470054",
-    "last_updated": "2025-07-22T16:24:36.470059",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1079,
-    "completion_tokens": 49,
-    "total_tokens": 1128,
-    "cost_usd": 0.000128,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "헬리오시티",
-        "규제 이후 거래",
-        "부동산 거래순위",
-        "평당 1억",
-        "단지별 거래량",
-        "서울 부동산시장",
-        "아파트 가격",
-        "부동산 정책",
-        "부동산 시장 동향"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "f668554bd7fc",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T16:24:02.403548",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
+    "prompt_tokens": 9656,
+    "completion_tokens": 2281,
+    "total_tokens": 11937,
+    "cost_usd": 0.001878,
     "tags": {
       "category_tags": [
         "정치"
       ],
       "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 인사 발표",
-        "인사 철회",
-        "국무위원 임명",
-        "정부 인사",
-        "인사 정책",
-        "한국 정치"
+        "이재명 대통령",
+        "이재용 삼성 회장",
+        "연쇄 만찬 회동",
+        "대미 투자",
+        "글로벌 투자",
+        "무역 정책",
+        "관세 정책",
+        "경제 현안",
+        "한국 경제",
+        "국제 투자"
       ]
     },
-    "version_count": 3
+    "api_calls": 6,
+    "version_count": 2
   },
   {
-    "id": "1c34e52ca2ea",
-    "title": "\"민생쿠폰 13만원에 팝니다\" 올렸다간…2천만원 벌금폭탄",
-    "created_at": "2025-07-22T16:23:35.982785",
-    "last_updated": "2025-07-22T16:23:35.982802",
+    "id": "608e275de97c",
+    "title": "강선우 여성가족부 장관 후보자 사퇴와 당권 경쟁의 변수: 여권 내 시각차와 향후 전망",
+    "created_at": "2025-07-24T14:53:19.050199",
+    "last_updated": "2025-07-24T14:53:19.050202",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 1079,
-    "completion_tokens": 49,
-    "total_tokens": 1128,
-    "cost_usd": 0.000128,
+    "prompt_tokens": 9575,
+    "completion_tokens": 2085,
+    "total_tokens": 11660,
+    "cost_usd": 0.001792,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "강선우",
+        "여성가족부 장관 후보자",
+        "사퇴",
+        "갑질 논란",
+        "당권 경쟁",
+        "여권 내 시각차",
+        "이재명",
+        "박찬대",
+        "정청래",
+        "당내 갈등",
+        "당내 결속",
+        "여론평가",
+        "정치 평론가",
+        "선거",
+        "권력 구도"
+      ]
+    },
+    "api_calls": 7,
+    "version_count": 2
+  },
+  {
+    "id": "a61a386c88d0",
+    "title": "춘천·과천 ‘콜드플레이 불륜 패러디’ 영상 논란, 사실과 해석의 경계",
+    "created_at": "2025-07-24T14:52:07.247036",
+    "last_updated": "2025-07-24T14:52:07.247039",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 10317,
+    "completion_tokens": 2356,
+    "total_tokens": 12673,
+    "cost_usd": 0.001974,
     "tags": {
       "category_tags": [
         "사회"
       ],
       "content_tags": [
-        "민생쿠폰",
-        "불법거래",
-        "금전거래",
-        "벌금폭탄",
-        "사기",
-        "법률위반",
-        "금전거래법",
-        "벌금규정",
-        "사회적문제"
+        "콜드플레이",
+        "불륜 패러디 영상",
+        "춘천시",
+        "과천시",
+        "공공 홍보",
+        "유머러스한 콘텐츠",
+        "지역 홍보",
+        "논란",
+        "공공기관 책임",
+        "사회적 논의"
       ]
     },
-    "api_calls": 1,
+    "api_calls": 7,
     "version_count": 2
   },
   {
-    "id": "c3e1c62d03ba",
-    "title": "대통령 안가 긴 테이블과 팔걸이 없는 의자…이유는? \"높은 분 편하게…공사비 6억 떼였다\"",
-    "created_at": "2025-07-22T16:21:40.650049",
-    "last_updated": "2025-07-22T16:21:40.650080",
+    "id": "0dcb9f73fb5e",
+    "title": "김건희 여사의 귀금속 출처 의혹 확대…수사 진행 상황과 정치권 반응",
+    "created_at": "2025-07-24T14:50:48.037830",
+    "last_updated": "2025-07-24T14:50:48.037833",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
-    "prompt_tokens": 1079,
-    "completion_tokens": 49,
-    "total_tokens": 1128,
-    "cost_usd": 0.000128,
+    "prompt_tokens": 9543,
+    "completion_tokens": 2093,
+    "total_tokens": 11636,
+    "cost_usd": 0.001792,
     "tags": {
       "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "대통령 관저",
-        "긴 테이블",
-        "팔걸이 없는 의자",
-        "공사비 6억",
-        "공사 이유",
-        "공사 비용 논란",
-        "공공시설 개선",
-        "공사비 부정 의혹",
-        "정부 정책",
-        "공공 인테리어"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "78d52387a6f0",
-    "title": "[단독]'김건희 공천개입 연루' 김상민 전 검사 출국금지...'코인왕 존버킴' 일당과 연관성 수사중",
-    "created_at": "2025-07-22T16:11:55.451373",
-    "last_updated": "2025-07-22T16:11:55.451380",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
+        "정치"
       ],
       "content_tags": [
         "김건희",
-        "김상민",
-        "공천개입",
-        "검사 출국금지",
-        "코인왕 존버킴",
-        "연루성 수사",
-        "정치 스캔들",
-        "검찰 수사",
-        "연루 의혹",
-        "정치인 관련 사건"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "96aa0f9e2c05",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T16:02:48.607760",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 인사권",
-        "인사청문회",
-        "국무위원 임명",
-        "정부 인사 발표",
-        "인사 정책"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "859c4f8f15ba",
-    "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
-    "created_at": "2025-07-22T15:08:34.177069",
-    "last_updated": "2025-07-22T16:02:33.915677",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "불법 감청 앱",
-        "배우자 외도 적발",
-        "자녀 보호용 앱",
-        "개인정보 침해",
-        "사생활 감시",
-        "불법 감시",
-        "감청 앱 유포",
-        "사이버 범죄",
-        "법적 규제"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "760a3f0b6cc3",
-    "title": "\"완전 선 넘었다\" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'",
-    "created_at": "2025-07-22T16:02:17.251458",
-    "last_updated": "2025-07-22T16:02:17.251463",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1367,
-    "completion_tokens": 1590,
-    "total_tokens": 2957,
-    "cost_usd": 0.000773,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "강준욱",
-        "사퇴",
-        "5.18 폄하",
-        "논란",
-        "정치적 논란",
-        "역사 왜곡",
-        "사회적 비판",
-        "공직자 사퇴",
-        "역사 인식 논란"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "8c728436186d",
-    "title": "콘서트장서 불륜 들통난 CEO 잘렸지만…회사는 유명세 얻었다",
-    "created_at": "2025-07-22T15:58:01.268175",
-    "last_updated": "2025-07-22T15:58:01.268200",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1145,
-    "total_tokens": 2245,
-    "cost_usd": 0.000568,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "CEO",
-        "불륜 사건",
-        "콘서트장",
-        "회사 해고",
-        "유명세",
-        "기업 이미지",
-        "기업 위기",
-        "직장 내 윤리",
-        "공개 논란"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "acb27b040aaf",
-    "title": "72시간 골든타임 지나갔는데…경남 실종자 4명 오리무중",
-    "created_at": "2025-07-22T15:57:29.270104",
-    "last_updated": "2025-07-22T15:57:29.270171",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1145,
-    "total_tokens": 2245,
-    "cost_usd": 0.000568,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "경남 실종자",
-        "72시간 골든타임",
-        "실종 사건",
-        "수색 작업",
-        "실종자 수",
-        "구조 활동",
-        "오리무중",
-        "응급 구조",
-        "수색 범위",
-        "사건 진행 상황"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "23485631c58b",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T15:56:54.623721",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사 임명",
-        "정부 인사",
-        "국무회의",
-        "인사청문회",
-        "정치권",
-        "정부 정책"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "ea77e7086887",
-    "title": "주말부터 대이동 시작...여름휴가 7월 26일∼8월 1일 '절정'",
-    "created_at": "2025-07-22T15:56:33.862382",
-    "last_updated": "2025-07-22T15:56:33.862400",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1145,
-    "total_tokens": 2245,
-    "cost_usd": 0.000568,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "여름휴가",
-        "7월 26일",
-        "8월 1일",
-        "여행대이동",
-        "휴가철",
-        "여행객",
-        "교통혼잡",
-        "국토교통부",
-        "관광산업",
-        "계획"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "9f2e5d5aeba9",
-    "title": "\"찌개용 앞다리살이었다\"…울릉도 '비계 삼겹살' 업주 사과",
-    "created_at": "2025-07-22T15:56:00.650067",
-    "last_updated": "2025-07-22T15:56:00.650100",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1145,
-    "total_tokens": 2245,
-    "cost_usd": 0.000568,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "울릉도",
-        "비계 삼겹살",
-        "앞다리살",
-        "업주 사과",
-        "돼지고기 품질 문제",
-        "식품 안전",
-        "고기 유통",
-        "소비자 불만",
-        "축산업",
-        "식품 위생"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "ce554bbb59a4",
-    "title": "“주식·코인 사고 싶다”…소비쿠폰 중고거래 잇따르지만 [지금뉴스]",
-    "created_at": "2025-07-22T15:45:15.629868",
-    "last_updated": "2025-07-22T15:45:15.629891",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1367,
-    "completion_tokens": 1368,
-    "total_tokens": 2735,
-    "cost_usd": 0.000684,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "주식 투자",
-        "가상화폐",
-        "코인",
-        "소비쿠폰",
-        "중고거래",
-        "금융시장",
-        "투자심리",
-        "경제활동",
-        "자산거래"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "327a88c032e0",
-    "title": "첫날 700만명 몰리더니…\"15만원 소비쿠폰 13만원에 팔아요\"",
-    "created_at": "2025-07-22T15:43:51.657047",
-    "last_updated": "2025-07-22T15:43:51.657072",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1367,
-    "completion_tokens": 1368,
-    "total_tokens": 2735,
-    "cost_usd": 0.000684,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "소비쿠폰",
-        "이벤트",
-        "700만명",
-        "쿠폰 가격",
-        "온라인 거래",
-        "프로모션",
-        "할인 이벤트",
-        "소비자 반응",
-        "쿠폰 판매"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "66fc56ecdd3d",
-    "title": "이재명 535억·김문수 449억…대선 선거비용으로 썼다",
-    "created_at": "2025-07-22T15:43:08.244202",
-    "last_updated": "2025-07-22T15:43:08.244225",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1367,
-    "completion_tokens": 1368,
-    "total_tokens": 2735,
-    "cost_usd": 0.000684,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이재명",
-        "김문수",
-        "선거비용",
-        "대선",
-        "선거자금",
-        "정치자금",
-        "후보자 비용",
-        "선거 캠페인",
-        "공직선거법"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "d9f4d7385343",
-    "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
-    "created_at": "2025-07-22T15:08:34.177069",
-    "last_updated": "2025-07-22T15:42:25.022818",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "불법 감청 앱",
-        "배우자 외도 적발",
-        "자녀 보호용 앱",
-        "개인정보 침해",
-        "사생활 침해",
-        "감청 앱 유포",
-        "사이버 범죄",
-        "법적 문제",
-        "감시 기술"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 3
-  },
-  {
-    "id": "29a0fdc5ea2d",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T15:42:05.321372",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사발령",
-        "정부 인사",
-        "청와대",
-        "국무회의",
-        "인사검증",
-        "정치적 논란"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "54878e8a621f",
-    "title": "돌연변이 장마 진땀 뺀 기상청…신(新) 장마 시대 개념 바뀌나",
-    "created_at": "2025-07-22T15:31:33.132530",
-    "last_updated": "2025-07-22T15:31:33.132537",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 940,
-    "total_tokens": 2040,
-    "cost_usd": 0.000486,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "기상청",
-        "장마",
-        "신장마 시대",
-        "기상 변화",
-        "기후변화",
-        "기상 재해",
-        "기상 예보",
-        "기상 정책"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "132b0f887cf9",
-    "title": "'일가족 5명 살해' 가장에 사형 구형‥\"지극히 반인륜·반사회적\"",
-    "created_at": "2025-07-22T15:30:01.622874",
-    "last_updated": "2025-07-22T15:30:01.622881",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 940,
-    "total_tokens": 2040,
-    "cost_usd": 0.000486,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "가족살인",
-        "살인사건",
-        "사형 구형",
-        "반인륜 범죄",
-        "반사회적 범죄",
-        "법원 판결",
-        "형사처벌",
-        "범죄자",
-        "사건 수사"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "eaea1dbff50d",
-    "title": "“가족관계증명서·생기부 보여줘”…JYP 개인정보 침해 논란, 결국 사과",
-    "created_at": "2025-07-22T15:29:23.754575",
-    "last_updated": "2025-07-22T15:29:23.754595",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 940,
-    "total_tokens": 2040,
-    "cost_usd": 0.000486,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "JYP",
-        "개인정보 침해",
-        "가족관계증명서",
-        "생기부",
-        "개인정보 유출 논란",
-        "사과",
-        "개인정보 보호",
-        "연예기획사",
-        "사생활 침해",
+        "귀금속 출처 의혹",
+        "나토 순방",
+        "진주 목걸이",
+        "미키모토",
+        "특검",
+        "재산 신고",
+        "고가 명품",
+        "공직자 윤리",
         "법적 문제"
       ]
     },
-    "api_calls": 1,
+    "api_calls": 7,
     "version_count": 2
   },
   {
-    "id": "c4e0ec420d62",
+    "id": "20250723_063918",
+    "title": "‘여수 식당 불친절 논란’ 유튜버, 사과 메일 받았다…내용 보니",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_052951",
+    "title": "“이자 5%인데 주거래가 무슨 상관”…서울 사는데 지방은행 계좌 튼 이유",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_070406",
+    "title": "“이자 5%인데 주거래가 무슨 상관”…서울 사는데 지방은행 계좌 튼 이유",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_070907",
+    "title": "상폐 위기서 527% 폭등…개미 환호성 터진 '밈 주식' 열풍",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_052912",
+    "title": "\"점심 먹고 커피 한 잔 필수인데\"…오후에 마시는 커피, 뇌에 ‘이런’ 영향 미친다",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_063746",
+    "title": "승무원 면접 보며 \"기내 성적인 파티 참여했으면\"…美 슈퍼리치들의 민낯",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_055649",
+    "title": "검찰, '강제 키스 혀 절단' 사건 최말자씨 재심서 무죄 구형",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_063827",
+    "title": "저출생 바닥 찍었나…5월 출생아 증가율, 14년 만에 최고",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_053049",
+    "title": "“인천 총기사건은 ‘선천성 땡큐결핍증’”…박선영 진실화해위원장이 욕먹을 각오로 썼다는 글 보니",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_070325",
+    "title": "'약손명가' 전처의 호소…\"피의자는 열등감 없는 사람, 범행 이해 안돼\"",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_055831",
+    "title": "15살과 3년간 성매매한 30대男 2심서 ‘대폭 감형’ 왜",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_052834",
+    "title": "“올리브영보다 더 좋아요”…여성들이 가장 많이 쓴 쇼핑앱 뭐길래",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_053139",
+    "title": "“대출 묶였는데 부동산 오르겠나”…집값 상승 기대감 3년 만에 ‘최대폭’ 하락",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_055856",
+    "title": "대만 GD 콘서트서 9억원 챙긴 암표상 적발…10배 이상 웃돈 얹어",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_070210",
+    "title": "\"정 검사님 또? 퇴정하세요\"‥법무장관 '1호 지시' 무시?",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_055735",
+    "title": "대만 GD 콘서트서 9억원 챙긴 암표상 적발…10배 이상 웃돈 얹어",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_063635",
+    "title": "지드래곤 이어 블랙핑크도 당할 뻔…3만원짜리 '이것' 46만원에 팔았다",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_063549",
+    "title": "“50% 할인에도 하루 1대도 안팔려” 망할 줄 알았더니… 난리난 ‘접는폰’ 반전",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_070757",
+    "title": "\"다시 나락 vs 추가 랠리\"…'D-2' 증시 운명 가른다",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_060000",
+    "title": "일본차 美관세 '깜짝 합의'…한국차 '15% 데드라인' 총력",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_185503",
+    "title": "여교사에 성기 사진 보낸 남고생... “교권 침해 아니다” 논란",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_185944",
+    "title": "여교사에 성기 사진 보낸 남고생... “교권 침해 아니다” 논란",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_190932",
+    "title": "여교사에 성기 사진 보낸 남고생... “교권 침해 아니다” 논란",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250723_190345",
+    "title": "여교사에 성기 사진 보낸 남고생... “교권 침해 아니다” 논란",
+    "created_at": "2025-07-23T00:00:00+00:00",
+    "last_updated": "2025-07-23T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_161157",
+    "title": "'김건희 공천개입 연루' 김상민 전 검사 출국금지...'코인왕 존버킴' 일당과 연관성 수사중",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175837",
+    "title": "내란특검, '언론사 단전·단수 의혹' 이상민 전 장관 25일 소환",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_190853",
+    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_165339",
+    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134440",
+    "title": "日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_141533",
+    "title": "\"'국뽕'도 정도껏\"…단속 나선 中",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164144",
+    "title": "‘VIP 격노설 부인’ 김계환 전 해병대사령관 구속 기로",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_193526",
+    "title": "아들에 총 쏜 父 '살벌 실험'…\"폭발물엔 목화솜 덮었다\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175330",
+    "title": "그날 이후, 우리 가족은…리딩방 사기에 무너진 지영이네",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_152856",
     "title": "캠핑 온 일가족 덮친 가평 산사태…고등학생 장남만 ‘생존’",
-    "created_at": "2025-07-22T15:28:55.111183",
-    "last_updated": "2025-07-22T15:28:55.111187",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 940,
-    "total_tokens": 2040,
-    "cost_usd": 0.000486,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "가평 산사태",
-        "가족 사고",
-        "일가족",
-        "고등학생 장남 생존",
-        "산사태 피해",
-        "자연재해",
-        "사고 원인 조사",
-        "구조 활동",
-        "산악 사고"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "b828d4ef0a8e",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T15:28:22.634378",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사청문회",
-        "정부 인사",
-        "정치적 논란",
-        "인사 임명 과정"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "ab014264dfa3",
-    "title": "3개월 전 거래정지 시켰어야… 메디콕스, 3연상에 낚인 개미들 품고 상폐 위기",
-    "created_at": "2025-07-22T15:22:13.690076",
-    "last_updated": "2025-07-22T15:22:13.690081",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1123,
-    "total_tokens": 2223,
-    "cost_usd": 0.000559,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "메디콕스",
-        "거래정지",
-        "상장폐지 위기",
-        "개미 투자자",
-        "3연상",
-        "주가 급락",
-        "주식시장",
-        "투자심리",
-        "증권사",
-        "금융당국"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "a2009c3fe301",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T15:21:13.390581",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사청문회",
-        "정부 인사",
-        "국무위원 임명",
-        "인사 정책",
-        "정부 조직 개편"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "8c369da4b253",
-    "title": "‘벌집 제거’ 나선 소방차 10m 아래로 추락…소방관 3명 중상",
-    "created_at": "2025-07-22T15:20:38.976434",
-    "last_updated": "2025-07-22T15:20:38.976452",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1123,
-    "total_tokens": 2223,
-    "cost_usd": 0.000559,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "소방차 추락",
-        "벌집 제거",
-        "소방관 부상",
-        "소방관 3명 중상",
-        "소방차 사고",
-        "소방활동 사고",
-        "응급구조",
-        "소방 안전사고",
-        "소방차 사고 원인"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "bc99c0bd6275",
-    "title": "외국인, 현·선물 1조 '투매'…코스피 '풀썩'",
-    "created_at": "2025-07-22T15:19:57.270000",
-    "last_updated": "2025-07-22T15:19:57.270026",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1123,
-    "total_tokens": 2223,
-    "cost_usd": 0.000559,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "외국인 투자자",
-        "현물투매",
-        "선물투매",
-        "코스피",
-        "주식시장 급락",
-        "투매 현상",
-        "주가 하락",
-        "외국인 매도",
-        "시장 불안",
-        "증권시장"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "c2dd6d7c95c9",
-    "title": "하루아침에 대출 다 갚은 치킨집 사장님…로또 된 줄 알았더니 [일확연금 노후부자]",
-    "created_at": "2025-07-22T15:10:38.725566",
-    "last_updated": "2025-07-22T15:10:38.725570",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "치킨집 사장님",
-        "대출 상환",
-        "로또 당첨",
-        "일확연금",
-        "노후 준비",
-        "금융 사고",
-        "재테크",
-        "소액 복권",
-        "금융 안정",
-        "소득 변화"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "52be49763fd8",
-    "title": "[속보]대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
-    "created_at": "2025-07-22T15:09:53.569823",
-    "last_updated": "2025-07-22T15:09:53.569830",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "대통령실",
-        "강선우",
-        "청문보고서",
-        "재송부 요청",
-        "임명 절차",
-        "국회",
-        "인사청문회",
-        "정부 정책",
-        "국무위원",
-        "임명 과정"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "515d1a4c0432",
-    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
-    "created_at": "2025-07-22T15:09:11.490730",
-    "last_updated": "2025-07-22T15:09:11.490738",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "최태원",
-        "차녀",
-        "군대 경험",
-        "심리적 충격",
-        "창업 결심",
-        "가족 이야기",
-        "기업가정신",
-        "대한민국 군대",
-        "가족 관계"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "72f143c6daaa",
-    "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
-    "created_at": "2025-07-22T15:08:34.177069",
-    "last_updated": "2025-07-22T15:08:34.177081",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 1100,
-    "completion_tokens": 1172,
-    "total_tokens": 2272,
-    "cost_usd": 0.000579,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "불법 감청 앱",
-        "배우자 외도 적발",
-        "자녀 보호용 앱",
-        "사생활 침해",
-        "감청 소프트웨어",
-        "개인정보 유출",
-        "법적 문제",
-        "사이버 범죄",
-        "감시 앱"
-      ]
-    },
-    "api_calls": 1,
-    "version_count": 2
-  },
-  {
-    "id": "cb1bb96c2cee",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T15:07:53.968823",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령",
-        "인사청문회",
-        "정부 인사",
-        "인사 발표",
-        "국무위원",
-        "인사 정책"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "70cdaf233115",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T14:57:18.257639",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사 임명",
-        "정부 인사",
-        "정치 인사",
-        "청와대",
-        "인사 정책"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "179a8dd0c6bf",
-    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T14:56:49.678794",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙",
-        "강선우",
-        "인사철회",
-        "임명",
-        "정부 인사",
-        "정부 정책",
-        "인사발표",
-        "대통령",
-        "인사권"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "377bb3a28296",
-    "title": "“점심 같이 먹자고요? 왜요?”…말 못하던 신입사원이 달라졌다는데, 왜?",
-    "created_at": "2025-07-22T14:37:21.701161",
-    "last_updated": "2025-07-22T14:37:21.701171",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -2750,27 +772,34 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "신입사원",
-        "직장 문화",
-        "사내 대화",
-        "직장 내 변화",
-        "커뮤니케이션",
-        "사내 분위기",
-        "직장인 관계",
-        "회사 문화 개선"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "52dc4cec93af",
+    "id": "20250722_142635",
+    "title": "[르포] “여긴 소비쿠폰 못 써요?” 오락가락 사용처에 헷갈리는 시민들",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133535",
     "title": "정청래, '윤 옥중 페북'에 \"망상 접고 감옥서 반성 여생 보내길\"",
-    "created_at": "2025-07-22T13:35:35.222338",
-    "last_updated": "2025-07-22T13:35:35.222359",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -2779,26 +808,1150 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "정청래",
-        "윤석열",
-        "옥중 페북",
-        "감옥",
-        "반성",
-        "망상",
-        "정치인 비판"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "cbc6724463c7",
+    "id": "20250722_154516",
+    "title": "“주식·코인 사고 싶다”…소비쿠폰 중고거래 잇따르지만 [지금뉴스]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_185530",
+    "title": "\"韓 극단적 상황, 지역 대부분 소멸할 것\" 日 석학의 경고",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_173340",
+    "title": "인천 총기 유족 “이혼 탓 아냐, 며느리·손자도 해치려 해”[전문]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_155730",
+    "title": "72시간 골든타임 지나갔는데…경남 실종자 4명 오리무중",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_174153",
+    "title": "의자 893개가 늘어선 해변…슬픔이 머문 자리 [G리포트]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_174018",
+    "title": "20대 한국 여성 일본 여행갔다 한 달 가까이 실종…경찰 “수소문 중” [지금뉴스]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_104852",
+    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_181738",
+    "title": "아들은 만들고 엄마는 배달…12억어치 팔린 '수상한 약' 정체",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_142730",
+    "title": "라부부, 수백만원 번다 난리더니…\"가지고 있으면 위험\" 음모론에 '화형식'까지",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_163926",
+    "title": "청와대 돌아오는 대통령, 애매해진 청와대재단…운명은",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164132",
+    "title": "“돈 적게 번다고 파혼 당했다” 40대 남성에 “조상님이 도우셨다” 응원 쇄도",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175919",
+    "title": "강선우 보고서 재송부 요청...이번 주 내 임명할 듯",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_152924",
+    "title": "“가족관계증명서·생기부 보여줘”…JYP 개인정보 침해 논란, 결국 사과",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172753",
+    "title": "민주당 이소영, ‘강선우 옹호’ 문진석 비판···“우리만 예외란 차별 논리”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_181649",
+    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172832",
+    "title": "[인사이드 스토리]쉰들러, '칼 든 우군'서 '조용한 이탈자'로 돌아섰나",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172854",
+    "title": "‘방 비번도 알려주고, 계약서도 썼는데’···당근마켓 부동산 사기 주의보",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_131856",
+    "title": "[자막뉴스] \"150만 원 보내달라고 했는데…\" 일본 여행 갔다 한 달째 실종된 20대 한국인",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_163853",
+    "title": "\"너무 썰렁하잖아‥한마디씩?\" 새 장관들 '두근두근' 긴장 [현장영상]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_153429",
+    "title": "벤츠 최고급 S580 3년 만에 서스펜스 폭삭…수리비 800만 원 화냈더니 '공짜', 손님이 호구?",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133600",
+    "title": "‘캡틴’ 김동현, 팀 K리그 승선…뉴캐슬 상대 중원 지휘",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_150835",
+    "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171444",
+    "title": "李 “국민 죽어간 현장서 음주가무 즐긴 정신나간 공직자 엄히 단속”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154226",
+    "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_184320",
+    "title": "전북지사 완주로 이사 가는 날...\"멱살 잡고 잡히고 난장판\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_180620",
+    "title": "'김건희 국정농단' 특검 \"도주한 이기훈 삼부토건 부회장 체포영장 발부\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_140246",
+    "title": "국힘, ‘전광훈 정당서 출마’ 지영준 새 인권위원으로 추천 ‘논란’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133917",
+    "title": "벌어서 다 줬는데…'월급 850만원' 남편의 하소연",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_143110",
+    "title": "日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_121955",
+    "title": "“20년 전 이혼 뒤 열등감 가능성… 아내가 아낀 대상에 분노 표출”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175828",
+    "title": "“아들 총격 살해, 성공한 前부인 열등감·복수심 탓”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_183016",
+    "title": "'김건희 국정농단' 특검 \"도주한 이기훈 삼부토건 부회장 체포영장 발부\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133650",
+    "title": "“아무도 모르던 회사, 세계가 다 알아” 전광판 불륜 들통에 뜻밖의 유명세",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164007",
+    "title": "'아나운서→CEO' 김소영 회사 매출 대박 나더니…70억 투자유치",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_123237",
+    "title": "산청 실종자 2명 숨진 채 발견…'더딘 복구'에 주민 고통",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175401",
+    "title": "'왼뺨? 오른뺨?' 거듭된 진술 번복…추행 혐의 경찰관 혐의 벗어",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_145650",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_152823",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_174118",
+    "title": "침수 피해 속 '덩실덩실'…구리시장, 홍수 날 야유회 참석에 뭇매",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_162405",
+    "title": "이진숙 방통위원장, 집중호우 난리통에 ‘휴가 신청’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134709",
+    "title": "이 대통령, 가평, 서산·예산, 담양, 산청·합천 특별재난지역 선포",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_121242",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_144319",
+    "title": "김건희 소환 통보에 \"탄압\" 외친 尹…특검 \"논박할 가치 없다\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_165241",
+    "title": "결혼 약속한 여친, 車사고로 ‘하반신 마비’…사고 낸 남친은 돌연 ‘잠적’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172523",
+    "title": "[사설] 유튜버 한 명에 휘둘리는 국힘",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_145719",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_114132",
+    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154502",
+    "title": "“국방부, 해병대 수사단 해체 계획”…수사 압박용?",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172625",
+    "title": "“한국 골프장들 다 죽겠네”…4박5일 72홀 ‘30만원대’ 패키지 나왔다는데",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_122138",
+    "title": "태국 풀빌라에 수상한 한국인 19명…'이 짓' 하다가 딱 걸렸다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_143723",
+    "title": "“점심 같이 먹자고요? 왜요?”…말 못하던 신입사원이 달라졌다는데, 왜?",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_180521",
+    "title": "대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_181825",
+    "title": "6·27 대출규제 후 서울 부동산 쓸어 담은 중국인, 무려…",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_162337",
+    "title": "\"민생쿠폰 13만원에 팝니다\" 올렸다간…2천만원 벌금폭탄",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154206",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_131700",
+    "title": "\"의정부고 졸업사진, 올해도 터졌다\"..방시혁-과즙세연에 권은비까지 포착",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_125826",
+    "title": "오늘부터 아이폰으로 버스·지하철 탄다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_150755",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154236",
+    "title": "출고가 164만원 플립7이 9만원…단통법 폐지 첫날 '성지' 가보니 [팩플]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_180544",
+    "title": "‘VIP 격노설 부인’ 김계환 전 해병대사령관 구속 기로",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154309",
+    "title": "이재명 535억·김문수 449억…대선 선거비용으로 썼다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_155635",
+    "title": "주말부터 대이동 시작...여름휴가 7월 26일∼8월 1일 '절정'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_180458",
+    "title": "김재원 아나운서, '아침마당' 하차… 후임은 '50기 황금 막내' 박철규",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_123343",
     "title": "문진석 \"보좌진 존경·배려해야‥강선우 다시 사과할 필요 있어\"",
-    "created_at": "2025-07-22T12:33:43.957410",
-    "last_updated": "2025-07-22T12:33:43.957425",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -2807,87 +1960,160 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "문진석",
-        "보좌진 존경",
-        "배려",
-        "강선우",
-        "사과",
-        "국회",
-        "국회의원",
-        "정치적 발언",
-        "공직자 예절"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "69c09ebceb05",
+    "id": "20250722_162609",
+    "title": "\"실수령 월 850만원인데 아내가 빠듯하다고\" 40대 중반 가장 \"진짜 현타왔다\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_140356",
+    "title": "이번엔 방시혁·과즙세연…온라인 또 뒤집은 의정부고 패러디",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_024019",
+    "title": "총기살해 60대 “애 엄마와 이혼, 아들이 내탓이라고 해 자주 다퉜다”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172706",
+    "title": "\"갖다 놓으면 불티나게 팔린다\"… 전 세계 냉동고 점령 중인 K아이스크림",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_125421",
+    "title": "\"집사람 손해봤다\" 윤석열 '도이치 발언' 선거법 위반 조사",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_160218",
+    "title": "\"완전 선 넘었다\" 강준욱 사퇴‥치명타로 돌아온 '5.18 폄하'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134633",
+    "title": "“재난 상황에 무슨 휴가”…대통령실, 이진숙 여름휴가 신청 반려",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133744",
+    "title": "오늘부터 폰 돈주면 호구?…“갤폴드7·갤S25 月10만원 이상 요금제만 가능, ‘공짜폰’ 힘들어” [투자360]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_173927",
     "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-22T12:12:42.445564",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사청문회",
-        "정부 인사",
-        "국무위원 임명",
-        "정부 정책",
-        "인사권 행사"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "521e958be7c5",
-    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
-    "created_at": "2025-07-21T16:44:21.081250",
-    "last_updated": "2025-07-22T11:41:32.266654",
-    "version": 7,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "강선우",
-        "병원 갑질",
-        "위장 전입 의혹",
-        "경찰 수사",
-        "공직자 비리",
-        "정치인 의혹",
-        "공무원 부정행위",
-        "수사 진행",
-        "공공기관"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "c2fe348a7140",
-    "title": "연애결혼 했다고 '총살'…파키스탄 충격 영상 확산 [소셜픽]",
-    "created_at": "2025-07-22T11:30:32.292350",
-    "last_updated": "2025-07-22T11:30:32.292365",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -2896,58 +2122,16 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "파키스탄",
-        "충격 영상",
-        "연애결혼",
-        "총살",
-        "가정폭력",
-        "사망 사건",
-        "사회적 충격",
-        "범죄 영상 확산",
-        "소셜미디어",
-        "사건 배경"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "ad97c5c55966",
-    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
-    "created_at": "2025-07-21T16:44:21.081250",
-    "last_updated": "2025-07-22T10:48:52.777327",
-    "version": 7,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "경찰 수사",
-        "강선우",
-        "병원 갑질",
-        "위장 전입 의혹",
-        "의혹 조사",
-        "공공기관",
-        "사회적 이슈",
-        "정치인 의혹"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "c695647108a3",
-    "title": "“강남까지 40분이면 간다”…3호선 뚫린다는 ‘이 동네’ 집값도 기대감",
-    "created_at": "2025-07-22T10:27:21.494825",
-    "last_updated": "2025-07-22T10:27:21.494828",
+    "id": "20250722_170204",
+    "title": "일본 여행 간 딸 사라졌다…\"엄마 150만원만\" 통화 후 무슨 일이",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -2956,59 +2140,16 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "경제"
-      ],
-      "content_tags": [
-        "강남 집값",
-        "지하철 3호선",
-        "교통개선",
-        "부동산 기대감",
-        "서울 교통망",
-        "부동산시장",
-        "지역개발",
-        "도심 주택시장",
-        "교통 인프라"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
-    "version_count": 2
+    "version_count": 1
   },
   {
-    "id": "6ab06454bf19",
-    "title": "[단독]총기살해 60대 “애 엄마와 이혼, 아들이 내탓이라고 해 자주 다퉜다”",
-    "created_at": "2025-07-22T02:40:19.979157",
-    "last_updated": "2025-07-22T02:40:19.979164",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "총기살해",
-        "60대",
-        "이혼",
-        "가족 갈등",
-        "아들",
-        "가정 문제",
-        "가정 폭력",
-        "범죄 사건",
-        "가족 관계",
-        "자주 다툼"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "87c355bf5c09",
+    "id": "20250722_013606",
     "title": "[단독] 홍수로 비상인데 '덩실덩실'…구리시장 영상 보니",
-    "created_at": "2025-07-21T21:32:53.982764",
-    "last_updated": "2025-07-21T21:32:53.982770",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -3017,481 +2158,304 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "홍수",
-        "구리시장",
-        "비상상황",
-        "영상",
-        "홍수 피해",
-        "지역사회",
-        "기상재해",
-        "시장 동선",
-        "수해복구"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "b5f0f4d2dbdb",
-    "title": "홍준표, 국힘에 섬뜩한 경고 “정청래가 민주당 대표되면 ‘내란 동조당’을…”",
-    "created_at": "2025-07-21T21:17:08.459017",
-    "last_updated": "2025-07-21T21:17:08.459054",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "홍준표",
-        "국민의힘",
-        "정청래",
-        "민주당",
-        "내란 동조당",
-        "경고",
-        "정치적 발언",
-        "여야 정치인",
-        "당내 갈등"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "845f45e520b8",
-    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
-    "created_at": "2025-07-21T21:09:14.387153",
-    "last_updated": "2025-07-21T21:16:03.931094",
-    "version": 2,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "사제총기",
-        "살인사건",
-        "60대 용의자",
-        "구속영장 신청",
-        "아들 집",
-        "총기 범죄",
-        "범죄수사",
-        "무기 소지",
-        "범죄자 신원"
-      ]
-    },
-    "version_count": 3
-  },
-  {
-    "id": "f453cdee622f",
-    "title": "날씬女도 \"위고비 주세요\"…유독 이비인후과로 '우르르', 왜?",
-    "created_at": "2025-07-21T21:14:51.881157",
-    "last_updated": "2025-07-21T21:14:51.881175",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "위고비",
-        "이비인후과",
-        "목감기",
-        "호흡기 질환",
-        "코로나19",
-        "의료 이용 증가",
-        "날씬녀",
-        "병원 방문 이유",
-        "이비인후과 방문 급증"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "cdc5824aaebb",
-    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
-    "created_at": "2025-07-21T21:09:14.387153",
-    "last_updated": "2025-07-21T21:09:14.387172",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "사제총기",
-        "살인사건",
-        "60대 용의자",
-        "구속영장 신청",
-        "아들 집",
-        "총기범죄",
-        "범죄수사",
-        "무기 소지",
-        "법적조치"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "38fdfa0f20ab",
-    "title": "강아지 미용 연습하려 했나…\"털 다 깎고 7시간 만에 파양\"",
-    "created_at": "2025-07-21T21:05:03.952070",
-    "last_updated": "2025-07-21T21:05:03.952079",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "반려견 미용",
-        "강아지 파양",
-        "털 깎기",
-        "반려동물 학대 의혹",
-        "반려동물 연습",
-        "반려동물 업계",
-        "반려견 미용사",
-        "동물 보호",
-        "반려동물 정책"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "3586cec906fc",
-    "title": "금강서 발견된 시신…세종시 40대 실종자와 인상착의 일치",
-    "created_at": "2025-07-21T20:53:30.458409",
-    "last_updated": "2025-07-21T20:53:30.458425",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "금강",
-        "시신 발견",
-        "세종시",
-        "실종자",
-        "40대 남성",
-        "인상착의 일치",
-        "실종 사건",
-        "범죄 수사",
-        "시신 수습",
-        "지역 사건"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "607b4e28e4f5",
-    "title": "보좌관·병원 이어 장관까지?..전 여가부 장관 \"나도 강선우에 갑질 당해\"",
-    "created_at": "2025-07-21T20:51:46.470606",
-    "last_updated": "2025-07-21T20:51:46.470633",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "전여가부 장관",
-        "강선우",
-        "갑질 논란",
-        "장관 갑질",
-        "여성가족부",
-        "권력 남용",
-        "공무원 갑질",
-        "성희롱 의혹",
-        "권력 관계",
-        "정치권"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "2f04a970de03",
-    "title": "며느리·손주 앞에서 '아들 총기 살해'…이유 들여다보니 [종합]",
-    "created_at": "2025-07-21T20:48:49.688520",
-    "last_updated": "2025-07-21T20:48:49.688540",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "가족 내 폭력",
-        "아들 살인사건",
-        "총기 범죄",
-        "며느리",
-        "손주",
-        "가정 폭력",
-        "범죄 동기",
-        "법적 처벌",
-        "가족 갈등"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "235b86437b85",
-    "title": "해운대 호텔 객실 안서 고기 굽다가… 부탄가스 펑! 3명 부상",
-    "created_at": "2025-07-21T20:42:07.087675",
-    "last_updated": "2025-07-21T20:42:07.087687",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "해운대",
-        "호텔",
-        "객실",
-        "고기 구이",
-        "부탄가스 폭발",
-        "펑!",
-        "부상 사고",
-        "화재 사고",
-        "부상자 3명"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "242b5724e52d",
-    "title": "인천 ‘아들 총격 살해’ 사건 “아버지, 음주·약물 없고 정신병력도 없어”",
-    "created_at": "2025-07-21T20:35:49.368053",
-    "last_updated": "2025-07-21T20:35:49.368071",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "인천",
-        "아들 총격 살해 사건",
-        "아버지",
-        "음주",
-        "약물 없음",
-        "정신병력 없음",
-        "가정폭력",
-        "살인사건",
-        "범죄"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "652b571af887",
-    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
-    "created_at": "2025-07-21T15:12:52.520227",
-    "last_updated": "2025-07-21T19:20:02.988775",
-    "version": 6,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "강선우",
-        "병원 갑질",
-        "위장 전입 의혹",
-        "경찰 수사",
-        "공직자 비리",
-        "의혹 조사",
-        "공무원 부정행위",
-        "의료기관 관련 사건"
-      ]
-    },
-    "version_count": 6
-  },
-  {
-    "id": "3e5e8e527564",
-    "title": "사우디 ‘잠자는 왕자’, 20년 혼수상태 끝에 결국 사망",
-    "created_at": "2025-07-21T16:41:28.090140",
-    "last_updated": "2025-07-21T16:41:28.090164",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "사우디 왕자",
-        "20년 혼수상태",
-        "왕자 사망",
-        "중동 정치",
-        "왕실 사건",
-        "장기 혼수",
-        "중동 정치인",
-        "사우디 왕실",
-        "건강 상태"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "d7d6457ecf3f",
-    "title": "‘김혜경 여사 담당’ 2부속실장에 ‘대통령 최측근’ 윤기천 전 분당구청장",
-    "created_at": "2025-07-21T16:36:27.742308",
-    "last_updated": "2025-07-21T16:36:27.742317",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "김혜경 여사",
-        "윤기천 전 분당구청장",
-        "2부속실장",
-        "대통령 최측근",
-        "청와대 인사",
-        "여권 인사",
-        "정치 인사",
-        "정부 인사",
-        "권력 핵심",
-        "정치권"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "19541fa3c8c3",
-    "title": "“총기 제작 유튜브로 배웠다”…아들 살해한 60대의 충격 범행",
-    "created_at": "2025-07-21T16:35:53.514797",
-    "last_updated": "2025-07-21T16:35:53.514816",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "60대 범인",
-        "아들 살해",
-        "총기 제작",
-        "유튜브 학습",
-        "범행 동기",
-        "범죄 사건",
-        "살인사건",
-        "범행 수단",
-        "범인 연령대",
-        "범행 방법"
-      ]
-    },
-    "version_count": 2
-  },
-  {
-    "id": "7f5103c9cfda",
-    "title": "\"조종사, 왼쪽 정상 엔진 껐다\"…제주항공 참사 사조위 결론",
-    "created_at": "2025-07-21T15:25:06.220599",
-    "last_updated": "2025-07-21T15:25:06.220613",
-    "version": 1,
-    "parent_id": null,
-    "model": "gpt-4.1-nano",
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "cost_usd": 0,
-    "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "제주항공 참사",
-        "사조위 결론",
-        "조종사",
-        "엔진 고장",
-        "왼쪽 엔진 정지",
-        "항공 안전",
-        "항공 사고 조사",
-        "항공기 운항",
-        "항공기 사고 원인"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
     "version_count": 1
   },
   {
-    "id": "5eb50d90561b",
+    "id": "20250722_131738",
+    "title": "\"입소문 타고 퍼졌다\"…불법인데 27억 원 팔린 앱 결국",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_150912",
+    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_142432",
+    "title": "‘4세 고시’ 실적 현수막까지 등장…‘영유 금지법’ 나온다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_184343",
+    "title": "워터밤 권은비, 과즙세연·방시혁…의정부고가 다 했다 [포착]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_173514",
+    "title": "출고가 164만원 플립7이 9만원…단통법 폐지 첫날 '성지' 가보니 [팩플]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171110",
+    "title": "군 관계자 \"김용현 전 장관이 '무인기' 지시...군은 처음부터 반대\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_184440",
+    "title": "동탄 신도시에 1만3000평 규모 종합병원 들어선다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_190806",
+    "title": "DMZ서 ‘귀순자 유도작전’한 병사들 ‘최장 포상휴가’ 갔다···몇 박 며칠?",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_163825",
+    "title": "퇴직 후 인생 2막, 열자마자 망한다…5060 개인파산 역대 최대",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_163728",
+    "title": "전문가 “아들 총격 살해 父, 성공한 전처에 열등감 느껴 계획 범행 가능성\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175655",
+    "title": "'尹 격노 위증' 김계환 구속영장 기각…\"도망·증거인멸 염려 없어\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_162522",
+    "title": "[르포] \"쿠폰 특수 기대\", \"늘어봤자\" 소비쿠폰에 사장님들 기대반 우려반",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_170945",
+    "title": "부인 소환하자 낸 옥중 입장…국힘서도 \"왜 이제 와서?\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_131528",
+    "title": "日서 병원치료 후 한달 연락 끊긴 20대 한국 여성, 안전 확인돼",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_131825",
+    "title": "[자막뉴스] \"150만 원 보내달라고 했는데…\" 일본 여행 갔다 한 달째 실종된 20대 한국인",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_173601",
+    "title": "쇼핑몰까지 사용 OK… 지역 상권 ‘기대반 우려반’ [현장, 그곳&]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_160249",
     "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
-    "created_at": "2025-07-20T22:40:15.725043",
-    "last_updated": "2025-07-20T22:40:15.725049",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -3500,27 +2464,1636 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "정치"
-      ],
-      "content_tags": [
-        "이진숙 지명 철회",
-        "강선우 임명",
-        "대통령 결정",
-        "인사 임명",
-        "정부 인사",
-        "인사청문회",
-        "정부 정책",
-        "인사권 행사"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
     "version_count": 1
   },
   {
-    "id": "3d1930b1790b",
+    "id": "20250722_150954",
+    "title": "대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_123027",
+    "title": "與 문진석, 강선우 갑질 논란에 \"너무 가까워 거리낌 없이 심부름\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_190835",
+    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_125744",
+    "title": "“이 대통령 신뢰 깊어”… 강선우 임명 속도전",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_123158",
+    "title": "출고가 164만원 플립7이 9만원…단통법 폐지 첫날 '성지' 가보니 [팩플]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_140448",
+    "title": "쇼핑몰까지 사용 OK… 지역 상권 ‘기대반 우려반’ [현장, 그곳&]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_185546",
+    "title": "대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_155601",
+    "title": "\"찌개용 앞다리살이었다\"…울릉도 '비계 삼겹살' 업주 사과",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_151958",
+    "title": "외국인, 현·선물 1조 '투매'…코스피 '풀썩'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_140548",
+    "title": "[르포] “여긴 소비쿠폰 못 써요?” 오락가락 사용처에 헷갈리는 시민들",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154416",
+    "title": "울릉도 '비계 삼겹살' 논란에…식당 \"찌개용 앞다리살 잘못 팔아\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_122942",
+    "title": "[알고보니] \"한국이 세계 부정선거의 본거지\" 모스탄 만났더니‥",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172605",
+    "title": "가평 캠핑장 참변 가족 수색 사흘째…실종자 수색·복구 총력전",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_163945",
+    "title": "\"그동안 왜 안 썼을까\"...폭염에 미국서도 양산 '유행'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_164052",
+    "title": "“정년은 65세로, 노조법은 약속대로”…한국노총, 총리에 3대 개혁 과제 정조준",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_151040",
+    "title": "하루아침에 대출 다 갚은 치킨집 사장님…로또 된 줄 알았더니 [일확연금 노후부자]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_155802",
+    "title": "콘서트장서 불륜 들통난 CEO 잘렸지만…회사는 유명세 얻었다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_122226",
+    "title": "“59㎡가 13억 찍었어요”...서울 동북권 뉴타운, 이제부턴 여기가 ‘대장주’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_182959",
+    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_193444",
+    "title": "태국 풀빌라에 수상한 한국인 19명…'이 짓' 하다가 딱 걸렸다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_102721",
+    "title": "“강남까지 40분이면 간다”…3호선 뚫린다는 ‘이 동네’ 집값도 기대감",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_153535",
+    "title": "\"150만원짜리 폰이 6만원\"…조용히 시작된 '할인 국지전'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_144132",
+    "title": "국힘, ‘전광훈 정당서 출마’ 지영준 새 인권위원으로 추천 ‘논란’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171034",
+    "title": "송기호 국정상황실장, 임명 한달 만에 교체",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_125559",
+    "title": "여친 하반신 마비 됐는데…사고 낸 남친은 결혼하자더니 잠적",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_152214",
+    "title": "3개월 전 거래정지 시켰어야… 메디콕스, 3연상에 낚인 개미들 품고 상폐 위기",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_155655",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175236",
+    "title": "대통령실 “오늘 강선우 청문보고서 재송부 요청 갈 것”···임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_170250",
+    "title": "김용현 취임 2주만에 '합참-드론사' 무인기 작전 직보…\"실패 아니니 힘내라\" 전화도",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_160234",
+    "title": "자녀 보호용이라더니…‘배우자 외도 적발’ 불법 감청 앱이었다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_173225",
+    "title": "“내 옷이 불쾌해?” 비행기 탑승 거절당한 美여성, 항의하다 체포되기까지",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_133828",
+    "title": "[자막뉴스] \"150만 원 보내달라고 했는데…\" 일본 여행 갔다 한 달째 실종된 20대 한국인",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_153134",
+    "title": "돌연변이 장마 진땀 뺀 기상청…신(新) 장마 시대 개념 바뀌나",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_183101",
+    "title": "당근서 부동산 직거래했다가 계약금 3.5억 날렸다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175606",
+    "title": "이 대통령 \"국민 죽어가는 현장에 음주가무 즐기는 공직자 엄히 단속\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_144219",
+    "title": "“찌개용인데 잘못 줬다”… 울릉도 ‘비계 삼겹살’ 업주의 해명",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_153003",
+    "title": "'일가족 5명 살해' 가장에 사형 구형‥\"지극히 반인륜·반사회적\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171356",
+    "title": "“열사병 치료 후 사라져”…일본 여행 한국인 여성 실종",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_181914",
+    "title": "국민들 폭발하고 李도 '버럭'‥'야유회 춤판' 시장님 \"사과\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171156",
+    "title": "尹, 아내 소환 통보날 “정치 탄압, 나 하나로 족하다”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_152040",
+    "title": "‘벌집 제거’ 나선 소방차 10m 아래로 추락…소방관 3명 중상",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_154352",
+    "title": "첫날 700만명 몰리더니…\"15만원 소비쿠폰 13만원에 팔아요\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_152114",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_190657",
+    "title": "코스피, 연고점 찍고 '털썩'…외국인 '매도 폭탄'",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_175750",
+    "title": "생일잔치서 사제총기로 아들 살해한 60대 구속…\"도주 등 우려\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172655",
+    "title": "'조사 안 받고 재판 안 나오더니…' 윤, 돌연 옥중 입장문",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_162437",
+    "title": "평당 1억 '헬리오시티' 따돌렸다...규제 이후 거래 1위 단지 보니 [부동산 아토즈]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_193604",
+    "title": "아내 미용실서 100만원 ‘슬쩍’한 못난 남편···경찰 “절도 처벌 가능”",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_134538",
+    "title": "“군대서 비극 경험”…장교 출신 최태원 차녀, 美서 창업한 이유",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_125653",
+    "title": "“통일교 통해 캄보디아 사업 지원”… 건진법사, 희림에 선제안",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_191933",
+    "title": "외국인 건보 무임승차 방지법 1년, 중국인서 약발 톡톡",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_122320",
+    "title": "같은 신입인데 ‘600만원’ 차이…초봉 1등 ‘이 직무’ 정체는?",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_193654",
+    "title": "\"50만번 접었다 펴도 끄떡없어\"…폴드7, 방탄유리 원리 OLED 탑재",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_172741",
+    "title": "강선우, '예산 징벌적 삭감' 요구했었다…임명 강행 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_171522",
+    "title": "“동생 맞아요?금감원 맞아요?”…이 은행 직원들, 고객 예금 2억7천만원 지켰다",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_142521",
+    "title": "국힘, ‘전광훈 정당서 출마’ 지영준 새 인권위원으로 추천 ‘논란’",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_121842",
+    "title": "사제총기로 아들 살해한 60대 신상은…'오패산 성병대'는 공개",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_162141",
+    "title": "대통령 안가 긴 테이블과 팔걸이 없는 의자…이유는? \"높은 분 편하게…공사비 6억 떼였다\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_144411",
+    "title": "“국방부, 해병대 수사단 해체 계획”…수사 압박용?",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_113032",
+    "title": "연애결혼 했다고 '총살'…파키스탄 충격 영상 확산 [소셜픽]",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_162403",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_142821",
+    "title": "법원, 김계환 전 해병대사령관 구속영장 기각",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_193405",
+    "title": "최태원 차녀, 군대서 무슨 일 겪었길래…\"충격받아 창업 결심\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_183222",
+    "title": "李 대통령 대북송금 재판도 연기... 형사재판 모두 중단",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250722_183142",
+    "title": "한동훈 \"전한길, 극우 프레임 아니라 극우 맞다\"",
+    "created_at": "2025-07-22T00:00:00+00:00",
+    "last_updated": "2025-07-22T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_214329",
+    "title": "'생일잔치' 열어준 아들 살해…이수정 \"죽이겠단 고의 분명\"",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_213253",
+    "title": "홍수로 비상인데 '덩실덩실'…구리시장 영상 보니",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_164128",
+    "title": "사우디 ‘잠자는 왕자’, 20년 혼수상태 끝에 결국 사망",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_211451",
+    "title": "날씬女도 \"위고비 주세요\"…유독 이비인후과로 '우르르', 왜?",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_051642",
+    "title": "아버지는 왜 생일 챙겨준 아들을 쐈을까? 그것도 며느리·손주 앞에서",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_210914",
+    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_164223",
+    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_193551",
+    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_152506",
+    "title": "\"조종사, 왼쪽 정상 엔진 껐다\"…제주항공 참사 사조위 결론",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_204207",
+    "title": "해운대 호텔 객실 안서 고기 굽다가… 부탄가스 펑! 3명 부상",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_214041",
+    "title": "생일상 차린 아들 '총격 살해'…자택선 '신나 14통' 발견",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_205330",
+    "title": "금강서 발견된 시신…세종시 40대 실종자와 인상착의 일치",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_210503",
+    "title": "강아지 미용 연습하려 했나…\"털 다 깎고 7시간 만에 파양\"",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_164421",
+    "title": "경찰, 강선우 '병원 갑질·위장 전입 의혹' 수사 중",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_163553",
+    "title": "“총기 제작 유튜브로 배웠다”…아들 살해한 60대의 충격 범행",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_203549",
+    "title": "인천 ‘아들 총격 살해’ 사건 “아버지, 음주·약물 없고 정신병력도 없어”",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_211708",
+    "title": "홍준표, 국힘에 섬뜩한 경고 “정청래가 민주당 대표되면 ‘내란 동조당’을…”",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_223950",
+    "title": "콘서트장서 불륜 들통난 CEO 잘렸지만…회사는 유명세 얻었다",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_211603",
+    "title": "“큰 가방 끌고 아들 집으로”…‘사제총기 살해’ 60대 구속영장 신청",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_151252",
+    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_205146",
+    "title": "보좌관·병원 이어 장관까지?..전 여가부 장관 \"나도 강선우에 갑질 당해\"",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_163014",
+    "title": "\"하라면 하는 거지 무슨 말이 많냐\"... 강선우, 文정부 여가부 장관에게도 '갑질'",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_204849",
+    "title": "며느리·손주 앞에서 '아들 총기 살해'…이유 들여다보니 [종합]",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_163627",
+    "title": "‘김혜경 여사 담당’ 2부속실장에 ‘대통령 최측근’ 윤기천 전 분당구청장",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250721_214626",
+    "title": "아버지는 왜 생일 챙겨준 아들을 쐈을까? 그것도 며느리·손주 앞에서",
+    "created_at": "2025-07-21T00:00:00+00:00",
+    "last_updated": "2025-07-21T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250720_223640",
     "title": "20일 오후 6시 기준..폭우 사망 17명·실종 11명으로 증가",
-    "created_at": "2025-07-20T22:36:40.227284",
-    "last_updated": "2025-07-20T22:36:40.227293",
+    "created_at": "2025-07-20T00:00:00+00:00",
+    "last_updated": "2025-07-20T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -3529,29 +4102,16 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "폭우",
-        "사망자 17명",
-        "실종자 11명",
-        "기상재해",
-        "홍수",
-        "기상청",
-        "재난상황",
-        "수해 피해",
-        "긴급구조",
-        "기상 이슈"
-      ]
+      "category_tags": [],
+      "content_tags": []
     },
     "version_count": 1
   },
   {
-    "id": "17f4644bd0ff",
+    "id": "20250720_223603",
     "title": "“이혼해서 가전 급처분합니다” 늘어나는 당근 사기, 해결책은",
-    "created_at": "2025-07-20T22:36:03.310751",
-    "last_updated": "2025-07-20T22:36:03.310765",
+    "created_at": "2025-07-20T00:00:00+00:00",
+    "last_updated": "2025-07-20T00:00:00+00:00",
     "version": 1,
     "parent_id": null,
     "model": "gpt-4.1-nano",
@@ -3560,20 +4120,26 @@
     "total_tokens": 0,
     "cost_usd": 0,
     "tags": {
-      "category_tags": [
-        "사회"
-      ],
-      "content_tags": [
-        "이혼",
-        "가전 급처분",
-        "당근 사기",
-        "중고거래 사기",
-        "온라인 사기 예방",
-        "중고 거래 플랫폼",
-        "사기 피해",
-        "사기 해결책",
-        "중고 시장"
-      ]
+      "category_tags": [],
+      "content_tags": []
+    },
+    "version_count": 1
+  },
+  {
+    "id": "20250720_224015",
+    "title": "이 대통령, 이진숙만 지명 철회…강선우는 임명 수순",
+    "created_at": "2025-07-20T00:00:00+00:00",
+    "last_updated": "2025-07-20T00:00:00+00:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [],
+      "content_tags": []
     },
     "version_count": 1
   }
