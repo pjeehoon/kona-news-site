@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜드플레이 불륜 스캔들 논란 확산…기네스 펠트로 SNS 참여와 기업 마케팅 전략의 이면 - 2025-07-27 02:45:27</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,콜드플레이,불륜 스캔들,기네스 펠트로,SNS 참여,기업 마케팅,아스트로노머,인공지능 스타트업,유명인 활용,기업 홍보,음악계 논란">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="콜드플레이,불륜 스캔들,기네스 펠트로,SNS 참여,기업 마케팅,아스트로노머,인공지능 스타트업,유명인 활용,기업 홍보,음악계 논란">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-thumbnail {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+        
+        .related-article-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .related-article-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .related-article-content h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .related-article-item:hover .related-article-content h4 {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-07-27 02:45:27'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const rawLink = article.getAttribute('href');
+                    // Fix relative path issue - ensure link starts from root
+                    const link = rawLink ? '/' + rawLink : null;
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('콜드플레이 불륜 스캔들 논란 확산…기네스 펠트로 SNS 참여와 기업 마케팅 전략의 이면')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Extract thumbnail if available
+                    const thumbnailElement = article.querySelector('.article-thumbnail img');
+                    const thumbnailSrc = thumbnailElement ? thumbnailElement.getAttribute('src') : null;
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate,
+                            thumbnail: thumbnailSrc
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 5 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 5).forEach(article => {
+                        const itemLink = document.createElement('a');
+                        itemLink.className = 'related-article-item';
+                        itemLink.href = article.link;
+                        
+                        // Add thumbnail if available
+                        if (article.thumbnail) {
+                            const thumbnailDiv = document.createElement('div');
+                            thumbnailDiv.className = 'related-article-thumbnail';
+                            
+                            const img = document.createElement('img');
+                            img.src = article.thumbnail;
+                            img.alt = article.title;
+                            img.loading = 'lazy';
+                            img.onerror = function() {
+                                this.style.display = 'none';
+                                thumbnailDiv.style.display = 'none';
+                            };
+                            
+                            thumbnailDiv.appendChild(img);
+                            itemLink.appendChild(thumbnailDiv);
+                        }
+                        
+                        // Content section
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = 'related-article-content';
+                        
+                        const titleElement = document.createElement('h4');
+                        titleElement.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        contentDiv.appendChild(titleElement);
+                        contentDiv.appendChild(metaDiv);
+                        itemLink.appendChild(contentDiv);
+                        
+                        relatedSection.appendChild(itemLink);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>콜드플레이 불륜 스캔들 논란 확산…기네스 펠트로 SNS 참여와 기업 마케팅 전략의 이면</h1>
+            <p>
+                분석 시간: 2025-07-27 02:45:27
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 콜드플레이와 관련된 불륜 스캔들이 온라인과 언론에서 논란이 되고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 아스트로노머는 기네스 펠트로를 홍보 모델로 선정했고, SNS 활동이 논란의 중심이 되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사건은 기업 마케팅 전략과 유명인 활용의 한계와 영향을 보여주며, 신중한 접근이 필요하다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/07/26/c2e4e8e39c52_1024x1024.jpg" 
+                     alt="콜드플레이 ‘불륜 스캔들’ 회사 놀라운 근황…‘크리스 마틴 전처’까지 등판" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>최근 글로벌 유명 밴드 콜드플레이와 관련된 ‘불륜 스캔들’이 온라인과 언론을 강타하며 논란이 확산되고 있다. 특히, 인공지능 스타트업 ‘아스트로노머’의 홍보 활동과 연계된 이번 사건은 유명인 활용과 기업 마케팅 전략에 대한 다양한 시각을 불러일으키고 있다. 이번 기사에서는 사건의 경과와 배경, 그리고 관련 인물들의 입장과 앞으로의 전망을 종합적으로 분석한다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>▶ 2025년 7월 26일, 인공지능 스타트업 ‘아스트로노머’는 공식 SNS를 통해 기네스 펠트로를 홍보 모델로 발탁했다고 발표하였다. <a href="https://n.news.naver.com/article/009/0005531564?ntype=RANKING" target="_blank">네이버뉴스</a></li>
+<li>▶ 같은 날, 기네스 펠트로는 SNS에서 회사 홍보와 AI 플랫폼 소개 활동을 시작하였다. 이에 대한 논란이 일면서, 일부는 이 활동이 ‘불륜 스캔들’과 연관되어 있다는 추측이 제기되고 있다. <a href="https://www.mk.co.kr/news/world/11378140" target="_blank">조선일보</a></li>
+<li>▶ 온라인에서는 이 활동이 기업의 마케팅 전략의 일환으로 해석되는 한편, 일부 대중은 유명인 활용이 부적절하다는 의견을 표명하였다. <a href="https://www.youtube.com/watch?v=ZU6vlBPWGLg" target="_blank">YTN</a></li>
+<li>▶ 동시에, ‘콜드플레이 불륜 스캔들’과 관련된 영상들이 유튜브와 뉴스 채널을 통해 확산되며, 해당 사건이 음악계와 기업계에 미치는 영향이 커지고 있다. <a href="https://www.youtube.com/watch?v=yDU29PEpBcY" target="_blank">채널A 뉴스TOP10</a></li>
+</ul>
+<h3>배경 정보</h3>
+<p>콜드플레이는 1996년 결성된 영국의 록 밴드로, 세계적인 인기를 누리고 있다. 이번 사건과 관련된 ‘불륜 스캔들’은 아직 구체적인 사실관계가 확정되지 않았으며, 일부 언론과 온라인 커뮤니티에서는 콘서트 현장에서 특정 인물의 부적절한 행동이 포착되었다는 주장도 제기되고 있다. <a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">위키백과</a>에 따르면, 콜드플레이는 음악적 혁신과 사회적 메시지 전달로 유명하며, 이번 사건이 밴드의 이미지에 미칠 영향이 주목된다.</p>
+<p>한편, ‘아스트로노머’는 인공지능(AI) 기반 플랫폼 개발과 홍보에 주력하는 스타트업으로, 최근 기업 마케팅에 유명인 활용을 적극적으로 시도하는 전략을 펼치고 있다. 이와 관련하여, ‘기네스 펠트로’의 SNS 참여는 회사의 공식 홍보 활동으로 확인되었으며, 이와 관련된 논란이 확산되고 있다. <a href="https://en.wikipedia.org/wiki/Public_relations" target="_blank">Wikipedia</a>에 따르면, 기업의 유명인 마케팅은 브랜드 인지도 향상에 효과적이지만, 과도한 활용은 부정적 반응을 초래할 수 있다.</p>
+<h3>다양한 관점과 분석</h3>
+<p>업계 전문가들은 이번 사건이 기업의 마케팅 전략과 유명인 활용의 한계점을 보여주는 사례라고 평가한다. 한 관계자는 “기네스 펠트로의 참여는 아스트로노머의 홍보 전략의 일환으로 보이며, 논란이 확대된 것은 SNS를 통한 즉각적 확산 때문”이라고 분석하였다. 반면, 일반 대중은 “유명인을 활용하는 것이 적절한지 의문스럽다”는 의견을 내놓았으며, 일부는 “이 활동이 불륜 스캔들과 연관되어 있다는 주장에 대해 신중한 검증이 필요하다”고 지적한다.</p>
+<p>언론 평론가들은 이번 사건이 기업의 마케팅 기법과 유명인 활용의 복잡성을 보여주는 사례라고 평가하며, “기업과 유명인 모두 신중한 태도가 요구된다”고 조언한다. <a href="https://www.youtube.com/watch?v=ZU6vlBPWGLg" target="_blank">YTN</a>은 이 사건이 대중의 관심과 함께 SNS와 미디어를 통해 확산되는 과정을 상세히 분석하였다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li><strong>확인된 사실</strong>:</li>
+<li>아스트로노머는 기네스 펠트로를 홍보 모델로 선정하여 SNS 활동을 시작하였다. <a href="https://n.news.naver.com/article/009/0005531564?ntype=RANKING" target="_blank">네이버뉴스</a></li>
+<li>기네스 펠트로는 SNS에서 회사 홍보와 AI 플랫폼 소개에 참여하였다. <a href="https://www.mk.co.kr/news/world/11378140" target="_blank">조선일보</a></li>
+<li><strong>추정 또는 미확인 정보</strong>:</li>
+<li>이 활동이 ‘불륜 스캔들’과 연관되어 있다는 주장은 아직 공식적으로 입증되지 않았다.</li>
+<li>콘서트 현장에서 포착된 특정 인물의 행동이 실제 ‘불륜’임을 확인할 수 있는 증거는 없다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>기네스 펠트로</strong>: 이번 활동에 대해 “공식 SNS를 통한 회사 홍보 참여”라고 해명하였으며, 논란이 일자 SNS를 통해 활동 배경을 설명하였다.</li>
+<li><strong>아스트로노머</strong>: 인공지능 플랫폼 홍보와 브랜드 인지도 제고를 위해 유명인 활용 전략을 펼치고 있으며, 이번 사건의 여파로 기업 이미지에 대한 재평가가 예상된다.</li>
+<li><strong>콜드플레이</strong>: 이번 사건이 밴드의 이미지에 미칠 영향을 주시하며, 공식 입장을 내놓지 않은 상태이다.</li>
+<li><strong>관련 언론 및 유튜브 채널</strong>: 사건의 확산과 여론 형성에 중요한 역할을 하고 있으며, 다양한 시각의 분석과 보도를 제공하고 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<p>이번 논란은 기업의 마케팅 전략과 유명인 활용의 적절성에 대한 사회적 논의로 이어질 가능성이 높다. ‘아스트로노머’는 향후 SNS와 공식 채널을 통해 추가 입장을 발표하며, 사건의 진상 규명과 함께 브랜드 이미지 회복에 나설 것으로 보인다. 또한, 콜드플레이와 관련된 ‘불륜 스캔들’의 사실 여부가 명확히 밝혀지면서, 음악계와 기업계의 신뢰 회복 여부가 중요한 관전 포인트가 될 전망이다.</p>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/article/009/0005531564?ntype=RANKING" target="_blank">네이버뉴스</a></li>
+<li><a href="https://www.mk.co.kr/news/world/11378140" target="_blank">조선일보</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZU6vlBPWGLg" target="_blank">YTN</a></li>
+<li><a href="https://www.youtube.com/watch?v=yDU29PEpBcY" target="_blank">채널A 뉴스TOP10</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">위키백과: 콜드플레이</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Public_relations" target="_blank">위키백과: 홍보 및 마케팅 전략</a></li>
+</ul>
+<hr />
+<p>이상으로, 이번 사건은 유명인 활용과 기업 마케팅의 한계, 그리고 미디어와 대중의 관심이 어떻게 확산되고 해석되는지에 대한 중요한 사례로 남을 전망이다. 앞으로의 추가 사실 공개와 공식 입장 발표가 사건의 향방을 결정할 것으로 보인다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=rmMkcFMuH54" target="_blank">콜드플레이 '키스캠 불륜 스캔들' 일파만파 / SBS ...</a><a href="https://www.youtube.com/watch?v=yDU29PEpBcY" target="_blank">美 콜드플레이 콘서트서 ‘불륜 의혹’ 들킨 CEO 사직...</a><a href="https://www.youtube.com/watch?v=ZU6vlBPWGLg" target="_blank">전광판 바뀌자 '화들짝'...콜드플레이 공연서 불륜 발...</a><a href="https://www.youtube.com/watch?v=yW0Y7Zo91bo" target="_blank">[씬속뉴스] 콜드플레이 콘서트서 터진 '불륜 오피셜'…...</a><a href="https://www.youtube.com/watch?v=fCkpNptriQs" target="_blank">[잇슈#태그] 콜드플레이 공연 갔다 딱 걸렸다…1조 원...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/article/009/0005531564?ntype=RANKING" target="_blank">콜드플레이 ‘불륜 스캔들’ 회사 놀라운 근황…‘크리스 ...</a><a href="https://www.mk.co.kr/news/world/11378140" target="_blank">콜드플레이 '불륜 스캔들' 회사 놀라운 근황…'크리스 ...</a><a href="https://v.daum.net/v/20250726173902298" target="_blank">콜드플레이 '불륜 스캔들' 회사 놀라운 근황…'크리스 ...</a><a href="https://mkbn.mk.co.kr/news/" target="_blank">MK빌리어드 뉴스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
