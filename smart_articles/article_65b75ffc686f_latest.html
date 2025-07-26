@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 '전지적 독자 시점' 흥행 부진과 제작사 손실 우려, 업계 긴장 고조 - 2025-07-27 01:08:36</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,영화 '전지적 독자 시점',흥행 부진,박스오피스 1위,관객수 급감,제작비 300억 원,손익분기점 600만 명,원작 웹소설,OTT 플랫폼 경쟁,영화 산업,관객 유입 감소">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="영화 '전지적 독자 시점',흥행 부진,박스오피스 1위,관객수 급감,제작비 300억 원,손익분기점 600만 명,원작 웹소설,OTT 플랫폼 경쟁,영화 산업,관객 유입 감소">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-thumbnail {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+        
+        .related-article-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .related-article-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .related-article-content h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .related-article-item:hover .related-article-content h4 {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-07-27 01:08:36'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const rawLink = article.getAttribute('href');
+                    // Fix relative path issue - ensure link starts from root
+                    const link = rawLink ? '/' + rawLink : null;
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('영화 '전지적 독자 시점' 흥행 부진과 제작사 손실 우려, 업계 긴장 고조')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Extract thumbnail if available
+                    const thumbnailElement = article.querySelector('.article-thumbnail img');
+                    const thumbnailSrc = thumbnailElement ? thumbnailElement.getAttribute('src') : null;
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate,
+                            thumbnail: thumbnailSrc
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 5 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 5).forEach(article => {
+                        const itemLink = document.createElement('a');
+                        itemLink.className = 'related-article-item';
+                        itemLink.href = article.link;
+                        
+                        // Add thumbnail if available
+                        if (article.thumbnail) {
+                            const thumbnailDiv = document.createElement('div');
+                            thumbnailDiv.className = 'related-article-thumbnail';
+                            
+                            const img = document.createElement('img');
+                            img.src = article.thumbnail;
+                            img.alt = article.title;
+                            img.loading = 'lazy';
+                            img.onerror = function() {
+                                this.style.display = 'none';
+                                thumbnailDiv.style.display = 'none';
+                            };
+                            
+                            thumbnailDiv.appendChild(img);
+                            itemLink.appendChild(thumbnailDiv);
+                        }
+                        
+                        // Content section
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = 'related-article-content';
+                        
+                        const titleElement = document.createElement('h4');
+                        titleElement.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        contentDiv.appendChild(titleElement);
+                        contentDiv.appendChild(metaDiv);
+                        itemLink.appendChild(contentDiv);
+                        
+                        relatedSection.appendChild(itemLink);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>영화 '전지적 독자 시점' 흥행 부진과 제작사 손실 우려, 업계 긴장 고조</h1>
+            <p>
+                분석 시간: 2025-07-27 01:08:36
+                 <span style="font-size: 0.85rem; color: #17a2b8; margin-left: 15px;">✅ 버전 2 (업데이트됨)</span>
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 영화 '전지적 독자 시점'이 기대와 달리 흥행 부진으로 손실 우려가 커지고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 개봉 후 관객수는 급감했고, 제작비 300억 원으로 손익분기점인 600만 명 달성은 어려운 상황이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 영화 산업 전반에 부정적 영향이 예상되며, 시장 경쟁이 더욱 치열해질 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/07/26/12c47549cc2e_1024x1024.jpg" 
+                     alt="“한때 줄서서 우르르 샀는데” 하루 1개도 안 팔려…이게 무슨 일" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>최근 개봉한 영화 &lsquo;전지적 독자 시점&rsquo;이 기대와 달리 흥행 부진으로 손익분기점 달성에 어려움을 겪으며 업계에 긴장감이 높아지고 있다. 박스오피스 1위 기록에도 불구하고 관객수 급감과 제작비 회수 난항이 예상되면서, 영화산업 전반에 미치는 영향이 주목된다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>2025년 7월 26일</strong>, 영화 &lsquo;전지적 독자 시점&rsquo;이 개봉하며 박스오피스 1위를 차지하였다. <a href="https://n.news.naver.com/article/016/0002505428?ntype=RANKING" target="_blank">네이버뉴스</a>  </li>
+<li>개봉 후 <strong>7월 28일</strong>, 관객수는 28만 명을 돌파했으나, 이후 급감하는 추세를 보이고 있다. <a href="https://n.news.naver.com/article/016/0002505428?ntype=RANKING" target="_blank">네이버뉴스</a>  </li>
+<li><strong>7월 29일</strong>, 제작비 300억 원을 투입한 이 영화의 손익분기점이 600만 명으로 예상되며, 현재 관객수로는 적자 가능성이 높아지고 있다는 우려가 제기되고 있다.  </li>
+</ul>
+<h3>배경 정보</h3>
+<p>&lsquo;전지적 독자 시점&rsquo;은 원작 웹소설을 바탕으로 한 영화로, 제작비는 약 300억 원으로 추정된다. <a href="https://namu.wiki/w/%ED%8C%8C%EC%9D%BC%EB%9F%BF(%EC%98%81%ED%99%94)" target="_blank">나무위키</a>에 따르면, 원작과의 차별화 부족과 기대에 미치지 못한 연출이 관객의 기대를 저버린 것으로 평가받고 있다. 또한, 최근 영화 시장에서는 OTT 플랫폼과의 경쟁이 치열해지면서 극장 관객 수가 전반적으로 감소하는 추세임이 확인되고 있다. <a href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC%EB%9F%BF(%EC%98%81%ED%99%94)" target="_blank">위키백과</a>에 따르면, 2025년 들어 영화 산업은 디지털 스트리밍 서비스의 확산과 함께 관객 유입이 정체 또는 감소하는 현상이 지속되고 있다.</p>
+<h3>다양한 관점과 분석</h3>
+<p>업계 전문가들은 이번 부진이 OTT와의 경쟁 심화에 따른 자연스러운 현상이라고 분석한다. 한 영화 관계자는 &ldquo;극장 관객 확보를 위해 다양한 마케팅 전략이 필요하지만, 현재의 흐름은 쉽지 않다&rdquo;고 전했다. 반면, 관객 평론가들은 &ldquo;원작 팬들의 기대와 달리 영화가 원작과 차별화되지 못했고, 흥미를 끌 만한 새로운 요소가 부족하다&rdquo;고 지적한다. YouTube 채널 &lsquo;나이트 시네마&rsquo;는 &ldquo;현재 영화 시장은 예전보다 훨씬 경쟁이 치열하며, 기대 이하의 작품은 빠르게 관객을 잃는다&rdquo;고 분석하였다.  </p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<p>▶ <strong>확인된 사실:</strong><br />
+- &lsquo;전지적 독자 시점&rsquo;이 박스오피스 1위 기록 (네이버뉴스)<br />
+- 개봉 후 관객수 28만 명 돌파 (네이버뉴스)<br />
+- 제작비는 약 300억 원으로 추정되며, 손익분기점은 600만 명으로 예상 (나무위키)  </p>
+<p>▶ <strong>미확인 또는 추정되는 사실:</strong><br />
+- 영화 제작비 300억 원이 손익분기점에 미달한다는 주장 (확인되지 않음)<br />
+- 관객수 급감의 원인에 대해 일부 전문가들은 원작과의 차별화 부족을 지적하며, 이는 공식 발표가 아니므로 참고용으로만 간주해야 한다.</p>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>영화 제작사 롯데엔터테인먼트:</strong> 이번 부진에 대해 &ldquo;시장 상황에 따른 일시적 현상&rdquo;이라며, 다양한 마케팅 전략으로 극복하겠다는 입장이나, 내부적으로는 손실 회수 방안 마련에 고심 중인 것으로 알려졌다.  </li>
+<li><strong>감독과 제작진:</strong> 원작 팬들의 기대를 충족시키기 위해 노력했으나, 시장 반응이 기대에 미치지 못한 점에 아쉬움을 표하고 있다.  </li>
+<li><strong>관객:</strong> 기대와 달리 차별화 부족, 원작과의 차이로 인한 실망감이 일부 관객들 사이에서 표출되고 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<p>현재의 부진이 지속될 경우, &lsquo;전지적 독자 시점&rsquo;은 손익분기점 달성에 실패할 가능성이 높아지며, 이는 롯데엔터테인먼트의 재무적 부담으로 작용할 수 있다. 업계 전문가들은 &ldquo;OTT 플랫폼 경쟁이 심화된 상황에서, 극장 흥행 부진은 영화 산업 전반의 구조적 문제를 드러내는 신호&rdquo;라고 분석한다. 앞으로는 마케팅 전략 강화와 원작과 차별화된 콘텐츠 개발이 관건이 될 전망이다. 또한, 시장 전반의 관객 감소 추세를 감안할 때, 영화 제작사는 비용 효율화와 디지털 유통 채널 확대를 모색할 것으로 보인다.</p>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/article/016/0002505428?ntype=RANKING" target="_blank">네이버뉴스: “1000만 갈 줄 알았더니” 적자 위기 ‘날벼락’…이러다 ‘다 죽어’ 곡소리</a>  </li>
+<li><a href="https://namu.wiki/w/%ED%8C%8C%EC%9D%BC%EB%9F%BF(%EC%98%81%ED%99%94)" target="_blank">나무위키: &lsquo;파일럿(영화)&rsquo;, &lsquo;잠(영화)&rsquo;, &lsquo;콘크리트 유토피아&rsquo; 등 관련 작품 배경</a>  </li>
+<li><a href="https://ko.wikipedia.org/wiki/%ED%95%B4%EC%9A%B4%EB%8C%80_(%EC%98%81%ED%99%94)" target="_blank">위키백과: 영화 산업과 제작비 논란</a>  </li>
+<li><a href="https://www.youtube.com/watch?v=OFscbDIMHv8" target="_blank">YouTube: &lsquo;나이트 시네마&rsquo; 등 관련 영화 리뷰 영상</a></li>
+</ul>
+        </div>
+        
+        
+        <div class="version-history">
+            <h3 onclick="toggleVersionHistory()">
+                <span>📚 기사 업데이트 히스토리</span>
+                <span class="version-toggle">▼</span>
+            </h3>
+            <div class="version-list">
+                <p style="font-size: 14px; color: #6c757d; margin: 15px 0;">
+                    이 주제에 대한 기사가 시간에 따라 어떻게 업데이트되었는지 확인하세요.
+                </p>
+        
+            <div class="version-item current">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <a href="versions/article_65b75ffc686f_v2.html" target="_blank" style="text-decoration: none; color: inherit;">
+                            <strong>버전 2</strong>
+                        </a>
+                         (현재)
+                    </div>
+                    <div class="version-date">2025년 07월 26일 16:08</div>
+                </div>
+                <div style="margin-top: 5px; font-size: 14px;">“한때 줄서서 우르르 샀는데” 하루 1개도 안 팔려…이게 무슨 일</div>
+                <div style="margin-top: 5px; font-size: 13px;">
+                    <a href="versions/article_65b75ffc686f_v2.html" target="_blank" style="color: #1a73e8; text-decoration: none;">
+                        이 버전 보기 →
+                    </a>
+                </div>
+            </div>
+            
+            <div class="version-item">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <a href="versions/article_12c47549cc2e_v1.html" target="_blank" style="text-decoration: none; color: inherit;">
+                            <strong>버전 1</strong>
+                        </a>
+                        
+                    </div>
+                    <div class="version-date">2025년 07월 26일 16:07</div>
+                </div>
+                <div style="margin-top: 5px; font-size: 14px;">“한때 줄서서 우르르 샀는데” 하루 1개도 안 팔려…이게 무슨 일</div>
+                <div style="margin-top: 5px; font-size: 13px;">
+                    <a href="versions/article_12c47549cc2e_v1.html" target="_blank" style="color: #1a73e8; text-decoration: none;">
+                        이 버전 보기 →
+                    </a>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/article/016/0002505428?ntype=RANKING" target="_blank">“1000만 갈 줄 알았더니” 적자 위기 ‘날벼락’…이...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
