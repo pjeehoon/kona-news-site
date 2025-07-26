@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보수 원로 조갑제, 윤석열 전 대통령과 추종자들을 '극우파쇼'로 비판 - 2025-07-27 02:18:54</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,조갑제,윤석열,극우파쇼,보수진영,정치적갈등,비판,한국보수주의,비상계엄,국민의힘,한국정치">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="조갑제,윤석열,극우파쇼,보수진영,정치적갈등,비판,한국보수주의,비상계엄,국민의힘,한국정치">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-thumbnail {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+        
+        .related-article-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .related-article-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .related-article-content h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .related-article-item:hover .related-article-content h4 {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-07-27 02:18:54'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const rawLink = article.getAttribute('href');
+                    // Fix relative path issue - ensure link starts from root
+                    const link = rawLink ? '/' + rawLink : null;
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('보수 원로 조갑제, 윤석열 전 대통령과 추종자들을 '극우파쇼'로 비판')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Extract thumbnail if available
+                    const thumbnailElement = article.querySelector('.article-thumbnail img');
+                    const thumbnailSrc = thumbnailElement ? thumbnailElement.getAttribute('src') : null;
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate,
+                            thumbnail: thumbnailSrc
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 5 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 5).forEach(article => {
+                        const itemLink = document.createElement('a');
+                        itemLink.className = 'related-article-item';
+                        itemLink.href = article.link;
+                        
+                        // Add thumbnail if available
+                        if (article.thumbnail) {
+                            const thumbnailDiv = document.createElement('div');
+                            thumbnailDiv.className = 'related-article-thumbnail';
+                            
+                            const img = document.createElement('img');
+                            img.src = article.thumbnail;
+                            img.alt = article.title;
+                            img.loading = 'lazy';
+                            img.onerror = function() {
+                                this.style.display = 'none';
+                                thumbnailDiv.style.display = 'none';
+                            };
+                            
+                            thumbnailDiv.appendChild(img);
+                            itemLink.appendChild(thumbnailDiv);
+                        }
+                        
+                        // Content section
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = 'related-article-content';
+                        
+                        const titleElement = document.createElement('h4');
+                        titleElement.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        contentDiv.appendChild(titleElement);
+                        contentDiv.appendChild(metaDiv);
+                        itemLink.appendChild(contentDiv);
+                        
+                        relatedSection.appendChild(itemLink);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>보수 원로 조갑제, 윤석열 전 대통령과 추종자들을 '극우파쇼'로 비판</h1>
+            <p>
+                분석 시간: 2025-07-27 02:18:54
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 조갑제 전 대표가 윤석열 세력을 '극우파쇼'라고 비판하였다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 발언은 정치권과 온라인에서 논란이 되고 있으며, 객관적 증거는 부족하다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사건은 보수 내 갈등과 정치적 논쟁의 새로운 국면을 예고한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/07/26/ea48f06556cf_1024x1024.jpg" 
+                     alt="보수 원로 조갑제 “윤석열과 그 추종자들은 극우파쇼”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>보수 진영의 대표적 원로인 조갑제 전 조갑제닷컴 대표가 2025년 7월 26일, 윤석열 전 대통령과 그의 지지 세력을 강하게 비판하며 &lsquo;극우파쇼&rsquo;라고 규정했다. 이번 발언은 최근 정치권과 언론, 온라인 커뮤니티에서 논란이 되고 있으며, 정치적 갈등의 새로운 국면을 예고하고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>2025년 7월 26일</strong>, 조갑제 전 대표는 공개 발언에서 &ldquo;윤석열과 그 추종자들은 극우파쇼&rdquo;라고 맹비난하며, 이 세력을 극우의 조건을 갖춘 세력으로 규정하였다. <a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">조갑제닷컴</a></p>
+</li>
+<li>
+<p>조 전 대표는 이날 언론 인터뷰와 온라인 방송에서도 같은 입장을 반복하며, &ldquo;이들은 과격한 반대 세력과 결합하여 사회적 긴장을 조성하고 있다&rdquo;고 지적하였다.</p>
+</li>
+<li>
+<p>이에 대해 일부 여론평가는 조 전 대표의 비판이 극우 세력에 대한 강한 경고로 해석하는 반면, 정치평론가들은 &ldquo;과격한 표현으로 논란이 예상된다&rdquo;고 평가하였다. <a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p>현재까지 <strong>확인된 사실</strong>은 조갑제 전 대표가 윤석열 세력을 &lsquo;극우파쇼&rsquo;로 규정한 것뿐이며, 이에 대한 객관적 증거는 부족하다. 일부는 이 발언이 정치적 의도 또는 감정적 표현의 일환일 가능성도 제기한다.</p>
+</li>
+</ul>
+<h3>배경 정보</h3>
+<p>조갑제 전 대표는 대한민국 보수주의의 대표적 인물로, 자유민주주의, 시장경제, 법치주의 등을 핵심 가치로 삼아왔다. Wikipedia에 따르면, 대한민국의 보수주의자들은 전통적 가치와 국가안보, 반공주의를 중시하며, 민족문화와 전통을 옹호하는 성향이 강하다. <a href="https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%B3%B4%EC%88%98%EC%A3%BC%EC%9D%98" target="_blank">대한민국의 보수주의</a></p>
+<p>한편, 윤석열 전 대통령은 검사 출신으로 2022년 대통령에 당선되었으며, 2024년에는 비상계엄 선포 논란으로 인해 헌법적 논란이 일었다. 특히 2024년 12월 3일, 윤 전 대통령이 긴급 대국민 담화를 통해 위헌적 비상계엄을 선포한 사건은 국내외에서 큰 파장을 일으켰다. 이 사건은 대한민국 헌정사상 최초로 대통령이 비상계엄을 선포한 사례로 기록된다. <a href="https://ko.wikipedia.org/wiki/2024%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%B9%84%EC%83%81%EA%B3%84%EC%97%84" target="_blank">2024년 대한민국 비상계엄</a></p>
+<p>이와 관련해, 일부 정치권과 언론은 윤 전 대통령의 행보를 &lsquo;권력 남용&rsquo; 또는 &lsquo;과격한 권력 집중&rsquo;으로 평가하며 논란이 지속되고 있다.</p>
+<h3>다양한 관점과 분석</h3>
+<p>이번 조갑제 전 대표의 발언은 온라인 커뮤니티와 유튜브 영상에서도 활발히 논의되고 있다. 채널A의 &lsquo;뉴스A라이브&rsquo;에서는 &ldquo;&lsquo;李-보수 논객&rsquo; 만찬에서 보수 세력의 중도 이탈 가능성&rdquo;이라는 제목으로 관련 영상이 공개되었으며, <a href="https://www.youtube.com/watch?v=K4IHC1kWBS8" target="_blank">이 영상</a>에서는 일부 시청자가 조 전 대표의 극우파쇼 규정을 과격하다고 평가하는 반면, 일부 보수 지지자들은 &ldquo;이런 비판이 필요하다&rdquo;고 의견을 모으기도 했다.</p>
+<p>또한, SBS의 &lsquo;시교라&rsquo;에서는 &ldquo;조갑제X김진, &lsquo;국힘, 이러다 갈라파고스 된다&rsquo;며 내부 자중지란 경고&rdquo;라는 내용이 다뤄졌으며, 정치권에서는 &ldquo;극우 규정이 과격하다는 지적과 함께, 윤석열 정부의 강경 노선에 대한 우려가 동시에 제기되고 있다&rdquo;는 분석이 나오고 있다. <a href="https://www.youtube.com/watch?v=9VZfQtvMzmk" target="_blank">관련 영상</a></p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li>
+<p><strong>확인된 사실</strong>: 조갑제 전 대표가 윤석열 세력을 &lsquo;극우파쇼&rsquo;로 규정하였으며, 이 발언은 2025년 7월 26일 공개되었다. <a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">조갑제닷컴</a></p>
+</li>
+<li>
+<p><strong>미확인 또는 추정되는 사실</strong>: 윤석열이 실제로 극우파쇼인지 여부와, 이를 뒷받침하는 객관적 증거는 아직 공개되지 않았다. 일부는 이 발언이 정치적 감정 또는 특정 세력의 의도에 따른 것일 가능성을 제기한다.</p>
+</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>조갑제 전 대표</strong>: 보수 원로로서, 이번 발언을 통해 보수 내부의 분열 또는 경고의 메시지를 전달하려는 의도로 해석된다. 그는 과거에도 보수 세력 내에서 과격한 표현으로 논란을 일으킨 적이 있다.</p>
+</li>
+<li>
+<p><strong>윤석열 전 대통령</strong>: 최근 비상계엄 선포와 관련된 논란으로 인해 정치적 긴장이 고조된 상태이며, 일부 보수 세력 내에서도 그의 강경 노선에 대한 우려가 존재한다.</p>
+</li>
+<li>
+<p><strong>일반 시민 및 정치권</strong>: 이번 논란은 보수 진영 내 분열과 극우 세력의 확산 가능성에 대한 우려를 증폭시키고 있으며, 정치적 갈등이 심화될 가능성을 보여준다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<p>이번 조갑제 전 대표의 발언은 앞으로 보수 세력 내에서 논란이 지속될 것으로 예상된다. 일부는 이를 &lsquo;내부 자정 노력&rsquo;으로 받아들이는 반면, 다른 한편에서는 &lsquo;극우파쇼&rsquo; 규정이 과격하다는 비판이 일어날 수 있다. 또한, 윤석열 정부의 강경 정책과 맞물려 정치적 긴장이 고조될 가능성도 배제할 수 없다.</p>
+<p>전문가들은 &ldquo;이와 같은 강한 표현은 정치적 메시지 전달보다는 논란 조성에 더 가깝다&rdquo;며, &ldquo;향후 보수 진영 내 균열과 정치적 충돌이 심화될 수 있다&rdquo;고 전망한다. <a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">네이버뉴스</a></p>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">조갑제닷컴</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%B3%B4%EC%88%98%EC%A3%BC%EC%9D%98" target="_blank">위키백과: 대한민국의 보수주의</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/%EC%9C%A4%EC%84%9D%EC%97%B4" target="_blank">위키백과: 윤석열</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/2024%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%B9%84%EC%83%81%EA%B3%84%EC%97%84" target="_blank">위키백과: 2024년 대한민국 비상계엄</a></li>
+<li><a href="https://www.youtube.com/watch?v=K4IHC1kWBS8" target="_blank">YouTube 채널A 뉴스 &lsquo;뉴스A라이브&rsquo;</a></li>
+<li><a href="https://www.youtube.com/watch?v=9VZfQtvMzmk" target="_blank">YouTube SBS &lsquo;시교라&rsquo;</a></li>
+<li><a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">네이버뉴스</a></li>
+</ul>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=K4IHC1kWBS8" target="_blank">'李-보수 논객' 만찬 중도 넘어 보수까지? / #채널...</a><a href="https://www.youtube.com/watch?v=9VZfQtvMzmk" target="_blank">[김태현의 정치쇼] 조갑제X김진 "국힘, 이러다 갈라파...</a><a href="https://www.youtube.com/watch?v=MqX0Kwymw3s" target="_blank">"尹 파면은 역사의 순리"‥'보수 논객' 조갑제·정규재...</a><a href="https://www.youtube.com/watch?v=lDWLoEmR6S8" target="_blank">파면 확신하는 조갑제·정규재‥"여당 스스로 문 닫아야 ...</a><a href="https://www.youtube.com/watch?v=YSGaGu0g5ok" target="_blank">조갑제, 윤석열 옥중 메시지에 충격 발언! 정신 문제?</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/article/029/0002971072?ntype=RANKING" target="_blank">보수 원로 조갑제 “윤석열과 그 추종자들은 극우파쇼”</a><a href="https://namu.wiki/w/%EC%9A%B0%ED%8C%8C%20%EC%9C%A0%ED%8A%9C%EB%B2%84/%EB%B9%84%ED%8C%90%20%EB%B0%8F%20%EB%85%BC%EB%9E%80" target="_blank">우파 유튜버/비판 및 논란 - 나무위키</a><a href="https://www.sisain.co.kr/news/articleView.html?idxno=54840" target="_blank">극우 유튜브 알고리즘 한 달 동안 빠져보니</a><a href="https://namu.wiki/w/%EC%A0%84%ED%95%9C%EA%B8%B8%20%EB%B6%80%EC%A0%95%EC%84%A0%EA%B1%B0%20%EC%9D%8C%EB%AA%A8%EB%A1%A0%20%EC%A3%BC%EC%9E%A5%20%EB%85%BC%EB%9E%80" target="_blank">전한길 부정선거 음모론 주장 논란 - 나무위키</a><a href="https://v.daum.net/v/20250723154641303" target="_blank">'주적' '개딸' 오세훈 섬네일에…박주민 "극우 유튜버...</a><a href="https://ko.wikipedia.org/wiki/%EB%B0%95%EA%B7%BC%ED%98%9C" target="_blank">박근혜 - 위키백과, 우리 모두의 백과사전</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
