@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폭염으로 위기에 처한 축산농가, 냉각장비 도입과 대응책 강화 - 2025-07-27 03:24:02</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,기후변화,폭염,축산농가,냉각장비,냉각패드,스프링클러,가축폐사,기후재난,농업대책,재난대응">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="기후변화,폭염,축산농가,냉각장비,냉각패드,스프링클러,가축폐사,기후재난,농업대책,재난대응">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-thumbnail {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+        
+        .related-article-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .related-article-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .related-article-content h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .related-article-item:hover .related-article-content h4 {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-07-27 03:24:02'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const rawLink = article.getAttribute('href');
+                    // Fix relative path issue - ensure link starts from root
+                    const link = rawLink ? '/' + rawLink : null;
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('폭염으로 위기에 처한 축산농가, 냉각장비 도입과 대응책 강화')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Extract thumbnail if available
+                    const thumbnailElement = article.querySelector('.article-thumbnail img');
+                    const thumbnailSrc = thumbnailElement ? thumbnailElement.getAttribute('src') : null;
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate,
+                            thumbnail: thumbnailSrc
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 5 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 5).forEach(article => {
+                        const itemLink = document.createElement('a');
+                        itemLink.className = 'related-article-item';
+                        itemLink.href = article.link;
+                        
+                        // Add thumbnail if available
+                        if (article.thumbnail) {
+                            const thumbnailDiv = document.createElement('div');
+                            thumbnailDiv.className = 'related-article-thumbnail';
+                            
+                            const img = document.createElement('img');
+                            img.src = article.thumbnail;
+                            img.alt = article.title;
+                            img.loading = 'lazy';
+                            img.onerror = function() {
+                                this.style.display = 'none';
+                                thumbnailDiv.style.display = 'none';
+                            };
+                            
+                            thumbnailDiv.appendChild(img);
+                            itemLink.appendChild(thumbnailDiv);
+                        }
+                        
+                        // Content section
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = 'related-article-content';
+                        
+                        const titleElement = document.createElement('h4');
+                        titleElement.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        contentDiv.appendChild(titleElement);
+                        contentDiv.appendChild(metaDiv);
+                        itemLink.appendChild(contentDiv);
+                        
+                        relatedSection.appendChild(itemLink);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>폭염으로 위기에 처한 축산농가, 냉각장비 도입과 대응책 강화</h1>
+            <p>
+                분석 시간: 2025-07-27 03:24:02
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 폭염으로 전국 축산농가에서 약 100만 마리 이상의 가축이 폐사하였다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 농민들은 냉각패드, 스프링클러 등 냉각장비를 적극 도입하여 대응하고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이러한 대응은 기후변화로 인한 재난에 대한 농업계의 긴급한 적응책으로 평가받고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/07/26/ff72417c0bca_1024x1024.jpg" 
+                     alt="스프링클러에 냉각패드까지…축산농가, 폭염 대응에 안간힘" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 여름, 기록적인 폭염이 전국 축산농가에 심각한 피해를 초래하며 농업계 전반에 긴장감이 높아지고 있다. 닭과 돼지 등 가축의 폐사 사례가 잇따르면서, 농민들은 냉각패드와 스프링클러 등 다양한 냉각 장비를 활용하는 등 긴급 대응에 나서고 있다. 이번 폭염은 기후변화의 영향으로 예상보다 더 강도 높게 나타나, 농업 분야의 재난 대응 체계 재점검이 시급하다는 지적이 나온다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 7월 26일, 폭염으로 인한 축산 농가 피해가 극심한 상황이 발생</strong>. 전국적으로 닭과 돼지 약 100만 마리 이상이 폐사하는 피해가 보고되었으며, 농민들은 냉각패드와 스프링클러, 송풍기 등을 가동하며 대응하고 있다. <a href="https://n.news.naver.com/article/056/0011996985?ntype=RANKING" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 축산 농가들은 냉각장비를 적극 도입</strong>. 특히, 양계장 내부 온도를 낮추기 위해 열화상 카메라로 닭의 체온을 모니터링하고, 냉각패드와 스프링클러를 결합한 냉방 시스템을 가동하는 모습이 목격되고 있다. <a href="https://n.news.naver.com/article/056/0011996985?ntype=RANKING" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 관련 영상에서도 냉각장비의 적극적 활용이 강조</strong>. KBS 뉴스는 &ldquo;스프링클러와 냉각패드로 폭염에 대응하는 축산농가의 모습&rdquo;을 보도하며, 농민들이 생존을 위해 최선을 다하는 현장을 조명했다. <a href="https://www.youtube.com/watch?v=Jl6R8akUvJg" target="_blank">유튜브 - KBS News</a></p>
+</li>
+<li>
+<p><strong>▶ 과거 사례와 배경</strong>. 2023년 충남 예산군의 돼지농장에서도 폭염으로 30마리의 돼지가 폐사하는 일이 발생했으며, 당시에도 냉방시설과 환기 시스템이 중요한 대응책으로 언급된 바 있다. <a href="https://weekly.khan.co.kr/khnm.html?mode=view&amp;code=114&amp;art_id=202310061106251" target="_blank">주간경향</a></p>
+</li>
+</ul>
+<h3>배경 정보</h3>
+<p>기후변화는 지구 평균 기온 상승과 함께 자연현상의 급격한 변화, 이상기후 현상을 초래하며, 농업과 축산업에 큰 영향을 미치고 있다. 특히, 2018년 동아시아를 강타한 폭염 사례는 이번 폭염과 유사한 기후 패턴을 보여주며, 기후 위기와 관련된 재난이 점차 빈번해지고 있음을 시사한다. <a href="https://ko.wikipedia.org/wiki/%EA%B8%B0%ED%9B%84%EB%B3%80%ED%99%94" target="_blank">위키백과 - 기후변화</a></p>
+<p>또한, 재난 정의에 따르면, 자연현상으로 인한 가축 피해는 재해로 분류되며, 이에 대응하는 방재체계와 정책 마련이 필요하다는 목소리도 높아지고 있다. 과거 사례를 보면, 2018년 동아시아 폭염은 농작물과 가축 모두 큰 피해를 남겼으며, 이번 폭염 역시 유사한 피해를 우려하는 전문가 의견이 있다.</p>
+<h3>다양한 관점과 분석</h3>
+<p>일부 농민들은 냉각장비 도입이 긴급한 대응책임을 인정하면서도, 비용 부담과 장기적 유지 문제를 우려하는 목소리도 있다. 농업 전문가들은 &ldquo;기후변화로 인한 이상기후에 대비한 체계적이고 지속가능한 냉방·환기 시스템 구축이 필요하다&rdquo;고 조언한다. 반면, 환경단체와 일부 정책 관계자들은 &ldquo;단기적 대응에 치중하기보다, 기후변화 대응 정책과 농업 구조 개편이 병행되어야 한다&rdquo;고 지적한다.</p>
+<p>일반 시민들은 폭염으로 인한 농축산물 가격 상승과 식품 안전 문제에 대한 우려를 표하며, 정부와 지자체의 적극적 지원과 재난 대응책 강화를 촉구하는 목소리도 높다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li>
+<p><strong>확인된 사실</strong>: 2025년 7월 26일 기준, 전국 축산농가에서 약 100만 마리 이상의 가축이 폭염으로 폐사하는 피해가 발생하였다. <a href="https://n.news.naver.com/article/056/0011996985?ntype=RANKING" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>추정 또는 미확인 정보</strong>: 농민들이 사용하는 냉각장비의 구체적 효과와 장기적 유지 비용, 정부의 지원 정책 규모 등은 아직 공식 발표나 연구 결과를 통해 확정되지 않았다.</p>
+</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<p>이번 폭염 피해와 대응책 마련에는 농민, 정부 관계자, 기후 전문가, 환경단체 등이 관여하고 있다. 농민들은 생존과 직결된 문제로 냉각장비 도입을 적극 추진 중이며, 정부는 재난 지원과 정책 마련에 나서고 있다. 한편, 기후변화 전문가들은 이번 사건이 기후 위기의 심각성을 다시 한번 일깨운다고 평가한다.</p>
+<h3>향후 전망</h3>
+<p>기후변화로 인한 이상기후는 앞으로도 계속될 가능성이 크다. 이번 폭염 피해는 농업·축산업의 구조적 개편과 함께, 냉방·환기 기술의 지속적 발전이 병행되어야 함을 시사한다. 정부와 지자체는 재난 대응 체계를 강화하고, 농민 지원 정책을 확대하는 한편, 기후변화 대응을 위한 장기적 전략 수립이 필요하다는 전문가 의견이 지배적이다.</p>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/article/056/0011996985?ntype=RANKING" target="_blank">네이버뉴스 - 폭염으로 인한 축산 농가 피해</a></li>
+<li><a href="https://www.youtube.com/watch?v=Jl6R8akUvJg" target="_blank">유튜브 - KBS 뉴스 영상</a></li>
+<li><a href="https://weekly.khan.co.kr/khnm.html?mode=view&amp;code=114&amp;art_id=202310061106251" target="_blank">주간경향 - 농업 피해 대책</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/%EA%B8%B0%ED%9B%84%EB%B3%80%ED%99%94" target="_blank">위키백과 - 기후변화</a></li>
+</ul>
+<hr />
+<p>이번 폭염 사태는 기후변화의 현실을 다시 한번 보여주는 사례로, 농업과 축산업의 지속가능성을 위해 체계적이고 과학적인 대응책 마련이 시급하다. 정부와 관련 기관들은 농민들의 피해를 최소화하고, 장기적 대응 전략을 수립하는 데 힘써야 할 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Jl6R8akUvJg" target="_blank">스프링클러에 냉각패드까지…축산농가, 폭염 대응에 안간힘...</a><a href="https://www.youtube.com/watch?v=rwkb85KMBMM" target="_blank">송풍기에 냉각 패드까지…축산농가, 폭염 대응 안간힘 /...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/article/056/0011996985?ntype=RANKING" target="_blank">스프링클러에 냉각패드까지…축산농가, 폭염 대응에 안간힘</a><a href="https://weekly.khan.co.kr/khnm.html?mode=view&code=114&art_id=202310061106251" target="_blank">지독했던 폭염·폭우, 농업 피해 대책 뭔가 - 주간경향</a><a href="https://v.daum.net/v/20250726211205133" target="_blank">스프링클러에 냉각패드까지…축산농가, 폭염 대응에 안간힘</a><a href="http://www.hansalim.or.kr/wp-content/uploads/2023/09/2023%EB%85%84-%ED%95%9C%EC%82%B4%EB%A6%BC-%EC%9E%90%EC%A3%BC%EA%B8%B0%EC%A4%80%EC%84%9C.pdf" target="_blank">2023 한살림 자주기준서</a><a href="https://fire.gwd.go.kr/page/fire/download/gwfire_100th_02.pdf" target="_blank">4편-강원소방100년사 190315.indd</a><a href="https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002787637&fileDetailSn=1" target="_blank">제목없음</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
