@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정부, AI 디지털교과서 '교과서' 지위에서 '교육자료'로 변경…교원단체들 "취소 절차 공문 안내하라" - 2025-08-05 10:24:38</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,AI 디지털교과서,법적 지위 변경,교과서,교육자료,국회 의결,교육부,교원단체 반발,교육 정책,디지털 교육,법개정">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="AI 디지털교과서,법적 지위 변경,교과서,교육자료,국회 의결,교육부,교원단체 반발,교육 정책,디지털 교육,법개정">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-08-05 10:24:38'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('정부, AI 디지털교과서 '교과서' 지위에서 '교육자료'로 변경…교원단체들 "취소 절차 공문 안내하라"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>정부, AI 디지털교과서 '교과서' 지위에서 '교육자료'로 변경…교원단체들 "취소 절차 공문 안내하라"</h1>
+            <p>
+                분석 시간: 2025-08-05 10:24:38
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 8월 4일, AI 디지털교과서의 법적 지위가 교과서에서 교육자료로 격하되는 개정안이 국회에서 통과되었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이로 인해 교원단체들은 정부에 취소 절차를 안내하는 공문 발송을 요구하며 반발하고 있으며, 현장 혼란 우려가 제기되고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 정책 변화는 디지털 교육 정책의 근본 전환을 의미하며, 이해관계자 간 갈등이 지속될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/08/05/2677c2cb66f1_1024x1024.jpg" 
+                     alt="AI '교과서' 아닌 '교육자료'로…교원단체들 "취소 절차 공문 안내하라"(종합)" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 8월 4일, 국회에서 인공지능(AI) 기반 디지털교과서의 법적 지위가 교과서에서 교육자료로 격하되는 개정안이 의결됨에 따라, 교육계와 관련 단체들이 이에 대한 대응 조치에 나서고 있다. 특히, 교원단체들은 정부와 교육부에 해당 변경 조치의 취소 절차를 안내하는 공문 발송을 요구하며 강력히 반발하고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>▶ 2025년 8월 4일, 국회 본회의에서 AI 디지털교과서의 법적 지위 변경을 골자로 한 개정안이 통과되었다. 이로써, 현재 초중고 학생들에게 보급된 AI 교과서의 법적 지위가 &lsquo;교과서&rsquo;에서 &lsquo;교육자료&rsquo;로 공식적으로 격하되었다. (출처: <a href="https://n.news.naver.com/mnews/article/366/0001097870" target="_blank">네이버뉴스</a>)</li>
+<li>▶ 이 개정안은 2025년 1월 1일부터 일부 학년에서 도입된 AI 디지털교과서의 지위 변경을 법제화하는 것으로, 교육부는 자율 도입 방침을 유지하며 현장 혼란 최소화를 위해 노력 중이라고 밝혔다. (출처: <a href="https://n.news.naver.com/mnews/article/366/0001097870" target="_blank">네이버뉴스</a>)</li>
+<li>▶ 이에 대해, 일부 교육계 인사들은 AI 교과서에 대한 부정적 인식을 표명하며, 법적 지위 변경이 학생 교육의 질과 관련 정책의 안정성을 저해할 우려를 제기하고 있다. 반면, 교육부는 정책의 일관성과 디지털 교육 혁신을 위해 이번 조치가 불가피하다는 입장이다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<p>교육계 일부에서는 이번 법적 지위 변경이 AI 교과서의 실질적 활용과 정책적 안정성을 저해할 수 있다고 우려한다. 한 관계자는 &ldquo;AI 교과서의 지위가 낮아지면, 개발사와 교육 현장 모두 혼란이 가중될 것&rdquo;이라며, &ldquo;이로 인해 디지털 교육의 미래 방향성에 부정적 영향을 미칠 수 있다&rdquo;고 지적했다. (출처: <a href="https://www.chosun.com/national/education/2025/07/11/ENPVX3JH6RADZFKGXSCMGU5EEI/" target="_blank">조선일보</a>)</p>
+<p>반면, 교육부는 이번 조치가 디지털 교과서의 활용 범위와 정책의 명확성을 높이기 위한 것이라고 설명하며, &ldquo;자율 도입을 통해 현장 혼란을 최소화하는 동시에, 디지털 교육 혁신을 지속 추진하겠다&rdquo;고 밝혔다. 전문가들은 &ldquo;법적 지위 변경이 디지털 교과서의 지속 가능성과 정책 안정성을 확보하는 데 중요한 역할을 할 것&rdquo;이라고 평가한다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li><strong>확인된 사실</strong>: AI 디지털교과서의 법적 지위가 교과서에서 교육자료로 변경되었으며, 이 개정안이 2025년 8월 4일 국회에서 의결되었다. (출처: <a href="https://n.news.naver.com/mnews/article/366/0001097870" target="_blank">네이버뉴스</a>)</li>
+<li><strong>추정 또는 미확인 정보</strong>: 교과서 개발사들이 헌법 소송을 검토하거나, 법적 지위 변경으로 인한 경제적 손실 규모에 관한 구체적 수치는 공개되지 않았다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>정부 및 교육부</strong>: 디지털 교육 혁신과 정책 일관성을 위해 이번 법적 지위 변경을 추진하며, 자율 도입 정책을 통해 현장 혼란을 최소화하려는 방침이다.</li>
+<li><strong>교원단체 및 일부 교육계 인사</strong>: 법적 지위 변경에 반발하며, 관련 취소 절차를 안내하는 공문 발송을 요구하고 있다. 이들은 정책의 급작스러운 변경이 교육 현장에 혼란을 초래할 우려를 제기한다.</li>
+<li><strong>AI 교과서 개발사</strong>: 법적 지위 격하로 인한 시장과 수익성에 영향을 받을 가능성을 우려하며, 헌법 소송 가능성도 검토 중인 것으로 알려졌다.</li>
+</ul>
+<h3>향후 전망</h3>
+<p>이번 법적 지위 변경은 디지털 교과서 정책의 근본적인 전환을 의미하며, 관련 이해관계자 간의 갈등이 지속될 것으로 보인다. 교원단체들의 공문 안내 요청이 실현될 경우, 정부와의 협의 과정이 추가로 필요할 것이며, 향후 정책 수정 또는 재검토 가능성도 열려 있다. 디지털 교육의 미래 방향성과 정책 안정성을 둘러싼 논의가 앞으로 중요한 쟁점이 될 전망이다.</p>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/mnews/article/366/0001097870" target="_blank">네이버뉴스</a></li>
+<li><a href="https://www.chosun.com/national/education/2025/07/11/ENPVX3JH6RADZFKGXSCMGU5EEI/" target="_blank">조선일보</a></li>
+</ul>
+<hr />
+<p><strong>저작권 준수</strong>: 본 기사는 여러 공식 출처와 보도자료를 바탕으로 재구성되었으며, 원문 문장 그대로 복사하지 않고 객관적 사실을 중심으로 작성하였습니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/366/0001097870" target="_blank">AI 교과서 한 학기 만에 교과서→교육자료 격하</a><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=101774&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N" target="_blank">교육부 - 2025년, 교실에서 마주할 인공지능(AI)...</a><a href="https://21erick.org/column/11195/" target="_blank">AI 교육을 표방하는 '디지털 교과서' 정책, 그 속에...</a><a href="https://blog.naver.com/digitalpeep/223703188103" target="_blank">AI 디지털 교과서 2025년부터 도입 , 교과서가 아...</a><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148912094" target="_blank">2025년부터 수학·영어·정보교과에 AI디지털교과서 도...</a><a href="https://www.chosun.com/national/education/2025/07/11/ENPVX3JH6RADZFKGXSCMGU5EEI/" target="_blank">뿔난 AI 교과서 업체 “개발에만 8000억...교과서...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

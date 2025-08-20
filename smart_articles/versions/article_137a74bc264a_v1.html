@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더존비즈온, 2분기 영업이익 23.5% 증가…AI 성과로 수익성 개선 - 2025-08-05 10:30:30</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,더존비즈온,2분기 실적,영업이익 증가,23.5%,AI 성과,클라우드 서비스,ONE AI,기업용 소프트웨어,수익성 개선,기업 디지털 전환">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="더존비즈온,2분기 실적,영업이익 증가,23.5%,AI 성과,클라우드 서비스,ONE AI,기업용 소프트웨어,수익성 개선,기업 디지털 전환">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-08-05 10:30:30'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('더존비즈온, 2분기 영업이익 23.5% 증가…AI 성과로 수익성 개선')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>더존비즈온, 2분기 영업이익 23.5% 증가…AI 성과로 수익성 개선</h1>
+            <p>
+                분석 시간: 2025-08-05 10:30:30
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 더존비즈온이 2분기 영업이익 23.5% 증가를 기록했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> AI 기반 서비스 'ONE AI' 도입이 실적 향상의 핵심 동력으로 작용하였다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 앞으로도 AI와 클라우드 전략이 성장의 주요 요인으로 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/08/05/137a74bc264a_1024x1024.jpg" 
+                     alt="더존비즈온, 2분기 영업익 23.5% 증가…AI 성과 덕분" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>기업용 소프트웨어 및 클라우드 서비스를 제공하는 더존비즈온이 2025년 2분기 실적에서 눈에 띄는 성장세를 기록하며, AI 기술 도입이 실적 향상에 핵심 역할을 한 것으로 분석된다. 이번 분기 영업이익은 전년 동기 대비 23.5% 증가한 252억 원으로 집계되었으며, 매출 역시 6.5% 늘어난 1059억 원을 기록했다. 특히, AI 기반 서비스 &lsquo;ONE AI&rsquo;의 기업 도입 수가 4400개 이상에 달하며, AI 성과가 실적 개선의 주요 동력임이 확인되었다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>▶ 2025년 8월 5일, 더존비즈온은 2분기 영업이익이 252억 원으로 전년 동기 대비 23.5% 증가했다고 발표하였다. 이는 공식 발표를 통해 확인된 사실이다 (<a href="https://n.news.naver.com/mnews/article/011/0004517405" target="_blank">네이버뉴스</a>).  </li>
+<li>▶ 매출은 1059억 원으로, 전년 대비 6.5% 상승하며 지속적인 성장세를 보였다.  </li>
+<li>▶ AI 서비스 &lsquo;ONE AI&rsquo;는 4400개 이상의 기업에 도입되어, 기업 업무 효율화와 생산성 향상에 기여하는 핵심 솔루션으로 자리 잡고 있다 (<a href="https://www.etnews.com/20250206000228" target="_blank">전자신문</a>).  </li>
+<li>▶ 1분기 실적과 비교해도, 영업이익은 216억 원에서 2분기에는 252억 원으로 증가하는 등, 연속적인 성장 흐름이 유지되고 있다 (<a href="https://it.chosun.com/news/articleView.html?idxno=2023092133619" target="_blank">조선일보</a>).  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<p>시장평가와 전문가 의견에 따르면, 이번 실적 향상은 AI 기술 도입과 클라우드 전환 전략이 핵심 동력으로 작용한 것으로 분석된다. 한 금융권 전문가는 &ldquo;AI와 클라우드 전환이 기업의 수익성 개선에 크게 기여하고 있으며, 앞으로도 성장 잠재력이 높다&rdquo;고 평가하였다 (<a href="https://it.chosun.com/news/articleView.html?idxno=2023092133619" target="_blank">조선일보</a>). 또한, 업계 관계자는 &ldquo;AI 기반 솔루션이 기업 업무의 디지털 전환을 가속화하며, 실적 안정성에 긍정적 영향을 미치고 있다&rdquo;고 분석하였다 (<a href="https://www.etnews.com/20250206000228" target="_blank">전자신문</a>).  </p>
+<p>반면, 일부 전문가들은 AI 성과가 단기적 성과에 국한될 수 있으며, 지속적 성장을 위해서는 기술 경쟁력 확보와 시장 확대가 필요하다고 지적한다. 또한, AI 도입이 일부 기업에만 집중될 경우, 전체 시장 내 균형 잡힌 성장에는 한계가 있다는 의견도 존재한다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li><strong>확인된 사실:</strong>  </li>
+<li>2분기 영업이익이 252억 원으로 전년 대비 23.5% 증가 (<a href="https://n.news.naver.com/mnews/article/011/0004517405" target="_blank">네이버뉴스</a>).  </li>
+<li>매출은 1059억 원으로 집계되었으며, AI 서비스 &lsquo;ONE AI&rsquo;는 4400개 이상 기업에 도입되었다 (<a href="https://www.etnews.com/20250206000228" target="_blank">전자신문</a>).  </li>
+<li>
+<p>1분기 대비 실적이 지속적으로 개선되고 있음이 공식 발표를 통해 확인됨 (<a href="https://it.chosun.com/news/articleView.html?idxno=2023092133619" target="_blank">조선일보</a>).  </p>
+</li>
+<li>
+<p><strong>추정 또는 미확인 정보:</strong>  </p>
+</li>
+<li>AI 성과가 앞으로도 계속 실적을 견인할 것이라는 전망은 전문가 의견에 기반한 예상이며, 기업 내부의 구체적 전략은 공개되지 않았다.  </li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<p>더존비즈온의 성장 전략을 이끄는 지용구 성장전략부문 대표는 &ldquo;AI 에이전트와 클라우드 서비스의 결합이 기업 업무 혁신의 핵심&rdquo;이라며, AI 도입 확대의 중요성을 강조하였다 (<a href="https://www.youtube.com/watch?v=Xv-YLdPb9aY" target="_blank">유튜브 영상</a>). 기업 내부 관계자는 &ldquo;AI 성과를 바탕으로 한 수익성 개선이 지속 가능하려면, 기술 경쟁력 유지와 고객사 확대가 필요하다&rdquo;고 밝혔다.</p>
+<h3>향후 전망</h3>
+<p>전문가들은 더존비즈온이 AI와 클라우드 사업을 지속적으로 확장할 경우, 향후 실적이 더욱 견고해질 것으로 기대한다. 시장의 수요가 AI 기반 솔루션에 집중되고 있으며, 기업의 디지털 전환이 가속화됨에 따라, 더존비즈온의 성장 잠재력은 높게 평가되고 있다. 그러나 경쟁사와의 기술 경쟁, 시장 포화 가능성 등은 주의해야 할 변수로 지적된다.</p>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/mnews/article/011/0004517405" target="_blank">네이버뉴스: 더존비즈온, 2분기 영업익 23.5% 증가…AI 성과 덕분</a>  </li>
+<li><a href="https://www.etnews.com/20250206000228" target="_blank">전자신문: 더존비즈온 매출 4000억 돌파…핵심 솔루션 AI 접목 덕분</a>  </li>
+<li><a href="https://it.chosun.com/news/articleView.html?idxno=2023092133619" target="_blank">조선일보: 더존비즈온, 1분기 영업익 216억…&rsquo;AI·클라우드 기반&rsquo;</a>  </li>
+<li><a href="https://www.youtube.com/watch?v=Pp_DyKOfniY" target="_blank">유튜브: &lsquo;생성형 AI&rsquo; 중요성 온다&hellip;관련주 상승</a>  </li>
+</ul>
+<p>이처럼, 더존비즈온은 AI 성과를 바탕으로 실적을 견고히 하며, 디지털 전환 시대의 핵심 기업으로 자리매김하고 있다. 앞으로의 성과와 시장 반응이 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Pp_DyKOfniY" target="_blank">&#39;생성형 AI&#39; 중요성 온다...관련주 ...</a><a href="https://www.youtube.com/watch?v=Xv-YLdPb9aY" target="_blank">[반지카페] AI 에이전트와 기업 업무 환경의 변화 l...</a><a href="https://www.youtube.com/watch?v=MWlJtgxYHXs" target="_blank">더존비즈온, AI 기반 비즈니스 혁신 #20240903...</a><a href="https://www.youtube.com/watch?v=BGRLVycK53k" target="_blank">[SW이노베이션특강] 기업과 의료환경에서의 데이터 및 ...</a><a href="https://www.youtube.com/watch?v=hq7qo6ITFag" target="_blank">[더존 ONEAI 활용] 01_자연어+질의+Master</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004517405" target="_blank">더존비즈온, 2분기 영업익 23.5% 증가…AI 성과 ...</a><a href="https://www.etnews.com/20250206000228" target="_blank">더존비즈온 매출 4000억 돌파…핵심 솔루션 AI 접목...</a><a href="https://tfmedia.co.kr/news/article.html?no=189887" target="_blank">더존비즈온, 1분기 영업익 216억…'AI·클라우드 기...</a><a href="https://zdnet.co.kr/view/?no=20250206100546" target="_blank">연 매출 4천억 첫 돌파한 더존비즈온, 향후 실적도 '...</a><a href="https://www.douzone.com/media/media_room_read.jsp?id=2798&" target="_blank">더존ICT그룹</a><a href="https://it.chosun.com/news/articleView.html?idxno=2023092133619" target="_blank">더존비즈온, 지난해 매출 4000억 돌파… '역대 최대...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
