@@ -488,8 +488,8 @@
     <main class="container">
         <div class="update-info">
             <span class="badge">LIVE</span>
-            <span>최신 AI 생성 뉴스 - 2025년 11월 20일 02:10 업데이트</span>
-            <span class="articles-count">총 9개 기사</span>
+            <span>최신 AI 생성 뉴스 - 2025년 11월 20일 02:42 업데이트</span>
+            <span class="articles-count">총 10개 기사</span>
         </div>
         
         <div class="tag-filter-section">
@@ -507,6 +507,7 @@
                     <span class="tag-group-label">주요 키워드:</span>
                     <div class="keywords-container">
                         <div class="keywords-collapsed">
+                            <button class="tag-btn content-tag" data-tag="수산물" onclick="toggleTag(this, event)">수산물</button>
                             <button class="tag-btn content-tag" data-tag="박민영" onclick="toggleTag(this, event)">박민영</button>
                             <button class="tag-btn content-tag" data-tag="내륙추위" onclick="toggleTag(this, event)">내륙추위</button>
                             <button class="tag-btn content-tag" data-tag="트럼프" onclick="toggleTag(this, event)">트럼프</button>
@@ -516,13 +517,13 @@
                             <button class="tag-btn content-tag" data-tag="윤석열" onclick="toggleTag(this, event)">윤석열</button>
                             <button class="tag-btn content-tag" data-tag="장보고" onclick="toggleTag(this, event)">장보고</button>
                             <button class="tag-btn content-tag" data-tag="HD현대" onclick="toggleTag(this, event)">HD현대</button>
-                            <button class="tag-btn content-tag" data-tag="엘리자" onclick="toggleTag(this, event)">엘리자</button>
                             <span class="expand-indicator">... 더보기</span>
                         </div>
                         <div class="keywords-expanded" style="display: none;">
                             <input type="text" class="keyword-search" placeholder="키워드 검색..." oninput="searchKeywords(this)">
                             <div class="selected-keywords"></div>
                             <div class="all-keywords">
+                                <button class="tag-btn content-tag" data-tag="수산물" onclick="toggleTag(this, event)">수산물</button>
                                 <button class="tag-btn content-tag" data-tag="박민영" onclick="toggleTag(this, event)">박민영</button>
                                 <button class="tag-btn content-tag" data-tag="내륙추위" onclick="toggleTag(this, event)">내륙추위</button>
                                 <button class="tag-btn content-tag" data-tag="트럼프" onclick="toggleTag(this, event)">트럼프</button>
@@ -532,23 +533,25 @@
                                 <button class="tag-btn content-tag" data-tag="윤석열" onclick="toggleTag(this, event)">윤석열</button>
                                 <button class="tag-btn content-tag" data-tag="장보고" onclick="toggleTag(this, event)">장보고</button>
                                 <button class="tag-btn content-tag" data-tag="HD현대" onclick="toggleTag(this, event)">HD현대</button>
-                                <button class="tag-btn content-tag" data-tag="엘리자" onclick="toggleTag(this, event)">엘리자</button>
-                                <button class="tag-btn content-tag" data-tag="비하발언" onclick="toggleTag(this, event)">비하발언</button>
-                                <button class="tag-btn content-tag" data-tag="수도권비" onclick="toggleTag(this, event)">수도권비</button>
-                                <button class="tag-btn content-tag" data-tag="한덕수" onclick="toggleTag(this, event)">한덕수</button>
-                                <button class="tag-btn content-tag" data-tag="소더비" onclick="toggleTag(this, event)">소더비</button>
-                                <button class="tag-btn content-tag" data-tag="5,000척" onclick="toggleTag(this, event)">5,000척</button>
-                                <button class="tag-btn content-tag" data-tag="1974년" onclick="toggleTag(this, event)">1974년</button>
-                                <button class="tag-btn content-tag" data-tag="사우디" onclick="toggleTag(this, event)">사우디</button>
-                                <button class="tag-btn content-tag" data-tag="문서" onclick="toggleTag(this, event)">문서</button>
-                                <button class="tag-btn content-tag" data-tag="F-35" onclick="toggleTag(this, event)">F-35</button>
                                 <button class="tag-btn content-tag" data-tag="잠수함" onclick="toggleTag(this, event)">잠수함</button>
-                                <button class="tag-btn content-tag" data-tag="강제구인" onclick="toggleTag(this, event)">강제구인</button>
+                                <button class="tag-btn content-tag" data-tag="사우디" onclick="toggleTag(this, event)">사우디</button>
                                 <button class="tag-btn content-tag" data-tag="김예지" onclick="toggleTag(this, event)">김예지</button>
                                 <button class="tag-btn content-tag" data-tag="하원" onclick="toggleTag(this, event)">하원</button>
+                                <button class="tag-btn content-tag" data-tag="소더비" onclick="toggleTag(this, event)">소더비</button>
+                                <button class="tag-btn content-tag" data-tag="수급" onclick="toggleTag(this, event)">수급</button>
+                                <button class="tag-btn content-tag" data-tag="엘리자" onclick="toggleTag(this, event)">엘리자</button>
+                                <button class="tag-btn content-tag" data-tag="문서" onclick="toggleTag(this, event)">문서</button>
+                                <button class="tag-btn content-tag" data-tag="F-35" onclick="toggleTag(this, event)">F-35</button>
+                                <button class="tag-btn content-tag" data-tag="수도권비" onclick="toggleTag(this, event)">수도권비</button>
                                 <button class="tag-btn content-tag" data-tag="진해" onclick="toggleTag(this, event)">진해</button>
+                                <button class="tag-btn content-tag" data-tag="1974년" onclick="toggleTag(this, event)">1974년</button>
+                                <button class="tag-btn content-tag" data-tag="비하발언" onclick="toggleTag(this, event)">비하발언</button>
                                 <button class="tag-btn content-tag" data-tag="오픈AI" onclick="toggleTag(this, event)">오픈AI</button>
+                                <button class="tag-btn content-tag" data-tag="중국" onclick="toggleTag(this, event)">중국</button>
+                                <button class="tag-btn content-tag" data-tag="5,000척" onclick="toggleTag(this, event)">5,000척</button>
+                                <button class="tag-btn content-tag" data-tag="한덕수" onclick="toggleTag(this, event)">한덕수</button>
                                 <button class="tag-btn content-tag" data-tag="강원눈" onclick="toggleTag(this, event)">강원눈</button>
+                                <button class="tag-btn content-tag" data-tag="강제구인" onclick="toggleTag(this, event)">강제구인</button>
                             </div>
                         </div>
                     </div>
@@ -557,6 +560,15 @@
         </div>
         <div class="no-results" style="display: none;"></div>
         <div class="articles-grid">
+            <a href="/articles/article_20251120_024030.html" class="article-card" data-tags="사회|수산물|수급|중국" onclick="this.href = '/articles/article_20251120_024030.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>中, 日 '대만 발언'에 전 방위 압박...수산물 수입 또 중단</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 17:40</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 7월 23일 일부 지역에서 해산물 수급이 급격히 감소했다는 보도가 있었으나, 아직 공식 발표가 없었다. / 해양수산부는 원인 파악 중이며, 어촌 단체는 수산업자들의 생활이 위협받고 있다고 주장하고 있다. / 수급 불안정이 장기화될 경우 정부는 지원책을 마련하고, 해산물 가격 상승이 소비자 물가에 영향을 미칠 전망이다.</p>
+            </a>
             <a href="/articles/article_20251120_020712.html" class="article-card" data-tags="사회|박민영|김예지|비하발언" onclick="this.href = '/articles/article_20251120_020712.html#' + Array.from(selectedTags).join(',')">
                 
                 <h2>'장애인 비하' 박민영 사표 반려에 김예지 "이해하기 어려워"</h2>
@@ -650,7 +662,7 @@
             </p>
             <p>© 2025 KONA Project</p>
             <p style="margin-top: 10px; font-size: 0.85rem;">
-                생성 시간: 2025-11-20 02:10:33 KST
+                생성 시간: 2025-11-20 02:42:26 KST
             </p>
         </div>
     </footer>
