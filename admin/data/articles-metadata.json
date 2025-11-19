@@ -1,5 +1,170 @@
 [
   {
+    "id": "355b30f99d58",
+    "title": "FOMC 의사록 \"12월 금리, '다수'는 동결 vs '몇몇'은 인하 의견\"",
+    "created_at": "2025-11-20T07:53:08.366837+09:00",
+    "last_updated": "2025-11-20T07:53:08.366837+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "연준",
+        "FOMC",
+        "금리"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "ad8a18b6cad4",
+    "title": "원주, 아동 학대 예방 시민 캠페인 개최",
+    "created_at": "2025-11-20T07:51:44.718406+09:00",
+    "last_updated": "2025-11-20T07:51:44.718406+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "원주",
+        "아동학대",
+        "긍정양육"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "44cda31ea17d",
+    "title": "“일본 대신 한국 갈래요”…中정부 ‘일본 여행 자제’ 권고에 중국인들 우르르",
+    "created_at": "2025-11-20T07:50:19.206773+09:00",
+    "last_updated": "2025-11-20T07:50:19.206773+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "중국정부",
+        "일본자제",
+        "한국여행"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "51cc8d70b798",
+    "title": "조지아 한국인 단속에…트럼프 “난 바보같이 그렇게 하지 말라고했다”",
+    "created_at": "2025-11-20T07:48:43.938485+09:00",
+    "last_updated": "2025-11-20T07:48:43.938485+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "트럼프"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "514c194969ad",
+    "title": "엡스타인 문건 공개 법안, 트럼프 서명만 남았다(종합)",
+    "created_at": "2025-11-20T07:43:45.352679+09:00",
+    "last_updated": "2025-11-20T07:43:45.352679+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "국제"
+      ],
+      "content_tags": [
+        "Jeffrey Epstein"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "b9e967a389c0",
+    "title": "美 반도체 관세 부과 늦어질 수도...中-물가 걱정에 지연",
+    "created_at": "2025-11-20T07:42:08.954325+09:00",
+    "last_updated": "2025-11-20T07:42:08.954325+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "반도체",
+        "관세",
+        "트럼프"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "62046eef5257",
+    "title": "\"韓기업 美로비 핵심은 국내이슈화\" 워싱턴 로비스트 조언",
+    "created_at": "2025-11-20T07:40:37.052089+09:00",
+    "last_updated": "2025-11-20T07:40:37.052089+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "국내이슈",
+        "로비전략",
+        "워싱턴"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "98fe48eec92b",
     "title": "'론스타 배상 취소' 사유, '적법절차 원칙' 위반…소송비용 73억원 환수",
     "created_at": "2025-11-20T07:06:07.079996+09:00",

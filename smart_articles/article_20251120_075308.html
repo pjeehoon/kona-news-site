@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMC 의사록 "12월 금리, '다수'는 동결 vs '몇몇'은 인하 의견" - 2025-11-20 07:53:08</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,연준,FOMC,금리">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="연준,FOMC,금리">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 07:53:08'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('FOMC 의사록 "12월 금리, \'다수\'는 동결 vs \'몇몇\'은 인하 의견"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>FOMC 의사록 "12월 금리, '다수'는 동결 vs '몇몇'은 인하 의견"</h1>
+            <p>
+                분석 시간: 2025-11-20 07:53:08
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 연준 FOMC 의사록이 공개되면서 12월 금리 동결을 지지하는 다수와 인하 가능성을 제시한 소수 위원 간 의견 차이가 드러났다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 10월 회의에서는 0.25%포인트 인하가 결정되었으나, FedWatch에 따르면 12월 인하 가능성은 29.6%로 낮아졌으며, 파월 연준 의장은 인하가 확정되지 않았다고 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 내부 분열은 주식·채권·원자재 시장에 변동성을 부여하고, 향후 금리 정책 방향에 대한 불확실성을 높여 경제 전망에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/355b30f99d58.png" 
+                     alt="FOMC 의사록 "12월 금리, '다수'는 동결 vs '몇몇'은 인하 의견"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>연방공개시장위원회(FOMC) 의사록이 공개되면서 12월 금리 동결을 지지하는 다수와 인하 가능성을 열어둔 소수 위원 간 의견 차이가 드러났다. 연준은 10월 회의에서 0.25%포인트 인하를 결정했으나, 12월 정책 방향은 아직 확정되지 않았다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 19일</td>
+<td>10월 FOMC 회의</td>
+<td>연방기금금리 0.25%포인트 인하, 3.75‑4%로 조정</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005213720" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>의사록 공개</td>
+<td>12월 금리 동결을 지지하는 다수와 인하 가능성을 제시한 소수 위원 간 의견 차이</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005213720" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>파월 연준 의장 기자회견</td>
+<td>“12월 금리 인하가 확정된 것은 아니다”는 언급</td>
+<td><a href="https://tradingeconomics.com/united-states/interest-rate" target="_blank">Trading Economics</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>FedWatch 통계</td>
+<td>12월 인하 가능성 29.6%로 낮아짐</td>
+<td><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes.htm" target="_blank">FedWatch</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>정부 셧다운 영향</td>
+<td>44일간 주요 경제지표 발표가 중단</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005213720" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>연준 내부 의견</strong>  </li>
+<li><strong>다수</strong>: 노동시장 둔화와 인플레이션 목표 달성 사이에서 12월 금리 동결이 가장 적절하다고 판단.  </li>
+<li><strong>소수</strong>: 경제활동이 견조해 정책이 과도하게 긴축적이지 않으며, 인하 가능성을 열어두어야 한다는 입장.  </li>
+<li>이 의견 차이는 10월 회의에서 인하를 결정한 이후에도 여전히 존재하는 내부 균열을 시사한다.  </li>
+<li>
+<p>출처: <a href="https://www.reuters.com/world/us/fed-minutes-show-divide-over-october-rate-cut-2025-11-19/" target="_blank">Reuters</a></p>
+</li>
+<li>
+<p><strong>시장 반응</strong>  </p>
+</li>
+<li>FedWatch에 따르면 12월 인하 가능성은 29.6%로 낮아졌으나, 여전히 일부 투자자들은 인하 가능성을 염두에 두고 있다.  </li>
+<li>주식·채권·원자재 시장은 금리 인하 가능성에 따라 변동성을 보이고 있다.  </li>
+<li>
+<p>출처: <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes.htm" target="_blank">FedWatch</a></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li>경제학자들은 인플레이션이 목표 범위에 가깝게 수렴하고 있어, 현재의 금리 수준이 과도한 긴축이 아니라고 평가한다.  </li>
+<li>반면, 일부는 노동시장이 여전히 과열되어 있음을 지적하며, 인하가 필요하다고 주장한다.  </li>
+<li>출처: <a href="https://www.cnbc.com/2025/11/19/fed-minutes-october-2025.html" target="_blank">CNBC</a></li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>10월 회의에서 0.25%포인트 인하 결정</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005213720" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>12월 금리 동결을 지지하는 다수와 인하 가능성을 제시한 소수 위원 간 의견 차이</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005213720" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>파월 연준 의장이 “12월 금리 인하가 확정된 것은 아니다”라고 언급</td>
+<td><a href="https://tradingeconomics.com/united-states/interest-rate" target="_blank">Trading Economics</a></td>
+</tr>
+<tr>
+<td></td>
+<td>12월 인하 가능성 29.6%로 낮아짐</td>
+<td><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes.htm" target="_blank">FedWatch</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>12월 인하가 불투명하다는 시장의 불확실성</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>내부 균열이 정책 결정에 미치는 영향에 대한 구체적 추정</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제롬 파월</td>
+<td>연준(Fed) 의장</td>
+<td>12월 인하가 확정적이지 않음</td>
+<td>연준의 정책 방향에 대한 시장 신뢰 확보</td>
+</tr>
+<tr>
+<td>FOMC 위원들</td>
+<td>다수</td>
+<td>12월 금리 동결 지지</td>
+<td>인플레이션 목표 달성 및 경제 성장 지원</td>
+</tr>
+<tr>
+<td>FOMC 위원들</td>
+<td>소수</td>
+<td>12월 인하 가능성 제시</td>
+<td>노동시장 과열 완화 및 경기 부양 가능성</td>
+</tr>
+<tr>
+<td>시장 참여자</td>
+<td>투자자·기관</td>
+<td>금리 인하 가능성에 따른 포트폴리오 조정</td>
+<td>수익률 및 위험 관리</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>연준의 정책 방향</strong>  </li>
+<li>12월 회의에서 금리를 동결할 가능성이 높으며, 인하가 결정되려면 노동시장과 인플레이션 데이터가 더 명확히 개선돼야 한다.  </li>
+<li>
+<p>파월 의장은 “인하가 확정된 것은 아니며, 경제 상황을 면밀히 관찰할 것”이라고 강조했다.  </p>
+</li>
+<li>
+<p><strong>시장 반응</strong>  </p>
+</li>
+<li>금리 인하 가능성은 낮아졌지만, 여전히 일부 투자자들은 인하 가능성을 염두에 두고 포지션을 조정하고 있다.  </li>
+<li>
+<p>채권 시장은 금리 인하 가능성에 따라 변동성을 보이며, 주식·원자재 시장도 이에 따라 움직일 전망이다.  </p>
+</li>
+<li>
+<p><strong>경제 전망</strong>  </p>
+</li>
+<li>인플레이션이 목표 범위에 가깝게 수렴하고 있어, 연준은 현재 금리 수준이 과도한 긴축이 아니라고 판단한다.  </li>
+<li>그러나 노동시장이 여전히 과열된 신호가 보이면, 연준은 인하를 재고할 가능성이 있다.  </li>
+</ul>
+<p><strong>요약</strong><br />
+연준 FOMC 의사록은 12월 금리 동결을 지지하는 다수와 인하 가능성을 제시한 소수 위원 간 의견 차이를 드러냈다. 파월 연준 의장은 인하가 확정적이지 않다고 강조했고, 시장은 인하 가능성을 낮게 평가하고 있다. 향후 연준의 정책 방향은 경제 데이터에 따라 결정될 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=LUaBHR2kwYQ" target="_blank">🔴WATCH LIVE: FOMC MINUTES REPO...</a><a href="https://www.youtube.com/watch?v=fFjKjMUyW4w" target="_blank">Live Trading FOMC Meeting Minu...</a><a href="https://www.youtube.com/watch?v=KKXAEcOks5w" target="_blank">NVDA Impact on Overall Market,...</a><a href="https://www.youtube.com/watch?v=rEs3t2-N_AM" target="_blank">Jerome Powell Big Speech Live:...</a><a href="https://www.youtube.com/watch?v=hmz4AMjumpA" target="_blank">Traders Brace for Data - FOMC ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/015/0005213720" target="_blank">Fed, 10월 금리인하 내부 균열…12월 추가 인하도 불투명 [Fed워치]</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank">The Fed - Meeting calendars and information</a><a href="https://tradingeconomics.com/united-states/interest-rate" target="_blank">United States Fed Funds Interest Rate</a><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm" target="_blank">Federal Reserve issues FOMC statement - Federal Re...</a><a href="https://www.jpmorgan.com/insights/markets-and-economy/economy/fed-meeting-december-2024" target="_blank">December 2024 Fed Meeting: Fed Cuts Rates By 25 Ba...</a><a href="https://www.cnbc.com/2025/11/19/fed-minutes-october-2025.html" target="_blank">Fed minutes show divide over October rate cut and ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
