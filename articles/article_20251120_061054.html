@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'중일 갈등' 연예계로 확산…중국서 '한일령' 본격화하나? - 2025-11-20 06:10:54</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,중일 갈등,JO1,광저우">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="중일 갈등,JO1,광저우">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 06:10:54'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'중일 갈등\' 연예계로 확산…중국서 \'한일령\' 본격화하나?')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'중일 갈등' 연예계로 확산…중국서 '한일령' 본격화하나?</h1>
+            <p>
+                분석 시간: 2025-11-20 06:10:54
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 중국에서 JO1의 광저우 팬미팅이 취소되고, 일본에서 ESpa 닝닝의 출연 반대 청원이 제기되면서 연예계 전반에 중일 갈등이 확대되고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 팬미팅은 2025년 11월 17일 불가항력적 사유로 취소되었고, 닝닝은 5만 명이 동의한 청원으로 2025년 11월 19일 NHK 연말 특집 출연이 반대받았다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 두 사건은 정치적·외교적 배경이 아직 확인되지 않았으나, 문화 산업 내 갈등과 팬덤 감정 과열이 중일 갈등의 상징적 표현이 될 가능성을 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/86133ea62a77.png" 
+                     alt="'중일 갈등' 연예계로 확산…중국서 '한일령' 본격화하나?" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>중국에서 JO1의 광저우 팬미팅이 취소되고, 일본에서는 ESpa 닝닝의 출연을 반대하는 청원이 제기되면서 연예계 전반에 걸쳐 중일 갈등이 확대되고 있다.</strong> 두 사건은 각각 2025년 11월 17일과 19일에 발생했으며, 아직까지 공식적으로 갈등과 직접 연결된 증거는 확인되지 않았다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 17일</td>
+<td>JO1 광저우 팬미팅 취소</td>
+<td>“불가항력적인 이유”로 28일 예정이던 팬미팅이 취소되었다는 공지가 중국 QQ뮤직을 통해 발표됨</td>
+<td><a href="https://n.news.naver.com/mnews/article/214/0001462651" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 19일</td>
+<td>ESpa 닝닝 출연 반대 청원</td>
+<td>일본 NHK 연말 특집 ‘홍백가합전’에 출연 예정인 닝닝에 대해 5만 명 이상이 동의한 청원이 제기됨. 청원은 닝닝이 2022년 공개한 ‘버섯구름’ 모양 조명 논란을 인용</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251119060700009" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 19일</td>
+<td>추가 보도</td>
+<td>IMBC, NGONews, Daum 등에서 두 사건을 연계해 보도, 중일 갈등이 연예계에 확산되는 현상을 강조</td>
+<td><a href="https://imnews.imbc.com/news/2025/world/article/6776950_36725.html" target="_blank">IMBC</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>중국 측</strong>  </li>
+<li>
+<p><strong>QQ뮤직</strong>은 팬미팅 취소 사유를 “불가항력적인 이유”로만 밝히며, 정치적·외교적 배경을 언급하지 않았다. 일부 언론은 이 말이 “중일 갈등”과 연계될 가능성을 시사했으나, 공식 입장은 아직 없다.</p>
+</li>
+<li>
+<p><strong>일본 측</strong>  </p>
+</li>
+<li>
+<p><strong>NHK</strong>는 닝닝 출연을 보류하지 않았으며, 청원에 대한 공식 입장은 아직 발표되지 않았다. 일본 팬들은 닝닝의 과거 조명 논란을 재조명하며 출연 반대를 요구하고 있다.</p>
+</li>
+<li>
+<p><strong>연예계 전문가</strong>  </p>
+</li>
+<li>
+<p>한 K‑POP 산업 전문가가 “팬미팅 취소와 출연 반대는 각각 독립적인 사안이며, 정치적 긴장과 직접 연결되기보다는 팬과 언론의 감정이 과열된 결과”라고 분석했다.</p>
+</li>
+<li>
+<p><strong>정치 전문가</strong>  </p>
+</li>
+<li>한 국제정치학자는 “현재 두 사건은 중일 갈등의 상징적 표현이 될 수 있지만, 실제로는 문화 산업 내부의 갈등과 팬덤 문화가 복합적으로 작용한 결과”라고 지적했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>① JO1 광저우 팬미팅이 2025년 11월 17일에 취소되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/214/0001462651" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>② ESpa 닝닝 출연 반대 청원이 5만 명 이상이 동의했다.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251119060700009" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>① 팬미팅 취소가 중일 갈등으로 인한 것인지 여부</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>② 닝닝이 과거 ‘버섯구름’ 조명이 원자폭탄 폭발 직후와 유사하다는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶ 주의</strong><br />
+팬미팅 취소와 출연 반대가 정치적 갈등과 직접 연결되었다는 주장은 아직 확인되지 않은 상태이며, 관련 기관의 공식 입장을 기다려야 한다.</p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JO1</strong></td>
+<td>일본 출신 남성 아이돌 그룹</td>
+<td>팬미팅 취소에 대해 공식적으로 사과는 없으나, “불가항력적인 이유”를 언급</td>
+</tr>
+<tr>
+<td><strong>ESpa 닝닝</strong></td>
+<td>한국 걸그룹 에스파의 중국인 멤버</td>
+<td>출연 반대 청원에 대해 공식 입장을 밝히지 않음</td>
+</tr>
+<tr>
+<td><strong>QQ뮤직</strong></td>
+<td>중국 음원 플랫폼</td>
+<td>팬미팅 취소 사실만 공지</td>
+</tr>
+<tr>
+<td><strong>NHK</strong></td>
+<td>일본 방송사</td>
+<td>닝닝 출연을 보류하지 않음</td>
+</tr>
+<tr>
+<td><strong>팬덤</strong></td>
+<td>한국·일본·중국 팬</td>
+<td>양쪽에서 갈등을 확대하는 역할을 하고 있음</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>중국과 일본 양국의 공식 입장</strong>이 아직 나오지 않아, 팬미팅 취소와 출연 반대가 정치적 갈등으로 확산될 가능성은 불확실하다.  </li>
+<li><strong>연예계 내부</strong>에서는 팬과 언론의 감정이 과열되면서 비슷한 사례가 반복될 수 있다는 우려가 제기되고 있다.  </li>
+<li><strong>문화 교류</strong> 측면에서, 두 사건이 장기적으로는 양국 간 예술 교류에 부정적 영향을 미칠 가능성도 있다.  </li>
+<li><strong>관계자들은</strong> 앞으로의 보도와 공식 발표를 주시하며, 갈등이 과열되지 않도록 조정 노력이 필요하다.</li>
+</ul>
+<blockquote>
+<p><strong>▶ 향후 보도</strong><br />
+2025년 12월 이후, 양국 정부 및 연예계 관계자들의 공식 성명과 추가 보도가 예상된다. 이에 따라 사건의 실체와 영향이 명확해질 전망이다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=mfCs0E2nNVc" target="_blank">aespa Ningning &#39;버섯 구름&#39;...</a><a href="https://www.youtube.com/watch?v=31gHgPK_2po" target="_blank">일본에서 난리난 에스파 닝닝 무드등 ㄷㄷ..</a><a href="https://www.youtube.com/watch?v=fuwjaC54U4g" target="_blank">일본에서 논란 터진 ‘에스파 닝닝’ 근황.. ㄷㄷ</a><a href="https://www.youtube.com/watch?v=0sxoOkVnVTs" target="_blank">최근 행사에서 술 두잔 마신 닝닝 분위기 #aespa</a><a href="https://www.youtube.com/watch?v=GWR3pGR2Ln0" target="_blank">[이런뉴스] 일본에서 “에스파 오지마!” 5만 명 찬성...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/214/0001462651" target="_blank">중일 갈등 연예계로 불똥‥팬미팅 취소에 출연 취소 청원까지</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.ngonews.kr/news/curationView.html?idxno=218845" target="_blank">'중일 갈등', 연예계로 확산…팬미팅 취소에 방송출연 반대까지</a><a href="https://www.yna.co.kr/view/AKR20251119060700009" target="_blank">'중일 갈등', 연예계로 확산…팬미팅 취소에 방송출연 반대까지 | 연합뉴스</a><a href="https://imnews.imbc.com/news/2025/world/article/6776950_36725.html" target="_blank">'중일 갈등', 연예계로 불똥‥팬미팅 취소에 출연 반대 청원까지</a><a href="https://v.daum.net/v/20251119110914937" target="_blank">중일 갈등에 속 타는 연예계…팬미팅 취소·방송 출연 반대</a><a href="https://www.yonhapnewstv.co.kr/news/AKR20251119110724yrq" target="_blank">중일 갈등에 속 타는 연예계…팬미팅 취소·방송 출연 반대</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
