@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대장동 '항소 포기' 관여 박철우… 서울중앙지검장 발탁 - 2025-11-19 19:32:53</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,대장동,박철우,항소포기">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="대장동,박철우,항소포기">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-19 19:32:53'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('대장동 '항소 포기' 관여 박철우… 서울중앙지검장 발탁')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>대장동 '항소 포기' 관여 박철우… 서울중앙지검장 발탁</h1>
+            <p>
+                분석 시간: 2025-11-19 19:32:53
+                
+            </p>
+        </div>
+        
+        
+        
+        
+        
+        <div class="article-content">
+<p>2025년 11월 19일, 대장동 개발 비리 사건의 항소 포기 과정에 관여한 박철우가 서울중앙지검장으로 임명됐다. 이로써 검찰 조직은 인적 쇄신을 맞이했으며, 논란은 여전히 이어지고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 19일</strong><br />
+  박철우(사법연수원 30기, 반부패부장)가 서울중앙지검장으로 발탁되었다는 보도가 나왔다.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/057/0001919828" target="_blank">네이버뉴스</a>  </li>
+<li>
+<p><a href="https://www.asiae.co.kr/article/2025111911064822567" target="_blank">아시아경제</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 21일</strong><br />
+  박철우가 서울중앙지검장으로 공식 부임한다.  </p>
+</li>
+<li>
+<p><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">뉴스이스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 19일</strong><br />
+  법무부가 박철우를 포함한 신규 보임 및 전보 인사를 단행했다.  </p>
+</li>
+<li>
+<p><a href="https://v.daum.net/v/20251119113303189" target="_blank">다음뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 19일</strong><br />
+  박철우가 대장동 항소 포기 과정에 실무적으로 관여했다는 사실이 드러났다.  </p>
+</li>
+<li>
+<p><a href="https://v.daum.net/v/20251119131648893" target="_blank">다음뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 19일</strong><br />
+  박철우가 떠난 반부패부장 자리를 주민철(사법연수원 32기)이 차지했다.  </p>
+</li>
+<li>
+<p><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">뉴스이스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 19일</strong><br />
+  연합뉴스TV가 “항소 포기 지휘” 영상으로 박철우의 발탁을 보도했다.  </p>
+</li>
+<li><a href="https://www.youtube.com/watch?v=rXLSTHMMKNw" target="_blank">연합뉴스TV</a></li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>검찰 내부 인사 평가</strong><br />
+  연합뉴스TV는 박철우를 “인적 쇄신”의 일환으로 평가하며, 대장동 사건의 혼란을 안정화하려는 의도를 강조했다.  </li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=rXLSTHMMKNw" target="_blank">연합뉴스TV</a></p>
+</li>
+<li>
+<p><strong>정치권 반응</strong><br />
+  채널A는 박철우의 발탁이 현 정부의 검찰 인사 정책을 반영한다고 보며, “검찰 조직 안정화”를 긍정적으로 해석했다.  </p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=y4Po-YySu9U" target="_blank">채널A</a></p>
+</li>
+<li>
+<p><strong>시민·언론 시각</strong><br />
+  아시아경제와 뉴스이스는 박철우가 항소 포기 과정에 관여한 점을 비판적으로 보며, ‘검찰 내부의 부정적 인식’이 남아있다고 지적했다.  </p>
+</li>
+<li><a href="https://www.asiae.co.kr/article/2025111911064822567" target="_blank">아시아경제</a>  </li>
+<li><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">뉴스이스</a></li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>박철우가 대검찰청 반부패부장으로 임명되었으며, 대장동 항소 포기 과정에 실무적으로 관여했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/057/0001919828" target="_blank">네이버뉴스</a>, <a href="https://v.daum.net/v/20251119131648893" target="_blank">다음뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>박철우가 2025년 11월 21일 서울중앙지검장으로 부임 예정이다.</td>
+<td><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">뉴스이스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>박철우가 떠난 반부패부장 자리를 주민철이 차지했다.</td>
+<td><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">뉴스이스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>법무부가 2025년 11월 19일 박철우를 포함한 신규 보임 및 전보 인사를 단행했다.</td>
+<td><a href="https://v.daum.net/v/20251119113303189" target="_blank">다음뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>박철우</strong>  </li>
+<li>사법연수원 30기 출신, 반부패부장으로 활동.  </li>
+<li>대장동 항소 포기 과정에 실무적으로 관여해 논란이 됨.  </li>
+<li>
+<p>현재 서울중앙지검장으로 발탁, 검찰 조직 재편에 핵심 인물.</p>
+</li>
+<li>
+<p><strong>주민철</strong>  </p>
+</li>
+<li>사법연수원 32기 출신, 박철우가 떠난 반부패부장 자리를 차지.  </li>
+<li>
+<p>검찰 내부 인사 순환의 일환으로 평가.</p>
+</li>
+<li>
+<p><strong>법무부</strong>  </p>
+</li>
+<li>박철우를 포함한 신규 보임 및 전보 인사를 단행해 검찰 조직의 인적 쇄신을 추진.  </li>
+<li>검찰 내부와 정치권 간의 협력 관계를 반영.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>검찰 조직 안정화</strong><br />
+  박철우의 발탁은 대장동 사건 이후 검찰 내부의 혼란을 해소하고 조직 안정을 도모하려는 시도로 보인다.  </li>
+<li>
+<p>그러나 항소 포기 논란이 완전히 사라지지는 않을 것으로 예상된다.</p>
+</li>
+<li>
+<p><strong>정책 방향성</strong><br />
+  현 정부의 검찰 인사 정책이 지속될 가능성이 높으며, 검찰 내부의 투명성 강화가 요구된다.  </p>
+</li>
+<li>
+<p>정치권과 시민단체는 박철우의 발탁에 대해 지속적인 감시를 요구할 전망이다.</p>
+</li>
+<li>
+<p><strong>향후 사건</strong><br />
+  대장동 사건과 관련된 추가 조사가 진행될 경우, 박철우가 서울중앙지검장으로서 어떤 역할을 할지 주목된다.</p>
+</li>
+</ul>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/mnews/article/057/0001919828" target="_blank">네이버뉴스</a> – 박철우 발탁 및 항소 포기 논란 보도  </li>
+<li><a href="https://www.asiae.co.kr/article/2025111911064822567" target="_blank">아시아경제</a> – 박철우 발탁과 항소 포기 관련 기사  </li>
+<li><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">뉴스이스</a> – 박철우 부임 및 반부패부장 교체 보도  </li>
+<li><a href="https://v.daum.net/v/20251119113303189" target="_blank">다음뉴스</a> – 법무부 보임·전보 인사 보도  </li>
+<li><a href="https://v.daum.net/v/20251119131648893" target="_blank">다음뉴스</a> – 박철우 항소 포기 관여 사실 보도  </li>
+<li><a href="https://www.youtube.com/watch?v=rXLSTHMMKNw" target="_blank">연합뉴스TV</a> – 항소 포기 지휘 영상  </li>
+<li><a href="https://www.youtube.com/watch?v=y4Po-YySu9U" target="_blank">채널A</a> – 검찰 인사와 대장동 사건 관련 영상  </li>
+</ul>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=rXLSTHMMKNw" target="_blank">&#39;항소 포기 지휘&#39; 박철우 서울중앙지검장...</a><a href="https://www.youtube.com/watch?v=8ekgTPwvYKk" target="_blank">&#39;대장동 항소 포기&#39; 직격탄…중앙지검장 ...</a><a href="https://www.youtube.com/watch?v=y4Po-YySu9U" target="_blank">‘현 정부 발탁’ 중앙지검장 사의…‘대장동 항소 포기’...</a><a href="https://www.youtube.com/watch?v=aqq1ow-HstQ" target="_blank">[속보] 대장동 항소 포기에 수사팀 강력 반발...중앙...</a><a href="https://www.youtube.com/watch?v=NpRQMt_gCQY" target="_blank">[🔴이슈를 켜라] 대장동 항소포기 하루만에 중앙지검장 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/057/0001919828" target="_blank">신임 서울중앙지검장 박철우…대장동 항소 포기 실무 관여</a><a href="https://ichannela.com/news/detail/000000501532.do" target="_blank">'항소 포기 논란' 박철우, 서울중앙지검장 승진 | 채...</a><a href="https://v.daum.net/v/20251119131648893" target="_blank">'대장동 항소포기' 관여 박철우, 서울중앙지검장 임명</a><a href="https://www.newsis.com/view/NISX20251119_0003408837" target="_blank">신임 서울중앙지검장에 박철우…대검 반부패부장 주민철(종...</a><a href="https://v.daum.net/v/20251119113303189" target="_blank">신임 중앙지검장에 박철우…'대장동 항소 포기 사태' 후...</a><a href="https://www.asiae.co.kr/article/2025111911064822567" target="_blank">대장동 '항소 포기' 관여 박철우… 서울중앙지검장 발탁...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

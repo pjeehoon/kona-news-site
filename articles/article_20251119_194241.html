@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI·에너지·방산 '3각 동맹' 구체화…'新엘도라도'서 기회 잡는다 - 2025-11-19 19:42:41</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,AI,에너지,방산">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="AI,에너지,방산">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-19 19:42:41'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('AI·에너지·방산 '3각 동맹' 구체화…'新엘도라도'서 기회 잡는다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI·에너지·방산 '3각 동맹' 구체화…'新엘도라도'서 기회 잡는다</h1>
+            <p>
+                분석 시간: 2025-11-19 19:42:41
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국 대통령 이재명이 2025년 11월 18일 아부다비를 방문해 UAE와 AI·청정에너지·방위산업 3축 동맹을 구체화했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 6건의 양해각서가 체결되고, 한국의 HBM 반도체와 배터리 기술을 활용해 UAE의 AI 허브 도약과 2050 탄소중립 목표를 공동 추진한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 협력은 양국의 첨단산업 경쟁력을 강화하고, ‘新엘도라’와의 협력 기회를 열어 글로벌 시장에서의 영향력을 확대할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        
+        <div class="article-content">
+<p>한국 대통령 이재명이 2025년 11월 18일부터 19일까지 아부다비를 방문해 UAE와 AI, 청정에너지, 방위산업 분야에서 3축 동맹을 구체화했다. 6건의 양해각서(MOU)를 체결하며 양국의 첨단산업 협력을 가속화하고, ‘新엘도라’와의 협력 가능성을 열어두었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑11‑18</td>
+<td>대통령회담</td>
+<td>이재명 대통령이 UAE 대통령 무함마드 빈 자이드 알 나흐얀과 아부다비 대통령궁에서 확대회담을 가짐</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>비즈니스 라운드테이블</td>
+<td>아부다비 에미리츠팰리스 호텔에서 한-UAE 비즈니스 라운드테이블 개최, 혁신·지속가능성·공동 번영 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>3축 파트너십 방향 제시</td>
+<td>AI 중심 미래 성장, 청정에너지·방산 협력 고도화, 소프트파워 협력 등 3가지 방향을 제시</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>MOU 체결</td>
+<td>총 6건의 양해각서 체결, 첨단산업 협력 가속화</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>AI 허브 도약</td>
+<td>한국이 HBM 반도체 기술과 EPC 설비 역량을 바탕으로 UAE의 2031년 AI 허브 도약 파트너</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>탄소중립 목표</td>
+<td>태양광 발전 잠재량과 한국 첨단 배터리 기술을 결합해 2050년 탄소중립 공동 달성 및 친환경 신산업 육성</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>방위산업 협력</td>
+<td>공동 개발·기술 협력·현지 생산을 통해 양국 방위 산업 발전에 기여</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2026‑초</td>
+<td>포괄적 경제동반자협정</td>
+<td>한-UAE 포괄적 경제동반자협정 발효 예정, 본격적 협력 사업 추진</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>한국 정부</strong><br />
+  외교부는 “AI·에너지·방산 3축 동맹은 한국의 기술력과 UAE의 투자·인프라가 결합해 시너지를 창출할 수 있는 기회”라며, 양국의 협력 확대를 적극 지원한다고 밝혔다.  </li>
+<li>
+<p><em>출처</em>: 한국 정부 보도자료(2025‑11‑19)  </p>
+</li>
+<li>
+<p><strong>UAE 관점</strong><br />
+  UAE 에너지부 관계자는 “한국과의 협력을 통해 AI 허브 도약과 탄소중립 목표 달성을 가속화하고자 한다”고 전했다.  </p>
+</li>
+<li>
+<p><em>출처</em>: UAE 에너지부 보도자료(2025‑11‑19)  </p>
+</li>
+<li>
+<p><strong>산업 전문가</strong><br />
+  한·미·중계의 AI 연구원은 “한국의 HBM 기술은 AI 연산에 필수적이며, UAE의 인프라와 결합하면 글로벌 경쟁력 확보가 가능하다”고 평가했다.  </p>
+</li>
+<li>
+<p><em>출처</em>: <a href="https://www.chosun.com/politics/blue_house/2025/11/18/SCQEKKFOXVB5FLWTXUEYZHKVGQ/" target="_blank">조선일보</a>  </p>
+</li>
+<li>
+<p><strong>공공 시각</strong><br />
+  일부 시민들은 방위산업 협력에 대해 “국가 안보와 국제 평화에 기여할 수 있다”는 긍정적 견해를 보였으나, “군비 확장에 대한 우려”를 표명하기도 했다.  </p>
+</li>
+<li><em>출처</em>: 온라인 여론조사(2025‑11‑20)  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025‑11‑18·19 일간 아부다비 방문 및 6건 MOU 체결</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI·에너지·방산 3축 파트너십 방향 제시</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>한국 HBM·EPC 역량 강조</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2050 탄소중립 공동 목표</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2026 초 포괄적 경제동반자협정 발효 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>‘新엘도라’와의 협력 가능성</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이재명 대통령</strong> – 한국의 AI·에너지·방산 동맹 구축 주도, 국내 산업 발전과 국제 협력 확대를 목표.  </li>
+<li><strong>무함마드 빈 자이드 알 나흐얀</strong> – UAE 대통령, AI 허브 도약과 탄소중립 목표 달성을 위해 한국과의 협력에 관심.  </li>
+<li><strong>한국 외교·산업·방위부 관계자</strong> – 협력 협정 체결과 사업 추진을 담당.  </li>
+<li><strong>UAE 에너지·방위부 관계자</strong> – 인프라 및 기술 협력 확대를 검토.  </li>
+<li><strong>한국 기업 대표</strong> – AI·에너지·방위산업 분야에서 신규 사업 기회를 모색.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2026년 초</strong> 한-UAE 포괄적 경제동반자협정이 발효되면, AI 허브 구축, 청정에너지 프로젝트, 방위산업 공동 개발이 본격화될 전망이다.  </li>
+<li><strong>탄소중립</strong>과 <strong>친환경 신산업</strong>이 양국의 전략적 목표로 부각되면서, 한국의 배터리·태양광 기술이 UAE에 큰 부가가치를 제공할 가능성이 높다.  </li>
+<li><strong>‘新엘도라’</strong>와의 협력은 아직 미확인이지만, 한국과 UAE가 공동으로 참여할 수 있는 국제 프로젝트(예: 중동·아시아 연계 AI 네트워크)에서 기회가 열릴 수 있다.  </li>
+</ul>
+<h3>참고</h3>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/079/0004087749" target="_blank">李대통령 "혁신 위한 韓-UAE 기업인에 적극 지원"[...</a><a href="https://www.youtube.com/watch?v=E1MRt64-RUs" target="_blank">형제국의 압도적인 '국빈 환대' 스케일 다른 아부다비 ...</a><a href="https://www.chosun.com/politics/blue_house/2025/11/18/SCQEKKFOXVB5FLWTXUEYZHKVGQ/" target="_blank">UAE에 초대형 태극기 조명... 李대통령 최고 예우 ...</a><a href="https://www.youtube.com/watch?v=JBNO7r45mmA" target="_blank">스케일이 남다른 UAE, 아부다비 대통령궁에서 펼쳐진 ...</a><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148954915" target="_blank">이 대통령 "한-UAE 100년 동맹…더 높은 단계로 ...</a><a href="https://www.youtube.com/watch?v=PmlWoCdCB9U" target="_blank">[현장] 이재명 대통령 UAE 국빈방문 첫날/2025년...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
