@@ -1,5 +1,178 @@
 [
   {
+    "id": "de84d561adaa",
+    "title": "셀트리온, 미국·한국 공장 대규모 확장으로 ‘신약기업’ 전환 가속",
+    "created_at": "2025-11-19T17:12:07.124932",
+    "last_updated": "2025-11-19T17:12:07.124943",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "서정진",
+        "셀트리온",
+        "미국공장"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "daac6a9fe433",
+    "title": "중학교에서 발생한 극단적 학폭 사건: 가해자 전학 처분과 부모의 운영위원 역할 논란",
+    "created_at": "2025-08-21T14:16:05.443269",
+    "last_updated": "2025-08-21T14:16:05.443280",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "학폭",
+        "중학교",
+        "친구기절"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "4ae6784ad0e8",
+    "title": "미국, 우크라이나 안보보장 최소화 선언… 유럽에 책임 전가 시도",
+    "created_at": "2025-08-21T12:50:08.140276",
+    "last_updated": "2025-08-21T12:50:08.140303",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "국제"
+      ],
+      "content_tags": [
+        "콜비 차관",
+        "우크라이나 안보보장"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "4807954ca7bc",
+    "title": "서울시 사이버안전센터 ‘훈련용 공문’이 공무원 급여 인상 소문을 일으키다",
+    "created_at": "2025-08-21T12:41:37.049750",
+    "last_updated": "2025-08-21T12:41:37.049759",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "사회"
+      ],
+      "content_tags": [
+        "인사혁신처",
+        "서울시 사이버"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "dbdc49e03e31",
+    "title": "러시아 외무장관, 나토 우크라이나 안보 논의에 “공격적 긴장 고조” 주장",
+    "created_at": "2025-08-21T12:30:05.144376",
+    "last_updated": "2025-08-21T12:30:05.144389",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "‘우크라",
+        "안보’",
+        "논의에…"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "7847d9a245b1",
+    "title": "한수원, 유럽 원전 사업 철수 선언…폴란드에서도 시장 진출 중단",
+    "created_at": "2025-08-21T12:25:25.917127",
+    "last_updated": "2025-08-21T12:25:25.917139",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "사실상",
+        "한수원…'폴란드서도",
+        "철수"
+      ]
+    },
+    "version_count": 2
+  },
+  {
+    "id": "7b7d63f873fb",
+    "title": "“내가 죽어야 남편 살길 열릴까”… 김건희 여사의 옥중 심경 폭로 논란",
+    "created_at": "2025-08-20T20:26:52.602800",
+    "last_updated": "2025-08-20T20:26:52.602808",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 1856,
+    "completion_tokens": 197,
+    "total_tokens": 2053,
+    "cost_usd": 0.011264,
+    "tags": {
+      "category_tags": [
+        "사회",
+        "정치"
+      ],
+      "content_tags": [
+        "김건희 여사",
+        "구속",
+        "옥중 심경",
+        "윤 전 대통령",
+        "죽음 발언 논란"
+      ]
+    },
+    "api_calls": 2,
+    "image_cost_usd": 0.011,
+    "version_count": 2
+  },
+  {
     "id": "f282670409a9",
     "title": "50대 남성, 하루 만에 여성 2명 살해 후 다리서 투신으로 사망",
     "created_at": "2025-08-05T20:52:11.602075",

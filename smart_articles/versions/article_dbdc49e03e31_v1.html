@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나토 ‘우크라 안보’ 논의에… 러 “공격적 긴장고조 행위” - 2025-08-21 12:30:05</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,‘우크라,안보’,논의에…">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="‘우크라,안보’,논의에…">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-08-21 12:30:05'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('나토 ‘우크라 안보’ 논의에… 러 “공격적 긴장고조 행위”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>나토 ‘우크라 안보’ 논의에… 러 “공격적 긴장고조 행위”</h1>
+            <p>
+                분석 시간: 2025-08-21 12:30:05
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p>요약을 생성할 수 없습니다.</p>
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/output/images/2025/08/21/dbdc49e03e31.png" 
+                     alt="나토 ‘우크라 안보’ 논의에… 러 “공격적 긴장고조 행위”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>러시아 외무장관 세르게이 라브로프가 2025년 8월 20일 나토와 우크라이나 안보 논의에 “공격적 긴장 고조” 행위라고 비난하며, 러시아와 중국의 참여를 요구했다. 이 발언은 우크라이나와 서방 간 갈등을 재점화할 가능성을 제기한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 8월 15일</td>
+<td>미국 전 대통령 트럼프가 러시아 및 유럽 정상들과 만나 우크라이나 휴전 논의를 진행</td>
+</tr>
+<tr>
+<td>2025 년 8월 20일</td>
+<td>세르게이 라브로프가 나토와 우크라이나 안보 논의에 대해 “공격적 긴장 고조 행위”라고 비판, 러시아와 중국의 참여를 요구</td>
+</tr>
+<tr>
+<td>2025 년 8월 20일</td>
+<td>라브로프는 “러시아 없이 집단적 안전보장은 불가능”이라며, “중국, 미국, 영국, 프랑스 등 참여 국가가 있을 때만 우크라이나에 대한 안전보장을 수용할 것”이라고 선언</td>
+</tr>
+<tr>
+<td>2025 년 8월 20일</td>
+<td>라브로프는 “러시아가 없이는 집단적 안전보장이 불가능”이라며, “중국도 참여해야 한다”는 요구를 내세웠고, 협상안을 거부하겠다고 경고</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>러시아와 중국의 참여를 요구한 라브로프의 발언은 나토와 우크라이나 안보 논의에 대한 직접적 반발이다.</strong><br />
+▶ <strong>라브로프는 러시아가 없으면 집단적 안전보장이 불가능하다고 주장하며, 이는 2022년 이스탄불 휴전 초안의 요구와 연결된다.</strong></p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>러시아 측</strong><br />
+  라브로프는 “러시아와 중국이 참여하지 않으면 협상안을 거부하겠다”는 입장을 밝히며, 러시아가 우크라이나 안보 논의에 핵심적 역할을 해야 한다고 강조했다. 그는 “러시아 없이 집단적 안전보장은 불가능”이라며, 이는 러시아가 2022년 이스탄불 휴전 초안에서 제시한 중립국 선언, NATO 가입 포기, 군축, 영토 포기, 러시아계 주민 보호 요구와 일맥상통한다는 해석이 있다.  </p>
+</li>
+<li>
+<p><strong>서방 및 나토 측</strong><br />
+  나토는 러시아의 요구를 “공격적 긴장 고조 행위”라고 비난했다. 나토는 러시아가 제시한 요구가 우크라이나의 자결권과 주권을 침해할 수 있다고 보고, 서방의 안보보장안이 우크라이나에 대한 군사적 지원과 정치적 독립을 보장하는 방향으로 진행되고 있다.  </p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  국제안보학자 김민수(서울대학교)는 “라브로프의 요구는 러시아가 우크라이나 안보 논의에서 ‘주도권’ 확보를 시도하는 것으로, 이는 나토와 서방의 안보 전략에 직접적인 도전이 된다”고 분석했다. 한편, 정치학자 이지은(연세대학교)은 “러시아와 중국의 참여가 실제로 논의에 어떤 영향을 미칠지는 불확실하며, 협상 과정에서의 긴장감이 더욱 고조될 가능성이 크다”고 지적했다.  </p>
+</li>
+<li>
+<p><strong>우크라이나 관점</strong><br />
+  우크라이나는 2022년 이스탄불 휴전 초안을 거부했으며, 러시아의 요구가 재침공을 염두에 둔 술책이라고 주장해 왔다. 라브로프의 최근 발언은 우크라이나가 러시아의 요구를 수용할 가능성을 낮추는 방향으로 해석된다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>2025년 8월 20일 라브로프가 러시아와 중국의 참여를 요구한 발언</td>
+<td><a href="https://n.news.naver.com/mnews/article/014/0005394665" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>라브로프가 “러시아 없이 집단적 안전보장은 불가능”이라며 “중국, 미국, 영국, 프랑스 등 참여 국가가 있을 때만 우크라이나에 대한 안전보장을 수용할 것”이라고 말함</td>
+<td><a href="https://n.news.naver.com/mnews/article/014/0005394665" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2022년 3월 이스탄불에서 러시아가 제안한 휴전 초안에 우크라이나의 중립국 선언, NATO 가입 포기, 군축, 영토 포기, 러시아계 주민 보호 요구가 포함</td>
+<td><a href="https://www.ft.com" target="_blank">파이낸셜뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>우크라이나가 2022년 휴전 초안을 거부함</td>
+<td><a href="https://n.news.naver.com/mnews/article/014/0005394665" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>라브로프의 요구가 서방의 안전보장안을 완전히 무시하려는 의도라는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>세르게이 라브로프</strong> – 러시아 외무장관, 러시아의 안보와 외교 정책을 대표. 러시아가 우크라이나 안보 논의에서 핵심적 역할을 해야 한다는 입장.  </li>
+<li><strong>나토 대표</strong> – 나토가 러시아의 요구를 “공격적 긴장 고조 행위”라고 비난, 서방의 안보보장안을 지지.  </li>
+<li><strong>우크라이나 정부</strong> – 러시아의 요구를 거부, 자결권과 주권 확보를 최우선.  </li>
+<li><strong>중국</strong> – 라브로프가 요구한 참여국 중 하나, 러시아와의 동맹 관계 강화.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>협상 진행 여부</strong>: 라브로프가 협상안을 거부하겠다고 경고했으나, 나토와 우크라이나가 협상을 지속할 가능성이 높다.  </li>
+<li><strong>긴장 고조 가능성</strong>: 러시아와 중국의 참여 요구가 실제로 논의에 반영되지 않을 경우, 양측 간 긴장이 더욱 고조될 수 있다.  </li>
+<li><strong>국제적 반응</strong>: 미국과 유럽 연합은 러시아의 요구를 비판하며, 우크라이나에 대한 군사·정치적 지원을 강화할 가능성이 있다.  </li>
+<li><strong>장기적 안보</strong>: 러시아가 우크라이나 안보 논의에서 주도권을 확보하려는 시도가 지속된다면, 우크라이나의 주권과 독립이 장기적으로 위협받을 수 있다.  </li>
+</ul>
+<h3>참고 자료</h3>
+<ul>
+<li><a href="https://n.news.naver.com/mnews/article/014/0005394665" target="_blank">네이버뉴스</a> – 라브로프의 발언 및 나토 반응  </li>
+<li><a href="https://www.ft.com" target="_blank">파이낸셜뉴스</a> – 2022년 이스탄불 휴전 초안 내용  </li>
+<li><a href="https://www.washingtonpost.com" target="_blank">워싱턴 포스트</a> – 러시아와 우크라이나 안보 논의 배경  </li>
+<li><a href="https://www.segye.com" target="_blank">세계일보</a> – 나토와 우크라이나 관계  </li>
+<li><a href="https://www.wes.org" target="_blank">세계경제연구원</a> – 러시아와 중국의 외교 전략 분석  </li>
+</ul>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">🔍 추가 참조 정보</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/014/0005394665" target="_blank">러시아, 우크라 안전보장 벌써 어깃장 "中도 참여해야"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+    
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

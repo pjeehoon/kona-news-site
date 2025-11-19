@@ -488,8 +488,8 @@
     <main class="container">
         <div class="update-info">
             <span class="badge">LIVE</span>
-            <span>최신 AI 생성 뉴스 - 2025년 08월 20일 19:36 업데이트</span>
-            <span class="articles-count">총 5개 기사</span>
+            <span>최신 AI 생성 뉴스 - 2025년 11월 19일 17:16 업데이트</span>
+            <span class="articles-count">총 12개 기사</span>
         </div>
         
         <div class="tag-filter-section">
@@ -500,74 +500,97 @@
             <div class="tag-groups">
                 <div class="tag-group">
                     <span class="tag-group-label">카테고리:</span>
+                    <button class="tag-btn category-tag" data-tag="정치" onclick="toggleTag(this, event)">정치</button>
                     <button class="tag-btn category-tag" data-tag="경제" onclick="toggleTag(this, event)">경제</button>
                     <button class="tag-btn category-tag" data-tag="사회" onclick="toggleTag(this, event)">사회</button>
+                    <button class="tag-btn category-tag" data-tag="국제" onclick="toggleTag(this, event)">국제</button>
                 </div>
                 <div class="tag-group keywords-section" onclick="toggleKeywordsExpansion(event)">
                     <span class="tag-group-label">주요 키워드:</span>
                     <div class="keywords-container">
                         <div class="keywords-collapsed">
+                            <button class="tag-btn content-tag" data-tag="서정진" onclick="toggleTag(this, event)">서정진</button>
+                            <button class="tag-btn content-tag" data-tag="학폭" onclick="toggleTag(this, event)">학폭</button>
+                            <button class="tag-btn content-tag" data-tag="콜비 차관" onclick="toggleTag(this, event)">콜비 차관</button>
+                            <button class="tag-btn content-tag" data-tag="인사혁신처" onclick="toggleTag(this, event)">인사혁신처</button>
+                            <button class="tag-btn content-tag" data-tag="‘우크라" onclick="toggleTag(this, event)">‘우크라</button>
+                            <button class="tag-btn content-tag" data-tag="사실상" onclick="toggleTag(this, event)">사실상</button>
+                            <button class="tag-btn content-tag" data-tag="김건희 여사" onclick="toggleTag(this, event)">김건희 여사</button>
                             <button class="tag-btn content-tag" data-tag="연쇄살인" onclick="toggleTag(this, event)">연쇄살인</button>
                             <button class="tag-btn content-tag" data-tag="더존비즈온" onclick="toggleTag(this, event)">더존비즈온</button>
                             <button class="tag-btn content-tag" data-tag="AI 디지털교과서" onclick="toggleTag(this, event)">AI 디지털교과서</button>
-                            <button class="tag-btn content-tag" data-tag="일론 머스크" onclick="toggleTag(this, event)">일론 머스크</button>
-                            <button class="tag-btn content-tag" data-tag="러시아군" onclick="toggleTag(this, event)">러시아군</button>
-                            <button class="tag-btn content-tag" data-tag="ONE AI" onclick="toggleTag(this, event)">ONE AI</button>
-                            <button class="tag-btn content-tag" data-tag="군사적 영향" onclick="toggleTag(this, event)">군사적 영향</button>
-                            <button class="tag-btn content-tag" data-tag="전쟁과 건강 문제" onclick="toggleTag(this, event)">전쟁과 건강 문제</button>
-                            <button class="tag-btn content-tag" data-tag="경찰 수사" onclick="toggleTag(this, event)">경찰 수사</button>
-                            <button class="tag-btn content-tag" data-tag="마창대교" onclick="toggleTag(this, event)">마창대교</button>
                             <span class="expand-indicator">... 더보기</span>
                         </div>
                         <div class="keywords-expanded" style="display: none;">
                             <input type="text" class="keyword-search" placeholder="키워드 검색..." oninput="searchKeywords(this)">
                             <div class="selected-keywords"></div>
                             <div class="all-keywords">
+                                <button class="tag-btn content-tag" data-tag="서정진" onclick="toggleTag(this, event)">서정진</button>
+                                <button class="tag-btn content-tag" data-tag="학폭" onclick="toggleTag(this, event)">학폭</button>
+                                <button class="tag-btn content-tag" data-tag="콜비 차관" onclick="toggleTag(this, event)">콜비 차관</button>
+                                <button class="tag-btn content-tag" data-tag="인사혁신처" onclick="toggleTag(this, event)">인사혁신처</button>
+                                <button class="tag-btn content-tag" data-tag="‘우크라" onclick="toggleTag(this, event)">‘우크라</button>
+                                <button class="tag-btn content-tag" data-tag="사실상" onclick="toggleTag(this, event)">사실상</button>
+                                <button class="tag-btn content-tag" data-tag="김건희 여사" onclick="toggleTag(this, event)">김건희 여사</button>
                                 <button class="tag-btn content-tag" data-tag="연쇄살인" onclick="toggleTag(this, event)">연쇄살인</button>
                                 <button class="tag-btn content-tag" data-tag="더존비즈온" onclick="toggleTag(this, event)">더존비즈온</button>
                                 <button class="tag-btn content-tag" data-tag="AI 디지털교과서" onclick="toggleTag(this, event)">AI 디지털교과서</button>
-                                <button class="tag-btn content-tag" data-tag="일론 머스크" onclick="toggleTag(this, event)">일론 머스크</button>
-                                <button class="tag-btn content-tag" data-tag="러시아군" onclick="toggleTag(this, event)">러시아군</button>
-                                <button class="tag-btn content-tag" data-tag="ONE AI" onclick="toggleTag(this, event)">ONE AI</button>
-                                <button class="tag-btn content-tag" data-tag="군사적 영향" onclick="toggleTag(this, event)">군사적 영향</button>
-                                <button class="tag-btn content-tag" data-tag="전쟁과 건강 문제" onclick="toggleTag(this, event)">전쟁과 건강 문제</button>
-                                <button class="tag-btn content-tag" data-tag="경찰 수사" onclick="toggleTag(this, event)">경찰 수사</button>
-                                <button class="tag-btn content-tag" data-tag="마창대교" onclick="toggleTag(this, event)">마창대교</button>
-                                <button class="tag-btn content-tag" data-tag="테슬라" onclick="toggleTag(this, event)">테슬라</button>
-                                <button class="tag-btn content-tag" data-tag="교육 정책" onclick="toggleTag(this, event)">교육 정책</button>
-                                <button class="tag-btn content-tag" data-tag="군 의료 환경" onclick="toggleTag(this, event)">군 의료 환경</button>
-                                <button class="tag-btn content-tag" data-tag="우크라이나 전쟁" onclick="toggleTag(this, event)">우크라이나 전쟁</button>
-                                <button class="tag-btn content-tag" data-tag="HIV 감염률" onclick="toggleTag(this, event)">HIV 감염률</button>
-                                <button class="tag-btn content-tag" data-tag="교육자료" onclick="toggleTag(this, event)">교육자료</button>
-                                <button class="tag-btn content-tag" data-tag="교육부" onclick="toggleTag(this, event)">교육부</button>
-                                <button class="tag-btn content-tag" data-tag="클라우드 서비스" onclick="toggleTag(this, event)">클라우드 서비스</button>
-                                <button class="tag-btn content-tag" data-tag="수익성 개선" onclick="toggleTag(this, event)">수익성 개선</button>
+                                <button class="tag-btn content-tag" data-tag="옥중 심경" onclick="toggleTag(this, event)">옥중 심경</button>
+                                <button class="tag-btn content-tag" data-tag="감염 원인" onclick="toggleTag(this, event)">감염 원인</button>
+                                <button class="tag-btn content-tag" data-tag="중학교" onclick="toggleTag(this, event)">중학교</button>
                                 <button class="tag-btn content-tag" data-tag="여성 살해" onclick="toggleTag(this, event)">여성 살해</button>
-                                <button class="tag-btn content-tag" data-tag="교과서" onclick="toggleTag(this, event)">교과서</button>
-                                <button class="tag-btn content-tag" data-tag="법적 지위 변경" onclick="toggleTag(this, event)">법적 지위 변경</button>
-                                <button class="tag-btn content-tag" data-tag="전선 위생 문제" onclick="toggleTag(this, event)">전선 위생 문제</button>
-                                <button class="tag-btn content-tag" data-tag="디지털 교육" onclick="toggleTag(this, event)">디지털 교육</button>
-                                <button class="tag-btn content-tag" data-tag="범죄 사건" onclick="toggleTag(this, event)">범죄 사건</button>
+                                <button class="tag-btn content-tag" data-tag="보상안" onclick="toggleTag(this, event)">보상안</button>
                                 <button class="tag-btn content-tag" data-tag="법개정" onclick="toggleTag(this, event)">법개정</button>
-                                <button class="tag-btn content-tag" data-tag="스트레스" onclick="toggleTag(this, event)">스트레스</button>
-                                <button class="tag-btn content-tag" data-tag="투신사망" onclick="toggleTag(this, event)">투신사망</button>
-                                <button class="tag-btn content-tag" data-tag="50대 남성" onclick="toggleTag(this, event)">50대 남성</button>
-                                <button class="tag-btn content-tag" data-tag="23.5%" onclick="toggleTag(this, event)">23.5%</button>
-                                <button class="tag-btn content-tag" data-tag="공식 발표 부족" onclick="toggleTag(this, event)">공식 발표 부족</button>
+                                <button class="tag-btn content-tag" data-tag="교원단체 반발" onclick="toggleTag(this, event)">교원단체 반발</button>
+                                <button class="tag-btn content-tag" data-tag="구속" onclick="toggleTag(this, event)">구속</button>
+                                <button class="tag-btn content-tag" data-tag="교육 정책" onclick="toggleTag(this, event)">교육 정책</button>
+                                <button class="tag-btn content-tag" data-tag="AI 성과" onclick="toggleTag(this, event)">AI 성과</button>
                                 <button class="tag-btn content-tag" data-tag="기업 성장" onclick="toggleTag(this, event)">기업 성장</button>
-                                <button class="tag-btn content-tag" data-tag="기업 디지털 전환" onclick="toggleTag(this, event)">기업 디지털 전환</button>
-                                <button class="tag-btn content-tag" data-tag="CEO 연장" onclick="toggleTag(this, event)">CEO 연장</button>
-                                <button class="tag-btn content-tag" data-tag="범행 동기 미확인" onclick="toggleTag(this, event)">범행 동기 미확인</button>
+                                <button class="tag-btn content-tag" data-tag="전쟁과 건강 문제" onclick="toggleTag(this, event)">전쟁과 건강 문제</button>
                                 <button class="tag-btn content-tag" data-tag="심리 문제" onclick="toggleTag(this, event)">심리 문제</button>
                                 <button class="tag-btn content-tag" data-tag="기업용 소프트웨어" onclick="toggleTag(this, event)">기업용 소프트웨어</button>
-                                <button class="tag-btn content-tag" data-tag="국회 의결" onclick="toggleTag(this, event)">국회 의결</button>
-                                <button class="tag-btn content-tag" data-tag="교원단체 반발" onclick="toggleTag(this, event)">교원단체 반발</button>
-                                <button class="tag-btn content-tag" data-tag="감염 원인" onclick="toggleTag(this, event)">감염 원인</button>
-                                <button class="tag-btn content-tag" data-tag="보상안" onclick="toggleTag(this, event)">보상안</button>
-                                <button class="tag-btn content-tag" data-tag="2분기 실적" onclick="toggleTag(this, event)">2분기 실적</button>
-                                <button class="tag-btn content-tag" data-tag="AI 성과" onclick="toggleTag(this, event)">AI 성과</button>
-                                <button class="tag-btn content-tag" data-tag="창원" onclick="toggleTag(this, event)">창원</button>
+                                <button class="tag-btn content-tag" data-tag="군 의료 환경" onclick="toggleTag(this, event)">군 의료 환경</button>
+                                <button class="tag-btn content-tag" data-tag="테슬라" onclick="toggleTag(this, event)">테슬라</button>
+                                <button class="tag-btn content-tag" data-tag="윤 전 대통령" onclick="toggleTag(this, event)">윤 전 대통령</button>
+                                <button class="tag-btn content-tag" data-tag="철수" onclick="toggleTag(this, event)">철수</button>
+                                <button class="tag-btn content-tag" data-tag="미국공장" onclick="toggleTag(this, event)">미국공장</button>
+                                <button class="tag-btn content-tag" data-tag="한수원…'폴란드서도" onclick="toggleTag(this, event)">한수원…'폴란드서도</button>
+                                <button class="tag-btn content-tag" data-tag="클라우드 서비스" onclick="toggleTag(this, event)">클라우드 서비스</button>
+                                <button class="tag-btn content-tag" data-tag="러시아군" onclick="toggleTag(this, event)">러시아군</button>
+                                <button class="tag-btn content-tag" data-tag="교육자료" onclick="toggleTag(this, event)">교육자료</button>
+                                <button class="tag-btn content-tag" data-tag="마창대교" onclick="toggleTag(this, event)">마창대교</button>
+                                <button class="tag-btn content-tag" data-tag="범행 동기 미확인" onclick="toggleTag(this, event)">범행 동기 미확인</button>
+                                <button class="tag-btn content-tag" data-tag="CEO 연장" onclick="toggleTag(this, event)">CEO 연장</button>
+                                <button class="tag-btn content-tag" data-tag="디지털 교육" onclick="toggleTag(this, event)">디지털 교육</button>
+                                <button class="tag-btn content-tag" data-tag="전선 위생 문제" onclick="toggleTag(this, event)">전선 위생 문제</button>
                                 <button class="tag-btn content-tag" data-tag="영업이익 증가" onclick="toggleTag(this, event)">영업이익 증가</button>
+                                <button class="tag-btn content-tag" data-tag="안보’" onclick="toggleTag(this, event)">안보’</button>
+                                <button class="tag-btn content-tag" data-tag="경찰 수사" onclick="toggleTag(this, event)">경찰 수사</button>
+                                <button class="tag-btn content-tag" data-tag="국회 의결" onclick="toggleTag(this, event)">국회 의결</button>
+                                <button class="tag-btn content-tag" data-tag="창원" onclick="toggleTag(this, event)">창원</button>
+                                <button class="tag-btn content-tag" data-tag="우크라이나 전쟁" onclick="toggleTag(this, event)">우크라이나 전쟁</button>
+                                <button class="tag-btn content-tag" data-tag="논의에…" onclick="toggleTag(this, event)">논의에…</button>
+                                <button class="tag-btn content-tag" data-tag="스트레스" onclick="toggleTag(this, event)">스트레스</button>
+                                <button class="tag-btn content-tag" data-tag="HIV 감염률" onclick="toggleTag(this, event)">HIV 감염률</button>
+                                <button class="tag-btn content-tag" data-tag="우크라이나 안보보장" onclick="toggleTag(this, event)">우크라이나 안보보장</button>
+                                <button class="tag-btn content-tag" data-tag="수익성 개선" onclick="toggleTag(this, event)">수익성 개선</button>
+                                <button class="tag-btn content-tag" data-tag="일론 머스크" onclick="toggleTag(this, event)">일론 머스크</button>
+                                <button class="tag-btn content-tag" data-tag="군사적 영향" onclick="toggleTag(this, event)">군사적 영향</button>
+                                <button class="tag-btn content-tag" data-tag="법적 지위 변경" onclick="toggleTag(this, event)">법적 지위 변경</button>
+                                <button class="tag-btn content-tag" data-tag="친구기절" onclick="toggleTag(this, event)">친구기절</button>
+                                <button class="tag-btn content-tag" data-tag="셀트리온" onclick="toggleTag(this, event)">셀트리온</button>
+                                <button class="tag-btn content-tag" data-tag="23.5%" onclick="toggleTag(this, event)">23.5%</button>
+                                <button class="tag-btn content-tag" data-tag="죽음 발언 논란" onclick="toggleTag(this, event)">죽음 발언 논란</button>
+                                <button class="tag-btn content-tag" data-tag="2분기 실적" onclick="toggleTag(this, event)">2분기 실적</button>
+                                <button class="tag-btn content-tag" data-tag="서울시 사이버" onclick="toggleTag(this, event)">서울시 사이버</button>
+                                <button class="tag-btn content-tag" data-tag="교과서" onclick="toggleTag(this, event)">교과서</button>
+                                <button class="tag-btn content-tag" data-tag="ONE AI" onclick="toggleTag(this, event)">ONE AI</button>
+                                <button class="tag-btn content-tag" data-tag="공식 발표 부족" onclick="toggleTag(this, event)">공식 발표 부족</button>
+                                <button class="tag-btn content-tag" data-tag="교육부" onclick="toggleTag(this, event)">교육부</button>
+                                <button class="tag-btn content-tag" data-tag="투신사망" onclick="toggleTag(this, event)">투신사망</button>
+                                <button class="tag-btn content-tag" data-tag="범죄 사건" onclick="toggleTag(this, event)">범죄 사건</button>
+                                <button class="tag-btn content-tag" data-tag="50대 남성" onclick="toggleTag(this, event)">50대 남성</button>
+                                <button class="tag-btn content-tag" data-tag="기업 디지털 전환" onclick="toggleTag(this, event)">기업 디지털 전환</button>
                             </div>
                         </div>
                     </div>
@@ -576,6 +599,69 @@
         </div>
         <div class="no-results" style="display: none;"></div>
         <div class="articles-grid">
+            <a href="/articles/article_20251119_171210.html" class="article-card" data-tags="사회|서정진|셀트리온|미국공장" onclick="this.href = '/articles/article_20251119_171210.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>서정진 셀트리온 회장 "美 공장 증설·국내 4조 투자…'신약기업' 전환 가속"</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 17:12</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">셀트리온이 미국 뉴저지주 공장 5년간 5,000억원 증설과 국내 4조원 투자를 발표하며 신약기업 전환 가속을 선언했다. / 미국 공장은 7,000억원의 인수·초기 운영과 7,000억원의 증</p>
+            </a>
+            <a href="/articles/article_20250821_141608.html" class="article-card" data-tags="사회|학폭|중학교|친구기절" onclick="this.href = '/articles/article_20250821_141608.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>친구 기절시키고 신체에 이물질…중학교서 '엽기 학폭'</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 08월 21일 14:16</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">2025년 6월 24일, 중학교 학생 A가 7명의 동급생을 폭력·성추행·이물질 삽입 등으로 극단적 학폭을 저질렀다. / 학교폭력대책심의위원회는 6월 30일에 전학 처분을 내렸고, 8월 20일에 전학이 완료되었으며, 가해자 부모는 각각 학교와 인근 고등학교의 운영위원으로 활동 중이다.</p>
+            </a>
+            <a href="/articles/article_20250821_125010.html" class="article-card" data-tags="정치|국제|콜비 차관|우크라이나 안보보장" onclick="this.href = '/articles/article_20250821_125010.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>미, 우크라 안보보장 뒷걸음질?…"'최소한만 하겠다' 통보"</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 08월 21일 12:50</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">미국 국방부 차관이 우크라이나 안보보장에 최소한의 역할만 하겠다고 선언했다. / 이 발언은 트럼프 대통령의 8월 18일 선언 이후 미국이 지원을 축소하고 유럽이 주도권을</p>
+            </a>
+            <a href="/articles/article_20250821_124139.html" class="article-card" data-tags="정치|사회|인사혁신처|서울시 사이버" onclick="this.href = '/articles/article_20250821_124139.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>"봉급 6.8% 인상·육휴 수당 月 250만원"…공무원들 믿고 싶었지만 결국</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 08월 21일 12:41</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">서울시 사이버안전센터 ‘훈련용 공문’이 공무원 급여 인상 소문을 일으키다...</p>
+            </a>
+            <a href="/articles/article_20250821_123007.html" class="article-card" data-tags="사회|‘우크라|안보’|논의에…" onclick="this.href = '/articles/article_20250821_123007.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>나토 ‘우크라 안보’ 논의에… 러 “공격적 긴장고조 행위”</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 08월 21일 12:30</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">러시아 외무장관, 나토 우크라이나 안보 논의에 “공격적 긴장 고조” 주장...</p>
+            </a>
+            <a href="/smart_articles/article_20250821_122525.html" class="article-card" data-tags="사회|사실상|한수원…'폴란드서도|철수" onclick="this.href = '/smart_articles/article_20250821_122525.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>사실상 유럽 원전 사업 접은 한수원…"폴란드서도 철수"</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 08월 21일 12:25</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">한수원, 유럽 원전 사업 철수 선언…폴란드에서도 시장 진출 중단...</p>
+            </a>
+            <a href="/articles/article_20250820_202654.html" class="article-card" data-tags="사회|정치|김건희 여사|구속|옥중 심경|윤 전 대통령|죽음 발언 논란" onclick="this.href = '/articles/article_20250820_202654.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>“내가 죽어야 남편 살길 열릴까”… 김건희 옥중토로</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 08월 20일 20:26</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">김건희 여사가 구속 후 자신의 심경을 공개하며 논란이 일고 있다. / 그녀는 조사와 접견 과정에서 남편과 재회 희망을 밝혔으며, 일부 언론은 '내가 죽어야 남편에게 살길이 열릴까'라는 발언을 보도했다. / 이 사건은 감정 표현과 정치적 메시지 가능성 등 다양한 해석이 존재하며, 향후 법적·사회적 파장이 예상된다.</p>
+            </a>
             <a href="/articles/article_20250805_205213.html" class="article-card" data-tags="사회|연쇄살인|창원|50대 남성|투신사망|범행 동기 미확인|경찰 수사|여성 살해|마창대교|범죄 사건|심리 문제" onclick="this.href = '/articles/article_20250805_205213.html#' + Array.from(selectedTags).join(',')">
                 
                 <h2>50대 남성, 하루 만에 여성 2명 살해 후 다리서 투신으로 사망</h2>
@@ -628,7 +714,7 @@
         <div class="container">
             <p>© 2025 KONA Project</p>
             <p style="margin-top: 10px; font-size: 0.85rem;">
-                생성 시간: 2025-08-20 19:36:29 KST
+                생성 시간: 2025-11-19 17:16:36 KST
             </p>
         </div>
     </footer>

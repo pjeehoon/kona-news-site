@@ -750,7 +750,7 @@
                                     const label = context.label || '';
                                     const value = context.parsed;
                                     const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                    const percentage = ((value / total) * 100).toFixed(1);
+                                    const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : '0.0';
                                     const krwValue = (value * USD_TO_KRW_RATE).toFixed(1);
                                     return `${label}: ₩${krwValue} (${percentage}%)`;
                                 }
