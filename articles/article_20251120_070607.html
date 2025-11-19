@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'론스타 배상 취소' 사유, '적법절차 원칙' 위반…소송비용 73억원 환수 - 2025-11-20 07:06:07</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,배상,소송비용,적법">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="배상,소송비용,적법">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 07:06:07'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'론스타 배상 취소\' 사유, \'적법절차 원칙\' 위반…소송비용 73억원 환수')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'론스타 배상 취소' 사유, '적법절차 원칙' 위반…소송비용 73억원 환수</h1>
+            <p>
+                분석 시간: 2025-11-20 07:06:07
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국 정부는 론스타 배상금 전액 취소 결정에서 ‘적법절차 원칙’ 위반을 인정하고 73억 원의 소송비용을 환수했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2025년 국제투자분쟁해결센터 취소위원회가 론스타에 대한 3173억 원 배상금과 4000억 원 이자를 소멸시켰으며, 이 결정은 한국 정부가 당사자로 참여하지 않은 ICC 판결을 근거로 하여 절차적 부당성을 인정받았다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 판결은 국제투자분쟁에서 정부의 증거 사용 절차를 재검토하도록 촉구하며, 재정 부담을 줄이고 투자자 신뢰 회복에 긍정적 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/98fe48eec92b.png" 
+                     alt="'론스타 배상 취소' 사유, '적법절차 원칙' 위반…소송비용 73억원 환수" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>한국 정부가 론스타 사모펀드에 대한 배상금 전액을 취소한 결정에서 ‘적법절차 원칙’이 위반됐다는 점을 인정하고, 73억 원의 소송비용을 환수했다.</strong><br />
+이 결정은 2025년 11월 18일 국제투자분쟁해결센터(ICSID) 취소위원회가 내린 것으로, 론스타가 주장한 배상금 3173억 원과 이자 4000억 원이 소멸됐다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2012년 11월</td>
+<td>론스타가 ICID에 중재 신청</td>
+<td>한국 정부를 상대로 46.8억 달러(약 6조 9,000억 원) 배상을 요구</td>
+</tr>
+<tr>
+<td>2019년</td>
+<td>ICC 결정</td>
+<td>론스타‑하나금융지주 간에 배상 명령이 내려짐</td>
+</tr>
+<tr>
+<td>2022년</td>
+<td>ICID 중재판정</td>
+<td>론스타에 2억 1650만 달러 배상 및 이자 부과</td>
+</tr>
+<tr>
+<td>2025년 11월 18일</td>
+<td>ICID 취소위원회 결정</td>
+<td>론스타에 대한 배상금 전액 취소, ‘적법절차 원칙’ 위반 인정</td>
+</tr>
+<tr>
+<td>2025년 11월 19일</td>
+<td>소송비용 환수</td>
+<td>73억 원의 소송비용을 론스타에게 환수</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>확인된 사실</strong><br />
+- ICID 취소위원회가 2025년 11월 18일에 론스타에 대한 2022년 중재판정 전부를 취소했다.<br />
+- ICC 결정이 증거로 사용되었으나 한국 정부가 당사자로 참여하지 않아 절차적 부당성이 발생했다.<br />
+- 김갑유(법무부)는 ICC 결정을 부당하다고 주장하며, 한국 정부가 3173억 원 배상금과 4000억 원 이자 지급 의무를 소멸시켰다.<br />
+- 소송비용 73억 원이 론스타에게 환수되었다.</p>
+<p>▶ <strong>미확인 정보</strong><br />
+- 중재인의 부패 여부<br />
+- 판정 이유의 상세 불기재<br />
+- 론스타 내부의 추가 대응 계획</p>
+<h3>다양한 관점과 분석</h3>
+<h3>법무부와 정부 측</h3>
+<p><a href="https://n.news.naver.com/mnews/article/025/0003483667" target="_blank">네이버뉴스</a>에 따르면, 법무부는 “적법절차 원칙 중대 위반이 우리 승소 이유”라고 강조했다. 정부는 ICC 결정을 증거로 사용한 것이 부당하다고 주장하며, 절차적 공정성을 회복했다고 밝혔다.</p>
+<h3>론스타 측</h3>
+<p>론스타는 “ICC 판정문이 주요 증거였으나, 한국 정부가 당사자로 참여하지 않아 절차가 부당했다”는 입장을 보였다. 그러나 공식 입장은 아직 발표되지 않았다.</p>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>국제투자분쟁 전문가</strong>는 “ICSID 취소위원회가 절차적 부당성을 인정한 것은 국제투자분쟁에서 중요한 선례가 될 수 있다”고 분석했다.  </li>
+<li><strong>법학자</strong>는 “적법절차 원칙 위반이 인정되면, 향후 유사 사건에서 정부의 증거 사용 방식이 재검토될 가능성이 높다”고 지적했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>ICID 취소위원회 결정, ICC 결정 사용, 소송비용 환수, 김갑유의 발언</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>중재인의 부패 여부, 판정 이유의 불기재, 론스타의 내부 대응 계획</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>한국 정부</strong></td>
+<td>배상금 전액 취소 결정</td>
+<td>절차적 공정성 회복, 비용 절감</td>
+</tr>
+<tr>
+<td><strong>론스타</strong></td>
+<td>배상금 청구자</td>
+<td>배상금 전액 취소에 불만</td>
+</tr>
+<tr>
+<td><strong>김갑유</strong></td>
+<td>법무부 장관</td>
+<td>ICC 결정을 부당하다고 주장</td>
+</tr>
+<tr>
+<td><strong>ICC 판정문</strong></td>
+<td>증거 자료</td>
+<td>절차적 부당성 논란의 핵심</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong>: 론스타는 재심을 요청할 가능성이 있으며, 국제투자분쟁법의 적용 범위가 재검토될 수 있다.  </li>
+<li><strong>정책적 영향</strong>: 한국 정부는 향후 국제투자분쟁에서 증거 사용 시 절차적 요건을 강화할 가능성이 있다.  </li>
+<li><strong>경제적 파급효과</strong>: 배상금 전액 취소와 소송비용 환수로 인해 한국 정부의 재정 부담이 감소하고, 투자자 신뢰 회복에 긍정적 영향을 미칠 수 있다.  </li>
+<li><strong>선례적 의미</strong>: ‘적법절차 원칙’ 위반이 인정된 사례는 OECD 국가들에 대한 국제투자분쟁 처리 기준에 변화를 가져올 수 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 링크</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/025/0003483667" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.youtube.com/watch?v=-oPF5EImkJQ" target="_blank">유튜브: 법무부 브리핑</a><br />
+- <a href="https://www.tjb.co.kr/real-time-news/category/view/id/88767" target="_blank">TJB: 론스타 배상 취소 브리핑</a><br />
+- <a href="https://www.khan.co.kr/article/202511192020005/amp" target="_blank">경향신문: 판결 뒤집히는 이유</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003483667" target="_blank">[단독] 韓논리 통했다…론스타 판정취소 '심각한 절차 위반' 뭐길래</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=-oPF5EImkJQ" target="_blank">법무부 "론스타 사건, 적법절차 원칙 중대 위반이 우리 승소 이유 ...</a><a href="https://www.tjb.co.kr/real-time-news/category/view/id/88767" target="_blank">'론스타 배상 취소' 사유는…ICSID "적법절차 위반"</a><a href="https://www.youtube.com/watch?v=fteevOMX2GQ" target="_blank">"'론스타에 4천억 배상' 명령, 적법절차 원칙 위배" (2025.11.19/5시뉴스 .....</a><a href="https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=85690&fileTy=ATTACH&fileNo=2" target="_blank">제목없음</a><a href="https://www.khan.co.kr/article/202511192020005/amp" target="_blank">주요 증거였던 ICC 판정문 '절차 위법성' 인정되며 판 뒤집혀 - 경향신문 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

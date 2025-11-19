@@ -488,8 +488,8 @@
     <main class="container">
         <div class="update-info">
             <span class="badge">LIVE</span>
-            <span>최신 AI 생성 뉴스 - 2025년 11월 20일 06:17 업데이트</span>
-            <span class="articles-count">총 14개 기사</span>
+            <span>최신 AI 생성 뉴스 - 2025년 11월 20일 07:06 업데이트</span>
+            <span class="articles-count">총 17개 기사</span>
         </div>
         
         <div class="tag-filter-section">
@@ -501,6 +501,7 @@
                 <div class="tag-group">
                     <span class="tag-group-label">카테고리:</span>
                     <button class="tag-btn category-tag" data-tag="정치" onclick="toggleTag(this, event)">정치</button>
+                    <button class="tag-btn category-tag" data-tag="경제" onclick="toggleTag(this, event)">경제</button>
                     <button class="tag-btn category-tag" data-tag="사회" onclick="toggleTag(this, event)">사회</button>
                     <button class="tag-btn category-tag" data-tag="IT/과학" onclick="toggleTag(this, event)">IT/과학</button>
                 </div>
@@ -508,6 +509,9 @@
                     <span class="tag-group-label">주요 키워드:</span>
                     <div class="keywords-container">
                         <div class="keywords-collapsed">
+                            <button class="tag-btn content-tag" data-tag="배상" onclick="toggleTag(this, event)">배상</button>
+                            <button class="tag-btn content-tag" data-tag="KT" onclick="toggleTag(this, event)">KT</button>
+                            <button class="tag-btn content-tag" data-tag="인건비" onclick="toggleTag(this, event)">인건비</button>
                             <button class="tag-btn content-tag" data-tag="애플" onclick="toggleTag(this, event)">애플</button>
                             <button class="tag-btn content-tag" data-tag="트럼프" onclick="toggleTag(this, event)">트럼프</button>
                             <button class="tag-btn content-tag" data-tag="중일 갈등" onclick="toggleTag(this, event)">중일 갈등</button>
@@ -515,15 +519,15 @@
                             <button class="tag-btn content-tag" data-tag="자유한국당" onclick="toggleTag(this, event)">자유한국당</button>
                             <button class="tag-btn content-tag" data-tag="박철우" onclick="toggleTag(this, event)">박철우</button>
                             <button class="tag-btn content-tag" data-tag="중국" onclick="toggleTag(this, event)">중국</button>
-                            <button class="tag-btn content-tag" data-tag="류진" onclick="toggleTag(this, event)">류진</button>
-                            <button class="tag-btn content-tag" data-tag="운세" onclick="toggleTag(this, event)">운세</button>
-                            <button class="tag-btn content-tag" data-tag="IMA" onclick="toggleTag(this, event)">IMA</button>
                             <span class="expand-indicator">... 더보기</span>
                         </div>
                         <div class="keywords-expanded" style="display: none;">
                             <input type="text" class="keyword-search" placeholder="키워드 검색..." oninput="searchKeywords(this)">
                             <div class="selected-keywords"></div>
                             <div class="all-keywords">
+                                <button class="tag-btn content-tag" data-tag="배상" onclick="toggleTag(this, event)">배상</button>
+                                <button class="tag-btn content-tag" data-tag="KT" onclick="toggleTag(this, event)">KT</button>
+                                <button class="tag-btn content-tag" data-tag="인건비" onclick="toggleTag(this, event)">인건비</button>
                                 <button class="tag-btn content-tag" data-tag="애플" onclick="toggleTag(this, event)">애플</button>
                                 <button class="tag-btn content-tag" data-tag="트럼프" onclick="toggleTag(this, event)">트럼프</button>
                                 <button class="tag-btn content-tag" data-tag="중일 갈등" onclick="toggleTag(this, event)">중일 갈등</button>
@@ -531,41 +535,47 @@
                                 <button class="tag-btn content-tag" data-tag="자유한국당" onclick="toggleTag(this, event)">자유한국당</button>
                                 <button class="tag-btn content-tag" data-tag="박철우" onclick="toggleTag(this, event)">박철우</button>
                                 <button class="tag-btn content-tag" data-tag="중국" onclick="toggleTag(this, event)">중국</button>
-                                <button class="tag-btn content-tag" data-tag="류진" onclick="toggleTag(this, event)">류진</button>
-                                <button class="tag-btn content-tag" data-tag="운세" onclick="toggleTag(this, event)">운세</button>
-                                <button class="tag-btn content-tag" data-tag="IMA" onclick="toggleTag(this, event)">IMA</button>
-                                <button class="tag-btn content-tag" data-tag="김혜경" onclick="toggleTag(this, event)">김혜경</button>
-                                <button class="tag-btn content-tag" data-tag="좌초" onclick="toggleTag(this, event)">좌초</button>
-                                <button class="tag-btn content-tag" data-tag="양평" onclick="toggleTag(this, event)">양평</button>
-                                <button class="tag-btn content-tag" data-tag="항소포기" onclick="toggleTag(this, event)">항소포기</button>
-                                <button class="tag-btn content-tag" data-tag="아부다비" onclick="toggleTag(this, event)">아부다비</button>
-                                <button class="tag-btn content-tag" data-tag="네이버" onclick="toggleTag(this, event)">네이버</button>
-                                <button class="tag-btn content-tag" data-tag="패스트트랙" onclick="toggleTag(this, event)">패스트트랙</button>
-                                <button class="tag-btn content-tag" data-tag="김진우" onclick="toggleTag(this, event)">김진우</button>
-                                <button class="tag-btn content-tag" data-tag="Cha I‑bae" onclick="toggleTag(this, event)">Cha I‑bae</button>
-                                <button class="tag-btn content-tag" data-tag="iPhoneAir" onclick="toggleTag(this, event)">iPhoneAir</button>
-                                <button class="tag-btn content-tag" data-tag="사이버캡" onclick="toggleTag(this, event)">사이버캡</button>
-                                <button class="tag-btn content-tag" data-tag="서울지검장" onclick="toggleTag(this, event)">서울지검장</button>
-                                <button class="tag-btn content-tag" data-tag="일본" onclick="toggleTag(this, event)">일본</button>
-                                <button class="tag-btn content-tag" data-tag="한국투자" onclick="toggleTag(this, event)">한국투자</button>
-                                <button class="tag-btn content-tag" data-tag="할랄" onclick="toggleTag(this, event)">할랄</button>
-                                <button class="tag-btn content-tag" data-tag="AI혁신" onclick="toggleTag(this, event)">AI혁신</button>
-                                <button class="tag-btn content-tag" data-tag="한-UAE" onclick="toggleTag(this, event)">한-UAE</button>
-                                <button class="tag-btn content-tag" data-tag="JO1" onclick="toggleTag(this, event)">JO1</button>
                                 <button class="tag-btn content-tag" data-tag="김건희" onclick="toggleTag(this, event)">김건희</button>
-                                <button class="tag-btn content-tag" data-tag="미래에셋" onclick="toggleTag(this, event)">미래에셋</button>
-                                <button class="tag-btn content-tag" data-tag="수산물" onclick="toggleTag(this, event)">수산물</button>
-                                <button class="tag-btn content-tag" data-tag="여객선" onclick="toggleTag(this, event)">여객선</button>
-                                <button class="tag-btn content-tag" data-tag="로보택시" onclick="toggleTag(this, event)">로보택시</button>
-                                <button class="tag-btn content-tag" data-tag="신안" onclick="toggleTag(this, event)">신안</button>
-                                <button class="tag-btn content-tag" data-tag="F‑35" onclick="toggleTag(this, event)">F‑35</button>
+                                <button class="tag-btn content-tag" data-tag="운세" onclick="toggleTag(this, event)">운세</button>
+                                <button class="tag-btn content-tag" data-tag="AI혁신" onclick="toggleTag(this, event)">AI혁신</button>
+                                <button class="tag-btn content-tag" data-tag="JO1" onclick="toggleTag(this, event)">JO1</button>
+                                <button class="tag-btn content-tag" data-tag="류진" onclick="toggleTag(this, event)">류진</button>
+                                <button class="tag-btn content-tag" data-tag="이사회" onclick="toggleTag(this, event)">이사회</button>
+                                <button class="tag-btn content-tag" data-tag="iPhoneAir" onclick="toggleTag(this, event)">iPhoneAir</button>
+                                <button class="tag-btn content-tag" data-tag="좌초" onclick="toggleTag(this, event)">좌초</button>
+                                <button class="tag-btn content-tag" data-tag="네이버" onclick="toggleTag(this, event)">네이버</button>
+                                <button class="tag-btn content-tag" data-tag="사이버캡" onclick="toggleTag(this, event)">사이버캡</button>
+                                <button class="tag-btn content-tag" data-tag="할랄" onclick="toggleTag(this, event)">할랄</button>
+                                <button class="tag-btn content-tag" data-tag="사외이사" onclick="toggleTag(this, event)">사외이사</button>
+                                <button class="tag-btn content-tag" data-tag="일본" onclick="toggleTag(this, event)">일본</button>
+                                <button class="tag-btn content-tag" data-tag="중소기업" onclick="toggleTag(this, event)">중소기업</button>
+                                <button class="tag-btn content-tag" data-tag="IMA" onclick="toggleTag(this, event)">IMA</button>
+                                <button class="tag-btn content-tag" data-tag="유튜브" onclick="toggleTag(this, event)">유튜브</button>
                                 <button class="tag-btn content-tag" data-tag="입법 방해" onclick="toggleTag(this, event)">입법 방해</button>
+                                <button class="tag-btn content-tag" data-tag="아부다비" onclick="toggleTag(this, event)">아부다비</button>
+                                <button class="tag-btn content-tag" data-tag="서울지검장" onclick="toggleTag(this, event)">서울지검장</button>
+                                <button class="tag-btn content-tag" data-tag="패스트트랙" onclick="toggleTag(this, event)">패스트트랙</button>
+                                <button class="tag-btn content-tag" data-tag="항소포기" onclick="toggleTag(this, event)">항소포기</button>
+                                <button class="tag-btn content-tag" data-tag="신안" onclick="toggleTag(this, event)">신안</button>
+                                <button class="tag-btn content-tag" data-tag="로보택시" onclick="toggleTag(this, event)">로보택시</button>
+                                <button class="tag-btn content-tag" data-tag="정년연장" onclick="toggleTag(this, event)">정년연장</button>
+                                <button class="tag-btn content-tag" data-tag="한국투자" onclick="toggleTag(this, event)">한국투자</button>
+                                <button class="tag-btn content-tag" data-tag="수산물" onclick="toggleTag(this, event)">수산물</button>
+                                <button class="tag-btn content-tag" data-tag="뉴스" onclick="toggleTag(this, event)">뉴스</button>
+                                <button class="tag-btn content-tag" data-tag="양평" onclick="toggleTag(this, event)">양평</button>
+                                <button class="tag-btn content-tag" data-tag="1심 재판" onclick="toggleTag(this, event)">1심 재판</button>
+                                <button class="tag-btn content-tag" data-tag="김혜경" onclick="toggleTag(this, event)">김혜경</button>
+                                <button class="tag-btn content-tag" data-tag="여객선" onclick="toggleTag(this, event)">여객선</button>
+                                <button class="tag-btn content-tag" data-tag="적법" onclick="toggleTag(this, event)">적법</button>
                                 <button class="tag-btn content-tag" data-tag="초슬림" onclick="toggleTag(this, event)">초슬림</button>
                                 <button class="tag-btn content-tag" data-tag="광저우" onclick="toggleTag(this, event)">광저우</button>
+                                <button class="tag-btn content-tag" data-tag="김진우" onclick="toggleTag(this, event)">김진우</button>
+                                <button class="tag-btn content-tag" data-tag="소송비용" onclick="toggleTag(this, event)">소송비용</button>
+                                <button class="tag-btn content-tag" data-tag="미래에셋" onclick="toggleTag(this, event)">미래에셋</button>
+                                <button class="tag-btn content-tag" data-tag="한-UAE" onclick="toggleTag(this, event)">한-UAE</button>
+                                <button class="tag-btn content-tag" data-tag="F‑35" onclick="toggleTag(this, event)">F‑35</button>
+                                <button class="tag-btn content-tag" data-tag="Cha I‑bae" onclick="toggleTag(this, event)">Cha I‑bae</button>
                                 <button class="tag-btn content-tag" data-tag="사우디" onclick="toggleTag(this, event)">사우디</button>
-                                <button class="tag-btn content-tag" data-tag="유튜브" onclick="toggleTag(this, event)">유튜브</button>
-                                <button class="tag-btn content-tag" data-tag="1심 재판" onclick="toggleTag(this, event)">1심 재판</button>
-                                <button class="tag-btn content-tag" data-tag="뉴스" onclick="toggleTag(this, event)">뉴스</button>
                             </div>
                         </div>
                     </div>
@@ -574,6 +584,33 @@
         </div>
         <div class="no-results" style="display: none;"></div>
         <div class="articles-grid">
+            <a href="/articles/article_20251120_070607.html" class="article-card" data-tags="사회|배상|소송비용|적법" onclick="this.href = '/articles/article_20251120_070607.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>'론스타 배상 취소' 사유, '적법절차 원칙' 위반…소송비용 73억원 환수</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 20일 07:06</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">한국 정부는 론스타 배상금 전액 취소 결정에서 ‘적법절차 원칙’ 위반을 인정하고 73억 원의 소송비용을 환수했다. / 2025년 국제투자분쟁해결센터 취소위원회가 론스타에 대한 3173억 원 배상금과 4000억 원 이자를 소멸시켰으며, 이 결정은 한국 정부가 당사자로 참여하지 않은 ICC 판결을 근거로 하여 절차적 부당성을 인정받았다. / 이번 판결은 국제투자분쟁에서 정부의 증거 사용 절차를 재검토하도록 촉구하며, 재정 부담을 줄이고 투자자 신뢰 회복에 긍정적 영향을 미칠 전망이다.</p>
+            </a>
+            <a href="/articles/article_20251120_070250.html" class="article-card" data-tags="사회|KT|사외이사|이사회" onclick="this.href = '/articles/article_20251120_070250.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>KT, 사외이사 선임 절차 돌입…이사회 개편 속도</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 20일 07:02</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">KT가 2025년 11월 19일 사외이사 예비후보 공고를 발표하고 11월 26일까지 신청을 받으며 4개 공석을 채우기 위해 이사회 재편을 가속하고 있다. / 예비후보는 최양희·윤종수·안영균·조승아 등이며, 기존 사외이사 4명(김용현·김성철·곽우영·이승훈)이 재선임되고, 대표이사 후보군은 33명으로 확정되었다. / 이사회 재편은 기업 지배구조를 강화하고 투자자 신뢰를 회복할 것으로 기대되지만, 내부자와 외부자 간 이해관계 충돌 가능성도 지적되고 있다.</p>
+            </a>
+            <a href="/articles/article_20251120_065428.html" class="article-card" data-tags="경제|사회|인건비|정년연장|중소기업" onclick="this.href = '/articles/article_20251120_065428.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>"인건비 부담" 정년 연장 원하는 中企 10곳 중 1곳</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 20일 06:54</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">인건비 상승이 정년 연장을 방해하는 핵심 요인으로, 중소기업 10곳 중 단 1곳만 정년 연장을 지지했다. / 86.2%가 선별 재고용을 선호하며, 직장인 74%는 정년 연장을 찬성하고 60.2%가 63~65세를 적절한 정년으로 보았다. / 이러한 기업·노동자 간 의견 차이는 정부가 인센티브·세제 혜택을 통해 고령자 고용 확대를 검토해야 할 필요성을 시사한다.</p>
+            </a>
             <a href="/articles/article_20251120_061704.html" class="article-card" data-tags="IT/과학|애플|iPhoneAir|초슬림" onclick="this.href = '/articles/article_20251120_061704.html#' + Array.from(selectedTags).join(',')">
                 
                 <h2>'아이폰 에어' 디자이너도 애플 떠났다…초슬림폰 시장 '흔들' [1일IT템]</h2>
@@ -712,7 +749,7 @@
             </p>
             <p>© 2025 KONA Project</p>
             <p style="margin-top: 10px; font-size: 0.85rem;">
-                생성 시간: 2025-11-20 06:17:07 KST
+                생성 시간: 2025-11-20 07:06:10 KST
             </p>
         </div>
     </footer>
