@@ -488,8 +488,8 @@
     <main class="container">
         <div class="update-info">
             <span class="badge">LIVE</span>
-            <span>최신 AI 생성 뉴스 - 2025년 11월 20일 01:03 업데이트</span>
-            <span class="articles-count">총 0개 기사</span>
+            <span>최신 AI 생성 뉴스 - 2025년 11월 20일 01:20 업데이트</span>
+            <span class="articles-count">총 7개 기사</span>
         </div>
         
         <div class="tag-filter-section">
@@ -498,12 +498,122 @@
                 <button class="tag-reset-btn" onclick="resetAllTags()">모든 태그 해제</button>
             </div>
             <div class="tag-groups">
+                <div class="tag-group">
+                    <span class="tag-group-label">카테고리:</span>
+                    <button class="tag-btn category-tag" data-tag="사회" onclick="toggleTag(this, event)">사회</button>
+                    <button class="tag-btn category-tag" data-tag="IT/과학" onclick="toggleTag(this, event)">IT/과학</button>
+                </div>
+                <div class="tag-group keywords-section" onclick="toggleKeywordsExpansion(event)">
+                    <span class="tag-group-label">주요 키워드:</span>
+                    <div class="keywords-container">
+                        <div class="keywords-collapsed">
+                            <button class="tag-btn content-tag" data-tag="서머스" onclick="toggleTag(this, event)">서머스</button>
+                            <button class="tag-btn content-tag" data-tag="클림트" onclick="toggleTag(this, event)">클림트</button>
+                            <button class="tag-btn content-tag" data-tag="엡스타인" onclick="toggleTag(this, event)">엡스타인</button>
+                            <button class="tag-btn content-tag" data-tag="윤석열" onclick="toggleTag(this, event)">윤석열</button>
+                            <button class="tag-btn content-tag" data-tag="장보고" onclick="toggleTag(this, event)">장보고</button>
+                            <button class="tag-btn content-tag" data-tag="HD현대" onclick="toggleTag(this, event)">HD현대</button>
+                            <button class="tag-btn content-tag" data-tag="신안" onclick="toggleTag(this, event)">신안</button>
+                            <button class="tag-btn content-tag" data-tag="진해" onclick="toggleTag(this, event)">진해</button>
+                            <button class="tag-btn content-tag" data-tag="한덕수" onclick="toggleTag(this, event)">한덕수</button>
+                            <button class="tag-btn content-tag" data-tag="문서" onclick="toggleTag(this, event)">문서</button>
+                            <span class="expand-indicator">... 더보기</span>
+                        </div>
+                        <div class="keywords-expanded" style="display: none;">
+                            <input type="text" class="keyword-search" placeholder="키워드 검색..." oninput="searchKeywords(this)">
+                            <div class="selected-keywords"></div>
+                            <div class="all-keywords">
+                                <button class="tag-btn content-tag" data-tag="서머스" onclick="toggleTag(this, event)">서머스</button>
+                                <button class="tag-btn content-tag" data-tag="클림트" onclick="toggleTag(this, event)">클림트</button>
+                                <button class="tag-btn content-tag" data-tag="엡스타인" onclick="toggleTag(this, event)">엡스타인</button>
+                                <button class="tag-btn content-tag" data-tag="윤석열" onclick="toggleTag(this, event)">윤석열</button>
+                                <button class="tag-btn content-tag" data-tag="장보고" onclick="toggleTag(this, event)">장보고</button>
+                                <button class="tag-btn content-tag" data-tag="HD현대" onclick="toggleTag(this, event)">HD현대</button>
+                                <button class="tag-btn content-tag" data-tag="신안" onclick="toggleTag(this, event)">신안</button>
+                                <button class="tag-btn content-tag" data-tag="진해" onclick="toggleTag(this, event)">진해</button>
+                                <button class="tag-btn content-tag" data-tag="한덕수" onclick="toggleTag(this, event)">한덕수</button>
+                                <button class="tag-btn content-tag" data-tag="문서" onclick="toggleTag(this, event)">문서</button>
+                                <button class="tag-btn content-tag" data-tag="5,000척" onclick="toggleTag(this, event)">5,000척</button>
+                                <button class="tag-btn content-tag" data-tag="좌초" onclick="toggleTag(this, event)">좌초</button>
+                                <button class="tag-btn content-tag" data-tag="엘리자" onclick="toggleTag(this, event)">엘리자</button>
+                                <button class="tag-btn content-tag" data-tag="오픈AI" onclick="toggleTag(this, event)">오픈AI</button>
+                                <button class="tag-btn content-tag" data-tag="잠수함" onclick="toggleTag(this, event)">잠수함</button>
+                                <button class="tag-btn content-tag" data-tag="1974년" onclick="toggleTag(this, event)">1974년</button>
+                                <button class="tag-btn content-tag" data-tag="강제구인" onclick="toggleTag(this, event)">강제구인</button>
+                                <button class="tag-btn content-tag" data-tag="하원" onclick="toggleTag(this, event)">하원</button>
+                                <button class="tag-btn content-tag" data-tag="소더비" onclick="toggleTag(this, event)">소더비</button>
+                                <button class="tag-btn content-tag" data-tag="여객선" onclick="toggleTag(this, event)">여객선</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="no-results" style="display: none;"></div>
-        <div class="no-articles">
-            <h2>아직 생성된 뉴스가 없습니다</h2>
-            <p>KONA 시스템이 새로운 뉴스를 생성 중입니다.</p>
+        <div class="articles-grid">
+            <a href="/articles/article_20251119_162012.html" class="article-card" data-tags="IT/과학|서머스|엡스타인|오픈AI" onclick="this.href = '/articles/article_20251119_162012.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>'엡스타인 파일 연루' 서머스 전 재무장관, 오픈AI 이사직 사임</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:20</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">'엡스타인 파일 연루' 서머스 전 재무장관, 오픈AI 이사직 사임...</p>
+            </a>
+            <a href="/articles/article_20251119_161834.html" class="article-card" data-tags="사회|클림트|엘리자|소더비" onclick="this.href = '/articles/article_20251119_161834.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>3500억원에 팔린 클림트 ‘이 작품’…몸값 두번째로 비싼 화가됐다</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:18</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">3500억원에 팔린 클림트 ‘이 작품’…몸값 두번째로 비싼 화가됐다...</p>
+            </a>
+            <a href="/articles/article_20251119_161536.html" class="article-card" data-tags="사회|엡스타인|하원|문서" onclick="this.href = '/articles/article_20251119_161536.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>美하원, '엡스타인 파일 공개 법안' 427대 1로 가결</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:15</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">美하원, '엡스타인 파일 공개 법안' 427대 1로 가결...</p>
+            </a>
+            <a href="/articles/article_20251119_161355.html" class="article-card" data-tags="사회|윤석열|한덕수|강제구인" onclick="this.href = '/articles/article_20251119_161355.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>尹 ‘강제구인’ 언급에 증인 출석…“한덕수, 계엄 재고하라 해”</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:13</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">尹 ‘강제구인’ 언급에 증인 출석…“한덕수, 계엄 재고하라 해”...</p>
+            </a>
+            <a href="/articles/article_20251119_161211.html" class="article-card" data-tags="사회|장보고|잠수함|진해" onclick="this.href = '/articles/article_20251119_161211.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>34년 전 '잠수함 강국' 씨앗된 장보고함, 퇴역 앞두고 마지막 항해</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:12</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">34년 전 '잠수함 강국' 씨앗된 장보고함, 퇴역 앞두고 마지막 항해...</p>
+            </a>
+            <a href="/articles/article_20251119_161041.html" class="article-card" data-tags="사회|HD현대|1974년|5,000척" onclick="this.href = '/articles/article_20251119_161041.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>'1974 첫 선박 인도' HD현대, 지난달 5천번째 선박 인도</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:10</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">'1974 첫 선박 인도' HD현대, 지난달 5천번째 선박 인도...</p>
+            </a>
+            <a href="/articles/article_20251119_160608.html" class="article-card" data-tags="사회|신안|여객선|좌초" onclick="this.href = '/articles/article_20251119_160608.html#' + Array.from(selectedTags).join(',')">
+                
+                <h2>신안 해상서 여객선 좌초…인명 피해 없어, 김민석 “총력 대응” 지시</h2>
+                <div class="article-meta">
+                    <span>📅 2025년 11월 19일 16:06</span>
+                    <span>🤖 AI 생성</span>
+                </div>
+                <p class="article-summary">신안 해상서 여객선 좌초…인명 피해 없어, 김민석 “총력 대응” 지시...</p>
+            </a>
         </div>
     </main>
     
@@ -516,7 +626,7 @@
             </p>
             <p>© 2025 KONA Project</p>
             <p style="margin-top: 10px; font-size: 0.85rem;">
-                생성 시간: 2025-11-20 01:03:50 KST
+                생성 시간: 2025-11-20 01:20:15 KST
             </p>
         </div>
     </footer>
