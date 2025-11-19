@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빅테크도 사우디 투자...xAI·엔비디아, 500㎿ 데이터센터 건설 - 2025-11-20 08:41:40</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,xAI,엔비디아,사우디">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="xAI,엔비디아,사우디">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 08:41:40'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('빅테크도 사우디 투자...xAI·엔비디아, 500㎿ 데이터센터 건설')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>빅테크도 사우디 투자...xAI·엔비디아, 500㎿ 데이터센터 건설</h1>
+            <p>
+                분석 시간: 2025-11-20 08:41:40
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 사우디 아라비아가 xAI와 엔비디아와 협력해 500MW 규모의 데이터센터 건설 계획을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 프로젝트는 미국 수출 통제와 중국 기술 유출 우려 속에서 진행되며, 엔비디아 칩 공급이 지연될 가능성이 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 성공적으로 완성될 경우 사우디의 AI 인프라 강화와 지역 일자리 창출, 미국과의 전략적 파트너십 강화가 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/8df2bdd33363.png" 
+                     alt="빅테크도 사우디 투자...xAI·엔비디아, 500㎿ 데이터센터 건설" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 20일, 사우디 아라비아가 xAI와 엔비디아와 협력해 500MW 규모의 데이터센터를 건설한다는 계획을 발표했다. 이 프로젝트는 미국 수출 통제와 중국 기술 유출 우려가 얽힌 논란 속에서 진행된다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2023년 4월</strong> – Elon Musk가 xAI를 설립했다.  </li>
+<li><strong>▶ 2023년</strong> – xAI가 미국 멤피스에 300MW 규모의 데이터센터를 건설했다.  </li>
+<li><strong>▶ 2025년 5월</strong> – 사우디 왕세자 모하메드 빈 살람이 PIF를 통해 1조 달러 규모 AI 이니셔티브를 발표했다.  </li>
+<li><strong>▶ 2025년 5월</strong> – 미국 대통령 트럼프가 엔비디아가 사우디에 AI 칩을 공급할 것이라고 발표했다.  </li>
+<li><strong>▶ 2025년 5월</strong> – 미국이 중국 협력 우려로 사우디에 AI 칩 수출을 보류했다.  </li>
+<li><strong>▶ 2025년 11월 19일</strong> – Elon Musk가 미국‑사우디 투자 포럼에서 500MW 사우디 데이터센터 계획을 발표했다.  </li>
+<li><strong>▶ 2025년 11월 20일</strong> – 본 기사 발표.  </li>
+</ul>
+<blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/293/0000075299" target="_blank">네이버뉴스</a><br />
+- [Wall Street Journal] (수출 통제 관련 보도)<br />
+- <a href="https://www.cnbc.com/2025/05/20/elon-musk-says-he-expects-to-keep-buying-gpus-from-nvidia-and-amd.html" target="_blank">CNBC</a><br />
+- <a href="https://www.nbcnews.com/tech/tech-news/elon-musk-announces-massive-xai-data-center-saudi-arabia-x-rcna244804" target="_blank">NBC News</a><br />
+- <a href="https://www.nytimes.com/2025/11/19/technology/saudi-arabia-elon-musk-xai.html" target="_blank">NYTimes</a><br />
+- <a href="https://www.chosun.com/english/industry-en/2025/10/10/BOJ6VMHWVZAZXBYEOJ4NORQ5BM/" target="_blank">조선일보</a></p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>긍정적</strong></td>
+<td>500MW 데이터센터는 사우디의 AI 인프라를 강화하고, 지역 일자리 창출 및 기술 혁신을 촉진한다.</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td><strong>우려</strong></td>
+<td>미국 수출 통제는 엔비디아 칩 공급을 지연시키며, 중국에 기술이 유출될 가능성이 제기된다.</td>
+<td>[Wall Street Journal]</td>
+</tr>
+<tr>
+<td><strong>기업 입장</strong></td>
+<td>Elon Musk는 Humain과의 협력을 통해 고효율 컴퓨팅을 빠르게 배치할 것이며, 기술 유출 방지 조치를 마련했다고 밝혔다.</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>일부 분석가들은 수출 통제가 완화되면 프로젝트가 가속화될 것이며, 사우디가 AI 허브로 부상할 가능성을 제시한다.</td>
+<td>[CNBC]</td>
+</tr>
+<tr>
+<td><strong>정치적 시각</strong></td>
+<td>사우디의 AI 투자 확대는 미국과의 전략적 파트너십 강화와 동시에 중국과의 경쟁 구도를 조정하는 역할을 할 수 있다.</td>
+<td>[NYTimes]</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>xAI가 사우디에 500MW 데이터센터를 건설 중이며, 엔비디아 칩이 사용된다.</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td></td>
+<td>프로젝트는 Saudi state AI company Humain과 협력하고 있다.</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td></td>
+<td>미국 수출 통제로 인해 AI 칩 공급이 지연되고 있다.</td>
+<td>[Wall Street Journal]</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>기술이 중국에 유출될 가능성.</td>
+<td>[Wall Street Journal] (우려만 제시)</td>
+</tr>
+<tr>
+<td></td>
+<td>프로젝트 진행이 미국 수출 제한만으로 완전히 지연되고 있다는 주장.</td>
+<td>[Wall Street Journal] (단일 요인으로만 제시)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>Elon Musk</strong> – xAI 설립자이자 CEO. 사우디 데이터센터 건설을 주도하며, Humain과의 협력에서 기술 유출 방지 조치를 강조했다.  </li>
+<li><strong>Mohammed bin Salman</strong> – 사우디 아라비아 왕세자, PIF를 통해 AI 이니셔티브를 추진하고 있다.  </li>
+<li><strong>Jensen Huang</strong> – 엔비디아 CEO. 사우디에 AI 칩 공급을 지원하겠다고 발표했으나, 미국 수출 통제로 인해 일정 지연이 발생했다.  </li>
+<li><strong>Humain</strong> – 사우디 국영 AI 기업, xAI와 협력해 데이터센터를 구축한다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수출 통제 완화</strong>: 미국 정부가 수출 제한을 완화하면 엔비디아 칩 공급이 가속화될 가능성이 크다.  </li>
+<li><strong>AI 인프라 확대</strong>: 사우디가 AI 허브로 부상하면 지역 경제에 긍정적 파급효과가 예상된다.  </li>
+<li><strong>지정학적 긴장</strong>: 중국과의 기술 경쟁이 심화되면서, 사우디는 미국과의 전략적 파트너십을 강화할 필요가 있다.  </li>
+<li><strong>기술 유출 방지</strong>: Humain과 xAI가 협력해 보안 프로토콜을 강화하면 기술 유출 위험이 낮아질 수 있다.  </li>
+</ul>
+<p>이 프로젝트는 사우디가 AI 산업을 선도하려는 야망을 반영하지만, 미국의 수출 통제와 중국과의 기술 경쟁이라는 복합적인 도전에 직면해 있다. 향후 수출 정책 변화와 양국 간 협력 상황이 프로젝트의 성공 여부를 결정할 핵심 변수로 작용할 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=LqCF1x-UUok" target="_blank">사우디, 100억 달러 규모 AI 추진: 휴메인, 20...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/293/0000075299" target="_blank">머스크의 xAI, 휴메인과 사우디에 대규모 데이터센터 구축</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/english/industry-en/2025/10/10/BOJ6VMHWVZAZXBYEOJ4NORQ5BM/" target="_blank">NVIDIA Invests $2 Billion in xAI Amid AI Infrastru...</a><a href="https://www.cnbc.com/2025/05/20/elon-musk-says-he-expects-to-keep-buying-gpus-from-nvidia-and-amd.html" target="_blank">Elon Musk: xAI and Tesla to keep buying Nvidia, AM...</a><a href="https://www.nbcnews.com/tech/tech-news/elon-musk-announces-massive-xai-data-center-saudi-arabia-x-rcna244804" target="_blank">Elon Musk announces massive xAI data center in Sau...</a><a href="https://www.nytimes.com/2025/11/19/technology/saudi-arabia-elon-musk-xai.html" target="_blank">Saudi Arabia Backs Elon Musk's xAI With Data Cente...</a><a href="https://nvidianews.nvidia.com/news/spectrum-x-ethernet-networking-xai-colossus" target="_blank">NVIDIA Ethernet Networking Accelerates World's Lar...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"시세 떨어졌으니 깎자" vs "이제 와서"… SK-LG '주파수' 법싸움 - 2025-11-20 08:33:47</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,SK텔레콤,LG유플러스,주파수">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="SK텔레콤,LG유플러스,주파수">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 08:33:47'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"시세 떨어졌으니 깎자" vs "이제 와서"… SK-LG \'주파수\' 법싸움')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"시세 떨어졌으니 깎자" vs "이제 와서"… SK-LG '주파수' 법싸움</h1>
+            <p>
+                분석 시간: 2025-11-20 08:33:47
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> SK텔레콤과 LG유플러스가 LTE 2.6 GHz 주파수 재할당 가격 산정 방식에 대해 갈등을 벌이고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> SK텔레콤은 현재 시장 가치를 반영한 재산정을 요구하고, LG유플러스는 최초 낙찰가를 유지해야 한다고 주장한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 논쟁은 주파수 정책의 형평성 문제와 업계 재정 부담을 두고 법적 다툼으로 확대되며, 과학기술정보통신부가 주파수 재할당 방안을 공개 공청회 예정이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/92c006b649a5.png" 
+                     alt=""시세 떨어졌으니 깎자" vs "이제 와서"… SK-LG '주파수' 법싸움" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>LTE 주파수 재할당이 진행되는 가운데 SK텔레콤과 LG유플러스가 가격 산정 방식에 대해 갈등을 벌이고 있다. SK텔레콤은 현재 시장 가치를 반영한 재산정이 필요하다고 주장하는 반면, LG유플러스는 최초 낙찰가를 유지해야 한다고 반박한다. 이 논쟁은 주파수 정책의 형평성 문제와 업계 재정 부담을 두고 벌어지는 ‘법싸움’으로 비화되고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013년</td>
+<td>LG유플러스 최초 LTE 2.6 GHz 주파수 낙찰</td>
+<td>4788억 원에 낙찰</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2016년</td>
+<td>SK텔레콤 최초 LTE 2.6 GHz 주파수 낙찰</td>
+<td>1조 2777억 원에 낙찰</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2021년</td>
+<td>LG유플러스 주파수 재할당</td>
+<td>27.5 % 할인 적용</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 19일</td>
+<td>SK텔레콤·LG유플러스 가격 차이 보도</td>
+<td>SK텔레콤 1 MHz당 연간 비용 21.3 억 원, LG유플러스 10.8 억 원</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 ??</td>
+<td>과학기술정보통신부 주파수 재할당 방안 공개 공청회 예정</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>SK텔레콤</strong>은 재할당 시 <em>현재 주파수 가치를 기준</em>으로 재산정해야 한다고 주장한다.<br />
+▶ <strong>LG유플러스</strong>는 재할당 시 <em>기존 낙찰가</em>를 유지해야 한다고 반박한다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>연합뉴스</strong>는 SK텔레콤과 LG유플러스가 각각 다른 가격 산정 기준을 주장하며, “주파수 재할당 가격이 형평성에 대한 논란을 불러일으키고 있다”고 보도했다.  </li>
+<li><strong>뉴스웨이</strong>는 “SK텔레콤·LG유플러스의 주파수 재할당 대가 차이가 불공정 논란을 일으키고 있다”며, LG유플러스가 “전파법과 정부 기준에 따른 정당한 책정”이라고 주장했다.  </li>
+<li>업계 전문가들은 SK텔레콤이 주장하는 <em>시장 가치 기반 재산정</em>이 주파수 가격의 변동성을 반영할 수 있다고 평가하면서도, LG유플러스가 요구하는 <em>기존 낙찰가 유지</em>가 재정 안정성을 확보할 수 있다는 견해를 제시했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>SK텔레콤 1 MHz당 연간 비용 21.3 억 원</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>LG유플러스 1 MHz당 연간 비용 10.8 억 원</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>SK텔레콤 2016년 최초 낙찰가 1조 2777억 원</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>LG유플러스 2013년 최초 낙찰가 4788억 원</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>LG유플러스 2021년 재할당 시 27.5 % 할인</td>
+<td><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>SK텔레콤이 재할당 시 현재 가치를 기준으로 재산정해야 한다는 주장</td>
+<td>보도 내용이지만, 공식 정부 정책으로 확정되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>LG유플러스가 재할당 시 기존 낙찰가를 유지해야 한다는 주장</td>
+<td>보도 내용이지만, 법적 근거가 명확히 제시되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SK텔레콤</strong></td>
+<td>재할당 시 <em>시장 가치</em> 반영 필요</td>
+<td>주파수 가격 상승으로 인한 재정 부담 완화</td>
+</tr>
+<tr>
+<td><strong>LG유플러스</strong></td>
+<td>재할당 시 <em>기존 낙찰가</em> 유지</td>
+<td>재정적 안정성 확보, 가격 인상 방지</td>
+</tr>
+<tr>
+<td><strong>과학기술정보통신부</strong></td>
+<td>주파수 재할당 방안 공개 예정</td>
+<td>공정한 주파수 배분과 시장 안정성 확보</td>
+</tr>
+<tr>
+<td><strong>통신업계</strong></td>
+<td>논란 지속 전망</td>
+<td>주파수 가격 변동이 업계 재정에 미치는 영향</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>공청회</strong>: 2025년 11월 ??에 예정된 과학기술정보통신부 주파수 재할당 방안 공개 공청회에서 양측의 주장을 직접 제시할 가능성이 높다.  </li>
+<li><strong>법적 절차</strong>: SK텔레콤·LG유플러스 간의 가격 차이 논쟁이 법정에 이르러 형평성 기준이 재정의될 가능성이 있다.  </li>
+<li><strong>시장 영향</strong>: 주파수 가격이 상승하면 통신사들의 투자 비용이 증가하고, 최종적으로는 소비자 요금에 영향을 미칠 수 있다.  </li>
+<li><strong>정책 방향</strong>: 정부는 주파수 재할당 시 <em>시장 가치</em>와 <em>기존 낙찰가</em>의 균형을 모색해야 하며, 업계와의 협의를 통해 형평성 있는 기준을 마련할 필요가 있다.</li>
+</ul>
+<p>이와 같은 주파수 재할당 논쟁은 통신산업의 재정 건전성과 시장 형평성이라는 두 축을 동시에 고려해야 하는 복합적인 과제로 남아 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=xHMQ0qInHzU" target="_blank">[서울경제TV] 주파수 경매 낙찰가 2 1조… 예상가 ...</a><a href="https://www.youtube.com/watch?v=ypBcmH7Wsug" target="_blank">막 오른 LTE 주파수 경매‥ '쩐의 전쟁'시작</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/081/0003593507" target="_blank">같은 LTE 쓰는데 비용은 SKT가 2배 더 낸다?</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://namu.wiki/w/%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%20%EC%A3%BC%ED%8C%8C%EC%88%98" target="_blank">이동통신 주파수 - 나무위키</a><a href="https://www.newsway.co.kr/news/view?ud=2025111916413519516" target="_blank">LGU+, 주파수값 '형평성 논란' 반박···"주파수 정책 부정하는 것" - 뉴스 ...</a><a href="https://namu.wiki/w/LTE" target="_blank">LTE - 나무위키</a><a href="https://www.netmanias.com/ko/post/oneshot/15510/5g-5g-privatre-5g/current-status-of-commercialization-of-private-5g-frequencies-in-countries-around-the-world" target="_blank">세계 각국의 5G 특화망•Private 5G 주파수 상용화 현황 (2024년 5월 ...</a><a href="https://www.etoday.co.kr/news/view/1951715" target="_blank">'1.6조 vs 5.5조' 내달 주파수 재할당 앞두고 정부-업계 이견 좁혀질까 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
