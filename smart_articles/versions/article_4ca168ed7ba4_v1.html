@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광양시 산업위기대응지역 지정…여수·서산·포항 이어 네 번째 - 2025-11-20 16:37:31</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,경제,광양시,K‑스틸법">
+    <meta name="article-category-tags" content="정치,경제">
+    <meta name="article-content-tags" content="광양시,K‑스틸법">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 16:37:31'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('광양시 산업위기대응지역 지정…여수·서산·포항 이어 네 번째')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>광양시 산업위기대응지역 지정…여수·서산·포항 이어 네 번째</h1>
+            <p>
+                분석 시간: 2025-11-20 16:37:31
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 광양시는 여수·서산·포항과 함께 산업위기 선제대응지역으로 지정돼야 한다는 요구가 제기돼 네 번째 도시로 부상했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 광양의 철강산업이 BSI 기준을 12개월 연속 미달하고, K‑스틸법이 국회에 상정 중인 상황에서 상공회의소 회장 우광일이 지정과 법안 통과를 촉구했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 지정과 K‑스틸법 통과가 시급해 광양의 산업 회복과 지역 경제 활성화를 위해 정부의 신속한 결단이 필요하다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/4ca168ed7ba4.png" 
+                     alt="광양시 산업위기대응지역 지정…여수·서산·포항 이어 네 번째" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>광양시가 산업위기 선제대응지역으로 지정돼야 한다는 요구가 제기됐다.</strong><br />
+여수·서산·포항이 이어서 지정된 가운데, 광양의 철강산업 위기와 K‑스틸법 통과가 시급한 상황이다. 광양상공회의소 회장 우광일은 11월 19일 프레시안과의 인터뷰에서 “지정과 법안 통과가 절실하다”고 강조했다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑10‑22</td>
+<td>KBS 뉴스 “철강 산업도 부진…광양시, 산업위기 선제대응지역 신청” 영상 공개</td>
+<td><a href="https://www.youtube.com/watch?v=wM01b7nU4Eg" target="_blank">KBS News</a></td>
+</tr>
+<tr>
+<td>2025‑10‑28</td>
+<td>포항·광양·당진 ‘철강도시’ 상공회의소가 정부에 건의문 공동 제출</td>
+<td><a href="http://www.snmnews.com/news/articleView.html?idxno=560010" target="_blank">SNNM</a></td>
+</tr>
+<tr>
+<td>2025‑11‑03</td>
+<td>권향엽 의원 초청 간담회에서 K‑스틸법·지정 필요성 언급</td>
+<td><a href="https://www.gynet.co.kr/news/articleView.html?idxno=55172" target="_blank">가야뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑18</td>
+<td>아시아경제 기사 “K‑스틸법·산업위기선제대응지역 선정, 광양 발전 필수”</td>
+<td><a href="https://www.asiae.co.kr/article/2025111808252027350" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025‑11‑18</td>
+<td>문화뉴스 해설 “K‑스틸법 즉각 통과, 산업위기 선제대응지역 지정”</td>
+<td><a href="https://www.mhns.co.kr/news/articleView.html?idxno=731486" target="_blank">문화뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑19</td>
+<td>우광일 회장이 프레시안과 인터뷰에서 ‘지정·K‑스틸법 통과’ 요구</td>
+<td><a href="https://v.daum.net/v/20251120000438426?f=p" target="_blank">프레시안</a></td>
+</tr>
+<tr>
+<td>2025‑11‑20</td>
+<td>네이버뉴스 기사 “광양 철강산업 심각한 위기…신속한 국회·정부 결단이 해법”</td>
+<td><a href="https://n.news.naver.com/mnews/article/002/0002415216" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>광양의 철강산업은 BSI(비즈니스 스코어 인덱스)에서 12분기 연속 기준치 미달</strong>이며, 이는 지역 경제에 큰 타격을 주고 있다.<br />
+▶ <strong>K‑스틸법은 국회에 상정 중이며, 올해 통과가 필요</strong>하다.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>핵심 주장</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>우광일 회장(광양상공회의소)</strong></td>
+<td>“광양 철강산업의 위기는 국가 제조업 경쟁력에 직결된다. K‑스틸법과 지역 지정이 필수적이다.”</td>
+<td><a href="https://v.daum.net/v/20251120000438426?f=p" target="_blank">프레시안</a></td>
+</tr>
+<tr>
+<td><strong>아시아경제</strong></td>
+<td>“K‑스틸법·산업위기선제대응지역 선정이 광양 발전에 필수적”</td>
+<td><a href="https://www.asiae.co.kr/article/2025111808252027350" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td><strong>문화뉴스</strong></td>
+<td>“K‑스틸법 즉각 통과와 지정이 필요”</td>
+<td><a href="https://www.mhns.co.kr/news/articleView.html?idxno=731486" target="_blank">문화뉴스</a></td>
+</tr>
+<tr>
+<td><strong>정부(산업통상부·기후에너지환경부)</strong></td>
+<td>아직 공식 입장은 발표되지 않았으나, 산업위기 대응 방안 검토 중</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>시민·지역 주민</strong></td>
+<td>일부는 지원을 기대하지만, 재정 부담과 환경 영향에 대한 우려가 있다.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>광양이 4번째 산업위기 선제대응지역 지정 대상</td>
+<td><a href="https://n.news.naver.com/mnews/article/002/0002415216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>BSI 12분기 연속 기준치 미달</td>
+<td><a href="https://n.news.naver.com/mnews/article/002/0002415216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>K‑스틸법이 국회에 상정 중</td>
+<td><a href="https://www.asiae.co.kr/article/2025111808252027350" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>K‑스틸법이 광양 철강산업과 지역 경제에 실질적 회복 효과를 보장한다는 주장</td>
+<td>“우광일 회장”의 의견(프레시안)</td>
+</tr>
+<tr>
+<td></td>
+<td>지정이 실제로 지역 경제 회복에 얼마나 기여할지에 대한 구체적 데이터</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>우광일</strong> – 광양상공회의소 회장. 광양 철강산업 회복을 위해 K‑스틸법 통과와 지역 지정 촉구.  </li>
+<li><strong>국회</strong> – K‑스틸법 통과 여부 결정.  </li>
+<li><strong>산업통상부·기후에너지환경부</strong> – 산업위기 대응 정책 수립 및 재정 지원 방안 검토.  </li>
+<li><strong>광양시</strong> – 산업위기 선제대응지역 지정으로 지역 지원을 기대하지만, 재정·환경 부담을 감수해야 함.  </li>
+<li><strong>여수·서산·포항</strong> – 이미 지정된 도시들로, 광양과 동일한 산업 지원을 요구하는 상공회의소와 협력.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>K‑스틸법 통과 시</strong><br />
+   - <strong>재정 지원·세제 혜택</strong>이 확대될 가능성이 높아지며, 광양 철강기업의 재무 구조 개선에 긍정적 영향을 미칠 수 있다.<br />
+   - <strong>지정이 승인되면</strong> 정부가 지역 맞춤형 지원을 집중적으로 제공할 수 있다.  </p>
+</li>
+<li>
+<p><strong>지정이 승인되지 않을 경우</strong><br />
+   - 광양 철강산업은 현재의 위기 상황을 지속적으로 겪게 될 가능성이 크다.<br />
+   - 지역 주민과 환경 단체는 <strong>환경 영향</strong>과 <strong>재정 부담</strong>에 대한 우려가 커질 전망이다.  </p>
+</li>
+<li>
+<p><strong>정책적 대안</strong><br />
+   - 국회와 정부는 <strong>재정적 지속 가능성</strong>과 <strong>환경 규제</strong>를 고려해 K‑스틸법의 범위와 지원 규모를 재검토할 필요가 있다.<br />
+   - 상공회의소는 <strong>다른 산업과의 연계</strong>를 통해 지역 경제 다각화를 모색할 수 있다.  </p>
+</li>
+</ol>
+<p><strong>전망</strong><br />
+광양이 산업위기 선제대응지역으로 지정된다면, <strong>지역별 맞춤형 지원</strong>이 가능해지며, 철강산업 회복에 한 걸음 더 가까워질 수 있다. 그러나 K‑스틸법의 실제 효과와 지정의 재정·환경적 부작용은 아직 불확실하다. 국회와 정부의 결정을 주시하며, 광양과 같은 산업도시가 지속 가능한 발전을 이룰 수 있도록 균형 잡힌 정책이 필요하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=wM01b7nU4Eg" target="_blank">철강 산업도 부진…광양시, 산업위기 선제대응지역 신청 ...</a><a href="https://www.youtube.com/watch?v=FRq3PxJsdHo" target="_blank">전남도, 광양 '산업위기 선제대응지역' 지정 요청 (2...</a><a href="https://www.youtube.com/watch?v=qtMEkMu86Ak" target="_blank">Strong Request for Designation...</a><a href="https://www.youtube.com/watch?v=3eee7itgLQA" target="_blank">광양·순천상의, 산업 위기 대응 지역 지정 건의 (25...</a><a href="https://www.youtube.com/watch?v=v_r6ksK3se4" target="_blank">전남도, 광양시 '산업위기 선제대응지역' 신청 (251...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/002/0002415216" target="_blank">"광양 철강산업 심각한 위기…신속한 국회·정부 결단이 해법"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://v.daum.net/v/20251120000438426?f=p" target="_blank">"광양 철강산업 심각한 위기…신속한 국회·정부 결단이 해법"</a><a href="https://www.asiae.co.kr/article/2025111808252027350" target="_blank">[기고]'K-스틸법'·'산업위기선제대응지역'선정, 광양 발전 필수 - 아시아 ...</a><a href="https://www.mhns.co.kr/news/articleView.html?idxno=731486" target="_blank">[해설기사] "K-스틸법 즉각 통과, 산업위기 선제대응지역 지정"…광양 ...</a><a href="https://www.gynet.co.kr/news/articleView.html?idxno=55172" target="_blank">권향엽 의원 초청, 기업인과의 간담회 - 광양뉴스</a><a href="http://www.snmnews.com/news/articleView.html?idxno=560010" target="_blank">포항·광양·당진 '철강도시' 상공회의소, 정부에 철강업 위기 건의문 공동 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
