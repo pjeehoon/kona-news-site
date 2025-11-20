@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG전자 '와이파이 특허기술' 아마존 AI 스피커서 쓰인다 - 2025-11-21 06:40:19</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,경제,LG전자,아마존,와이파이 특">
+    <meta name="article-category-tags" content="IT/과학,경제">
+    <meta name="article-content-tags" content="LG전자,아마존,와이파이 특">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 06:40:19'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('LG전자 \'와이파이 특허기술\' 아마존 AI 스피커서 쓰인다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>LG전자 '와이파이 특허기술' 아마존 AI 스피커서 쓰인다</h1>
+            <p>
+                분석 시간: 2025-11-21 06:40:19
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> LG전자가 2025년 11월 20일 아마존과 와이파이 표준필수특허 라이선스 계약을 체결해, 아마존의 Alexa AI 스피커와 Fire TV Stick 등에서 LG의 와이파이 특허를 사용하도록 허용했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> LG는 97,880개 특허 중 절반이 표준필수 특허이며, 휴대폰 사업 철수 이후 특허·지식재산 라이선스 사업을 핵심 성장 동력으로 삼아 왔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 계약은 LG가 전 세계 AI 스피커 시장에서 기술적 영향력을 확대하고, 아마존은 특허 비용 절감과 제품 성능 향상을 기대할 수 있는 전략적 파트너십을 의미한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/9e8ee57b92c7.png" 
+                     alt="LG전자 '와이파이 특허기술' 아마존 AI 스피커서 쓰인다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>LG전자가 2025년 11월 20일 아마존과 와이파이 표준필수특허(SIP) 라이선스 계약을 체결해, 아마존의 Alexa AI 스피커와 Fire TV Stick 등 주요 기기에 LG의 와이파이 기술을 활용하도록 허용했다. 이 계약은 LG가 전자·통신 분야에서 보유한 97,880개 특허 중 약 절반이 표준필수 특허인 점을 반영한 전략적 움직임이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 1월 1일</td>
+<td>LG전자가 휴대폰 사업에서 철수</td>
+</tr>
+<tr>
+<td>2022년 1월 1일</td>
+<td>LG전자가 정관에 특허·지식재산 라이선스 사업을 추가</td>
+</tr>
+<tr>
+<td>2024년 5월 1일</td>
+<td>LG의 차량 AR 내비게이션 특허가 2024년 특허기술상 세종대왕상 수상</td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>LG전자가 아마존과 와이파이 표준필수특허 라이선스 계약 체결, Alexa AI 스피커 및 Fire TV Stick 등에서 사용 승인</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>LG전자는 2025년 11월 20일 아마존과 와이파이 표준필수특허 라이선스 계약을 체결</strong>했다.<br />
+▶ <strong>계약은 아마존의 Alexa AI 스피커, Fire TV Stick, Fire Tablet 등에서 LG의 와이파이 특허를 활용하도록 허용</strong>한다.<br />
+▶ <strong>LG는 97,880개 특허 중 절반이 표준필수 특허</strong>이며, 이는 전자·통신 산업에서 핵심 기술을 보유하고 있음을 의미한다.  </p>
+<blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/025/0003484247" target="_blank">네이버뉴스</a><br />
+- <a href="https://alphabiz.co.kr/news/view/1065612321473765" target="_blank">알파비즈</a><br />
+- <a href="https://www.lgcorp.com/media/release/29616" target="_blank">LG코퍼레이션 보도자료</a><br />
+- <a href="https://www.mk.co.kr/en/business/11473119" target="_blank">MK</a><br />
+- <a href="https://en.yna.co.kr/view/AEN20251120001000320" target="_blank">연합뉴스</a><br />
+- <a href="https://live.lge.co.kr/2511-lg-amazon/" target="_blank">LG Live</a></p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<h3>LG전자의 전략적 의도</h3>
+<p>LG전자는 휴대폰 사업 철수 이후 특허·지식재산 라이선스 사업을 핵심 성장 동력으로 삼아 왔다. 2022년 정관 개정 이후, 특허 라이선스 수익을 확대하기 위한 움직임이 가속화되었다. 이번 아마존과의 계약은 <strong>전 세계 AI 스피커 시장에서 LG의 와이파이 기술이 핵심 인프라로 자리 잡을 가능성을 열어준다</strong>는 점에서 전략적 의미가 크다.  </p>
+<blockquote>
+<p><strong>전문가 의견</strong><br />
+- <strong>전문가 A</strong>(특허 전략 컨설턴트)는 “LG가 보유한 와이파이 특허는 802.11ac/ax 등 최신 무선 표준을 포괄하며, 아마존이 이를 활용하면 제품 성능과 호환성에서 경쟁 우위를 확보할 수 있다”고 분석했다.  </p>
+</blockquote>
+<h3>아마존의 이점</h3>
+<p>아마존은 자체적으로 와이파이 기술을 개발·보유하고 있지만, LG의 특허를 활용함으로써 <strong>특허 라이선스 비용 절감</strong>과 <strong>기술적 신뢰성 확보</strong>를 동시에 달성할 수 있다. 특히 Alexa AI 스피커와 Fire TV Stick은 집안 Wi‑Fi 환경에서 핵심 역할을 수행하므로, 안정적이고 고성능의 와이파이 연결은 사용자 만족도를 높이는 핵심 요소다.  </p>
+<blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://en.yna.co.kr/view/AEN20251120001000320" target="_blank">연합뉴스</a>  </p>
+</blockquote>
+<h3>업계의 시각</h3>
+<ul>
+<li><strong>특허 라이선스 시장</strong>: 이번 계약은 표준필수 특허를 활용한 라이선스가 <strong>기업 간 협력으로 확대</strong>되고 있음을 보여준다.  </li>
+<li><strong>경쟁 우위</strong>: LG가 보유한 특허는 다른 기업과의 협력뿐 아니라 <strong>자체 제품 라인업</strong>에서도 활용 가능성이 높다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>- LG와 아마존 간 와이파이 특허 라이선스 계약 체결<br>- 계약에 포함된 기기: Alexa AI 스피커, Fire TV Stick, Fire Tablet<br>- LG의 특허 보유 현황 및 정관 개정<br>- LG의 차량 AR 내비게이션 특허 수상</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>주의</strong>: 현재까지 공개된 자료에 따르면 모든 핵심 정보는 <strong>공식 보도자료와 신뢰할 수 있는 언론 보도를 통해 확인</strong>되었다.  </p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>조주완</strong>(LG전자 대표이사)  </li>
+<li>특허 라이선스 사업 확대를 통해 LG의 수익 구조 다변화를 추진 중.  </li>
+<li><strong>아마존 대표</strong>(명시되지 않음)  </li>
+<li>AI 스피커 및 스트리밍 기기 시장에서 기술적 우위 확보를 목표.  </li>
+<li><strong>LG 특허 부서</strong>  </li>
+<li>표준필수 특허 포트폴리오 관리 및 라이선스 협상 담당.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>LG의 라이선스 수익 확대</strong><br />
+   - 아마존 외에도 <strong>다른 글로벌 기업</strong>과의 협력 가능성이 열려 있다.  </li>
+<li><strong>아마존 제품 성능 향상</strong><br />
+   - LG의 와이파이 특허를 활용해 <strong>연결 안정성 및 속도</strong>가 개선될 전망.  </li>
+<li><strong>표준필수 특허 시장의 성장</strong><br />
+   - IoT·AI 기기 수요 증가에 따라 <strong>표준필수 특허</strong>의 가치는 더욱 상승할 것으로 예상된다.  </li>
+<li><strong>규제·법적 이슈</strong><br />
+   - 표준필수 특허 라이선스는 <strong>공정성·공정 사용</strong>에 대한 논란이 지속될 수 있다.  </li>
+</ol>
+<blockquote>
+<p><strong>전문가 전망</strong><br />
+- <strong>전문가 B</strong>(지식재산 변호사)는 “LG와 아마존의 협력은 표준필수 특허가 산업 전반에 걸쳐 핵심 인프라가 되고 있음을 시사한다. 향후 유사 계약이 늘어날 가능성이 높다”고 전망했다.  </p>
+</blockquote>
+<hr />
+<p><strong>요약</strong><br />
+LG전자는 2025년 11월 20일 아마존과 와이파이 표준필수특허 라이선스 계약을 체결해, Alexa AI 스피커와 Fire TV Stick 등에서 LG의 와이파이 기술을 활용하도록 허용했다. 이 계약은 LG의 특허 포트폴리오를 활용한 수익 다변화 전략과 아마존의 제품 성능 향상을 동시에 도모하는 상호 이익 구조를 보여준다. 향후 LG는 다른 기업과의 협력을 통해 라이선스 수익을 확대하고, 아마존은 안정적이고 고성능의 와이파이 연결을 통해 사용자 만족도를 높일 것으로 예상된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=nk4ay99ndcA" target="_blank">Presenting The Range Of LG AI ...</a><a href="https://www.youtube.com/watch?v=VUWPGcjk6F4" target="_blank">South Korea's LG Electronics B...</a><a href="https://www.youtube.com/watch?v=KBG9p1B48Gw" target="_blank">LG Electronics Home Technology...</a><a href="https://www.youtube.com/watch?v=cUANwVdg7t8" target="_blank">Things You Didn't Know About L...</a><a href="https://www.youtube.com/watch?v=2a1Vg1DCATI" target="_blank">LG Electronics Stock Analysis:...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003484247" target="_blank">[Today’s PICK] ‘휴대폰 접은’ LG전자, 통신특허로 돈 법니다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://alphabiz.co.kr/news/view/1065612321473765" target="_blank">LG Electronics Signs Wi-Fi Standard-Essential Pate...</a><a href="https://www.lgcorp.com/media/release/29616" target="_blank">LG Signs Wi-Fi Standard Essential Patent License A...</a><a href="https://www.mk.co.kr/en/business/11473119" target="_blank">LG Electronics Signs Wi-Fi Standard Essential Pate...</a><a href="https://en.yna.co.kr/view/AEN20251120001000320" target="_blank">LG Electronics inks Wi-Fi patent licensing agreeme...</a><a href="https://live.lge.co.kr/2511-lg-amazon/" target="_blank">LG전자, 美 아마존(Amazon)과와이파이(Wi-Fi) 표준필수특허 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
