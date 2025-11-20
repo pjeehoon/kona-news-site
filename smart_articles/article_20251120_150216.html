@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메타, 내달부터 호주 16세 미만 이용자 페북·인스타 차단 - 2025-11-20 15:02:16</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,Meta,호주,페북">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="Meta,호주,페북">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 15:02:16'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('메타, 내달부터 호주 16세 미만 이용자 페북·인스타 차단')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>메타, 내달부터 호주 16세 미만 이용자 페북·인스타 차단</h1>
+            <p>
+                분석 시간: 2025-11-20 15:02:16
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> Meta는 2025년 12월 10일부터 호주 내 16세 미만 사용자의 페이스북·인스타그램 계정을 완전 차단한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 차단된 계정은 사용자가 16세가 된 뒤 정부 ID 또는 셀카 인증으로 복구할 수 있으며, 호주 법은 플랫폼 위반 시 최대 4,950만 AUD 벌금을 부과한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 조치는 청소년 보호를 강화하지만, 일부 언론은 과도한 규제로 비판하고, Meta는 사용자 경험과 규제 준수 사이의 균형을 강조한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/9ae9716868aa.png" 
+                     alt="메타, 내달부터 호주 16세 미만 이용자 페북·인스타 차단" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>Meta는 호주에서 16세 미만 이용자에게 페이스북과 인스타그램 접근을 차단하기로 결정했다. 2025년 12월 10일부터 계정이 삭제되며, 16세가 되면 복구 가능하다. 호주 정부는 이 법을 통해 청소년 보호를 강화하고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 11월</td>
+<td>호주 연방 의회가 16세 미만 소셜미디어 사용 금지법을 통과, 위반 시 최대 4,950만 AUD 벌금 부과</td>
+<td><a href="https://www.bbc.com/news/articles/cz919xyx7weo" target="_blank">BBC</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>Meta가 호주 사용자에게 계정 삭제 예정을 알리고, 16세 미만 계정은 12월 10일에 차단될 것이라 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012070258" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 10일</td>
+<td>차단 시행: 16세 미만 계정은 삭제되고, 16세가 되면 ID·셀카 인증으로 복구 가능</td>
+<td><a href="https://www.bbc.com/news/articles/cz919xyx7weo" target="_blank">BBC</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>Meta는 2025년 12월 10일을 기점으로 호주 내 16세 미만 사용자의 페이스북·인스타그램 계정을 완전 차단한다.</strong><br />
+▶ <strong>차단된 계정은 사용자가 16세가 된 뒤 정부 ID 또는 셀카 인증을 통해 복구할 수 있다.</strong><br />
+▶ <strong>호주 법은 플랫폼이 위반 시 최대 4,950만 AUD의 벌금을 부과할 수 있도록 규정한다.</strong></p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>입장</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AFP</strong></td>
+<td>부정적</td>
+<td>Meta의 일괄 차단이 과도하며 청소년의 온라인 연결성을 해친다.</td>
+</tr>
+<tr>
+<td><strong>Bloomberg</strong></td>
+<td>중립적</td>
+<td>규제 준수와 사용자 경험 사이의 긴장감이 드러난다.</td>
+</tr>
+<tr>
+<td><strong>Guardian Australia</strong></td>
+<td>부정적</td>
+<td>법에 대한 Meta의 비판이 산업 전반의 강경 규제 반대 움직임을 반영한다.</td>
+</tr>
+<tr>
+<td><strong>Meta</strong></td>
+<td>긍정적</td>
+<td>안전하고 연령에 맞는 온라인 경험을 지지하지만, 청소년의 동료와의 연결 차단은 해결책이 아니라고 주장한다.</td>
+</tr>
+</tbody>
+</table>
+<p>Meta는 “청소년 보호를 목표로 한다”는 입장을 밝히면서도, <strong>“동료와의 연결을 끊는 것은 해결책이 아니다”</strong>라고 강조했다. 반면, 일부 언론은 Meta의 일괄 차단이 <strong>“과도한 규제”</strong>라며 비판했다.  </p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>• 2025년 12월 10일 차단 시행<br>• 계정 삭제 후 16세가 되면 복구 가능<br>• 호주 법은 최대 4,950만 AUD 벌금 부과</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012070258" target="_blank">네이버뉴스</a>, <a href="https://www.bbc.com/news/articles/cz919xyx7weo" target="_blank">BBC</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>• Meta가 사용하는 연령 검증 방식의 구체적 알고리즘</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Meta (Facebook, Instagram)</strong></td>
+<td>플랫폼 운영자</td>
+<td>규제 준수와 사용자 경험 균형 추구</td>
+</tr>
+<tr>
+<td><strong>호주 연방 정부</strong></td>
+<td>법 제정자</td>
+<td>청소년 보호 강화</td>
+</tr>
+<tr>
+<td><strong>호주 청소년 단체</strong></td>
+<td>피해자 대표</td>
+<td>온라인 접근 제한에 대한 우려</td>
+</tr>
+<tr>
+<td><strong>글로벌 소셜미디어 기업</strong></td>
+<td>동종 업계</td>
+<td>Meta와 유사한 규제 대응 필요성</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 이행</strong>: Meta는 12월 10일 차단을 실행하며, 이후 호주 법에 따라 벌금 부과 가능성에 대비해야 한다.  </li>
+<li><strong>사용자 반응</strong>: 16세 미만 이용자와 그 보호자들은 계정 복구 절차를 통해 불편을 겪을 수 있다.  </li>
+<li><strong>산업 영향</strong>: Meta와 TikTok 등 다른 플랫폼은 유사 규제에 대비해 연령 인증 시스템을 강화할 가능성이 높다.  </li>
+<li><strong>정책 논의</strong>: 호주 외 다른 국가에서도 청소년 보호를 위한 규제 논의가 가속화될 전망이다.  </li>
+</ul>
+<p>Meta의 이번 조치는 <strong>규제와 사용자 경험 사이의 균형</strong>을 재정의하는 계기가 될 것이며, 글로벌 소셜미디어 산업에 새로운 표준을 제시할 수 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/056/0012070258" target="_blank">메타, 내달부터 호주 16세 미만 이용자 페북·인스타 차단</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.bbc.com/news/articles/cz919xyx7weo" target="_blank">Instagram and Facebook-owner Meta notifies Austral...</a><a href="https://www.theguardian.com/australia-news/2025/nov/19/meta-starts-notifying-australian-teens-of-account-shutdowns-as-social-media-ban-looms" target="_blank">Facebook and Instagram to start kicking Australian...</a><a href="https://www.abc.net.au/news/2025-11-19/meta-to-block-teens-from-instagram-facebook-week-early/106028014" target="_blank">Meta to kick teens off Instagram and Facebook a we...</a><a href="https://www.france24.com/en/live-news/20251028-meta-and-tiktok-to-obey-australia-under-16-social-media-ban" target="_blank">Meta and TikTok to obey Australia under-16 social ...</a><a href="https://news.sky.com/story/meta-to-block-instagram-and-facebook-for-users-under-16-in-australia-13472915" target="_blank">Meta to block Instagram and Facebook for users und...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

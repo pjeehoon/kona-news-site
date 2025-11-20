@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한·UAE, 원전 MOU…김동철 사장 “제3국 공동 진출” - 2025-11-20 14:50:43</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,원전,UAE,김동철">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="원전,UAE,김동철">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 14:50:43'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('한·UAE, 원전 MOU…김동철 사장 “제3국 공동 진출”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>한·UAE, 원전 MOU…김동철 사장 “제3국 공동 진출”</h1>
+            <p>
+                분석 시간: 2025-11-20 14:50:43
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국전력과 UAE 원자력공사가 2025년 11월 18일 원전 신기술·AI·글로벌 시장 협력 MOU를 체결했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> MOU는 바라카 원전에서 체결되었으며, 한국 SMR 기술을 제3국 공동 진출을 목표로 AI와 원전 기술을 융합해 글로벌 시장에 진출한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 협력은 한국 SMR의 해외 시장 진출을 가속화하지만, WEC와의 IP 합의가 제3국 진출에 제약을 줄 수 있어 2028년 i‑SMR 상업화 시점에 따라 전망이 달라질 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/826c2fededbf.png" 
+                     alt="한·UAE, 원전 MOU…김동철 사장 “제3국 공동 진출”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>한국전력(KEPCO)과 아랍에미리트(UAE) 원자력공사가 2025년 11월 18일 원전 신기술·AI·글로벌 시장 협력 MOU를 체결했다. 김동철 사장은 “제3국 공동 진출”을 목표로 삼으며, UAE 바라카 원전이 한국 최초 수출 사례로 부각된다. 그러나 WEC와의 IP 합의가 제3국 진출을 제한할 가능성도 제기되고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 18일</strong> – KEPCO와 UAE 원자력공사가 <strong>원전 신기술·AI·글로벌 시장 협력 MOU</strong>를 체결.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/469/0000898556" target="_blank">네이버뉴스</a>  </li>
+<li><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=03657206642367688" target="_blank">이데일리</a>  </li>
+<li><strong>▶ 2025년 11월 18일</strong> – MOU 체결식은 <strong>바라카 원전</strong>에서 진행되었으며, 김동철 사장은 “제3국 공동 진출”을 강조.  </li>
+<li><a href="https://www.newsis.com/view/NISX20251120_0003409961" target="_blank">Newsis</a>  </li>
+<li><strong>▶ 2025년 11월 19일</strong> – UAE 원자력공사 사장 모하메드 알 하마디가 참석해 양국 협력 의지를 확인.  </li>
+<li><a href="https://www.m-i.kr/news/articleView.html?idxno=1305311" target="_blank">매일일보</a>  </li>
+<li><strong>▶ 2025년 1월 1일</strong> – WEC와의 <strong>IP 합의</strong>가 체결되었다는 보도가 있으나, 공식 발표가 없으므로 확인되지 않음.  </li>
+<li><strong>▶ 2028년</strong> – 한국의 <strong>i‑SMR</strong>이 인허가 완료 후 상업화 예정.  </li>
+<li><strong>▶ 2025년 11월 20일</strong> – 본 기사 발표.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김동철 사장</strong></td>
+<td>“제3국 공동 진출”을 통해 한국 SMR 기술을 전 세계에 확산시키겠다는 의지.</td>
+<td><a href="https://www.newsis.com/view/NISX20251120_0003409961" target="_blank">Newsis</a></td>
+</tr>
+<tr>
+<td><strong>UAE 원자력공사</strong></td>
+<td>한국과의 협력을 통해 AI·원전 기술을 결합해 글로벌 시장에서 경쟁력 확보.</td>
+<td><a href="https://www.m-i.kr/news/articleView.html?idxno=1305311" target="_blank">매일일보</a></td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>WEC와의 IP 합의가 <strong>북미·EU 시장</strong>에서 한국 SMR 수출 우선권을 확보하지만, <strong>제3국 진출</strong>에는 제약이 있을 수 있음.</td>
+<td><a href="https://www.ntoday.co.kr/news/articleView.html?idxno=121828" target="_blank">투데이신문</a></td>
+</tr>
+<tr>
+<td><strong>정책 입장</strong></td>
+<td>“원전 2.0” 시대를 열며, 한국은 <strong>AI·원전</strong> 융합을 통해 에너지 전환을 선도하려는 전략.</td>
+<td><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=03657206642367688" target="_blank">이데일리</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>- 2025년 11월 18일 MOU 체결<br>- 바라카 원전이 한국 최초 수출 사례<br>- i‑SMR 상업화 예정 시점(2028년)</td>
+<td>공식 발표 및 언론 보도</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- WEC와의 IP 합의가 2025년 1월 1일에 체결되었다는 보도</td>
+<td>공식 발표 부재, 확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>김동철</strong> – KEPCO 사장, 한국 SMR 기술 해외 진출을 주도.  </li>
+<li><strong>모하메드 알 하마디</strong> – UAE 원자력공사 사장, 한국과의 협력 확대를 통해 UAE의 에너지 포트폴리오 다변화.  </li>
+<li><strong>WEC</strong> – 미국 기반 SMR 개발 기업, IP 합의로 한국의 SMR 수출 우선권 확보.  </li>
+<li><strong>KEPCO</strong> – 한국의 대표 원자력 기업, 글로벌 시장 진출을 위한 전략적 파트너십 구축.  </li>
+<li><strong>UAE 원자력공사</strong> – UAE의 핵심 에너지 기관, 한국 기술 도입을 통해 에너지 안보 강화.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>제3국 진출</strong>: MOU를 기반으로 한국 SMR과 AI 기술이 <strong>중동·아시아·아프리카</strong> 등 제3국에 진출할 가능성이 높다.  </li>
+<li><strong>IP 제약</strong>: WEC와의 IP 합의가 <strong>북미·EU</strong> 시장에서 우선권을 보장하지만, 제3국에서는 협력 범위가 제한될 수 있다.  </li>
+<li><strong>i‑SMR 상업화</strong>: 2028년 인허가 완료 후 상업화가 진행되면, 한국의 SMR 기술이 <strong>글로벌 에너지 전환</strong>에 기여할 전망.  </li>
+<li><strong>정책적 지원</strong>: 한국 정부와 UAE 정부가 공동으로 <strong>규제 완화</strong>와 <strong>인프라 투자</strong>를 추진하면, 협력 효과가 가속화될 수 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 한국과 UAE의 MOU는 <strong>원전 2.0</strong> 시대를 열며, AI와 원전 기술의 융합을 통해 글로벌 에너지 시장에서 새로운 경쟁력을 확보하려는 전략적 움직임이다. 그러나 WEC와의 IP 합의가 제3국 진출에 제약을 줄 수 있으므로, 양국은 <strong>규제 협의</strong>와 <strong>공동 마케팅</strong>을 통해 이슈를 해결해야 할 것이다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/469/0000898556" target="_blank">한-UAE, 합작 제 3국 원전 수출…동남아·아프리카 먼저 공략할 듯</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=03657206642367688" target="_blank">한·UAE, 원전 MOU…김동철 사장 “제3국 공동 진출”</a><a href="https://www.kbmaeil.com/article/202405290395258" target="_blank">제3국 원전시장 공동 진출 LNG ·청정수소 생산 '맞손' - 경북매일</a><a href="https://www.m-i.kr/news/articleView.html?idxno=1305311" target="_blank">한전, UAE와 '원전 2.0' 시대 개막…글로벌 시장 공동 진출 - 매일일보</a><a href="https://www.ntoday.co.kr/news/articleView.html?idxno=121828" target="_blank">韓·UAE, 원전 협력 확대…제3국 공동 진출 교두보</a><a href="https://www.newsis.com/view/NISX20251120_0003409961" target="_blank">한전, UAE원자력공사와 글로벌 시장 공동진출 협력 MOU 체결</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
