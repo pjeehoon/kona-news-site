@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경찰·노동부, 울산화력 붕괴 관련 HJ중공업 본사 등 압수수색 - 2025-11-20 10:03:50</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 10:03:50'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('경찰·노동부, 울산화력 붕괴 관련 HJ중공업 본사 등 압수수색')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>경찰·노동부, 울산화력 붕괴 관련 HJ중공업 본사 등 압수수색</h1>
+            <p>
+                분석 시간: 2025-11-20 10:03:50
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 울산 남구 용잠동에서 한국동서발전 울산화력발전소의 60m 보일러 타워가 붕괴해 9명이 사상자(7명 사망, 2명 부상) 발생했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 사고 이후 울산경찰청과 부산지방노동부가 HJ중공업 본사 등 6곳을 압수수색해 안전 서류·계약서 등을 확보하고, 원인 규명과 책임자 파악이 진행 중이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 사건은 산업안전법 강화와 기업의 안전관리 체계 개선을 촉발할 전망이며, 책임자에 대한 법적 조치와 재발 방지 대책 마련이 예상된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/4e7a2d705dc1.png" 
+                     alt="경찰·노동부, 울산화력 붕괴 관련 HJ중공업 본사 등 압수수색" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>울산 남구 용잠동에서 60m 보일러 타워가 붕괴해 7명이 사망, 2명이 부상한 가운데, 울산경찰청과 부산지방노동부가 HJ중공업 본사와 관련 기업을 포함해 6곳을 압수수색했다.</strong><br />
+<strong>압수된 자료는 해체 공사와 관련된 안전 서류 및 계약 문서이며, 원인 규명은 아직 진행 중이다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 6일</strong></td>
+<td>보일러 타워 붕괴</td>
+<td>울산 남구 용잠동 <strong>한국동서발전 울산화력발전소</strong>에서 60m 보일러 타워가 붕괴, <strong>9명 사상자</strong> 발생 (7명 사망, 2명 부상)</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008615054" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 20일</strong></td>
+<td>압수수색</td>
+<td>울산경찰청과 부산지방노동부가 <strong>동서발전, HJ중공업, 코리아카코</strong> 등 6곳을 압수수색. 50명의 경찰·노동감독관이 투입돼 <strong>안전 서류·계약 서류</strong> 확보</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008615054" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 20일</strong></td>
+<td>현장 감시</td>
+<td>현장에서는 <strong>합동 감시</strong>가 진행 중이며, 사고 원인 규명과 책임자 파악이 주요 과제</td>
+<td><a href="https://www.youtube.com/watch?v=4ytflH128B8" target="_blank">연합뉴스TV</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>노동부·경찰 관계자</strong>는 “안전조치 이행 여부를 확인하기 위해 50명 규모의 인력을 투입해 압수수색을 진행했다”고 밝혔다. 이는 <strong>산업안전법</strong>에 따른 조치로 해석된다.  </li>
+<li><strong>HJ중공업 관계자</strong>는 “본사 압수수색은 사고 원인 규명과는 별개로, 현장 안전 관리 체계에 대한 검증을 위해 진행된 것”이라고 설명했다.  </li>
+<li><strong>전문가</strong>는 “보일러 타워 붕괴 사고는 노후 설비와 부실 관리가 겹친 결과일 가능성이 크다”며, “이번 압수수색은 책임자 파악과 함께 재발 방지 대책 마련을 위한 첫 단계”라고 지적했다.  </li>
+<li><strong>일반 시민</strong>은 “사고로 인한 인명 피해가 크고, 기업의 안전 관리가 미흡했다는 점이 안타깝다”는 목소리를 내며, “정책적·제도적 개선이 필요하다”고 요구했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li><strong>검증된 사실</strong>  </li>
+<li>2025년 11월 6일 보일러 타워 붕괴 → 9명 사상자 발생  </li>
+<li>2025년 11월 20일 압수수색 → 6곳 대상, 50명 규모 인력 투입, 안전 서류·계약 서류 확보  </li>
+<li>사고 원인 및 책임 여부는 아직 <strong>공식 발표가 없음</strong>  </li>
+<li><strong>미확인 정보</strong>  </li>
+<li>사고 원인에 대한 구체적 결론은 아직 발표되지 않음  </li>
+<li>HJ중공업이 사고에 대한 책임을 인정했는지 여부는 확인되지 않음  </li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장 및 역할</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>울산경찰청</strong></td>
+<td>사고 현장 수사 및 압수수색 담당</td>
+<td>공공 안전 확보</td>
+</tr>
+<tr>
+<td><strong>부산지방노동부</strong></td>
+<td>산업안전 감독 및 조사 담당</td>
+<td>노동자 보호 및 법규 집행</td>
+</tr>
+<tr>
+<td><strong>한국동서발전</strong></td>
+<td>사고 현장 발주처</td>
+<td>재산 및 명성 보호</td>
+</tr>
+<tr>
+<td><strong>HJ중공업</strong></td>
+<td>해체 공사 시공사</td>
+<td>책임 회피 및 재발 방지</td>
+</tr>
+<tr>
+<td><strong>코리아카코</strong></td>
+<td>도급업체</td>
+<td>계약 이행 및 책임 분배</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>사고 원인 규명</strong>: 현재 조사 단계이며, <strong>근거 자료</strong>가 확보된 만큼 책임자 파악과 법적 조치가 예상된다.  </li>
+<li><strong>산업안전 강화</strong>: 이번 사건을 계기로 <strong>산업안전법</strong> 및 <strong>공정시공 관리체계</strong>가 강화될 가능성이 높다.  </li>
+<li><strong>기업 이미지 회복</strong>: HJ중공업과 관련 기업은 <strong>공개 사과</strong> 및 <strong>안전 개선 계획</strong>을 발표해야 할 것으로 보인다.  </li>
+<li><strong>정책적 대응</strong>: 정부는 <strong>산업안전 교육 강화</strong>와 <strong>정기 점검 체계</strong>를 도입해 유사 사고 예방을 목표로 할 것이다.</li>
+</ul>
+<p><strong>▶</strong> 울산화력 보일러 타워 붕괴 사건은 9명의 인명 피해와 함께 산업안전 체계의 취약점을 드러냈다.<br />
+<strong>▶</strong> 경찰·노동부가 6곳을 압수수색하며 안전 서류와 계약 문서를 확보한 것은 책임자 규명과 재발 방지의 첫 단계이다.<br />
+<strong>▶</strong> 사고 원인과 책임 여부는 아직 공식 발표가 없으며, 추후 조사 결과에 따라 법적·정책적 대응이 이어질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=4ytflH128B8" target="_blank">[🔴속보] 노동부·경찰, '울산화력 붕괴' HJ중공업 ...</a><a href="https://www.youtube.com/watch?v=kmSQqxMGOn4" target="_blank">[속보] 노동부·경찰, '울산화력 붕괴' HJ중공업 본...</a><a href="https://www.youtube.com/watch?v=LdhkDaTe7yc" target="_blank">[HJ중공업] '압수수색 진행중' 노동부.경찰 50명 ...</a><a href="https://www.youtube.com/watch?v=g1B8N_6Ezpc" target="_blank">경찰, 삼성 일가 자택 관리사무소 압수수색 / YTN</a><a href="https://www.youtube.com/watch?v=4SoURtjGwWY" target="_blank">[단독] 현대重 노조원들 자택 압수수색…수사 확대 / ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008615054" target="_blank">경찰·노동청, '울산 붕괴 사고' 동서발전·HJ중공업 등 압수수색</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.kyeonggi.com/article/20251106580470" target="_blank">울산 화력발전소 보일러 타워 붕괴 사고…7명 매몰 수색</a><a href="https://www.kgnews.co.kr/news/article.html?no=873015" target="_blank">울산화력 60m 보일러 타워 붕괴…노후·부실 겹친 '人災'</a><a href="https://www.kyeonggi.com/article/20251118580226" target="_blank">울산화력 붕괴현장, 합동감식 진행…압수수색 전망</a><a href="https://www.jcntv.co.kr/m/News114678" target="_blank">'7명 사망' 울산화력참사 수사 본격</a><a href="https://v.daum.net/v/20251107210414386" target="_blank">'울산화력발전 해체공사' HJ중공업 "건설부문 국내 모든 현장 공사중단"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

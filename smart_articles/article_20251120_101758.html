@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중견→중소 '후퇴기업' 3년간 1147곳…성장 멈춘 韓 제조업 - 2025-11-20 10:17:58</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,제조업,중견기업,중소기업">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="제조업,중견기업,중소기업">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 10:17:58'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('중견→중소 \'후퇴기업\' 3년간 1147곳…성장 멈춘 韓 제조업')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>중견→중소 '후퇴기업' 3년간 1147곳…성장 멈춘 韓 제조업</h1>
+            <p>
+                분석 시간: 2025-11-20 10:17:58
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2021년부터 2023년까지 한국 제조업계에서 1,147곳이 중견기업에서 중소기업으로 규모를 축소했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 같은 기간 931곳은 중소기업에서 중견기업으로 성장했으며, 고성장 기업 수는 1,615곳에서 1,322곳으로 감소했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 통계는 제조업의 성장 엔진이 약화되고 있음을 시사하며, 중견기업 지원 강화와 규제 완화 등 정책적 대응이 필요함을 보여준다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/98974ebf0e3f.png" 
+                     alt="중견→중소 '후퇴기업' 3년간 1147곳…성장 멈춘 韓 제조업" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>한국 제조업계가 2021년부터 2023년까지 3년간 <strong>1147곳</strong>이 중견기업에서 중소기업으로 규모를 축소했다는 통계가 발표됐다. 한편 같은 기간 <strong>931곳</strong>은 중소기업에서 중견기업으로 성장했으며, 고성장 기업 수는 10년 전 대비 <strong>1322곳</strong>에서 <strong>1615곳</strong>으로 감소했다. 이 데이터는 제조업의 성장 엔진이 약화되고 있음을 시사한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>후퇴기업</th>
+<th>성장기업</th>
+<th>고성장기업</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021‑2023</td>
+<td><strong>1147곳</strong></td>
+<td><strong>931곳</strong></td>
+<td><strong>1322곳</strong></td>
+</tr>
+<tr>
+<td>2013‑2014</td>
+<td>-</td>
+<td>-</td>
+<td><strong>1615곳</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶ 1147곳</strong>이 중견기업에서 중소기업으로 축소된 것은 3년간 가장 큰 규모 변화이다.  </li>
+<li><strong>▶ 931곳</strong>이 중소기업에서 중견기업으로 성장한 것은 규모 전환의 양방향성을 보여준다.  </li>
+<li><strong>▶ 고성장 기업 수</strong>가 10년 전 대비 <strong>1322곳</strong>에서 <strong>1615곳</strong>으로 감소했다는 점이 주목된다.  </li>
+<li>이 통계는 <strong>네이버뉴스</strong>가 보도한 바에 따르면, 한국 제조업의 규모 구조가 변동하고 있음을 반영한다.<br />
+<a href="https://n.news.naver.com/mnews/article/421/0008615061" target="_blank">네이버뉴스</a></li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<h3>1. 제조업 구조 변화에 대한 우려</h3>
+<ul>
+<li><strong>정철(한국경제연구원장)</strong>은 “중견기업의 성장 모멘텀이 약화되고 중간층 부재가 고착화되어 제조업 성장 엔진이 꺼지고 있다”고 주장했다.  </li>
+<li>이 견해는 <strong>정책 제안 논란</strong>과 연결돼, 규모별 차등 지원 폐지와 지주사 GP 보유 허용이 성장에 부정적 영향을 미칠 것이라는 우려가 제기되었다.  </li>
+<li>그러나 이 주장은 <strong>구체적 데이터</strong> 없이 “성장 엔진이 꺼지고 있다”는 해석에 그친다.</li>
+</ul>
+<h3>2. 구조조정과 효율성 증대의 긍정적 시각</h3>
+<ul>
+<li>일부 산업전문가들은 규모 축소가 <strong>경영 효율성</strong>과 <strong>경쟁력 강화</strong>를 위한 구조조정의 일환이라고 보았다.  </li>
+<li>중소기업으로 축소된 기업들이 <strong>특화된 니치 시장</strong>에서 성장 가능성을 모색하고 있다는 분석도 있다.</li>
+</ul>
+<h3>3. 정책적 대응의 필요성</h3>
+<ul>
+<li><strong>정책 입안자</strong>들은 중견기업 지원을 강화하고, 중소기업의 성장 기반을 마련하기 위한 <strong>규제 완화</strong>와 <strong>재정 지원</strong> 방안을 논의 중이다.  </li>
+<li>그러나 현재까지는 <strong>구체적 실행 계획</strong>이 발표되지 않아 불확실성이 남아 있다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1147곳이 후퇴, 931곳이 성장, 1322곳이 고성장</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008615061" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>제조업 성장 엔진이 꺼지고 있다는 해석</td>
+<td>정철(한국경제연구원장) 의견(출처 미제공)</td>
+</tr>
+<tr>
+<td></td>
+<td>규모별 차등 지원 폐지와 지주사 GP 보유 허용이 성장에 부정적 영향</td>
+<td>정철(한국경제연구원장) 의견(출처 미제공)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>확인되지 않은</strong> 부분은 정철의 의견에 기반하며, 구체적 데이터가 부족하다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정철</td>
+<td>한국경제연구원장</td>
+<td>중견기업 성장 모멘텀 약화, 성장 엔진 꺼짐 주장</td>
+</tr>
+<tr>
+<td>산업계 대표</td>
+<td>-</td>
+<td>구조조정에 대한 양면적 시각</td>
+</tr>
+<tr>
+<td>정책 입안자</td>
+<td>-</td>
+<td>중견기업 지원 강화 및 규제 완화 논의</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>정철은 <strong>한국경제연구원</strong>을 대표해 제조업 구조 변화를 분석하고 정책 제안을 제시하고 있다.  </li>
+<li>산업계 대표들은 규모 축소가 <strong>경영 효율성</strong>을 높이는 긍정적 효과를 강조한다.  </li>
+<li>정책 입안자들은 <strong>중견기업 지원</strong>과 <strong>중소기업 성장 기반</strong> 마련을 목표로 한다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>정책 반응</strong><br />
+   - 중견기업 지원 확대와 중소기업 성장 촉진을 위한 <strong>규제 완화</strong>가 시급하다.<br />
+   - 정부가 <strong>구체적 실행 계획</strong>을 발표하면 기업들의 구조조정 방향이 명확해질 전망이다.</p>
+</li>
+<li>
+<p><strong>산업 구조 재편</strong><br />
+   - 중견기업이 축소되는 현상이 지속될 경우 <strong>중간 규모 기업</strong>의 부재가 제조업 전반의 경쟁력에 영향을 줄 수 있다.<br />
+   - 반면, <strong>특화된 중소기업</strong>이 성장하면 <strong>니치 시장</strong>에서의 경쟁력이 강화될 가능성도 있다.</p>
+</li>
+<li>
+<p><strong>글로벌 경쟁</strong><br />
+   - 미국·중국·EU 등과의 무역 환경 변화가 한국 제조업에 추가 압박을 가할 수 있다.<br />
+   - 이에 따라 <strong>기술 혁신</strong>과 <strong>디지털 전환</strong>이 더욱 중요해질 전망이다.</p>
+</li>
+<li>
+<p><strong>연구·데이터 수집</strong><br />
+   - 제조업 규모 변동에 대한 <strong>정기적 데이터 수집</strong>과 <strong>분석</strong>이 필요하다.<br />
+   - 이를 통해 정책 입안자와 기업이 <strong>증거 기반</strong>으로 의사결정할 수 있다.</p>
+</li>
+</ol>
+<p><strong>결론</strong><br />
+한국 제조업은 3년간 규모 변동이 두드러진 가운데, 중견기업에서 중소기업으로의 후퇴가 눈에 띈다. 이는 성장 엔진의 약화와 중간 규모 기업 부재를 시사하지만, 동시에 구조조정과 효율성 증대의 기회도 제공한다. 정책 입안자와 산업계가 협력해 <strong>지속가능한 성장 모델</strong>을 구축하는 것이 시급하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=NPw5Dop9Fc4" target="_blank">『트럼프 관세전쟁, 어떻게 대응하나』정철(한국경제연구원...</a><a href="https://www.youtube.com/watch?v=DWQehsf7-Ns" target="_blank">한국경제를 진단하는 최고의전가들 /한국경제연구원 원장 ...</a><a href="https://www.youtube.com/watch?v=GP0JAjgZbrk" target="_blank">각자도생을 넘어, 모두가 행복한 미래｜기업·정부·개인의...</a><a href="https://www.youtube.com/watch?v=RY6aO83_sHg" target="_blank">지금,우리가 준비해야할미래 한국경제연구원  정철 원장 ...</a><a href="https://www.youtube.com/watch?v=fR5clwz7pOY" target="_blank">지금, 우리가 준비해야할 미래    한국경제연구원 원장...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008615061" target="_blank">중견→중소 '후퇴기업' 3년간 1147곳…성장 멈춘 韓 제조업</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202511191444500360109019&lcode=00" target="_blank">[2025 thebell 경영전략 Forum]“국내외 리스크, 신 무역질서 대응력 ...</a><a href="https://www.kiep.go.kr/gallery.es?mid=a10502000000&bid=0023&tag=&nPage=3" target="_blank">연구원동정 | 연구원소식 : 대외경제정책연구원</a><a href="https://scienceon.kisti.re.kr/commons/util/originalView.do?dbt=TRKO&cn=TRKO201800014395" target="_blank">동북아 국제정세 변화에 대응한 지역 환경협력 추진전략</a><a href="https://www.kiep.go.kr/board.es?mid=a10702030000&bid=0036&list_no=22157&act=view" target="_blank">2025 APEC 연구센터 컨소시엄 콘퍼런스(ASCCC) 개최 (2025. 5. 7 ...</a><a href="http://ipus.snu.ac.kr/eng/wp-content/uploads/sites/2/2017/11/6296a8dbb8ad833cae7fea27eba00b8b.pdf" target="_blank">' 금강산 관광사업과</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
