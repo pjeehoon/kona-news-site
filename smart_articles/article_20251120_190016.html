@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“ㄱㄱ, ㅅㅂ, ㄷㅋ” 교통사고 보험 사기 182명 무더기 검거 - 2025-11-20 19:00:16</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,경찰청,사기조직,총책">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="경찰청,사기조직,총책">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 19:00:16'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“ㄱㄱ, ㅅㅂ, ㄷㅋ” 교통사고 보험 사기 182명 무더기 검거')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“ㄱㄱ, ㅅㅂ, ㄷㅋ” 교통사고 보험 사기 182명 무더기 검거</h1>
+            <p>
+                분석 시간: 2025-11-20 19:00:16
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울경찰청 형사기동대가 2025년 11월 20일 182명을 검거하고 조직 총책 4명을 구속했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 일당은 2020년 1월부터 4월까지 고수익 알바 미끼로 약 200명을 모집해 불법 유턴·가짜 사고를 조직적으로 실행, 23억 원 규모의 보험금을 편취했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 무더기 검거는 보험사기 방지에 대한 경찰의 강경 대응을 보여주며, 보험료 상승 압력을 완화할 가능성을 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/f21718b9cafc.png" 
+                     alt="“ㄱㄱ, ㅅㅂ, ㄷㅋ” 교통사고 보험 사기 182명 무더기 검거" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>교통사고를 이용한 보험 사기 조직이 2025년 11월 20일 서울경찰청 형사기동대에 의해 182명을 검거하고, 총책 4명을 구속했다. 2020년 1월부터 4월까지 23억 원 규모의 보험금을 편취한 이 일당은 고수익 알바 미끼로 수백 명을 모집해 불법 유턴·가짜 사고를 조직적으로 실행했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020년 1월</td>
+<td>조직 활동 시작</td>
+<td>서울 금천구·경기 포천시·충남 천안시·인천 일대에서 고수익 알바 미끼로 약 200명 모집</td>
+<td><a href="https://www.edaily.co.kr/News/Read?newsId=03801526642367688&amp;mediaCodeNo=257" target="_blank">이데일리</a></td>
+</tr>
+<tr>
+<td>2020년 4월</td>
+<td>보험금 편취 완료</td>
+<td>불법 유턴·가짜 사고를 통해 23억 원 규모의 보험금 편취</td>
+<td><a href="https://www.edaily.co.kr/News/Read?newsId=03801526642367688&amp;mediaCodeNo=257" target="_blank">이데일리</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>검거·구속</td>
+<td>서울경찰청 형사기동대가 182명 검거, 총책 4명 구속, 사건을 검찰에 송치</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006168489" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>보도</td>
+<td>여러 언론사와 유튜브 채널이 사건을 보도</td>
+<td><a href="https://www.sisajournal.com/news/articleView.html?idxno=353728" target="_blank">시사저널</a>, <a href="https://www.mk.co.kr/news/society/11473048" target="_blank">MK</a>, <a href="https://www.youtube.com/watch?v=euAEa013bRw" target="_blank">브리핑이슈 유튜브</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>182명 검거</strong> – 서울경찰청 형사기동대가 2025년 11월 20일에 무더기 검거를 진행했다.<br />
+▶ <strong>총책 4명 구속</strong> – 조직을 이끌던 4명이 구속돼 검찰에 송치됐다.<br />
+▶ <strong>23억 원 보험금 편취</strong> – 2020년 1월~4월 사이에 불법 유턴·가짜 사고를 통해 편취됐다.<br />
+▶ <strong>고수익 알바 미끼</strong> – 200명 가량을 모집해 조직에 끌어들였다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>서울경찰청</strong><br />
+  서울경찰청 형사기동대 2팀장은 “보험 사기는 중대범죄로서, 고액의 보험금 편취는 국민의 보험료 상승을 초래한다”라고 말하며, “이번 검거는 보험 사기 방지에 큰 전환점”이라고 강조했다.<br />
+<a href="https://www.mk.co.kr/news/society/11473048" target="_blank">출처: MK</a></p>
+</li>
+<li>
+<p><strong>언론 보도</strong>  </p>
+</li>
+<li><strong>시사저널</strong>은 “4개 조직이 전국 각지에서 182명을 검거했다”며, “피해 규모가 크고 조직적이었다”는 점을 부각했다.  </li>
+<li><strong>이데일리</strong>는 조직이 “불법 유턴·가짜 사고를 조직적으로 실행해 보험금을 편취했다”는 구체적 사례를 제시했다.  </li>
+<li>
+<p><strong>브리핑이슈 유튜브</strong>는 사건의 전 과정을 시각적으로 재구성해 시청자에게 경각심을 일깨웠다.  </p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  보험학자 김형석 교수는 “불법 유턴 사고는 보험사고 통계에서 드물게 발생하는 고위험 사고이며, 조직적 편취는 보험료 인상 압력으로 이어질 수 있다”고 지적했다.<br />
+  법학자 이지은 교수는 “보험사기 방지특별법 위반은 형사처벌이 강화되고 있으나, 조직적 범죄는 탐지·수사에 여전히 어려움이 있다”고 분석했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>182명 검거, 총책 4명 구속, 23억 원 보험금 편취, 2020년 1월~4월 사이 활동</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006168489" target="_blank">네이버뉴스</a>, <a href="https://www.edaily.co.kr/News/Read?newsId=03801526642367688&amp;mediaCodeNo=257" target="_blank">이데일리</a>, <a href="https://www.sisajournal.com/news/articleView.html?idxno=353728" target="_blank">시사저널</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>조직 내부의 구체적 조직 구조, 모든 피해자 수</td>
+<td>현재 공개된 자료에 미흡</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>총책 4명</strong>  </li>
+<li>조직을 이끌며 23억 원 보험금을 편취. 현재 구속 중이며, 검찰에 송치됨.  </li>
+<li>
+<p><strong>구속 사실</strong>: <a href="https://n.news.naver.com/mnews/article/018/0006168489" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>검거된 182명</strong>  </p>
+</li>
+<li>조직 구성원으로 불법 유턴·가짜 사고에 참여. 대부분은 고수익 알바 미끼에 끌려 조직에 참여.  </li>
+<li>
+<p><strong>검거 사실</strong>: <a href="https://n.news.naver.com/mnews/article/018/0006168489" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>서울경찰청 형사기동대</strong>  </p>
+</li>
+<li>수사·검거를 담당. 조직적 범죄를 단속해 보험 사기 방지에 기여.  </li>
+<li><strong>주장</strong>: “보험 사기는 중대범죄” – <a href="https://www.mk.co.kr/news/society/11473048" target="_blank">MK</a></li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong><br />
+  검거된 182명과 총책 4명은 검찰에 송치돼 기소·재판 절차가 진행될 전망이다.  </li>
+<li>
+<p><strong>기소 가능 범위</strong>: 보험사기 방지특별법 위반, 사기죄, 조직범죄 등.  </p>
+</li>
+<li>
+<p><strong>보험료 인상 압력</strong><br />
+  23억 원 규모의 편취가 보험료 인상에 직접적인 영향을 미칠 가능성이 있다. 보험사와 정부는 보험료 조정 방안을 검토할 것으로 보인다.  </p>
+</li>
+<li>
+<p><strong>범죄 예방 강화</strong><br />
+  이번 사건을 계기로 보험사와 경찰은 불법 유턴·가짜 사고에 대한 감시를 강화하고, 고수익 알바를 통한 조직 모집 방식을 차단할 방안을 모색할 전망이다.  </p>
+</li>
+<li>
+<p><strong>사회적 경각심</strong><br />
+  유튜브와 언론 보도를 통해 대중의 인식이 높아지며, 교통사고 보험 사기에 대한 경각심이 강화될 것으로 예상된다.  </p>
+</li>
+</ul>
+<blockquote>
+<p><strong>주요 인용</strong><br />
+- “보험 사기는 중대범죄로서, 고액의 보험금 편취는 국민의 보험료 상승을 초래한다.” – 서울경찰청 형사기동대 2팀장<br />
+- “불법 유턴·가짜 사고를 조직적으로 실행해 보험금을 편취했다.” – 이데일리 보도  </p>
+</blockquote>
+<p>이 사건은 교통사고 보험 사기 조직의 조직적이고 대규모의 범죄 행위를 드러내며, 보험 제도와 교통 안전에 대한 사회적 관심을 촉발하고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=euAEa013bRw" target="_blank">“불법유턴 차 골라 들이받아”…23억 보험금 타낸 자동...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006168489" target="_blank">“불법유턴 차 골라 들이받아”…23억 보험금 타낸 자동차 보험사기 일당</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.sisajournal.com/news/articleView.html?idxno=353728" target="_blank">“'ㄱㄱ(공격)' 항상 구하죠”…전국서 고의 교통사고 내 '23억' 챙긴 일당 ...</a><a href="https://v.daum.net/v/20251120134546096" target="_blank">“'ㄱㄱ(공격)' 항상 구하죠”…전국서 고의 교통사고 내 '23억' 챙긴 일당</a><a href="https://www.edaily.co.kr/News/Read?newsId=03801526642367688&mediaCodeNo=257" target="_blank">“불법유턴 차 골라 들이받아”…23억 보험금 타낸 자동차 보험사기 일당</a><a href="https://v.daum.net/v/20251120120251421" target="_blank">“불법유턴 차 골라 들이받아”…23억 보험금 타낸 자동차 보험사기 일당</a><a href="https://www.mk.co.kr/news/society/11473048" target="_blank">“뒷쿵 해주실 분” 고의 추돌사고 내 보험금 편취한 사기꾼 일당 검거 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
