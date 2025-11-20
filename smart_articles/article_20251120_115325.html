@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국, 사우디·UAE에 엔비디아 블랙웰 AI칩 7만개 판매 승인 - 2025-11-20 11:53:24</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,엔비디아,블랙웰,사우디">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="엔비디아,블랙웰,사우디">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 11:53:24'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('미국, 사우디·UAE에 엔비디아 블랙웰 AI칩 7만개 판매 승인')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>미국, 사우디·UAE에 엔비디아 블랙웰 AI칩 7만개 판매 승인</h1>
+            <p>
+                분석 시간: 2025-11-20 11:53:24
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 미국 상무부가 사우디아라비아와 아랍에미리트에 엔비디아 블랙웰 AI 칩 70,000개를 수출하도록 승인했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 결정은 트럼프 행정부가 2025년 5월에 한도 해제한 이후 진행되었으며, 미국이 중동에서 AI 영향력을 확대하려는 전략의 일환이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 한국 GPU 공급에 불확실성을 초래해 한국 산업계가 수출 규제 강화 우려를 표명하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/d7de687375d7.png" 
+                     alt="미국, 사우디·UAE에 엔비디아 블랙웰 AI칩 7만개 판매 승인" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>미국 상무부가 사우디아라비아와 아랍에미리트에 엔비디아의 차세대 AI 칩 <strong>블랙웰</strong> 70,000개를 판매하도록 승인했다. 이 결정은 미국이 AI 기술을 통해 중동 지역에서 영향력을 확대하려는 전략의 일환이며, 동시에 한국 GPU 공급에 불확실성을 가져올 전망이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 5월</td>
+<td>트럼프 대통령이 UAE에 대한 AI 칩 수출 한도를 해제</td>
+<td><a href="https://www.reuters.com/business/finance/us-close-letting-uae-import-millions-nvidias-ai-chips-sources-say-2025-05-14/" target="_blank">Reuters</a></td>
+</tr>
+<tr>
+<td>2025년 11월 19일</td>
+<td>미국 상무부가 UAE의 G42와 사우디의 Humain에 블랙웰 칩 35,000개씩(총 70,000개) 수출 허가</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002560504" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>보도 기사 발표, 한국 GPU 공급 260,000개에 대한 불확실성 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002560504" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 70,000개의 블랙웰 AI 칩이 사우디와 UAE에 수출 승인되었으며, 이는 트럼프 행정부가 2025년 5월에 한도 해제를 선언한 이후 진행된 결정이다.<br />
+▶ <strong>주요 인물</strong>: 트럼프 대통령, 하워드 루트닉(미국 상무부 부장), 모하메드 빈 살람(사우디 왕세자), G42(아랍에미리트 AI 기업), Humain(사우디 AI 스타트업).</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>미국 정부</strong>  </li>
+<li>상무부는 <strong>“UAE의 AI 인프라 투자 완료 후 수출 허가”</strong>라고 설명하며, 기술 유출을 방지하기 위한 조치를 강조했다.  </li>
+<li>이는 미국이 <strong>AI 리더십을 유지하면서 중동에서 영향력을 강화하려는 전략</strong>의 일환이다.  </li>
+<li>
+<p><a href="https://www.bloomberg.com/news/articles/2025-10-09/us-approves-several-billion-dollars-of-nvidia-nvda-ai-chip-sales-to-uae" target="_blank">Bloomberg</a>에서는 “미국은 AI 기술을 통해 중동 지역에서 전략적 입지를 확대하고 있다”고 평가했다.</p>
+</li>
+<li>
+<p><strong>비판적 시각</strong>  </p>
+</li>
+<li><strong>WSJ</strong>는 수출 승인 지연이 <strong>“경쟁국에 대한 기술 이전 우려”</strong>를 반영한 것이라며, 행정 절차가 비효율적이라고 지적했다.  </li>
+<li>
+<p><a href="https://www.wsj.com/tech/ai/u-s-approves-deal-to-sell-ai-chips-to-middle-east-79d68f36" target="_blank">WSJ</a>에서는 “이러한 지연은 미국이 기술 유출을 방지하려는 노력의 일환이지만, 동시에 파트너 국가의 AI 발전을 저해할 수 있다”고 보았다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li>CSIS 연구원은 “블랙웰 칩은 <strong>AI 성능을 크게 향상</strong>시키는 핵심 부품”이라며, 미국이 **중동에 AI 인프라를 제공함으로써 장기적으로는 미국의 AI 생태계와 연계될 가능성이 있다”고 분석했다.  </li>
+<li>
+<p><a href="https://www.csis.org/analysis/ai-diffusion-framework-securing-us-ai-leadership-while-preempting-strategic-drift" target="_blank">CSIS</a>에서는 “이러한 수출은 미국이 AI 리더십을 유지하면서도 지역 파트너와 협력 관계를 강화하는 전략적 선택”이라고 평가했다.</p>
+</li>
+<li>
+<p><strong>한국 산업계</strong>  </p>
+</li>
+<li>한국 GPU 공급이 <strong>260,000개에 대한 불확실성</strong>이 제기되면서, 한국 기업들은 <strong>수출 규제 강화</strong>에 대한 우려를 표명했다.  </li>
+<li>이는 한국이 <strong>미국과의 기술 협력</strong>을 통해 AI 칩 생산을 확대하려는 시도와 충돌할 가능성이 있다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>미국 상무부가 2025년 11월 19일에 UAE와 사우디에 블랙웰 칩 35,000개씩(총 70,000개) 수출 허가</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002560504" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프가 2025년 5월에 UAE에 대한 AI 칩 수출 한도를 해제</td>
+<td><a href="https://www.reuters.com/business/finance/us-close-letting-uae-import-millions-nvidias-ai-chips-sources-say-2025-05-14/" target="_blank">Reuters</a></td>
+</tr>
+<tr>
+<td></td>
+<td>수출 승인 지연은 UAE의 투자 완료 후에 이루어짐</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002560504" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>한국 GPU 공급 260,000개가 직접적으로 블랙웰 수출 승인으로 인해 감소할 것</td>
+<td>“한국 GPU 공급에 대한 불확실성” 언급은 보도에 있으나, 구체적 영향은 아직 확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위/소속</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>트럼프 대통령</strong></td>
+<td>미국 전 대통령</td>
+<td>2025년 5월에 UAE에 대한 AI 칩 수출 한도 해제 선언</td>
+</tr>
+<tr>
+<td><strong>하워드 루트닉</strong></td>
+<td>미국 상무부 부장</td>
+<td>수출 승인 지연을 UAE 투자 완료 후로 설명</td>
+</tr>
+<tr>
+<td><strong>모하메드 빈 살람</strong></td>
+<td>사우디 왕세자</td>
+<td>미국과 AI 협력 강화에 관심</td>
+</tr>
+<tr>
+<td><strong>G42</strong></td>
+<td>아랍에미리트 AI 기업</td>
+<td>블랙웰 칩 수입을 통해 AI 인프라 확장</td>
+</tr>
+<tr>
+<td><strong>Humain</strong></td>
+<td>사우디 AI 스타트업</td>
+<td>블랙웰 칩 수입을 통해 AI 기술 개발 가속화</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>중동 AI 인프라 확대</strong><br />
+   - 블랙웰 칩 도입으로 G42와 Humain이 AI 연구·개발 역량을 크게 강화할 것으로 예상된다.<br />
+   - 이는 중동 지역에서 미국의 전략적 영향력을 확대하는 데 기여할 전망이다.</p>
+</li>
+<li>
+<p><strong>한국 GPU 공급에 대한 영향</strong><br />
+   - 현재 한국 기업들은 <strong>미국 수출 규제</strong>와 <strong>중동 수요 증가</strong> 사이에서 균형을 맞추어야 한다.<br />
+   - 블랙웰 칩 수출이 한국 GPU 공급에 직접적인 영향을 미칠지는 아직 불확실하지만, <strong>공급망 재조정</strong>이 필요할 수 있다.</p>
+</li>
+<li>
+<p><strong>기술 유출 방지 정책 강화</strong><br />
+   - 미국은 <strong>수출 허가 조건</strong>을 강화해 기술 유출을 최소화하려 할 것으로 보인다.<br />
+   - 이는 향후 다른 중동 국가들에 대한 수출 정책에도 영향을 미칠 수 있다.</p>
+</li>
+<li>
+<p><strong>전략적 파트너십 확대</strong><br />
+   - 사우디와 UAE는 미국과의 AI 협력을 통해 <strong>국가 경쟁력</strong>을 강화하고, 미국은 <strong>중동에서의 AI 생태계</strong>를 확대할 수 있다.<br />
+   - 이 과정에서 <strong>다른 국가와의 기술 경쟁</strong>이 격화될 가능성도 있다.</p>
+</li>
+</ol>
+<p><strong>요약</strong>: 미국 상무부가 사우디와 UAE에 블랙웰 AI 칩 70,000개 수출을 승인함으로써 중동 AI 인프라가 크게 확대될 전망이다. 이 결정은 미국이 AI 리더십을 유지하면서 중동에서 영향력을 강화하려는 전략의 일환이며, 동시에 한국 GPU 공급에 불확실성을 제기하고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=qB2mO68ZFCw" target="_blank">Nvidia’s Secret Weapon: How Bl...</a><a href="https://www.youtube.com/watch?v=Bk_j7tJp_rg" target="_blank">🚀 Nvidia Unveils Revolutionary...</a><a href="https://www.youtube.com/watch?v=N5AJJ0tAoxc" target="_blank">Inside a NEW AI Cluster - Tour...</a><a href="https://www.youtube.com/watch?v=kZRMshaNrSA" target="_blank">NVIDIA DGX Spark | A Grace Bla...</a><a href="https://www.youtube.com/watch?v=2L5dJlXNVB8" target="_blank">NVIDIA Blackwell: Made in Amer...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/016/0002560504" target="_blank">美, 중동에 엔비디아 최신칩 수출 승인…한국 ‘GPU 26만장’ 공급 불확실성↓</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.wsj.com/tech/ai/u-s-approves-deal-to-sell-ai-chips-to-middle-east-79d68f36" target="_blank">Exclusive | U.S. Approves Deal to Sell AI Chips to...</a><a href="https://www.reuters.com/business/finance/us-close-letting-uae-import-millions-nvidias-ai-chips-sources-say-2025-05-14/" target="_blank">US close to letting UAE import millions of Nvidia'...</a><a href="https://fortune.com/2025/05/14/nvidia-ai-humain-saudi-arabia-front-of-the-line-wedbush-dan-ives/" target="_blank">Nvidia's huge deal with AI startup Humain puts Sau...</a><a href="https://www.bloomberg.com/news/articles/2025-10-09/us-approves-several-billion-dollars-of-nvidia-nvda-ai-chip-sales-to-uae" target="_blank">US Approves Several Billion Dollars of Nvidia (NVD...</a><a href="https://www.csis.org/analysis/ai-diffusion-framework-securing-us-ai-leadership-while-preempting-strategic-drift" target="_blank">The AI Diffusion Framework: Securing U.S. AI Leade...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
