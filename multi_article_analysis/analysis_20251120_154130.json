@@ -1,0 +1,232 @@
+{
+  "main_article": {
+    "title": "스노우플레이크 \"AI 잘 쓰려면 '데이터 해석 혼선'부터 없애야\"[현장]",
+    "url": "https://n.news.naver.com/mnews/article/421/0008615363"
+  },
+  "related_articles": [
+    {
+      "title": "\"韓 AI 비서 도입지원\"…스노우플레이크 '기업데이터 혁신전략'",
+      "content": "SAP·엔비디아·오라클 등 손잡고 엔터프라이즈 AI 전환 가속\n인텔리전스·오픈플로·호라이즌 카탈로그 등 신기능\n이수현 스노우플레이크 에반젤리스트가 서울 강남구 코엑스 스파크플러스에서 스노플레이크 인텔리전스 출시 기자간담회에서 발언하고 있다. 2025.11.20 뉴스1 ⓒ News1 김민석 기자\n(서울=뉴스1) 김민석 기자 = 스노우플레이크(Snowflake)가 20일 서울 강남 코엑스 스파크플러스에서 기자간담회를 열고 기업용 인공지능(AI) 에이전트 '스노우플레이크 인텔리전스'(Snowflake Intelligence)를 활용한 한국 기업 지원 전략을 발표했다.\n이수현 스노우플레이크 에반젤리스트는 \"인텔리전스는 엔터프라이즈급 신뢰성과 보안을 갖춘 설루션\"이라며 \"최근 출시로 전 세계 1만 2000여 개 고객사는 한 번의 질문만으로 심층 분석이 가능한 환경을 구축할 수 있게 됐다\"고 말했다.\n이어 \"고객사는 자연어로 데이터를 검색·분석할 수 있으며 기밀 데이터도 안전하게 관리할 수 있다\"며 \"이를 통해 기업은 추측에 의존하던 의사결정을 줄이고 데이터 중심의 업무 문화를 정착시킬 수 있다\"고 설명했다.\n스노우플레이크에 따르면 지난달 기준 1000여 개 이상 기업이 스노우플레이크 인텔리전스를 활용해 1만5000개 이상의 AI 에이전트를 배포했다.\n인텔리전스는 앤트로픽(Anthropic) 등 주요 AI 모델을 기반으로 복잡한 쿼리를 대화형 인사이트로 변환한다.\n스노우플레이크는 개방형 데이터를 위한 '호라이즌 카탈로그'(Horizon Catalog)와 '오픈플로'(Openflow) 등을 정식 출시했다.\n호라이즌 카탈로그는 클라우드 종속 없이 일관된 보안·거버넌스를 유지할 수 있는 프레임워크를 제공한다. 오픈플로는 다양한 소스의 데이터 통합과 자동화를 지원한다. 아파치 폴라리스와 아이스버그 API 통합으로 상호운용성도 강화했다.\n이수현 스노우플레이크 에반젤리스트가 서울 강남구 코엑스 스파크플러스에서 스노플레이크 인텔리전스 출시 기자간담회에서 발언하고 있다. 2025.11.20 뉴스1 ⓒ News1 김민석 기자\n완전관리형 데이터베이스 서비스인 스노우플레이크 포스트그레스'(Snowflake Postgres)는 퍼블릭 프리뷰 출시를 예고했다. AI 추론 파이프라인 구축을 위한 'AISQL', 자연어 기반 워크플로 관리 도구 '코텍스 코드'(Cortex Code) 등 신규 개발자 도구 제품군도 선보였다.\n스노우플레이크는 주요 빅테크 기업과의 파트너십도 강화하고 있다. 오라클과 손잡고 데이터베이스 커넥터를 제공해 정형·비정형 데이터를 손쉽게 통합할 수 있도록 했다.\n팔란티어와는 AI 데이터 운영 최적화를 위한 공동 플랫폼을 구축했다. 또 SAP·엔비디아와의 협력을 통해 시맨틱 데이터 통합·GPU 기반 머신러닝 워크플로 가속을 지원하고 있다.\n스노우플레이크는 최근 자사 플랫폼 내 머신러닝(ML) 워크플로에 엔비디아 오픈소스 라이브러리 '쿠다-X'(CUDA-X)를 통합했다.\n<용어설명>\n■ API\nAPI는 응용프로그램 인터페이스(Application Programming Interface)로 하나의 소프트웨어 컴포넌트가 다른 소프트웨어 컴포넌트와 상호작용할 수 있도록 설계된 인터페이스다. 즉, 소프트웨어끼리 서로 정보를 주고받고 기능을 사용하게 해주는 중간다리다.\n■ 워크플로\n워크플로(Workflow)는 작업 흐름 또는 업무 절차로 특정 목표를 달성하기 위해 필요한 작업들을 순차적으로 정리한 일련의 과정이다. 업무가 어떤 순서로 누가 어떤 방식으로 처리되는지를 시각적으로 또는 논리적으로 체계화한 것을 말한다.\n■ 스노우플레이크 포스트그레스\n스노우플레이크 포스트그레스(Snowflake Postgres)는 오픈소스 객체·관계형 데이터베이스(PostgreSQL)를 스노우플레이크의 AI 데이터 클라우드에 통합 제공하는 완전관리형 데이터베이스 서비스다. 스노우플레이크가 크런치데이터(Crunchy Data)를 인수한 후 공개됐다.",
+      "date": "2025.11.20. 오전 10:43",
+      "url": "https://n.news.naver.com/mnews/article/421/0008615363",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [],
+    "clarifications": [],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Snowflake launched Snowflake Intelligence, an enterprise AI agent platform, at a press conference in Seoul on 2025‑11‑20.",
+        "The platform claims enterprise-grade reliability and security, allowing natural‑language data search and analysis.",
+        "As of the conference, over 1,000 companies had deployed more than 15,000 AI agents using Snowflake Intelligence.",
+        "Snowflake introduced Horizon Catalog and Openflow for open‑data governance and automated data integration.",
+        "Additional developer tools announced include AISQL for AI inference pipelines and Cortex Code for natural‑language workflow management."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025‑10‑??",
+        "event": "Snowflake reported that more than 1,000 companies had deployed over 15,000 AI agents using Snowflake Intelligence."
+      },
+      {
+        "date": "2025‑11‑20",
+        "event": "Snowflake held a press conference in Seoul’s COEX SparkPlus to announce Snowflake Intelligence and related Korean AI assistant support strategy."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "스노우플레이크 인텔리전스❄️ | 월 수백 시간 절약한 리테일·코스메틱·제조 기업의 비밀🫢",
+        "url": "https://www.youtube.com/watch?v=9okz1_Evhdo",
+        "link": "https://www.youtube.com/watch?v=9okz1_Evhdo",
+        "videoId": "9okz1_Evhdo",
+        "channel": {
+          "name": "SPH 에스피에이치",
+          "url": "https://www.youtube.com/@sph_info"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 137.0,
+        "viewCount": 7331,
+        "transcript": ""
+      },
+      {
+        "title": "Track 3-4. [Snowflake & SPH] 스노우플레이크 Cortex AI를 활용한 초간단 Text-To-Answer 애플리케이션 개발",
+        "url": "https://www.youtube.com/watch?v=Er2sHUUwDa8",
+        "link": "https://www.youtube.com/watch?v=Er2sHUUwDa8",
+        "videoId": "Er2sHUUwDa8",
+        "channel": {
+          "name": "Snowflake APJ | EMEA | LATAM",
+          "url": "https://www.youtube.com/@SnowflakeInternational"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 1337.0,
+        "viewCount": 167,
+        "transcript": ""
+      },
+      {
+        "title": "Track 3-2. [Snowflake] 스노우플레이크 Cortex AI로 쉽고 빠르게 LLM RAG 챗봇 구축하기",
+        "url": "https://www.youtube.com/watch?v=BnHGHcOh3w0",
+        "link": "https://www.youtube.com/watch?v=BnHGHcOh3w0",
+        "videoId": "BnHGHcOh3w0",
+        "channel": {
+          "name": "Snowflake APJ | EMEA | LATAM",
+          "url": "https://www.youtube.com/@SnowflakeInternational"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 1660.0,
+        "viewCount": 392,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "검색 - IT세상을 바꾸는 힘 지디넷코리아",
+        "url": "https://search.zdnet.co.kr/?area=4&kwd=AI",
+        "snippet": "[현장] 스노우플레이크 \"AI 잘 쓰려면 '데이터 해석 혼선'부터 없애야\". \"인공지능 ... '스노우플레이크 인텔리전스'는 기업 데이터 맥락을 정확하게 이해해 ...",
+        "displayLink": "search.zdnet.co.kr"
+      },
+      {
+        "title": "검색 - IT세상을 바꾸는 힘 지디넷코리아",
+        "url": "https://www.zdnet.co.kr/reporter/?lstcode=imc",
+        "snippet": "중소기업이나 스타트업이 데이터 기반 의사결정을 하거나 디지털 전환 혹은 AI ... 이번 간담회에서는 정식 출시된 '스노우플레이크 인텔리전스'를 비롯해 최근 공개 ...",
+        "displayLink": "www.zdnet.co.kr"
+      },
+      {
+        "title": "소비자불만119",
+        "url": "http://sbj119.co.kr/?device=pc",
+        "snippet": "부산벤처기업협회 '2025 이래가꼬 프로젝트' 성과공유회 성황리 개최… 동남권 디지털 인재양성 박차. 한국체외진단의료기기협회 '체외진단의료기기 역량강화를 위한 ...",
+        "displayLink": "sbj119.co.kr"
+      },
+      {
+        "title": "제목없음",
+        "url": "https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt",
+        "snippet": "... 전환 +t +압 +특별 +건강 +##민국 +전기 +노동 +SK +얻 +놈 +울 +사랑 +대한민국 ... 데이터 +인정 +워 +방안 +W +흐 +얘 +구매 +병원 +조국 +##거리 +열린 +위험 ...",
+        "displayLink": "huggingface.co"
+      }
+    ]
+  },
+  "comprehensive_article": "# 스노우플레이크, 기업 AI 활용 가속화 위해 ‘스노우플레이크 인텔리전스’ 플랫폼 공개\n\n스노우플레이크가 2025년 11월 20일 서울에서 ‘스노우플레이크 인텔리전스’를 발표했다. 이 플랫폼은 기업 데이터 해석 혼선을 줄이고 AI 에이전트를 자연어로 관리할 수 있도록 설계됐다. 1,000개 기업이 이미 15,000개 AI 에이전트를 배포했다.\n\n## ▶ 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| **2025‑10** | 1,000개 기업이 **15,000개** AI 에이전트를 Snowflake Intelligence를 통해 배포 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008615363) |\n| **2025‑11‑20** | 서울 COEX SparkPlus에서 스노우플레이크 관계자가 **스노우플레이크 인텔리전스**를 공개 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008615363) |\n| 2025‑11‑20 | Horizon Catalog, Openflow, AISQL, Cortex",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/421/0008615363"
+  ],
+  "timestamp": "2025-11-20T15:41:30.013520",
+  "youtube_videos": [
+    {
+      "title": "스노우플레이크 인텔리전스❄️ | 월 수백 시간 절약한 리테일·코스메틱·제조 기업의 비밀🫢",
+      "url": "https://www.youtube.com/watch?v=9okz1_Evhdo",
+      "link": "https://www.youtube.com/watch?v=9okz1_Evhdo",
+      "videoId": "9okz1_Evhdo",
+      "channel": {
+        "name": "SPH 에스피에이치",
+        "url": "https://www.youtube.com/@sph_info"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 137.0,
+      "viewCount": 7331,
+      "transcript": ""
+    },
+    {
+      "title": "Track 3-4. [Snowflake & SPH] 스노우플레이크 Cortex AI를 활용한 초간단 Text-To-Answer 애플리케이션 개발",
+      "url": "https://www.youtube.com/watch?v=Er2sHUUwDa8",
+      "link": "https://www.youtube.com/watch?v=Er2sHUUwDa8",
+      "videoId": "Er2sHUUwDa8",
+      "channel": {
+        "name": "Snowflake APJ | EMEA | LATAM",
+        "url": "https://www.youtube.com/@SnowflakeInternational"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 1337.0,
+      "viewCount": 167,
+      "transcript": ""
+    },
+    {
+      "title": "Track 3-2. [Snowflake] 스노우플레이크 Cortex AI로 쉽고 빠르게 LLM RAG 챗봇 구축하기",
+      "url": "https://www.youtube.com/watch?v=BnHGHcOh3w0",
+      "link": "https://www.youtube.com/watch?v=BnHGHcOh3w0",
+      "videoId": "BnHGHcOh3w0",
+      "channel": {
+        "name": "Snowflake APJ | EMEA | LATAM",
+        "url": "https://www.youtube.com/@SnowflakeInternational"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 1660.0,
+      "viewCount": 392,
+      "transcript": ""
+    },
+    {
+      "title": "전 세계 클라우드 패러다임을 바꾼 창업가의 데이터와 AI의 미래 | 스노우플레이크 공동창업자",
+      "url": "https://www.youtube.com/watch?v=sG59popsadM",
+      "link": "https://www.youtube.com/watch?v=sG59popsadM",
+      "videoId": "sG59popsadM",
+      "channel": {
+        "name": "EO Korea",
+        "url": "https://www.youtube.com/@eo_korea"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 2624.0,
+      "viewCount": 8915,
+      "transcript": ""
+    },
+    {
+      "title": "스노우플레이크(Snowflake) 인공지능(AI) 기반 성장이 이끄는 주가 급등",
+      "url": "https://www.youtube.com/watch?v=-6McdJTLp4U",
+      "link": "https://www.youtube.com/watch?v=-6McdJTLp4U",
+      "videoId": "-6McdJTLp4U",
+      "channel": {
+        "name": "USIPO",
+        "url": "https://www.youtube.com/@USIPO"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 450.0,
+      "viewCount": 28,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "검색 - IT세상을 바꾸는 힘 지디넷코리아",
+      "url": "https://search.zdnet.co.kr/?area=4&kwd=AI",
+      "snippet": "[현장] 스노우플레이크 \"AI 잘 쓰려면 '데이터 해석 혼선'부터 없애야\". \"인공지능 ... '스노우플레이크 인텔리전스'는 기업 데이터 맥락을 정확하게 이해해 ...",
+      "displayLink": "search.zdnet.co.kr"
+    },
+    {
+      "title": "검색 - IT세상을 바꾸는 힘 지디넷코리아",
+      "url": "https://www.zdnet.co.kr/reporter/?lstcode=imc",
+      "snippet": "중소기업이나 스타트업이 데이터 기반 의사결정을 하거나 디지털 전환 혹은 AI ... 이번 간담회에서는 정식 출시된 '스노우플레이크 인텔리전스'를 비롯해 최근 공개 ...",
+      "displayLink": "www.zdnet.co.kr"
+    },
+    {
+      "title": "소비자불만119",
+      "url": "http://sbj119.co.kr/?device=pc",
+      "snippet": "부산벤처기업협회 '2025 이래가꼬 프로젝트' 성과공유회 성황리 개최… 동남권 디지털 인재양성 박차. 한국체외진단의료기기협회 '체외진단의료기기 역량강화를 위한 ...",
+      "displayLink": "sbj119.co.kr"
+    },
+    {
+      "title": "제목없음",
+      "url": "https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt",
+      "snippet": "... 전환 +t +압 +특별 +건강 +##민국 +전기 +노동 +SK +얻 +놈 +울 +사랑 +대한민국 ... 데이터 +인정 +워 +방안 +W +흐 +얘 +구매 +병원 +조국 +##거리 +열린 +위험 ...",
+      "displayLink": "huggingface.co"
+    }
+  ],
+  "google_count": 4
+}
