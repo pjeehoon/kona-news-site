@@ -1,5 +1,130 @@
 [
   {
+    "id": "a6b36a5e4c91",
+    "title": "“미 중간선거 지지 정당, 민주 55% 공화 41%”",
+    "created_at": "2025-11-20T09:28:23.102074+09:00",
+    "last_updated": "2025-11-20T09:28:23.102074+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "국제"
+      ],
+      "content_tags": [
+        "민주당",
+        "공화당",
+        "도널드 트럼프",
+        "미국 중간선거",
+        "인플레이션"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "f7ffe4231b7e",
+    "title": "퀄컴, NPU·저전력 '스냅드래곤 X2' 앞세워 AI PC 공략",
+    "created_at": "2025-11-20T09:26:59.136184+09:00",
+    "last_updated": "2025-11-20T09:26:59.136184+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "IT/과학"
+      ],
+      "content_tags": [
+        "퀄컴",
+        "X2",
+        "AI"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "4df207504d20",
+    "title": "\"트럼프, 육군장관 우크라 급파\"...마지막 종전 조율?",
+    "created_at": "2025-11-20T09:25:32.007783+09:00",
+    "last_updated": "2025-11-20T09:25:32.007783+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "국제"
+      ],
+      "content_tags": [
+        "트럼프",
+        "다니엘 드리스콜",
+        "우크라이나",
+        "ATACMS"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "febd2d3428a7",
+    "title": "엔비디아, 3분기 매출·이익 모두 '서프라이즈'",
+    "created_at": "2025-11-20T09:14:57.847092+09:00",
+    "last_updated": "2025-11-20T09:14:57.847092+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "엔비디아",
+        "3분기",
+        "매출"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "ae67b8915038",
+    "title": "코웨이, KCGS ESG 평가서 3년 연속 '통합 A' 획득",
+    "created_at": "2025-11-20T09:13:40.418217+09:00",
+    "last_updated": "2025-11-20T09:13:40.418217+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "코웨이",
+        "KCGS",
+        "ESG"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "8df2bdd33363",
     "title": "빅테크도 사우디 투자...xAI·엔비디아, 500㎿ 데이터센터 건설",
     "created_at": "2025-11-20T08:41:40.316157+09:00",
