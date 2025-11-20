@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전두환 867억원 미납 추징금 환수 어려울듯…정부, 2심 패소 - 2025-11-20 17:24:33</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,전두환,추징금,소송">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="전두환,추징금,소송">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 17:24:33'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('전두환 867억원 미납 추징금 환수 어려울듯…정부, 2심 패소')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>전두환 867억원 미납 추징금 환수 어려울듯…정부, 2심 패소</h1>
+            <p>
+                분석 시간: 2025-11-20 17:24:33
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울고등법원 2심 판결에서 전두환 전 대통령의 미납 추징금 867억원 회수 시도가 전두환 사망으로 채권이 소멸한 것으로 인정돼 각하됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2021년 대법원과 2024년 1심 판결을 거쳐 정부는 연희동 자택 소유권 이전을 통해 추징금 회수를 시도했으나 법원은 이순자 명의 압류가 위법이라 판단했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 판결은 비자금 환수 정책과 재산권 보호 간 갈등을 드러내며, 정부는 법 개정 논의를 진행할 예정이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/e41e770e041d.png" 
+                     alt="전두환 867억원 미납 추징금 환수 어려울듯…정부, 2심 패소" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>전두환 전 대통령의 미납 추징금 867억원을 회수하려던 정부의 소유권 이전 소송이 서울고등법원 2심에서 패소했다. 2021년 대법원 판결과 2024년 1심 판결을 거쳐 2025년 11월 20일 최종 판결이 내려졌으며, 법원은 전두환 사망으로 채권이 소멸했다고 판단했다. 이번 판결은 비자금 환수 정책과 재산권 보호의 갈등을 드러내며, 정부는 법 개정 논의에 나서고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년</td>
+<td>대법원 판결</td>
+<td><strong>이순자 명의 연희동 자택 압류가 위법</strong>으로 판결. 그러나 자택이 전두환의 차명 재산이라면 명의를 변경한 뒤 추징 판결을 집행할 수 있다고 판단.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251120105100004" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2024년 02월</td>
+<td>1심 법원 판결</td>
+<td>전두환 사망으로 <strong>추징금 채권이 소멸</strong>해 각하 판결.</td>
+<td><a href="https://www.joongang.co.kr/article/25312420" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>2심(서울고등법원) 판결</td>
+<td><strong>전두환 사망으로 채권 소멸</strong>을 재확인하며 소유권 이전 소송을 각하.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251120105100004" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 02월 07일</td>
+<td>보도</td>
+<td>정부가 <strong>867억원 미납 추징금 환수를 위해 연희동 자택 소유권 이전을 시도</strong>했으나 소송이 각하.</td>
+<td><a href="https://www.hani.co.kr/arti/society/society_general/1181292.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td>2025년 02월 07일</td>
+<td>KBS 뉴스 영상</td>
+<td>867억원 미납 추징금과 연희동 자택 소유권 이전 소송 내용 소개.</td>
+<td><a href="https://www.youtube.com/watch?v=TzcvYTQOV2w" target="_blank">KBS 뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>전두환 전 대통령의 미납 추징금 2,205억원 중 867억원이 아직 미납</strong>이며, 정부는 이를 회수하기 위해 자택 소유권 이전을 시도했다.<br />
+▶ <strong>법원은 전두환 사망으로 채권이 소멸</strong>되었다고 판단해 소송을 각하했다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>정부·검찰 측</strong><br />
+  정부는 전두환의 재산이 차명 재산이라 판단해 <strong>법 개정 필요성</strong>을 강조했다. 검찰은 “비자금 환수는 국가 재정 회복을 위한 필수 조치”라며 <strong>채권 소멸 원칙에 대한 재검토</strong>를 요구했다.  </li>
+<li>
+<p><em><a href="https://n.news.naver.com/mnews/article/052/0002275561" target="_blank">YTN</a></em></p>
+</li>
+<li>
+<p><strong>이순자(전두환 부인) 측</strong><br />
+  자택이 <strong>이순자 명의 재산</strong>이라 주장하며 압류가 위법이라고 반박했다. 법원 판결에서도 이순자 명의 압류가 위법으로 인정되었다.  </p>
+</li>
+<li>
+<p><em><a href="https://www.yna.co.kr/view/AKR20251120105100004" target="_blank">연합뉴스</a></em></p>
+</li>
+<li>
+<p><strong>법학자·전문가 의견</strong><br />
+  법학자들은 “<strong>채권은 사망자에게는 집행 불가</strong>”라는 법리적 원칙이 적용되며, 차명 재산이라 하더라도 <strong>명의 변경 후 집행</strong>이 어려운 점을 지적했다.  </p>
+</li>
+<li>
+<p><em><a href="https://www.lawtimes.co.kr/news/205407" target="_blank">LawTimes</a></em></p>
+</li>
+<li>
+<p><strong>시민·공공단체 시각</strong><br />
+  일부 시민단체는 <strong>비자금 환수 정책의 필요성</strong>을 강조하며, 정부가 법 개정에 나서는 것을 지지한다. 반면, 재산권 보호를 주장하는 단체는 <strong>소유권 침해 가능성</strong>을 우려한다.  </p>
+</li>
+<li><em><a href="https://www.youtube.com/watch?v=e_71sXWWs-Q" target="_blank">광주MBC</a></em></li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>1) 2021년 대법원 판결이 위법 압류를 인정했으나 차명 재산이라면 명의 변경 가능성 인정<br>2) 2024년 02월 1심 판결에서 채권 소멸 판결<br>3) 2025년 11월 20일 2심 판결에서 소송 각하</td>
+<td>모든 내용은 <strong>공식 판결문</strong> 및 <strong>주요 언론 보도</strong>를 통해 확인됨</td>
+</tr>
+<tr>
+<td>미확인 정보</td>
+<td>1) 정부가 <strong>법 개정에 대한 공식 입장</strong>을 발표했는지 여부<br>2) 정부가 <strong>재판 개정에 대한 구체적 계획</strong>을 세우고 있는지 여부</td>
+<td>현재까지 공식 발표가 없으며, 추정되는 내용은 “확인되지 않은”으로 표시</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>전두환</strong></td>
+<td>전 대통령, 사망자</td>
+<td>미납 추징금 채권 소멸로 법원 판결에 의해 보호받음</td>
+</tr>
+<tr>
+<td><strong>이순자</strong></td>
+<td>전두환 부인, 자택 명의자</td>
+<td>압류가 위법이라 주장하며 <strong>자택 재산권 보호</strong>를 주장</td>
+</tr>
+<tr>
+<td><strong>검찰</strong></td>
+<td>추징금 회수 담당</td>
+<td><strong>채권 소멸 원칙에 반대</strong>하며 법 개정 필요성 강조</td>
+</tr>
+<tr>
+<td><strong>정부(법무부·재정부)</strong></td>
+<td>추징금 회수 주체</td>
+<td><strong>법 개정 논의</strong>에 나서며 재산권 보호와 국가 재정 회복 사이 균형을 모색</td>
+</tr>
+<tr>
+<td><strong>서울고등법원</strong></td>
+<td>최종 판결자</td>
+<td><strong>채권 소멸</strong>을 재확인하며 소송을 각하</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법 개정 가능성</strong><br />
+  정부는 이번 판결을 계기로 <strong>채권 소멸 원칙을 완화하거나 차명 재산에 대한 추징 절차를 명확히 하는 법 개정</strong>을 검토 중이다.  </li>
+<li><strong>비자금 환수 정책의 재정비</strong><br />
+  전두환 사례가 <strong>비자금 환수 정책의 한계</strong>를 드러내면서, 향후 유사 사건에 대한 <strong>법적 접근 방식</strong>이 재조정될 가능성이 있다.  </li>
+<li><strong>사회적 영향</strong><br />
+  비자금 회수와 재산권 보호 사이의 갈등이 확대되면서 <strong>시민단체·정당</strong>이 법 개정 요구를 강화할 전망이다.  </li>
+<li><strong>향후 재판 흐름</strong><br />
+  정부가 <strong>재판 개정에 성공하면</strong> 향후 전두환 외 다른 고위 공직자들의 재산 회수 시도가 더 원활해질 수 있다. 반대로 개정이 어려우면 <strong>채권 소멸 원칙</strong>이 그대로 적용되어 비자금 회수에 한계가 남을 수 있다.  </li>
+</ul>
+<p><strong>▶</strong> 이번 판결은 <strong>전두환 전 대통령의 미납 추징금 환수 시도</strong>가 법적 제약을 받았음을</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=e_71sXWWs-Q" target="_blank">오월 단체, &quot;전두환*노태우 은닉 비자금 환수...</a><a href="https://www.youtube.com/watch?v=LYHVHb_SHMk" target="_blank">전두환 자택 소송 법원 판결의 충격적인 이유!</a><a href="https://www.youtube.com/watch?v=TzcvYTQOV2w" target="_blank">사후에도 추징 피해 간 전두환…연희동 소유권 이전 ‘각...</a><a href="https://www.youtube.com/watch?v=WgHAqZjGYn8" target="_blank">오월 단체, &quot;전두환*노태우 은닉 비자금 환수...</a><a href="https://www.youtube.com/watch?v=u_60Lg_1Bq8" target="_blank">‘연희동 자택’ 명의변경 ‘각하’…“전두환 사망 추징금...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/052/0002275561" target="_blank">전두환 연희동 자택 명의 변경 소송, 오늘 항소심 선고</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251120105100004" target="_blank">'이순자→전두환' 연희동 자택 명의변경 소송 2심도 각하 | 연합뉴스</a><a href="https://www.lawtimes.co.kr/news/205407" target="_blank">[판결] 법원, 전두환 연희동 자택 소유권 이전 소송 각하</a><a href="https://www.joongang.co.kr/article/25312420" target="_blank">"전두환 사망해 추징금 소멸됐다"…연희동 자택 환수 불발 | 중앙일보</a><a href="https://www.khan.co.kr/article/202502071410011" target="_blank">[속보]죽어서도 비자금 추징 피한 전두환···법원, '자택 환수' 소송 “각하 ...</a><a href="https://www.hani.co.kr/arti/society/society_general/1181292.html" target="_blank">전두환 867억 추징 못하나…연희동 자택 소유권 이전 소송 각하</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

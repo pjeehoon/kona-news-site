@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부동산개발협회 창립 20년 행사…'디벨로퍼협회'로 새출발(종합) - 2025-11-20 17:12:59</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,국제,한국부동산개발협회">
+    <meta name="article-category-tags" content="경제,국제">
+    <meta name="article-content-tags" content="한국부동산개발협회">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 17:12:59'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('부동산개발협회 창립 20년 행사…\'디벨로퍼협회\'로 새출발(종합)')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>부동산개발협회 창립 20년 행사…'디벨로퍼협회'로 새출발(종합)</h1>
+            <p>
+                분석 시간: 2025-11-20 17:12:59
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국부동산개발협회(KODA)가 2025년 11월 20일 ‘A.N.D 20’ 기념행사에서 ‘디벨로퍼협회’라는 새 브랜드로 전환을 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 행사에서는 ESG·데이터 기반 혁신 비전과 함께 K-REDII(한국부동산개발산업연구원) 공식 출범을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 전환은 부동산 개발 산업의 지속가능성과 국제 경쟁력 강화를 목표로 하며, 글로벌 디벨로퍼와의 협업을 통해 기술·자본 유입을 기대한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/0fe791f4b0cb.png" 
+                     alt="부동산개발협회 창립 20년 행사…'디벨로퍼협회'로 새출발(종합)" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>2025년 11월 20일 서울 강남구 삼성동 그랜드 인터컨티넨탈 서울 파르나스에서 열린 ‘A.N.D 20’(ALL NEW DEVELOPER PROJECT 20) 기념행사에서 한국부동산개발협회(KODA)는 ‘디벨로퍼협회’라는 새로운 브랜드로 전환을 선언하고, ESG·데이터 기반 혁신을 위한 비전을 제시했다.</strong><br />
+(총 200자 이내 요약)</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 4 월 1일</td>
+<td>KODA 창립 20주년 기념사업단 공식 발족</td>
+<td>20년간의 성과를 기념하고 향후 비전을 모색하기 위한 사업단 설립</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003483914" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 10 월 21일</td>
+<td>글로벌 디벨로퍼 컨퍼런스 포스터 공개</td>
+<td>쿠슈너·모리 등 글로벌 디벨로퍼가 참여할 예정</td>
+<td><a href="https://magazine.hankyung.com/business/article/202510212876b" target="_blank">한경비즈니스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 20일</td>
+<td>‘A.N.D 20’ 기념행사 개최</td>
+<td>• <strong>▶</strong> KODA가 ‘디벨로퍼협회’로 새출발 선언<br>• <strong>▶</strong> K-REDII(한국부동산개발산업연구원) 공식 출범<br>• <strong>▶</strong> ESG·데이터 기반 산업 혁신, 금융 안정성 강화 비전 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003483914" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 20일</td>
+<td>K-REDII 발족식</td>
+<td>부동산 개발 산업의 혁신과 공공성 강화를 위한 연구 허브 설립</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003483914" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>업계 전문가</strong>는 KODA가 <strong>‘디벨로퍼협회’</strong>로의 전환을 “디벨로퍼 중심의 협업 생태계 구축”으로 평가하며, ESG와 데이터 활용이 부동산 산업의 지속 가능성을 높일 것이라 전망했다.  </li>
+<li><strong>한경비즈니스</strong>는 글로벌 디벨로퍼와의 협업을 통해 한국 부동산 개발 산업이 <strong>국제 경쟁력</strong>을 강화할 수 있는 기회가 될 것이라고 보았다.  </li>
+<li><strong>KUE Herald</strong>는 행사에서 발표된 <strong>ESG 기반 도시 개발</strong> 비전이 <strong>공공성과 투명성</strong>을 제고할 수 있는 방안으로 긍정적으로 평가했다.  </li>
+<li><strong>이데일리</strong>는 행사에 참여한 글로벌 기업들의 <strong>기술 및 자본 유입</strong>이 국내 부동산 시장에 미칠 긍정적 효과를 강조했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>• KODA가 2025년 11월 20일 ‘A.N.D 20’ 기념행사를 개최했다.<br>• 행사에서 ‘디벨로퍼협회’로의 새출발 선언이 이루어졌다.<br>• K-REDII가 공식 출범했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003483914" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>• 행사에 참여한 글로벌 디벨로퍼의 구체적 참여 규모와 내용.<br>• K-REDII가 실제로 어떤 연구 프로젝트를 수행할지에 대한 상세 계획.</td>
+<td>현재까지 공개된 자료에 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김승배</strong></td>
+<td>KODA 회장</td>
+<td>‘디벨로퍼협회’ 전환 선언을 주도하며, ESG·데이터 기반 혁신 비전을 발표.</td>
+</tr>
+<tr>
+<td><strong>문주현</strong></td>
+<td>전 회장</td>
+<td>과거 협회기 이양식에서 협회기 이양을 목격, 현재는 회장 선임 과정에 관여.</td>
+</tr>
+<tr>
+<td><strong>KODA 회원사 대표들</strong></td>
+<td>부동산 개발 기업 대표</td>
+<td>행사에 참여해 글로벌 협업과 ESG 이행 방안을 논의.</td>
+</tr>
+<tr>
+<td><strong>K-REDII 연구원</strong></td>
+<td>연구팀</td>
+<td>부동산 개발 산업의 혁신과 공공성 강화를 위한 연구를 수행.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>디벨로퍼 협회</strong>로의 전환은 부동산 개발 산업의 <strong>전문성 강화</strong>와 <strong>글로벌 협업 확대</strong>를 목표로 한다.  </li>
+<li>ESG와 데이터 기반 비전은 <strong>투명성</strong>과 <strong>금융 안정성</strong>을 높이는 데 기여할 것으로 예상되며, 이는 부동산 시장의 <strong>신뢰도</strong> 상승으로 이어질 가능성이 있다.  </li>
+<li>K-REDII의 설립은 <strong>정책·연구 기반</strong>을 제공해 산업 전반의 <strong>혁신 가속화</strong>를 돕고, 장기적으로는 <strong>공공성과 지속 가능성</strong>을 강화할 것으로 보인다.  </li>
+<li>글로벌 디벨로퍼와의 협업이 실제로 <strong>투자 유치</strong>와 <strong>기술 이전</strong>에 얼마나 효과적일지는 향후 실적을 통해 검증될 필요가 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 링크</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/025/0003483914" target="_blank">네이버뉴스: 부동산개발협회 창립 20년 행사…&rsquo;디벨로퍼협회&rsquo;로 새출발(종합)</a><br />
+- <a href="https://magazine.hankyung.com/business/article/202510212876b" target="_blank">한경비즈니스: 부동산개발협회 20주년 행사 쿠슈너·모리 등 글로벌 디벨로퍼</a><br />
+- <a href="https://www.kueherald.co.kr/news/articleView.html?idxno=56696" target="_blank">KUE Herald: ‘KODA 20주년: 글로벌 컨퍼런스 &amp; 디벨로퍼 어워즈’</a><br />
+- <a href="https://marketin.edaily.co.kr/News/ReadE?newsId=03273446642334888" target="_blank">이데일리: 부동산개발협회 20주년 A·N·D 20…글로벌 디벨로퍼 한자리에 모인다</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=5JTFYxmEkNo" target="_blank">99초스피치!  프롭테크를 통해 글로벌 No.1 종합부...</a><a href="https://www.youtube.com/watch?v=QZv6lSUT_gg" target="_blank">한국부동산개발협회 협회기 이양의 순간!</a><a href="https://www.youtube.com/watch?v=kVaRdUbaft0" target="_blank">[KODA] 레전드 디벨로퍼 3인이 모였다! KODA ...</a><a href="https://www.youtube.com/watch?v=eIY19pNMgUI" target="_blank">[10월 디데이] 부동산 전문직 상담, 매칭 및 데이터...</a><a href="https://www.youtube.com/watch?v=JoXl50Zv-1s" target="_blank">[일본 부동산시장의 시장의 특징과 프롭테크 시장의 동향...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003483914" target="_blank">20주년 맞은 한국부동산개발협회 “공공적 가치 키울 때”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://magazine.hankyung.com/business/article/202510212876b" target="_blank">한국부동산개발협회 20주년 행사 쿠슈너·모리 등 글로벌 디벨로퍼 ...</a><a href="https://www.koda.or.kr/main/" target="_blank">제목없음</a><a href="https://www.hankyung.com/article/202510200375i" target="_blank">부동산개발협회 20주년 A·N·D 20…글로벌 디벨로퍼 한자리에 모인다 ...</a><a href="https://www.kueherald.co.kr/news/articleView.html?idxno=56696" target="_blank">「KODA 20주년: 글로벌 컨퍼런스 & 디벨로퍼 어워즈」- “프로젝트의 ...</a><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=03273446642334888" target="_blank">부동산개발協 20주년 행사 'A.N.D 20', 글로벌 디벨로퍼 한자리</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
