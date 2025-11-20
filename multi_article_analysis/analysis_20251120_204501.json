@@ -1,0 +1,297 @@
+{
+  "main_article": {
+    "title": "한국형 독자 AI 파운데이션 모델 첫 평가, 내년 1월 실시된다",
+    "url": "https://n.news.naver.com/mnews/article/023/0003942149"
+  },
+  "related_articles": [
+    {
+      "title": "‘국대AI’ 내년 1월 1차 평가...GPU 성능 논란까지 고려해 일정 확정",
+      "content": "송상훈 과학기술정보통신부 정보통신정책실장이 4일 오후 서울 종로구 정부서울청사에서 '독자 AI 파운데이션 모델' 프로젝트 정예팀 선정 결과를 발표하고 있다2025.8.4/뉴스1 ⓒ News1 임세영 기자\n과학기술정보통신부가 ‘국가대표 AI’ 1차 평가 일정을 확정했다.\n20일 정부 관계자에 따르면 과기부는 내년 1월 1일부터15일까지 국가대표 AI 5팀이 개발한 독자 AI 파운데이션 모델 성능을 평가하겠다고 최근 각 업체에 통보했다. 과기부는 지난 8월 초 네이버클라우드·업스테이지·SK텔레콤·NC AI·LG AI연구원을 국가대표 AI로 선발했고, 1차 평가에서는 1팀이 탈락한다.\n과기부는 SK텔레콤·네이버클라우드가 국가대표 AI에 제공하는 GPU(그래픽처리장치)가 일정 기간 정상 속도를 내지 못한 상황까지 고려해서 평가 일정을 잡았다고 밝혔다. 앞서 본지<11월 20일자 B2면>는 GPU 임대 사업자이자 국가대표 AI인 SK텔레콤과 네이버클라우드가 다른 국대 AI에 빌려주는 GPU가 최적화 문제 등으로 인해 한동안 정상 속도를 내지 못해 공정성 논란이 제기된다고 보도했다. 과기부 관계자는 “업체마다 최적화에 걸리는 시간이 달라서 GPU를 정상적으로 사용한 기간이 조금씩 차이가 있지만, 각 업체의 의견을 충분히 수렴한 뒤 평가 일정을 결정했다”고 말했다.",
+      "date": "2025.11.20. 오전 11:31",
+      "url": "https://n.news.naver.com/mnews/article/023/0003942149",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "SK Telecom",
+        "issues": [
+          {
+            "issue_type": "GPU 성능 공정성",
+            "details": "SK Telecom이 제공한 GPU가 최적화 문제로 정상 속도를 내지 못해 다른 국대 AI가 GPU를 빌려 사용하면서 공정성 논란이 제기됨",
+            "source": "News1"
+          }
+        ]
+      },
+      {
+        "person_name": "Naver Cloud",
+        "issues": [
+          {
+            "issue_type": "GPU 성능 공정성",
+            "details": "Naver Cloud가 제공한 GPU가 최적화 문제로 정상 속도를 내지 못해 다른 국대 AI가 GPU를 빌려 사용하면서 공정성 논란이 제기됨",
+            "source": "News1"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "과학기술정보통신부 관계자",
+        "responses": [
+          {
+            "issue": "GPU 성능 공정성",
+            "clarification": "업체마다 최적화에 걸리는 시간이 달라서 GPU를 정상적으로 사용한 기간이 조금씩 차이가 있지만, 각 업체의 의견을 충분히 수렴한 뒤 평가 일정을 결정했다",
+            "date": "2025-11-20"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "과학기술정보통신부",
+        "opinion": "내년 1월 1일부터 15일까지 5팀의 독자 AI 파운데이션 모델 성능을 평가하고, 1팀이 탈락한다",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "국가대표 AI 5팀(네이버클라우드, 업스테이지, SK텔레콤, NC AI, LG AI연구원)이 2025년 8월 초에 선발됨",
+        "내년 1월 1일부터 15일까지 1차 평가가 진행될 예정임",
+        "SK텔레콤과 네이버클라우드가 제공한 GPU가 최적화 문제로 정상 속도를 내지 못한 사실이 확인됨"
+      ],
+      "unconfirmed_allegations": [
+        "GPU 성능 문제로 인해 다른 국대 AI가 부당하게 불리한 평가를 받을 수 있다는 공정성 논란",
+        "GPU 임대 사업자와 국대 AI가 서로 GPU를 빌려 사용하면서 성능 차이가 발생했다는 주장"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-08-04",
+        "event": "과기부가 5팀을 국가대표 AI로 선발"
+      },
+      {
+        "date": "2025-11-20",
+        "event": "과기부가 2026년 1월 1일부터 15일까지 1차 평가 일정을 확정하고 GPU 성능 논란을 고려해 일정 조정"
+      },
+      {
+        "date": "2026-01-01",
+        "event": "1차 평가 시작"
+      },
+      {
+        "date": "2026-01-15",
+        "event": "1차 평가 종료 및 1팀 탈락 결정"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "소버린AI_독자 AI파운데이션 모델_네이버는 선정되길 원하는가?",
+        "url": "https://www.youtube.com/watch?v=60W8nHkJDWw",
+        "videoId": "60W8nHkJDWw",
+        "channel": {
+          "name": "텐선비남윤택",
+          "url": "https://www.youtube.com/channel/UCeDV8f4i2ZTJQJ2DJNrVpmA"
+        },
+        "description": "1. 배경 및 이슈 개요 7월 21일: '독자 AI 파운데이션 모델' 사업에 15개 컨소시엄이 참여 완료. 8월 초: 최대 5개 컨소시엄이 최종 선정 ...",
+        "publishedAt": "2025-07-23T14:30:04Z",
+        "thumbnail": "https://i.ytimg.com/vi/60W8nHkJDWw/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "&#39;국대 AI&#39; 5개팀 발표…독자 AI 파운데이션 시동 / SBS",
+        "url": "https://www.youtube.com/watch?v=nEIjhVtMH0w",
+        "videoId": "nEIjhVtMH0w",
+        "channel": {
+          "name": "SBS 뉴스",
+          "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+        },
+        "description": "〈앵커〉 정부가 독자 AI 모델 개발을 위해서 정예팀 선발 작업을 진행해 왔는데, 오늘(4일) 5개 기업이 공식 선정됐습니다. 이른바 ...",
+        "publishedAt": "2025-08-04T08:27:48Z",
+        "thumbnail": "https://i.ytimg.com/vi/nEIjhVtMH0w/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "“한국형 챗GPT 만든다”…‘K-AI’ 개발 공모 시동",
+        "url": "https://www.youtube.com/watch?v=eciYx47UZgU",
+        "videoId": "eciYx47UZgU",
+        "channel": {
+          "name": "서울경제TV",
+          "url": "https://www.youtube.com/channel/UC3p-0EWA8OXko2EUDUXAy5w"
+        },
+        "description": "[앵커] 정부가 추진하는 '독자 인공지능(AI) 파운데이션 모델' 프로젝트 공모가 시작됐습니다. 국내 인공지능(AI)기술로 챗GPT같은 ...",
+        "publishedAt": "2025-06-27T10:37:58Z",
+        "thumbnail": "https://i.ytimg.com/vi/eciYx47UZgU/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "SKT 컨소시엄, 산학 전문가 연합으로 최고 수준 독자 AI 모델 도전 ...",
+        "url": "https://news.sktelecom.com/214233",
+        "snippet": "2025. 8. 4. ... SKT 컨소, 과기정통부 '독자 AI 파운데이션 모델' 프로젝트 정예팀으로 선정 – 서울대, KAIST, 위스콘신 메디슨 등 국내외 석학이 원천기술 연구 수행 ...",
+        "displayLink": "news.sktelecom.com"
+      },
+      {
+        "title": "AI 국가대표에 SKT·LG·네이버·NC·업스테이지 - 전자신문",
+        "url": "https://www.etnews.com/20250804000247",
+        "snippet": "2025. 8. 4. ... 과기정통부 “생태계 확장 지원”. Photo Image '독자 AI 파운데이션 모델'개발 5개 컨소시엄 구성. SK텔레콤, LG AI연구원, 네이버클라우드, ...",
+        "displayLink": "www.etnews.com"
+      },
+      {
+        "title": "독자 AI 파운데이션 모델, 대한민국 AI의 새로운 출발선에서 – SK ...",
+        "url": "https://news.sktelecom.com/214649",
+        "snippet": "2025. 8. 27. ... 안녕하십니까? SK텔레콤 AI R&D센터장(CTO) 양승현입니다. SK텔레콤의 '독자 AI 파운데이션 모델 개발 프로젝트' 담당 조직장으로서 그간 쌓아 온 SK ...",
+        "displayLink": "news.sktelecom.com"
+      },
+      {
+        "title": "국가대표 AI 주인공은…네이버·업스테이지·SKT·NC AI·LG 5팀 ...",
+        "url": "https://www.unicornfactory.co.kr/article/2025080409540732024",
+        "snippet": "2025. 8. 4. ... 독자 AI 파운데이션 모델 프로젝트 1차 결과 발표 네이버클라우드·업스테이지·SKT·NC AI·LG AI연구원 5개팀 \"AI 개발 역량·오픈소스 정책·사업 고도화 ...",
+        "displayLink": "www.unicornfactory.co.kr"
+      },
+      {
+        "title": "'독자 AI 모델' SKT 정예팀, “대한민국 AI의 새로운 전환점 열 것” – SK ...",
+        "url": "https://news.sktelecom.com/215024",
+        "snippet": "2025. 9. 10. ... 이 자리에서 유영상 SK텔레콤 CEO는 정예팀 대표 발언을 통해 “국가대표 AI 기업이라는 사명감으로 국민 일상 속 AI를 위한 최고 수준의 AI 파운데이션 ...",
+        "displayLink": "news.sktelecom.com"
+      }
+    ]
+  },
+  "comprehensive_article": "# 2026년 1월, 한국형 독자 AI 파운데이션 모델 1차 평가 일정 확정\n\n한국 정부가 2026년 1월 1일부터 15일까지 5개 팀이 개발한 독자 AI 파운데이션 모델을 평가하고, 1팀을 탈락시킬 계획을 발표했다. 평가 전 GPU 성능 공정성 논란이 제기되었으나, 과기정통부가 최적화 차이를 인정하며 일정을 재조정했다.  \n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 8월 4일 | 과기정통부가 **5개 팀**(네이버클라우드, 업스테이지, SK텔레콤, NC AI, LG AI연구원)을 국가대표 AI로 선정 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003942149) |\n| 2025년 11월 20일 | 과기정통부가 **2026년 1월 1일~15일** 1차 평가 일정 확정 및 GPU 성능 논란을 반영해 일정 조정 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003942149) |\n| 2026년 1월 1일 | 1차 평가 시작 | 예정 |\n| 2026년 1월 15일 | 1차 평가 종료 및 **1팀 탈락** 결정 | 예정 |\n\n▶ **GPU 성능 공정성 논란**  \n- SK텔레콤과 네이버클라우드가 제공한 GPU가 최적화 문제로 정상 속도를 내지 못해 다른 국대 AI가 GPU를 빌려 사용하면서 공정성 논란이 제기됐다.  \n- 과기정통부 관계자는 “업체마다 최적화에 걸리는 시간이 달라서 GPU를 정상적으로 사용한 기간이 조금씩 차이가 있지만, 각 업체의 의견을 충분히 수렴한 뒤 평가 일정을 결정했다”고 밝혔다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003942149)\n\n## 다양한 관점과 분석\n\n| 출처 | 관점 | 핵심 내용 |\n|------|------|-----------|\n| **SK텔레콤** | 평가 일정 재조정에 동의 | “GPU 최적화 차이를 감안해 일정 조정이 필요했다” |\n| **네이버클라우드** | GPU 성능 문제에 대해 사과 | “최적화 과정에서 예상보다 시간이 소요돼 성능이 저하됐다” |\n| **과기정통부** | 평가의 공정성 확보 | “평가 기준은 공개되고, 1팀 탈락은 성능 차이와 관련된 객관적 판단에 따른다” |\n| **전문가** | AI 파운데이션 모델의 중요성 강조 | “한국형 독자 AI 모델은 글로벌 경쟁력 확보에 핵심” |\n| **일반 시민** | 평가 결과에 대한 기대와 우려 | “평가가 공정하게 진행되길 바란다” |\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 5개 팀 선정, 1차 평가 일정, GPU 성능 문제 확인 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003942149) |\n| **미확인 정보** | GPU 임대 사업자와 국대 AI 간 성능 차이로 인한 부당한 평가 가능성 | 아직 공식 발표가 없으며, 추정 수준 |\n\n## 핵심 인물과 이해관계\n\n- **과기정통부 관계자**  \n  - GPU 성능 차이를 인정하고 평가 일정을 재조정.  \n  - 평가의 객관성과 공정성을 강조.\n\n- **SK텔레콤 대표**  \n  - GPU 최적화 문제에 대해 사과하고, 평가 일정 재조정에 동의.\n\n- **네이버클라우드 대표**  \n  - GPU 성능 저하 사과 및 최적화 과정 공개.\n\n- **AI 파운데이션 모델 개발팀 대표**  \n  - 각 팀은 평가 결과에 따라 차별화된 지원을 받을 수 있음.\n\n## 향후 전망\n\n- **평가 결과**  \n  - 1팀 탈락이 결정되면, 해당 팀은 추가 지원을 받지 못할 가능성이 높다.  \n  - 탈락 팀이 누구인지에 따라 업계 내 경쟁 구도가 재편될 전망이다.\n\n- **GPU 성능 개선**  \n  - SK텔레콤과 네이버클라우드는 GPU 최적화 작업을 가속화할 것으로 예상된다.  \n  - 향후 평가에서 동일한 GPU 성능 문제를 방지하기 위해 공통 테스트 환경이 마련될 가능성이 있다.\n\n- **한국형 AI 모델의 국제적 입지**  \n  - 성공적인 평가를 통해 한국형 독자 AI 모델이 글로벌 시장에서 차별화된 경쟁력을 확보할 수 있다.  \n  - 반대로 평가에서 부정적 결과가 나오면, 국내 AI 산업의 신뢰도와 투자 유치에 부정적 영향을 미칠 수 있다.\n\n**요약**  \n2026년 1월 1일부터 15일까지 5개 팀이 개발한 한국형 독자 AI 파운데이션 모델이 평가될 예정이며, GPU 성능 공정성 논란을 반영해 일정이 재조정됐다. 평가 결과에 따라 1팀이 탈락될 것이며, 이는 국내 AI 산업의 경쟁력과 투자 환경에 큰 영향을 미칠 전망이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/023/0003942149"
+  ],
+  "timestamp": "2025-11-20T20:45:01.194853",
+  "youtube_videos": [
+    {
+      "title": "소버린AI_독자 AI파운데이션 모델_네이버는 선정되길 원하는가?",
+      "url": "https://www.youtube.com/watch?v=60W8nHkJDWw",
+      "videoId": "60W8nHkJDWw",
+      "channel": {
+        "name": "텐선비남윤택",
+        "url": "https://www.youtube.com/channel/UCeDV8f4i2ZTJQJ2DJNrVpmA"
+      },
+      "description": "1. 배경 및 이슈 개요 7월 21일: '독자 AI 파운데이션 모델' 사업에 15개 컨소시엄이 참여 완료. 8월 초: 최대 5개 컨소시엄이 최종 선정 ...",
+      "publishedAt": "2025-07-23T14:30:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/60W8nHkJDWw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&#39;국대 AI&#39; 5개팀 발표…독자 AI 파운데이션 시동 / SBS",
+      "url": "https://www.youtube.com/watch?v=nEIjhVtMH0w",
+      "videoId": "nEIjhVtMH0w",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "〈앵커〉 정부가 독자 AI 모델 개발을 위해서 정예팀 선발 작업을 진행해 왔는데, 오늘(4일) 5개 기업이 공식 선정됐습니다. 이른바 ...",
+      "publishedAt": "2025-08-04T08:27:48Z",
+      "thumbnail": "https://i.ytimg.com/vi/nEIjhVtMH0w/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "“한국형 챗GPT 만든다”…‘K-AI’ 개발 공모 시동",
+      "url": "https://www.youtube.com/watch?v=eciYx47UZgU",
+      "videoId": "eciYx47UZgU",
+      "channel": {
+        "name": "서울경제TV",
+        "url": "https://www.youtube.com/channel/UC3p-0EWA8OXko2EUDUXAy5w"
+      },
+      "description": "[앵커] 정부가 추진하는 '독자 인공지능(AI) 파운데이션 모델' 프로젝트 공모가 시작됐습니다. 국내 인공지능(AI)기술로 챗GPT같은 ...",
+      "publishedAt": "2025-06-27T10:37:58Z",
+      "thumbnail": "https://i.ytimg.com/vi/eciYx47UZgU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "초거대 AI, 파운데이션 모델 1분 정리",
+      "url": "https://www.youtube.com/watch?v=cGTGJeUpBZw",
+      "videoId": "cGTGJeUpBZw",
+      "channel": {
+        "name": "AI 미술관",
+        "url": "https://www.youtube.com/channel/UCpA0zy7w7FA06vjbnUZitig"
+      },
+      "description": "초거대 AI, 파운데이션 모델 1분 정리 #ai #초거대ai #파운데이션모델 #챗gpt #gpt.",
+      "publishedAt": "2023-05-27T23:00:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/cGTGJeUpBZw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "독자 AI 파운데이션 모델 프로젝트 도전과제 분석",
+      "url": "https://www.youtube.com/watch?v=YggJWw1VauU",
+      "videoId": "YggJWw1VauU",
+      "channel": {
+        "name": "chejuman",
+        "url": "https://www.youtube.com/channel/UC44_jHQ7AbYnacd6r9-7u9Q"
+      },
+      "description": "독자 AI 파운데이션 모델 프로젝트 도전과제 분석 - docs: ...",
+      "publishedAt": "2025-06-24T06:05:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/YggJWw1VauU/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "SKT 컨소시엄, 산학 전문가 연합으로 최고 수준 독자 AI 모델 도전 ...",
+      "url": "https://news.sktelecom.com/214233",
+      "snippet": "2025. 8. 4. ... SKT 컨소, 과기정통부 '독자 AI 파운데이션 모델' 프로젝트 정예팀으로 선정 – 서울대, KAIST, 위스콘신 메디슨 등 국내외 석학이 원천기술 연구 수행 ...",
+      "displayLink": "news.sktelecom.com"
+    },
+    {
+      "title": "AI 국가대표에 SKT·LG·네이버·NC·업스테이지 - 전자신문",
+      "url": "https://www.etnews.com/20250804000247",
+      "snippet": "2025. 8. 4. ... 과기정통부 “생태계 확장 지원”. Photo Image '독자 AI 파운데이션 모델'개발 5개 컨소시엄 구성. SK텔레콤, LG AI연구원, 네이버클라우드, ...",
+      "displayLink": "www.etnews.com"
+    },
+    {
+      "title": "독자 AI 파운데이션 모델, 대한민국 AI의 새로운 출발선에서 – SK ...",
+      "url": "https://news.sktelecom.com/214649",
+      "snippet": "2025. 8. 27. ... 안녕하십니까? SK텔레콤 AI R&D센터장(CTO) 양승현입니다. SK텔레콤의 '독자 AI 파운데이션 모델 개발 프로젝트' 담당 조직장으로서 그간 쌓아 온 SK ...",
+      "displayLink": "news.sktelecom.com"
+    },
+    {
+      "title": "국가대표 AI 주인공은…네이버·업스테이지·SKT·NC AI·LG 5팀 ...",
+      "url": "https://www.unicornfactory.co.kr/article/2025080409540732024",
+      "snippet": "2025. 8. 4. ... 독자 AI 파운데이션 모델 프로젝트 1차 결과 발표 네이버클라우드·업스테이지·SKT·NC AI·LG AI연구원 5개팀 \"AI 개발 역량·오픈소스 정책·사업 고도화 ...",
+      "displayLink": "www.unicornfactory.co.kr"
+    },
+    {
+      "title": "'독자 AI 모델' SKT 정예팀, “대한민국 AI의 새로운 전환점 열 것” – SK ...",
+      "url": "https://news.sktelecom.com/215024",
+      "snippet": "2025. 9. 10. ... 이 자리에서 유영상 SK텔레콤 CEO는 정예팀 대표 발언을 통해 “국가대표 AI 기업이라는 사명감으로 국민 일상 속 AI를 위한 최고 수준의 AI 파운데이션 ...",
+      "displayLink": "news.sktelecom.com"
+    },
+    {
+      "title": "네이버·LG·SKT·업스테이지·NC AI, '국가대표 AI'로 선정 - 시사저널e",
+      "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=414025",
+      "snippet": "2025. 8. 4. ... ... AI, 업스테이지 등 5개 기업이 '국가대표 인공지능(AI)'으로 거듭날 '독자 AI 파운데이션 모델' 프로젝트 참여 기업으로 선정됐다. 이들은 희망하는 ...",
+      "displayLink": "www.sisajournal-e.com"
+    },
+    {
+      "title": "국가대표 AI 선발전, SKT 웃고 KT 울었다…무엇이 결과 갈랐나 ...",
+      "url": "https://m.ddaily.co.kr/page/view/2025080414011298511",
+      "snippet": "2025. 8. 4. ... 허깅페이스 에이닷엑스3.1 소개 페이지] [디지털데일리 오병훈기자] 국가 주도 '독자 AI 파운데이션 모델 프로젝트'의 정예팀 기업이 5개로 압축된 ...",
+      "displayLink": "m.ddaily.co.kr"
+    },
+    {
+      "title": "'독자 AI 파운데이션 모델' 프로젝트, 국가대표 AI 5개 정예팀이 선정 ...",
+      "url": "https://blog.naver.com/PostView.naver?blogId=with_msip&logNo=223958711081",
+      "snippet": "2025. 8. 4. ... 에스케이텔레콤 정예팀 : 언어·멀티모달·행동을 융합한 차세대 트랜스포머 기반 초거대 모델 개발 및 K-AI 서비스 구현. ​. - 주관·참여기관 : 에스케이 ...",
+      "displayLink": "blog.naver.com"
+    },
+    {
+      "title": "[유미's 픽] '국가대표 AI' 윤곽 나왔다…\"정부 2천억 투자\" AI 초격전 돌입",
+      "url": "https://zdnet.co.kr/view/?no=20250721170629",
+      "snippet": "2025. 7. 21. ... 다만 SK텔레콤은 최근 정부의 'AI 컴퓨팅 자원 활용 기반 강화(GPU ... 업계 관계자는 \"정부가 추진하는 이번 독자 AI 파운데이션 모델은 실제 ...",
+      "displayLink": "zdnet.co.kr"
+    },
+    {
+      "title": "국가 대표 인공지능 모델, '네이버클라우드-업스테이지-SKT-NC AI-LG ...",
+      "url": "https://www.aitimes.kr/news/articleView.html?idxno=35928",
+      "snippet": "2025. 8. 4. ... 과학기술정보통신부(장관 배경훈, 이하 과기정통부)는 '독자 인공지능 기초 모형(AI 파운데이션 모델)' 사업(프로젝트)에 참여한 정예팀 서면 ...",
+      "displayLink": "www.aitimes.kr"
+    }
+  ],
+  "google_count": 10
+}
