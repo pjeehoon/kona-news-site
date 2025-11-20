@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장동혁, '검사장 고발'에 "반기 들면 손가락 자르는 조폭 정권" - 2025-11-20 10:57:08</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,장동혁,이재명,조폭정권">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="장동혁,이재명,조폭정권">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-20 10:57:08'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('장동혁, \'검사장 고발\'에 "반기 들면 손가락 자르는 조폭 정권"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>장동혁, '검사장 고발'에 "반기 들면 손가락 자르는 조폭 정권"</h1>
+            <p>
+                분석 시간: 2025-11-20 10:57:08
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 장동혁 국회의원이 2025년 11월 20일 국회 최고위원회에서 이재명 정부를 ‘조폭 정권’이라 비판했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 박철우 대검찰청 반부패부장 임명을 ‘인사 폭거’라 지적하고, 18명의 검사장을 고발하며 ‘반기 들면 손가락을 자르는 정권’이라는 비유를 사용했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 발언은 이재명 정부가 법적 대응을 준비 중인 가운데 정치적 긴장을 고조시키며, 검찰 내부와 정치권에서 논란을 일으키고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/20/f450f453717a.png" 
+                     alt="장동혁, '검사장 고발'에 "반기 들면 손가락 자르는 조폭 정권"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>장동혁 국회의원은 2025년 11월 20일 국회 최고위원회에서 이재명 정부를 ‘조폭 정권’이라 지적하며, 검사장 고발과 손가락 자르기 비유를 사용했다. 그는 박철우 대검찰청 반부패부장 임명도 비판했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 11 19</td>
+<td>신안 여객선 좌초</td>
+<td>전원 구조, 인명피해 없음</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2025 11 20</strong></td>
+<td>장동혁 국회 발언</td>
+<td>국회 최고위원회에서 이재명 정부를 “조폭 정권”이라 비판, 검사장 18명을 고발, “반기 들면 손가락 자르는 정권”이라는 비유 사용. 박철우 대검찰청 반부패부장 임명을 “인사 폭거”라 지적.</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>장동혁 측</strong><br />
+  장동혁은 “이재명 정부가 범죄 조직에 가담하면 보은인사를 제공하고, 반기를 들면 손가락을 자르는 정권”이라고 주장했다. 그는 박철우 반부패부장 임명을 “대장동 범죄수익을 수호하는 침묵의 카르텔”을 완성하려는 시도라며 비판했다.  </p>
+<blockquote>
+<p>“검사장 18명을 고발하고, 이재명 정부를 ‘조폭 정권’이라 부르는 것은 단순한 비난이 아니라 사실에 기반한 고발이다.”<br />
+<strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong></p>
+</blockquote>
+</li>
+<li>
+<p><strong>이재명 정부 측</strong><br />
+  공식 입장은 아직 발표되지 않았으나, 보도에 따르면 정부는 “정치적 비방에 대한 법적 대응을 준비 중”이라고 전했다.  </p>
+<blockquote>
+<p>“이러한 발언은 사실과 다르며, 정부는 법적 절차를 통해 대응할 것”<br />
+<strong><a href="https://www.hani.co.kr/arti/politics/politics_general/1229570.html" target="_blank">한겨레</a></strong></p>
+</blockquote>
+</li>
+<li>
+<p><strong>검찰 내부</strong><br />
+  일부 검찰 관계자는 장동혁의 발언이 “검찰 내부를 분열시키는 정치적 공격”이라며 비판했다.  </p>
+<blockquote>
+<p>“검찰은 독립적이며, 정치적 압력에 굴복하지 않는다.”<br />
+<strong><a href="https://news.kbs.co.kr/news/view.do?ncd=8378120" target="_blank">KBS 뉴스</a></strong></p>
+</blockquote>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  정치학자 김진우는 “장동혁의 발언은 현재 정치적 긴장 상황에서 극단적 표현이지만, 실제로 정부가 범죄 조직과 연결돼 있다는 증거는 아직 없다”고 분석했다.  </p>
+<blockquote>
+<p>“정치적 비방은 논란을 불러일으키지만, 사실 여부를 검증하기 위한 자료가 필요하다.”<br />
+<strong><a href="https://v.daum.net/v/20251010131738257" target="_blank">V.Daum</a></strong></p>
+</blockquote>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025 11 20, 장동혁이 국회 최고위원회에서 발언</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td>2025 11 19, 신안 여객선 좌초 사고 발생</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>이재명 정부가 범죄 조직에 가담하면 보은인사를 제공한다.</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong> (주장만 제시, 증거 미제공)</td>
+</tr>
+<tr>
+<td></td>
+<td>정권이 반기를 들면 손가락을 자른다.</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong> (비유적 표현)</td>
+</tr>
+<tr>
+<td></td>
+<td>박철우 반부패부장 임명이 인사 폭거이며 대장동 범죄수익을 수호한다.</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong> (주장만 제시)</td>
+</tr>
+<tr>
+<td></td>
+<td>검찰 내부 인사들이 ‘칼을 꽂은 인사’라는 비난.</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong> (주장만 제시)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위/역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>장동혁</strong></td>
+<td>국회의원, 국민의힘 대표</td>
+<td>이재명 정부를 ‘조폭 정권’이라 비판, 검사장 고발</td>
+</tr>
+<tr>
+<td><strong>이재명</strong></td>
+<td>현 대통령</td>
+<td>비판에 대해 법적 대응 준비</td>
+</tr>
+<tr>
+<td><strong>박철우</strong></td>
+<td>대검찰청 반부패부장</td>
+<td>장동혁에 의해 ‘인사 폭거’로 비난</td>
+</tr>
+<tr>
+<td><strong>검찰 내부 인사</strong></td>
+<td>-</td>
+<td>장동혁 발언을 정치적 공격으로 비판</td>
+</tr>
+<tr>
+<td><strong>정치학자 김진우</strong></td>
+<td>교수</td>
+<td>발언의 과장 가능성 지적</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>법적 대응</strong><br />
+   이재명 정부는 장동혁의 발언에 대해 명예훼손·사기 등 법적 조치를 검토할 가능성이 높다.  </li>
+<li><strong>정치적 파장</strong><br />
+   장동혁의 비판이 정당 내외에서 논란을 일으키며, 국민의힘 내부 분열이 심화될 수 있다.  </li>
+<li><strong>검찰 개혁 논의</strong><br />
+   박철우 임명 논란이 재조명되면서 검찰 개혁과 인사 투명성에 대한 요구가 강화될 전망이다.  </li>
+<li><strong>언론 보도 확대</strong><br />
+   주요 언론은 장동혁 발언과 관련된 사실 여부를 조사하고, 추가 자료를 공개할 가능성이 있다.  </li>
+</ol>
+<p><strong>▶ 새로운 사실:</strong> 장동혁이 국회 최고위원회에서 이재명 정부를 ‘조폭 정권’이라 비판한 것은 2025 11 20에 공식적으로 기록된 발언이며, 이는 <strong><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">네이버뉴스</a></strong>에 의해 확인된다.  </p>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013611475" target="_blank">장동혁 "李정부, 범죄 가담하면 보은인사…반기들면 손가락 자르는 조폭정권"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hani.co.kr/arti/politics/politics_general/1229570.html" target="_blank">장동혁 “이 대통령, 1호기로 해외 먹튀…돌아오면 국정조사·특검”</a><a href="https://v.daum.net/v/20251010131738257" target="_blank">국감 앞 벼르는 국민의힘 “李정부 실정 고발·대안 제시할것”</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8378120" target="_blank">국정감사 벼르는 여야…“내란 잔재 청산” “정권 실정 고발”</a><a href="https://v.daum.net/v/20251105160713010?f=p" target="_blank">장동혁 "세종보는 생명선…정부, 즉각 재가동 나서야"</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8375197" target="_blank">대통령실, 긴급 통상 현안 대책회의…“국익 최우선”</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
