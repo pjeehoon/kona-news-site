@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>특구재단-SK에코플랜트, 반도체 딥테크 기업 키운다 - 2025-11-21 14:40:01</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,SK에코,특구재단,반도체">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="SK에코,특구재단,반도체">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 14:40:01'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('특구재단-SK에코플랜트, 반도체 딥테크 기업 키운다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>특구재단-SK에코플랜트, 반도체 딥테크 기업 키운다</h1>
+            <p>
+                분석 시간: 2025-11-21 14:40:01
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> SK에코플랜트와 연구개발특구진흥재단이 공동 운영하는 ConTech Meet‑Up Day 프로그램을 통해 2025년 11월 21일에 6개 반도체 딥테크 스타트업을 선정·시상했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> EnhaTech는 4억 원 시드 투자를 유치했고, 세프라텍은 초순수 공정 탈기막 기술을 보유해 공공기술 매칭으로 연구소기업 설립·공동 개발을 추진한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 지원은 반도체 부품·공정 혁신을 가속화해 국내 반도체 제조 경쟁력을 강화하고, 스타트업의 상용화 전환 속도를 높일 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/dbc3468411d9.png" 
+                     alt="특구재단-SK에코플랜트, 반도체 딥테크 기업 키운다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>반도체 산업의 핵심 부품·공정 기술을 보유한 스타트업들이 SK에코플랜트와 연구개발특구진흥재단의 공동 프로그램을 통해 자금·연구·시제품 실증을 지원받으며 성장하고 있다. 2025년 11월 21일 개최된 제6회 ConTech Meet‑Up Day에서 선정된 6개 기업은 반도체 초순수 공정, 로봇, AI 등 다양한 딥테크 분야를 대표한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020년</td>
+<td>특구재단과 SK에코플랜트가 <strong>ConTech Meet‑Up Day</strong> 프로그램 공동 운영 시작</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002561280" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td>2025년 상반기</td>
+<td><strong>EnhaTech</strong>가 특구재단 실증기획 프로그램을 통해 <strong>4억 원 시드 투자</strong> 유치, SK 계열사와 기술 실증 진행</td>
+<td><a href="https://news.skecoplant.com/sk-ecoplant/18852/" target="_blank">SK에코플랜트</a></td>
+</tr>
+<tr>
+<td>2025년 11월 21일</td>
+<td>제6회 ConTech Meet‑Up Day 시상식에서 <strong>6개 반도체 딥테크 기업</strong> 선정 및 시상</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002561280" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td>2025년 11월 21일</td>
+<td>선정 기업: <strong>세프라텍, H&amp;W, 카본밸류, 고레로보틱스, 투피트, 미스릴</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002561280" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td>2025년 11월 21일</td>
+<td>세프라텍은 <strong>반도체 초순수 공정 탈기막 제조 기술</strong> 보유, 특구재단 공공기술 매칭으로 연구소기업 설립·공동 개발 추진 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002561280" target="_blank">조선비즈</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>긍정적 시각</h3>
+<ul>
+<li><strong>산업계 전문가</strong>는 SK에코플랜트와 특구재단의 협업이 <strong>반도체 부품·공정 혁신</strong>을 가속화할 것으로 보고 있다. 특히, 세프라텍의 탈기막 기술은 초순수 공정의 품질 향상에 직결될 수 있어, 국내 반도체 제조 경쟁력 강화에 기여할 전망이다.  </li>
+<li><strong>투자자</strong>는 4억 원 시드 투자를 받은 EnhaTech와 같은 기업이 <strong>실증 단계에서 상용화까지 빠르게 전환</strong>될 가능성이 높다고 평가한다.</li>
+</ul>
+<h3>비판적 시각</h3>
+<ul>
+<li><strong>경쟁업체</strong>는 SK에코플랜트가 주도하는 대규모 지원 프로그램이 <strong>특정 기업에 편중</strong>될 수 있다는 우려를 제기한다. 이는 중소기업이 자금·기술 지원을 받기 어려워질 가능성을 시사한다.  </li>
+<li><strong>규제 전문가</strong>는 반도체 공정 기술이 <strong>국가 안보와 직결</strong>되는 만큼, SK에코플랜트와 특구재단이 제공하는 지원이 <strong>보안 검토</strong> 없이 진행될 경우 위험이 존재할 수 있다고 지적한다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2020년부터 ConTech Meet‑Up Day 공동 운영, 2025년 11월 21일 시상식에서 6개 기업 선정, EnhaTech의 4억 원 시드 투자 및 SK 계열사와의 실증 진행 등.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음. 모든 주요 내용은 공식 발표·보도 자료를 통해 확인 가능.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>SK에코플랜트</strong>: 반도체, AI, 로봇 등 첨단 기술 분야에서 <strong>공동 주최</strong> 및 <strong>자금 지원</strong>을 담당. SK그룹의 기술 혁신 전략과 연계.  </li>
+<li><strong>연구개발특구진흥재단</strong>: <strong>공공기술 매칭</strong> 및 <strong>실증기획 프로그램</strong> 운영을 통해 스타트업의 기술 상용화를 지원.  </li>
+<li><strong>세프라텍, EnhaTech 등</strong>: <strong>딥테크 스타트업</strong>으로, SK에코플랜트와 특구재단의 지원을 통해 <strong>연구·개발·시제품 실증</strong>을 진행 중.  </li>
+<li><strong>SK 계열사</strong>: 실증 단계에서 <strong>공정·제품 테스트</strong>를 수행하며, <strong>산업 생태계 연계</strong>를 강화.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>기술 상용화 가속화</strong>: ConTech Meet‑Up Day에서 선정된 기업들은 SK에코플랜트와 특구재단의 지원을 바탕으로 <strong>시제품 개발·공정 실증</strong>을 진행하며, 상용화 시점이 단축될 전망이다.  </li>
+<li><strong>산업 생태계 확대</strong>: SK에코플랜트의 AI·로봇·반도체 혁신기술 공모전이 지속될수록 <strong>스타트업 유입</strong>이 늘어나고, <strong>반도체 공급망</strong>이 다변화될 가능성이 있다.  </li>
+<li><strong>규제·보안 강화</strong>: 국가 안보와 직결되는 반도체 공정 기술이 주류가 됨에 따라 <strong>규제 검토</strong>와 <strong>보안 프로토콜</strong>이 강화될 것으로 예상된다.  </li>
+</ul>
+<p><strong>▶</strong> 2025년 11월 21일 개최된 제6회 ConTech Meet‑Up Day는 <strong>반도체 딥테크 기업 육성</strong>의 한 축으로 자리매김하며, SK에코플랜트와 특구재단이 주도하는 <strong>공동 지원 모델</strong>이 국내 반도체 산업의 혁신을 가속화할 핵심 동력으로 부상하고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=MdbeMf_HLi8" target="_blank">CONTECH MEET UP DAY 공모전</a><a href="https://www.youtube.com/watch?v=mwZOAJ9bChw" target="_blank">[2021 ConTech Meet Up Day Sket...</a><a href="https://www.youtube.com/watch?v=Yp-8r6bii3Q" target="_blank">친환경을 이끌 혁신 기술을 만나다! ConTech Me...</a><a href="https://www.youtube.com/watch?v=fWpwNh9-NpA" target="_blank">construction 4.0 by ConTech - ...</a><a href="https://www.youtube.com/watch?v=9ACPvEbRFmY" target="_blank">제11회 밋업데이(MEET-UP DAY) 다시보기!</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/016/0002561280" target="_blank">특구재단-SK에코플랜트, 반도체 딥테크 기업 키운다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.skecoplant.com/sk-ecoplant/18852/" target="_blank">SK에코플랜트, AI·로봇·반도체 혁신기술 공모전 '2025 콘테크 미트업 ...</a><a href="https://www.innopolis.or.kr/event?menuId=MENU00403&sel_date=20220114&division=4" target="_blank">공지사항 < 공지/공고 < 대덕특구 < 5개특구 < 연구개발특구+</a><a href="https://news.skecoplant.com/sk-ecoplant/17401/" target="_blank">SK에코플랜트, 개방형 기술 공모전 '2024 콘테크 미트업 데이' 시상식 ...</a><a href="https://www.skecoplant.com/contents/boardView?contentsNo=yLPc9OIniG&contentsOrders=1&languageCode=CM030001&menuCode=M6100" target="_blank">보도자료 (상세) | 미디어센터 | SK에코플랜트</a><a href="https://news.skecoplant.com/sk-ecoplant/1784/" target="_blank">친환경을 이끌 혁신 기술을 만나다! ConTech Meet-Up Day | SK에코 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
