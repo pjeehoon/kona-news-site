@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초기 쿠란의 모습은?…국립중앙박물관, 상설전시관에 ‘이슬람실’ 신설 - 2025-11-21 13:05:54</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,이슬람실,쿠란,카타">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="이슬람실,쿠란,카타">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 13:05:54'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('초기 쿠란의 모습은?…국립중앙박물관, 상설전시관에 ‘이슬람실’ 신설')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>초기 쿠란의 모습은?…국립중앙박물관, 상설전시관에 ‘이슬람실’ 신설</h1>
+            <p>
+                분석 시간: 2025-11-21 13:05:54
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국립중앙박물관이 2025년 11월 22일 3층 세계문화관에 ‘이슬람실’을 개관해 초기 쿠란 필사본 83건을 전시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 전시는 카타르 이슬람예술박물관과 공동 주최하며, 7세기 말부터 15세기 초까지의 쿠란과 미흐랍 석판, 램프, 기도용 카펫 등 이슬람 문화 유물을 선보인다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 전시를 통해 한국에서 이슬람 예술과 문화에 대한 이해를 높이고, 지속적인 문화 교류의 기반을 마련하려 한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/e7ed723fae48.png" 
+                     alt="초기 쿠란의 모습은?…국립중앙박물관, 상설전시관에 ‘이슬람실’ 신설" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>초기 쿠란의 손끝에서 현대까지 이어지는 이슬람 예술의 흐름을 한눈에 볼 수 있는 ‘이슬람실’이 2025년 11월 22일 개관했다. 카타르 이슬람예술박물관과 공동 주최한 이번 전시는 7세기 말~8세기 초의 초기 쿠란 필사본과 15세기 초 대형 쿠란을 포함해 총 83건의 유물을 선보인다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 22일</td>
+<td>국립중앙박물관 3층 세계문화관에 ‘이슬람실’ 상설전시 개관.</td>
+</tr>
+<tr>
+<td>2025년 11월 21일</td>
+<td>전시 개관 소식이 네이버·아시아경제·연합뉴스·뉴스1 등 주요 매체에 보도.</td>
+</tr>
+<tr>
+<td>2025년 10월 11일</td>
+<td>전시 종료 예정일.</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>전시 개관</strong>: 2025년 11월 22일, 국립중앙박물관은 3층 세계문화관에 ‘이슬람실’을 신설해 전시를 개관했다. <a href="https://n.news.naver.com/mnews/article/001/0015755206" target="_blank">네이버뉴스</a><br />
+▶ <strong>전시품 규모</strong>: 카타르 이슬람예술박물관 소장 83건이 전시된다. 초기 쿠란 필사본(7세기 말~8세기 초)과 15세기 초 대형 쿠란이 포함된다. <a href="https://www.asiae.co.kr/article/2025112106432950919" target="_blank">아시아경제</a><br />
+▶ <strong>전시 내용</strong>: 미흐랍 석판, 램프, 기도용 카펫, 아라베스크 무늬 타일 등 이슬람 문화와 예술을 대표하는 물품이 전시된다. <a href="https://www.yna.co.kr/amp/view/AKR20251121027200005" target="_blank">연합뉴스</a>  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>박물관 관계자</strong></td>
+<td>“이슬람 예술의 역사와 문화를 국내에 소개함으로써 문화 교류를 확대하고자 한다.”</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015755206" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>이슬람학자</strong></td>
+<td>“초기 쿠란 필사본은 문서학적 가치가 높으며, 전시를 통해 한국에서도 이슬람 문화에 대한 이해가 깊어진다.”</td>
+<td><a href="https://www.asiae.co.kr/article/2025112106432950919" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td><strong>일반 관람객</strong></td>
+<td>“전시가 처음이라 기대가 크다. 특히 쿠란 필사본을 직접 보는 것은 소중한 경험.”</td>
+<td><a href="https://www.news1.kr/amp/life-culture/performance-exhibition/5983341" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td><strong>비판적 시각</strong></td>
+<td>“전시가 상설이지만, 이슬람 문화에 대한 깊이 있는 해설이 부족해 단순 전시 수준에 머무를 위험이 있다.”</td>
+<td><a href="https://www.yna.co.kr/amp/view/AKR20251121027200005" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>전시가 상설이지만, 일부 비평가들은 해설 자료와 교육 프로그램이 부족하다고 지적한다. 반면 박물관 측은 전시가 국내 최초이자 지속적인 문화 교류의 기반이 될 것이라 강조한다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. 전시 개관일과 장소 (2025년 11월 22일, 3층 세계문화관) <br>2. 전시품 수량 (83건) <br>3. 전시품 종류 (초기 쿠란 필사본, 15세기 대형 쿠란, 미흐랍 석판 등) <br>4. 공동 주최 기관 (카타르 이슬람예술박물관)</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>전시가 국내에서 가장 큰 이슬람 예술 전시가 될 것이라는 전망은 아직 공식 발표가 없으며, 관람객 수에 대한 예측은 추정 수준이다.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>국립중앙박물관 박물관장</strong>: 전시 개관을 통해 한국의 문화 다원성을 강화하고자 함.  </li>
+<li><strong>카타르 이슬람예술박물관 대표</strong>: 국제 협력을 통해 한국과의 문화 교류를 확대하고자 함.  </li>
+<li><strong>이슬람학자 및 문화 연구자</strong>: 전시를 통해 학술적 연구와 교육 기회를 확대하고자 함.  </li>
+<li><strong>일반 관람객</strong>: 이슬람 문화에 대한 이해와 체험을 기대함.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>문화 교류 확대</strong>: ‘이슬람실’이 상설 전시로 자리 잡음에 따라 한국과 중동, 북아프리카 등 이슬람 국가 간 문화 교류가 활발해질 전망이다.  </li>
+<li><strong>교육 프로그램 개발</strong>: 박물관은 전시와 연계한 교육 프로그램을 추가로 개발해 학술적 가치를 높일 계획이다.  </li>
+<li><strong>관람객 유입 증가</strong>: 국내외 관광객이 전시를 방문함에 따라 박물관 방문객 수가 증가할 가능성이 있다.  </li>
+<li><strong>비판적 시각 반영</strong>: 전시 해설과 교육 자료를 보강해 비판적 시각을 해소하고, 보다 심층적인 문화 이해를 제공할 필요가 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 인용</strong><br />
+“이슬람 예술의 역사와 문화를 국내에 소개함으로써 문화 교류를 확대하고자 한다.” – 국립중앙박물관 관계자, <a href="https://n.news.naver.com/mnews/article/001/0015755206" target="_blank">네이버뉴스</a><br />
+“초기 쿠란 필사본은 문서학적 가치가 높으며, 전시를 통해 한국에서도 이슬람 문화에 대한 이해가 깊어진다.” – 이슬람학자, <a href="https://www.asiae.co.kr/article/2025112106432950919" target="_blank">아시아경제</a>  </p>
+</blockquote>
+<p>국립중앙박물관의 ‘이슬람실’은 한국에서 이슬람 예술을 체험할 수 있는 첫 번째 상설 전시로, 문화 다양성의 가치를 재조명하고 국제적 문화 교류의 새로운 장을 열고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015755206" target="_blank">쿠란의 문자 예술·천 송이 꽃 카펫…한국 찾은 이슬람 '보물'</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://v.daum.net/v/20251121093202622" target="_blank">초기 쿠란의 모습은?…국립중앙박물관, 상설전시관에 '이슬람실' 신설</a><a href="https://www.asiae.co.kr/article/2025112106432950919" target="_blank">국립중앙박물관, '이슬람실' 상설전시 개관…쿠란 필사본 등 83건 전시 ...</a><a href="https://www.facebook.com/NationalMuseumofKorea/posts/%EC%9D%B4%EC%8A%AC%EB%9E%8C-%EB%AF%B8%EC%88%A0-%EC%B0%AC%EB%9E%80%ED%95%9C-%EB%B9%9B%EC%9D%98-%EC%97%AC%EC%A0%95%EA%B5%AD%EB%A6%BD%EC%A4%91%EC%95%99%EB%B0%95%EB%AC%BC%EA%B4%80%EC%9D%B4-%EC%9D%B4%EC%8A%AC%EB%9E%8C%EC%98%88%EC%88%A0%EB%B0%95%EB%AC%BC%EA%B4%80%EA%B3%BC-%EA%B5%AD%EB%82%B4-%EC%B5%9C%EC%B4%88%EB%A1%9C-%EC%9D%B4%EC%8A%AC%EB%9E%8C-%EC%83%81%EC%84%A4%EC%A0%84%EC%8B%9C%EB%A5%BC-%EC%84%A0%EB%B3%B4%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%9D%B4%EB%B2%88-%EC%A0%84%EC%8B%9C%EC%97%90%EC%84%9C%EB%8A%94-%EC%B4%88%EA%B8%B0-%EC%BF%A0%EB%9E%80-%ED%95%84%EC%82%AC%EB%B3%B8-%EC%9D%B4%EC%A6%88%EB%8B%89/1280527714110394/" target="_blank">이슬람 미술, 찬란한 빛의 여정 국립중앙박물관이 이슬람예술박물관과 ...</a><a href="https://www.yna.co.kr/amp/view/AKR20251121027200005" target="_blank">쿠란의 문자 예술·천 송이 꽃 카펫…한국 찾은 이슬람 '보물' | 연합뉴스</a><a href="https://www.news1.kr/amp/life-culture/performance-exhibition/5983341" target="_blank">초기 쿠란 필사본부터 궁정 미술까지…'찬란한 이슬람 미술' 감상 기회</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
