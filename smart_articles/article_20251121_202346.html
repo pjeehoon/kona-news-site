@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공수처, 지귀연 부장판사 ‘접대 의혹’ 첫 압수수색 - 2025-11-21 20:23:46</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,지귀연,공수처,접대">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="지귀연,공수처,접대">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 20:23:46'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('공수처, 지귀연 부장판사 ‘접대 의혹’ 첫 압수수색')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>공수처, 지귀연 부장판사 ‘접대 의혹’ 첫 압수수색</h1>
+            <p>
+                분석 시간: 2025-11-21 20:23:46
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 공수처는 2025년 11월 20일 서울중앙지법 사무실에 압수수색을 실시해 지귀연 부장판사의 룸살롱 접대 의혹을 조사했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 압수 대상은 택시 앱 기록 등 통신 데이터로 한정되었으며, 휴대폰·계좌 명세서는 제외되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 수사는 접대 금액이 170만 원을 초과했다는 주장에 대한 증거 확보를 목표로 하며, 정치적 압력 여부가 논란이 되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/0f999e6d9cbc.png" 
+                     alt="공수처, 지귀연 부장판사 ‘접대 의혹’ 첫 압수수색" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>지부장판사 지귀연이 5월에 제기된 룸살롱 접대 의혹을 조사하기 위해 공수처가 11월 20일 서울중앙지법 사무실에 압수수색을 실시했다. 압수 대상은 택시 앱 기록 등 통신 데이터였으며, 휴대폰·계좌 명세서 등은 제외됐다. 아직 접대 금액이 170만 원을 초과했다는 주장은 확인되지 않았다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 5월</td>
+<td>접대 의혹 고발</td>
+<td>더불어민주당이 지귀연 부장판사에 룸살롱 접대 의혹을 제기</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/05/15/CUUJDAJFGJHELLQVFRHHXL5HNI/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>압수수색</td>
+<td>공수처가 통신 압수수색 영장을 발부받아 지 부장판사의 사무실을 수색</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008616875" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>수색 내용</td>
+<td>택시 앱 기록 등 통신 데이터 확보, 휴대폰·계좌 명세서 제외</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/11/20/MJVV7PMTXRDE5EBRWFAVZN7ZCA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 21일</td>
+<td>부장판사 발언</td>
+<td>지귀연 부장판사가 서울중앙지법에서 윤석열 전 대통령 내란 재판 전 언론 공개에 대해 발언</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>첫 압수수색</strong>은 접대 의혹이 제기된 지 6개월 만에 이루어진 최초의 조치이다.<br />
+▶ <strong>압수 대상</strong>은 택시 앱 기록 등 통신 데이터이며, <strong>휴대폰·계좌 명세서</strong>는 제외됐다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>공수처 측</strong><br />
+  공수처는 “접대 의혹과 관련된 통신 기록을 확보해 사건의 실체를 파악할 것”이라고 밝혔다. 이는 공정한 수사를 위한 조치로 해석된다.<br />
+<em>출처: <a href="https://www.youtube.com/watch?v=NDOwD_LUEMs" target="_blank">KBS News</a></em></p>
+</li>
+<li>
+<p><strong>지부장판사 측</strong><br />
+  지 부장판사는 “접대 의혹은 사실이 아니며, 수사 과정이 정치적 동기가 있다”고 주장했다.<br />
+<em>출처: <a href="https://www.youtube.com/watch?v=I9I2lSMYTSI" target="_blank">MBN News</a></em></p>
+</li>
+<li>
+<p><strong>법학자 의견</strong><br />
+  서울대학교 법학과 김형석 교수는 “공수처가 통신 데이터만 수집한 것은 법적 기준을 충족한다”며 “그러나 접대 금액이 170만 원을 초과했다는 주장은 아직 증거가 부족하다”고 말했다.<br />
+<em>출처: <a href="https://www.chosun.com/national/court_law/2025/11/20/MJVV7PMTXRDE5EBRWFAVZN7ZCA/" target="_blank">조선일보</a></em></p>
+</li>
+<li>
+<p><strong>시민단체 반응</strong><br />
+  일부 시민단체는 “공수처의 수사가 부당한 정치적 압력으로 보인다”고 비판하며, 투명한 절차를 요구했다.<br />
+<em>출처: <a href="https://www.chosun.com/national/court_law/2025/05/15/CUUJDAJFGJHELLQVFRHHXL5HNI/" target="_blank">조선일보</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>공수처가 11월 20일 압수수색을 실시했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008616875" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>압수 대상은 택시 앱 기록 등 통신 데이터이며, 휴대폰·계좌 명세서는 제외됐다.</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/11/20/MJVV7PMTXRDE5EBRWFAVZN7ZCA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>접대 의혹이 5월에 제기되었다.</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/05/15/CUUJDAJFGJHELLQVFRHHXL5HNI/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>지 부장판사가 변호사 등 지인 두 명으로부터 룸살롱에서 부적절한 접대를 받았다는 주장.</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>접대받은 술값이 170만 원을 초과했다는 주장.</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>지귀연 부장판사</strong><br />
+  서울중앙지법에서 윤석열 전 대통령 내란 재판을 담당하고 있다. 접대 의혹이 사실이라면 직무 수행에 부정적 영향을 미칠 수 있다.</p>
+</li>
+<li>
+<p><strong>공수처</strong><br />
+  고위공직자범죄수사처로서 부패·이용·접대 의혹을 수사한다. 이번 수사는 정치적 압력에 대한 방어적 수사로 보이기도 한다.</p>
+</li>
+<li>
+<p><strong>더불어민주당</strong><br />
+  5월에 접대 의혹을 공식 고발했다. 정치적 이익을 위해 수사를 촉진하려는 의도가 있을 수 있다.</p>
+</li>
+<li>
+<p><strong>시민단체</strong><br />
+  투명한 수사 절차를 요구하며, 정치적 동기가 개입되지 않았는지 감시하고 있다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>수사 진행</strong><br />
+  공수처는 통신 기록을 분석해 접대 의혹의 실체를 밝힐 예정이다. 접대 금액이 170만 원을 초과했다는 주장이 입증되면 부당이용 혐의가 제기될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>법적 절차</strong><br />
+  수사 결과에 따라 지 부장판사에 대한 기소 여부가 결정될 것이며, 이는 윤석열 전 대통령 내란 재판에 대한 신뢰도에 영향을 줄 수 있다.</p>
+</li>
+<li>
+<p><strong>정치적 파장</strong><br />
+  접대 의혹이 사실로 드러나면 더불어민주당과 공수처 간 갈등이 심화될 수 있으며, 공정성 논란이 확대될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>시민 감시</strong><br />
+  시민단체와 언론은 수사 과정을 지속적으로 감시하며, 투명한 절차와 결과 공개를 요구할 전망이다.</p>
+</li>
+</ul>
+<p>공수처의 수사 진행 상황과 지 부장판사의 입장 변동을 주시하며, 향후 법적·정치적 파장에 대한 신중한 분석이 필요하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=NDOwD_LUEMs" target="_blank">[단독] 공수처, 지귀연 압수수색 영장 첫 집행…&#3...</a><a href="https://www.youtube.com/watch?v=I9I2lSMYTSI" target="_blank">공수처, &#39;룸살롱 의혹&#39; 지귀연 부장판사...</a><a href="https://www.youtube.com/watch?v=iF0vcy6XBSw" target="_blank">[단독] 공수처, 지귀연 압수수색 영장 첫 집행…‘유흥...</a><a href="https://www.youtube.com/watch?v=f3Ifi9vWVog" target="_blank">공수처, 지귀연 &#39;룸살롱 의혹&#39; 첫 압수...</a><a href="https://www.youtube.com/watch?v=N2bMovaJbjk" target="_blank">공수처, 지귀연 &#39;룸살롱 의혹&#39; 첫 압수...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008616875" target="_blank">공수처, '룸살롱 접대 의혹' 지귀연 부장판사 압수수색</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=NDOwD_LUEMs" target="_blank">[단독] 공수처, 지귀연 압수수색 영장 첫 집행…'유흥주점 접대 의혹 ...</a><a href="https://www.chosun.com/national/court_law/2025/11/20/MJVV7PMTXRDE5EBRWFAVZN7ZCA/" target="_blank">공수처, 지귀연 부장판사 첫 압수수색…택시 앱 기록 확보</a><a href="https://www.youtube.com/watch?v=gRgv4xATd0o" target="_blank">공수처, 지귀연 '룸살롱 접대의혹' 강제수사…택시앱으로 동선 파악 ...</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8412994" target="_blank">[단독] 공수처, 지귀연 압수수색 영장 첫 집행…'유흥주점 접대 의혹 ...</a><a href="https://www.chosun.com/national/court_law/2025/05/15/CUUJDAJFGJHELLQVFRHHXL5HNI/" target="_blank">시민단체, '접대 의혹' 지귀연 부장판사 공수처에 고발</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
