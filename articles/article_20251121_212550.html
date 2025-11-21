@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학원 직원에게 흉기 휘두른 50대..."채용 거부 불만" - 2025-11-21 21:25:49</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,강남,학원,흉기">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="강남,학원,흉기">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 21:25:49'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('학원 직원에게 흉기 휘두른 50대..."채용 거부 불만"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>학원 직원에게 흉기 휘두른 50대..."채용 거부 불만"</h1>
+            <p>
+                분석 시간: 2025-11-21 21:25:49
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 50대 남성이 강남 학원에서 흉기를 휘두르며 20대 여성에게 중상을 입혔고, 도주 후 마포구에서 검거됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 피해자는 중상을 입었으나 생명에 지장은 없으며, 사건은 채용 거절을 이유로 한 직업적 갈등에서 비롯됐다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사건은 학원 주변 안전 강화와 채용 절차 개선에 대한 요구를 부각시키며, 직업적 갈등이 폭력으로 이어질 위험을 경고한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/0fa6f24d07a3.png" 
+                     alt="학원 직원에게 흉기 휘두른 50대..."채용 거부 불만"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 21일 강남 신사동 한 학원에서 50대 남성이 20대 여성에게 흉기를 휘두르고 도주한 뒤 마포구에서 검거됐다. 피해자는 중상을 입었으나 생명에 지장은 없으며, 사건은 채용 거부와 관련된 갈등으로 이어지고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 11월 21일 오전 11시 50분</strong><br />
+  강남구 신사동 소재 학원에서 <strong>A씨</strong>가 <strong>B씨</strong>에게 흉기를 휘두르며 찌른 사건 발생.<br />
+<a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 사건 직후</strong><br />
+  A씨는 택시를 타고 도주.<br />
+<a href="https://www.wikitree.co.kr/articles/1096741" target="_blank">위키트리</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 21일 오후 12시 56분</strong><br />
+  마포구 망원역 인근에서 <strong>마포경찰서</strong>에 의해 A씨가 검거.<br />
+<a href="https://www.dailian.co.kr/news/view/1576656" target="_blank">다일리안</a></p>
+</li>
+<li>
+<p><strong>▶ 피해자 B씨</strong><br />
+  병원으로 이송되어 치료를 받았으며, 생명에 지장은 없다고 확인.<br />
+<a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 사건 배경</strong><br />
+  A씨는 해당 학원에 채용을 요청했으나 거절당한 뒤 폭력 행위에 이르렀다는 보도.<br />
+<a href="https://news.nate.com/view/20251121n26201" target="_blank">네이트</a></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>경찰</strong></td>
+<td>사건 발생 직후 CCTV와 현장 영상으로 용의자 추적, 도주 후 검거까지 1시간 6분 만에 완료.</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>학원 관계자</strong></td>
+<td>채용 거절이 사건의 직접적 원인이라 주장, 학원 내부 보안 강화 필요성 강조.</td>
+<td><a href="https://www.joongang.co.kr/society/general" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td><strong>지역 주민</strong></td>
+<td>학원 주변에서 일어나는 폭력 사건이 늘어나고 있어 안전에 대한 우려가 커지고 있다.</td>
+<td><a href="https://news.nate.com/view/20251121n26201" target="_blank">네이트</a></td>
+</tr>
+<tr>
+<td><strong>전문가(직장 폭력 연구자)</strong></td>
+<td>채용 거절과 같은 직업적 갈등이 폭력으로 이어질 가능성을 경고하며, 기업과 교육기관의 상담 체계 구축을 권고.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>A씨가 2025년 11월 21일 오전 11시 50분 학원에서 B씨를 흉기로 찌른 사건 발생.</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>A씨가 도주 후 마포구에서 검거.</td>
+<td><a href="https://www.dailian.co.kr/news/view/1576656" target="_blank">다일리안</a></td>
+</tr>
+<tr>
+<td></td>
+<td>B씨가 중상을 입었으나 생명에 지장은 없음.</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>A씨가 채용 거절을 이유로 폭력에 이른 동기와 배경에 대한 상세한 심리적 분석.</td>
+<td>확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>사건이 학원 내부에서 일어난 폭력 사건이 아니라는 주장.</td>
+<td>확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>A씨 (50대 남성)</strong>  </li>
+<li>채용을 요청했으나 거절당함.  </li>
+<li>흉기 난동으로 인한 범죄 혐의와 살인미수 혐의 적용 여부가 검토 중.  </li>
+<li>
+<p><strong><a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">서울시 강남구 경찰</a></strong>가 살인미수 혐의 적용을 검토 중이라고 보도.  </p>
+</li>
+<li>
+<p><strong>B씨 (20대 여성)</strong>  </p>
+</li>
+<li>학원 직원으로 근무 중이었으며, 사건 당시 상해를 입음.  </li>
+<li>
+<p>현재 치료 중이며, 생명에 지장은 없다고 확인.  </p>
+</li>
+<li>
+<p><strong>학원</strong>  </p>
+</li>
+<li>채용 거절이 사건의 직접적 원인이라 주장.  </li>
+<li>
+<p>내부 보안 및 직원 관리 체계 강화 필요성 제기.  </p>
+</li>
+<li>
+<p><strong>경찰</strong>  </p>
+</li>
+<li>사건 발생 직후 CCTV와 현장 영상을 활용해 용의자 추적 및 검거.  </li>
+<li>사건에 대한 수사와 법적 절차 진행 중.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>법적 절차</strong><br />
+   - A씨는 현재 <strong>살인미수 혐의</strong> 적용 여부가 검토 중이며, 검거 직후 구속영장 발부 가능성.<br />
+   - 사건이 중상 입은 피해자와의 합의 여부에 따라 형사·민사 소송이 동시에 진행될 수 있다.  </p>
+</li>
+<li>
+<p><strong>학원 및 교육계</strong><br />
+   - 채용 절차와 내부 보안 강화에 대한 논의가 확대될 전망.<br />
+   - 교육기관 내 직장 폭력 예방 프로그램 도입이 가속화될 가능성.  </p>
+</li>
+<li>
+<p><strong>지역 사회</strong><br />
+   - 강남 지역 내 학원 및 교육기관 주변에서의 안전 문제에 대한 관심이 높아질 것으로 예상.<br />
+   - 주민 단체와 경찰이 협력해 지역 안전 강화 방안을 모색할 가능성.  </p>
+</li>
+<li>
+<p><strong>정책적 시사점</strong><br />
+   - 직업적 갈등이 폭력으로 이어지는 사례가 증가함에 따라, <strong>고용·채용 관련 상담 및 중재 체계</strong> 구축이 필요하다는 목소리가 커질 전망.  </p>
+</li>
+</ol>
+<p>이 사건은 채용 거절과 같은 직업적 갈등이 폭력으로 이어질 수 있음을 시사하며, 교육기관과 지역 사회가 함께 안전과 예방에 대한 노력을 강화해야 함을 강조한다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=MBdPoPxJvGs" target="_blank">[🔴이슈] 강남 학원서 20대 여성에게 흉기 휘두른 5...</a><a href="https://www.youtube.com/watch?v=IpB_c1PCTKw" target="_blank">[YTN 실시간뉴스] 강남 한복판 흉기 난동...시민들...</a><a href="https://www.youtube.com/watch?v=wPiNuh1z8Is" target="_blank">강남서 사교육 강사 흉기 위협…도주 뒤 극단선택 / 연...</a><a href="https://www.youtube.com/watch?v=_TOjW9icP1s" target="_blank">서울 강남 중학교서 흉기 난동…가해 남학생 '극단적 선...</a><a href="https://www.youtube.com/watch?v=J8kAfv2UmjU" target="_blank">교내에서 남중생이 여자동급생 흉기로 찔러…남중생, 극단...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/031/0000982962" target="_blank">[속보] 강남 학원서 20대 여성 흉기 피습⋯용의자 도주 끝에 마포서 체포</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.wikitree.co.kr/articles/1096741" target="_blank">강남 학원서 흉기 휘둘러 20대 여성 중상 입힌 50대... 학원과의 악연 ...</a><a href="https://www.dailian.co.kr/news/view/1576656" target="_blank">강남 학원서 20대 여성 흉기로 찌르고 도주한 50대 남성 검거</a><a href="https://news.nate.com/view/20251121n26201" target="_blank">강남 학원 흉기 난동 50대男, 채용 거부당한 구직자였다 : 네이트 뉴스</a><a href="https://www.joongang.co.kr/society/general" target="_blank">사회일반 1페이지 | 사회 | 중앙일보</a><a href="https://news.nate.com/view/20251121n25905" target="_blank">강남 학원서 50대 남성이 흉기 휘둘러 20대 여성 부상…'채용 거부'가 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
