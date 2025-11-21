@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>총리실, '헌법존중 TF' 자문단 구성...오늘 위촉식 - 2025-11-21 10:44:30</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,사회,헌법존중,정부혁신,TF">
+    <meta name="article-category-tags" content="정치,사회">
+    <meta name="article-content-tags" content="헌법존중,정부혁신,TF">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 10:44:30'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('총리실, \'헌법존중 TF\' 자문단 구성...오늘 위촉식')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>총리실, '헌법존중 TF' 자문단 구성...오늘 위촉식</h1>
+            <p>
+                분석 시간: 2025-11-21 10:44:30
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국무총리실은 2025년 11월 21일 헌법존중 정부혁신 TF 자문단을 출범시키고 위촉식을 진행했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 자문단은 12·3 비상계엄 전후 공직자들의 가담 여부를 조사하고, 공직자 조사 기준을 마련하며 행정기관별 활동을 관리한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> TF의 조사를 통해 헌법에 부합하는 행정 운영을 확보하고, 투명성과 공정성을 강화해 공공기관에 대한 신뢰 회복이 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/539abf94a1fa.png" 
+                     alt="총리실, '헌법존중 TF' 자문단 구성...오늘 위촉식" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 21일 국무총리실은 12·3 비상계엄 전후 공직자들의 가담 여부를 조사할 ‘헌법존중 정부혁신 TF’ 자문단을 공식 출범시키고 위촉식을 진행했다. TF는 공직자 조사 기준을 마련하고 행정기관별 활동을 관리하는 총괄 역할을 담당한다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 21일</strong> – 국무총리실이 ‘헌법존중 정부혁신 TF’ 자문단을 출범시키고 위촉식이 진행되었다.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/052/0002276147" target="_blank">네이버뉴스</a>  </li>
+<li><a href="https://www.yna.co.kr/view/AKR20251120150900001" target="_blank">연합뉴스</a>  </li>
+<li><a href="https://news.kbs.co.kr/news/view.do?ncd=8413382" target="_blank">KBS</a>  </li>
+<li><a href="https://www.ytn.co.kr/_ln/0101_202511210500447213" target="_blank">YTN</a>  </li>
+<li>자문단은 <strong>공직자 조사 기준을 마련</strong>하고, <strong>행정기관별 TF 활동을 관리</strong>하는 총리실 산하 총괄 TF를 지원한다.  </li>
+<li>TF의 주된 목적은 <strong>12·3 비상계엄 전후 공직자들의 가담 여부</strong>를 조사하고, 헌법에 부합하는 행정 운영을 확보하는 데 있다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KBS</strong></td>
+<td>긍정적</td>
+<td>“공직자 조사 기준 마련으로 투명성 강화”라는 입장. TF가 헌법 준수와 공정성을 확보할 것으로 기대.</td>
+</tr>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>중립적</td>
+<td>“국무총리실이 자문단을 출범시킨 배경과 역할을 설명”하며, 구체적 조사 절차는 아직 공개되지 않음.</td>
+</tr>
+<tr>
+<td><strong>YTN</strong></td>
+<td>비판적</td>
+<td>“정치적 압력에 노출될 가능성”을 지적하며, TF가 정치적 도구로 활용될 위험성을 언급.</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>균형적</td>
+<td>“헌법 존중은 필수적이지만, 조사 과정에서 공직자 인권 보호가 병행돼야 한다”는 주장을 제시.</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>- TF 출범 및 위촉식이 2025년 11월 21일에 진행되었다. <br> - 자문단은 공직자 조사 기준 마련과 행정기관별 TF 활동 관리 역할을 담당한다. <br> - TF는 12·3 비상계엄 전후 공직자 가담 여부를 조사한다.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- TF 구성원 명단 및 구체적 조사 절차는 아직 공개되지 않았다. <br> - TF가 실제로 어떤 결과를 도출할지에 대한 예측은 불확실하다.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>국무총리실</strong> – TF 출범과 위촉식 주관, 헌법 준수와 행정 투명성 확보를 목표로 함.  </li>
+<li><strong>고위 관료(명칭 미공개)</strong> – TF를 이끌고, 조사 기준을 마련할 책임이 있음.  </li>
+<li><strong>공직자</strong> – 조사 대상이며, 결과에 따라 직무에 영향이 있을 수 있음.  </li>
+<li><strong>시민·시민단체</strong> – 공직자 조사와 헌법 존중에 대한 관심이 높으며, 투명성 확보를 기대.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>조사 진행</strong>: TF가 12·3 비상계엄 전후 공직자 가담 여부를 조사하면서, 구체적 조사 절차와 기준이 공개될 가능성이 높다.  </li>
+<li><strong>정책 개선</strong>: 조사 결과에 따라 공직자 윤리 규정 및 헌법 준수 방안이 강화될 수 있다.  </li>
+<li><strong>정치적 반응</strong>: 일부에서는 TF가 정치적 도구로 활용될 위험을 우려하며, 반대 의견이 제기될 수 있다.  </li>
+<li><strong>공공 신뢰</strong>: 투명하고 공정한 조사 과정이 진행된다면, 공공기관에 대한 신뢰 회복에 기여할 전망이다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>헌법존중 정부혁신 TF</strong>는 12·3 비상계엄 전후 공직자 가담 여부를 조사하기 위해 출범.<br />
+- <strong>위촉식</strong>은 2025년 11월 21일에 국무총리실에서 진행되었으며, 여러 언론이 보도.<br />
+- TF는 <strong>공직자 조사 기준</strong>을 마련하고, <strong>행정기관별 활동</strong>을 관리하는 총괄 역할을 담당.<br />
+- 앞으로의 조사 과정과 결과가 공직자 윤리 및 헌법 준수에 미칠 영향이 주목된다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=zlrHgNyN-Os" target="_blank">정부, ‘헌법존중 정부혁신 TF’ 가동 선언...송언석...</a><a href="https://www.youtube.com/watch?v=jsL4Eo_QutI" target="_blank">The Truth About the Constituti...</a><a href="https://www.youtube.com/watch?v=qYq4uByrUWs" target="_blank">헌법존중 정부혁신 TF 본격화…공직사회 ‘뒤숭숭’ / ...</a><a href="https://www.youtube.com/watch?v=osDg8muNeFM" target="_blank">내란 극복 위한 '헌법존중 정부혁신' TF 구성 가닥</a><a href="https://www.youtube.com/watch?v=9FTWcowxrF4" target="_blank">신동욱 "헌법존중 정부혁신TF, 공무원 핸드폰 조사가 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/052/0002276147" target="_blank">[오늘의 주요 일정] 총리실, '헌법존중 TF' 자문단 구성...오늘 위촉식</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.kbs.co.kr/news/view.do?ncd=8412811" target="_blank">행안부, 헌법존중 TF 가동…'12·3 비상계엄' 참여·협조자 조사</a><a href="https://www.yna.co.kr/view/AKR20251120150900001" target="_blank">총리실, '헌법존중 TF' 자문단 구성…내일 위촉식 | 연합뉴스</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8413382" target="_blank">총리실, '헌법존중 TF' 자문단 구성…오늘 위촉식</a><a href="https://v.daum.net/v/20251120202843514" target="_blank">총리실, '헌법존중 TF' 자문단 구성…내일(21일) 위촉식</a><a href="https://www.ytn.co.kr/_ln/0101_202511210500447213" target="_blank">[오늘의 주요 일정] 총리실, '헌법존중 TF' 자문단 구성...오늘 위촉식 | YTN</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
