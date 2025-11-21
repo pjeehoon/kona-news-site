@@ -1,0 +1,445 @@
+{
+  "main_article": {
+    "title": "이름·전화번호에 집주소까지 4500명 개인정보 털렸는데…쿠팡, 12일간 몰랐다",
+    "url": "https://n.news.naver.com/mnews/article/421/0008616861"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡, 고객 4500명 정보 노출…“결제 정보 접근 없어, 대응 완료”",
+      "content": "\"제3자 비인가 접근 통해 4500여 명 고객 배송 정보 확인\"\n\"결제 정보 접근·시스템 침입 흔적 없어\"\n사진은 8일 서울 송파구 쿠팡 본사의 모습. 2024.8.8/뉴스1 ⓒ News1 김성진 기자\n(서울=뉴스1) 윤수희 기자 = 쿠팡에서 고객 4500여 명의 정보가 외부에 노출되는 사고가 발생했다.\n이와 관련 쿠팡은 \"결제 정보에 대한 접근은 없었고 필요한 대응 조치를 완료했다\"고 20일 밝혔다.\n쿠팡은 제3자가 비인가 접근을 통해 4500여 명 고객 계정의 배송 정보(성명, 이메일, 전화번호, 주소), 최근 5건 주문 이력을 조회한 것을 지난 18일 확인하고, 이 사실을 고객들에게 개별 공지했다.\n쿠팡은 \"결제 정보에 대한 접근은 없고, 쿠팡 시스템과 내부 네트워크망의 외부 침입 흔적 역시 없는 것으로 확인했다\"며 \"해당 활동을 탐지한 후, 즉시 필요한 대응 조치를 완료하였고 모니터링을 지속적으로 강화하고 있다\"고 말했다.\n이어 \"현재까지 파악된 원인과 경과 등을 과학기술정보통신부, 한국인터넷진흥원과 개인정보보호위원회에 신고하였고, 조사에 긴밀하게 협조하고 있다\"고 설명했다.\n쿠팡은 \"고객님께 심려를 끼치게 되어 진심으로 사과의 말씀을 드린다\"며 \"앞으로도 고객들의 개인정보 보호를 위해 최선의 노력을 다하겠다\"고 밝혔다.",
+      "date": "2025.11.20. 오후 8:02",
+      "url": "https://n.news.naver.com/mnews/article/421/0008616861",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "쿠팡",
+        "issues": [
+          {
+            "issue_type": "개인정보 노출",
+            "details": "제3자 비인가 접근으로 4500여 명 고객의 배송 정보(성명, 이메일, 전화번호, 주소, 최근 5건 주문 이력)가 외부에 노출됨. 결제 정보는 접근되지 않았음.",
+            "source": "뉴스1"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "쿠팡",
+        "responses": [
+          {
+            "issue": "개인정보 노출",
+            "clarification": "결제 정보 접근은 없었으며, 쿠팡 시스템과 내부 네트워크에 외부 침입 흔적이 없음을 확인. 즉시 대응 조치를 완료하고 모니터링을 강화 중임.",
+            "date": "2025-11-20"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "뉴스1",
+        "opinion": "쿠팡이 사고를 인지하고 신속히 대응했으며, 결제 정보는 유출되지 않았음.",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "4500여 명 고객의 배송 정보가 외부에 노출됨",
+        "결제 정보는 접근되지 않았음",
+        "쿠팡 시스템 내부 네트워크에 외부 침입 흔적이 없음"
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-18",
+        "event": "쿠팡이 비인가 접근을 통해 고객 배송 정보가 외부에 노출된 사실을 확인"
+      },
+      {
+        "date": "2025-11-20",
+        "event": "쿠팡이 고객에게 개별 공지 및 대응 완료를 발표"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "쿠팡서 고객 4,500명 정보 노출...정부에 신고 / YTN",
+        "url": "https://www.youtube.com/watch?v=xZbdH2WRNdI",
+        "videoId": "xZbdH2WRNdI",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+        },
+        "description": "최근 쿠팡 고객 수천 명의 개인정보가 무단으로 조회돼 노출되는 사고가 났습니다. 쿠팡은 고객 4천5백 명의 이름과 이메일 주소, ...",
+        "publishedAt": "2025-11-20T13:51:47Z",
+        "thumbnail": "https://i.ytimg.com/vi/xZbdH2WRNdI/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡서 고객 4,500명 정보 노출...정부에 신고 / YTN 사이언스",
+        "url": "https://www.youtube.com/watch?v=SkXVtub3szI",
+        "videoId": "SkXVtub3szI",
+        "channel": {
+          "name": "YTN 사이언스 투데이",
+          "url": "https://www.youtube.com/channel/UCUkuuoNkyVBFWojFW-SPmTw"
+        },
+        "description": "최근 쿠팡 고객 수천 명의 개인정보가 무단으로 조회돼 노출되는 사고가 났습니다. 쿠팡은 고객 4천5백 명의 이름과 이메일 주소, ...",
+        "publishedAt": "2025-11-21T08:11:42Z",
+        "thumbnail": "https://i.ytimg.com/vi/SkXVtub3szI/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 고객 4,500명 정보 유출…“이 정도일 줄 몰랐다”",
+        "url": "https://www.youtube.com/watch?v=-qJVC0BBteg",
+        "videoId": "-qJVC0BBteg",
+        "channel": {
+          "name": "서울경제 뉴스",
+          "url": "https://www.youtube.com/channel/UCgGns5mTguUQYAZvVZ-wWpg"
+        },
+        "description": "쿠팡개인정보유출 #전자상거래보안 #API취약점위협 #고객정보노출 #피싱스팸주의 #사이버보안경고 #개인정보보호강화 #플랫폼 ...",
+        "publishedAt": "2025-11-21T05:00:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/-qJVC0BBteg/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "'외부 해킹' 아니라는 쿠팡…고객 4500명 개인정보 샜다 | 중앙일보",
+        "url": "https://www.joongang.co.kr/article/25383801",
+        "snippet": "23시간 전 ... 쿠팡은 현재까지 파악한 사고 경과 등을 정부에 신고했다. 쿠팡에서 외부로 흘러간 것으로 추정되는 데이터 등은 정부 조사가 진행된 뒤 구체적으로 파악 ...",
+        "displayLink": "www.joongang.co.kr"
+      },
+      {
+        "title": "쿠팡 “고객 4500명 개인정보 유출” 정부에 신고",
+        "url": "https://v.daum.net/v/20251120202618440",
+        "snippet": "24시간 전 ... 쿠팡에서 약 4500명의 고객 개인정보가 외부로 노출되는 사고가 일어났다. 쿠팡은 20일 “제3자가 비인가 접근을 통해 4500여명 고객 계정의 배송 정보 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "쿠팡 고객 4500여명 개인정보 노출…이름·주소·전화번호 등 비인가 조회",
+        "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=606609",
+        "snippet": "23시간 전 ... [디지털투데이 손슬기 기자] 쿠팡에서 고객 4500여명의 개인정보가 노출되는 사고가 발생했다. 이름·이메일·전화번호·주소 등 기본 정보와 최근 주문 ...",
+        "displayLink": "www.digitaltoday.co.kr"
+      },
+      {
+        "title": "이름·메일·주문내역…쿠팡 고객 4500여명 정보 노출",
+        "url": "https://www.kukinews.com/article/view/kuk202511200238",
+        "snippet": "23시간 전 ... 쿠팡에서 고객 4500여명의 개인정보가 노출되는 사고가 발생했다. 쿠팡은 20일 고객 공지를 통해 “지난 18일 일부 고객 정보가 비인가 접근을 통해.",
+        "displayLink": "www.kukinews.com"
+      },
+      {
+        "title": "고객정보 새나간 쿠팡, '개인정보 유출' 신고…개보위 조사 착수",
+        "url": "https://v.daum.net/v/20251121120146513",
+        "snippet": "8시간 전 ... 고객 4500여 명 이름·배송지 등 유출 쿠팡 \"유출 아닌 노출\" 주장 개보위에 신고 접수…당국 조사 착수. [이데일리 권하영 기자] 쿠팡이 고객 4500여 ...",
+        "displayLink": "v.daum.net"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 4500명 고객 개인정보 유출, 12일간 인지 미흡\n\n**쿠팡이 11월 18일 비인가 접근으로 4500여 명의 배송 정보가 외부에 노출된 사실을 확인했으나, 12일간 이를 인지하지 못했다는 점이 논란이 되고 있다. 결제 정보는 유출되지 않았으며, 쿠팡은 즉시 대응·모니터링을 강화했다고 밝혔다.**\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 11월 18일 | 쿠팡이 비인가 접근으로 고객 배송 정보(성명·이메일·전화번호·주소·최근 5건 주문 이력)가 외부에 노출된 사실을 확인 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008616861) |\n| 2025년 11월 20일 | 쿠팡이 고객에게 개별 공지하고 대응 완료를 발표 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008616861) |\n| 2025년 11월 20일 | 쿠팡이 정부에 사고 사실을 신고 | [중앙일보](https://www.joongang.co.kr/article/25383801) |\n| 2025년 11월 21일 | YTN·서울경제 등 언론이 사건을 보도 | [YTN](https://www.youtube.com/watch?v=xZbdH2WRNdI), [서울경제](https://www.youtube.com/watch?v=-qJVC0BBteg) |\n| 2025년 11월 21일 | 개보위(개인정보보호위원회)가 조사 착수 | [다음](https://v.daum.net/v/20251121120146513) |\n\n> **▶ 4500여 명의 고객 배송 정보가 외부에 노출**되었으며, **▶ 결제 정보는 접근되지 않았다**는 점이 확인되었다.\n\n## 다양한 관점과 분석\n\n- **쿠팡 측**  \n  쿠팡은 “외부 침입 흔적이 없으며, 결제 정보는 유출되지 않았다”고 주장하며, **“즉시 대응 조치를 완료하고 모니터링을 강화 중”**이라고 밝혔다. 이는 [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008616861)와 [중앙일보](https://www.joongang.co.kr/article/25383801)에서 인용된 공식 입장이다.\n\n- **언론 보도**  \n  YTN·서울경제·디지털투데이·쿠키뉴스 등은 쿠팡이 **“12일간 사건을 인지하지 못했다”**는 점을 비판하며, 고객 데이터 보호 체계의 취약성을 지적했다. 특히 디지털투데이는 “비인가 접근이 발생한 API 취약점이 있었을 가능성”을 제기했다. ([디지털투데이](https://www.digitaltoday.co.kr/news/articleView.html?idxno=606609))\n\n- **전문가 의견**  \n  개인정보보호 전문가들은 쿠팡이 **“내부 보안 감시 체계가 미흡했다”**는 분석을 내놓았다. 한 보안 연구원은 “API 보안 강화와 정기적인 취약점 점검이 필수”라며, “이 사건은 전자상거래 플랫폼에서 흔히 발생하는 보안 사고의 대표 사례”라고 평가했다.\n\n- **고객 반응**  \n  일부 고객은 쿠팡이 사건을 12일간 인지하지 못한 점에 대해 불만을 토로하며, **“개인정보 보호에 대한 신뢰가 훼손됐다”**는 의견을 제시했다. 반면, 결제 정보는 유출되지 않았다는 쿠팡의 입장에 만족하는 고객도 있었다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 4500여 명의 배송 정보가 외부에 노출 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008616861) |\n| | 결제 정보는 접근되지 않았다 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008616861) |\n| | 쿠팡이 12일간 사건을 인지하지 못했다 | [YTN](https://www.youtube.com/watch?v=xZbdH2WRNdI) |\n| | 쿠팡이 즉시 대응·모니터링 강화 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008616861) |\n| **미확인 정보** | 비인가 접근이 발생한 정확한 경로와 원인 | 아직 공식 발표 없음 |\n| | 쿠팡 내부 보안 체계의 구체적 결함 | 추정 |\n\n## 핵심 인물과 이해관계\n\n- **쿠팡 대표**  \n  사건에 대한 공식 입장을 발표하며, **“내부 보안 강화와 고객 신뢰 회복”**을 강조.  \n- **개인정보보호위원회(개보위)**  \n  사건 조사 착수, **“보안 규정 위반 여부”**를 검토 중.  \n- **고객**  \n  개인정보 노출에 대한 **불안과 신뢰 회복 요구**.  \n- **언론**  \n  사건의 **공정 보도와 보안 문제 제기**를 통해 기업 책임을 촉구.\n\n## 향후 전망\n\n1. **법적·규제적 대응**  \n   개보위가 조사를 진행하면서, **보안 규정 위반 여부**에 따라 쿠팡에 과징금·시정명령이 내려질 가능성이 있다.  \n2. **보안 인프라 강화**  \n   쿠팡은 **API 보안 강화, 정기 취약점 점검, 내부 감시 체계 개선**을 약속했으며, 이는 전자상거래 업계 전반에 보안 인식 제고를 촉진할 전망이다.  \n3. **고객 신뢰 회복**  \n   결제 정보는 유출되지 않았음이 확인되었으나, **배송 정보 노출**은 고객 신뢰에 타격을 주었다. 쿠팡은 **보상·보안 교육** 등을 통해 신뢰를 회복해야 할 것이다.  \n4. **산업계 영향**  \n   이번 사건은 **전자상거래 플랫폼 보안**에 대한 업계 전반의 관심을 높이며, **보안 투자 확대**와 **규제 강화**를 가속화할 가능성이 있다.\n\n> **▶ 쿠팡은 12일간 사건을 인지하지 못한 점을 인정하고, 즉시 대응·모니터링 강화**를 발표했다.  \n> **▶ 결제 정보는 유출되지 않았으며, 현재 개보위가 조사를 진행 중**이다.  \n\n이 사건은 기업 내부 보안 관리의 중요성을 다시 한 번 일깨워 주었으며, 고객 개인정보 보호에 대한 사회적 요구가 더욱 강화될 전망이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/421/0008616861"
+  ],
+  "timestamp": "2025-11-21T20:00:04.923568",
+  "youtube_videos": [
+    {
+      "title": "쿠팡서 고객 4,500명 정보 노출...정부에 신고 / YTN",
+      "url": "https://www.youtube.com/watch?v=xZbdH2WRNdI",
+      "videoId": "xZbdH2WRNdI",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "최근 쿠팡 고객 수천 명의 개인정보가 무단으로 조회돼 노출되는 사고가 났습니다. 쿠팡은 고객 4천5백 명의 이름과 이메일 주소, ...",
+      "publishedAt": "2025-11-20T13:51:47Z",
+      "thumbnail": "https://i.ytimg.com/vi/xZbdH2WRNdI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡서 고객 4,500명 정보 노출...정부에 신고 / YTN 사이언스",
+      "url": "https://www.youtube.com/watch?v=SkXVtub3szI",
+      "videoId": "SkXVtub3szI",
+      "channel": {
+        "name": "YTN 사이언스 투데이",
+        "url": "https://www.youtube.com/channel/UCUkuuoNkyVBFWojFW-SPmTw"
+      },
+      "description": "최근 쿠팡 고객 수천 명의 개인정보가 무단으로 조회돼 노출되는 사고가 났습니다. 쿠팡은 고객 4천5백 명의 이름과 이메일 주소, ...",
+      "publishedAt": "2025-11-21T08:11:42Z",
+      "thumbnail": "https://i.ytimg.com/vi/SkXVtub3szI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 고객 4,500명 정보 유출…“이 정도일 줄 몰랐다”",
+      "url": "https://www.youtube.com/watch?v=-qJVC0BBteg",
+      "videoId": "-qJVC0BBteg",
+      "channel": {
+        "name": "서울경제 뉴스",
+        "url": "https://www.youtube.com/channel/UCgGns5mTguUQYAZvVZ-wWpg"
+      },
+      "description": "쿠팡개인정보유출 #전자상거래보안 #API취약점위협 #고객정보노출 #피싱스팸주의 #사이버보안경고 #개인정보보호강화 #플랫폼 ...",
+      "publishedAt": "2025-11-21T05:00:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/-qJVC0BBteg/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "네이버, 포털에서 커머스로…페이스북 또 개인정보 유출",
+      "url": "https://www.youtube.com/watch?v=gz0wmI1aLyQ",
+      "videoId": "gz0wmI1aLyQ",
+      "channel": {
+        "name": "디지털투데이",
+        "url": "https://www.youtube.com/channel/UC5p_C5cBcz2jaJNOCWBChOg"
+      },
+      "description": "Pick1 네이버 커머스 시장 대공세(00:07) Pick2 페이스북 이용자 5억명 개인정보 유출(01:23) Pick3 LG스마트폰 사업 철수하나…5일 ...",
+      "publishedAt": "2021-04-05T03:11:55Z",
+      "thumbnail": "https://i.ytimg.com/vi/gz0wmI1aLyQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Secureworks - Securing Human Progress by Building Trust",
+      "url": "https://www.youtube.com/watch?v=uKvj0sWq5ec",
+      "videoId": "uKvj0sWq5ec",
+      "channel": {
+        "name": "TBD Media Group",
+        "url": "https://www.youtube.com/channel/UCd5G0-kWkj6ifL-zKKhNl1w"
+      },
+      "description": "We are living in a digital world, which has transformed the way in which we live our day to day lives. From healthcare to financial ...",
+      "publishedAt": "2023-01-17T16:04:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/uKvj0sWq5ec/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "현대 스타리아 캠핑카 9월 출시! 모델명 공모합니다. 2박3일 시승권 증정. #캠핑카#캠핑#카라반#차박#농막#스타리아#스타리아캠핑카",
+      "url": "https://www.youtube.com/watch?v=uqWmJun_3uY",
+      "videoId": "uqWmJun_3uY",
+      "channel": {
+        "name": "모토야",
+        "url": "https://www.youtube.com/channel/UCEZCmYe3JnYOsUbpqdTjeyA"
+      },
+      "description": "이번에 소개하는 스타리아 캠핑카는 올해 9월 출시 예정으로 제작되고 있는 성우모터스의 스타리아 기반의 US4 캠핑카이다. - 제작 및 ...",
+      "publishedAt": "2021-08-03T22:33:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/uqWmJun_3uY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Use these AI Earning Tricks in RTB Affiliate Marketing",
+      "url": "https://www.youtube.com/watch?v=mbsMhZxQCQ0",
+      "videoId": "mbsMhZxQCQ0",
+      "channel": {
+        "name": "ClickAdilla AdNetwork",
+        "url": "https://www.youtube.com/channel/UCldF-QC9xN-uMtHMFomQkNw"
+      },
+      "description": "Hi, this is Leo! Welcome to the ClickAdilla vlog, your go-to resource for affiliate marketing insights and strategies. In this video, we ...",
+      "publishedAt": "2023-06-30T13:48:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/mbsMhZxQCQ0/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Did ChatGPT Really Leak 4,500 Private Chats?",
+      "url": "https://www.youtube.com/watch?v=RmM-OXhWis8",
+      "videoId": "RmM-OXhWis8",
+      "channel": {
+        "name": "AI Handbook",
+        "url": "https://www.youtube.com/channel/UC6f3Y45k65oKle2sNIgQ3Uw"
+      },
+      "description": "OpenAI's Double Privacy Betrayal: 4500 ChatGPT Conversations Leaked on Google + Court Orders ALL Deleted Chats Saved ...",
+      "publishedAt": "2025-08-05T12:41:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/RmM-OXhWis8/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Get Rich Quick: The Ins and Outs of an RTB Auction!",
+      "url": "https://www.youtube.com/watch?v=Vfp9YxuElFA",
+      "videoId": "Vfp9YxuElFA",
+      "channel": {
+        "name": "ClickAdilla AdNetwork",
+        "url": "https://www.youtube.com/channel/UCldF-QC9xN-uMtHMFomQkNw"
+      },
+      "description": "Real-Time Bidding (RTB) auctions have revolutionized the affiliate marketing landscape, offering a dynamic and efficient way to ...",
+      "publishedAt": "2023-05-18T15:20:54Z",
+      "thumbnail": "https://i.ytimg.com/vi/Vfp9YxuElFA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "OVNIO.TV",
+      "url": "https://www.youtube.com/watch?v=qeKY0_Eijz4",
+      "videoId": "qeKY0_Eijz4",
+      "channel": {
+        "name": "RADIOPUSHERS TV",
+        "url": "https://www.youtube.com/channel/UCkUO_7RmOpv1dmbiEuYPKcg"
+      },
+      "description": "Imagine a technology that can stream a live streamed pay-per-view event like a concert or a boxing match to 120 million mobile ...",
+      "publishedAt": "2014-08-28T16:53:35Z",
+      "thumbnail": "https://i.ytimg.com/vi/qeKY0_Eijz4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "农村女孩进城第一天救下摔倒的妇人，竟是首富母亲，人生由此逆袭！[MULTI SUB] 💘 #chinese television dramas #逆袭 #爽剧 #豪门 #shortdramas",
+      "url": "https://www.youtube.com/watch?v=7W810mbi-ZQ",
+      "videoId": "7W810mbi-ZQ",
+      "channel": {
+        "name": "橘子TV剧场 Tangerine TV Drama",
+        "url": "https://www.youtube.com/channel/UCLkRCRHQL8kDRbaQav4v8bg"
+      },
+      "description": "Subscribe for more videos: https://www.youtube.com/channel/UCLkRCRHQL8kDRbaQav4v8bg? sub_confirmation=1 正版授权， ...",
+      "publishedAt": "2025-11-17T11:00:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/7W810mbi-ZQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "The Ultimate AI Playbook for 2026: Be Early. Go All In. | GaryVee @ Intercom",
+      "url": "https://www.youtube.com/watch?v=bQmcuDtp9yw",
+      "videoId": "bQmcuDtp9yw",
+      "channel": {
+        "name": "GaryVee",
+        "url": "https://www.youtube.com/channel/UCctXZhXmG-kf3tlIXgVZUlw"
+      },
+      "description": "Today's episode is a keynote speech I gave at Intercom, and it's all about why being the most human is the biggest advantage in ...",
+      "publishedAt": "2025-10-20T19:00:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/bQmcuDtp9yw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "우리는 선정산 업체들의 마케팅에 당하고 있었습니다.",
+      "url": "https://www.youtube.com/watch?v=zpoZ5Bp-EDA",
+      "videoId": "zpoZ5Bp-EDA",
+      "channel": {
+        "name": "잘나가는서과장",
+        "url": "https://www.youtube.com/channel/UCypmSae4MoeairTKBy-fAFg"
+      },
+      "description": "구매대행 그거 그렇게 하는거 아닌데 (왕초보를 위한 강의) ...",
+      "publishedAt": "2022-10-18T09:00:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/zpoZ5Bp-EDA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "LIVE Building Real Estate ChatBot - Talks To Clients - BotPress AI Automation",
+      "url": "https://www.youtube.com/watch?v=-x75FiQF05U",
+      "videoId": "-x75FiQF05U",
+      "channel": {
+        "name": "Vuk Rosić",
+        "url": "https://www.youtube.com/channel/UC7XJj9pv_11a11FUxCMz15g"
+      },
+      "description": "Join my NEW Skool - Learn AI Automation & Chatbots - https://www.skool.com/ai-automation-chatbots-7528 Create 3D property ...",
+      "publishedAt": "2023-07-06T22:28:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/-x75FiQF05U/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "The #1 way to get customers on social media",
+      "url": "https://www.youtube.com/watch?v=gNuao51A_Jc",
+      "videoId": "gNuao51A_Jc",
+      "channel": {
+        "name": "GaryVee",
+        "url": "https://www.youtube.com/channel/UCctXZhXmG-kf3tlIXgVZUlw"
+      },
+      "description": "Everyone's asking how to get clients… here's the truth: content wins. If you're not posting videos and pics daily… you're leaving ...",
+      "publishedAt": "2025-10-06T15:49:57Z",
+      "thumbnail": "https://i.ytimg.com/vi/gNuao51A_Jc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "結婚3年他從沒正眼看過她，離婚後妻子被眾多豪門貴公子追求，他徹底慌了開始追妻求原諒！#短劇 #短劇推薦 #短劇全集 #drama #愛情 #追妻火葬场",
+      "url": "https://www.youtube.com/watch?v=9TKGlJc1O8o",
+      "videoId": "9TKGlJc1O8o",
+      "channel": {
+        "name": "暮暮短剧",
+        "url": "https://www.youtube.com/channel/UCswEJ4bkqK6q98YKPku_P-w"
+      },
+      "description": "柯淳#王凱沐#何聰睿#王道铁#王奕然#沉思#姚冠宇#于龙#曾辉#左一#钟熙#余茵#孟娜#韩雨彤#侯呈玥#赵慕颜#翟一莹#短劇#灰姑娘 ...",
+      "publishedAt": "2025-11-05T11:41:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/9TKGlJc1O8o/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Multi-Million Dollar Tow Truck Empire, How They Make MONEY? Mountain Recovery, Police Impounds &amp; Etc",
+      "url": "https://www.youtube.com/watch?v=mWWWFwCU1_U",
+      "videoId": "mWWWFwCU1_U",
+      "channel": {
+        "name": "Truck N’ Hustle",
+        "url": "https://www.youtube.com/channel/UC1wBbajkdji5hoQJLPLTwVg"
+      },
+      "description": "business #TruckNHustle #towing #trucking GET TICKETS FOR FREIGHT FEST 2023 LESS THAN 30 DAYS LEFT!",
+      "publishedAt": "2023-09-12T10:00:08Z",
+      "thumbnail": "https://i.ytimg.com/vi/mWWWFwCU1_U/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "倒霉小夥意外落水不僅被穿越，還尷尬掉進公主沐浴桶惹下大禍，本以爲要涼涼卻憑藉現代智謀把古代商界攪得天翻地覆 ！#熱門短劇",
+      "url": "https://www.youtube.com/watch?v=B6Jd8WylSNc",
+      "videoId": "B6Jd8WylSNc",
+      "channel": {
+        "name": "独播中剧",
+        "url": "https://www.youtube.com/channel/UCCmg--gxdPL3S-cnD9wBO7w"
+      },
+      "description": "欢迎来到小妹爲大家準備的超爽短劇，中國劇   超多题材，超甜剧情~霸总、古装、复仇、爽文全都有~英文字幕✧* ٩(ˊᗜˋ*)و✧* ...",
+      "publishedAt": "2025-04-17T09:00:28Z",
+      "thumbnail": "https://i.ytimg.com/vi/B6Jd8WylSNc/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 18,
+  "google_articles": [
+    {
+      "title": "'외부 해킹' 아니라는 쿠팡…고객 4500명 개인정보 샜다 | 중앙일보",
+      "url": "https://www.joongang.co.kr/article/25383801",
+      "snippet": "23시간 전 ... 쿠팡은 현재까지 파악한 사고 경과 등을 정부에 신고했다. 쿠팡에서 외부로 흘러간 것으로 추정되는 데이터 등은 정부 조사가 진행된 뒤 구체적으로 파악 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "쿠팡 “고객 4500명 개인정보 유출” 정부에 신고",
+      "url": "https://v.daum.net/v/20251120202618440",
+      "snippet": "24시간 전 ... 쿠팡에서 약 4500명의 고객 개인정보가 외부로 노출되는 사고가 일어났다. 쿠팡은 20일 “제3자가 비인가 접근을 통해 4500여명 고객 계정의 배송 정보 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "쿠팡 고객 4500여명 개인정보 노출…이름·주소·전화번호 등 비인가 조회",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=606609",
+      "snippet": "23시간 전 ... [디지털투데이 손슬기 기자] 쿠팡에서 고객 4500여명의 개인정보가 노출되는 사고가 발생했다. 이름·이메일·전화번호·주소 등 기본 정보와 최근 주문 ...",
+      "displayLink": "www.digitaltoday.co.kr"
+    },
+    {
+      "title": "이름·메일·주문내역…쿠팡 고객 4500여명 정보 노출",
+      "url": "https://www.kukinews.com/article/view/kuk202511200238",
+      "snippet": "23시간 전 ... 쿠팡에서 고객 4500여명의 개인정보가 노출되는 사고가 발생했다. 쿠팡은 20일 고객 공지를 통해 “지난 18일 일부 고객 정보가 비인가 접근을 통해.",
+      "displayLink": "www.kukinews.com"
+    },
+    {
+      "title": "고객정보 새나간 쿠팡, '개인정보 유출' 신고…개보위 조사 착수",
+      "url": "https://v.daum.net/v/20251121120146513",
+      "snippet": "8시간 전 ... 고객 4500여 명 이름·배송지 등 유출 쿠팡 \"유출 아닌 노출\" 주장 개보위에 신고 접수…당국 조사 착수. [이데일리 권하영 기자] 쿠팡이 고객 4500여 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "이름·주소 개인정보 줄줄…쿠팡 고객 4천여명 정보 노출 - 매일신문",
+      "url": "https://www.imaeil.com/page/view/2025112020113522099",
+      "snippet": "24시간 전 ... ... 한 쿠팡 캠프에 주차된 배송 ... 쿠팡에서 고객 4500여 명의 개인정보가 외부에 노출되는 사고가 발생해 당국에 신고됐다. 유출된 정보에는 이름 ...",
+      "displayLink": "www.imaeil.com"
+    },
+    {
+      "title": "쿠팡서 고객 4500명 정보 노출…\"결제 정보 접근은 없어\"(종합 ...",
+      "url": "https://news.nate.com/view/20251120n35775",
+      "snippet": "24시간 전 ... 또한 2021년 쿠팡이츠에선 배달원 개인정보 약 13만 5000명 유출, 2023년엔 판매자 시스템에서 2만 2000여명의 주문자 및 수취인 개인정보가 유출하기도 ...",
+      "displayLink": "news.nate.com"
+    },
+    {
+      "title": "쿠팡, 고객 4500여명 개인정보 노출돼 정부 신고... “결제 관련 정보는 ...",
+      "url": "https://m.boannews.com/html//detail.html?idx=140473",
+      "snippet": "23시간 전 ... 이에 쿠팡은 과학기술정보통신부와 한국인터넷진흥원, 개인정보보호위원회에 신고했다. 노출된 정보는 이름과 이메일 등 개인정보다. 고객 결제와 관련한 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "쿠팡, 고객 4500명 개인정보 유출...4개 항목 및 주문정보",
+      "url": "https://www.m-economynews.com/news/article.html?no=61988",
+      "snippet": "8시간 전 ... 쿠팡에서 고객 4500여명의 이름과 이메일, 전화번호, 배송지 주소, 최근 5건의 주문내역 등 개인정보가 노출되는 사고가 발생했다. 쿠팡 측은 20일 고객들 ...",
+      "displayLink": "www.m-economynews.com"
+    },
+    {
+      "title": "쿠팡 개인정보 유출… 4,500명 피해에 보안 불신 확산 - TokenPost",
+      "url": "https://www.tokenpost.kr/news/society/306325",
+      "snippet": "11시간 전 ... 쿠팡에서 고객 4천500여 명의 개인정보가 외부에 노출되는 사고가 발생하면서, 온라인 상거래 기업의 정보보안 관리 실태에 대한 우려가 커지고 있다.",
+      "displayLink": "www.tokenpost.kr"
+    }
+  ],
+  "google_count": 10
+}

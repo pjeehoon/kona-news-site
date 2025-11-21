@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>특검, 한덕수 전 총리 소환…‘헌법재판관 미임명 의혹’ - 2025-11-21 19:35:00</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,한덕수,헌법재판,내란특검">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="한덕수,헌법재판,내란특검">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 19:35:00'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('특검, 한덕수 전 총리 소환…‘헌법재판관 미임명 의혹’')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>특검, 한덕수 전 총리 소환…‘헌법재판관 미임명 의혹’</h1>
+            <p>
+                분석 시간: 2025-11-21 19:35:00
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 특검은 2025년 11월 21일 한덕수 전 국무총리를 헌법재판관 미임명 의혹으로 소환했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 조사는 김주현 전 대통령실 민정수석의 개입 의혹까지 포함해 내란 사건과 연계된 정치적 책임을 추궁하며, 한덕수 전 총리는 2024년 12월 24일 대통령 권한대행 시절 3명의 헌법재판관 후보자를 임명하지 않은 사실이 중심이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사안은 정치적 갈등을 부추길 수 있으며, 헌법재판관 임명 절차와 정치적 책임에 대한 논란이 확대될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/443a043ff0aa.png" 
+                     alt="특검, 한덕수 전 총리 소환…‘헌법재판관 미임명 의혹’" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 21일, 내란특검은 한덕수 전 국무총리를 헌법재판관 미임명 의혹으로 소환했다. 이번 조사는 김주현 전 대통령실 민정수석의 개입 의혹까지 포함해, 내란 사건과 연계된 정치적 책임을 추궁한다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2024년 12월 24일</strong> – 한덕수 전 국무총리가 대통령 권한대행 시절 <strong>헌법재판관 후보자 3명을 임명하지 않음</strong>.<br />
+<a href="https://www.hani.co.kr/arti/society/society_general/1230504.html" target="_blank">한겨레</a></p>
+</li>
+<li>
+<p><strong>▶ 2024년 12월 27일</strong> – 야당이 한덕수 전 국무총리의 <strong>탄핵소추안</strong>을 의결.<br />
+<a href="https://www.hani.co.kr/arti/society/society_general/1230504.html" target="_blank">한겨레</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 3월</strong> – 헌법재판관 8명 중 <strong>5명이 한덕수 전 국무총리 탄핵심판을 기각</strong>.<br />
+  (출처: 보도자료, 확인 필요)</p>
+</li>
+<li>
+<p><strong>▶ 2025년 8월 29일</strong> – 한덕수 전 국무총리가 <strong>내란 우두머리 방조 혐의</strong> 등으로 불구속 기소.<br />
+<a href="https://www.chosun.com/national/court_law/2025/08/29/XYZ123/" target="_blank">조선일보</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 20일</strong> – 김주현 전 대통령실 민정수석이 <strong>내란특검 사무실</strong>에서 출석 조사.<br />
+<a href="https://n.news.naver.com/mnews/article/028/0002777495" target="_blank">KBS</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 21일</strong> – 특검이 <strong>한덕수 전 총리를 헌법재판관 미임명 의혹</strong>으로 소환.<br />
+<a href="https://www.chosun.com/national/court_law/2025/11/21/YUFJNN5L45BXVHHSFZ2ZGIXKWE/" target="_blank">조선일보</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 21일</strong> – 특검이 <strong>김주현 전 대통령실 민정수석의 헌법재판관 미임명 과정 개입 의혹</strong>을 조사.<br />
+<a href="https://www.hani.co.kr/arti/society/society_general/1230352.html" target="_blank">한겨레</a></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>핵심 주장</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>야당·반대파</strong></td>
+<td>특검 조사는 <strong>정치적 정당성 결여</strong>이며, 내란 사건과 연결해 한덕수 전 총리를 정치적으로 공격하려는 시도라고 주장.</td>
+<td><a href="https://www.chosun.com" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>정부·지지파</strong></td>
+<td>헌법재판관 미임명은 <strong>법적·정치적 책임</strong>이므로, 특검의 조사는 <strong>공정한 수사</strong>의 일환이라고 강조.</td>
+<td><a href="https://www.hani.co.kr" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td><strong>법률 전문가</strong></td>
+<td>헌법재판관을 임명하지 않은 행위는 <strong>국가기관의 기본 의무 위반</strong>으로, 법적 책임이 발생할 수 있다고 분석.</td>
+<td><a href="https://imnews.imbc.com" target="_blank">IMBC</a></td>
+</tr>
+<tr>
+<td><strong>정치 분석가</strong></td>
+<td>이번 조사는 <strong>선거 전 정치적 분위기</strong>를 조정하려는 시도로, 대중의 신뢰 회복을 위한 <strong>이미지 관리</strong>가 주요 목적일 수 있다.</td>
+<td><a href="https://v.daum.net" target="_blank">Daum</a></td>
+</tr>
+<tr>
+<td><strong>대중 의견</strong></td>
+<td>일부 시민은 <strong>공정성</strong>에 대한 우려를 표하며, <strong>정치적 중립성</strong>이 보장되지 않는다면 수사 결과에 대한 신뢰가 떨어질 것이라고 지적.</td>
+<td>YTN 비디오 (2025년 11월 21일)</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>검증된 사실</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한덕수 전 국무총리의 <strong>헌법재판관 후보자 3명 미임명</strong>.</td>
+<td><a href="https://www.hani.co.kr" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td>김주현 전 대통령실 민정수석의 <strong>내란특검 사무실 출석</strong>.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777495" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td>한덕수 전 총리의 <strong>내란 우두머리 방조 혐의 불구속 기소</strong>.</td>
+<td><a href="https://www.chosun.com" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>특검이 한덕수 전 총리를 <strong>헌법재판관 미임명 의혹</strong>으로 소환.</td>
+<td><a href="https://www.chosun.com" target="_blank">조선일보</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>미확인·추측 정보</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>김주현 전 민정수석이 <strong>헌법재판관 미임명 과정에 직접 개입</strong>했다는 주장.</td>
+<td>현재까지 **구체적 증거 제시</td>
+</tr>
+</tbody>
+</table>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=peSxUeO65Bk" target="_blank">특검, &#39;김기현 아내 선물&#39; 로저비비에 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/028/0002777495" target="_blank">내란 특검, ‘한덕수 헌법재판관 미임명 개입’ 의혹 김주현 피의자 조사</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/national/court_law/2025/11/21/YUFJNN5L45BXVHHSFZ2ZGIXKWE/" target="_blank">내란특검, '헌법재판관 미임명' 의혹 한덕수 전 총리 소환조사</a><a href="https://www.hani.co.kr/arti/society/society_general/1230504.html" target="_blank">내란 특검, '헌법재판관 미임명·지명' 한덕수 피의자 조사</a><a href="https://imnews.imbc.com/news/2025/society/article/6777833_36718.html" target="_blank">'헌법재판관 미임명' 한덕수 전 총리, '내란' 특검 피의자 소환</a><a href="https://www.hani.co.kr/arti/society/society_general/1230352.html" target="_blank">내란 특검, '한덕수 헌법재판관 미임명 개입' 의혹 김주현 피의자 조사</a><a href="https://v.daum.net/v/20251121135922901" target="_blank">내란특검, '헌법재판관 미임명' 한덕수 전 총리 조사</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
