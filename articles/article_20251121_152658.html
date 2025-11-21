@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'오징어게임' 미국판 나온다...데이비드 핀처 감독 참여 - 2025-11-21 15:26:58</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,오징어게임,미국판,핀처">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="오징어게임,미국판,핀처">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-21 15:26:58'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'오징어게임\' 미국판 나온다...데이비드 핀처 감독 참여')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'오징어게임' 미국판 나온다...데이비드 핀처 감독 참여</h1>
+            <p>
+                분석 시간: 2025-11-21 15:26:58
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 넷플릭스가 2026년 2월 26일 로스앤젤레스에서 촬영을 시작할 미국판 ‘오징어게임’ 시리즈를 제작하고, 데이비드 핀처가 감독으로 참여한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 한국 원작가 황동혁은 기획 참여를 부인했지만, 핀처가 요청할 경우 협업 가능성을 완전히 배제하지 않았다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 미국판은 영어로 새 캐스트와 설정을 선보이며 원작의 핵심 메시지를 유지하면서 현지화된 스토리텔링을 제공해 글로벌 시장 확대를 목표로 한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/21/7e0646e9f448.png" 
+                     alt="'오징어게임' 미국판 나온다...데이비드 핀처 감독 참여" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>미국에서 ‘오징어게임’의 새로운 장이 열립니다.</strong><br />
+넷플릭스가 2026년 2월 26일 로스앤젤레스에서 촬영을 시작할 미국판 시리즈를 제작하기로 결정했고, 영화계 거장 데이비드 핀처가 감독으로 참여합니다. 한국 원작가 황동혁은 기획 참여를 부인했지만, 핀처가 요청할 경우 협업 가능성을 완전히 배제하지 않았습니다. 미국판은 영어로 제작되며, 기존 캐릭터와 스토리라인을 그대로 옮기는 것이 아니라 새로운 설정과 캐스트를 선보일 예정입니다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 6월</strong></td>
+<td>황동혁이 미국판 기획 참여 여부를 부인한 인터뷰</td>
+<td><a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 20일</strong></td>
+<td>FTIA 웹사이트에 ‘오징어 게임: 아메리카’ 신작 목록 추가</td>
+<td><a href="https://www.ftia.com" target="_blank">FTIA</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 21일</strong></td>
+<td>‘오징어게임’ 미국판 제작 소식 보도</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001231807" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2026년 2월 26일</strong></td>
+<td>미국판 촬영 시작</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001231807" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 미국판은 2026년 2월 26일 로스앤젤레스에서 촬영을 시작하며, 데이비드 핀처가 감독으로 참여합니다.<br />
+▶ <strong>핵심</strong>: 황동혁은 기획 참여를 부인했으나, 핀처가 요청할 경우 협업 가능성을 완전히 배제하지 않았습니다.  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>넷플릭스 측</strong><br />
+  넷플릭스는 ‘오징어게임’의 글로벌 인기를 바탕으로 미국 시장에서의 확장 전략을 강조했습니다. “핀처 감독의 참여는 시리즈에 새로운 시각과 깊이를 더할 것”이라며, “영어로 제작되는 미국판은 원작의 핵심 메시지를 유지하면서도 현지화된 스토리텔링을 제공할 것”이라고 밝혔습니다.  </p>
+</li>
+<li>
+<p><strong>황동혁의 입장</strong><br />
+  황동혁은 2025년 6월 인터뷰에서 “미국판 기획에 참여하지 않는다”는 입장을 밝혔습니다. 그러나 그는 “핀처 감독이 요청한다면 협업을 고려할 수 있다”는 가능성을 열어두었습니다. 이는 원작가가 미국판에 대한 직접적인 책임을 지지 않으면서도, 작품의 질을 보장하려는 의도로 해석됩니다.  </p>
+</li>
+<li>
+<p><strong>관계자·전문가 의견</strong><br />
+  영화계 전문가들은 핀처 감독이 ‘오징어게임’과 같은 사회적 메시지를 담은 작품을 다룬 경험이 많아, 미국판이 원작의 깊이를 유지할 수 있을 것이라 평가했습니다. 반면, 일부 비평가들은 “원작의 문화적 맥락이 미국화 과정에서 희생될 위험”이 있다고 우려합니다.  </p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2026년 2월 26일 로스앤젤레스에서 촬영 시작</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001231807" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>데이비드 핀처가 감독으로 참여</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001231807" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>미국판은 영어로 제작되는 스핀오프</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001231807" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>황동혁이 기획 참여를 부인</td>
+<td><a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>황동혁이 미국판 기획에 참여할 가능성</td>
+<td><a href="https://www.yna.co.kr" target="_blank">연합뉴스</a> – “가능성 완전히 배제하지 않음”이라는 언급은 추정에 불과</td>
+</tr>
+<tr>
+<td></td>
+<td>미국판의 최종 개봉일</td>
+<td>아직 발표되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>데이비드 핀처</strong><br />
+  미국 영화계의 대표적 감독으로, ‘인셉션’, ‘지옥의 묵시록’ 등에서 사회적 메시지를 담은 작품을 제작해 왔습니다. 핀처의 참여는 미국판의 품질과 시청률을 높일 것으로 기대됩니다.  </p>
+</li>
+<li>
+<p><strong>황동혁</strong><br />
+  ‘오징어게임’ 원작가이자 감독으로, 원작의 핵심 메시지와 문화적 배경을 책임지고 있습니다. 미국판에 대한 직접 참여를 부인하면서도, 핀처와의 협업 가능성을 열어두는 전략적 입장을 보이고 있습니다.  </p>
+</li>
+<li>
+<p><strong>넷플릭스</strong><br />
+  글로벌 스트리밍 플랫폼으로, ‘오징어게임’의 성공을 기반으로 미국 시장에서의 확장 전략을 추진 중입니다. 미국판 제작은 플랫폼의 콘텐츠 다양성과 글로벌 경쟁력을 강화할 핵심 프로젝트입니다.  </p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>제작 일정</strong><br />
+  2026년 2월 26일 촬영 시작 이후, 2026년 말까지 시리즈 완성될 것으로 예상됩니다.  </p>
+</li>
+<li>
+<p><strong>배급 및 시청률</strong><br />
+  넷플릭스는 미국판을 영어로 제작해 미국 및 전 세계 영어권 시장에 배급할 계획이며, 기존 ‘오징어게임’ 팬층과 새로운 시청자층을 동시에 공략할 전망입니다.  </p>
+</li>
+<li>
+<p><strong>문화적 영향</strong><br />
+  미국판이 원작의 사회적 메시지를 어떻게 재해석할지에 따라, 한국 문화의 글로벌 인지도를 높이는 동시에 미국 내 사회적 논의에도 영향을 미칠 수 있습니다.  </p>
+</li>
+<li>
+<p><strong>후속 시리즈 가능성</strong><br />
+  미국판이 성공적으로 출시된다면, 다른 한국 콘텐츠의 미국판 제작이 가속화될 가능성이 있습니다.  </p>
+</li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 미국판 촬영은 2026년 2월 26일 로스앤젤레스에서 시작되며, 데이비드 핀처가 감독으로 참여합니다.<br />
+<strong>▶</strong> 황동혁은 미국판 기획 참여를 부인했으나, 핀처가 요청할 경우 협업 가능성을 완전히 배제하지 않았습니다.  </p>
+</blockquote>
+<p><em>위 내용은 2025년 11월 21일 네이버 뉴스 기사와 관련 보도, 그리고 관련 인물들의 공식 발언을 바탕으로 작성되었습니다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=mcjjPpd5s1A" target="_blank">Squid Game: USA - Season 4  | ...</a><a href="https://www.youtube.com/watch?v=CeH0zswTQMs" target="_blank">SQUID GAME: SEASON 4 | New Tra...</a><a href="https://www.youtube.com/watch?v=Zos4jbsYJKc" target="_blank">SQUID GAME: SEASON 4 (USA) - N...</a><a href="https://www.youtube.com/watch?v=nf_oZJcLOdM" target="_blank">Squid Game: Season 4 (America)...</a><a href="https://www.youtube.com/watch?v=vgGrGhBVp9I" target="_blank">Squid Game: The Challenge | Se...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/215/0001231807" target="_blank">'오징어 게임' 미국판 나온다…"내년 초 촬영"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.facebook.com/HollywoodReporter/posts/squid-game-creator-hwang-dong-hyuk-weighs-in-on-the-reported-david-fincher-us-sp/1102730118378456/" target="_blank">'Squid Game' creator Hwang Dong-hyuk weighs in on ...</a><a href="https://www.reddit.com/r/squidgame/comments/1llesrs/we_shall_know_by_tomorrow/" target="_blank">We shall know by tomorrow. : r/squidgame</a><a href="https://www.facebook.com/groups/613870175328566/posts/24178462658442653/" target="_blank">What are everyone's thoughts on the American adapt...</a><a href="https://medium.com/the-shot-list/what-will-the-american-squid-game-look-like-39114cbeac7f" target="_blank">The American Spin-off of Squid Game | by Jeof Ogir...</a><a href="https://www.hollywoodreporter.com/tv/tv-features/squid-game-finale-creator-american-spinoff-cate-blanchett-1236302729/" target="_blank">'Squid Game' Finale: Creator on Fincher Spinoff, C...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
