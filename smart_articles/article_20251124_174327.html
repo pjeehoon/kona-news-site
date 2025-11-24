@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조국 대표 취임 첫날, 개헌 등 공약릴레이 예고 - 2025-11-24 17:43:27</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,조국,혁신당,개헌">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="조국,혁신당,개헌">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-24 17:43:27'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('조국 대표 취임 첫날, 개헌 등 공약릴레이 예고')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>조국 대표 취임 첫날, 개헌 등 공약릴레이 예고</h1>
+            <p>
+                분석 시간: 2025-11-24 17:43:27
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 조국 혁신당 대표가 취임 첫날 국회 최고위원회의에서 개헌과 정치개혁을 핵심 공약으로 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 내년 지방선거와 동시에 지방분권 개헌 투표를 약속하고, 대선 결과를 재해석하며 논란을 일으켰다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 개헌 가능성은 낮으며, 그의 제안은 정치·경제 개혁의 연계 필요성을 제기해 향후 정치적 논쟁을 촉발할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/24/206ca391bb8e.png" 
+                     alt="조국 대표 취임 첫날, 개헌 등 공약릴레이 예고" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>조국 혁신당 대표가 2025년 11월 24일 국회 최고위원회의에서 개헌과 정치개혁을 핵심 공약으로 내세우며, 내년 지방선거와 동시에 지방분권 개헌 투표를 약속했다. 이와 함께 그는 대선 결과를 재해석하며 논란이 일고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 24일</td>
+<td>취임 첫날 국회 최고위원회의</td>
+<td>조국은 혁신당 2막을 선언하며 “내란 종식”과 “제7공화국”을 목표로 한 개헌·정치개혁을 발표했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>개헌·정치개혁 공약</td>
+<td>“개헌이 ‘쇄빙선’이 될 것”이라며 내년 6월 지방선거와 지방분권 개헌을 동시에 투표할 것을 약속했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>대선 결과 재해석</td>
+<td>조국은 이재명·권영국 후보의 합이 이준석·김문수 후보의 합보다 0.9%포인트 이겼다고 주장했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>정치개혁 압박</td>
+<td>더불어민주당에 정치개혁 약속을 지키라고 압박하며 “정청래 민주당 대표를 예방했을 때”라는 질문에 “고함을 지르겠습니까”라고 답했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>연합뉴스</strong>는 조국의 개헌·정치개혁 주장이 논란이 되고 있다고 보도하며, “현재의 정치적 상황에서 개헌이 실현될 가능성은 낮다”는 입장을 밝혔다.<br />
+<a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>한겨레</strong>는 조국이 제시한 “제7공화국” 개념을 과거의 정치적 실험과 비교하며, “과거의 개헌 시도는 혼란을 초래했다”는 비판을 제기했다.<br />
+<a href="https://www.hani.co.kr/arti/politics/assembly/1140942.html" target="_blank">한겨레</a></p>
+</li>
+<li>
+<p><strong>KBS</strong>는 조국이 토지공개념과 부동산 시장 개혁을 최우선 과제로 두고 있는 점을 강조하며, “정치개혁과 경제 개혁이 상호 연계될 필요가 있다”는 분석을 제공했다.<br />
+<a href="https://news.kbs.co.kr/news/view.do?ncd=8414799" target="_blank">KBS</a></p>
+</li>
+<li>
+<p><strong>경향신문</strong>은 조국이 “내년 지방선거와 지방분권 개헌 투표를 동시에” 할 것을 약속한 점을 주목하며, “이러한 전략은 유권자에게 신뢰를 줄 수 있다”는 의견을 제시했다.<br />
+<a href="https://www.hankyung.com/article/2025112304057" target="_blank">경향신문</a></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>조국이 2025년 11월 24일 국회 최고위원회의에서 개헌·정치개혁을 선언했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>조국이 혁신당 1막과 2막을 언급하며 2막은 “내란 종식”과 “제7공화국”을 목표로 한다는 발언을 했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>개헌이 ‘쇄빙선’이 될 것이라는 주장.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>내년 6월 지방선거와 지방분권 개헌을 동시에 투표할 것이라는 약속.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>이재명·권영국 후보의 합이 이준석·김문수 후보의 합보다 0.9%포인트 이겼다는 주장.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>조국 혁신당 대표</strong>  </li>
+<li><strong>목표</strong>: 개헌·정치개혁, 토지공개념 도입, 부동산 시장 개혁.  </li>
+<li>
+<p><strong>이해관계</strong>: 혁신당 내부의 정치적 지지 기반 확보와 대중의 신뢰 회복.  </p>
+</li>
+<li>
+<p><strong>더불어민주당</strong>  </p>
+</li>
+<li><strong>관심사</strong>: 정치개혁 약속 이행 여부와 조국의 개헌 제안에 대한 대응.  </li>
+<li>
+<p><strong>이해관계</strong>: 기존 정권 구조 유지와 개혁 압박에 대한 방어.  </p>
+</li>
+<li>
+<p><strong>유권자</strong>  </p>
+</li>
+<li><strong>관심사</strong>: 개헌이 가져올 정치·경제적 변화와 실현 가능성.  </li>
+<li><strong>이해관계</strong>: 정치적 안정과 경제적 기회 확보.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>정치적 반응</strong><br />
+  조국의 개헌·정치개혁 공약은 기존 정권과의 갈등을 심화시킬 가능성이 있다. 더불어민주당은 개혁 약속 이행 여부를 감시하며, 필요 시 정치적 압박을 강화할 전망이다.</p>
+</li>
+<li>
+<p><strong>법적·제도적 절차</strong><br />
+  개헌은 헌법 개정 절차에 따라 국회 3분의 2 이상의 찬성과 국민투표를 필요로 한다. 조국이 제시한 “쇄빙선” 개념이 실제로 실현되려면 광범위한 정치적 합의와 여론의 지지가 필수적이다.</p>
+</li>
+<li>
+<p><strong>선거와 개헌 연계</strong><br />
+  내년 6월 지방선거와 지방분권 개헌 투표를 동시에 진행한다는 조국의 약속은 선거 전략으로 활용될 수 있다. 그러나 실제 투표 절차와 일정은 국회와 선거관리위원회 간 협의가 필요하다.</p>
+</li>
+<li>
+<p><strong>경제·사회적 영향</strong><br />
+  토지공개념과 부동산 시장 개혁이 개헌과 연결된다면, 부동산 가격 안정과 사회적 형평성 개선이 기대된다. 반면, 개헌 실패 시 정치적 혼란과 경제적 불확실성이 증가할 수 있다.</p>
+</li>
+</ul>
+<p><strong>▶ 핵심 요약</strong><br />
+조국 혁신당 대표는 취임 첫날 개헌·정치개혁을 선언하고, 내년 지방선거와 동시에 지방분권 개헌 투표를 약속했다. 이와 함께 대선 결과를 재해석하며 논란이 일고 있다. 개헌 실현 가능성은 정치적 합의와 국민투표에 달려 있으며, 향후 정치·법적 절차가 핵심 변수로 작용할 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/028/0002777982" target="_blank">‘대표직 복귀’ 조국 “혁신당 2막…개헌 쇄빙선 될 것”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://rebuildingkoreaparty.kr/" target="_blank">조국혁신당</a><a href="https://www.hani.co.kr/arti/politics/assembly/1140942.html" target="_blank">조국 “4년 중임제 개헌하자…윤 대통령, 명예롭게 임기 단축하라”</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8414799" target="_blank">조국 당대표 복귀 일성은…“부동산 시장 개혁과 개헌이 최우선” [지금 ...</a><a href="https://www.khan.co.kr/article/202511231730001" target="_blank">조국 “민주당 정치개혁 회피 땐 '4당 교섭단체' 만들 것···토지공개념 ...</a><a href="https://www.hankyung.com/article/2025112304057" target="_blank">조국, 최우선 과제로 토지공개념·개헌 꼽아…98.6%로 당대표 선출 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

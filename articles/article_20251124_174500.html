@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김병기 "내란전담재판부, 대통령 귀국하면 차질 없이 처리" - 2025-11-24 17:45:00</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,김병기,내란전담재판부,대통령 귀국,전현희,사">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="김병기,내란전담재판부,대통령 귀국,전현희,사">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-24 17:45:00'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('김병기 "내란전담재판부, 대통령 귀국하면 차질 없이 처리"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>김병기 "내란전담재판부, 대통령 귀국하면 차질 없이 처리"</h1>
+            <p>
+                분석 시간: 2025-11-24 17:45:00
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 김병기 더불어민주당 원내대표는 2025년 11월 24일 국회에서 내란전담재판부 설치를 확정하고, 대통령이 귀국하면 차질 없이 신속히 처리하겠다고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 선언은 기존 법제사법위원회와 전현희 의원의 2심 도입 주장 등과 함께 내란 사건에 대한 사법적 대응 가속화를 목표로 하는 정치적 움직임의 일환이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 그러나 재판부 교체의 헌법적 위헌성 논란과 정치적 압박 가능성으로 인해 사법개혁이 정치적 도구로 활용될 위험이 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/24/b54b521be101.png" 
+                     alt="김병기 "내란전담재판부, 대통령 귀국하면 차질 없이 처리"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>김병기 더불어민주당 원내대표가 2025년 11월 24일 국회에서 “내란전담재판부를 설치하고 대통령이 귀국하면 차질 없이 처리하겠다”는 입장을 밝혔습니다. 이 선언은 내란 사건에 대한 사법적 대응을 가속화하려는 정치적 움직임의 일환으로, 기존 법제사법위원회와의 논의, 그리고 전현희 의원의 2심 도입 주장과 함께 논란이 되고 있습니다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 23일</td>
+<td>전현희 의원이 국회 기자간담회에서 “내란전담재판부를 2심에 도입해야 한다”는 주장을 발표</td>
+<td><a href="https://www.hani.co.kr/arti/politics/politics_general/1230815.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>김병기 원내대표가 국회에서 “내란전담재판부 설치·대통령 귀국 시 차질 없이 처리” 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003410507" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>김병기와 정청래 대표가 “당·정·대가 긴밀히 조율”을 강조</td>
+<td><a href="https://ichannela.com/news/detail/000000502269.do" target="_blank">채널A</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>김병기 원내대표가 사법개혁 전반을 “차질 없이 추진”하겠다고 선언</td>
+<td><a href="https://www.hani.co.kr/arti/politics/politics_general/1230854.html" target="_blank">한겨레</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 김병기 원내대표는 내란전담재판부 설치를 확정하고, 대통령이 귀국하면 즉시 처리하겠다고 강조했다.<br />
+▶ <strong>논란</strong>: 전현희 의원은 1심 도입 시 재판부 교체가 위헌 소지가 있다고 지적하며 2심 도입을 주장했다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>김병기·더불어민주당 측</h3>
+<ul>
+<li><strong>주장</strong>: 내란 사건은 국가안보와 국민의 신뢰를 회복하기 위해 신속한 사법적 처리가 필요하다.  </li>
+<li><strong>근거</strong>: 법제사법위원회에서 대부분의 위원들이 전담재판부 필요성을 인정했다는 점을 인용.  </li>
+<li><strong>전략</strong>: 대통령 귀국 시 차질 없이 처리하겠다는 선언으로 정치적 압박을 강화하고, 사법개혁을 가속화하려는 의도를 내포.</li>
+</ul>
+<h3>전현희·공정정책연구원 측</h3>
+<ul>
+<li><strong>주장</strong>: 1심 도입 시 재판부 교체가 헌법에 위배될 수 있어, 2심 도입이 더 합리적이다.  </li>
+<li><strong>근거</strong>: 1심 도입 시 재판부가 교체되면 재판의 일관성이 깨질 수 있다는 논리.  </li>
+<li><strong>비판</strong>: 국민의힘과 조희대 사법부가 내란 종식을 방해하고 비호한다는 주장으로 정치적 갈등을 부각.</li>
+</ul>
+<h3>법학자·전문가 의견</h3>
+<ul>
+<li><strong>법적 관점</strong>: 헌법 제97조(재판부의 독립)와 재판부 교체의 위헌성 여부는 아직 법원 판결이 없으며, 2심 도입이 헌법적 안정성을 높일 수 있다는 견해가 있다.  </li>
+<li><strong>정치적 관점</strong>: 사법개혁이 정치적 도구로 활용될 위험이 있으며, 대통령 귀국 시 신속 처리는 정치적 압박으로 해석될 수 있다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>김병기 원내대표가 2025년 11월 24일 국회에서 내란전담재판부 설치와 대통령 귀국 시 차질 없이 처리하겠다고 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003410507" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>법제사법위원회에서 대부분의 위원들이 전담재판부 필요성을 인정</td>
+<td><a href="https://www.hani.co.kr/arti/politics/politics_general/1230854.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td></td>
+<td>전현희 의원이 2025년 11월 23일 국회 기자간담회에서 2심 도입을 주장</td>
+<td><a href="https://www.hani.co.kr/arti/politics/politics_general/1230815.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>국민의힘과 조희대 사법부가 내란 종식을 방해하고 비호한다는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>조희대 대법원장이 신뢰를 잃었다는 비판</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>윤석열의 두 번째 석방을 막아야 한다는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>김병기</td>
+<td>더불어민주당 원내대표</td>
+<td>내란전담재판부 설치·대통령 귀국 시 신속 처리</td>
+<td>사법개혁 가속화, 정권 안정</td>
+</tr>
+<tr>
+<td>전현희</td>
+<td>더불어민주당 최고위원</td>
+<td>2심 도입 주장, 1심 도입 위헌성 지적</td>
+<td>헌법적 안정성 확보, 사법부 독립 보호</td>
+</tr>
+<tr>
+<td>정청래</td>
+<td>더불어민주당 대표</td>
+<td>당·정·대가 긴밀히 조율</td>
+<td>정치적 협력 강화</td>
+</tr>
+<tr>
+<td>대통령</td>
+<td>대한민국 대통령</td>
+<td>내란 사건에 대한 사법적 대응</td>
+<td>국가안보와 국민 신뢰 회복</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>사법개혁 진행</strong>: 김병기와 정청래 대표가 당·정·대가 협력해 사법개혁을 가속화할 가능성이 높다.  </li>
+<li><strong>헌법적 검토</strong>: 1심 도입에 대한 위헌성 논란이 계속되면서, 법원에서 최종 판결이 나올 때까지 논쟁이 지속될 전망이다.  </li>
+<li><strong>정치적 긴장</strong>: 국민의힘과 조희대 사법부가 내란 종식을 방해한다는 주장과 같은 정치적 반발이 이어질 수 있다.  </li>
+<li><strong>대통령 귀국 시</strong>: 대통령이 해외에서 귀국할 경우, 내란전담재판부 설치와 관련된 법적·정치적 절차가 가속화될 가능성이 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 시사점</strong><br />
+1. <strong>사법개혁과 정치적 압박</strong>: 내란전담재판부 설치는 사법적 독립과 정치적 압박 사이에서 균형을 찾는 과제로 부각된다.<br />
+2. <strong>헌법적 안정성</strong>: 1심 vs 2심 도입 논쟁은 헌법적 안정성을 둘러싼 핵심 갈등이다.<br />
+3. <strong>정치적 협력</strong>: 당·정·대가 긴밀히 협력해 사법개혁을 추진하려는 움직임은 정치적 통합의 신호로 해석된다.  </p>
+</blockquote>
+<p><strong>참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/032/0003410507" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.hani.co.kr/arti/politics/politics_general/1230854.html" target="_blank">한겨레</a><br />
+- <a href="https://ichannela.com/news/detail/000000502269.do" target="_blank">채널A</a><br />
+- <a href="https://www.hani.co.kr/arti/politics/politics_general/1230815.html" target="_blank">한겨레</a><br />
+- <a href="https://www.news1.kr/politics/assembly/5985082" target="_blank">news1</a><br />
+- <a href="http://www.sisafocus.co.kr/news/articleView.html?idxno=350670" target="_blank">sisafocus</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=2jf1aaoOSbk" target="_blank">국회의원 전현희,환자를 지키던 변호사에서 국회의원이 되...</a><a href="https://www.youtube.com/watch?v=lBAxGQQmSoM" target="_blank">인물프로필_전현희 국회의원 #알아보기 #이슈 #유명인 ...</a><a href="https://www.youtube.com/watch?v=MpVgmA7Xqh0" target="_blank">[100분토론] 전현희 &quot;김건희 여사와 이종호...</a><a href="https://www.youtube.com/watch?v=LsqcGV5qNYU" target="_blank">#전현희 #서영교 🔥법사위 국감 파이팅🔥</a><a href="https://www.youtube.com/watch?v=3MWvOVWG5Uw" target="_blank">전현희 끼어들자 두 눈 질끈 / #채널A #shorts...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/032/0003410507" target="_blank">전현희 “내란전담재판부 반드시 도입해야…2심부터 하자는 주장 힘 얻어”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hani.co.kr/arti/politics/politics_general/1230854.html" target="_blank">김병기 “내란전담재판부 포함 사법개혁 차질 없이 추진”</a><a href="https://ichannela.com/news/detail/000000502269.do" target="_blank">김병기 “내란전담재판부 당연히 설치…대통령 귀국하면 처리” | 채널A ...</a><a href="https://www.hani.co.kr/arti/politics/politics_general/1230815.html" target="_blank">내란재판부 논의 재점화…전현희 “2심에 도입 주장 힘 얻어”</a><a href="https://www.news1.kr/politics/assembly/5985082" target="_blank">전현희 "尹 두번째 석방 막아야…내란전담재판부 지체 안 돼"(종합 ...</a><a href="http://www.sisafocus.co.kr/news/articleView.html?idxno=350670" target="_blank">민주, '내란 전담재판부 설치' 등 사법개혁 속도···김병기 “국민의 명령 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
