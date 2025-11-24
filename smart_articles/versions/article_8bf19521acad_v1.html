@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전국 대부분 요란한 비 …출근길 서쪽 짙은 안개[날씨클릭] - 2025-11-25 07:04:51</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,비,안개,출근">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="비,안개,출근">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 07:04:51'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('전국 대부분 요란한 비 …출근길 서쪽 짙은 안개[날씨클릭]')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>전국 대부분 요란한 비 …출근길 서쪽 짙은 안개[날씨클릭]</h1>
+            <p>
+                분석 시간: 2025-11-25 07:04:51
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 25일 대전·세종·충남 지역에 5~15 mm 비가 내리며 돌풍·번개가 동반될 전망이다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 충남 서쪽에서는 아침까지 가시거리 200 m 이하의 짙은 안개가 발생해 출근길 교통에 위험이 예상된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 강풍·풍랑 특보와 낮 최고기온 10–12 °C로 인해 도로 미끄럼 위험이 증가하고 전력·통신 장애 가능성이 있어 대비가 필요하다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/8bf19521acad.png" 
+                     alt="전국 대부분 요란한 비 …출근길 서쪽 짙은 안개[날씨클릭]" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025 11 25 일, 대전·세종·충남 지역을 중심으로 5–15 mm의 비가 예보되며, 돌풍·천둥·번개가 동반될 가능성이 있다. 충남 서쪽에서는 아침까지 가시거리 200 m 이하의 짙은 안개가 예상돼 출근길 교통 안전에 주의가 필요하다.  </p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 11 25</td>
+<td>비·안개 예보</td>
+<td>대전·세종·충남 지역에서 5–15 mm 비, 돌풍·번개 동반 가능성, 충남 서쪽 아침까지 가시거리 200 m 이하 안개</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760175" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 11 25</td>
+<td>강풍·풍랑 특보</td>
+<td>대전지방기상청이 초속 20 m 이상 강풍 특보 및 풍랑 특보 발효</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760175" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 11 25</td>
+<td>기온</td>
+<td>낮 최고기온 10–12 °C 예상</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760175" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 대전·세종·충남 지역에서 비가 내리며 돌풍·번개가 동반될 가능성이 높다.<br />
+<strong>▶</strong> 충남 서쪽에서는 아침까지 가시거리 200 m 이하의 짙은 안개가 발생해 출근길 교통에 위험이 있다.  </p>
+</blockquote>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>기상 전문가 의견</h3>
+<ul>
+<li><strong>전국 기상청</strong>은 “비와 돌풍이 동시에 발생하면 도로 미끄러짐 위험이 증가하므로 운전 시 주의가 필요하다”고 강조했다.  </li>
+<li><strong>대전지방기상청</strong> 관계자는 “초속 20 m 이상의 강풍이 예상돼 건물 외벽, 가로등 등에 피해가 우려된다”고 전했다.</li>
+</ul>
+<h3>시민들의 목소리</h3>
+<ul>
+<li><strong>출근길 교통</strong>: 대전·충남 지역의 시민들은 “안개 때문에 출근길이 지연될 것”이라며 출근 시간 연장을 요청했다.  </li>
+<li><strong>농업계</strong>: 농부들은 “비와 안개가 농작물에 영향을 줄 수 있으니 대비가 필요하다”고 말했다.</li>
+</ul>
+<h3>언론 보도</h3>
+<ul>
+<li><strong>연합뉴스TV</strong>는 “요란한 비와 안개가 동시에 발생해 교통·산업에 큰 영향을 미칠 수 있다”는 주제로 2분 6초 분량의 기상 특집을 보도했다.  </li>
+<li><strong>MBC뉴스</strong>는 “서쪽 초미세먼지와 함께 비가 내릴 예정”이라며 1분 0초 분량의 기상 뉴스를 제공했다.</li>
+</ul>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>5–15 mm 비, 돌풍·번개 동반 가능성, 충남 서쪽 안개, 강풍·풍랑 특보, 10–12 °C 기온</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760175" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>비가 내린 후 발생할 수 있는 특정 피해 사례(예: 건물 파손 사례 등)</td>
+<td>확인 필요</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인되지 않은</strong> 부분은 실제 피해 사례가 아직 발표되지 않았으므로 주의가 필요하다.</p>
+</blockquote>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장/관심사</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>대전지방기상청</strong></td>
+<td>비와 돌풍에 대한 정확한 예보 제공, 지역 안전 확보</td>
+</tr>
+<tr>
+<td><strong>충남 지역 주민</strong></td>
+<td>출근 및 일상 생활에 대한 안전과 편리성</td>
+</tr>
+<tr>
+<td><strong>교통 당국</strong></td>
+<td>도로·교통 안전 관리, 사고 예방</td>
+</tr>
+<tr>
+<td><strong>농업계</strong></td>
+<td>비·안개가 농작물에 미칠 영향 최소화</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ul>
+<li><strong>비와 안개 지속</strong>: 11 25 일 자정 이후에도 비가 계속될 가능성이 높으며, 안개는 아침 9시 전까지 지속될 전망이다.  </li>
+<li><strong>교통·산업 영향</strong>: 강풍·번개로 인한 전력·통신 장애 가능성도 있으므로, <strong>교통 당국</strong>은 출근 시간 조정 및 비상 대비책을 마련할 예정이다.  </li>
+<li><strong>안전 조치</strong>: 운전자는 미끄러운 도로와 짙은 안개를 감안해 속도를 줄이고, 농업계는 비와 안개에 대비해 수확·보호 조치를 강화할 필요가 있다.</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>주요 참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/001/0015760175" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.youtube.com/watch?v=YXHEatZD464" target="_blank">연합뉴스TV 기상 특집</a><br />
+- <a href="https://www.youtube.com/watch?v=YZuJEO75PPE" target="_blank">MBC뉴스 기상 뉴스</a>  </p>
+</blockquote>
+<p><em>위 기사와 영상은 2025 11 25 일 기준으로 확인된 정보를 바탕으로 작성되었습니다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=YXHEatZD464" target="_blank">[날씨클릭] 전국 대부분 요란한 비 …출근길 서쪽 짙은...</a><a href="https://www.youtube.com/watch?v=YZuJEO75PPE" target="_blank">[날씨] 서쪽 초미세먼지 주의‥내일 전국 대부분 비 (...</a><a href="https://www.youtube.com/watch?v=YdcIIFGvFVc" target="_blank">[날씨] 전국 대부분 요란한 비…낮에도 선선 / 연합뉴...</a><a href="https://www.youtube.com/watch?v=aPxALdG2ciI" target="_blank">[날씨] 밤사이 올가을 첫 황사‥내일 곳곳 요란한 비 ...</a><a href="https://www.youtube.com/watch?v=55Z49-w15g0" target="_blank">[날씨예보07] 오늘 전국 대부분 요란한 비, 9월 9...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015760175" target="_blank">대전·세종·충남 돌풍, 번개 동반한 비…"아침까지 짙은 안개"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.kbs.co.kr/news/view.do?ncd=8232356" target="_blank">[뉴스9 날씨] 밤사이 비 그쳐…서쪽 곳곳 짙은 안개</a><a href="https://www.kdsn.co.kr/news/article.html?no=47734" target="_blank">비내리는 추석 연휴…보름달 보기 어렵다</a><a href="https://www.thepress1.com/bbs/search.php?sfl=wr_subject||wr_content&sop=or&stx=%ED%98%B8%EC%9A%B0%EC%A3%BC%EC%9D%98%EB%B3%B4" target="_blank">전체검색 결과 | 더 프레스 1</a><a href="https://www.tiktok.com/discover/%EB%82%A0%EC%94%A8-%EB%89%B4%EC%8A%A4-%EC%95%84%EC%B9%A8%EC%97%90%EB%8A%94-%ED%95%B4%EA%B0%80-%EB%9C%A8%EA%B3%A0%EC%9A%94" target="_blank">날씨 뉴스 아침에는 해가 뜨고요 | TikTok</a><a href="https://www.tiktok.com/discover/%EC%9D%B4%ED%98%9C%EB%AF%BC-%EA%B8%B0%EC%83%81%EC%BA%90%EC%8A%A4%ED%84%B0" target="_blank">이혜민 기상캐스터 | TikTok</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
