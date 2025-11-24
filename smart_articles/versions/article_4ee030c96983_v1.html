@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>창동차량기지 일대, ‘S-DBC’로 조성…“서울 바이오 산업 거점으로 탈바꿈” - 2025-11-25 04:25:33</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,S-DBC,창동,바이오">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="S-DBC,창동,바이오">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 04:25:33'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('창동차량기지 일대, ‘S-DBC’로 조성…“서울 바이오 산업 거점으로 탈바꿈”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>창동차량기지 일대, ‘S-DBC’로 조성…“서울 바이오 산업 거점으로 탈바꿈”</h1>
+            <p>
+                분석 시간: 2025-11-25 04:25:33
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울시가 노원구 창동·상계 일대를 2028년 착공 목표로 서울 디지털 바이오 시티(S‑DBC)로 재탄생시켜 바이오·AI 융합 산업의 핵심 허브로 만들 계획이다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 프로젝트는 5조9000억 원 규모의 생산 유발 효과와 8만5000명 이상의 일자리 창출을 목표로 한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> S‑DBC 조성을 통해 서울은 바이오·AI 생태계 강화와 지속가능한 성장 기반을 확보하려 한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/4ee030c96983.png" 
+                     alt="창동차량기지 일대, ‘S-DBC’로 조성…“서울 바이오 산업 거점으로 탈바꿈”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울시가 노원구 창동·상계 일대를 <strong>서울 디지털 바이오 시티(S‑DBC)</strong> 로 재탄생시켜 <strong>바이오·AI 융합 산업의 핵심 허브</strong>로 탈바꿈한다. 2028년 착공을 목표로 5조9000억 원 규모의 생산 유발 효과와 8만5000명 이상의 일자리 창출이 기대된다.</p>
+<hr />
+<h3>도입부 (≈200자)</h3>
+<p>서울시가 창동·상계 지역을 <strong>S‑DBC</strong> 로 재구성해 <strong>바이오·AI 융합 산업의 중심지</strong>로 만들 계획이다. 2028년 착공을 목표로 5조9000억 원 규모의 생산 유발 효과와 8만5000명 이상의 일자리 창출이 예상된다. 이 프로젝트는 <strong>‘강력한 바이오·AI 생태계’</strong>를 구축하려는 서울시의 전략적 선택이다.  </p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>▶</th>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>▶</td>
+<td>2025년 4월 27일</td>
+<td>서울시가 <strong>‘S‑DBC’</strong> 조성 계획을 공식 발표. 창동·상계 일대가 <strong>바이오·AI 융합 산업 거점</strong>으로 재탄생한다. <a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>▶</td>
+<td>2025년 4월 27일</td>
+<td><strong>착공 시점</strong>을 2028년으로 설정, <strong>5조9000억 원</strong> 규모의 생산 유발 효과와 <strong>8만5000명</strong> 이상의 일자리 창출을 목표로 한다. <a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>▶</td>
+<td>2025년 4월 27일</td>
+<td>창동·상계 지역에 <strong>최대 4층 규모</strong>의 <strong>초고층 건물</strong>이 들어설 예정이며, <strong>바이오·AI 연구·개발·제조</strong>를 위한 종합 인프라가 구축된다. <a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>▶</td>
+<td>2025년 4월 27일</td>
+<td><strong>노원구 창동·상계 일대</strong>는 <strong>서울시의 ‘강력한 바이오·AI 허브’</strong>로 지정된다. <a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>▶</td>
+<td>2025년 4월 27일</td>
+<td><strong>서울시장 오세훈</strong>이 주도하는 <strong>‘S‑DBC’ 프로젝트</strong>는 <strong>바이오·AI 융합</strong>을 핵심으로 삼아 <strong>지속가능한 성장</strong>을 목표로 한다. <a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>언론</th>
+<th>시각</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td>서울시가 <strong>바이오·AI 융합 산업</strong>을 육성하려는 <strong>전략적 선택</strong>으로 평가</td>
+<td><a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td><strong>5조9000억 원</strong> 규모의 생산 유발 효과와 <strong>8만5000명</strong> 일자리 창출이 기대된다는 <strong>긍정적 전망</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td><strong>2028년 착공</strong>을 목표로 한 <strong>장기적 개발 계획</strong>이므로 <strong>단기적 불확실성</strong> 존재</td>
+<td><a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td><strong>바이오·AI 융합</strong>을 통한 <strong>지속가능한 성장</strong>이 핵심 목표</td>
+<td><a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td><strong>서울시장 오세훈</strong>이 주도하는 <strong>정책 방향</strong>이 명확히 제시됨</td>
+<td><a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>검증된 사실</th>
+<th>미확인 정보</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S‑DBC</strong> 조성 계획이 2028년 착공을 목표로 한다.</td>
+<td>창동·상계 지역이 <strong>바이오·AI 융합 산업의 핵심 허브</strong>가 될 것이라는 전망은 아직 구체적 실현 단계가 아니다.</td>
+</tr>
+<tr>
+<td>5조9000억 원 규모의 생산 유발 효과가 예상된다.</td>
+<td>8만5000명 이상의 일자리 창출이 실제로 얼마나 실현될지는 추후 세부 계획에 따라 달라질 수 있다.</td>
+</tr>
+<tr>
+<td>노원구 창동·상계 일대가 <strong>바이오·AI 융합 연구·개발·제조</strong>를 위한 종합 인프라를 갖출 예정이다.</td>
+<td>S‑DBC 내 <strong>특정 기업 유치</strong> 여부는 아직 확정되지 않았다.</td>
+</tr>
+<tr>
+<td>서울시가 <strong>‘S‑DBC’</strong>를 통해 <strong>바이오·AI 융합 산업의 핵심 허브</strong>를 구축하려는 전략을 발표했다.</td>
+<td>프로젝트 진행 중 <strong>환경·주민 의견</strong>이 어떻게 반영될지는 아직 공개되지 않았다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>서울시장 오세훈</strong></td>
+<td>프로젝트 총괄</td>
+<td><strong>바이오·AI 융합 산업 육성을 통한 도시 경쟁력 강화</strong>를 강조하며, <strong>5조9000억 원</strong> 규모의 투자와 <strong>8만5000명</strong> 일자리 창출을 목표로 한다.</td>
+</tr>
+<tr>
+<td><strong>노원구청</strong></td>
+<td>지역 행정</td>
+<td><strong>S‑DBC 조성</strong>을 통해 <strong>노원구의 산업 다변화</strong>와 <strong>주민 생활 개선</strong>을 추진한다.</td>
+</tr>
+<tr>
+<td><strong>바이오·AI 기업</strong></td>
+<td>잠재적 투자자</td>
+<td><strong>S‑DBC</strong>가 제공할 <strong>연구·개발·제조 인프라</strong>와 <strong>인재 풀</strong>에 큰 관심을 보이고 있다.</td>
+</tr>
+<tr>
+<td><strong>주민 단체</strong></td>
+<td>지역 주민 대표</td>
+<td><strong>주거·환경 영향</strong>에 대한 우려를 표명하고, <strong>주민 참여</strong>를 요구하고 있다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2028년 착공</strong>을 목표로 한 <strong>장기 개발 일정</strong>이므로, <strong>단기적 불확실성</strong>이 존재하지만, <strong>바이오·AI 융합 산업</strong>의 성장세를 감안하면 **장기적으로는 서울시의 글로벌 경쟁</li>
+</ul>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=jJy-O8nKoks" target="_blank">서울 디지털바이오시티(S-DBC) 컨퍼런스 | 바이오산...</a><a href="https://www.youtube.com/watch?v=n_ZBIALwr-o" target="_blank">우이신설 연장선·바이오시티...&#39;강북 전성시대&...</a><a href="https://www.youtube.com/watch?v=EPPXFx8PDCE" target="_blank">서울의 마지막 대규모 미개발지! 여기입니다 (feat....</a><a href="https://www.youtube.com/watch?v=TnO1L7CaSt4" target="_blank">[서울] 디지털 바이오시티 기업설명회...&quot;미...</a><a href="https://www.youtube.com/watch?v=zh5Xj0eeEbg" target="_blank">강남보다 더 주목받을 곳? 서울시장이 알려드립니다🌟 #...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/020/0003676670" target="_blank">‘베드타운’ 노원구 창동·상계동을 바이오 산업 육성 거점으로</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.seoul.go.kr/citybuild/archives/529888" target="_blank">서울디지털바이오시티(S-DBC) 컨퍼런스 행사 개최 안내 < 주택 ...</a><a href="https://uri.seoul.go.kr/web/bbsPost/60/4901/detail.do?mid=1075" target="_blank">서울균형발전포털 상세</a><a href="https://times.seoultech.ac.kr/reports?category=84&idx=21853" target="_blank">'서울 디지털 바이오 시티' 사업 확정… 한전 연수원 부지 활용 검토</a><a href="https://uri.seoul.go.kr/web/bbsPost/61/4907/detail.do?mid=1076" target="_blank">보도자료 < 새소식 < 서울균형발전포털</a><a href="https://files-scs.pstatic.net/2024/06/03/VPHk0k8Bhz/%EB%8F%99%EB%B6%81%EA%B6%8C%20%EC%B2%A8%EB%8B%A8%EA%B8%B0%EC%97%85%20%EC%9C%A0%EC%B9%98%20%EC%98%A4%EC%84%B8%ED%9B%88%20%EC%8B%9C%EC%9E%A5%20%EC%A7%81%EC%A0%91%20%EB%82%98%EC%84%A0%EB%8B%A4%E2%80%A6%2027%EC%9D%BC(%EC%9B%94)%20%EA%B8%B0%EC%97%85%EC%84%A4%EB%AA%85%ED%9A%8C.pdf" target="_blank">보도자료</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

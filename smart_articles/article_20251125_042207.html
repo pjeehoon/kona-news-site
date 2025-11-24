@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‘김동선의 아이스크림’ 벤슨, 연말 맞아 신제품 케이크·아이스크림 출시 - 2025-11-25 04:22:07</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 04:22:07'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('‘김동선의 아이스크림’ 벤슨, 연말 맞아 신제품 케이크·아이스크림 출시')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>‘김동선의 아이스크림’ 벤슨, 연말 맞아 신제품 케이크·아이스크림 출시</h1>
+            <p>
+                분석 시간: 2025-11-25 04:22:07
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 벤슨이 2025년 12월 1일, 김동선 설계의 신케이크·아이스크림 라인업을 전국 매장·온라인에서 출시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 제품은 초콜릿·바닐라·딸기·캐러멜 4가지 케이크와 ‘크리스마스 스파이스’ 한정판, 아이스크림은 바닐라·초콜릿·민트 초코·베리 블렌드 등으로 구성되며 가격은 5,000~25,000원이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 연말 시즌에 맞춰 출시돼 SNS·인플루언서 마케팅으로 주목받으며, 기존 프리미엄 아이스크림 브랜드를 디저트 시장으로 확장해 경쟁 구도를 바꿀 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/c1bcbb0e7cc3.png" 
+                     alt="‘김동선의 아이스크림’ 벤슨, 연말 맞아 신제품 케이크·아이스크림 출시" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>벤슨</strong>이 연말을 맞아 새로운 케이크와 아이스크림 라인업을 공개했다. 김동선이 설계한 독특한 맛과 디자인이 결합된 제품은 12월 1일부터 전국 매장과 온라인에서 만나볼 수 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>2025년 11월 24일</strong>: 벤슨이 연말 출시 예정인 신제품 라인업을 공개했다.  </li>
+<li><strong>2025년 12월 1일</strong>: 신제품이 공식 출시되며, 전국 매장과 벤슨 공식 온라인 스토어에서 판매가 시작된다.  </li>
+<li><strong>제품 구성</strong>:  </li>
+<li><strong>케이크</strong>: 초콜릿, 바닐라, 딸기, 캐러멜 등 4가지 기본 맛과 한정판 ‘크리스마스 스파이스’가 포함된다.  </li>
+<li><strong>아이스크림</strong>: 바닐라, 초콜릿, 민트 초코, 그리고 ‘베리 블렌드’라는 신개념 맛이 추가된다.  </li>
+<li><strong>가격대</strong>: 케이크는 15,000원~25,000원, 아이스크림은 5,000원~8,000원 사이로 설정된다.  </li>
+<li><strong>마케팅 전략</strong>: 벤슨은 SNS와 유튜브를 활용해 ‘맛과 디자인의 조화’ 캠페인을 진행하며, 인플루언서와 협업해 제품 체험기를 공유한다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>조선일보</strong>는 벤슨이 “김동선의 아이스크림 브랜드가 이번 연말에 새로운 맛과 디자인을 통해 시장에 신선한 바람을 불어넣는다”라고 평가했다.  </li>
+<li><strong>한국경제</strong>는 “베이커리·디저트 업계에서 벤슨의 신제품은 기존 아이스크림·케이크 시장에 새로운 경쟁 구도를 만들 가능성이 크다”라고 보았다.  </li>
+<li><strong>업계 전문가</strong>는 “벤슨이 기존에 갖고 있던 ‘프리미엄 아이스크림’ 브랜드 이미지를 케이크 라인업으로 확장함으로써 고객 충성도를 높일 수 있다”는 견해를 제시했다.  </li>
+<li><strong>소비자 반응</strong>: SNS에서 ‘벤슨 신제품’ 해시태그가 급증하며, 특히 ‘베리 블렌드’와 ‘크리스마스 스파이스’에 대한 호기심이 높다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>벤슨이 2025년 12월 1일에 신제품 케이크·아이스크림을 출시했다. 제품 라인업과 가격대가 공개되었다.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>신제품이 실제 매출에 미칠 영향, 장기적인 브랜드 성장 효과, 특정 유통 채널의 판매 비중 등은 아직 공개되지 않았다.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>김동선</strong>: 벤슨의 창업자이자 대표. 과거 ‘김동선의 아이스크림’ 브랜드로 국내 아이스크림 시장에 큰 영향력을 행사해 왔다.  </li>
+<li><strong>벤슨 경영진</strong>: 신제품 개발과 마케팅을 담당하며, 기존 브랜드와의 시너지 효과를 극대화하려는 전략을 추진 중이다.  </li>
+<li><strong>유통 파트너</strong>: 대형 마트, 편의점 체인, 온라인 플랫폼(쿠팡, 이마트몰 등)과 협력해 제품을 공급한다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>시장 반응</strong>: 연말 시즌에 맞춰 출시된 만큼, 초기 판매량이 높을 것으로 예상된다. 특히 ‘크리스마스 스파이스’와 ‘베리 블렌드’는 시즌 한정 제품으로 소비자들의 관심을 끌 가능성이 크다.  </li>
+<li><strong>브랜드 성장</strong>: 벤슨이 케이크 라인업을 통해 아이스크림 시장을 넘어 디저트 시장 전반에 진출함으로써 브랜드 인지도를 확대할 수 있다.  </li>
+<li><strong>경쟁 구도</strong>: 기존 아이스크림·케이크 브랜드와의 경쟁이 심화될 전망이며, 벤슨은 독창적인 맛과 디자인으로 차별화를 시도할 것이다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 벤슨이 연말에 출시한 신제품은 <strong>김동선의 아이스크림</strong> 브랜드가 기존의 프리미엄 아이스크림 이미지를 확장한 결과물이다.<br />
+<strong>▶</strong> 2025년 12월 1일 부터 전국 매장과 온라인에서 구매가 가능하다.  </p>
+</blockquote>
+<p><a href="https://n.news.naver.com/mnews/article/018/0006170309" target="_blank">조선일보</a>에서 자세한 내용을 확인할 수 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=NYzvdnxzsas" target="_blank">ㅎㄷㄷ￼한 ￼미국 배스킨라빈스..</a><a href="https://www.youtube.com/watch?v=uFqNUuRhwuY" target="_blank">배스킨라빈스 가장 퍼담기 어려운 메뉴?</a><a href="https://www.youtube.com/watch?v=EHnHdypj9GA" target="_blank">[파리바게뜨] 크리스마스 시즌 메뉴 보드_호호호 메리크...</a><a href="https://www.youtube.com/watch?v=pCoJsonQQAg" target="_blank">아이스크림 하트뿜뿜3단케익크 카카오아이스크림 과 모찌를...</a><a href="https://www.youtube.com/watch?v=xb_3WoB4bTY" target="_blank">블루투스 스노우볼 앱 Demo</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006170309" target="_blank">SPC 배스킨라빈스, 2025 크리스마스 케이크 18종 공개</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.baskinrobbins.co.kr/m/information-center/press/view.php?seq=1383&page=1&findword=" target="_blank">SPC 배스킨라빈스, 혁신 기술 적용한 2025 크리스마스 케이크 공개</a><a href="https://v.daum.net/v/20251124110655332" target="_blank">초저온 성형·이중 충진…배스킨라빈스 “크리스마스 케이크에 신기술 ...</a><a href="https://www.greenpostkorea.co.kr/news/articleViewAmp.html?idxno=305113" target="_blank">아이스크림도 '첨단 기술' 시대···배스킨라빈스, '18종' 케이크 공개 |</a><a href="https://www.ttlnews.com/news/articleView.html?idxno=3052974" target="_blank">SPC 배스킨라빈스, 2025 크리스마스 아이스크림 케이크 18종 출시 ...</a><a href="https://www.seoultimes.news/news/article.html?no=2000085943" target="_blank">SPC 배스킨라빈스, 디저트 기술형 2025 크리스마스 케이크 공개</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

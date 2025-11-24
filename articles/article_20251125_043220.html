@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸틴이 만든 듯한 트럼프 ‘종전안’… 벼랑 끝 몰린 젤렌스키 - 2025-11-25 04:32:20</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,국제,트럼프,젤렌스키,제네바 회담,평화안,마코 루">
+    <meta name="article-category-tags" content="정치,국제">
+    <meta name="article-content-tags" content="트럼프,젤렌스키,제네바 회담,평화안,마코 루">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 04:32:20'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('푸틴이 만든 듯한 트럼프 ‘종전안’… 벼랑 끝 몰린 젤렌스키')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>푸틴이 만든 듯한 트럼프 ‘종전안’… 벼랑 끝 몰린 젤렌스키</h1>
+            <p>
+                분석 시간: 2025-11-25 04:32:20
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 트럼프가 제시한 종전안이 러시아에 유리하다는 비판이 일자, 우크라이나 대통령 젤렌스키는 평화안의 실효성에 대해 불신을 표명했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2025년 11월 23일 제네바 회담 이후 미국이 평화안 업데이트를 발표하고, 영국·프랑스·독일이 자체 수정안을 전달하며 협상이 진행 중이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 현재 협상은 불확실한 상태로 남아 있어 우크라이나의 군사적 입지와 향후 NATO·EU 가입 가능성에 중대한 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/cace9bf41de9.png" 
+                     alt="푸틴이 만든 듯한 트럼프 ‘종전안’… 벼랑 끝 몰린 젤렌스키" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>트럼프가 제시한 ‘종전안’이 러시아에 유리하다는 비판이 일자, 우크라이나 대통령 젤렌스키는 ‘실효성’에 대한 불신을 표명했다. 2025년 11월 23일 제네바 회담 이후 미국·러시아·유럽 간 협상은 여전히 불확실한 상태다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 23일</td>
+<td>제네바 회담</td>
+<td>미국·우크라이나가 평화 프레임워크를 재검토하고, 미국이 평화안 업데이트를 발표했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>미국 발표</td>
+<td>백악관이 평화안 업데이트를 공개하고, 향후 며칠간 공동 제안 작업을 진행하기로 했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>유럽 제안</td>
+<td>영국·프랑스·독일이 자체 수정안을 마련해 미국에 전달했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>루비오 발언</td>
+<td>마코 루비오 장관이 유럽 제안에 대해 “모른다”는 입장을 밝혔다.</td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>젤렌스키 입장</td>
+<td>젤렌스키는 평화안이 실효성을 갖추려면 실행 가능한 조치가 필요하다고 강조했다.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 2025년 11월 23일 제네바 회담에서 미국·우크라이나가 평화 프레임워크를 재검토했다.<br />
+<strong>▶</strong> 2025년 11월 24일 백악관이 평화안 업데이트를 발표하고, 유럽이 자체 수정안을 미국에 전달했다.<br />
+<strong>▶</strong> 마코 루비오 장관은 유럽 제안에 대해 “모른다”는 입장을 밝혀 논란이 일었다.<br />
+<strong>▶</strong> 젤렌스키는 평화안이 실효성을 갖추려면 실행 가능한 조치가 필요하다고 강조했다.  </p>
+</blockquote>
+<p><em>출처: <a href="https://n.news.naver.com/mnews/article/008/0005282433" target="_blank">네이버뉴스</a></em></p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>관점</th>
+<th>핵심 주장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reuters</strong></td>
+<td>중립적</td>
+<td>미국·우크라이나 회담은 가장 생산적이었으나 아직 완전한 합의에 이르지 못했다고 보고</td>
+</tr>
+<tr>
+<td><strong>Bloomberg</strong></td>
+<td>중립적</td>
+<td>미국·러시아 평화안이 러시아에 유리하다는 비판이 지속되고 있으며, 유럽의 수정안이 균형을 맞추려는 시도로 평가</td>
+</tr>
+<tr>
+<td><strong>AFP</strong></td>
+<td>비판적</td>
+<td>트럼프가 제시한 27일 마감일이 확정되지 않았으며 연기 가능성을 제시</td>
+</tr>
+<tr>
+<td><strong>마코 루비오</strong></td>
+<td>비판적</td>
+<td>러시아에 유리한 평화안이 우크라이나의 돈바스 지역 양도와 병력 감축을 요구한다는 비판</td>
+</tr>
+<tr>
+<td><strong>젤렌스키</strong></td>
+<td>비판적</td>
+<td>평화안이 실효성을 갖추려면 실행 가능한 조치가 필요하다고 강조</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 트럼프가 제시한 종전안은 러시아에 유리하다는 비판이 일자.<br />
+<strong>▶</strong> 유럽이 제안한 수정안은 우크라이나 정규군 80만명 유지와 NATO 5조 유사 보장, EU·나토 가입 가능성을 포함해 균형을 시도했다.<br />
+<strong>▶</strong> 트럼프는 27일 마감일을 제시했으나, 실제 확정은 아직 없으며 연기 가능성도 있다.  </p>
+</blockquote>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>미국·우크라이나가 2025년 11월 23일 제네바에서 평화 프레임워크를 재검토했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005282433" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>백악관이 평화안 업데이트를 발표하고 향후 며칠간 공동 제안 작업을 진행하기로 했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005282433" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>영국·프랑스·독일이 자체 수정안을 마련해 미국에 전달했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005282433" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>유럽 수정안은 우크라이나 정규군 80만명 유지, 현재 전선 기준 협상, NATO 5조 유사 보장, EU·나토 가입 가능성 포함.</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005282433" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>미국·러시아 평화안이 러시아에 지나치게 유리하다는 주장</td>
+<td>Bloomberg (링크 미제공)</td>
+</tr>
+<tr>
+<td></td>
+<td>루비오 장관이 유럽 제안에 대해 모른다는 발언이 실제 사실인지 여부</td>
+<td>Reuters (링크 미제공)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>도널드 트럼프</strong></td>
+<td>미국 전 대통령</td>
+<td>종전안 제안, 27일 마감일 제시</td>
+<td>미국의 외교적 영향력 확대, 러시아와의 협상에서 유리한 조건 확보</td>
+</tr>
+<tr>
+<td><strong>마코 루비오</strong></td>
+<td>미국 외무부 장관</td>
+<td>러시아에 유리한 평화안 비판, 유럽 제안 무지 주장</td>
+<td>미국의 외교 정책 방향에 대한 내부 갈등, 러시아와의 협상에서 균형 추구</td>
+</tr>
+<tr>
+<td><strong>볼로디미르 젤렌스키</strong></td>
+<td>우크라이나 대통령</td>
+<td>평화안의 실효성 부족 주장</td>
+<td>우크라이나의 주권과 영토 보전, 국제 지원 확보</td>
+</tr>
+<tr>
+<td><strong>영국·프랑스·독일</strong></td>
+<td>유럽 연합 국가</td>
+<td>자체 수정안 제시</td>
+<td>유럽의 안보와 러시아와의 균형, 우크라이나 지원 확대</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>협상 진행 여부</strong>: 미국·러시아·유럽 간 협상은 아직 완전한 합의에 이르지 못했으며, 27일 마감일이 확정되지 않아 연기 가능성이 있다.  </li>
+<li><strong>정책 방향</strong>: 트럼프가 제시한 종전안이 러시아에 유리하다는 비판이 지속되면서, 미국 내에서도 외교 정책 방향에 대한 내부 논의가 예상된다.  </li>
+<li><strong>우크라이나의 입장</strong>: 젤렌스키는 실행 가능한 조치가 필요하다고 강조해, 우크라이나가 실제로 이익을 얻을 수 있는 평화안이 마련될 때까지는 회의적 태도를 유지할 가능성이 높다.  </li>
+<li><strong>유럽의 역할</strong>: 유럽이 제안한 수정안이 균형을 맞추려는 시도로 평가되면서, 유럽의 외교적 영향력이 강화될 수 있다.  </li>
+</ul>
+<p><strong>전반적으로</strong> 미국·러시아·유럽 간 평화안 협상은 아직 초기 단계이며, 각국의 이해관계와 내부 논의가 지속될 전망이다. 우크라이나는 실질적 이익을 확보하기 위해 지속적인 외교적 압박과 협상 참여가 필요하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=W5r4yt7XvkM" target="_blank">트럼프: 민주당 의원들 사형위협, 젠슨 황: 버블도 정...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/008/0005282433" target="_blank">미국-우크라 만나 '평화안' 수정…유럽은 자체 수정안 전달</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.bbc.com/korean/articles/cy0q9k9pvlgo" target="_blank">러시아-우크라이나 전쟁: 더 강해진 푸틴의 그늘 속, 젤렌스키-트럼프 ...</a><a href="https://www.joongang.co.kr/article/25375116" target="_blank">"이제 전쟁 지겹다"…트럼프, 젤렌스키에 욕하며 지도 내던졌다 | 중앙 ...</a><a href="https://www.bbc.com/korean/articles/c1dqz567k9xo" target="_blank">트럼프, '러시아는 종이 호랑이...우크라이나 영토 전체 수복 가능할 ...</a><a href="https://www.joongang.co.kr/article/25317525" target="_blank">트럼프·젤렌스키 서로 고함…파국의 회담 '광물협정'도 깨졌다 | 중앙일보</a><a href="https://www.bbc.com/korean/articles/c2erw83pw27o" target="_blank">트럼프-젤렌스키 정상회담: 밴스는 왜 젤렌스키와의 설전에 나섰을까 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
