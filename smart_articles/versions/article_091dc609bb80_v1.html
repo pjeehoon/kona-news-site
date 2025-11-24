@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주 우도에서 승합차 돌진…2명 숨지고 11명 중경상 - 2025-11-24 19:07:43</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,제주,우도,승합차">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="제주,우도,승합차">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-24 19:07:43'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('제주 우도에서 승합차 돌진…2명 숨지고 11명 중경상')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>제주 우도에서 승합차 돌진…2명 숨지고 11명 중경상</h1>
+            <p>
+                분석 시간: 2025-11-24 19:07:43
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 제주 우도 천진항에서 승합차가 급가속해 도로표지판 기둥을 들이받아 2명이 사망하고 11명이 부상(3명 심정지)한 사고가 발생했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 사고는 60대 운전자가 14시 50분경 100미터를 돌진하면서 일어났으며, 경찰은 목격자 진술을 수집해 원인 조사를 진행 중이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 사고로 지역 관광객 신뢰가 하락하고, 제주도는 차량 통행 통제 및 도로 표지판 설치 위치를 재검토해 안전 대책을 강화할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/24/091dc609bb80.png" 
+                     alt="제주 우도에서 승합차 돌진…2명 숨지고 11명 중경상" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>제주 우도 천진항에서 승합차가 급가속해 도로표지판 기둥을 들이받으며 2명이 사망, 11명이 부상(3명 심정지)한 사건이 발생했다.</strong> 경찰은 목격자 진술을 바탕으로 사고 원인을 조사 중이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>▶</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 24일 14시 50분경</strong></td>
+<td>승합차가 천진항에서 배를 내려 100미터를 돌진해 도로표지판 기둥을 들이받음.</td>
+</tr>
+<tr>
+<td><strong>피해 규모</strong></td>
+<td>2명 사망, 11명 부상(3명 심정지). 3명은 헬리콥터에 이송돼 병원으로 옮겨진 상태.</td>
+</tr>
+<tr>
+<td><strong>운전자</strong></td>
+<td>60대 운전자가 사고를 일으켰음.</td>
+</tr>
+<tr>
+<td><strong>현장 상황</strong></td>
+<td>길을 걷던 관광객 10여 명이 크게 부상.</td>
+</tr>
+<tr>
+<td><strong>조사 현황</strong></td>
+<td>경찰이 목격자 진술을 수집해 사고 경위 조사를 진행 중.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/214/0001463742" target="_blank">조선일보</a></p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>보도 영상</strong>  </li>
+<li><a href="https://www.youtube.com/watch?v=rsoaPtQKhGg" target="_blank">MBCNEWS</a>와 <a href="https://www.youtube.com/watch?v=b_uRVIZMTOs" target="_blank">연합뉴스TV</a>에서는 현장 영상과 목격자 인터뷰를 통해 사고 현장을 생생히 전달했다. 영상에서는 차량이 급가속해 도로표지판 기둥을 들이받는 순간이 확인된다.  </li>
+<li>
+<p><strong>분석</strong>: 영상은 사고의 물리적 상황을 시각적으로 입증하며, 차량이 급가속한 것으로 보이지만 정확한 원인(기계적 고장, 운전자의 과실 등)은 아직 확정되지 않았다.</p>
+</li>
+<li>
+<p><strong>현장 목격자</strong>  </p>
+</li>
+<li>목격자들은 차량이 갑자기 가속해 돌진했다고 보고했다. 일부 목격자는 운전자가 “어, 어”라고 외치는 소리를 들었다고 전했다.  </li>
+<li>
+<p><strong>분석</strong>: 목격자 진술은 사고 원인 파악에 중요한 단서이지만, 주관적 인식이 개입될 가능성이 있어 보완 자료가 필요하다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li>교통안전 전문가들은 “승합차의 급가속은 차량 내부 장치 고장이나 운전자의 과실이 원인일 가능성이 높다”라며, 사고 현장에서 차량의 제동 시스템과 엔진 상태를 점검할 필요가 있다고 지적했다.  </li>
+<li><strong>분석</strong>: 전문가 의견은 사고 원인에 대한 가설을 제시하지만, 실제 조사 결과와는 차이가 있을 수 있다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th><strong>확인된 사실</strong></th>
+<th><strong>미확인/추정</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2명 사망, 11명 부상(3명 심정지)</td>
+<td>차량 급가속 주장(운전자가 “급발진”이라고 주장)</td>
+</tr>
+<tr>
+<td>사고 발생 시각: 14시 50분</td>
+<td>운전자의 나이(70세 여성) 주장</td>
+</tr>
+<tr>
+<td>차량이 도로표지판 기둥을 들이받음</td>
+<td>차량 내부 장치 고장 여부</td>
+</tr>
+<tr>
+<td>경찰이 목격자 진술을 바탕으로 조사 진행</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://sirens.kr/View.aspx?No=3866564" target="_blank">sirens.kr</a></p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>운전자</strong>  </li>
+<li>60대(정확한 성별·이름 미공개) 운전자가 사고를 일으켰음. 현재 경찰 조사 대상이며, 운전자의 과실 여부가 핵심 이슈다.  </li>
+<li><strong>피해자</strong>  </li>
+<li>2명 사망, 11명 부상(3명 심정지)으로, 피해자 가족과 지역 관광업계가 큰 타격을 입고 있다.  </li>
+<li><strong>경찰</strong>  </li>
+<li>목격자 진술과 차량 사고 현장을 조사해 원인 규명에 주력하고 있다.  </li>
+<li><strong>현지 관광업계</strong>  </li>
+<li>사고로 인한 관광객 신뢰도 하락이 우려되며, 안전 강화 조치를 요구하고 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>사고 원인 규명</strong><br />
+   - 차량 내부 장치 점검과 운전자의 과실 여부가 결정되면, 사고 책임 소재가 명확해질 전망이다.  </li>
+<li><strong>안전 대책 강화</strong><br />
+   - 제주도는 사고 후 도로 표지판 설치 위치와 차량 통행 통제 방안을 재검토할 가능성이 높다.  </li>
+<li><strong>관광업 회복</strong><br />
+   - 사고 이후 관광객 신뢰 회복을 위해 지역 관광청이 안전 캠페인과 비상 대응 체계를 강화할 것으로 예상된다.  </li>
+<li><strong>법적·제도적 변화</strong><br />
+   - 승합차 운전자의 안전 교육 강화와 차량 정기 점검 의무화 등 제도적 개선이 논의될 수 있다.</li>
+</ol>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/214/0001463742" target="_blank">조선일보</a>, <a href="https://www.youtube.com/watch?v=rsoaPtQKhGg" target="_blank">MBCNEWS</a>, <a href="https://www.youtube.com/watch?v=b_uRVIZMTOs" target="_blank">연합뉴스TV</a>, <a href="https://sirens.kr/View.aspx?No=3866564" target="_blank">sirens.kr</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=rsoaPtQKhGg" target="_blank">제주 우도서 승합차 돌진‥ 3명 심정지·10명 부상 (...</a><a href="https://www.youtube.com/watch?v=b_uRVIZMTOs" target="_blank">제주시 우도서 승합차 돌진…3명 심정지·10명 중경상 ...</a><a href="https://www.youtube.com/watch?v=fWu2Cy_y8-M" target="_blank">제주 우도서 승합차 돌진‥ 3명 심정지·10명 부상 -...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/214/0001463742" target="_blank">제주 우도서 승합차 돌진‥ 3명 심정지·10명 부상</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://sirens.kr/View.aspx?No=3866564" target="_blank">제주 우도서 차량 급발진 추정 사고···관광객 등 2명 사망, 8명 중경상 ...</a><a href="https://news.nate.com/view/20250221n10637" target="_blank">김해공항 계류장서 버스 사고…조업중이던 40대 직원 숨져 : 네이트 뉴스</a><a href="https://blog.naver.com/nonopppp/70112762493?viewType=pc" target="_blank">화전동열쇠집 : 네이버 블로그</a><a href="https://namu.wiki/w/2006%EB%85%84" target="_blank">2006년 - 나무위키</a><a href="https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt" target="_blank">제목없음</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
