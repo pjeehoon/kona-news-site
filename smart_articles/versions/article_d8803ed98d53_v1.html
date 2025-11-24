@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"자사주 1년내 소각, 어길땐 이사에 과태료" - 2025-11-24 21:42:57</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,경제,자사">
+    <meta name="article-category-tags" content="정치,경제">
+    <meta name="article-content-tags" content="자사">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-24 21:42:57'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"자사주 1년내 소각, 어길땐 이사에 과태료"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"자사주 1년내 소각, 어길땐 이사에 과태료"</h1>
+            <p>
+                분석 시간: 2025-11-24 21:42:57
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 3차 상법 개정안은 신규 및 기존 자사주를 1년 이내에 소각하도록 의무화하고, 소각 미이행 시 이사에게 과태료를 부과한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 소각 계획은 주주총회 승인을 받아야 하며, 이 조치는 주주 보호와 기업의 사익 추구 방지를 목표로 한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이사에게 과태료 부과 규정은 기업의 자사주 활용 전략에 제약을 줄 수 있으며, 재계 의견 수렴과 실제 시행 시점이 아직 확정되지 않았다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/24/d8803ed98d53.png" 
+                     alt=""자사주 1년내 소각, 어길땐 이사에 과태료"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>더불어민주당이 제안한 3차 상법 개정안에 따라 신규 취득 자사주는 1년 이내 소각이 의무화되고, 소각을 이행하지 않을 경우 이사에게 과태료가 부과된다. 기존 보유 자사주도 1년 이내 소각 대상이며, 소각 계획은 주주총회 승인이 필요하다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 23일</strong> – 민주당이 3차 상법 개정안 초안을 마련, 자사주 보유·처분 결정권을 <strong>주주총회</strong>로 전환하고 <strong>신규 취득 자사주 1년 이내 소각</strong>을 의무화했다.  </li>
+<li>
+<p><a href="https://n.news.naver.com/mnews/article/011/0004559149" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 24일</strong> – 민주당이 법안 발의 예정이며, <strong>재계 의견을 추가 수렴</strong>할 계획이다.  </p>
+</li>
+<li>
+<p><a href="https://biz.chosun.com/policy/politics/2025/11/24/TGVEZFMO45BD5OAJGWMFCCGNCM/" target="_blank">조선비즈</a></p>
+</li>
+<li>
+<p><strong>▶ 3차 상법 개정안</strong>에 따라 기존 보유 자사주도 <strong>1년 이내 소각</strong> 대상이 된다.  </p>
+</li>
+<li>
+<p>기존 2차 개정안에서는 <strong>3년 이내</strong> 소각이 제안되었으나, 이번 개정안은 기간을 <strong>1년</strong>으로 단축했다.</p>
+</li>
+<li>
+<p><strong>▶ 소각 계획은 주주총회에서 승인</strong>되어야 한다.  </p>
+</li>
+<li>
+<p>이는 주주 보호를 강화하기 위한 조치다.</p>
+</li>
+<li>
+<p><strong>▶ 소각 의무를 어길 경우 이사에게 과태료 부과</strong> 규정이 포함된다.  </p>
+</li>
+<li>
+<p>과태료 금액은 아직 정해지지 않았으나, 법안에 명시돼 있다.</p>
+</li>
+<li>
+<p><strong>▶ 이사 개인에 대한 과태료 부과</strong>는 상법 개정안의 핵심 조항이며, 기업이 자사주를 사익 추구 목적으로 활용하는 것을 방지하기 위한 목적이다.</p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>민주당 관계자</strong></td>
+<td>“자사주 보유·처분 결정권을 주주총회로 전환해 기업의 투명성을 높이고 사익 추구를 차단할 수 있다.”</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004559149" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>주요 언론(조선비즈)</strong></td>
+<td>“제안된 조항은 기업의 자사주 처분을 더 까다롭게 만들 수 있다.”</td>
+<td><a href="https://biz.chosun.com/policy/politics/2025/11/24/TGVEZFMO45BD5OAJGWMFCCGNCM/" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>“자사주 소각 의무 어기면 이사 개인에 과태료 부과.”</td>
+<td><a href="https://www.yna.co.kr/view/AKR20250716110400001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>오마이뉴스</strong></td>
+<td>“자사주 3년 이내 소각 의무화” (이전 개정안 내용)</td>
+<td><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003148930" target="_blank">오마이뉴스</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>과태료 부과는 이사들의 책임 의식을 강화할 수 있으나, 기업의 자사주 활용 전략에 제약을 줄 수 있다.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>3차 상법 개정안 초안에 <strong>신규 취득 자사주 1년 이내 소각 의무</strong> 포함, 기존 보유 자사주도 <strong>1년 이내 소각</strong> 대상, 소각 계획은 <strong>주주총회 승인</strong> 필요, <strong>이사에게 과태료 부과</strong> 규정 포함</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004559149" target="_blank">네이버뉴스</a>, <a href="https://biz.chosun.com/policy/politics/2025/11/24/TGVEZFMO45BD5OAJGWMFCCGNCM/" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>과태료 금액, 구체적 시행 시점, 실제 기업의 반응 및 재계 의견 수렴 결과</td>
+<td>— (현재 공식 발표가 없으며, 입법 절차에 따라 확정될 예정)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>민주당 김남근 의원</strong> – 3차 상법 개정안 발의 주도자.  </li>
+<li>
+<p><a href="https://www.yna.co.kr/view/AKR20250716110400001" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>기업 이사회</strong> – 자사주 보유·처분 결정권이 주주총회로 전환되면서 이사회 권한이 축소될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>주주</strong> – 소각 계획 승인 필요로 주주 보호 장치가 강화된다.</p>
+</li>
+<li>
+<p><strong>재계</strong> – 일부 기업은 자사주 활용을 통한 주가 관리 전략에 제약을 우려한다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>법안이 국회에 상정되면, <strong>재계와 주주들의 의견 수렴</strong>을 거쳐 최종 조정될 가능성이 있다.  </li>
+<li>과태료 부과 규정이 실제로 시행되면, 기업은 자사주 매입 시 <strong>신중해질</strong> 전망이다.  </li>
+<li>장기적으로는 <strong>기업의 자사주 활용에 대한 투명성 강화</strong>와 **주주 보호</li>
+</ul>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=q7IaeaYZdK8" target="_blank">[NEWS 15 다시보기] &#39;기존 자사주도&#3...</a><a href="https://www.youtube.com/watch?v=MK_6eLTrtMM" target="_blank">민주당 오늘 자사주 소각 의무화 발의…EB발행 급증 [...</a><a href="https://www.youtube.com/watch?v=IML_3QYhcH4" target="_blank">[너무쉬운 금융용어 경제용어 24] 자사주소각, 왜 귀...</a><a href="https://www.youtube.com/watch?v=TPHFB5Cp09Y" target="_blank">주식을 없앤다고?…자사주 소각의 모든 것 (조형근) /...</a><a href="https://www.youtube.com/watch?v=YhfjsdEwmTg" target="_blank">민주당 자사주 취득 1년 내 소각 의무화 법안 발의! ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004559149" target="_blank">민주당 ‘자사주 보유·처분 결정권’ 이사회서 주총으로 전환 추진</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003148930" target="_blank">민주당, '자사주 소각법 2탄' 나왔다... 최대 3년 내 소각 의무화 - 오마이 ...</a><a href="https://www.yna.co.kr/view/AKR20250716110400001" target="_blank">與 김현정, '자사주 3년 이내 소각 의무화' 상법 개정안 발의 | 연합뉴스</a><a href="https://biz.chosun.com/policy/politics/assembly/2025/11/21/X2HBDNOZVNFZRBOEVACNJNVK6Y/" target="_blank">與 '3차 상법 개정안' 발표 임박… “자사주 처분 시 주주 보호 장치 마련 ...</a><a href="https://www.yna.co.kr/view/AKR20250927055900001" target="_blank">與 "자사주 소각에 이견 없다"…'더 더 센 상법' 추진 속도 채비 | 연합뉴스</a><a href="https://biz.chosun.com/policy/politics/2025/11/24/TGVEZFMO45BD5OAJGWMFCCGNCM/" target="_blank">[단독] 자사주 소각 의무 어기면 이사 개인에 과태료…3차 상법 개정안 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
