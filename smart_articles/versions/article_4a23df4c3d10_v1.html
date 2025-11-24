@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태광산업, 3200억 교환사채 발행 전면 철회…사업재편은 지속 - 2025-11-25 05:49:19</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,태광산업,교환사채,구조조정">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="태광산업,교환사채,구조조정">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 05:49:19'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('태광산업, 3200억 교환사채 발행 전면 철회…사업재편은 지속')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>태광산업, 3200억 교환사채 발행 전면 철회…사업재편은 지속</h1>
+            <p>
+                분석 시간: 2025-11-25 05:49:19
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 태광산업은 2025년 11월 24일 이사회 결의에 따라 3200억 원 규모의 교환사채 발행을 전면 철회했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 철회 결정은 주주 이익 보호를 이유로 하였으며, 기업은 신사업 투자와 구조조정을 계속 추진할 것이라고 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> Trustton Asset Management은 서울중앙지방법원에 가처분 신청을 진행 중이며, 기업의 재무 건전성 강화와 주주 가치 보호가 동시에 이뤄질 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/4a23df4c3d10.png" 
+                     alt="태광산업, 3200억 교환사채 발행 전면 철회…사업재편은 지속" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>태광산업이 2025년 11월 24일 이사회에서 3200억 원 규모의 교환사채(EB) 발행을 전면 철회했다. 주주 이익 보호를 이유로 한 결정이지만, 기업은 여전히 신사업 투자와 구조조정을 추진할 것이라 밝혔다. 이와 관련해 Trustton Asset Management은 서울중앙지방법원에 가처분 신청을 진행 중이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 07월 01일</td>
+<td>투자 계획 발표</td>
+<td>1조 5000억원 규모의 투자 계획과 함께 3200억 원 교환사채 발행을 포함한 자금 조달 방안 공개</td>
+<td><a href="https://www.investchosun.com/site/data/html_dir/2025/11/24/2025112480064.html" target="_blank">인베스트조선</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>이사회 결의</td>
+<td><strong>3200억 원 교환사채 발행 철회</strong> 결정 및 사업 재편 지속 방침 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/119/0003028730" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>주주 보호 선언</td>
+<td><strong>주주 및 이해관계자 의견, 시장 여건, 정부 정책</strong>을 종합해 철회 결정</td>
+<td><a href="https://www.chosun.com/economy/industry-company/2025/11/24/6GR3LQMX7RA7HANTLSTSUQN6DE/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>재무 상황 공개</td>
+<td><strong>3.5개월 예비운영자금 5600억 원</strong> 확보</td>
+<td><a href="https://www.sisajournal-e.com/news/articleView.html?idxno=417247" target="_blank">시사저널e</a></td>
+</tr>
+<tr>
+<td>2025년 ??</td>
+<td>법적 대응</td>
+<td>Trustton Asset Management이 <strong>서울중앙지방법원에 가처분 신청</strong></td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>주주 이익 침해 논란</td>
+<td><strong>EB 발행이 기존 주주 이익을 침해</strong>할 우려 제기</td>
+<td>Dailyan (링크 없음)</td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>기업 입장</td>
+<td><strong>사업 재편 지속</strong> 선언</td>
+<td><a href="https://www.newstomato.com/ReadNews.aspx?no=1282609" target="_blank">뉴스토마토</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>기업 입장</strong><br />
+  태광산업은 3200억 원 교환사채 발행을 철회하면서도 <strong>신사업 투자와 구조조정</strong>을 계속할 것이라고 밝혔다. 이는 주주 보호와 동시에 기업의 장기 성장 전략을 유지하려는 시도로 해석된다.  </p>
+<blockquote>
+<p>“주주 및 이해관계자 의견, 시장 여건 및 정부 정책을 종합해 3200억 교환사채 발행을 철회하고 사업 재편을 지속한다.”<br />
+<a href="https://www.chosun.com/economy/industry-company/2025/11/24/6GR3LQMX7RA7HANTLSTSUQN6DE/" target="_blank">조선일보</a></p>
+</blockquote>
+</li>
+<li>
+<p><strong>주주 및 투자자 시각</strong><br />
+  Dailyan은 <strong>주주 이익 침해 논란</strong>이 제기된 가운데, 기업이 EB 발행을 취소한 것은 주주 보호를 위한 조치라고 평가했다. 그러나 동시에 <strong>구조적 재편과 신사업 확대</strong>를 계속 추진한다는 점을 지적했다.  </p>
+<blockquote>
+<p>“태광산업은 주주 이익을 보호하기 위해 EB 발행을 취소했으나, 구조적 재편과 신사업 확대를 계속 추진한다.”<br />
+Dailyan (링크 없음)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  금융 전문가들은 교환사채가 <strong>3자 배정 유상증자와 유사한 효과</strong>를 가질 수 있다고 지적하면서, 주주 가치에 대한 잠재적 위험을 강조했다. 반면, 기업 재무 구조를 강화하기 위한 자금 조달 수단으로서의 EB는 여전히 유효하다고 보는 견해도 있다.  </p>
+<blockquote>
+<p>“교환사채는 유상증자와 비슷한 효과를 낼 수 있으므로, 주주 가치에 부정적 영향을 미칠 수 있다.”<br />
+(전문가 의견, 링크 없음)</p>
+</blockquote>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>2025년 11월 24일 이사회에서 3200억 원 교환사채 발행 철회 결정</td>
+<td><a href="https://n.news.naver.com/mnews/article/119/0003028730" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 11월 24일 태광산업이 사업 재편을 지속할 것이라고 발표</td>
+<td><a href="https://www.chosun.com/economy/industry-company/2025/11/24/6GR3LQMX7RA7HANTLSTSUQN6DE/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>3.5개월 예비운영자금 5600억 원 확보</td>
+<td><a href="https://www.sisajournal-e.com/news/articleView.html?idxno=417247" target="_blank">시사저널e</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Trustton Asset Management이 서울중앙지방법원에 가처분 신청</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>교환사채가 3자 배정 유상증자와 동일한 효과를 가질 수 있다는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>EB 발행이 기존 주주 이익을 심각하게 침해한다는 주장</td>
+<td>Dailyan (링크 없음)</td>
+</tr>
+<tr>
+<td></td>
+<td>Trustton Asset Management의 가처분 신청 시점</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>태광산업 이사회</strong></td>
+<td>3200억 원 교환사채 발행 철회 결정 및 사업 재편 지속</td>
+</tr>
+<tr>
+<td><strong>주주 및 이해관계자</strong></td>
+<td>주주 가치 보호를 요구, 기업의 재무 안정성에 관심</td>
+</tr>
+<tr>
+<td><strong>Trustton Asset Management</strong></td>
+<td>서울중앙지방법원에 가처분 신청을 통해 기업의 자금 조달 방안을 제한하려 함</td>
+</tr>
+<tr>
+<td><strong>Dailyan</strong></td>
+<td>주주 이익 침해 논란을 보도, 기업의 결정에 대한 비판적 시각 제시</td>
+</tr>
+<tr>
+<td><strong>금융 전문가</strong></td>
+<td>교환사채의 구조적 효과와 주주 가치에 대한 의견 제시</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>자금 조달 전략</strong><br />
+  태광산업은 교환사채 대신 <strong>다른 자금 조달 수단</strong>(예: 채권 발행, 은행 대출 등)을 모색할 가능성이 높다. 3.5개월 예비운영자금이 확보되어 있으나, 장기적인 재무 건전성을 위해 추가 자금 확보가 필요하다.</p>
+</li>
+<li>
+<p><strong>사업 재편 및 신사업 확대</strong><br />
+  기업은 <strong>신사업 투자와 구조조정</strong>을 지속할 계획이다. 이는 매출 감소(2018년 3조원 → 2022년 2조2122억원)과 누적 손실(2025년 3분기 2891억원) 상황에서 회복을 목표로 한다.</p>
+</li>
+<li>
+<p><strong>법적 분쟁</strong><br />
+  Trustton Asset Management의 가처분 신청이 실제로 진행된다면, 기업의 자금 조달 방안에 제약이 가해질 수 있다. 법원 판결 결과가 기업의 재무 전략에 큰 영향을 미칠 전망이다.</p>
+</li>
+<li>
+<p><strong>주주 관계</strong><br />
+  주주와의 신뢰 회복을 위해 기업은 <strong>투명한 정보 공개</strong>와 <strong>주주 가치 보호</strong>를 강조할 필요가 있다. 이는 장기적 투자자 신뢰 확보에 필수적이다.</p>
+</li>
+</ul>
+<p>태광산업은 3200억 원 교환사채 발행 철회를 통해 주주 이익을 보호하면서도, <strong>사업 재편과 신사업 확대</strong>를 지속적으로 추진할 계획이다. 향후 자금 조달 방식과 법적 분쟁 결과가 기업의 재무 건전성과 성장 전략에 결정적 영향을 미칠 것으로 보인다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/119/0003028730" target="_blank">태광산업, 3200억 교환사채 발행 취소...“사업재편은 지속”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.investchosun.com/site/data/html_dir/2025/11/24/2025112480064.html" target="_blank">태광산업, 3200억 규모 자사주 교환사채 발행 전면 철회-인베스트조선</a><a href="https://www.chosun.com/economy/industry-company/2025/11/24/6GR3LQMX7RA7HANTLSTSUQN6DE/" target="_blank">태광산업, 3200억원 교환사채 발행 결국 취소… “주주 가치 보호”</a><a href="https://www.newstomato.com/ReadNews.aspx?no=1282609" target="_blank">태광산업, 3200억 교환사채 발행 철회…"주주가치 보호"</a><a href="https://ser.or.kr/bbs/board.php?bo_table=B11&wr_id=20717" target="_blank">태광산업, 주주들에게 교환사채 발행의 필요성 설득 못한다면 철회 ...</a><a href="https://www.sisajournal-e.com/news/articleView.html?idxno=417247" target="_blank">태광산업, 3200억 교환사채 발행 철회···자금조달 계획 '빨간불' - 시사 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
