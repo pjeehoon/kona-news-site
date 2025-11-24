@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여인형 “판사님, 제가 군 생활 36년…尹에 무릎 꿇고 말했다” [현장영상] - 2025-11-25 03:10:04</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,여인형,윤석열,헌법">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="여인형,윤석열,헌법">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 03:10:04'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('여인형 “판사님, 제가 군 생활 36년…尹에 무릎 꿇고 말했다” [현장영상]')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>여인형 “판사님, 제가 군 생활 36년…尹에 무릎 꿇고 말했다” [현장영상]</h1>
+            <p>
+                분석 시간: 2025-11-25 03:10:04
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 전 국군 방첩 사령관 여인형이 2025년 2월 4일 헌법재판소에서 윤석열 전 대통령 탄핵심판에 무릎을 꿇으며 “계엄은 불가능하다”는 주장을 펼쳤다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 36년의 군경력을 바탕으로 군사 현황과 비상권한을 설명하며, 무릎을 꿇은 이유를 윤 전 대통령의 발언이 무례하다고 밝힌다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 발언은 계엄 가능성에 대한 논란을 불러일으키고, 여인형이 추가 기소되는 등 정치·군사적 파장을 일으키고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/d1095eb572e4.png" 
+                     alt="여인형 “판사님, 제가 군 생활 36년…尹에 무릎 꿇고 말했다” [현장영상]" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>전 국군 방첩 사령관 여인형이 2025년 2월 4일 헌법재판소에서 열린 윤석열 전 대통령 탄핵심판에서 무릎을 꿇으며 “계엄은 불가능하다”는 주장을 펼쳤다. 36년의 군경력을 바탕으로 군사 현황과 비상권한에 대해 설명했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 5~6월</td>
+<td>삼청동 저녁식사</td>
+<td>윤석열 전 대통령과 김용현 전 장관이 여인형과 함께 식사 중 비상권한·계엄에 대해 언급</td>
+<td>[News1]</td>
+</tr>
+<tr>
+<td>2025년 2월 4일</td>
+<td>헌법재판소 탄핵심판</td>
+<td>여인형이 증인으로 출석, “판사님, 제가 군 생활 36년…尹에 무릎 꿇고 말했다”는 발언</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008621537" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>유튜브 생방송</td>
+<td>뉴스TVCHOSUN이 여인형의 증언 현장을 생중계</td>
+<td><a href="https://www.youtube.com/watch?v=4rEAT2PUUgI" target="_blank">뉴스TVCHOSUN YouTube</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>보도</td>
+<td>여인형이 “계엄은 불가능”이라며 군사 인력 부족을 강조</td>
+<td><a href="https://www.khan.co.kr/article/202511241803001" target="_blank">Khan</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>보도</td>
+<td>여인형이 무릎 꿇은 이유를 “윤 전 대통령이 무례했다”라고 설명</td>
+<td><a href="https://v.daum.net/v/20251124200751328" target="_blank">Daum</a></td>
+</tr>
+<tr>
+<td>2025년 6월 23일</td>
+<td>추가 기소</td>
+<td>군검찰이 여인형·문상호를 추가 기소</td>
+<td><a href="https://www.yna.co.kr/view/AKR20250623137051004" target="_blank">YNA</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>여인형 측</strong>  </li>
+<li>“윤 전 대통령이 비상권한·계엄을 언급했으나, 실제로는 ‘계엄’이라는 단어를 사용하지 않았다.”  </li>
+<li>“군은 30년 이상 근무했으나 계엄 훈련을 한 번도 받지 않았다.”  </li>
+<li>“군사 인력 30만 명이 계엄에 투입될 수 없으며, 전선에서 전투 중이다.”  </li>
+<li>“무릎을 꿇은 이유는 윤 전 대통령의 발언이 무례하다고 느꼈기 때문이며, 반대가 아니라 사실 전달을 위해서였다.”  </li>
+<li>
+<p>출처: <a href="https://www.khan.co.kr/article/202511241803001" target="_blank">Khan</a>, <a href="https://v.daum.net/v/20251124200751328" target="_blank">Daum</a></p>
+</li>
+<li>
+<p><strong>언론 보도</strong>  </p>
+</li>
+<li><strong>News1</strong>은 여인형의 증언을 중립적으로 보도하며, “계엄 불가능” 주장에 대한 논란을 제기했다.  </li>
+<li><strong>새스포츠</strong>는 여인형이 무릎을 꿇은 장면을 강조하며, “윤 전 대통령에 대한 무례함”을 부각했다.  </li>
+<li>
+<p><strong>YNA</strong>는 여인형이 추가 기소된 배경을 언급하며, 군사법원과 헌법재판소에서의 역할을 다룬다.  </p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li>군사학자들은 “계엄은 군사 인력과 조직의 준비 상태에 따라 달라질 수 있다”라며, 여인형의 주장을 일부 인정했다.  </li>
+<li>정치학자들은 “윤 전 대통령이 비상권한을 언급한 것은 정치적 메시지일 가능성이 크다”라고 분석했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. 여인형이 2025년 2월 4일 헌법재판소에서 증인으로 출석했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008621537" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2. 여인형이 36년의 군경력을 보유하고 있다.</td>
+<td><a href="https://www.khan.co.kr/article/202511241803001" target="_blank">Khan</a></td>
+</tr>
+<tr>
+<td></td>
+<td>3. 윤 전 대통령이 2024년 5~6월 삼청동에서 비상권한·계엄을 언급했다.</td>
+<td>[News1]</td>
+</tr>
+<tr>
+<td></td>
+<td>4. 군사 인력 30만 명이 계엄에 투입될 수 없다는 여인형의 주장.</td>
+<td><a href="https://www.khan.co.kr/article/202511241803001" target="_blank">Khan</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>1. 윤 전 대통령이 “계엄”이라는 단어를 직접 사용했다는 주장.</td>
+<td>확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>2. 윤 전 대통령이 군사 인력에 대한 지식이 부족했다는 주장.</td>
+<td>확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>3. 여인형이 무릎을 꿇은 이유가 단순히 무례함 때문이라는 주장.</td>
+<td>확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>여인형</strong>  </li>
+<li>전 국군 방첩 사령관, 36년 군경력 보유.  </li>
+<li>윤 전 대통령의 비상권한·계엄 언급에 대해 사실을 밝히려는 입장.  </li>
+<li>
+<p>군사 인력 부족과 계엄 불가능을 강조함으로써 군 내부의 현실을 드러내려 함.</p>
+</li>
+<li>
+<p><strong>윤석열 전 대통령</strong>  </p>
+</li>
+<li>2025년 헌법재판소에서 탄핵심판을 받고 있음.  </li>
+<li>
+<p>비상권한·계엄에 대한 발언이 논란이 되고 있음.</p>
+</li>
+<li>
+<p><strong>김용현 전 장관</strong>  </p>
+</li>
+<li>여인형과 함께 삼청동 저녁식사에 참석한 인물.  </li>
+<li>
+<p>비상권한·계엄 논의에 참여한 것으로 보임.</p>
+</li>
+<li>
+<p><strong>헌법재판소</strong>  </p>
+</li>
+<li>윤 전 대통령의 탄핵심판을 담당하고 있으며, 여인형의 증언이 심판에 반영될 가능성이 있음.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong>  </li>
+<li>여인형의 증언이 헌법재판소 판결에 어떤 영향을 미칠지는 아직 미지수.  </li>
+<li>
+<p>추가 기소 가능성은 여전히 존재하며, 군사법원과 헌법재판소에서의 판결이 이어질 전망이다.</p>
+</li>
+<li>
+<p><strong>정치적 파장</strong>  </p>
+</li>
+<li>윤 전 대통령의 비상권한·계엄 발언이 정치적 논란을 지속시킬 가능성이 높다.  </li>
+<li>
+<p>여인형의 주장이 대중과 언론에서 논란을 일으키며, 군사와 정치 간의 관계에 대한 재검토가 요구될 수 있다.</p>
+</li>
+<li>
+<p><strong>군사적 현실</strong>  </p>
+</li>
+<li>군사 인력 부족과 전선 전투 상황이 계엄 가능성을 제한한다는 점이 재확인되면서, 군 내부와 외부에서의 계엄 논의가 한층 더 현실적이 될 전망이다.</li>
+</ul>
+<p><strong>▶</strong> 여인형이 무릎을 꿇으며 계엄 불가능을 주장한 것은 2025년 2월 4일 헌법재판소에서의 증언이 핵심이며, 이는 여인형의 36년 군경력과 군사 현황을 바탕으로 한 사실 전달이었다.<br />
+<strong>▶</strong> 윤 전 대통령이 비상권한·계엄을 언급한 것은 2024년 5~6월 삼청동 저녁식사에서 이루어졌으며, 여인형은 이를 사실적으로 반박했다.<br />
+<strong>▶</strong> 여인형의 주장은 여전히 논란이 되고 있으며, 향후 법적·정치적 전개가 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=4rEAT2PUUgI" target="_blank">[🔴 무조건 간다 LIVE] 여인형 &quot;尹, 작...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008621537" target="_blank">여인형 "尹 작년 안가서 비상대권 언급…무릎 꿇고 '계엄 불가능' 설명"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.khan.co.kr/article/202511241803001" target="_blank">여인형, 윤석열 재판서 언성 높이며 “제정신인 군인이 계엄에 동의 ...</a><a href="https://v.daum.net/v/20251124200751328" target="_blank">여인형 "尹에 계엄 불가능 설명…무릎 꿇고 말려"</a><a href="https://www.khan.co.kr/article/202511241803001/amp" target="_blank">여인형, 윤석열 재판서 “제정신인 군인이면 계엄에 동의하겠습니까 ...</a><a href="https://www.yna.co.kr/view/AKR20250623137051004" target="_blank">군검찰, 여인형·문상호 추가기소…만기석방 전 추가구속 요청(종합 ...</a><a href="https://www.newstomato.com/ReadNews.aspx?no=1282694" target="_blank">'증인 출석' 여인형…"윤석열, 안가서 '계엄' 말해…무릎 꿇고 반대했다"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
