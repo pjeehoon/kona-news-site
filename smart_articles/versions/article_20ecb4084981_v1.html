@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이클 버리, AI 거품 또 언급하더니…갑자기 '리딩방' 홍보 - 2025-11-25 18:54:14</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,버리,AI거">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="버리,AI거">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 18:54:14'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('마이클 버리, AI 거품 또 언급하더니…갑자기 \'리딩방\' 홍보')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>마이클 버리, AI 거품 또 언급하더니…갑자기 '리딩방' 홍보</h1>
+            <p>
+                분석 시간: 2025-11-25 18:54:14
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 마이클 버리가 AI 기업의 거품을 경고하며 Nvidia와 Palantir를 공매도하고, 동시에 ‘리딩방’이라는 유료 독서·투자 커뮤니티를 홍보했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 Substack에 연간 379달러 구독료의 뉴스레터를 개설하고, Scion Fund를 SEC 등록에서 탈퇴한 뒤 새로운 비즈니스 모델로 전환했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 버리의 경고와 유료 서비스는 AI 주식에 대한 투자자 심리를 흔들고, 시장에서 거품 위험에 대한 논의를 촉발할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/20ecb4084981.png" 
+                     alt="마이클 버리, AI 거품 또 언급하더니…갑자기 '리딩방' 홍보" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>미국 투자자 마이클 버리가 AI 기업의 거품을 경고하며 Nvidia와 Palantir를 공매도하고, 동시에 ‘리딩방’이라는 새로운 유료 서비스를 홍보했다. 그의 주장은 시장과 투자자들의 관심을 끌고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 24 일</td>
+<td>버리가 X(트위터)에서 AI 기업(특히 Nvidia, Palantir)의 거품을 경고하고, Fed Chair Powell의 발언을 인용했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485119" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 25 일</td>
+<td>동일 내용이 네이버·다양한 언론에 보도되며, 버리의 공매도 포지션이 공개된다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485119" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 24 일</td>
+<td>버리가 Substack에 연간 379 달러(USD) 구독료의 뉴스레터를 개설하고 AI 거품 전망을 정리했다.</td>
+<td><a href="https://www.cnbc.com/2025/11/24/michael-burry-launches-newsletter-to-lay-out-his-ai-bubble-views-after-deregistering-hedge-fund.html" target="_blank">CNBC</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 25 일</td>
+<td>버리가 ‘리딩방’이라는 유료 독서·투자 커뮤니티를 홍보하기 시작했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485119" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 13 일</td>
+<td>버리가 Scion Fund를 SEC 등록에서 탈퇴했다는 보도가 나오며, 자산 운용 구조가 변동되었다는 소식이 전해졌다.</td>
+<td><a href="https://www.youtube.com/watch?v=_Uw9K4ikFzI" target="_blank">Bloomberg Television</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 04 일</td>
+<td>버리가 Nvidia와 Palantir를 공매도하고 있다는 내용이 Yahoo Finance에서 보도됐다.</td>
+<td><a href="https://www.youtube.com/watch?v=tTaatXk6Qds" target="_blank">Yahoo Finance</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>공매도 포지션</strong>: 버리는 현재 Nvidia와 Palantir를 공매도하고 있다.<br />
+▶ <strong>AI 거품 경고</strong>: 그는 AI 기업이 1990년대 인터넷 버블과 유사한 과대평가 상태에 있다고 주장한다.<br />
+▶ <strong>리딩방 홍보</strong>: 버리는 ‘리딩방’이라는 유료 독서·투자 커뮤니티를 통해 독자와 투자자에게 자신의 분석을 제공한다.</p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>관점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td>버리의 AI 거품 경고와 공매도 포지션을 사실대로 보도하며, 리딩방 홍보를 동시에 다룸.</td>
+</tr>
+<tr>
+<td><strong>CNBC</strong></td>
+<td>버리의 뉴스레터 개설과 AI 거품 전망을 상세히 다루며, 그의 과거 성공 사례를 언급.</td>
+</tr>
+<tr>
+<td><strong>MK</strong></td>
+<td>버리의 AI 거품 주장에 대해 “과거의 성공이 현재에도 그대로 적용될 수 없다”는 비판적 시각을 제시.</td>
+</tr>
+<tr>
+<td><strong>아시아경제</strong></td>
+<td>버리의 발언을 “AI 기업의 수익성은 이미 입증되었으나, 과대평가 위험은 존재”라는 균형 잡힌 시각으로 보도.</td>
+</tr>
+<tr>
+<td><strong>Morningstar</strong></td>
+<td>AI 거품이 실제로 터질 가능성에 대해 “불확실성은 높지만, 투자자들은 주의가 필요”라고 분석.</td>
+</tr>
+<tr>
+<td><strong>Reddit</strong></td>
+<td>투자자 커뮤니티에서 버리의 뉴스레터 구독료와 리딩방 참여에 대한 의견이 엇갈림.</td>
+</tr>
+<tr>
+<td><strong>CBS</strong></td>
+<td>버리의 과거 ‘빅쇼트’ 성공 사례를 강조하며, 현재 AI 거품 경고가 신뢰할 만한지에 대한 논의.</td>
+</tr>
+<tr>
+<td><strong>Bloomberg Television</strong></td>
+<td>Scion Fund 탈퇴와 버리의 새로운 비즈니스 모델 전환을 비판적 시각으로 다룸.</td>
+</tr>
+<tr>
+<td><strong>Yahoo Finance</strong></td>
+<td>버리의 공매도 포지션이 Nvidia와 Palantir에 미칠 잠재적 영향에 대해 분석.</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>① 버리는 2008년 서브프라임 모기지 위기에서 수익을 올린 ‘빅쇼트’ 투자자이다.</td>
+<td><a href="https://www.youtube.com/watch?v=6W5zF8Xqro0" target="_blank">CBS</a></td>
+</tr>
+<tr>
+<td></td>
+<td>② 2025 년 11 월 24 일에 X(트위터)에서 AI 거품을 경고했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485119" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>③ 현재 Nvidia와 Palantir를 공매도하고 있다.</td>
+<td><a href="https://www.youtube.com/watch?v=tTaatXk6Qds" target="_blank">Yahoo Finance</a></td>
+</tr>
+<tr>
+<td></td>
+<td>④ 2025 년 11 월 24 일에 Substack 뉴스레터를 개설했다.</td>
+<td><a href="https://www.cnbc.com/2025/11/24/michael-burry-launches-newsletter-to-lay-out-his-ai-bubble-views-after-deregistering-hedge-fund.html" target="_blank">CNBC</a></td>
+</tr>
+<tr>
+<td></td>
+<td>⑤ 2025 년 11 월 25 일에 ‘리딩방’ 홍보를 시작했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485119" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>① AI 기업이 실제로 거품 상태이며, 곧 폭락할 가능성.</td>
+<td>“AI 거품”에 대한 주장은 아직 확정되지 않음.</td>
+</tr>
+<tr>
+<td></td>
+<td>② 버리의 AI 거품 예측이 정확할 것인지에 대한 확정적 증거 없음.</td>
+<td>“확인되지 않은” 주제.</td>
+</tr>
+<tr>
+<td></td>
+<td>③ 리딩방이 실제로 얼마나 많은 참여자를 끌어들일지에 대한 예측.</td>
+<td>“확인되지 않은” 주제.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>마이클 버리</strong>  </li>
+<li>과거 ‘빅쇼트’로 유명한 투자자.  </li>
+<li>현재 AI 기업에 대한 공매도 포지션을 보유하고 있으며, AI 거품을 경고.  </li>
+<li>새로운 비즈니스 모델로 뉴스레터와 리딩방을 운영 중.  </li>
+<li>
+<p><strong>이해관계</strong>: AI 기업의 주가 하락에 따른 이익 창출, 투자자들에게 자신의 분석을 판매.</p>
+</li>
+<li>
+<p><strong>Nvidia, Palantir</strong>  </p>
+</li>
+<li>버리가 공매도 대상인 AI 기업.  </li>
+<li>
+<p><strong>이해관계</strong>: 버리의 공매도 포지션이 주가에 미칠 압력.</p>
+</li>
+<li>
+<p><strong>투자자 커뮤니티</strong>  </p>
+</li>
+<li>버리의 뉴스레터와 리딩방에 가입하거나 구독을 고려.  </li>
+<li>
+<p><strong>이해관계</strong>: 버리의 분석을 통해 투자 결정을 내리려는 투자자들.</p>
+</li>
+<li>
+<p><strong>미디어</strong>  </p>
+</li>
+<li>버리의 발언과 비즈니스 모델을 보도.  </li>
+<li><strong>이해관계</strong>: 독자에게 흥미로운 콘텐츠 제공.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>시장 반응</strong><br />
+   - 버리의 공매도 포지션이 공개되면서 Nvidia와 Palantir의 주가에 단기적 변동성이 증가할 가능성이 있다.<br />
+   - AI 기업에 대한 투자자들의 심리적 불안이 확대될 수 있다.</p>
+</li>
+<li>
+<p><strong>버리의 비즈니스 모델</strong><br />
+   - 뉴스레터와 리딩방이 수익을 창출하면서 버리의 영향력이 확대될 수 있다.<br />
+   - 구독자 수가 증가하면 버리의 분석이 시장에 보다 큰 파급 효과를 가져올 수 있다.</p>
+</li>
+<li>
+<p><strong>AI 거품 논의</strong><br />
+   - Fed Chair Powell의 발언과 버리의 경고가 지속적으로 언급되면 AI 거품에 대한 논의가 계속될 것이다.<br />
+   - 전문가들 간의 의견 차이가 확대되면서 투자자들은 보다 신중한 판단을 할 필요가 있다.</p>
+</li>
+<li>
+<p><strong>규제·정책</strong><br />
+   - 버리의 Scion Fund 탈퇴와 같은 구조적 변화가 다른 투자자들에게도 영향을 미칠 수 있다.<br />
+   - AI 기업에 대한 규제 강화 가능성은 아직 불확실하지만, 시장 참여자들은 주의 깊게 관찰할 필요가 있다.</p>
+</li>
+</ol>
+<p>버리의 AI 거품 경고와 리딩방 홍보는 단순한 투자 의견을 넘어 새로운 비즈니스 모델로의 전환을 보여준다. 그의 주장이 실제 시장에 어떤 영향을 미칠지는 시간이 지나야 명확해질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=6W5zF8Xqro0" target="_blank">Extra: The $8.4 Billion Bet</a><a href="https://www.youtube.com/watch?v=_Uw9K4ikFzI" target="_blank">&#39;Big Short&#39; Investor M...</a><a href="https://www.youtube.com/watch?v=tTaatXk6Qds" target="_blank">Michael Burry bets against Nvi...</a><a href="https://www.youtube.com/watch?v=WRAbUNqal6g" target="_blank">Why Michael Burry Just Sold Al...</a><a href="https://www.youtube.com/watch?v=fx2ClTpnAAs" target="_blank">Michael Burry on the financial...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003485119" target="_blank">‘빅쇼트’ 주인공 공매도 투자자, 새 뉴스레터서 AI 거품 경고</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.cnbc.com/2025/11/24/michael-burry-launches-newsletter-to-lay-out-his-ai-bubble-views-after-deregistering-hedge-fund.html" target="_blank">Michael Burry launches newsletter to lay out his A...</a><a href="https://www.reddit.com/r/stocks/comments/1p5mo6h/michael_burry_launches_379_annual_subscription/" target="_blank">Michael Burry launches $379 annual subscription ne...</a><a href="https://www.morningstar.com.au/markets/is-ai-bubble-about-burst" target="_blank">Is the AI bubble about to burst?</a><a href="https://www.mk.co.kr/en/stock/11475455" target="_blank">Michael Burry, a "big short" who is at the center ...</a><a href="https://cm.asiae.co.kr/en/article/2025112507020905600" target="_blank">'The Big Short' Protagonist Burry Warns of AI Inve...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
