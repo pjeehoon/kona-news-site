@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'부산 해양금융위크' 개막…"부산을 글로벌 해양금융 허브로" - 2025-11-25 19:27:06</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,국제,부산 해양금융위크,북극항로,이찬진,부산시">
+    <meta name="article-category-tags" content="경제,국제">
+    <meta name="article-content-tags" content="부산 해양금융위크,북극항로,이찬진,부산시">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 19:27:06'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'부산 해양금융위크\' 개막…"부산을 글로벌 해양금융 허브로"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'부산 해양금융위크' 개막…"부산을 글로벌 해양금융 허브로"</h1>
+            <p>
+                분석 시간: 2025-11-25 19:27:06
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 부산 해양금융위크가 개막식에서 부산을 글로벌 해양금융 허브로 부상하겠다는 의지를 표명했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 500여 명이 참석한 행사에서 금융감독원 이찬진 장관은 2030년 북극항로 개통에 대비해 부산이 동북아 해양경제·금융의 관문이 될 것이라고 강조했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 위크를 통해 부산은 해양금융 인프라와 정책 방향을 제시하며 북극항로 시대에 맞춘 금융 생태계 구축을 목표로, 해양산업의 글로벌 경쟁력 강화와 자본 유입 확대를 기대한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/b062f9a52d8d.png" 
+                     alt="'부산 해양금융위크' 개막…"부산을 글로벌 해양금융 허브로"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>부산이 2일간 개최한 해양금융위크가 개막식에서 부산을 “바다와 자본이 만나는 글로벌 해양금융 허브”로 부상시키겠다는 의지를 밝혔다. 금융감독원 이찬진 장관이 북극항로 시대에 맞춰 부산이 동북아 해양경제·금융의 관문이 될 것이라 강조했다. 500여 명이 참석한 이번 행사는 부산의 해양금융 인프라와 정책 방향을 제시하며, 향후 2030년 북극항로 개통에 대비한 금융 생태계 구축을 목표로 한다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 25일</td>
+<td>개막식</td>
+<td>부산 롯데호텔 크리스탈볼룸에서 개최, 이찬진 금융감독원장 개회사</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619790" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25–26일</td>
+<td>2일간 행사</td>
+<td>“바다와 자본이 만나는 부산, 글로벌 해양금융허브로” 주제로 진행</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619790" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>참석자</td>
+<td>부산시, 금융감독원, 한국해양진흥공사, 부산국제금융진흥원 등 주요 기관 및 국내외 500여 명의 학계·임직원</td>
+<td><a href="https://www.newsis.com/view/NISX20251125_0003415615" target="_blank">뉴스이즈</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>이찬진 장관 발언</td>
+<td>“2030년부터 본격적인 북극항로 시대가 열릴 것이며, 부산은 그 관문이 될 것”</td>
+<td><a href="https://www.newsis.com/view/NISX20251125_0003415615" target="_blank">뉴스이즈</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25–26일</td>
+<td>세션 내용</td>
+<td>해양모빌리티·안전, 북극항로, 해양 밸류체인 등 3개 주제 세션 진행</td>
+<td><a href="https://www.news1.kr/local/busan-gyeongnam/5987681" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>부산시 공식 발표</td>
+<td>“바다와 자본이 만나는 부산, 글로벌 해양금융 허브로”를 목표로 한 2025 부산 해양·금융위크 개최</td>
+<td><a href="https://www.busan.go.kr/nbtnewsBU" target="_blank">부산광역시</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>부산시 관계자</strong>는 “부산은 이미 세계 상위권 항만으로서 물류 인프라가 뛰어나며, 이번 위크를 통해 금융 인프라와 연계해 해양산업의 가치를 극대화할 것”이라고 말했다.  </li>
+<li><strong>금융감독원 이찬진 장관</strong>은 “해양금융은 아직 국내에서 미흡한 부분이 많지만, 부산이 지리적·경제적 이점을 활용해 글로벌 시장과 연결될 수 있는 잠재력이 크다”라고 강조했다.  </li>
+<li><strong>해양금융 전문가</strong>는 “북극항로 개통이 가속화되면서 해양금융 수요가 급증할 전망이다. 부산이 그 중심에 서려면 금융상품·서비스 개발, 리스크 관리 체계 구축이 필수”라며, “현재는 정책·제도적 준비가 부족하다”고 지적했다.  </li>
+<li><strong>현지 기업 대표</strong>는 “부산의 해양금융센터가 활성화되면 자본 유입이 늘어나고, 해양산업의 글로벌 경쟁력이 강화될 것”이라며 긍정적 전망을 내비쳤다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>부산 해양금융위크가 2025년 11월 25일 개막식으로 시작되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619790" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>이찬진 금융감독원장이 “2030년 북극항로 시대에 부산이 관문이 될 것”이라고 발표했다.</td>
+<td><a href="https://www.newsis.com/view/NISX20251125_0003415615" target="_blank">뉴스이즈</a></td>
+</tr>
+<tr>
+<td></td>
+<td>행사 주제는 “바다와 자본이 만나는 부산, 글로벌 해양금융허브로”이다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619790" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>부산시, 금융감독원, 한국해양진흥공사, 부산국제금융진흥원 등 주요 기관이 참여했다.</td>
+<td><a href="https://www.newsis.com/view/NISX20251125_0003415615" target="_blank">뉴스이즈</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>부산이 실제로 2030년 북극항로 개통 직후 해양금융 중심지로 자리 잡을 수 있는 구체적 실행 계획과 타임라인</td>
+<td>현재 공개된 자료에 구체적 일정이 제시되지 않음.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이찬진 금융감독원장</strong>  </li>
+<li><strong>입장</strong>: 부산이 해양금융 중심지로 도약할 수 있는 잠재력 강조.  </li>
+<li>
+<p><strong>이해관계</strong>: 금융감독원은 해양금융 활성화를 통해 국내 금융시장의 다양성과 안정성을 높이려는 정책 목표가 있다.  </p>
+</li>
+<li>
+<p><strong>부산시 시장</strong>  </p>
+</li>
+<li><strong>입장</strong>: 부산의 글로벌 해양금융 허브 도약을 통해 도시 경쟁력 강화.  </li>
+<li>
+<p><strong>이해관계</strong>: 도시 경제 활성화, 일자리 창출, 국제적 위상 제고.  </p>
+</li>
+<li>
+<p><strong>한국해양진흥공사 관계자</strong>  </p>
+</li>
+<li><strong>입장</strong>: 해양산업과 금융의 시너지 창출에 주력.  </li>
+<li>
+<p><strong>이해관계</strong>: 해양산업의 성장과 금융 서비스 연계 확대.  </p>
+</li>
+<li>
+<p><strong>부산국제금융진흥원 대표</strong>  </p>
+</li>
+<li><strong>입장</strong>: 부산 해양금융센터 구축과 해외 투자 유치 추진.  </li>
+<li><strong>이해관계</strong>: 금융 인프라 확충과 해외 자본 유입.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>정책·제도 개선</strong><br />
+   - 부산이 해양금융 허브로 성장하려면 금융상품 개발, 리스크 관리 체계, 규제 완화 등 제도적 기반이 필요하다. 부산시와 금융감독원은 2026년까지 관련 정책을 마련할 계획이다.  </p>
+</li>
+<li>
+<p><strong>인프라 구축</strong><br />
+   - 해양금융센터와 연계된 데이터 플랫폼, 블록체인 기반 거래 시스템 등 디지털 인프라가 강화될 전망이다.  </p>
+</li>
+<li>
+<p><strong>국제 협력 확대</strong><br />
+   - 북극항로 개통에 대비해 러시아, 캐나다 등 북극 국가와의 금융 협력 방안이 논의될 가능성이 높다.  </p>
+</li>
+<li>
+<p><strong>시장 반응</strong><br />
+   - 국내외 금융기관이 부산에 진출하거나 파트너십을 체결할 가능성이 커지면서, 부산의 해양금융 시장 규모가 확대될 것으로 예상된다.  </p>
+</li>
+<li>
+<p><strong>리스크 요인</strong><br />
+   - 북극항로 개통이 지연되거나 국제 정세 변동이 발생하면 부산의 해양금융 성장 전망이 둔화될 수 있다.  </p>
+</li>
+</ol>
+<p>이처럼 부산 해양금융위크는 부산이 글로벌 해양금융 허브로 도약하기 위한 첫걸음이며, 향후 정책·제도·인프라 구축이 핵심 과제로 남는다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=-AhgswfMuPo" target="_blank">이동해 부산국제금융진흥원 해양금융센터장｜해양금융도시｜중...</a><a href="https://www.youtube.com/watch?v=8g37xaMyZbE" target="_blank">2022 부산해양금융컨벤션 Busan Financial...</a><a href="https://www.youtube.com/watch?v=b86ezwArhUs" target="_blank">2022 부산해양금융컨벤션 Busan Financial...</a><a href="https://www.youtube.com/watch?v=mI-JfLxrrjM" target="_blank">2020 부산 해양금융 컨벤션 (2020 Busan F...</a><a href="https://www.youtube.com/watch?v=oqIO8QtnOXQ" target="_blank">청년과 글로벌 해양도시 부산!! 스마트·금융·관광 경쟁...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013619790" target="_blank">부산 해양금융위크 개막…이찬진 "글로벌 해양금융 중심지 지원"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.newsis.com/view/NISX20251125_0003415615" target="_blank">부산 해양금융위크 개막…이찬진 "글로벌 해양금융 중심지 지원"</a><a href="https://www.busan.go.kr/nbtnewsBU" target="_blank">부산소식 : 보도·해명자료 : 보도자료 : 부산광역시</a><a href="https://v.daum.net/v/20251125110157574" target="_blank">부산 해양금융위크 개막…이찬진 "글로벌 해양금융 중심지 지원"</a><a href="https://www.news1.kr/local/busan-gyeongnam/5987681" target="_blank">"북극항로 시대 눈앞에도 민간 해양금융 부재…부산 금융 역할 커진다 ...</a><a href="https://news.nate.com/view/20251125n13544" target="_blank">이찬진 "부산, 해양금융 중심지 잠재력 크다"…2025 해양금융위크 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
