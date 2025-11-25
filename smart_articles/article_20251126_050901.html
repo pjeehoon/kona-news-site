@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직업계고 졸업생 취업률 5년 내 최저…절반 가까이 대학 진학 - 2025-11-26 05:09:01</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,직업계고,취업률,대학진학">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="직업계고,취업률,대학진학">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 05:09:01'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('직업계고 졸업생 취업률 5년 내 최저…절반 가까이 대학 진학')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>직업계고 졸업생 취업률 5년 내 최저…절반 가까이 대학 진학</h1>
+            <p>
+                분석 시간: 2025-11-26 05:09:01
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 2월 직업계고 졸업생 5만9,661명 중 취업률이 55.2%로 3년 연속 최저치를 기록했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 같은 달 진학률은 49.2%로 절반에 육박하며, 미취업자는 12,992명(20.8%)이었고, 마이스터고는 73.1%로 가장 높은 취업률을 보였다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 결과는 직업계고 학생들의 진로 선택이 대학 진학으로 급변하고 있음을 시사하며, 교육부와 기업이 협력 강화와 교육과정 개편을 통해 취업 환경 개선을 모색해야 함을 강조한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/a18cf442f5db.png" 
+                     alt="직업계고 졸업생 취업률 5년 내 최저…절반 가까이 대학 진학" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025년 2월 직업계고 졸업자 5만9,661명 중 취업률이 55.2%로 3년 연속 최저치를 기록했다. 반면 진학률은 49.2%로 절반에 육박해, 직업계고 학생들의 진로 선택이 급변하고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 2월</td>
+<td>직업계고 졸업자 통계 발표</td>
+<td>5만9,661명 중 <strong>취업자 1만5,296명 (55.2%)</strong>, <strong>진학자 2만9,373명 (49.2%)</strong>, <strong>미취업자 12,992명 (20.8%)</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 2월</td>
+<td>학교 유형별 취업률</td>
+<td><strong>마이스터고 73.1%</strong>, <strong>특성화고 52.4%</strong>, <strong>일반고 직업반 38.2%</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 2월</td>
+<td>대기업 취업 비중</td>
+<td><strong>300명 이상 기업 취업 비중 36.3%</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 5월 27일</td>
+<td>환경산업 일자리 박람회 개최</td>
+<td>서울 서초구 aT센터에서 <strong>특성화고 학생들이 300명 이상 기업 부스를 방문</strong></td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125064900530" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>연합뉴스 기사 발표</td>
+<td><strong>직업계고 졸업생 절반이 대학 진학</strong>이라는 주제로 보도</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125064900530" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>▶ <strong>취업률 55.2%</strong>는 3년 연속 최저치를 기록하며 직업계고 졸업생의 취업 환경이 악화되고 있음을 시사한다.<br />
+▶ <strong>진학률 49.2%</strong>는 직업계고 졸업생의 절반이 대학 진학을 선택하고 있음을 보여준다.  </p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<h3>교육부와 한국교육개발원</h3>
+<p>교육부는 “산업계와의 협력 강화, 직업교육 프로그램 개선”을 통해 취업률 회복을 목표로 하고 있다. 한국교육개발원은 “특성화고와 마이스터고의 취업률 차이가 크며, 일반고 직업반은 취업 지원이 부족”이라며 교육과정 개편을 제안했다.  </p>
+<h3>기업 측</h3>
+<p>환경산업 일자리 박람회에 참여한 기업 대표는 “직업계고 학생들의 실무 역량이 높아져 채용 의사가 증가했다”는 반면, “대기업은 여전히 정규직 채용에 보수적”이라며 대학 진학을 권장했다.  </p>
+<h3>학생·학부모</h3>
+<p>특성화고 학생들은 “박람회에서 직접 기업과 소통하며 취업 가능성을 확인했다”는 반면, “대학 진학을 통해 장기적인 경력 개발을 희망”한다는 의견이 많다. 학부모는 “취업률이 낮아 대학 진학이 안전한 선택”이라며 대학 진학을 지지한다.  </p>
+<h3>학계·연구자</h3>
+<p>교육학자들은 “직업계고 졸업생의 진로 선택이 대학 진학으로 기울고 있는 현상은 ‘취업 불안’과 ‘대학 가치 재평가’가 결합된 결과”라고 분석했다.  </p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>분류</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>5만9,661명 중 취업자 1만5,296명, 진학자 2만9,373명, 미취업자 12,992명</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>마이스터고 취업률 73.1%, 특성화고 52.4%, 일반고 직업반 38.2%</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>300명 이상 기업 취업 비중 36.3%</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 5월 27일 환경산업 일자리 박람회 개최</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125064900530" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 11월 25일 연합뉴스 기사 발표</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125064900530" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>박람회 참가 인원 수, 기업별 채용 인원 등 상세 데이터</td>
+<td>현재 공개 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>교육부</td>
+<td>취업률 회복 및 직업교육 강화</td>
+<td>국가 교육 정책</td>
+</tr>
+<tr>
+<td>한국교육개발원</td>
+<td>교육과정 개편 및 취업 지원 강화</td>
+<td>교육 연구기관</td>
+</tr>
+<tr>
+<td>환경부</td>
+<td>일자리 박람회 주최</td>
+<td>산업 정책</td>
+</tr>
+<tr>
+<td>기업 대표</td>
+<td>직업계고 학생 채용 확대</td>
+<td>인력 확보</td>
+</tr>
+<tr>
+<td>학생·학부모</td>
+<td>대학 진학 선호</td>
+<td>장기 경력·안정성</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>취업률 회복 노력</strong><br />
+   교육부와 기업이 협력해 직업계고 교육과정과 취업 연계 프로그램을 강화할 전망이다. 특히 <strong>마이스터고</strong>와 <strong>특성화고</strong>의 취업률 차이를 줄이기 위한 맞춤형 지원이 필요하다.  </p>
+</li>
+<li>
+<p><strong>대학 진학률 상승</strong><br />
+   현재 <strong>49.2%</strong>의 진학률이 지속될 경우, 직업계고 졸업생의 진로 다변화가 가속화될 가능성이 있다. 대학 입시 정책과 직업교육의 연계가 중요해질 전망이다.  </p>
+</li>
+<li>
+<p><strong>산업계와의 협력 확대</strong><br />
+   환경산업 일자리 박람회와 같은 플랫폼을 통해 직업계고 학생과 기업 간 직접 연결이 강화되며, <strong>300명 이상 기업</strong>과의 협력이 확대될 것으로 보인다.  </p>
+</li>
+<li>
+<p><strong>정책적 대응 필요</strong><br />
+   미취업자 비중이 <strong>20.8%</strong>로 높은 상황에서, <strong>취업 지원 예산</strong> 확대와 <strong>인턴십·현장실습</strong> 기회 제공이 시급하다.  </p>
+</li>
+</ol>
+<blockquote>
+<p>▶ <strong>미취업자 20.8%</strong>는 직업계고 졸업생이 직업 시장에서 겪는 어려움을 반영하며, 이는 교육 정책과 산업계의 긴밀한 협력이 필요함을 시사한다.  </p>
+</blockquote>
+<p><strong>결론</strong><br />
+2025년 직업계고 졸업생의 취업률이 최저치를 기록하면서, 절반이 대학 진학을 선택하는 현상이 나타났다. 이는 직업교육과 대학 교육 사이의 경계가 흐려지고 있음을 보여주며, 교육부와 기업, 학계가 공동으로 대응해야 할 과제로 부각되고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=9Nwcw0SQU9U" target="_blank">#환경산업 #일자리박람회 #총정리 가 궁금하시면 아래링...</a><a href="https://www.youtube.com/watch?v=PZgyQf44yCg" target="_blank">면접관이 질문 있냐고 물어볼 때 임기응변 답변법 #sh...</a><a href="https://www.youtube.com/watch?v=bzu1_EqkL30" target="_blank">숙소도 주고 연봉도 높은데… 생산직 채용 지원자 0명,...</a><a href="https://www.youtube.com/watch?v=AQdkLHQQ_vA" target="_blank">무조건 합격하는 신입 면접자 특징 #shorts #신입...</a><a href="https://www.youtube.com/watch?v=6HmKOoNsc0A" target="_blank">채용 전환형 무서운 실화 #shorts</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015760984" target="_blank">청년 취업난에 직업계고 졸업생 절반은 대학 진학</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251125064900530" target="_blank">청년 취업난에 직업계고 졸업생 절반은 대학 진학 | 연합뉴스</a><a href="https://v.daum.net/v/20251125133004623" target="_blank">직업계고 취업률 3년째 감소…절반 대학 진학</a><a href="https://www.seoul.co.kr/news/society/education-news/2025/11/25/20251125500226" target="_blank">“큰 기업 아니면 대학간다” 직업계고 졸업생 절반이 진학 | 서울신문</a><a href="https://www.dkilbo.com/news/articleView.html?idxno=523736" target="_blank">제조업 일자리 감소…직업계고 졸업생 절반, 취업 대신 대학 선택</a><a href="http://kasr.skyd.co.kr/survey_SR/26_2_2" target="_blank">직업계고 졸업자의 진로이행과정 유형 및 주요 예측 변인 탐색:</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
