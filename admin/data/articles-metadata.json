@@ -1,5 +1,77 @@
 [
   {
+    "id": "07966c8acb5c",
+    "title": "금융당국 \"개인기반 시장감시체계로 시장감시 효율 증대\"",
+    "created_at": "2025-11-25T15:42:59.724133+09:00",
+    "last_updated": "2025-11-25T15:42:59.724133+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "뉴스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "c528e462853f",
+    "title": "국힘 지선총괄단 \"당 뿌리 튼튼히 하며 외연 넓히는 선거전략 만들 것\"",
+    "created_at": "2025-11-25T15:35:46.430737+09:00",
+    "last_updated": "2025-11-25T15:35:46.430737+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "국민의힘",
+        "나경원",
+        "경선 룰",
+        "청년 후보",
+        "지방선거"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "5cc303a030ff",
+    "title": "공무원 '복종 의무' 76년만에 사라진다…위법 지휘는 거부 가능",
+    "created_at": "2025-11-25T15:28:49.968138+09:00",
+    "last_updated": "2025-11-25T15:28:49.968138+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "복종의무",
+        "공무원",
+        "위법지휘"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "4a065b00dcf7",
     "title": "\"TSMC, 대만 2나노 공장 3곳 추가 건설 계획\"",
     "created_at": "2025-11-25T15:02:47.611147+09:00",
