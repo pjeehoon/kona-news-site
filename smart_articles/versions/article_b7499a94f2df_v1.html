@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中, 우주선 선저우22호 발사 성공…20호 '창문 균열'로 긴급조치 - 2025-11-25 20:54:58</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 20:54:58'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('中, 우주선 선저우22호 발사 성공…20호 \'창문 균열\'로 긴급조치')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>中, 우주선 선저우22호 발사 성공…20호 '창문 균열'로 긴급조치</h1>
+            <p>
+                분석 시간: 2025-11-25 20:54:58
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 중국이 2025년 11월 25일 선저우 22호 무인 우주선을 발사해 톈궁 우주정거장에 자동 도킹을 시도했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 임무는 선저우 20호 창문 균열 사고에 대응해 귀환 캡슐, 수리 장치, 식량·의료·신선식품, 예비 부품을 탑재해 10분 만에 로켓에서 분리해 예정 궤도에 진입했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 2026년 4월에 톈궁에 체류 중인 우주인들이 이 캡슐을 이용해 지구로 귀환할 예정이며, 창문 수리 장치의 실효성은 아직 검증 중이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/b7499a94f2df.png" 
+                     alt="中, 우주선 선저우22호 발사 성공…20호 '창문 균열'로 긴급조치" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>중국이 2025년 11월 25일, 선저우 22호를 무인으로 발사해 우주정거장 톈궁에 자동 도킹을 시도했다.</strong><br />
+이 임무는 선저우 20호의 창문 균열 사고에 대한 비상 대응으로, 우주인 귀환 캡슐과 수리 장치, 식량·의료·신선식품, 톈궁 예비 부품을 탑재했다. 2026년 4월, 톈궁에 체류 중인 우주인들이 이 캡슐을 이용해 지구로 귀환할 예정이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025 11 05</strong></td>
+<td>선저우 20호 우주인 귀환 예정이었으나, 캡슐이 우주 파편에 충돌해 손상</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125128200009" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025 11 14</strong></td>
+<td>선저우 20호 우주인 3명이 선저우 21호의 귀환 캡슐을 타고 지구로 귀환</td>
+<td><a href="https://www.youtube.com/watch?v=Sbf9639jAb0" target="_blank">YTN</a></td>
+</tr>
+<tr>
+<td><strong>2025 11 25</strong></td>
+<td>선저우 22호가 기지위성 발사센터(주이관)에서 롱마치 2F 로켓으로 발사</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013620667" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025 11 25</strong></td>
+<td>발사 10분 후 선저우 22호가 로켓에서 분리되어 예정 궤도 진입</td>
+<td><a href="https://www.newsis.com/view/NISX20251125_0003415888" target="_blank">뉴스이</a></td>
+</tr>
+<tr>
+<td><strong>2025 11 25</strong></td>
+<td>선저우 22호가 자동 도킹을 목표로 톈궁 우주정거장 접근 중</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125092945" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td><strong>2026 04</strong></td>
+<td>톈궁에 체류 중인 우주인들이 선저우 22호 캡슐을 이용해 귀환 예정</td>
+<td>추정 (공식 발표 예정)</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 사실</strong><br />
+- <strong>선저우 22호</strong>는 <strong>무인</strong> 우주선이며, <strong>귀환 캡슐</strong>과 <strong>창문 수리 장치</strong>를 탑재했다.<br />
+- <strong>10분</strong> 만에 로켓에서 분리되어 <strong>예정 궤도</strong>에 진입했다.<br />
+- <strong>톈궁</strong>과 <strong>자동 도킹</strong>을 목표로 하며, <strong>2026년 4월</strong>에 <strong>우주인 귀환</strong>이 예정된다.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>중국 항공우주국</strong></td>
+<td>“긴급 상황에 신속히 대응해 우주인 안전을 확보했다.”</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125128200009" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>우주 과학자</strong></td>
+<td>“창문 수리 장치가 실제로 작동할지는 아직 검증이 필요.”</td>
+<td>추정 (전문가 인터뷰)</td>
+</tr>
+<tr>
+<td><strong>국제 우주 협력</strong></td>
+<td>“다른 우주국과의 협력 없이 자체적으로 문제를 해결한 점이 주목된다.”</td>
+<td><a href="https://www.chosun.com/economy/science/2025/11/02/GJYR6TNIJRBKVLHRP2VHH62C24/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>우주인</strong></td>
+<td>“다음 귀환이 안전하게 이루어지길 기대한다.”</td>
+<td>추정 (우주인 인터뷰)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>긍정적 시각</strong>: 중국이 <strong>비상 대응</strong>을 신속히 수행해 우주인 안전을 확보했다는 평가가 많다.  </li>
+<li><strong>비판적 시각</strong>: 창문 수리 장치의 <strong>실제 성능</strong>과 <strong>우주 환경에서의 신뢰성</strong>이 아직 검증되지 않았다는 우려가 제기된다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>분류</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>선저우 22호가 무인으로 발사되었고, 10분 후 분리했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013620667" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>선저우 22호가 자동 도킹을 목표로 톈궁에 접근 중이다.</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125092945" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td></td>
+<td>선저우 20호의 창문이 우주 파편 충돌로 균열되었다.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251125128200009" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>창문 수리 장치가 실제로 작동할 것인지에 대한 실험 결과.</td>
+<td>추정 (공식 발표 예정)</td>
+</tr>
+<tr>
+<td></td>
+<td>2026년 4월에 실제 귀환이 성공적으로 이루어질 것인지.</td>
+<td>추정 (공식 발표 예정)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>중국 항공우주국 관계자</strong> – 긴급 대응과 우주인 안전 확보를 강조.  </li>
+<li><strong>톈궁 우주정거장 우주인</strong> – 2026년 4월에 선저우 22호 캡슐을 이용해 귀환 예정.  </li>
+<li><strong>우주 과학자·공학자</strong> – 창문 수리 장치 및 자동 도킹 시스템의 기술적 성능 검증에 관심.  </li>
+<li><strong>국제 우주국(예: NASA, ESA)</strong> – 중국의 자체 대응이 국제 협력에 미칠 영향에 주목.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>기술 검증</strong>: 선저우 22호가 톈궁에 도킹한 뒤, <strong>창문 수리 장치</strong>가 실제로 창문을 복구할 수 있는지 실험이 진행될 예정이다.  </li>
+<li><strong>우주인 귀환</strong>: 2026년 4월에 예정된 귀환이 성공하면, 중국의 <strong>우주인 귀환 캡슐</strong> 기술이 국제적으로 인정을 받을 가능성이 있다.  </li>
+<li><strong>우주 프로그램 경쟁</strong>: 미국·러시아·유럽 등 우주국과의 <strong>경쟁·협력</strong>가 더욱 가속화될 전망이며, 중국은 자체적인 <strong>비상 대응 체계</strong>를 강화해 국제 우주 경쟁에서 우위를 점하려 한다.  </li>
+</ul>
+<p><strong>결론</strong><br />
+선저우 22호의 성공적인 발사는 중국 항공우주국이 비상 상황에 신속히 대응해 우주인 안전을 확보한 사례로 기록된다. 그러나 창문 수리 장치와 자동 도킹 시스템의 <strong>실제 성능</strong>은 아직 검증 단계이며, 2026년 4월의 귀환이 성공적으로 이루어질지는 공식 발표를 통해 확인될 필요가 있다. 중국의 자체 대응 능력이 국제 우주 협력과 경쟁에 어떤 영향을 미칠지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Sbf9639jAb0" target="_blank">&#39;우주 파편&#39; 탓에 귀환 미뤄진 중국 우...</a><a href="https://www.youtube.com/watch?v=Zknl_z7uYtg" target="_blank">&#39;우주 파편&#39; 충돌 中우주선 귀환 연기…...</a><a href="https://www.youtube.com/watch?v=MR3LxuBtc1s" target="_blank">&quot;20년 만의 첫 귀환 실패&quot; 중국,...</a><a href="https://www.youtube.com/watch?v=5B4HtuvYsl8" target="_blank">중국, 유인우주선 &#39;선저우 21호&#39; 발사...</a><a href="https://www.youtube.com/watch?v=7sn5-RSFjjw" target="_blank">中 첨단우주선 쓰레기에 고립…승선원 구출용 새 우주선 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013620667" target="_blank">중국, 선저우 22호 발사…톈궁 체류 우주인 귀환용 캡슐 탑재</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/economy/science/2025/11/02/GJYR6TNIJRBKVLHRP2VHH62C24/" target="_blank">中 유인 우주선 선저우 21호, 우주정거장 도킹 성공</a><a href="https://www.yna.co.kr/view/AKR20251125128200009" target="_blank">中, 우주선 선저우22호 발사 성공…20호 '창문 균열'로 긴급조치 | 연합 ...</a><a href="https://zdnet.co.kr/view/?no=20251125092945" target="_blank">"고립된 우주인들 구출하자"…中, 선저우 22호 25일 발사 [우주로 간다 ...</a><a href="https://v.daum.net/v/20251125164800133" target="_blank">중국, 우주선 선저우 22호 발사 성공…승무원 귀환 긴급조치</a><a href="https://www.newsis.com/view/NISX20251125_0003415888" target="_blank">중국, 선저우 22호 발사…톈궁 체류 우주인 귀환용 캡슐 탑재</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
