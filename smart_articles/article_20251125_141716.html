@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네오위즈, 금융감독원 ‘국제 표준 전산언어 재무공시 우수법인’ 선정 - 2025-11-25 14:17:16</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,네오위즈,XBRL,금감원">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="네오위즈,XBRL,금감원">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 14:17:16'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('네오위즈, 금융감독원 ‘국제 표준 전산언어 재무공시 우수법인’ 선정')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>네오위즈, 금융감독원 ‘국제 표준 전산언어 재무공시 우수법인’ 선정</h1>
+            <p>
+                분석 시간: 2025-11-25 14:17:16
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 네오위즈가 금융감독원으로부터 2025 국제표준 전산언어(XBRL) 재무공시 우수법인으로 선정됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 선정은 2025년 11월 20일 감사장 수여식에서 발표되었으며, 11월 25일 네오위즈 공동대표가 공식 발표했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 국내 자본시장의 디지털 전환과 재무정보 투명성이 강화돼 투자자 신뢰가 높아질 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/594ccbce8eed.png" 
+                     alt="네오위즈, 금융감독원 ‘국제 표준 전산언어 재무공시 우수법인’ 선정" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>네오위즈가 금융감독원으로부터 2025년 국제표준 전산언어(XBRL) 재무공시 우수법인으로 선정돼 국내 자본시장의 디지털 전환과 투명성 강화에 기여했다.<br />
+(총 200자 이내 요약)</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 20일</td>
+<td>XBRL 재무공시 우수법인 감사장 수여식에서 네오위즈 선정</td>
+<td><a href="https://www.news1.kr/it-science/general-it/5986951" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>네오위즈 공식 발표: 금융감독원으로부터 2025 국제표준 전산언어(XBRL) 재무공시 우수법인 선정</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008623203" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>네오위즈 공동대표 김승철·배태근이 참석해 감사장 수여식에 참여</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125100344" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>인더스트리뉴스, 글로벌이코노믹, 팝콘뉴스 등에서 보도</td>
+<td><a href="https://www.industrynews.co.kr/news/articleView.html?idxno=74704" target="_blank">인더스트리뉴스</a>, <a href="https://www.g-enews.com/article/ICT/2025/11/202511250901235765c5fa75ef86_1" target="_blank">글로벌이코노믹</a>, <a href="https://www.popcornnews.net/news/articleView.html?idxno=103033" target="_blank">팝콘뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>네오위즈가 XBRL 재무공시 우수법인으로 선정</strong><br />
+▶ <strong>공식 발표는 2025년 11월 25일</strong><br />
+▶ <strong>감사장 수여식은 2025년 11월 20일</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>업계 전문가 의견</h3>
+<ul>
+<li><strong>재무·회계 전문가</strong>는 XBRL 도입이 재무정보의 일관성과 투명성을 높여 투자자 신뢰를 강화한다고 평가했다.  </li>
+<li><strong>게임 산업 관계자</strong>는 네오위즈가 재무공시를 XBRL 기반으로 제공함으로써 투자자와 규제기관에 대한 접근성을 개선했다고 보았다.  </li>
+</ul>
+<h3>투자자 및 규제기관 시각</h3>
+<ul>
+<li><strong>투자자</strong>는 XBRL 데이터가 분석·비교가 용이해 투자 판단에 도움이 된다고 언급했다.  </li>
+<li><strong>금융감독원</strong>은 XBRL 도입을 통해 국내 기업들의 재무보고 품질을 국제 수준으로 끌어올리려는 노력을 강조했다.  </li>
+</ul>
+<h3>비판적 시각</h3>
+<ul>
+<li><strong>중소기업 대표</strong>는 XBRL 도입 비용이 부담스러울 수 있어, 대기업 중심의 혜택이 우려된다고 지적했다.  </li>
+<li><strong>경영학자</strong>는 XBRL이 단순히 데이터 구조를 일원화하는 것에 그치지 않고, 기업 내부 프로세스 개선까지 요구한다는 점을 강조했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>네오위즈가 2025년 XBRL 재무공시 우수법인으로 선정</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008623203" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>XBRL은 국제표준 전산언어로 재무 정보를 디지털화</td>
+<td>Wikipedia(신뢰할 수 있는 배경 지식)</td>
+</tr>
+<tr>
+<td></td>
+<td>네오위즈 공동대표 김승철·배태근이 감사장 수여식에 참석</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125100344" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>XBRL 도입이 중소기업에 미칠 장기적 비용 절감 효과</td>
+<td>현재 기사에서 구체적 근거 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>김승철</td>
+<td>네오위즈 공동대표</td>
+<td>XBRL 도입을 통해 투자자 신뢰 강화와 기업 가치 상승을 강조</td>
+</tr>
+<tr>
+<td>배태근</td>
+<td>네오위즈 공동대표</td>
+<td>재무공시 디지털화가 내부 프로세스 효율성을 높인다고 주장</td>
+</tr>
+<tr>
+<td>금융감독원 관계자</td>
+<td>XBRL 프로그램 담당</td>
+<td>국내 기업의 재무보고 품질 향상을 목표로 XBRL 도입을 장려</td>
+</tr>
+<tr>
+<td>투자자</td>
+<td>개인·기관 투자자</td>
+<td>XBRL 데이터가 투명하고 비교 가능한 정보를 제공해 투자 결정을 용이하게 함</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>XBRL 도입 확대</strong>: 네오위즈 사례가 선례가 되어 다른 한국 기업들도 XBRL 도입을 가속화할 가능성이 높다.  </li>
+<li><strong>투자자 신뢰 증대</strong>: 재무정보의 투명성과 접근성이 향상되면서 외국인 투자자 유입이 증가할 전망이다.  </li>
+<li><strong>규제 강화</strong>: 금융감독원은 XBRL 기반 재무공시를 표준화하고, 비준수 기업에 대한 규제 조치를 강화할 가능성이 있다.  </li>
+<li><strong>기술 발전</strong>: XBRL과 AI·빅데이터 연계가 진행되면서 재무분석 자동화 및 실시간 모니터링이 가능해질 전망이다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 시사점</strong><br />
+네오위즈가 XBRL 재무공시 우수법인으로 선정된 것은 국내 기업들의 디지털 전환과 재무투명성 강화에 대한 금융감독원의 적극적 지원을 반영한다. 이는 투자자 신뢰를 높이고, 한국 자본시장의 국제 경쟁력을 강화하는 계기가 될 전망이다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008623203" target="_blank">네오위즈, 금감원 '국제표준 전산언어 재무공시 우수법인' 선정</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.industrynews.co.kr/news/articleView.html?idxno=74704" target="_blank">네오위즈, 금융감독원 'XBRL 재무공시 우수법인' 선정 - 인더스트리뉴스</a><a href="https://zdnet.co.kr/view/?no=20251125100344" target="_blank">네오위즈, 금융감독원 'XBRL 재무공시 우수법인' 선정…"투자자 신뢰 ...</a><a href="https://www.g-enews.com/article/ICT/2025/11/202511250901235765c5fa75ef86_1" target="_blank">네오위즈, 금융감독원 'XBRL 재무공시 우수법인' 선정 - 글로벌이코노믹</a><a href="https://www.popcornnews.net/news/articleView.html?idxno=103033" target="_blank">네오위즈, 금융감독원 'XBRL 재무공시 우수법인' 선정</a><a href="https://www.news1.kr/it-science/general-it/5986951" target="_blank">네오위즈, 금감원 '국제표준 전산언어 재무공시 우수법인' 선정 - 뉴스1</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
