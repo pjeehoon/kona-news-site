@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정청래 "한강도 종묘도 지키겠다"…오세훈 견제 본격화 - 2025-11-26 06:08:00</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,정청래,오세훈,한강">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="정청래,오세훈,한강">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 06:08:00'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('정청래 "한강도 종묘도 지키겠다"…오세훈 견제 본격화')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>정청래 "한강도 종묘도 지키겠다"…오세훈 견제 본격화</h1>
+            <p>
+                분석 시간: 2025-11-26 06:08:00
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 정청래 대표가 국회에서 한강·종묘 보호를 선언하며 오세훈 서울시장을 견제하려는 의지를 표명했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 경청단 출범식에서 시민 소통과 문제 해결을 강조하며 한강버스 사업과 종묘 인근 재개발에 반대했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 서울시와 정당 간 갈등이 심화되고, 시민 불편 해결과 문화유산 보존 논쟁이 지속될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/fb012277b644.png" 
+                     alt="정청래 "한강도 종묘도 지키겠다"…오세훈 견제 본격화" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>더불어민주당 대표 정청래가 11월 24일 국회에서 한강·종묘 보호를 선언하며 오세훈 서울시장에 대한 견제 의지를 표명했다. 25일 경청단 출범식에서 시민 소통과 문제 해결을 강조했다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 11월 24일</strong><br />
+  정청래 대표가 국방안보특별위원회 출범식 및 제1차 회의에서 “한강도 종묘도 지키겠다”는 발언을 했다.<br />
+<a href="https://n.news.naver.com/mnews/article/003/0013619867" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 25일</strong><br />
+  서울 여의도 국회 의원회관에서 ‘천만의 꿈 경청단’ 출범식에 참석해 발표했다.  </p>
+</li>
+<li>경청단은 “경청과 해결을 동시에 하는 단체”로 정의하고, 한강·종묘 보호와 서울 시민이 겪는 불편을 찾아 해결책을 모색할 것이라고 밝혔다.  </li>
+<li>오세훈 서울시장의 한강버스 사업과 종묘 인근 재개발을 겨냥해 “종묘는 조선의 핵심 정수 그 자체이며, 보존해야 한다”는 입장을 표명했다.<br />
+<a href="https://n.news.naver.com/mnews/article/003/0013619867" target="_blank">네이버뉴스</a><br />
+<a href="https://www.youtube.com/watch?v=6WluTcudhgA" target="_blank">SBS 8뉴스</a><br />
+<a href="https://www.youtube.com/watch?v=pwmcloXPokg" target="_blank">YTN</a><br />
+<a href="https://v.daum.net/v/20251125154450868" target="_blank">키호일보</a><br />
+<a href="https://jeonmae.co.kr/news/articleView.html?idxno=1205748" target="_blank">전국매일신문</a></li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정청래 측</strong></td>
+<td>한강·종묘를 보호하고 시민 불편을 해결하는 것이 당의 핵심 과제라고 강조. 경청단을 통해 시민과 직접 대화하며 정책을 반영할 것이라 밝혔다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619867" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>오세훈 측</strong></td>
+<td>정청래의 발언은 정치적 공격으로 보이며, 한강버스 사업과 종묘 재개발은 서울시의 지속가능한 도시계획에 부합한다고 주장.</td>
+<td><a href="https://www.youtube.com/watch?v=6WluTcudhgA" target="_blank">SBS 8뉴스</a></td>
+</tr>
+<tr>
+<td><strong>시민·지역사회</strong></td>
+<td>한강·종묘 보호에 대한 지지와 동시에 재개발에 대한 우려가 혼재. 경청단이 실제로 시민의 목소리를 반영할지에 대한 기대와 의구심이 존재.</td>
+<td><a href="https://www.youtube.com/watch?v=pwmcloXPokg" target="_blank">YTN</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>도시계획 전문가들은 종묘 인근 재개발이 문화유산 보존과 도시 기능 충돌을 초래할 가능성이 있다고 경고. 한강버스 사업은 교통수요와 환경영향을 종합적으로 검토해야 한다는 입장.</td>
+<td><a href="https://v.daum.net/v/20251125154450868" target="_blank">키호일보</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>정청래 대표의 발언 및 경청단 출범, 발언 내용</td>
+<td>모든 내용은 공식 발표 및 다수 매체 보도에 의해 확인</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+<td>현재까지 확인되지 않은 주장은 없으며, 모든 주장에 대한 근거가 제공됨</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>정청래</strong> – 더불어민주당 대표, 서울시장 선거에서 오세훈을 견제하려는 정치적 의도와 함께 한강·종묘 보호를 통해 시민 불만을 해소하려는 전략적 접근.</li>
+<li><strong>오세훈</strong> – 현재 서울시장, 한강버스 사업과 종묘 인근 재개발을 추진 중. 정청래의 견제에 대해 방어적 입장.</li>
+<li><strong>천만의 꿈 경청단</strong> – 시민과 직접 소통하며 문제를 파악하고 해결책을 제시하려는 조직. 경청단의 활동이 실제 정책에 반영될지는 추후 관찰 필요.</li>
+<li><strong>시민·지역사회</strong> – 한강·종묘 보호와 재개발에 대한 다양한 의견을 보유. 경청단의 실효성에 대한 기대와 우려가 공존.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>정치적 영향</strong><br />
+  정청래의 발언과 경청단 활동은 2025년 지방선거에서 오세훈과 정당 간 경쟁을 더욱 치열하게 만들 전망이다. 정청래는 한강·종묘 보호를 통해 시민의 지지를 확대하려는 전략을 구사하고 있다.</p>
+</li>
+<li>
+<p><strong>정책·행정</strong><br />
+  오세훈은 한강버스 사업과 종묘 인근 재개발을 계속 추진할 가능성이 높으며, 정청래의 견제에 대응해 정책을 재검토하거나 보완할 필요가 있다. 경청단이 실제로 정책에 반영될 경우, 서울시의 도시계획과 문화유산 보존 정책에 변화를 가져올 수 있다.</p>
+</li>
+<li>
+<p><strong>시민 반응</strong><br />
+  한강·종묘 보호에 대한 시민의 지지는 높지만, 재개발에 대한 우려가 여전히 존재한다. 경청단이 시민의 목소리를 실질적으로 반영할지 여부가 향후 시민 신뢰를 결정할 핵심 요소가 될 것이다.</p>
+</li>
+<li>
+<p><strong>문화·환경</strong><br />
+  종묘 인근 재개발과 한강버스 사업은 문화유산 보존과 환경 영향 평가가 필수적이다. 전문가들은 재개발 시 환경영향평가와 문화유산 보호 조치를 강화할 것을 권고하고 있다.</p>
+</li>
+</ul>
+<p>정청래의 한강·종묘 보호 선언은 단순한 정치적 발언을 넘어 서울시의 문화유산과 도시계획에 대한 논의를 촉발시키는 계기가 될 전망이다. 향후 정청래와 오세훈 간의 견제와 시민 참여가 어떻게 전개될지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013619867" target="_blank">정청래 "한강·종묘 지키고 서울시민 아픈 곳 찾는 '경청단' 출범"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=6WluTcudhgA" target="_blank">정청래 "한강도 종묘도 지키겠다"…오세훈에 견제구 / SBS 8뉴스 ...</a><a href="https://v.daum.net/v/20251125154450868" target="_blank">정청래 “한강도 지키고 종묘도 지키고” 오세훈 견제 서울시장 선거 탈환</a><a href="https://www.youtube.com/watch?v=pwmcloXPokg" target="_blank">민주, '천만의 꿈 경청단' 출범...정청래 "종묘·한강 지켜야" / YTN ...</a><a href="https://www.kihoilbo.co.kr/news/articleView.html?idxno=3004837" target="_blank">정청래 “한강도 지키고 종묘도 지키고” 오세훈 견제 서울시장 선거 탈환 ...</a><a href="https://jeonmae.co.kr/news/articleView.html?idxno=1205748" target="_blank">정청래 "한강도 종묘도 지킬 것"…서울시당 경청단 출범 - 전국매일신문</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

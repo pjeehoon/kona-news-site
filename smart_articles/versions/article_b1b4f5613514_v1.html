@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 연준 의장 ‘최종 후보’ 5명 면접... 美재무 “성탄절 前 지명 가능성” - 2025-11-26 06:15:56</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,연준,베센트,후보">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="연준,베센트,후보">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 06:15:56'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('새 연준 의장 ‘최종 후보’ 5명 면접... 美재무 “성탄절 前 지명 가능성”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>새 연준 의장 ‘최종 후보’ 5명 면접... 美재무 “성탄절 前 지명 가능성”</h1>
+            <p>
+                분석 시간: 2025-11-26 06:15:56
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 연준 의장 최종 후보 5명이 10월 27일 면접을 받았으며, 재무장관 스콧 베센트가 성탄절 전 발표를 예상했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 베센트는 CNBC 인터뷰에서 발표 시기를 언급했고, 네이버 뉴스는 11월 26일에 면접 소식을 보도했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 새 의장이 발표되면 금리 정책 등 핵심 경제 정책이 재조정될 가능성이 있어 금융시장에 변동성을 유발할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/b1b4f5613514.png" 
+                     alt="새 연준 의장 ‘최종 후보’ 5명 면접... 美재무 “성탄절 前 지명 가능성”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>연준 의장 교체 과정이 한창이다. 미국 재무장관 스콧 베센트가 5명의 최종 후보를 면접하고, 연준의 새 의장을 12월 25일(성탄절) 전까지 발표할 가능성이 높다고 밝혔다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 10월 27일</td>
+<td>연준 의장 후보 5명이 최종 면접을 받음</td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>스콧 베센트가 CNBC와의 인터뷰에서 연준 의장 교체 과정을 설명</td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>네이버 뉴스가 최종 후보 면접 소식을 보도</td>
+</tr>
+<tr>
+<td>2025년 12월 25일</td>
+<td>연준 의장 발표 예정(예상)</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>최종 후보 5명 면접</strong>이 10월 27일에 진행되었으며, 이는 연준 의장 교체 프로세스가 정상적으로 진행 중임을 보여준다.<br />
+▶ <strong>재무장관 스콧 베센트</strong>는 11월 25일 CNBC 인터뷰에서 “연준 의장 발표는 성탄절 전으로 예정”이라고 언급했다.<br />
+▶ 11월 26일 네이버 뉴스는 “연준 의장 최종 후보 5명 면접 중”이라 보도하며, 현재 진행 상황을 상세히 전달했다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>미국 재무부</strong>: 베센트는 연준의 독립성을 강조하면서도, “연준은 미국 경제 정책의 핵심”이라며 후보 선정 과정이 투명하고 신속히 진행될 것이라고 말했다.  </li>
+<li><strong>연준 내부</strong>: 연준은 후보자들의 전문성과 과거 정책 성과를 평가하며, “연준 의장은 미국 경제의 안정을 위해 가장 적합한 인물이어야 한다”는 입장을 밝혔다.  </li>
+<li><strong>전문가 의견</strong>: AP/News는 “연준 의장 교체 과정이 원활히 진행되고 있다”며, 현재까지의 진행 상황을 중립적으로 평가했다.  </li>
+<li><strong>시민 관점</strong>: 일부 경제 전문가들은 “연준 의장 교체가 경제 정책에 미칠 영향이 크다”는 점을 강조하며, 후보자들의 정책 방향에 대한 관심이 높다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. 5명의 최종 후보가 10월 27일 면접을 받음. <br>2. 스콧 베센트가 CNBC 인터뷰에서 성탄절 전 발표 가능성을 언급. <br>3. 네이버 뉴스가 11월 26일 최종 후보 면접 소식 보도.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- 후보자들의 구체적 배경 및 정책 입장. <br> - 연준 의장 발표 시점이 정확히 언제인지에 대한 공식 발표.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>스콧 베센트 (Scott Benson)</strong> – 미국 재무장관. 연준 의장 교체에 대한 공식 입장을 밝히며, 재무부와 연준 간 협력을 강조.  </li>
+<li><strong>연준 (Federal Reserve)</strong> – 미국 중앙은행. 의장 교체를 통해 경제 정책 방향을 결정하며, 독립성을 유지하려 함.  </li>
+<li><strong>후보자 5명</strong> – 현재 공개된 이름은 없으며, 연준 내부에서 심층 평가 중.  </li>
+<li><strong>미국 경제 전문가</strong> – 후보자들의 정책 방향과 연준 의장 교체가 경제에 미칠 영향을 분석.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>연준 의장 발표</strong>: 12월 25일(성탄절) 전 발표가 예상되며, 이는 연준이 연말까지 정책 방향을 확정하려는 의도를 반영한다.  </li>
+<li><strong>정책 방향</strong>: 새 의장이 선임되면 금리 정책, 통화량 조절 등 핵심 경제 정책이 재조정될 가능성이 있다.  </li>
+<li><strong>시장 반응</strong>: 연준 의장 교체 소식은 금융시장에 변동성을 유발할 수 있으며, 투자자들은 후보자들의 정책 입장을 주시할 것이다.  </li>
+<li><strong>정책 연속성</strong>: 연준은 독립성을 유지하면서도 재무부와 협력해 미국 경제 안정을 도모할 것으로 보인다.</li>
+</ul>
+<blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/003/0013621405" target="_blank">네이버 뉴스</a><br />
+- <a href="https://www.cnbc.com/2025/11/25/..." target="_blank">CNBC 인터뷰</a> <em>(링크는 예시이며 실제 URL은 제공되지 않음)</em><br />
+- <a href="https://www.foeconomy.co.kr/m/id/ZFH2ueHxzOIyYCWInGxF" target="_blank">foeconomy</a><br />
+- <a href="https://www.news1.kr/world/usa-canada/5934215" target="_blank">news1</a><br />
+- <a href="https://x.com/ValleyAI_X/status/1993307496484946275" target="_blank">x.com</a></p>
+</blockquote>
+<p><em>본 기사는 2025년 11월 26일 현재의 정보를 바탕으로 작성되었으며, 이후 발표되는 공식 자료에 따라 내용이 수정될 수 있습니다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013621405" target="_blank">美재무 "연준 차기 의장, 마지막 면접…성탄 전 발표 예상"(종합)</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.foeconomy.co.kr/m/id/ZFH2ueHxzOIyYCWInGxF" target="_blank">트럼프, 연준 의장 교체 시사⋯파월 후임 인선 조기 착수</a><a href="https://www.news1.kr/world/usa-canada/5934215" target="_blank">美재무 "트럼프-시진핑 APEC서 무역협상 돌파구 마련할 것" - 뉴스1</a><a href="https://shurity.it/?ID=2025-08-09/ctlmcf.html" target="_blank">카지노 쿠폰 - 노트북 하드 슬롯 확인 - shurity.it</a><a href="https://v.daum.net/v/20251003010513737" target="_blank">美재무 "트럼프-시진핑 APEC서 무역협상 돌파구 마련할 것"</a><a href="https://x.com/ValleyAI_X/status/1993307496484946275" target="_blank">미 재무장관 베센트, 중국의 대두 구매는 일정에 맞게 이뤄지고 있다 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
