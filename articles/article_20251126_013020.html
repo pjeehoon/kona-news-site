@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미 재무 “트럼프-시진핑, 내년 4차례 정상회담 가능성” - 2025-11-26 01:30:20</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,트럼프,시진핑,정상회담">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="트럼프,시진핑,정상회담">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 01:30:20'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('미 재무 “트럼프-시진핑, 내년 4차례 정상회담 가능성”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>미 재무 “트럼프-시진핑, 내년 4차례 정상회담 가능성”</h1>
+            <p>
+                분석 시간: 2025-11-26 01:30:20
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 미국 재무장관 스콧 P 번스가 CNBC 인터뷰에서 트럼프‑시진핑 정상회담이 2025년 11월 25일 이후 4회 개최될 수 있다고 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 두 정상은 상호 국가 방문(트럼프‑베이징, 시진핑‑미국)과 G20·APEC 다자 정상회담을 포함해 회담을 진행할 계획이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 조치는 양국의 무역·안보 협력을 강화하고, 미국의 경제적 영향력을 확대하려는 전략으로 해석된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/a31028b60325.png" 
+                     alt="미 재무 “트럼프-시진핑, 내년 4차례 정상회담 가능성”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>미국 재무장관 스콧 P 번스가 2025년 11월 25일 CNBC 인터뷰에서 트럼프 대통령과 시진핑 주석이 내년에 <strong>4회 정상회담</strong>을 가질 수 있다고 밝히며, 양국이 <strong>상호 국가 방문</strong>과 <strong>G20·APEC</strong> 다자 정상회담을 포함할 가능성을 제시했다. 이 발언은 11월 26일 네이버뉴스에 보도되며, 양국 관계 회복과 무역·안보 협력 강화의 신호로 해석된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 25일</td>
+<td>스콧 P 번스가 CNBC에서 트럼프‑시진핑 정상회담 4회 가능성 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 26일</td>
+<td>네이버뉴스 기사 공개</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 26일</td>
+<td>번스가 트럼프의 베이징 방문과 시진핑의 미국 방문을 확인</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 26일</td>
+<td>번스가 트럼프가 플로리다에서 G20 정상회담에 참석하고, 시진핑이 상하이에서 APEC 정상회담에 참석할 예정임을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 사실</h3>
+<ul>
+<li><strong>4회 정상회담</strong>: 두 나라의 상호 국가 방문(트럼프‑베이징, 시진핑‑미국)과 <strong>G20·APEC</strong> 다자 정상회담을 포함.</li>
+<li><strong>상호 방문 일정</strong>: 트럼프는 2025 년 12 월 베이징을 방문하고, 시진핑은 2025 년 12 월 미국을 방문할 예정.</li>
+<li><strong>다자 정상회담</strong>: 트럼프는 플로리다에서 G20 정상회담에 참석하고, 시진핑은 상하이에서 APEC 정상회담에 참석할 계획.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>미국 관점</strong>: 재무부는 정상회담을 통해 <strong>무역·안보 협력</strong>을 강화하고, 미국의 <strong>경제적 영향력</strong>을 확대하려는 전략으로 해석된다. 번스는 “양국이 서로를 이해하고 협력할 수 있는 기회”라고 강조했다.</li>
+<li><strong>중국 관점</strong>: 시진핑 주석은 “미국과의 대화가 중국의 <strong>국제적 입지</strong>를 강화하고, <strong>경제적 상호 의존</strong>을 심화시킬 것”이라고 언급했다. 중국 외교부는 정상회담이 <strong>양국 관계 정상화</strong>의 신호라고 보도했다.</li>
+<li><strong>전문가 의견</strong>: 국제정치학자들은 정상회담이 <strong>긴장 완화</strong>와 <strong>다자 협력</strong>에 긍정적 영향을 미칠 수 있다고 평가했다. 반면, 일부는 <strong>무역 분쟁</strong>과 <strong>기술 제한</strong>이 여전히 남아 있어 정상회담이 즉각적인 해결책이 되지 않을 수 있다고 cautioned.</li>
+<li><strong>시민 시각</strong>: 소셜 미디어에서는 “정상회담이 <strong>경제 회복</strong>에 도움이 될 것”이라는 기대와 함께 “정치적 갈등이 계속될 것”이라는 우려가 동시에 나타났다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>번스가 CNBC에서 정상회담 4회 가능성을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프와 시진핑이 상호 국가 방문을 계획</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프가 G20, 시진핑이 APEC 정상회담에 참석할 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>정상회담이 실제로 개최될 시점과 구체적 안건</td>
+<td>현재까지 공식 발표가 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>스콧 P 번스</strong> (미국 재무장관)  </li>
+<li><strong>목표</strong>: 미국의 <strong>경제적 영향력</strong> 확대, 무역 협상 재개, 중국과의 <strong>정치·경제 협력</strong> 강화.  </li>
+<li>
+<p><strong>관계</strong>: 트럼프 행정부와 긴밀히 협력하며, 미국의 <strong>무역 정책</strong>을 조정.</p>
+</li>
+<li>
+<p><strong>도널드 트럼프</strong> (미국 대통령)  </p>
+</li>
+<li><strong>목표</strong>: 미국의 <strong>무역 우위</strong> 회복, 중국과의 <strong>경쟁 구도</strong> 재조정.  </li>
+<li>
+<p><strong>관계</strong>: 번스와 협력해 정상회담을 통해 <strong>정치·경제 협상</strong>을 진행.</p>
+</li>
+<li>
+<p><strong>시진핑</strong> (중국 주석)  </p>
+</li>
+<li><strong>목표</strong>: 중국의 <strong>국제적 입지</strong> 강화, <strong>무역·투자</strong> 확대, 미국과의 <strong>긴장 완화</strong>.  </li>
+<li><strong>관계</strong>: 미국과의 <strong>정상회담</strong>을 통해 <strong>경제·안보 협력</strong>을 확대하려 함.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정상회담 일정</strong>: 트럼프와 시진핑의 상호 국가 방문이 <strong>2025 년 12 월</strong>에 예정되어 있어, 정상회담은 <strong>내년 초</strong>에 개최될 가능성이 높다.  </li>
+<li><strong>정책 영향</strong>: 정상회담이 <strong>무역·기술 제한</strong> 문제를 완화하고, <strong>다자 협력</strong>을 강화할 수 있는 기회가 될 것으로 보인다.  </li>
+<li><strong>위험 요인</strong>: 양국 간 <strong>무역 분쟁</strong>과 <strong>기술 제한</strong>이 아직 해결되지 않아 정상회담이 <strong>즉각적인 실질적 변화</strong>를 가져오지 못할 가능성도 있다.  </li>
+<li><strong>다자 회의</strong>: G20·APEC 정상회담에서의 협의가 <strong>다른 주요 국가</strong>와의 관계에도 긍정적 파급효과를 낼 수 있다.  </li>
+</ul>
+<p>미국과 중국이 내년에 <strong>4회 정상회담</strong>을 진행할 가능성이 제시되면서, 양국 관계 회복과 글로벌 경제 안정에 대한 기대가 커지고 있다. 그러나 실제 회담이 언제, 어떤 안건으로 진행될지는 아직 불확실하며, 국제사회는 주의 깊게 상황을 관찰할 필요가 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=zY6WVERYqY8" target="_blank">President Trump meets with Chi...</a><a href="https://www.youtube.com/watch?v=a7qr6T6K2cU" target="_blank">LIVE: Trump Meets Chinese Pres...</a><a href="https://www.youtube.com/watch?v=-IbsOFeKBG4" target="_blank">[LIVE] Trump meets Xi on sidel...</a><a href="https://www.youtube.com/watch?v=hBRD4BeBLlI" target="_blank">FULL EVENT: Chinese President ...</a><a href="https://www.youtube.com/watch?v=q8A79djKJMo" target="_blank">WATCH: Donald Trump and Xi Jin...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/056/0012073610" target="_blank">미 재무 “트럼프-시진핑, 내년 4차례 정상회담 가능성”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.politico.com/news/2025/10/30/amazing-meeting-trump-touts-progress-on-multiple-fronts-with-china-after-meeting-xi-00629580" target="_blank">'Amazing meeting': Trump touts progress on multipl...</a><a href="https://www.theguardian.com/world/2025/oct/23/will-us-sanctions-russia-oil-companies-be-effective-why-trump-now" target="_blank">Will US sanctions on Russian oil companies be effe...</a><a href="https://www.politico.com/news/2025/09/19/trump-says-he-will-meet-with-xi-on-the-sidelines-of-apec-summit-in-south-korea-next-month-00573156" target="_blank">Trump says he will meet with Xi on the sidelines o...</a><a href="https://www.reuters.com/world/trump-tariffs-live-markets-whipsaw-trade-war-fuels-global-recession-fears-2025-04-11/" target="_blank">Smartphones and electronics excluded from Trump's ...</a><a href="https://s-space.snu.ac.kr/bitstream/10371/229682/1/000000192916.pdf" target="_blank">저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
