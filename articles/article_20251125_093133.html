@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGU+, ‘쉬프트 2기’ 11개사 선발…AI 스타트업 글로벌 진출 지원 - 2025-11-25 09:31:32</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,LG유플러스,쉬프트2기,AI스타트업">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="LG유플러스,쉬프트2기,AI스타트업">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 09:31:32'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('LGU+, ‘쉬프트 2기’ 11개사 선발…AI 스타트업 글로벌 진출 지원')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>LGU+, ‘쉬프트 2기’ 11개사 선발…AI 스타트업 글로벌 진출 지원</h1>
+            <p>
+                분석 시간: 2025-11-25 09:31:32
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> LG유플러스가 AI 스타트업 11개를 ‘쉬프트 2기’에 선발해 AWS, ZVC, 세일즈포스와 협력하고 MWC 및 4YFN 참가를 지원했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 선발된 스타트업은 AWS를 통한 AI 개발·실험 비용 지원, ZVC와의 공동 투자 구조, 세일즈포스와의 글로벌 세일즈·마케팅 기회를 제공받으며, 5개가 2026년 MWC26 4YFN에 참여할 예정이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 다각적 지원은 한국 AI 스타트업의 해외 진출 장벽을 낮추고 글로벌 시장에서의 경쟁력을 강화할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/9d17a1be1fe3.png" 
+                     alt="LGU+, ‘쉬프트 2기’ 11개사 선발…AI 스타트업 글로벌 진출 지원" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>LG유플러스가 11개 AI 스타트업을 ‘쉬프트 2기’에 선발해 AWS, ZVC, 세일즈포스와 협력, MWC 및 4YFN 참가를 지원한다. 글로벌 시장 진입을 가속화하는 다각적 지원이 주목된다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 24일</td>
+<td>‘쉬프트데이(Shift Day)’ 개최</td>
+<td>LG유플러스 용산 사옥에서 ‘쉬프트데이’가 열려 AI 스타트업과의 협업 성과를 공유</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619242" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>스타트업 선발 및 지원 내용 발표</td>
+<td>11개 AI 스타트업이 최종 선발, AWS와 협력해 AI 개발·실험 비용 지원, ZVC와 공동 투자 구조 구축, 세일즈포스와 글로벌 세일즈·마케팅 기회 제공, MWC 참가 지원, 5개 스타트업이 2026년 MWC26 4YFN에 참여 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619242" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>주요 지원 내용</strong><br />
+- <strong>AI 개발·실험 비용</strong>: AWS와 협력해 비용 지원<br />
+- <strong>투자 구조</strong>: 일본·동남아 투자사 ZVC와 전략적 공동 투자<br />
+- <strong>글로벌 세일즈·마케팅</strong>: 미국 세일즈포스와 협업<br />
+- <strong>국제 전시회 참가</strong>: 스페인 바르셀로나에서 개최되는 MWC 참가 지원, 5개 스타트업이 2026년 MWC26 4YFN에 참여 예정  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>LG유플러스 측</h3>
+<p>LG유플러스는 ‘쉬프트’ 프로그램을 통해 AI 생태계를 강화하고, 자사 네트워크와 AI 스타트업 간 시너지를 창출하려는 전략을 강조했다. “AI 기술은 통신 인프라와 결합될 때 새로운 가치를 창출할 수 있다”는 입장을 밝혔다.  </p>
+<h3>스타트업 입장</h3>
+<p>선발된 11개 스타트업은 자금·기술·마케팅 지원을 통해 글로벌 시장 진입 장벽을 낮추는 기회를 얻었다. 일부 스타트업은 “AWS와의 협업으로 인프라 비용을 절감하고, 세일즈포스와의 파트너십으로 해외 고객 확보가 용이해졌다”고 전했다.  </p>
+<h3>업계 전문가 의견</h3>
+<p>AI 산업 전문가들은 LG유플러스의 다각적 지원이 한국 AI 스타트업의 해외 진출을 가속화할 수 있는 좋은 사례라고 평가했다. 그러나 “실제 성과는 스타트업의 기술력과 시장 적합성에 달려 있다”는 지적도 있었다.  </p>
+<h3>비판적 시각</h3>
+<p>일부 비평가들은 ‘쉬프트’ 프로그램이 선발 과정에서 투명성이 부족하다고 지적했다. 또한, 대기업과의 협업이 스타트업의 독립성을 침해할 가능성에 대해 우려를 표했다.  </p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>분류</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>LG유플러스가 2025년 11월 24일 ‘쉬프트데이’를 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619242" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>11개 AI 스타트업이 ‘쉬프트 2기’에 선발</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619242" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AWS, ZVC, 세일즈포스와의 협력 및 MWC 지원</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013619242" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>스타트업별 구체적 재정 지원 금액</td>
+<td>현재 공개된 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>LG유플러스</strong>: AI 생태계 구축 및 자사 서비스 강화 목표  </li>
+<li><strong>AWS</strong>: 인프라 비용 지원 제공, AI 개발 가속화  </li>
+<li><strong>ZVC</strong>: 공동 투자 구조를 통해 자금 조달 및 시장 진입 지원  </li>
+<li><strong>세일즈포스</strong>: 글로벌 세일즈·마케팅 채널 제공  </li>
+<li><strong>스타트업 11개</strong>: 기술 개발·시장 진출을 위한 자금·인프라·마케팅 지원 수혜  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>MWC26 및 4YFN 참가</strong>: 5개 스타트업이 2026년 MWC26 4YFN에 참여함으로써 해외 투자자 및 파트너와의 네트워킹 기회 확대  </li>
+<li><strong>지속적 투자</strong>: LG유플러스가 전용 펀드를 조성해 추가 투자 가능성  </li>
+<li><strong>생태계 확장</strong>: AWS, ZVC, 세일즈포스와의 협력 체계가 강화되면서 AI 스타트업의 글로벌 진출 로드맵이 정립될 전망  </li>
+<li><strong>경쟁력 강화</strong>: 대기업과의 협업이 스타트업의 기술적·시장적 경쟁력을 높이는 동시에, 대기업의 AI 서비스 포트폴리오를 풍부하게 할 가능성  </li>
+</ul>
+<p>LG유플러스의 ‘쉬프트 2기’는 AI 스타트업이 글로벌 시장에서 경쟁력을 확보할 수 있도록 다각적 지원을 제공하는 모델로 주목받고 있다. 향후 실제 성과가 어떻게 나타날지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=BtfHdCueO0g" target="_blank">(실제 방송사고) 아나운서 민망 실수 사고..51</a><a href="https://www.youtube.com/watch?v=ucoAwAXk9SI" target="_blank">중국 게임 작업장 실체 ㅋㅋㅋㅋ</a><a href="https://www.youtube.com/watch?v=urunbGUg6sw" target="_blank">핸들의 날개?(패들시프트 사용법) #수동변속기</a><a href="https://www.youtube.com/watch?v=-LlaGoITgeQ" target="_blank">다운시프트 중독자..마지막 만족한 표정ㅋㅋㅋ</a><a href="https://www.youtube.com/watch?v=IJOMkCD4k1Q" target="_blank">Surprisingly, most people don'...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013619242" target="_blank">LGU+, AI 스타트업 글로벌 진출 돕는다…'쉬프트데이' 개최</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://ushift.co.kr/" target="_blank">AI Open Innovation 프로그램 l shift</a><a href="https://m.ddaily.co.kr/page/view/2025071009424839748" target="_blank">LG U+, AI스타트업 4곳에 50억원 투자…“재무·사업화 전방위 협력 ...</a><a href="https://www.etnews.com/20250710000055" target="_blank">LGU+, AI 스타트업 4곳 투자…50억 규모 전용펀드 조성 - 전자신문</a><a href="https://m.boannews.com/html/detail.html?idx=138076" target="_blank">LG유플러스, AI 협력 생태계 조성 나서...스타트업 4곳에 투자</a><a href="https://www.facebook.com/BluepointPartners/" target="_blank">블루포인트 Bluepoint | Daejeon</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
