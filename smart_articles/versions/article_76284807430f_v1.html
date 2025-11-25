@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI캠퍼스 만드는 KT…"韓 AI역량 강화에 기여" - 2025-11-25 17:44:12</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,KT,AI캠퍼스,판교">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="KT,AI캠퍼스,판교">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 17:44:12'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('AI캠퍼스 만드는 KT…"韓 AI역량 강화에 기여"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI캠퍼스 만드는 KT…"韓 AI역량 강화에 기여"</h1>
+            <p>
+                분석 시간: 2025-11-25 17:44:12
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> KT가 2025년 11월 25일 성남 판교 사옥에 400평 규모의 AI 캠퍼스를 개소해 700명을 대상으로 실무형 AI 교육을 제공한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 캠퍼스는 6개 대형 강의실과 2개 원격 학습 스튜디오를 갖추고, AI 리터러시·Gen AI 활용·Gen AI 워크숍 세 트랙으로 구성된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이를 통해 KT는 AI 역량을 강화하고 기업·교육계의 AI 활용 가속화를 목표로 하며, 판교를 AI 허브로 육성하려는 국가 전략과 부합한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/76284807430f.png" 
+                     alt="AI캠퍼스 만드는 KT…"韓 AI역량 강화에 기여"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>KT가 2025년 11월 25일 성남 판교 사옥에 400평 규모의 AI 캠퍼스를 개소해, AI 리터러시·Gen AI 활용·워크숍 세 가지 트랙으로 700명에게 실무 중심 교육을 제공한다.</strong><br />
+이 캠퍼스는 한국 AI 역량 강화와 기업·교육계의 AI 활용 가속화를 목표로 한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 25일</strong></td>
+<td>KT가 성남 판교 사옥에 400평 규모 AI 캠퍼스를 개소</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005282648" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td></td>
+<td>캠퍼스는 6개 대형 강의실과 2개 원격 학습 스튜디오를 갖춤</td>
+<td><a href="https://www.thelec.kr/news/articleView.html?idxno=44302" target="_blank">디일렉</a></td>
+</tr>
+<tr>
+<td></td>
+<td>교육 대상은 주로 교사·주임 직원이었으나, 최근 기업 직원까지 확대</td>
+<td><a href="https://v.daum.net/v/20251125092548406" target="_blank">이데일리</a></td>
+</tr>
+<tr>
+<td></td>
+<td>700명 정도가 교육을 수료했으며, AI 리터러시, Gen AI 활용, Gen AI 워크숍 세 트랙 제공</td>
+<td><a href="https://www.m-i.kr/news/articleView.html?idxno=1307277" target="_blank">매일일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 리터러시: 생성형 AI 기초, 프롬프트 엔지니어링, 콘텐츠 제작, 윤리적 AI 활용</td>
+<td><a href="https://www.thebigdata.co.kr/view.php?ud=202511251253119084aca46cea9_23" target="_blank">빅데이터</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Gen AI 활용: 시나리오 기반 프롬프트 엔지니어링, 정보 검색, 데이터 분석, 문서·콘텐츠 생산, 업무 자동화</td>
+<td><a href="https://www.thebigdata.co.kr/view.php?ud=202511251253119084aca46cea9_23" target="_blank">빅데이터</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Gen AI 워크숍: AI 에이전트, Vibe 코딩, 개인 웹 서비스 제작</td>
+<td><a href="https://www.thebigdata.co.kr/view.php?ud=202511251253119084aca46cea9_23" target="_blank">빅데이터</a></td>
+</tr>
+<tr>
+<td></td>
+<td>KT는 실무형 AI 역량 강화와 산업 전반의 AX(Agile eXecution) 역량 확대를 목표</td>
+<td><a href="https://news.nate.com/view/20251125n09011" target="_blank">네이트뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>긍정적 시각</h3>
+<ul>
+<li><strong>전문가 의견</strong>: AI 교육 인프라가 확대되면서 기업과 교육계가 AI 도입에 필요한 실무 역량을 빠르게 확보할 수 있다.  </li>
+<li><strong>기업 입장</strong>: KT는 자체 AI 역량을 강화해 서비스 혁신을 가속화하고, AI 기반 업무 자동화로 비용 절감 효과를 기대한다.  </li>
+<li><strong>정부·학계</strong>: AI 인재 양성은 국가 경쟁력 강화와 직결되며, 판교를 AI 허브로 육성하려는 정책과 부합한다.</li>
+</ul>
+<h3>부정적 시각</h3>
+<ul>
+<li><strong>비용·효율성 우려</strong>: 400평 규모의 시설과 700명 교육을 위한 인프라 구축 비용이 상당하며, 장기적으로 비용 대비 효과가 명확히 입증되지 않을 수 있다.  </li>
+<li><strong>교육 내용의 최신성</strong>: AI 기술은 빠르게 진화하므로, 교육 커리큘럼이 최신 트렌드를 반영하지 못할 위험이 있다.  </li>
+<li><strong>일자리 대체 가능성</strong>: AI 활용이 확대될수록 일부 업무는 자동화되어 일자리 감소 우려가 제기된다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>KT가 2025년 11월 25일에 AI 캠퍼스를 개소했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005282648" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td></td>
+<td>캠퍼스 규모는 약 400평이며, 6개 강의실과 2개 원격 스튜디오를 보유한다.</td>
+<td><a href="https://www.thelec.kr/news/articleView.html?idxno=44302" target="_blank">디일렉</a></td>
+</tr>
+<tr>
+<td></td>
+<td>교육 대상은 700명 정도이며, AI 리터러시·Gen AI 활용·워크숍 세 트랙을 제공한다.</td>
+<td><a href="https://www.m-i.kr/news/articleView.html?idxno=1307277" target="_blank">매일일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 리터러시, Gen AI 활용, Gen AI 워크숍의 구체적 내용은 위 기사에서 확인된다.</td>
+<td><a href="https://www.thebigdata.co.kr/view.php?ud=202511251253119084aca46cea9_23" target="_blank">빅데이터</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>캠퍼스가 한국 AI 역량 강화에 미칠 장기적 효과</td>
+<td>현재까지는 추정 수준이며, 장기적 효과는 추후 평가 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>김영섭 대표</strong> – KT의 AI 전략을 주도하며, 캠퍼스 개소를 통해 기업 내부 AI 역량을 강화하고자 한다.  </li>
+<li><strong>KT 교육팀</strong> – 교육 커리큘럼 설계와 운영을 담당하며, 실무 중심 교육을 목표로 한다.  </li>
+<li><strong>교육 대상자</strong> – 교사·주임 직원, 기업 직원 등 AI 활용이 필요한 직무 종사자.  </li>
+<li><strong>정부·학계</strong> – AI 인재 양성 및 산업 경쟁력 강화에 관심이 있는 이해관계자.  </li>
+<li><strong>AI 스타트업·연구기관</strong> – KT와 협업 가능성 탐색 중이며, AI 기술 상용화에 기여할 수 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>교육 확대</strong>: KT는 2026년까지 교육 대상자를 1,500명 이상으로 확대할 계획이며, 추가 트랙(예: AI 보안, AI 윤리)을 도입할 가능성이 있다.  </li>
+<li><strong>산학 협력</strong>: 판교 AI 연구센터와의 협력을 통해 교육과 연구를 연계, 실무형 프로젝트 기반 교육을 강화할 전망이다.  </li>
+<li><strong>국가 AI 전략 연계</strong>: 한국 정부의 AI 산업 육성 정책과 연계해, AI 인재 파이프라인을 구축하고 국내 AI 생태계 활성화에 기여할 것으로 예상된다.  </li>
+<li><strong>비용·효과 평가</strong>: 장기적으로 교육 투자 대비 기업 성과와 국가 경쟁력에 미치는 영향을 정량적으로 분석할 필요가 있다.</li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> KT의 AI 캠퍼스 개소는 한국 AI 역량 강화와 산업 전반의 AI 활용 가속화를 위한 중요한 첫걸음이며, 앞으로의 교육 확대와 산학 협력으로 AI 인재 양성 생태계가 더욱 견고해질 전망이다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=c2GVi_5Oc5Q" target="_blank">성남시·KAIST, 판교에 &#39;AI 연구원&#39...</a><a href="https://www.youtube.com/watch?v=8ESQ_kX_d20" target="_blank">[삼성전자] 대학교 어디 나왔어요?ㅣ현직자들의 출신학교...</a><a href="https://www.youtube.com/watch?v=Ao8Opo06rx8" target="_blank">&quot;저 아세요?&quot; 영어로</a><a href="https://www.youtube.com/watch?v=4bcey0_IW2s" target="_blank">도로주행 시뮬레이션 첫날 #shorts</a><a href="https://www.youtube.com/watch?v=nOF3cEhU8Uc" target="_blank">삼성 인사팀이 말하는 무조건 거르는 지원자 ㄷㄷ #sh...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/008/0005282648" target="_blank">AI 입문부터 심화까지…KT, AX 인재 양성 본격화</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.thelec.kr/news/articleView.html?idxno=44302" target="_blank">KT·LGU+, AI 실무교육·스타트업 지원 - 전자부품 전문 미디어 디일렉</a><a href="https://www.m-i.kr/news/articleView.html?idxno=1307277" target="_blank">KT, AI 인재 양성 본격화…“AX 실행력 강화” - 매일일보</a><a href="https://v.daum.net/v/20251125092548406" target="_blank">KT, 판교에 'AI 캠퍼스' 만들고 AX 역량 교육 강화...올해 700명 수료</a><a href="https://www.thebigdata.co.kr/view.php?ud=202511251253119084aca46cea9_23" target="_blank">KT, AI 기반 업무 역량 교육 위한 '캠퍼스' 개소</a><a href="https://news.nate.com/view/20251125n09011" target="_blank">KT, 판교에 'AI Campus' 열고 실무형 AX 교육 본격화 : 네이트 뉴스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
