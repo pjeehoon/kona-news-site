@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아부다비서 미·우·러 평화협상 중…美육군장관 제네바 이어 활약 - 2025-11-25 20:15:42</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,드리스콜,아부다비,평화협상">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="드리스콜,아부다비,평화협상">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 20:15:42'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('아부다비서 미·우·러 평화협상 중…美육군장관 제네바 이어 활약')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>아부다비서 미·우·러 평화협상 중…美육군장관 제네바 이어 활약</h1>
+            <p>
+                분석 시간: 2025-11-25 20:15:42
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 미국 육군장관 다니엘 드리스콜이 아부다비에서 우크라이나와 러시아 대표단과의 평화협상을 주도했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 28개 항목의 평화안을 19개 항목으로 조정해 2025년 11월 24일부터 25일까지 진행된 협상에 반영했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 협상은 미국이 군사적 압박과 외교적 대화를 병행하려는 전략을 반영하며, 지역 안정을 위한 시도로 평가된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/dadb4dae1fe8.png" 
+                     alt="아부다비서 미·우·러 평화협상 중…美육군장관 제네바 이어 활약" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>미국 육군장관이 스위스 제네바에서의 비공개 회담을 마친 뒤, 아부다비에서 우크라이나와 러시아 대표단과의 평화협상을 이어가며 28개 항목의 평화안을 조정해 19개 항목으로 완성했다. 2025년 11월 24일 밤부터 진행된 협상은 25일까지 지속될 예정이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 23일</td>
+<td>제네바 비공개 회담</td>
+<td>▶ <strong>다니엘 드리스콜</strong>이 우크라이나와 비공개 회담에 참석해 28개 항목 평화안을 제네시 대통령에게 전달했다. <a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>아부다비 평화협상</td>
+<td>▶ 드리스콜이 <strong>우크라이나 군사정보 수장 키릴로 부다노프</strong>와 러시아 대표단을 만나 첫 회담을 진행했다. <br>▶ 협상은 25일까지 계속될 예정이며, 19개 항목으로 조정된 합의안을 마련했다. <a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>협상 진행</td>
+<td>▶ 드리스콜과 러시아 측이 협상을 계속할 계획이다. <a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>미국 관점</strong><br />
+  미국 국방부는 드리스콜이 평화협상에 <strong>“매우 적극적으로 참여했다”</strong>는 입장을 밝히며, 미국의 외교·군사적 역할을 강조했다. 이는 미국이 우크라이나에 대한 지원을 지속하면서도 러시아와의 대화를 통해 긴장을 완화하려는 전략을 반영한다. <a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>우크라이나 관점</strong><br />
+  우크라이나 측은 드리스콜의 참여를 긍정적으로 평가하며, 평화안이 <strong>“구체적이고 실현 가능하다”</strong>는 점을 강조했다. 그러나 일부 우크라이나 정치인들은 아직도 러시아와의 완전한 무력분리와 영토 복구를 요구한다는 점을 지적했다.</p>
+</li>
+<li>
+<p><strong>러시아 관점</strong><br />
+  러시아는 드리스콜과의 회담을 “<strong>대화의 시작점</strong>”이라며, 평화안이 러시아의 핵심 이익을 충분히 반영했다고 주장했다. 그러나 러시아 외교부는 여전히 <strong>“전면적 군사적 승리”</strong>를 목표로 하고 있다는 입장을 유지하고 있다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  국제정세학자들은 드리스콜의 참여가 <strong>“미국이 군사적 압박과 외교적 협상을 병행하는 전략적 시도”</strong>라고 분석했다. 한 학자는 “이러한 접근은 장기적으로 지역 안정을 도모할 수 있다”는 반면, 다른 학자는 “러시아가 협상에 진지하지 않을 가능성”을 경고했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>드리스콜이 2025년 11월 23일 제네바에서 우크라이나와 비공개 회담에 참석했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>드리스콜이 2025년 11월 24일 아부다비에서 우크라이나 군사정보 수장 키릴로 부다노프와 러시아 대표단과 회담을 진행했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>협상은 2025년 11월 25일까지 계속될 예정이며, 19개 항목으로 조정된 평화안이 마련되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>드리스콜이 제네시 대통령에게 전달한 평화안의 구체적 조항 내용.</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>러시아 대표단이 실제로 협상에 얼마나 진지한지에 대한 내부 평가.</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장 및 이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>다니엘 드리스콜</strong></td>
+<td>미국 육군장관</td>
+<td>미국의 군사·외교 전략을 대표하며, 우크라이나 지원과 러시아와의 대화 균형을 추구.</td>
+</tr>
+<tr>
+<td><strong>키릴로 부다노프</strong></td>
+<td>우크라이나 군사정보 수장</td>
+<td>우크라이나의 군사적 이익과 영토 보전을 최우선으로 하며, 평화안이 실현 가능하도록 조정.</td>
+</tr>
+<tr>
+<td><strong>러시아 대표단</strong></td>
+<td>러시아 외교·군사 대표</td>
+<td>러시아의 전략적 이익과 영토 보전을 위해 협상에 참여.</td>
+</tr>
+<tr>
+<td><strong>제네시 대통령</strong></td>
+<td>우크라이나 대통령</td>
+<td>평화안이 우크라이나의 주권과 영토 복구를 보장하도록 요구.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>협상 지속</strong><br />
+  2025년 11월 25일 이후에도 드리스콜과 러시아 대표단 간의 회담이 계속될 것으로 보이며, <strong>19개 항목 평화안</strong>이 최종적으로 확정될 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>미국의 역할 강화</strong><br />
+  미국은 군사적 지원을 유지하면서도 <strong>외교적 압박</strong>을 통해 러시아와의 긴장을 완화하려는 전략을 이어갈 전망이다.</p>
+</li>
+<li>
+<p><strong>우크라이나의 반응</strong><br />
+  우크라이나는 평화안이 <strong>구체적 이익을 반영</strong>하는지 여부를 면밀히 검토할 것이며, 필요 시 추가 협상을 요구할 수 있다.</p>
+</li>
+<li>
+<p><strong>러시아의 대응</strong><br />
+  러시아는 협상 결과를 <strong>내부적으로 검토</strong>한 뒤, 필요 시 <strong>전략적 조정</strong>을 할 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>국제사회</strong><br />
+  유럽연합과 NATO는 평화안의 실행 가능성을 주시하며, <strong>경제 제재</strong>와 <strong>군사 지원</strong>의 균형을 재조정할 가능성이 있다.</p>
+</li>
+</ul>
+<p>이와 같은 상황에서 드리스콜의 역할은 미국이 <strong>군사적 압박과 외교적 협상을 동시에 수행</strong>하는 전략의 핵심이 될 것으로 예상된다. 협상 결과가 국제 안보 환경에 미칠 영향은 앞으로의 진행 상황에 따라 달라질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008624195" target="_blank">아부다비서 미·우·러 평화협상 중…美육군장관 제네바 이어 활약</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
