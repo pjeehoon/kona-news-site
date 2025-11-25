@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'형제국'에서 순방 마무리..."한국 외교 지평 넓혀" - 2025-11-26 05:30:33</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,이재명,UAE,중동">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="이재명,UAE,중동">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 05:30:33'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'형제국\'에서 순방 마무리..."한국 외교 지평 넓혀"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'형제국'에서 순방 마무리..."한국 외교 지평 넓혀"</h1>
+            <p>
+                분석 시간: 2025-11-26 05:30:33
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이재명 대통령이 UAE 순방을 마무리하며 AI 인프라, 방산, 원전 협력에 관한 합의문을 체결했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 방문은 한국과 중동·터키 간의 경제·안보·에너지 협력을 강화하고, 방산·원전·에너지 분야에서 공동 성명을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 한국의 외교적 영향력이 확대되고, AI·방산·원전 산업에 새로운 시장 기회가 열릴 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/834ee129956d.png" 
+                     alt="'형제국'에서 순방 마무리..."한국 외교 지평 넓혀"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>이재명 대통령이 7박 10일 외교 일정의 마지막 단계인 UAE 순방을 마무리하며, 한국의 외교적 영향력을 확대하고 새로운 협력 방안을 모색했다. 이번 방문은 한국과 중동 국가 간의 경제·안보·에너지 협력을 강화하는 계기가 됐다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 22일</td>
+<td>G20 정상회의</td>
+<td>이재명 대통령이 방산 협력 및 CEPA 추진 논의</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>터키 방문</td>
+<td>터키 대통령과 공동 언론 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>UAE 순방 마무리</td>
+<td>AI 인프라, 방산, 원전 협력 등 다방면 협의</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>외교 일정 종료</td>
+<td>7박 10일 외교 일정 종료, 한국 내 귀국</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>이재명 대통령은 UAE에서 AI 인프라 사업과 방산·원전 협력에 관한 합의문을 체결</strong>했다.<br />
+▶ <strong>터키와의 정상회담에서 방산·원전·에너지 협력 강화에 대한 공동 성명을 발표</strong>했다.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>시각</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정부·외교 전문가</strong></td>
+<td>“이재명 대통령의 외교 일정은 한국의 글로벌 영향력을 확대하는 데 큰 의미가 있다. 특히 중동·터키와의 협력은 에너지·안보 분야에서 실질적 파급효과를 기대할 수 있다.”</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>비판적 시각</strong></td>
+<td>“중동 국가와의 협력 확대는 단기적 이익을 가져올 수 있으나, 장기적으로는 외교적 독립성을 해칠 위험이 있다.”</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>경제계</strong></td>
+<td>“AI 인프라 사업과 방산·원전 협력은 한국 기업에게 새로운 시장을 열어줄 전망이다.”</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>① 이재명 대통령이 UAE를 방문했다. <br>② AI 인프라 사업과 방산·원전 협력에 관한 합의문이 체결되었다. <br>③ 터키와의 정상회담에서 공동 성명이 발표되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>현재까지는 미확인된 주장이 없으며, 모든 주요 내용은 공식 보도에 근거한다.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이재명 대통령</strong> – 한국의 외교적 영향력 확대와 국내 산업 발전을 목표로 외교 일정 진행.  </li>
+<li><strong>UAE 대통령</strong> – AI 인프라 및 방산·원전 분야에서 한국과의 협력을 통해 기술 및 경제적 이익을 도모.  </li>
+<li><strong>터키 대통령</strong> – 방산·원전·에너지 분야에서 한국과의 협력 강화에 관심.  </li>
+<li><strong>한국 기업</strong> – AI 인프라, 방산, 원전 등 분야에서 해외 시장 진출 기회를 확보.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>외교적 파급효과</strong> – 중동·터키와의 협력 강화가 한국의 국제적 위상을 높이는 데 기여할 전망이다.  </li>
+<li><strong>경제적 기회</strong> – AI 인프라, 방산·원전 분야에서 한국 기업의 해외 진출이 가속화될 가능성이 있다.  </li>
+<li><strong>안보·에너지 협력</strong> – 공동 연구·개발, 기술 이전 등을 통해 양국 간 안보·에너지 협력이 심화될 것으로 예상된다.  </li>
+<li><strong>정책적 지속성</strong> – 이번 외교 일정이 단기적 성과에 그치지 않고, 장기적 전략으로 이어질지 여부는 향후 행정부의 정책 방향에 달려 있다.  </li>
+</ul>
+<p><strong>주요 인용</strong><br />
+- “이재명 대통령은 UAE에서 AI 인프라 사업과 방산·원전 협력에 관한 합의문을 체결했다.” – <a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a><br />
+- “터키와의 정상회담에서 방산·원전·에너지 협력 강화에 대한 공동 성명을 발표했다.” – <a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">네이버뉴스</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=9OBJzHWBbQA" target="_blank">South Korean president to make...</a><a href="https://www.youtube.com/watch?v=DTRa0s35SxE" target="_blank">Erdogan Welcomes South Korea’s...</a><a href="https://www.youtube.com/watch?v=dhERjgnuYEE" target="_blank">south Korea president Lee JAE ...</a><a href="https://www.youtube.com/watch?v=RLES-VHul_M" target="_blank">Lee Jae Myung Arrives in Ankar...</a><a href="https://www.youtube.com/watch?v=Htq-741kK7k" target="_blank">President Lee Jae-myung arrive...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/030/0003373747" target="_blank">李 대통령 열흘 외교일정 마무리...韓, AI·방산·원전 해외 영토 확장</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://en.yna.co.kr/view/AEN20251125001100315" target="_blank">(News Focus) Lee seeks to expand economic ties wit...</a><a href="https://www.koreatimes.co.kr/amp/foreignaffairs/20251125/lee-ends-10-day-g20-anchored-tour-with-nuclear-defense-energy-partnership-in-turkey" target="_blank">Lee ends 10-day G20-anchored tour with nuclear, de...</a><a href="https://koreajoongangdaily.joins.com/news/2025-11-25/national/diplomacy/Korea-Turkey-agree-to-boost-cooperation-in-defense-nuclear-energy-as-Lees-overseas-tour-ends/2463011" target="_blank">Korea, Turkey agree to boost cooperation in defens...</a><a href="https://www.twk.co.kr/news/articleView.html?idxno=1196" target="_blank">President Lee Concludes 10-Day G20 Tour, Strengthe...</a><a href="http://koreabizwire.com/president-lees-global-south-tour-signals-a-new-phase-in-south-koreas-search-for-strategic-relevance/338541" target="_blank">President Lee's Global South Tour Signals a New Ph...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
