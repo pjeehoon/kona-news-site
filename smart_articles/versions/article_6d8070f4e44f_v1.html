@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'SG발 주가조작 혐의' 라덕연, 오늘 2심 선고…1심 징역 25년 - 2025-11-25 17:02:35</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,라덕연,SG증권발,주가조작">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="라덕연,SG증권발,주가조작">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 17:02:35'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'SG발 주가조작 혐의\' 라덕연, 오늘 2심 선고…1심 징역 25년')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'SG발 주가조작 혐의' 라덕연, 오늘 2심 선고…1심 징역 25년</h1>
+            <p>
+                분석 시간: 2025-11-25 17:02:35
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 라덕연 전 H투자자문 대표가 SG증권발 주가조작 사건 2심에서 징역 8년, 벌금 1465억원, 추징금 1815억원을 선고받았다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 1심에서 징역 25년이 17년 감형된 결과이며, 2019‑2023 사이에 8개 상장사 주가를 조작해 7300억원의 부당이득을 취득하고 금융당국에 등록하지 않은 투자수익 1944억원을 은닉한 혐의가 포함되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 감형에도 불구하고 대규모 부당이득과 투자자 보호 체계의 취약성이 드러났으며, 피해자 단체는 추가 조사를 요구하고 라덕연 측은 항소 가능성을 언급했다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/6d8070f4e44f.png" 
+                     alt="'SG발 주가조작 혐의' 라덕연, 오늘 2심 선고…1심 징역 25년" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>라덕연 전 H투자자문 대표가 SG증권발 주가조작 사건에 대해 2심에서 징역 8년, 벌금 1465억원, 추징금 1815억원을 선고받았다.</strong><br />
+1심에서 선고된 징역 25년이 17년 감형된 결과이며, 이번 판결은 주가조작과 금융당국에 등록하지 않은 투자수익을 두루 포함한 8개 상장사와 7300억원 수익을 다룬 사건의 핵심이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019‑05</td>
+<td>주가조작 시작</td>
+<td>라덕연이 SG증권발 주가를 조작하기 시작</td>
+<td></td>
+</tr>
+<tr>
+<td>2023‑04‑24</td>
+<td>대규모 매도</td>
+<td>SG증권발 창구에서 8개 종목 주가 폭락</td>
+<td></td>
+</tr>
+<tr>
+<td>2023‑05</td>
+<td>검찰 기소</td>
+<td>라덕연 및 가담자들 검찰에 기소</td>
+<td></td>
+</tr>
+<tr>
+<td>2025‑02‑13</td>
+<td>1심 판결</td>
+<td>징역 25년, 벌금 1465억원 선고</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/02/13/NFBMH7YN4ZHDVGFZWBVJUM45EQ/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025‑07‑16</td>
+<td>보석 석방</td>
+<td>보석 석방 허가</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/07/16/N4CACG6ZZZG7LMQQS2EXJKUFFA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025‑11‑25</td>
+<td>2심 판결</td>
+<td><strong>징역 8년, 벌금 1465억원, 추징금 1815억원</strong> 선고, 17년 감형</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005684377" target="_blank">네이버뉴스</a>, <a href="https://www.youtube.com/watch?v=GccnRLBOydw" target="_blank">KBS News</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>주요 수익</strong>: 2019‑05~2023‑04 사이에 8개 상장사 주가를 조작해 <strong>7300억원</strong>의 부당이득을 취득.  </li>
+<li><strong>추가 혐의</strong>: 2019‑01~2023‑04 사이에 금융당국에 등록하지 않은 투자수익 <strong>1944억원</strong>의 수수료와 차명계좌를 은닉.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>법률전문가</strong>는 2심 판결이 <strong>감형의 여지가 있었던 점</strong>을 강조하며, <strong>증거 부족</strong>과 <strong>피고의 자진 사과</strong>가 감형에 기여했다고 분석했다.  </li>
+<li><strong>금융분석가</strong>는 SG증권발 주가조작이 <strong>시장 신뢰도 하락</strong>과 <strong>투자자 보호 체계의 취약성</strong>을 드러냈다고 지적했다.  </li>
+<li><strong>피해 투자자 단체</strong>는 <strong>추징금이 충분치 않다</strong>며, <strong>추가 조사를 요청</strong>하고 있다.  </li>
+<li><strong>라덕연 측</strong>은 <strong>법적 절차에 따른 정당한 판결</strong>이라며 <strong>추가 항소</strong> 가능성을 언급했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2심에서 징역 8년, 벌금 1465억원, 추징금 1815억원 선고</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005684377" target="_blank">네이버뉴스</a>, <a href="https://www.youtube.com/watch?v=GccnRLBOydw" target="_blank">KBS News</a></td>
+</tr>
+<tr>
+<td></td>
+<td>1심에서 징역 25년 선고</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/02/13/NFBMH7YN4ZHDVGFZWBVJUM45EQ/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>라덕연이 8개 상장사 주가를 조작해 7300억원 수익을 취득</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>1944억원의 투자수익을 은닉</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>라덕연이 <strong>자신의 입장을 공개</strong>했는지 여부</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>보석 석방 이후 <strong>피고가 실제로 재범</strong> 여부</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>라덕연</strong> (44세, 전 H투자자문 대표) – 주가조작과 금융당국에 등록하지 않은 투자수익 혐의로 재판을 받고 있다.  </li>
+<li><strong>검찰</strong> – 사건을 기소하고 증거를 확보해 재판에 이끌었다.  </li>
+<li><strong>법원</strong> – 1심은 <strong>법률신문</strong>과 <strong>조선일보</strong>에 의해 보도되었으며, 2심은 <strong>네이버뉴스</strong>와 <strong>KBS News</strong>에 의해 보도되었다.  </li>
+<li>**피해 투자자</li>
+</ul>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=GccnRLBOydw" target="_blank">[속보] &#39;SG발 주가조작&#39; 주범 라덕연...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005684377" target="_blank">‘SG사태’ 주범 라덕연, 2심서 징역 8년… 1심보다 17년 감형</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.lawtimes.co.kr/news/205589" target="_blank">[판결] 'SG발 주가조작' 주범 라덕연 1심서 징역 25년 법정구속…"죄질 ...</a><a href="https://www.chosun.com/national/court_law/2025/07/16/N4CACG6ZZZG7LMQQS2EXJKUFFA/" target="_blank">'SG발 주가조작' 라덕연 보석 석방 허가</a><a href="https://namu.wiki/w/SG%EC%A6%9D%EA%B6%8C%EB%B0%9C%20%ED%95%98%ED%95%9C%EA%B0%80%20%EC%82%AC%ED%83%9C" target="_blank">SG증권발 하한가 사태 - 나무위키</a><a href="https://www.joongang.co.kr/article/25351871" target="_blank">서울고법, 'SG발 주가조작' 라덕연 보석 석방…불구속 재판 | 중앙일보</a><a href="https://www.chosun.com/national/national_general/2025/02/13/NFBMH7YN4ZHDVGFZWBVJUM45EQ/" target="_blank">'SG발 주가조작' 라덕연 1심서 징역 25년, 벌금 1465억</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
