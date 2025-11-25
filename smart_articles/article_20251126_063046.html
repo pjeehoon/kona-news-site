@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10월 주식 발행규모 전월比 75%↓…IPO·유상증자 모두 줄어 - 2025-11-26 06:30:46</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,주식발행,유상증자,금리상승">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="주식발행,유상증자,금리상승">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 06:30:46'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('10월 주식 발행규모 전월比 75%↓…IPO·유상증자 모두 줄어')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>10월 주식 발행규모 전월比 75%↓…IPO·유상증자 모두 줄어</h1>
+            <p>
+                분석 시간: 2025-11-26 06:30:46
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 10월 한국의 주식·회사채 공모발행액이 전월 대비 17.4% 감소해 23조 7050억원에 그쳤다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 주식 발행은 74.6% 폭락, IPO는 78.4% 감소, 유상증자 67.3% 감소, 회사채도 16.6% 줄었으며, 자금용도 차환·운영 비중이 72.7%로 상승했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 금리 상승과 기업 재무 건전성 강화 압박이 주된 원인으로, 금리 하락 시 발행 규모가 회복될 가능성이 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/9afa08e502d1.png" 
+                     alt="10월 주식 발행규모 전월比 75%↓…IPO·유상증자 모두 줄어" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>10월 한 달 동안 한국의 주식·회사채 공모발행액이 전월 대비 17.4% 감소했다. 주식 발행규모는 74.6% 폭락했고, IPO는 78.4%, 유상증자는 67.3% 감소했다. 회사채도 16.6% 줄었으며, 자금용도 차환·운영 비중이 72.7%로 상승했다. 이는 금리 상승과 기업의 재무 구조 개선 압박이 반영된 결과로 해석된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>10월 금액</th>
+<th>전월 대비</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>주식·회사채 공모발행액</strong></td>
+<td>23조 7050억원</td>
+<td><strong>↓ 17.4 %</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006171644" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>주식 발행규모</strong></td>
+<td>939억원</td>
+<td><strong>↓ 74.6 %</strong></td>
+<td>4건</td>
+</tr>
+<tr>
+<td><strong>IPO</strong></td>
+<td>524억원</td>
+<td><strong>↓ 78.4 %</strong></td>
+<td>2건</td>
+</tr>
+<tr>
+<td><strong>유상증자</strong></td>
+<td>415억원</td>
+<td><strong>↓ 67.3 %</strong></td>
+<td>2건</td>
+</tr>
+<tr>
+<td><strong>회사채 발행규모</strong></td>
+<td>23조 6111억원</td>
+<td><strong>↓ 16.6 %</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>일반회사채</strong></td>
+<td>3조 5550억원</td>
+<td><strong>↓ 37.8 %</strong></td>
+<td>32건</td>
+</tr>
+<tr>
+<td><strong>자금용도 차환·운영 비중</strong></td>
+<td>72.7 %</td>
+<td>전월 대비 4.4 %→10.7 %</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>▶ 10월 금융감독원 발표에 따르면, 주식·회사채 공모발행액이 23조 7050억원으로 전월 대비 17.4 % 감소했다.<br />
+▶ IPO와 유상증자 모두 전월 대비 70 % 이상 감소했으며, 특히 IPO는 78.4 % 감소했다.<br />
+▶ 회사채 발행규모도 16.6 % 감소했으나, 일반회사채는 37.8 % 감소했다.<br />
+▶ 자금용도 차환·운영 비중이 72.7 %로 상승해 기업들이 차입금 상환·운영 자금 확보에 집중한 것으로 보인다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>금융감독원</strong>은 “금리 상승과 기업의 재무 건전성 개선 노력이 주식·채권 발행 감소의 주요 원인”이라고 밝혔다.  </li>
+<li><strong>증권사 애널리스트</strong>는 “현재 기업들은 자본 구조를 강화하려는 경향이 강해, 신규 발행보다 내부 유보금 활용이 우선”이라며, “장기적으로는 금리 하락 시 발행 규모가 회복될 가능성”을 언급했다.  </li>
+<li><strong>투자자</strong>는 “주식 발행 감소가 기업가치 상승에 긍정적”이라며, “반면, 유동성 부족이 우려된다”고 반응했다.  </li>
+<li><strong>경제학자</strong>는 “기업들의 차환·운영 비중 상승은 단기적으로는 재무 건전성을 높이지만, 장기적으로는 자금 조달 비용 상승을 초래할 수 있다”고 경고했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>10월 주식·회사채 공모발행액 23조 7050억원, 주식 발행규모 939억원, IPO 524억원, 유상증자 415억원, 회사채 23조 6111억원 등</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006171644" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>주의</strong>: 현재까지 확인된 자료는 모두 공식 발표 및 신뢰할 수 있는 언론 보도를 기반으로 한다.</p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장/관심사</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>금융감독원</strong></td>
+<td>시장 안정성 확보, 기업 재무 건전성 감독</td>
+</tr>
+<tr>
+<td><strong>기업 경영진</strong></td>
+<td>자본 구조 개선, 재무 건전성 강화</td>
+</tr>
+<tr>
+<td><strong>투자자</strong></td>
+<td>수익률 확보, 자산 배분</td>
+</tr>
+<tr>
+<td><strong>증권사</strong></td>
+<td>발행 수수료, 시장 유동성 관리</td>
+</tr>
+<tr>
+<td><strong>경제학자</strong></td>
+<td>금리·재무 건전성 관계 분석</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>금리 동향</strong>: 금리 상승이 지속될 경우, 기업들의 신규 발행은 더욱 둔화될 가능성이 높다.  </li>
+<li><strong>시장 회복</strong>: 금리 하락이 예상되는 시점에서 주식·채권 발행이 회복될 수 있다.  </li>
+<li><strong>재무 건전성</strong>: 기업들이 차환·운영 비중을 높여 재무 건전성을 강화함에 따라, 장기적으로는 안정적인 자금 조달 구조가 형성될 전망이다.  </li>
+<li><strong>정책 대응</strong>: 금융감독원은 필요 시 시장 유동성 확보를 위한 조치를 검토할 가능성이 있다.</li>
+</ul>
+<blockquote>
+<p><strong>결론</strong>: 10월의 주식·회사채 발행 감소는 금리 상승과 기업들의 재무 건전성 강화가 주요 원인으로 작용했다. 향후 금리 변동과 기업들의 자금 조달 전략에 따라 시장이 어떻게 변할지 주목된다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=lC4QGXdkUEY" target="_blank">10월 회사채 발행 49.5% 급감… 금리 상승 여파 ...</a><a href="https://www.youtube.com/watch?v=8bA9YMEIytg" target="_blank">땅파서 장사하는 증권사 2가지 추천</a><a href="https://www.youtube.com/watch?v=m8d23np0oDk" target="_blank">15년전 서브프라임 주가폭락 사태 '리먼브라더스'</a><a href="https://www.youtube.com/watch?v=Dk5dqTP2S7k" target="_blank">[이데일리N] 8월 기업 주식 발행 전월比 10%↑… ...</a><a href="https://www.youtube.com/watch?v=CfJpm_YhB50" target="_blank">1억만 모으세요, 곧바로 10억 됩니다 [강환국 퀀트 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006171644" target="_blank">10월 주식 발행규모 전월比 75%↓…IPO·유상증자 모두 줄어</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://file.truefriend.com/servlet/Download?file_path=research/research08/&file_name=December%20China%20Compass(f).pdf" target="_blank">12월 China Compass</a><a href="https://kind.krx.co.kr/external/2019/02/22/000914/20190222002292/10001.htm" target="_blank">제목없음</a><a href="http://img2.kbstar.com/obj/bank/2013_vitamin1.pdf" target="_blank">KB 금융지식비타민</a><a href="https://kind.krx.co.kr/external/2019/03/21/000084/20190321000205/10601.htm" target="_blank">제목없음</a><a href="http://money2.creontrade.com/m_file/file/research/%EB%8C%80%EC%8B%A0%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80_090320_10287.pdf" target="_blank">대신 브라우저</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
