@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국정자원 화재, '인재' 결론...원장 포함 19명 입건 - 2025-11-25 21:21:21</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,국정자원,인재,이재용">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="국정자원,인재,이재용">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 21:21:21'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('국정자원 화재, \'인재\' 결론...원장 포함 19명 입건')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>국정자원 화재, '인재' 결론...원장 포함 19명 입건</h1>
+            <p>
+                분석 시간: 2025-11-25 21:21:21
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국정자원 화재가 인재로 판명돼 이재용 원장을 포함한 19명이 실화 혐의와 전기공사업법 위반 혐의로 입건됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 화재는 UPS 배터리 이설 중 전원 차단·절연 미조치로 발생했으며, 9명은 시공·관리업체 관계자, 10명은 전기공사업법 위반 혐의가 추가됐다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 사건은 전산망 마비와 같은 국가적 피해를 초래해 안전 관리 체계 강화와 내부 감사를 통한 재발 방지 필요성을 부각시켰다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/81a199f8980d.png" 
+                     alt="국정자원 화재, '인재' 결론...원장 포함 19명 입건" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>11월 25일 국정자원 화재가 인재로 밝혀져 이재용 원장을 포함해 19명이 실화 혐의와 전기공사업법 위반 혐의로 입건됐다. 전원 차단·절연 미조치가 주요 원인이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 25일</td>
+<td>국정자원 화재 발생</td>
+<td>전원 차단 없이 UPS 배터리 이설 중 전기 설비를 조작해 화재 발생</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012072999" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>경찰 수사 결과 발표</td>
+<td>이재용 원장을 포함해 9명(시공업체·관리업체 관계자)과 10명(전기공사업법 위반 혐의) 총 19명 무더기 입건</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125175427" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>인재 결론</td>
+<td>전원 차단·절연 미조치가 인재로 판명</td>
+<td><a href="https://www.ytn.co.kr/_cs/_ln_0115_202511251120154747_005.html" target="_blank">YTN</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>입건 내용 공개</td>
+<td>실화 혐의(업무상 실화)와 전기공사업법 위반 혐의가 동시에 적용</td>
+<td><a href="https://v.daum.net/v/20251125103130682" target="_blank">Daum</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>입건 인원 상세</td>
+<td>이재용 원장, 시공업체 대표, 관리업체 관계자 등 19명</td>
+<td><a href="https://x.com/YTN24/status/1993155188425883654" target="_blank">X</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>입건 인원 상세</td>
+<td>10명은 전기공사업법 위반 혐의 추가 적용</td>
+<td><a href="https://www.edaily.co.kr/News/Read?newsId=04241046642369328&amp;mediaCodeNo=257" target="_blank">Edaily</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>경찰 측</strong><br />
+  경찰은 “전원 차단·절연 미조치가 인재로 판명”이라며, <strong>전문가적 절차를 무시한 과실</strong>이 화재를 초래했다고 밝혔다. 이는 <strong>전기공사 안전 규정 위반</strong>과 직결된다.  </p>
+<blockquote>
+<p>“전원 차단 없이 작업을 진행해 화재가 발생했다”는 경찰 발표는 <strong>전기공사업법</strong>에 따른 안전 조치 미준수와 일치한다.  </p>
+</blockquote>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  전기공사 안전 전문가들은 “UPS 배터리 이설 시 전원 차단과 절연은 필수”라며, <strong>인재 결론</strong>이 “전문가적 절차를 무시한 관리 부주의”에 따른 것이라 평가했다.  </p>
+</li>
+<li>
+<p><strong>전기공사 안전 규정</strong>은 전원 차단·절연을 명시하고 있어, 이를 위반한 점이 크게 비판된다.  </p>
+</li>
+<li>
+<p><strong>정부 및 기관 반응</strong><br />
+  국정자원 관계자는 “사고 원인 파악과 재발 방지를 위해 내부 감사를 진행 중”이라며, <strong>안전 관리 체계 강화</strong>를 약속했다.  </p>
+</li>
+<li>
+<p>정부는 <strong>국가 전산망 마비</strong>를 초래한 사안이므로, <strong>안전 관리 체계 재검토</strong>가 필요하다고 강조했다.  </p>
+</li>
+<li>
+<p><strong>시민·공공기관 반응</strong><br />
+  일부 시민과 공공기관 관계자는 “국가 전산망이 마비된 상황에서 인재가 발생한 점이 안타깝다”라며, <strong>안전 관리 체계 개선</strong>을 요구했다.  </p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. 화재 발생 시 전원 차단이 이루어지지 않았다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012072999" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2. 19명이 실화 혐의와 전기공사업법 위반 혐의로 입건됐다.</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125175427" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td></td>
+<td>3. 인재 결론이 내려졌다.</td>
+<td><a href="https://www.ytn.co.kr/_cs/_ln_0115_202511251120154747_005.html" target="_blank">YTN</a></td>
+</tr>
+<tr>
+<td></td>
+<td>4. 10명은 전기공사업법 위반 혐의가 추가 적용됐다.</td>
+<td><a href="https://www.edaily.co.kr/News/Read?newsId=04241046642369328&amp;mediaCodeNo=257" target="_blank">Edaily</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- 향후 법적 절차와 구체적 판결 시점</td>
+<td>현재 공개된 자료에 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책/역할</th>
+<th>입건 혐의</th>
+<th>입건 시점</th>
+<th>주된 이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>이재용</strong></td>
+<td>국정자원 원장</td>
+<td>실화 혐의, 전기공사업법 위반</td>
+<td>2025년 11월 25일</td>
+<td>조직 안전 관리 책임</td>
+</tr>
+<tr>
+<td><strong>시공업체 대표</strong></td>
+<td>시공업체 대표</td>
+<td>실화 혐의, 전기공사업법 위반</td>
+<td>2025년 11월 25일</td>
+<td>계약 이행 및 안전 규정 준수</td>
+</tr>
+<tr>
+<td><strong>관리업체 관계자</strong></td>
+<td>관리업체 관계자</td>
+<td>실화 혐의, 전기공사업법 위반</td>
+<td>2025년 11월 25일</td>
+<td>시설 관리 및 안전 감독</td>
+</tr>
+<tr>
+<td><strong>기타 10명</strong></td>
+<td>시공업체·관리업체 관계자</td>
+<td>전기공사업법 위반</td>
+<td>2025년 11월 25일</td>
+<td>전기공사 안전 규정 위반</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong><br />
+  입건된 19명에 대한 <strong>검문·심사</strong>가 진행될 것이며, <strong>형사소송</strong>이 이어질 가능성이 높다.  </li>
+<li>
+<p>실화 혐의가 인정될 경우 <strong>형사 처벌</strong>과 <strong>민사 책임</strong>이 동시에 부과될 수 있다.  </p>
+</li>
+<li>
+<p><strong>안전 관리 체계 강화</strong><br />
+  국정자원은 <strong>안전 관리 매뉴얼 재정비</strong>와 <strong>직원 교육 강화</strong>를 약속했다.  </p>
+</li>
+<li>
+<p>정부 차원에서 <strong>전기공사 안전 규정 준수</strong>를 위한 <strong>감사 체계</strong>를 도입할 가능성이 있다.  </p>
+</li>
+<li>
+<p><strong>국가 전산망 운영</strong><br />
+  이번 화재로 인한 <strong>국가 전산망 마비</strong>가 재발 방지 대책 마련을 촉구한다.  </p>
+</li>
+<li>
+<p><strong>UPS 배터리 이설</strong> 등 핵심 장비 관리에 대한 <strong>위험 관리</strong>가 강화될 전망이다.  </p>
+</li>
+<li>
+<p><strong>공공기관 신뢰 회복</strong><br />
+  인재가 발생한 사안이 공공기관의 <strong>신뢰도</strong>에 영향을 미칠 수 있다.  </p>
+</li>
+<li><strong>투명한 조사</strong>와 <strong>정책 개선</strong>이 신뢰 회복에 필수적이다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶ 핵심</strong>: 국정자원 화재는 인재로 판명돼 이재용 원장을 포함해 19명이 실화 혐의와 전기공사업법 위반 혐의로 입건되었다. 전원 차단·절연 미조치가 주요 원인이며, 향후 법적 절차와 안전 관리 체계 강화가 예상된다.  </p>
+</blockquote>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Hox5TDoixkE" target="_blank">[🔴속보] 이재용 국정자원 원장 '실화 혐의' 입건｜경...</a><a href="https://www.youtube.com/watch?v=e2xbEM6HQzY" target="_blank">국정자원 국가전산망 화재도 '인재'‥원장 등 19명 입...</a><a href="https://www.youtube.com/watch?v=M3BS9sbrwMs" target="_blank">국정자원 화재 원인은 작업자 과실…원장 등 19명 입건...</a><a href="https://www.youtube.com/watch?v=zc8NM9PnUxQ" target="_blank">국과수 "전원 차단 없이 작업"...국정자원 원장 입건...</a><a href="https://www.youtube.com/watch?v=OQJc9gXv978" target="_blank">[데스크]"국정자원 화재는 인재"⋯원장 등 19명 입건...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/056/0012072999" target="_blank">전원 차단 없이 작업하다 국가정보자원관리원 화재…원장 등 10명 입건</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://zdnet.co.kr/view/?no=20251125175427" target="_blank">국정자원 화재, 전원 미차단·불법 하도급 '인재'로 결론…이재용 원장 등 ...</a><a href="https://www.ytn.co.kr/_cs/_ln_0115_202511251120154747_005.html" target="_blank">[전국]국정자원 화재, '인재' 결론...원장 포함 19명 입건 | YTN</a><a href="https://v.daum.net/v/20251125103130682" target="_blank">경찰, 국정자원 원장 실화 혐의 입건…작업 부주의 인한 '인재'</a><a href="https://x.com/YTN24/status/1993155188425883654" target="_blank">국정자원 화재, '인재' 결론...원장 포함 19명 입건</a><a href="https://www.edaily.co.kr/News/Read?newsId=04241046642369328&mediaCodeNo=257" target="_blank">인재로 밝혀진 국정자원 화재…원장 등 19명 무더기 입건</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
