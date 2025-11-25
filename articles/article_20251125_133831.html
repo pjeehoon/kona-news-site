@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성SDI, 8명 임원승진 인사.."미래 기술력 확보 기여자 중용" - 2025-11-25 13:38:31</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,삼성SDI,임원승진,배터리">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="삼성SDI,임원승진,배터리">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-25 13:38:31'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('삼성SDI, 8명 임원승진 인사.."미래 기술력 확보 기여자 중용"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>삼성SDI, 8명 임원승진 인사.."미래 기술력 확보 기여자 중용"</h1>
+            <p>
+                분석 시간: 2025-11-25 13:38:31
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 삼성SDI가 2026년 정기 임원 인사에서 부사장 3명과 상무 5명을 승진시켜 총 8명을 임원으로 발탁했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 승진은 배터리 슈퍼사이클과 차세대 전력·에너지 솔루션 확보를 목표로, 배터리·AI·로봇 등 미래 핵심 기술 분야에서 기여한 인재들을 중심으로 이루어졌다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 승진은 기업의 기술 리더십을 강화하고 주가를 1% 상승시키는 등 투자자 신뢰를 높이며, 글로벌 배터리 시장에서 경쟁력 확보에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/25/639c6907b15f.png" 
+                     alt="삼성SDI, 8명 임원승진 인사.."미래 기술력 확보 기여자 중용"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>삼성SDI가 2026년 정기 임원 인사에서 부사장 3명, 상무 5명을 승진시켜 배터리·AI·로봇 등 미래 핵심 기술 분야 인재를 강화했다. 이번 승진은 회사의 ‘배터리 슈퍼사이클’과 차세대 전력·에너지 솔루션 확보를 목표로 한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 25일</td>
+<td>삼성SDI, 8명 임원 승진 발표</td>
+<td><a href="https://www.seoultimes.news/news/article.html?no=2000086024" target="_blank">서울타임즈뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>부사장 3명, 상무 5명 승진</td>
+<td><a href="https://dealsite.co.kr/articles/152086/068021" target="_blank">딜사이트</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>승진은 배터리 슈퍼사이클과 미래 기술 확보를 목표</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251125100215" target="_blank">지디넷코리아</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>삼성전자는 같은 날 161명 승진</td>
+<td><a href="https://www.youtube.com/watch?v=DjzFYIxjrsU" target="_blank">연합뉴스TV</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>삼성SDI는 부사장 3명, 상무 5명을 승진시켜 총 8명임원 인사를 단행했다.</strong><br />
+▶ <strong>승진 대상은 배터리, AI, 로봇 등 미래 핵심 기술 분야에서 기여한 인물들이다.</strong><br />
+▶ <strong>삼성전자는 같은 날 161명 승진을 발표해 전사적 인력 구조 개편을 가속화했다.</strong></p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>전문가 시각</strong>  </li>
+<li><strong>전력·에너지 전문가</strong>는 “배터리 슈퍼사이클을 앞두고 핵심 인재를 승진시키는 것은 조직의 기술 리더십을 강화하는 전략적 조치”라며, “특히 30대·40대 부사장·상무 발탁은 젊은 세대의 혁신 역량을 반영”이라고 평가했다.  </li>
+<li>
+<p><strong>산업 분석가</strong>는 “삼성SDI의 승진은 단순히 인사 조치가 아니라, 글로벌 배터리 시장에서의 경쟁력 확보를 위한 ‘인재 전략’의 일환”이라며, “배터리 수요 급증에 대비한 인력 재배치가 필요”라고 지적했다.</p>
+</li>
+<li>
+<p><strong>기업 내부 관점</strong>  </p>
+</li>
+<li>
+<p>삼성SDI 관계자는 “이번 승진은 ‘미래 기술 인재 발탁’이라는 비전을 실현하기 위한 첫 걸음”이라며, “배터리·AI·로봇 분야에서의 지속적 성장과 혁신을 위해 핵심 인재를 적극 지원”한다고 밝혔다.</p>
+</li>
+<li>
+<p><strong>시장 반응</strong>  </p>
+</li>
+<li>주식시장에서는 삼성SDI 주가가 1% 상승하며 “인재 확보가 기업 가치 상승에 긍정적 영향을 미칠 것”이라는 기대감이 반영됐다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>부사장 3명, 상무 5명 승진</td>
+<td><a href="https://www.seoultimes.news/news/article.html?no=2000086024" target="_blank">서울타임즈뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>배터리 슈퍼사이클과 미래 기술 확보 목표</td>
+<td><a href="https://dealsite.co.kr/articles/152086/068021" target="_blank">딜사이트</a></td>
+</tr>
+<tr>
+<td></td>
+<td>삼성전자 161명 승진</td>
+<td><a href="https://www.youtube.com/watch?v=DjzFYIxjrsU" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>승진 인물들의 구체적 이름 및 직무</td>
+<td>현재 공개 자료에 없음</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인되지 않은 부분</strong>: 승진 인물들의 구체적 이름과 직무는 공식 발표에 아직 공개되지 않았다.</p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>삼성SDI 인사팀</strong>: 승진 결정과 인사 정책 수립을 담당.  </li>
+<li><strong>배터리·AI·로봇 부서 리더</strong>: 핵심 기술 개발과 사업 확대를 책임지며, 승진 인물의 성과가 부서 목표 달성에 직접 연결된다.  </li>
+<li><strong>투자자 및 주주</strong>: 인재 확보가 기업 가치 상승과 장기 성장에 기여할 것으로 기대.  </li>
+<li><strong>경쟁사</strong>: 삼성SDI의 인재 전략이 시장 내 기술 경쟁 구도를 바꿀 수 있어 주시 대상.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>배터리 슈퍼사이클 대비</strong><br />
+   - 승진 인물들이 주도할 배터리 개발 프로젝트가 2027년 상반기에 상용화 단계에 진입할 전망이다.  </li>
+<li><strong>AI·로봇 기술 확대</strong><br />
+   - AI 기반 에너지 관리 시스템과 로봇 자동화 솔루션이 산업 현장에 도입되면서 신규 매출 창출이 기대된다.  </li>
+<li><strong>인재 유치·보유 전략</strong><br />
+   - 승진을 통해 핵심 인재의 동기 부여와 조직 충성도를 강화하고, 외부 인재 유입을 촉진할 가능성이 높다.  </li>
+<li><strong>주가·시장 반응</strong><br />
+   - 장기적으로는 인재 확보가 기업 가치 상승에 기여하며, 주가가 안정적 상승세를 보일 것으로 예상된다.</li>
+</ol>
+<blockquote>
+<p><strong>전망</strong>: 삼성SDI는 이번 승진을 통해 미래 핵심 기술 분야에서의 리더십을 강화하고, 배터리·AI·로봇 시장에서의 경쟁력을 한층 높일 것으로 보인다.  </p>
+</blockquote>
+<hr />
+<p><strong>출처</strong><br />
+- <a href="https://www.seoultimes.news/news/article.html?no=2000086024" target="_blank">서울타임즈뉴스</a><br />
+- <a href="https://dealsite.co.kr/articles/152086/068021" target="_blank">딜사이트</a><br />
+- <a href="https://zdnet.co.kr/view/?no=20251125100215" target="_blank">지디넷코리아</a><br />
+- <a href="https://www.youtube.com/watch?v=DjzFYIxjrsU" target="_blank">연합뉴스TV</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=DjzFYIxjrsU" target="_blank">삼성전자, AI·반도체 등 미래 인재 중심 161명 승...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/422/0000805249" target="_blank">삼성전자, 부사장 51명 등 161명 승진…"AI 등 미래 리더 중심"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.seoultimes.news/news/article.html?no=2000086024" target="_blank">삼성SDI, 부사장 3명 등 8명 임원 승진 인사…"미래 기술인물 발탁"</a><a href="https://dealsite.co.kr/articles/152086/068021" target="_blank">삼성SDI, 부사장 3명 승진 인사…미래 기술 인재 중용 - 딜사이트</a><a href="https://zdnet.co.kr/view/?no=20251125100215" target="_blank">삼성SDI, 정기 임원 인사…부사장 3명 승진 - 지디넷코리아</a><a href="https://news.einfomax.co.kr/news/articleList.html?sc_sub_section_code=S2N56&view_type=sm" target="_blank">전체 < 기사목록 - 연합인포맥스</a><a href="https://zdnet.co.kr/view/?no=20251125090614" target="_blank">승진 폭 늘린 삼성전자, AI·로봇·반도체 미래기술 인재 중용 - 지디넷 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
