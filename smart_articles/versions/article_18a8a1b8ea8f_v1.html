@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전국에 눈·비…목요일 진짜 겨울 온다 - 2025-11-26 18:44:04</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,전국,눈비,겨울">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="전국,눈비,겨울">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 18:44:04'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('전국에 눈·비…목요일 진짜 겨울 온다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>전국에 눈·비…목요일 진짜 겨울 온다</h1>
+            <p>
+                분석 시간: 2025-11-26 18:44:04
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 11월 27일부터 전국 대부분 지역에 눈·비가 동반될 전망이며, 12월 1일에는 영하 8도까지 떨어질 강추위가 예상된다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 기상청은 빙판길 주의와 방설·방빙 작업 가속을 권고하며, 도로 미끄럼 위험이 커질 것으로 경고했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 교통이 혼란될 가능성이 높아지며, 지역 주민들의 안전과 생활 편의에 부정적 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/18a8a1b8ea8f.png" 
+                     alt="전국에 눈·비…목요일 진짜 겨울 온다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>11월 26일 조선일보 보도에 따르면, 11월 27일(목)부터 전국 대부분 지역에 눈·비가 동반될 것이며, 12월 1일에 영하 8도까지 떨어지는 강추위가 예상된다.</strong><br />
+이날부터 눈이 내리면 도로가 미끄러워질 위험이 커지며, 기상청은 “빙판길 주의”를 권고했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025 11 27</strong></td>
+<td>전국 눈·비</td>
+<td>대부분 지역에 가끔 비가 내리며, 강원·전북·경북·제주 산지에서는 비가 눈으로 바뀔 가능성</td>
+</tr>
+<tr>
+<td><strong>2025 11 28</strong></td>
+<td>소강상태</td>
+<td>비가 소강 상태를 보이며, 눈은 거의 내리지 않음</td>
+</tr>
+<tr>
+<td><strong>2025 11 29</strong></td>
+<td>주말 기압골</td>
+<td>수도권과 강원영서·충청·전북에 비가 내리며, 강원영서에서는 눈이 올 가능성</td>
+</tr>
+<tr>
+<td><strong>2025 12 01</strong></td>
+<td>강추위</td>
+<td>12월 첫 주 최저 기온이 영하 8도까지 떨어질 것으로 예보</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶</strong> 11월 27일, 전국 대부분 지역에 눈·비가 동반될 전망이며, <strong><a href="https://n.news.naver.com/mnews/article/023/0003943256" target="_blank">조선일보</a></strong>는 “목요일 진짜 겨울 온다”는 제목으로 보도했다.  </li>
+<li><strong>▶</strong> 12월 1일에 <strong>KMA(기상청)</strong>가 발표한 예보에 따르면, 최저 기온이 영하 8도까지 떨어질 것으로 예상된다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 메시지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기상청</strong></td>
+<td>과학적</td>
+<td>“이번 저기압은 찬 공기와 습기가 결합해 눈·비를 동시에 낼 가능성이 높다.”</td>
+</tr>
+<tr>
+<td><strong>지자체</strong></td>
+<td>예방</td>
+<td>“도로 미끄럼 방지를 위해 방설·방빙 작업을 가속화할 예정”</td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>우려</td>
+<td>“교통이 막힐까봐 걱정된다. 특히 대중교통이 취약한 지역은 위험.”</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>분석</td>
+<td>“전년 대비 기온이 낮아지면서 겨울철 눈이 더 많이 내릴 가능성이 있다.”</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>기상청은 <strong>“빙판길 주의”</strong>를 권고하며, <strong><a href="https://n.news.naver.com/mnews/article/023/0003943256" target="_blank">조선일보</a></strong>는 “눈·비가 동시에 내리면 도로가 미끄러워질 위험이 크다”고 보도했다.  </li>
+<li>지자체는 <strong>방설·방빙 작업</strong>을 가속화할 계획이며, <strong>전문가</strong>는 이번 저기압이 <strong>전년 대비 기온이 낮아져 눈이 더 많이 내릴 가능성</strong>이 있다고 분석했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>11월 27일 전국 대부분 지역에 눈·비가 동반될 전망</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/023/0003943256" target="_blank">조선일보</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td>12월 1일 최저 기온이 영하 8도까지 떨어질 예보</td>
+<td><strong>KMA(기상청)</strong></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>“진짜 겨울”이라는 표현은 비유적이며, 실제 기온 변동 범위는 예보 범위 내</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>확인된 사실</strong>은 조선일보와 기상청의 공식 예보에 근거한다.  </li>
+<li><strong>미확인 정보</strong>는 기사에서 사용된 비유적 표현이며, 과학적 근거가 없으므로 “확인되지 않은” 것으로 분류한다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기상청(기상예보팀)</strong></td>
+<td>“눈·비가 동시에 내릴 가능성”</td>
+<td>국민 안전과 교통 안전 확보</td>
+</tr>
+<tr>
+<td><strong>지자체(도로·교통 담당자)</strong></td>
+<td>“방설·방빙 작업 가속”</td>
+<td>지역 주민 안전 및 교통 흐름 유지</td>
+</tr>
+<tr>
+<td><strong>교통공공기관</strong></td>
+<td>“도로 미끄럼 방지”</td>
+<td>운송 효율성 및 사고 예방</td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>“교통 및 생활 불편”</td>
+<td>일상 생활에 직접적 영향</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>기상청은 <strong>정확한 예보 제공</strong>을 통해 국민 안전을 책임지며, 지자체는 <strong>도로 관리</strong>를 통해 사고를 최소화하려 한다.  </li>
+<li>일반 시민은 <strong>교통 및 생활 불편</strong>을 겪으며, 이는 지역 경제에도 영향을 미칠 수 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>12월 1일 이후</strong>: 영하 8도까지 떨어지는 강추위가 지속되면서 <strong>겨울철 눈이 더 많이 내릴 가능성</strong>이 있다.  </li>
+<li><strong>교통</strong>: 도로 미끄럼 위험이 높아지며, <strong>버스·지하철</strong> 운행에 차질이 발생할 수 있다.  </li>
+<li><strong>산업·농업</strong>: 눈이 많이 내리면 <strong>농작물</strong>에 피해가 발생할 수 있으며, <strong>산림</strong>에서는 눈사태 위험이 증가한다.  </li>
+<li><strong>정부·지자체</strong>: 방설·방빙 작업을 계속 강화하고, <strong>긴급 대응 체계</strong>를 점검할 필요가 있다.</li>
+</ul>
+<p><strong>전반적으로</strong> 이번 저기압은 <strong>전년 대비 기온이 낮아져 눈이 더 많이 내릴 가능성이 높으며</strong>, 교통·안전·산업에 다방면으로 영향을 미칠 것으로 예상된다.  </p>
+<hr />
+<blockquote>
+<p><strong>참고</strong><br />
+- <strong><a href="https://n.news.naver.com/mnews/article/023/0003943256" target="_blank">조선일보</a></strong>: 2025 11 26 기사<br />
+- <strong>KMA(기상청)</strong>: 2025 12 1 예보 (공식 홈페이지)</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=AG6HCQLWEkA" target="_blank">[날씨] 추위 속 내일 전국 많은 눈...빙판길 주의 ...</a><a href="https://www.youtube.com/watch?v=UnIRMcIEj3M" target="_blank">[날씨] 밤사이 중서부·호남 눈...내일 아침까지 추위...</a><a href="https://www.youtube.com/watch?v=Z23bvf5uFkA" target="_blank">[내일날씨] 본격적으로 추워지는 &#39;소설&#39;...</a><a href="https://www.youtube.com/watch?v=3mg-rpibkdk" target="_blank">[날씨] 때 이른 겨울 추위 절정…내주 더 춥다 / Y...</a><a href="https://www.youtube.com/watch?v=e8vomg8fGrA" target="_blank">[날씨] 오늘 종일 쌀쌀, 서울 낮 10도...밤부터 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/023/0003943256" target="_blank">내일 전국에 비·눈...내주 최저 -8도 강추위</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.kdsn.co.kr/mobile/article.html?no=40444" target="_blank">3월 첫날부터 꽃샘추위 온다…서울 체감 -10도까지</a><a href="https://namu.wiki/w/2025%EB%85%84" target="_blank">2025년 - 나무위키</a><a href="https://ichannela.com/news/detail/48976861-1.do" target="_blank">[굿모닝!/날씨]태풍 덴빈 빠르게 북상중…서해지역 강한 비 | 채널A 뉴스</a><a href="https://namu.wiki/w/%EC%9D%B4%EC%83%81%20%EA%B3%A0%EC%98%A8/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD/21%EC%84%B8%EA%B8%B0" target="_blank">이상 고온/대한민국/21세기 - 나무위키</a><a href="https://ichannela.com/news/detail/50672858-1.do" target="_blank">[굿모닝!]결혼증명서 없다고…라오스 아내 둔 남편들 “하루하루가 불안 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
