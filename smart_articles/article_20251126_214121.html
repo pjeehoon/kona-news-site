@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"美특사, 우크라 영토 포기 동조…러에 트럼프 설득 코치도" - 2025-11-26 21:41:21</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 21:41:21'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"美특사, 우크라 영토 포기 동조…러에 트럼프 설득 코치도"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"美특사, 우크라 영토 포기 동조…러에 트럼프 설득 코치도"</h1>
+            <p>
+                분석 시간: 2025-11-26 21:41:21
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 미국 특수외교관 스티브 위츠코프가 우크라이나 영토 포기를 지지하며 28개 항목 휴전안을 초안했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 위츠코프는 러시아 보안 고문과 휴전안을 논의 중이며, 트럼프 전 대통령의 평화 코치도 같은 방향을 지지해 정치적 논란이 고조되고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 움직임은 미국 내외의 외교적 긴장을 가중시키며, 러시아와의 평화 협상 가능성에 대한 기대와 우려가 동시에 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/5e9e6fa261c1.png" 
+                     alt=""美특사, 우크라 영토 포기 동조…러에 트럼프 설득 코치도"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>우크라이나 전쟁 중 미국 특수외교관이 영토 포기를 지지하고, 트럼프 전 대통령의 평화 코치가 같은 방향을 모색한다는 보도가 나왔다. 2025년 11월 26일 네이버뉴스가 보도한 내용에 따르면, 위츠코프는 28개 항목으로 구성된 휴전안을 초안하고 러시아와의 협상을 준비 중이다. 이와 동시에 트럼프의 평화 코치가 같은 목표를 지지하며, 미국 내외의 정치적 논란이 고조되고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 14일</td>
+<td>스티브 위츠코프가 러시아 안보 고문에게 휴전안 초안을 논의하기 위해 전화를 걸었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td>다니엘 드리스켈이 우크라이나를 방문해 젤렌스키 대통령과 만났다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 23일</td>
+<td>드리스켈이 제네바에서 미국‑우크라이나 고위급 회의에 참석했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 24일</td>
+<td>드리스켈이 아부다비에서 UAE‑러시아 대표단과 만났다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>기사 발표. 위츠코프는 다음 주에 푸틴과 만날 예정이며, 28개 항목 휴전안을 제시했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>트럼프가 위츠코프의 러시아 방문을 승인하고 제재를 예고했다는 영상이 공개됐다.</td>
+<td><a href="https://www.youtube.com/watch?v=I8Cjhl6f6QU" target="_blank">Bloomberg News</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>Bloomberg</strong>는 위츠코프가 중동 특수외교관으로서의 경력이 없으며, 현재는 휴전안 초안과 “트럼프 스타일 평화”를 러시아에 제안하고 있다고 보도했다. 이와 동시에 그는 트럼프와 40년간 골프 동료라는 사실이 외교적 독립성을 의문시한다는 지적을 받았다.  </li>
+<li><strong>Reuters</strong>는 위츠코프가 28개 항목 휴전안을 초안하고, 러시아 보안 고문과의 전화 통화를 통해 협상을 진행 중이라고 전했다.  </li>
+<li><strong>BBC</strong>는 다니엘 드리스켈이 39세에 미국 육군 사무총장으로 임명된 뒤, 우크라이나와 러시아, UAE와의 회의에 참여하며 ‘젊은 인물’로서의 경험 부족이 우려된다고 보도했다.  </li>
+<li><strong>네이버뉴스</strong>는 위츠코프와 드리스켈이 각각 미국과 러시아 간의 휴전 협상에 핵심 인물로 부상하고 있으며, 트럼프의 평화 코치가 같은 방향을 지지한다는 점을 강조했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>스티브 위츠코프는 68세이며, 전 중동 특수외교관이다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>위츠코프는 40년간 트럼프와 골프를 즐겼다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>위츠코프가 28개 항목 휴전안을 초안했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>다니엘 드리스켈은 39세이며, 미국 육군 사무총장이다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>드리스켈이 2025년 11월 20일 우크라이나를 방문했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>드리스켈이 2025년 11월 23일 제네바 회의에 참석했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>드리스켈이 2025년 11월 24일 아부다비에서 UAE‑러시아 대표단과 만났다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인/추정</strong></td>
+<td>위츠코프가 트럼프의 결정에 직접적인 영향력을 행사했다는 주장.</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>드리스켈의 임명이 정치적 동기가 컸다는 주장.</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>스티브 위츠코프</strong>  </li>
+<li>전 중동 특수외교관, 현재 미국 특수외교관으로 휴전안 초안 담당.  </li>
+<li>
+<p>트럼프와 40년간 골프 동료로, 트럼프의 평화 정책에 영향력을 행사할 가능성.  </p>
+</li>
+<li>
+<p><strong>다니엘 드리스켈</strong>  </p>
+</li>
+<li>39세 미국 육군 사무총장, 가장 젊은 인물로서 급부상.  </li>
+<li>
+<p>우크라이나와 러시아, UAE와의 회의에 참여하며 휴전 협상에 관여.  </p>
+</li>
+<li>
+<p><strong>도널드 트럼프</strong>  </p>
+</li>
+<li>트럼프 평화 코치와 함께 휴전안을 지지하고, 러시아 방문을 승인.  </li>
+<li>
+<p>미국 내외의 정치적 압력과 제재 논의가 진행 중.  </p>
+</li>
+<li>
+<p><strong>러시아 안보 고문</strong>  </p>
+</li>
+<li>
+<p>위츠코프와 휴전안 초안에 대해 논의, 러시아의 입장을 조율.  </p>
+</li>
+<li>
+<p><strong>젤렌스키 대통령</strong>  </p>
+</li>
+<li>우크라이나 영토 포기에 대한 입장을 명확히 하고, 미국과의 협상에 참여.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>휴전 협상</strong>  </li>
+<li>위츠코프가 푸틴과 만날 예정이므로, 휴전안이 실제로 합의에 이르는지 여부가 핵심.  </li>
+<li>
+<p>드리스켈의 젊은 인물로서의 경험 부족이 협상에 어떤 영향을 미칠지는 미지수.  </p>
+</li>
+<li>
+<p><strong>미국 내 정치</strong>  </p>
+</li>
+<li>트럼프의 평화 코치가 참여함으로써, 미국 내 보수와 진보 간의 갈등이 심화될 가능성.  </li>
+<li>
+<p>트럼프가 제안한 제재와 휴전안이 상충될 경우, 미국 외교 정책에 혼란이 예상된다.  </p>
+</li>
+<li>
+<p><strong>러시아와의 관계</strong>  </p>
+</li>
+<li>
+<p>러시아가 휴전안에 동의할 경우, 미국과 러시아 간 긴장이 완화될 수 있으나, 영토 포기에 대한 우크라이나의 반발이 지속될 가능성.  </p>
+</li>
+<li>
+<p><strong>우크라이나의 입장</strong>  </p>
+</li>
+<li>영토 포기 논의가 진행되면, 국내 정치적 반발과 국제적 비판이 증가할 전망.  </li>
+</ul>
+<p>전반적으로 미국 특수외교관과 트럼프 평화 코치의 동조가 우크라이나 영토 포기 논의에 어떤 영향을 미칠지는 아직 불확실하지만, 각국의 외교적 움직임과 내부 정치가 복합적으로 작용할 것으로 보인다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=I8Cjhl6f6QU" target="_blank">Trump Says Witkoff to Visit Ru...</a><a href="https://www.youtube.com/watch?v=kH452qsRQvo" target="_blank">Negotiators share Trump's reac...</a><a href="https://www.youtube.com/watch?v=etzN4_PLaVY" target="_blank">FULL REMARKS: Jared Kushner, S...</a><a href="https://www.youtube.com/watch?v=u_U3SXaDIm0" target="_blank">Donald Trump Praises Marco Rub...</a><a href="https://www.youtube.com/watch?v=OK-S0zQcxSc" target="_blank">Jared Kushner And Trump's Envo...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003485555" target="_blank">트럼프 40년 골프친구와 30대 장관…러·우 종전협상 새 실세 누구</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://en.wikipedia.org/wiki/Steve_Witkoff" target="_blank">Steve Witkoff - Wikipedia</a><a href="https://www.bbc.com/news/articles/c743jl8k4kko" target="_blank">Who was at the table in US-Russia talks in Saudi A...</a><a href="https://x.com/SteveWitkoff" target="_blank">Steve Witkoff (@SteveWitkoff) / Posts / X</a><a href="https://www.nytimes.com/2025/09/26/business/witkoff-son-qatar-gaza.html" target="_blank">As Witkoff Pitched Mideast Peace, His Son Pitched ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

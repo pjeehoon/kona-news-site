@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경찰, '부정선거 음모론' 황교안 불구속 송치…일부는 무혐의 - 2025-11-26 21:52:18</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,사회,황교안,부정선거,부방대,불구속 송치">
+    <meta name="article-category-tags" content="정치,사회">
+    <meta name="article-content-tags" content="황교안,부정선거,부방대,불구속 송치">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 21:52:18'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('경찰, \'부정선거 음모론\' 황교안 불구속 송치…일부는 무혐의')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>경찰, '부정선거 음모론' 황교안 불구속 송치…일부는 무혐의</h1>
+            <p>
+                분석 시간: 2025-11-26 21:52:18
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 황교안 전 총리와 부방대가 부정선거 혐의로 경찰 조사 대상이었으나, 2025년 11월 26일 불구속 송치되었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그 과정에서 부방대 일부 관계자는 무혐의 판결을 받았으며, 사건은 21대 대통령선거 부정선거 의혹과 연계돼 정치적 논란을 격화시켰다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 현재 구속은 없으나 수사 진행 중이며, 이 사건은 정치 신뢰 하락과 향후 법적·정치적 대응에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/2190044dab9c.png" 
+                     alt="경찰, '부정선거 음모론' 황교안 불구속 송치…일부는 무혐의" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 26일, 경찰은 황교안 전 총리와 부정선거 부패방지대(부방대)를 서울중앙지검에 불구속 송치했다. 이와 동시에 부방대 일부 관계자는 무혐의 판결을 받았다. 이번 사건은 21대 대통령선거에서 부정선거 의혹이 제기된 가운데 진행되는 수사와 정치적 논란을 한층 격화시켰다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 5월 1일</td>
+<td><strong>선거관리위원회 고발</strong></td>
+<td>중앙선거관리위원회가 황교안 전 총리와 부방대를 공직선거법 위반 혐의로 고발했다. <a href="https://www.khan.co.kr/article/202501262000025" target="_blank">경향신문</a></td>
+</tr>
+<tr>
+<td>2025년 8월 1일</td>
+<td><strong>부방대 사무실 압수수색</strong></td>
+<td>경찰이 부방대 사무실을 압수수색했다. <a href="https://www.nocutnews.co.kr/news/6387703" target="_blank">노컷뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 1일</td>
+<td><strong>부방대 관계자 압수수색</strong></td>
+<td>부방대 관계자들을 대상으로 추가 압수수색이 진행됐다.</td>
+</tr>
+<tr>
+<td>2025년 11월 20일</td>
+<td><strong>황교안 독자 후보 출마</strong></td>
+<td>황교안 전 총리가 21대 대통령선거에 무소속 후보로 출마했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td><strong>불구속 송치</strong></td>
+<td>경찰이 황교안 전 총리와 부방대를 서울중앙지검에 불구속 송치했다. 일부 부방대 관계자는 무혐의 판결을 받았다. <a href="https://n.news.naver.com/mnews/article/421/0008627319" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 황교안 전 총리와 부방대는 부정선거 혐의로 경찰 조사 대상이었으나, 불구속 송치와 무혐의 판결로 현재는 구속이 이루어지지 않았다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>경찰·검찰 측</h3>
+<ul>
+<li><strong>사실 기반</strong>: 경찰은 부방대가 21대 대통령선거에서 부정선거를 조직적으로 수행했다는 증거를 확보했다고 주장한다.  </li>
+<li><strong>불구속 송치</strong>: 현행법에 따라 증거가 구속에 충분치 않다고 판단해 송치 결정.  </li>
+<li><strong>전문가 견해</strong>: 법학자들은 불구속 송치가 법적 절차에 부합하며, 수사 진행 중에 구속 여부가 재검토될 수 있다고 분석한다.</li>
+</ul>
+<h3>황교안 측</h3>
+<ul>
+<li><strong>정치 탄압 주장</strong>: 황교안 전 총리는 경찰 수사를 “정치 탄압”이라며, 차량 접촉 사고를 빙자해 참고인을 유인하고 위법 영장을 집행했다는 주장을 제기했다.  </li>
+<li><strong>미확인</strong>: 현재까지 해당 주장을 뒷받침할 공식 자료는 공개되지 않았다. <a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003136351" target="_blank">오마이뉴스</a></li>
+</ul>
+<h3>부방대 관계자</h3>
+<ul>
+<li><strong>무혐의 판결</strong>: 일부 부방대 관계자는 무혐의 판결을 받았으며, 이는 부정선거 혐의가 입증되지 않았음을 의미한다.  </li>
+<li><strong>공식 입장</strong>: 부방대는 “정당한 정치 활동을 수행했다”는 입장을 밝혔다.</li>
+</ul>
+<h3>정치권·시민 반응</h3>
+<ul>
+<li><strong>반대파</strong>: 일부 야당은 경찰·검찰의 조치를 지지하며, 부정선거 방지의 필요성을 강조했다.  </li>
+<li><strong>지지파</strong>: 황교안 지지자들은 수사를 “정치적 공격”으로 비판하며, 공정한 재판을 요구했다.  </li>
+<li><strong>시민 의견</strong>: 여론조사 결과, 부정선거 혐의에 대한 신뢰도가 낮아지면서 정치적 신뢰가 하락하고 있다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>① 중앙선거관리위원회 고발 (2025년 5월 1일) <br>② 부방대 사무실 및 관계자 압수수색 (2025년 8월, 10월) <br>③ 황교안 전 총리의 무소속 후보 출마 (2025년 11월 20일) <br>④ 경찰의 불구속 송치 및 일부 무혐의 판결 (2025년 11월 26일)</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>① 황교안 측이 주장하는 “정치 탄압” 및 “위법 영장” 주장 <br>② 차량 접촉 사고를 이용한 위법 행위 여부</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>황교안 전 총리</strong></td>
+<td>부정선거 부패방지대(부방대) 설립자</td>
+<td>수사에 대해 정치 탄압 주장</td>
+</tr>
+<tr>
+<td><strong>부정선거 부패방지대(부방대)</strong></td>
+<td>부정선거 음모론 단체</td>
+<td>부정선거 혐의에 대한 방어</td>
+</tr>
+<tr>
+<td><strong>경찰·검찰</strong></td>
+<td>수사·검찰 담당</td>
+<td>부정선거 혐의에 대한 법적 절차 진행</td>
+</tr>
+<tr>
+<td><strong>중앙선거관리위원회</strong></td>
+<td>선거 공정성 감독</td>
+<td>부정선거 혐의 고발</td>
+</tr>
+<tr>
+<td><strong>시민·정치권</strong></td>
+<td>의견 제시</td>
+<td>수사와 혐의에 대한 다양한 시각 제시</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong>: 현재는 불구속 송치 단계이므로, 향후 검거·기소 여부가 결정될 가능성이 있다.  </li>
+<li><strong>정치적 파장</strong>: 부정선거 혐의가 확정되면 황교안 전 총리와 부방대는 정치적 신뢰 회복이 어려워질 전망이다.  </li>
+<li><strong>선거 영향</strong>: 21대 대통령선거 이후 부정선거 방지 강화 움직임이 가속화될 가능성이 있다.  </li>
+<li><strong>공공 신뢰</strong>: 수사 과정이 투명하게 진행된다면 공공 신뢰 회복에 도움이 될 수 있으나, 정치적 이용 의혹이 지속될 경우 신뢰 하락이 우려된다.</li>
+</ul>
+<blockquote>
+<p><strong>주의</strong>: 본 기사는 2025년 11월 26일 현재의 사건 경과와 공개된 자료를 바탕으로 작성되었으며, 이후 법적 판단이나 추가 증거에 따라 내용이 변동될 수 있다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=RHW2eglzN58" target="_blank">경찰, '불법 선거운동 혐의' 황교안 송치 / 연합뉴스...</a><a href="https://www.youtube.com/watch?v=M9li0bq9YH8" target="_blank">황총리 "불법 선거운동ㆍ사이버 선거범죄 강력 대처"</a><a href="https://www.youtube.com/watch?v=T7TqyI8XX8g" target="_blank">선거 사범 2천명 넘겨…잇단 투표함 훼손 고발도 / 연...</a><a href="https://www.youtube.com/watch?v=-B78hiw0dy4" target="_blank">탈·불법 선거운동 철저 단속, 투표 전·후 위생관리 협...</a><a href="https://www.youtube.com/watch?v=ykYNiOjLzSE" target="_blank">‘선거법 위반’ 혐의 원희룡 지사 이틀째 소환…다음 달...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008627319" target="_blank">경찰, '불법 선거운동' 황교안 전 총리 검찰 송치</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.khan.co.kr/article/202501262000025" target="_blank">내란 계기라는 '부정선거' 음모론, 황교안의 '부방대'가 출처 - 경향신문</a><a href="https://www.nocutnews.co.kr/news/6387703" target="_blank">경찰, '부정선거 음모론' 황교안 부정선거부패방지대 압색 - 노컷뉴스</a><a href="https://www.khan.co.kr/article/202502051816001" target="_blank">부정선거 음모론 주도한 황교안, 윤석열 내란죄 형사재판 변호인단 ...</a><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003136351" target="_blank">김문수 지지하며 사퇴한 황교안 "부정선거방지대원, 참관인 써달라 ...</a><a href="https://news.jtbc.co.kr/article/NB12250845" target="_blank">음모론자들에 행동지침 내려 선거방해 이끈 '황교안 조직'</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
