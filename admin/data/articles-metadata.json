@@ -1,5 +1,103 @@
 [
   {
+    "id": "914fa0d3b42e",
+    "title": "\"더이상 챗봇 아냐\" 챗GPT 반격 … 쇼핑·금융까지 품은 운영체제로",
+    "created_at": "2025-11-26T11:30:37.486586+09:00",
+    "last_updated": "2025-11-26T11:30:37.486586+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "챗GPT",
+        "운영체제",
+        "쇼핑"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "92b55a7bc791",
+    "title": "해군 첫 잠수함 '장보고함' 폴란드 무상양도‥\"K-방산 수주전 지원\"",
+    "created_at": "2025-11-26T11:25:53.313501+09:00",
+    "last_updated": "2025-11-26T11:25:53.313501+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "국제",
+        "정치"
+      ],
+      "content_tags": [
+        "장보고함",
+        "폴란드 해군",
+        "K-방산",
+        "오르카"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "d45f0005b6c5",
+    "title": "'6000만원 수수 혐의' 노웅래 전 의원 1심 무죄",
+    "created_at": "2025-11-26T11:24:24.427445+09:00",
+    "last_updated": "2025-11-26T11:24:24.427445+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "노웅래",
+        "6000만원",
+        "수수혐의"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "3cae968738a0",
+    "title": "전체 인구의 3분의 1은 교통약자…이동편의시설 개선",
+    "created_at": "2025-11-26T11:21:20.262399+09:00",
+    "last_updated": "2025-11-26T11:21:20.262399+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "교통약자",
+        "이동편의",
+        "국토부"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "187e82765e0d",
     "title": "정부, 석화업계에 데드라인 통보…\"재편계획 기한내 미제출시 각자도생\"",
     "created_at": "2025-11-26T11:10:28.538235+09:00",
