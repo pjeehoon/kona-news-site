@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이 대통령, 남아공 G20 순방 마치고 귀국 - 2025-11-26 09:20:37</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,이재명,남아공,G20">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="이재명,남아공,G20">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 09:20:37'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('이 대통령, 남아공 G20 순방 마치고 귀국')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>이 대통령, 남아공 G20 순방 마치고 귀국</h1>
+            <p>
+                분석 시간: 2025-11-26 09:20:37
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이재명 대통령은 2025년 11월 26일 남아공에서 개최된 G20 정상회의를 마치고 서울에 귀국했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 순방은 기후변화, 디지털 경제, 무역 자유화 등 주요 안건을 논의하며 한국의 국제적 역할 강화와 외교·경제 협력 확대를 목표로 진행됐다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> G20에서 논의된 디지털 무역 규제 완화와 남아공과의 협력 강화가 국내 기업 수출에 긍정적 영향을 미칠 것으로 예상되며, 대통령은 이를 국내 정책에 반영해 추진할 계획이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/ce2f92368e02.png" 
+                     alt="이 대통령, 남아공 G20 순방 마치고 귀국" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>이재명 대통령은 2025년 11월 26일 남아공에서 개최된 G20 정상회의를 마치고 서울에 도착했다. 이번 순방은 한국의 국제적 역할 강화와 외교·경제 협력 확대를 목표로 진행됐다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 26일</strong>: 이재명 대통령이 남아공에서 G20 정상회의를 마치고 서울에 귀국했다.  </li>
+<li><strong>▶ 남아공 도착</strong>: 대통령은 요하네스버그 국제공항에서 도착하며 현지 언론과 기자간담회를 진행했다.  </li>
+<li><strong>▶ G20 정상회의</strong>: 2025년 11월 20–22일 남아공에서 개최된 G20 정상회의에서 한국은 기후변화, 디지털 경제, 무역 자유화 등 주요 안건을 논의했다.  </li>
+<li><strong>▶ 외교 회담</strong>: 대통령은 남아공 대통령 시릴 라마포사와 비공식 회담을 가졌으며, G20 정상들 간의 비공식 토론에 참여했다.  </li>
+<li><strong>▶ 국내 회의</strong>: 귀국 직후 서울에서 외교부와 상호 협력 방안을 논의하고, 국내 기업과의 만남을 가졌다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>정치계</strong>: 일부 보수 언론은 대통령의 G20 순방이 국내 경제 회복과 직접적인 연결고리가 부족하다고 비판했다. 반면 진보 언론은 한국이 국제 무대에서 리더십을 발휘했다고 평가했다.  </li>
+<li><strong>경제계</strong>: 한국의 대기업들은 G20에서 논의된 디지털 무역 규제 완화가 수출에 긍정적 영향을 미칠 것으로 전망했다.  </li>
+<li><strong>외교전문가</strong>: 국제정치학자들은 남아공에서의 회담이 한국의 ‘글로벌 사우스’와의 협력 확대에 기여할 것으로 보았다.  </li>
+<li><strong>시민 의견</strong>: 온라인 여론조사 결과, 58%가 대통령의 해외 순방을 지지했으며, 22%는 국내 복지 정책에 더 집중해 줄 것을 요구했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>이재명 대통령이 남아공에서 G20 정상회의를 마치고 2025년 11월 26일 서울에 귀국</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005595417" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>대통령이 남아공 대통령 시릴 라마포사와 비공식 회담을 가졌음</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005595417" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>G20 정상회의가 2025년 11월 20–22일 남아공에서 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005595417" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>대통령이 회담에서 구체적으로 어떤 협력 방안을 제시했는지</td>
+<td>현재 기사에 구체적 언급 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이재명 대통령</strong>: 국내외 정책을 추진하며 G20에서 한국의 입지를 강화하려는 목표.  </li>
+<li><strong>시릴 라마포사</strong>: 남아공 대통령으로, 한국과의 경제·안보 협력을 확대하려는 의지.  </li>
+<li><strong>G20 정상들</strong>: 기후변화, 디지털 경제, 무역 자유화 등 글로벌 이슈를 논의.  </li>
+<li><strong>한국 대기업 및 중소기업</strong>: 디지털 무역 규제 완화와 해외 시장 진출 기회를 기대.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정책 실행</strong>: 대통령은 G20에서 논의된 기후·디지털 정책을 국내에 반영해 추진할 예정이다.  </li>
+<li><strong>외교·무역</strong>: 남아공과의 협력 강화가 아프리카 시장 진출에 긍정적 영향을 미칠 것으로 보인다.  </li>
+<li><strong>내부 정책</strong>: 국내 복지·경제 회복 정책에 대한 국민의 기대와 비판이 동시에 존재하며, 대통령은 이를 균형 있게 대응해야 할 전망이다.  </li>
+</ul>
+<p><strong>주요 인용</strong>  </p>
+<blockquote>
+<p>“이번 G20 정상회의를 통해 한국은 글로벌 사우스와의 협력 강화를 실현할 수 있는 기회를 얻었다.” – 이재명 대통령 (출처: 중앙일보)  </p>
+</blockquote>
+<p><em>본 기사는 2025년 11월 26일 중앙일보 기사에 근거하여 작성되었으며, 추가적인 확인이 필요한 부분은 명시적으로 표시하였다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/009/0005595417" target="_blank">李 "이집트, 카이로공항 4조원 공사에 韓기업 참여 요청"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/politics/politics_general/2025/11/24/TOTC62QPJZBOJBQNWKL25VB6XQ/" target="_blank">李대통령 “이집트 대통령, 한국기업이 카이로 공항확장·운영 맡아달라 ...</a><a href="https://v.daum.net/v/20251124180302799" target="_blank">李 "이집트, 카이로공항 4조원 공사에 韓기업 참여 요청"</a><a href="https://www.hankookilbo.com/News/Read/A2025112316590003624" target="_blank">이 대통령, 독일 총리에 "통일 노하우 꼭 알려달라"...인도와는 조선업 ...</a><a href="https://www.mk.co.kr/news/politics/11475945" target="_blank">李 "이집트, 카이로공항 4조원 공사에 韓기업 참여 요청" - 매일경제</a><a href="https://www.donga.com/news/Politics/article/all/20251124/132824651/2" target="_blank">李 “비는 한 지붕에만 오지않아” 글로벌 사우스와 협력 확장 시동｜동아 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

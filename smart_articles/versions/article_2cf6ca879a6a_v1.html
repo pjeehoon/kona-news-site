@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"백신 맞았는데 독감이라뇨" 환자 14배 급증, 이유 있었다…'K 변이' 점유율 97% - 2025-11-26 09:27:53</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,백신,독감,K변이">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="백신,독감,K변이">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 09:27:53'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"백신 맞았는데 독감이라뇨" 환자 14배 급증, 이유 있었다…\'K 변이\' 점유율 97%')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"백신 맞았는데 독감이라뇨" 환자 14배 급증, 이유 있었다…'K 변이' 점유율 97%</h1>
+            <p>
+                분석 시간: 2025-11-26 09:27:53
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국에서 백신 접종 후 독감 증상 환자가 14배 급증하며, 현재 인플루엔자 바이러스의 97%가 ‘K 변이’로 변이되어 백신과의 항원 불일치 가능성이 제기되고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 질병관리청은 백신이 중증화 예방에 효과적이라고 강조하며, 65세 이상과 어린이의 접종률이 각각 76.1%와 60.8%에 이르렀다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 인플루엔자는 내년 4월까지 계속 유행할 전망이며, 백신 제조사는 ‘K 변이’에 대응해 다음 시즌 백신에 반영할 계획이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/2cf6ca879a6a.png" 
+                     alt=""백신 맞았는데 독감이라뇨" 환자 14배 급증, 이유 있었다…'K 변이' 점유율 97%" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>백신 접종 후 독감 증상을 호소한 환자가 14배 급증한 가운데, ‘K 변이’가 97%를 차지해 현재 백신과의 불일치 가능성이 제기되고 있다.</strong><br />
+질병관리청은 백신이 중증화 예방에 여전히 효과적이라고 강조했으며, 인플루엔자는 내년 4월까지 계속 유행할 전망이다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 46주차(11월 9–15일) 외래환자 1,000명당 독감 증상 의심 환자 66.3명</strong>으로 전 주 대비 <strong>30.8% 증가</strong>.  </li>
+<li><strong>▶ 백신 접종 후 독감 증상 호소가 14배 급증</strong>(2025년 11월 21일 기준).  </li>
+<li><strong>▶ ‘K 변이’가 현재 인플루엔자 바이러스의 </strong>97%<strong>를 차지</strong>하며, 기존 백신과의 항원 불일치 가능성 제기.  </li>
+<li><strong>▶ 65세 이상 접종률 76.1%, 어린이 접종률 60.8%</strong>(질병관리청 통계).  </li>
+<li><strong>▶ 질병관리청 브리핑(2025년 11월 24일)</strong>에서 백신이 <strong>중증화 예방에 효과적</strong>이라며 접종을 당부.  </li>
+<li><strong>▶ 인플루엔자는 내년 4월까지 계속 유행할 것으로 예견</strong>(질병관리청·전문가 예측).  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>질병관리청</strong></td>
+<td>백신이 감염을 완전히 막지는 못하지만 <strong>입원·사망 위험을 낮추는 가장 효과적 수단</strong>임.</td>
+<td><a href="https://n.news.naver.com/mnews/article/422/0000804966" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>백신 제조사</strong></td>
+<td>‘K 변이’에 대한 <strong>항원 매칭 업데이트가 진행 중</strong>이며, <strong>다음 시즌 백신에 반영될 예정</strong>.</td>
+<td><a href="https://www.asiae.co.kr/article/2025112511211551306" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td><strong>의료진</strong></td>
+<td>환자들이 <strong>백신 접종 후 독감 증상을 호소</strong>하면서 <strong>진단과 치료에 혼란</strong>이 발생.</td>
+<td><a href="https://www.imaganews.com/news/articleView.html?idxno=9145" target="_blank">이마가네 뉴스</a></td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>백신 접종 후 독감 증상에 대한 <strong>불안감 증가</strong>. 일부는 <strong>백신 접종을 꺼림</strong>.</td>
+<td>YTN 사이언스 투데이 영상</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>백신과 ‘K 변이’ 간의 <strong>항원 불일치</strong>가 <strong>증상 발현</strong>에 영향을 미칠 수 있으나, <strong>중증화 예방</strong>에는 여전히 효과적.</td>
+<td>YTN 사이언스 투데이 영상</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>YTN 사이언스 투데이</strong> 영상에서 질병관리청 관계자는 “백신은 감염을 완전히 막지 못하지만, 중증화 예방에는 가장 효과적”이라며 <strong>접종을 권고</strong>했다.  </p>
+</blockquote>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>- 2025년 46주차 독감 증상 의심 환자 66.3명/1,000명<br>- ‘K 변이’ 97% 점유율<br>- 65세 이상 접종률 76.1%, 어린이 60.8%<br>- 질병관리청의 백신 중증화 예방 효과 주장</td>
+<td>출처: 네이버뉴스, 아시아경제, 질병관리청</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- ‘K 변이’가 백신 불일치로 인한 증상 급증의 <strong>정확한 기전</strong><br>- 백신 제조사의 <strong>구체적 업데이트 일정</strong></td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>질병관리청</strong></td>
+<td>백신 접종 권고 및 중증화 예방 강조</td>
+<td>공중보건·감염병 관리</td>
+</tr>
+<tr>
+<td><strong>백신 제조사</strong></td>
+<td>‘K 변이’ 대응 및 백신 업데이트</td>
+<td>제품 판매·시장 점유율</td>
+</tr>
+<tr>
+<td><strong>의료진</strong></td>
+<td>환자 진료·백신 접종 관리</td>
+<td>의료서비스 질·안전</td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>백신 접종 결정·건강 관리</td>
+<td>개인 건강·안전</td>
+</tr>
+<tr>
+<td><strong>연구자</strong></td>
+<td>변이 분석·백신 효능 연구</td>
+<td>과학적 진보·정책 제언</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>백신 업데이트</strong>: ‘K 변이’에 대한 항원 매칭이 <strong>다음 시즌 백신에 반영</strong>될 가능성이 높으며, <strong>백신 접종률이 유지·상승</strong>하면 중증화 위험은 낮아질 전망.  </li>
+<li><strong>감시 체계 강화</strong>: 백신 불일치 가능성에 대비해 <strong>변이 모니터링·진단 체계</strong>가 강화될 것으로 예상.  </li>
+<li><strong>공중보건 메시지</strong>: 질병관리청은 <strong>백신 접종의 중요성</strong>을 지속적으로 강조하며, <strong>독감 증상 발생 시 신속한 진단·치료</strong>를 권고할 전망.  </li>
+<li><strong>연구 동향</strong>: ‘K 변이’의 <strong>항원 구조와 면역 회피 메커니즘</strong>에 대한 연구가 가속화될 것이며, 이는 <strong>다음 세대 백신 개발</strong>에 기여할 가능성이 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>질병관리청</strong>은 “백신이 감염을 완전히 막지는 못하지만, 중증화 예방에는 가장 효과적”이라며 <strong>백신 접종을 적극 권고</strong>하고 있다.  </p>
+</blockquote>
+<hr />
+<p><strong>참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/422/0000804966" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.asiae.co.kr/article/2025112511211551306" target="_blank">아시아경제</a><br />
+- <a href="https://www.imaganews.com/news/articleView.html?idxno=9145" target="_blank">이마가네 뉴스</a><br />
+- <a href="https://www.youtube.com/watch?v=sqTU_-IW1Ho" target="_blank">YTN 사이언스 투데이</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=sqTU_-IW1Ho" target="_blank">질병청 "독감 내년 4월까지 유행할 것...백신 접종 ...</a><a href="https://www.youtube.com/watch?v=wuAMc1BH0PM" target="_blank">[오늘의 생활경제] 갭투자 되는 오피스텔…일부선 풍선효...</a><a href="https://www.youtube.com/watch?v=WsRRA6PThgQ" target="_blank">코로나19 백신 4차 접종 Vs 2가 백신 감염 예방 ...</a><a href="https://www.youtube.com/watch?v=x7kOWtmPjsw" target="_blank">코로나19 백신도 독감처럼 1년에 1번...등급 하향해...</a><a href="https://www.youtube.com/watch?v=nPgBVxZ6bt8" target="_blank">[현장연결] 질병청 "2차접종 후 3개월 지난 국민 3...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/422/0000804966" target="_blank">질병청 "독감 백신, 중증화 예방에 효과…접종 당부"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.asiae.co.kr/article/2025112511211551306" target="_blank">"백신 맞았는데 독감이라뇨" 환자 14배 급증, 이유 있었다…'K 변이 ...</a><a href="https://www.imaganews.com/news/articleView.html?idxno=9145" target="_blank">백신 맞았는데 독감 폭증...'K 변이'가 불러온 백신 불일치 사태</a><a href="https://www.bbc.com/korean/international-59932733" target="_blank">오미크론: 백신 맞았는데 왜 코로나19에 감염될까? - BBC News 코리아</a><a href="https://news.kbs.co.kr/news/view.do?ncd=5608029" target="_blank">“백신 4번 맞았는데 코로나19 확진”…전문가 답변은?</a><a href="https://www.bbc.com/korean/60900150" target="_blank">코로나19: '스텔스 오미크론' BA.2는 무엇인가 - BBC News 코리아</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
