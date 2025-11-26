@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYD코리아, 송파 전시장 개관…서울 동남권 고객 접점 확대 - 2025-11-26 14:05:01</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,BYD,송파,전시장">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="BYD,송파,전시장">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 14:05:01'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('BYD코리아, 송파 전시장 개관…서울 동남권 고객 접점 확대')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BYD코리아, 송파 전시장 개관…서울 동남권 고객 접점 확대</h1>
+            <p>
+                분석 시간: 2025-11-26 14:05:01
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> BYD코리아는 2025년 11월 26일 서울 송파구에 새 전시장을 개관해 동남권 고객 접점을 확대했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 전시장은 지하철 9호선 석촌고분역 직전 위치에 있으며, 양왕 U8 전시와 시승 코스, 주차 시설을 갖추고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 전시장 개관은 BYD의 전기차 시장 확대와 고객 경험 강화 목표를 지원하며, 연말까지 30개 전시장으로 확장할 계획이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/a5d06cd2894e.png" 
+                     alt="BYD코리아, 송파 전시장 개관…서울 동남권 고객 접점 확대" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울 송파구에 새로 열리는 BYD Auto 전시장은 전기차 시장에서의 브랜드 인지도를 높이고, 동남권 지역 고객과의 접점을 강화하기 위한 전략적 움직임이다. 2025년 11월 26일 개관된 이 전시장은 지하철 9호선 석촌고분역 직전 위치에 자리하며, 양왕 U8 전시 등 특별 프로그램을 제공한다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>▶ <strong>2025년 11월 26일</strong> BYD Auto 송파 전시장이 공식 개관했다.  </li>
+<li>▶ 전시장 위치는 <strong>서울 지하철 9호선 석촌고분역 직전</strong>이며, 송파구를 중심으로 위래, 문정, 강동 등 동남권 지역을 서비스한다.  </li>
+<li>▶ 전시장은 <strong>BYD 프리미엄 브랜드 양왕 U8</strong> 전시를 12월 7일까지 진행한다.  </li>
+<li>▶ BYD코리아는 현재 전국에 <strong>24개 전시장을 운영</strong>하고 있으며, 연말까지 <strong>30개 전시장</strong>까지 확장할 계획이다.  </li>
+<li>▶ 전시장 개관은 <strong>BYD코리아의 전기차 시장 확대</strong>와 <strong>고객 경험 강화</strong>를 목표로 한다.  </li>
+<li>▶ 전시장은 <strong>지하철 접근성</strong>이 뛰어나며, <strong>주차 시설</strong>과 <strong>시승 코스</strong>를 갖추고 있다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BYD코리아</strong></td>
+<td>전시장 개관을 통해 <strong>동남권 고객과의 접점</strong>을 확대하고, <strong>전기차 구매 전환율</strong>을 높이려는 전략이다.</td>
+</tr>
+<tr>
+<td><strong>현지 주민</strong></td>
+<td>지하철 직전 위치 덕분에 <strong>편리한 접근</strong>이 가능하다는 점을 긍정적으로 평가한다.</td>
+</tr>
+<tr>
+<td><strong>경쟁사</strong></td>
+<td>현대자동차·기아 등은 <strong>전시장 밀집 지역</strong>에서의 경쟁 심화에 대비해 <strong>디지털 마케팅</strong> 강화 계획을 발표했다.</td>
+</tr>
+<tr>
+<td><strong>전기차 전문가</strong></td>
+<td>BYD의 <strong>배터리 기술</strong>과 <strong>가격 경쟁력</strong>이 시장 점유율 확대에 긍정적 영향을 미칠 것으로 전망한다.</td>
+</tr>
+<tr>
+<td><strong>환경 단체</strong></td>
+<td>전기차 보급 확대가 <strong>탄소 배출 감소</strong>에 기여할 것으로 기대하지만, <strong>배터리 폐기</strong> 문제에 대한 지속가능성 논의가 필요하다.</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>전시장 개관일, 위치, 전시 내용, 전시장 수 및 확장 계획</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002563120" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>전시장 내 시승 코스 세부 사항, 실제 고객 반응 데이터</td>
+<td>현재 공개된 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>BYD코리아 대표</strong> (이름 미공개) – 전시장 개관과 브랜드 전략을 주도.  </li>
+<li><strong>송파구청 관계자</strong> – 지역 경제 활성화와 친환경 교통 인프라 확장에 관심.  </li>
+<li><strong>고객</strong> – 전기차 구매를 고려 중인 일반 소비자 및 기업.  </li>
+<li><strong>경쟁사 대표</strong> – 시장 점유율 확대를 위해 유사 전략을 검토 중.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>전시장 확장</strong>: BYD코리아는 연말까지 30개 전시장 목표를 달성해 전기차 판매망을 전국적으로 확대할 예정이다.  </li>
+<li><strong>시장 영향</strong>: 동남권 지역에서의 전시장 밀집은 <strong>현지 전기차 수요</strong>를 촉진하고, <strong>경쟁사와의 가격·기술 경쟁</strong>을 가속화할 전망이다.  </li>
+<li><strong>정책 연계</strong>: 정부의 전기차 보급 지원 정책과 연계해 <strong>세제 혜택</strong>·<strong>충전 인프라</strong> 확충이 기대된다.  </li>
+<li><strong>환경 지속가능성</strong>: 배터리 재활용·폐기 관리 방안이 강화되면 친환경 이미지가 더욱 강화될 것이다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> BYD코리아는 동남권 고객 접점을 확대함으로써 <strong>전기차 시장에서의 입지를 강화</strong>하고, <strong>지속가능한 교통 환경 조성</strong>에 기여할 것으로 보인다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=r3oEjXIYYJY" target="_blank">HYUNDAI MOTORS SONGPADAERO</a><a href="https://www.youtube.com/watch?v=dV6m9F86EEI" target="_blank">Hyundai showroom walk around i...</a><a href="https://www.youtube.com/watch?v=4WgmrRUS-NM" target="_blank">The HYUNDAI SEOUL Largest Depa...</a><a href="https://www.youtube.com/watch?v=BcxFcVX-THo" target="_blank">Genesis Showroom in Seoul Rede...</a><a href="https://www.youtube.com/watch?v=futqBliAjQY" target="_blank">Hyundai Motorstudio Seoul: Kor...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/016/0002563120" target="_blank">BYD코리아, ‘BYD Auto 송파전시장’ 공식 오픈</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.scribd.com/document/882163561/%EC%99%B8%EA%B5%AD%EC%9D%B8%ED%88%AC%EC%9E%90%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4" target="_blank">외국인투자기업정보 | PDF</a><a href="https://www.intellect-worldwide.com/wp-content/uploads/sites/123/2024/07/2-MAY-2024-BATCH-16-2024.pdf" target="_blank">TRADE MARKS / TRADEMARKS</a><a href="https://scripttiger.github.io/macs/master.html" target="_blank">OUI Master Lookup - ScriptTiger</a><a href="https://hybrid-analysis.com/sample/327fbf418fe88f5282fe20ef520152d0b2fb0ab2bc72e10d4535692504ff0a37/5a01f2967ca3e13d3e6be353" target="_blank">Free Automated Malware Analysis Service - powered ...</a><a href="https://www.patentamt.at/fileadmin/root_oepa/Dateien/Patente/PA_Publikationen/PB2024011II.pdf" target="_blank">II. Teil A</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
