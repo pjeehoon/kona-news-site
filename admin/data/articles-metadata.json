@@ -1,5 +1,124 @@
 [
   {
+    "id": "0a579d793d73",
+    "title": "서울고속버스터미널, 60층 이상 복합개발 사전협상 착수",
+    "created_at": "2025-11-27T08:35:47.926871+09:00",
+    "last_updated": "2025-11-27T08:35:47.926871+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제",
+        "사회"
+      ],
+      "content_tags": [
+        "서울",
+        "서초",
+        "신세계"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "db15802ff7ef",
+    "title": "오늘 올해 마지막 금통위…성장률 상향·금리 2.50% 동결 무게",
+    "created_at": "2025-11-27T08:33:11.124509+09:00",
+    "last_updated": "2025-11-27T08:33:11.124509+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "금통위",
+        "기준금리",
+        "성장률"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "310e9c49781c",
+    "title": "美 노동시장 둔화…베이지북 \"절반 지역서 노동수요 약화\"",
+    "created_at": "2025-11-27T08:31:34.769737+09:00",
+    "last_updated": "2025-11-27T08:31:34.769737+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "베이지북",
+        "노동시장",
+        "미국"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "e7e1bfbca989",
+    "title": "엔비디아 흔든 구글의 반격…SK하이닉스 'HBM 패권' 굳힐까",
+    "created_at": "2025-11-27T08:29:31.398734+09:00",
+    "last_updated": "2025-11-27T08:29:31.398734+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "AI",
+        "GPU",
+        "TPU"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "15790ee96e73",
+    "title": "與·野, ‘52시간 예외 뺀 반도체법’ 잠정합의",
+    "created_at": "2025-11-27T08:27:54.940256+09:00",
+    "last_updated": "2025-11-27T08:27:54.940256+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "뉴스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "9ea3b584d6e0",
     "title": "올해 국립대 전임교원 여성 22.2%…\"목표치 1년 앞당겨 달성\"",
     "created_at": "2025-11-27T08:09:06.639921+09:00",
