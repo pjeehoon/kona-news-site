@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광주시, 12월부터 배출가스 5등급 차량 운행제한 - 2025-11-26 10:12:30</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,광주,배출가스,5등급">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="광주,배출가스,5등급">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 10:12:30'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('광주시, 12월부터 배출가스 5등급 차량 운행제한')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>광주시, 12월부터 배출가스 5등급 차량 운행제한</h1>
+            <p>
+                분석 시간: 2025-11-26 10:12:30
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 광주시는 2025년 12월 1일부터 2026년 3월 31일까지 4개월간 배출가스 5등급 차량 운행을 제한한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 제한은 평일 오전 6시부터 오후 9시까지이며, 주요 도로 9개 지점의 CCTV로 단속하고 하루 10만원의 과태료가 부과되며, 저감장치 부착 불가 차량, 긴급·장애인·국가유공자·영업용·소상공인·저소득층 차량은 예외이며, 2026년 9월 30일까지 저감장치 부착·조기 폐차를 하면 과태료가 면제된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 조치는 2015년 대비 2024년 초미세먼지 농도 46% 감소 효과를 보인 바 있어 미세먼지 완화와 장기 친환경 전환을 목표로 하지만 시민들의 생활 불편 우려도 함께 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/8343a01448ce.png" 
+                     alt="광주시, 12월부터 배출가스 5등급 차량 운행제한" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>광주시는 2025년 12월 1일부터 2026년 3월 31일까지 4개월간 배출가스 5등급 차량 운행을 제한한다. 제한 시간은 평일 오전 6시부터 오후 9시까지이며, 토요일·공휴일은 제외된다. 단속은 주요 도로 9개 지점의 CCTV를 통해 이루어지며, 과태료는 하루 10만원이다. 예외 차량은 저감장치 부착 불가 차량, 긴급·장애인·국가유공자·영업용·소상공인·저소득층 차량 등이다. 2026년 9월 30일까지 저감장치 부착 또는 조기 폐차를 완료하면 과태료가 면제된다. 광주는 2021년부터 같은 조치를 시행해 왔으며, 2015년 대비 2024년 초미세먼지 농도 46% 이상 감소했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021년 1월 1일</td>
+<td>광주시 5등급 차량 운행 제한 시작</td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td><strong>▶ 광주시 12월 1일부터 3월 31일까지 5등급 차량 운행 제한 발표</strong><br>※ <a href="https://n.news.naver.com/mnews/article/002/0002416067" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>제한 시행 시작</td>
+</tr>
+<tr>
+<td>2026년 3월 31일</td>
+<td>제한 종료</td>
+</tr>
+<tr>
+<td>2026년 9월 30일</td>
+<td><strong>▶ 과태료 면제 마감일</strong> (저감장치 부착·조기 폐차 완료 시)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>운행 제한 시간</strong>: 평일 오전 6시~오후 9시 (토·일·공휴일 제외)  </li>
+<li><strong>단속 방법</strong>: 주요 도로 9개 지점 CCTV 감시  </li>
+<li><strong>과태료</strong>: 하루 10만원  </li>
+<li><strong>예외 차량</strong>: 긴급차, 장애인·국가유공자·영업용·소상공인·저소득층 차량, 저감장치 부착 불가 차량  </li>
+<li><strong>과태료 면제 조건</strong>: 2026년 9월 30일까지 저감장치 부착 또는 조기 폐차</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>광주MBC뉴스</strong></td>
+<td>“다음달부터 5등급 차량 운행 제한”이라며 시민들의 불편을 우려하면서도 ‘미세먼지 감소 효과’에 주목<br>※ <a href="https://www.youtube.com/watch?v=q7QTR5qCMsg" target="_blank">광주MBC뉴스</a></td>
+</tr>
+<tr>
+<td><strong>KBS 뉴스</strong></td>
+<td>“배출가스 등급 확인이 필수”라며 차량 소유자에게 등급 확인을 권고<br>※ <a href="https://www.youtube.com/watch?v=5uEIr14Kzs4" target="_blank">KBS 뉴스</a></td>
+</tr>
+<tr>
+<td><strong>YTN 사이언스</strong></td>
+<td>“269만 대가 5등급 판정”이라며 전국적 규모와 정책의 필요성을 강조<br>※ <a href="https://www.youtube.com/watch?v=coSZ6dv9uls" target="_blank">YTN 사이언스</a></td>
+</tr>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>“광주 12월부터 5등급 차량 운행 제한”이라며 정책 배경과 과거 성과를 보도<br>※ <a href="https://www.yna.co.kr/view/AKR20241122118400054" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>자동차배출가스 종합전산시스템</strong></td>
+<td>“제7차 계절관리제 5등급 차량 운행제한”이라며 전국적 적용 범위와 법적 근거를 제시<br>※ <a href="https://www.mecar.or.kr/" target="_blank">자동차배출가스 종합전산시스템</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>환경계</strong>: 미세먼지 농도 46% 감소 효과를 강조하며 정책 지지  </li>
+<li><strong>주민단체</strong>: 운행 제한이 생활 불편을 초래할 수 있다고 우려  </li>
+<li><strong>자동차 산업</strong>: 차량 소유자에게 부정적 영향을 미칠 수 있으나 장기적으로 친환경 전환 촉진 효과를 기대  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>① 12월 1일부터 3월 31일까지 운행 제한<br>② 평일 오전 6시~오후 9시 제한<br>③ 9개 지점 CCTV 단속<br>④ 하루 10만원 과태료<br>⑤ 예외 차량 목록<br>⑥ 2026년 9월 30일까지 과태료 면제 가능<br>⑦ 2021년부터 같은 조치 시행<br>⑧ 2015년 대비 2024년 초미세먼지 농도 46% 감소</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- 특정 차량 모델별 등급 분포<br>- 실제 과태료 부과 사례 수치<br>- 시민 불편 정도에 대한 정량적 데이터</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>광주시청</strong></td>
+<td>정책 시행 및 단속 담당<br>“미세먼지 저감 목표 달성을 위해 필요”</td>
+</tr>
+<tr>
+<td><strong>광주 시민</strong></td>
+<td>일부는 불편 우려, 일부는 환경 개선에 긍정적</td>
+</tr>
+<tr>
+<td><strong>자동차 소유자</strong></td>
+<td>과태료 부담과 운행 제한에 대한 우려</td>
+</tr>
+<tr>
+<td><strong>환경단체</strong></td>
+<td>정책 지지 및 확장 요구</td>
+</tr>
+<tr>
+<td><strong>산업계</strong></td>
+<td>친환경 차량 전환 촉진을 통해 장기적 이익 기대</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>환경 효과</strong>: 2021년 이후 46% 미세먼지 감소 추세가 지속될 것으로 예상, 5등급 차량 제한이 추가적인 저감 효과를 가져올 가능성  </li>
+<li><strong>정책 확장</strong>: 다른 시·도에서도 같은 계절관리제 적용 확대 가능성  </li>
+<li><strong>기술적 대응</strong>: 저감장치 부착·조기 폐차를 촉진하기 위한 보조금·세제 혜택 확대 논의  </li>
+<li><strong>사회적 반응</strong>: 운행 제한에 대한 불편이 장기화될 경우 시민 불만이 증가할 수 있으나, 환경 인식 제고와 함께 수용성 증가 가능  </li>
+</ul>
+<p><strong>▶</strong> 광주시는 12월 1일부터 3월 31일까지 4개월간 5등급 배출가스 차량 운행을 제한하며, 평일 오전 6시부터 오후 9시까지 단속이 이루어질 예정이다. 과태료는 하루 10만원이며, 예외 차량은 제외된다. 2026년 9월 30일까지 저감장치 부착 또는 조기 폐차를 완료하면 과태료가 면제된다. 이 조치는 광주가 2021년부터 시행해 온 정책으로, 2015년 대비 2024년 초미세먼지 농도 46% 이상 감소한 실적을 바탕으로 한다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=5uEIr14Kzs4" target="_blank">내 차도 5등급?…‘배출가스 등급’ 꼭 확인하세요 / ...</a><a href="https://www.youtube.com/watch?v=coSZ6dv9uls" target="_blank">차량 269만 대 배출가스 5등급 판정...등급 꼭 확...</a><a href="https://www.youtube.com/watch?v=q7QTR5qCMsg" target="_blank">다음달부터 배출가스 5등급 차량 운행 제한</a><a href="https://www.youtube.com/watch?v=lY2RZLXa8fQ" target="_blank">내 차도 5등급? ‘배출가스 등급’ 꼭 확인하세요 / ...</a><a href="https://www.youtube.com/watch?v=e_ZzUuI2vho" target="_blank">이달부터 서울 시내 배출가스 5등급 차량 운행 제한 /...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/002/0002416067" target="_blank">광주시, 12월부터 배출가스 5등급 차량 운행제한</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.mecar.or.kr/" target="_blank">자동차배출가스 종합전산시스템</a><a href="https://www.yna.co.kr/view/AKR20241122118400054" target="_blank">광주지역 12월부터 배출가스 5등급 차량 운행 제한 | 연합뉴스</a><a href="https://www.suncheon.go.kr/minju/0005/0001/?boardId=bbs_0000000000011151&mode=view&cntId=1390&category=&pageIdx=3" target="_blank">제 7차 미세먼지 계절관리제 기간 배출가스 5등급 차량 운행제한 시행</a><a href="https://blog.naver.com/tvanyanggokr/223666408414?viewType=pc" target="_blank">제6차 미세먼지 계절관리제 5등급 차량 운행제한 시행 : 네이버 블로그</a><a href="https://www.airkorea.or.kr/portal/web/board/7/1735/?page=1" target="_blank">제4차 계절관리제, 5등급 차량 운행제한 확대 시행</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

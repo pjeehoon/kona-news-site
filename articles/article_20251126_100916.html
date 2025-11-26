@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반도체 칩이 이렇게 맛있어?…SK하이닉스·세븐일레븐, ‘허니바나나맛 HBM 칩스’ 출시 - 2025-11-26 10:09:16</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 10:09:16'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('반도체 칩이 이렇게 맛있어?…SK하이닉스·세븐일레븐, ‘허니바나나맛 HBM 칩스’ 출시')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>반도체 칩이 이렇게 맛있어?…SK하이닉스·세븐일레븐, ‘허니바나나맛 HBM 칩스’ 출시</h1>
+            <p>
+                분석 시간: 2025-11-26 10:09:16
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> SK하이닉스와 세븐일레븐이 2025년 11월 26일 허니바나나 맛 ‘HBM 칩스’를 출시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 제품은 반도체 ‘HBM’ 콘셉트 사각형 형태와 허니바나나 초콜릿이 들어간 고소한 옥수수칩으로, 전국 세븐일레븐 매장에서 판매되며 스티커 카드 이벤트와 HBM 캐릭터 굿즈가 함께 제공된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 ‘먹는 반도체’ 전략은 IT 기업이 식품 마케팅에 참여하는 흐름을 보여주며, 젊은 층의 관심을 끌어 브랜드 인지도를 높이는 효과가 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/f2d4774d588f.png" 
+                     alt="반도체 칩이 이렇게 맛있어?…SK하이닉스·세븐일레븐, ‘허니바나나맛 HBM 칩스’ 출시" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>허니바나나 향이 가득한 고소한 옥수수칩이 반도체 ‘HBM’의 콘셉트와 결합됐다.</strong><br />
+SK하이닉스와 세븐일레븐이 2025년 11월 26일 전국 매장에서 판매를 시작하며, 스티커 카드 이벤트와 HBM 캐릭터 굿즈까지 한 번에 선보였다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 26일</strong></td>
+<td>SK하이닉스와 세븐일레븐이 <strong>허니바나나 맛 ‘HBM 칩스’</strong>를 출시했다. <br>▶ 제품은 반도체 콘셉트의 사각형 형태와 허니바나나 맛 초콜릿을 사용해 고소한 옥수수칩에 초코바나나 향을 더했다. <br>▶ 전국 세븐일레븐 매장에서 구매 가능하며, 동봉된 스티커 카드로 경품 이벤트가 진행된다. <br>▶ SK하이닉스는 이후 HBM 제품을 의인화한 캐릭터를 공개하고 SNS, 유튜브, 굿즈 등 다양한 채널에서 활용할 계획이다. <br>출처: <a href="https://n.news.naver.com/mnews/article/009/0005596199" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 26일</strong></td>
+<td>네이트에서도 같은 내용이 보도되었다. <br>출처: <a href="https://m.news.nate.com/view/20251126n05800?mid=m02&amp;list=recent&amp;cpcd=" target="_blank">네이트</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 26일</strong></td>
+<td>핀포인트뉴스에서도 제품 출시 소식이 보도되었다. <br>출처: <a href="https://www.pinpointnews.co.kr/news/articleList.html?sc_sub_section_code=S2N51&amp;view_type=sm" target="_blank">핀포인트뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 26일</strong></td>
+<td>SK하이닉스 공식 유튜브 채널에서 제품 소개 영상이 공개되었다. <br>출처: <a href="https://www.youtube.com/watch?v=YDbzeA7n0o8" target="_blank">유튜브</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 26일</strong></td>
+<td>아주경제 유튜브 채널에서도 제품 출시를 다룬 영상이 올라왔다. <br>출처: <a href="https://www.youtube.com/watch?v=zJKaZDbxYJs" target="_blank">유튜브</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>마케팅 전략</strong></td>
+<td>SK하이닉스는 반도체 기술을 소비자에게 친근하게 전달하기 위해 ‘먹는 반도체’라는 개념을 활용했다. 7‑일레븐과의 콜라보를 통해 브랜드 인지도를 높이고, 젊은 층의 관심을 끌어내는 데 성공했다.</td>
+</tr>
+<tr>
+<td><strong>소비자 반응</strong></td>
+<td>초기 반응은 ‘신기함’과 ‘맛있다’는 긍정적 평가가 많았으나, 일부 소비자는 과일 향이 과연 반도체와 연관이 있는지 의문을 제기했다.</td>
+</tr>
+<tr>
+<td><strong>건강·식품 안전</strong></td>
+<td>허니바나나 초콜릿이 포함된 고소한 옥수수칩이므로 당분·지방 함량이 높아 ‘가벼운 간식’으로만 소비될 가능성이 크다. 식품안전 관점에서 과도한 당분 섭취에 대한 우려가 제기되었다.</td>
+</tr>
+<tr>
+<td><strong>산업 트렌드</strong></td>
+<td>‘먹는 반도체’는 이미 과거에 몇 차례 시도된 바 있다. 이번 제품은 그 트렌드를 한층 확대한 사례로, IT 기업이 식품 마케팅에 적극 참여하는 흐름을 보여준다.</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li><strong>확인된 사실</strong>  </li>
+<li>제품 출시일, 맛, 형태, 판매처, 이벤트, 캐릭터 활용 계획 등은 <strong>위 기사들</strong>에 명시되어 있다.  </li>
+<li>
+<p>SK하이닉스 공식 유튜브 영상과 네이버·네이트·핀포인트뉴스 보도가 일치한다.  </p>
+</li>
+<li>
+<p><strong>미확인 정보</strong>  </p>
+</li>
+<li><strong>판매 실적</strong>: 아직 공개된 데이터가 없으며, “초기 판매량이 1만 개를 초과했다”는 주장은 <strong>확인되지 않았다</strong>.  </li>
+<li><strong>장기적 효과</strong>: 소비자 충성도 상승 여부나 브랜드 이미지 개선 효과는 아직 측정되지 않았다.  </li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>SK하이닉스</strong>  </li>
+<li>반도체 산업의 선두주자이며, <strong>HBM(High‑Bandwidth Memory)</strong> 제품을 주력으로 생산한다.  </li>
+<li>이번 스낵은 기술 브랜드를 식품으로 재해석한 <strong>마케팅 부서</strong>의 전략적 시도이다.  </li>
+<li><strong>세븐일레븐</strong>  </li>
+<li>국내 최대 규모의 편의점 체인으로, <strong>신제품 프로모션</strong>을 통해 고객 유치에 주력한다.  </li>
+<li>SK하이닉스와의 콜라보를 통해 <strong>브랜드 연계 마케팅</strong>을 강화하고 있다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>기술 테마 스낵 확장</strong>  </li>
+<li>SK하이닉스는 HBM 캐릭터를 활용해 <strong>굿즈, 앱, 이벤트</strong> 등 다채로운 콘텐츠를 제공할 예정이며, 이는 <strong>브랜드 인지도 상승</strong>에 기여할 전망이다.  </li>
+<li><strong>소비자 참여 강화</strong>  </li>
+<li>스티커 카드 이벤트와 유튜브 영상 시리즈는 <strong>소비자 참여를 유도</strong>하는 효과가 있을 것으로 보인다.  </li>
+<li><strong>산업 간 융합 가능성</strong>  </li>
+<li>반도체 기업이 식품 마케팅에 진출한 사례는 <strong>다른 IT 기업</strong>에도 벤치마킹 포인트가 될 수 있다.  </li>
+<li><strong>장기적 영향</strong>  </li>
+<li>단기적으로는 <strong>가치 있는 마케팅 이벤트</strong>로 평가되지만, <strong>실제 판매 실적</strong>과 <strong>소비자 충성도</strong>가 장기적으로 어떻게 이어질지는 추후 데이터가 필요하다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 허니바나나 맛 ‘HBM 칩스’는 반도체 기술을 식품으로 재해석한 <strong>혁신적 마케팅 사례</strong>이며, SK하이닉스와 세븐일레븐의 <strong>브랜드 시너지</strong>를 극대화한 전략으로 평가된다.<br />
+<strong>확인되지 않은</strong> 부분은 판매량, 장기적 브랜드 영향력 등이며, 이는 향후 통계와 소비자 설문을 통해 검증될 필요가 있다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=YDbzeA7n0o8" target="_blank">허니바나나맛 HBM CHIPS 출시 ! (feat. 댓...</a><a href="https://www.youtube.com/watch?v=zJKaZDbxYJs" target="_blank">SK Hynix Launches Honey Banana...</a><a href="https://www.youtube.com/watch?v=PoMzMBkunE4" target="_blank">[뉴스룸] SK하이닉스, 먹는 반도체 출시...반도체 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/009/0005596199" target="_blank">반도체 칩이 이렇게 맛있어?…SK하이닉스·세븐일레븐, ‘허니바나나맛 HBM 칩스’ 출시</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://m.news.nate.com/view/20251126n05800?mid=m02&list=recent&cpcd=" target="_blank">SK하이닉스, 신제품 출시…'허니바나나 HBM 칩스' 선봬 : 네이트 뉴스</a><a href="https://www.pinpointnews.co.kr/news/articleList.html?sc_sub_section_code=S2N51&view_type=sm" target="_blank">전체 < 기사목록 - 핀포인트뉴스</a><a href="https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt" target="_blank">제목없음</a><a href="https://www.motie.go.kr/kor/search?kwd=%EB%B2%95%EC%9D%B8%EC%9E%A5%EA%B5%AC%EC%9E%85%20%EB%B2%95%EC%9D%B8%EC%9E%A5%EA%B5%AC%EB%A7%A4%E2%80%8D%F0%9F%90%AC%20%F0%9D%97%A7/%F0%9D%97%9A@%20%F0%9D%97%A0%F0%9D%97%A3%F0%9D%97%9D%F0%9D%97%94%F0%9D%97%A1%F0%9D%97%9A%F0%9D%9F%AC%20%F0%9F%90%AC%EB%B2%95%EC%9D%B8%EC%9E%A5%EB%B2%95%EC%9D%B8%EC%9E%A5%EB%B2%95%EC%9D%B8%EC%9E%A5%F0%9F%90%AC%20%F0%9D%97%A7/%F0%9D%97%9A@%20%F0%9D%97%A0%F0%9D%97%A3%F0%9D%97%9D%F0%9D%97%94%F0%9D%97%A1%F0%9D%97%9A%F0%9D%9F%AC%20%F0%9F%90%AC%EB%B2%95%EC%9D%B8%EC%9E%A5%EA%B5%AC%EC%9E%85%20%EB%B2%95%EC%9D%B8%EC%9E%A5%EA%B5%AC%EB%A7%A4%EB%B2%95%EC%9D%B8%EC%9E%A5%EA%B5%AC%EC%9E%85%20%EB%B2%95%EC%9D%B8%EC%9E%A5%EA%B5%AC%EB%A7%A4%EB%B2%95%EC%9D%B8%EC%9E%A5%EB%B2%95%EC%9D%B8%EC%9E%A5%EB%B2%95%EC%9D%B8%EC%9E%A5" target="_blank">통합검색 | 산업통상부 통합검색 홈페이지</a><a href="https://www.tiktok.com/discover/%EC%A0%A0%EC%8A%A8%ED%99%A9-%EC%B9%98%ED%82%A8%ED%9B%84%EA%B8%B0" target="_blank">젠슨황 치킨후기 | TikTok</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
