@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC녹십자, 'mRNA-LNP 플랫폼' 성과 발표…적응증 확장 결과 공유 - 2025-11-26 12:00:10</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,GC녹십자,mRNA,LNP">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="GC녹십자,mRNA,LNP">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-26 12:00:10'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('GC녹십자, \'mRNA-LNP 플랫폼\' 성과 발표…적응증 확장 결과 공유')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GC녹십자, 'mRNA-LNP 플랫폼' 성과 발표…적응증 확장 결과 공유</h1>
+            <p>
+                분석 시간: 2025-11-26 12:00:10
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> GC녹십자가 RNA 기반 치료제 및 백신 아시아 서밋에서 자체 개발한 mRNA‑LNP 플랫폼의 성능을 공개했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> UTR 특허와 AI 코돈 최적화를 결합한 이 플랫폼은 단백질 발현량과 지속성을 크게 향상시키며, 항암 백신과 CAR‑T 후보에서 유망한 실험적 결과를 보여주었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 성과는 국내 최초 LNP 확보와 특허화로 차세대 성장 동력 확보를 목표로 하며, 시장 확대와 대량 생산 기반 마련을 통해 경쟁력을 강화할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/26/953b3702b537.png" 
+                     alt="GC녹십자, 'mRNA-LNP 플랫폼' 성과 발표…적응증 확장 결과 공유" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>GC녹십자는 2025년 11월 26일 RNA 기반 치료제 및 백신 아시아 서밋에서 자체 개발한 <strong>mRNA‑LNP 플랫폼</strong>의 성능을 공개했다. UTR 특허와 AI 코돈 최적화가 결합된 이 플랫폼은 단백질 발현량과 지속성을 크게 향상시키며, 항암 백신과 CAR‑T 세포치료제 후보에서 유망한 실험적 결과를 보여주었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 26일</td>
+<td>RNA 기반 치료제 및 백신 아시아 서밋</td>
+<td>GC녹십자, <strong>mRNA‑LNP 플랫폼</strong> 성과 발표</td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>항암 백신 연구</td>
+<td>벤치마크 LNP 대비 <strong>CD8+ T 세포 반응 강화</strong> 및 동물 모델에서 종양 크기 감소</td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>CAR‑T 세포치료제 후보</td>
+<td>체외 평가에서 <strong>B세포 99% 제거</strong> 성과</td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>기술적 특징</td>
+<td>UTR 특허, AI 기반 코돈 최적화, 자체 LNP 개발로 <strong>세포 특이적 전달 효율</strong> 및 <strong>낮은 독성</strong> 보유</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> GC녹십자 mRNA‑LNP 플랫폼은 <strong>UTR 특허</strong>와 <strong>AI 기반 코돈 최적화</strong>를 적용해 mRNA 단백질 발현량과 지속성을 크게 향상시켰다.<br />
+<strong>▶</strong> 자체 LNP는 세포 특이적 전달 효율이 개선되고 독성 지표가 낮은 수준을 유지한다.<br />
+<strong>▶</strong> 항암 백신 연구에서 더 강한 항원 특이적 CD8+ T 세포 반응을 유도하고, 동물 모델에서 종양 크기를 유의미하게 감소시켰다.<br />
+<strong>▶</strong> CAR‑T 세포치료제 후보가 체외 평가에서 B세포를 99%까지 제거하는 우수한 결과를 보였다.  </p>
+</blockquote>
+<p><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기업 전략</strong></td>
+<td>GC녹십자는 mRNA‑LNP 플랫폼을 차세대 성장 동력으로 삼으며, 국내 최초로 <strong>LNP 자체 확보</strong>와 <strong>특허화</strong>를 추진 중이다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></td>
+</tr>
+<tr>
+<td><strong>과학적 평가</strong></td>
+<td>UTR 특허와 AI 코돈 최적화가 단백질 발현량을 2~3배 증가시킨다는 실험 결과가 발표되었으며, 이는 mRNA 치료제 개발에서 중요한 기술적 진전으로 평가된다.</td>
+<td><a href="http://m.yakup.com/news/index.html?mode=view&amp;nid=295501" target="_blank">약업신문</a></td>
+</tr>
+<tr>
+<td><strong>시장 전망</strong></td>
+<td>mRNA 치료제 시장이 코로나19 이후 확대되고 있는 가운데, GC녹십자의 플랫폼은 <strong>항암 백신</strong>과 <strong>CAR‑T</strong> 분야에서 경쟁력을 확보할 수 있는 잠재력을 보유하고 있다.</td>
+<td><a href="http://m.yakup.com/news/index.html?mode=view&amp;nid=295501" target="_blank">약업신문</a></td>
+</tr>
+<tr>
+<td><strong>규제·제조</strong></td>
+<td>GC녹십자는 삼성 바이오로직스와 협력해 대량 생산 기반을 마련하고 있으며, 국내외 규제 승인 절차를 가속화할 계획이다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></td>
+</tr>
+<tr>
+<td><strong>비판적 시각</strong></td>
+<td>아직 임상 단계가 아니며, <strong>동물 모델</strong>에서의 효과가 인간에게 그대로 적용될지는 불확실하다. 또한, LNP 독성에 대한 장기 데이터가 부족하다.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>GC녹십자 mRNA‑LNP 플랫폼이 UTR 특허와 AI 코돈 최적화를 적용해 단백질 발현량을 향상시켰다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>자체 LNP가 세포 특이적 전달 효율을 개선하고 독성 지표가 낮다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>항암 백신 연구에서 CD8+ T 세포 반응이 강화되고 종양 크기가 감소했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>CAR‑T 세포치료제 후보가 체외에서 B세포를 99% 제거했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">네이버 뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>플랫폼이 임상 단계에서 동일한 효과를 보일 것인지에 대한 구체적 데이터는 아직 공개되지 않았다.</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>장기 독성 및 안전성 프로파일이 완전히 검증되었는지 여부는 미확인이다.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정재욱</td>
+<td>GC녹십자 R&amp;D 부문장</td>
+<td>“LNP 자체 확보와 특허화가 가능할 것으로 예상한다”는 발언으로, 플랫폼의 상업화 가능성을 강조했다.</td>
+</tr>
+<tr>
+<td>GC녹십자 대표</td>
+<td>대표이사</td>
+<td>플랫폼 성과 발표를 통해 <strong>국내 mRNA 기술 경쟁력 강화</strong>를 목표로 한다는 점을 부각했다.</td>
+</tr>
+<tr>
+<td>삼성 바이오로직스 관계자</td>
+<td>제조 파트너</td>
+<td>대량 생산 기반 확보와 규제 승인 가속화를 위한 협력 방안을 논의했다.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>임상 개발 가속화</strong><br />
+   GC녹십자는 2026년 말까지 <strong>1차 임상시험</strong>을 시작할 계획이며, 이를 위해 FDA 및 EMA 승인 절차를 준비 중이다.  </li>
+<li><strong>적응증 확대</strong><br />
+   항암 백신과 CAR‑T 외에도 <strong>희귀질환</strong> 및 <strong>백신</strong> 분야로 기술 적용 범위를 넓힐 전망이다.  </li>
+<li><strong>시장 경쟁</strong><br />
+   모더나, 화이자 등 글로벌 기업과의 경쟁 속에서, 국내외 <strong>특허 포트폴리오</strong>와 <strong>제조 인프라</strong>를 활용해 차별화 전략을 구사할 가능성이 높다.  </li>
+<li><strong>규제·안전성 이슈</strong><br />
+   LNP 독성 및 장기 안전성 데이터 확보가 필수적이며, 이는 임상 전반에 걸쳐 중요한 변수로 작용할 것이다.  </li>
+</ol>
+<p>GC녹십자의 mRNA‑LNP 플랫폼은 국내 바이오 산업의 새로운 성장 동력으로 주목받고 있으며, 향후 임상 및 상업화 단계에서의 성과가 시장과 규제 환경에 따라 크게 달라질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Sdlp0wIctro" target="_blank">mRNA and siRNA: The Next Gener...</a><a href="https://www.youtube.com/watch?v=hpZHE5sMZT8" target="_blank">LAB 05 mRNA 백신 전달 기술 mRNA Vacc...</a><a href="https://www.youtube.com/watch?v=gx_SXzksRTc" target="_blank">mRNA 백신 및 치료제 개발의 핵심기술인 LNP 기술...</a><a href="https://www.youtube.com/watch?v=ySLy8DrF8G0" target="_blank">‘모더나도 줄 설까’ 펨토바이오메드 LNP 필요 없는 ...</a><a href="https://www.youtube.com/watch?v=cClxpVFqMvo" target="_blank">LNP? 바이오 생태계 기반...무진메디 원천기술 보유...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008625898" target="_blank">GC녹십자, 'mRNA-LNP 플랫폼' 성과 발표…적응증 확장 결과 공유</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="http://m.yakup.com/news/index.html?mode=view&nid=295501" target="_blank">[약업신문]모더나, 게 섯거라 GC녹십자 mRNA 새로운 강자로 등장</a><a href="https://www.vitalkorea.kr/uploads/trend/mRNA%20%EB%B0%B1%EC%8B%A0%20%EB%B6%84%EC%84%9D%20%EB%B3%B4%EA%B3%A0%EC%84%9C_%EB%AA%A8%EB%8D%94%EB%82%98%20%EB%B0%94%EC%9D%B4%EC%98%A4%EC%95%A4%ED%85%8D%20%ED%81%90%EC%96%B4%EB%B0%B1%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%2020211128%20___%20%ED%91%9C%EC%A7%80%20final.pdf" target="_blank">백신 특허분석 보고서 mRNA</a><a href="https://pharm.edaily.co.kr/news/read?newsId=01610486638924016" target="_blank">정재욱 녹십자 R&D부문장 “LNP 자체 확보, 특허화 가능 예상”+ 팜 ...</a><a href="https://www.sisajournal-e.com/news/articleView.html?idxno=406551" target="_blank">[MBF2024] “팬데믹은 돌아온다, 韓서 백신 만들어내야” - 시사저널e</a><a href="https://www.ibs.re.kr/tech/tech-transfer/2673" target="_blank">ZCCHC2 상호작용 활용, RNA 안정성 및 mRNA 번역 증대 기술 개발</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
