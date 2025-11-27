@@ -1,5 +1,56 @@
 [
   {
+    "id": "97e450ae052c",
+    "title": "3분기 가계 실질소비 3분기째 뒷걸음…실질소득 1.5%↑",
+    "created_at": "2025-11-27T15:11:06.085390+09:00",
+    "last_updated": "2025-11-27T15:11:06.085390+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "가계소비",
+        "실질소득",
+        "민생쿠폰"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "049ff78415c2",
+    "title": "사법리스크 벗어난 트럼프...美법원, ‘대선뒤집기’ 공소기각",
+    "created_at": "2025-11-27T15:01:38.814256+09:00",
+    "last_updated": "2025-11-27T15:01:38.814256+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "국제"
+      ],
+      "content_tags": [
+        "트럼프",
+        "대선 뒤집기",
+        "조지아 법원",
+        "공소 철회",
+        "대통령 면책권"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "264a708e66b5",
     "title": "순창군, 2026년 노인일자리 사업 참여자 3,541명 모집",
     "created_at": "2025-11-27T14:50:13.381148",
