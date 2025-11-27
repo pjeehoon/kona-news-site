@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日오사카 대관람차, 낙뢰 맞고 정지…승객 20여명 9시간 고립 - 2025-11-28 00:35:45</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,오사카,대관람차,낙뢰">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="오사카,대관람차,낙뢰">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 00:35:45'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('日오사카 대관람차, 낙뢰 맞고 정지…승객 20여명 9시간 고립')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>日오사카 대관람차, 낙뢰 맞고 정지…승객 20여명 9시간 고립</h1>
+            <p>
+                분석 시간: 2025-11-28 00:35:45
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 오사카 휠 대관람차가 2025년 11월 25일 낙뢰를 맞아 정지돼 승객 20여명이 9시간 동안 고립됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 구조는 11월 27일 오전 2시 40분에 완료되었으며, 다친 사람은 없었고 운영사는 소방당국에 신고를 늦춘 것이 논란이 되고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사고는 안전 규정 준수와 비상 대응 절차의 중요성을 재조명하며, 소방본부는 즉각 신고를 요구해 향후 비상시 대응 프로토콜을 재검토할 가능성을 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/3a77a9d3405b.png" 
+                     alt="日오사카 대관람차, 낙뢰 맞고 정지…승객 20여명 9시간 고립" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>오사카 부 스이타시 엑스포시티 내 대관람차 ‘오사카 휠’이 2025년 11월 25일 오후 5시 45분 낙뢰를 맞아 정지돼 승객 20여명이 9시간 동안 고립됐다. 구조는 11월 27일 오전 2시 40분에 완료되었으며, 다친 사람은 없었다. 운영사는 소방당국에 신고를 늦춘 것으로 드러나 소방본부가 즉시 신고를 요구했다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>시간</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 25일</td>
+<td>17:45</td>
+<td>낙뢰</td>
+<td><strong>오사카 휠</strong>이 낙뢰를 맞아 정지</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486020" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>21:00</td>
+<td>구조 시도</td>
+<td>운영사가 구조를 시도했으나 소방당국에 신고를 늦춤</td>
+<td><a href="https://www.asiae.co.kr/article/2025112718481943699" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>02:40</td>
+<td>구조 완료</td>
+<td>모든 승객이 안전하게 구조됨</td>
+<td><a href="https://v.daum.net/v/202511271417592867" target="_blank">YTN</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>구조가 9시간 동안 지연된 이유</strong><br />
+운영사는 “매뉴얼에 따라 구출 작업을 할 수 있겠다고 판단해 당초에는 소방당국에 신고하지 않았다”는 입장을 밝혔다. 이 발언은 2025년 11월 26일에 공개된 기사에서 확인된다.  </p>
+<p>▶ <strong>소방본부의 비판</strong><br />
+스이타시 소방본부는 “인명에 관계될 가능성도 있어 이상이 발생했을 때는 곧바로 신고해야 한다”며 즉각적인 신고를 요구했다. 이 의견은 YTN 보도에서 인용된다.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>운영사</strong></td>
+<td>낙뢰 발생 직후 구조를 시도했으나, 매뉴얼에 따라 소방당국에 신고하지 않았다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486020" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>소방본부</strong></td>
+<td>사고 발생 시 즉시 신고가 필요하며, 신고 지연은 안전 규정 위반 가능성 있다.</td>
+<td><a href="https://v.daum.net/v/202511271417592867" target="_blank">YTN</a></td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>승객들이 9시간 동안 공중에 갇힌 상황에 대해 불안과 불만이 제기되었다.</td>
+<td><a href="https://www.etnews.com/20251127000437" target="_blank">이데일리</a></td>
+</tr>
+<tr>
+<td><strong>안전 전문가</strong></td>
+<td>낙뢰에 대비한 대관람차의 접지 및 보호 시스템이 충분히 갖추어져야 한다는 지적.</td>
+<td><a href="https://v.daum.net/v/20251127192746552" target="_blank">다음</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>1. 낙뢰로 인한 정지 (17:45) <br>2. 승객 20여명 고립 <br>3. 구조 완료 (02:40) <br>4. 다친 사람 없음 <br>5. 운영사의 신고 지연</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486020" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>1. 운영사의 구조 방식이 안전 규정을 위반했는지 여부</td>
+<td>현재까지 공식 발표가 없으며, 추정 수준</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>운영사</strong>  </li>
+<li>낙뢰 발생 직후 구조를 시도했으나 소방당국에 신고를 지연.  </li>
+<li>매뉴얼에 따라 즉시 신고하지 않았다고 주장.  </li>
+<li>
+<p>사고 이후 보도에서 책임 여부가 논란이 되고 있다.  </p>
+</li>
+<li>
+<p><strong>스이타시 소방본부</strong>  </p>
+</li>
+<li>즉각적인 신고를 요구하며, 사고 대응 프로토콜을 재검토할 가능성.  </li>
+<li>
+<p>소방당국의 지연 신고에 대해 부정적 입장.  </p>
+</li>
+<li>
+<p><strong>승객 및 일반 시민</strong>  </p>
+</li>
+<li>9시간 동안 고립된 상황에 대한 불안과 안전성에 대한 의문 제기.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>규제 강화 가능성</strong>  </li>
+<li>소방본부와 지방자치단체가 대관람차 운영에 대한 안전 규정을 강화할 가능성이 있다.  </li>
+<li><strong>법적 조치</strong>  </li>
+<li>운영사의 신고 지연이 법적 책임을 초래할 수 있으며, 벌금 또는 영업정지 등 제재가 논의될 수 있다.  </li>
+<li><strong>안전 시스템 점검</strong>  </li>
+<li>낙뢰 방지 및 정지 시 신속 대응 시스템이 추가적으로 점검·개선될 전망이다.  </li>
+<li><strong>공공 신뢰 회복</strong>  </li>
+<li>운영사와 지방자치단체가 투명한 사고 조사와 결과 공개를 통해 공공 신뢰를 회복해야 할 필요가 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>낙뢰</strong>로 인한 정지 → <strong>9시간 고립</strong> → <strong>구조 완료</strong><br />
+- <strong>운영사</strong>의 신고 지연 논란 → <strong>소방본부</strong>의 즉시 신고 요구<br />
+- <strong>안전 규정</strong> 재검토 및 <strong>법적·규제적</strong> 대응 가능성  </p>
+</blockquote>
+<p>이상으로 오사카 대관람차 낙뢰 사고에 대한 심층 분석을 마칩니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003486020" target="_blank">日오사카 대관람차, 낙뢰 맞고 정지…승객 20여명 9시간 고립</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.etnews.com/20251127000437" target="_blank">“123m 상공에서 9시간 '벌벌'”... 日 오사카 대관람차, 벼락맞아 스톱 ...</a><a href="https://v.daum.net/v/20251127192746552" target="_blank">“123m 상공에서 9시간 '벌벌'”... 日 오사카 대관람차, 벼락맞아 스톱</a><a href="https://www.asiae.co.kr/article/2025112718481943699" target="_blank">공중에 9시간 고립…벼락 맞고 멈춘 日 오사카 대관람차 - 아시아경제</a><a href="https://v.daum.net/v/20251127134016617" target="_blank">공중에 9시간 고립...일본 오사카 대관람차, 벼락 맞고 멈춰</a><a href="https://www.ytn.co.kr/_ln/0134_202511271417592867" target="_blank">일본 오사카 대관람차, 벼락 맞고 멈춰...9시간 공중에 갇힌 승객들 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
