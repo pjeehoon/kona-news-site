@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정부·삼성·현대차·SKT·네이버, 'GPU 워킹그룹' 발족 - 2025-11-27 10:28:18</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,GPU,AI,6G">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="GPU,AI,6G">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 10:28:18'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('정부·삼성·현대차·SKT·네이버, \'GPU 워킹그룹\' 발족')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>정부·삼성·현대차·SKT·네이버, 'GPU 워킹그룹' 발족</h1>
+            <p>
+                분석 시간: 2025-11-27 10:28:18
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 정부와 삼성·현대·SK텔레콤·네이버가 GPU 워킹그룹을 발족해 26만 장 NVIDIA GPU 확보·활용 방안을 논의했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 워킹그룹은 AI·6G·자율주행 등 핵심 분야에 GPU를 활용해 기술 경쟁력을 높이려는 목표를 가지고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 대규모 GPU 도입으로 국내 AI 인프라가 확대되지만 전력·냉각 비용과 환경 부담이 우려되며, 국가 경쟁력 강화에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/75f8b450471b.png" 
+                     alt="정부·삼성·현대차·SKT·네이버, 'GPU 워킹그룹' 발족" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>정부와 주요 IT·자동차·통신·인터넷 기업이 GPU 활용을 가속화하기 위해 워킹그룹을 결성했다. 26만 장의 NVIDIA GPU를 도입해 AI·6G·자율주행 등 핵심 기술을 한데 모으는 가운데, 산업계와 학계의 기대와 우려가 동시에 제기되고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 10월 30일</td>
+<td>엔비디아 25주년 행사에서 삼성·현대·SK·네이버 대표들이 참석</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>과학기술정보통신부가 <strong>GPU 워킹그룹</strong>을 발족하고, <strong>26만 장</strong> GPU 확보·활용 계획을 논의</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>워킹그룹 멤버: 류제명 2차관, 송용호 삼성전자 부사장, 진은숙 현대자동차 부사장, 유경상 SK텔레콤 AI CIC장, 김유원 네이버클라우드 대표</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>GPU 워킹그룹</strong>은 정부와 4개 대기업이 공동으로 설립해 AI·6G·자율주행 등 핵심 분야에서 GPU 활용 방안을 모색한다.<br />
+▶ <strong>26만 장</strong>의 NVIDIA GPU가 도입될 예정이며, 이는 국내 AI 인프라를 크게 확대할 전망이다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>산업계의 기대</h3>
+<ul>
+<li><strong>삼성전자</strong>는 GPU를 활용해 반도체 설계·시뮬레이션 속도를 높이고, <strong>현대자동차</strong>는 자율주행 알고리즘 학습에 활용할 계획이다.  </li>
+<li><strong>SK텔레콤</strong>은 AI‑RAN(인공지능 기반 무선접속망) 기술에 GPU를 적용해 6G 시대 대비를 가속화하려 한다.  </li>
+<li><strong>네이버</strong>는 클라우드 서비스에 GPU를 확대 배치해 AI 서비스 품질을 높이려는 의지를 밝혔다.  </li>
+</ul>
+<h3>학계와 전문가의 우려</h3>
+<ul>
+<li><strong>전문가들은</strong> GPU 대규모 도입이 전력 소비와 냉각 비용을 크게 증가시킬 수 있다고 지적했다.  </li>
+<li><strong>환경 단체</strong>는 대규모 GPU 사용이 탄소 배출량을 늘릴 가능성이 있어 지속가능성 논의가 필요하다고 주장했다.  </li>
+<li><strong>산업계 내부</strong>에서는 GPU 공급망 불안정이 프로젝트 일정에 영향을 줄 수 있다는 우려가 제기되었다.</li>
+</ul>
+<h3>정책적 시사점</h3>
+<ul>
+<li>과기정통부는 <strong>정부 주도</strong>로 AI 인프라를 강화하고, <strong>산업계와 협력</strong>해 기술 격차를 해소하려는 전략을 내세웠다.  </li>
+<li><strong>AI‑RAN</strong>과 같은 차세대 통신 기술에 GPU를 활용함으로써 <strong>국가 경쟁력</strong>을 높이려는 의도도 명확히 드러났다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>26만 장의 NVIDIA GPU 도입 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560662" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>워킹그룹 멤버 명단</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560662" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 10월 30일 엔비디아 행사 참석</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560662" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>GPU 도입 이후 AI 성능 향상 정도</td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>GPU 공급망 안정성에 대한 구체적 계획</td>
+<td>아직 공개되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>류제명 2차관</strong> (과기정통부) – 정부 차원의 AI 인프라 확대를 주도, 산업계와의 협력 조율  </li>
+<li><strong>송용호 부사장</strong> (삼성전자) – 반도체 설계·시뮬레이션에 GPU 활용, 기업 경쟁력 강화  </li>
+<li><strong>진은숙 부사장</strong> (현대자동차) – 자율주행 AI 학습에 GPU 도입, 차량 AI 성능 향상  </li>
+<li><strong>유경상 장</strong> (SK텔레콤 AI CIC) – AI‑RAN 기술 개발, 6G 대비  </li>
+<li><strong>김유원 대표</strong> (네이버클라우드) – 클라우드 AI 서비스 확장, 고객 만족도 제고  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2026년</strong>까지 GPU 인프라를 완전 가동하고, AI·6G·자율주행 등 핵심 분야에서 실질적 성과를 도출할 것으로 예상된다.  </li>
+<li><strong>산업계와 정부</strong>는 GPU 활용에 따른 전력·환경 문제를 해결하기 위해 <strong>친환경 냉각 기술</strong> 및 <strong>에너지 효율 개선</strong> 방안을 모색할 전망이다.  </li>
+<li><strong>공급망 리스크</strong>를 최소화하기 위해 <strong>국내 GPU 생산 확대</strong>와 <strong>다양한 공급업체 확보</strong>가 시급한 과제로 부각된다.  </li>
+</ul>
+<p><strong>전반적으로</strong> GPU 워킹그룹은 한국의 AI·6G 경쟁력을 한층 강화할 수 있는 기반을 마련하는 동시에, 에너지·환경 문제와 공급망 리스크를 함께 해결해야 하는 도전 과제를 안고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004560662" target="_blank">엔비디아 GPU 26만장 활용전략…삼성·현대·SK·네이버 머리 맞댄다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.etnews.com/20251101000095" target="_blank">엔비디아·삼성·이통3사, 피지컬AI 시대 겨냥 AI-RAN 분야 전방위 협력 ...</a><a href="https://www.jol.at/?GameID=2025-11-18/gevdfe.html" target="_blank">kbo.bet 에 대한 궁금증을 해소하는 완벽한 가이드 - 최신 트렌드</a><a href="https://www.thelec.kr/news/articleView.html?idxno=43124" target="_blank">KT, 엔비디아·삼성 등과 'AI-RAN 동맹'... 6G 시대 포석 - 전자부품 전문 ....</a><a href="https://www.ddaily.co.kr/page/view/2025112520171227716" target="_blank">"GPU는 26만장 샀는데 굴릴 사람은?"... 韓 AI의 `5년 승부수` - 디지털 .....</a><a href="https://ipa.gist.ac.kr/_prog/download/index.php?d_type=1&site_dvs_cd=kr&filename=20250912134815_00zyfga3okctf08iw7ahdq82jqsi4l.pdf&file_realname=%EC%A0%84%EA%B8%B0%EC%A0%84%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%B5%ED%95%99%EA%B3%BC(Prof.%EA%B9%80%EC%9C%A4%EC%88%98).pdf&func_gbn_cd=e_mentor" target="_blank">전력시스템 연구실</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
