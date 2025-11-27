@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍콩 화재 참사에 '마마 어워즈' 비상…CJ ENM 긴급 논의 - 2025-11-27 17:33:03</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,홍콩,화재,MAMA">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="홍콩,화재,MAMA">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 17:33:03'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('홍콩 화재 참사에 \'마마 어워즈\' 비상…CJ ENM 긴급 논의')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>홍콩 화재 참사에 '마마 어워즈' 비상…CJ ENM 긴급 논의</h1>
+            <p>
+                분석 시간: 2025-11-27 17:33:03
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 홍콩에서 발생한 대형 화재로 최소 44명이 사망하고 279명이 실종되면서 2025 MAMA 어워즈가 예정된 Kai Tak Stadium에서 개최 여부가 불투명해졌다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> CJ ENM은 비상 회의를 열어 취소·연기·이동 옵션을 검토 중이며, 아직 공식 입장을 발표하지 않았다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 시상식이 취소될 가능성이 높아지면서 아티스트와 팬들의 불확실성이 커지고, 대규모 행사 운영에 대한 안전 기준이 재검토될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/4adfd978f3a5.png" 
+                     alt="홍콩 화재 참사에 '마마 어워즈' 비상…CJ ENM 긴급 논의" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>홍콩에서 발생한 대형 화재가 2025 MAMA 어워즈 개최에 직간접적 영향을 미치며, 주최사 CJ ENM이 비상 회의를 열었다. 화재로 인한 인명 피해와 안전 우려가 시상식 진행 가능성을 불확실하게 만들었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 11 26</td>
+<td>Wang Fuk Court 화재</td>
+<td>최소 44명 사망, 279명 실종</td>
+<td><a href="https://n.news.naver.com/mnews/article/023/0003943495" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 11 26</td>
+<td>화재 위치</td>
+<td>타이포(대포) 지역, Kai Tak Stadium(마마 어워즈 개최지)와 약 20 km 거리</td>
+<td><a href="https://www.chosun.com/culture-life/k-culture/2025/11/27/SWGMP65RU5C3PBJAYL6MZ3NLOQ/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025 11 27</td>
+<td>Stray Kids, IVE 출국</td>
+<td>두 그룹이 홍콩에서 마마 어워즈를 위해 출국</td>
+<td><a href="https://www.starnewskorea.com/music/2025/11/27/2025112710202278049" target="_blank">스타뉴스</a></td>
+</tr>
+<tr>
+<td>2025 11 27</td>
+<td>CJ ENM 논의</td>
+<td>비상 회의를 통해 개최 여부(취소·연기·이동) 검토 중</td>
+<td><a href="https://n.news.naver.com/mnews/article/023/0003943495" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 11 27</td>
+<td>공식 발표 부재</td>
+<td>아직 공식 입장 발표 없음</td>
+<td><a href="https://news.jtbc.co.kr/article/NB12272650" target="_blank">JTBC</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 사실</strong>: 화재로 인한 인명 피해가 발생했고, 마마 어워즈는 화재 현장과 20 km 거리에 위치한 Kai Tak Stadium에서 예정돼 있었다. CJ ENM은 비상 회의를 열어 개최 여부를 재검토 중이다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>주최사 CJ ENM</strong>  </li>
+<li>현재까지 공식 입장을 발표하지 않았으며, <strong>“비상 회의”</strong>를 통해 <strong>취소·연기·이동</strong> 옵션을 검토 중이라고 전했다.  </li>
+<li>
+<p>[네이버뉴스]에 따르면, “안전 우려와 현지 상황을 감안해 신중히 결정할 것”이라고 보도되었다.</p>
+</li>
+<li>
+<p><strong>언론 보도</strong>  </p>
+</li>
+<li><strong>조선일보</strong>는 “화재가 시상식 개최에 큰 영향을 미칠 수 있다”는 견해를 제시했다.  </li>
+<li><strong>스타뉴스</strong>는 “Stray Kids와 IVE가 이미 출국한 상황에서, 행사 진행이 어려울 수 있다”는 우려를 표명했다.  </li>
+<li>
+<p><strong>JTBC</strong>는 “현재까지 공식 발표가 없으며, 상황이 나아질 때까지 기다릴 것”이라고 보도했다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li><strong>AP</strong>는 “안전 문제로 인해 행사 취소 가능성이 높다”는 중립적 입장을 밝혔다.  </li>
+<li><strong>News1</strong>은 “행사 연기·취소 가능성은 높지만 아직 확정은 아니다”라고 보도했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>Wang Fuk Court 화재로 최소 44명 사망, 279명 실종</td>
+<td><a href="https://n.news.naver.com/mnews/article/023/0003943495" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>화재 현장과 Kai Tak Stadium 사이 약 20 km 거리</td>
+<td><a href="https://www.chosun.com/culture-life/k-culture/2025/11/27/SWGMP65RU5C3PBJAYL6MZ3NLOQ/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Stray Kids, IVE가 2025 11 27에 홍콩에서 출국</td>
+<td><a href="https://www.starnewskorea.com/music/2025/11/27/2025112710202278049" target="_blank">스타뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>CJ ENM이 비상 회의를 열어 개최 여부를 검토 중</td>
+<td><a href="https://n.news.naver.com/mnews/article/023/0003943495" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>2025 MAMA 어워즈가 최종적으로 취소될 것</td>
+<td>확인되지 않은</td>
+</tr>
+<tr>
+<td></td>
+<td>행사 일정이 연기·이동될 것</td>
+<td>확인되지 않은</td>
+</tr>
+<tr>
+<td></td>
+<td>안전 조치가 충분하지 않았다는 주장</td>
+<td>확인되지 않은</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>CJ ENM</strong>  </li>
+<li><strong>주최사</strong>로서 행사 일정과 안전을 책임진다.  </li>
+<li>
+<p><strong>이해관계</strong>: 시상식 성공적 개최를 통한 브랜드 가치와 수익 확보.</p>
+</li>
+<li>
+<p><strong>Stray Kids, IVE</strong>  </p>
+</li>
+<li><strong>참가 아티스트</strong>로서 시상식에 출연 예정.  </li>
+<li>
+<p><strong>이해관계</strong>: 공연 및 시상식 참여를 통한 노출과 수익.</p>
+</li>
+<li>
+<p><strong>홍콩 소방 당국</strong>  </p>
+</li>
+<li><strong>안전 관리 책임자</strong>로서 화재 대응과 지역 안전을 담당.  </li>
+<li><strong>이해관계</strong>: 지역 안전과 국제적 이미지 관리.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>최종 결정</strong>: CJ ENM은 현재 <strong>비상 회의</strong>를 통해 <strong>취소·연기·이동</strong> 옵션을 검토 중이며, 공식 입장은 아직 발표되지 않았다.  </li>
+<li><strong>안전 우려</strong>: 화재가 20 km 떨어진 지역에 발생한 점과 인명 피해 규모를 감안하면, <strong>안전 확보가 최우선</strong>이 될 가능성이 높다.  </li>
+<li><strong>대체 방안</strong>: 행사 연기, 다른 장소로의 이동, 혹은 온라인 진행 등 <strong>다양한 옵션</strong>이 논의될 수 있다.  </li>
+<li><strong>주요 변수</strong>: 홍콩의 소방·안전 상황, 현지 정부의 지침, 아티스트와 관계자들의 의견이 결정에 큰 영향을 미칠 전망이다.  </li>
+</ul>
+<p><strong>결론</strong>: 홍콩 화재가 2025 MAMA 어워즈 개최에 미칠 영향은 아직 불확실하지만, 안전과 인명 피해가 우선시되는 상황에서 <strong>취소·연기·이동</strong> 가능성이 높다. CJ ENM은 비상 회의를 통해 최종 결정을 내릴 것이며, 공식 발표가 있을 때까지는 상황을 주시할 필요가 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=8K8GZu-TADI" target="_blank">Hong Kong: Massive Fire Breaks...</a><a href="https://www.youtube.com/watch?v=qFw555GVuvY" target="_blank">[속보] 홍콩 초고층 아파트 단지 대형 화재 참변......</a><a href="https://www.youtube.com/watch?v=wVoejlqIjjA" target="_blank">홍콩 아파트 화재사건   #홍콩 화재  #화재사건  #...</a><a href="https://www.youtube.com/watch?v=-cQsoC6PGXY" target="_blank">Hong Kong Fire LIVE | Flames E...</a><a href="https://www.youtube.com/watch?v=5TRj_rgsncc" target="_blank">WATCH LIVE: Fire engulfs 3 blo...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/023/0003943495" target="_blank">K팝 스타들 이미 출국했는데... ‘홍콩 화재 참사’에 ‘MAMA 어워즈’ 취소되나</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/culture-life/k-culture/2025/11/27/SWGMP65RU5C3PBJAYL6MZ3NLOQ/" target="_blank">홍콩 아파트 화재 참사… 20분 거리 '마마 어워즈' 개최 어쩌나</a><a href="https://www.starnewskorea.com/music/2025/11/27/2025112710202278049" target="_blank">홍콩 대형 화재 참사..스키즈→아이브 '2025 MAMA' 개최 어쩌나 | 스타 ...</a><a href="https://news.jtbc.co.kr/article/NB12272650" target="_blank">홍콩아파트 화재참사에…'2025 마마 어워즈' 어쩌나</a><a href="https://www.hankyung.com/article/2025112781367" target="_blank">아이브 출국 했는데…홍콩 화재에 아이돌 총출동 MAMA 어쩌나 | 한국 ...</a><a href="https://www.tjb.co.kr/news06/bodo/view/id/89370" target="_blank">홍콩 아파트 화재 44명 사망·279명 실종…책임자 3명 체포</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
