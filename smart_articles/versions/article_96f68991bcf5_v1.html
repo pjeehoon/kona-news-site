@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산 사하경찰서 생활 폭력 사범 626명 검거, 30명 구속 송치 - 2025-11-27 19:58:24</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,부산,사하경찰,생활폭력">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="부산,사하경찰,생활폭력">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 19:58:24'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('부산 사하경찰서 생활 폭력 사범 626명 검거, 30명 구속 송치')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>부산 사하경찰서 생활 폭력 사범 626명 검거, 30명 구속 송치</h1>
+            <p>
+                분석 시간: 2025-11-27 19:58:24
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 부산 사하경찰서는 지난 13개월 동안 생활 폭력 범죄와 관련해 626명을 검거하고 30명을 검찰에 구속·송치했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 주요 사건으로는 20대 유튜버의 시비·폭행, 60대 주점에서의 업무 방해·협박, 30대의 허위 자살 신고로 인한 공무집행 방해 등이 포함돼 지역 사회의 일상 안전에 대한 우려가 커졌다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이러한 대규모 검거는 부산 지역의 생활 안전 강화를 위한 경찰의 적극적 대응을 보여주며, 향후 재범 방지와 예방 캠페인 강화가 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/96f68991bcf5.png" 
+                     alt="부산 사하경찰서 생활 폭력 사범 626명 검거, 30명 구속 송치" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>부산 사하경찰서가 지난 13개월 동안 생활 폭력 범죄와 관련해 626명을 검거하고, 그 중 30명을 검찰에 구속·송치했다.</strong><br />
+주요 사건은 20대 유튜버의 시비·폭행, 60대 주점에서의 업무 방해·협박, 30대 허위 자살 신고로 인한 공무집행 방해 등으로, 지역 사회의 일상 안전에 대한 우려가 커지고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 1월 15일</strong> – 20대 A가 사하구 유흥가에서 행인에게 시비를 걸고 상해·재물손괴 혐의가 발생.  </li>
+<li><strong>▶ 2025년 4월 25일</strong> – 60대 B가 주점에서 업무 방해·협박 및 재물 훼손 혐의가 발생.  </li>
+<li><strong>▶ 2025년 4월 28일</strong> – 30대 C가 허위 자살 신고를 해 40여 명의 소방·경찰이 출동하도록 유도, 수색 방해 혐의가 발생.  </li>
+<li><strong>▶ 2025년 11월 16일</strong> – 부산 사하경찰서가 13개월간 생활 폭력 범죄와 관련해 <strong>626명을 검거</strong>하고, <strong>30명을 검찰에 구속·송치</strong>했다는 사실을 공식 발표.  </li>
+<li>출처: <a href="https://n.news.naver.com/mnews/article/003/0013626561" target="_blank">네이버뉴스</a>  </li>
+<li><strong>▶ 2025년 11월 16일</strong> – 같은 날 노컷뉴스가 사건을 보도하며, “생활 폭력 사범 626명 검거”라는 제목으로 보도.  </li>
+<li>출처: <a href="https://www.nocutnews.co.kr/news/6434963" target="_blank">노컷뉴스</a>  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>부산 사하경찰서</td>
+<td>중립적</td>
+<td>“생활 폭력은 경미해 보이지만 재범 방지를 위해 엄정 수사와 후속 조치가 필요”라고 강조.</td>
+</tr>
+<tr>
+<td>노컷뉴스</td>
+<td>보도</td>
+<td>“시민 일상 위협하는 ‘생활 폭력’…부산서 무더기 검거”라며, 지역 주민들의 불안감을 부각.</td>
+</tr>
+<tr>
+<td>경찰청 공식 문서</td>
+<td>통계</td>
+<td>부산 사하경찰서가 13개월 동안 생활 범죄를 포함한 626명을 검거한 사실을 기록.</td>
+</tr>
+<tr>
+<td>지역 주민 인터뷰</td>
+<td>우려</td>
+<td>“이런 사건이 계속된다면 일상생활이 불안해진다”는 목소리.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>정책적 시각</strong>: 부산 사하경찰서는 생활 범죄 예방을 위해 ‘생활안전과’와 ‘형사팀’을 강화하고, 지역사회와 협력해 예방 캠페인을 진행 중이라고 밝혔다.  </li>
+<li><strong>사회적 시각</strong>: 노컷뉴스는 ‘생활 폭력’이 단순한 경미범죄가 아니라 일상 생활의 안전을 위협하는 범죄임을 강조하며, 경찰의 적극적 대응을 요구했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>부산 사하경찰서가 13개월 동안 626명을 검거하고 30명을 구속·송치</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013626561" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>A(20대) 사건은 2025년 1월 15일 발생</td>
+<td><a href="https://www.nocutnews.co.kr/news/6434963" target="_blank">노컷뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>B(60대) 사건은 2025년 4월 25일 발생</td>
+<td><a href="https://www.nocutnews.co.kr/news/6434963" target="_blank">노컷뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>C(30대) 사건은 2025년 4월 28일 발생</td>
+<td><a href="https://www.nocutnews.co.kr/news/6434963" target="_blank">노컷뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>사건 발생 시점 이후의 재범 여부</td>
+<td>현재까지 확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>경찰 내부에서 진행 중인 추가 수사 계획</td>
+<td>아직 공개되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>연령</th>
+<th>사건</th>
+<th>현재 상황</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>20대</td>
+<td>유흥가에서 시비·폭행</td>
+<td>구속·송치 예정</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>60대</td>
+<td>주점에서 업무 방해·협박</td>
+<td>구속·송치 예정</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>30대</td>
+<td>허위 자살 신고·공무집행 방해</td>
+<td>구속·송치 예정</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>관계자</strong>: 부산 사하경찰서 관계자는 “검거·구속·송치가 끝난 후에도 재범 방지를 위해 교육·상담 프로그램을 운영할 예정”이라고 밝혔다.  </li>
+<li><strong>법원</strong>: 검찰에 송치된 사건은 현재 기소 절차를 진행 중이며, 재판 일정은 아직 확정되지 않았다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>경찰의 지속적 대응</strong><br />
+   - 부산 사하경찰서는 생활 폭력 예방을 위해 지역사회와 협력한 교육 프로그램을 확대할 계획이다.<br />
+   - 경찰청은 ‘생활안전과’와 ‘형사팀’의 인력 및 장비를 추가 배치할 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>법적·제도적 개선</strong><br />
+   - 생활 폭력에 대한 법적 처벌 강화 논의가 이어질 전망이다.<br />
+   - 재범 방지를 위해 피해자 보호 및 가해자 재활 프로그램이 강화될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>지역사회 반응</strong><br />
+   - 주민들은 경찰의 적극적 대응에 긍정적 반응을 보이면서도, 장기적인 안전 보장을 요구하고 있다.<br />
+   - 시민단체는 “생활 폭력 예방 교육이 필요하다”는 입장을 지속적으로 내세울 전망이다.</p>
+</li>
+<li>
+<p><strong>미래 연구</strong><br />
+   - 생활 폭력 발생 원인과 예방 효과를 분석한 연구가 필요하며, 부산 사하경찰서와 학계가 협력할 가능성이 있다.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>▶</strong> 부산 사하경찰서의 이번 검거·구속·송치가 지역 사회의 일상 안전에 미칠 긍정적 영향과 동시에 재범 방지를 위한 장기적 전략이 필요함을 시사한다.  </p>
+</blockquote>
+<hr />
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/003/0013626561" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.nocutnews.co.kr/news/6434963" target="_blank">노컷뉴스</a><br />
+- <a href="https://www.police.go.kr/component/file/ND_fileDownload.do?q_fileSn=151907&amp;q_fileId=26a14b8f-154f-4456-87c9-9f703cd9efd7" target="_blank">부산경찰서</a><br />
+- <a href="https://www.bspolice.kr/board/ShowFile.do?siteId=seobu&amp;fidx=39523&amp;boardId=UXBID_00000000000322&amp;idx=55178" target="_blank">부산경찰서</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013626561" target="_blank">부산 사하경찰서 생활 폭력 사범 626명 검거, 30명 구속 송치</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.nocutnews.co.kr/news/6434963" target="_blank">시민 일상 위협하는 '생활 폭력'…부산서 무더기 검거 - 노컷뉴스</a><a href="https://www.police.go.kr/component/file/ND_fileDownload.do?q_fileSn=151907&q_fileId=26a14b8f-154f-4456-87c9-9f703cd9efd7" target="_blank">제목없음</a><a href="https://www.bspolice.go.kr/board/ShowFile.do?siteId=seobu&fidx=39523&boardId=UXBID_00000000000322&idx=55178" target="_blank">제목없음</a><a href="https://www.police.go.kr/component/file/ND_fileDownload.do?q_fileSn=98302&q_fileId=BBS_201709070321454271_1" target="_blank">경찰의 날 등 유공 정부포상 후보자 명단</a><a href="https://police.go.kr/component/file/ND_fileDownload.do?q_fileSn=157765&q_fileId=54a6836f-e232-469f-ab45-a29a1c4de952" target="_blank">제목없음</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
