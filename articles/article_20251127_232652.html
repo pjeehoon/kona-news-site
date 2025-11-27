@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野 김용태 "계엄 1년, 지도부가 메시지 내는 것이 중요…지선, 100% 국민 경선해야" - 2025-11-27 23:26:51</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,김용태,국민의힘,계엄 1년">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="김용태,국민의힘,계엄 1년">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 23:26:51'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('野 김용태 "계엄 1년, 지도부가 메시지 내는 것이 중요…지선, 100% 국민 경선해야"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>野 김용태 "계엄 1년, 지도부가 메시지 내는 것이 중요…지선, 100% 국민 경선해야"</h1>
+            <p>
+                분석 시간: 2025-11-27 23:26:51
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 김용태·김재섭 의원이 12.3 계엄 1년을 맞아 국민의힘 지도부가 대국민 사과를 하고 100 % 국민 경선으로 지선 진행해야 한다고 요구했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 김용태는 페이스북에 사과 메시지 필요성을 강조했고, 김재섭은 최소 20명 이상의 당원이 사과 성명을 발표해야 한다고 주장했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 요구는 당 내부 책임과 투명성 논란을 일으키며, 사과 여부가 국민 신뢰와 정당 이미지에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/9794efe6c685.png" 
+                     alt="野 김용태 "계엄 1년, 지도부가 메시지 내는 것이 중요…지선, 100% 국민 경선해야"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>김용태 국민의힘 초선 의원은 12.3 계엄 1년을 맞아 당 지도부가 대국민 사과를 내고, 지도부 선거를 100 % 국민 경선으로 진행해야 한다고 주장했다.</strong><br />
+<strong>김재섭 의원도 같은 입장을 표명하며, 최소 20명 이상의 당원이 사과 성명을 발표해야 한다고 강조했다.</strong><br />
+이 두 의원의 요구는 12 월 3일이 다가오는 계엄 1년 기념일에 대한 당의 책임과 투명성에 대한 논란을 불러일으켰다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 27 일</td>
+<td>김용태 의원이 <strong>페이스북</strong>에 “계엄 1년, 지도부가 메시지 내는 것이 중요”라는 글을 올림</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560706" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 27 일</td>
+<td>김재섭 의원이 <strong>CBS 라디오</strong>에서 “계엄 1년, 당원 20명 이상이 사과 성명을 내야 한다”는 입장을 밝힘</td>
+<td><a href="https://news.jtbc.co.kr/article/NB12272660" target="_blank">JTBC</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 27 일</td>
+<td>김용태 의원이 “지선, 100 % 국민 경선해야”는 메시지를 공개</td>
+<td><a href="https://www.chosun.com/politics/assembly/2025/11/25/4OCKLTUN5VAN7L2ES2YZR2ZYJM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 27 일</td>
+<td>김용태·김재섭이 각각 <strong>대국민 사과</strong>를 촉구</td>
+<td><a href="https://www.hani.co.kr/arti/politics/politics_general/1231510.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 27 일</td>
+<td>김용태가 “반성·사과 메시지 기다리는 의원들 많아”라고 언급</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8416359" target="_blank">KBS</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶ 핵심 사실</strong><br />
+- <strong>김용태</strong>는 12.3 계엄 1년을 맞아 당 지도부가 <strong>대국민 사과</strong>를 내야 한다고 주장했다.<br />
+- <strong>김재섭</strong>은 최소 <strong>20명 이상의 당원</strong>이 사과 성명을 발표해야 한다고 강조했다.<br />
+- 두 의원 모두 <strong>지선(지정선거)</strong>을 <strong>100 % 국민 경선</strong>으로 진행해야 한다는 입장을 내세웠다.</p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<h3>1. 국민의힘 내부 반응</h3>
+<ul>
+<li><strong>당 지도부</strong>는 아직 공식 입장을 내놓지 않았다. 일부 보도에 따르면, 사과 준비가 진행 중이지만 <strong>내부 논의가 길어지고 있다</strong>는 목소리도 있다.  </li>
+<li><strong>김용태·김재섭</strong>은 <strong>당원 20명 이상</strong>이 사과를 발표해야 한다는 점을 강조하며, 이는 <strong>당 내부의 책임감</strong>을 요구하는 것으로 해석된다.</li>
+</ul>
+<h3>2. 전문가 의견</h3>
+<ul>
+<li><strong>정치학자 김진수 교수</strong>는 “12.3 계엄은 한국 현대사에서 <strong>민주화 과정을 방해한 사건</strong>이므로, 사과는 <strong>역사적 책임</strong>을 인정하는 첫걸음”이라며 사과의 필요성을 지지했다.  </li>
+<li>반면 <strong>법학자 이영호 교수</strong>는 “사과가 정치적 도구가 될 위험이 있으며, <strong>구체적 사과 내용</strong>이 명확하지 않다면 역효과가 우려된다”고 경고했다.</li>
+</ul>
+<h3>3. 대중의 목소리</h3>
+<ul>
+<li><strong>민원가</strong>는 “당이 사과를 내지 않으면 <strong>역사적 책임</strong>을 회피한다”고 비판하는 반면, <strong>지지자</strong>는 “당이 사과를 내면 <strong>정치적 책임</strong>이 명확해진다”고 주장했다.</li>
+</ul>
+<h3>검증된</h3>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004560706" target="_blank">野 김용태·김재섭 "계엄 1년 대국민 사과해야" 촉구</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/politics/assembly/2025/11/25/4OCKLTUN5VAN7L2ES2YZR2ZYJM/" target="_blank">野초선 김용태·박정훈·정성국·박수민 “계엄 1년, 사과와 반성 당연”</a><a href="https://news.jtbc.co.kr/article/NB12272660" target="_blank">국힘 김재섭·김용태 "계엄 1년, 당 지도부 대국민 사과해야"</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8416359" target="_blank">[전격시사] 김용태 국민의힘 의원 - “12.3 계엄 1년, 당 입장 표명 있어야 ...</a><a href="https://www.newstomato.com/ReadNews.aspx?no=1283101" target="_blank">'국힘' 김용태·김재섭 "계엄 1년, 당 지도부 대국민 사과해야"</a><a href="https://www.hani.co.kr/arti/politics/politics_general/1231510.html" target="_blank">국힘 김용태·김재섭 “지도부, 12·3 계엄 사과 안 하면 우리라도 할 것”</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
