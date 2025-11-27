@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구미∼군위 고속도로·대구 도매시장 현대화 '타당성 확보' - 2025-11-27 21:30:32</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,구미,군위,대구">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="구미,군위,대구">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 21:30:32'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('구미∼군위 고속도로·대구 도매시장 현대화 \'타당성 확보\'')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>구미∼군위 고속도로·대구 도매시장 현대화 '타당성 확보'</h1>
+            <p>
+                분석 시간: 2025-11-27 21:30:32
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 구미-군위 고속도로와 대구 북부 농산물 도매시장 현대화 사업이 2025년 11월 27일 재정사업평가위원회에서 예비타당성조사와 타당성재조사를 통과했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 두 사업은 경상북도와 대구의 교통망을 강화하고 물류 효율성을 높여 지역 경제 활성화와 물류 인프라 개선을 목표로 한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 승인을 통해 실질적 실행 단계에 진입하게 되어 부동산 가치 상승과 물류 비용 절감 등 긍정적 효과가 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/10205b93ecaf.png" 
+                     alt="구미∼군위 고속도로·대구 도매시장 현대화 '타당성 확보'" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>구미와 군위 사이에 신설되는 고속도로와 대구 북구에 위치한 농산물 도매시장의 현대화 사업이 2025년 11월 27일 재정사업평가위원회에서 예비타당성조사와 타당성재조사를 통과했다. 두 사업은 지역 교통망 강화와 물류 효율성 제고를 목표로 하며, 정부의 대규모 재정사업 추진 속도에 따라 실질적 실행 단계에 진입한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 27일</td>
+<td>재정사업평가위원회 의결</td>
+<td>구미-군위 고속도로 신설 사업과 대구 북부 농산물 도매시장 시설 현대화 사업이 예비타당성조사와 타당성재조사를 통과</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008629268" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>재정사업평가위원회 의결</td>
+<td>수도권 감염병 전문병원 건립 사업도 함께 통과</td>
+<td><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148955521&amp;pWise=sub&amp;pWiseSub=C1" target="_blank">코리아.kr</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>재정사업평가위원회 의결</td>
+<td>세 사업이 동일한 회의에서 통과</td>
+<td><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=04218086642369984" target="_blank">이데일리</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>재정사업평가위원회 의결</td>
+<td>세 사업이 한 회의에서 예타 통과</td>
+<td><a href="https://www.news1.kr/economy/trend/5990405" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>재정사업평가위원회 의결</td>
+<td>세 사업이 한 회의에서 예타 통과</td>
+<td><a href="https://www.moef.go.kr/nw/nes/detailNesDtaView.do?searchBbsId1=MOSFBBS_000000000028&amp;searchNttId1=MOSF_000000000075936&amp;menuNo=4010100" target="_blank">모에프</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>구미-군위 고속도로</strong>: 총 12.5km 규모의 고속도로를 신설해 경상북도 내 교통망을 강화하고, 군위와 구미를 연결해 물류 흐름을 개선한다.<br />
+▶ <strong>대구 북부 농산물 도매시장 현대화</strong>: 대구 북구에 위치한 기존 도매시장을 현대화하고, 새로 건설되는 시설로 이전해 물류 효율성을 높인다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>정부·관계자 입장</h3>
+<p>정부 관계자는 &ldquo;예비타당성조사와 타당성재조사를 통과한 세 사업은 지역 경제 활성화와 국가 물류 인프라 강화에 기여할 것&rdquo;이라며, &ldquo;공공재정의 효율적 운용을 위해 철저한 검증 과정을 거쳤다&rdquo;고 전했다.<br />
+<a href="https://n.news.naver.com/mnews/article/421/0008629268" target="_blank">네이버뉴스</a></p>
+<h3>지역 주민·물류업계 의견</h3>
+<ul>
+<li><strong>구미·군위 지역 주민</strong>: 고속도로 건설로 인한 교통 편의와 부동산 가치 상승을 기대하지만, 환경 파괴와 소음 문제를 우려한다.  </li>
+<li><strong>대구 물류업계</strong>: 도매시장 현대화가 물류 비용 절감과 물류 효율성을 높일 것으로 보며, 신축 시설에 대한 투자 회수 기간이 짧아질 것으로 예상한다.<br />
+<a href="https://marketin.edaily.co.kr/News/ReadE?newsId=04218086642369984" target="_blank">이데일리</a></li>
+</ul>
+<h3>전문가 시각</h3>
+<p>교통공학자 김형석 교수는 &ldquo;구미-군위 고속도로는 기존 도로망과의 연계성이 높아 지역 내 물류 흐름을 크게 개선할 것으로 보인다&rdquo;라며, &ldquo;그러나 환경영향평가가 충분히 반영되었는지 추가 검토가 필요하다&rdquo;고 지적했다.<br />
+<a href="https://www.news1.kr/economy/trend/5990405" target="_blank">뉴스1</a></p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>세 사업이 2025년 11월 27일 재정사업평가위원회에서 예타 통과</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008629268" target="_blank">네이버뉴스</a>, <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148955521&amp;pWise=sub&amp;pWiseSub=C1" target="_blank">코리아.kr</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>고속도로 건설로 인한 구체적 환경 영향 및 소음 수준</td>
+<td>현재까지 공식 발표 자료에 구체적 수치가 없음. 추가 자료 공개 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>정부 재정사업평가위원회 위원</strong>: 재정 및 인프라 프로젝트의 타당성을 평가, 재정 적정성 확보.  </li>
+<li><strong>경상북도 구미·군위 시청</strong>: 지역 경제 활성화와 교통 인프라 개선을 통한 주민 생활 편의 향상.  </li>
+<li><strong>대구 북구청</strong>: 도매시장 현대화를 통해 물류 효율성 제고 및 지역 경제 활성화.  </li>
+<li><strong>물류업계 대표</strong>: 물류 비용 절감과 물류 흐름 개선에 관심.  </li>
+<li><strong>환경단체</strong>: 프로젝트의 환경영향에 대한 감시 및 평가.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>구미-군위 고속도로</strong>: 예타 통과 이후 시공 단계에 진입할 가능성이 높으며, 2026년 상반기부터 착공이 예상된다. 시공 기간은 약 3년으로 예상된다.  </li>
+<li><strong>대구 북부 농산물 도매시장 현대화</strong>: 시공 착공은 2026년 말에 시작될 전망이며, 완공은 2028년 초에 완료될 것으로 보인다.  </li>
+<li><strong>수도권 감염병 전문병원</strong>: 세 사업과 함께 통과한 만큼, 병원 건립도 같은 시기에 착공될 가능성이 있다.  </li>
+<li><strong>정책적 영향</strong>: 세 사업의 성공적 실행은 지역 물류 인프라 강화와 물류비 절감에 기여하며, 장기적으로는 지역 경제 성장에 긍정적 영향을 미칠 것으로 예상된다.  </li>
+</ul>
+<p><strong>주요 시사점</strong><br />
+- 세 사업이 동시에 예타 통과한 것은 정부의 대규모 재정사업 추진 속도를 보여준다.<br />
+- 지역 주민과 물류업계는 긍정적 기대와 동시에 환경·소음 문제에 대한 우려를 표명하고 있다.<br />
+- 향후 시공 단계에서의 환경영향평가와 주민 의견 수렴이 중요할 것으로 보인다.  </p>
+<blockquote>
+<p><strong>참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/421/0008629268" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148955521&amp;pWise=sub&amp;pWiseSub=C1" target="_blank">코리아.kr</a><br />
+- <a href="https://marketin.edaily.co.kr/News/ReadE?newsId=04218086642369984" target="_blank">이데일리</a><br />
+- <a href="https://www.news1.kr/economy/trend/5990405" target="_blank">뉴스1</a><br />
+- <a href="https://www.moef.go.kr/nw/nes/detailNesDtaView.do?searchBbsId1=MOSFBBS_000000000028&amp;searchNttId1=MOSF_000000000075936&amp;menuNo=4010100" target="_blank">모에프</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=EQDLv-M8t34" target="_blank">농수산물도매시장 현대화 사업 재검토?/HCN금호방송</a><a href="https://www.youtube.com/watch?v=FJwzHUZwKKw" target="_blank">[영상]10년째 지지부진 '대구농수산물도매시장 시설현대...</a><a href="https://www.youtube.com/watch?v=LLxA5hNK-jo" target="_blank">농·수산물도매시장 현대화, 결국 재검토 수순/HCN금호...</a><a href="https://www.youtube.com/watch?v=o75y5czb4Lo" target="_blank">대구농수산물도매시장 시설현대화 타결</a><a href="https://www.youtube.com/watch?v=EgGoepIavo8" target="_blank">[송년기획] 농·수산물도매시장 현대화사업.. 결국 백지...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008629268" target="_blank">수도권 감염병 전문병원·구미-군위 고속道 등 3개 사업 예타 통과</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.moef.go.kr/nw/nes/detailNesDtaView.do?searchBbsId1=MOSFBBS_000000000028&searchNttId1=MOSF_000000000075936&menuNo=4010100" target="_blank">수도권 감염병 전문병원 건립, 구미-군위 고속도로 신설, 대구 농산물 ...</a><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148955521&pWise=sub&pWiseSub=C1" target="_blank">수도권 감염병전문병원 건립 등 예타 통과…대형 재정사업 속도 - 정책 ...</a><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=04218086642369984" target="_blank">수도권 감염병 전문병원·구미-군위 고속道 등 예타 통과</a><a href="https://www.news1.kr/economy/trend/5990405" target="_blank">수도권 감염병 전문병원·구미-군위 고속道 등 3개 사업 예타 통과 - 뉴스1</a><a href="https://v.daum.net/v/20251127172314900" target="_blank">분당 서울대병원에 '감염병 전문병원' 들어선다···구미·군위 고속도로 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
