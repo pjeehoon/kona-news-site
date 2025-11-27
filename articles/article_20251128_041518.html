@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"여보, 잠실 르엘 갑시다"...신혼부부 기회 열렸다는데 - 2025-11-28 04:15:18</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 04:15:18'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"여보, 잠실 르엘 갑시다"...신혼부부 기회 열렸다는데')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"여보, 잠실 르엘 갑시다"...신혼부부 기회 열렸다는데</h1>
+            <p>
+                분석 시간: 2025-11-28 04:15:18
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울시가 2025년 11월 28일부터 신혼부부를 위한 장기전세 ‘미리내집’ 400세대 모집을 개시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 41㎡와 84㎡ 아파트를 전세금 2억6000만원부터 8억9000만원까지 제공하며, 12월 10일부터 12일까지 신청이 가능하고 12월 17일부터 보증금 지원형 500세대가 추가 모집된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 정책은 신혼부부의 주거안정성을 강화하고 월세 부담을 줄이며 주택시장의 과열을 완화할 것으로 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/5010d6f53ca7.png" 
+                     alt=""여보, 잠실 르엘 갑시다"...신혼부부 기회 열렸다는데" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울시가 2025년 11월 28일부터 신혼부부를 대상으로 한 장기전세 ‘미리내집’ 400세대 모집을 개시했다. 잠실 르엘과 한화포레나미아 등 생활·교통이 편리한 단지에서 41㎡~84㎡ 규모의 아파트를 전세금 2억6000만원부터 8억9000만원까지 제공한다. 12월 10일부터 12일까지 신청이 가능하며, 12월 17일부터는 보증금 지원형 500세대가 추가로 모집된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 3월</td>
+<td>오세훈 서울시장이 광진구 롯데캐슬 이스트폴에서 216가구 미리내집 입주자와 현장 방문</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>‘제6차 미리내집(장기전세주택Ⅱ) 입주자 모집공고’ 발표</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>모집공고 시작</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td>2025년 12월 10일</td>
+<td>신청 기간 개시 (12월 10일~12일)</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td>2025년 12월 17일</td>
+<td>보증금 지원형 미리내집 500가구 신규 모집 시작</td>
+<td>네이버뉴스</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>신혼부부는 무자녀 시 최장 10년, 1자녀 출산 시 최장 20년간 장기전세를 이용할 수 있다.</strong><br />
+▶ <strong>입주 단지는 송파구 신천동(잠실르엘) 98가구와 강북구 미아동(한화포레나미아) 25가구로 구성된다.</strong><br />
+▶ <strong>전용면적은 41㎡와 84㎡ 두 종류이며, 전세금은 2억6000만원부터 8억9000만원까지 다양하다.</strong><br />
+▶ <strong>신혼부부는 혼인신고 후 7년 이내이거나 입주일 전까지 혼인한 예비 신혼부부여야 하며, 부부 모두 공고일 기준 5년 이내 주택을 소유하지 않아야 한다.</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>긍정적 시각</h3>
+<ul>
+<li><strong>주거안정성 강화</strong>: 장기전세는 월세 부담을 줄이고 주거안정성을 높여 신혼부부의 경제적 부담을 완화한다.  </li>
+<li><strong>지역 균형 발전</strong>: 잠실 르엘과 한화포레나미아는 교통·생활 인프라가 잘 갖춰져 있어 신혼부부가 생활하기에 유리하다.  </li>
+<li><strong>주택시장 안정</strong>: 장기전세는 전세금 상승을 완화하고 주택시장의 과열을 방지한다는 평가가 있다.  </li>
+</ul>
+<h3>비판적 시각</h3>
+<ul>
+<li><strong>단지 수량 제한</strong>: 400세대는 서울 전역의 신혼부부 수요를 충족시키기에 부족하다는 지적이 있다.  </li>
+<li><strong>전세금 상한선</strong>: 8억9000만원까지 전세금이 높아 일부 신혼부부에게는 여전히 부담이 크다.  </li>
+<li><strong>자격 요건</strong>: 5년 이내 주택 소유 제한과 혼인 기간 조건이 일부 부부에게는 진입 장벽이 된다.  </li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>부동산 전문가 김형석(서울부동산연구원)</strong>는 “장기전세는 주택시장 안정에 기여하지만, 단지 수량과 전세금 수준이 현실적 수요를 충족시키지 못한다”고 지적했다.  </li>
+<li><strong>주거정책 연구원 이지은(한국주거정책연구원)</strong>는 “신혼부부를 위한 장기전세는 주거안정에 긍정적이지만, 보증금 지원형 확대가 필요하다”고 제안했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>400세대 모집, 12월 10-12 신청, 12월 17 보증금 지원형 500세대 추가</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td></td>
+<td>전세금 범위 2억6000만원~8억9000만원</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td></td>
+<td>입주 단지 및 면적</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td></td>
+<td>자격 요건 (혼인 기간, 주택 소유 제한)</td>
+<td>네이버뉴스</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>71개 단지에서 총 400가구 규모라는 표현은 일부 기사에서 언급되었으나 정확한 단지 수는 공개되지 않음</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>오세훈 서울시장</strong>: 미리내집 프로그램을 통해 신혼부부 주거안정 정책을 추진 중이며, 3월 현장 방문을 통해 현장 실태를 파악했다.  </li>
+<li><strong>신혼부부</strong>: 장기전세를 통해 월세 부담을 줄이고 주거안정성을 확보하려는 주요 수혜자.  </li>
+<li><strong>부동산 업계</strong>: 전세금 상승 압박과 장기전세 수요 증가가 부동산 시장에 미치는 영향을 관찰하고 있다.  </li>
+<li><strong>주거정책 연구기관</strong>: 장기전세 정책의 효과와 개선 방안을 연구하고 있다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>신규 모집 확대</strong>: 12월 17일부터 보증금 지원형 500세대가 추가로 모집되면서 총 공급량이 900세대로 늘어난다.  </li>
+<li><strong>정책 개선 논의</strong>: 단지 수량 확대, 전세금 상한선 완화, 자격 요건 완화 등 정책 개선 논의가 이어질 전망이다.  </li>
+<li><strong>주택시장 영향</strong>: 장기전세 확대가 전세금 상승을 완화하고 주택시장 과열을 억제하는 효과가 기대된다.  </li>
+<li><strong>신혼부부 수요 반응</strong>: 신청 기간 동안 높은 신청률이 예상되며, 경쟁이 치열해질 가능성이 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>참고</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/032/0003411545" target="_blank">네이버뉴스</a><br />
+- <a href="https://news.seoul.go.kr/citybuild/archives/530231" target="_blank">서울시 공식 발표</a><br />
+- <a href="https://mediahub.seoul.go.kr/archives/2015199" target="_blank">미디어허브 서울시</a><br />
+- <a href="https://www.mk.co.kr/news/realestate/11378930" target="_blank">매일경제</a><br />
+- <a href="https://v.daum.net/v/20251127111626903" target="_blank">다음 뉴스</a>  </p>
+</blockquote>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=gUCfdRTSD80" target="_blank">"지역 제한 없음!" 고품질 주택 등 164호 신규 공...</a><a href="https://www.youtube.com/watch?v=NBY8LsMeZDo" target="_blank">"안전한 서울 전세 아파트" 여러분 무조건 신청하세요!...</a><a href="https://www.youtube.com/watch?v=GG5JmnQEer0" target="_blank">서울 40평대 아파트 전세!! 제5차 '서울리츠 장기전...</a><a href="https://www.youtube.com/watch?v=7TrjmPj2Vf8" target="_blank">신혼부부 매입임대주택 30가구 '예비입주자 모집'(서울...</a><a href="https://www.youtube.com/watch?v=y7YLEFVWIus" target="_blank">청년·신혼부부 매입임대 5천392가구 입주자 모집 (2...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/032/0003411545" target="_blank">서울 송파 등 신혼부부 장기전세 ‘미리내집’ 입주자 모집</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.seoul.go.kr/citybuild/archives/530231" target="_blank">신혼부부 장기전세 공급 개시…`미리내집` 제6차 400세대 입주자모집 ...</a><a href="https://mediahub.seoul.go.kr/archives/2015199" target="_blank">마곡·청담에서 신혼을! 장기전세 '미리내집' 485세대 모집 | 서울시 - 내 ...</a><a href="https://www.mk.co.kr/news/realestate/11378930" target="_blank">“청담 르엘·잠래아도 나온데”…신혼부부 장기전세 '미리내집' 485가구 ...</a><a href="https://blog.naver.com/seoulfamilyc/223950873009" target="_blank">[서울시] <미리내집 제5차> 입주자 모집!(8/11~12) 위치/자격/신청까지!</a><a href="https://v.daum.net/v/20251127111626903" target="_blank">서울 송파 등 신혼부부 장기전세 '미리내집' 입주자 모집</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

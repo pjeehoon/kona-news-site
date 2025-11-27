@@ -1,5 +1,27 @@
 [
   {
+    "id": "5010d6f53ca7",
+    "title": "\"여보, 잠실 르엘 갑시다\"...신혼부부 기회 열렸다는데",
+    "created_at": "2025-11-28T04:15:18.680490+09:00",
+    "last_updated": "2025-11-28T04:15:18.680490+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "뉴스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "427aaaec10c3",
     "title": "뜨거워지는 반도체 패권 경쟁…美 ‘AI 종속전략’에 中 ‘엔비디아 금지령’",
     "created_at": "2025-11-28T02:21:39.857728+09:00",
