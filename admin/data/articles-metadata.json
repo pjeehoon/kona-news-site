@@ -1,5 +1,77 @@
 [
   {
+    "id": "5e6fe9c0a5b8",
+    "title": "한국은행, 내년 성장률 전망 1.8%로 상향 조정…인플레이션 2.1% 유지",
+    "created_at": "2025-11-27T11:44:24.054355",
+    "last_updated": "2025-11-27T11:44:24.054362",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "한은",
+        "성장률",
+        "인플레이션"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "42519486e657",
+    "title": "홍준표, 한덕수에 대한 비판과 책임 지목: “사람 망가지는 건 한순간”",
+    "created_at": "2025-11-27T11:41:24.419104",
+    "last_updated": "2025-11-27T11:41:24.419116",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "홍준표",
+        "한덕수",
+        "대구시장"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "38880bed125a",
+    "title": "이종섭 호주도피 의혹, 윤 전 대통령 등 6명 무더기 기소 결정",
+    "created_at": "2025-11-27T11:37:50.967535",
+    "last_updated": "2025-11-27T11:37:50.967546",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "이종섭",
+        "윤석열",
+        "호주도피"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "28037507e6b0",
     "title": "'합성대마 투약' 이철규 아들, 2심서 징역형 집행유예로 감형",
     "created_at": "2025-11-27T11:24:05.246580+09:00",
