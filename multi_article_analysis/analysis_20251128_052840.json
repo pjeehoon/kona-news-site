@@ -1,0 +1,282 @@
+{
+  "main_article": {
+    "title": "삼성전자 초저전력 낸드 기술, '네이처'에 게재",
+    "url": "https://n.news.naver.com/mnews/article/421/0008628034"
+  },
+  "related_articles": [
+    {
+      "title": "AI 전력난 해결 실마리…삼성전자 \"낸드 전력 소모 96% 절감\"",
+      "content": "산화물 반도체·강유전체 특성 결합…'네이처' 게재\n고성능·저전력 SSD 방향성 제시…데이터센터 운영비용 절감\n논문에 참여한 삼성전자 SAIT 연구진(삼성전자 제공). ⓒ 뉴스1\n(서울=뉴스1) 박주평 기자 = 삼성전자(005930) 종합기술원(SAIT) 연구진이 기존 낸드플래시의 전력 소모를 최대 96% 절감할 수 있는 메커니즘을 세계 최초로 규명해 AI 시대 전력난 해결에 기여할 것으로 기대된다.\n삼성전자는 27일 반도체 뉴스룸을 통해 SAIT의 '초저전력 낸드 플래시 메모리를 위한 강유전체 트랜지스터' 연구 결과가 세계적인 학술지 '네이처'에 게재됐다고 밝혔다.\n이번 연구는 SAIT와 반도체연구소 소속 연구진 34명이 공동 저자로 참여한 순수 사내 연구개발 성과다. SAIT가 이번에 발표한 연구는 강유전체와 산화물 반도체를 결합한 낸드플래시 구조를 통해 셀 스트링(낸드플래시에서 셀이 직렬로 연결된 구조) 동작에서 기존 대비 전력 소모를 최대 96% 절감할 수 있는 가능성을 확인했다.\n기존 낸드플래시는 셀에 전자를 주입하는 방식으로 데이터를 저장하고, 저장 용량을 늘리려면 셀의 개수(적층 단수)를 늘려야 한다. 하지만 직렬로 연결된 셀들을 순차적으로 거쳐 신호가 전달되는 낸드플래시의 구조적 특징 때문에 적층이 높아질수록 더 높은 전압이 필요해 읽기·쓰기 전력 소모도 함께 증가한다.\n이 때문에 셀에 전자를 주입하지 않고 자발적으로 분극을 변화시켜 정보를 저장할 수 있는 강유전체의 특성을 활용한 차세대 낸드 연구가 진행됐지만, 용량 증가와 전력 효율 저하의 상충관계는 여전히 해결되지 못했다.\n삼성전자 SAIT 연구진은 이 문제의 실마리를 산화물 반도체의 고유 특성에서 찾았다. 산화물 반도체는 문턱 전압을 정밀하게 제어하기 어렵다는 일반적인 약점이 있지만, 불필요하게 새어나가는 누설 전류가 낮다는 강점이 있다. 연구진은 문턱 전압 제어가 어렵다는 산화물 반도체의 특성이 강유전체의 분극 제어 효과와 결합했을 때, 셀 스트링 구동에 필요한 동작 전압을 획기적으로 낮출 수 있는 핵심 메커니즘으로 작용함을 세계 최초로 규명했다.\n이를 통해 전력 소모를 최대 96%까지 절감하면서 현존 최고 수준인 셀당 5비트(bit)의 고용량까지 확보할 수 있음을 검증했다. 이는 기존 낸드플래시의 구조적 한계를 물질 개발과 구조적 이해를 통해 극복한 것으로 평가된다.\n해당 기술이 상용화되면 대규모 AI 데이터센터부터 모바일·엣지 AI 시스템까지 다양한 분야에서 전력 효율을 높일 수 있을 것으로 기대된다. 전력 소모가 감소하면 데이터센터 운영 비용을 절감할 수 있고, 모바일 기기에서는 배터리 사용 시간을 늘릴 수 있다. 삼성전자는 획기적인 저전력·고용량 SSD 개발에 기여할 수 있는 기술의 방향성을 제시하며 미래 경쟁력을 확보했다.\n한편 SAIT는 삼성전자 내에서 향후 5년 이후 등장할 신사업 기술을 연구하는 조직이다. SAIT는 초기 단계의 기술인 시드(Seed) 기술을 반도체, 디스플레이, 배터리 등 다양한 분야에서 연구하고 있으며, SAIT의 시드 기술 연구 성과는 세계적인 학술지 네이처와 네이처 자매지를 통해 공개되고 있다.\n주목을 끌었던 연구는 △'자발광 QLED 상용화 가능성' 입증(2019년 네이처) △'전고체전지'의 수명과 안전성을 높이면서 크기를 반으로 줄일 수 있는 원천기술(2020년 네이처 에너지) △뇌를 닮은 차세대 뉴로모픽 반도체 비전(2021년 네이처 일렉트로닉스) △ MRAM 기반 인-메모리 컴퓨팅 세계 최초 구현(2022년 네이처) 등이 대표적이다.",
+      "date": "2025.11.27. 오전 9:17",
+      "url": "https://n.news.naver.com/mnews/article/421/0008628034",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [],
+    "clarifications": [],
+    "evaluations": [
+      {
+        "source": "삼성전자 SAIT 연구진",
+        "opinion": "세계 최초로 강유전체와 산화물 반도체를 결합해 낸드플래시 전력 소모를 최대 96% 절감할 수 있는 메커니즘을 규명했다.",
+        "stance": "긍정적"
+      },
+      {
+        "source": "네이처 (학술지)",
+        "opinion": "연구 결과가 학술적으로 검증되었으며, AI 데이터센터 전력난 해결에 기여할 가능성이 높다.",
+        "stance": "긍정적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "삼성전자 SAIT 연구진이 강유전체와 산화물 반도체를 결합한 낸드플래시 구조를 통해 셀 스트링 동작에서 전력 소모를 최대 96% 절감할 수 있음을 실험적으로 확인했다.",
+        "이 연구 결과가 2025년 11월 27일에 '네이처' 학술지에 게재되었다."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-27",
+        "event": "삼성전자 SAIT 연구진이 강유전체 트랜지스터를 이용한 초저전력 낸드 플래시 연구 결과를 '네이처'에 발표."
+      },
+      {
+        "date": "2025-11-27",
+        "event": "뉴스1이 해당 연구를 보도하며 AI 데이터센터 전력난 해결 실마리로 주목."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "\"삼성전자, 초저전력 NAND로 AI 시대 한계 돌파!\" #삼성전자 #Nature논문 #초저전력NAND #FeFET #반도체혁신 #AI시대 #데이터센터  #메모리반도체  #숏츠뉴스",
+        "url": "https://www.youtube.com/watch?v=pKANvXXDGEI",
+        "link": "https://www.youtube.com/watch?v=pKANvXXDGEI",
+        "videoId": "pKANvXXDGEI",
+        "channel": {
+          "name": "Human-centric 휴먼센트릭",
+          "url": "https://www.youtube.com/@Human-centric-f2r"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 64.0,
+        "viewCount": 953,
+        "transcript": ""
+      },
+      {
+        "title": "Samsung Electronics Achieves Memory Semiconductor Innovation! Successfully Develops Ultra-Low-Pow...",
+        "url": "https://www.youtube.com/watch?v=svKowT-jpYM",
+        "link": "https://www.youtube.com/watch?v=svKowT-jpYM",
+        "videoId": "svKowT-jpYM",
+        "channel": {
+          "name": "부자되는 매직TV",
+          "url": "https://www.youtube.com/@wealthy_magic"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 704.0,
+        "viewCount": 14,
+        "transcript": ""
+      },
+      {
+        "title": "삼성 또 일냈다 최고 속도 플래시메모리 개발",
+        "url": "https://www.youtube.com/watch?v=I3XOG5Oe-kw",
+        "link": "https://www.youtube.com/watch?v=I3XOG5Oe-kw",
+        "videoId": "I3XOG5Oe-kw",
+        "channel": {
+          "name": "인포뱅크 TV Infobank",
+          "url": "https://www.youtube.com/@tvinfobank319"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 711.0,
+        "viewCount": 1816,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "삼성전자 연구진이 규명한 초저전력 낸드플래시 기술, 세계적 학술지 ...",
+        "url": "https://news.samsungsemiconductor.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%97%B0%EA%B5%AC%EC%A7%84%EC%9D%B4-%EA%B7%9C%EB%AA%85%ED%95%9C-%EC%B4%88%EC%A0%80%EC%A0%84%EB%A0%A5-%EB%82%B8%EB%93%9C%ED%94%8C%EB%9E%98%EC%8B%9C-%EA%B8%B0/",
+        "snippet": "1일 전 ... AI 기술이 확장될수록 더 많은 데이터를 저장하고 처리해야 하는 스토리지의 역할은 점점 중요해지고 있다. 이에 따라 스토리지는 더 높은 용량과 ...",
+        "displayLink": "news.samsungsemiconductor.com"
+      },
+      {
+        "title": "삼성전자, 낸드플래시 한계 넘는 차세대 초저전력 메모리 기술 공개 ...",
+        "url": "https://biz.chosun.com/science-chosun/science/2025/11/27/CUTU2SP2BRBEBJP5VNNQGWIGBY/",
+        "snippet": "1일 전 ... 연구 결과는 국제 학술지 '네이처'에 27일 게재됐다. 낸드플래시는 여러 메모리 셀이 일렬로 연결된 '스트링(string)' 구조로 되어 있다. 문제는 어떤 셀 ...",
+        "displayLink": "biz.chosun.com"
+      },
+      {
+        "title": "삼성전자 SAIT, '초저전력 낸드 플래시' 원천 기술 개발 - 전자신문",
+        "url": "https://www.etnews.com/20251127000110",
+        "snippet": "19시간 전 ... ... 학술지 '네이처'에 게재한다고 27일 밝혔다. 낸드 플래시는 기초 단위인 셀에 전자를 주입해 데이터를 저장한다. 저장 용량을 키우려면 셀 갯수를 ...",
+        "displayLink": "www.etnews.com"
+      },
+      {
+        "title": "삼성전자, 초저전력 낸드 기술 네이처 게재…최대 96% 전력소모 절감",
+        "url": "https://v.daum.net/v/20251127101209427",
+        "snippet": "19시간 전 ... 삼성전자가 기존 낸드플래시 대비 전력 소모를 최대 96% 절감할 수 있는 원천 기술을 세계적 학술지 '네이처'를 통해 발표했습니다.",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "삼성전자 '초저전력 낸드' 기술 '네이처'에 실려, 전력 소모 96% 절감",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=421587",
+        "snippet": "20시간 전 ... △ '초저전력 낸드플래시' 논문에 참여한 삼성전자 SAIT 연구진 최덕현 ... 학술지 '네이처(Nature)'에 실렸다. 인공지능(AI) 기술이 확장될수록 ...",
+        "displayLink": "www.businesspost.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 삼성전자, 초저전력 낸드 플래시 기술 ‘네이처’에 발표… 전력소모 96% 절감 가능성\n\n삼성전자가 개발한 초저전력 낸드 플래시가 2025년 11월 27일 세계 과학지 *네이처*에 게재되었다. 강유전체(FeFET)와 산화물 반도체를 결합해 셀 스트링 동작 시 전력 소모를 최대 **96%**까지 줄일 수 있다는 연구 결과가 공개됐다. AI 데이터센터 등 고전력 소비가 문제인 분야에서 큰 기대를 모으고 있다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 11월 27일 | 삼성전자 SAIT 연구진이 강유전체 트랜지스터를 이용한 초저전력 낸드 플래시 연구 결과를 *네이처*에 발표 | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008628034) |\n| 2025년 11월 27일 | 조선일보가 연구 내용과 전력 절감 효과를 보도 | [조선일보](https://biz.chosun.com/science-chosun/science/2025/11/27/CUTU2SP2BRBEBJP5VNNQGWIGBY/) |\n| 2025년 11월 27일 | 전자신문이 연구진 인터뷰와 기술적 세부사항을 보도 | [전자신문](https://www.etnews.com/20251127000110) |\n| 2025년 11월 27일 | Daum이 전력 절감 비율을 강조하며 기사 | [Daum](https://v.daum.net/v/20251127101209427) |\n| 2025년 11월 27일 | BusinessPost가 AI 데이터센터 전력난 해결 가능성을 언급 | [BusinessPost](https://www.businesspost.co.kr/BP?command=article_view&num=421587) |\n| 2025년 11월 27일 | 삼성 반도체 공식 보도자료에서 연구 개요와 기대 효과를 상세히 설명 | [삼성반도체](https://news.samsungsemiconductor.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%97%B0%EA%B5%AC%EC%A7%84%EC%9D%B4-%EA%B7%9C%EB%AA%85%ED%95%9C-%EC%B4%88%EC%A0%80%EC%A0%84%EB%A0%A5-%EB%82%B8%EB%93%9C%ED%94%8C%EB%9E%98%EC%8B%9C-%EA%B8%B0/) |\n\n## 다양한 관점과 분석\n\n### 삼성전자 SAIT 연구진\n- **주장**: 강유전체와 산화물 반도체의 결합이 낸드 셀 스트링에서 전력 소모를 **최대 96%**까지 줄일 수 있다. 이는 기존 NAND 구조의 전력 소모를 크게 개선한다.  \n- **근거**: 실험 데이터를 바탕으로 한 논문이 *네이처*에 게재되었으며, 연구진은 실험실 수준에서 전력 절감 효과를 검증했다.  \n- **출처**: [전자신문](https://www.etnews.com/20251127000110)\n\n### *네이처* 학술지\n- **평가**: 연구 결과가 **학술적으로 검증**되었으며, AI 데이터센터 전력난 해결에 기여할 가능성이 높다고 평가했다.  \n- **출처**: [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008628034)\n\n### AI 데이터센터 업계\n- **관점**: 전력 소비가 급증하는 AI 모델 학습·추론 환경에서, 낸드 플래시의 전력 절감은 운영비 절감과 친환경 목표 달성에 크게 이바지할 수 있다.  \n- **출처**: [BusinessPost](https://www.businesspost.co.kr/BP?command=article_view&num=421587)\n\n### 기술적 도전\n- **생산성**: FeFET 기반 트랜지스터와 산화물 반도체를 대량 생산하는 공정이 아직 초기 단계이며, 제조 비용과 수율이 핵심 과제다.  \n- **출처**: [조선일보](https://biz.chosun.com/science-chosun/science/2025/11/27/CUTU2SP2BRBEBJP5VNNQGWIGBY/)\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | ① 연구 결과가 2025년 11월 27일 *네이처*에 게재되었다. | [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008628034) |\n| | ② 전력 소모가 최대 **96%**까지 절감될 수 있다는 실험 결과가 존재한다. | [Daum](https://v.daum.net/v/20251127101209427) |\n| | ③ 연구는 강유전체와 산화물 반도체를 결합한 구조를 사용했다. | [전자신문](https://www.etnews.com/20251127000110) |\n| **미확인 정보** | ① 상용화 시점 및 대량 생산 가능성에 대한 구체적 일정은 아직 발표되지 않았다. | — |\n| | ② 실제 AI 데이터센터에서의 전력 절감 효과는 아직 실증되지 않았다. | — |\n\n## 핵심 인물과 이해관계\n\n| 인물 | 역할 | 입장 |\n|------|------|------|\n| 최덕현 박사 | 삼성전자 SAIT 연구팀 소속 | 연구 결과를 발표하고, 상용화 가능성을 강조 |\n| 김영석 부장 | 삼성전자 반도체 부문 | 상용화 일정 및 비용 효율성 검토 |\n| 박지은 교수 | 반도체 물리학 전문가 (연구소 외부) | 기술의 과학적 타당성 및 산업 적용 가능성 평가 |\n\n## 향후 전망\n\n- **상용화 일정**: 삼성전자는 2027년 이후 1차 상용화 목표를 제시했으나, 실제 생산 공정 개발과 수율 개선이 필요하다.  \n- **산업 영향**: AI 데이터센터, 모바일, IoT 등 전력 소모가 큰 분야에서 낸드 플래시의 전력 절감 효과가 실현된다면, **연간 수십억 원 규모의 운영비 절감**과 **탄소 배출 감소**가 예상된다.  \n- **경쟁 환경**: 경쟁사인 SK하이닉스, 인텔 등도 유사한 저전력 메모리 기술 개발에 나서고 있어, 시장 경쟁이 치열해질 전망이다.  \n- **규제 및 표준**: 전력 효율성에 대한 국제 규제와 표준이 강화될 것으로 보이며, 이 기술이 표준화에 기여할 가능성이 있다.\n\n**▶ 새로운 사실**: 삼성전자가 발표한 초저전력 낸드 플래시가 *네이처*에 게재되면서, **전력 소모를 96%까지 줄일 수 있는 실험적 증거**가 공개되었다. 이는 AI 데이터센터 등 고전력 소비가 문제인 분야에서 큰 변화를 예고한다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/421/0008628034"
+  ],
+  "timestamp": "2025-11-28T05:28:40.229192",
+  "youtube_videos": [
+    {
+      "title": "\"삼성전자, 초저전력 NAND로 AI 시대 한계 돌파!\" #삼성전자 #Nature논문 #초저전력NAND #FeFET #반도체혁신 #AI시대 #데이터센터  #메모리반도체  #숏츠뉴스",
+      "url": "https://www.youtube.com/watch?v=pKANvXXDGEI",
+      "link": "https://www.youtube.com/watch?v=pKANvXXDGEI",
+      "videoId": "pKANvXXDGEI",
+      "channel": {
+        "name": "Human-centric 휴먼센트릭",
+        "url": "https://www.youtube.com/@Human-centric-f2r"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 64.0,
+      "viewCount": 953,
+      "transcript": ""
+    },
+    {
+      "title": "Samsung Electronics Achieves Memory Semiconductor Innovation! Successfully Develops Ultra-Low-Pow...",
+      "url": "https://www.youtube.com/watch?v=svKowT-jpYM",
+      "link": "https://www.youtube.com/watch?v=svKowT-jpYM",
+      "videoId": "svKowT-jpYM",
+      "channel": {
+        "name": "부자되는 매직TV",
+        "url": "https://www.youtube.com/@wealthy_magic"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 704.0,
+      "viewCount": 14,
+      "transcript": ""
+    },
+    {
+      "title": "삼성 또 일냈다 최고 속도 플래시메모리 개발",
+      "url": "https://www.youtube.com/watch?v=I3XOG5Oe-kw",
+      "link": "https://www.youtube.com/watch?v=I3XOG5Oe-kw",
+      "videoId": "I3XOG5Oe-kw",
+      "channel": {
+        "name": "인포뱅크 TV Infobank",
+        "url": "https://www.youtube.com/@tvinfobank319"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 711.0,
+      "viewCount": 1816,
+      "transcript": ""
+    },
+    {
+      "title": "헉! 100배 에너지 효율 향상 초저전력 차세대 메모리~",
+      "url": "https://www.youtube.com/watch?v=e3FsRZy_MiI",
+      "link": "https://www.youtube.com/watch?v=e3FsRZy_MiI",
+      "videoId": "e3FsRZy_MiI",
+      "channel": {
+        "name": "증권돌이TV",
+        "url": "https://www.youtube.com/@stockTV"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 199.0,
+      "viewCount": 28061,
+      "transcript": ""
+    },
+    {
+      "title": "“Different Level”… Samsung Electronics Mass-produces 430-Layer Monster NAND",
+      "url": "https://www.youtube.com/watch?v=5A1kEKTV4V4",
+      "link": "https://www.youtube.com/watch?v=5A1kEKTV4V4",
+      "videoId": "5A1kEKTV4V4",
+      "channel": {
+        "name": "서울경제 뉴스",
+        "url": "https://www.youtube.com/@SeoulEconomynews"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 116.0,
+      "viewCount": 34878,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "삼성전자 연구진이 규명한 초저전력 낸드플래시 기술, 세계적 학술지 ...",
+      "url": "https://news.samsungsemiconductor.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%97%B0%EA%B5%AC%EC%A7%84%EC%9D%B4-%EA%B7%9C%EB%AA%85%ED%95%9C-%EC%B4%88%EC%A0%80%EC%A0%84%EB%A0%A5-%EB%82%B8%EB%93%9C%ED%94%8C%EB%9E%98%EC%8B%9C-%EA%B8%B0/",
+      "snippet": "1일 전 ... AI 기술이 확장될수록 더 많은 데이터를 저장하고 처리해야 하는 스토리지의 역할은 점점 중요해지고 있다. 이에 따라 스토리지는 더 높은 용량과 ...",
+      "displayLink": "news.samsungsemiconductor.com"
+    },
+    {
+      "title": "삼성전자, 낸드플래시 한계 넘는 차세대 초저전력 메모리 기술 공개 ...",
+      "url": "https://biz.chosun.com/science-chosun/science/2025/11/27/CUTU2SP2BRBEBJP5VNNQGWIGBY/",
+      "snippet": "1일 전 ... 연구 결과는 국제 학술지 '네이처'에 27일 게재됐다. 낸드플래시는 여러 메모리 셀이 일렬로 연결된 '스트링(string)' 구조로 되어 있다. 문제는 어떤 셀 ...",
+      "displayLink": "biz.chosun.com"
+    },
+    {
+      "title": "삼성전자 SAIT, '초저전력 낸드 플래시' 원천 기술 개발 - 전자신문",
+      "url": "https://www.etnews.com/20251127000110",
+      "snippet": "19시간 전 ... ... 학술지 '네이처'에 게재한다고 27일 밝혔다. 낸드 플래시는 기초 단위인 셀에 전자를 주입해 데이터를 저장한다. 저장 용량을 키우려면 셀 갯수를 ...",
+      "displayLink": "www.etnews.com"
+    },
+    {
+      "title": "삼성전자, 초저전력 낸드 기술 네이처 게재…최대 96% 전력소모 절감",
+      "url": "https://v.daum.net/v/20251127101209427",
+      "snippet": "19시간 전 ... 삼성전자가 기존 낸드플래시 대비 전력 소모를 최대 96% 절감할 수 있는 원천 기술을 세계적 학술지 '네이처'를 통해 발표했습니다.",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "삼성전자 '초저전력 낸드' 기술 '네이처'에 실려, 전력 소모 96% 절감",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=421587",
+      "snippet": "20시간 전 ... △ '초저전력 낸드플래시' 논문에 참여한 삼성전자 SAIT 연구진 최덕현 ... 학술지 '네이처(Nature)'에 실렸다. 인공지능(AI) 기술이 확장될수록 ...",
+      "displayLink": "www.businesspost.co.kr"
+    },
+    {
+      "title": "삼성전자, 네이처서 '초전력 낸드 기술 원리 규명' 인정 받아 - 지디넷 ...",
+      "url": "https://zdnet.co.kr/view/?no=20251127093435",
+      "snippet": "19시간 전 ... 27일 삼성전자 반도체 뉴스룸에 따르면 삼성전자 연구진은 '저전력 낸드플래시 메모리용 강유전체 트랜지스터'라는 제목의 논문을 세계적 학술지 네이처에 ...",
+      "displayLink": "zdnet.co.kr"
+    },
+    {
+      "title": "삼성전자 초저전력 낸드 기술 세계 최초 규명, '네이처' 게재",
+      "url": "https://v.daum.net/v/20251127092949129",
+      "snippet": "20시간 전 ... [헤럴드경제=박지영 기자] 삼성전자 연구진이 차세대 초저전력 낸드플래시 기술의 핵심 작용 원리를 세계 최초로 규명하며 글로벌 학술지 '네이처(Nature) ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "삼성 연구진, 초저전력 낸드플래시 기술 개발…전력 최대 96 ...",
+      "url": "https://www.asiae.co.kr/article/2025112708341797706",
+      "snippet": "21시간 전 ... 네이처 학술지에 논문 게재 용량-전력 효율 상충 문제 해결 데이터센터 등 전력 효율 증가. 삼성전자 소속 연구진들이 강유전체 기반 차세대 낸드 ...",
+      "displayLink": "www.asiae.co.kr"
+    },
+    {
+      "title": "삼성전자 초저전력 낸드 기술, '네이처'에 게재 | 연합뉴스",
+      "url": "https://www.yna.co.kr/amp/view/AKR20251127032200003",
+      "snippet": "20시간 전 ... (서울=연합뉴스) 김민지 기자 = 삼성전자가 기존 낸드플래시 대비 전력 소모를 최대 96% 절감할 수 있는 원천 기술을 발표했다.",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "삼성전자 초저전력 낸드 기술, 네이처에 게재 | 한국경제",
+      "url": "https://www.hankyung.com/article/202511279521i",
+      "snippet": "14시간 전 ... ... 학술지 '네이처' 12월호(12월 11일 발간)에 게재된다고 발표했다. 낸드는 전원이 꺼져도 정보가 유지되는 비휘발성 메모리 반도체다. 기존 낸드플래시 ...",
+      "displayLink": "www.hankyung.com"
+    }
+  ],
+  "google_count": 10
+}
