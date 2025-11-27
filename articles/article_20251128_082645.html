@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'이세돌vs알파고' 다음은 '페이커vs그록'?…머스크 "한판 붙자" - 2025-11-28 08:26:44</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,머스크,그록5,LoL">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="머스크,그록5,LoL">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 08:26:44'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'이세돌vs알파고\' 다음은 \'페이커vs그록\'?…머스크 "한판 붙자"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'이세돌vs알파고' 다음은 '페이커vs그록'?…머스크 "한판 붙자"</h1>
+            <p>
+                분석 시간: 2025-11-28 08:26:44
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 머스크가 xAI의 차세대 AI ‘그록5’를 2026년 리그오브레전드 최강 팀 T1과 대결하도록 제안했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> T1은 ‘우린 준비됐다’ 영상으로 대응하며, 전문가들은 AI가 인간 수준의 시각과 반응 속도를 갖추면 경쟁 가능성을 논의하지만 아직 실증되지 않았다고 평가했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 제안은 AI와 인간의 대결이 엔터테인먼트와 경기 규칙 재검토를 촉발할 수 있어 e스포츠 산업에 새로운 도전과 규제 논의를 불러일으킬 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/0cd4d40855e2.png" 
+                     alt="'이세돌vs알파고' 다음은 '페이커vs그록'?…머스크 "한판 붙자"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>머스크가 xAI의 차세대 AI ‘그록5’를 이용해 2026년 리그오브레전드(LoL) 최강 팀 T1과의 대결을 제안했다.</strong><br />
+AI와 인간 프로의 대결이 과연 실현 가능한가? 전문가와 팬들의 의견이 갈리고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 25일</td>
+<td>일론 머스크가 SNS에 “Grok 5가 2026년 LoL 최강 팀을 이길 수 있는지 시험해보고 싶다”는 포스트를 올림.</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560846" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>머스크가 Grok 5가 모니터 화면만 보고 20/20 시력 수준으로 인식하며 인간 수준의 반응 지연 시간과 클릭 속도를 적용할 것이라고 설명.</td>
+<td><a href="https://www.sedaily.com" target="_blank">서울경제</a></td>
+</tr>
+<tr>
+<td>2025년 11월 26일</td>
+<td>조선비즈가 “머스크는 AI와 인간 팀 간 대결에 몇 가지 제한을 두겠다고 밝혔다”는 보도.</td>
+<td><a href="https://biz.chosun.com/en/en-it/2025/11/26/WM63KETEANDWNG6GTSRM4BD3Q4/" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>T1이 페이커의 시그니처 포즈를 담은 영상으로 “우린 준비됐다(We’re ready)”라고 응답.</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560846" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>인스타그램에서 “Grok 5, 2026년 LoL 최고팀이랑 붙여보자”라는 머스크의 포스트가 공개.</td>
+<td><a href="https://www.instagram.com/p/DRgE-ZwE3L8/" target="_blank">인스타그램</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>머스크의 제안은 AI가 인간 수준의 시각과 반응 속도를 갖추었다는 주장에 기반</strong><br />
+▶ <strong>T1은 ‘우린 준비됐다’는 영상으로 적극적으로 대응</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>AI 전문가의 시각</h3>
+<ul>
+<li><strong>긍정적</strong>: AI가 인간 수준의 시각(20/20)과 반응 지연 시간을 구현하면, LoL과 같은 실시간 전략 게임에서도 경쟁이 가능할 수 있다.  </li>
+<li><strong>우려</strong>: 현재 AI는 주로 패턴 인식과 사전 학습에 의존하며, 인간의 직관적 판단과 상황 판단을 완전히 대체하기는 어려우며, 실제 경기에서의 변동성은 크게 다를 수 있다.  </li>
+</ul>
+<h3>e스포츠 커뮤니티의 반응</h3>
+<ul>
+<li><strong>흥미로운 도전</strong>: 일부 팬들은 ‘이세돌 vs 알파고’ 이후 AI와 인간의 대결이 새로운 엔터테인먼트가 될 수 있다고 기대한다.  </li>
+<li><strong>비판적 시각</strong>: AI가 인간 팀을 이길 수 있다는 주장은 아직 실증되지 않았으며, 경기의 공정성과 규칙에 대한 논의가 필요하다.  </li>
+</ul>
+<h3>기업 및 규제 측면</h3>
+<ul>
+<li><strong>리그오브레전드(리그오브레전드)</strong>: Riot Games는 AI와의 공식 대결에 대한 공식 입장을 아직 발표하지 않았다.  </li>
+<li><strong>규제</strong>: AI가 인간과 같은 반응 속도를 갖추면, 경기 규칙(클릭 속도 제한 등)에 대한 재검토가 필요할 수 있다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>머스크가 2025년 11월 25일 SNS에 AI와 T1 대결 제안 게시</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560846" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>T1이 2025년 11월 27일 ‘우린 준비됐다’ 영상으로 대응</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004560846" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Grok 5가 20/20 시력 수준과 인간 수준의 반응 지연 시간을 적용할 것이라고 주장</td>
+<td><a href="https://www.sedaily.com" target="_blank">서울경제</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>Grok 5가 실제로 LoL을 학습해 인간 팀을 이길 수 있는지</td>
+<td>현재까지 실증 자료 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>2026년에 AI가 T1을 이길 가능성</td>
+<td>아직 검증되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>일론 머스크</strong></td>
+<td>xAI 창업자, AI 대결 제안자</td>
+<td>AI가 인간 수준의 시각·반응 속도를 갖추었다고 주장하며, 2026년 대결을 제안</td>
+</tr>
+<tr>
+<td><strong>T1 (리그오브레전드 프로팀)</strong></td>
+<td>최강 팀</td>
+<td>‘우린 준비됐다’는 영상으로 적극적 대응, AI와의 대결 가능성에 대한 관심을 높임</td>
+</tr>
+<tr>
+<td><strong>리그오브레전드 (Riot Games)</strong></td>
+<td>게임 개발사</td>
+<td>공식 입장 미제시, 규칙 재검토 가능성</td>
+</tr>
+<tr>
+<td><strong>e스포츠 팬·커뮤니티</strong></td>
+<td>관중·관심가</td>
+<td>AI와 인간의 대결에 대한 기대와 우려가 혼재</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>기술 검증 단계</strong><br />
+   - Grok 5가 실제 LoL 환경에서 테스트를 진행할 경우, AI의 반응 속도와 전략적 판단이 인간 수준에 도달할 수 있는지 실험이 필요하다.<br />
+   - AI가 인간 수준의 시각을 갖추었다는 주장은 아직 실증되지 않았으므로, 실제 경기에서의 성능은 불확실하다.  </p>
+</li>
+<li>
+<p><strong>규칙 및 공정성 논의</strong><br />
+   - AI가 인간과 동일한 클릭 속도 제한을 적용받을 것인지, 혹은 별도의 규칙이 필요할 것인지에 대한 논의가 진행될 가능성이 높다.<br />
+   - Riot Games가 AI와의 공식 대결을 허용할 경우, 경기 규칙에 대한 재검토가 필수적이다.  </p>
+</li>
+<li>
+<p><strong>대중과 미디어 반응</strong><br />
+   - ‘이세돌 vs 알파고’ 이후 AI와 인간의 대결이 대중의 관심을 끌었으나, 실제 경기에서의 실현 가능성은 여전히 논란이다.<br />
+   - 미디어는 AI와 인간의 대결을 엔터테인먼트 요소로 활용할 수 있는 기회로 보이지만, 과도한 과장 보도는 신뢰성 저하를 초래할 수 있다.  </p>
+</li>
+<li>
+<p><strong>장기적 영향</strong><br />
+   - AI가 e스포츠에 진입하면, 게임 개발·전략·분석 분야에서 AI 활용이 확대될 수 있다.<br />
+   - 동시에, AI가 인간 프로게이머를 대체하거나 협업하는 형태가 등장하면, e스포츠 산업 구조가 변모할 가능성이 있다.  </p>
+</li>
+</ol>
+<p><strong>결론적으로</strong> 머스크의 AI ‘그록5’와 T1의 대결 제안은 기술적·규제적·사회적 측면에서 다각적인 검증과 논의가 필요하다. 실제 경기로 이어질지는 아직 미지수이며, 이세돌·알파고 이후 AI와 인간의 대결이 새로운 엔터테인먼트로 자리 잡을지는 시간이 가늠할 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=4SqSm7kCTKE" target="_blank">AI League of Legends Wild Rift...</a><a href="https://www.youtube.com/watch?v=qkJj-nspAtI" target="_blank">What If An AI Was To Play Leag...</a><a href="https://www.youtube.com/watch?v=zQHpANgK1EE" target="_blank">League of Legends Champions on...</a><a href="https://www.youtube.com/watch?v=0cMAi9-p7wc" target="_blank">AI vs. Faker, a League of Lege...</a><a href="https://www.youtube.com/watch?v=pkGa8ICQJS8" target="_blank">OG vs OpenAI FIVE - AI vs HUMA...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004560846" target="_blank">“페이커 준비됐나”…일론 머스크, LoL 최강 'T1'에 도전장 던졌다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.teslarati.com/elon-musk-proposes-grok-5-vs-worlds-best-league-of-legends-team-match/" target="_blank">Elon Musk proposes Grok 5 vs world's best League o...</a><a href="https://www.reddit.com/r/leagueoflegends/comments/1p66xpd/elon_musk_wants_grok_5_to_beat_the_best_lol_team/" target="_blank">Elon Musk wants Grok 5 to beat the best LoL team i...</a><a href="https://www.sheepesports.com/articles/elon-musk-wants-grok-5-to-compete-versus-the-best-human-team-of-league-of-legends/en" target="_blank">Elon Musk wants Grok 5 to compete versus the best ...</a><a href="https://biz.chosun.com/en/en-it/2025/11/26/WM63KETEANDWNG6GTSRM4BD3Q4/" target="_blank">Elon Musk challenges Faker with xAI's Grok 5 to fa...</a><a href="https://www.instagram.com/p/DRgE-ZwE3L8/" target="_blank">Grok 5, 2026년 LoL 최고팀이랑 붙여보자 일론 머스크가 자신의 AI ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
