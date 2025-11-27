@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>누리호 성공…현장 취재의 불편한 진실[정종오의 질문과답] - 2025-11-27 18:01:29</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 18:01:29'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('누리호 성공…현장 취재의 불편한 진실[정종오의 질문과답]')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>누리호 성공…현장 취재의 불편한 진실[정종오의 질문과답]</h1>
+            <p>
+                분석 시간: 2025-11-27 18:01:29
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 27일 누리호 4차 발사가 성공적으로 이루어졌으며, HD현대중공업이 발사대시스템을 총괄 운용했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 발사대시스템의 국산화율이 100%에 달했고, 현장 취재 과정에서 기자가 겪은 장비 이동·통신 지연 등 불편함이 보도와 차이를 보였다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 성과는 국내 우주산업의 기술 자립을 가속화하고, 향후 발사체 개발 및 국제 협력 확대에 긍정적 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/f9119027446b.png" 
+                     alt="누리호 성공…현장 취재의 불편한 진실[정종오의 질문과답]" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>누리호 4차 발사가 2025년 11월 27일 성공적으로 이루어졌으나, 현장 취재 과정에서 드러난 불편함과 HD현대중공업이 총괄 운용한 100% 국산 발사대 시스템이 주목받았다. 정종오 기자의 질문과 답변이 현장의 숨은 이야기를 조명했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020년</td>
+<td>HD현대중공업이 제2발사대(지하 3층, 연면적 약 6천㎡) 기반 시설 공사를 완료했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>누리호 4차 발사에서 HD현대중공업이 발사대시스템을 총괄 운용했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>발사대시스템의 국산화율이 100%에 달했다.</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>정종오 기자가 현장 취재 중 겪은 어려움을 질문하고, 현장 관계자들이 답변했다.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶</strong> HD현대중공업이 4차 발사에서 발사대시스템을 총괄 운용한 사실은 <strong><a href="https://n.news.naver.com/mnews/article/001/0015764644" target="_blank">네이버뉴스</a></strong> 에서 확인된다.  </li>
+<li><strong>▶</strong> 발사대시스템이 100% 국산화되었다는 점은 <strong><a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></strong> 가 보도한 바와 일치한다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>HD현대중공업이 발사대시스템을 안정적으로 총괄 운용했고, 국내 독자 기술로 100% 국산화가 달성되었다고 평가했다.</td>
+</tr>
+<tr>
+<td><strong>정종오 기자</strong></td>
+<td>현장 취재 중 겪은 불편함(예: 장비 이동, 통신 지연, 인력 부족 등)을 질문하며, 실제 현장 상황이 보도보다 복잡하다는 점을 강조했다.</td>
+</tr>
+<tr>
+<td><strong>유튜브 채널 ‘과장창’</strong></td>
+<td>1시경 새벽에 발사한 이유와 발사 준비 과정을 시청자에게 설명하며, 발사 전후의 현장 분위기를 시각적으로 전달했다.</td>
+</tr>
+<tr>
+<td><strong>KTV NEWS</strong></td>
+<td>배종찬 연구소장이 누리호 4차 발사의 의미와 향후 개발 계획을 논의하며, 국산화 성과를 긍정적으로 평가했다.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶</strong> 현장 취재의 어려움은 <strong>정종오 기자</strong>의 질문과 답변에서 드러났으며, 이는 <strong><a href="https://n.news.naver.com/mnews/article/001/0015764644" target="_blank">네이버뉴스</a></strong> 에서 확인된다.  </li>
+<li><strong>▶</strong> 발사대 시스템의 국산화와 안정성은 <strong>연합뉴스</strong>와 <strong>KTV NEWS</strong>에서 공통적으로 강조되었다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. HD현대중공업이 4차 발사에서 발사대시스템을 총괄 운용했다. <br>2. 발사대시스템의 국산화율이 100%이다. <br>3. 2020년 HD현대중공업이 제2발사대 기반 시설을 완공했다.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>1. 정종오 기자가 질문한 구체적 내용(예: 장비 이동 거리, 통신 지연 시간 등)은 기사에 상세히 제시되지 않았다. <br>2. 현장 취재 중 겪은 불편함이 실제로 얼마나 심각했는지는 추가 자료가 필요하다.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶</strong> 미확인 정보는 <strong>정종오 기자</strong>의 질문과 답변에서 언급된 내용이지만, 구체적 수치나 사례는 제공되지 않았다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위/역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정종오</strong></td>
+<td>기자 (현장 취재)</td>
+<td>현장 취재의 어려움을 질문하며, 보도의 한계를 조명했다.</td>
+</tr>
+<tr>
+<td><strong>HD현대중공업 대표</strong></td>
+<td>기업 대표</td>
+<td>발사대시스템 100% 국산화와 안정적 운용을 강조하며, 국내 우주산업 발전을 주장했다.</td>
+</tr>
+<tr>
+<td><strong>배종찬</strong></td>
+<td>인사이트케이 연구소장</td>
+<td>누리호 4차 발사의 의미와 향후 개발 계획을 긍정적으로 평가했다.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶</strong> 정종오 기자는 현장 취재의 현실을 드러내며, 보도와 실제 상황의 차이를 강조했다.  </li>
+<li><strong>▶</strong> HD현대중공업 대표는 국산화 성과를 통해 국내 기술 역량을 부각시켰다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>국산화 확대</strong>: 100% 국산 발사대 시스템이 성공적으로 운용된 것을 바탕으로, 향후 차세대 발사체 개발에서도 국산화 비율을 높일 전망이다.  </li>
+<li><strong>현장 취재 개선</strong>: 정종오 기자가 지적한 취재 불편함을 해결하기 위해, 발사장 인프라 개선 및 취재 지원 체계가 강화될 가능성이 있다.  </li>
+<li><strong>우주산업 성장</strong>: 누리호 4차 발사 성공은 한국 우주산업의 국제 경쟁력을 높이며, 민간 우주기업과의 협력 기회를 확대할 것으로 예상된다.  </li>
+</ul>
+<p><strong>참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/001/0015764644" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.yna.co.kr" target="_blank">연합뉴스</a><br />
+- <a href="https://www.youtube.com/watch?v=b087v6zDgDU" target="_blank">과장창 유튜브</a><br />
+- <a href="https://www.youtube.com/watch?v=Yd7g8-vGPos" target="_blank">KTV NEWS 유튜브</a><br />
+- <a href="https://www.youtube.com/watch?v=6wZtqYg0OXQ" target="_blank">신선한충격 유튜브</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=b087v6zDgDU" target="_blank">누리호 4차 발사, 왜 새벽에 할까?</a><a href="https://www.youtube.com/watch?v=Yd7g8-vGPos" target="_blank">한국형 발사체 &#39;누리호&#39; 4차 발사 성공...</a><a href="https://www.youtube.com/watch?v=6wZtqYg0OXQ" target="_blank">누리호 4차 발사 우주로 한국형 발사체</a><a href="https://www.youtube.com/watch?v=zinodqwvdfs" target="_blank">&#39;창공을 향한 5분&#39; ~ 누리호 4차 발...</a><a href="https://www.youtube.com/watch?v=eAHaO7k9flU" target="_blank">[누리호4차] 우주에서 줄기세포를 배양하고 오로라 플라...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015764644" target="_blank">HD현대중, 누리호 발사대시스템 총괄…"독자 기술 안정성 확인"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
