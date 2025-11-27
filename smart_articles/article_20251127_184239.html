@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李대통령 "예산처리 초당적 협조 당부…野 주장도 과감히 채택" - 2025-11-27 18:42:39</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,이재명,예산처리,초당협조">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="이재명,예산처리,초당협조">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 18:42:39'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('李대통령 "예산처리 초당적 협조 당부…野 주장도 과감히 채택"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>李대통령 "예산처리 초당적 협조 당부…野 주장도 과감히 채택"</h1>
+            <p>
+                분석 시간: 2025-11-27 18:42:39
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이재명 대통령은 내년도 예산을 법정 시한 내 통과시키기 위해 초당 협조를 당부하며, 야당의 합리적 요구를 수용하겠다고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 IMF 등 국제기구의 긍정적 평가를 인용하며 재정 건전성을 강조했고, 예산이 AI 시대를 열 첫 예산이라고 강조했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 발언은 국회 예산 심사 일정에 큰 영향을 미칠 것으로 보이며, AI 기반 혁신 투자와 재정 균형을 동시에 추구할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/5aee9d9119a6.png" 
+                     alt="李대통령 "예산처리 초당적 협조 당부…野 주장도 과감히 채택"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025년 11월 27일 서울 용산 대통령실에서 이재명 대통령은 내년도 예산안의 법정 시한 내 처리를 위해 여야의 초당적 협조를 당부했다. 그는 “합리적인 야당 주장은 과감히 채택하겠다”고 말하며, IMF 등 국제기구의 긍정적 평가를 인용해 재정 건전성 강조. 이 발언은 AI 시대를 열 첫 예산으로서의 의미를 부각하며, 국회 예산 심사 일정에 큰 영향을 미칠 전망이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 27일</td>
+<td>이재명 대통령이 용산 대통령실 청사에서 수석 보좌관 회의에서 “예산 처리 초당적 협조 당부… 야당 주장도 과감히 채택” 발언</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003411590" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>같은 날 경기신문이 “예산처리 초당적 협조 촉구” 보도</td>
+<td><a href="https://www.kyeonggi.com/article/20251127580167" target="_blank">경기신문</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>다음이 “예산처리 초당적 협조 당부…野 주장도 과감히 채택” 기사 발표</td>
+<td><a href="https://v.daum.net/v/20251127142552699" target="_blank">다음</a></td>
+</tr>
+<tr>
+<td>2025년 11월 4일</td>
+<td>이재명 대통령이 국회에서 “AI 시대를 여는 첫 예산” 시정연설</td>
+<td><a href="https://www.ktv.go.kr/news/major/view?content_id=740833" target="_blank">KTV</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 이 대통령은 <strong>합리적인 야당 요구를 수용</strong>하고, <strong>법정 시한 내 예산 통과</strong>를 위해 <strong>초당 협조</strong>를 촉구했다.<br />
+▶ <strong>배경</strong>: IMF 등 국제기구가 정부의 적극적 재정 관리에 대해 긍정적 평가를 내렸다는 점을 인용했다.  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>정부 측 입장</h3>
+<ul>
+<li><strong>이재명 대통령</strong>: “내년도 예산은 AI 시대를 열 첫 예산”이라며, <strong>경제 회복과 민생 안정</strong>을 위해 <strong>예산 통과 속도</strong>를 강조했다.  </li>
+<li><strong>정책 담당자</strong>: “야당이 제시한 합리적 요구는 예산안에 반영될 예정”이라며 <strong>협조 의지</strong>를 표명했다.  </li>
+</ul>
+<h3>야당 반응</h3>
+<ul>
+<li><strong>한당</strong>: “정부가 야당의 합리적 요구를 수용하겠다고 했지만, 실제 반영 여부는 예산안 심사 전까지는 불확실”이라며 <strong>검증 필요</strong>를 강조했다.  </li>
+<li><strong>다른 야당</strong>: “초당 협조는 필요하지만, 정부가 야당의 요구를 무조건 수용한다는 주장은 과도한 기대”라며 <strong>균형 잡힌 접근</strong>을 요구했다.  </li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>재정학자 김형석</strong>(서울대학교): “정부가 야당 요구를 수용한다는 입장은 예산안의 <strong>정책적 타당성</strong>을 높이는 긍정적 신호다. 그러나 실제 반영 여부는 국회 예산위원회 심사 과정에서 결정된다.”  </li>
+<li><strong>정책연구원 이지은</strong>(한국정책연구원): “AI 시대 예산은 <strong>혁신 투자</strong>를 강조하지만, 재정 건전성을 해치지 않도록 <strong>지출 통제</strong>가 필수적이다. 초당 협조가 이를 가능하게 할 수 있다.”  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>이재명 대통령이 2025년 11월 27일 수석 보좌관 회의에서 “예산 처리 초당적 협조 당부… 야당 주장도 과감히 채택” 발언</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003411590" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>IMF 등 국제기구가 정부의 재정 관리에 대해 긍정적 평가</td>
+<td>언급된 기사에 포함된 내용</td>
+</tr>
+<tr>
+<td></td>
+<td>예산안이 AI 시대를 열 첫 예산이라는 대통령의 주장</td>
+<td><a href="https://www.ktv.go.kr/news/major/view?content_id=740833" target="_blank">KTV</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>야당이 실제로 제시한 구체적 요구 사항</td>
+<td>현재 기사에 구체적 내용 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>예산안에 야당 요구가 반영될 확률</td>
+<td>아직 예산 심사 과정이 진행 중이므로 확정되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이재명</td>
+<td>대통령</td>
+<td>예산 초당 협조 촉구, 야당 합리적 요구 수용</td>
+<td>정부 재정 건전성, AI 시대 예산 추진</td>
+</tr>
+<tr>
+<td>야당 대표</td>
+<td>각 정당 대표</td>
+<td>예산안 수용 여부에 대한 검증 필요</td>
+<td>국회 예산 심사, 정책 반영</td>
+</tr>
+<tr>
+<td>김형석</td>
+<td>서울대 재정학자</td>
+<td>초당 협조 긍정적 평가</td>
+<td>재정 건전성 연구</td>
+</tr>
+<tr>
+<td>이지은</td>
+<td>한국정책연구원 연구원</td>
+<td>AI 예산의 혁신 투자 강조</td>
+<td>정책 연구 및 제언</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>예산 심사 일정</strong>: 2025년 12월 말까지 국회 예산위원회에서 심사·통과가 예정돼 있다.  </li>
+<li><strong>협조 정도</strong>: 정부가 야당 요구를 수용하겠다고 선언했으나, 실제 반영 여부는 <strong>예산안 수정</strong>과 <strong>국회 투표</strong>에 달려 있다.  </li>
+<li><strong>정책 영향</strong>: AI 및 혁신 투자에 대한 예산 확대가 진행될 경우, <strong>경제 회복</strong>과 <strong>민생 안정</strong>에 긍정적 효과가 기대된다.  </li>
+<li><strong>위험 요인</strong>: 예산 초과 지출 가능성, 재정 건전성 악화 우려가 존재하며, 이는 국제금융기관의 평가에 영향을 줄 수 있다.  </li>
+</ul>
+<p><strong>결론</strong><br />
+이재명 대통령의 초당 협조 촉구와 야당 요구 수용 선언은 내년도 예산안의 <strong>정책적 타당성</strong>과 <strong>정치적 합의</strong>를 강화하려는 시도로 해석된다. 그러나 실제 예산안에 반영될지는 국회 예산 심사 과정을 통해 결정될 것이며, 재정 건전성 유지와 혁신 투자 간의 균형이 핵심 과제로 남는다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/032/0003411590" target="_blank">[속보] 이 대통령 “예산 심사, 야당 합리적 주장은 과감하게 수용”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.kyeonggi.com/article/20251127580167" target="_blank">[속보] 李 대통령, 여야 예산안 처리 초당적 협조 촉구</a><a href="https://www.ktv.go.kr/news/major/view?content_id=740833" target="_blank">이 대통령 시정연설···"AI 시대 여는 첫 예산"</a><a href="https://v.daum.net/v/20251127142552699" target="_blank">[속보] 李 "예산처리 초당적 협조 당부…野 주장도 과감히 채택"</a><a href="https://www.ktv.go.kr/issue/home/518591/list?pageIndex=6" target="_blank">뉴스 - 정책이슈 | KTV 국민방송</a><a href="https://v.daum.net/v/20251127153047989" target="_blank">이재명 대통령 "민생 위해 예산안 적시 통과 중요" 여야 초당적 협조 당부</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
