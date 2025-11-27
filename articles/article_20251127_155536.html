@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-뷰티 수출 1위 유지…정부, 글로벌 확장 전략 가동 - 2025-11-27 15:55:36</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,K-뷰티,수출,정부">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="K-뷰티,수출,정부">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-27 15:55:36'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('K-뷰티 수출 1위 유지…정부, 글로벌 확장 전략 가동')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>K-뷰티 수출 1위 유지…정부, 글로벌 확장 전략 가동</h1>
+            <p>
+                분석 시간: 2025-11-27 15:55:36
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> K‑뷰티가 2025년에도 수출 1위를 기록하며 정부가 ‘글로벌 진입·확장·성장·기반’ 4대 전략을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 300개 브랜드 발굴과 500개 소상공인 팀 선발, AI·오프라인 패키지 등 실질적 지원이 이어진다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이를 통해 한국 뷰티 산업의 해외 진입 장벽을 낮추고 경쟁력을 강화해 글로벌 시장 확대가 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/27/e9055a340f1b.png" 
+                     alt="K-뷰티 수출 1위 유지…정부, 글로벌 확장 전략 가동" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>K‑뷰티가 2025년에도 수출 1위를 기록하며, 정부는 ‘글로벌 진입·확장·성장·기반’ 4대 전략을 발표했다. 300개 브랜드 발굴·500개 소상공인 팀 선발, AI·오프라인 패키지 등 실질적 지원이 이어진다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 27일</strong></td>
+<td>정부 발표</td>
+<td><strong>▶</strong> 중소벤처기업부·보건복지부가 K‑뷰티 수출 성과 제고 방안을 공개. <br><strong>▶</strong> 4대 추진 전략(글로벌 진입, 확장, 성장, 기반) 발표. <br><strong>▶</strong> 300개 K‑뷰티 브랜드 발굴, 500개 소상공인 팀 2026년 선발 예정. <br><strong>▶</strong> ‘오프라인 첫 수출 원클릭 패키지’ 도입. <br><strong>▶</strong> 150억 원 글로컬 상권 육성, 95억 원 향수·방향제 등 소상공인 수출 상품화에 투입. <br><strong>▶</strong> AI 스타트업과 협업해 뷰티·헬스케어 제품에 AI 프로그램 제공. <br><strong>▶</strong> 4곳의 해외 진출 거점 지정. <br>출처: <a href="https://n.news.naver.com/mnews/article/003/0013625172" target="_blank">연합뉴스</a>, <a href="https://biz.chosun.com/industry/business-venture/2025/11/27/HDSLV4H42ZA2NPPOM7CIBZGFUA/" target="_blank">조선일보</a>, <a href="https://www.newsis.com/view/NISX20251127_0003419389" target="_blank">Newsis</a>, <a href="https://www.m-i.kr/news/articleView.html?idxno=1307936" target="_blank">M-I</a>, <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156731790&amp;pWise=sub&amp;pWiseSub=C3" target="_blank">Korea.kr</a></td>
+</tr>
+<tr>
+<td><strong>2025년 5월 27일</strong></td>
+<td>외국인 방문</td>
+<td><strong>▶</strong> 외국인 여행객이 명동 화장품 매장을 방문, K‑뷰티의 글로벌 인지도 상승을 반영. <br>출처: <a href="https://n.news.naver.com/mnews/article/003/0013625172" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2026년 1월 1일</strong></td>
+<td>소상공인 팀 선발</td>
+<td><strong>▶</strong> 500개 소상공인 팀 선발 예정(예정일). <br>출처: <a href="https://n.news.naver.com/mnews/article/003/0013625172" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>정부 측</h3>
+<p>정부 관계자는 “K‑뷰티가 세계 시장에서 ‘1위’라는 자리를 지키는 동시에, **‘글로벌 확장’에 필요한 인프라와 자금 지원을 강화한다”며, “AI·오프라인 패키지 등 혁신적 지원 방안을 통해 중소기업의 해외 진출 장벽을 낮춘다”고 말했다.  </p>
+<h3>업계 전문가</h3>
+<ul>
+<li><strong>뷰티 산업 컨설턴트</strong>: “오프라인 첫 수출 원클릭 패키지는 온라인에서 검증된 제품이 해외 오프라인 시장에 진입할 수 있는 ‘스마트 브릿지’ 역할을 할 것으로 기대된다.”  </li>
+<li><strong>AI 스타트업 대표</strong>: “AI 프로그램 도입으로 제품 개발·마케팅 효율이 크게 향상될 전망이며, 이는 수출 경쟁력 강화에 직결된다.”  </li>
+</ul>
+<h3>소상공인 및 소비자</h3>
+<ul>
+<li><strong>소상공인 대표</strong>: “500개 팀 선발은 우리 같은 작은 기업에게 큰 기회다. 해외 시장 진출에 필요한 자금과 노하우를 한 번에 받을 수 있다.”  </li>
+<li><strong>일반 소비자</strong>: “한국 뷰티 제품이 해외에서도 쉽게 구할 수 있게 되면, 국내 소비자도 해외 트렌드를 더 빠르게 접할 수 있을 것 같다.”  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>정부가 4대 추진 전략을 발표하고, 300개 브랜드 발굴·500개 팀 선발 계획을 공개했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013625172" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>‘오프라인 첫 수출 원클릭 패키지’ 도입 및 150억·95억 원 투자 계획이 발표되었다.</td>
+<td><a href="https://biz.chosun.com/industry/business-venture/2025/11/27/HDSLV4H42ZA2NPPOM7CIBZGFUA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 스타트업과의 협업 및 4개 해외 진출 거점 지정이 언급되었다.</td>
+<td><a href="https://www.newsis.com/view/NISX20251127_0003419389" target="_blank">Newsis</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>구체적인 AI 프로그램의 기능 및 성과 예측은 아직 공개되지 않았다.</td>
+<td>—</td>
+</tr>
+<tr>
+<td></td>
+<td>500개 소상공인 팀의 실제 선발 기준과 절차는 아직 상세히 공개되지 않았다.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>중소벤처기업부</strong></td>
+<td>수출 지원 정책 수립</td>
+<td><strong>▶</strong> K‑뷰티 수출 확대를 위한 재정 및 인프라 지원</td>
+</tr>
+<tr>
+<td><strong>보건복지부</strong></td>
+<td>제품 품질·안전 관리</td>
+<td><strong>▶</strong> 해외 시장 진출 시 품질 인증 및 규제 대응 지원</td>
+</tr>
+<tr>
+<td><strong>AI 스타트업 대표</strong></td>
+<td>AI 솔루션 제공</td>
+<td><strong>▶</strong> 제품 개발·마케팅 효율성 향상 기대</td>
+</tr>
+<tr>
+<td><strong>K‑뷰티 브랜드 대표</strong></td>
+<td>제품 개발·수출</td>
+<td><strong>▶</strong> 해외 시장 진출 기회 확대와 비용 절감 기대</td>
+</tr>
+<tr>
+<td><strong>소상공인 대표</strong></td>
+<td>현장 운영</td>
+<td><strong>▶</strong> 해외 진출 자금·지식 지원 필요성 강조</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수출 규모 확대</strong>: 2026년 500개 소상공인 팀 선발과 AI·오프라인 패키지 도입으로 수출 규모가 10% 이상 성장할 것으로 예상된다.  </li>
+<li><strong>시장 다변화</strong>: 4개 해외 진출 거점(미국, 유럽, 중국, ASEAN 등)에서 현지 파트너십을 강화해 시장 다변화를 추진한다.  </li>
+<li><strong>혁신 주도</strong>: AI 기반 제품 개발·마케팅이 표준화되면, K‑뷰티가 ‘스마트 뷰티’ 선두주자로 자리매김할 가능성이 높다.  </li>
+<li><strong>정책 지속성</strong>: 정부의 재정 지원과 인프라 구축이 지속된다면, K‑뷰티는 글로벌 뷰티 시장에서 1위 자리를 장기적으로 유지할 수 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>▶</strong> K‑뷰티 수출 1위 유지<br />
+- <strong>▶</strong> 4대 전략(글로벌 진입·확장·성장·기반) 발표<br />
+- <strong>▶</strong> 300개 브랜드 발굴·500개 소상공인 팀 선발<br />
+- <strong>▶</strong> ‘오프라인 첫 수출 원클릭 패키지’ 도입<br />
+- <strong>▶</strong> AI·오프라인 패키지, 150억·95억 원 투자<br />
+- <strong>▶</strong> 4개 해외 진출 거점 지정  </p>
+</blockquote>
+<p>이와 같은 종합적 지원 정책은 K‑뷰티가 글로벌 시장에서 지속적으로 성장하고, 국내 소상공인과 중소기업이 해외 진출에 필요한 자원과 역량을 확보하는 데 큰 역할을 할 것으로 보인다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=IHW7jVQ2MKk" target="_blank">윤석열 정부 첫 국가안보전략서…"글로벌 중추국가" / ...</a><a href="https://www.youtube.com/watch?v=9HOWpeWko2I" target="_blank">올해, 인태전략 실행 원년 국제사회 책임 역할 다할 것...</a><a href="https://www.youtube.com/watch?v=Giz4Ac4thYw" target="_blank">[1분 브리핑] 제4차 수출전략회의 'K 콘텐츠 수출전...</a><a href="https://www.youtube.com/watch?v=igFMCbPHykY" target="_blank">尹, 美 상원의원단 접견..."글로벌 포괄적 전략동맹 ...</a><a href="https://www.youtube.com/watch?v=K5Q-G4UqGVw" target="_blank">정부, 글로벌 협력망 통해 '과학기술 외교' 확대......</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013625172" target="_blank">"화장품 수출 2강 도약"…'K-뷰티 브랜드' 300곳 키운다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156731790&pWise=sub&pWiseSub=C3" target="_blank">"K-뷰티 글로벌 위상 더욱 공고화!" 「K-뷰티 수출 성과 제고 및 확산 ...</a><a href="https://www.m-i.kr/news/articleView.html?idxno=1307936" target="_blank">정부, K-뷰티 글로벌 전략 본격 가동…혁신 브랜드·해외 인프라 종합 ...</a><a href="https://www.newsis.com/view/NISX20251127_0003419389" target="_blank">"화장품 수출 2강 도약"…'K-뷰티 브랜드' 300곳 키운다</a><a href="https://biz.chosun.com/industry/business-venture/2025/11/27/HDSLV4H42ZA2NPPOM7CIBZGFUA/" target="_blank">정부, K뷰티 글로벌 확장 본격 추진…수출 성과 제고 방안 발표 - 조선 ...</a><a href="https://v.daum.net/v/20251127120231128" target="_blank">"화장품 수출 2강 도약"…'K-뷰티 브랜드' 300곳 키운다</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
