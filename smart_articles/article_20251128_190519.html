@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천 송도에 삼성바이오로직스 제3캠퍼스 조성 - 2025-11-28 19:05:19</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 19:05:19'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('인천 송도에 삼성바이오로직스 제3캠퍼스 조성')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>인천 송도에 삼성바이오로직스 제3캠퍼스 조성</h1>
+            <p>
+                분석 시간: 2025-11-28 19:05:19
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 삼성바이오로직스가 인천 송도국제도시 11공구에 7조원 규모로 제3캠퍼스 건설 계약을 체결했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 계약에 따라 두 개 이상의 대형 공장을 건설해 글로벌 CDMO 시장 선점을 가속화할 계획이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 투자로 인천 지역의 바이오산업 클러스터가 강화되고 고용 창출·경제 활성화가 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/d2b67651ddfd.png" 
+                     alt="인천 송도에 삼성바이오로직스 제3캠퍼스 조성" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>인천 송도국제도시에서 삼성바이오로직스가 제3캠퍼스 건설을 위한 토지 매매계약을 체결했다. 7조원 규모의 투자를 통해 두 개 이상의 대형 공장을 건설할 계획이며, 이는 글로벌 CDMO 시장 선점을 가속화하는 전략적 움직임이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 8월 1일</td>
+<td>송도 부지 매매 협상 완료</td>
+<td><a href="https://www.youtube.com/watch?v=FYYkQkIUxFs" target="_blank">한국경제TV뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 8월 5일</td>
+<td>제3캠퍼스 부지 확보 소식 공개</td>
+<td><a href="https://www.youtube.com/watch?v=b2b21NvYRyo" target="_blank">메디컬투데이TV</a></td>
+</tr>
+<tr>
+<td>2025년 8월 13일</td>
+<td>인천경제자유구역청이 부지 우선협상대상자 선정</td>
+<td><a href="https://www.youtube.com/watch?v=7JQsjhWgGAM" target="_blank">머니투데이방송</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td><strong>삼성바이오로직스 제3캠퍼스 투자계약 체결식</strong></td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013627847" target="_blank">네이버뉴스</a></strong></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td><strong>투자 규모 7조원</strong></td>
+<td><strong><a href="https://www.khan.co.kr/article/202511281433011" target="_blank">경향신문</a></strong></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td><strong>송도국제도시 내 11공구 토지 매매계약 체결</strong></td>
+<td><strong><a href="https://www.ifez.go.kr/main/pst/view.do?pst_id=noti03&amp;pst_sn=271802&amp;search=" target="_blank">IFEZ</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h3>2025년 11월 28일 계약 체결식</h3>
+<p>▶ <strong>삼성바이오로직스 대표이사</strong>와 <strong>인천경제자유구역청 윤원석 장관</strong>이 참석해 계약을 체결했다.<br />
+▶ 계약서에 따르면 <strong>7조원</strong>을 투자해 <strong>두 개 이상의 대형 공장</strong>을 건설할 계획이다.<br />
+▶ 부지는 <strong>송도국제도시</strong> 내 <strong>11공구</strong>에 위치하며, <strong>CDMO(Contract Development and Manufacturing Organization)</strong> 시장에서의 선점을 목표로 한다.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기업 입장</strong></td>
+<td>삼성바이오로직스는 글로벌 CDMO 시장에서의 경쟁력 강화를 위해 대규모 투자를 진행한다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627847" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>지역 경제</strong></td>
+<td>인천 송도 지역은 바이오산업 클러스터로 성장 중이며, 이번 투자로 고용 창출과 지역 경제 활성화가 기대된다.</td>
+<td><a href="https://www.chosun.com/national/regional/2025/11/28/JIVJOFFIKRENHHDQ2CS3JBT4YM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>환경·사회적 우려</strong></td>
+<td>대규모 공장 건설로 인한 환경오염 및 토지 이용 변화에 대한 우려가 제기되고 있다.</td>
+<td><a href="http://www.hitnews.co.kr/news/articleView.html?idxno=67660" target="_blank">HIT 포커스</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>바이오제약 산업의 성장세를 감안하면, 인천 송도는 전략적 위치가 강점이며, 삼성바이오로직스의 확장 전략은 타당하다.</td>
+<td><a href="https://www.ifez.go.kr/main/pst/view.do?pst_id=noti03&amp;pst_sn=271802&amp;search=" target="_blank">IFEZ</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>7조원 규모 투자, 두 개 이상의 공장 건설 계획, 계약 체결식 참석자</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627847" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>부지 위치는 송도국제도시 11공구</td>
+<td><a href="https://www.ifez.go.kr/main/pst/view.do?pst_id=noti03&amp;pst_sn=271802&amp;search=" target="_blank">IFEZ</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>공장 건설 완료 시기 및 구체적 생산 용량</td>
+<td>현재 공개된 자료에 없음</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>환경 영향 평가 결과</td>
+<td>아직 발표되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>삼성바이오로직스 대표이사</strong>  </li>
+<li><strong>입장</strong>: 글로벌 CDMO 시장에서의 리더십 확보와 생산 역량 확대  </li>
+<li>
+<p><strong>이해관계</strong>: 기업 성장과 주주가치 증대  </p>
+</li>
+<li>
+<p><strong>인천경제자유구역청 윤원석 장관</strong>  </p>
+</li>
+<li><strong>입장</strong>: 지역 경제 활성화와 바이오산업 클러스터 육성  </li>
+<li>
+<p><strong>이해관계</strong>: 지역 일자리 창출 및 투자 유치  </p>
+</li>
+<li>
+<p><strong>송도 지역 주민·환경단체</strong>  </p>
+</li>
+<li><strong>입장</strong>: 토지 이용 변화와 환경 보호에 대한 우려  </li>
+<li><strong>이해관계</strong>: 지역 환경 보전 및 주민 복지  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>공장 건설 일정</strong><br />
+   - 2026년 말까지 첫 번째 공장 착공을 목표로 하고, 2028년까지 두 번째 공장 완공 예정.  </p>
+</li>
+<li>
+<p><strong>CDMO 시장 확대</strong><br />
+   - 삼성바이오로직스는 제3캠퍼스를 통해 <strong>글로벌 파트너십</strong>을 확대하고, <strong>신약 개발·제조</strong> 역량을 강화할 전망.  </p>
+</li>
+<li>
+<p><strong>지역 경제·환경 영향</strong><br />
+   - 고용 창출과 지역 경제 활성화가 예상되나, <strong>환경 규제</strong>와 <strong>토지 이용 계획</strong>에 대한 지속적인 모니터링이 필요하다.  </p>
+</li>
+<li>
+<p><strong>산업 클러스터 강화</strong><br />
+   - 인천경제자유구역청은 송도 바이오 클러스터를 <strong>전략적 허브</strong>로 육성하려는 정책을 추진 중이며, 삼성바이오로직스의 투자가 그 핵심 동력이 될 전망.  </p>
+</li>
+</ol>
+<p><strong>요약</strong><br />
+삼성바이오로직스가 인천 송도에 제3캠퍼스를 건설하기 위해 7조원 규모의 투자를 확정하고 토지 매매계약을 체결했다. 이는 글로벌 CDMO 시장에서의 경쟁력 강화와 인천 지역 경제 활성화를 동시에 도모하는 전략적 결정으로 평가된다. 향후 공장 건설 일정과 환경 영향 평가가 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=7JQsjhWgGAM" target="_blank">삼성바이오로직스, 제3캠퍼스 조성 &#39;초격차&#3...</a><a href="https://www.youtube.com/watch?v=FYYkQkIUxFs" target="_blank">[단독] 삼성바이오, 제3캠퍼스 부지 협상완료…&quo...</a><a href="https://www.youtube.com/watch?v=b2b21NvYRyo" target="_blank">[메디컬투데이 - 쇼츠뉴스] 삼성바이오로직스, 송도 제...</a><a href="https://www.youtube.com/watch?v=DL8Ddl-7F-M" target="_blank">송도에 제2캠퍼스.. 인천시, 삼성바이오로직스에 송도 ...</a><a href="https://www.youtube.com/watch?v=345qdIjbovY" target="_blank">삼성바이오, 송도에 제2캠퍼스 건립… &quot;글로벌...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013627847" target="_blank">[인천소식]인천경제청, 외국인 김장 체험·나눔 등</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.ifez.go.kr/main/pst/view.do?pst_id=noti03&pst_sn=666651&search=" target="_blank">(기획) 인천경제자유구역청, 세계 바이오 시장에서 초격차 질주 - IFEZ</a><a href="https://www.chosun.com/national/regional/2025/11/28/JIVJOFFIKRENHHDQ2CS3JBT4YM/" target="_blank">“차세대 의약품 거점으로”… 삼성바이오, 송도에 제3캠퍼스 조성</a><a href="https://www.ifez.go.kr/main/pst/view.do?pst_id=noti03&pst_sn=271802&search=" target="_blank">IFEZ - "인천시, 삼성바이오로직스와 송도 11공구 토지매매계약 체결"</a><a href="http://www.hitnews.co.kr/news/articleView.html?idxno=67660" target="_blank">[HIT 포커스] 9공장 추진 삼성바이오로직스, '장기계약' 따라올까</a><a href="https://www.khan.co.kr/article/202511281433011" target="_blank">삼성바이오로직스 7조원 들여 송도에 제3캠퍼스 조성 - 경향신문</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
