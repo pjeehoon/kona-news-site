@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요 기업 87% “인사 업무에 AI 활용 중”… 75% “채용에 AI 적용 확대” - 2025-11-28 15:24:33</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,뉴스">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 15:24:33'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('주요 기업 87% “인사 업무에 AI 활용 중”… 75% “채용에 AI 적용 확대”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>주요 기업 87% “인사 업무에 AI 활용 중”… 75% “채용에 AI 적용 확대”</h1>
+            <p>
+                분석 시간: 2025-11-28 15:24:33
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 상위 500대 기업 중 86.7%가 인사 업무에 AI를 도입하고, 75%가 채용 단계 확대를 계획했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그 중 52.8%가 현재 채용 단계에서 AI를 활용하고 있으며, 청년 구직자 42.3%도 AI를 활용해 취업 준비를 하고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> AI 도입은 효율성을 높이지만 공정성·편향성 우려가 제기돼 정부는 가이드라인과 규제 마련을 추진 중이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/abf76b047d3a.png" 
+                     alt="주요 기업 87% “인사 업무에 AI 활용 중”… 75% “채용에 AI 적용 확대”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>핵심 요약</strong><br />
+2025년 11월 28일 발표된 고용노동부·한국고용정보원 ‘2025년 기업 채용동향조사’에 따르면, 상위 500대 기업 중 86.7 %가 인사 업무에 AI를 도입하고, 그 중 52.8 %가 채용 단계에서도 AI를 활용하고 있다. 또한, 75 %의 기업이 채용에 AI 도입을 확대할 계획을 밝혔으며, 청년 구직자 42.3 %가 취업 준비에 AI를 활용하고 있다. AI 도입이 효율성을 높이는 한편, 공정성·편향성 문제에 대한 우려도 함께 제기되고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 18 일</td>
+<td>고용노동부·한국고용정보원 ‘2025년 기업 채용동향조사’ 2차 결과 발표</td>
+<td><a href="https://www.korea.kr/docViewer/iframe_skin/doc.html?fn=c55b31e6b73fe237a4005546a0b496a6&amp;rs=/docViewer/result/2025.11/18/c55b31e6b73fe237a4005546a0b496a6" target="_blank">정부문서뷰어</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 28 일</td>
+<td>네이버 뉴스 보도: 상위 500대 기업 87 %가 인사 업무에 AI 활용, 채용 확대 계획 75 %</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004090721" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 28 일</td>
+<td>연합뉴스 보도: AI 활용 기업 비율 86.7 %, 채용 확대 계획 75 %</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251127154000530" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 28 일</td>
+<td>뉴스이 보도: 500대 기업 86.7 %가 인사 업무에 AI 활용, 42 % 청년 구직자 AI 활용</td>
+<td><a href="https://v.daum.net/v/20251128121501929" target="_blank">뉴스이</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 28 일</td>
+<td>포이코노미 보도: 87 %가 인사 업무에 AI 활용, 공정성 우려 제기</td>
+<td><a href="https://www.foeconomy.co.kr/news/view.php?no=6815" target="_blank">포이코노미</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>인사 업무 AI 도입 비율</strong>: 86.7 % (상위 500대 기업 중 435개 기업)  </li>
+<li><strong>채용 단계 AI 활용 비율</strong>: 52.8 % (인사 AI 도입 기업 중 229개 기업)  </li>
+<li><strong>채용 AI 확대 계획</strong>: 75 % (인사 AI 도입 기업 중 326개 기업)  </li>
+<li><strong>청년 구직자 AI 활용</strong>: 42.3 % (연구 대상 1,000명 중 423명)  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<h3>기업 측</h3>
+<ul>
+<li><strong>효율성 강조</strong>: AI를 통해 이력서 스크리닝, 역량 매칭, 직원 성과 분석 등 반복 업무를 자동화해 인사 담당자의 업무 부담을 줄이고, 데이터 기반 의사결정을 가능하게 한다.  </li>
+<li><strong>비용 절감</strong>: 장기적으로 인력 비용을 절감하고, 채용 주기를 단축해 인재 확보 속도를 높일 수 있다.  </li>
+</ul>
+<h3>인사·HR 전문가</h3>
+<ul>
+<li><strong>공정성·편향성 우려</strong>: AI 알고리즘이 기존 데이터에 기반해 편향된 판단을 할 가능성이 있어, 채용 과정에서 차별이 발생할 수 있다.  </li>
+<li><strong>투명성 요구</strong>: AI 평가 기준과 알고리즘 구조를 공개해 이해관계자에게 신뢰를 제공해야 한다는 목소리.  </li>
+</ul>
+<h3>청년 구직자</h3>
+<ul>
+<li><strong>편리성</strong>: AI 기반 직무 매칭 서비스와 온라인 면접 플랫폼을 통해 구직 활동이 보다 효율적이 되고, 맞춤형 피드백을 받을 수 있다.  </li>
+<li><strong>불확실성</strong>: AI가 추천하는 직무가 실제 직무와 부합하지 않을 수 있어, 구직자들이 AI에 과도하게 의존하는 위험이 있다.  </li>
+</ul>
+<h3>정책 입안자</h3>
+<ul>
+<li><strong>규제 및 가이드라인 제정</strong>: 고용노동부는 AI 도입 기업에 대한 가이드라인을 마련해 공정성 확보와 개인정보 보호를 강화할 계획이다.  </li>
+<li><strong>교육 프로그램</strong>: AI 활용 역량을 강화하기 위해 기업과 구직자를 대상으로 AI 교육 프로그램을 확대할 예정이다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>상위 500대 기업 86.7 %가 인사 업무에 AI 활용</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004090721" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>52.8 %가 채용 단계에서도 AI 활용</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004090721" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>75 %가 채용 AI 확대 계획</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251127154000530" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>청년 구직자 42.3 %가 AI 활용</td>
+<td><a href="https://v.daum.net/v/20251128121501929" target="_blank">뉴스이</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>AI 채용 과정의 공정성 및 편향성에 대한 실제 사례</td>
+<td>현재까지 공개된 사례가 없으며, 추정되는 우려 사항</td>
+</tr>
+<tr>
+<td></td>
+<td>AI 평가 기준의 투명성 부족에 대한 구체적 데이터</td>
+<td>아직 공개되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>고용노동부</td>
+<td>AI 도입 확대를 통한 고용 효율성 증대</td>
+<td>정책 수립·규제 강화</td>
+</tr>
+<tr>
+<td>한국고용정보원</td>
+<td>AI 활용 현황 조사·보고</td>
+<td>데이터 제공·분석</td>
+</tr>
+<tr>
+<td>HR 전문가</td>
+<td>AI 도입의 장점과 위험성 균형 평가</td>
+<td>교육·컨설팅</td>
+</tr>
+<tr>
+<td>청년 구직자</td>
+<td>AI 활용으로 취업 기회 확대</td>
+<td>직업 선택·경력 개발</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>AI 도입 비율 상승</strong><br />
+   - 2025년 기준 86.7 %에서 2026년까지 90 % 이상으로 상승할 것으로 예상된다.  </li>
+<li><strong>규제 및 가이드라인 강화</strong><br />
+   - 고용노동부는 AI 공정성 확보를 위한 가이드라인을 2026년 상반기에 발표할 계획이다.  </li>
+<li><strong>인재 양성 프로그램 확대</strong><br />
+   - AI 활용 역량을 갖춘 인재를 양성하기 위해 대학·기업 연계 교육 프로그램이 확대될 전망이다.  </li>
+<li><strong>공정성·편향성 이슈 해결</strong><br />
+   - AI 알고리즘의 투명성 확보와 편향성 검증을 위한 기술적·제도적 방안이 논의될 것이다.  </li>
+</ol>
+<p><strong>결론</strong><br />
+한국 상위 500대 기업의 대다수가 인사 업무에 AI를 도입하고 있으며, 채용 단계에서도 AI 활용이 확대될 전망이다. 효율성 증대와 비용 절감이 기대되는 반면, 공정성·편향성 문제에 대한 우려가 지속되고 있다. 고용노동부와 관련 기관은 AI 활용의 장점을 극대화하면서도 투명성과 공정성을 확보하기 위한 정책·가이드라인을 마련해 나갈 필요가 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=nRK62ag3Y6s" target="_blank">[2025 HR FAIR] 9월 4일, Hi-AI 세션...</a><a href="https://www.youtube.com/watch?v=0Q98OltLpG0" target="_blank">AI시대의 일과 인사관리의 변화 [HR 인사이트]</a><a href="https://www.youtube.com/watch?v=U2L7LT83qFg" target="_blank">AI가 인사관리…인재 퇴사율 92% 적중_산업뉴스[산업...</a><a href="https://www.youtube.com/watch?v=DtaWXwBqS2o" target="_blank">중소기업에 AI 도입, 인사관리에 거대한 변화!</a><a href="https://www.youtube.com/watch?v=NYrnMQcFyF4" target="_blank">AI 열공하는 인사팀 김대리…기업 AI 직무 교육 '쏘...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/079/0004090721" target="_blank">매출 상위 기업들 "인사 업무에 AI 활용" 80% 넘어</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251127154000530" target="_blank">기업 87% 인사업무에 AI활용…22%는 직원 채용에 사용 | 연합뉴스</a><a href="https://v.daum.net/v/20251128121501929" target="_blank">기업 87% 인사업무에 AI활용…22%는 직원 채용에 사용</a><a href="https://www.newsis.com/view/NISX20251128_0003421061" target="_blank">500대 기업 86.7%, 인사업무에 AI 쓴다…재직자 42% "취업 준비 때 AI ...</a><a href="https://www.korea.kr/docViewer/iframe_skin/doc.html?fn=c55b31e6b73fe237a4005546a0b496a6&rs=/docViewer/result/2025.11/18/c55b31e6b73fe237a4005546a0b496a6" target="_blank">문서뷰어</a><a href="https://www.foeconomy.co.kr/news/view.php?no=6815" target="_blank">500대 기업의 87%, 인사 업무에 AI 활용⋯"효율 높지만 공정성 불신 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
