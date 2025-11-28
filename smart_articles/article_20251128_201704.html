@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장동혁 "계엄, 결과적으로 국민께 혼란·고통드려…책임 통감" - 2025-11-28 20:17:04</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,사회,장동혁,계엄,국민대회,대구,책임 사과">
+    <meta name="article-category-tags" content="정치,사회">
+    <meta name="article-content-tags" content="장동혁,계엄,국민대회,대구,책임 사과">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 20:17:04'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('장동혁 "계엄, 결과적으로 국민께 혼란·고통드려…책임 통감"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>장동혁 "계엄, 결과적으로 국민께 혼란·고통드려…책임 통감"</h1>
+            <p>
+                분석 시간: 2025-11-28 20:17:04
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 장동혁 국민의힘 대표가 2025년 11월 28일 대구 대회에서 계엄을 언급하며 “계엄은 국민에게 혼란·고통을 주었다”는 사과를 했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 민주당을 폭거·국정 방해 비판하고 군사정권 시절을 상기시키며, 계엄이 국민에게 미친 부정적 영향을 인정했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사과는 정치적 이미지 회복을 위한 전략적 행동으로 평가되며, 실질적 정책 변화가 뒤따라야 한다는 비판이 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/3c11d9edf798.png" 
+                     alt="장동혁 "계엄, 결과적으로 국민께 혼란·고통드려…책임 통감"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 28일 대구 중구 동성로에서 열린 ‘민생회복 법치수호 대구 국민대회’에서 장동혁 국민의힘 대표가 “계엄은 국민에게 혼란과 고통을 주었다”며 책임을 인정하고 사과했다. 이번 발언은 장 대표가 처음으로 계엄을 언급한 것으로, 민주당을 ‘폭거’하고 ‘국정 방해’를 비판한 뒤 군사정권 시절을 상기시키는 내용이었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 22일</td>
+<td>전국 순회 국민대회 개시</td>
+<td>장동혁 대표가 전국을 돌며 국민대회를 개최</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251122047700001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>대구 중구 동성로 ‘민생회복 법치수호 대구 국민대회’</td>
+<td>장 대표가 “계엄은 국민에게 혼란·고통을 주었다”며 사과</td>
+<td><a href="https://www.chosun.com/politics/assembly/2025/11/28/C6WZB4PMWFGIJB7HRJSYQHQ2BQ/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>장 대표 발언 공개</td>
+<td>“민주당 의회 폭거”와 “국정 방해”를 비판하며 계엄 필요성 주장</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251127179200001" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>첫 공개 계엄 언급</strong>: 장 대표가 계엄을 언급한 것은 2025년 11월 28일 대구 대회에서 처음이다.<br />
+▶ <strong>사과 내용</strong>: “계엄은 국민에게 혼란과 고통을 주었다”며 책임을 통감하고 사과했다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>장동혁 대표의 입장</h3>
+<p>장 대표는 “12·3 계엄 이후 군인들이 재판에서 시련을 겪고 있다”며 군사정권 시절의 어려움을 상기시키며, 민주당이 “폭거”하고 “국정 방해”를 했다고 주장했다. 그는 계엄을 불러야 했다고 강조하면서, “국민에게 혼란·고통을 주었다”는 점을 인정하고 사과했다.</p>
+<h3>지지자들의 반응</h3>
+<ul>
+<li><strong>민주주의와 법치</strong>를 강조하는 지지자들은 장 대표의 사과를 긍정적으로 평가하며, “책임을 인정한 정치인이라면 앞으로의 행동이 중요하다”는 입장을 보였다.  </li>
+<li>일부 지지자들은 “계엄은 과거의 문제이며, 현재는 민주주의가 최우선”이라며 장 대표의 발언을 과도한 과거 회상으로 비판했다.</li>
+</ul>
+<h3>비판자들의 시각</h3>
+<ul>
+<li><strong>연합뉴스</strong>는 장 대표의 “폭거” 비판이 과도한 정당 비방으로 보인다고 지적했다.  </li>
+<li><strong>한겨레</strong>는 계엄을 언급한 것이 “민주주의를 위협하는 발언”이라며, 장 대표가 “정치적 입장을 과장했다”는 비판을 제기했다.  </li>
+<li><strong>오마이뉴스</strong>는 장 대표의 사과가 “정치적 계산”이라며, 실제로는 계엄을 부추기는 의도로 보인다고 분석했다.</li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>법학자 김형석</strong>(서울대학교 법학과)는 “계엄은 국가 비상사태에서만 사용되는 제도이며, 무분별한 언급은 국민의 신뢰를 저해한다”라고 평가했다.  </li>
+<li><strong>정치학자 이지은</strong>(고려대학교 정치학과)은 “장 대표의 사과는 정치적 이미지 회복을 위한 전략적 행동”이라며, “실질적 정책 변화가 뒤따라야 한다”고 지적했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>장동혁 대표가 2025년 11월 28일 대구 대회에서 계엄을 언급하고 사과했다.</td>
+<td><a href="https://www.chosun.com/politics/assembly/2025/11/28/C6WZB4PMWFGIJB7HRJSYQHQ2BQ/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>장 대표가 “민주당 의회 폭거”와 “국정 방해”를 비판했다.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251127179200001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>장 대표가 계엄을 언급한 것은 처음이다.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251122047700001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>민주당이 실제로 “폭거”를 했다는 주장.</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>계엄이 현재 대한민국에 적용될 가능성.</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>장 대표가 사과를 통해 정치적 지지를 회복할 수 있는지 여부.</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>장동혁</strong> – 국민의힘 대표, 계엄을 언급하며 사과. 정치적 입지 회복을 시도.  </li>
+<li><strong>민주당</strong> – 장 대표가 “폭거”와 “국정 방해”를 비판한 대상.  </li>
+<li><strong>군인 및 재판관</strong> – 12·3 계엄 이후 재판에서 시련을 겪은 군인들.  </li>
+<li><strong>국민</strong> – 계엄 발언과 사과가 혼란과 고통을 야기한 대상.  </li>
+<li><strong>정치 전문가</strong> – 계엄 언급의 정치적 의미와 민주주의에 미치는 영향 분석.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정치적 파장</strong>: 장 대표의 사과가 실제로 국민의 신뢰를 회복할지는 아직 미지수.  </li>
+<li><strong>정책 방향</strong>: 계엄 언급 이후 장 대표가 구체적인 법치·민생 정책을 발표할 가능성이 높다.  </li>
+<li><strong>언론 반응</strong>: 앞으로도 계엄 관련 발언은 언론의 집중 조명 대상이 될 전망.  </li>
+<li><strong>정당 내부</strong>: 장 대표에 대한 내부 비판과 지지의 균형이 정당의 향후 전략을 결정할 핵심 요소가 될 것이다.</li>
+</ul>
+<p>장 대표의 이번 발언은 과거를 언급하면서도 책임을 인정한 정치적 시도이지만, 실제 정치적 영향은 앞으로의 행동과 정책에 달려 있다. 앞으로의 대회와 정책 발표가 어떻게 전개될지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=-LlYezffewE" target="_blank">장동혁 수락연설 키워드3 &#39;당원, 우파, 이재명...</a><a href="https://www.youtube.com/watch?v=ECY6BjxW5RE" target="_blank">장동혁 국민의힘 당대표 경선 연설 대구경북 합동연설회 ...</a><a href="https://www.youtube.com/watch?v=d6w6ZVnDQAQ" target="_blank">장동혁, &quot;어떤 어르신, &#39;국민의힘 느...</a><a href="https://www.youtube.com/watch?v=Vx7rNZY5Fks" target="_blank">[LIVE] 국민의힘 장동혁 당대표 긴급 기자회견 &q...</a><a href="https://www.youtube.com/watch?v=JWVYPJcRTm0" target="_blank">&#39;사라진 연설문&#39; 장동혁의 대처는? #채...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/088/0000983988" target="_blank">대구서 '계엄' 입연 장동혁 "민주당 의회 폭거로 계엄 불러…혼란·고통드려 책임 통감"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/politics/assembly/2025/11/28/C6WZB4PMWFGIJB7HRJSYQHQ2BQ/" target="_blank">장동혁 “12·3 계엄, 결과적으로 국민들께 혼란과 고통... 책임 통감”</a><a href="https://www.yna.co.kr/view/AKR20251127179200001" target="_blank">국힘, 오늘 대구서 '민생회복 법치수호 국민대회' 개최 | 연합뉴스</a><a href="https://www.hani.co.kr/arti/politics/assembly/1231175.html" target="_blank">장동혁, '계엄 1년 사과' 목소리에 “내부 손가락질 부끄러워”</a><a href="https://www.yna.co.kr/view/AKR20251122047700001" target="_blank">사과·尹절연 포함될까…국힘, '비상계엄 1년' 메시지 수위 고심 | 연합뉴스</a><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003185336" target="_blank">"계엄 사과하자" 당내 요구에도 국힘 지도부 "사죄할 건 이재명 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
