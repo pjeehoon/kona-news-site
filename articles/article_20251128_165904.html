@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소 포집 실증 확정, 천리안 6호는 예타 착수…방폐물 연구시설 예타 면제 - 2025-11-28 16:59:03</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,탄소포집,천리안6호,예타착수">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="탄소포집,천리안6호,예타착수">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 16:59:03'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('탄소 포집 실증 확정, 천리안 6호는 예타 착수…방폐물 연구시설 예타 면제')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>탄소 포집 실증 확정, 천리안 6호는 예타 착수…방폐물 연구시설 예타 면제</h1>
+            <p>
+                분석 시간: 2025-11-28 16:59:03
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 탄소 포집·활용(CCU) 실증 사업이 확정되면서 천리안 6호가 예타를 착수하고 방폐물 연구시설은 예타 면제 조치를 받았다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 예산이 1조1천392억원에서 3천806억원으로 대폭 축소돼 여수·서산·강릉·삼척 중 3곳이 사업에서 제외되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 예산 축소와 부지 제외가 프로젝트 규모와 시공 기간에 부정적 영향을 미쳐 탄소 감축 목표 달성에 지연이 우려된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/3c814429e694.png" 
+                     alt="탄소 포집 실증 확정, 천리안 6호는 예타 착수…방폐물 연구시설 예타 면제" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>탄소 포집·활용(CCU) 실증 사업이 확정되면서 천리안 6호가 예타를 착수하고, 방폐물 연구시설은 예타 면제 조치를 받았다. 동시에 CCU 메가프로젝트 예산이 대폭 축소돼 사업 부지가 일부 제외되는 등 논란이 겹쳤다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 28일</td>
+<td>국가연구개발사업평가 총괄위원회 심의</td>
+<td>CCU 메가프로젝트 예비타당성 조사 결과가 심의·결정되었으며, <strong>탄소 포집 실증이 확정</strong>되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>천리안 6호 예타 착수</td>
+<td>천리안 6호가 <strong>예타를 착수</strong>했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>방폐물 연구시설 예타 면제</td>
+<td>방폐물 연구시설이 <strong>예타 면제</strong>를 받았다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>CCU 메가프로젝트 예산 축소</td>
+<td>예산이 <strong>1조1천392억원</strong>에서 <strong>3천806억원</strong>으로 축소되었고, <strong>여수·서산·강릉·삼척</strong> 중 3곳이 사업에서 제외되었다.</td>
+<td><a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>예비타당성 조사 결과</td>
+<td>예타 결과에서 <strong>발전과 철강</strong> 분야만 선정되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>정부 측</strong>  </li>
+<li><strong>박인규</strong>는 예산 축소와 부지 제외에도 불구하고, 예타 제도를 안정적으로 운영해 국가 역점 사업이 적시 추진될 수 있도록 노력하겠다고 밝혔다.  </li>
+<li>그는 <strong>예타 폐지 이후 사업 착수와 환류가 신속해질 것으로 기대</strong>한다고 평가했다.  </li>
+<li>
+<p>출처: <a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>산업계</strong>  </p>
+</li>
+<li>일부 기업은 예산 축소가 프로젝트 규모와 시공 기간에 부정적 영향을 미칠 수 있다고 우려한다.  </li>
+<li>
+<p>반면, 예타 면제 조치가 방폐물 연구시설의 운영 효율성을 높일 수 있다는 의견도 있다.</p>
+</li>
+<li>
+<p><strong>환경단체</strong>  </p>
+</li>
+<li>탄소 포집 실증이 확정된 것은 긍정적이지만, 예산 감소가 실증 규모를 제한할 수 있어 <strong>탄소 감축 목표 달성에 지연</strong>을 초래할 수 있다고 지적한다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>탄소 포집 실증이 확정, 천리안 6호 예타 착수, 방폐물 연구시설 예타 면제</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>예산이 1조1천392억원에서 3천806억원으로 축소, 부지 제외</td>
+<td><a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>예타 결과에서 발전과 철강 분야만 선정</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>예산 축소가 실제 프로젝트 성과에 미치는 장기적 영향</td>
+<td>추정되는 정보, 추가 자료 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>박인규</strong></td>
+<td>과학기술정보통신부 장관</td>
+<td>예산 축소에도 예타 제도를 안정적으로 운영해 사업 적시 추진을 강조. 예타 폐지 후 사업 착수·환류가 신속해질 것으로 기대.</td>
+</tr>
+<tr>
+<td><strong>천리안 6호 관계자</strong></td>
+<td>프로젝트 담당자</td>
+<td>예타 착수로 실증 단계 진입, 프로젝트 일정과 예산에 대한 상세 계획을 공개 예정.</td>
+</tr>
+<tr>
+<td><strong>방폐물 연구시설 관계자</strong></td>
+<td>연구소장</td>
+<td>예타 면제 조치로 연구 운영이 원활해질 것으로 예상.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>실증 단계 진입</strong>: 천리안 6호 예타 착수로 실제 탄소 포집·활용 기술이 현장에 적용될 전망.  </li>
+<li><strong>예산 및 부지 조정</strong>: 예산 축소와 부지 제외가 프로젝트 규모와 일정에 미칠 영향이 주목된다.  </li>
+<li><strong>정책 연계</strong>: 예타 폐지 이후 사업 착수와 환류가 가속화될 가능성이 있어, 정부와 산업계가 긴밀히 협력할 필요가 있다.  </li>
+<li><strong>환경 목표</strong>: 탄소 포집 실증이 확정된 것은 긍정적이지만, 예산과 부지 제한이 <strong>탄소 감축 목표 달성에 지연</strong>을 초래할 수 있으므로 지속적인 모니터링이 요구된다.</li>
+</ul>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015768216" target="_blank">CCU 메가프로젝트 5곳중 2곳만 통과…여수·서산·강릉삼척 제외</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.ngv.re.kr/thumbnail/BBSMSTR_000000000922/BBS_202504040639002580.pdf" target="_blank">2026년도 국가연구개발 투자방향 및 기준(안)</a><a href="https://www.2050cnc.go.kr/storage/board/base/2023/03/29/BOARD_ATTACH_1680068167299.pdf" target="_blank">국가 탄소중립・녹색성장 기본계획(안) 관계부처 합동</a><a href="http://energymodeling.ajou.ac.kr/docs/%ED%83%84%EC%86%8C%EC%A4%91%EB%A6%BD_%EB%85%B9%EC%83%89%EC%84%B1%EC%9E%A5_%EA%B5%AD%EA%B0%80%EC%A0%84%EB%9E%B5_%EB%B0%8F_%EC%A0%9C1%EC%B0%A8_%EA%B5%AD%EA%B0%80_%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D.pdf" target="_blank">탄소중립 녹색성장 국가전략 및 제1차 국가 기본계획</a><a href="https://plan.nrf.re.kr/kor/html/sub02/0201.html?mode=D&no=a6e5e02a54ab8f33bc65f3ccebdc7c8e&file_id=1226" target="_blank">시행계획(안)('23~'24)</a><a href="https://fliphtml5.com/lukuo/xxrd/58-4_%28%EA%B3%BC%EA%B8%B0%EC%A0%95%ED%86%B5%EB%B6%80%29_%EC%A0%9C5%EC%B0%A8_%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EA%B8%B0%EB%B3%B8%EA%B3%84%ED%9A%8D_%EB%B0%8F_%EC%A0%9C1%EC%B0%A8_%EA%B5%AD%EA%B0%80%EC%97%B0%EA%B5%AC%EA%B0%9C%EB%B0%9C_%EC%A4%91%EC%9E%A5%EA%B8%B0_%ED%88%AC%EC%9E%90%EC%A0%84%EB%9E%B5_2024%EB%85%84_%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%28%EC%95%88%29/" target="_blank">58-4_(과기정통부) 제5차 과학기술기본계획 및 제1차 국가연구개발 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

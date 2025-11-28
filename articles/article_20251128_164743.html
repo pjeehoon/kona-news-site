@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구 - 2025-11-28 16:47:43</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,서안,정착민,폭력">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="서안,정착민,폭력">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 16:47:43'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('유럽 주요 4개국, 이스라엘에 \'서안 정착민 폭력\' 중단 촉구')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구</h1>
+            <p>
+                분석 시간: 2025-11-28 16:47:43
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 유럽 4국 외무장관이 공동 성명을 발표해 요르단강 서안에서의 정착민 폭력을 강력히 규탄하고 이스라엘에 즉시 중단을 촉구했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 성명과 함께 서안에서 승인된 신규 주택 규모가 공개되었으며, 3,000세대가 신규 주택 프로젝트로 승인되고 올해 총 28,000가구가 승인되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이러한 조치는 국제사회가 중동 평화 프로세스와 국제법적 입장을 강화하려는 시도로, 이스라엘의 대응과 지역 안보·인권 상황에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/124132275a62.png" 
+                     alt="유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>유럽의 외무장관 4명이 공동 성명을 통해 요르단강 서안에서의 정착민 폭력을 강력히 규탄하고, 이스라엘에 즉시 중단을 촉구했다.</strong> 성명은 2025년 11월 28일 발표되었으며, 동시에 서안에서 승인된 신규 주택 건설 규모가 공개됐다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 28일</td>
+<td>영국, 프랑스, 독일, 이탈리아 외무장관이 공동 성명 발표, 서안 정착민 폭력 중단 촉구</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>서안에서 <strong>3,000세대</strong>가 신규 주택 프로젝트로 승인</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>올해 총 <strong>28,000가구</strong>가 서안에서 승인</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>공동 성명에서 “정착민 폭력 급증을 강력히 규탄”</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8419515" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>성명 내용이 국제사회에 전달</td>
+<td><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008348285" target="_blank">SBS</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>성명에 대한 국내외 반응 보도</td>
+<td><a href="https://imnews.imbc.com/news/2025/world/article/6780064_36725.html" target="_blank">IMBC</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>성명에 대한 시각 보도</td>
+<td><a href="https://www.ytn.co.kr/_ln/0104_202511280314239397" target="_blank">YTN</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>유럽 4국의 입장</strong><br />
+  공동 성명에서 “서안에서 팔레스타인 민간인에 대한 정착민 폭력의 급증을 강력히 규탄하며, 이스라엘에 즉시 중단을 촉구한다”는 내용이 포함됐다. 이는 유럽연합이 중동 평화 프로세스에 지속적으로 관심을 보이고 있음을 반영한다.</p>
+</li>
+<li>
+<p><strong>이스라엘 정부의 반응</strong><br />
+  아직 공식 입장은 발표되지 않았으나, 과거 유사 상황에서 이스라엘은 “정착민은 자국 안보와 역사적 권리”라며 방어적 입장을 취해왔다. 전문가들은 이스라엘이 외교적 압박에 어떻게 대응할지 주목하고 있다.</p>
+</li>
+<li>
+<p><strong>팔레스타인 측의 시각</strong><br />
+  팔레스타인 인권 단체는 “정착민 폭력은 지속적인 인권 침해”라며 유럽의 조치를 지지하고, 국제사회의 추가 지원을 요구하고 있다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  국제법 전문가들은 서안에서의 정착민 건설이 <strong>국제법상 불법</strong>이라고 평가하며, 유럽의 성명이 국제사회의 법적 입장을 강화할 수 있다고 분석한다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>4국 외무장관 공동 성명 발표</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>서안에서 3,000세대 신규 주택 승인</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>올해 총 28,000가구 승인</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>이스라엘 정부의 공식 입장</td>
+<td>현재까지 발표되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>향후 이스라엘의 구체적 대응 방안</td>
+<td>추정되는 내용</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영국 외무장관</td>
+<td>공동 성명 주도</td>
+<td>서안 폭력 중단 촉구</td>
+</tr>
+<tr>
+<td>프랑스 외무장관</td>
+<td>공동 성명 주도</td>
+<td>서안 폭력 중단 촉구</td>
+</tr>
+<tr>
+<td>독일 외무장관</td>
+<td>공동 성명 주도</td>
+<td>서안 폭력 중단 촉구</td>
+</tr>
+<tr>
+<td>이탈리아 외무장관</td>
+<td>공동 성명 주도</td>
+<td>서안 폭력 중단 촉구</td>
+</tr>
+<tr>
+<td>이스라엘 정부</td>
+<td>정착민 정책 결정자</td>
+<td>아직 공식 입장 미발표</td>
+</tr>
+<tr>
+<td>팔레스타인 인권 단체</td>
+<td>피해자 대표</td>
+<td>유럽의 조치 지지</td>
+</tr>
+<tr>
+<td>국제법 전문가</td>
+<td>분석가</td>
+<td>정착민 건설 불법성 강조</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>외교적 압박</strong><br />
+  유럽 4국의 공동 성명이 국제사회에 전달되면서, 유엔 안보리나 이스라엘과 팔레스타인 간 중재 회의에 더 큰 압력이 가해질 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>정착민 건설 동향</strong><br />
+  올해 서안에서 승인된 <strong>28,000가구</strong> 중 3,000세대가 신규 주택 프로젝트라면, 향후 몇 년간 추가 건설이 계속될 것으로 보인다. 이는 지역 갈등을 심화시킬 수 있다.</p>
+</li>
+<li>
+<p><strong>인권 및 법적 대응</strong><br />
+  국제 인권 단체와 국제법 기관이 서안 정착민 폭력에 대한 조사와 보고서를 발표할 가능성이 높다. 이는 이스라엘에 대한 국제적 비판을 강화할 수 있다.</p>
+</li>
+<li>
+<p><strong>지역 안보</strong><br />
+  정착민 폭력이 지속될 경우, 팔레스타인 지역에서의 폭력 사태가 확대될 위험이 있다. 유럽과 국제사회는 평화 프로세스 재개를 위한 협상 촉진에 주력할 전망이다.</p>
+</li>
+</ul>
+<hr />
+<p><strong>주요 정보</strong><br />
+- <strong>▶ 2025년 11월 28일</strong>: 유럽 4국 외무장관 공동 성명 발표<br />
+- <strong>▶ 서안에서 3,000세대 신규 주택 승인</strong><br />
+- <strong>▶ 올해 총 28,000가구 승인</strong>  </p>
+<p>이와 같은 움직임은 유럽이 중동 평화 프로세스에 적극적으로 참여하고 있음을 보여주며, 향후 국제사회의 대응이 어떻게 전개될지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/056/0012075407" target="_blank">유럽 주요 4개국, 이스라엘에 ‘서안 정착민 폭력’ 중단 촉구</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251128001200085" target="_blank">유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구 | 연합뉴스</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8419515" target="_blank">유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구</a><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008348285" target="_blank">유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구</a><a href="https://imnews.imbc.com/news/2025/world/article/6780064_36725.html" target="_blank">유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구</a><a href="https://www.ytn.co.kr/_ln/0104_202511280314239397" target="_blank">유럽 주요 4개국, 이스라엘에 '서안 정착민 폭력' 중단 촉구 | YTN</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
