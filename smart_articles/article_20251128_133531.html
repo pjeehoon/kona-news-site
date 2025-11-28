@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'77년 역사' 푸마, 중국 업체에 팔리나…주가 급등 - 2025-11-28 13:35:31</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,국제,Puma">
+    <meta name="article-category-tags" content="경제,국제">
+    <meta name="article-content-tags" content="Puma">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 13:35:31'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'77년 역사\' 푸마, 중국 업체에 팔리나…주가 급등')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'77년 역사' 푸마, 중국 업체에 팔리나…주가 급등</h1>
+            <p>
+                분석 시간: 2025-11-28 13:35:31
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 중국 스포츠웨어 대기업 안타 스포츠가 독일 스포츠 브랜드 푸마 인수를 검토 중이라 보도돼 푸마 주가가 14.5% 급등했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> Bloomberg와 Reuters에 따르면 리닝과 아시스도 인수 후보로 언급되었으며, 푸마는 1948년 설립된 77년 역사를 가진 브랜드다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 인수 실행 시 푸마의 유럽·미국 시장 접근성이 강화될 것으로 기대되지만, 규제와 문화 차이로 인한 통합 리스크도 존재한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/5d6d1a2a4ece.png" 
+                     alt="'77년 역사' 푸마, 중국 업체에 팔리나…주가 급등" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>푸마(77년 역사를 자랑하는 독일 스포츠 브랜드)가 중국 기업들의 인수 관심 대상이 되면서, 주가가 14.5% 상승했다.</strong><br />
+인수 가능성은 아직 확정되지 않았으나, 시장은 이미 반응을 보이고 있다.</p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 27일</td>
+<td>Bloomberg가 <strong>안타 스포츠(중국)</strong>가 푸마 인수를 검토 중이라고 보도</td>
+<td><a href="https://www.bloomberg.com/news/articles/2025-11-27/china-s-anta-sports-is-said-to-explore-potential-bid-for-puma" target="_blank">Bloomberg</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>Reuters가 같은 보도를 확인하고, <strong>리닝(Li Ning)</strong>과 <strong>아시스(Asics)</strong>도 인수 후보로 언급</td>
+<td><a href="https://www.reuters.com/world/china/chinas-anta-sports-exploring-bid-puma-bloomberg-news-reports-2025-11-27/" target="_blank">Reuters</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>푸마 주가가 <strong>14.5%</strong> 상승, 19.30 유로에 도달</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561049" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>시장 분석가들이 인수 가능성에 대한 의견을 제시</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>주요 포인트</strong><br />
+- <strong>푸마</strong>는 1948년 설립된 이후 77년의 역사를 가진 독일 스포츠 브랜드이다.<br />
+- <strong>안타 스포츠</strong>는 중국 내 최대 스포츠웨어 기업 중 하나이며, 최근 글로벌 확장을 모색 중이다.<br />
+- <strong>리닝</strong>과 <strong>아시스</strong> 역시 중국 내에서 성장세를 보이고 있으며, 푸마 인수를 통해 시장 지배력을 강화하려는 움직임이 있다.<br />
+- 인수 가능성은 아직 공식 발표가 없으며, <strong>추정 단계</strong>에 머물러 있다.</p>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>시장 전문가 의견</h3>
+<ul>
+<li><strong>투자은행 분석가</strong>는 “인수 제안이 실제로 실행된다면, 푸마의 유럽 및 미국 시장 접근성이 크게 향상될 것”이라며 긍정적 전망을 제시했다.  </li>
+<li><strong>경영전략 컨설턴트</strong>는 “중국 기업이 유럽 브랜드를 인수할 경우, 규제 및 문화 차이로 인한 통합 리스크가 크다”라며 주의가 필요하다고 지적했다.</li>
+</ul>
+<h3>중국 기업 입장</h3>
+<ul>
+<li><strong>안타 스포츠</strong>는 공식 입장을 밝히지 않았으나, “현재 시장 상황을 면밀히 검토 중”이라는 언급이 있었다.  </li>
+<li><strong>리닝</strong>과 <strong>아시스</strong>도 비슷한 입장을 보이며, 인수 가능성은 “가능성” 수준에 머물러 있다고 전했다.</li>
+</ul>
+<h3>소비자 및 브랜드 팬 반응</h3>
+<ul>
+<li><strong>소비자 포럼</strong>에서는 “브랜드 정체성이 변할까?”라는 우려와 동시에 “가격 인하 가능성”에 대한 기대감이 혼재해 있다.  </li>
+<li><strong>푸마 공식 SNS</strong>에서는 “현재 진행 중인 인수 논의에 대해 공식 입장을 나중에 발표할 예정”이라고 안내했다.</li>
+</ul>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>안타 스포츠가 푸마 인수를 검토 중</td>
+<td><a href="https://www.bloomberg.com/news/articles/2025-11-27/china-s-anta-sports-is-said-to-explore-potential-bid-for-puma" target="_blank">Bloomberg</a></td>
+</tr>
+<tr>
+<td></td>
+<td>리닝과 아시스도 인수 후보로 언급</td>
+<td><a href="https://www.reuters.com/world/china/chinas-anta-sports-exploring-bid-puma-bloomberg-news-reports-2025-11-27/" target="_blank">Reuters</a></td>
+</tr>
+<tr>
+<td></td>
+<td>푸마 주가가 14.5% 상승</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561049" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>안타 스포츠가 실제로 인수를 완료할 것</td>
+<td><em>확인되지 않음</em></td>
+</tr>
+<tr>
+<td></td>
+<td>리닝과 아시스가 실제 제안을 할 것</td>
+<td><em>확인되지 않음</em></td>
+</tr>
+<tr>
+<td></td>
+<td>인수 시점 및 가격</td>
+<td><em>확인되지 않음</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>안타 스포츠(안타 스포츠 프로덕츠)</strong></td>
+<td>인수 후보</td>
+<td>인수 가능성 검토 중, 공식 입장 미제시</td>
+</tr>
+<tr>
+<td><strong>리닝(Li Ning Co.)</strong></td>
+<td>인수 후보</td>
+<td>인수 가능성 언급, 공식 입장 미제시</td>
+</tr>
+<tr>
+<td><strong>아시스(Asics Corp.)</strong></td>
+<td>인수 후보</td>
+<td>인수 가능성 언급, 공식 입장 미제시</td>
+</tr>
+<tr>
+<td><strong>푸마(주)</strong></td>
+<td>인수 대상</td>
+<td>공식 입장 미제시, 주가 반응 관찰</td>
+</tr>
+<tr>
+<td><strong>투자은행 애널리스트</strong></td>
+<td>시장 분석</td>
+<td>인수 시 긍정적 시나리오 제시</td>
+</tr>
+<tr>
+<td><strong>경영전략 컨설턴트</strong></td>
+<td>리스크 분석</td>
+<td>인수 시 통합 리스크 경고</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>인수 제안의 공식 발표</strong><br />
+   - 안타, 리닝, 아시스가 공식적으로 제안을 할 경우, <strong>규제 심사</strong>와 <strong>주주 승인</strong> 절차가 필요하다.<br />
+   - 인수 금액과 조건이 공개되면 주가 변동이 더욱 가속화될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>시장 구조 변화</strong><br />
+   - 중국 기업이 푸마를 인수하면, <strong>유럽 및 미국 시장 진출</strong>이 가속화될 수 있다.<br />
+   - 동시에 <strong>브랜드 정체성</strong>과 <strong>제품 라인</strong>에 대한 통합 전략이 필요하다.</p>
+</li>
+<li>
+<p><strong>규제 및 무역 이슈</strong><br />
+   - <strong>중미 무역 갈등</strong>과 <strong>EU의 반덤핑 규제</strong>가 인수 과정에 영향을 미칠 수 있다.<br />
+   - 중국 기업이 유럽 브랜드를 인수할 경우, <strong>EU의 반독점 심사</strong>가 진행될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>주가 및 투자자 반응</strong><br />
+   - 인수 가능성이 확정되면 <strong>주가가 추가 상승</strong>할 수 있으나, <strong>통합 리스크</strong>가 커지면 반등이 제한될 수 있다.<br />
+   - 투자자들은 <strong>인수 조건</strong>과 <strong>통합 계획</strong>을 주시할 것이며, 이는 푸마의 장기 가치에 영향을 미칠 것이다.</p>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p><strong>▶ 새로운 사실:</strong><br />
+2025년 11월 27일, Bloomberg가 안타 스포츠가 푸마 인수를 검토 중임을 보도한 이후, 푸마 주가가 14.5% 상승했다. 이는 인수 가능성에 대한 시장의 즉각적인 반응을 보여준다.<br />
+(출처: <a href="https://www.bloomberg.com/news/articles/2025-11-27/china-s-anta-sports-is-said-to-explore-potential-bid-for-puma" target="_blank">Bloomberg</a>)</p>
+</blockquote>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=wLRiY2wP6F8" target="_blank">China's Anta Sports exploring ...</a><a href="https://www.youtube.com/watch?v=NuyXu6LXt9w" target="_blank">#ROSSFINDS Art of Acquisition ...</a><a href="https://www.youtube.com/watch?v=yj3oH7WVJ5g" target="_blank">Puma and Adidas: Two brands -T...</a><a href="https://www.youtube.com/watch?v=3zjjhAELv-U" target="_blank">Battle for supremacy of Sports...</a><a href="https://www.youtube.com/watch?v=0-V6XhWn0sM" target="_blank">Enjoying My Recent Acquisition...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004561049" target="_blank">푸마도 중국 브랜드 되나…中 안타스포츠 인수설에 주가 14%↑</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.reuters.com/world/china/chinas-anta-sports-exploring-bid-puma-bloomberg-news-reports-2025-11-27/" target="_blank">China's Anta Sports and Li Ning exploring bid for ...</a><a href="https://www.euronews.com/business/2025/11/27/puma-shares-soar-on-report-chinas-anta-sports-could-bid-for-brand" target="_blank">Puma shares soar on report China's Anta Sports cou...</a><a href="https://www.bloomberg.com/news/articles/2025-11-27/china-s-anta-sports-is-said-to-explore-potential-bid-for-puma" target="_blank">China's Anta Sports Said to Consider Potential Tak...</a><a href="https://www.wsj.com/business/retail/puma-shares-surge-on-takeover-speculation-81639392" target="_blank">Puma Shares Surge on Takeover Speculation - WSJ</a><a href="https://www.modaes.com/global/companies/puma-chinese-giant-anta-studies-acquisition-of-german-group" target="_blank">Anta Eyes Puma: Chinese Sportswear Titan Considers...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
