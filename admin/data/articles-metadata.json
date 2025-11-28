@@ -1,5 +1,101 @@
 [
   {
+    "id": "db2f6582b7ed",
+    "title": "기아, '일반 도로 원격 운전' 1000km 주행 성공…국내 최초",
+    "created_at": "2025-11-28T09:25:43.555531+09:00",
+    "last_updated": "2025-11-28T09:25:43.555531+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "기아",
+        "원격운전",
+        "제주"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "c11472034879",
+    "title": "'코인 유동화 논란' 장현국 전 위메이드 대표, 2심도 무죄",
+    "created_at": "2025-11-28T09:24:11.986527+09:00",
+    "last_updated": "2025-11-28T09:24:11.986527+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "장현국",
+        "위메이드",
+        "위믹스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "eca8170d0db8",
+    "title": "비트코인 폭락에 '디지털 자산 트레저리' 기업들 줄붕괴…보유 코인 투매 확산",
+    "created_at": "2025-11-28T09:19:29.503224+09:00",
+    "last_updated": "2025-11-28T09:19:29.503224+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "비트코인",
+        "트레저리",
+        "폭락"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "257643019917",
+    "title": "오라클 CDS프리미엄, 3년 만에 최고치…'AI 리스크 바로미터'",
+    "created_at": "2025-11-28T09:13:56.575406+09:00",
+    "last_updated": "2025-11-28T09:13:56.575406+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "IT/과학"
+      ],
+      "content_tags": [
+        "오라클",
+        "CDS",
+        "AI"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "90c085e21a8c",
     "title": "국민연금 월 최고 318만원…20년 넘기면 평균 112만원",
     "created_at": "2025-11-28T09:01:21.097977+09:00",

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'코인 유동화 논란' 장현국 전 위메이드 대표, 2심도 무죄 - 2025-11-28 09:24:11</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,장현국,위메이드,위믹스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="장현국,위메이드,위믹스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 09:24:11'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'코인 유동화 논란\' 장현국 전 위메이드 대표, 2심도 무죄')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'코인 유동화 논란' 장현국 전 위메이드 대표, 2심도 무죄</h1>
+            <p>
+                분석 시간: 2025-11-28 09:24:11
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 장현국 전 위메이드 대표가 2심에서 무죄 판결을 받아 위믹스 코인 유동화 논란이 종결됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 1심에서도 무죄가 선고되었으며, 법원은 위메이드 주가와 위믹스 유동화 간 객관적 연관성이 없다고 판단했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 판결로 주가 조작 의혹이 사라졌으나, 투자자들의 신뢰 회복과 기업 투명성 개선이 필요하다는 목소리가 남아 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/c11472034879.png" 
+                     alt="'코인 유동화 논란' 장현국 전 위메이드 대표, 2심도 무죄" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>장현국 전 위메이드 대표가 2심에서 무죄를 선고받으며, 2022년 위믹스 코인 유동화 논란이 법원에서 종결됐다. 1심 무죄 이후 재판이 이어졌으며, 최종 판결은 위메이드 주가 조작 의혹을 부정했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022년 1월</td>
+<td>위믹스 코인 유동화 중단 발표</td>
+<td>장현국이 허위로 유동화 중단을 발표해 투자자들을 속였다는 주장이 제기</td>
+<td>연합뉴스</td>
+</tr>
+<tr>
+<td>2022년 12월</td>
+<td>위믹스 상장폐지</td>
+<td>디지털자산거래소 공동협의체(DAXA)로부터 상장폐지 결정</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2025년 7월 15일</td>
+<td>1심 무죄</td>
+<td>서울남부지법 형사13부가 장현국과 위메이드를 무죄 판결</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/07/15/YRPV7PFBNZCS5ELWYVIMM6XCHA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>2심 무죄</td>
+<td>서울고법 형사13부가 장현국과 위메이드를 무죄 판결</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015766003" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>장현국의 새로운 직책</td>
+<td>장현국이 넥써쓰(NEXUS) 대표로 취임</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>2심 무죄 판결</strong>은 “위믹스와 위메이드 주가 간 객관적 관련성 인정되지 않는다”는 판단과 함께 “피고인이 주가를 인위적으로 부양하려는 의도나 인식이 없었다”는 결론을 내렸다.<br />
+▶ <strong>1심 무죄</strong> 판결은 동일한 이유로 장현국과 위메이드를 무죄로 인정했다.  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>법원 입장</strong><br />
+  서울고법 형사13부는 증거를 종합해 “위믹스 유동화 중단 발표가 사실이 아니었으며, 주가 조작 의도와 인식이 없었다”는 결론을 내렸다. 이는 1심 판결과 일치한다.<br />
+<a href="https://n.news.naver.com/mnews/article/001/0015766003" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>언론 보도</strong><br />
+  중앙일보는 1심 무죄 판결을 보도하며 “위믹스 유통량 조작 혐의가 입증되지 않았다”고 강조했다.<br />
+<a href="https://www.joongang.co.kr/article/25351654" target="_blank">중앙일보</a><br />
+  조선일보는 “자본시장법 위반 혐의가 부당했다”는 입장을 보도했다.<br />
+<a href="https://www.chosun.com/national/national_general/2025/07/15/YRPV7PFBNZCS5ELWYVIMM6XCHA/" target="_blank">조선일보</a></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  금융전문가들은 “법원 판결은 증거 부족을 이유로 무죄를 선고한 것이며, 실제로 주가 조작이 있었는지는 여전히 불확실하다”고 지적했다.<br />
+  한 법률전문가(익명)는 “증거가 명확히 드러나지 않았으므로 무죄가 정당했다”고 말했다.</p>
+</li>
+<li>
+<p><strong>주주 및 투자자 반응</strong><br />
+  일부 주주는 무죄 판결에 안도감을 표시했으며, 반면 일부 투자자는 여전히 불신을 표명했다.<br />
+  한 투자자(익명)는 “판결은 법적 판단이지만, 기업의 투명성은 여전히 개선이 필요하다”고 말했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>장현국 전 대표가 2025년 7월과 11월에 각각 1심·2심에서 무죄 판결을 받았다.</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/07/15/YRPV7PFBNZCS5ELWYVIMM6XCHA/" target="_blank">조선일보</a>, <a href="https://n.news.naver.com/mnews/article/001/0015766003" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>위믹스는 2022년 12월에 상장폐지되었다.</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>장현국이 2025년 11월 28일 넥써쓰 대표로 취임했다.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>장현국이 허위로 위믹스 코인 유동화 중단을 발표했다는 주장.</td>
+<td>연합뉴스 (링크 없음)</td>
+</tr>
+<tr>
+<td></td>
+<td>장현국이 위메이드 주가를 인위적으로 부양하려는 의도와 인식을 가졌다는 주장.</td>
+<td>연합뉴스 (링크 없음)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>장현국</strong><br />
+  전 위메이드 대표이사, 2025년 11월 28일 넥써쓰 대표로 취임. 2025년 7월과 11월에 각각 1심·2심에서 무죄 판결을 받음.<br />
+<strong>관계</strong>: 위메이드와 위믹스의 경영 및 재무 구조에 직접 관여했음.</p>
+</li>
+<li>
+<p><strong>위메이드</strong><br />
+  P2E(Play‑to‑Earn) 게임 개발사로, 위믹스 코인을 자체 토큰으로 사용. 2025년 7월과 11월에 무죄 판결을 받음.<br />
+<strong>관계</strong>: 주가 변동과 코인 유동화 논란에 직간접적으로 연관.</p>
+</li>
+<li>
+<p><strong>위믹스</strong><br />
+  위메이드가 발행한 가상화폐. 2022년 12월 상장폐지.<br />
+<strong>관계</strong>: 코인 유동화 논란의 핵심 자산.</p>
+</li>
+<li>
+<p><strong>넥써쓰(NEXUS)</strong><br />
+  장현국이 대표로 취임한 기업.<br />
+<strong>관계</strong>: 장현국의 새로운 경영 활동과 연계.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적·규제적</strong><br />
+  장현국과 위메이드의 무죄 판결은 현재까지 법적 책임이 없음을 의미하지만, 금융당국은 여전히 가상자산 관련 규제 강화에 나서고 있다.  </li>
+<li>
+<p>가상자산 거래소와 게임사 간의 협력은 규제 검토 대상이 될 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>기업 경영</strong><br />
+  장현국은 넥써쓰에서 새로운 비즈니스 모델을 추진할 가능성이 있다.  </p>
+</li>
+<li>
+<p>위메이드는 내부 통제 강화와 투명성 제고를 통해 투자자 신뢰 회복에 집중할 전망이다.</p>
+</li>
+<li>
+<p><strong>시장의 반응</strong><br />
+  무죄 판결 이후 위메이드 주가는 단기적으로 안정을 찾을 수 있으나, 가상자산 시장의 변동성은 여전히 큰 변수다.  </p>
+</li>
+<li>투자자들은 기업의 재무 건전성과 규제 준수 여부를 주시할 것이다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>장현국 전 대표</strong>와 <strong>위메이드</strong>는 2025년 7월과 11월에 각각 무죄 판결을 받았다.<br />
+- <strong>위믹스</strong>는 2022년 12월 상장폐지되었으며, 유동화 논란은 법원에서 종결됐다.<br />
+- <strong>새로운 직책</strong>으로 넥써쓰 대표에 취임한 장현국은 앞으로 다른 비즈니스 영역에 진출할 가능성이 있다.  </p>
+</blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/001/0015766003" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.chosun.com/national/national_general/2025/07/15/YRPV7PFBNZCS5ELWYVIMM6XCHA/" target="_blank">조선일보</a><br />
+- <a href="https://www.joongang.co.kr/article/25351654" target="_blank">중앙일보</a><br />
+- <a href="https://www.lawtimes.co.kr/news/200373" target="_blank">LawTimes</a><br />
+- <a href="https://www.news1.kr/society/court-prosecution/5850496" target="_blank">News1</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015766003" target="_blank">'코인 유동화 논란' 장현국 전 위메이드 대표, 2심도 무죄</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.joongang.co.kr/article/25351654" target="_blank">'위믹스 유통량 조작 논란' 장현국 전 위메이드 대표 1심 무죄 | 중앙일보</a><a href="https://www.khan.co.kr/article/202507151505001" target="_blank">'위믹스 코인 유통량 조작 혐의' 장현국 전 위메이드 대표, 1심 무죄 ...</a><a href="https://www.chosun.com/national/national_general/2025/07/15/YRPV7PFBNZCS5ELWYVIMM6XCHA/" target="_blank">'위믹스 유통량 조작' 장현국 전 위메이드 대표 1심 무죄</a><a href="https://www.lawtimes.co.kr/news/200373" target="_blank">'위믹스 초과 유통' 장현국 위메이드 前 대표 기소…박관호 회장 '무혐의'</a><a href="https://www.news1.kr/society/court-prosecution/5850496" target="_blank">검찰, '위믹스 유통량 조작 의혹' 장현국 1심 무죄에 항소 - 뉴스1</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

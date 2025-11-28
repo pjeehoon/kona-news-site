@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기아, '일반 도로 원격 운전' 1000km 주행 성공…국내 최초 - 2025-11-28 09:25:43</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,기아,원격운전,제주">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="기아,원격운전,제주">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 09:25:43'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('기아, \'일반 도로 원격 운전\' 1000km 주행 성공…국내 최초')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>기아, '일반 도로 원격 운전' 1000km 주행 성공…국내 최초</h1>
+            <p>
+                분석 시간: 2025-11-28 09:25:43
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 기아자동차가 제주에서 1000km, 70시간에 걸친 원격 운전 시연을 성공시켜 국내 최초 일반 도로 원격 운전 실증을 달성했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 시연은 4G/5G 네트워크를 기반으로 진행되었으며, 운전자가 탑승하지 않은 상태에서 원격 제어가 가능하도록 안전 모니터링 센터가 24시간 감시했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 성과는 교통 혼잡 완화와 소외 지역 접근성 향상을 기대하게 만들지만, 사고 책임과 사이버 보안 등 규제·법적 이슈가 남아 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/db2f6582b7ed.png" 
+                     alt="기아, '일반 도로 원격 운전' 1000km 주행 성공…국내 최초" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 27일, 기아는 제주에서 PV5 전기차를 이용해 <strong>1000km, 70시간</strong>에 걸친 원격 운전 시연을 성공적으로 마쳤다. 이는 국내 최초 일반 도로 원격 운전 실증이며, 4G/5G 네트워크 기반으로 진행됐다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>2025년 04월 01일</strong> – 기아가 <strong>산업통상자원부</strong>로부터 원격 운전 규제 샌드박스 면제(Exemption)를 획득했다.<br />
+<a href="https://n.news.naver.com/mnews/article/030/0003374807" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>2025년 11월 20일</strong> – PV5 전기차가 제주 도로에서 <strong>1000km, 70시간</strong> 사전 주행 테스트를 완료했다.<br />
+<a href="https://www.hyundaimotorgroup.com/ko/news/CONT0000000000194590" target="_blank">Hyundai Motor Group 보도자료</a></p>
+</li>
+<li>
+<p><strong>2025년 11월 27일</strong> – 기아, S‑OCC, SUM, KT, 산업통상자원부가 구성한 <strong>원격 운전 컨소시엄</strong>이 제주 공항 S‑OCC 터미널에서 원격 운전 시연을 진행했다.  </p>
+</li>
+<li>차량은 <strong>운전자가 탑승하지 않은 상태</strong>에서 원격으로 제어되었다.  </li>
+<li>4G/5G 무선 네트워크를 통해 실시간 명령이 전달되었다.<br />
+<a href="http://www.autoherald.co.kr/news/articleView.html?idxno=58710" target="_blank">Auto Herald</a></li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기술적 혁신</strong></td>
+<td>원격 운전 시스템이 4G/5G 기반으로 안정적으로 동작해, <strong>실시간 제어</strong>와 <strong>데이터 수집</strong>이 가능해졌다고 평가.</td>
+<td><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=04149206642369984" target="_blank">Edaily</a></td>
+</tr>
+<tr>
+<td><strong>안전성</strong></td>
+<td>시연 중에는 <strong>안전 모니터링 센터</strong>가 24시간 감시, 비상 시 즉시 차량을 정지시킬 수 있는 프로토콜이 마련돼 있었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003374807" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>규제·법적 이슈</strong></td>
+<td>샌드박스 면제 덕분에 실증이 가능했으나, <strong>사고 발생 시 책임 소재</strong>가 아직 명확히 규정되지 않아 우려가 제기.</td>
+<td><a href="https://www.hyundaimotorgroup.com/ko/news/CONT0000000000194590" target="_blank">Hyundai Motor Group 보도자료</a></td>
+</tr>
+<tr>
+<td><strong>사회적 수용</strong></td>
+<td>원격 운전이 <strong>교통 혼잡 완화</strong>와 <strong>소외 지역 접근성 향상</strong>에 기여할 것으로 기대. 반면, <strong>사이버 보안</strong>과 <strong>네트워크 장애</strong>에 대한 불안감도 존재.</td>
+<td><a href="https://v.daum.net/v/20251127170424032" target="_blank">Daum</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>• 1000km 주행 성공<br>• 70시간 운행<br>• 4G/5G 네트워크 사용<br>• 샌드박스 면제 획득</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003374807" target="_blank">네이버뉴스</a>, <a href="https://www.hyundaimotorgroup.com/ko/news/CONT0000000000194590" target="_blank">Hyundai Motor Group 보도자료</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>• 시연 중 발생한 잠재적 사고 사례<br>• 장기 상용화 시점에 대한 구체적 일정</td>
+<td>현재 공개 자료에 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>기아자동차</strong> – 원격 운전 기술 개발 및 시연 주도.  </li>
+<li><strong>S‑OCC (Smart Operation Center)</strong> – 원격 운전 제어 센터 운영.  </li>
+<li><strong>SUM (Smart Utility Mobility)</strong> – 차량 및 인프라 연동 담당.  </li>
+<li><strong>KT</strong> – 4G/5G 네트워크 제공 및 보안 지원.  </li>
+<li><strong>산업통상자원부</strong> – 규제 샌드박스 면제 및 정책 조율.  </li>
+</ul>
+<p>각 기관은 <strong>공동 목표</strong>인 <strong>무인 자율주행 서비스 상용화</strong>를 위해 협력하고 있으며, <strong>기술 표준화</strong>와 <strong>법적 프레임워크</strong> 구축을 동시에 추진 중이다.</p>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2027년</strong>까지 기아는 <strong>무인 자율주행 서비스</strong>를 상용화할 계획이며, <strong>소외 지역</strong>에 대한 접근성 개선을 목표로 한다.  </li>
+<li><strong>규제 환경</strong>은 샌드박스 면제 이후 <strong>법적 명확화</strong>가 필요하며, <strong>사이버 보안</strong>과 <strong>네트워크 안정성</strong>이 핵심 과제로 부각된다.  </li>
+<li><strong>산업 생태계</strong>는 KT와 같은 통신사, S‑OCC와 같은 운영센터, 그리고 정부 기관이 협력하여 <strong>통합 플랫폼</strong>을 구축할 전망이다.  </li>
+</ul>
+<p>이러한 움직임은 <strong>한국이 자율주행 분야에서 글로벌 리더십</strong>을 확보하는 데 중요한 발판이 될 것으로 보인다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=qcs_bb8udb0" target="_blank">가득 넣고 1000키로 도전.. 이럴 줄 알았다 // ...</a><a href="https://www.youtube.com/watch?v=uOsQgomLGFI" target="_blank">'시속 1,200㎞' 음속 열차 첫 주행시험 성공</a><a href="https://www.youtube.com/watch?v=K9RaxLoYONo" target="_blank">음속에 버금가는 초고속 열차 '하이퍼루프'를 2030년...</a><a href="https://www.youtube.com/watch?v=4sx67XoB2TM" target="_blank">[Korea's first] Kia has done i...</a><a href="https://www.youtube.com/watch?v=_W_d_V9825k" target="_blank">16년식 아반떼 AD 실연비 과연 얼마일까?</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/030/0003374807" target="_blank">기아 컨소시엄, 'PV5' 원격 운전 실증</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hyundaimotorgroup.com/ko/news/CONT0000000000194590" target="_blank">기아, 국내 최초 일반 도로 원격 운전 실증 시연 성공</a><a href="https://fmtc.snu.ac.kr/" target="_blank">미래모빌리티기술센터</a><a href="http://www.autoherald.co.kr/news/articleView.html?idxno=58710" target="_blank">기아, 국내 최초 일반 도로 원격 운전 성공 '70시간, 1000km 사전 주행 ...</a><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=04149206642369984" target="_blank">기아, 국내 최초로 일반 도로 '원격운전' 실증 시연 성공</a><a href="https://v.daum.net/v/20251127170424032" target="_blank">기아, 국내 최초 일반 도로 '원격 운전 실증' 시연 성공</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
