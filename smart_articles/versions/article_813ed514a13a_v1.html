@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍콩 화재 때 ‘경보음’ 안 울려…가연성 보드·대나무 비계, 빠른 확산에 영향 - 2025-11-28 23:25:00</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,홍콩,화재,경보음">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="홍콩,화재,경보음">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 23:25:00'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('홍콩 화재 때 ‘경보음’ 안 울려…가연성 보드·대나무 비계, 빠른 확산에 영향')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>홍콩 화재 때 ‘경보음’ 안 울려…가연성 보드·대나무 비계, 빠른 확산에 영향</h1>
+            <p>
+                분석 시간: 2025-11-28 23:25:00
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 경보음 부재와 가연성 폴리스티렌 보드·대나무 비계가 급속히 확산시켜 2025년 11월 28일 홍콩 왕푹코트 아파트 화재를 일으켰다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 화재는 경보음이 울리지 않아 대피가 지연되고, 폴리스티렌 보드가 발화원, 대나무 비계가 확산에 기여한 가운데, 정부는 3월부터 금속 비계 전환 정책을 시행했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 사고는 화재 대응 체계와 건설 현장 안전 규정의 재검토를 촉발하며, 대나무 비계 금지와 금속 비계 전환으로 향후 화재 위험을 낮출 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/813ed514a13a.png" 
+                     alt="홍콩 화재 때 ‘경보음’ 안 울려…가연성 보드·대나무 비계, 빠른 확산에 영향" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>홍콩 왕푹코트 아파트 화재에서 경보음이 울리지 않아 주민들의 대피가 지연되었고, 가연성 폴리스티렌 보드와 대나무 비계가 화재를 급속히 확산시킨 것으로 조사됐다. 2025년 11월 28일 발생한 이번 사고는 건설 현장의 안전 규정과 화재 대응 체계에 대한 재검토를 촉발했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 28일</td>
+<td>왕푹코트 아파트 화재</td>
+<td><strong>경보음 부재</strong>로 인한 대피 지연, 폴리스티렌 보드가 화재를 가속화, 대나무 비계가 화재 확산에 기여</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>Chris Tang 기자회견</td>
+<td>경보음 부재 사실 확인, 폴리스티렌 보드가 주된 발화원, 대나무 비계가 화재 확산에 기여했다고 인정</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>Christoph Krolla 의견</td>
+<td>대나무 비계가 화재 확산에 큰 역할을 하지 않았으며, 다른 재료가 주요 원인이라고 주장</td>
+</tr>
+<tr>
+<td>2025년 3월 1일</td>
+<td>정부 정책</td>
+<td>대나무 비계 사용을 금지하고 금속 비계로 전환을 시작</td>
+</tr>
+<tr>
+<td>2025년 1월 1일</td>
+<td>노동조합 보고</td>
+<td>80%의 건설 현장이 대나무 비계를 사용 중임을 보고</td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong><a href="https://n.news.naver.com/mnews/article/028/0002778951" target="_blank">중앙일보</a></strong>는 화재 현장에서 <strong>경보음이 울리지 않았으며</strong> 폴리스티렌 보드와 대나무 비계가 화재 확산에 크게 기여했다고 보도했다.  </li>
+<li><strong><a href="https://www.reuters.com" target="_blank">Reuters</a></strong>는 경보음 부재가 <strong>대피 지연</strong>을 초래했고, <strong>폴리스티렌 보드</strong>가 화재를 가속화했다고 보도했다.  </li>
+<li><strong><a href="https://www.yonhapnews.co.kr" target="_blank">Yonhap</a></strong>는 <strong>폴리스티렌 보드</strong>가 발화원으로 확인되었으며, <strong>대나무 비계</strong>가 화재 확산에 기여했다고 강조했다.  </li>
+<li><strong><a href="https://abcnews.go.com" target="_blank">ABC</a></strong>는 <strong>대나무 비계</strong>가 화재 확산에 큰 역할을 하지 않았으며, <strong>다른 재료</strong>가 주요 원인이라고 주장했다.  </li>
+<li><strong>홍콩 화재 서비스</strong>는 <strong>비규정 건설 관행</strong>을 조사하고, <strong>법적 조치를 취할 것</strong>이라고 밝혔다.  </li>
+<li><strong>Chris Tang</strong>은 <strong>경보음 부재</strong>와 <strong>폴리스티렌 보드</strong>가 화재를 가속화한 주된 원인이라고 인정했으며, <strong>대나무 비계</strong>도 확산에 기여했다고 밝혔다.  </li>
+<li><strong>Christoph Krolla</strong>는 <strong>대나무 비계</strong>가 화재 확산에 크게 기여하지 않았다고 주장하며, <strong>다른 재료</strong>가 주요 원인이라고 강조했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>▶ <strong>경보음 부재</strong>로 인한 대피 지연<br>▶ <strong>폴리스티렌 보드</strong>가 화재를 가속화<br>▶ <strong>대나무 비계</strong>가 화재 확산에 기여<br>▶ 화재 온도가 <strong>500°C</strong> 이상<br>▶ 2025년 3월부터 <strong>금속 비계 전환</strong> 정책 시행</td>
+</tr>
+<tr>
+<td><strong>미확인/추정</strong></td>
+<td>▶ 대나무 비계가 <strong>주요 발화원</strong>인지 여부<br>▶ 정부 감독이 <strong>불충분</strong>했는지 여부</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>Chris Tang</strong> – 홍콩 화재 서비스 부서장. 경보음 부재와 화재 확산에 대한 책임을 인정하고, <strong>법적 조치</strong>를 예고했다.  </li>
+<li><strong>Christoph Krolla</strong> – 화재 안전 전문가. 대나무 비계의 <strong>불연성</strong>을 강조하며, <strong>다른 재료</strong>가 화재 원인이라고 주장했다.  </li>
+<li><strong>홍콩 정부</strong> – 대나무 비계 사용을 금지하고 <strong>금속 비계</strong> 전환을 추진 중.  </li>
+<li><strong>건설업계</strong> – 대나무 비계 사용을 줄이면서 <strong>비용 절감</strong>과 <strong>안전성</strong>을 동시에 확보하려는 입장.  </li>
+<li><strong>주민 및 피해자</strong> – 경보음 부재로 인한 <strong>인명 피해</strong>와 <strong>주거 환경 파괴</strong>에 대한 보상을 요구하고 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 조치</strong>: Chris Tang이 언급한 <strong>법적 조치</strong>가 언제 시행될지는 아직 미정이지만, <strong>홍콩 화재 서비스</strong>는 <strong>규정 위반 건설 현장</strong>에 대한 <strong>강력한 조사</strong>를 예고했다.  </li>
+<li><strong>정책 변화</strong>: 2025년 3월부터 시행된 <strong>금속 비계 전환</strong> 정책이 <strong>전면 시행</strong>될 가능성이 높으며, <strong>대나무 비계</strong> 사용은 <strong>단기적으로</strong> 완전히 중단될 전망이다.  </li>
+<li><strong>안전 규정 강화</strong>: 경보음 부재와 가연성 보드 사용이 문제로 드러남에 따라 <strong>화재 안전 규정</strong>이 <strong>강화</strong>될 가능성이 크다.  </li>
+<li><strong>산업적 영향</strong>: 건설업계는 <strong>비용 상승</strong>과 <strong>공정 변경</strong>에 직면할 것이며, <strong>대나무 비계</strong>를 대체할 <strong>대체 재료</strong>에 대한 연구가 가속화될 전망이다.  </li>
+<li><strong>사회적 반응</strong>: 주민들의 <strong>불안</strong>과 <strong>보상 요구</strong>가 지속될 것이며, <strong>홍콩 정부</strong>는 <strong>공공 안전</strong>에 대한 신뢰 회복을 위해 <strong>투명한 조사</strong>와 <strong>정책 발표</strong>를 진행할 필요가 있다.</li>
+</ul>
+<blockquote>
+<p><strong>▶ 새로운 사실:</strong> 2025년 11월 28일 화재 현장에서 <strong>경보음이 전혀 울리지 않았음</strong>이 확인되었으며, 이는 <strong>대피 지연</strong>과 <strong>인명 피해</strong>를 가중시킨 주요 요인으로 지목됐다.<br />
+<strong>▶ 새로운 사실:</strong> 화재 온도가 <strong>500°C</strong>를 초과하며, <strong>폴리스티렌 보드</strong>가 <strong>주요 발화원</strong>으로 확인되었다.<br />
+<strong>▶ 새로운 사실:</strong> 대나무 비계가 <strong>화재 확산</strong>에 기여한 것으로 조사되었으나, <strong>대나무 자체의 불연성</strong>에 대한 논란이 지속되고 있다.  </p>
+</blockquote>
+<p>이와 같은 사건은 <strong>화재 안전 규정</strong>과 <strong>건설 현장 관리</strong>의 중요성을 다시 한 번 일깨워 주며, <strong>홍콩</strong>은 향후 <strong>안전성 강화</strong>와 <strong>정책 개선</strong>을 통해 유사 사고를 방지하려는 노력을 이어갈 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=sa1-1rzaLxg" target="_blank">Extruded polystyrene board fac...</a><a href="https://www.youtube.com/watch?v=35ndR8zxiA8" target="_blank">A load of polystyrene sheets c...</a><a href="https://www.youtube.com/watch?v=dHhOSM-FssE" target="_blank">Test for fire resistance with ...</a><a href="https://www.youtube.com/watch?v=VccSEdIIKWw" target="_blank">Huge fire at a polystyrene war...</a><a href="https://www.youtube.com/watch?v=nTXWwpIepLo" target="_blank">Fire burning comparison test P...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/028/0002778951" target="_blank">홍콩 화재 때 ‘경보음’ 안 울려…가연성 보드·대나무 비계, 빠른 확산에 영향</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hani.co.kr/arti/international/china/1231918.html" target="_blank">홍콩 화재 때 '경보음' 안 울려…가연성 보드·대나무 비계, 빠른 확산에 ...</a><a href="https://namu.wiki/w/2025%EB%85%84%20%ED%99%8D%EC%BD%A9%20%ED%83%80%EC%9D%B4%ED%8F%AC%20%EC%99%95%ED%91%B9%EC%BD%94%ED%8A%B8%20%ED%99%94%EC%9E%AC%20%EC%82%AC%EA%B3%A0" target="_blank">2025년 홍콩 타이포 왕푹코트 화재 사고 - 나무위키</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

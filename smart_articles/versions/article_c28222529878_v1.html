@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“너 민주당 왜 뽑았어”…민희진, 직원들 선거투표 성향에 개입 논란 - 2025-11-28 23:33:32</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,민희진,어도어,선거투표">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="민희진,어도어,선거투표">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 23:33:32'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“너 민주당 왜 뽑았어”…민희진, 직원들 선거투표 성향에 개입 논란')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“너 민주당 왜 뽑았어”…민희진, 직원들 선거투표 성향에 개입 논란</h1>
+            <p>
+                분석 시간: 2025-11-28 23:33:32
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 민희진 전 어도어 대표가 직원들의 선거 투표 성향에 개입했다는 의혹이 제기돼 11월 27일 서울중앙지방법원에 출석했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 보도에 따르면 의혹은 아직 근거가 확인되지 않았으며, 민희진은 “근거가 없으며 사실을 밝히겠다”라며 부인했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 논란은 정치적 영향력 행사 가능성을 부각시키며, 법원 판결이 나올 때까지 기업 이미지와 주주 관계에 부정적 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/c28222529878.png" 
+                     alt="“너 민주당 왜 뽑았어”…민희진, 직원들 선거투표 성향에 개입 논란" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>민희진 전 어도어 대표가 직원들의 선거 투표 성향에 개입했다는 의혹이 제기돼, 11월 27일 서울중앙지방법원에서 소송 변론에 출석했다. 이 사건은 하이브와의 주주간 계약 소송과 별개로, 정치적 영향력 행사 가능성에 대한 논란을 불러일으키고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑11‑27</td>
+<td>법원 출석</td>
+<td><strong>민희진</strong>이 서울중앙지방법원에서 주식매매대금 청구 소송 변론에 출석, 직원 선거 투표 성향 개입 주장에 대해 증언</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025‑11‑28</td>
+<td>보도</td>
+<td>보도에 따르면, 민희진이 직원들의 선거 투표 성향에 개입했다는 의혹이 제기</td>
+<td><a href="https://www.mk.co.kr/news/business/11479856" target="_blank">MK</a></td>
+</tr>
+<tr>
+<td>2025‑11‑28</td>
+<td>보도</td>
+<td>같은 보도에서, 민희진이 260억 원 풋옵션 소송에서 정치적 색을 강요했다는 논란이 등장</td>
+<td><a href="https://www.tenasia.co.kr/article/2025112814464" target="_blank">TenAsia</a></td>
+</tr>
+<tr>
+<td>2025‑11‑28</td>
+<td>보도</td>
+<td>보도에 따르면, 민희진이 직원들의 선거 투표 성향에 개입했다는 주장에 대한 근거가 아직 확인되지 않음</td>
+<td><a href="https://v.daum.net/v/20251128175709591" target="_blank">Daum</a></td>
+</tr>
+<tr>
+<td>2025‑11‑28</td>
+<td>보도</td>
+<td>보도에 따르면, 민희진이 직원들의 선거 투표 성향에 개입했다는 주장이 제기되었으나, 법원에서 아직 판결이 내려지지 않음</td>
+<td><a href="https://m.news.nate.com/search?q=%EC%A3%BC%EC%A3%BC%EC%86%8C%EC%86%A1&amp;mp=1&amp;gid=2025112828191" target="_blank">Nate</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>민희진 측</strong><br />
+  민희진은 “직원들의 투표 성향에 개입했다는 주장은 근거가 없으며, 법원에서 증언을 통해 사실을 밝히겠다”고 밝혔다. 그녀는 계약서에 경업금지 조항과 풋옵션이 포함돼 있었음을 인지하지 못했다고 주장하며, “30배 배수는 실제 13배가 적용된 것”이라고 강조했다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></em></p>
+</li>
+<li>
+<p><strong>하이브 측</strong><br />
+  하이브는 민희진이 계약서에 콜옵션을 삽입하고 계약을 조작했다는 주장을 제기하고 있다. 그러나 이번 선거 개입 논란에 대해서는 별도의 공식 입장을 내놓지 않았다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></em></p>
+</li>
+<li>
+<p><strong>언론 보도</strong><br />
+  MK와 TenAsia는 민희진이 직원들의 투표 성향에 개입했다는 주장을 보도하면서, 이 사건이 하이브와의 계약 소송과 별개로 진행되고 있음을 강조했다. 다만, 보도에 따르면 “근거가 아직 확인되지 않은” 상태라고 명시했다.<br />
+<em>출처: <a href="https://www.mk.co.kr/news/business/11479856" target="_blank">MK</a>, <a href="https://www.tenasia.co.kr/article/2025112814464" target="_blank">TenAsia</a></em></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  법률 전문가들은 “법원에서의 증언이 핵심이 될 것”이라며, “현재로서는 의혹이 사실인지 여부를 판단하기 어렵다”고 분석했다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>▶ <strong>민희진</strong>이 2025‑11‑27에 서울중앙지방법원에서 소송 변론에 출석했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td></td>
+<td>▶ 민희진이 하이브와 체결한 주주간 계약에 13배 배수의 풋옵션이 포함돼 있다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td></td>
+<td>▶ 민희진이 계약서에 서명했을 때 경업금지 조항을 인지하지 못했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>▶ 민희진이 직원들의 선거 투표 성향에 개입했다는 주장이 사실인지 여부는 아직 확인되지 않음.</td>
+<td><a href="https://www.mk.co.kr/news/business/11479856" target="_blank">MK</a>, <a href="https://v.daum.net/v/20251128175709591" target="_blank">Daum</a></td>
+</tr>
+<tr>
+<td></td>
+<td>▶ 민희진이 하이브가 뉴진스를 독립시키려는 의도로 계약을 수정했다는 주장.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">뉴스1</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>민희진</strong><br />
+  전 어도어 대표이자 하이브와의 주주간 계약을 체결한 인물. 현재 법원에서 계약과 관련된 소송에 출석 중이며, 직원 선거 투표 성향 개입 의혹에 대해 증언하고 있다.</p>
+</li>
+<li>
+<p><strong>하이브</strong><br />
+  민희진과의 계약을 통해 주주간 계약 해지 확인 소송을 진행 중. 계약 조항에 대한 해석 차이와 함께, 이번 선거 개입 논란에 대한 공식 입장은 아직 발표되지 않았다.</p>
+</li>
+<li>
+<p><strong>직원</strong><br />
+  논란의 대상이 되는 직원들은 민희진이 개입했다는 주장을 받았으며, 실제 투표 성향에 영향을 받았는지 여부는 아직 불분명하다.</p>
+</li>
+<li>
+<p><strong>정당</strong><br />
+  민주당이 논란의 중심에 서 있으며, 정치적 영향력 행사 여부가 논의되고 있다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>법원 판결</strong><br />
+  2025‑11‑27에 진행된 변론 이후, 민희진과 하이브 간 계약 소송은 계속될 전망이다. 직원 선거 개입 의혹은 별도의 사건으로서, 법원에서의 증언이 판결에 큰 영향을 미칠 것으로 예상된다.</p>
+</li>
+<li>
+<p><strong>기업 거버넌스</strong><br />
+  하이브와 어도어 간 계약 해지 여부가 결정되면, 두 기업의 지배구조와 주주 관계에 변동이 있을 수 있다. 이는 직원들의 직무 환경과 기업 문화에도 영향을 줄 수 있다.</p>
+</li>
+<li>
+<p><strong>정치적 파장</strong><br />
+  만약 민희진이 직원 투표 성향에 실제로 개입했다는 판결이 내려진다면, 기업 내부에서의 정치적 압력이 정당화될 가능성이 있다. 이는 기업과 정당 간의 관계를 재조명하게 만들며, 향후 기업의 정치적 중립성 확보에 대한 논의가 강화될 전망이다.</p>
+</li>
+<li>
+<p><strong>미디어와 공공관계</strong><br />
+  보도와 전문가 분석이 이어질 것이며, 공공의 관심이 지속될 것으로 보인다. 민희진과 하이브의 공식 입장 발표가 주요 이슈가 될 것이다.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 민희진이 법원에 출석한 사실과 계약서에 포함된 풋옵션은 이미 확인된 사실이며, 직원 선거 투표 성향 개입 의혹은 아직 <strong>확인되지 않은</strong> 상태다.<br />
+<strong>▶</strong> 향후 법원 판결이 이 사건의 핵심을 결정할 것이며, 기업과 정당 간의 관계에도 장기적인 영향을 미칠 가능성이 있다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=qZ7pc7WGeVs" target="_blank">[라이브] 민주당 "대법, 대선 개입 중단하고 재판일 ...</a><a href="https://www.youtube.com/watch?v=eicl700ywwg" target="_blank">문 대통령 "총선 오해 살 일 말라"...선거 개입 논...</a><a href="https://www.youtube.com/watch?v=IKOCyZjd0E8" target="_blank">민주당 “文 지키려면 李 찍어야”…국민의힘 “불법 선거...</a><a href="https://www.youtube.com/watch?v=YSHUnHw_iCI" target="_blank">[이슈& 직설] 대선 한복판에 선 대통령…국힘 “선거 ...</a><a href="https://www.youtube.com/watch?v=KyEdE4mj9kY" target="_blank">"윤석열, 벌써 네 번째 대선 개입 "조정식 "김문수 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/015/0005217237" target="_blank">"하이브 믿고 계약, 결국 날 등쳤다"…민희진 '눈물의 호소' [CEO와 법정]</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://v.daum.net/v/20251128175709591" target="_blank">“너 민주당 왜 뽑았어”…민희진, 직원들 선거투표 성향에 개입 논란</a><a href="https://www.mk.co.kr/news/business/11479856" target="_blank">“너 민주당 왜 뽑았어”…민희진, 직원들 선거투표 성향에 개입 논란 ...</a><a href="https://www.tenasia.co.kr/article/2025112814464" target="_blank">민주당 왜 뽑았어 민희진 260억 풋옵션 소송서 정치색 강요 논란 불거 ...</a><a href="https://m.news.nate.com/search?q=%EC%A3%BC%EC%A3%BC%EC%86%8C%EC%86%A1&mp=1&gid=2025112828191" target="_blank">주주소송 검색결과 : 네이트 뉴스</a><a href="https://www.nec.go.kr/files/nec_lab/general/00555_01.pdf" target="_blank">제3호「選擧硏究」발간사</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
