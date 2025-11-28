@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴욕 증시 동반 상승 마감...블랙 프라이데이 기대감 - 2025-11-29 04:52:21</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-29 04:52:21'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('뉴욕 증시 동반 상승 마감...블랙 프라이데이 기대감')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>뉴욕 증시 동반 상승 마감...블랙 프라이데이 기대감</h1>
+            <p>
+                분석 시간: 2025-11-29 04:52:21
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 뉴욕 증시는 블랙 프라이데이 기대감으로 1시 조기 폐장에 다우존스 30, S&P 500, 나스닥이 모두 상승 마감했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 에너지와 테크주가 강세를 보였으며, 인텔은 10% 이상 급등하고 샌디스크는 S&P 500 편입 직후 3.83% 상승했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 상승은 소매 소비 기대와 금리 인하 전망이 투자자 심리를 안정시켜 주말 반등 가능성을 높였다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/29/451fabfb0493.png" 
+                     alt="뉴욕 증시 동반 상승 마감...블랙 프라이데이 기대감" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>미국 증시가 추수감사절 연휴를 맞아 1 시 조기 폐장한 가운데, 다우존스 30, S&amp;P 500, 나스닥 종합지수가 모두 상승 마감했다.</strong><br />
+블랙 프라이데이 소매 기대감이 주가를 끌어올렸으며, 전반적으로 에너지·테크주가 강세를 보였다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 지표</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 28 일</td>
+<td>뉴욕 증시 1 시 조기 폐장</td>
+<td>다우존스 30 지수: <strong>47 716.42</strong> (+289.30 포인트, +0.61%)</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768724" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>S&amp;P 500: <strong>6 849.09</strong> (+36.48 포인트, +0.54%)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>나스닥 종합지수: <strong>23 365.69</strong> (+151.00 포인트, +0.65%)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>에너지 업종: +1.32%</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>의료·건강 업종: -0.5%</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>NVIDIA: -1.81%</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Alphabet: 보합</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Microsoft, Broadcom: 약 +1%</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Meta: +2.26%</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>필라델피아 반도체지수: +1.82%</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>인텔 주가: 10% 이상 급등</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>샌디스크(SanDisk): S&amp;P 500 편입 후 +3.83%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>블랙 프라이데이</strong> 소매 기대감이 주가를 견인하며, 특히 <strong>테크·에너지</strong> 부문이 강세를 보였다.<br />
+▶ <strong>인텔</strong>은 반도체 지수 상승에 힘입어 10% 이상 급등했다.<br />
+▶ <strong>샌디스크</strong>는 S&amp;P 500에 편입된 직후 주가가 3.83% 상승했다.  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>연합뉴스TV</strong>는 3분 증시 요약 영상에서 “구글과 키를 높이 맞추는” 모습을 강조하며, <strong>블랙 프라이데이</strong>가 소비자 지출 기대감으로 주가를 끌어올린 점을 부각했다.  </li>
+<li><strong>SBS 뉴스</strong>는 “12월 금리 인하 기대감”과 연계해, <strong>주말 반등</strong>이 가능할 것으로 전망했다.  </li>
+<li><strong>시사저널e</strong>는 이번 상승이 <strong>다우·S&amp;P</strong>의 역대 최고 기록을 경신했다고 보도하며, <strong>산타 랠리</strong>와 연관지어 해석했다.  </li>
+<li><strong>이데일리</strong>는 “블랙 프라이데이로 조기 폐장”이 투자자 심리 안정에 기여했다고 분석했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>다우존스 30 지수 47 716.42, S&amp;P 500 6 849.09, 나스닥 23 365.69</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768724" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>에너지 업종 +1.32%, 의료·건강 업종 -0.5%</td>
+<td>동일</td>
+</tr>
+<tr>
+<td></td>
+<td>NVIDIA -1.81%, Alphabet 보합, Microsoft/Broadcom +1%</td>
+<td>동일</td>
+</tr>
+<tr>
+<td></td>
+<td>Meta +2.26%, 인텔 10% 이상 급등, 샌디스크 +3.83%</td>
+<td>동일</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>블랙 프라이데이 소비가 실제로 얼마나 확대될지는 아직 불확실</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>12월 금리 인하 가능성</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>투자자</strong>: 블랙 프라이데이 소매 기대감에 따라 매수세가 강화되었다.  </li>
+<li><strong>기업</strong>: <strong>NVIDIA, Meta, Microsoft</strong> 등 테크 기업은 주가 변동성에 민감하게 반응했다.  </li>
+<li><strong>금융기관</strong>: 조기 폐장이 투자자 신뢰를 높인 것으로 보이며, <strong>연준</strong>의 금리 정책에 대한 기대감이 반영되었다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>블랙 프라이데이</strong>가 실제 소비자 지출로 이어질 경우, <strong>소매주</strong>가 추가 상승할 가능성이 있다.  </li>
+<li><strong>테크·에너지</strong> 부문은 <strong>지속적인 성장</strong>이 예상되며, <strong>인텔</strong>과 <strong>샌디스크</strong> 같은 반도체 기업은 주가 변동성을 보일 수 있다.  </li>
+<li><strong>연준</strong>이 12월 금리 인하를 발표할 경우, <strong>주식시장</strong>은 추가 반등을 보일 수 있다.  </li>
+<li>그러나 <strong>글로벌 경제</strong> 불확실성(인플레이션, 지정학적 리스크)으로 인해 <strong>시장 변동성</strong>은 여전히 존재한다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 지표</strong>: 다우존스 30 지수 47 716.42, S&amp;P 500 6 849.09, 나스닥 23 365.69.<br />
+<strong>주요 기업</strong>: NVIDIA, Meta, Microsoft, Broadcom, 인텔, 샌디스크.  </p>
+</blockquote>
+<p><strong>출처</strong>:<br />
+- <a href="https://n.news.naver.com/mnews/article/001/0015768724" target="_blank">연합뉴스</a><br />
+- <a href="https://www.youtube.com/watch?v=fye6Q0vZsqA" target="_blank">연합뉴스TV</a><br />
+- <a href="https://www.youtube.com/watch?v=K_dzOyrNXAc" target="_blank">SBS 뉴스</a><br />
+- <a href="https://www.sisajournal-e.com/news/articleView.html?idxno=407676" target="_blank">시사저널e</a><br />
+- <a href="https://marketin.edaily.co.kr/News/ReadE?newsId=01184086639090968" target="_blank">이데일리</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=fye6Q0vZsqA" target="_blank">[3분증시] 구글과 키 높이 맞추기…뉴욕증시, 강세 마...</a><a href="https://www.youtube.com/watch?v=mQfjTaZ4Kl4" target="_blank">글로벌 빅파마와 파트너십 체결 등 모멘텀 주목... 바...</a><a href="https://www.youtube.com/watch?v=K_dzOyrNXAc" target="_blank">12월 금리 인하 기대감…주말 반등 성공 / SBS /...</a><a href="https://www.youtube.com/watch?v=gAhGZVw1vtA" target="_blank">늘어나는 확진자‥12월 FOMC 앞두고 관망세/[차트로...</a><a href="https://www.youtube.com/watch?v=fRjValsVIMg" target="_blank">코로나도 못 막는 미국인들의 쇼핑열정! 추수감사절 온라...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015768724" target="_blank">뉴욕증시, 블랙 프라이데이 소비 기대감…강세 마감</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251129002400009" target="_blank">[뉴욕증시-1보] 블랙 프라이데이 소비 기대감…강세 마감 | 연합뉴스</a><a href="https://www.sisajournal-e.com/news/articleView.html?idxno=407676" target="_blank">11월 뉴욕증시 강세 마감···다우·S&P 역대 최고 기록 경신 - 시사저널e</a><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=01184086639090968" target="_blank">다우·S&P500 또 사상 최고치…뜨거운 11월 보냈다</a><a href="https://www.ikbc.co.kr/%EC%84%B8%EA%B3%84/article/view/kbc202208270003" target="_blank">파월 '매파 발언'..'美증시 폭락 '블랙 프라이데이'</a><a href="https://www.g-enews.com/article/Global-Biz/2024/11/2024112604401152634a01bf698f_1" target="_blank">뉴욕증시 비트코인 " 블랙프라이데이 소매판매 폭발" - 글로벌이코노믹</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
