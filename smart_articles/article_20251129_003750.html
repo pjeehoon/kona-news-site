@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸틴, 12월 4~5일 인도 국빈 방문…"특별한 전략적 동반자" - 2025-11-29 00:37:50</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,푸틴,인도,국빈">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="푸틴,인도,국빈">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-29 00:37:50'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('푸틴, 12월 4~5일 인도 국빈 방문…"특별한 전략적 동반자"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>푸틴, 12월 4~5일 인도 국빈 방문…"특별한 전략적 동반자"</h1>
+            <p>
+                분석 시간: 2025-11-29 00:37:50
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 푸틴 대통령이 2025년 12월 4–5일 인도를 국빈 방문해 양국의 ‘전략적 동반자’ 관계를 재확인한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 방문은 러시아가 서방 제재 속에서도 인도와의 에너지·무역·과학·문화 협력을 확대하려는 시도이며, 인도는 러시아산 석유를 저가로 대량 구매하고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 인도는 미국과의 동맹을 유지하면서도 러시아와의 관계를 균형 있게 조정하려는 입장을 보이며, 양국 협력 강화가 제재 회피와 에너지 안보에 긍정적 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/29/75df8927d68b.png" 
+                     alt="푸틴, 12월 4~5일 인도 국빈 방문…"특별한 전략적 동반자"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>러시아 대통령 블라디미르 푸틴이 2025년 12월 4–5일 인도를 국빈 방문할 예정이며, 인도와의 ‘특별한 전략적 동반자’ 관계를 재확인한다.</strong><br />
+이번 방문은 러시아가 서방 제재 속에서도 인도와의 협력을 확대하려는 시도로, 인도는 러시아산 석유를 저가로 대량 구매하고 있는 등 에너지 분야에서 핵심 파트너로 남아 있다.<br />
+반면, 인도는 미국과의 동맹을 유지하면서도 러시아와의 관계를 균형 있게 조정하려는 입장을 보이고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 28 일</td>
+<td>크렘린이 푸틴의 인도 방문을 공식 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 4 일</td>
+<td>푸틴 인도 방문 시작 (예정)</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 5 일</td>
+<td>푸틴 인도 방문 종료 (예정)</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 4–5 일</td>
+<td>푸틴이 인도 총리 네렌드라 모디와 인도 대통령 드로우파디 무르무를 만남</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 4–5 일</td>
+<td>정치·무역·경제·과학·기술·문화·인도주의적 협력 전 범위 검토 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 4–5 일</td>
+<td>첫 방문은 2021 년 12월 이후 처음임</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 4–5 일</td>
+<td>인도는 러시아산 석유를 저가로 대량 구매해 러시아를 지원하고 있음</td>
+<td><a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=100&amp;oid=001&amp;aid=0012361234" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 푸틴은 인도와의 <strong>전략적 동반자</strong> 관계를 재확인하며, 양국은 <strong>정치·무역·과학·문화</strong> 등 다방면에서 협력 방안을 논의할 예정이다.</p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>러시아 입장</strong></td>
+<td>인도와의 협력을 통해 <strong>제재 회피</strong>와 <strong>에너지 수출</strong> 확대를 목표</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>인도 입장</strong></td>
+<td>미국과의 동맹을 유지하면서도 <strong>에너지 안보</strong>와 <strong>군사 협력</strong>을 위해 러시아와의 관계를 지속</td>
+<td><a href="https://www.news1.kr/world/europe/5992190" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td><strong>서방(미국·EU) 비판</strong></td>
+<td>러시아가 인도와의 관계를 강화함으로써 <strong>제재 효과</strong>를 약화시키려는 시도로 비판</td>
+<td><a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=100&amp;oid=001&amp;aid=0012361234" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>인도는 <strong>전략적 자율성</strong>을 추구하며, 러시아와의 협력은 <strong>다변화</strong> 전략의 일환</td>
+<td><a href="https://www.hani.co.kr" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td><strong>일반 시민 관점</strong></td>
+<td>일부 인도 시민은 러시아와의 협력을 <strong>경제적 이익</strong>으로 보며, 다른 일부는 <strong>정치적 위험</strong>을 우려</td>
+<td><a href="https://www.joongang.co.kr/article/25262557" target="_blank">중앙일보</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>푸틴이 2025년 12월 4–5일 인도를 방문할 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>인도 총리 모디와 인도 대통령 드로우파디 무르무를 만날 계획</td>
+<td><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>인도는 러시아산 석유를 저가로 대량 구매</td>
+<td><a href="https://news.naver.com/main/read.naver?mode=LSD&amp;mid=sec&amp;sid1=100&amp;oid=001&amp;aid=0012361234" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>방문 중 구체적 <strong>무기·핵 협력</strong> 협정 체결 여부</td>
+<td>현재까지 공식 발표가 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>인도 내부에서 <strong>정치적 반발</strong>이 일어날 가능성</td>
+<td>아직 구체적 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장 및 이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>블라디미르 푸틴</td>
+<td>러시아 대통령</td>
+<td>제재 회피와 에너지 수출 확대, 인도와의 전략적 동반자 관계 강화</td>
+</tr>
+<tr>
+<td>네렌드라 모디</td>
+<td>인도 총리</td>
+<td>미국과의 동맹 유지, 에너지 안보 확보, 러시아와의 협력 확대</td>
+</tr>
+<tr>
+<td>드로우파디 무르무</td>
+<td>인도 대통령</td>
+<td>국가적 외교 균형, 러시아와의 협력에 대한 공식 입장</td>
+</tr>
+<tr>
+<td>미국·EU 고위 관계자</td>
+<td>외교·제재 담당</td>
+<td>러시아와 인도 간 협력에 대한 비판적 시각</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>에너지 시장 영향</strong><br />
+   인도와 러시아 간의 석유 거래가 확대될 경우, 글로벌 에너지 가격 변동에 일정한 영향을 미칠 수 있다. 특히, 인도는 러시아산 석유를 저가로 확보함으로써 <strong>에너지 안보</strong>를 강화하려는 전략을 지속할 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>지정학적 균형</strong><br />
+   인도는 미국과의 동맹을 유지하면서도 러시아와의 관계를 강화함으로써 <strong>전략적 자율성</strong>을 확대하려는 움직임을 보인다. 이는 인도 내부의 <strong>정치적 논쟁</strong>을 촉발할 수 있다.</p>
+</li>
+<li>
+<p><strong>러시아의 외교적 회복</strong><br />
+   푸틴의 인도 방문은 러시아가 서방 제재 속에서도 <strong>외교적 회복</strong>을 시도하는 한 예로, 향후 다른 아시아 국가들과의 협력 확대에도 긍정적 신호가 될 수 있다.</p>
+</li>
+<li>
+<p><strong>미국·EU의 대응</strong><br />
+   미국과 EU는 러시아와 인도 간 협력에 대해 <strong>제재 강화</strong> 또는 <strong>외교적 압박</strong>을 지속할 가능성이 있다. 이는 인도와 러시아 양국의 외교적 선택에 추가적인 압박을 가할 수 있다.</p>
+</li>
+<li>
+<p><strong>국내 정치·경제</strong><br />
+   인도 내에서는 러시아와의 협력이 <strong>경제적 이익</strong>과 <strong>정치적 리스크</strong>를 동시에 안고 있어, 향후 <strong>정책 결정</strong>에 있어 복합적인 고려가 필요하다.</p>
+</li>
+</ol>
+<p><strong>결론</strong><br />
+푸틴의 인도 국빈 방문은 러시아가 제재 압박 속에서도 <strong>전략적 동반자</strong>와의 관계를 강화하려는 시도로, 인도는 <strong>에너지 안보</strong>와 <strong>전략적 자율성</strong>을 동시에 추구하는 복합적인 외교 전략을 보여준다. 이번 방문이 실제로 어떤 구체적 협력으로 이어질지는 향후 공식 발표와 국제사회의 반응을 통해 명확해질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=c2TUz4d1Odo" target="_blank">러시아 푸틴, 이번엔 인도 총리와 정상회담 논의 / O...</a><a href="https://www.youtube.com/watch?v=N0mJ9xiXfyU" target="_blank">[몰아보기] 러시아 원유 사던 인도, 미국에 국빈 방문...</a><a href="https://www.youtube.com/watch?v=7-WVzR_x9yY" target="_blank">푸틴-시진핑, 올 들어 3번째 회담…“모스크바 국빈 초...</a><a href="https://www.youtube.com/watch?v=rnqb15ct9Vs" target="_blank">文 대통령, 푸틴과 네 번째 정상회담…‘北 비핵화’ 등...</a><a href="https://www.youtube.com/watch?v=VD4lqygQPOQ" target="_blank">문 대통령, 21∼23일 러시아 국빈방문…푸틴과 정상회...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/056/0012075874" target="_blank">푸틴, 다음 달 4∼5일 인도 방문…전방위 협력 논의</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.news1.kr/world/europe/5992190" target="_blank">푸틴, 12월 4~5일 인도 국빈 방문…"특별한 전략적 동반자" - 뉴스1</a><a href="https://www.joongang.co.kr/article/25262557" target="_blank">모디 만난 푸틴 "특권적 파트너"…서방 '러 고립 작전' 실패? | 중앙일보</a><a href="https://www.hani.co.kr/arti/international/asiapacific/1148345.html" target="_blank">모디 인도 총리, 러시아 방문…푸틴과 정상회담 한다</a><a href="https://www.sejong.org/web/boad/1/egoread.php?bd=1&seq=12397" target="_blank">[세종포커스] '트럼프 우선주의(Trump First)'와 인도의 인도-태평양 ...</a><a href="https://www.hani.co.kr/arti/international/international_general/1148560.html" target="_blank">모디, 푸틴과 '밀착 행보'…서방·중국 겨누며 경제에 핵까지 협력</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
