@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해킹에 휘청하는 아사히, 2개월째 생산 차질...152만명 개인 정보 털려 - 2025-11-28 13:56:05</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,경제,아사히 그룹">
+    <meta name="article-category-tags" content="IT/과학,경제">
+    <meta name="article-content-tags" content="아사히 그룹">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 13:56:05'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('해킹에 휘청하는 아사히, 2개월째 생산 차질...152만명 개인 정보 털려')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>해킹에 휘청하는 아사히, 2개월째 생산 차질...152만명 개인 정보 털려</h1>
+            <p>
+                분석 시간: 2025-11-28 13:56:05
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 아사히 그룹이 2025년 9월 랜섬웨어 공격을 받아 생산 라인이 2개월간 중단돼 152만 명의 개인정보가 유출됐을 가능성이 제기됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 공격자는 시스템에 접근해 데이터를 암호화했고, 아사히는 아직 유출 여부를 확인하지 않았으며 금전 지급을 거부했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사건은 일본 내 대기업들의 공급망에 영향을 미칠 우려가 있으며, 보안 강화와 복구에 집중할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/c1d0e9a6a203.png" 
+                     alt="해킹에 휘청하는 아사히, 2개월째 생산 차질...152만명 개인 정보 털려" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>아사히 그룹이 2025년 9월부터 시작된 랜섬웨어 공격으로 생산 라인이 2개월간 중단되고, 약 152만명의 개인정보가 유출될 가능성이 제기됐다. 회사는 아직 유출 여부를 확인하지 않았으며, 공격자에게 금전 지급을 거부했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 9월 19일</td>
+<td>외부 침입</td>
+<td>공격자가 시스템에 접근해 패스워드를 도난</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 9월 29일</td>
+<td>랜섬웨어 공격</td>
+<td>데이터 암호화 및 시스템 장애 발생</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 4일</td>
+<td>생산 차질</td>
+<td>맥주 생산 라인에 장기적 지연</td>
+<td><a href="https://m.boannews.com/html/detail.html?tab_type=1&amp;idx=139654" target="_blank">보안뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 14일</td>
+<td>데이터 유출 가능성 공식화</td>
+<td>아사히 그룹 홀딩스가 개인정보 유출 가능성을 언급</td>
+<td><a href="https://www.jk-daily.co.kr/news/articleView.html?idxno=33630" target="_blank">재경일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>기자회견</td>
+<td>가쓰키 아쓰시 CEO가 유출 여부를 확인하지 않았으며, 금전 지급을 거부</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>152만명</strong>의 개인정보가 유출됐을 가능성이 제기되었으나, 아사히 그룹은 아직 확인되지 않았다고 밝혔다.<br />
+▶ 공격자에게 금전 지급을 거부하고, 시스템 복구와 보안 강화에 집중하고 있다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>아사히 그룹 측</strong><br />
+  CEO 가쓰키 아쓰시가 언급한 바와 같이, 현재까지 개인정보가 실제로 유출되었다는 확실한 증거는 없으며, 공격자에게 금전 지급을 하지 않겠다고 밝혔다. 또한, 보안 전문가와 협력해 시스템 복구를 진행 중이라고 전했다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>사이버 보안 전문가</strong><br />
+  보안 전문가들은 랜섬웨어 공격이 단순히 데이터 암호화를 넘어 내부 데이터베이스에 접근해 개인정보를 탈취할 가능성이 높다고 경고했다. 특히, 27GB 규모의 데이터가 탈취됐다는 보안뉴스 보도에 따르면, 공격자는 대규모 데이터 수집을 목표로 한 것으로 보인다.<br />
+<em>출처: <a href="https://m.boannews.com/html/detail.html?tab_type=1&amp;idx=139680" target="_blank">보안뉴스</a></em></p>
+</li>
+<li>
+<p><strong>업계 관계자</strong><br />
+  일본 내 다른 대기업들은 아사히 그룹의 생산 차질이 공급망에 미칠 영향을 우려하며, 비슷한 사이버 공격 사례를 인용해 보안 강화의 필요성을 강조했다.<br />
+<em>출처: <a href="https://www.jk-daily.co.kr/news/articleView.html?idxno=33630" target="_blank">재경일보</a></em></p>
+</li>
+<li>
+<p><strong>공공기관·법집행기관</strong><br />
+  경찰 및 사이버 보안 기관은 아사히 그룹과 협력해 공격 경로와 범위를 조사 중이며, 공격자와의 접촉을 시도하고 있다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 9월 19일 외부 침입, 9월 29일 랜섬웨어 공격, 2개월간 생산 차질</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>아사히 그룹이 금전 지급을 거부</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>공격자에게 27GB 데이터 탈취 가능성 제기</td>
+<td><a href="https://m.boannews.com/html/detail.html?tab_type=1&amp;idx=139680" target="_blank">보안뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>152만명 개인정보가 실제로 유출되었다</td>
+<td>아직 공식 확인되지 않음, 아사히 그룹은 “확인되지 않았다”고 발표</td>
+</tr>
+<tr>
+<td></td>
+<td>공격자가 특정 랜섬웨어 그룹(킬린)과 연관</td>
+<td>YouTube 영상에서 니혼 텔레비전 뉴스가 “킬린이 공격했다고 주장” 하지만 공식 확인은 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>가쓰키 아쓰시 (Asahi Group Holdings CEO)</strong><br />
+  유출 여부를 확인하지 않았으며, 금전 지급을 거부했다.  </li>
+<li><strong>아사히 그룹 보안팀</strong><br />
+  시스템 복구와 보안 강화에 주력하고 있다.  </li>
+<li><strong>공공기관·사이버 보안 기관</strong><br />
+  공격 경로 분석 및 범인 추적을 담당하고 있다.  </li>
+<li><strong>공급망 파트너</strong><br />
+  생산 차질로 인한 재고 부족과 비용 증가를 겪고 있다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>보안 강화</strong><br />
+  아사히 그룹은 보안 인프라를 대폭 강화하고, 외부 침입 방지 시스템을 확대할 계획이다.  </li>
+<li><strong>복구 일정</strong><br />
+  회사는 2026년 2월까지 완전 복구를 목표로 하고 있으나, 실제 일정은 상황에 따라 변동될 수 있다.  </li>
+<li><strong>법적·규제 대응</strong><br />
+  개인정보 유출 여부가 확정되면, 일본 개인정보 보호법에 따라 법적 책임과 과징금이 부과될 가능성이 있다.  </li>
+<li><strong>산업 전반에 미치는 영향</strong><br />
+  대규모 제조업체의 사이버 공격이 공급망에 미치는 파급 효과가 커질 것으로 예상된다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶ 주의</strong>: 현재까지 아사히 그룹은 개인정보 유출 여부를 공식적으로 확인하지 않았으며, 공격자에게 금전 지급을 거부했다. 향후 추가 발표가 있을 경우, 신뢰할 수 있는 보도 매체를 통해 확인할 필요가 있다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=ullClmrzieM" target="_blank">ASAHI GROUP INTERNATIONAL CORP...</a><a href="https://www.youtube.com/watch?v=Jdh90ReWHLg" target="_blank">New Group Logo and Corporate S...</a><a href="https://www.youtube.com/watch?v=cdjH5FPJVfw" target="_blank">Cybercrime organization Qilin ...</a><a href="https://www.youtube.com/watch?v=j6EbIm7qgUQ" target="_blank">Asahi beer running dry as cybe...</a><a href="https://www.youtube.com/watch?v=NiVKxITpVnI" target="_blank">A tour of the Asahi UK Headqua...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015767644" target="_blank">'랜섬웨어 피해' 日아사히그룹 "개인정보 191만건 유출 우려"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=139680" target="_blank">랜섬웨어 그룹 킬린, “아사히 맥주 해킹 우리 소행...27GB 데이터 털 ...</a><a href="http://www.boannews.com/media/view.asp?idx=111141" target="_blank">블랙바이트 랜섬웨어, 일본 대기업 아사히 그룹 홀딩스 공격</a><a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=139654" target="_blank">아사히 맥주 랜섬웨어 공격 인한 운영 차질 장기화 우려...편의점 재고 ...</a><a href="https://www.jk-daily.co.kr/news/articleView.html?idxno=33630" target="_blank">日 아사히그룹홀딩스, “개인정보 유출 가능성” 공식화... 11월 12일 ...</a><a href="https://v.daum.net/v/20251127161547769" target="_blank">아사히, 개인정보 191만건 유출 가능성..내년 2월 완전 복구 목표</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

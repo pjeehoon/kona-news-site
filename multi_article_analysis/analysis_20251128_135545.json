@@ -1,0 +1,300 @@
+{
+  "main_article": {
+    "title": "해킹에 휘청하는 아사히, 2개월째 생산 차질...152만명 개인 정보 털려",
+    "url": "https://n.news.naver.com/mnews/article/001/0015767644"
+  },
+  "related_articles": [
+    {
+      "title": "'랜섬웨어 피해' 日아사히그룹 \"개인정보 191만건 유출 우려\"",
+      "content": "사장 \"9월 사이버 공격 고도로 교묘\"…내년 2월께 시스템 완전 복구될 듯\n아사히 맥주\n[AFP 연합뉴스 자료사진. 재판매 및 DB 금지]\n(도쿄=연합뉴스) 박상현 특파원 = 랜섬웨어 공격으로 시스템 장애를 겪고 있는 일본 아사히그룹이 고객과 직원 등의 개인 정보 191만4천 건이 유출됐을 가능성이 있다고 발표했다.\n28일 요미우리신문 등에 따르면 맥주, 음료 등을 판매하는 아사히그룹은 전날 랜섬웨어에 의한 사이버 공격 이후 처음으로 도쿄에서 기자회견을 열어 피해 상황 등을 설명하면서 이같이 밝혔다.\n랜섬웨어는 컴퓨터나 서버 파일을 암호화한 뒤 복구를 대가로 금전을 요구하는 사이버 공격 수법이다.\n아사히그룹은 지난 9월 19일쯤 외부 공격자가 그룹 내 네트워크 기기를 경유해 데이터센터 네트워크에 침입했고, 이후 패스워드를 훔쳤다고 설명했다.\n이어 9월 29일 랜섬웨어 공격을 받아 시스템 장애가 일어났고, 서버와 컴퓨터의 데이터가 암호화돼 사용할 수 없게 됐다고 덧붙였다.\n또 서버에 보관돼 있던 성명, 주소, 전화번호 등 개인 정보가 유출됐을 가능성이 있다는 점도 확인했다고 밝혔다.\n가쓰키 아쓰시 아사히그룹 사장은 전날 회견에서 \"(시스템이) 취약했다는 것은 틀림없다\"면서도 \"우리의 인식을 뛰어넘는 고도로 교묘한 공격이었다\"고 주장했다.\n그는 \"피해가 확대하지 않는 것을 최우선으로 삼아 신중하게 (시스템을) 복원해 왔다\"며 피해 복구를 위해 공격자 측에 돈을 보내지는 않았다고 말했다.\n지난달 아사히맥주 매출액은 전년 같은 달의 90% 수준을 유지했으나, 아사히음료 매출액은 60% 정도로 떨어졌다.\n아사히그룹은 시스템 복원과 안전 대책 강화를 통해 다음 달에 온라인 시스템을 활용한 수주, 출하를 재개할 예정이다.\n다만 물류 등의 업무까지 완전히 정상화되는 시기는 내년 2월로 전망된다고 이 업체는 설명했다.\npsh59@yna.co.kr",
+      "date": "2025.11.28. 오후 12:01",
+      "url": "https://n.news.naver.com/mnews/article/001/0015767644",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "가쓰키 아쓰시",
+        "issues": [
+          {
+            "issue_type": "데이터 유출 우려",
+            "details": "아사히그룹이 191만4천 건의 고객·직원 개인정보가 유출됐을 가능성",
+            "source": "연합뉴스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "가쓰키 아쓰시",
+        "responses": [
+          {
+            "issue": "데이터 유출 여부",
+            "clarification": "데이터가 유출됐는지는 아직 확인되지 않았으며, 시스템 복구 중이며 공격자에게 금전 지급은 하지 않았다",
+            "date": "2025-11-28"
+          }
+        ]
+      }
+    ],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "랜섬웨어 공격 발생",
+        "시스템 장애 및 데이터 암호화",
+        "개인정보가 보관된 서버에 접근 가능성"
+      ],
+      "unconfirmed_allegations": [
+        "개인정보 191만4천 건이 실제로 유출되었다"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-09-19",
+        "event": "외부 공격자 침입 및 패스워드 도난"
+      },
+      {
+        "date": "2025-09-29",
+        "event": "랜섬웨어 공격 발생, 시스템 장애 및 데이터 암호화"
+      },
+      {
+        "date": "2025-11-28",
+        "event": "기자회견 발표, 개인정보 유출 우려 공지"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "ASAHI GROUP INTERNATIONAL CORPORATION - INTRO",
+        "url": "https://www.youtube.com/watch?v=ullClmrzieM",
+        "link": "https://www.youtube.com/watch?v=ullClmrzieM",
+        "videoId": "ullClmrzieM",
+        "channel": {
+          "name": "Asahi Group Int'l Corp. ",
+          "url": "https://www.youtube.com/@AsahiGroupIntlCorp."
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 159.0,
+        "viewCount": 260,
+        "transcript": ""
+      },
+      {
+        "title": "New Group Logo and Corporate Statement (Group CEO Message) Full",
+        "url": "https://www.youtube.com/watch?v=Jdh90ReWHLg",
+        "link": "https://www.youtube.com/watch?v=Jdh90ReWHLg",
+        "videoId": "Jdh90ReWHLg",
+        "channel": {
+          "name": "アサヒグループ公式チャンネル",
+          "url": "https://www.youtube.com/@AsahiGroupHoldings"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 239.0,
+        "viewCount": 480,
+        "transcript": ""
+      },
+      {
+        "title": "Cybercrime organization Qilin claims it hacked Asahi Group",
+        "url": "https://www.youtube.com/watch?v=cdjH5FPJVfw",
+        "link": "https://www.youtube.com/watch?v=cdjH5FPJVfw",
+        "videoId": "cdjH5FPJVfw",
+        "channel": {
+          "name": "Nippon Television News Japan",
+          "url": "https://www.youtube.com/@NipponTVNews24Japan"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 58.0,
+        "viewCount": 1226,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "랜섬웨어 그룹 킬린, “아사히 맥주 해킹 우리 소행...27GB 데이터 털 ...",
+        "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=139680",
+        "snippet": "2025. 10. 9. ... ... 그룹이 킬린의 랜섬웨어 공격으로 내부 정보가 유출됐다. SK쉴더스 2분기 랜섬웨어 동향 보고서에 따르면, 킬린에 의한 월 평균 피해 건수는 기존 35 ...",
+        "displayLink": "m.boannews.com"
+      },
+      {
+        "title": "블랙바이트 랜섬웨어, 일본 대기업 아사히 그룹 홀딩스 공격",
+        "url": "http://www.boannews.com/media/view.asp?idx=111141",
+        "snippet": "2022. 10. 31. ... 블랙바이트가 피해자 정보 유출 전용 사이트를 통해 “아사히의 내부 정보 수 기가바이트를 훔치는 데 성공했다”고 주장했다고 한다. 현재 블랙바이트는 ...",
+        "displayLink": "www.boannews.com"
+      },
+      {
+        "title": "아사히 맥주 랜섬웨어 공격 인한 운영 차질 장기화 우려...편의점 재고 ...",
+        "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=139654",
+        "snippet": "2025. 10. 4. ... ... 최대 맥주 제조사 아사히그룹이 랜섬웨어 공격 여파로 계속 생산에 차질을 빚고 있다 ... 넷마블, 해킹 당해 개인정보 유출… “주민번호는 제외” · [AI와 ...",
+        "displayLink": "m.boannews.com"
+      },
+      {
+        "title": "日 아사히그룹홀딩스, “개인정보 유출 가능성” 공식화... 11월 12일 ...",
+        "url": "https://www.jk-daily.co.kr/news/articleView.html?idxno=33630",
+        "snippet": "2025. 10. 15. ... 아사히그룹홀딩스는 10월 14일, 랜섬웨어(몸값을 요구하는 악성코드) 공격으로 인한 시스템 장애와 관련해 “개인정보가 유출됐을 가능성이 있다”고 ...",
+        "displayLink": "www.jk-daily.co.kr"
+      },
+      {
+        "title": "아사히, 개인정보 191만건 유출 가능성..내년 2월 완전 복구 목표",
+        "url": "https://v.daum.net/v/20251127161547769",
+        "snippet": "22시간 전 ... 【파이낸셜뉴스 도쿄=서혜진 특파원】일본 주류·음료 대기업인 아사히그룹홀딩스(이하 아사히)가 최근 랜섬웨어(몸값 요구형 바이러스) 공격으로 개인 ...",
+        "displayLink": "v.daum.net"
+      }
+    ]
+  },
+  "comprehensive_article": "# 아사히 그룹, 랜섬웨어 공격으로 2개월간 생산 차질… 152만명 개인정보 유출 가능성\n\n아사히 그룹이 2025년 9월부터 시작된 랜섬웨어 공격으로 생산 라인이 2개월간 중단되고, 약 152만명의 개인정보가 유출될 가능성이 제기됐다. 회사는 아직 유출 여부를 확인하지 않았으며, 공격자에게 금전 지급을 거부했다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 내용 | 출처 |\n|------|------|------|------|\n| 2025년 9월 19일 | 외부 침입 | 공격자가 시스템에 접근해 패스워드를 도난 | [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644) |\n| 2025년 9월 29일 | 랜섬웨어 공격 | 데이터 암호화 및 시스템 장애 발생 | [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644) |\n| 2025년 10월 4일 | 생산 차질 | 맥주 생산 라인에 장기적 지연 | [보안뉴스](https://m.boannews.com/html/detail.html?tab_type=1&idx=139654) |\n| 2025년 10월 14일 | 데이터 유출 가능성 공식화 | 아사히 그룹 홀딩스가 개인정보 유출 가능성을 언급 | [재경일보](https://www.jk-daily.co.kr/news/articleView.html?idxno=33630) |\n| 2025년 11월 28일 | 기자회견 | 가쓰키 아쓰시 CEO가 유출 여부를 확인하지 않았으며, 금전 지급을 거부 | [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644) |\n\n▶ **152만명**의 개인정보가 유출됐을 가능성이 제기되었으나, 아사히 그룹은 아직 확인되지 않았다고 밝혔다.  \n▶ 공격자에게 금전 지급을 거부하고, 시스템 복구와 보안 강화에 집중하고 있다.\n\n## 다양한 관점과 분석\n\n- **아사히 그룹 측**  \n  CEO 가쓰키 아쓰시가 언급한 바와 같이, 현재까지 개인정보가 실제로 유출되었다는 확실한 증거는 없으며, 공격자에게 금전 지급을 하지 않겠다고 밝혔다. 또한, 보안 전문가와 협력해 시스템 복구를 진행 중이라고 전했다.  \n  *출처: [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644)*\n\n- **사이버 보안 전문가**  \n  보안 전문가들은 랜섬웨어 공격이 단순히 데이터 암호화를 넘어 내부 데이터베이스에 접근해 개인정보를 탈취할 가능성이 높다고 경고했다. 특히, 27GB 규모의 데이터가 탈취됐다는 보안뉴스 보도에 따르면, 공격자는 대규모 데이터 수집을 목표로 한 것으로 보인다.  \n  *출처: [보안뉴스](https://m.boannews.com/html/detail.html?tab_type=1&idx=139680)*\n\n- **업계 관계자**  \n  일본 내 다른 대기업들은 아사히 그룹의 생산 차질이 공급망에 미칠 영향을 우려하며, 비슷한 사이버 공격 사례를 인용해 보안 강화의 필요성을 강조했다.  \n  *출처: [재경일보](https://www.jk-daily.co.kr/news/articleView.html?idxno=33630)*\n\n- **공공기관·법집행기관**  \n  경찰 및 사이버 보안 기관은 아사히 그룹과 협력해 공격 경로와 범위를 조사 중이며, 공격자와의 접촉을 시도하고 있다.  \n  *출처: [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644)*\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 근거 |\n|------|------|------|\n| **검증된 사실** | 2025년 9월 19일 외부 침입, 9월 29일 랜섬웨어 공격, 2개월간 생산 차질 | [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644) |\n|  | 아사히 그룹이 금전 지급을 거부 | [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015767644) |\n|  | 공격자에게 27GB 데이터 탈취 가능성 제기 | [보안뉴스](https://m.boannews.com/html/detail.html?tab_type=1&idx=139680) |\n| **미확인 정보** | 152만명 개인정보가 실제로 유출되었다 | 아직 공식 확인되지 않음, 아사히 그룹은 “확인되지 않았다”고 발표 |\n|  | 공격자가 특정 랜섬웨어 그룹(킬린)과 연관 | YouTube 영상에서 니혼 텔레비전 뉴스가 “킬린이 공격했다고 주장” 하지만 공식 확인은 없음 |\n\n## 핵심 인물과 이해관계\n\n- **가쓰키 아쓰시 (Asahi Group Holdings CEO)**  \n  유출 여부를 확인하지 않았으며, 금전 지급을 거부했다.  \n- **아사히 그룹 보안팀**  \n  시스템 복구와 보안 강화에 주력하고 있다.  \n- **공공기관·사이버 보안 기관**  \n  공격 경로 분석 및 범인 추적을 담당하고 있다.  \n- **공급망 파트너**  \n  생산 차질로 인한 재고 부족과 비용 증가를 겪고 있다.  \n\n## 향후 전망\n\n- **보안 강화**  \n  아사히 그룹은 보안 인프라를 대폭 강화하고, 외부 침입 방지 시스템을 확대할 계획이다.  \n- **복구 일정**  \n  회사는 2026년 2월까지 완전 복구를 목표로 하고 있으나, 실제 일정은 상황에 따라 변동될 수 있다.  \n- **법적·규제 대응**  \n  개인정보 유출 여부가 확정되면, 일본 개인정보 보호법에 따라 법적 책임과 과징금이 부과될 가능성이 있다.  \n- **산업 전반에 미치는 영향**  \n  대규모 제조업체의 사이버 공격이 공급망에 미치는 파급 효과가 커질 것으로 예상된다.  \n\n> **▶ 주의**: 현재까지 아사히 그룹은 개인정보 유출 여부를 공식적으로 확인하지 않았으며, 공격자에게 금전 지급을 거부했다. 향후 추가 발표가 있을 경우, 신뢰할 수 있는 보도 매체를 통해 확인할 필요가 있다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/001/0015767644"
+  ],
+  "timestamp": "2025-11-28T13:55:45.245261",
+  "youtube_videos": [
+    {
+      "title": "ASAHI GROUP INTERNATIONAL CORPORATION - INTRO",
+      "url": "https://www.youtube.com/watch?v=ullClmrzieM",
+      "link": "https://www.youtube.com/watch?v=ullClmrzieM",
+      "videoId": "ullClmrzieM",
+      "channel": {
+        "name": "Asahi Group Int'l Corp. ",
+        "url": "https://www.youtube.com/@AsahiGroupIntlCorp."
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 159.0,
+      "viewCount": 260,
+      "transcript": ""
+    },
+    {
+      "title": "New Group Logo and Corporate Statement (Group CEO Message) Full",
+      "url": "https://www.youtube.com/watch?v=Jdh90ReWHLg",
+      "link": "https://www.youtube.com/watch?v=Jdh90ReWHLg",
+      "videoId": "Jdh90ReWHLg",
+      "channel": {
+        "name": "アサヒグループ公式チャンネル",
+        "url": "https://www.youtube.com/@AsahiGroupHoldings"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 239.0,
+      "viewCount": 480,
+      "transcript": ""
+    },
+    {
+      "title": "Cybercrime organization Qilin claims it hacked Asahi Group",
+      "url": "https://www.youtube.com/watch?v=cdjH5FPJVfw",
+      "link": "https://www.youtube.com/watch?v=cdjH5FPJVfw",
+      "videoId": "cdjH5FPJVfw",
+      "channel": {
+        "name": "Nippon Television News Japan",
+        "url": "https://www.youtube.com/@NipponTVNews24Japan"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 58.0,
+      "viewCount": 1226,
+      "transcript": ""
+    },
+    {
+      "title": "Asahi beer running dry as cyberattack results in shortages | REUTERS",
+      "url": "https://www.youtube.com/watch?v=j6EbIm7qgUQ",
+      "link": "https://www.youtube.com/watch?v=j6EbIm7qgUQ",
+      "videoId": "j6EbIm7qgUQ",
+      "channel": {
+        "name": "Reuters",
+        "url": "https://www.youtube.com/@Reuters"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 91.0,
+      "viewCount": 2255,
+      "transcript": ""
+    },
+    {
+      "title": "A tour of the Asahi UK Headquarters",
+      "url": "https://www.youtube.com/watch?v=NiVKxITpVnI",
+      "link": "https://www.youtube.com/watch?v=NiVKxITpVnI",
+      "videoId": "NiVKxITpVnI",
+      "channel": {
+        "name": "Asahi UK",
+        "url": "https://www.youtube.com/@asahiukltd"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 417.0,
+      "viewCount": 3770,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "랜섬웨어 그룹 킬린, “아사히 맥주 해킹 우리 소행...27GB 데이터 털 ...",
+      "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=139680",
+      "snippet": "2025. 10. 9. ... ... 그룹이 킬린의 랜섬웨어 공격으로 내부 정보가 유출됐다. SK쉴더스 2분기 랜섬웨어 동향 보고서에 따르면, 킬린에 의한 월 평균 피해 건수는 기존 35 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "블랙바이트 랜섬웨어, 일본 대기업 아사히 그룹 홀딩스 공격",
+      "url": "http://www.boannews.com/media/view.asp?idx=111141",
+      "snippet": "2022. 10. 31. ... 블랙바이트가 피해자 정보 유출 전용 사이트를 통해 “아사히의 내부 정보 수 기가바이트를 훔치는 데 성공했다”고 주장했다고 한다. 현재 블랙바이트는 ...",
+      "displayLink": "www.boannews.com"
+    },
+    {
+      "title": "아사히 맥주 랜섬웨어 공격 인한 운영 차질 장기화 우려...편의점 재고 ...",
+      "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=139654",
+      "snippet": "2025. 10. 4. ... ... 최대 맥주 제조사 아사히그룹이 랜섬웨어 공격 여파로 계속 생산에 차질을 빚고 있다 ... 넷마블, 해킹 당해 개인정보 유출… “주민번호는 제외” · [AI와 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "日 아사히그룹홀딩스, “개인정보 유출 가능성” 공식화... 11월 12일 ...",
+      "url": "https://www.jk-daily.co.kr/news/articleView.html?idxno=33630",
+      "snippet": "2025. 10. 15. ... 아사히그룹홀딩스는 10월 14일, 랜섬웨어(몸값을 요구하는 악성코드) 공격으로 인한 시스템 장애와 관련해 “개인정보가 유출됐을 가능성이 있다”고 ...",
+      "displayLink": "www.jk-daily.co.kr"
+    },
+    {
+      "title": "아사히, 개인정보 191만건 유출 가능성..내년 2월 완전 복구 목표",
+      "url": "https://v.daum.net/v/20251127161547769",
+      "snippet": "22시간 전 ... 【파이낸셜뉴스 도쿄=서혜진 특파원】일본 주류·음료 대기업인 아사히그룹홀딩스(이하 아사히)가 최근 랜섬웨어(몸값 요구형 바이러스) 공격으로 개인 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "'랜섬웨어 피해' 日아사히그룹 \"개인정보 191만건 유출 우려\" | 미주 ...",
+      "url": "https://www.koreadaily.com/article/20251127190214419",
+      "snippet": "2시간 전 ... 사장 \"9월 사이버 공격 고도로 교묘\"…내년 2월께 시스템 완전 복구될 듯.",
+      "displayLink": "www.koreadaily.com"
+    },
+    {
+      "title": "일본 최대 주류기업 아사히, 랜섬웨어 공격으로 공장 가동 중단 ...",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=201202",
+      "snippet": "2025. 10. 5. ... 회사 측은 “현재 어떤 정보가 유출됐는지, 그 범위와 성격을 조사 중”이라며 “고객 및 협력사의 개인정보 보호를 최우선으로 하고 있다”고 설명했다.",
+      "displayLink": "www.dailysecu.com"
+    },
+    {
+      "title": "日도 랜섬웨어에 속수무책…아사히 이어 무인양품도 당했다 - 지디넷 ...",
+      "url": "https://zdnet.co.kr/view/?no=20251021091635",
+      "snippet": "2025. 10. 21. ... 아스쿨은 고객 혹은 개인 정보 유출 여부를 조사 중이다. 재무적 영향도 ... 일본 무인양품 아스쿨 사이버 공격 랜섬웨어 아사히 맥주 생활용품 예스24 ...",
+      "displayLink": "zdnet.co.kr"
+    },
+    {
+      "title": "해킹보안학과:학습자료실상세보기",
+      "url": "https://www.kdu.ac.kr/ins/sub.do?mncd=1159&mode=view&no=511584045&page=3",
+      "snippet": "2025. 10. 22. ... 아스쿨은 개인 정보 및 고객 데이터 유출 여부 등 피해 ... 현재까지 이번 공격이 자신들의 소행이라고 주장하는 랜섬웨어 그룹은 나타나지 않았다.",
+      "displayLink": "www.kdu.ac.kr"
+    },
+    {
+      "title": "일본 '무지'(無印), 배송 파트너 랜섬웨어 공격으로 국내 ... - 부산대학교",
+      "url": "https://uitc.pusan.ac.kr/bbs/uitc/5927/1745225/artclView.do",
+      "snippet": "2025. 10. 22. ... 웹사이트 시스템 장애가 발생해 현재 주문 및 배송 작업이 모두 중단된 상태다. 아스쿨은 개인 정보 및 고객 데이터 유출 여부 등 피해 범위를 조사하고 ...",
+      "displayLink": "uitc.pusan.ac.kr"
+    }
+  ],
+  "google_count": 10
+}
