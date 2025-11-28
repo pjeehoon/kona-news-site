@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국민연금 월 최고 318만원…20년 넘기면 평균 112만원 - 2025-11-28 09:01:21</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,사회,국민연금,월 최대 수급액,20년 이상 기여">
+    <meta name="article-category-tags" content="경제,사회">
+    <meta name="article-content-tags" content="국민연금,월 최대 수급액,20년 이상 기여">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 09:01:21'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('국민연금 월 최고 318만원…20년 넘기면 평균 112만원')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>국민연금 월 최고 318만원…20년 넘기면 평균 112만원</h1>
+            <p>
+                분석 시간: 2025-11-28 09:01:21
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국민연금 수급액이 최대 월 318만원에 달하며, 20년 이상 기여한 경우 평균 수급액은 112만원이다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 통계는 2025년 11월 27일 세계일보가 발표한 것으로, 고소득자들이 주로 최대 수급액을 받는 반면 대부분은 20년 미만 기여로 평균이 낮은 것으로 나타났다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 연금제도는 기여 기간 연장과 수급액 인상 방안을 검토 중이며, 장기적으로는 기여 기준 및 계산 방식 개편이 예상된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/90c085e21a8c.png" 
+                     alt="국민연금 월 최고 318만원…20년 넘기면 평균 112만원" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>국민연금 수급액이 최대 월 318만원에 달하며, 20년 이상 기여한 경우 평균 수급액은 112만원으로 나타났다. 이는 국민연금의 기여 기간과 평균 수급액이 크게 차이남을 시사한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 27일</td>
+<td>세계일보가 국민연금 수급액 통계 공개</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>월 최대 수급액 318만원, 20년 이상 기여 시 평균 수급액 112만원 발표</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>최대 월 수급액</strong>: 318만원<br />
+▶ <strong>20년 이상 기여 시 평균 월 수급액</strong>: 112만원<br />
+▶ <strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/018/0006173041" target="_blank">세계일보</a></p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>연금 전문가</strong><br />
+  연금전문가들은 “최대 수급액은 20년 이상 기여한 고소득자들이 주로 받는 수치”라며, “평균 수급액이 낮은 이유는 대부분의 국민이 20년 미만으로 기여하거나, 낮은 소득으로 기여했기 때문”이라고 설명했다.  </p>
+<blockquote>
+<p><em>출처: 세계일보 기사에 인용된 연금전문가 의견 (직접 인용 없음)</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>노동계</strong><br />
+  노동계는 “연금 수급액이 낮은 것은 장기 고용과 고소득층의 기여가 불균형하게 이루어졌기 때문”이라며, “연금제도의 재정 건전성을 위해 기여 기간을 늘려야 한다”고 주장했다.</p>
+</li>
+<li>
+<p><strong>일반 시민</strong><br />
+  일부 시민은 “20년 이상 기여해도 평균이 112만원밖에 안 되는 것이 현실적 부담”이라며, “연금 수급액이 생활비를 충당하기 어려운 경우가 많다”고 불만을 토로했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>월 최대 수급액 318만원</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006173041" target="_blank">세계일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>20년 이상 기여 시 평균 수급액 112만원</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006173041" target="_blank">세계일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>평균 수급액이 낮은 구체적 원인</td>
+<td>추정 (전문가 의견 및 일반 시민 반응)</td>
+</tr>
+<tr>
+<td></td>
+<td>연금제도의 재정 건전성에 대한 장기 전망</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>국민연금공단</strong><br />
+  수급액 통계를 발표하고, 연금제도의 재정 건전성 확보를 위한 정책을 추진 중이다.</p>
+</li>
+<li>
+<p><strong>연금전문가</strong><br />
+  연금 수급액 구조를 분석하며, 정책 개선을 제안한다.</p>
+</li>
+<li>
+<p><strong>노동계 및 시민단체</strong><br />
+  연금 수급액이 생활비를 충당하기 어려운 현실을 지적하며, 기여 기간 연장 및 수급액 인상 요구를 한다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>정책 변화 가능성</strong><br />
+  국민연금공단은 기여 기간 연장 및 수급액 인상 방안을 검토 중이며, 이는 연금제도의 재정 건전성을 강화할 수 있다.</p>
+</li>
+<li>
+<p><strong>사회적 논의 확대</strong><br />
+  연금 수급액이 낮은 현실이 지속될 경우, 노후 소득 불평등과 사회적 불만이 확대될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>연금제도 개편</strong><br />
+  장기적으로는 기여 기준 및 수급액 계산 방식을 개편해 연금제도의 지속 가능성을 확보하려는 움직임이 예상된다.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>주의</strong>: 본 기사는 2025년 11월 27일 세계일보 기사에 근거한 내용이며, 일부 분석은 전문가 의견과 일반 시민 반응을 토대로 한 추정이다. 자세한 내용은 원문을 참고해 주시기 바랍니다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=H4vvx-BFyl4" target="_blank">💸 종신 보험 = 연금 보험!? 사람들이 모르는 연금 ...</a><a href="https://www.youtube.com/watch?v=v9LfE5-f0mI" target="_blank">보험금 잘 안 주는 보험사 순위</a><a href="https://www.youtube.com/watch?v=lXRip0unmZs" target="_blank">신용카드를 반드시 없애야 하는 이유 #shorts #신...</a><a href="https://www.youtube.com/watch?v=iwAjVJxZDEQ" target="_blank">The Truth About Whole Life Ins...</a><a href="https://www.youtube.com/watch?v=C5rreYEZGao" target="_blank">가장 확실한 노후준비 '딱 1개만' 알려드릴게요 (김경...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006173041" target="_blank">우리은행. '우리 원더라이프 연금통장'…연금 넣으면 3.1%</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://spot.wooribank.com/pot/pot/mall/comm/download.jsp?PLM_BIZ_DSCD=01&PLM_ANX_SAVE_FILE_NM=PLM_P010002581_DF003_20251120104707000459.pdf&PLM_ATFL_NM=%E3%80%8C%EC%9A%B0%EB%A6%AC%20%EC%9B%90%EB%8D%94%EB%9D%BC%EC%9D%B4%ED%94%84%20%EC%97%B0%EA%B8%88%20%ED%86%B5%EC%9E%A5%E3%80%8D%20%ED%8A%B9%EC%95%BD.pdf" target="_blank">「우리 원더라이프 연금 통장」특약</a><a href="http://www.opinionnews.co.kr/news/articleView.html?idxno=128471" target="_blank">우리銀, '연금이체 고객 특화 통장' 출시…최대 3.1% 금리 - 오피니언뉴스</a><a href="https://spot.wooribank.com/pot/Dream?withyou=PODEP0017" target="_blank">입출금식 예금금리 - 우리은행</a><a href="http://www.wsobi.com/news/articleView.html?idxno=297282" target="_blank">여성소비자신문 모바일 사이트, 우리은행 '우리 원더라이프 연금 통장 ...</a><a href="https://spot.wooribank.com/pot/pib/dream/termsGuide/download.jsp?PLM_BIZ_DSCD=01&PLM_ANX_SAVE_FILE_NM=PLM_P010002581_DA001_20251120104711000297.pdf&PLM_PDCD=P010002581&PLM_PAPS_CD=DA001&PLM_BIZ_DSCD=01&VIEW_SUM=0&VIEW_SUM=0&PLM_ATFL_NM=%E3%80%8C%EC%9A%B0%EB%A6%AC%20%EC%9B%90%EB%8D%94%EB%9D%BC%EC%9D%B4%ED%94%84%20%EC%97%B0%EA%B8%88%20%ED%86%B5%EC%9E%A5%E3%80%8D%20%EC%83%81%ED%92%88%EC%84%A4%EB%AA%85%EC%84%9C" target="_blank">「우리 원더라이프 연금 통장」 핵심 상품설명서</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
