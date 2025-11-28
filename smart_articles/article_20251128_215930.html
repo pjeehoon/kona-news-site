@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기각 확신" - 2025-11-28 21:59:30</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,추경호,민주당,국민힘">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="추경호,민주당,국민힘">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 21:59:30'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('추경호 영장에 민주 \'내란\' 쌍끌이 공세...국힘 "기각 확신"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기각 확신"</h1>
+            <p>
+                분석 시간: 2025-11-28 21:59:30
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 12월 3일에 추경호 전 원내대표에 대한 구속영장 심사 결과가 공개될 예정이다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 민주당은 영장이 기각될 경우 사법개혁을 요구하고 정당을 ‘내란 정당’으로 낙인찍겠다고, 국민의힘은 영장이 발부될 경우 정당 해산을 요구하며 영장이 기각될 것이라 확신한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 논쟁은 정치적 양극화를 심화시키고 사법부의 독립성에 대한 우려와 사회적 혼란 가능성을 제기하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/76c907050287.png" 
+                     alt="추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기각 확신"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>2025년 11월 28일, 추경호 전 원내대표에 대한 구속영장 심사 결과가 12월 3일에 내려질 예정이다. 민주당은 영장이 기각될 경우 사법개혁을 요구하며 ‘내란 정당’ 공세를 예고했고, 국민의힘은 영장이 기각될 것이라 확신하며 영장이 발부될 시 정당 해산을 요구했다.</strong>  </p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 28일</td>
+<td>기사 발표</td>
+<td>추경호 구속영장 심사에 대한 민주당·국민의힘의 입장 표명</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>심사 예정</td>
+<td>추경호 구속영장 심사 결과가 공개될 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>민주당 입장</td>
+<td>영장이 기각되면 사법개혁 요구, 내란 정당 공세</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>국민의힘 입장</td>
+<td>영장이 기각될 것 확신, 영장이 발부되면 정당 해산 요구</td>
+<td><a href="https://www.chosun.com/politics/politics_general/2025/11/27/5ACN2C3AEBGM5M72ET6EMHFX2E/" target="_blank">조선일보</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>추경호 체포동의안이 법원으로 넘어갔으며, 심사 일정은 12월 3일로 확정</strong>되었다.<br />
+▶ 민주당은 영장이 기각될 경우 <strong>사법개혁</strong>을 요구하고, 국민의힘은 영장이 발부될 경우 <strong>정당 해산</strong>을 요구한다는 입장을 밝혔다.</p>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>민주당의 ‘내란 정당’ 공세</h3>
+<ul>
+<li><strong>정청래</strong>는 영장이 기각될 경우 ‘내란 재판부’를 설치할 것이라고 선언하며, 사법개혁을 요구했다.  </li>
+<li><strong>정희용</strong>은 정당이 표적이 되는 이유를 “경제 실정과 사법 리스크”라고 지적하며, 국민의힘이 정당을 공격하는 것이라고 주장했다.  </li>
+<li>민주당은 영장이 기각될 경우 <strong>내란 정당</strong>이라는 낙인을 찍어 정당을 공격할 것이라고 예고했다.  </li>
+<li><em><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></em></li>
+</ul>
+<h3>국민의힘의 ‘기각 확신’과 책임 인정</h3>
+<ul>
+<li><strong>장동혁</strong>은 영장 결과에 따라 “혼란과 고통을 책임진다”며, 영장이 기각될 것이라 확신했다.  </li>
+<li>국민의힘은 영장이 발부될 경우 <strong>정당 해산</strong>을 요구하고, 사법부에 대한 압박을 예고했다.  </li>
+<li><em><a href="https://www.chosun.com/politics/politics_general/2025/11/27/5ACN2C3AEBGM5M72ET6EMHFX2E/" target="_blank">조선일보</a></em></li>
+</ul>
+<h3>전문가 및 일반 시민의 시각</h3>
+<ul>
+<li><strong>법학자</strong>는 사법부의 독립성을 강조하며, 정치적 압력이 사법 판단에 영향을 미칠 수 있다고 경고했다.  </li>
+<li><strong>시민 단체</strong>는 이번 사건이 정치적 갈등을 심화시킬 우려가 크며, 사회적 혼란이 예상된다고 말했다.  </li>
+<li><strong>언론 보도</strong>는 양당이 서로를 비난하며, 정치적 이슈가 사법적 판단을 방해할 수 있다는 우려를 제기했다.  </li>
+<li><em><a href="https://www.youtube.com/watch?v=e8YtgY-JF20" target="_blank">YTN</a></em>, <em><a href="https://www.youtube.com/watch?v=7Mr-6ePaZUY" target="_blank">연합뉴스TV</a></em></li>
+</ul>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>추경호 체포동의안이 법원으로 넘어갔음</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>영장 심사 일정이 2025년 12월 3일로 확정</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>영장이 기각되면 사법개혁이 진행될 것</td>
+<td><em>확인되지 않은</em></td>
+</tr>
+<tr>
+<td></td>
+<td>영장이 발부되면 정당 해산을 요구할 것</td>
+<td><em>확인되지 않은</em></td>
+</tr>
+<tr>
+<td></td>
+<td>‘내란 정당’이라는 낙인이 정당에 부과될 것</td>
+<td><em>확인되지 않은</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장 요약</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>추경호</strong></td>
+<td>전 원내대표</td>
+<td>구속영장 대상</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>정청래</strong></td>
+<td>민주당 대표</td>
+<td>영장이 기각될 경우 사법개혁 요구 및 내란 재판부 설치 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>정희용</strong></td>
+<td>민주당 부대표</td>
+<td>정당이 표적이 되는 이유를 사법 리스크와 경제 실정으로 지적</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>장동혁</strong></td>
+<td>국민의힘 대표</td>
+<td>영장 결과에 따라 책임 인정 및 기각 확신</td>
+<td><a href="https://www.chosun.com/politics/politics_general/2025/11/27/5ACN2C3AEBGM5M72ET6EMHFX2E/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>법원</strong></td>
+<td>사법적 판단을 담당</td>
+<td><em>확인되지 않은</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>12월 3일 심사 결과</strong><br />
+   - 영장이 기각될 경우 민주당이 사법개혁을 요구하고, 국민의힘은 정당 해산을 요구할 가능성이 있다.<br />
+   - 영장이 발부될 경우 양당이 정치적 압박을 가중시키며, 사법부의 독립성 논란이 심화될 전망이다.  </p>
+</li>
+<li>
+<p><strong>정치적 갈등 심화</strong><br />
+   - 양당이 서로를 ‘내란 정당’으로 낙인찍는 등 정당 간 갈등이 확대될 가능성이 높다.<br />
+   - 사법부에 대한 정치적 압력이 지속될 경우, <strong>사법 독립성</strong>이 위협받을 수 있다.  </p>
+</li>
+<li>
+<p><strong>사회적 파장</strong><br />
+   - 정치적 이슈가 사법 판단에 영향을 미치면, <strong>사회적 혼란</strong>과 <strong>시민 불안</strong>이 증가할 수 있다.<br />
+   - 시민 단체와 언론은 이번 사건이 정치적 갈등을 심화시킬 우려를 지속적으로 제기하고 있다.  </p>
+</li>
+</ol>
+<p>▶ <strong>심사 결과가 정치적 파장을 결정짓는 핵심 순간</strong>이 될 것이며, 이후 사법부와 정치권 간의 관계가 재정립될 필요가 있다.  </p>
+<hr />
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=e8YtgY-JF20" target="_blank">추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기...</a><a href="https://www.youtube.com/watch?v=nNpspzyCfhU" target="_blank">추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기...</a><a href="https://www.youtube.com/watch?v=7Mr-6ePaZUY" target="_blank">민주 '추경호 구속' 사법부 압박…장동혁 "계엄 책임 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/052/0002279911" target="_blank">추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기각 확신"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=e8YtgY-JF20" target="_blank">추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기각 확신" / YTN ...</a><a href="https://www.chosun.com/politics/politics_general/2025/11/27/5ACN2C3AEBGM5M72ET6EMHFX2E/" target="_blank">국민의힘, 추경호 체포동의안 가결에 “불법 특검과 합작해 야당 말살”</a><a href="https://v.daum.net/v/20251128104439347" target="_blank">추경호 영장심사에 쏠린 눈…與, '내란정당' 공세 채비-野, 국면전환 ...</a><a href="https://www.ytn.co.kr/_ln/0101_202511281851316976" target="_blank">추경호 영장에 민주 '내란' 쌍끌이 공세...국힘 "기각 확신" | YTN</a><a href="https://jol.at/at/mann/run/tops.html?ID=%EC%8A%AC%EB%A1%AF%EB%A8%B8%EC%8B%A0%EC%82%AC%EC%9D%B4%ED%8A%B8.html" target="_blank">정선 카지노 썰 : 실제 경험자들의 조언</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
