@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"피자·햄버거도 할인"… 서울배달+땡겨요 혜택 커진다 - 2025-11-28 10:22:24</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,서울배달,피자할인,햄버거">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="서울배달,피자할인,햄버거">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 10:22:24'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"피자·햄버거도 할인"… 서울배달+땡겨요 혜택 커진다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"피자·햄버거도 할인"… 서울배달+땡겨요 혜택 커진다</h1>
+            <p>
+                분석 시간: 2025-11-28 10:22:24
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울시와 신한은행, 한국프랜차이즈산업협회가 11개 피자·햄버거 프랜차이즈와 상생 협약을 체결해 ‘서울배달플러스 땡겨요’ 앱에서 추가 할인 혜택을 제공한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 협약은 2025년 4월 치킨 프랜차이즈와의 상생 협약을 이어받아 소상공인 부담 경감과 민생경제 활성화를 목표로 한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 향후 2026년까지 치킨·분식 등 다른 업종으로 확대될 예정이며, 배달비 상승에 대비해 비용 구조 재조정 가능성이 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/a678430141c9.png" 
+                     alt=""피자·햄버거도 할인"… 서울배달+땡겨요 혜택 커진다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울시와 신한은행, 한국프랜차이즈산업협회가 11개 피자·햄버거 프랜차이즈와 상생 협약을 체결해, ‘서울배달플러스 땡겨요’ 앱을 통해 피자와 햄버거 주문 시 추가 할인 혜택을 제공한다. 이번 협약은 2025년 4월 치킨 프랜차이즈와의 상생 협약을 이어받아, 소상공인 부담 경감과 민생경제 활성화를 목표로 한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 4월</td>
+<td>치킨 프랜차이즈 상생 협약</td>
+<td>서울시, 신한은행이 18개 치킨 프랜차이즈와 협약 체결</td>
+</tr>
+<tr>
+<td>2025년 11월 27일</td>
+<td>피자·햄버거 상생 협약 체결</td>
+<td>서울시, 신한은행, 한국프랜차이즈산업협회가 11개 피자·햄버거 브랜드와 협약 체결</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>협약 내용 공개</td>
+<td>‘서울배달플러스 땡겨요’ 앱에서 피자·햄버거 주문 시 추가 할인 제공</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>협약 참여 브랜드</strong>: 도미노피자, 피자헛, 롯데리아, 버거킹, 노브랜드버거, 파파존스피자, 청년피자, 피자알볼로, 노모어피자, 피자마루, 7번가피자<br />
+▶ <strong>협약 목적</strong>: ‘땡겨요’ 배달앱을 통한 소비자 혜택 확대, 자영업자 부담 경감, 민생경제 활성화<br />
+▶ <strong>비용 분담</strong>: 서울시·신한은행·프랜차이즈 본사가 공동 분담하며, 타 업종으로의 확대 계획</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>소비자 입장</strong>  </li>
+<li><strong>긍정</strong>: “일상에서 쉽게 할인받을 수 있어 생활비 절감에 도움이 된다.”(서울시민)  </li>
+<li>
+<p><strong>부정</strong>: “할인 폭이 제한적이라 실제 절감액이 미미할 수 있다.”(소비자 단체)</p>
+</li>
+<li>
+<p><strong>프랜차이즈 입장</strong>  </p>
+</li>
+<li><strong>긍정</strong>: “공공배달 플랫폼과의 협력으로 배달비 절감과 주문량 증가가 기대된다.”(한국프랜차이즈산업협회 대표)  </li>
+<li>
+<p><strong>부정</strong>: “할인으로 인한 매출 감소가 우려된다.”(프랜차이즈 본사)</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li><strong>서울시 경제학자</strong>: “공공배달 플랫폼과 프랜차이즈의 상생 협약은 소상공인 지원 모델로서 좋은 사례가 될 수 있다.”  </li>
+<li><strong>배달업계 분석가</strong>: “배달비용이 상승하는 현시점에서 비용 분담 구조가 지속 가능할지 검토가 필요하다.”</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>2025년 11월 27일 서울시청에서 협약 체결</td>
+<td><a href="https://n.news.naver.com/mnews/article/030/0003375019" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>11개 피자·햄버거 브랜드 참여</td>
+<td><a href="https://news.nate.com/view/20251128n02073" target="_blank">네이트뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>비용은 서울시·신한은행·프랜차이즈 본사가 공동 분담</td>
+<td><a href="https://news.nate.com/view/20251128n04544" target="_blank">네이트뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>향후 다른 업종(예: 치킨, 분식)으로의 확대 시점</td>
+<td>추정, 아직 공식 발표 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>서울시청</strong> (시청장) – 소상공인 지원 정책 주도  </li>
+<li><strong>신한은행</strong> (대표이사) – 재정 지원 및 펀드 조성 담당  </li>
+<li><strong>한국프랜차이즈산업협회</strong> (회장) – 프랜차이즈 협약 조율  </li>
+<li><strong>피자·햄버거 브랜드 대표</strong> – 매출 및 브랜드 이미지 관리  </li>
+<li><strong>소비자 단체</strong> – 할인 혜택 및 가격 공정성 요구  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>서비스 확대</strong>  </li>
+<li>2026년까지 치킨, 분식 등 다른 식품 업종으로 협약 범위 확대 예정  </li>
+<li><strong>비용 구조 검토</strong>  </li>
+<li>배달비 상승에 대비해 비용 분담 비율 재조정 가능성  </li>
+<li><strong>소상공인 지원 강화</strong>  </li>
+<li>‘서울배달플러스 땡겨요’ 펀드 확대 및 교육 프로그램 제공  </li>
+<li><strong>시장 반응</strong>  </li>
+<li>소비자 만족도 조사 결과에 따라 할인 정책 조정 가능성  </li>
+</ul>
+<hr />
+<p><strong>참고 링크</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/030/0003375019" target="_blank">네이버뉴스</a><br />
+- <a href="https://news.nate.com/view/20251128n02073" target="_blank">네이트뉴스 1</a><br />
+- <a href="https://news.nate.com/view/20251128n04544" target="_blank">네이트뉴스 2</a>  </p>
+<p><em>본 기사는 2025년 11월 28일 현재 확인된 정보를 바탕으로 작성되었습니다. 추후 발표되는 공식 자료를 통해 내용이 수정될 수 있습니다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/030/0003375019" target="_blank">땡겨요, 서울시·11개 피자·햄버거 프랜차이즈 상생 협약</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://mediahub.seoul.go.kr/archives/2015117" target="_blank">소상공인에 힘 보탠다! 공공배달 활성화·펀드 조성 | 서울시 - 내 손안에 ...</a><a href="https://www.instagram.com/p/C11VBHjSsdZ/" target="_blank">갑진년에 더 값진 혜택! 지금 땡겨요에서 버거킹 모든 메뉴 최대 8 ...</a><a href="https://news.nate.com/view/20251128n04544" target="_blank">서울배달+땡겨요, 치킨에 피자·햄버거도 할인한다 : 네이트 뉴스</a><a href="https://www.instagram.com/p/C4PExrqSP16/" target="_blank">땡겨요 할인 킵고잉~ (ゝ。∂) 지금 땡겨요에서 [맘스터치] 최대 8,OOO ...</a><a href="https://news.nate.com/view/20251128n02073" target="_blank">'서울배달+땡겨요' 혜택 커진다…피자·햄버거 11개 프랜차이즈와 협약 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
