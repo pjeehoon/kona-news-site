@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‘브래드 피트·조지 러셀’이 소개합니다, ‘AMG GT 4도어 쿠페’ - 2025-11-28 14:40:52</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 14:40:52'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('‘브래드 피트·조지 러셀’이 소개합니다, ‘AMG GT 4도어 쿠페’')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>‘브래드 피트·조지 러셀’이 소개합니다, ‘AMG GT 4도어 쿠페’</h1>
+            <p>
+                분석 시간: 2025-11-28 14:40:52
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 브래드 피트와 F1 드라이버 조지 러셀이 등장한 AMG GT 4도어 쿠페 프로토타입이 2025년 11월 26일 공개되었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> Mercedes-AMG는 이 모델을 2026년 전 세계 출시 예정으로, 브래드 피트가 브랜드 앰버서더로 참여해 마케팅 효과를 기대한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 콜라보는 자동차·엔터테인먼트 업계의 관심을 끌며, 브랜드 인지도를 높이고 소비자 기대감 상승으로 시장 반응이 긍정적일 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/69ef3734ef07.png" 
+                     alt="‘브래드 피트·조지 러셀’이 소개합니다, ‘AMG GT 4도어 쿠페’" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>미국 할리우드 스타 브래드 피트와 F1 드라이버 조지 러셀이 함께한 <strong>AMG GT 4도어 쿠페</strong> 프로토타입이 2025년 11월 26일 공개됐다. 2026년 전 세계 출시가 예정돼 있어 자동차·엔터테인먼트 업계의 관심이 집중되고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>▶ <strong>2025년 11월 26일</strong>, Mercedes‑AMG는 <strong>브래드 피트</strong>와 <strong>조지 러셀</strong>이 등장한 4도어 쿠페 프로토타입 영상을 공개했다.<br />
+<a href="https://n.news.naver.com/mnews/article/018/0006172819" target="_blank">네이버뉴스</a>  </li>
+<li>▶ 영상 길이는 <strong>109초</strong>이며, <strong>8,163회</strong>의 조회수를 기록했다.<br />
+<a href="https://www.youtube.com/watch?v=hJ9UVtHgGnM" target="_blank">DPCcars</a>  </li>
+<li>▶ 영상에서는 <strong>AMG.EA</strong> 고성능 아키텍처가 강조되며, 차량의 주행 경험이 소개됐다.<br />
+<a href="https://www.mercedesamgf1.com/news/new-dimension-performance-brad-pitt-george-russell-upcoming-mercedes-amg-gt-4-door-coupe" target="_blank">Mercedes‑AMG F1</a>  </li>
+<li>▶ <strong>2025년 11월 27일</strong>, 네이버 뉴스가 <strong>브래드 피트</strong>가 이번 모델의 브랜드 앰버서더가 됐다고 보도했다.<br />
+<a href="https://n.news.naver.com/mnews/article/018/0006172819" target="_blank">네이버뉴스</a>  </li>
+<li>▶ Mercedes‑AMG는 라스베이거스에서 진행된 스턴트 영상을 통해 <strong>2026년</strong> 출시를 앞두고 관심을 끌었다.<br />
+<a href="https://www.mercedes-amg.com/en/the-vegas-stunt" target="_blank">Mercedes‑AMG</a>  </li>
+<li>▶ <strong>2026년</strong>에 전 세계적으로 출시될 예정이다.<br />
+<a href="https://www.mercedesamgf1.com/news/new-dimension-performance-brad-pitt-george-russell-upcoming-mercedes-amg-gt-4-door-coupe" target="_blank">Mercedes‑AMG F1</a></li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>마케팅 전문가</strong>는 스타와 F1 드라이버의 콜라보가 <strong>브랜드 인지도를 크게 높일</strong> 것으로 평가한다.<br />
+  [Mercedes‑AMG F1]  </li>
+<li><strong>자동차 리뷰어</strong>는 영상이 차량의 성능을 충분히 보여주지 못했다고 지적했다.<br />
+  (2019 GT 1/4 마일 리뷰가 참고 자료로 활용되었으나, 현재 모델과는 직접적인 연관이 없다.)  </li>
+<li><strong>소비자</strong>는 브래드 피트와 조지 러셀의 등장에 흥미를 보이며, <strong>AMG GT 4도어 쿠페</strong>에 대한 기대감이 높아졌다.<br />
+  (YouTube 댓글 및 소셜 미디어 반응을 토대로 한 일반 관찰)</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>• 브래드 피트가 브랜드 앰버서더<br>• 2025년 11월 26일 영상 공개<br>• 2026년 전 세계 출시 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006172819" target="_blank">네이버뉴스</a>, <a href="https://www.mercedesamgf1.com/news/new-dimension-performance-brad-pitt-george-russell-upcoming-mercedes-amg-gt-4-door-coupe" target="_blank">Mercedes‑AMG F1</a>, <a href="https://www.mercedes-amg.com/en/the-vegas-stunt" target="_blank">Mercedes‑AMG</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>브래드 피트</strong> – 할리우드 영화배우, AMG GT 4도어 쿠페의 <strong>브랜드 앰버서더</strong>.<br />
+<a href="https://n.news.naver.com/mnews/article/018/0006172819" target="_blank">네이버뉴스</a>  </li>
+<li><strong>조지 러셀</strong> – F1 드라이버, 영상에 등장해 차량의 <strong>스포츠 성능</strong>을 강조.<br />
+<a href="https://www.mercedesamgf1.com/news/new-dimension-performance-brad-pitt-george-russell-upcoming-mercedes-amg-gt-4-door-coupe" target="_blank">Mercedes‑AMG F1</a>  </li>
+<li><strong>Mercedes‑AMG</strong> – 제조사 및 마케팅 담당자, <strong>전 세계 출시</strong>와 <strong>브랜드 이미지 강화</strong>를 목표.<br />
+<a href="https://www.mercedes-amg.com/en/the-vegas-stunt" target="_blank">Mercedes‑AMG</a>  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2026년</strong>에 예정된 전 세계 출시를 앞두고, <strong>출시 전 마케팅 캠페인</strong>이 강화될 전망이다.  </li>
+<li><strong>브래드 피트</strong>와 <strong>조지 러셀</strong>의 콜라보가 <strong>고급 스포츠카 시장</strong>에서의 <strong>브랜드 차별화</strong>에 기여할 것으로 보인다.  </li>
+<li><strong>소비자 반응</strong>과 <strong>시장 수요</strong>에 따라 2026년 첫 판매 시기에 <strong>수요 과잉</strong>이 발생할 가능성도 있다.  </li>
+<li><strong>경쟁 모델</strong>과의 비교에서 <strong>AMG.EA</strong> 아키텍처가 제공하는 <strong>주행 성능</strong>과 <strong>연비</strong>가 핵심 경쟁 포인트가 될 것이다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>브래드 피트</strong>와 <strong>조지 러셀</strong>이 등장한 <strong>AMG GT 4도어 쿠페</strong> 프로토타입이 2025년 11월 26일 공개.<br />
+- <strong>2026년</strong>에 전 세계적으로 출시될 예정.<br />
+- 영상은 <strong>109초</strong> 길이이며 <strong>8,163회</strong> 조회수 기록.<br />
+- <strong>AMG.EA</strong> 고성능 아키텍처가 강조된 차량.<br />
+- 라스베이거스 스턴트 영상으로 마케팅 효과 극대화.  </p>
+</blockquote>
+<p>이상으로 <strong>브래드 피트·조지 러셀</strong>이 소개한 <strong>AMG GT 4도어 쿠페</strong>에 대한 심층 분석을 마칩니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=hJ9UVtHgGnM" target="_blank">New Mercedes AMG GT 4 Door Cou...</a><a href="https://www.youtube.com/watch?v=rTJeyN_x3zc" target="_blank">New Mercedes-AMG GT 4-door Cou...</a><a href="https://www.youtube.com/watch?v=dQDWdFbpBMo" target="_blank">The Drift of a Lifetime</a><a href="https://www.youtube.com/watch?v=iERaaHtgHK0" target="_blank">Mercedes-AMG GT 63 S 4MATIC+ 4...</a><a href="https://www.youtube.com/watch?v=yWh9F-cdUuc" target="_blank">2024 Mercedes-AMG GT63 S 4 Doo...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006172819" target="_blank">벤츠, 브래드 피트와 'AMG GT 4-도어 쿠페' 영상 공개</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.mercedesamgf1.com/news/new-dimension-performance-brad-pitt-george-russell-upcoming-mercedes-amg-gt-4-door-coupe" target="_blank">A New Dimension of Performance With Brad Pitt, Geo...</a><a href="https://www.mercedes-amg.com/en/the-vegas-stunt" target="_blank">The spectacular Vegas Stunt with the Mercedes-AMG ...</a><a href="https://www.youtube.com/watch?v=dQDWdFbpBMo" target="_blank">The Drift of a Lifetime - YouTube</a><a href="https://www.facebook.com/OfficialGR63/posts/part-time-f1-driver-full-time-valet-driver-for-brad-pitt-so-cool-to-be-a-part-of/1521359462687422/" target="_blank">Part time F1 driver, full time valet driver for Br...</a><a href="https://www.instagram.com/p/DRhwFpDjQpa/" target="_blank">Part time F1 driver, full time valet driver for Br...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

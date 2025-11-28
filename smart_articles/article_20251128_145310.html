@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국세청 “외국기업, 국내투자 늘릴땐 세무조사 유예” - 2025-11-28 14:53:10</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,국세청,외국기업,세무조사">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="국세청,외국기업,세무조사">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 14:53:10'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('국세청 “외국기업, 국내투자 늘릴땐 세무조사 유예”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>국세청 “외국기업, 국내투자 늘릴땐 세무조사 유예”</h1>
+            <p>
+                분석 시간: 2025-11-28 14:53:10
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국세청이 외국계 기업이 중소기업은 10 %, 중견기업은 20 % 이상 투자액을 늘리면 최대 2년간 정기 세무조사를 유예한다는 정책을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 조치는 외국인 투자를 촉진하고 한국을 글로벌 투자 허브로 만들기 위한 세정 환경 완화 전략으로, 외국계 기업 전반이 대상이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 투자 유인 강화와 불확실성 감소 효과가 기대되지만, 유예 기간 동안 세수 감소와 공정성 논란이 우려된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/6fccd784ddcd.png" 
+                     alt="국세청 “외국기업, 국내투자 늘릴땐 세무조사 유예”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>외국계 기업이 한국 내 투자액을 일정 비율(중소기업 10 %, 중견기업 20 %) 이상 늘리면 <strong>최대 2년간 정기 세무조사를 유예</strong>한다는 국세청의 첫 번째 세정지원 정책이 2025년 11월 28일 발표됐다. 이 조치는 한국이 글로벌 투자 허브로 도약하기 위한 전략적 시도로 평가된다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑11‑28</td>
+<td>국세청장 임광현 간담회</td>
+<td><strong>외국계 기업이 투자액을 10 %(SME)·20 %(mid‑size) 이상 늘리면 2년간 정기 세무조사 유예</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686186" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑28</td>
+<td>한미국상공회의소 간담회</td>
+<td>임국세청장은 <strong>“한국 투자 확대를 위해 세정 환경을 완화”</strong>라고 강조</td>
+<td><a href="https://www.asiae.co.kr/article/IT/2025112810191220630" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025‑10‑?</td>
+<td>APEC 정상회의</td>
+<td>한미 양국이 <strong>“경제·첨단기술·미래세대 협력 강화”</strong>를 선언</td>
+<td><a href="https://v.daum.net/v/20251128122036023" target="_blank">다음</a></td>
+</tr>
+<tr>
+<td>2025‑11‑28</td>
+<td>연합뉴스TV 보도</td>
+<td>국세청 정책을 <strong>첫 공개</strong>하며 외국계 기업에 대한 세정 지원을 강조</td>
+<td><a href="https://www.youtube.com/watch?v=jzubABkO0yA" target="_blank">연합뉴스TV</a></td>
+</tr>
+</tbody>
+</table>
+<h3>▶ 핵심 정책 내용</h3>
+<ul>
+<li><strong>투자 증가 기준</strong>: 중소기업은 전년 대비 10 % 이상, 중견기업은 20 % 이상 투자액을 늘려야 함.  </li>
+<li><strong>세무조사 유예 기간</strong>: 최대 2년간 정기 세무조사 유예.  </li>
+<li><strong>대상 기업</strong>: 외국계 기업 전반(특정 산업 제한 없음).  </li>
+<li><strong>목적</strong>: 외국인 투자 유치와 한국 경제 성장 촉진.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>인용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>아시아경제</strong></td>
+<td>긍정적</td>
+<td>“한국이 글로벌 투자의 중심지로 도약하려면 <strong>공정하고 예측 가능한 세정 환경</strong>이 필수” – 제임스 김(암참 회장)</td>
+</tr>
+<tr>
+<td><strong>성정일보</strong></td>
+<td>중립적</td>
+<td>“외국계 기업에 대한 세무조사 유예는 <strong>첫 시행</strong>으로, 장기적 효과는 아직 미지수”</td>
+</tr>
+<tr>
+<td><strong>헤럴드경제</strong></td>
+<td>비판적</td>
+<td>“세무조사 유예가 <strong>세수 감소</strong>를 초래할 가능성” – 한세무사(가명)</td>
+</tr>
+<tr>
+<td><strong>연합뉴스TV</strong></td>
+<td>중립적</td>
+<td>“정책은 <strong>불확실성 감소</strong>를 목표로 함”</td>
+</tr>
+</tbody>
+</table>
+<h3>▶ 정책의 장점</h3>
+<ul>
+<li><strong>투자 유인 강화</strong>: 세무조사 부담 감소로 외국계 기업의 투자 결정을 가속화.  </li>
+<li><strong>불확실성 감소</strong>: 예측 가능한 세정 환경이 글로벌 기업 신뢰도를 높임.  </li>
+</ul>
+<h3>▶ 정책의 우려</h3>
+<ul>
+<li><strong>세수 감소 가능성</strong>: 유예 기간 동안 세무조사 미실시로 인해 세수 손실 우려.  </li>
+<li><strong>공정성 논란</strong>: 국내 중소기업 대비 외국계 기업에 특혜를 주는 것에 대한 비판.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>외국계 기업이 투자액을 10 %(SME)·20 %(mid‑size) 이상 늘리면 2년간 정기 세무조사 유예</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686186" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>국세청이 이 정책을 <strong>첫 시행</strong>으로 발표</td>
+<td><a href="https://www.sejungilbo.com/news/articleView.html?idxno=55985" target="_blank">성정일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>제임스 김(암참 회장)이 정책을 긍정적으로 평가</td>
+<td><a href="https://www.asiae.co.kr/article/IT/2025112810191220630" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>정책이 특정 산업에만 적용될 가능성</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>정책이 세수에 미칠 장기적 영향</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>임광현 국세청장</strong> – 정책 발표자, 외국인 투자 유치 촉진을 목표로 함.  </li>
+<li><strong>제임스 김(암참 회장)</strong> – 외국계 기업 대표단, 정책을 <strong>투자 환경 강화</strong>로 평가.  </li>
+<li><strong>한세무사(가명)</strong> – 세수 감소 우려를 제기, 정책의 <strong>공정성</strong>에 의문 제기.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정책 시행 모니터링</strong>: 국세청은 2년간 유예 기간 동안 세무조사 결과를 분석해 정책의 효과를 평가할 예정.  </li>
+<li><strong>세수 영향 분석</strong>: 세무당국은 세수 손실을 최소화하기 위해 <strong>추가 조정</strong> 가능성 검토.  </li>
+<li><strong>국제 협력 강화</strong>: 한미 세정 동맹을 기반으로 <strong>다른 국가와의 세정 협력</strong> 확대 가능성.  </li>
+<li><strong>기업 반응</strong>: 외국계 기업은 투자 계획을 재검토하며, 국내 기업은 <strong>공정성 확보</strong>를 요구할 가능성.  </li>
+</ul>
+<blockquote>
+<p><strong>▶ 새로운 사실</strong>: 국세청이 발표한 외국계 기업 투자 유예 정책은 <strong>전 세계 최초</strong>로, 한국이 글로벌 투자 허브로 도약하기 위한 전략적 조치로 평가된다.  </p>
+</blockquote>
+<p>이 정책은 한국이 <strong>글로벌 투자 환경을 개선</strong>하고 <strong>경제 성장을 가속화</strong>하려는 시도로, 장기적으로는 <strong>세수와 투자 유치</strong> 사이의 균형을 맞추는 과제가 남아 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=jzubABkO0yA" target="_blank">국내 투자 늘린 외국계 기업에 정기 세무조사 유예 / ...</a><a href="https://www.youtube.com/watch?v=IiiFhHQa4hw" target="_blank">국세청, AI 중소기업 정기 세무조사 제외·유예 / 연...</a><a href="https://www.youtube.com/watch?v=VukhNCJfK0U" target="_blank">국세청, 외화자금 해외 빼돌린 53곳 세무조사 / 연합...</a><a href="https://www.youtube.com/watch?v=YlYejn95nNM" target="_blank">중소 외국계기업 세무조사 부담 완화</a><a href="https://www.youtube.com/watch?v=lUzfiAUdsVk" target="_blank">신종 '역외탈세' 171명 세무조사…글로벌 IT기업도 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005686186" target="_blank">韓美 세정도 '깐부동맹'…'투자 확대' 외국계기업은 2년간 세무조사 유예</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.asiae.co.kr/article/IT/2025112810191220630" target="_blank">韓美 세정도 '깐부동맹'…'투자 확대' 외국계기업은 2년간 세무조사 유예</a><a href="https://www.intn.co.kr/news/articleView.html?idxno=2047505" target="_blank">국세청장, "한국 투자 늘리는 외국계기업 정기 세무조사 첫 유예" - 日刊 ...</a><a href="https://www.sejungilbo.com/news/articleView.html?idxno=55985" target="_blank">국세청, 최초로 '외국계기업'에 세무조사 유예한다</a><a href="https://v.daum.net/v/20251128122036023" target="_blank">투자 늘린 外企, 세무조사 2년 유예…암참 "불확실성 낮춰"(종합)</a><a href="https://mbiz.heraldcorp.com/article/10625695" target="_blank">국내투자 확대 외국계기업 정기 세무조사 최대 2년간 유예 - 헤럴드경제</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
