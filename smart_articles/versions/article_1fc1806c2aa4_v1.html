@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>첨단항공엔진 개발 위한 범부처 협의체 출범… “기술 자립화 목표” - 2025-11-28 10:06:35</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,정부,방위사업청,첨단항공엔진">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="정부,방위사업청,첨단항공엔진">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-28 10:06:35'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('첨단항공엔진 개발 위한 범부처 협의체 출범… “기술 자립화 목표”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>첨단항공엔진 개발 위한 범부처 협의체 출범… “기술 자립화 목표”</h1>
+            <p>
+                분석 시간: 2025-11-28 10:06:35
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 정부는 2025년 11월 28일 첨단 항공엔진 개발을 위한 범부처 협의체를 출범시켜 예산 중복을 방지하고 부처 간 협력을 강화하며 기술 자립화를 가속한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 협의체는 우주항공청, 방위사업청, 산업통상부, 국토교통부, 국방부 등 5개 부처가 참여하며, 19년간 8조 7,931억원을 투자해 민수 협력 개발을 추진한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 국내 항공부품 산업이 성장하고 외부 엔진 의존도를 낮추며, 친환경·초경량 소재 기술 개발이 가속화될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/28/1fc1806c2aa4.png" 
+                     alt="첨단항공엔진 개발 위한 범부처 협의체 출범… “기술 자립화 목표”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>정부는 2025년 11월 28일 첨단 항공엔진 개발을 위한 범부처 협의체를 출범시켜, 예산 중복을 방지하고 부처 간 협력을 강화하며 ‘기술 자립화’를 목표로 한다.</strong>  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 1월</td>
+<td>방위사업청이 첨단 항공엔진 개발 기본계획 수립</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627038" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2024년 11월 19일</td>
+<td>대구 국제기계산업대전에서 F‑5 항공기 엔진 전시</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627038" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>범부처 협의체 출범식 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627038" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>협의체 구성</strong>: 우주항공청, 방위사업청, 산업통상부, 국토교통부, 국방부 등 <strong>5개 부처</strong>가 참여한다.  </li>
+<li><strong>주요 목적</strong>: 예산 중복 투자를 방지하고 부처 간 협력을 강화하여 <strong>기술 자립화</strong>를 가속화한다.  </li>
+<li><strong>배경</strong>: 2025년 10월 14일 발표된 “대한민국 항공혁신 추진전략 로드맵(안)”에 따라 첨단 엔진 및 적용체계의 민군협력 개발이 강조되고 있다.  </li>
+<li><a href="https://www.kasa.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000002722Ho9&amp;fileSn=2" target="_blank">대한민국 항공혁신 추진전략 로드맵(안)</a>  </li>
+<li><strong>우주항공청 정책방향</strong>: 2024년 5월 30일 발표된 정책방향 문서에 따르면, <strong>국가(범부처) 우주 개발 사업에 19년간 8조 7,931억원을 투자</strong>해 국내 항공엔진 개발 생태계를 확보하고 글로벌 민수 항공엔진사의 RSP(위험) 관리에 주력한다.  </li>
+<li><a href="https://www.spaceradar.co.kr/news/download.php?subUploadDir=202406/&amp;savefilename=3591_2.pdf&amp;filename=(%EB%B6%99%EC%9E%84%EC%9E%90%EB%A3%8C)+240530+%EC%9A%B0%EC%A3%BC%ED%95%AD%EA%B3%B5+5%EB%8C%80+%EA%B0%95%EA%B5%AD+%EC%9E%85%EA%B5%AD%EC%9D%84+%EC%9C%84%ED%95%9C+%EC%9A%B0%EC%A3%BC%ED%95%AD%EA%B3%B5+%EC%B2%AD+%EC%A0%95%EC%B1%85+%EB%B0%A9%ED%96%A5.hwpx.pdf" target="_blank">우주항공청 정책방향</a>  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정부</strong></td>
+<td>예산 중복을 줄이고, 부처 간 협력을 통해 <strong>기술 자립화</strong>를 실현하려는 전략적 목표를 강조한다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627038" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>산업계</strong></td>
+<td>협의체를 통해 <strong>민수 협력</strong>이 강화되면 국내 항공부품 산업이 성장할 가능성이 높아진다. 그러나 초기 투자 비용과 기술 이전에 대한 우려가 있다.</td>
+<td>추정</td>
+</tr>
+<tr>
+<td><strong>학계</strong></td>
+<td>첨단 엔진 개발은 <strong>초경량 소재</strong>와 <strong>친환경 기술</strong>이 필수적이며, 협의체가 이를 촉진할 수 있는 플랫폼이 될 것으로 본다.</td>
+<td><a href="https://www.kasa.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000002722Ho9&amp;fileSn=2" target="_blank">대한민국 항공혁신 추진전략 로드맵(안)</a></td>
+</tr>
+<tr>
+<td><strong>환경단체</strong></td>
+<td>항공엔진 개발이 환경 규제와 충돌할 가능성이 있어, <strong>친환경 설계</strong>를 우선시해야 한다는 입장이다.</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 11월 28일 범부처 협의체 출범</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013627038" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>5개 부처가 참여</td>
+<td>동일</td>
+</tr>
+<tr>
+<td></td>
+<td>예산 중복 방지 및 부처 협력 강화 목적</td>
+<td>동일</td>
+</tr>
+<tr>
+<td></td>
+<td>방위사업청이 2024년 1월 기본계획 수립</td>
+<td>동일</td>
+</tr>
+<tr>
+<td></td>
+<td>F‑5 엔진이 2024년 11월 19일 전시</td>
+<td>동일</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>협의체가 구체적으로 어떤 구조(예: 회장, 위원회)로 운영될지</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>향후 5년간 구체적 로드맵과 예산 규모</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>방위사업청 장관</strong>: 첨단 엔진 개발 기본계획을 주도, 협의체에서 핵심 역할을 담당할 가능성이 높다.  </li>
+<li><strong>우주항공청 소장</strong>: 국내 항공우주 산업 생태계 구축을 담당, 협의체에서 기술 자립화 추진 주도.  </li>
+<li><strong>산업통상부 장관</strong>: 민수 협력과 해외 기술 확보를 담당, 협의체에서 상업적 파트너십 확대를 목표.  </li>
+<li><strong>국토교통부 장관</strong>: 항공 인프라와 연계, 협의체에서 인프라 활용 방안을 논의.  </li>
+<li><strong>국방부 장관</strong>: 군용 항공기 엔진 개발과 보안 이슈를 담당, 협의체에서 군수품 우선순위 조정.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>기술 자립화 가속화</strong>: 협의체가 체계적인 로드맵을 수립하면 국내 항공엔진 기술이 해외 의존도를 낮출 수 있다.  </li>
+<li><strong>민수 협력 강화</strong>: 민간 기업이 기술 개발에 참여하면 비용 효율성과 시장 진입 속도가 향상될 전망이다.  </li>
+<li><strong>환경 규제 대응</strong>: 친환경 엔진 개발이 필수적이므로, 협의체는 국제 환경 규제와 부합하는 기술을 우선적으로 추진해야 한다.  </li>
+<li><strong>예산 및 인력 확보</strong>: 장기적 예산 확보와 전문 인력 양성이 과제로 남아 있으며, 이는 협의체의 지속 가능성에 직결된다.  </li>
+</ul>
+<p><strong>결론</strong>은, 정부가 출범시킨 범부처 협의체가 <strong>예산 중복을 방지하고 부처 간 협력을 강화</strong>함으로써 <strong>첨단 항공엔진 기술 자립화</strong>를 실현하려는 전략적 움직임이다. 협의체의 성공 여부는 민수 협력, 친환경 기술 도입, 그리고 장기적 예산 확보에 달려 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013627038" target="_blank">국산 첨단항공엔진 개발 위한 범부처 협의체 구성…예산 중복 등 막는다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.kasa.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000002722Ho9&fileSn=2" target="_blank">대한민국 항공혁신 추진전략 로드맵(안)</a><a href="https://www.spaceradar.co.kr/news/download.php?subUploadDir=202406/&savefilename=3591_2.pdf&filename=(%EB%B6%99%EC%9E%84%EC%9E%90%EB%A3%8C)+240530+%EC%9A%B0%EC%A3%BC%ED%95%AD%EA%B3%B5+5%EB%8C%80+%EA%B0%95%EA%B5%AD+%EC%9E%85%EA%B5%AD%EC%9D%84+%EC%9C%84%ED%95%9C+%EC%9A%B0%EC%A3%BC%ED%95%AD%EA%B3%B5%EC%B2%AD+%EC%A0%95%EC%B1%85%EB%B0%A9%ED%96%A5.hwpx.pdf&idxno=2" target="_blank">우주항공청 정책방향</a><a href="https://www.kasa.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000673Jr1&fileSn=1" target="_blank">RFP 번호 과제명 과제담당관 담당공무원 연구자 선정방식 연구목표 ...</a><a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156496652" target="_blank">국방부장관 주관, 「제2회 국방과학기술위원회」 개최 - 보도자료 ...</a><a href="https://myapps.gnu.ac.kr/repository/attaches//public/a57db6540-18b6-4e68-a8d9-046ee88fafff/20250220/afbe7b59967524509becf12f5eb830218.pdf" target="_blank">경남지역 미래 항공우주산업 발전전략</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
