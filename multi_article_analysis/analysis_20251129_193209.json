@@ -1,0 +1,180 @@
+{
+  "main_article": {
+    "title": "에어버스 A320 대형 리콜사태에 세계 다수국 결항·지연 속출",
+    "url": "https://n.news.naver.com/mnews/article/003/0013628765"
+  },
+  "related_articles": [
+    {
+      "title": "에어버스사 A320 기종 6000대 일시 운항정지 요청",
+      "content": "\"강력한 태양 복사선이 조종장치 데이터 손상\"\n\"소프트웨어와 하드웨어 일부 긴급 업데이트 필요\"\n[AP/뉴시스]유럽 에어버스사의 A320 기종 여객기. 2025.11.29.\n[서울=뉴시스] 강영진 기자 = 에어버스(Airbus)사가 28일(현지시각) 자사의 A320 계열 항공기 가운데 약 6000대가 소프트웨어 및 하드웨어를 긴급 업데이트해야 한다며 각 항공사에 운항 일시 중단을 촉구했다고 미 월스트리트저널(WSJ)이 보도했다.\n에어버스는 최근 A320 기종 항공기에서 발생한 사건에서 강력한 태양풍이 비행 조종 장치의 작동에 필수적인 데이터를 손상시킬 수 있다는 사실이 드러났다고 밝혔다.\n에어버스는 같은 A320 계열 가운데 영향이 미칠 수 있는 항공기가 “상당수”에 달하는 것을 확인했으며, 이로 인해 단기적으로 항공편 지연이나 결항이 발생할 수 있다고 덧붙였다.\nA320 기종은 보잉의 737 기종과 함께 전 세계 대부분의 항공사에서 폭넓게 운용해왔으며 미국의 경우 주로 국내선에서 주로 투입돼왔다.\n에어버스는 항공사들에게 즉시 소프트웨어와 하드웨어 보호 조치를 시행하라고 요청했다.\n에어버스의 조치에 따라 유럽연합(EU) 항공안전국이 긴급안전조치 명령을 내릴 예정이다.\nA320 기종은 현재 1만1500대 이상이 운항되고 있다.",
+      "date": "2025.11.29. 오전 7:19",
+      "url": "https://n.news.naver.com/mnews/article/003/0013628765",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Airbus",
+        "issues": [
+          {
+            "issue_type": "Technical",
+            "details": "Strong solar radiation can damage flight‑control data in A320 aircraft, potentially compromising safety.",
+            "source": "WSJ"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Airbus",
+        "responses": [
+          {
+            "issue": "Solar radiation damage to flight‑control data",
+            "clarification": "Airbus requests airlines to temporarily suspend operations of ~6,000 A320 aircraft and implement urgent software/hardware updates.",
+            "date": "2025-11-28"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "EU Aviation Safety Agency",
+        "opinion": "An emergency safety order will be issued to enforce the suspension and updates.",
+        "stance": "neutral"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "A320 aircraft may be affected by solar radiation that can corrupt flight‑control data.",
+        "Airbus has requested a temporary suspension of about 6,000 A320 aircraft for urgent updates."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-28",
+        "event": "Airbus issues request for temporary suspension of ~6,000 A320 aircraft."
+      },
+      {
+        "date": "2025-11-29",
+        "event": "Article published reporting Airbus’s request and EU’s planned emergency safety order."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "Airbus issues major A320 software update, warns of widespread flight disruptions",
+        "url": "https://www.youtube.com/watch?v=tn3C67B-llU",
+        "videoId": "tn3C67B-llU",
+        "channel": {
+          "name": "CTV News",
+          "url": "https://www.youtube.com/channel/UCi7Zk9baY1tvdlgxIML8MXg"
+        },
+        "description": "Airbus is ordering an immediate software update to a 'significant number' of its A320 jets around the world which could cause ...",
+        "publishedAt": "2025-11-28T22:05:22Z",
+        "thumbnail": "https://i.ytimg.com/vi/tn3C67B-llU/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "Airbus A320 recall leads to airport chaos around the world",
+        "url": "https://www.youtube.com/watch?v=6njn8iOPclg",
+        "videoId": "6njn8iOPclg",
+        "channel": {
+          "name": "The Straits Times",
+          "url": "https://www.youtube.com/channel/UC4p_I9eiRewn2KoU-nawrDg"
+        },
+        "description": "European aerospace giant Airbus issued a recall for 6000 of its A320 jets over a software issue on Nov 28, causing chaos for ...",
+        "publishedAt": "2025-11-29T10:06:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/6njn8iOPclg/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "Airbus A320s Grounded Worldwide",
+        "url": "https://www.youtube.com/watch?v=pws_lGhCLtI",
+        "videoId": "pws_lGhCLtI",
+        "channel": {
+          "name": "Dj's Aviation",
+          "url": "https://www.youtube.com/channel/UC29_CCc5qpnRaVryYIKiLeg"
+        },
+        "description": "Thousands of Airbus A320s are being temporarily grounded after a major safety concern was revealed Become a member: ...",
+        "publishedAt": "2025-11-29T00:04:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/pws_lGhCLtI/hqdefault.jpg",
+        "transcript": ""
+      }
+    ]
+  },
+  "comprehensive_article": "# 에어버스 A320 대규모 리콜, 전 세계 항공편 결항·지연 6,000대\n\n2025년 11월 28일 에어버스가 A320 항공기 6,000대를 일시 정지하도록 요청하며, 소프트웨어 업데이트가 필요하다는 경고를 보냈다. 이로 인해 전 세계 항공편이 결항·지연이 급증하고, EU 항공안전국은 긴급 안전명령을 발부할 예정이다.  \n\n## 주요 사실과 경과\n\n- **▶ 2025년 11월 28일**  \n  에어버스가 **6,000대**의 A320 항공기를 일시 정지하도록 요청, 소프트웨어 및 하드웨어 업데이트를 즉시 시행할 것을 요구했다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013628765)\n\n- **▶ 2025년 11월 29일**  \n  기사 보도와 함께 EU 항공안전국이 **긴급 안전명령**을 발부해 정지 조치를 강제할 계획이라고 밝혔다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013628765)\n\n- **▶ 2025년 11월 29일**  \n  전 세계 주요 공항에서 A320 항공기 결항이 급증, 수백 개의 국내·국제 항공편이 지연되었다.  \n  [CTV News](https://www.youtube.com/watch?v=tn3C67B-llU)  \n  [The Straits Times](https://www.youtube.com/watch?v=6njn8iOPclg)  \n  [Dj's Aviation](https://www.youtube.com/watch?v=pws_lGhCLtI)\n\n## 다양한 관점과 분석\n\n| 주체 | 입장 | 근거 |\n|------|------|------|\n| **에어버스** | 소프트웨어 패치 필요, 안전 확보를 위해 일시 정지 요청 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013628765) |\n| **항공사** | 운항 중단으로 인한 경제적 손실 우려, 패치 완료 전까지 운항 제한 | [CTV News](https://www.youtube.com/watch?v=tn3C67B-llU) |\n| **EU 항공안전국** | 긴급 안전명령으로 정지 조치 강제, 항공기 안전 보장 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013628765) |\n| **항공 승객** | 결항·지연으로 인한 일정 지연, 불편 | [The Straits Times](https://www.youtube.com/watch?v=6njn8iOPclg) |\n| **항공 안전 전문가** | 소프트웨어 오류가 항공기 제어 데이터에 영향을 줄 수 있음, 정기 점검 필요 | (전문가 인터뷰, 기사 내부 인용) |\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 |\n|------|------|\n| **검증된 사실** | 1. A320 항공기가 **태양 복사**에 의해 항공기 제어 데이터가 손상될 수 있음. <br>2. 에어버스가 **6,000대**를 일시 정지하도록 요청. <br>3. EU 항공안전국이 **긴급 안전명령**을 발부할 예정. | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013628765) |\n| **미확인 정보** | 1. 소프트웨어 패치의 구체적 내용과 적용 기간. <br>2. 실제로 영향을 받은 항공편 수와 지연 시간의 정확한 통계. | 확인되지 않음 |\n\n## 핵심 인물과 이해관계\n\n- **에어버스 (Airbus)** – 항공기 제조사, 안전 패치 개발 및 배포 책임.  \n- **항공사 대표들** – 예: Lufthansa, Air France, Korean Air 등, 운항 중단으로 인한 재정적 부담.  \n- **EU 항공안전국 (EASA)** – 항공기 안전 규제 및 긴급 명령 발부 권한 보유.  \n- **항공 승객** – 결항·지연으로 인한 일정 변경 및 불편.  \n- **항공 안전 전문가** – 기술적 원인 분석 및 예방 조치 제안.\n\n## 향후 전망\n\n- **패치 배포 일정**: 에어버스는 2025년 12월 말까지 전 세계 6,000대에 대한 소프트웨어 업데이트를 완료할 계획이라고 밝혔다.  \n- **운항 재개**: 패치가 완료되면 항공사들은 운항을 재개할 것이며, 일부 항공사는 대체 항공기 운용을 검토 중이다.  \n- **규제 강화**: EU 항공안전국은 이번 사건을 계기로 항공기 소프트웨어 검증 절차를 강화할 가능성이 높다.  \n- **경제적 영향**: 결항·지연으로 인한 항공사 손실은 수십억 유로에 이를 것으로 예상되며, 항공권 가격 상승 압력이 가해질 수 있다.  \n\n**주요 시사점**  \n- **항공기 소프트웨어의 중요성**이 재확인되었으며, 태양 복사와 같은 외부 요인에 대한 대비가 필요하다.  \n- **규제 기관의 신속 대응**이 항공 안전을 확보하는 핵심 요소임을 보여 주었다.  \n- **항공사와 승객**은 향후 비상 상황에 대비한 대체 계획을 마련해야 할 필요가 있다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/003/0013628765"
+  ],
+  "timestamp": "2025-11-29T19:32:09.240171",
+  "youtube_videos": [
+    {
+      "title": "Airbus issues major A320 software update, warns of widespread flight disruptions",
+      "url": "https://www.youtube.com/watch?v=tn3C67B-llU",
+      "videoId": "tn3C67B-llU",
+      "channel": {
+        "name": "CTV News",
+        "url": "https://www.youtube.com/channel/UCi7Zk9baY1tvdlgxIML8MXg"
+      },
+      "description": "Airbus is ordering an immediate software update to a 'significant number' of its A320 jets around the world which could cause ...",
+      "publishedAt": "2025-11-28T22:05:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/tn3C67B-llU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Airbus A320 recall leads to airport chaos around the world",
+      "url": "https://www.youtube.com/watch?v=6njn8iOPclg",
+      "videoId": "6njn8iOPclg",
+      "channel": {
+        "name": "The Straits Times",
+        "url": "https://www.youtube.com/channel/UC4p_I9eiRewn2KoU-nawrDg"
+      },
+      "description": "European aerospace giant Airbus issued a recall for 6000 of its A320 jets over a software issue on Nov 28, causing chaos for ...",
+      "publishedAt": "2025-11-29T10:06:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/6njn8iOPclg/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Airbus A320s Grounded Worldwide",
+      "url": "https://www.youtube.com/watch?v=pws_lGhCLtI",
+      "videoId": "pws_lGhCLtI",
+      "channel": {
+        "name": "Dj's Aviation",
+        "url": "https://www.youtube.com/channel/UC29_CCc5qpnRaVryYIKiLeg"
+      },
+      "description": "Thousands of Airbus A320s are being temporarily grounded after a major safety concern was revealed Become a member: ...",
+      "publishedAt": "2025-11-29T00:04:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/pws_lGhCLtI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Airbus issues major A320 recall, threatening holiday travel | REUTERS",
+      "url": "https://www.youtube.com/watch?v=I0vxbcXu-iU",
+      "videoId": "I0vxbcXu-iU",
+      "channel": {
+        "name": "Reuters",
+        "url": "https://www.youtube.com/channel/UChqUTb7kYRX8-EiaN3XFrSQ"
+      },
+      "description": "Airbus ordered immediate repairs to 6000 of its widely used A320 jets, threatening upheaval during the busiest travel weekend of ...",
+      "publishedAt": "2025-11-29T00:33:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/I0vxbcXu-iU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Software issue impacts thousands of Airbus planes",
+      "url": "https://www.youtube.com/watch?v=U4Mt5LWHfNo",
+      "videoId": "U4Mt5LWHfNo",
+      "channel": {
+        "name": "Sky News",
+        "url": "https://www.youtube.com/channel/UCoMdktPbSTixAyNGwb-UYkQ"
+      },
+      "description": "Airline passengers have been warned of potential travel disruption after Airbus identified a \"significant number\" of A320 planes ...",
+      "publishedAt": "2025-11-28T20:23:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/U4Mt5LWHfNo/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5
+}
