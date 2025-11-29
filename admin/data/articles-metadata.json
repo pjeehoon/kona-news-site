@@ -1,5 +1,53 @@
 [
   {
+    "id": "4916bddcb847",
+    "title": "광주·전남 오전 짙은 안개…오후 19도",
+    "created_at": "2025-11-30T06:36:15.902855+09:00",
+    "last_updated": "2025-11-30T06:36:15.902855+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "광주",
+        "전남",
+        "안개"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "f92fba8e3263",
+    "title": "“반도체 위해 규제 완화”…최태원의 명분 뒤 ‘진짜 목적’",
+    "created_at": "2025-11-30T06:27:20.459254+09:00",
+    "last_updated": "2025-11-30T06:27:20.459254+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "최태원",
+        "SK그룹",
+        "반도체"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "4c0e938d54d6",
     "title": "정치·정부 (30일, 일)[오늘의 주요일정]",
     "created_at": "2025-11-30T06:01:42.023116+09:00",
