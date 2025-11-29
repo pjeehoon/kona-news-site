@@ -1,5 +1,56 @@
 [
   {
+    "id": "f45b9d099927",
+    "title": "한국은행 3분기 GDP 잠정치 1.2% 상승…추가 상향 가능성 주목",
+    "created_at": "2025-11-29T10:54:12.086011",
+    "last_updated": "2025-11-29T10:54:12.086015",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "한국",
+        "GDP",
+        "반도체"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "99bac385883b",
+    "title": "이란 축구협회, 미국 비자 거부에 항의해 2026 월드컵 조추첨 보이콧 선언",
+    "created_at": "2025-11-29T10:49:27.347180",
+    "last_updated": "2025-11-29T10:49:27.347191",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "국제"
+      ],
+      "content_tags": [
+        "Iran football association",
+        "2026 World Cup draw",
+        "US visa denial",
+        "FIFA",
+        "sanctions"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "a22ff280328a",
     "title": "아마존, '블프' 대목 앞두고 외부 AI쇼핑 도구 대거 차단",
     "created_at": "2025-11-29T10:12:15.657344+09:00",
