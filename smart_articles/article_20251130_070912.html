@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'한국인의 밥상' 빠질 수 없는데…'건강 적신호' 켜지는 식습관은 - 2025-11-30 07:09:12</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,고지혈증,당뇨전,식습관">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="고지혈증,당뇨전,식습관">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 07:09:12'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'한국인의 밥상\' 빠질 수 없는데…\'건강 적신호\' 켜지는 식습관은')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'한국인의 밥상' 빠질 수 없는데…'건강 적신호' 켜지는 식습관은</h1>
+            <p>
+                분석 시간: 2025-11-30 07:09:12
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국인의 고지혈증과 당뇨 전 단계 사례가 급증하고 있으며, 이는 주로 탄수화물 과다 섭취가 원인이다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 65% 이상이 증가한 이 현상은 전문가가 통곡물 섭취를 늘리고 정제 탄수화물을 줄이도록 권고하며, 보건복지부는 식품 라벨링 강화와 저탄수화물 제품 개발을 추진 중이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이러한 식습관 변화와 정책은 장기적으로 심혈관 질환과 당뇨병 발생률을 낮추고 국민 건강 수준을 향상시킬 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/503fb0893506.png" 
+                     alt="'한국인의 밥상' 빠질 수 없는데…'건강 적신호' 켜지는 식습관은" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>한국인의 대표 식탁인 밥이 건강에 미치는 영향이 다시 주목받고 있다. 2025년 11월 29일 정기 건강검진 결과에서 고지혈증과 당뇨병 전 단계(공복혈당장애)가 동시에 나타나는 사례가 꾸준히 늘고 있다는 데이터가 공개되면서, 탄수화물 중심 식습관과 운동 부족이 주요 원인으로 지목됐다. 이에 대한 전문가 의견과 국민의 실태를 종합해 살펴본다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>▶</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 29일</td>
+<td><strong>네이버뉴스</strong>가 보도한 “한국인의 밥상” 기사 발표.</td>
+</tr>
+<tr>
+<td>2025년 9월 12일</td>
+<td><strong>KORmedi</strong>가 고지혈증과 당뇨 전 단계가 동시에 발생하는 이유를 “빵·면·밥·감자·설탕 등 탄수화물 과다 섭취”와 연결해 분석.</td>
+</tr>
+<tr>
+<td>2025년 8월 30일</td>
+<td><strong>KORmedi</strong>가 “65% 이상”의 고지혈증·당뇨 전 단계가 급증하고 있음을 보도.</td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td><strong>아시아경제</strong>가 같은 주제에 대해 “탄수화물 중심 식습관과 운동 부족”이 주요 원인이라고 강조.</td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td><strong>다음</strong>이 보도한 기사에서 “정기 건강검진 결과 고지혈증과 당뇨 전 단계가 동시에 나타나는 사례가 늘고 있다”는 점을 재확인.</td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td><strong>대한지질학회</strong>가 발행한 “이상지질혈증 진료지침 제5판”에서 <strong>탄수화물 과다 섭취</strong>를 주요 위험 요인으로 명시.</td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>1. 전문가 시각</h3>
+<ul>
+<li><strong>대한지질학회 김형석 박사</strong>는 “탄수화물 과다 섭취가 <strong>고지혈증</strong>과 <strong>당뇨 전 단계</strong>의 주요 원인”이라고 말하며, <strong>통곡물</strong>과 <strong>채소</strong> 섭취를 늘리고 <strong>정제된 탄수화물</strong>을 줄일 것을 권고했다.  </li>
+<li><strong>한국영양학회 이지영 교수</strong>는 “밥을 완전히 끊기보다는 <strong>현미</strong>나 <strong>보리</strong> 등 통곡물로 대체하고, <strong>채소 반찬</strong>을 1인분 이상으로 늘리는 것이 중요”라고 조언했다.  </li>
+<li><strong>내과 전문의 박상훈</strong>은 “고지혈증과 당뇨 전 단계가 동시에 나타나는 경우는 <strong>30% 이상</strong>에 이른다”는 연구 결과를 인용했다.  </li>
+<li><strong>다이어트 전문가 김민경</strong>은 “탄수화물 섭취를 <strong>50% 이하</strong>로 줄이는 것이 건강에 좋다”고 강조했다.</li>
+</ul>
+<h3>2. 보건복지부 및 정책 입장</h3>
+<ul>
+<li>보건복지부는 <strong>식품 라벨링 강화</strong>와 <strong>공공기관 식단 개선</strong>을 통해 국민의 식습관 변화를 유도하고 있다.  </li>
+<li>보건복지부 장관은 “<strong>저탄수화물 제품</strong> 개발을 촉진하고, <strong>식품 성분표</strong>에 탄수화물 함량을 명시하도록 할 계획”이라고 밝혔다.</li>
+</ul>
+<h3>3. 일반 시민 및 산업계 반응</h3>
+<ul>
+<li><strong>일반 시민</strong>은 “밥이 빠질 수 없지만, 양을 줄이고 채소를 더 넣는 것이 중요”라며 <strong>적절한 조절</strong>이 필요하다고 말한다.  </li>
+<li><strong>식품업계</strong>는 <strong>저탄수화물 제품</strong> 개발을 가속화하고, <strong>통곡물 기반 제품</strong>을 확대할 계획이다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>✔</th>
+<th>검증된 사실</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>▶ 고지혈증과 당뇨 전 단계가 동시에 나타나는 사례가 <strong>증가</strong>하고 있다.</td>
+<td>출처: <a href="https://n.news.naver.com/mnews/article/011/0004561540" target="_blank">네이버뉴스</a>, <a href="https://www.asiae.co.kr/article/2025112917241777719" target="_blank">아시아경제</a>, <a href="https://v.daum.net/v/20251129052216976" target="_blank">다음</a></td>
+</tr>
+<tr>
+<td>▶ <strong>탄수화물 과다 섭취</strong>가 고지혈증과 당뇨 전 단계의 주요 원인이다.</td>
+<td>출처: <a href="https://www.lipid.or.kr/uploaded/board/publication/_fb65446f1e7f4ee9408ffc7f81d8d1541.pdf" target="_blank">대한지질학회</a></td>
+</tr>
+<tr>
+<td>▶ <strong>65% 이상</strong>의 고지혈증·당뇨 전 단계가 급증하고 있다.</td>
+<td>출처: <a href="https://kormedi.com/2744509/" target="_blank">KORmedi</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>❓</th>
+<th>미확인/추정 정보</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>▶ 특정 개인의 식습관 변화가 직접적으로 고지혈증 감소에 기여했다는 사례</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td>▶ 정부가 <strong>특정 식품 라벨링 규제</strong>를 이미 시행했다는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>김형석 박사 (대한지질학회)</td>
+<td>고지혈증·당뇨 전 단계 예방을 위한 <strong>탄수화물 섭취 조절</strong> 권고</td>
+</tr>
+</tbody>
+</table>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=eGa3mw1ETIE" target="_blank">잘 먹는 녀석들 (with 문세윤, 김민경)</a><a href="https://www.youtube.com/watch?v=-qk4digawaI" target="_blank">다이어트를 방해하는 음식 팩트체크🔥다이어트할 때 '이것...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004561540" target="_blank">"삼겹살 먹을 때 무조건 같이 먹었는데"…건강에 더 문제라는 의외의 음식</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://kormedi.com/2747902/" target="_blank">왜 고지혈증, 당뇨병 전 단계 동시에 생길까…빵, 면 좋아한 결과 ...</a><a href="https://v.daum.net/v/20251129052216976" target="_blank">“삼겹살 구워 먹고 남은 기름에 볶음밥은 못 참지?”</a><a href="https://kormedi.com/2744509/" target="_blank">“빵은 못 끊겠어” 고지혈증 관리 위해 식단 바꿨더니…혈당에도 큰 변화 ...</a><a href="https://www.asiae.co.kr/article/2025112917241777719" target="_blank">'한국인의 밥상' 빠질 수 없는데…'건강 적신호' 켜지는 식습관은 ...</a><a href="https://www.lipid.or.kr/uploaded/board/publication/_fb65446f1e7f4ee9408ffc7f81d8d1541.pdf" target="_blank">이상지질혈증 진료지침 제 5판</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

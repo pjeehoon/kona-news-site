@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"같은 잠옷 얼마나 입으세요?"…전문가 경고한 더러운 비밀 "방귀 묻는다" - 2025-11-30 07:13:45</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="생활/문화,사회,잠옷 세탁,방귀">
+    <meta name="article-category-tags" content="생활/문화,사회">
+    <meta name="article-content-tags" content="잠옷 세탁,방귀">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 07:13:45'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"같은 잠옷 얼마나 입으세요?"…전문가 경고한 더러운 비밀 "방귀 묻는다"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"같은 잠옷 얼마나 입으세요?"…전문가 경고한 더러운 비밀 "방귀 묻는다"</h1>
+            <p>
+                분석 시간: 2025-11-30 07:13:45
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 프림로즈 프리스톤 박사와 런던 하이진스 트로피컬 대학이 60 °C 이상의 고온 세탁이 필요하며 방귀가 남은 잠옷은 미생물 번식 위험을 높인다고 경고했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 프리스톤 박사는 땀을 많이 흘리지 않은 경우 3–4회 착용이 가능하다고 설명했으며, London Hygiene Tropical University는 침구류가 감염 매개 경로가 될 수 있다고 부정적 입장을 제시했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 논란은 소셜 미디어에서 확산돼 일부 소비자가 잠옷 교체 주기를 늘리고 고온 세탁을 시도하는 반면, 비용과 에너지 소비를 이유로 꺼리는 목소리도 나오고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/07222a401ea0.png" 
+                     alt=""같은 잠옷 얼마나 입으세요?"…전문가 경고한 더러운 비밀 "방귀 묻는다"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>잠옷을 얼마나 자주 교체하고 세탁해야 할지, 방귀가 남는 잠옷이 건강에 미치는 영향이 논란이 되고 있다. 프림로즈 프리스톤 박사와 London Hygiene Tropical University의 연구가 60 °C 이상의 고온 세탁이 필요하다고 경고하며, 방귀 오염이 미생물 번식에 기여할 수 있다고 주장한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 29 일</td>
+<td>Daily Mail이 프림로즈 프리스톤 박사와의 인터뷰를 공개, 잠옷 세탁 빈도와 온도 권고를 보도</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686510" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 29 일</td>
+<td>프리스톤 박사가 인터뷰에서 “잠자기 전 샤워 후 땀을 많이 흘리지 않았다면 3–4회까지는 입어도 무방”이라고 설명</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686510" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 29 일</td>
+<td>London Hygiene Tropical University가 침구류와 잠옷이 감염 매개 경로가 될 수 있다고 부정적 입장을 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686510" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 29 일</td>
+<td>Threads·v.daum 등 소셜 미디어에서 “방귀 묻은 잠옷”에 대한 논의가 확산</td>
+<td><a href="https://www.threads.com/@ms.cali4nia?hl=ko" target="_blank">Threads</a>, <a href="https://v.daum.net/v/xQIMjno97o?f=p" target="_blank">v.daum</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>프림로즈 프리스톤 박사의 입장</h3>
+<ul>
+<li><strong>세탁 빈도</strong>: 땀을 많이 흘리지 않은 경우 3–4회까지는 잠옷을 입어도 무방하다고 주장한다.  </li>
+<li><strong>세탁 온도</strong>: 60 °C 이상의 고온 세탁이 박테리아를 효과적으로 제거한다고 강조한다.  </li>
+<li><strong>방귀 오염</strong>: 방귀가 잠옷에 남으면 미생물 번식이 촉진될 수 있다고 경고한다.  </li>
+</ul>
+<blockquote>
+<p>“방귀가 남는 잠옷은 미생물 번식에 좋은 환경을 제공한다”는 주장은 <strong>확인된 사실</strong>로 분류된다.  </p>
+</blockquote>
+<h3>London Hygiene Tropical University의 연구</h3>
+<ul>
+<li>침구류와 잠옷이 감염 매개 경로가 될 수 있다는 <strong>부정적</strong> 입장을 제시한다.  </li>
+<li>특히 생식기 및 체액과 직접 접촉하는 잠옷의 감염 가능성이 더 높다고 지적한다.  </li>
+</ul>
+<h3>일반 시민과 소비자 반응</h3>
+<ul>
+<li><strong>소셜 미디어</strong>에서 “방귀 묻은 잠옷”에 대한 우려가 확산되면서, 일부 소비자는 잠옷 교체 주기를 늘리고 고온 세탁을 시도하고 있다.  </li>
+<li>반면, <strong>세탁 비용</strong>과 <strong>에너지 소비</strong>를 이유로 고온 세탁을 꺼리는 목소리도 있다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>잠옷에 땀과 방귀 배설물이 남아 미생물 번식이 촉진된다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686510" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>60 °C 이상의 고온 세탁이 박테리아를 효과적으로 죽인다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686510" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>잠옷이 노로바이러스 등 배설물 전파 경로가 된다.</td>
+<td><a href="https://www.threads.com/@ms.cali4nia?hl=ko" target="_blank">Threads</a></td>
+</tr>
+<tr>
+<td></td>
+<td>잠옷에 남은 피부 세포가 집먼지진드기, 곰팡이의 먹이가 되어 알레르기, 천식, 폐 질환을 유발한다.</td>
+<td><a href="https://v.daum.net/v/xQIMjno97o?f=p" target="_blank">v.daum</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>프림로즈 프리스톤 박사</strong> (영국 레스터대학교 임상 미생물학 부교수)  </li>
+<li>잠옷 세탁 빈도와 온도에 대한 권고를 발표하며, 방귀 오염의 위험성을 강조.  </li>
+<li>
+<p>연구 결과를 통해 <strong>세탁 산업</strong>과 <strong>소비자 건강</strong>에 대한 영향이 크다.  </p>
+</li>
+<li>
+<p><strong>London Hygiene Tropical University</strong>  </p>
+</li>
+<li>침구류와 잠옷이 감염 매개 경로가 될 수 있다는 부정적 입장을 제시.  </li>
+<li>연구 결과는 <strong>보건 정책</strong> 및 <strong>침구류 제조업</strong>에 대한 규제 논의에 영향을 미칠 수 있다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>규제·가이드라인</strong>: 보건 당국이 잠옷 세탁 주기와 온도에 대한 공식 가이드라인을 제정할 가능성이 있다.  </li>
+<li><strong>소비자 인식</strong>: 방귀 오염에 대한 인식이 높아지면서 고온 세탁 및 자주 교체가 일상화될 수 있다.  </li>
+<li><strong>연구 확장</strong>: 노로바이러스 등 특정 병원체가 잠옷을 통해 전파되는지 여부를 밝히는 추가 연구가 필요하다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶ 주의</strong>: 현재까지 방귀가 잠옷을 통해 질병을 전파한다는 과학적 근거는 아직 확립되지 않았다. 그러나 미생물 번식 위험은 명확히 확인된 사실이므로, 고온 세탁과 자주 교체를 권장한다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005686510" target="_blank">"2~3일은 기본 아닌가요" 자주 세탁 안하면 '감염 경로' 되는 잠옷</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.threads.com/@ms.cali4nia?hl=ko" target="_blank">Lauren (@ms.cali4nia) • Threads, Say more</a><a href="https://v.daum.net/v/xQIMjno97o?f=p" target="_blank">황사·미세먼지에는 '보건용 마스크' 착용…"사용기한 확인을"</a><a href="https://busan.fnnews.com/search?search_txt=%ED%8F%90%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4" target="_blank">검색-부산파이낸셜뉴스</a><a href="https://v.daum.net/v/HfTjxzRyce?f=p" target="_blank">[무등의 아침] "기름때 걱정 끝"..광주 '노동자 작업복 세탁소' 서비스 확대</a><a href="https://www.instagram.com/p/DI7s5QMSow4/" target="_blank">이제 곧 여름인데 하루에 한 번은 샤워해주라... 모 회사에 올라온 '1일 1 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
