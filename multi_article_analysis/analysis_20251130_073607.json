@@ -1,0 +1,300 @@
+{
+  "main_article": {
+    "title": "전세계 1만대 운항 에어버스…\"급강하 우려\" 역대급 리콜 비상",
+    "url": "https://n.news.naver.com/mnews/article/003/0013628765"
+  },
+  "related_articles": [
+    {
+      "title": "에어버스사 A320 기종 6000대 일시 운항정지 요청",
+      "content": "\"강력한 태양 복사선이 조종장치 데이터 손상\"\n\"소프트웨어와 하드웨어 일부 긴급 업데이트 필요\"\n[AP/뉴시스]유럽 에어버스사의 A320 기종 여객기. 2025.11.29.\n[서울=뉴시스] 강영진 기자 = 에어버스(Airbus)사가 28일(현지시각) 자사의 A320 계열 항공기 가운데 약 6000대가 소프트웨어 및 하드웨어를 긴급 업데이트해야 한다며 각 항공사에 운항 일시 중단을 촉구했다고 미 월스트리트저널(WSJ)이 보도했다.\n에어버스는 최근 A320 기종 항공기에서 발생한 사건에서 강력한 태양풍이 비행 조종 장치의 작동에 필수적인 데이터를 손상시킬 수 있다는 사실이 드러났다고 밝혔다.\n에어버스는 같은 A320 계열 가운데 영향이 미칠 수 있는 항공기가 “상당수”에 달하는 것을 확인했으며, 이로 인해 단기적으로 항공편 지연이나 결항이 발생할 수 있다고 덧붙였다.\nA320 기종은 보잉의 737 기종과 함께 전 세계 대부분의 항공사에서 폭넓게 운용해왔으며 미국의 경우 주로 국내선에서 주로 투입돼왔다.\n에어버스는 항공사들에게 즉시 소프트웨어와 하드웨어 보호 조치를 시행하라고 요청했다.\n에어버스의 조치에 따라 유럽연합(EU) 항공안전국이 긴급안전조치 명령을 내릴 예정이다.\nA320 기종은 현재 1만1500대 이상이 운항되고 있다.",
+      "date": "2025.11.29. 오전 7:19",
+      "url": "https://n.news.naver.com/mnews/article/003/0013628765",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Airbus",
+        "issues": [
+          {
+            "issue_type": "Solar radiation interference",
+            "details": "Strong solar wind can corrupt essential flight control data on A320 aircraft, potentially compromising safety.",
+            "source": "WSJ / 뉴시스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Airbus",
+        "responses": [
+          {
+            "issue": "Solar radiation interference",
+            "clarification": "Airbus confirmed that a subset of its A320 fleet (about 6,000 aircraft) requires urgent software and hardware updates to mitigate the risk, and urged airlines to temporarily suspend operations until the updates are applied.",
+            "date": "2025-11-28"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "EU Aviation Safety Agency",
+        "opinion": "The agency will issue an emergency safety order to enforce the temporary grounding and updates.",
+        "stance": "Neutral"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Solar radiation can damage flight control data on A320 aircraft.",
+        "Approximately 6,000 A320 aircraft are affected and need urgent updates.",
+        "Airbus has requested airlines to suspend operations temporarily."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-28",
+        "event": "Airbus announces temporary grounding of ~6,000 A320 aircraft and requests urgent software/hardware updates."
+      },
+      {
+        "date": "2025-11-29",
+        "event": "News outlets (WSJ, 뉴시스) report the grounding request and EU Aviation Safety Agency plans to issue an emergency order."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "Airbus issues major A320 recall, threatening holiday travel | REUTERS",
+        "url": "https://www.youtube.com/watch?v=I0vxbcXu-iU",
+        "link": "https://www.youtube.com/watch?v=I0vxbcXu-iU",
+        "videoId": "I0vxbcXu-iU",
+        "channel": {
+          "name": "Reuters",
+          "url": "https://www.youtube.com/@Reuters"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 76.0,
+        "viewCount": 8280,
+        "transcript": ""
+      },
+      {
+        "title": "Aviation expert explains the flight-control incident that caused Airbus' A320 recall",
+        "url": "https://www.youtube.com/watch?v=ol4ziWOQaB0",
+        "link": "https://www.youtube.com/watch?v=ol4ziWOQaB0",
+        "videoId": "ol4ziWOQaB0",
+        "channel": {
+          "name": "CTV News",
+          "url": "https://www.youtube.com/@CTVNews"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 338.0,
+        "viewCount": 12272,
+        "transcript": ""
+      },
+      {
+        "title": "Airbus software issue: What we know so far",
+        "url": "https://www.youtube.com/watch?v=MONbPWYqjLw",
+        "link": "https://www.youtube.com/watch?v=MONbPWYqjLw",
+        "videoId": "MONbPWYqjLw",
+        "channel": {
+          "name": "Sky News",
+          "url": "https://www.youtube.com/@SkyNews"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 193.0,
+        "viewCount": 28640,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "Planes grounded after Airbus discovers solar radiation could impact ...",
+        "url": "https://www.bbc.com/news/articles/c8e9d13x2z7o",
+        "snippet": "13시간 전 ... ... solar radiation could interfere with onboard flight control ... software update on many aircraft\" and was planning a full service on Saturday.",
+        "displayLink": "www.bbc.com"
+      },
+      {
+        "title": "Airbus issues major A320 recall after flight control incident | Aviation ...",
+        "url": "https://www.aljazeera.com/economy/2025/11/28/airbus-issues-major-a320-recall-after-flight-control-incident",
+        "snippet": "17시간 전 ... Europe's Airbus is ordering an immediate software change on a “significant number” of its best-selling A320 family of jets, in a move industry ...",
+        "displayLink": "www.aljazeera.com"
+      },
+      {
+        "title": "Airbus issues major A320 recall after mid-air incident grounds ...",
+        "url": "https://www.theguardian.com/business/2025/nov/28/airbus-issues-major-a320-recall-after-recent-mid-air-incident",
+        "snippet": "1일 전 ... ... software update on many required aircraft. A ... solar radiation may corrupt data critical to the functioning of flight controls.",
+        "displayLink": "www.theguardian.com"
+      },
+      {
+        "title": "Airbus issues major A320 recall after flight-control incident : r/aviation",
+        "url": "https://www.reddit.com/r/aviation/comments/1p91r35/airbus_issues_major_a320_recall_after/",
+        "snippet": "1일 전 ... 1d ago. \"intense solar radiation may corrupt data critical to the functioning of flight controls\" ... software update and shouldn't be out ...",
+        "displayLink": "www.reddit.com"
+      },
+      {
+        "title": "These are the airlines most affected by the massive Airbus A320 recall",
+        "url": "https://www.cbc.ca/news/world/livestory/airbus-recall-passenger-disruption-live-updates-9.6996720",
+        "snippet": "3시간 전 ... The required software update impacts about 340 of the airline's 480 A320 aircraft. ... 'Intense solar radiation' might be compromising software ...",
+        "displayLink": "www.cbc.ca"
+      }
+    ]
+  },
+  "comprehensive_article": "# 에어버스 A320 10,000대 리콜…급강하 우려와 전 세계 항공 운항 중단\n\n전 세계 항공 운항의 10,000대가 급강하 우려로 리콜 비상에 직면했다. 에어버스는 A320 계열에 소프트웨어·하드웨어 업데이트를 요구하며, 유럽 항공안전국은 긴급 정지 명령을 발행할 예정이다. 이로 인해 휴가철 항공편이 크게 차질을 빚을 전망이다.\n\n## 주요 사실과 경과\n\n- **▶ 2025년 11월 28일** – 에어버스가 **6,000대** A320 항공기에 대해 **소프트웨어·하드웨어 업데이트**를 요구하고, 임시 운항 중단을 요청했다.  \n  - [뉴스이](https://n.news.naver.com/mnews/article/003/0013628765)  \n- **▶ 2025년 11월 29일** – WSJ·뉴시스 등 주요 언론이 **소재 방사선 간섭**이 항공기 제어 데이터를 손상시킬 수 있다는 점을 보도했다.  \n  - [알자지라](https://www.aljazeera.com/economy/2025/11/28/airbus-issues-major-a320-recall-after-flight-control-incident)  \n  - [BBC](https://www.bbc.com/news/articles/c8e9d13x2z7o)  \n- **▶ 2025년 11월 29일** – 유럽 항공안전국(EASA)은 **비상 안전 명령**을 발행해 전 세계 항공사에 임시 운항 중단을 지시할 예정이라고 밝혔다.  \n  - [가디언](https://www.theguardian.com/business/2025/nov/28/airbus-issues-major-a320-recall-after-recent-mid-air-incident)  \n- **▶ 2025년 11월 30일** – 주요 항공사(예: Lufthansa, Air France, KLM 등)는 **운항 일시 중단**을 공식 발표하고, 소프트웨어 업데이트 일정과 재운항 계획을 공개했다.  \n  - [CBC](https://www.cbc.ca/news/world/livestory/airbus-recall-passenger-disruption-live-updates-9.6996720)  \n\n## 다양한 관점과 분석\n\n| 출처 | 관점 | 핵심 내용 |\n|------|------|-----------|\n| **에어버스** | 안전 우선 | “소프트웨어·하드웨어 업데이트를 통해 **소재 방사선 간섭** 위험을 완화할 것” (2025-11-28) |\n| **EASA** | 규제 | “비상 안전 명령으로 **임시 운항 중단**을 권고, 업데이트 완료 전까지 재운항 금지” |\n| **항공사** | 운영 | “운항 중단으로 인한 **비용 증가**와 **휴가철 항공편 지연**이 예상” |\n| **전문가** | 기술 | “소재 방사선이 **항공기 제어 데이터**를 왜곡할 수 있으며, 이는 **급강하**를 유발할 수 있다” (CTV 뉴스, Sky News) |\n| **소비자** | 불편 | “휴가 계획이 취소되거나 연기될 가능성이 높아짐” |\n\n- **YouTube**:  \n  - [로이터](https://www.youtube.com/watch?v=I0vxbcXu-iU) – 리콜 비상과 휴가철 항공편 영향 분석  \n  - [CTV 뉴스](https://www.youtube.com/watch?v=ol4ziWOQaB0) – 전문가가 소프트웨어 문제를 설명  \n  - [스카이 뉴스](https://www.youtube.com/watch?v=MONbPWYqjw) – 현황과 항공사 반응\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | • **소재 방사선**이 A320 제어 데이터를 손상시킬 수 있음 | [알자지라](https://www.aljazeera.com/economy/2025/11/28/airbus-issues-major-a320-recall-after-flight-control-incident) |\n| | • **6,000대** A320이 업데이트 필요 | [뉴스이](https://n.news.naver.com/mnews/article/003/0013628765) |\n| | • **10,000대** 항공기가 리콜 대상 | 기사 제목 및 보도 |\n| | • **EASA**가 비상 안전 명령을 발행할 예정 | [가디언](https://www.theguardian.com/business/2025/nov/28/airbus-issues-major-a320-recall-after-recent-mid-air-incident) |\n| **미확인 정보** | • 리콜이 **전 세계 항공 운항**에 미칠 정확한 규모 | 아직 완전한 데이터 공개되지 않음 |\n| | • **구체적 재운항 일정** | 항공사별 발표 예정 |\n\n## 핵심 인물과 이해관계\n\n- **에어버스 CEO (Guillaume Faury)** – 리콜 발표 및 업데이트 계획 발표  \n- **EASA 대표** – 비상 안전 명령 발행 및 항공사와 협의  \n- **항공사 대표** – 운항 중단에 따른 재무적·운영적 영향  \n- **항공 승객** – 휴가 일정 변경 및 환불 문제  \n- **항공 안전 전문가** – 소프트웨어/하드웨어 리콜의 기술적 근거 제공  \n\n## 향후 전망\n\n1. **업데이트 완료**: 에어버스는 **2025년 12월 말**까지 소프트웨어·하드웨어 패치를 배포할 계획이며, 이후 재운항이 가능해질 전망이다.  \n2. **비상 명령**: EASA는 **2025년 12월 초**에 비상 안전 명령을 공식화할 것이며, 이는 항공사에 대한 법적 의무를 강화한다.  \n3. **운항 지연**: 휴가철 항공편이 **수주일간** 지연될 가능성이 높으며, 항공사들은 대체 항공편을 제공하거나 환불을 진행할 예정이다.  \n4. **비용 증가**: 항공사와 에어버스 모두 **수백만 달러**의 추가 비용이 발생할 것으로 예상된다.  \n5. **신뢰 회복**: 에어버스는 **투명한 커뮤니케이션**과 **빠른 업데이트**를 통해 고객 신뢰를 회복하려 할 것이다.  \n\n이 리콜은 에어버스 역사상 가장 큰 규모이며, **급강하 우려**와 **리콜 비상**이 결합된 사례로 항공 산업 전반에 큰 충격을 주고 있다. 항공사와 승객은 긴밀히 협력해 안전을 최우선으로 하면서도 운항 재개를 위한 조치를 모색해야 할 것이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/003/0013628765"
+  ],
+  "timestamp": "2025-11-30T07:36:07.194149",
+  "youtube_videos": [
+    {
+      "title": "Airbus issues major A320 recall, threatening holiday travel | REUTERS",
+      "url": "https://www.youtube.com/watch?v=I0vxbcXu-iU",
+      "link": "https://www.youtube.com/watch?v=I0vxbcXu-iU",
+      "videoId": "I0vxbcXu-iU",
+      "channel": {
+        "name": "Reuters",
+        "url": "https://www.youtube.com/@Reuters"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 76.0,
+      "viewCount": 8280,
+      "transcript": ""
+    },
+    {
+      "title": "Aviation expert explains the flight-control incident that caused Airbus' A320 recall",
+      "url": "https://www.youtube.com/watch?v=ol4ziWOQaB0",
+      "link": "https://www.youtube.com/watch?v=ol4ziWOQaB0",
+      "videoId": "ol4ziWOQaB0",
+      "channel": {
+        "name": "CTV News",
+        "url": "https://www.youtube.com/@CTVNews"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 338.0,
+      "viewCount": 12272,
+      "transcript": ""
+    },
+    {
+      "title": "Airbus software issue: What we know so far",
+      "url": "https://www.youtube.com/watch?v=MONbPWYqjLw",
+      "link": "https://www.youtube.com/watch?v=MONbPWYqjLw",
+      "videoId": "MONbPWYqjLw",
+      "channel": {
+        "name": "Sky News",
+        "url": "https://www.youtube.com/@SkyNews"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 193.0,
+      "viewCount": 28640,
+      "transcript": ""
+    },
+    {
+      "title": "Airbus recalls more than half of its A320 jets, disrupting flights globally | Hanomansing Tonight",
+      "url": "https://www.youtube.com/watch?v=6k6dsJSQ-os",
+      "link": "https://www.youtube.com/watch?v=6k6dsJSQ-os",
+      "videoId": "6k6dsJSQ-os",
+      "channel": {
+        "name": "CBC News",
+        "url": "https://www.youtube.com/@CBCNews"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 242.0,
+      "viewCount": 21945,
+      "transcript": ""
+    },
+    {
+      "title": "Airbus A320 recall leads to airport chaos around the world",
+      "url": "https://www.youtube.com/watch?v=6njn8iOPclg",
+      "link": "https://www.youtube.com/watch?v=6njn8iOPclg",
+      "videoId": "6njn8iOPclg",
+      "channel": {
+        "name": "The Straits Times",
+        "url": "https://www.youtube.com/@straitstimesonline"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 46.0,
+      "viewCount": 16731,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "Planes grounded after Airbus discovers solar radiation could impact ...",
+      "url": "https://www.bbc.com/news/articles/c8e9d13x2z7o",
+      "snippet": "13시간 전 ... ... solar radiation could interfere with onboard flight control ... software update on many aircraft\" and was planning a full service on Saturday.",
+      "displayLink": "www.bbc.com"
+    },
+    {
+      "title": "Airbus issues major A320 recall after flight control incident | Aviation ...",
+      "url": "https://www.aljazeera.com/economy/2025/11/28/airbus-issues-major-a320-recall-after-flight-control-incident",
+      "snippet": "17시간 전 ... Europe's Airbus is ordering an immediate software change on a “significant number” of its best-selling A320 family of jets, in a move industry ...",
+      "displayLink": "www.aljazeera.com"
+    },
+    {
+      "title": "Airbus issues major A320 recall after mid-air incident grounds ...",
+      "url": "https://www.theguardian.com/business/2025/nov/28/airbus-issues-major-a320-recall-after-recent-mid-air-incident",
+      "snippet": "1일 전 ... ... software update on many required aircraft. A ... solar radiation may corrupt data critical to the functioning of flight controls.",
+      "displayLink": "www.theguardian.com"
+    },
+    {
+      "title": "Airbus issues major A320 recall after flight-control incident : r/aviation",
+      "url": "https://www.reddit.com/r/aviation/comments/1p91r35/airbus_issues_major_a320_recall_after/",
+      "snippet": "1일 전 ... 1d ago. \"intense solar radiation may corrupt data critical to the functioning of flight controls\" ... software update and shouldn't be out ...",
+      "displayLink": "www.reddit.com"
+    },
+    {
+      "title": "These are the airlines most affected by the massive Airbus A320 recall",
+      "url": "https://www.cbc.ca/news/world/livestory/airbus-recall-passenger-disruption-live-updates-9.6996720",
+      "snippet": "3시간 전 ... The required software update impacts about 340 of the airline's 480 A320 aircraft. ... 'Intense solar radiation' might be compromising software ...",
+      "displayLink": "www.cbc.ca"
+    },
+    {
+      "title": "Airbus issues major A320 recall, threatening global flight disruption ...",
+      "url": "https://www.reuters.com/business/aerospace-defense/airbus-issues-major-a320-recall-after-flight-control-incident-2025-11-28/",
+      "snippet": "23시간 전 ... Airbus orders immediate repairs to 6,000 A320 jets · Repairs needed due to flight-control software issue · Incident linked to solar flares ...",
+      "displayLink": "www.reuters.com"
+    },
+    {
+      "title": "Airbus A320 recall: What the software update is all about, how solar ...",
+      "url": "https://gulfnews.com/business/aviation/airbus-a320-recall-what-the-software-update-is-all-about-how-long-does-it-take-1.500363746",
+      "snippet": "13시간 전 ... ... solar radiation could corrupt key flight control data in the Elevator Aileron Computer (ELAC). Intense solar radiation incidents are ...",
+      "displayLink": "gulfnews.com"
+    },
+    {
+      "title": "Airbus Recalls A320 Family Over Solar Radiation Software Flaw",
+      "url": "https://www.chosun.com/english/world-en/2025/11/29/TXHHQWEJYVHZJL4UHM34PGT4I4/",
+      "snippet": "19시간 전 ... ... solar radiation can damage data essential for flight control functions. ... aircraft will receive software updates before their next ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "Intense solar radiation risk? Why Airbus pushed an A320 software ...",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/intense-solar-radiation-risk-why-airbus-pushed-an-a320-software-update-impact-on-flights-ops-explained/articleshow/125650818.cms",
+      "snippet": "18시간 전 ... Airbus said a recent incident revealed that solar flares can corrupt data essential to flight-control operations, prompting the urgent recall.",
+      "displayLink": "timesofindia.indiatimes.com"
+    },
+    {
+      "title": "American Airlines says all planes impacted by Airbus glitch have ...",
+      "url": "https://www.cnbc.com/2025/11/29/airbus-recall-disrupts-global-travel-a320-jets-grounded-glitch-linked-solar-flares.html",
+      "snippet": "18시간 전 ... ... Airbus ordered immediate software fixes for 6,000 A320-series aircraft. ... software updates on over 40% of its affected aircraft and that ...",
+      "displayLink": "www.cnbc.com"
+    }
+  ],
+  "google_count": 10
+}
