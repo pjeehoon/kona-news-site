@@ -1,5 +1,53 @@
 [
   {
+    "id": "4683a91db611",
+    "title": "에어버스사 A320 기종 6000대 일시 운항정지 요청",
+    "created_at": "2025-11-29T09:29:02.020108+09:00",
+    "last_updated": "2025-11-29T09:29:02.020108+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "에어버스",
+        "A320",
+        "태양복사"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "519fe93972d6",
+    "title": "IBM \"AI·양자컴퓨팅이 미래 금융 경쟁력 좌우한다\"[현장]",
+    "created_at": "2025-11-29T09:21:43.158985+09:00",
+    "last_updated": "2025-11-29T09:21:43.158985+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "IBM",
+        "AI",
+        "양자"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "68a0b419fb42",
     "title": "홍준표 “윤, 정치판 뛰어든 것 잘못…감옥 안 간 저는 운 좋은 셈”",
     "created_at": "2025-11-29T08:56:00.400668+09:00",
