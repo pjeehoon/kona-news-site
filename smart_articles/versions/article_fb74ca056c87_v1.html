@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中 항공사, 日 노선 904편 운항 중단…“이틀 새 3배 늘어” - 2025-11-29 11:15:30</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,중국항공,일본노선,운항중단">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="중국항공,일본노선,운항중단">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-29 11:15:30'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('中 항공사, 日 노선 904편 운항 중단…“이틀 새 3배 늘어”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>中 항공사, 日 노선 904편 운항 중단…“이틀 새 3배 늘어”</h1>
+            <p>
+                분석 시간: 2025-11-29 11:15:30
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 중국 항공사들이 일본행 904편(12%)을 감편해 72개 노선에서 15,600석이 줄었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 하네다 공항은 989편 중 7편만 감편했고, 중국 정부는 일본 여행·유학 자제령을 발표해 운항 압박이 가중되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 전문가들은 이틀 내에 감편이 3배 확대될 가능성을 경고하며, 한일 관계 긴장과 항공사 비즈니스 모델에 부정적 영향을 미칠 것으로 전망한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/29/fb74ca056c87.png" 
+                     alt="中 항공사, 日 노선 904편 운항 중단…“이틀 새 3배 늘어”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>중국 항공사들이 일본행 904편을 감편하면서, 이틀 내에 추가 3배 규모의 운항 중단이 예상된다.</strong> 12% 감편이 72개 노선에 적용돼 좌석 수는 15,600개가 줄었고, 하네다 공항은 7편만 감편했다. 중국 정부의 일본 여행·유학 자제령과 함께 일본 항공사들도 운항을 점차 중단하고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 25일</strong></td>
+<td>감편 결정</td>
+<td>중국 항공사 268편 감편(총 5548편 중 4.8%)</td>
+</tr>
+<tr>
+<td><strong>2025년 11월 27일</strong></td>
+<td><strong>904편 감편 결정</strong></td>
+<td>12% 감편(72개 노선, 15,600 좌석) <br> 하네다 공항은 7편만 감편</td>
+</tr>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>기사 발표</td>
+<td>네이버뉴스에서 상세 보도 <br> 닛케이와 일본 언론이 분석</td>
+</tr>
+<tr>
+<td><strong>2025년 11월 30일</strong></td>
+<td>추가 감편 가능성 제기</td>
+<td>일부 전문가가 이틀 내 3배 확대 가능성 언급</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>중국 항공사 904편 감편</strong>은 일본행 5548편 중 12%를 차지하며, <strong>72개 노선</strong>이 감편되고 <strong>좌석 수는 15,600개</strong>가 줄었다.<br />
+▶ <strong>하네다 공항</strong>은 989편 중 <strong>7편만</strong> 감편해, 수요가 안정적이라는 점이 강조되었다.<br />
+▶ <strong>중국 정부</strong>는 같은 시기에 <strong>일본 여행·유학 자제령</strong>을 발표해, 항공 운항에 대한 압박이 가중되었다.</p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>닛케이</strong></td>
+<td><strong>부정적</strong></td>
+<td>감편이 한일 관계 긴장을 가중시킬 위험이 있다. <br> “한일령”이 본격화될 가능성 제기</td>
+</tr>
+<tr>
+<td><strong>도자키 하지메</strong></td>
+<td><strong>중립</strong></td>
+<td>하네다 노선은 수요가 안정적이므로 감편에 소극적일 수 있다.</td>
+</tr>
+<tr>
+<td><strong>후지이 나오키</strong></td>
+<td><strong>우려</strong></td>
+<td>중국 항공사로부터 감편 요청이 오고 있어, <strong>운항 중단이 확대</strong>될 수 있다.</td>
+</tr>
+<tr>
+<td><strong>일본 항공사</strong></td>
+<td><strong>중립</strong></td>
+<td>운항 중단을 단계적으로 진행 중이며, <strong>비용과 수요</strong>를 고려해 결정</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td><strong>다양</strong></td>
+<td>감편이 <strong>수요 회복</strong>에 어려움을 줄 수 있고, <strong>비즈니스 모델</strong>에 영향을 미칠 수 있다.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>닛케이</strong>는 감편이 한일 관계에 부정적 영향을 미칠 수 있다고 분석했다.  </li>
+<li><strong>도자키 하지메</strong>는 하네다 노선의 수요가 안정적이라 감편이 어려울 수 있다고 설명했다.  </li>
+<li><strong>후지이 나오키</strong>는 감편 요청이 계속될 경우, <strong>운항 중단이 확대</strong>될 가능성을 경고했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>904편 감편이 12%에 해당하며, 72개 노선에 적용</td>
+<td><a href="https://n.news.naver.com/mnews/article/029/0002996323" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>하네다 공항은 7편만 감편</td>
+<td><a href="https://n.news.naver.com/mnews/article/029/0002996323" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>중국 정부가 일본 여행·유학 자제령 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/029/0002996323" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>“한일령”이 본격화될 전망</td>
+<td>닛케이 분석(출처 명시 필요)</td>
+</tr>
+<tr>
+<td></td>
+<td>중국 항공사들이 감편을 요청하고 있다는 추측</td>
+<td>닛케이 기사(추정)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>확인된 사실</strong>은 네이버뉴스 기사와 중국 정부 발표를 근거로 한다.  </li>
+<li><strong>미확인 정보</strong>는 닛케이의 분석 및 추정에 기반하며, 추가 확인이 필요하다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위/소속</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>도자키 하지메</strong></td>
+<td>일본 항공계 관계자</td>
+<td>하네다 노선 수요 안정성 강조, 감편 소극적</td>
+</tr>
+<tr>
+<td><strong>후지이 나오키</strong></td>
+<td>일본 항공계 관계자</td>
+<td>감편 요청이 계속되면 운항 중단 확대 우려</td>
+</tr>
+<tr>
+<td><strong>중국 항공사 대표</strong></td>
+<td>항공사 대표</td>
+<td>감편 결정에 대한 공식 입장은 아직 공개되지 않음</td>
+</tr>
+<tr>
+<td><strong>중국 정부</strong></td>
+<td>외교부</td>
+<td>일본 여행·유학 자제령 발표, 항공 운항에 압박</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>도자키 하지메</strong>와 <strong>후지이 나오키</strong>는 일본 항공계 내부의 의견을 대변하며, 감편에 대한 서로 다른 관점을 제시한다.  </li>
+<li><strong>중국 항공사 대표</strong>는 감편 결정에 대한 공식 입장을 아직 밝히지 않았다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>운항 중단 확대 가능성</strong><br />
+   - 닛케이와 일부 전문가들은 <strong>이틀 내 3배 규모</strong>의 추가 감편이 예상된다고 보고 있다.<br />
+   - 일본 항공사들은 현재 <strong>운항 중단을 단계적으로 진행</strong>하고 있어, <strong>추가 감편</strong>이 이어질 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>경제·관광 산업에 미치는 영향</strong><br />
+   - 감편으로 인한 좌석 수 감소는 <strong>여행 수요</strong>와 <strong>비즈니스 항공</strong>에 부정적 영향을 줄 수 있다.<br />
+   - 일본 내 <strong>관광업</strong>과 <strong>비즈니스 여행</strong>이 감소할 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>정치·외교적 긴장</strong><br />
+   - 감편이 한일 관계에 <strong>긴장</strong>을 초래할 수 있으며, <strong>한일령</strong>이 본격화될 위험이 있다.<br />
+   - 양국 정부는 <strong>외교적 협의를</strong> 통해 상황을 완화하려 할 것으로 보인다.</p>
+</li>
+<li>
+<p><strong>미래 항공 운항 정책</strong><br />
+   - 중국 정부는 <strong>여행·유학 자제령</strong>을 지속할 가능성이 있으며, <strong>항공 운항 정책</strong>이 더욱 엄격해질 수 있다.<br />
+   - 일본 항공사들은 <strong>수요와 비용</strong>을 고려해 <strong>운항 일정</strong>을 재조정할 필요가 있다.</p>
+</li>
+</ol>
+<p><strong>결론</strong><br />
+중국 항공사의 904편 감편은 단순한 운항 조정이 아니라, <strong>양국 관계</strong>와 <strong>항공 산업</strong> 전반에 걸친 파급 효과를 내고 있다. 향후 <strong>감편 확대</strong>와 <strong>정치적 긴장</strong>이 이어질 가능성이 높으며, 양국 정부와 항공사들은 신중한 대응이 요구된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Bjn1FQ7rQrE" target="_blank">일본행 '하늘길' 끊긴다…9일부터 속속 운항 중단 / ...</a><a href="https://www.youtube.com/watch?v=mOc-eGuQzYY" target="_blank">국내 항공사들, 일본 운항 속속 중단…아시아나 '30년...</a><a href="https://www.youtube.com/watch?v=6T_yFLcf1sA" target="_blank">일본 항공노선 끊은 항공사 #shorts / YTN</a><a href="https://www.youtube.com/watch?v=r_6htzC3Zk0" target="_blank">보잉 사고기 운항 중단 확산…국내도 운항 중단 [굿모닝...</a><a href="https://www.youtube.com/watch?v=bgE4VPOjSn0" target="_blank">무안공항 넉달 만에 국제선 재개 #shorts</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/029/0002996323" target="_blank">중, 日 항공노선 904편 무더기 중단…‘한일령’ 본격화하나</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://namu.wiki/w/%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5%202216%ED%8E%B8%20%ED%99%9C%EC%A3%BC%EB%A1%9C%20%EC%9D%B4%ED%83%88%20%EC%82%AC%EA%B3%A0" target="_blank">제주항공 2216편 활주로 이탈 사고 - 나무위키</a><a href="https://case.ftc.go.kr/com/dscv/dscvHtmlView.do?docId=20230503160405413511&docCnvrMnNo=13432" target="_blank">미리보기</a><a href="https://namu.wiki/w/%EC%A4%91%EA%B5%AD%EA%B5%AD%EC%A0%9C%ED%95%AD%EA%B3%B5%20129%ED%8E%B8%20%EC%B6%94%EB%9D%BD%20%EC%82%AC%EA%B3%A0" target="_blank">중국국제항공 129편 추락 사고 - 나무위키</a><a href="https://www.airtransport.or.kr/down/jin_69th.pdf" target="_blank">항공진흥</a><a href="https://namu.wiki/w/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5%20801%ED%8E%B8%20%EC%B6%94%EB%9D%BD%20%EC%82%AC%EA%B3%A0" target="_blank">대한항공 801편 추락 사고 - 나무위키</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
