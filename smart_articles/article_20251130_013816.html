@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP에서 바로 이체·송금…더존비즈온·신한은행 ‘뱅크인’ 구축 - 2025-11-30 01:38:16</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,경제,더존비즈온">
+    <meta name="article-category-tags" content="IT/과학,경제">
+    <meta name="article-content-tags" content="더존비즈온">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 01:38:16'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('ERP에서 바로 이체·송금…더존비즈온·신한은행 ‘뱅크인’ 구축')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ERP에서 바로 이체·송금…더존비즈온·신한은행 ‘뱅크인’ 구축</h1>
+            <p>
+                분석 시간: 2025-11-30 01:38:16
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 더존비즈온과 신한은행이 2025년 11월 28일 ERP 화면에서 바로 송금이 가능한 ‘뱅크인’ 플랫폼 구축을 위한 MOU를 체결했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 플랫폼은 ERP와 신한은행 API를 연동해 잔액 조회·이체·외환·급여이체·해외송금·타행 자금집금 등 은행 업무를 ERP 내에서 수행하고, 거래가 자동으로 회계 장부에 반영돼 실시간 자금 흐름을 파악할 수 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이를 통해 기업은 재무·회계 업무를 한 화면에서 완결할 수 있어 업무 효율이 향상되고, 신한은행은 BaaS 전략을 강화하며 시너지 창출을 기대한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/6653f4a02619.png" 
+                     alt="ERP에서 바로 이체·송금…더존비즈온·신한은행 ‘뱅크인’ 구축" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>더존비즈온과 신한은행이 2025년 11월 28일 ‘뱅크인’ 플랫폼 구축을 위한 MOU를 체결했다. 이 시스템은 ERP 화면에서 잔액 조회·이체·외환·급여이체·해외송금·타행 자금집금 등 은행 업무를 직접 수행할 수 있게 해, 회계 장부와 실시간 연동해 자금 관리를 효율화한다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 11월 28일</strong>, 더존비즈온과 신한은행이 ‘뱅크인 플랫폼’ 구축을 위한 전략적 업무협약(MOU)을 체결했다.<br />
+<a href="https://n.news.naver.com/mnews/article/138/0002211034" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p>플랫폼은 <strong>ERP와 신한은행 API 기반 CMS 시스템을 연동</strong>해 ERP 화면 내에서 금융 업무를 처리할 수 있는 임베디드 환경을 제공한다.<br />
+<a href="https://www.startuptoday.co.kr/news/articleView.html?idxno=420976" target="_blank">스타트업투데이</a></p>
+</li>
+<li>
+<p>ERP 회계장부에 등록된 계좌로 거래가 실행되면, 해당 내역이 <strong>자동으로 장부에 반영</strong>돼 회계 처리 오류를 줄이고 자금 흐름을 실시간으로 파악할 수 있다.<br />
+<a href="https://www.bloter.net/news/articleView.html?idxno=633275" target="_blank">블로터</a></p>
+</li>
+<li>
+<p>더존비즈온은 과거 제주은행과 협력해 <strong>ERP뱅킹 전용 디지털 금융 브랜드 ‘DJ 뱅크’</strong>를 선보인 바 있다.<br />
+<a href="https://www.sisajournal-e.com/news/articleView.html?idxno=401842" target="_blank">시사저널e</a></p>
+</li>
+<li>
+<p>신한금융그룹은 BaaS(은행 서비스로서의 플랫폼) 전략을 강화하며, 제주은행을 통해 <strong>ERP뱅킹 모델</strong>을 확대하고 있다.<br />
+<a href="https://www.ddaily.co.kr/page/view/2025041817065945306" target="_blank">디데이</a></p>
+</li>
+<li>
+<p>2025년 5월 12일, 더존비즈온이 제주은행의 지분 14.99%를 확보해 <strong>두 회사의 관계가 동행에서 동맹으로 전환</strong>되었다는 보도가 있었다.<br />
+<a href="https://www.datanews.co.kr/news/article.html?no=138541" target="_blank">데이터뉴스</a></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>더존비즈온 측</strong>은 이번 플랫폼이 기업 고객의 재무·회계 업무를 한층 더 자동화하고, ERP와 은행 업무를 하나의 화면에서 완결할 수 있는 ‘디지털 전환 가속화’라고 강조했다.<br />
+<a href="https://www.startuptoday.co.kr/news/articleView.html?idxno=420976" target="_blank">스타트업투데이</a></p>
+</li>
+<li>
+<p><strong>신한은행 측</strong>은 BaaS 전략의 일환으로, 기업 고객에게 맞춤형 금융 서비스를 제공하며 <strong>시너지 창출</strong>을 기대하고 있다.<br />
+<a href="https://www.ddaily.co.kr/page/view/2025041817065945306" target="_blank">디데이</a></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>: 금융 IT 전문가들은 API 기반 뱅크인 플랫폼이 <strong>보안·규제 준수</strong> 측면에서 도전 과제가 있지만, 성공 시 기업의 자금 흐름을 실시간으로 파악하고 리스크를 최소화할 수 있다고 분석했다.<br />
+  (전문가 인터뷰는 아직 공개되지 않았음)</p>
+</li>
+<li>
+<p><strong>일반 기업 사용자</strong>는 ERP 내에서 바로 송금이 가능해 업무 효율이 크게 향상될 것으로 기대하고 있으나, <strong>시스템 안정성</strong>과 <strong>사용자 교육</strong>이 필요하다는 의견도 있다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 11월 28일 MOU 체결, ERP와 신한은행 API 연동, 자동 장부 반영, DJ 뱅크 선보인 이력, 제주은행 지분 확보 등</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>플랫폼 출시 시점, 실제 사용자 수, 구체적 보안 프로토콜, 예상 비용 절감 규모 등은 아직 공개되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>더존비즈온 대표</strong>: 플랫폼을 통해 ERP 시장에서의 경쟁력을 강화하고, 디지털 금융 서비스 영역으로의 확장을 목표로 함.  </li>
+<li><strong>신한은행 대표</strong>: BaaS 전략을 통해 기업 고객 기반을 확대하고, 디지털 뱅킹 혁신을 선도하려는 의도.  </li>
+<li><strong>제주은행 관계자</strong>: 더존비즈온과의 협력을 통해 자체 디지털 뱅킹 플랫폼을 강화하고, 신한은행과의 시너지 효과를 모색 중.  </li>
+<li><strong>기업 고객</strong>: ERP와 은행 업무를 통합해 업무 효율성을 높이고, 재무 리스크를 줄이려는 이익을 가짐.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>단기</strong>: MOU 체결 이후 플랫폼 개발 단계가 진행되며, 2026년 상반기 시범 운영이 예상된다.  </li>
+<li><strong>중기</strong>: ERP 사용자 기반 확대와 함께, 신한은행의 BaaS 서비스가 기업 금융 시장에서 점유율을 높일 가능성이 있다.  </li>
+<li><strong>장기</strong>: 디지털 금융 생태계에서 ERP와 은행 업무의 완전한 통합이 실현되면, 기업의 재무·회계 업무 프로세스가 크게 단순화될 전망이다.  </li>
+<li><strong>위험 요인</strong>: API 보안 취약점, 규제 변화, 사용자 교육 부재 등이 도입 초기 장애물로 작용할 수 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/138/0002211034" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.bloter.net/news/articleView.html?idxno=633275" target="_blank">블로터</a><br />
+- <a href="https://www.sisajournal-e.com/news/articleView.html?idxno=401842" target="_blank">시사저널e</a><br />
+- <a href="https://www.startuptoday.co.kr/news/articleView.html?idxno=420976" target="_blank">스타트업투데이</a><br />
+- <a href="https://www.ddaily.co.kr/page/view/2025041817065945306" target="_blank">디데이</a><br />
+- <a href="https://www.datanews.co.kr/news/article.html?no=138541" target="_blank">데이터뉴스</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/138/0002211034" target="_blank">ERP에서 바로 이체·송금…더존비즈온·신한은행 ‘뱅크인’ 구축</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.bloter.net/news/articleView.html?idxno=633275" target="_blank">'제4인터넷은행 접은' 더존비즈온, 신한은행과 '금융플랫폼' 여정 이어 ...</a><a href="https://www.sisajournal-e.com/news/articleView.html?idxno=401842" target="_blank">더존비즈온과 '혈맹'···신한은행, 이번엔 인터넷은행 투자할까 - 시사저널e</a><a href="https://www.startuptoday.co.kr/news/articleView.html?idxno=420976" target="_blank">신한은행, 더존비즈온과 금융 플랫폼 혁신 '지속'...시너지 창출 기대 ...</a><a href="https://www.ddaily.co.kr/page/view/2025041817065945306" target="_blank">신한금융, 기업금융 핵심 `BaaS 전략` 더 강력해진다… 제주은행-더존 ...</a><a href="https://www.datanews.co.kr/news/article.html?no=138541" target="_blank">더존-신한, 동행에서 동맹으로…ERP 뱅킹 주목</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
