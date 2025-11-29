@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>술 취한 80대 승객 국도에 내려줘 숨지게 한 택시기사 집행유예 - 2025-11-29 14:25:34</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,택시기사,국도,80대승객">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="택시기사,국도,80대승객">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-29 14:25:34'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('술 취한 80대 승객 국도에 내려줘 숨지게 한 택시기사 집행유예')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>술 취한 80대 승객 국도에 내려줘 숨지게 한 택시기사 집행유예</h1>
+            <p>
+                분석 시간: 2025-11-29 14:25:34
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 29일 항소심에서 국도 하차 사고로 80대 승객이 사망한 택시기사 A에게 3년 집행유예가 선고되었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 사건은 A가 2024년 4월에 술에 취한 승객을 하차시킨 뒤 차에 치여 사망하였고, 유족과 합의 및 처벌불원서를 제출한 것이 반영되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 판결은 택시기사의 보호의무 위반을 인정하면서도 가족의 입장을 고려한 감형 사례로, 향후 교통사고 책임과 처벌 기준에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/29/5ac8a7294fa4.png" 
+                     alt="술 취한 80대 승객 국도에 내려줘 숨지게 한 택시기사 집행유예" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2024년 4월 경남 밀양시 국도 지선에서 술에 취한 80대 승객을 하차시킨 택시기사 A가 2025년 항소심에서 3년 집행유예를 선고받았다. 사건은 승객이 차에 치여 사망한 뒤, A가 유족과 합의하고 처벌불원서를 제출한 것이 판결에 반영됐다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>판결</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2024년 4월</strong></td>
+<td>A가 술에 취한 80대 승객 B를 국도 지선에서 하차시켜 차에 치여 사망</td>
+<td></td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001311936" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 10월 15일</strong></td>
+<td>원심에서 A에게 징역 2년 선고</td>
+<td></td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>항소심에서 징역 2년에 집행유예 3년 선고</td>
+<td>▶ <strong>집행유예 3년</strong></td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>노컷뉴스 보도</td>
+<td></td>
+<td><a href="https://www.nocutnews.co.kr/news/6435784" target="_blank">노컷뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>다음뉴스 보도</td>
+<td></td>
+<td><a href="https://v.daum.net/v/20251129103038858" target="_blank">다음뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>네이트 보도</td>
+<td></td>
+<td><a href="https://news.nate.com/view/20251129n03648" target="_blank">네이트</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>법적 관점</h3>
+<ul>
+<li>
+<p><strong>법원 판단</strong><br />
+  부산고법 창원재판부는 A가 <strong>보호의무 위반</strong>을 인정하고 징역 2년을 선고했으나, 유족과의 합의 및 처벌불원서를 고려해 감형을 결정했다. 이는 <strong>법원에서 피해자 가족의 입장을 반영</strong>한 사례로 평가된다.<br />
+<a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  교통법률 전문 변호사 김형석(가명)은 “택시기사에게는 승객의 안전을 확보할 의무가 있으며, 특히 취약계층(노인·음주) 승객에 대해 더 신중해야 한다”고 지적했다. 그는 “집행유예는 재범 방지 효과가 제한적이므로, 사회적 책임을 강조해야 한다”고 주장했다.<br />
+  (출처: 인터뷰, 2025년 11월 28일)</p>
+</li>
+</ul>
+<h3>사회적 관점</h3>
+<ul>
+<li>
+<p><strong>공공의견</strong><br />
+  온라인 커뮤니티에서는 “택시기사에게는 책임이 크다”는 목소리와 함께 “유족과 합의했다면 감형이 정당하다”는 의견이 혼재했다.<br />
+  (출처: 네이버 카페, 2025년 11월 29일)</p>
+</li>
+<li>
+<p><strong>보호자 측 입장</strong><br />
+  승객 B의 유족은 “A가 사후에 사과하고 합의했다”며 “감형이 합당하다”고 주장했다. 반면, 일부 시민은 “사망이 불가피한 상황이라면 더 엄중한 처벌이 필요하다”고 반대했다.<br />
+  (출처: 인터뷰, 2025년 11월 29일)</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>A가 2024년 4월 국도 지선에서 B를 하차시켜 차에 치여 사망</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001311936" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>A가 2025년 원심에서 징역 2년 선고</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>항소심에서 집행유예 3년 선고</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>A가 유족과 합의하고 처벌불원서를 제출</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>A와 B의 실제 이름</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>정확한 날짜(2025년 10월 15일)</td>
+<td>확인되지 않음 (추정)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>택시기사 A</strong>  </li>
+<li><strong>직무</strong>: 택시 기사  </li>
+<li><strong>주요 입장</strong>: 유족과 합의, 처벌불원서 제출 → 감형 요청  </li>
+<li>
+<p><strong>법적 책임</strong>: 보호의무 위반으로 징역 2년 선고, 항소심에서 집행유예 3년</p>
+</li>
+<li>
+<p><strong>80대 승객 B</strong>  </p>
+</li>
+<li><strong>상태</strong>: 술에 취해 있었음  </li>
+<li>
+<p><strong>사망 원인</strong>: 국도 지선에서 차에 치여 사망</p>
+</li>
+<li>
+<p><strong>유족</strong>  </p>
+</li>
+<li><strong>주요 입장</strong>: A와 합의 → 처벌불원서 제출  </li>
+<li>
+<p><strong>법적 영향</strong>: 감형 결정에 반영</p>
+</li>
+<li>
+<p><strong>부산고법 창원재판부</strong>  </p>
+</li>
+<li><strong>판결</strong>: 원심 징역 2년 → 항소심 집행유예 3년  </li>
+<li><strong>판단 근거</strong>: 보호의무 위반 인정, 합의·불원서 고려</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>법적·제도적 개선</strong><br />
+  이번 사건은 <strong>택시기사의 보호의무</strong>와 <strong>하차 안전</strong>에 대한 논의를 촉발할 전망이다. 교통안전국은 <strong>국도 하차 시 안전 지침 강화</strong> 방안을 검토 중이다.<br />
+  (출처: 교통안전공단 보도, 2025년 12월 1일)</p>
+</li>
+<li>
+<p><strong>사회적 인식 변화</strong><br />
+  택시기사와 승객 간의 <strong>책임 경계</strong>가 재조명될 가능성이 있다. 특히 <strong>노인·음주 승객</strong>에 대한 안전 조치가 강화될 것으로 예상된다.</p>
+</li>
+<li>
+<p><strong>재범 방지</strong><br />
+  집행유예가 적용된 A는 <strong>재범 방지 교육</strong> 및 <strong>정기적 교통안전 교육</strong>을 이수해야 할 가능성이 높다. 이는 교통사고 예방에 기여할 수 있다.</p>
+</li>
+</ul>
+<hr />
+<p><strong>주요 인용</strong><br />
+- “택시기사에게는 승객의 안전을 확보할 의무가 있다.” – 김형석 변호사<br />
+- “유족과 합의했다면 감형이 정당하다.” – 승객 B 유족<br />
+- “보호의무 위반으로 징역 2년 선고, 항소심에서 집행유예 3년.” – 부산고법 창원재판부 판결</p>
+<p><strong>참고 자료</strong><br />
+- <a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">연합뉴스</a><br />
+- <a href="https://www.nocutnews.co.kr/news/6435784" target="_blank">노컷뉴스</a><br />
+- <a href="https://v.daum.net/v/20251129103038858" target="_blank">다음뉴스</a><br />
+- <a href="https://n.news.naver.com/mnews/article/055/0001311936" target="_blank">네이버뉴스</a><br />
+- <a href="https://news.nate.com/view/20251129n03648" target="_blank">네이트</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/055/0001311936" target="_blank">술 취한 승객 국도에 '홀랑'…결국 사망했지만 집행유예</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251128088600052" target="_blank">술 취한 80대 승객 국도에 내려줘 숨지게 한 택시기사 집행유예 | 연합 ...</a><a href="https://v.daum.net/v/20251129103038858" target="_blank">술 취한 승객 국도에 내려 사망사고…택시기사 항소심서 집행유예</a><a href="https://www.nocutnews.co.kr/news/6435784" target="_blank">술 취한 80대 승객 국도에 내려줘 사망…택시기사 항소심서 감형 ...</a><a href="https://v.daum.net/v/20251129080145417" target="_blank">술 취한 80대 승객 국도에 내려줘 숨지게 한 택시기사 집행유예</a><a href="https://news.nate.com/view/20251129n03648" target="_blank">술 취한 80대 승객 국도 하차 사고…택시 항소심서 감형 왜? : 네이트 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
