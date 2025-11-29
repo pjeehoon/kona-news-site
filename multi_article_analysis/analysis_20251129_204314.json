@@ -1,0 +1,287 @@
+{
+  "main_article": {
+    "title": "쿠팡 \"개인정보 노출 3370만개\"…사실상 전 고객 정보 유출",
+    "url": "https://n.news.naver.com/mnews/article/003/0013629187"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡, 고객 계정 3370만개 무단 노출 확인…\"결제·로그인 정보는 안전\"",
+      "content": "쿠팡 \"재조사 진행 중, 사법 기관 및 규제 당국 지속 협력\"\n[서울=뉴시스] 이영환 기자 = 21일 오전 서울 송파구 쿠팡 본사에 쿠팡 로고가 보이고 있다.쿠팡은 지난 20일 고객을 대상으로 \"제3자가 비인가 접근을 통해 4500여명 고객 계정의 배송 정보(성명·이메일·전화번호·주소), 최근 5건 주문 이력을 조회한 것을 지난 18일 확인했다\"고 밝혔다.  2025.11.21. 20hwan@newsis.com\n[서울=뉴시스] 이혜원 기자 = 쿠팡의 고객 계정 약 3370만개가 무단으로 노출된 것으로 확인됐다고 29일 밝혔다. 다만 결제 정보를 비롯해 로그인 정보는 포함되지 않았다.\n쿠팡은 지난 18일 약 4500개 계정의 개인정보가 무단으로 노출된 사실을 인지했고, 즉시 관련 기관(경찰청, 한국인터넷진흥원, 개인정보보호위원회)에 신고한 바 있다.\n후속 조사 결과, 고객 계정 약 3370만개가 무단으로 노출된 것으로 확인됐다.\n노출된 정보는 이름, 이메일 주소, 배송지 주소록(입력 이름, 전화번호, 주소), 그리고 일부 주문정보로 확인됐다.\n결제 정보, 신용카드 번호, 로그인 정보는 포함되지 않았고, 안전하게 보호되고 있다고 쿠팡 측은 설명했다. 쿠팡 이용 고객은 계정 관련 조치를 취할 필요가 없다.\n현재까지 조사에 따르면 해외 서버를 통해 지난 6월24일부터 무단으로 개인정보에 접근한 것으로 추정하고 있다.\n쿠팡은 무단 접근 경로를 차단 했으며 내부 모니터링을 강화했으며, 동시에 독립적인 보안기업 전문가들을 영입했다.\n재조사가 진행 중이며, 쿠팡은 사법 기관 및 규제 당국과 지속적으로 협력하고 있다.\n쿠팡 측은 \"이번 일로 인해 발생한 모든 우려에 대해 진심으로 사과 드리며, 고객 여러분께서 쿠팡을 사칭하는 전화, 문자 메시지 또는 기타 커뮤니케이션에 주의해 주시기를 당부 드린다\"며 \"쿠팡의 모든 임직원은 고객의 우려 사항을 최대한 신속하게 해결하기 위해 최선을 다하고 있다\"고 했다．",
+      "date": "2025.11.29. 오후 6:08",
+      "url": "https://n.news.naver.com/mnews/article/003/0013629187",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "쿠팡",
+        "issues": [
+          {
+            "issue_type": "개인정보 노출",
+            "details": "약 33.7만 고객 계정이 무단으로 노출되었으며, 결제·로그인 정보는 포함되지 않았음",
+            "source": "뉴시스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "쿠팡",
+        "responses": [
+          {
+            "issue": "개인정보 노출",
+            "clarification": "노출된 정보는 이름, 이메일, 배송지 주소록, 일부 주문정보이며 결제·신용카드 번호, 로그인 정보는 안전하게 보호되고 있음",
+            "date": "2025-11-29"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "한국인터넷진흥원",
+        "opinion": "쿠팡이 내부 모니터링 강화 및 독립 보안 전문가 영입을 통해 보안 조치를 강화하고 있음",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "33.7만 고객 계정이 무단으로 노출된 사실 확인",
+        "결제·로그인 정보는 노출되지 않았음",
+        "노출 경로는 해외 서버를 통한 접근으로 추정"
+      ],
+      "unconfirmed_allegations": [
+        "노출된 정보가 실제로 악용되었는지 여부",
+        "노출이 고객에게 직접적인 피해를 초래했는지 여부"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-06-24",
+        "event": "해외 서버를 통한 무단 접근이 의심됨"
+      },
+      {
+        "date": "2025-11-18",
+        "event": "쿠팡이 4,500개 계정의 개인정보 노출을 인지하고 경찰청, KISA, 개인정보보호위원회에 신고"
+      },
+      {
+        "date": "2025-11-21",
+        "event": "쿠팡이 4,500개 계정 노출 사실을 보도"
+      },
+      {
+        "date": "2025-11-29",
+        "event": "쿠팡이 33.7만 고객 계정이 무단 노출된 사실을 확인하고, 결제·로그인 정보는 안전하다고 발표"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "[쿠팡 꿀팁 #1] 쿠팡 로그인 오류? 이 방법 쓰세요!",
+        "url": "https://www.youtube.com/watch?v=KPu_h0B08s0",
+        "videoId": "KPu_h0B08s0",
+        "channel": {
+          "name": "초스피드생활꿀팁",
+          "url": "https://www.youtube.com/channel/UCNbCE5gAI77aeBxTJ3PYimQ"
+        },
+        "description": "쿠팡 로그인이 안 되시나요? 비밀번호를 잊었을 때, 당황하지 말고 이 영상처럼 따라해 보세요! 시니어분들이 쉽게 따라할 수 있도록 ...",
+        "publishedAt": "2025-06-24T08:45:36Z",
+        "thumbnail": "https://i.ytimg.com/vi/KPu_h0B08s0/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "지금 다 속고있는 쿠팡 근황ㄷㄷ",
+        "url": "https://www.youtube.com/watch?v=s6y7dpU95CU",
+        "videoId": "s6y7dpU95CU",
+        "channel": {
+          "name": "1분미만",
+          "url": "https://www.youtube.com/channel/UC2xkO7XCiStWfR3fKbzkbqw"
+        },
+        "description": "쿠팡 #메일 #피싱 #사칭 #사기예방 #1분미만 #꿀팁 #지식 #지식정보 #정보 #일분미만 . . 모든 문의 : one1miman@gmail.com.",
+        "publishedAt": "2024-08-12T08:15:25Z",
+        "thumbnail": "https://i.ytimg.com/vi/s6y7dpU95CU/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 계정정지 푸는법😎 이 방법만 알아두면 걱정 없습니다",
+        "url": "https://www.youtube.com/watch?v=4Xt72cWp7Vs",
+        "videoId": "4Xt72cWp7Vs",
+        "channel": {
+          "name": "성공스토어 - 온라인쇼핑몰로 부자되기",
+          "url": "https://www.youtube.com/channel/UCSy67eu3bODnzIiumgyhC7Q"
+        },
+        "description": "쿠팡 #로켓그로스 #온라인셀러 #구매대행 #스마트스토어 #직장인부업 #쇼핑몰창업 구매대행 입문자들의 최대 고민은 뭘까요?",
+        "publishedAt": "2024-10-23T10:00:04Z",
+        "thumbnail": "https://i.ytimg.com/vi/4Xt72cWp7Vs/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "'국민 쇼핑몰' 쿠팡 개인정보 3370만개 유출...혼란 빠진 소비자들",
+        "url": "https://www.chosun.com/economy/stock-finance/2025/11/29/3LJGZEB7FZGM3AA7ON6DPX6YEQ/",
+        "snippet": "2시간 전 ... 국민 쇼핑몰 쿠팡 개인정보 3370만개 유출...혼란 빠진 소비자들 국내 최대 쇼핑몰 쿠팡이 고객 개인 정보 약 3370만건이 해킹으로 노출됐다고 29일 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "쿠팡 “개인정보 노출계정 3,370만개…결제정보는 보호”",
+        "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8420640",
+        "snippet": "2시간 전 ... 최근 쿠팡에서 유출된 개인정보 계정이 3300만 개가 넘는 것으로 확인됐습니다. 쿠팡은 오늘(29일) 공지문...",
+        "displayLink": "news.kbs.co.kr"
+      },
+      {
+        "title": "[속보] 쿠팡, 고객 계정 3370만개 무단 노출 - 매일경제",
+        "url": "https://www.mk.co.kr/news/business/11480295",
+        "snippet": "3시간 전 ... 쿠팡은 29일 고객 계정의 개인정보가 외부에서 무단으로 추가로 노출된 사실을 확인하고 관계 기관과 조사하고 있다고 밝혔다. 쿠팡은 29일 “11월 18 ...",
+        "displayLink": "www.mk.co.kr"
+      },
+      {
+        "title": "쿠팡, 사실상 모든 고객 정보 노출…계정 3370만개 피해 | 한국경제",
+        "url": "https://www.hankyung.com/article/2025112934257",
+        "snippet": "2시간 전 ... 쿠팡 개인정보 노출 계정 규모가 3300만개를 넘는 것으로 확인됐다. 이름, 이메일 주소, 배송지 주소록, 일부 주문정보 등이 노출됐다는 설명이다. 결제 ...",
+        "displayLink": "www.hankyung.com"
+      },
+      {
+        "title": "쿠팡, 고객 개인정보 3370만개 무단 노출…\"결제 정보는 안전\"",
+        "url": "https://v.daum.net/v/20251129182239493",
+        "snippet": "2시간 전 ... [더팩트ㅣ이선영 기자] 쿠팡이 최근 진행한 후속 조사에서 약 3370만개 고객 계정의 개인정보가 외부에 무단으로 노출된 것으로 확인됐다고 29일 밝혔다.",
+        "displayLink": "v.daum.net"
+      }
+    ]
+  },
+  "comprehensive_article": null,
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/003/0013629187"
+  ],
+  "timestamp": "2025-11-29T20:43:14.874688",
+  "youtube_videos": [
+    {
+      "title": "[쿠팡 꿀팁 #1] 쿠팡 로그인 오류? 이 방법 쓰세요!",
+      "url": "https://www.youtube.com/watch?v=KPu_h0B08s0",
+      "videoId": "KPu_h0B08s0",
+      "channel": {
+        "name": "초스피드생활꿀팁",
+        "url": "https://www.youtube.com/channel/UCNbCE5gAI77aeBxTJ3PYimQ"
+      },
+      "description": "쿠팡 로그인이 안 되시나요? 비밀번호를 잊었을 때, 당황하지 말고 이 영상처럼 따라해 보세요! 시니어분들이 쉽게 따라할 수 있도록 ...",
+      "publishedAt": "2025-06-24T08:45:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/KPu_h0B08s0/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "지금 다 속고있는 쿠팡 근황ㄷㄷ",
+      "url": "https://www.youtube.com/watch?v=s6y7dpU95CU",
+      "videoId": "s6y7dpU95CU",
+      "channel": {
+        "name": "1분미만",
+        "url": "https://www.youtube.com/channel/UC2xkO7XCiStWfR3fKbzkbqw"
+      },
+      "description": "쿠팡 #메일 #피싱 #사칭 #사기예방 #1분미만 #꿀팁 #지식 #지식정보 #정보 #일분미만 . . 모든 문의 : one1miman@gmail.com.",
+      "publishedAt": "2024-08-12T08:15:25Z",
+      "thumbnail": "https://i.ytimg.com/vi/s6y7dpU95CU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 계정정지 푸는법😎 이 방법만 알아두면 걱정 없습니다",
+      "url": "https://www.youtube.com/watch?v=4Xt72cWp7Vs",
+      "videoId": "4Xt72cWp7Vs",
+      "channel": {
+        "name": "성공스토어 - 온라인쇼핑몰로 부자되기",
+        "url": "https://www.youtube.com/channel/UCSy67eu3bODnzIiumgyhC7Q"
+      },
+      "description": "쿠팡 #로켓그로스 #온라인셀러 #구매대행 #스마트스토어 #직장인부업 #쇼핑몰창업 구매대행 입문자들의 최대 고민은 뭘까요?",
+      "publishedAt": "2024-10-23T10:00:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/4Xt72cWp7Vs/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "주문을 취소하면 배달원은!? #배달티비 #주문취소 #고객변심 #자체폐기",
+      "url": "https://www.youtube.com/watch?v=vikNRwRbXK4",
+      "videoId": "vikNRwRbXK4",
+      "channel": {
+        "name": "배달",
+        "url": "https://www.youtube.com/channel/UCnTQXTIglRNYoCxJBxu3Kig"
+      },
+      "description": "",
+      "publishedAt": "2025-01-29T00:52:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/vikNRwRbXK4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "진짜 어이없게 걸리는 택배사기 수법 ㄷㄷ",
+      "url": "https://www.youtube.com/watch?v=WL3lv6ASi8Y",
+      "videoId": "WL3lv6ASi8Y",
+      "channel": {
+        "name": "1분미만",
+        "url": "https://www.youtube.com/channel/UC2xkO7XCiStWfR3fKbzkbqw"
+      },
+      "description": "택배 #택배사기 #1분미만 #쿠팡 #사기수법 #일상꿀팁.",
+      "publishedAt": "2023-02-01T06:49:06Z",
+      "thumbnail": "https://i.ytimg.com/vi/WL3lv6ASi8Y/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "'국민 쇼핑몰' 쿠팡 개인정보 3370만개 유출...혼란 빠진 소비자들",
+      "url": "https://www.chosun.com/economy/stock-finance/2025/11/29/3LJGZEB7FZGM3AA7ON6DPX6YEQ/",
+      "snippet": "2시간 전 ... 국민 쇼핑몰 쿠팡 개인정보 3370만개 유출...혼란 빠진 소비자들 국내 최대 쇼핑몰 쿠팡이 고객 개인 정보 약 3370만건이 해킹으로 노출됐다고 29일 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "쿠팡 “개인정보 노출계정 3,370만개…결제정보는 보호”",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8420640",
+      "snippet": "2시간 전 ... 최근 쿠팡에서 유출된 개인정보 계정이 3300만 개가 넘는 것으로 확인됐습니다. 쿠팡은 오늘(29일) 공지문...",
+      "displayLink": "news.kbs.co.kr"
+    },
+    {
+      "title": "[속보] 쿠팡, 고객 계정 3370만개 무단 노출 - 매일경제",
+      "url": "https://www.mk.co.kr/news/business/11480295",
+      "snippet": "3시간 전 ... 쿠팡은 29일 고객 계정의 개인정보가 외부에서 무단으로 추가로 노출된 사실을 확인하고 관계 기관과 조사하고 있다고 밝혔다. 쿠팡은 29일 “11월 18 ...",
+      "displayLink": "www.mk.co.kr"
+    },
+    {
+      "title": "쿠팡, 사실상 모든 고객 정보 노출…계정 3370만개 피해 | 한국경제",
+      "url": "https://www.hankyung.com/article/2025112934257",
+      "snippet": "2시간 전 ... 쿠팡 개인정보 노출 계정 규모가 3300만개를 넘는 것으로 확인됐다. 이름, 이메일 주소, 배송지 주소록, 일부 주문정보 등이 노출됐다는 설명이다. 결제 ...",
+      "displayLink": "www.hankyung.com"
+    },
+    {
+      "title": "쿠팡, 고객 개인정보 3370만개 무단 노출…\"결제 정보는 안전\"",
+      "url": "https://v.daum.net/v/20251129182239493",
+      "snippet": "2시간 전 ... [더팩트ㅣ이선영 기자] 쿠팡이 최근 진행한 후속 조사에서 약 3370만개 고객 계정의 개인정보가 외부에 무단으로 노출된 것으로 확인됐다고 29일 밝혔다.",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "[속보] 쿠팡, 고객 개인 정보 3370만개 무단 노출…결제정보 미포함 ...",
+      "url": "https://m.segye.com/view/20251129505075",
+      "snippet": "3시간 전 ... 쿠팡에서 개인정보 약3370만 개가 해킹으로 유출됐다. 쿠팡은 29일 “11월 18일 약 4500개 계정의 개인정보가 무단으로 노출된 사실을 인지했다”면서 ...",
+      "displayLink": "m.segye.com"
+    },
+    {
+      "title": "[속보] 쿠팡 “계정 3370만개 개인정보 노출”…'전 고객급' 유출 확인 ...",
+      "url": "https://www.kado.net/news/articleView.html?idxno=2019528",
+      "snippet": "2시간 전 ... 쿠팡 고객 계정 가운데 3370만개에서 개인정보가 노출된 것으로 확인됐다.쿠팡이 애초 밝힌 약 4500개 계정 규모와 비교하면 7만5000배에 해당하는 ...",
+      "displayLink": "www.kado.net"
+    },
+    {
+      "title": "쿠팡 \"개인정보 노출계정 3370만개···결제정보는 안전\" - 뉴스웨이",
+      "url": "https://www.newsway.co.kr/news/view?ud=2025112918251146374",
+      "snippet": "2시간 전 ... 쿠팡 고객의 정보가 노출된 계정이 3300만개가 넘는 것으로 확인됐다. 쿠팡은 개인정보가 노출된 고객 계정이 3370만개로 확인됐다고 29일 밝혔다.",
+      "displayLink": "www.newsway.co.kr"
+    },
+    {
+      "title": "\"4500개인 줄 알았는데\"… 쿠팡 개인정보 유출 '3370만개'(상보) - 머니S",
+      "url": "https://www.moneys.co.kr/article/2025112917580570815",
+      "snippet": "2시간 전 ... 쿠팡 회원 3370만명의 개인정보가 유출되는 대규모 보안 사고가 발생했다. 회사는 즉각 사과하고 추가 피해 방지를 위한 대응에 나섰다.",
+      "displayLink": "www.moneys.co.kr"
+    },
+    {
+      "title": "쿠팡, 3370만개 개인정보 유출…'결제 정보는 안전' | 서울경제",
+      "url": "https://www.sedaily.com/NewsView/2H0N6VW6SF",
+      "snippet": "3시간 전 ... 산업 > 생활 뉴스: 쿠팡에서 약 3370만개의 고객 계정이 해킹으로 인해 무단으로 노출된 것으로 파악됐다. 29일 쿠팡은 “고객 계정 약 3370만개가 ...",
+      "displayLink": "www.sedaily.com"
+    }
+  ],
+  "google_count": 10
+}
