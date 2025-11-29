@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원화 흐름 '핵심요인' 부상…"원·달러, 경상수지보다 더 중요" - 2025-11-30 06:52:13</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,원화,환율,경상">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="원화,환율,경상">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 06:52:13'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('원화 흐름 \'핵심요인\' 부상…"원·달러, 경상수지보다 더 중요"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>원화 흐름 '핵심요인' 부상…"원·달러, 경상수지보다 더 중요"</h1>
+            <p>
+                분석 시간: 2025-11-30 06:52:13
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 28일 원·달러 환율이 1470.6원으로 마감하면서 원화가 1400원대 중반으로 하락해 16년 만에 최저 수준에 이르렀다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 한국은행은 금리를 동결하고 미국은 금리 인하를 이어가면서 전문가들은 내년 1600원대 진입 가능성을 제기하고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 1600원대에 도달하면 수출기업의 가격 경쟁력이 약화되며, 한국은행은 금리 인상이나 외환시장 개입을 통해 환율 안정을 시도할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/1adb32d60aae.png" 
+                     alt="원화 흐름 '핵심요인' 부상…"원·달러, 경상수지보다 더 중요"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>원·달러 환율이 경상수지보다 더 큰 영향을 미치며, 2025년 11월 28일 기준 1470.6원으로 마감한 원화는 16년 만에 최저 수준인 1400원대 중반으로 하락했다. 한국은행은 금리 동결을 유지하고 미국은 인하 기조를 이어가면서, 전문가들은 내년 1600원대 진입 가능성을 제기하고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 28일</td>
+<td>원·달러 환율이 <strong>1470.6원</strong>으로 마감, 전일 1464.9원 대비 상승.</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>원화가 <strong>1400원대 중반</strong>으로 하락, 16년 만에 최저 수준.</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>실질실효환율(REER) <strong>89.09</strong>로, 2009년 8월 이후 최저치.</td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>한국은행은 <strong>금리 동결</strong>을 유지, 미국은 <strong>금리 인하</strong> 기조를 이어감.</td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>기사 발표: 원·달러 환율이 경상수지보다 더 중요하다는 분석과 함께 <strong>1600원</strong> 가능성 제기.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 2025년 11월 28일 기준 원·달러 환율이 1470.6원으로 마감한 것은 <strong><a href="https://n.news.naver.com/mnews/article/003/0013628854" target="_blank">네이버뉴스</a></strong> 에서 확인된다.</p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>뉴시스</strong></td>
+<td>전문가들 사이에서 <strong>1600원대</strong> 진입 가능성을 배제할 수 없다는 전망이 잇따른다.</td>
+</tr>
+<tr>
+<td><strong>서울경제TV</strong></td>
+<td>고환율이 “마지막 방어선”을 뚫는 순간 대공황급 위기 가능성을 경고한다.</td>
+</tr>
+<tr>
+<td><strong>KBS 시사</strong></td>
+<td>“킹 달러”가 언제까지 지속될지에 대한 논의를 통해 환율 변동이 무역수지에 미치는 장기적 영향을 분석한다.</td>
+</tr>
+<tr>
+<td><strong>경제학자</strong></td>
+<td>원·달러 환율이 경상수지보다 더 큰 영향력을 지닌다는 점을 강조하며, 환율 변동이 수출입 가격에 직접적인 영향을 미친다고 설명한다.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 뉴시스 기사에서 전문가들의 1600원 전망이 <strong><a href="https://n.news.naver.com/mnews/article/003/0013628854" target="_blank">네이버뉴스</a></strong> 에서 인용되었다.</p>
+</blockquote>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>2025년 11월 28일 원·달러 환율 1470.6원, 1400원대 하락, REER 89.09, 한국은행 금리 동결, 미국 금리 인하</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013628854" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>내년 1600원대 진입 가능성, 외환당국의 국민연금 ‘뉴프레임 워크’와 외환스와프 연장이 원화 가치에 큰 영향을 미칠 것</td>
+<td>기사 내부 추정, <strong>확인 필요</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>한국은행</strong></td>
+<td>현재 금리 동결을 유지하며, 환율 변동에 대한 정책적 대응을 검토 중.</td>
+</tr>
+<tr>
+<td><strong>미국 연방준비제도</strong></td>
+<td>금리 인하를 통해 달러 약세를 유도, 이는 원화 약세를 촉진할 수 있다.</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>뉴시스 기사에 인용된 전문가들은 1600원 가능성을 경고하며, 환율 변동이 수출입 기업에 미치는 영향을 강조.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>환율 1600원 가능성</strong><br />
+   - 전문가들의 전망이 지속되면서 시장은 1600원대에 대한 불확실성을 높이고 있다.<br />
+   - 1600원 도달 시 수출기업의 가격 경쟁력이 약화될 수 있다.</p>
+</li>
+<li>
+<p><strong>정책 대응</strong><br />
+   - 한국은행은 금리 인상을 통해 원화 강세를 유도할 가능성이 있다.<br />
+   - 외환시장 개입이 확대될 수 있으며, 이는 환율 변동성을 완화시킬 수 있다.</p>
+</li>
+<li>
+<p><strong>무역수지와 경상수지에 미치는 영향</strong><br />
+   - 원·달러 환율이 경상수지보다 더 큰 영향력을 지니고 있다는 분석은, 환율 변동이 무역수지에 직접적인 영향을 미친다는 점을 시사한다.<br />
+   - 원화 약세가 수출을 촉진하나, 수입 물가 상승으로 인한 물가상승 압력이 증가할 수 있다.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>▶</strong> 고환율에 대한 우려는 <strong><a href="https://www.youtube.com/watch?v=fBlQxfwQGrU" target="_blank">서울경제TV</a></strong> 와 <strong><a href="https://www.youtube.com/watch?v=No-0vQetV4A" target="_blank">KBS 시사</a></strong> 에서도 다뤄지고 있다.</p>
+</blockquote>
+<hr />
+<p><strong>요약</strong><br />
+2025년 11월 28일 기준 원·달러 환율이 1470.6원으로 마감하고 원화는 1400원대 중반으로 하락했다. 한국은행은 금리 동결을 유지하고 미국은 금리 인하를 진행 중이다. 전문가들은 내년 1600원대 진입 가능성을 제기하며, 원·달러 환율이 경상수지보다 더 큰 영향력을 지닌다고 분석한다. 향후 환율 변동과 정책 대응이 무역수지와 물가에 미칠 영향을 주시해야 한다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=fBlQxfwQGrU" target="_blank">환율, 1500원 ‘마지막 방어선’ … “뚫리면 대공황...</a><a href="https://www.youtube.com/watch?v=PFnveGNgCrM" target="_blank">“환율 1600원 간다? 전문가들 전망 ‘충격’”</a><a href="https://www.youtube.com/watch?v=No-0vQetV4A" target="_blank">고환율 시대, '킹 달러' 언제까지 지속? [사사건건 ...</a><a href="https://www.youtube.com/watch?v=okNzFFh3TUo" target="_blank">You didn't know this? The real...</a><a href="https://www.youtube.com/watch?v=EVpXVXDKB4s" target="_blank">[일요와이드] 고환율·고물가·고금리 악순환…경제 전망은...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013628854" target="_blank">내년 1600원 가나…고환율 언제까지[환율 고공행진①]</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.posri.re.kr/download.do;jsessionid=CE73D4EC21D9AE1F2C2E9BECDDD04322?fid=690&pid=3340" target="_blank">2019년 원/달러 환율 흐름과 변동 요인</a><a href="https://www.kcmi.re.kr/common/downloadw?fid=27148&fgu=002001&fty=004003" target="_blank">미국 통화정책 변화가 원화환율에 미치는 영향과 시사점*</a><a href="https://www.hri.co.kr/upload/board/BSR060512.pdf" target="_blank">Untitled</a><a href="https://hri.co.kr/upload/board/201461013431[1].pdf" target="_blank">현안과과제_원달러 환율 1000 붕괴 가시권 진입_140609.hwp</a><a href="https://www.bok.or.kr/portal/bbs/B0000217/view.do?nttId=10071562&menuNo=200144&listType=G&pageIndex=3" target="_blank">[제891회] 환율과 외환시장에 대한 이해 | 금요강좌(상세) | 경제교육 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
