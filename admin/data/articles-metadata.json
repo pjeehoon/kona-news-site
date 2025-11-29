@@ -1,5 +1,29 @@
 [
   {
+    "id": "1fbf53136086",
+    "title": "전국 대부분 맑고 온화…밤사이 수도권·영서 비[날씨]",
+    "created_at": "2025-11-29T19:02:29.162811+09:00",
+    "last_updated": "2025-11-29T19:02:29.162811+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "맑음",
+        "비",
+        "수도권"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "6834be0d9b74",
     "title": "주말 평년보다 온화…다음 주 본격 겨울 추위[날씨]",
     "created_at": "2025-11-29T18:05:12.358288+09:00",
