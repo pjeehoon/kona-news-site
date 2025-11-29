@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“집이라는 연옥에 갇혀”…홍콩 화재 생존자 심경 토로 - 2025-11-29 16:42:13</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,홍콩,타이포,화재">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="홍콩,타이포,화재">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-29 16:42:13'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“집이라는 연옥에 갇혀”…홍콩 화재 생존자 심경 토로')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“집이라는 연옥에 갇혀”…홍콩 화재 생존자 심경 토로</h1>
+            <p>
+                분석 시간: 2025-11-29 16:42:13
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 29일 홍콩 타이포 북부 32층 아파트 단지에서 7개 동이 화재에 휩싸여 128명이 사망했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2층 거주자 윌리엄 리는 화재를 아내의 전화로 알게 되고, 내부를 ‘연옥’이라며 절망을 토로했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 대형 화재는 아파트 화재 예방 시스템 미흡을 드러내며, 지역 사회와 당국에 안전 강화 조치를 촉구하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/29/e90e13971453.png" 
+                     alt="“집이라는 연옥에 갇혀”…홍콩 화재 생존자 심경 토로" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>200자 요약</strong><br />
+2025년 11월 29일, 홍콩 타이포 북부에 위치한 32층 아파트 단지에서 7개 동이 화재에 휩싸여 128명이 사망했다. 2층 거주자 윌리엄 리(40세)는 화재를 아내의 전화로 알게 되고, 연기로 가득 찬 현장을 목격하며 ‘집이 연옥’이라며 절망을 토로했다. 그는 구조대가 도착하기 전 복도에서 부부를 구조하고 물과 옷을 제공했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 29일</td>
+<td>32층 아파트 단지 7개 동에서 대형 화재 발생, 128명 사망</td>
+<td><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>윌리엄 리(40세, 2층 거주)가 화재를 아내의 전화로 인지</td>
+<td><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>현관문을 열자 내부가 연기로 가득, 외부로 대피 불가</td>
+<td><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>리 씨가 복도에서 부부를 구조하고 물과 옷을 제공</td>
+<td><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>리 씨가 “집이라는 연옥에 갇혀”라며 절망을 고백</td>
+<td><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>800명 이상 소방관이 출동, 화재 진압</td>
+<td><a href="https://www.cnn.com/2025/11/26/asia/hong-kong-apartment-fire-latam-intl" target="_blank">CNN</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>사망자 수가 128명으로 확정</td>
+<td><a href="https://world.kbs.co.kr/service/news_view.htm?lang=e&amp;Seq_Code=197765" target="_blank">KBS</a>, <a href="https://www.nytimes.com/2025/11/28/world/asia/hong-kong-fire.html" target="_blank">뉴욕타임스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>구조대와 소방관</strong><br />
+  소방당국은 화재가 급속히 번지면서 구조가 어려웠다고 전했다. 800명 이상의 소방관이 투입되었지만, 연기와 열 때문에 출입이 제한되었다.<br />
+<em>출처: <a href="https://www.cnn.com/2025/11/26/asia/hong-kong-apartment-fire-latam-intl" target="_blank">CNN</a></em></p>
+</li>
+<li>
+<p><strong>생존자와 가족</strong><br />
+  윌리엄 리 씨는 “연기가 눈을 가리고, 외부와의 연결이 끊겼다”며, “내가 통제권을 잃었다”는 감정을 토로했다. 그는 구조대가 도착하기 전, 부부를 구조하고 물과 옷을 제공했다고 밝혔다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>지역 사회와 언론</strong><br />
+  BBC는 “가족들이 구조대와 연락이 끊긴 채 기다리는 고통”을 보도하며, 화재의 규모와 구조의 어려움을 강조했다.<br />
+<em>출처: <a href="https://www.bbc.com/news/articles/cj9y0pjzmdro" target="_blank">BBC</a></em></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  화재 안전 전문가들은 아파트 단지의 화재 예방 시스템이 미흡했으며, 연기 감지기와 자동 소화 시스템이 제대로 작동하지 않았을 가능성을 지적했다.<br />
+<em>출처: <a href="https://www.chosun.com/english/world-en/2025/11/29/PLYDOODU2VHXRPJOGVTT5DCRRM/" target="_blank">조선일보</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>128명 사망, 7개 동 화재</td>
+<td><a href="https://world.kbs.co.kr/service/news_view.htm?lang=e&amp;Seq_Code=197765" target="_blank">KBS</a>, <a href="https://www.nytimes.com/2025/11/28/world/asia/hong-kong-fire.html" target="_blank">뉴욕타임스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>윌리엄 리(40세, 2층 거주) 생존 및 구조 활동</td>
+<td><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>800명 소방관 투입</td>
+<td><a href="https://www.cnn.com/2025/11/26/asia/hong-kong-apartment-fire-latam-intl" target="_blank">CNN</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>화재 원인에 대한 공식 조사 결과</td>
+<td>현재까지 발표되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>윌리엄 리</strong> – 40세, 2층 거주자. 화재 현장에서 부부를 구조하고, 연기 속에서 절망을 고백한 생존자.  </li>
+<li><strong>아파트 단지 관리사무소</strong> – 화재 예방 시스템 및 소방 설비 관리 책임자.  </li>
+<li><strong>홍콩 소방당국</strong> – 화재 진압 및 구조 활동을 총괄.  </li>
+<li><strong>지역 주민 및 가족</strong> – 사망자 및 부상자에 대한 지원과 사후 처리를 요구.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적·제도적 개정</strong><br />
+  화재 안전 규정 강화와 아파트 단지의 소방 설비 점검 주기 단축이 예상된다.  </li>
+<li><strong>구조 및 재난 대응</strong><br />
+  소방당국은 화재 발생 시 신속한 대피와 연기 감지 시스템 개선을 위한 예산을 확대할 계획이다.  </li>
+<li><strong>사회적 인식 변화</strong><br />
+  화재 예방 교육과 주민 참여형 안전 관리 체계가 강화될 가능성이 높다.  </li>
+</ul>
+<p><strong>▶ 주요 사실</strong>: 128명 사망, 7개 동 화재, 윌리엄 리의 생존 및 구조 활동, 800명 소방관 투입.<br />
+<strong>▶ 향후 조치</strong>: 화재 안전 규정 강화, 소방 설비 개선, 주민 교육 확대.  </p>
+<p>이상으로, 홍콩 아파트 화재 생존자와 관련된 사건의 핵심 내용과 향후 전망을 정리하였다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=dbuBGbFyJZc" target="_blank">At least 44 killed in massive ...</a><a href="https://www.youtube.com/watch?v=fe7WqeEHN_w" target="_blank">Hong Kong apartment fire updat...</a><a href="https://www.youtube.com/watch?v=QNm5XgS96Yk" target="_blank">Deadly fire rips through Hong ...</a><a href="https://www.youtube.com/watch?v=0G1PbrkodZ8" target="_blank">How Hong Kong's deadly apartme...</a><a href="https://www.youtube.com/watch?v=2wW4SClKWVo" target="_blank">128 confirmed dead following H...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/021/0002753595" target="_blank">“집이라는 연옥에 갇혀”…홍콩 화재 생존자 심경 토로</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=197765" target="_blank">Hong Kong Apartment Fire Death Toll Jumps to 128 l...</a><a href="https://www.nytimes.com/2025/11/28/world/asia/hong-kong-fire.html" target="_blank">Death Toll Rises to 128 in Hong Kong High-Rise Fir...</a><a href="https://www.chosun.com/english/world-en/2025/11/29/PLYDOODU2VHXRPJOGVTT5DCRRM/" target="_blank">Hong Kong Fire Survivor's 'Purgatory' Trapped Orde...</a><a href="https://www.cnn.com/2025/11/26/asia/hong-kong-apartment-fire-latam-intl" target="_blank">How did Hong Kong's massive housing estate fire tu...</a><a href="https://www.bbc.com/news/articles/cj9y0pjzmdro" target="_blank">'Hang in there': Agonising wait for the missing af...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
