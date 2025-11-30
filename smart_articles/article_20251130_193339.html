@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경주, APEC 이어 겹경사…올해의 관광지에 ‘황리단길’ 선정 - 2025-11-30 19:33:39</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,경주,APEC,황리단길">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="경주,APEC,황리단길">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 19:33:39'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('경주, APEC 이어 겹경사…올해의 관광지에 ‘황리단길’ 선정')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>경주, APEC 이어 겹경사…올해의 관광지에 ‘황리단길’ 선정</h1>
+            <p>
+                분석 시간: 2025-11-30 19:33:39
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 경주가 2025 APEC 정상회의를 성공적으로 개최한 뒤 황리단길이 2025 한국 관광의 별로 선정됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 경주 방문객이 590만 명을 넘어 외국인 유입이 35 % 증가하며 황리단길의 전통 한옥과 현대 카페·상점이 SNS 인증샷으로 인기를 끌었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 지역 상권이 활성화되고 경주는 세계적 관광도시로 부상했으나 지속 가능한 관광 관리가 필요하다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/9ab85d41a18a.png" 
+                     alt="경주, APEC 이어 겹경사…올해의 관광지에 ‘황리단길’ 선정" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>경주가 2025년 APEC 정상회의를 성공적으로 개최한 뒤, 황리단길이 <strong>2025 한국 관광의 별 ‘올해의 관광지’</strong>로 선정됐다. 590만 명의 방문객과 35 % 증가한 외국인 유입이 이 성과를 뒷받침했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 10월</td>
+<td><strong>APEC 정상회의</strong>가 경주에서 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486365" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 10월 ~ 11월</td>
+<td>경주 방문객 590만 명 초과, 외국인 35 % 증가</td>
+<td><a href="https://www.eroun.net/news/articleView.html?idxno=67989" target="_blank">에로운</a></td>
+</tr>
+<tr>
+<td>2024 년 12월 3일</td>
+<td>황리단길이 <strong>2025 한국 관광의 별</strong>로 선정</td>
+<td><a href="https://www.instagram.com/p/DEBmakcPLqW/" target="_blank">인스타그램</a></td>
+</tr>
+<tr>
+<td>2025 년 ??</td>
+<td>황리단길이 <strong>올해의 관광지</strong>로 공식 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486365" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>APEC 2025</strong>는 20년 만에 한국에서 개최된 대규모 국제회의로, 경주가 세계적 관광도시로 부상하는 계기가 되었다.<br />
+▶ <strong>황리단길</strong>은 전통 한옥과 현대 카페·상점이 어우러진 골목으로, SNS 인증샷이 인기를 끌며 외국인 유입을 가속화했다.<br />
+▶ <strong>2025 한국 관광의 별</strong> 선정은 문화체육관광부가 주관하는 연간 관광지 평가 프로그램의 일환이다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>긍정적 시각</h3>
+<ul>
+<li><strong>문화체육관광부</strong>는 황리단길이 “전통과 젊음이 어우러진 관광지”라며, 외국인 방문객 증가와 SNS 인증샷이 지역 상권 활성화에 기여했다고 평가했다.  </li>
+<li>지역 상인들은 <strong>관광객 증가</strong>로 매출이 상승하고, <strong>새로운 비즈니스 기회</strong>가 열렸다고 전했다.  </li>
+<li><strong>YTN</strong>은 “APEC 이후 경주가 ‘세계적 관광도시’로 부상했다”는 보도를 통해 황리단길의 긍정적 이미지를 강조했다.</li>
+</ul>
+<h3>우려와 비판</h3>
+<ul>
+<li><strong>현지 주민</strong> 일부는 <strong>과도한 인파</strong>와 <strong>교통 혼잡</strong>이 생활 환경을 해친다는 점을 우려했다.  </li>
+<li><strong>문화 보존 전문가</strong>는 황리단길의 <strong>역사적 건축물</strong>이 관광객의 과도한 접근으로 <strong>손상 위험</strong>에 노출될 수 있다고 경고했다.  </li>
+<li><strong>관광 정책 분석가</strong>는 “관광 성장은 지역 경제에 이익이 되지만, 지속 가능한 관광 관리가 필요하다”고 지적했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>황리단길이 2025 한국 관광의 별로 선정</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486365" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>590만 명 방문객 및 35 % 외국인 증가</td>
+<td><a href="https://www.eroun.net/news/articleView.html?idxno=67989" target="_blank">에로운</a></td>
+</tr>
+<tr>
+<td></td>
+<td>APEC 정상회의 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486365" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>황리단길 선정 이후 <strong>구체적 인프라 투자 계획</strong>에 대한 공식 발표</td>
+<td>현재까지 공식 문서가 공개되지 않음</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인된 사실</strong>은 공식 보도와 통계 자료를 기반으로 하며, <strong>미확인 정보</strong>는 아직 공식 발표가 이루어지지 않은 부분을 표시한다.</p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>문화체육관광부</strong></td>
+<td>황리단길의 SNS 인지도와 외국인 유입을 지역 경제 활성화의 핵심 요소로 평가</td>
+</tr>
+<tr>
+<td><strong>경주 시청</strong></td>
+<td>APEC 이후 관광 인프라 확충과 문화유산 보존을 동시에 추진하겠다는 방침</td>
+</tr>
+<tr>
+<td><strong>지역 상인</strong></td>
+<td>방문객 증가로 인한 매출 상승과 신규 비즈니스 기회에 긍정적</td>
+</tr>
+<tr>
+<td><strong>현지 주민</strong></td>
+<td>과도한 인파와 생활 환경 변화에 대한 우려 표명</td>
+</tr>
+<tr>
+<td><strong>관광 전문가</strong></td>
+<td>지속 가능한 관광 모델 구축의 필요성을 강조</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>관광 인프라 확충</strong>: 황리단길과 경주 시내 전역에 걸쳐 <strong>교통·주차 시설</strong> 개선이 예상된다.  </li>
+<li><strong>문화유산 보존</strong>: 관광객 유입이 증가함에 따라 <strong>한옥 복원·보존 사업</strong>이 강화될 전망이다.  </li>
+<li><strong>마케팅 확대</strong>: 문화체육관광부와 지역 관광청이 <strong>국제 SNS 캠페인</strong>을 통해 황리단길을 글로벌 브랜드로 포지셔닝할 계획이다.  </li>
+<li><strong>지속가능성 논의</strong>: 과거 APEC 이후 발생한 교통 혼잡 사례를 반성하며, <strong>지속 가능한 관광 정책</strong>이 논의될 가능성이 높다.</li>
+</ul>
+<p>경주가 APEC 성공과 황리단길 선정이라는 두 축을 동시에 맞이한 것은 지역 경제와 문화에 긍정적 파급효과를 가져올 것으로 보이나, 동시에 <strong>인프라 부담</strong>과 <strong>문화유산 보존</strong>이라는 도전 과제도 함께 제기되고 있다. 앞으로 지역 정부와 관광업계가 <strong>균형 잡힌 발전 전략</strong>을 마련해 나갈 필요가 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=ED9lDxt4PS0" target="_blank">&#39;역대급 APEC&#39; 치러낸 경주...&q...</a><a href="https://www.youtube.com/watch?v=xpUCBqjBWaU" target="_blank">APEC 개막 앞둔 경주 &#39;화색&#39;...곳...</a><a href="https://www.youtube.com/watch?v=fBF5PMua4Oo" target="_blank">APEC 개막 앞둔 경주 &#39;화색&#39;...곳...</a><a href="https://www.youtube.com/watch?v=cAIBcPp6MDQ" target="_blank">경주 APEC 곳곳에 숨은 문화 감상 포인트는? / Y...</a><a href="https://www.youtube.com/watch?v=ZDT9LM40l3g" target="_blank">APEC 열기 계속…“경주, 글로벌 관광 도시로” / ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003486365" target="_blank">APEC 이어 경주 겹경사…인증샷 쏟아진 '올해 관광지' 오른 길</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.instagram.com/p/DEBmakcPLqW/" target="_blank">경주시 on Instagram: "북적북적했던 지난 성탄절 황리단길 풍경 ...</a><a href="https://www.eroun.net/news/articleView.html?idxno=67989" target="_blank">경북도, 경주 황리단길 '2025 한국관광의 별' 선정...관광의 별 됐다</a><a href="https://www.instagram.com/p/DDI475wIhiB/" target="_blank">「APEC 2025 KOREA 경주」 디자인 공모 참가대상 : 전 국민 누구나 ...</a><a href="https://www.facebook.com/gyeongjulove/posts/apec-2025-korea-%EA%B2%BD%EC%A3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B3%B5%EB%AA%A8-%EC%B0%B8%EA%B0%80%EB%8C%80%EC%83%81-%EC%A0%84-%EA%B5%AD%EB%AF%BC-%EB%88%84%EA%B5%AC%EB%82%98%EA%B0%9C%EC%9D%B8-%EB%98%90%EB%8A%94-%EB%8B%A8%EC%B2%B4-1%EC%9D%B8%EB%98%90%EB%8A%94-1%ED%8C%80-5%EC%9D%B8%EC%9D%B4%EB%82%B4-%EB%B6%84%EC%95%BC%EB%B3%84-1%EA%B1%B4%EC%94%A9-%EC%B5%9C%EB%8C%80-3%EA%B1%B4-%EA%B3%B5%EB%AA%A8%EA%B8%B0%EA%B0%84-/990641676442469/" target="_blank">「APEC 2025 KOREA 경주」 디자인 공모 참가대상 : 전 국민 누구나 ...</a><a href="https://www.gyeongju.go.kr/news/page.do?step=258&parm_bod_uid=287420&srchEnable=1&srchKeyword=&srchSDate=&srchColumn=&srchVoteType=-1&pageOrder=0&parm_mnu_uid=0&pageNo=3056&srchBgpUid=-1&pagePrvNxt=1&pageRef=0&srchEDate=&mnu_uid=2254&" target="_blank">(글보기)주낙영 경주시장, 2024 대한민국 사회발전 대상 수상 | 경주 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
