@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“인텔, 2027년 애플 M시리즈 칩 생산” - 2025-12-01 08:08:58</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,경제,Intel,Apple,M‑Series chips,2027 chip production,Stock price surge">
+    <meta name="article-category-tags" content="IT/과학,경제">
+    <meta name="article-content-tags" content="Intel,Apple,M‑Series chips,2027 chip production,Stock price surge">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 08:08:58'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“인텔, 2027년 애플 M시리즈 칩 생산”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“인텔, 2027년 애플 M시리즈 칩 생산”</h1>
+            <p>
+                분석 시간: 2025-12-01 08:08:58
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 인텔이 2027년 2·3분기부터 애플의 ARM 기반 M시리즈 칩을 생산·출하할 가능성이 제기돼 주가가 10% 이상 급등했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 협력은 애플이 자체 설계 칩을 대량 생산할 인프라를 확보하려는 전략과 인텔이 미국 제조업 부흥을 목표로 한 움직임이 결합된 결과로 해석된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 주가 상승과 시장 반응은 인텔의 매출 확대 기대와 ARM 기반 칩 시장에서의 경쟁 구도 변화를 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/3a4ad2eb5af1.png" 
+                     alt="“인텔, 2027년 애플 M시리즈 칩 생산”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>인텔이 2027년 2~3분기부터 애플의 ARM‑기반 M시리즈 칩을 생산·출하할 가능성이 제기돼 주가가 10% 이상 급등했다. 이 협력은 애플이 자체 설계한 칩을 대량 생산할 수 있는 인프라를 확보하려는 전략과 인텔이 미국 제조업 부흥을 목표로 한 움직임이 결합된 결과로 해석된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023년</td>
+<td>애플이 자체 설계 M시리즈 칩을 맥·아이패드에 적용, 인텔과의 관계가 사실상 결별</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768757" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 28일</td>
+<td>인텔과 애플이 비밀유지계약(NDA)을 체결, M시리즈 칩 생산 논의 시작</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768757" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>연합뉴스 기사 발표, 인텔 주가가 10.19% 상승</td>
+<td><a href="https://news.yna.co.kr/view/AKR20251129012300001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>조선일보, 인텔이 애플 M시리즈 칩 생산 가능성 제시</td>
+<td><a href="https://www.chosun.com/english/industry-en/2025/11/30/LNDM5KJOIRB2XEC6SVP5YPQAJU/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2027년 2~3분기</td>
+<td>인텔이 애플 M시리즈 칩을 실제로 생산·출하할 것으로 예상</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>주요 사실</strong><br />
+- 인텔과 애플이 2025년 11월 28일 비밀유지계약을 체결했다.<br />
+- 인텔 주가는 2025년 11월 29일 정규장 마감 시 10.19% 상승했다.<br />
+- 인텔이 2027년 2~3분기부터 애플 M시리즈 칩을 생산·출하할 가능성이 있다.</p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>투자자</strong></td>
+<td>주가 상승이 긍정적 신호로 해석, 인텔의 매출 확대 기대</td>
+<td><a href="https://news.yna.co.kr/view/AKR20251129012300001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>미리미리 공급망 다변화가 애플에 이득, 인텔은 18A-P 노드로 생산 가능</td>
+<td><a href="https://www.techpowerup.com/343423/intel-could-manufacture-apple-m-series-chips-in-2027-with-18a-p-node" target="_blank">TechPowerUp</a></td>
+</tr>
+<tr>
+<td><strong>경쟁업체</strong></td>
+<td>인텔이 ARM 기반 칩 생산에 진입함으로써 경쟁 구도가 변동될 수 있음</td>
+<td><a href="https://www.pcgamer.com/hardware/in-a-major-plot-twist-intel-could-soon-be-making-chips-for-apple-once-again-only-this-time-itll-be-the-arm-based-m-series/" target="_blank">PC Gamer</a></td>
+</tr>
+<tr>
+<td><strong>정책 입장</strong></td>
+<td>트럼프 행정부가 미국 제조업 부흥을 위해 인텔과 협력 재구축을 시도</td>
+<td>추정 (공식 발표 없음)</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>인텔과 애플이 NDA 체결, 인텔 주가 상승, 2027년 생산 가능성</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015768757" target="_blank">네이버뉴스</a>, <a href="https://news.yna.co.kr/view/AKR20251129012300001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 주장</strong></td>
+<td>생산 칩이 보급형 모델에 한정될 것, 애플이 공급망 다변화를 위해 협력 의도, 트럼프 행정부의 목적</td>
+<td>추정 (공식 자료 없음)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>인텔 CEO</strong>: 인텔이 ARM 기반 칩 생산에 진입함으로써 매출 다변화와 시장 점유율 확대를 목표로 함.  </li>
+<li><strong>애플 최고 설계 책임자</strong>: M시리즈 칩의 설계와 성능을 유지하면서 대량 생산을 확보하려는 전략적 필요.  </li>
+<li><strong>투자자 및 애널리스트</strong>: 인텔의 주가 상승과 매출 성장 전망에 주목.  </li>
+<li><strong>정책입장</strong>: 미국 제조업 부흥 정책과 관련해 인텔과 애플의 협력이 긍정적으로 평가될 가능성.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2027년 2~3분기</strong>: 인텔이 실제로 M시리즈 칩을 생산·출하하면 애플은 자체 생산 라인에 대한 의존도를 낮출 수 있다.  </li>
+<li><strong>시장 반응</strong>: 인텔 주가가 지속적으로 상승할 가능성이 높으며, ARM 기반 칩 시장에서의 입지가 강화될 전망.  </li>
+<li><strong>공급망 안정성</strong>: 애플은 공급망 다변화를 통해 리스크를 분산시킬 수 있으나, 인텔의 생산 품질과 일정이 핵심 변수.  </li>
+<li><strong>경쟁 구도</strong>: 인텔이 ARM 기반 칩 생산에 진입함으로써 AMD, Qualcomm 등과의 경쟁이 더욱 치열해질 수 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 시사점</strong><br />
+인텔과 애플의 협력은 양사 모두에게 전략적 이익을 제공할 수 있으나, 실제 생산 일정과 품질 관리가 핵심 과제이다. 투자자와 업계는 2027년 첫 출하 전까지 인텔의 생산 역량과 애플의 설계 요구 사항이 얼마나 잘 맞물리는지를 주시해야 한다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=sLXzMK6JBV8" target="_blank">Every Apple M Chip Explained –...</a><a href="https://www.youtube.com/watch?v=WZeaQwvwc8s" target="_blank">Apple's M Chips: Explained</a><a href="https://www.youtube.com/watch?v=sUXLMUo_Xck" target="_blank">Your Ultimate Guide To Apple S...</a><a href="https://www.youtube.com/watch?v=Rbne-OGCGxo" target="_blank">Every APPLE Macbook Chip Expla...</a><a href="https://www.youtube.com/watch?v=TsKHjFeonRE" target="_blank">The ARM chip race is getting w...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015768757" target="_blank">"인텔, 애플 M시리즈 칩 생산 논의…이르면 2027년부터 출하"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.techpowerup.com/343423/intel-could-manufacture-apple-m-series-chips-in-2027-with-18a-p-node" target="_blank">Intel Could Manufacture Apple M-Series Chips in 20...</a><a href="https://www.chosun.com/english/industry-en/2025/11/30/LNDM5KJOIRB2XEC6SVP5YPQAJU/" target="_blank">Intel to Produce Apple's M-Series Chips</a><a href="https://www.theverge.com/news/832366/intel-apple-m-chip-low-end-processor" target="_blank">Intel could finally return to Apple computers in 2...</a><a href="https://cm.asiae.co.kr/en/article/2025112909232074931" target="_blank">"Intel May Produce Apple M Series Chips... Shipmen...</a><a href="https://www.pcgamer.com/hardware/in-a-major-plot-twist-intel-could-soon-be-making-chips-for-apple-once-again-only-this-time-itll-be-the-arm-based-m-series/" target="_blank">In a major plot twist, Intel could soon be making ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
