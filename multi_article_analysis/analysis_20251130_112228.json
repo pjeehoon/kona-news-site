@@ -1,0 +1,291 @@
+{
+  "main_article": {
+    "title": "'4500명→3370만명', 역대급 정보유출 5개월간 몰랐던 쿠팡...왜?",
+    "url": "https://n.news.naver.com/mnews/article/003/0013629187"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡, 고객 계정 3370만개 무단 노출 확인…\"결제·로그인 정보는 안전\"",
+      "content": "쿠팡 \"재조사 진행 중, 사법 기관 및 규제 당국 지속 협력\"\n[서울=뉴시스] 이영환 기자 = 21일 오전 서울 송파구 쿠팡 본사에 쿠팡 로고가 보이고 있다.쿠팡은 지난 20일 고객을 대상으로 \"제3자가 비인가 접근을 통해 4500여명 고객 계정의 배송 정보(성명·이메일·전화번호·주소), 최근 5건 주문 이력을 조회한 것을 지난 18일 확인했다\"고 밝혔다.  2025.11.21. 20hwan@newsis.com\n[서울=뉴시스] 이혜원 기자 = 쿠팡의 고객 계정 약 3370만개가 무단으로 노출된 것으로 확인됐다고 29일 밝혔다. 다만 결제 정보를 비롯해 로그인 정보는 포함되지 않았다.\n쿠팡은 지난 18일 약 4500개 계정의 개인정보가 무단으로 노출된 사실을 인지했고, 즉시 관련 기관(경찰청, 한국인터넷진흥원, 개인정보보호위원회)에 신고한 바 있다.\n후속 조사 결과, 고객 계정 약 3370만개가 무단으로 노출된 것으로 확인됐다.\n노출된 정보는 이름, 이메일 주소, 배송지 주소록(입력 이름, 전화번호, 주소), 그리고 일부 주문정보로 확인됐다.\n결제 정보, 신용카드 번호, 로그인 정보는 포함되지 않았고, 안전하게 보호되고 있다고 쿠팡 측은 설명했다. 쿠팡 이용 고객은 계정 관련 조치를 취할 필요가 없다.\n현재까지 조사에 따르면 해외 서버를 통해 지난 6월24일부터 무단으로 개인정보에 접근한 것으로 추정하고 있다.\n쿠팡은 무단 접근 경로를 차단 했으며 내부 모니터링을 강화했으며, 동시에 독립적인 보안기업 전문가들을 영입했다.\n재조사가 진행 중이며, 쿠팡은 사법 기관 및 규제 당국과 지속적으로 협력하고 있다.\n쿠팡 측은 \"이번 일로 인해 발생한 모든 우려에 대해 진심으로 사과 드리며, 고객 여러분께서 쿠팡을 사칭하는 전화, 문자 메시지 또는 기타 커뮤니케이션에 주의해 주시기를 당부 드린다\"며 \"쿠팡의 모든 임직원은 고객의 우려 사항을 최대한 신속하게 해결하기 위해 최선을 다하고 있다\"고 했다．",
+      "date": "2025.11.29. 오후 6:08",
+      "url": "https://n.news.naver.com/mnews/article/003/0013629187",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "쿠팡",
+        "issues": [
+          {
+            "issue_type": "개인정보 유출",
+            "details": "약 3370만 개의 고객 계정이 무단으로 노출되었으며, 결제·로그인 정보는 포함되지 않았음",
+            "source": "뉴시스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "쿠팡",
+        "responses": [
+          {
+            "issue": "개인정보 유출",
+            "clarification": "결제 정보와 로그인 정보는 안전하게 보호되었으며, 고객은 별도의 조치를 취할 필요가 없다",
+            "date": "2025-11-29"
+          }
+        ]
+      }
+    ],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "2025년 6월 24일부터 해외 서버를 통해 무단 접근이 발생한 것으로 추정",
+        "2025년 11월 18일에 약 4500개의 계정이 무단으로 노출된 사실을 인지",
+        "2025년 11월 29일에 총 3370만 개의 고객 계정이 무단으로 노출된 것이 확인",
+        "노출된 정보는 이름, 이메일, 배송지 주소록, 일부 주문정보이며 결제·로그인 정보는 포함되지 않음"
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-06-24",
+        "event": "해외 서버를 통한 무단 접근이 시작된 것으로 추정"
+      },
+      {
+        "date": "2025-11-18",
+        "event": "4500개 계정이 무단으로 노출된 사실을 쿠팡이 인지"
+      },
+      {
+        "date": "2025-11-20",
+        "event": "쿠팡이 경찰청, 한국인터넷진흥원, 개인정보보호위원회에 신고"
+      },
+      {
+        "date": "2025-11-21",
+        "event": "4500개 계정 노출 사실이 공식 발표"
+      },
+      {
+        "date": "2025-11-29",
+        "event": "총 3370만 개 계정이 무단 노출된 사실이 확인 및 공지"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "쿠팡 3370만 명 해킹, 쿠팡이 당부한 이것!! 꼭 아셔야 해요!",
+        "url": "https://www.youtube.com/watch?v=5P1eu0GtAL4",
+        "link": "https://www.youtube.com/watch?v=5P1eu0GtAL4",
+        "videoId": "5P1eu0GtAL4",
+        "channel": {
+          "name": "생활밀착 컨텐츠",
+          "url": "https://www.youtube.com/@구독하면.로또됨"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 48.0,
+        "viewCount": 2863,
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡, 4500명 고객정보 유출 발표 뒤, 피해고객수 7,500배 증가. 활성고객 2,460만명보다 많은 3,370만명 고객 정보 유출. #쿠팡 #정보유출 #뉴스 #이슈",
+        "url": "https://www.youtube.com/watch?v=7CS_P4DUqdY",
+        "link": "https://www.youtube.com/watch?v=7CS_P4DUqdY",
+        "videoId": "7CS_P4DUqdY",
+        "channel": {
+          "name": "이슈있슈k",
+          "url": "https://www.youtube.com/@이슈있슈K"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 125.0,
+        "viewCount": 0,
+        "transcript": ""
+      },
+      {
+        "title": "[속보] 쿠팡 3,370만 명 개인정보 유출! 지금 확인하세요",
+        "url": "https://www.youtube.com/watch?v=qshYWhJEPhM",
+        "link": "https://www.youtube.com/watch?v=qshYWhJEPhM",
+        "videoId": "qshYWhJEPhM",
+        "channel": {
+          "name": "친절한 시사반장",
+          "url": "https://www.youtube.com/@kind_banjang"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 53.0,
+        "viewCount": 1996,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "쿠팡 개인정보 유출 피해자 3370만명…경찰 “모든 가능성 열고 추적”",
+        "url": "https://v.daum.net/v/20251129221622075",
+        "snippet": "13시간 전 ... 앞서 쿠팡은 이날 개인 정보가 무단으로 노출된 고객 계정 수가 3370만개로 확인됐다고 밝혔다. 지난 18일 쿠팡 쪽이 밝힌 노출 계정 4500개의 7500배 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "유통 - 머니S",
+        "url": "https://www.moneys.co.kr/circulation",
+        "snippet": "... 개인정보 유출 규모가 당초 발표한 4500명이 아닌 3370만명. \"4500개인 줄 알았는데\"… 쿠팡 개인정보 유출 '3370만개'(상보) · plus 아이콘. 쿠팡, 고객 4500명 개인정보 ...",
+        "displayLink": "www.moneys.co.kr"
+      },
+      {
+        "title": "\"4500개인 줄 알았는데\"… 쿠팡 개인정보 유출 '3370만개'(상보)",
+        "url": "https://v.daum.net/v/20251129181238327",
+        "snippet": "17시간 전 ... 쿠팡 회원 3370만명의 개인정보가 유출되는 대규모 보안 사고가 발생했다. 회사는 즉각 사과하고 추가 피해 방지를 위한 대응에 나섰다.",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "5층 방어막 전부 뚫렸다고?···쿠팡 \"내부자 단독\" 해명 기술적으로 ...",
+        "url": "https://www.womaneconomy.co.kr/news/articleViewAmp.html?idxno=246007",
+        "snippet": "5시간 전 ... 초기 발표에서는 4500명 유출이라고 했으나 열흘 만에 3370만명으로 정정 ... 쿠팡은 11월 18일 4500건 유출 사실을 개인정보위·KISA에 즉시 ...",
+        "displayLink": "www.womaneconomy.co.kr"
+      },
+      {
+        "title": "[속보] 쿠팡 “계정 3370만개 개인정보 노출”…'전 고객급' 유출 확인",
+        "url": "https://v.daum.net/v/20251129183247547",
+        "snippet": "17시간 전 ... 이름·이메일 주소·배송지 주소·배송지 전화번호 노출 결제정보·신용카드 번호·로그인 정보 등은 노출 안돼. △ 쿠팡 [연합뉴스 자료사진] ...",
+        "displayLink": "v.daum.net"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 개인정보 유출 규모 3370만 명 확인, 5개월간 보안 미비의 원인과 대응\n\n쿠팡이 2025년 11월 29일 고객 3370만 명의 개인정보가 유출된 사실을 확인했다. 최초 4500명으로 발표되었으나 10일 뒤 3370만 명으로 확대되며, 결제·로그인 정보는 안전하다고 밝혔다. 이번 사건은 5개월간 보안이 미흡했다는 비판을 받는다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 주요 내용 | 출처 |\n|------|------|-----------|------|\n| 2025년 06월 24일 | 무단 접근 시작 | 해외 서버를 통한 무단 접근이 시작된 것으로 추정 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| 2025년 11월 18일 | 4500명 유출 인지 | 쿠팡이 4500개 계정이 유출된 사실을 인지 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| 2025년 11월 20일 | 신고 | 쿠팡이 경찰청, KISA, 개인정보보호위원회에 신고 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| 2025년 11월 21일 | 공식 발표 | 4500개 계정 유출 사실을 공식 발표 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| 2025년 11월 29일 | 3370만 명 유출 확인 | 총 3370만 개의 고객 계정이 무단 노출된 사실이 확인 및 공지 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n\n▶ **3370만 명**의 고객 정보가 노출되었으며, 유출된 데이터는 이름, 이메일, 배송지 주소, 일부 주문 정보에 한정된다. 결제 정보와 로그인 정보는 포함되지 않았다.  \n▶ 쿠팡은 2025년 11월 29일에 “결제 정보와 로그인 정보는 안전하게 보호되었으며, 고객은 별도의 조치를 취할 필요가 없다”고 밝혔다.  \n\n## 다양한 관점과 분석\n\n- **쿠팡 측**  \n  쿠팡은 보안팀이 즉시 대응했으며, 고객에게 별도의 조치를 요구하지 않는다고 강조했다. 보안 강화와 내부 감사를 진행 중이라고 전했다.  \n  *출처: [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187)*  \n\n- **규제기관**  \n  개인정보보호위원회와 KISA는 사건을 수사 중이며, “모든 가능성을 열어 추적”하고 있다고 밝혔다.  \n  *출처: [v.daum.net](https://v.daum.net/v/20251129221622075)*  \n\n- **언론 보도**  \n  일부 언론은 쿠팡의 보안 체계가 “5층 방어막 전부 뚫렸다”는 비판을 제기했다. 내부자 단독 해명에 대한 의문도 제기되었다.  \n  *출처: [womaneconomy](https://www.womaneconomy.co.kr/news/articleViewAmp.html?idxno=246007)*  \n\n- **소비자 반응**  \n  유튜브 영상과 SNS에서는 “4500명이라 생각했는데 3370만 명이라니”라는 충격과 함께 쿠팡에 대한 신뢰 하락이 우려된다.  \n  *출처: [YouTube](https://www.youtube.com/watch?v=5P1eu0GtAL4)*  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 2025년 11월 29일 쿠팡이 3370만 명의 개인정보가 유출된 사실을 확인 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| | 결제·로그인 정보는 유출되지 않았다 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| | 쿠팡이 2025년 11월 20일 경찰청, KISA, 개인정보보호위원회에 신고 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| | 무단 접근은 2025년 06월 24일에 시작된 것으로 추정 | [네이버뉴스](https://n.news.naver.com/mnews/article/003/0013629187) |\n| **미확인 정보** | 내부자 단독 해명 여부 | 언론 보도에만 언급, 공식 확인 없음 |\n| | 유출 원인(내부자 vs 외부 공격) | 아직 수사 중 |\n\n## 핵심 인물과 이해관계\n\n- **쿠팡 보안팀**  \n  사건 대응과 내부 감사를 담당.  \n- **개인정보보호위원회**  \n  수사 및 피해자 보호 조치를 담당.  \n- **한국인터넷진흥원(KISA)**  \n  보안 사고 조사 및 대응 지원.  \n- **경찰청**  \n  범죄 수사 및 법적 조치.  \n- **소비자**  \n  개인정보 노출 피해 가능성에 직면.  \n\n## 향후 전망\n\n1. **규제 강화**  \n   개인정보보호법 및 전자상거래법에 대한 규제가 강화될 가능성이 있다.  \n2. **보안 투자 확대**  \n   쿠팡은 보안 인프라와 인력 투자를 확대할 것으로 예상된다.  \n3. **소비자 신뢰 회복**  \n   신뢰 회복을 위해 투명한 소통과 보안 인증을 강화할 필요가 있다.  \n4. **주가 영향**  \n   사건 이후 쿠팡의 주가가 단기적으로 하락할 가능성이 있으며, 장기적 회복을 위해 실질적 보안 개선이 요구된다.  \n\n이번 쿠팡 개인정보 유출 사건은 대규모 데이터 보안 사고가 기업 운영과 소비자 신뢰에 미치는 영향을 다시 한 번 상기시켰다. 쿠팡과 관련 기관은 사건 원인 규명과 재발 방지를 위한 조치를 신속히 진행해야 할 것이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/003/0013629187"
+  ],
+  "timestamp": "2025-11-30T11:22:28.856479",
+  "youtube_videos": [
+    {
+      "title": "쿠팡 3370만 명 해킹, 쿠팡이 당부한 이것!! 꼭 아셔야 해요!",
+      "url": "https://www.youtube.com/watch?v=5P1eu0GtAL4",
+      "link": "https://www.youtube.com/watch?v=5P1eu0GtAL4",
+      "videoId": "5P1eu0GtAL4",
+      "channel": {
+        "name": "생활밀착 컨텐츠",
+        "url": "https://www.youtube.com/@구독하면.로또됨"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 48.0,
+      "viewCount": 2863,
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡, 4500명 고객정보 유출 발표 뒤, 피해고객수 7,500배 증가. 활성고객 2,460만명보다 많은 3,370만명 고객 정보 유출. #쿠팡 #정보유출 #뉴스 #이슈",
+      "url": "https://www.youtube.com/watch?v=7CS_P4DUqdY",
+      "link": "https://www.youtube.com/watch?v=7CS_P4DUqdY",
+      "videoId": "7CS_P4DUqdY",
+      "channel": {
+        "name": "이슈있슈k",
+        "url": "https://www.youtube.com/@이슈있슈K"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 125.0,
+      "viewCount": 0,
+      "transcript": ""
+    },
+    {
+      "title": "[속보] 쿠팡 3,370만 명 개인정보 유출! 지금 확인하세요",
+      "url": "https://www.youtube.com/watch?v=qshYWhJEPhM",
+      "link": "https://www.youtube.com/watch?v=qshYWhJEPhM",
+      "videoId": "qshYWhJEPhM",
+      "channel": {
+        "name": "친절한 시사반장",
+        "url": "https://www.youtube.com/@kind_banjang"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 53.0,
+      "viewCount": 1996,
+      "transcript": ""
+    },
+    {
+      "title": "“도대체 지금까지 뭘 하고 있었냐…”“쿠팡, 3천만명 털렸다” 전 국민 분노!3300만 계정 유출… “당신 정보도 이미 새었다”쿠팡 대참사! 사실상 전 고객 털림해외 해커 5개월간",
+      "url": "https://www.youtube.com/watch?v=SKorAUpjN-U",
+      "link": "https://www.youtube.com/watch?v=SKorAUpjN-U",
+      "videoId": "SKorAUpjN-U",
+      "channel": {
+        "name": "하루한컷",
+        "url": "https://www.youtube.com/@하루한컷Q"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 48.0,
+      "viewCount": 9,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 4,
+  "google_articles": [
+    {
+      "title": "쿠팡 개인정보 유출 피해자 3370만명…경찰 “모든 가능성 열고 추적”",
+      "url": "https://v.daum.net/v/20251129221622075",
+      "snippet": "13시간 전 ... 앞서 쿠팡은 이날 개인 정보가 무단으로 노출된 고객 계정 수가 3370만개로 확인됐다고 밝혔다. 지난 18일 쿠팡 쪽이 밝힌 노출 계정 4500개의 7500배 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "유통 - 머니S",
+      "url": "https://www.moneys.co.kr/circulation",
+      "snippet": "... 개인정보 유출 규모가 당초 발표한 4500명이 아닌 3370만명. \"4500개인 줄 알았는데\"… 쿠팡 개인정보 유출 '3370만개'(상보) · plus 아이콘. 쿠팡, 고객 4500명 개인정보 ...",
+      "displayLink": "www.moneys.co.kr"
+    },
+    {
+      "title": "\"4500개인 줄 알았는데\"… 쿠팡 개인정보 유출 '3370만개'(상보)",
+      "url": "https://v.daum.net/v/20251129181238327",
+      "snippet": "17시간 전 ... 쿠팡 회원 3370만명의 개인정보가 유출되는 대규모 보안 사고가 발생했다. 회사는 즉각 사과하고 추가 피해 방지를 위한 대응에 나섰다.",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "5층 방어막 전부 뚫렸다고?···쿠팡 \"내부자 단독\" 해명 기술적으로 ...",
+      "url": "https://www.womaneconomy.co.kr/news/articleViewAmp.html?idxno=246007",
+      "snippet": "5시간 전 ... 초기 발표에서는 4500명 유출이라고 했으나 열흘 만에 3370만명으로 정정 ... 쿠팡은 11월 18일 4500건 유출 사실을 개인정보위·KISA에 즉시 ...",
+      "displayLink": "www.womaneconomy.co.kr"
+    },
+    {
+      "title": "[속보] 쿠팡 “계정 3370만개 개인정보 노출”…'전 고객급' 유출 확인",
+      "url": "https://v.daum.net/v/20251129183247547",
+      "snippet": "17시간 전 ... 이름·이메일 주소·배송지 주소·배송지 전화번호 노출 결제정보·신용카드 번호·로그인 정보 등은 노출 안돼. △ 쿠팡 [연합뉴스 자료사진] ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "쿠팡 고객정보 3370만건 노출…“4500건” 발표 12일 만에 뒤집혀",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092151942",
+      "snippet": "15시간 전 ... 쿠팡 고객의 개인정보가 대규모로 노출됐다. 당초 쿠팡은 약 4500개 계정 정보가 노출됐다고 발표했으나 후속 조사에서 노출 규모가 약 3370만 계정 ...",
+      "displayLink": "it.chosun.com"
+    },
+    {
+      "title": "쿠팡, 3370만 계정 개인정보 '대량 유출'…사실상 전 회원 다 털렸다 ...",
+      "url": "http://www.dtoday.co.kr/news/articleView.html?idxno=741534",
+      "snippet": "7시간 전 ... [일간투데이 정현석 기자] 국내 최대 이커머스 기업 쿠팡에서 사상 초유의 개인정보 유출 사고가 발생했다. 당초 4천500명 수준으로 알려졌던 피해 ...",
+      "displayLink": "www.dtoday.co.kr"
+    },
+    {
+      "title": "쿠팡, 3370만명 개인정보 유출 확인…정부, 30일부터 민관합동조사단 ...",
+      "url": "https://news.nate.com/view/20251130n00134",
+      "snippet": "11시간 전 ... ... 쿠팡][이코노믹데일리] 국내 최대 이커머스 기업 쿠팡에서 3370만건에 달하는 개인정보 유출 사고가 발생했다. 당초 알려진 4500여 건에서 무려 7500 ...",
+      "displayLink": "news.nate.com"
+    },
+    {
+      "title": "쿠팡, 개인정보 계정 3370만개 노출",
+      "url": "https://www.asiatime.co.kr/article/20251129500032",
+      "snippet": "15시간 전 ... 이름·이메일·배송지·전화번호 등 사실상 대부분 고객데이터 유출 “사칭 전화, 문자 등 주의 요청” [아시아타임즈=이하영 기자] 쿠팡의 고객 정보 노출 ...",
+      "displayLink": "www.asiatime.co.kr"
+    },
+    {
+      "title": "쿠팡 대규모 개인정보 유출…3370만 계정 노출 - 디지털데일리",
+      "url": "https://www.ddaily.co.kr/m/page/view/2025112919181903644",
+      "snippet": "16시간 전 ... 초기 발표 대비 7500배 증가한 규모다. 쿠팡에 따르면 노출된 정보는 △이름 △이메일 주소 △배송지 주소록(이름·전화번호·주소) △일부 주문 정보 등 ...",
+      "displayLink": "www.ddaily.co.kr"
+    }
+  ],
+  "google_count": 10
+}
