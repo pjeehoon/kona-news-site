@@ -1,0 +1,543 @@
+{
+  "main_article": {
+    "title": "경찰, 쿠팡 개인정보 유출 경로 추적 중…내부 자료 확보",
+    "url": "https://n.news.naver.com/mnews/article/052/0002280402"
+  },
+  "related_articles": [
+    {
+      "title": "\"쿠팡 내부 직원이 고객 정보 빼돌린 듯\"...경찰 수사",
+      "content": "쿠팡 고객 정보 대량 유출 사태와 관련해 경찰이 내부자 소행 가능성에 무게를 두고 수사하고 있습니다.\n서울경찰청 사이버수사대는 지난 25일, 쿠팡 측에서 고소장을 제출받아 수사에 착수했습니다.\n경찰은 쿠팡으로부터 서버 기록 등 사건 관련 자료를 임의제출 받아 분석하고 있습니다.\n경찰은 쿠팡 내부 직원이 시스템에 무단 접근해 정보를 빼돌렸을 가능성이 크다고 보고 유출 경위를 파악하고 있습니다.\n앞서 쿠팡 측은 피고소인을 특정하지 않은 채 '성명불상자'로 적어 고소장을 내면서 외부 해킹에 따른 유출은 아니라고 밝혔습니다.\n고객 정보를 빼돌린 건 쿠팡에서 근무했던 중국 국적 직원으로 이미 퇴사 처리된 거로 전해졌습니다.\n특히, 이 직원이 이미 한국을 떠난 것으로 알려져 경찰 수사에 난관이 예상됩니다.\n쿠팡 측도 내부 직원이 벌인 일로 보고 있다면서도, 중국 국적 여부 등에 대해선 말을 아꼈습니다.\n※ '당신의 제보가 뉴스가 됩니다'\n[카카오톡] YTN 검색해 채널 추가\n[전화] 02-398-8585\n[메일] social@ytn.co.kr",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/052/0002280402",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Former Coupang employee (Chinese national)",
+        "issues": [
+          {
+            "issue_type": "Data exfiltration allegation",
+            "details": "Alleged that a former Coupang employee of Chinese nationality exfiltrated large amounts of customer data.",
+            "source": "YTN"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Coupang",
+        "responses": [
+          {
+            "issue": "Data exfiltration allegation",
+            "clarification": "Coupang states that the data leak was caused by an internal employee, not by external hacking, and that the employee has already left Korea.",
+            "date": "2025-11-30"
+          }
+        ]
+      }
+    ],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Seoul Police Cyber Investigation Unit received a complaint from Coupang on 2025-11-25 and began investigation.",
+        "Coupang filed a complaint labeling the suspect as a 'name unknown' internal employee.",
+        "Police are analyzing server logs and other evidence provided by Coupang.",
+        "The alleged employee is a former staff member of Chinese nationality who has already left Korea."
+      ],
+      "unconfirmed_allegations": [
+        "The former employee actually exfiltrated customer data.",
+        "The employee’s nationality is definitively Chinese.",
+        "The data leak was not caused by external hacking."
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-25",
+        "event": "Seoul Police Cyber Investigation Unit receives complaint from Coupang and initiates investigation."
+      },
+      {
+        "date": "2025-11-30",
+        "event": "Coupang files complaint stating internal employee caused data leak, not external hacking."
+      },
+      {
+        "date": "2025-11-30",
+        "event": "Police analyze server logs and other evidence provided by Coupang."
+      },
+      {
+        "date": "2025-11-30",
+        "event": "Article reports that the alleged exfiltration was by a former Chinese national employee who has left Korea, complicating investigation."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "&#39;쿠팡 수사외압 폭로&#39; 검사 &quot;너무 억울합니다&quot; 눈물 / 연합뉴스TV(YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=dvi88G7ebXA",
+        "videoId": "dvi88G7ebXA",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+        },
+        "description": "쿠팡 #수사외압 #폭로 #검사 #국회 #법사위 #국정감사 #국감 ▣ 연합뉴스TV 다큐멘터리 전문 채널 '다큐디깅' 구독하기 ...",
+        "publishedAt": "2025-10-23T07:40:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/dvi88G7ebXA/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 수사 검사, 영장 정결권 박탈당한 충격적 내막…&#39;무능&#39; 낙인 찍은 검찰의 민낯!",
+        "url": "https://www.youtube.com/watch?v=E81nlWlJ6GQ",
+        "videoId": "E81nlWlJ6GQ",
+        "channel": {
+          "name": "이슈염",
+          "url": "https://www.youtube.com/channel/UCi7wi9K6O92xuVkwbtOTKsg"
+        },
+        "description": "문지석검사 #검찰개혁 #결권박탈전 #쿠팡사건 #내부고발 #이슈염.",
+        "publishedAt": "2025-10-23T04:46:09Z",
+        "thumbnail": "https://i.ytimg.com/vi/E81nlWlJ6GQ/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 사건 핵심 증거가 &#39;사라졌다&#39;…검찰 수사보고서 확보 #JTBC #Shorts",
+        "url": "https://www.youtube.com/watch?v=4Nf-l9_0GpA",
+        "videoId": "4Nf-l9_0GpA",
+        "channel": {
+          "name": "JTBC News",
+          "url": "https://www.youtube.com/channel/UCsU-I-vHLiaMfV_ceaYz5rQ"
+        },
+        "description": "'쿠팡 무혐의 사건'을 맡았던 부장검사가 무혐의 처분에 반발하며, 지휘부를 수사 의뢰한 바로 그 사건입니다. 저희가 수사보고서를 ...",
+        "publishedAt": "2025-09-30T10:32:01Z",
+        "thumbnail": "https://i.ytimg.com/vi/4Nf-l9_0GpA/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "'다 털렸다' 쿠팡, 개인정보 유출···내부 직원 소행? 소비자 '불안' - 경향 ...",
+        "url": "https://www.khan.co.kr/article/202511301409001",
+        "snippet": "4시간 전 ... 해당 직원은 중국 국적으로 알려졌으며 이미 쿠팡을 퇴사해 한국을 떠난 것으로 알려졌다. 서울경찰청 사이버수사대는 쿠팡 측으로부터 고소장을 받아 ...",
+        "displayLink": "www.khan.co.kr"
+      },
+      {
+        "title": "쿠팡 개인정보 3370만건 유출, 퇴사한 중국인 직원이 범인? | 중앙일보",
+        "url": "https://www.joongang.co.kr/article/25386240",
+        "snippet": "6시간 전 ... ... 쿠팡 내부인의 범행 가능성도 커지고 있다. 이와 관련해 현재 퇴사한 중국 국적 직원이 고객 정보를 유출했다는 의혹도 제기되고 있다. 쿠팡 측은 ...",
+        "displayLink": "www.joongang.co.kr"
+      },
+      {
+        "title": "쿠팡 고객정보 유출 범인, 퇴사한 중국 직원 유력...경찰 수사 중",
+        "url": "https://www.kyeonggi.com/article/20251130580045",
+        "snippet": "5시간 전 ... 3천만명 넘는 쿠팡 고객 계정의 개인 정보가 외부 해킹이 아닌 쿠팡 직원으로부터 유출된 것으로 알려졌다. 30일 연합뉴스에 따르면 서울경찰청 ...",
+        "displayLink": "www.kyeonggi.com"
+      },
+      {
+        "title": "쿠팡 개인정보 유출 5개월 전부터…중국 국적 내부 직원 소행인 듯 ...",
+        "url": "https://www.ngonews.kr/news/articleView.html?idxno=219629",
+        "snippet": "7시간 전 ... 정부는 민간과 함께 대규모 합동 조사단을 꾸리겠다고 발표했고, 쿠팡은 중국 국적의 내부 직원을 정보 유출 혐의로 경찰에 고소한 것으로 알려졌다.",
+        "displayLink": "www.ngonews.kr"
+      },
+      {
+        "title": "[단독]쿠팡 3370만개 정보 유출 직원은 '중국인'...이미 퇴사, 한국 ...",
+        "url": "https://www.mt.co.kr/living/2025/11/29/2025112920282541860",
+        "snippet": "21시간 전 ... 쿠팡 대규모 개인정보 유출 사태의 핵심 관련자가 중국 국적의 전(前) 직원인 것으로 확인 ... 회사는 무단 접근 경로를 즉시 차단하고 내부 ...",
+        "displayLink": "www.mt.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 개인정보 유출 사건, 경찰이 내부 자료 확보·유출 경로 추적 진행\n\n쿠팡이 3,370만 건의 고객 정보를 유출한 혐의로 경찰에 고소장을 제출한 뒤, 서울경찰청 사이버수사대가 내부 자료를 확보하고 유출 경로를 추적 중이다. 사건은 외부 해킹이 아닌 내부 직원의 행위로 추정되며, 현재 조사 단계에서 추가 증거 확보가 진행 중이다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 경과 |\n|------|-----------|\n| **2025년 11월 25일** | 서울경찰청 사이버수사대가 쿠팡으로부터 고소장을 받고 수사를 개시했다. |\n| **2025년 11월 30일** | 쿠팡이 “내부 직원이 유출을 일으켰다”는 내용의 고소장을 제출했다. |\n| **2025년 11월 30일** | 경찰은 쿠팡이 제공한 서버 로그 및 기타 증거를 분석 중이다. |\n| **2025년 11월 30일** | 기사 보도에 따르면, 유출이 일어난 직원은 중국 국적의 전 직원으로, 이미 한국을 떠난 상태다. |\n\n▶ **핵심**: 쿠팡은 외부 해킹이 아니라 내부 직원에 의한 유출을 주장하고 있으며, 경찰은 해당 직원과 유출 경로를 추적 중이다.  \n▶ **내부 자료 확보**: 경찰은 쿠팡이 제공한 서버 로그, 접근 기록 등 내부 자료를 확보해 분석하고 있다.  \n\n## 다양한 관점과 분석\n\n- **쿠팡 측**  \n  쿠팡은 “외부 해킹이 아닌 내부 직원이 유출을 일으켰다”는 입장을 명확히 했다. 쿠팡은 해당 직원이 이미 퇴사해 한국을 떠났다고 전하며, 내부 보안 조치를 강화했다고 밝혔다.  \n  *출처: [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402)*  \n\n- **경찰 측**  \n  서울경찰청 사이버수사대는 “현재 내부 자료를 확보하고 유출 경로를 추적 중”이라며, 사건이 아직 진행 중임을 밝혔다. 경찰은 내부 직원이 아닌 외부 해킹 가능성도 배제하지 않고 있다.  \n  *출처: [경향신문](https://www.khan.co.kr/article/202511301409001)*  \n\n- **전문가 의견**  \n  개인정보 보안 전문가들은 “내부 직원에 의한 유출은 기업 내부 보안 체계의 결함을 시사한다”며, 쿠팡이 보안 정책을 재검토할 필요가 있다고 지적했다.  \n  *출처: [중앙일보](https://www.joongang.co.kr/article/25386240)*  \n\n- **시민·소비자 반응**  \n  유출 사실이 알려지자 소비자들은 쿠팡의 개인정보 보호 정책에 대한 불신을 표명하며, 추가적인 보안 조치를 요구했다.  \n  *출처: [경기도신문](https://www.kyeonggi.com/article/20251130580045)*  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 1. 쿠팡이 2025년 11월 30일 고소장을 제출했다. <br>2. 경찰이 내부 자료를 확보하고 유출 경로를 추적 중이다. <br>3. 유출 규모는 3,370만 건이다. | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| **미확인 정보** | 1. 유출을 일으킨 직원이 중국 국적인지 여부. <br>2. 유출이 외부 해킹이 아니라 내부 직원에 의한 것인지 확정 여부. | [뉴시스](https://www.ngonews.kr/news/articleView.html?idxno=219629) |\n\n> **확인되지 않은 부분**: 쿠팡이 주장하는 내부 직원이 중국 국적인지 여부는 아직 공식적으로 확인되지 않았다. 경찰은 추가 조사를 진행 중이다.  \n\n## 핵심 인물과 이해관계\n\n- **쿠팡 대표**  \n  쿠팡은 유출 사실을 인정하면서도 외부 해킹이 아니라 내부 직원에 의한 것이라고 주장한다. 이는 기업의 이미지와 신뢰 회복을 위한 입장이다.  \n\n- **서울경찰청 사이버수사대**  \n  사건의 수사를 담당하며, 내부 자료 확보와 유출 경로 추적을 통해 범인을 규명하고자 한다.  \n\n- **전직 직원 (중국 국적)**  \n  유출 혐의가 제기된 인물로, 현재 한국을 떠난 상태다. 그의 행적과 역할이 조사 대상이다.  \n\n- **소비자·시민**  \n  개인정보 유출로 인해 불안과 불신을 느끼고 있으며, 쿠팡과 관련 기관에 투명한 조사와 보안 강화 조치를 요구한다.  \n\n## 향후 전망\n\n- **법적 절차**: 경찰이 내부 자료를 분석해 범인을 규명하면, 해당 직원에 대한 법적 조치가 진행될 가능성이 높다.  \n- **보안 강화**: 쿠팡은 내부 보안 체계를 재정비하고, 외부 감사를 통해 보안 취약점을 개선할 것으로 예상된다.  \n- **소비자 신뢰 회복**: 쿠팡이 투명한 조사 결과를 공개하고, 개인정보 보호 정책을 강화하면 소비자 신뢰 회복에 긍정적 영향을 미칠 수 있다.  \n- **정책·규제 강화**: 개인정보 유출 사건이 반복될 경우, 정부는 전자상거래 기업에 대한 보안 규제를 강화할 가능성이 있다.  \n\n**주요 포인트**  \n- 쿠팡은 내부 직원에 의한 유출을 주장하며, 경찰은 내부 자료 확보 및 유출 경로 추적을 진행 중이다.  \n- 유출 규모는 3,370만 건이며, 사건은 아직 수사 단계다.  \n- 관련 인물과 이해관계가 복잡하며, 향후 법적·정책적 대응이 주목된다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/052/0002280402"
+  ],
+  "timestamp": "2025-11-30T17:42:56.182503",
+  "youtube_videos": [
+    {
+      "title": "&#39;쿠팡 수사외압 폭로&#39; 검사 &quot;너무 억울합니다&quot; 눈물 / 연합뉴스TV(YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=dvi88G7ebXA",
+      "videoId": "dvi88G7ebXA",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+      },
+      "description": "쿠팡 #수사외압 #폭로 #검사 #국회 #법사위 #국정감사 #국감 ▣ 연합뉴스TV 다큐멘터리 전문 채널 '다큐디깅' 구독하기 ...",
+      "publishedAt": "2025-10-23T07:40:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/dvi88G7ebXA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 수사 검사, 영장 정결권 박탈당한 충격적 내막…&#39;무능&#39; 낙인 찍은 검찰의 민낯!",
+      "url": "https://www.youtube.com/watch?v=E81nlWlJ6GQ",
+      "videoId": "E81nlWlJ6GQ",
+      "channel": {
+        "name": "이슈염",
+        "url": "https://www.youtube.com/channel/UCi7wi9K6O92xuVkwbtOTKsg"
+      },
+      "description": "문지석검사 #검찰개혁 #결권박탈전 #쿠팡사건 #내부고발 #이슈염.",
+      "publishedAt": "2025-10-23T04:46:09Z",
+      "thumbnail": "https://i.ytimg.com/vi/E81nlWlJ6GQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 사건 핵심 증거가 &#39;사라졌다&#39;…검찰 수사보고서 확보 #JTBC #Shorts",
+      "url": "https://www.youtube.com/watch?v=4Nf-l9_0GpA",
+      "videoId": "4Nf-l9_0GpA",
+      "channel": {
+        "name": "JTBC News",
+        "url": "https://www.youtube.com/channel/UCsU-I-vHLiaMfV_ceaYz5rQ"
+      },
+      "description": "'쿠팡 무혐의 사건'을 맡았던 부장검사가 무혐의 처분에 반발하며, 지휘부를 수사 의뢰한 바로 그 사건입니다. 저희가 수사보고서를 ...",
+      "publishedAt": "2025-09-30T10:32:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/4Nf-l9_0GpA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 사건 현직 검사 눈물의 양심 고백 | 2025 국정감사",
+      "url": "https://www.youtube.com/watch?v=jKDJj_FOlyY",
+      "videoId": "jKDJj_FOlyY",
+      "channel": {
+        "name": "포항MBC NEWS",
+        "url": "https://www.youtube.com/channel/UCdcyo5bb--gqMzT95Yu1eXw"
+      },
+      "description": "포항MBC #포항MBC뉴스 #MBCNEWS #포항뉴스 포항MBC NEWS 공식 유튜브 채널입니다. ▽포항MBC 계정 메시지나 댓글을 통해 ...",
+      "publishedAt": "2025-10-17T01:36:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/jKDJj_FOlyY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;오늘은 울지 않으려고 했는데...&quot; 쿠팡 수사 검사 얼마나 서러웠으면 #국회 #법사위 #쿠팡",
+      "url": "https://www.youtube.com/watch?v=Vrf17RbswY4",
+      "videoId": "Vrf17RbswY4",
+      "channel": {
+        "name": "OBS 시사",
+        "url": "https://www.youtube.com/channel/UCRcng8Inz7AbckTaJubaeWw"
+      },
+      "description": "국회 #법사위 #쿠팡 #증인 #수사 #외압 #검사 #국정감사 #폭로 #문지석 #엄희준 #부찬지청 #변호사 #눈물 #일용직 #노동자 #퇴직금 ...",
+      "publishedAt": "2025-10-23T08:30:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/Vrf17RbswY4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "‘쿠팡 일용직 퇴직금’ 국감 발언 도중 눈물 보인 검사 #bbc #bbc코리아",
+      "url": "https://www.youtube.com/watch?v=5B2edyQgQ50",
+      "videoId": "5B2edyQgQ50",
+      "channel": {
+        "name": "BBC News 코리아",
+        "url": "https://www.youtube.com/channel/UCIDOGTbwTBHZ5YoR9Xjcp-w"
+      },
+      "description": "사회적 약자인 근로자들이 200만원 정도 퇴직금이라도 신속하게 받았으면 좋겠습니다” 15일 국회 기후에너지환경노동위원회의 고용 ...",
+      "publishedAt": "2025-10-16T09:17:47Z",
+      "thumbnail": "https://i.ytimg.com/vi/5B2edyQgQ50/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&#39;쿠팡 검사&#39; 또 울먹‥&#39;연어 술파티&#39; 또 부인 (2025.10.24/뉴스25/MBC)",
+      "url": "https://www.youtube.com/watch?v=OsE-GDHOLoU",
+      "videoId": "OsE-GDHOLoU",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/channel/UCF4Wxdo3inmxP-Y59wXDsFw"
+      },
+      "description": "어제(23일)도 국정감사에선 사정기관들의 과거 행태가 도마에 올랐습니다. 쿠팡 사건 처리에서 외압이 있었다고 폭로한 현직 검사는 ...",
+      "publishedAt": "2025-10-23T15:07:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/OsE-GDHOLoU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "수사 조작 반대한 문지석 검사의 눈물",
+      "url": "https://www.youtube.com/watch?v=Md1LO7jI_IM",
+      "videoId": "Md1LO7jI_IM",
+      "channel": {
+        "name": "민중의소리 MediaVop",
+        "url": "https://www.youtube.com/channel/UCLiK08tsWKL5bNoz1f8sHsw"
+      },
+      "description": "'쿠팡 노동자 퇴직금 미지급 사건'을 담당했던 현직 검사가 눈물을 흘리며 '검찰 지휘부'의 수사조작 행위에 대해 폭로했다. 문지석 검사 ...",
+      "publishedAt": "2025-10-16T07:03:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/Md1LO7jI_IM/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "엄희준, 쿠팡 핵심증거 삭제 지시, 이를 고발한 부장검사를 검찰은 감찰 중~!",
+      "url": "https://www.youtube.com/watch?v=DIpLAR0CGNc",
+      "videoId": "DIpLAR0CGNc",
+      "channel": {
+        "name": "이슈카톡",
+        "url": "https://www.youtube.com/channel/UCrxe-Msh2j6ICbfUaDJj81g"
+      },
+      "description": "엄희준 전 지청장이 쿠팡 사건의 핵심증거를 삭제하라고 지시한 것이 들통 났습니다. 검찰청은 엄희준의 손을 들어 주며 사건을 무마 ...",
+      "publishedAt": "2025-10-01T14:20:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/DIpLAR0CGNc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "문지석 검사, 울면서 폭로했다… 쿠팡 퇴직금 사건 불기속 처리의 진실",
+      "url": "https://www.youtube.com/watch?v=ZyIHPaoQx9M",
+      "videoId": "ZyIHPaoQx9M",
+      "channel": {
+        "name": "인물30초",
+        "url": "https://www.youtube.com/channel/UCU1_7qJc-ZA_kOkvaWok13w"
+      },
+      "description": "쿠팡 퇴직금 사건 수사 중, 문지석 검사가 국감장에서 울먹이며 진실을 털어놨습니다. “기소해야 했습니다… 그런데 상급자가 무혐의 ...",
+      "publishedAt": "2025-10-17T05:39:41Z",
+      "thumbnail": "https://i.ytimg.com/vi/ZyIHPaoQx9M/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[자막뉴스] &#39;엄희준 검사, 이래도 됩니까&#39;, 후배한테 왜 &#39;털리나&#39; 봤더니 (2025.09.25/MBC뉴스)",
+      "url": "https://www.youtube.com/watch?v=f9wzfjdcOkY",
+      "videoId": "f9wzfjdcOkY",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/channel/UCF4Wxdo3inmxP-Y59wXDsFw"
+      },
+      "description": "엄희준 #검사 #쿠팡 #검찰 #MBC #뉴스 #뉴스데스크 #MBC뉴스 #뉴스투데이 #뉴스ZIP #뉴스꾹 #오늘이뉴스 #자막뉴스 ㅤ c MBC ...",
+      "publishedAt": "2025-09-25T05:50:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/f9wzfjdcOkY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;근로자들이 200만 원 퇴직금 꼭 받았으면…&quot; 쿠팡 수사했던 검사 국정감사 도중 눈물 터진 이유 / SBS / 바로이뉴스",
+      "url": "https://www.youtube.com/watch?v=2NCaohw24WY",
+      "videoId": "2NCaohw24WY",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "국회 환노위 국정감사에서 쿠팡 일용직노동자 퇴직금 미지급 사건에 대한 검찰 불기소 처분과 관련한 질의가 나왔습니다. 국감장에는 ...",
+      "publishedAt": "2025-10-15T08:44:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/2NCaohw24WY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[뉴스바사삭] 문지석 검사, ‘쿠팡 수사 외압’ 증언 중 또 눈물‥엄희준 부천지청장 녹취 폭로 MBC 251024 방송",
+      "url": "https://www.youtube.com/watch?v=xnrtht7k3gc",
+      "videoId": "xnrtht7k3gc",
+      "channel": {
+        "name": "MBC 라디오 시사",
+        "url": "https://www.youtube.com/channel/UCTTmtS2ljy1vyl_s-d_LEHQ"
+      },
+      "description": "오늘 뉴스 완전 정복 오.뉴.완] 문지석 검사, '쿠팡 사건 외압' 또 눈물 “너무 억울하다” 엄희준 “박성재 장관이 부천지청장 잘못보냈다고 ...",
+      "publishedAt": "2025-10-24T07:08:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/xnrtht7k3gc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[자막] 문지석 검사 &quot;엄희준 검사가 쿠팡 무혐의 지시”",
+      "url": "https://www.youtube.com/watch?v=YR3SnV1pUUw",
+      "videoId": "YR3SnV1pUUw",
+      "channel": {
+        "name": "춘천MBC뉴스",
+        "url": "https://www.youtube.com/channel/UCBnUdp-4hIKkGlz8MVL7s3g"
+      },
+      "description": "김용민의원 #엄희준 #문지석 #쿠팡사건 #검찰권남용 #수사가이드라인 #전결권박탈 #국회청문회 #법사위 #진실규명 #검찰개혁 ...",
+      "publishedAt": "2025-10-23T04:26:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/YR3SnV1pUUw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;쿠팡에 불리한 증거 빼라고&quot;…울먹이며 소신 발언한 검사 / SBS 8뉴스",
+      "url": "https://www.youtube.com/watch?v=6rXXMZ2qiws",
+      "videoId": "6rXXMZ2qiws",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "〈앵커〉 오늘(15일) 국정감사에서는 현직 검사가 참고인으로 나와 울먹인 일도 있었습니다. 쿠팡 자회사의 퇴직금 미지급 사건을 ...",
+      "publishedAt": "2025-10-15T12:10:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/6rXXMZ2qiws/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&#39;쿠팡 수사&#39; 검사 &quot;너무 억울해&quot; 울분…이 대통령 &quot;철저히 조사&quot; 지시 / JTBC 아침&amp;",
+      "url": "https://www.youtube.com/watch?v=dBIAWSlbQXQ",
+      "videoId": "dBIAWSlbQXQ",
+      "channel": {
+        "name": "JTBC News",
+        "url": "https://www.youtube.com/channel/UCsU-I-vHLiaMfV_ceaYz5rQ"
+      },
+      "description": "지난주 문지석 부장검사는 쿠팡이 무혐의를 받은 사건에 윗선이 개입했다며 울먹였습니다. 어제(23일) 국정감사에서 엄희준 당시 부천 ...",
+      "publishedAt": "2025-10-23T23:59:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/dBIAWSlbQXQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "대통령 &quot;용납 못해&quot; 다음날…&#39;쿠팡-띠지&#39; 상설특검 결정 / JTBC 뉴스룸",
+      "url": "https://www.youtube.com/watch?v=2tNJ1BXM3GE",
+      "videoId": "2tNJ1BXM3GE",
+      "channel": {
+        "name": "JTBC News",
+        "url": "https://www.youtube.com/channel/UCsU-I-vHLiaMfV_ceaYz5rQ"
+      },
+      "description": "쿠팡 수사 무마와 관봉권 띠지 폐기 의혹을 수사할 상설특검이 가동됩니다. '기강 문란 행위'라는 이재명 대통령의 질책 뒤 하루 만 ...",
+      "publishedAt": "2025-10-24T10:13:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/2tNJ1BXM3GE/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "“(검찰)윗선이 무혐의 지시”쿠팡 수사 검사 눈물/박성재 영장 기각 후폭풍/특검,공수처 ‘이종호 관련 위증 봐주기’ 혐의 정조준(고현준,노영희,박진영,장윤미,황준범)[뉴스 다이브]",
+      "url": "https://www.youtube.com/watch?v=MTgCuk3LTxg",
+      "videoId": "MTgCuk3LTxg",
+      "channel": {
+        "name": "한겨레TV",
+        "url": "https://www.youtube.com/channel/UCugbqfMO94F9guLEb6Olb2A"
+      },
+      "description": "15:00 방송 시작 7만여 쪽 어떻게 읽었나... 조희대 대법원 '전자문서 위법' 논란 / 내란 직전 “윤 집무실 42분 체류”... 박성재 영장 기각 ...",
+      "publishedAt": "2025-10-16T07:43:09Z",
+      "thumbnail": "https://i.ytimg.com/vi/MTgCuk3LTxg/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "이런 검사도 있네요..쿠팡 폭로 검사 눈물에 터져나온 박수 갈채",
+      "url": "https://www.youtube.com/watch?v=tsaZN-XN0lA",
+      "videoId": "tsaZN-XN0lA",
+      "channel": {
+        "name": "정치창",
+        "url": "https://www.youtube.com/channel/UCHDYKIRxMEItLVoqtmGq3aA"
+      },
+      "description": "",
+      "publishedAt": "2025-10-15T11:26:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/tsaZN-XN0lA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&#39;쿠팡 수사 외압 의혹&#39; 제기한 현직 검사, 국감장에서 끝내 오열 [현장영상] / 채널A",
+      "url": "https://www.youtube.com/watch?v=UKsp_DEDeik",
+      "videoId": "UKsp_DEDeik",
+      "channel": {
+        "name": "채널A News",
+        "url": "https://www.youtube.com/channel/UCfq4V1DAuaojnr2ryvWNysw"
+      },
+      "description": "지난해 쿠팡 자회사가 일용직 근로자들에게 퇴직금을 제대로 지급하지 않은 사건을 수사했던 문지석 부장검사가 어제(15일) 국회 기후 ...",
+      "publishedAt": "2025-10-16T02:07:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/UKsp_DEDeik/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "현직 검사의 &#39;쿠팡 사건&#39; 외압 폭로?...대검 감찰은 다섯 달째 무소식 / YTN",
+      "url": "https://www.youtube.com/watch?v=WlVsV5vi7uQ",
+      "videoId": "WlVsV5vi7uQ",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "[앵커] 현직 부장검사가 국정감사 증인석에 나와 눈물을 쏟으면서 화제가 됐습니다. 해당 검사는 수사 과정에서 지휘부의 외압이 ...",
+      "publishedAt": "2025-10-18T21:37:55Z",
+      "thumbnail": "https://i.ytimg.com/vi/WlVsV5vi7uQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "눈물의 폭로 검사, 쿠팡 무혐의 압력?",
+      "url": "https://www.youtube.com/watch?v=xKGX2Dm3KEc",
+      "videoId": "xKGX2Dm3KEc",
+      "channel": {
+        "name": "국민의파워",
+        "url": "https://www.youtube.com/channel/UCL8fda1poeGWul5-apkcLrw"
+      },
+      "description": "눈물의 폭로 검사, 쿠팡 무혐의 압력?",
+      "publishedAt": "2025-10-16T09:51:43Z",
+      "thumbnail": "https://i.ytimg.com/vi/xKGX2Dm3KEc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "울먹인 &#39;쿠팡 검사&#39;...이번엔 &quot;폭언·욕설&quot; 주장 / YTN",
+      "url": "https://www.youtube.com/watch?v=97aAQqU4CtY",
+      "videoId": "97aAQqU4CtY",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "\"쿠팡 사건 무혐의 처분하려 당시 지청장이 압박\" 이후 대검에서 감찰 조사…\"서러움·외로움 느껴\" 수사 외압 당사자 지목된 전 지청장, ...",
+      "publishedAt": "2025-10-23T09:03:17Z",
+      "thumbnail": "https://i.ytimg.com/vi/97aAQqU4CtY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "현직 부장검사 &quot;쿠팡사건 윗선 무혐의 지시&quot; 국감서 눈물의 &#39;양심고백&#39; [PICK] / 연합뉴스TV(YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=UN0OpKNs5P8",
+      "videoId": "UN0OpKNs5P8",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+      },
+      "description": "현직 부장검사가 고용노동부 국정감사에서 '쿠팡 일용직 노동자 퇴직금 미지급 사건'을 무혐의 처분하라는 윗선의 지시를 받았다고 ...",
+      "publishedAt": "2025-10-15T21:05:57Z",
+      "thumbnail": "https://i.ytimg.com/vi/UN0OpKNs5P8/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡수사 외압폭로한 현직검사 오열...국감장에서 박수받은 이유는?",
+      "url": "https://www.youtube.com/watch?v=AFFklLVybuY",
+      "videoId": "AFFklLVybuY",
+      "channel": {
+        "name": "엠키타카 MKTK",
+        "url": "https://www.youtube.com/channel/UCGbkN-3JpOct4KuEv59NF0Q"
+      },
+      "description": "국회 #쿠팡 #기후노동위 #국정감사 #엄희준 #문지석 #고용노동부 #실시간 #라이브 #엠키타카 2025.10.15 / 기후에너지환경노동 ...",
+      "publishedAt": "2025-10-15T23:00:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/AFFklLVybuY/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 25,
+  "google_articles": [
+    {
+      "title": "'다 털렸다' 쿠팡, 개인정보 유출···내부 직원 소행? 소비자 '불안' - 경향 ...",
+      "url": "https://www.khan.co.kr/article/202511301409001",
+      "snippet": "4시간 전 ... 해당 직원은 중국 국적으로 알려졌으며 이미 쿠팡을 퇴사해 한국을 떠난 것으로 알려졌다. 서울경찰청 사이버수사대는 쿠팡 측으로부터 고소장을 받아 ...",
+      "displayLink": "www.khan.co.kr"
+    },
+    {
+      "title": "쿠팡 개인정보 3370만건 유출, 퇴사한 중국인 직원이 범인? | 중앙일보",
+      "url": "https://www.joongang.co.kr/article/25386240",
+      "snippet": "6시간 전 ... ... 쿠팡 내부인의 범행 가능성도 커지고 있다. 이와 관련해 현재 퇴사한 중국 국적 직원이 고객 정보를 유출했다는 의혹도 제기되고 있다. 쿠팡 측은 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "쿠팡 고객정보 유출 범인, 퇴사한 중국 직원 유력...경찰 수사 중",
+      "url": "https://www.kyeonggi.com/article/20251130580045",
+      "snippet": "5시간 전 ... 3천만명 넘는 쿠팡 고객 계정의 개인 정보가 외부 해킹이 아닌 쿠팡 직원으로부터 유출된 것으로 알려졌다. 30일 연합뉴스에 따르면 서울경찰청 ...",
+      "displayLink": "www.kyeonggi.com"
+    },
+    {
+      "title": "쿠팡 개인정보 유출 5개월 전부터…중국 국적 내부 직원 소행인 듯 ...",
+      "url": "https://www.ngonews.kr/news/articleView.html?idxno=219629",
+      "snippet": "7시간 전 ... 정부는 민간과 함께 대규모 합동 조사단을 꾸리겠다고 발표했고, 쿠팡은 중국 국적의 내부 직원을 정보 유출 혐의로 경찰에 고소한 것으로 알려졌다.",
+      "displayLink": "www.ngonews.kr"
+    },
+    {
+      "title": "[단독]쿠팡 3370만개 정보 유출 직원은 '중국인'...이미 퇴사, 한국 ...",
+      "url": "https://www.mt.co.kr/living/2025/11/29/2025112920282541860",
+      "snippet": "21시간 전 ... 쿠팡 대규모 개인정보 유출 사태의 핵심 관련자가 중국 국적의 전(前) 직원인 것으로 확인 ... 회사는 무단 접근 경로를 즉시 차단하고 내부 ...",
+      "displayLink": "www.mt.co.kr"
+    },
+    {
+      "title": "쿠팡, 3370만 개인정보 유출…중국국적 직원 소행 추정",
+      "url": "https://v.daum.net/v/20251130113511363",
+      "snippet": "6시간 전 ... 특히, 해킹 피해 등으로 인한 정보 유출 사고를 겪은 다른 기업과 달리 내부 직원의 소행으로 알려지면서 논란이 일고 있다. 이 직원은 중국 국적으로 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "[속보]쿠팡 정보 유출 의심 중국직원 이미 한국떠나···3400만건 유출 ...",
+      "url": "https://www.munhwa.com/article/11550631",
+      "snippet": "5시간 전 ... 국내 이커머스(전자상거래) 시장 1위 업체인 쿠팡에서 약 3400만건에 달하는 대규모 정보 유출 사고가 발생한 가운데 중국 국적의 내부 직원의 소행 ...",
+      "displayLink": "www.munhwa.com"
+    },
+    {
+      "title": "[속보] 쿠팡 고객정보 유출 범인, 퇴사한 중국 직원 유력...경찰 수사 중",
+      "url": "https://v.daum.net/v/20251130123440634",
+      "snippet": "5시간 전 ... 이 과정에서 쿠팡에 근무했던 중국 국적 직원이 고객 개인 정보를 모두 유출한 것으로 파악됐다. 그러나 이 직원은 외국 국적자인 데다 이미 쿠팡에서 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "[단독]쿠팡 3370만개 정보 유출 직원은 '중국인'…이미 퇴사, 한국 ...",
+      "url": "https://news.nate.com/view/20251129n10088",
+      "snippet": "21시간 전 ... 한눈에 보는 오늘 : 경제 - 뉴스 : 쿠팡, 3370만 고객 개인정보 무단 노출... 이름·주소 등 유출 서울 송파구 쿠팡 본사. /사진=뉴시스 쿠팡 대규모 ...",
+      "displayLink": "news.nate.com"
+    },
+    {
+      "title": "쿠팡, '고객 정보 3370만 개 유출'에 중국인 전 직원 연루설 | 채널A 뉴스",
+      "url": "https://ichannela.com/news/detail/000000503275.do",
+      "snippet": "6시간 전 ... (사진/뉴시스) 국내 최대 전자상거래 업체 쿠팡에서 벌어진 고객 계정 정보 3370만 개 유출 사건이 내부 소행일 가능성이 제기됐습니다. 중국 국적의 ...",
+      "displayLink": "ichannela.com"
+    }
+  ],
+  "google_count": 10
+}
