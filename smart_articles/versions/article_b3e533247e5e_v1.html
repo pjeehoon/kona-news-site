@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코스피, 이달 외국인 역대 최대로 팔고 개미는 샀다 - 2025-11-30 10:19:45</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,코스피,외국인,개미">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="코스피,외국인,개미">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 10:19:45'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('코스피, 이달 외국인 역대 최대로 팔고 개미는 샀다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>코스피, 이달 외국인 역대 최대로 팔고 개미는 샀다</h1>
+            <p>
+                분석 시간: 2025-11-30 10:19:45
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 외국인 투자자들이 2025년 11월 코스피에서 14조 4560억원을 순매도해 월간 역대 최고 기록을 세웠다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 반면 개인 투자자들은 9조 2870억원을 순매수해 역대 3위 기록을 달성했고, 삼성전자와 SK하이닉스가 매도 주도했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 코스피는 3900선을 하락했으나, 개인 투자자들의 매수세가 시장에 긍정적 신호로 해석돼 장기적 회복 기대가 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/b3e533247e5e.png" 
+                     alt="코스피, 이달 외국인 역대 최대로 팔고 개미는 샀다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 코스피에서 외국인 투자자들이 14조 4560억원을 순매도하며 월간 역대 최고를 기록했다. 반면 개인 투자자들은 9조 2870억원을 순매수해 3위 기록을 달성했다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶</strong> 외국인 투자자들이 2025년 11월 28일까지 코스피에서 <strong>14조 4560억원</strong>을 순매도했다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 이 금액은 2025년 한 달간 월별 역대 최대 기록이며, 2020년 3월 기록인 <strong>12조 5174억원</strong>을 넘어섰다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 외국인 투자자들은 2025년 9월과 10월에 각각 <strong>7조 4000억원</strong>과 <strong>5조 3000억원</strong>을 순매수했다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 외국인 투자자들의 연간 순매도는 <strong>8조 8028억원</strong>이다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> SK하이닉스와 삼성전자가 외국인 순매도의 <strong>76%</strong>를 차지했다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 개인 투자자들은 같은 기간 <strong>9조 2870억원</strong>을 순매수해 역대 3위 기록을 달성했다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 2025년 11월 5일, 외국인 매도세에 코스피가 3900선을 하락했다.<br />
+<em><a href="https://www.mstoday.co.kr/news/articleView.html?idxno=99359" target="_blank">MS투데이</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 11월 6일, 삼성전자는 10만원선을 무너뜨리며 <strong>9만 9200원</strong>에 마감했다.<br />
+<em><a href="https://www.industrynews.co.kr/news/articleView.html?idxno=73945" target="_blank">산업뉴스</a></em></p>
+</li>
+<li>
+<p><strong>▶</strong> 11월 21일, 삼성전자는 <strong>9만 4800원</strong>으로 5.8% 하락, SK하이닉스는 <strong>52만 1000원</strong>으로 8.8% 폭락했다.<br />
+<em><a href="https://www.chosun.com/economy/money/2025/11/21/S5ZLQGXROBDH3ARBHBD7BLYQ4Y/" target="_blank">조선일보</a></em></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>시장 전문가</strong>는 외국인 매도세를 “글로벌 금리 인상·미국 주식 상승에 따른 이익 실현”이라며, 단기적 조정으로 보았다.<br />
+<em><a href="https://www.chosun.com/economy/money/2025/11/21/S5ZLQGXROBDH3ARBHBD7BLYQ4Y/" target="_blank">조선일보</a></em></p>
+</li>
+<li>
+<p><strong>투자자 포럼</strong>에서는 “개미가 반대로 매수하면서 시장에 긍정적 신호”라며, 장기적 성장 기대가 반영된다고 주장했다.<br />
+<em><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>경제학자</strong>는 SK하이닉스와 삼성전자의 급락이 반도체 산업 전반에 미칠 파급효과를 우려하며, “수요 회복이 필요”라고 강조했다.<br />
+<em><a href="https://www.industrynews.co.kr/news/articleView.html?idxno=73945" target="_blank">산업뉴스</a></em></p>
+</li>
+<li>
+<p><strong>규제 당국</strong>은 “공매도 금지·시장 안정 조치” 가능성을 언급하며, 변동성 완화를 위한 방안을 검토 중이라고 밝혔다.<br />
+<em><a href="https://www.youtube.com/watch?v=Et4pPUsCh3o" target="_blank">김PD리딩경제 유튜브</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>외국인 순매도 14조 4560억원, 개인 순매수 9조 2870억원</td>
+<td><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>SK하이닉스·삼성전자 매도 비중 76%</td>
+<td><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 11월 5일 코스피 3900선 하락</td>
+<td><a href="https://www.mstoday.co.kr/news/articleView.html?idxno=99359" target="_blank">MS투데이</a></td>
+</tr>
+<tr>
+<td></td>
+<td>11월 6일 삼성전자 9만 9200원 마감</td>
+<td><a href="https://www.industrynews.co.kr/news/articleView.html?idxno=73945" target="_blank">산업뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>11월 21일 삼성전자 9만 4800원, SK하이닉스 52만 1000원</td>
+<td><a href="https://www.chosun.com/economy/money/2025/11/21/S5ZLQGXROBDH3ARBHBD7BLYQ4Y/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>외국인 매도의 정확한 원인(글로벌 금리 외)</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>규제 당국의 구체적 조치 내용</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>외국인 투자자</strong>: 수익 실현 및 포트폴리오 리밸런싱을 통해 대규모 매도.  </li>
+<li><strong>개인 투자자(개미)</strong>: 매수로 시장에 긍정적 심리 제공, 장기 성장 기대.  </li>
+<li><strong>SK하이닉스·삼성전자</strong>: 매도 비중이 높아 주가에 직접적 영향.  </li>
+<li><strong>한국거래소</strong>: 거래량·가격 변동성 관리 책임.  </li>
+<li><strong>규제 당국</strong>: 시장 안정 및 공정 거래 보장.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>단기</strong>: 외국인 매도세가 지속될 경우 코스피가 3900선 이하로 하락할 가능성.  </li>
+<li><strong>중기</strong>: 반도체 수요 회복이 주가 회복의 핵심. SK하이닉스·삼성전자의 실적 개선이 필요.  </li>
+<li><strong>장기</strong>: 개미 투자자들의 매수가 지속된다면 시장 회복세가 가속화될 수 있음.  </li>
+<li><strong>정책</strong>: 규제 당국이 공매도 금지·시장 안정 조치를 발표하면 변동성이 완화될 전망.</li>
+</ul>
+<p><strong>주요 메시지</strong>: 외국인 매도는 역대 최고 수준이지만, 개인 투자자들의 강력한 매수세가 시장에 균형을 제공하고 있다. 앞으로의 주가 흐름은 글로벌 금리, 반도체 수요, 그리고 규제 정책에 크게 좌우될 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Et4pPUsCh3o" target="_blank">[시장주도 이슈+미국주식]빈살만 640조 네옴시티수주전...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/050/0000099048" target="_blank">외국인, 14조 순매도 '폭탄'...개미들이 줍줍했다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.mstoday.co.kr/news/articleView.html?idxno=99359" target="_blank">외국인, 코스피서 1조5천억 매도…삼성전자·하이닉스 급락 - MS TODAY</a><a href="https://www.industrynews.co.kr/news/articleView.html?idxno=73945" target="_blank">코스피, 외국인 매도에 상승폭 제한…삼성전자 10만원선 무너져 ...</a><a href="https://www.chosun.com/economy/money/2025/11/21/S5ZLQGXROBDH3ARBHBD7BLYQ4Y/" target="_blank">엔비디아 호재는 하루짜리… 외국인 역대 최대 '매도 폭탄'에 코스피 ...</a><a href="https://v.daum.net/v/20251107100440250" target="_blank">외국인, 삼성전자 '역대급 매도'에도…“코스피 6.8조 팔았지만 떠난 건 ...</a><a href="https://www.chosun.com/economy/money/2025/10/28/JTY6BYU44JEQRGHXBB6Q7DWYM4/" target="_blank">개미는 하이닉스, 외인은 삼성전자... 불장에 반대로 쓸어담았다</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
