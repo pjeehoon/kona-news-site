@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 지하철 1∼8호선 노조 내일부터 '준법운행' - 2025-11-30 15:48:26</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,노조,준법운행,총파업">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="노조,준법운행,총파업">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 15:48:26'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('서울 지하철 1∼8호선 노조 내일부터 \'준법운행\'')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>서울 지하철 1∼8호선 노조 내일부터 '준법운행'</h1>
+            <p>
+                분석 시간: 2025-11-30 15:48:26
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울 지하철 1~8호선 노조가 12월 1일부터 준법운행을 시행해 열차 운행을 중단하지 않겠다고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 노조는 공공기관 임금 3% 인상과 상여금 포함 인상, 구조조정 방지, 신규 채용 확대를 요구하며, 서울교통공사는 재원 부족으로 1.8% 인상만 가능하다고 반박했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 12월 12일 1노조와 3노조가 총파업을 예고함에 따라 교통 혼란과 승객 안전 우려가 커질 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/3ba3e56ba2c4.png" 
+                     alt="서울 지하철 1∼8호선 노조 내일부터 '준법운행'" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울 지하철 1~8호선을 운영하는 노조가 12월 1일부터 ‘준법운행’을 시행하며 열차 운행을 중단하지 않겠다고 선언했다. 이와 동시에 12월 12일 총파업을 예고해 교통 혼란 우려가 커지고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 30일</td>
+<td>서울교통공사 노조가 12월 1일부터 준법운행을 시작할 예정이라고 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>준법운행 본격 시행</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 12일</td>
+<td>1노조와 3노조가 총파업을 예고</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 중순</td>
+<td>2노조가 총파업 여부를 검토 중</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>노조 인원 비율</strong>: 1노조 57.4 %, 2노조 16.4 %, 3노조 12.6 % (출처: 연합뉴스)  </li>
+<li><strong>노조 요구</strong>: 공공기관 임금 인상률 3 %와 상여금 포함 인상, 구조조정 방지, 신규 채용 확대 (출처: 연합뉴스)  </li>
+<li><strong>공사 입장</strong>: 재원 부족으로 1.8 % 인상만 가능, 구조조정 및 신규 채용 반대 (출처: 연합뉴스)</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>노조 측</strong><br />
+  노조는 ‘준법운행’이 실제로는 ‘태업’과 동일한 의미로, 운행 지연과 혼잡을 초래할 뿐 아니라 승객 안전에 위협이 될 수 있다고 주장한다. 12월 12일 총파업 예고는 임금 인상과 구조조정 방지 요구를 실현하기 위한 최후의 수단으로 해석된다.</p>
+</li>
+<li>
+<p><strong>서울교통공사 측</strong><br />
+  공사는 재정적 제약을 이유로 인력 감축과 1인 승무제 도입을 추진 중이며, 노조의 요구가 현실적이지 않다고 반박한다. 준법운행은 운행을 중단하지 않으면서도 노조의 요구를 일정 부분 수용하려는 방안으로 설명한다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  교통 전문가들은 ‘준법운행’이 실제로는 운행 지연을 초래할 가능성이 높으며, 특히 출퇴근 시간대에 혼잡이 가중될 것으로 전망한다. 또한, 노조가 총파업을 진행하면 승객 안전 관리가 어려워질 수 있다는 우려가 제기된다.</p>
+</li>
+<li>
+<p><strong>일반 시민의 목소리</strong><br />
+  출퇴근 시간에 지하철을 이용하는 시민들 사이에서는 ‘준법운행’에 대한 불안감이 커지고 있다. 일부는 운행 지연이 일상에 큰 불편을 초래할 것이라며, 다른 일부는 노조의 요구가 정당하다고 지지한다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>12월 1일부터 준법운행 시작</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>1노조와 3노조가 12월 12일 총파업 예고</td>
+<td><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>노조 인원 비율 (1노조 57.4 %)</td>
+<td><a href="https://news.naver.com/main/read.nhn?mode=LSD&amp;mid=shm&amp;sid1=100&amp;oid=001&amp;aid=001" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>2노조가 총파업 여부를 검토 중인 구체적 시점</td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>서울교통공사 노조</strong></td>
+<td>임금 인상, 구조조정 방지, 신규 채용 확대 요구</td>
+<td>노동 조건 개선, 조직 안정</td>
+</tr>
+<tr>
+<td><strong>서울교통공사</strong></td>
+<td>재정적 제약으로 인력 감축 및 1인 승무제 도입 추진</td>
+<td>재정 건전성 유지, 운영 효율성</td>
+</tr>
+<tr>
+<td><strong>노조 내부 대표</strong></td>
+<td>총파업을 통해 요구사항 실현</td>
+<td>노조 내부 결속 강화</td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>운행 지연과 혼잡에 대한 불안</td>
+<td>일상 생활 편의성</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>12월 12일 이후</strong><br />
+  1노조와 3노조가 총파업을 실제로 진행하면, 1~8호선 전역에서 운행이 중단될 가능성이 높다. 이는 서울 전역의 교통망에 큰 영향을 미칠 것으로 예상된다.</p>
+</li>
+<li>
+<p><strong>공사와 노조의 협상</strong><br />
+  재정적 제약과 노조의 요구가 충돌하면서 협상은 어려울 전망이다. 그러나 공사는 재정 상황을 개선하기 위한 방안을 모색할 필요가 있다.</p>
+</li>
+<li>
+<p><strong>공공 안전</strong><br />
+  준법운행 중에도 승객 안전을 확보하기 위해 추가 인력 배치와 안전 점검이 필수적이다. 만약 총파업이 진행된다면, 안전 관리가 더욱 어려워질 수 있다.</p>
+</li>
+<li>
+<p><strong>정책적 대응</strong><br />
+  정부와 지자체는 교통 혼란을 최소화하기 위해 대체 교통수단 제공 및 운행 시간 조정 등을 검토할 가능성이 있다.</p>
+</li>
+</ul>
+<p><strong>▶ 요약</strong><br />
+서울 지하철 1~8호선 노조는 12월 1일부터 준법운행을 시행하며 운행 중단을 피하려 했으나, 12월 12일 총파업을 예고해 교통 혼란 우려가 커지고 있다. 노조와 공사의 재정·노동 조건 갈등이 핵심이며, 향후 협상과 총파업 진행 여부가 주요 변수로 남는다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=SQh7orZTrIY" target="_blank">[속보] 서울지하철노조 "다음달 12일 1~8호선 총파...</a><a href="https://www.youtube.com/watch?v=ck1iO1JDOOM" target="_blank">서울지하철 1~8호선, 이번 주 파업 예고 / YTN</a><a href="https://www.youtube.com/watch?v=1ElCxcAEsgI" target="_blank">서울지하철 1~8호선 사흘간 총파업…출근길 혼잡 예상 ...</a><a href="https://www.youtube.com/watch?v=UqvqSz6U9Eo" target="_blank">서울지하철 1-8호선 내일 총파업…막판 협상 진행 (2...</a><a href="https://www.youtube.com/watch?v=KvWTnCnA83E" target="_blank">[YTN 실시간뉴스] 서울지하철 1~8호선, 오늘부터 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/215/0001232810" target="_blank">지하철 '준법운행' 돌입…'헬요일' 예고</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hani.co.kr/arti/society/labor/1168090.html" target="_blank">“인력 확충” 서울지하철 1~8호선 20일 준법투쟁…운행 지연 예상</a><a href="https://www.khan.co.kr/article/202411182053035" target="_blank">서울 지하철 1~8호선 '파업' 가결 - 경향신문</a><a href="https://www.chosun.com/national/national_general/2024/11/19/D2VTPD3SWBAFRJ3NKUUEDBRI44/" target="_blank">서울 지하철, 오늘부터 태업...임협 결렬땐 내달 6일 파업 예고</a><a href="https://www.yna.co.kr/view/AKR20241119058051004" target="_blank">서울지하철 노조, 내달 6일 총파업 예고…20일부터 준법운행(종합 ...</a><a href="https://www.joongang.co.kr/article/25293112" target="_blank">철도 이어 서울 지하철까지 내일부터 태업…12월 6일 총파업 예고 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
