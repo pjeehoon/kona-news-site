@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美 마이크론,일본 1.5조엔 투입…AI용 HBM 신공장 구축 - 2025-11-30 13:09:36</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,마이크론,일본,AI">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="마이크론,일본,AI">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 13:09:36'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('美 마이크론,일본 1.5조엔 투입…AI용 HBM 신공장 구축')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>美 마이크론,일본 1.5조엔 투입…AI용 HBM 신공장 구축</h1>
+            <p>
+                분석 시간: 2025-11-30 13:09:36
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 미국 메모리 칩 대기업 마이크론이 일본 후쿠오카 인근 히로시마에 AI 전용 고대역폭 메모리(HBM) 공장을 건설하기 위해 1.5조엔(약 960억 USD)을 투자할 계획을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 공장은 2026년 5월에 착수해 2028년 생산을 목표로 하며, 일본 정부는 최대 5천억 엔의 지원을 검토 중이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 투자는 AI 데이터센터 수요 증가에 대응하고 일본 반도체 공급망을 강화하며, 지역 경제 활성화와 고용 창출에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/d418abcec1dd.png" 
+                     alt="美 마이크론,일본 1.5조엔 투입…AI용 HBM 신공장 구축" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>미국 메모리 칩 대기업 마이크론이 일본 후쿠오카 인근 히로시마에서 AI 전용 고대역폭 메모리(HBM) 공장을 건설하기 위해 1.5조엔(약 960억 USD)을 투자한다는 계획을 발표했다. 건설은 2026년 5월에 착수해 2028년 생산을 목표로 하고, 일본 정부는 최대 5천억 엔의 지원을 검토 중이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>마이크론 투자 발표</td>
+<td><strong>▶</strong> 마이크론이 후쿠오카 인근 히로시마에 AI용 HBM 공장 건설을 위해 1.5조엔(≈960억 USD) 투자 계획을 공개했다. <br>출처: <a href="https://n.news.naver.com/mnews/article/138/0002211069" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월 29일</strong></td>
+<td>Reuters 보도</td>
+<td>AI 데이터센터 수요 증가에 따라 HBM 칩 수요가 급증하고 있음을 지적하며, 마이크론의 투자 규모와 일정에 대해 보도했다. <br>출처: <a href="https://www.reuters.com/world/asia-pacific/micron-invest-96-billion-japan-build-ai-memory-chip-plant-nikkei-reports-2025-11-29/" target="_blank">Reuters</a></td>
+</tr>
+<tr>
+<td><strong>2026년 5월</strong></td>
+<td>건설 착수 예정</td>
+<td>공장 건설이 시작될 예정이며, 현지 인프라와 노동력 확보가 진행 중이다.</td>
+</tr>
+<tr>
+<td><strong>2028년</strong></td>
+<td>생산 시작 예정</td>
+<td>HBM3E 등 차세대 AI 메모리 제품의 생산이 시작될 전망이다.</td>
+</tr>
+<tr>
+<td><strong>2025년 이후</strong></td>
+<td>일본 정부 지원 검토</td>
+<td>일본 경제산업성은 최대 5천억 엔(≈45억 USD)의 지원을 검토 중이며, 지역 경제 활성화와 AI 공급망 강화가 주요 목표다.</td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>Digital Daily</strong>는 마이크론의 투자를 “AI 메모리 공급 확보와 일본 반도체 공급망 강화라는 전략적 움직임”으로 평가하며, <strong>중립적</strong> 입장을 보였다. <br>출처: <a href="https://n.news.naver.com/mnews/article/138/0002211069" target="_blank">Digital Daily</a></p>
+</li>
+<li>
+<p><strong>Reuters</strong>는 AI 데이터센터와 클라우드 서비스의 급증이 HBM 수요를 견인하고 있음을 강조하며, 마이크론이 일본에 투자함으로써 <strong>글로벌 메모리 시장에서의 경쟁력 확보</strong>를 시사했다. <br>출처: <a href="https://www.reuters.com/world/asia-pacific/micron-invest-96-billion-japan-build-ai-memory-chip-plant-nikkei-reports-2025-11-29/" target="_blank">Reuters</a></p>
+</li>
+<li>
+<p><strong>Micron Investor Relations</strong>는 2025년 1월 8일 발표한 보도자료에서 <strong>“차세대 AI 플랫폼에 최적화된 HBM3E 36GB 12-high”</strong> 제품을 언급하며, 일본 공장이 <strong>AMD Instinct™ MI350</strong>과 같은 고성능 GPU와의 시너지 효과를 기대하고 있다. <br>출처: <a href="https://investors.micron.com/news-releases/news-release-details/micron-breaks-ground-new-hbm-advanced-packaging-facility" target="_blank">Micron Investor Relations</a></p>
+</li>
+<li>
+<p><strong>일본 현지 언론</strong>은 지역 경제에 미칠 긍정적 영향(고용 창출, 첨단 산업 유치)을 강조하면서도, <strong>환경 규제와 토지 확보</strong> 문제를 잠재적 리스크로 지적했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>마이크론이 1.5조엔 투자 계획을 발표했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/138/0002211069" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>건설 착수 예정 시기(2026년 5월)와 생산 시작 시기(2028년).</td>
+<td><a href="https://n.news.naver.com/mnews/article/138/0002211069" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>일본 정부가 최대 5천억 엔 지원을 검토 중이다.</td>
+<td><a href="https://www.reuters.com/world/asia-pacific/micron-invest-96-billion-japan-build-ai-memory-chip-plant-nikkei-reports-2025-11-29/" target="_blank">Reuters</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>공장 건설에 따른 구체적 환경 영향 평가 결과.</td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>지역 주민들의 반대 의견 여부.</td>
+<td>아직 공개 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>마이크론(미국)</strong> – AI 메모리 시장에서 선도적 위치를 강화하고자 일본에 대규모 투자.  </li>
+<li><strong>일본 경제산업성</strong> – 국가 차원의 AI 인프라 구축과 반도체 공급망 다변화를 목표로 지원을 검토.  </li>
+<li><strong>현지 지방정부(히로시마)</strong> – 고용 창출과 지역 경제 활성화를 기대하며, 토지 및 인프라 조달을 담당.  </li>
+<li><strong>AI 및 데이터센터 기업(AMD, NVIDIA 등)</strong> – HBM3E와 같은 고성능 메모리의 공급 안정성을 확보하려는 이익이 있다.  </li>
+<li><strong>환경 단체</strong> – 대규모 공장 건설에 따른 환경 영향에 대한 우려가 존재할 수 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>공장 건설 및 생산</strong>: 2026년 5월 건설 착수와 2028년 생산 시작이 예정되어 있으나, <strong>공정 지연</strong> 가능성은 여전히 존재한다.  </li>
+<li><strong>시장 영향</strong>: AI 데이터센터 수요가 지속적으로 증가함에 따라 HBM 수요가 확대될 것이며, 마이크론의 일본 공장은 <strong>글로벌 공급망 안정화</strong>에 기여할 전망이다.  </li>
+<li><strong>정책·규제</strong>: 일본 정부의 재정 지원이 확정되면 프로젝트 진행이 가속화될 것이며, <strong>환경 규제</strong>와 <strong>토지 확보</strong>가 주요 이슈가 될 수 있다.  </li>
+<li><strong>경쟁 구도</strong>: 삼성전자, SK하이닉스 등 국내 메모리 기업도 AI용 HBM 개발에 박차를 가하고 있어, <strong>시장 경쟁이 심화</strong>될 가능성이 있다.  </li>
+</ul>
+<hr />
+<p><strong>주요 인용</strong><br />
+- “마이크론은 AI 데이터센터 수요가 급증함에 따라 HBM 수요가 증가하고 있다고 보고 있다.” – <a href="https://www.reuters.com/world/asia-pacific/micron-invest-96-billion-japan-build-ai-memory-chip-plant-nikkei-reports-2025-11-29/" target="_blank">Reuters</a><br />
+- “일본 경제산업성은 최대 5천억 엔의 지원을 검토 중이다.” – <a href="https://n.news.naver.com/mnews/article/138/0002211069" target="_blank">네이버뉴스</a>  </p>
+<p>이상으로 미국 마이크론의 일본 AI용 HBM 신공장 구축 계획에 대한 심층 분석을 마칩니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=ke34ywTi7YQ" target="_blank">Hennessy Japan Fund's Masa Tak...</a><a href="https://www.youtube.com/watch?v=mLv_Qnmsbq4" target="_blank">Blackstone’s Joan Solotar on I...</a><a href="https://www.youtube.com/watch?v=W67aVZUPblg" target="_blank">Japan’s Profit vs. China’s Tri...</a><a href="https://www.youtube.com/watch?v=eXmBuPXKNjU" target="_blank">Japan Just Triggered Biggest U...</a><a href="https://www.youtube.com/watch?v=qbtZuv_3S0U" target="_blank">Japan Properties: Hidden Goldm...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/138/0002211069" target="_blank">마이크론, AI 메모리 생산 9조6000억원 베팅…日 메모리 기지 구축</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.reuters.com/world/asia-pacific/micron-invest-96-billion-japan-build-ai-memory-chip-plant-nikkei-reports-2025-11-29/" target="_blank">Micron to invest $9.6 billion in Japan to build AI...</a><a href="https://investors.micron.com/news-releases/news-release-details/micron-breaks-ground-new-hbm-advanced-packaging-facility" target="_blank">Micron Breaks Ground on New HBM Advanced Packaging...</a><a href="https://www.micron.com/products/memory/hbm" target="_blank">High-bandwidth memory (HBM) | Micron Technology In...</a><a href="https://investors.micron.com/news-releases/news-release-details/micron-hbm-designed-leading-amd-ai-platform" target="_blank">Micron HBM Designed into Leading AMD AI Platform |...</a><a href="https://mlq.ai/news/micron-to-invest-96-billion-in-japan-to-build-ai-memory-chip-plant/" target="_blank">Micron to Invest $9.6 Billion in Japan to Build AI...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

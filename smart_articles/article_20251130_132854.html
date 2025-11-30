@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"당연히 큰 평형이 비싼거 아냐?"…서울에선 안 통한다 - 2025-11-30 13:28:54</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,서울,아파트,가격역전">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="서울,아파트,가격역전">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 13:28:54'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"당연히 큰 평형이 비싼거 아냐?"…서울에선 안 통한다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"당연히 큰 평형이 비싼거 아냐?"…서울에선 안 통한다</h1>
+            <p>
+                분석 시간: 2025-11-30 13:28:54
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울 아파트 중형(85㎡~102㎡)이 중대형(102㎡~135㎡)보다 평균 매매가격이 2억원 이상 높아지는 현상이 지속되고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이는 2~3인 가구 비중 증가와 발코니·드레스룸 등 부가 공간이 중형에 더 많아 생활 효율성이 높아진 것과 지역별 차이에서 강남이 대표적으로 중형이 비싼 구조가 주된 원인이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 가격 역전은 중형 수요가 계속 상승함에 따라 시장 가격이 더욱 확대될 전망이며, 부동산 공급·수요 균형과 투자자 선호에 영향을 미칠 것으로 보인다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/914c2934d4b3.png" 
+                     alt=""당연히 큰 평형이 비싼거 아냐?"…서울에선 안 통한다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울의 중형(85㎡~102㎡) 아파트가 중대형(102㎡~135㎡)보다 평균 매매가격이 <strong>2억원</strong> 이상 높아지는 현상이 지속되고 있다. 인구 구조 변화와 공간 활용성 증가가 주요 원인으로 지목되며, 지역별 차이도 뚜렷하다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022‑11</td>
+<td>KB부동산 통계 개편</td>
+<td>전용면적별 매매 평균가격 비교가 가능해져 가격 역전 현상이 공식적으로 관찰되기 시작</td>
+</tr>
+<tr>
+<td>2023‑10</td>
+<td>가격 차이 확대</td>
+<td>서울 아파트 중형과 중대형의 평균 가격 차이가 <strong>2억원</strong>에 달하며 확대</td>
+</tr>
+<tr>
+<td>2025‑11‑30</td>
+<td>연합뉴스 보도</td>
+<td>“당연히 큰 평형이 비싼거 아냐?…서울에선 안 통한다” 기사에서 중형이 중대형보다 비싼 사실을 재확인</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>서울 평균 매매가격</strong>  </li>
+<li>중형(85㎡~102㎡): <strong>22억470만원</strong>  </li>
+<li>중대형(102㎡~135㎡): <strong>20억407만원</strong>  </li>
+<li>차이: <strong>2억063만원</strong>  </li>
+<li>이 수치는 2023년 10월 이후 지속적으로 확대 중이다.  </li>
+<li>
+<p><a href="https://n.news.naver.com/mnews/article/001/0015769256" target="_blank">연합뉴스</a>에서 확인.</p>
+</li>
+<li>
+<p><strong>지역별 차이</strong>  </p>
+</li>
+<li><strong>강남</strong>: 중형 26억2천906만원, 중대형 24억2천905만원 → 중형이 더 비싸다.  </li>
+<li><strong>강북</strong>: 반대, 중대형이 더 비싸다.  </li>
+<li>
+<p><a href="https://news.nate.com/view/20251130n04815?mid=n0100" target="_blank">네이트</a> 기사에서 지역별 가격 차이 제시.</p>
+</li>
+<li>
+<p><strong>원인 분석</strong>  </p>
+</li>
+<li><strong>인구 구조 변화</strong>: 2~3인 가구 비중 증가로 중형에 대한 수요가 상승.  </li>
+<li><strong>공간 활용성</strong>: 발코니, 드레스룸, 팬트리 등 부가 공간이 중형에 더 많이 제공되어 가치를 높임.  </li>
+<li><strong>환율 영향</strong>: 외국인 투자자에게는 상대적으로 저렴해 보이지만, 국내 수요 구조가 주된 요인.  </li>
+<li><a href="https://www.youtube.com/watch?v=iZZ_vwimH98" target="_blank">연합뉴스TV</a> 영상에서 환율과 가격 역전 관계 언급.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>부동산 분석가</strong>는 “서울의 고밀도 주거 환경에서 중형이 ‘생활 효율성’ 면에서 우위에 서면서 가격이 상승하고 있다”고 말한다.  </li>
+<li><strong>경제학자</strong>는 인구 구조 변화가 장기적 수요 변화를 이끌며, 중형이 ‘가족 단위’에 맞는 공간으로 평가받고 있다고 분석한다.  </li>
+<li><strong>주택 구매자</strong>는 “중형이 더 비싸지만, 생활 편의성과 공간 활용성은 중대형보다 뛰어나다”는 의견을 제시.  </li>
+<li><strong>주택 공급자</strong>는 “중형 공급이 늘어남에 따라 가격이 상승하고 있으며, 이는 공급과 수요의 균형을 반영한다”고 주장한다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>중형 평균 매매가격이 중대형보다 2억원 이상 높음</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015769256" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>가격 차이가 2023년 10월 이후 확대</td>
+<td><a href="https://news.nate.com/view/20251130n04815?mid=n0100" target="_blank">네이트</a></td>
+</tr>
+<tr>
+<td></td>
+<td>강남·강북 지역별 가격 역전 현상</td>
+<td><a href="https://news.nate.com/view/20251130n04815?mid=n0100" target="_blank">네이트</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>환율이 가격 역전에 직접적인 원인</td>
+<td>일부 언론 보도에 언급되었으나, 정량적 분석은 미흡</td>
+</tr>
+<tr>
+<td></td>
+<td>외국인 투자자에게 중형이 더 저렴한가?</td>
+<td>아직 구체적 데이터가 부족</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>부동산 중개업자</strong>: 중형 매물에 대한 수요 증가로 수수료 상승 기대.  </li>
+<li><strong>주택 구매자</strong>: 중형이 비싸지만 생활 편의성에 대한 선호가 높음.  </li>
+<li><strong>주택 공급자</strong>: 중형 공급 확대를 통해 시장 점유율 확보를 시도.  </li>
+<li><strong>정책입안자</strong>: 주택 공급 정책에서 중형·중대형 비중 조정 논의 중.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>가격 역전 현상 지속 가능성</strong>: 인구 구조와 생활 패턴이 변하지 않는 한 중형 가격이 중대형을 앞설 가능성이 높다.  </li>
+<li><strong>정책적 대응</strong>: 주택 공급 정책에서 중형·중대형 비중을 조정하거나, 중형에 대한 세제 혜택을 검토할 수 있다.  </li>
+<li><strong>시장 변동성</strong>: 환율 변동, 금리 인상 등 외부 요인이 가격에 영향을 미칠 수 있으나, 장기적 수요 구조가 주된 요인으로 남을 전망.  </li>
+<li><strong>지역별 차이 확대</strong>: 강남·강북 등 지역별 수요 차이가 심화되면서 가격 역전 현상이 더욱 뚜렷해질 가능성.</li>
+</ul>
+<blockquote>
+<p><strong>▶ 주의</strong>: 현재 기사와 통계는 2025년 11월 기준이며, 이후 변동 가능성이 있으므로 최신 자료를 지속적으로 확인할 필요가 있다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=iZZ_vwimH98" target="_blank">[경제쏙쏙] 서울 자가 없는 김 대리…고환율에 '가격 ...</a><a href="https://www.youtube.com/watch?v=0emPAyiJJa8" target="_blank">“환율이 만든 역전현상… 서울 아파트, 외국인에겐 싸졌...</a><a href="https://www.youtube.com/watch?v=8yJyfohYmh4" target="_blank">서울 아파트값 2년여 만에 최대 하락…거래가 뚝 끊겼다...</a><a href="https://www.youtube.com/watch?v=l8uM2PYHv30" target="_blank">강남권 곳곳 10억 '급락'...서울 집값 6주 만에 ...</a><a href="https://www.youtube.com/watch?v=cevtRMyNdvY" target="_blank">[이슈진단] 집값 하락기 접어들었나....매매·전세 모...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015769256" target="_blank">중형이 중대형보다 비싼 서울 아파트…가격차 평균 2억원</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.nate.com/view/20251130n04815?mid=n0100" target="_blank">'가격 역전' 서울 중형 아파트는 22억, 중대형은 20억?…자금 부담와 ...</a><a href="https://www.ikbc.co.kr/article/view/kbc202504130037" target="_blank">광주 아파트값, 1년째 하락세 계속</a><a href="https://news.nate.com/view/20251130n04815" target="_blank">'가격 역전' 서울 중형 아파트는 22억, 중대형은 20억?…자금 부담와 ...</a><a href="https://kreus.konkuk.ac.kr/bbs/kreus/1414/905203/download.do" target="_blank">우리나라 월세시장 현황과 지수개발 및 활용</a><a href="https://news.nate.com/view/20251130n03686?mid=n1101" target="_blank">서울 아파트 중형이 중대형보다 비싸다…수요 쏠림에 가격 역전 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
