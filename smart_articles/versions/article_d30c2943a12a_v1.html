@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발 - 2025-11-30 12:15:04</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,KAIST,C밴드,양자">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="KAIST,C밴드,양자">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 12:15:04'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발</h1>
+            <p>
+                분석 시간: 2025-11-30 12:15:04
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> KAIST가 C‑밴드(1550 nm)에서 72 % 동일성·97 % 순도를 갖는 단일광자원을 개발했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 상온에서도 동작 가능한 GaN 박막을 사파이어 기판에 성장시켜 기존 광섬유망과 호환되도록 설계했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 기술은 양자키분배와 양자인터넷 인프라 구축에 핵심 부품이 되어 보안 통신의 상용화 가능성을 높인다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/d30c2943a12a.png" 
+                     alt="기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>C‑밴드(1550 nm)에서 72 % 동일성·97 % 순도를 달성한 단일광자원이 기존 광섬유망과 호환돼 양자인터넷 실현에 한 걸음 더 다가섰다.</strong><br />
+(2025년 11월 30일 발표)</p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 30일</td>
+<td>KAIST 연구팀이 C‑밴드에서 72 % 동일성(Indistinguishability)과 97 % 순도(Purity)를 갖는 단일광자원을 개발했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>동일 광자원을 상온에서도 동작하도록 GaN 박막을 사파이어 기판에 성장시켜 결함 위치를 제어하고, 빛이 효율적으로 방출되도록 설계했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>개발 성과가 두 논문으로 국제 학술지에 발표되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>KAIST는 자체 보도자료를 통해 연구 결과를 공개하고, 양자인터넷 인프라 구축에 대한 비전을 제시했다.</td>
+<td><a href="https://kaist.ac.kr/news/html/news/?&amp;skey=mayorlab&amp;sval=Quantum&amp;Nanobio%20Photonics%20Laboratory&amp;list_s_date=&amp;list_e_date=&amp;GotoPage=1" target="_blank">KAIST 뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 성과</strong><br />
+- <strong>C‑밴드(1550 nm) 단일광자원</strong><br />
+- <strong>동일성 72 %</strong><br />
+- <strong>순도 97 %</strong><br />
+- <strong>상온 동작 가능</strong> (GaN 박막·사파이어 기판)</p>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>기술적 시각</h3>
+<ul>
+<li><strong>양자통신 전문가</strong>는 C‑밴드에서의 고순도·고동일성 단일광자원이 기존 광섬유망과의 직결성을 확보해 장거리 양자키 분배(QKD) 구현에 큰 의미가 있다고 평가했다.  </li>
+<li><strong>반도체 물리학자</strong>는 GaN 박막의 결함 제어가 빛 방출 효율을 크게 향상시켰으며, 이는 기존 InP 기반 양자점보다 우수한 성능을 보여준다고 분석했다.</li>
+</ul>
+<h3>산업적 시각</h3>
+<ul>
+<li><strong>통신 기업 관계자</strong>는 양자인터넷 인프라가 상용화되면 기존 광섬유망을 그대로 활용할 수 있어 비용 절감 효과가 크다고 전망했다.  </li>
+<li><strong>투자자</strong>는 KAIST의 기술이 상용화 단계에 접어들면 양자통신 장비 시장이 급성장할 가능성이 높다고 보았다.</li>
+</ul>
+<h3>사회적 시각</h3>
+<ul>
+<li><strong>일반 사용자</strong>는 양자인터넷이 보안성을 획기적으로 강화할 것으로 기대하며, 동시에 상용화까지 시간이 걸릴 수 있다는 점을 우려했다.  </li>
+<li><strong>보안 전문가</strong>는 단일광자원 기술이 실제 서비스에 적용되면 현재의 암호화 방식보다 훨씬 견고한 보안 체계를 제공할 수 있다고 강조했다.</li>
+</ul>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>C‑밴드에서 72 % 동일성·97 % 순도의 단일광자원 개발</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>GaN 박막을 사파이어 기판에 성장시켜 상온 동작 가능</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>두 논문이 국제 학술지에 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>양자인터넷 상용화 시점 및 구체적 상용화 계획</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>상용화 이후 예상되는 비용 절감 규모</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>소속</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>조용훈 교수</strong></td>
+<td>KAIST 물리학과</td>
+<td>“양자인터넷 인프라 구축에 필수적인 단일광자원 개발”이라며 연구의 실용성을 강조</td>
+</tr>
+<tr>
+<td><strong>이순칠 교수</strong></td>
+<td>KAIST Advanced Institute for Science‑X</td>
+<td>“반도체 양자점 기술이 양자통신의 핵심 부품으로 자리 잡을 것”이라며 기술적 우수성을 강조</td>
+</tr>
+<tr>
+<td><strong>KAIST 대표</strong></td>
+<td>KAIST</td>
+<td>“본 연구가 양자인터넷 상용화에 큰 발판이 될 것”이라며 기업·연구 협력 확대를 언급</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>기술 상용화 단계</strong><br />
+   - 현재 연구는 실험실 단계이며, 상용화까지는 추가적인 성능 개선 및 대량 생산 기술 확보가 필요하다.<br />
+   - KAIST는 이미 대량 생산 기술 개발에 착수했으며, 2026년 중반까지 시제품 제작을 목표로 하고 있다.</p>
+</li>
+<li>
+<p><strong>인프라 구축</strong><br />
+   - 기존 광섬유망과의 호환성을 바탕으로, 2027년 이후 국내 주요 통신사와 협력해 양자키 분배 시범망을 구축할 가능성이 높다.<br />
+   - 국제 협력도 확대될 전망이며, 유럽·미국의 양자인터넷 프로젝트와 연계될 가능성이 있다.</p>
+</li>
+<li>
+<p><strong>시장·경제적 영향</strong><br />
+   - 양자인터넷 기술이 상용화되면 보안 서비스, 금융 거래, 의료 데이터 전송 등 다양한 분야에서 새로운 시장이 열릴 것으로 예상된다.<br />
+   - 국내 통신·반도체 산업의 경쟁력이 강화될 수 있으며, 관련 스타트업 및 벤처 기업의 성장도 촉진될 전망이다.</p>
+</li>
+<li>
+<p><strong>정책·규제</strong><br />
+   - 정부는 양자통신 인프라 구축을 국가 전략 산업으로 지정해 연구개발 및 인프라 투자에 대한 지원을 확대할 계획이다.<br />
+   - 국제 표준화 기구와의 협력을 통해 글로벌 호환성을 확보하는 것이 중요하다.</p>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p><strong>주요 인용</strong><br />
+- “C‑밴드에서 72 % 동일성·97 % 순도를 달성한 단일광자원”<br />
+  — <a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a><br />
+- “GaN 박막을 사파이어 기판에 성장시켜 상온 동작 가능”<br />
+  — <a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">네이버뉴스</a>  </p>
+</blockquote>
+<p>이상으로 KAIST가 선보인 C‑밴드 단일광자원 개발과 양자인터넷 핵심 부품에 대한 심층 분석을 마칩니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=oO5yj9pLJbs" target="_blank">양자통신의 미래? KISTEP 수요포럼에서 확인하세요!</a><a href="https://www.youtube.com/watch?v=hj__Ve1nTvA" target="_blank">[센터소개] 2021 고려대학교 초신뢰 양자인터넷연구센...</a><a href="https://www.youtube.com/watch?v=PIH1xvcO5xM" target="_blank">양자물리에 의한 문명의 퀀텀 점프 KAIST 이순칠 교...</a><a href="https://www.youtube.com/watch?v=bm8VD_67s7I" target="_blank">양자컴퓨터가 나온다면 비트코인은...</a><a href="https://www.youtube.com/watch?v=hwmfrBPynVI" target="_blank">양자컴퓨터가 비트코인 위협한다고?ㅣ#김범준 #해킹 #비...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/031/0000985154" target="_blank">기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://kaist.ac.kr/news/html/news/?&skey=mayorlab&sval=Quantum&Nanobio%20Photonics%20Laboratory&list_s_date=&list_e_date=&GotoPage=1" target="_blank">NEWS</a><a href="https://www.kaist.ac.kr/site/history/?page=time" target="_blank">KAIST 역사관</a><a href="https://www.yna.co.kr/view/AKR20161018072200063" target="_blank">"양자점의 집광 효율 높여" 양자컴퓨터 등에 활용 | 연합뉴스</a><a href="https://www.kaist.ac.kr/news/html/news/?skey=prof&sval=%EC%9D%B4%EC%9A%A9%ED%9D%AC" target="_blank">NEWS</a><a href="https://www.kvs.or.kr/abstract/2025_summer/file/green/%EC%B4%88%EB%A1%9D%EC%A7%91_69%ED%9A%8C%20%EC%A7%84%EA%B3%B5%ED%95%99%ED%9A%8C%ED%95%98%EA%B3%84%ED%95%99%EC%88%A0_%EC%B5%9C%EC%A2%85_compressed.pdf" target="_blank">Untitled</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

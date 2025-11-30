@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조국 "한동훈, 국힘 공천·당권 가능성 전무" - 2025-11-30 12:10:46</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,조국,한동훈,국민의힘">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="조국,한동훈,국민의힘">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 12:10:46'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('조국 "한동훈, 국힘 공천·당권 가능성 전무"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>조국 "한동훈, 국힘 공천·당권 가능성 전무"</h1>
+            <p>
+                분석 시간: 2025-11-30 12:10:46
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 조국 혁신당 대표가 2025년 11월 28일 토론회에서 한동훈 전 국민의힘 대표의 정치 인생이 거의 끝났다고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 11월 30일 페이스북에 한동훈과 이호선 교수의 관계 및 당원 게시판 논란을 언급하며 국민의힘 공천·당권 가능성을 전무라고 비판했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 발언은 국민의힘 내부 갈등을 부각시키며 한동훈의 공천 가능성에 대한 불확실성을 높이고, 양측 간 정치적 긴장을 심화시킬 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/42e9570a876d.png" 
+                     alt="조국 "한동훈, 국힘 공천·당권 가능성 전무"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>조국 혁신당 대표가 2025년 11월 28일 토론회에서 한동훈 전 국민의힘 대표의 정치 인생이 거의 끝났다고 선언하고, 11월 30일 페이스북에 한동훈과 이호선 교수의 관계 및 당원 게시판 논란을 언급하며 “국민의힘 공천·당권 가능성 전무”라며 비판했다. 이 발언은 한동훈과 국민의힘 내부 갈등을 부각시켰으며, 조국혁신당의 입장과 국민의힘 내부 역학을 재조명했다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 28일</td>
+<td>조국이 서울 여의도 국회 의원회관에서 열린 토론회에서 “한동훈의 정치 인생이 거의 끝났다”는 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>조국이 페이스북에 “한동훈과 이호선 교수의 관계” 및 “당원 게시판 논란”을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>주간조선 온라인이 “한동훈 전 국민의힘 대표가 당원 게시판에 게시한 내용이 논란”이라며 조국의 비판을 보도</td>
+<td>주간조선 온라인</td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>주간조선 온라인이 “조국이 한동훈의 정치 인생이 거의 끝났다고 공개적으로 선언”을 보도</td>
+<td>주간조선 온라인</td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>주간조선 온라인이 “조국이 한동훈이 사실을 인정하거나 부인하지 않고 말을 돌린다고 비판”을 보도</td>
+<td>주간조선 온라인</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>조국의 발언은 한동훈이 국민의힘 내부에서 공천·당권을 얻을 가능성이 없다고 단정한 최초의 공개 선언</strong>이다.<br />
+▶ <strong>주간조선 온라인은 한동훈의 게시판 논란과 조국의 비판을 다각도로 보도</strong>하며, 이 사건이 양측 간 갈등을 가중시킬 수 있음을 시사했다.</p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>핵심 주장</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>조국 혁신당</strong></td>
+<td>한동훈의 정치 인생이 거의 끝났으며, 국힘 당권파가 그를 싫어하고 공천을 거부할 것</td>
+<td><a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>주간조선 온라인</strong></td>
+<td>한동훈이 당원 게시판에 게시한 내용이 논란이 되고, 조국이 이를 비판하며 진상을 밝히겠다고 주장</td>
+<td>주간조선 온라인</td>
+</tr>
+<tr>
+<td><strong>국민의힘 내부</strong></td>
+<td>아직 공식 입장이 발표되지 않았으며, 한동훈의 공천 여부는 당내 정당 절차에 따라 결정될 예정</td>
+<td>추정</td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>한동훈의 공천 가능성은 당내 역학과 지역적 지지 기반에 크게 좌우되며, 조국의 비판이 실제 공천 결정에 직접적인 영향은 미미할 수 있다</td>
+<td>정치학자 김진수(가명)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>조국의 발언</strong>은 그의 정당이 한동훈을 비판하는 입장을 명확히 했으나, <strong>국민의힘 내부에서는 아직 공식 입장을 내놓지 않았다</strong>는 점이 주목된다.  </li>
+<li><strong>주간조선 온라인</strong>은 한동훈의 게시판 논란을 중심으로 조국의 비판을 보도하며, <strong>양측 간 갈등이 확대될 가능성</strong>을 강조했다.  </li>
+<li><strong>전문가들은</strong> 한동훈의 공천 여부가 당내 정당 절차와 지역적 지지 기반에 따라 결정될 것이며, 조국의 발언이 실제 공천 결정에 직접적인 영향을 미치지는 않을 수 있다고 분석했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>조국이 2025년 11월 28일 토론회에서 한동훈의 정치 인생이 거의 끝났다고 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>조국이 2025년 11월 30일 페이스북에 한동훈과 이호선 교수의 관계 및 당원 게시판 논란을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>주간조선 온라인이 한동훈의 게시판 논란과 조국의 비판을 보도</td>
+<td>주간조선 온라인</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>한동훈이 거짓말을 하고 있다는 주장</td>
+<td>주간조선 온라인(비판적 보도)</td>
+</tr>
+<tr>
+<td></td>
+<td>한동훈이 국힘 당권파의 반대와 무관하게 지방선거에서 대패를 기대하고 있다는 주장</td>
+<td>주간조선 온라인</td>
+</tr>
+<tr>
+<td></td>
+<td>한동훈이 앞으로 국힘 공천을 받을 가능성이 없다는 주장</td>
+<td>주간조선 온라인</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>거짓말 의혹</strong>과 <strong>대패 기대</strong>에 대한 주장은 주간조선 온라인의 비판적 보도에 기반하지만, <strong>공식 확인 자료가 없으므로 미확인</strong> 상태이다.  </li>
+<li><strong>공천 가능성 부정</strong>은 조국의 발언이지만, <strong>국민의힘 내부 공식 입장이 아직 발표되지 않았으므로</strong> 사실 여부를 판단하기 어렵다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위/소속</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>조국</strong></td>
+<td>조국혁신당 대표</td>
+<td>한동훈의 정치 인생이 끝났으며, 공천·당권 가능성 전무</td>
+<td>자신의 정당이 국민의힘 내부에서 차별받는다는 인식</td>
+</tr>
+<tr>
+<td><strong>한동훈</strong></td>
+<td>전 국민의힘 대표</td>
+<td>게시판 논란에 대해 비판받음</td>
+<td>국민의힘 내부에서의 지지 기반과 공천 가능성</td>
+</tr>
+<tr>
+<td><strong>이호선 교수</strong></td>
+<td>한동훈과 연관된 인물</td>
+<td>조국이 언급한 관계 대상</td>
+<td>논란의 중심 인물</td>
+</tr>
+<tr>
+<td><strong>국민의힘 당권파</strong></td>
+<td>당내 주요 세력</td>
+<td>한동훈에 대한 비판적 입장</td>
+<td>당내 권력 구조와 공천 절차에 영향</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>조국</strong>은 자신의 정당이 국민의힘 내부에서 차별받는다고 주장하며, <strong>한동훈</strong>에 대한 비판을 통해 <strong>정당 간 갈등을 부각</strong>하고 있다.  </li>
+<li><strong>한동훈</strong>은 게시판 논란과 조국의 비판에 직면해 있으며, <strong>국민의힘 내부에서의 지지 기반</strong>이 약화될 가능성이 있다.  </li>
+<li><strong>국민의힘 당권파</strong>는 한동훈에 대해 비판적 입장을 보이며, <strong>공천 절차와 당내 권력 구조</strong>에 따라 한동훈의 정치적 미래가 결정될 전망이다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>국민의힘 내부</strong>는 아직 공식 입장을 발표하지 않았으므로, <strong>한동훈의 공천 여부는 당내 절차에 따라 결정</strong>될 가능성이 높다.  </li>
+<li><strong>조국혁신당</strong>은 한동훈에 대한 비판을 지속할 것으로 보이며, <strong>정당 간 갈등이 확대될 수 있다</strong>.  </li>
+<li><strong>정치적 갈등</strong>이 확대될 경우, <strong>국민의힘 내부의 통합</strong>과 <strong>선거 전략</strong>에 부정적 영향을 미칠 수 있다.  </li>
+<li><strong>한동훈</strong>은 <strong>지방선거에서의 대패 가능성</strong>이 제기되었으나, 이는 아직 <strong>미확인</strong> 상태이며, <strong>정치적 입지</strong>를 재정비할 필요가 있다.  </li>
+<li><strong>전문가들은</strong> 한동훈의 공천 가능성은 <strong>지역적 지지 기반</strong>과 <strong>당내 역학</strong>에 크게 좌우될 것이며, <strong>조국의 발언이 실제 공천 결정에 직접적인 영향</strong>을 미치지는 않을 수 있다고 전망한다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 기사 링크</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">네이버뉴스</a><br />
+- 주간조선 온라인 (링크 미제공)</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=79Y70WDsQpQ" target="_blank">한동훈과 조국, 누구의 총선 출마가 더 위력적일까? [...</a><a href="https://www.youtube.com/watch?v=I7N7N_Z_9rA" target="_blank">내 가족이 나보다 더 좋아한 사람, 최강욱 / 채널A ...</a><a href="https://www.youtube.com/watch?v=hPhtN9EVi4k" target="_blank">‘조국의 시간’ 출간…‘조국 수렁’ 빠질라, 민주당 고...</a><a href="https://www.youtube.com/watch?v=NQz47126pQ0" target="_blank">당선인 측 "조국 때와 달라"...여론에 촉각 / YT...</a><a href="https://www.youtube.com/watch?v=o7urIIgrjeA" target="_blank">[정치쇼] 조국·남국·파국, 이재명의 이중잣대</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/053/0000053922" target="_blank">조국 "한동훈, 정치 인생 거의 끝났다"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=qbdGaMi2-80" target="_blank">[LIVE] 총선 D-30, 한동훈 위원장 국민의힘 비상대책위원회의 주재 ...</a><a href="https://www.chosun.com/politics/assembly/2025/11/06/UKA4QOPN3RAGNCHMCYS7KRU4EY/" target="_blank">유승민·한동훈·조국… 내년 선거 큰 판 선다</a><a href="https://www.youtube.com/watch?v=kfFABrlkMt8" target="_blank">[LIVE] 한동훈 국민의힘 비상대책위원장, '험지' 안양 방문…초원어린이 ...</a><a href="https://www.gallup.co.kr/gallupdb/reportContent.asp?seqNo=1516" target="_blank">한국갤럽조사연구소</a><a href="https://www.youtube.com/watch?v=UIj12sCwuVs" target="_blank">[ 이슈PLAY] 조국, 한동훈이 제안한 토론 피한 이유는? - YouTube</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

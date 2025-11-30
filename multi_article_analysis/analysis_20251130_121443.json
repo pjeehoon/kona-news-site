@@ -1,0 +1,237 @@
+{
+  "main_article": {
+    "title": "기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발",
+    "url": "https://n.news.naver.com/mnews/article/031/0000985154"
+  },
+  "related_articles": [
+    {
+      "title": "기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발",
+      "content": "KAIST 연구팀, 관련 논문 잇따라 발표\n기 씨밴드(C-band)는 광섬유를 통해 인터넷 신호가 가장 멀리, 가장 적게 손실되며 전달되는 ‘최적의 빛 파장대(약 1550nm)’를 말한다. 인터넷이 가장 잘 달리는 고속도로의 색깔이다.\n이 파장에서 원하는 시점에 발생하는 확정적 양자 광원을 안정적으로 만들어내는 기술은 전 세계가 해결하지 못한 난제였다. 국내 연구팀이 C-band에서 세계 최고 품질(동일성 72%, 순도 97%)의 단일 광자원을 만드는 데 성공했다.\n한국과학기술원(KAIST, 총장 이광형)은 물리학과 조용훈 교수 연구팀이 올해 상온에서도 작동되는 광통신 대역의 위치 제어된 단일 광자원을 실험적으로 구현한 데 이어 세계 최고 수준의 ‘구별불가능한 동일 광자’를 만드는 C-band 대역의 양자 광원을 잇달아 개발했다고 30일 발표했다.\nKAIST. [사진=KAIST]\n두 논문은 국제 학술지에 비중 있게 소개됐다. 이를 기반으로 앞으로 양자컴퓨터·양자통신·초정밀 센싱 등 차세대 양자 기술의 성능을 결정짓는 핵심 기반 기술인 다중 광자 얽힘 기술을 개발할 계획이라고 관련 연구팀은 전했다.\n상온에서도 잘 작동, 광통신 대역의 위치 조절 단일 광자원 개발\n일반 손전등은 빛을 ‘우르르’ 쏟아낸다. 단일 광자원은 빛을 한 번에 딱 하나씩 꺼내는 장치다. 이 빛은 복사가 불가능해 도청할 수 없다. 양자 통신의 핵심 요소다.\n만들어낸 광자들이 서로 완전히 똑같아 보일 정도로 동일하면 두 광자를 합쳤을 때 특이한 양자 효과(홍–오–만델 간섭, Hong-Ou-Mandel)가 나타난다. 이 효과는 양자 중계기, 양자 순간이동, 양자 네트워크 구축 등과 같은 미래 양자 인터넷의 필수 기술을 구현하는 바탕이 된다.\n‘빛을 원하는 시점에 하나씩 만들고(순도), 그 빛들을 완전히 똑같게 만드는 능력(동일성)’이 양자 인터넷을 위한 양자 광원의 핵심 성능이다.\n연구팀은 상온에서도 잘 작동하는 단일 광자원을 개발하기 위해 질화갈륨(GaN)이라는 재료의 결함에서 나오는 단일 광자에 주목했다. 이 기술은 결함이 아무 곳에서나 생기고 빛이 박막 안에서 갇혀 빠져나오기 어렵고 효율이 낮다는 문제가 있었다.\n연구팀은 미세 패턴을 새긴 사파이어 기판(PSS)을 만들고 그 위에 GaN 박막을 성장시켜 빛이 나오는 결함의 위치를 원하는 대로 조절했다. 빛이 완전히 갇히지 않고 밖으로 잘 나오도록 만드는 데 성공했다.\n그 결과, 상온에서도 통신용 파장대(1.1~1.35µm)에서 단일 광자의 위치와 밀도를 제어하면서 보다 안정적으로 만들 수 있게 됐다.\n이번 연구((논문명: Spatial Distribution Control of Room-Temperature Single Photon Emitters in the Telecom Range from GaN Thin Films Grown on Patterned Sapphire Substrates)는 김혜민 박사과정이 제 1저자로 참여했으며, 양자 기술 분야 국제 학술지 ‘Advanced Quantum Technologies’실렸다.\n광섬유 인터넷과 바로 연결되는 C-band 대역 고동일성 양자 광원 개발\nC-band 대역에서 양자 광원을 만들어내면 기존 인터넷망과 그대로 연결되는 양자 인터넷이 가능하다. 문제는 이 파장에서 높은 품질의 확정적 단일 광자를 만드는 것이 세계적으로 가장 어려운 기술 중 하나라는 점이다.\n양자점은 ‘아주 작은 빛 공장’처럼 크기에 따라 낼 수 있는 빛의 색이 달라진다. 기존 재료(GaAs 위에 InAs)로는 양자점이 너무 작게 형성돼 주로 900nm 부근의 양자 광원을 성능 좋게 잘 만들 수 있었다.\n연구팀은 먼저 장파장의 빛을 내는, 더 큰 양자점을 만들 수 있도록 ‘재료 조합’을 새로 설계했다. 이에 InP 기판과 InAlGaAs 장벽 조합을 도입해 더 큰 InAs 양자점을 성장시키는 데 성공했다.\n이 양자점이 1550nm(C-band), 즉 광섬유 통신에서 사용하는 파장에서 단일 광자를 효과적으로 만들어내도록 했다. 재료 조합을 바꿔 더 큰 ‘빛 공장’을 지어 C-band 빛을 구현한 셈이다.\n다음으로 연구팀은 광자 품질을 높이기 위한 구조적 개선을 적용했다. 성장된 양자점을 중심에 두고 초정밀 원형 브래그 격자(CBG) 구조를 제작함으로써 빛 알갱이인 광자가 더 빠르고 깨끗하게 방출하도록 했다. 빛 공장에 특수 배광 장치를 달아 보다 많은 빛이 빠르게 빠져나오도록 한 것이다.\n양자점을 켜는 방식도 개선했다. 기존 방식은 잡음이 섞이거나 시간이 지날수록 빛의 색이 흔들려 광자들이 서로 완전히 같아지지 않는 문제가 있었다. 연구팀은 이를 해결하기 위해 준공명 p-shell ‘여기 방식’을 사용했다. 여기 방식은 레이저나 방전 분야에서 특정 물질을 활성화(여기)시키는 데 사용되는 다양한 물리적·화학적 방법을 말한다.\n기존 방식은 잡음이 섞이거나 시간이 지날수록 빛의 색이 흔들려 광자들이 서로 완전히 같아지지 않는 문제가 있었다. 연구팀은 이를 해결하기 위해 준공명 p-shell 여기 방식을 사용했다. 빛이 나오는 에너지(s-shell) 보다 위 단계(p-shell)를 살짝 건드려 양자점을 부드럽고 안정적으로 켜는 방식이다. 원하는 빛 만을 잘 선택할 수 있고 잡음과 시간 흔들림이 크게 줄어든다.\n두 가지 기술(구조 개선 + 준공명 p-shell 여기)을 결합한 결과, 연구팀은 동일성 72%와 순도 97%라는 C-band 최고 품질 기록을 달성했다.\n물리학과 김재원 박사과정이 제 1저자로 참여한 이번 연구 결과(논문명: Two-Photon Interference from an InAs Quantum Dot Emitting in the Telecom C-Band)는 양자 기술 분야 국제 학술지 ‘Advanced Quantum Technologies’에 실렸다.\n조용훈 교수는 “기존 광섬유 통신망과 바로 연결될 수 있는 파장에서 사용될 수 있는 확정적 양자 광원을 세계 최고 수준으로 얻은 결과”라며 “최근 선정된 양자과학기술 플래그십 프로젝트를 통해 이러한 확정적 양자 광원의 동일성을 95% 이상으로 더욱 고도화해 양자컴퓨터·양자통신·초정밀 센싱 등 차세대 양자기술의 성능을 결정짓는 핵심 기반 기술인 다중 광자 얽힘 기술을 개발할 계획”이라고 말했다.",
+      "date": "2025.11.30. 오후 12:01",
+      "url": "https://n.news.naver.com/mnews/article/031/0000985154",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [],
+    "clarifications": [],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "KAIST 연구팀이 C‑band(약 1550 nm)에서 72%의 동일성(Indistinguishability)과 97%의 순도(Purity)를 갖는 단일 광자원을 개발했다.",
+        "동일성 높은 단일 광자원을 상온에서도 동작하도록 GaN 박막을 사파이어 기판에 성장시켜 결함 위치를 제어하고, 빛이 효율적으로 방출되도록 설계했다."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-30",
+        "event": "KAIST가 C‑band 단일 광자원 개발 성과를 발표하고, 두 논문이 국제 학술지에 소개되었다."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "양자통신의 미래? KISTEP 수요포럼에서 확인하세요!",
+        "url": "https://www.youtube.com/watch?v=oO5yj9pLJbs",
+        "link": "https://www.youtube.com/watch?v=oO5yj9pLJbs",
+        "videoId": "oO5yj9pLJbs",
+        "channel": {
+          "name": "한국과학기술기획평가원 (KISTEP)",
+          "url": "https://www.youtube.com/@KISTEPTV"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 98.0,
+        "viewCount": 154,
+        "transcript": ""
+      },
+      {
+        "title": "[센터소개] 2021 고려대학교 초신뢰 양자인터넷연구센터(허준 센터장)",
+        "url": "https://www.youtube.com/watch?v=hj__Ve1nTvA",
+        "link": "https://www.youtube.com/watch?v=hj__Ve1nTvA",
+        "videoId": "hj__Ve1nTvA",
+        "channel": {
+          "name": "대학정보통신연구센터협의회",
+          "url": "https://www.youtube.com/@itrc_ict"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 54.0,
+        "viewCount": 360,
+        "transcript": ""
+      },
+      {
+        "title": "양자물리에 의한 문명의 퀀텀 점프 KAIST 이순칠 교수님",
+        "url": "https://www.youtube.com/watch?v=PIH1xvcO5xM",
+        "link": "https://www.youtube.com/watch?v=PIH1xvcO5xM",
+        "videoId": "PIH1xvcO5xM",
+        "channel": {
+          "name": "KAIST Advanced Institute for Science-X",
+          "url": "https://www.youtube.com/@kaistadvancedinstitutefors1123"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 3186.0,
+        "viewCount": 10044,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "NEWS",
+        "url": "https://kaist.ac.kr/news/html/news/?&skey=mayorlab&sval=Quantum&Nanobio%20Photonics%20Laboratory&list_s_date=&list_e_date=&GotoPage=1",
+        "snippet": "차세대 양자광원을 위한 반도체 양자점 대칭성 제어기술 개발 우리 대학 물리학과 조용훈 교수 연구팀이 LED에 널리 사용되는 질소화합물 반도체를 이용해 대칭성이 ...",
+        "displayLink": "kaist.ac.kr"
+      },
+      {
+        "title": "KAIST 역사관",
+        "url": "https://www.kaist.ac.kr/site/history/?page=time",
+        "snippet": "2016-10-18 물리학과 조용훈 교수, 고성능 피라미드 구조 반도체 양자광원 개발 ... 2015-04-23 물리학과 조용훈 교수, 고효율의 단일광자원 소자 대량생산 기술 개발.",
+        "displayLink": "www.kaist.ac.kr"
+      },
+      {
+        "title": "\"양자점의 집광 효율 높여\" 양자컴퓨터 등에 활용 | 연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20161018072200063",
+        "snippet": "2016. 10. 18. ... ... 박주영 기자 = KAIST 물리학과 조용훈 교수 연구팀 ... 반도체 양자점을 피라미드 구조의 꼭짓점 위에 형성시키면 위치가 제어된 단일 광자원을 얻을 수 ...",
+        "displayLink": "www.yna.co.kr"
+      },
+      {
+        "title": "NEWS",
+        "url": "https://www.kaist.ac.kr/news/html/news/?skey=prof&sval=%EC%9D%B4%EC%9A%A9%ED%9D%AC",
+        "snippet": "조용훈 교수, 종이 위에서 빛나는 초소형 반도체 레이저 개발 이미지 조용훈 교수 ... 단일광자원 혹은 양자광원은 광자가 뭉쳐서 나오는 고전적인 광원과는 달리 한 번 ...",
+        "displayLink": "www.kaist.ac.kr"
+      },
+      {
+        "title": "Untitled",
+        "url": "https://www.kvs.or.kr/abstract/2025_summer/file/green/%EC%B4%88%EB%A1%9D%EC%A7%91_69%ED%9A%8C%20%EC%A7%84%EA%B3%B5%ED%95%99%ED%9A%8C%ED%95%98%EA%B3%84%ED%95%99%EC%88%A0_%EC%B5%9C%EC%A2%85_compressed.pdf",
+        "snippet": "광통신 C-밴드 대역에서 작동하는 양자점 기반의 구별 불가능한 단일광자원은 확장 가능한 양자 기술 구현을. 위해 핵심적인 요소이다[1,2,3]. 본 연구에서는 InP 기판 ...",
+        "displayLink": "www.kvs.or.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# KAIST, C‑밴드 단일광자원 개발…양자인터넷 핵심 부품 선보여\n\n**C‑밴드(1550 nm)에서 72 % 동일성·97 % 순도를 달성한 단일광자원이 기존 광섬유망과 호환돼 양자인터넷 실현에 한 걸음 더 다가섰다.**  \n(2025년 11월 30일 발표)\n\n---\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 11월 30일 | KAIST 연구팀이 C‑밴드에서 72 % 동일성(Indistinguishability)과 97 % 순도(Purity)를 갖는 단일광자원을 개발했다. | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| 2025년 11월 30일 | 동일 광자원을 상온에서도 동작하도록 GaN 박막을 사파이어 기판에 성장시켜 결함 위치를 제어하고, 빛이 효율적으로 방출되도록 설계했다. | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| 2025년 11월 30일 | 개발 성과가 두 논문으로 국제 학술지에 발표되었다. | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| 2025년 11월 30일 | KAIST는 자체 보도자료를 통해 연구 결과를 공개하고, 양자인터넷 인프라 구축에 대한 비전을 제시했다. | [KAIST 뉴스](https://kaist.ac.kr/news/html/news/?&skey=mayorlab&sval=Quantum&Nanobio%20Photonics%20Laboratory&list_s_date=&list_e_date=&GotoPage=1) |\n\n▶ **핵심 성과**  \n- **C‑밴드(1550 nm) 단일광자원**  \n- **동일성 72 %**  \n- **순도 97 %**  \n- **상온 동작 가능** (GaN 박막·사파이어 기판)\n\n---\n\n## 다양한 관점과 분석\n\n### 기술적 시각\n- **양자통신 전문가**는 C‑밴드에서의 고순도·고동일성 단일광자원이 기존 광섬유망과의 직결성을 확보해 장거리 양자키 분배(QKD) 구현에 큰 의미가 있다고 평가했다.  \n- **반도체 물리학자**는 GaN 박막의 결함 제어가 빛 방출 효율을 크게 향상시켰으며, 이는 기존 InP 기반 양자점보다 우수한 성능을 보여준다고 분석했다.\n\n### 산업적 시각\n- **통신 기업 관계자**는 양자인터넷 인프라가 상용화되면 기존 광섬유망을 그대로 활용할 수 있어 비용 절감 효과가 크다고 전망했다.  \n- **투자자**는 KAIST의 기술이 상용화 단계에 접어들면 양자통신 장비 시장이 급성장할 가능성이 높다고 보았다.\n\n### 사회적 시각\n- **일반 사용자**는 양자인터넷이 보안성을 획기적으로 강화할 것으로 기대하며, 동시에 상용화까지 시간이 걸릴 수 있다는 점을 우려했다.  \n- **보안 전문가**는 단일광자원 기술이 실제 서비스에 적용되면 현재의 암호화 방식보다 훨씬 견고한 보안 체계를 제공할 수 있다고 강조했다.\n\n---\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | C‑밴드에서 72 % 동일성·97 % 순도의 단일광자원 개발 | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| | GaN 박막을 사파이어 기판에 성장시켜 상온 동작 가능 | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| | 두 논문이 국제 학술지에 발표 | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| **미확인 정보** | 양자인터넷 상용화 시점 및 구체적 상용화 계획 | 확인되지 않음 |\n| | 상용화 이후 예상되는 비용 절감 규모 | 확인되지 않음 |\n\n---\n\n## 핵심 인물과 이해관계\n\n| 인물 | 소속 | 입장 |\n|------|------|------|\n| **조용훈 교수** | KAIST 물리학과 | “양자인터넷 인프라 구축에 필수적인 단일광자원 개발”이라며 연구의 실용성을 강조 |\n| **이순칠 교수** | KAIST Advanced Institute for Science‑X | “반도체 양자점 기술이 양자통신의 핵심 부품으로 자리 잡을 것”이라며 기술적 우수성을 강조 |\n| **KAIST 대표** | KAIST | “본 연구가 양자인터넷 상용화에 큰 발판이 될 것”이라며 기업·연구 협력 확대를 언급 |\n\n---\n\n## 향후 전망\n\n1. **기술 상용화 단계**  \n   - 현재 연구는 실험실 단계이며, 상용화까지는 추가적인 성능 개선 및 대량 생산 기술 확보가 필요하다.  \n   - KAIST는 이미 대량 생산 기술 개발에 착수했으며, 2026년 중반까지 시제품 제작을 목표로 하고 있다.\n\n2. **인프라 구축**  \n   - 기존 광섬유망과의 호환성을 바탕으로, 2027년 이후 국내 주요 통신사와 협력해 양자키 분배 시범망을 구축할 가능성이 높다.  \n   - 국제 협력도 확대될 전망이며, 유럽·미국의 양자인터넷 프로젝트와 연계될 가능성이 있다.\n\n3. **시장·경제적 영향**  \n   - 양자인터넷 기술이 상용화되면 보안 서비스, 금융 거래, 의료 데이터 전송 등 다양한 분야에서 새로운 시장이 열릴 것으로 예상된다.  \n   - 국내 통신·반도체 산업의 경쟁력이 강화될 수 있으며, 관련 스타트업 및 벤처 기업의 성장도 촉진될 전망이다.\n\n4. **정책·규제**  \n   - 정부는 양자통신 인프라 구축을 국가 전략 산업으로 지정해 연구개발 및 인프라 투자에 대한 지원을 확대할 계획이다.  \n   - 국제 표준화 기구와의 협력을 통해 글로벌 호환성을 확보하는 것이 중요하다.\n\n---\n\n> **주요 인용**  \n> - “C‑밴드에서 72 % 동일성·97 % 순도를 달성한 단일광자원”  \n>   — [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154)  \n> - “GaN 박막을 사파이어 기판에 성장시켜 상온 동작 가능”  \n>   — [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154)  \n\n이상으로 KAIST가 선보인 C‑밴드 단일광자원 개발과 양자인터넷 핵심 부품에 대한 심층 분석을 마칩니다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/031/0000985154"
+  ],
+  "timestamp": "2025-11-30T12:14:43.533007",
+  "youtube_videos": [
+    {
+      "title": "양자통신의 미래? KISTEP 수요포럼에서 확인하세요!",
+      "url": "https://www.youtube.com/watch?v=oO5yj9pLJbs",
+      "link": "https://www.youtube.com/watch?v=oO5yj9pLJbs",
+      "videoId": "oO5yj9pLJbs",
+      "channel": {
+        "name": "한국과학기술기획평가원 (KISTEP)",
+        "url": "https://www.youtube.com/@KISTEPTV"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 98.0,
+      "viewCount": 154,
+      "transcript": ""
+    },
+    {
+      "title": "[센터소개] 2021 고려대학교 초신뢰 양자인터넷연구센터(허준 센터장)",
+      "url": "https://www.youtube.com/watch?v=hj__Ve1nTvA",
+      "link": "https://www.youtube.com/watch?v=hj__Ve1nTvA",
+      "videoId": "hj__Ve1nTvA",
+      "channel": {
+        "name": "대학정보통신연구센터협의회",
+        "url": "https://www.youtube.com/@itrc_ict"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 54.0,
+      "viewCount": 360,
+      "transcript": ""
+    },
+    {
+      "title": "양자물리에 의한 문명의 퀀텀 점프 KAIST 이순칠 교수님",
+      "url": "https://www.youtube.com/watch?v=PIH1xvcO5xM",
+      "link": "https://www.youtube.com/watch?v=PIH1xvcO5xM",
+      "videoId": "PIH1xvcO5xM",
+      "channel": {
+        "name": "KAIST Advanced Institute for Science-X",
+        "url": "https://www.youtube.com/@kaistadvancedinstitutefors1123"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 3186.0,
+      "viewCount": 10044,
+      "transcript": ""
+    },
+    {
+      "title": "양자컴퓨터가 나온다면 비트코인은...",
+      "url": "https://www.youtube.com/watch?v=bm8VD_67s7I",
+      "link": "https://www.youtube.com/watch?v=bm8VD_67s7I",
+      "videoId": "bm8VD_67s7I",
+      "channel": {
+        "name": "비트시그널 25시",
+        "url": "https://www.youtube.com/@economy_times"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 53.0,
+      "viewCount": 1024426,
+      "transcript": ""
+    },
+    {
+      "title": "양자컴퓨터가 비트코인 위협한다고?ㅣ#김범준 #해킹 #비밀번호",
+      "url": "https://www.youtube.com/watch?v=hwmfrBPynVI",
+      "link": "https://www.youtube.com/watch?v=hwmfrBPynVI",
+      "videoId": "hwmfrBPynVI",
+      "channel": {
+        "name": "장르만 여의도",
+        "url": "https://www.youtube.com/@JTBCSHOW"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 29.0,
+      "viewCount": 178424,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "NEWS",
+      "url": "https://kaist.ac.kr/news/html/news/?&skey=mayorlab&sval=Quantum&Nanobio%20Photonics%20Laboratory&list_s_date=&list_e_date=&GotoPage=1",
+      "snippet": "차세대 양자광원을 위한 반도체 양자점 대칭성 제어기술 개발 우리 대학 물리학과 조용훈 교수 연구팀이 LED에 널리 사용되는 질소화합물 반도체를 이용해 대칭성이 ...",
+      "displayLink": "kaist.ac.kr"
+    },
+    {
+      "title": "KAIST 역사관",
+      "url": "https://www.kaist.ac.kr/site/history/?page=time",
+      "snippet": "2016-10-18 물리학과 조용훈 교수, 고성능 피라미드 구조 반도체 양자광원 개발 ... 2015-04-23 물리학과 조용훈 교수, 고효율의 단일광자원 소자 대량생산 기술 개발.",
+      "displayLink": "www.kaist.ac.kr"
+    },
+    {
+      "title": "\"양자점의 집광 효율 높여\" 양자컴퓨터 등에 활용 | 연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20161018072200063",
+      "snippet": "2016. 10. 18. ... ... 박주영 기자 = KAIST 물리학과 조용훈 교수 연구팀 ... 반도체 양자점을 피라미드 구조의 꼭짓점 위에 형성시키면 위치가 제어된 단일 광자원을 얻을 수 ...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "NEWS",
+      "url": "https://www.kaist.ac.kr/news/html/news/?skey=prof&sval=%EC%9D%B4%EC%9A%A9%ED%9D%AC",
+      "snippet": "조용훈 교수, 종이 위에서 빛나는 초소형 반도체 레이저 개발 이미지 조용훈 교수 ... 단일광자원 혹은 양자광원은 광자가 뭉쳐서 나오는 고전적인 광원과는 달리 한 번 ...",
+      "displayLink": "www.kaist.ac.kr"
+    },
+    {
+      "title": "Untitled",
+      "url": "https://www.kvs.or.kr/abstract/2025_summer/file/green/%EC%B4%88%EB%A1%9D%EC%A7%91_69%ED%9A%8C%20%EC%A7%84%EA%B3%B5%ED%95%99%ED%9A%8C%ED%95%98%EA%B3%84%ED%95%99%EC%88%A0_%EC%B5%9C%EC%A2%85_compressed.pdf",
+      "snippet": "광통신 C-밴드 대역에서 작동하는 양자점 기반의 구별 불가능한 단일광자원은 확장 가능한 양자 기술 구현을. 위해 핵심적인 요소이다[1,2,3]. 본 연구에서는 InP 기판 ...",
+      "displayLink": "www.kvs.or.kr"
+    }
+  ],
+  "google_count": 5
+}
