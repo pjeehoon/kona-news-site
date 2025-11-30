@@ -1,0 +1,328 @@
+{
+  "main_article": {
+    "title": "배경훈 과기부 장관 “쿠팡 3000만개 이상 계정 유출 확인”",
+    "url": "https://n.news.naver.com/mnews/article/023/0003944017"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡 개인정보 유출 비상… 정부, 재발 방지·2차 피해 차단 총력",
+      "content": "30일 서울 송파구에 위치한 쿠팡 본사의 모습. 국내 최대 이커머스 업체 쿠팡에서 3370만 개의 고객 계정 정보가 유출된 사건 발생했다. 서울경찰청 사이버수사대는 지난 25일 쿠팡 측으로부터 이번 개인정보 유출 사고와 관련한 고소장을 접수해 수사를 진행하고 있다. 2025.11.30/뉴스1 ⓒ News1 장수영 기자\n정부가 쿠팡에서 발생한 대규모 해킹 사고에 대한 수습 대책을 논의했다.\n30일 정부서울청사에서 배경훈 부총리 겸 과학기술정보통신부 장관, 윤창렬 국무조정실장, 송경희 개인정보보호위원장, 김창섭 국정원 3차장, 유재성 경찰청장 직무대행 등이 참석한 가운데 긴급 관계 장관 회의가 열렸다. 쿠팡이 지난 29일 오후 3370만개의 개인정보가 유출됐다고 발표하면서 국민의 불안이 커지자 정부는 같은 날 오후 11시 10분쯤 철저한 조사를 추진하겠다고 발표한 데 이어 휴일인 이날 긴급 회의를 열고 해킹 사태 수습에 나선 것이다.\n과기정통부는 “정부는 지난 11월 19일 쿠팡으로부터 침해사고 신고, 11월 20일 개인정보유출 신고를 받은 이후 현장 조사를 진행하고 있다”면서 “조사 과정에서 공격자가 쿠팡 서버의 인증 취약점을 악용해 정상적인 로그인 없이 3000만개 이상 고객 계정의 고객명, 이메일, 배송지 전화번호 및 주소를 유출한 것으로 확인했다”고 밝혔다.\n정부는 30일부터 민관합동조사단을 가동하고 있다고 밝혔다. 특히 개인정보위는 쿠팡이 개인 정보 보호와 관련한 안전 조치 의무(접근 통제, 접근 권한 관리, 암호화 등)를 위반했는지 여부를 집중 조사하고 있다. 개인정보위는 앞서 지난 4월 2300만건의 개인정보가 유출된 SK텔레콤에 역대 최대 규모인 과징금 1348억원을 부과했다.\n또한 정부는 이번 사고를 악용한 스미싱·피싱 등 2차 피해가 발생하지 않도록 지난 29일 대국민 보안 공지를 했고, 30일부터 3개월간 ‘인터넷상(다크웹 포함) 개인 정보 유노출 및 불법 유통 모니터링 강화 기간’으로 운영한다. 배 부총리는 “2차 피해가 일어나지 않도록 쿠팡을 사칭하는 전화나 문자 등에 각별히 주의해달라”며 “이번 사고로 인한 국민 여러분의 불편과 심려를 해소할 수 있도록 최선을 다하겠다”고 말했다.\n이날 정부서울청사에서 열린 회의에 참석한 박대준 쿠팡 대표는 “이번 사태로 인해 피해를 입은 쿠팡 고객들과 국민들에게 심려를 끼쳐드려서 죄송한 말씀과 사과의 말씀을 드린다”라며 “이번 정부 합동 조사에 최대한 적극적으로 협조해 이 사태가 빠르게 진정될 수 있도록 최선의 노력을 다하겠다”고 말했다.",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/023/0003944017",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "박대준",
+        "issues": [
+          {
+            "issue_type": "데이터 보안 부실",
+            "details": "쿠팡이 인증 취약점을 악용해 3,370만 개 고객 계정(이름, 이메일, 전화번호, 주소)을 유출함",
+            "source": "News1"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "박대준",
+        "responses": [
+          {
+            "issue": "데이터 보안 부실",
+            "clarification": "사과와 함께 정부·경찰·개인정보보호위원회와 협력해 조사에 전폭 협조하겠다고 밝혔다",
+            "date": "2025-11-29"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "News1",
+        "opinion": "정부가 긴급 회의를 소집하고 민관합동조사단을 가동하며 3개월간 인터넷·다크웹 모니터링을 강화해 재발 방지·2차 피해 차단에 총력을 기울이고 있다",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "2025년 11월 19일 쿠팡으로부터 침해사고 신고를 받음",
+        "2025년 11월 20일 개인정보 유출 신고를 받음",
+        "2025년 11월 25일 서울경찰청 사이버수사대가 고소장을 접수해 수사 시작",
+        "2025년 11월 29일 쿠팡이 3,370만 개 고객 계정 유출 사실을 발표",
+        "공격자는 쿠팡 서버의 인증 취약점을 이용해 정상 로그인 없이 고객 정보를 유출함",
+        "정부가 11월 30일 긴급 관계 장관 회의를 열고 민관합동조사단을 가동",
+        "2025년 11월 30일부터 3개월간 인터넷·다크웹에서 개인정보 유출·불법 유통 모니터링 강화",
+        "개인정보보호위원회가 쿠팡의 접근 통제·권한 관리·암호화 등 안전 조치 의무 위반 여부를 집중 조사"
+      ],
+      "unconfirmed_allegations": [
+        "쿠팡이 개인정보 보호 관련 안전 조치 의무를 위반했는지 여부",
+        "해킹 공격이 내부 직원의 부주의로 인한 것인지 여부"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-19",
+        "event": "쿠팡으로부터 침해사고 신고 접수"
+      },
+      {
+        "date": "2025-11-20",
+        "event": "쿠팡으로부터 개인정보 유출 신고 접수"
+      },
+      {
+        "date": "2025-11-25",
+        "event": "서울경찰청 사이버수사대가 쿠팡에 고소장 접수"
+      },
+      {
+        "date": "2025-11-29",
+        "event": "쿠팡이 3,370만 개 고객 계정 유출 사실 발표"
+      },
+      {
+        "date": "2025-11-29",
+        "event": "정부가 대국민 보안 공지(스미싱·피싱 방지)"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "정부서울청사에서 긴급 관계 장관 회의 개최"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "민관합동조사단 가동 및 3개월간 인터넷·다크웹 모니터링 시작"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "쿠팡 계정 3,370만개 이름·전화번호·주소 유출 - [LIVE] MBC 뉴스데스크 2025년 11월 29일",
+        "url": "https://www.youtube.com/watch?v=sKa2XRFiyR4",
+        "link": "https://www.youtube.com/watch?v=sKa2XRFiyR4",
+        "videoId": "sKa2XRFiyR4",
+        "channel": {
+          "name": "MBCNEWS",
+          "url": "https://www.youtube.com/@MBCNEWS11"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 1816.0,
+        "viewCount": 362596,
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 3370만개 계정 유출 사태 댓글 반응",
+        "url": "https://www.youtube.com/watch?v=4EGpx4htSmM",
+        "link": "https://www.youtube.com/watch?v=4EGpx4htSmM",
+        "videoId": "4EGpx4htSmM",
+        "channel": {
+          "name": "짤짤이",
+          "url": "https://www.youtube.com/@짤짤-이"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 60.0,
+        "viewCount": 2527,
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 계정 3,370만개 개인정보 유출…대부분 고객 포함 / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=R0bQdlo6np0",
+        "link": "https://www.youtube.com/watch?v=R0bQdlo6np0",
+        "videoId": "R0bQdlo6np0",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/@yonhapnewstv23"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 103.0,
+        "viewCount": 3236,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "[프로필] 과기정통부 장관 후보 배경훈 LG AI 연구원장",
+        "url": "https://m.boannews.com/html/detail.html?idx=137793",
+        "snippet": "2025. 6. 23. ... 쿠팡 고객 3370만개 계정 정보 유출 사태, 민관... 국내 최대 이커머스 기업 쿠팡에서 노출된 고객 개인정보 계정이 3370만개에 달하는 것으로...",
+        "displayLink": "m.boannews.com"
+      },
+      {
+        "title": "개인정보위원회 검색결과 : 네이트 뉴스",
+        "url": "https://m.news.nate.com/search?q=%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%9C%84%EC%9B%90%ED%9A%8C&mp=1&gid=2025113004723",
+        "snippet": "쿠팡 대규모 개인정보 유출 사고에 정부 \"철저한 조사 추진\". 과학기술정보통신부(부총리 겸 과기정통부 장관 배경훈)와 개인정보 ... 3370만개 이상 계정에서 정보유출이 ...",
+        "displayLink": "m.news.nate.com"
+      },
+      {
+        "title": "'AI 전문가' 배경훈 후보자, 13살 딸에게 사준 주식은?",
+        "url": "https://www.hani.co.kr/arti/economy/economy_general/1205709.html",
+        "snippet": "2025. 7. 1. ... 배경훈 과학기술정보통신부 장관 후보자가 본인과 배우자 및 미성년 자녀 명의의 재산으로 모두 36억9767만원을 신고한 가운데, 자녀에게 증여한 주식 ...",
+        "displayLink": "www.hani.co.kr"
+      },
+      {
+        "title": "샘 올트먼 방한, 오픈AI 韓 선택 이유…'전략적 거점' - 딜사이트",
+        "url": "https://dealsite.co.kr/articles/149244/068020",
+        "snippet": "2025. 10. 2. ... ... 배경훈 과기부 장관. (사진=대통령실). 추천키워드. #오픈AI #SK #삼성 ... 쿠팡 이용자 계정 3370만개의 개인정보가 유출됐다. 이는 역대 최대 ...",
+        "displayLink": "dealsite.co.kr"
+      },
+      {
+        "title": "배경훈 과기부 장관 취임 일성…“AI를 업무 동반자로”",
+        "url": "https://www.hani.co.kr/arti/economy/economy_general/1208464.html",
+        "snippet": "2025. 7. 17. ... 배경훈 신임 과학기술정보통신부 장관은 17일 부처 직원들에게 “인공지능(AI)을 업무의 동반자로 받아들여라”라고 당부했다. 배 장관은 이날 정부세종 ...",
+        "displayLink": "www.hani.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": null,
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/023/0003944017"
+  ],
+  "timestamp": "2025-11-30T16:43:44.884894",
+  "youtube_videos": [
+    {
+      "title": "쿠팡 계정 3,370만개 이름·전화번호·주소 유출 - [LIVE] MBC 뉴스데스크 2025년 11월 29일",
+      "url": "https://www.youtube.com/watch?v=sKa2XRFiyR4",
+      "link": "https://www.youtube.com/watch?v=sKa2XRFiyR4",
+      "videoId": "sKa2XRFiyR4",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/@MBCNEWS11"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 1816.0,
+      "viewCount": 362596,
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 3370만개 계정 유출 사태 댓글 반응",
+      "url": "https://www.youtube.com/watch?v=4EGpx4htSmM",
+      "link": "https://www.youtube.com/watch?v=4EGpx4htSmM",
+      "videoId": "4EGpx4htSmM",
+      "channel": {
+        "name": "짤짤이",
+        "url": "https://www.youtube.com/@짤짤-이"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 60.0,
+      "viewCount": 2527,
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 계정 3,370만개 개인정보 유출…대부분 고객 포함 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=R0bQdlo6np0",
+      "link": "https://www.youtube.com/watch?v=R0bQdlo6np0",
+      "videoId": "R0bQdlo6np0",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 103.0,
+      "viewCount": 3236,
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 3370만명 개인정보 털렸는데...5개월 동안 몰랐다｜지금 이 뉴스",
+      "url": "https://www.youtube.com/watch?v=H0yfz4jtVTo",
+      "link": "https://www.youtube.com/watch?v=H0yfz4jtVTo",
+      "videoId": "H0yfz4jtVTo",
+      "channel": {
+        "name": "JTBC News",
+        "url": "https://www.youtube.com/@jtbc_news"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 97.0,
+      "viewCount": 8831,
+      "transcript": ""
+    },
+    {
+      "title": "5개월동안 정보유출 까맣게 모른 쿠팡…보안 어떻길래? [뉴스 더] [뉴스7]",
+      "url": "https://www.youtube.com/watch?v=QkP6qRPt6Vo",
+      "link": "https://www.youtube.com/watch?v=QkP6qRPt6Vo",
+      "videoId": "QkP6qRPt6Vo",
+      "channel": {
+        "name": "뉴스TVCHOSUN",
+        "url": "https://www.youtube.com/@tvchosunnews"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 174.0,
+      "viewCount": 14963,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "[프로필] 과기정통부 장관 후보 배경훈 LG AI 연구원장",
+      "url": "https://m.boannews.com/html/detail.html?idx=137793",
+      "snippet": "2025. 6. 23. ... 쿠팡 고객 3370만개 계정 정보 유출 사태, 민관... 국내 최대 이커머스 기업 쿠팡에서 노출된 고객 개인정보 계정이 3370만개에 달하는 것으로...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "개인정보위원회 검색결과 : 네이트 뉴스",
+      "url": "https://m.news.nate.com/search?q=%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%9C%84%EC%9B%90%ED%9A%8C&mp=1&gid=2025113004723",
+      "snippet": "쿠팡 대규모 개인정보 유출 사고에 정부 \"철저한 조사 추진\". 과학기술정보통신부(부총리 겸 과기정통부 장관 배경훈)와 개인정보 ... 3370만개 이상 계정에서 정보유출이 ...",
+      "displayLink": "m.news.nate.com"
+    },
+    {
+      "title": "'AI 전문가' 배경훈 후보자, 13살 딸에게 사준 주식은?",
+      "url": "https://www.hani.co.kr/arti/economy/economy_general/1205709.html",
+      "snippet": "2025. 7. 1. ... 배경훈 과학기술정보통신부 장관 후보자가 본인과 배우자 및 미성년 자녀 명의의 재산으로 모두 36억9767만원을 신고한 가운데, 자녀에게 증여한 주식 ...",
+      "displayLink": "www.hani.co.kr"
+    },
+    {
+      "title": "샘 올트먼 방한, 오픈AI 韓 선택 이유…'전략적 거점' - 딜사이트",
+      "url": "https://dealsite.co.kr/articles/149244/068020",
+      "snippet": "2025. 10. 2. ... ... 배경훈 과기부 장관. (사진=대통령실). 추천키워드. #오픈AI #SK #삼성 ... 쿠팡 이용자 계정 3370만개의 개인정보가 유출됐다. 이는 역대 최대 ...",
+      "displayLink": "dealsite.co.kr"
+    },
+    {
+      "title": "배경훈 과기부 장관 취임 일성…“AI를 업무 동반자로”",
+      "url": "https://www.hani.co.kr/arti/economy/economy_general/1208464.html",
+      "snippet": "2025. 7. 17. ... 배경훈 신임 과학기술정보통신부 장관은 17일 부처 직원들에게 “인공지능(AI)을 업무의 동반자로 받아들여라”라고 당부했다. 배 장관은 이날 정부세종 ...",
+      "displayLink": "www.hani.co.kr"
+    },
+    {
+      "title": "배경훈 과기부 장관 “AI 대전환 2~3년내 승부 … 내년까지 GPU 3만 ...",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2025/08/29/2025082900291.html",
+      "snippet": "2025. 8. 29. ... 배경훈 과기부 장관 “AI 대전환 2~3년내 승부 … ... 쿠팡에서 개인정보 약 3370만개가 해킹으로 유출됐다.쿠팡은 지난 18일 약 4500개 계정의 개인정보 ...",
+      "displayLink": "biz.newdaily.co.kr"
+    },
+    {
+      "title": "배경훈 과기부 장관 후보, 서초구 아파트 등 재산 37억 신고",
+      "url": "https://www.hani.co.kr/arti/politics/politics_general/1205505.html",
+      "snippet": "2025. 6. 30. ... 배경훈 과학기술정보통신부 장관 후보자가 본인과 배우자, 장녀의 재산으로 총 36억9767원을 신고했다. 30일 국회에 제출된 배 후보자의 인사청문 ...",
+      "displayLink": "www.hani.co.kr"
+    },
+    {
+      "title": "배경훈 과기정통부 장관 “K-AI는 소버린보다 '포용적 AI'” | Save ...",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2025/09/14/2025091400018.html",
+      "snippet": "2025. 9. 14. ... 배경훈 과학기술정보통신부 장관이 '포용적 ... 쿠팡에서 개인정보 약 3370만개가 해킹으로 유출됐다.쿠팡은 지난 18일 약 4500개 계정의 개인정보 ...",
+      "displayLink": "biz.newdaily.co.kr"
+    },
+    {
+      "title": "배경훈 부총리, 우정사업 시스템 복구 점검…\"재난 대응 모범 보였다 ...",
+      "url": "https://news.nate.com/view/20251126n26443",
+      "snippet": "4일 전 ... 한눈에 보는 오늘 : 경제 - 뉴스 : [서울=뉴시스] 김명원 기자 = 배경훈 과기부총리 겸 과학기술정보통신부 장관이 24일 오전 서울 종로구 정부서울 ...",
+      "displayLink": "news.nate.com"
+    },
+    {
+      "title": "IT/과학 - 머니투데이",
+      "url": "https://www.mt.co.kr/tech?page=167",
+      "snippet": "2025. 9. 2. ... ... 정보가 유출됐다고 밝혔다. 그러나 조사과정에서 3000만개 이상 계정에서 개인정보가 유출된 것으로 판단되고 있다. 이에 과기정통부는 대규모 유출 ...",
+      "displayLink": "www.mt.co.kr"
+    }
+  ],
+  "google_count": 10
+}
