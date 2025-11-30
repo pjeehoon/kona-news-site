@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계엄 1년 앞둔 당정대 고위급 만찬 회동했다 - 2025-11-30 23:27:40</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,계엄1년,김민석,삼청동">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="계엄1년,김민석,삼청동">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 23:27:40'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('계엄 1년 앞둔 당정대 고위급 만찬 회동했다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>계엄 1년 앞둔 당정대 고위급 만찬 회동했다</h1>
+            <p>
+                분석 시간: 2025-11-30 23:27:40
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 9월 14일, 김민석 국무총리와 정청래 민주당 대표 등 고위급 인사들이 서울 종로구 삼청동 총리공관에서 비공식 만찬 회동을 가졌다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 회의에서는 비상계엄 1년 기념, 12월 2일 예산안 처리 시한, 사법개혁안·민생법안, 필리버스터 전략이 논의되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 회동은 양당 간 협력 강화와 예산·개혁 추진을 통해 정치적 안정을 도모하고 향후 12월 예산안과 사법개혁안의 실행을 가속화할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/005cbaa3ecae.png" 
+                     alt="계엄 1년 앞둔 당정대 고위급 만찬 회동했다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>2025년 9월 14일, 서울 종로구 삼청동 총리공관에서 김민석 국무총리와 정청래·김병기·강훈식·우상호가 비공식 만찬 회동을 가졌다.</strong><br />
+회의에서는 <strong>비상계엄 1년 기념</strong>과 <strong>12월 2일 예산안 처리 시한</strong>을 비롯해 <strong>사법개혁안·민생법안</strong>과 <strong>필리버스터</strong> 전략이 논의되었다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 인물</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 9월 14일</strong></td>
+<td>고위급 만찬 회동</td>
+<td><strong>김민석 국무총리</strong>, <strong>정청래 민주당 대표</strong>, <strong>김병기 원내대표</strong>, <strong>강훈식 대통령실 비서실장</strong>, <strong>우상호 정무수석</strong></td>
+<td><a href="https://www.news1.kr/politics/president/5992998" target="_blank">뉴스1</a>, <a href="https://news.kbs.co.kr/news/view.do?ncd=8357073" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td><strong>2025년 9월 14일</strong></td>
+<td>회동 장소</td>
+<td>서울 종로구 삼청동 총리공관</td>
+<td><a href="https://www.news1.kr/politics/president/5992998" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td><strong>2025년 9월 14일</strong></td>
+<td>회동 시간</td>
+<td>오후 5시 30분</td>
+<td><a href="https://www.news1.kr/politics/president/5992998" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td><strong>2025년 12월 2일</strong></td>
+<td>예산안 처리 시한</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>2025년 12월 3일</strong></td>
+<td>비상계엄 1년 기념</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>회의 내용</strong><br />
+- <strong>비상계엄 1년 기념</strong>과 <strong>임시국회 개최</strong>에 대한 준비<br />
+- <strong>12월 2일 예산안 처리 시한</strong>에 대한 일정 조율<br />
+- <strong>사법개혁안</strong>과 <strong>민생법안</strong>의 추진 방향 논의<br />
+- <strong>필리버스터</strong> 전략과 <strong>야당·정부 협력</strong> 방안 검토  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>뉴스1</strong>은 회동을 “투톱 갈등 봉합”의 시도로 보며, <strong>정청래·김병기</strong> 간의 긴장 완화가 이루어진 것으로 보았다.  </li>
+<li><strong>연합뉴스TV</strong>는 회동 장면을 담은 영상에서 <strong>악수 장면</strong>을 강조하며, 양측이 “정치적 협력”을 재확인했다는 인상을 주었다.  </li>
+<li><strong>KBS</strong>는 회동이 <strong>정치적 안정</strong>을 위한 “비공식 협의”로 해석하며, <strong>예산안</strong>과 <strong>사법개혁</strong>이 주요 안건이었음을 강조했다.  </li>
+<li><strong>MBN</strong>은 회동이 “정치적 협상”의 일환으로, <strong>필리버스터</strong>와 같은 전략적 이슈가 논의되었다는 점을 부각했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>회동이 2025년 9월 14일에 서울 종로구 삼청동 총리공관에서 진행되었음</td>
+<td><a href="https://www.news1.kr/politics/president/5992998" target="_blank">뉴스1</a>, <a href="https://news.kbs.co.kr/news/view.do?ncd=8357073" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td></td>
+<td>회동에 참석한 인물은 <strong>김민석 국무총리</strong>, <strong>정청래 민주당 대표</strong>, <strong>김병기 원내대표</strong>, <strong>강훈식 대통령실 비서실장</strong>, <strong>우상호 정무수석</strong></td>
+<td>같은 출처</td>
+</tr>
+<tr>
+<td></td>
+<td>회동에서 논의된 주요 안건은 <strong>비상계엄 1년 기념</strong>, <strong>12월 2일 예산안 처리 시한</strong>, <strong>사법개혁안</strong>, <strong>민생법안</strong>, <strong>필리버스터</strong></td>
+<td>같은 출처</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>회동이 공식적으로 발표된 회의인지 여부</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>회동이 실제로 어떤 결론을 도출했는지</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>김민석 국무총리</strong>: 정부의 <strong>예산안</strong>과 <strong>사법개혁</strong> 추진을 담당, 비상계엄 기념을 통해 <strong>정치적 안정</strong>을 강조.  </li>
+<li><strong>정청래 민주당 대표</strong>: 야당의 <strong>정책 방향</strong>을 조율하며 <strong>필리버스터</strong> 전략을 검토.  </li>
+<li><strong>김병기 원내대표</strong>: 야당 내부의 <strong>정책 일관성</strong>을 유지하려는 역할.  </li>
+<li><strong>강훈식 대통령실 비서실장</strong>: 대통령실과 정부 간 <strong>정책 조율</strong> 담당.  </li>
+<li><strong>우상호 정무수석</strong>: 야당과 정부 간 <strong>협력</strong>을 중재하며 <strong>정치적 균형</strong>을 추구.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>12월 2일 예산안</strong>이 <strong>12월 3일 비상계엄 1년 기념</strong>과 <strong>임시국회</strong>와 맞물려, <strong>정책 실행</strong>이 가속화될 가능성이 높다.  </li>
+<li><strong>사법개혁안</strong>과 <strong>민생법안</strong>이 <strong>예산안</strong>과 연계되어 <strong>정책 통합</strong>이 진행될 전망이다.  </li>
+<li><strong>필리버스터</strong> 전략이 <strong>야당·정부 협력</strong>에 따라 조정될 수 있으며, 이는 <strong>국회 의결</strong> 과정에 직접적인 영향을 미칠 것이다.  </li>
+<li>회동이 <strong>정치적 협력</strong>의 신호로 해석되면서, <strong>정치적 긴장</strong>이 완화될 가능성이 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 출처</strong><br />
+- <a href="https://www.news1.kr/politics/president/5992998" target="_blank">뉴스1</a><br />
+- <a href="https://news.kbs.co.kr/news/view.do?ncd=8357073" target="_blank">KBS</a><br />
+- <a href="https://www.youtube.com/watch?v=a2iqXG8-CnI" target="_blank">연합뉴스TV</a><br />
+- <a href="https://www.youtube.com/watch?v=AseueBxlM9Y" target="_blank">MBN</a>  </p>
+</blockquote>
+<p>이와 같이 2025년 9월 14일에 진행된 고위급 만찬 회동은 비상계엄 1년 기념과 다가오는 예산안, 사법개혁 등 주요 정책을 앞두고 정부와 야당이 협력의 방향을 모색한 중요한 자리였다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=a2iqXG8-CnI" target="_blank">당정대 만찬 회동…與 투톱, 악수하며 '갈등 봉합' /...</a><a href="https://www.youtube.com/watch?v=5CdkdfkgUoU" target="_blank">[🔴속보] 당정대 만찬 회동…與 투톱, 악수하며 '갈등...</a><a href="https://www.youtube.com/watch?v=AseueBxlM9Y" target="_blank">당정대, 예정에 없던 만찬 회동…정청래-김병기 갈등 봉...</a><a href="https://www.youtube.com/watch?v=IwCJzLxMHO4" target="_blank">오늘 당정대 고위급 만찬회동‥갈등 봉합 시도 (2025...</a><a href="https://www.youtube.com/watch?v=5sH3-mPf-Do" target="_blank">당정대, 오늘 만찬 회동…'與 투톱 갈등' 봉합 시도 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008633809" target="_blank">[단독] 계엄 1년 앞둔 당정대 고위급 만찬 회동했다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.news1.kr/politics/president/5992998" target="_blank">[단독] 계엄 1년 앞둔 당정대 고위급 만찬 회동했다 - 뉴스1</a><a href="https://v.daum.net/v/20251130203350570" target="_blank">'계엄 1년' 앞두고 당정대 고위급 만찬 회동···국회 행사 등 논의</a><a href="https://www.news1.kr/amp/politics/president/5992998" target="_blank">[단독] 계엄 1년 앞둔 당정대 고위급 만찬 회동했다</a><a href="https://v.daum.net/v/20251130191212507" target="_blank">[단독] 계엄 1년 앞둔 당정대 고위급 만찬 회동했다</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8357073" target="_blank">당정대 고위급, 오늘 만찬 회동…'투톱 갈등' 봉합 관심</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
