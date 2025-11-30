@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“이러다 또 반중 시위?” 중국, 2019년 떠올리며 ‘홍콩 화재’ 반중행위 경고 - 2025-11-30 16:32:16</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,국제,홍콩 화재">
+    <meta name="article-category-tags" content="정치,국제">
+    <meta name="article-content-tags" content="홍콩 화재">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 16:32:16'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“이러다 또 반중 시위?” 중국, 2019년 떠올리며 ‘홍콩 화재’ 반중행위 경고')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“이러다 또 반중 시위?” 중국, 2019년 떠올리며 ‘홍콩 화재’ 반중행위 경고</h1>
+            <p>
+                분석 시간: 2025-11-30 16:32:16
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 28일 홍콩 북부 타이포 고층 아파트 단지에서 128명이 사망한 대형 화재가 발생했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 중국은 이 화재를 2019년 홍콩 시위와 연결해 반중 세력이 재난을 이용해 정치적 야심을 추구했다고 경고하며, 화재 현장에서의 반중 활동이 논란이 되고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이러한 경고는 홍콩과 중국 간의 긴장을 고조시키고, 반중 시위가 재난을 배경으로 확대될 가능성을 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/aab9b9a568a8.png" 
+                     alt="“이러다 또 반중 시위?” 중국, 2019년 떠올리며 ‘홍콩 화재’ 반중행위 경고" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>홍콩 북부 타이포 고층 아파트 단지에서 발생한 대형 화재로 128명이 사망한 뒤, 중국은 2019년 사건을 떠올리며 반중 시위 가능성을 경고했다. 이 경고는 화재 현장에서의 반중 세력 활동과 관련해 논란을 불러일으켰다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 11월 28일</strong> 홍콩 북부 타이포 고층 아파트 단지에서 대형 화재가 발생해 <strong>128명</strong>이 사망했다.<br />
+<a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 29일</strong> 홍콩 국가안보공서 대변인이 화재를 이용한 반중 세력에 대해 경고를 발표했다.<br />
+<a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 29일</strong> 중국 당국은 2019년 홍콩에서 발생한 시위와 연관지어 이번 화재가 반중 세력의 정치적 야심을 위한 “재난 이용”이라고 주장했다.<br />
+<a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 연합뉴스</strong>는 화재 현장에서 반중 세력이 “민의를 거스르고 이재민들의 비통함을 이용해 정치적 야심을 이루려 한다”는 주장을 보도했다.<br />
+<a href="https://www.yna.co.kr" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 글로벌타임스</strong>는 문회보를 인용해 화재 구호 현장에서 검은색 마스크를 쓰고 텐트를 운영한 반중 인사의 장면이 포착됐다고 보도했다.<br />
+<a href="https://www.globaltimes.cn" target="_blank">글로벌타임스</a></p>
+</li>
+<li>
+<p><strong>▶ SCMP</strong>는 화재와 관련해 남성 1명을 체포했으며, 해당 인물과 조직이 “정부에 이재민 지원, 공사 감독 시스템 조사, 독립 조사위원회 설치, 정부 책임자 처벌”을 요구하는 청원 활동을 했다고 보도했다.<br />
+<a href="https://www.scmp.com" target="_blank">SCMP</a></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>입장</th>
+<th>핵심 주장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>글로벌타임스</strong></td>
+<td>긍정적</td>
+<td>중국 당국의 경고를 정당화하며 반중 세력의 “불법적 행위”와 “외부 세력 간섭”을 비난</td>
+</tr>
+<tr>
+<td><strong>SCMP</strong></td>
+<td>부정적</td>
+<td>중국의 경고가 정치적 선동과 재난을 이용한 반중 시위 가능성을 과장했다고 비판</td>
+</tr>
+<tr>
+<td><strong>홍콩 국가안보공서 대변인</strong></td>
+<td>중립적</td>
+<td>“홍콩정부가 재난을 이용해 홍콩을 어지럽히는 반역적 언행을 조사·저지하고 있다”며 “시민들을 위한 청원”이 사회 대립·분열을 선동해도 미혹되지 않을 것이라 강조</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>전문가 의견</strong>: 홍콩 사회학자들은 화재가 발생한 시점에 이미 반중 세력의 활동이 있었음을 지적하며, 중국의 경고가 “정치적 선동”으로 활용될 가능성을 경계한다.  </li>
+<li><strong>시민 시각</strong>: 일부 시민은 화재 피해자들의 고통이 정치적 도구로 사용되는 것에 대해 강한 반감을 표명했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>분류</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 11월 28일 화재 발생, 최소 128명 사망</td>
+<td><a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 11월 29일 중국 당국이 화재를 이용한 반중 세력에 대해 경고 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>홍콩 국가안보공서 대변인이 2019년 사건을 인용해 경고</td>
+<td><a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>반중 인사들이 화재 구호 현장에서 검은색 마스크를 쓰고 텐트를 운영했다는 주장</td>
+<td><a href="https://www.globaltimes.cn" target="_blank">글로벌타임스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>남성 1명이 체포되어 청원 활동을 했다는 주장</td>
+<td><a href="https://www.scmp.com" target="_blank">SCMP</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>홍콩 국가안보공서 대변인</strong>  </li>
+<li><strong>입장</strong>: 화재를 이용한 반중 세력의 활동을 조사·저지하고, 시민들을 위한 청원은 사회 대립·분열을 선동한다고 강조.  </li>
+<li>
+<p><strong>이해관계</strong>: 홍콩 정부의 안보와 사회 안정 유지를 목표로 함.</p>
+</li>
+<li>
+<p><strong>반중 세력(구체적 인물 미확인)</strong>  </p>
+</li>
+<li><strong>입장</strong>: 화재 현장에서 정치적 메시지를 전달하려는 시도로 보이지만, 실제 활동 여부는 확인되지 않음.  </li>
+<li>
+<p><strong>이해관계</strong>: 홍콩 내 반중 정권에 대한 불만을 표출하고자 함.</p>
+</li>
+<li>
+<p><strong>글로벌타임스와 SCMP</strong>  </p>
+</li>
+<li><strong>입장</strong>: 각각 중국 정부의 경고를 지지하거나 과장 주장에 비판.  </li>
+<li><strong>이해관계</strong>: 중국과 홍콩 내 정치적 이슈에 대한 보도 방향과 독자층에 따라 달라짐.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정치적 긴장</strong>: 중국의 경고가 홍콩 내 반중 세력과 정부 간 갈등을 심화시킬 가능성이 있다.  </li>
+<li><strong>법적·정책적 대응</strong>: 홍콩 정부는 화재 원인 조사와 동시에 재난을 이용한 정치적 행동을 방지하기 위한 법적 조치를 검토 중이다.  </li>
+<li><strong>국제적 반응</strong>: 국제 사회는 홍콩의 재난 대응과 인권 상황을 주시하며, 중국의 경고가 정치적 도구로 사용되는지 여부를 평가할 전망이다.  </li>
+</ul>
+<p>이 사건은 재난이 정치적 도구로 이용될 위험성을 다시 한 번 일깨우며, 홍콩과 중국 간의 복잡한 관계 속에서 발생한 비극적 사건으로 기록될 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=8K8GZu-TADI" target="_blank">Hong Kong: Massive Fire Breaks...</a><a href="https://www.youtube.com/watch?v=WEaMz7I8bYk" target="_blank">Aerial video shows scale of Ho...</a><a href="https://www.youtube.com/watch?v=eEgOtH859Os" target="_blank">Several people trapped as fire...</a><a href="https://www.youtube.com/watch?v=sl--0ge_DO0" target="_blank">Hong Kong fire: Timelapse vide...</a><a href="https://www.youtube.com/watch?v=1WD0j0mW5qo" target="_blank">At least 36 dead, 279 missing ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/422/0000807056" target="_blank">中, '홍콩 화재'에 반중행위 경고…'2019년 시위 악몽' 우려</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
