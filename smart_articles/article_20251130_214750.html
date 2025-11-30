@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>與 황정아 "AI 경쟁력 위해 '오픈소스 정책' 정비 필요"…토론회 개최 - 2025-11-30 21:47:50</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,황정아,국회,AI">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="황정아,국회,AI">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 21:47:50'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('與 황정아 "AI 경쟁력 위해 \'오픈소스 정책\' 정비 필요"…토론회 개최')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>與 황정아 "AI 경쟁력 위해 '오픈소스 정책' 정비 필요"…토론회 개최</h1>
+            <p>
+                분석 시간: 2025-11-30 21:47:50
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 황정아 의원이 2025년 12월 1일 국회에서 ‘한국 AI 경쟁력 도약을 위한 오픈소스 정책 정비’ 토론회를 열어 오픈소스 AI를 국가전략기술로 육성하려 했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 코딧, 한국인공지능협회 등과 공동 주관하고 과학기술정보통신부·코리아스타트업포럼이 후원하며 건국대 김두현 교수와 KAIST 김숙경 교수 등 학계·산업계가 참여했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 토론회에서는 오픈소스 AI를 국가전략기술로 재정의하고 한국형 생태계 구축을 위한 구체적 정책 과제를 도출해 국내 AI 산업의 글로벌 경쟁력 강화를 목표로 한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/d145628747d6.png" 
+                     alt="與 황정아 "AI 경쟁력 위해 '오픈소스 정책' 정비 필요"…토론회 개최" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>황정아 의원이 12월 1일 국회에서 ‘한국 AI 경쟁력 도약을 위한 오픈소스 정책 정비’ 토론회를 열며, 오픈소스 AI를 국가전략기술로 육성하고자 한다. 코딧, 한국인공지능협회 등과 함께 AI 생태계 구축 방안을 논의한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025 년 12 월 1일 오후 2시</strong></td>
+<td>국회 의원회관 제1세미나실에서 토론회 개최</td>
+</tr>
+<tr>
+<td><strong>주최</strong></td>
+<td>황정아 의원(대전 유성구, 과학기술정보통신위원회 소속)</td>
+</tr>
+<tr>
+<td><strong>공동 주관</strong></td>
+<td>코딧 글로벌정책실증연구원, 한국인공지능협회</td>
+</tr>
+<tr>
+<td><strong>후원</strong></td>
+<td>과학기술정보통신부, 코리아스타트업포럼</td>
+</tr>
+<tr>
+<td><strong>발표자</strong></td>
+<td>김두현 교수(건국대), 김숙경 교수(KAIST)</td>
+</tr>
+<tr>
+<td><strong>주제</strong></td>
+<td>오픈소스 AI를 국가전략기술로 바라보고 한국형 오픈소스 AI 생태계 구축 정책 과제 논의</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 황정아 의원이 “오픈소스는 한국 AI 도약의 엔진”이라며 토론회를 소집했다.<br />
+<a href="https://n.news.naver.com/mnews/article/002/0002416672" target="_blank">네이버뉴스</a>  </p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>오픈소스 지지자</strong></td>
+<td>오픈소스 AI는 비용 절감과 혁신 가속화에 기여한다. 국내 기업이 자체 모델을 개발·배포하기 용이해질 전망이다.</td>
+<td><a href="https://www.aitimes.kr/news/articleView.html?idxno=37357" target="_blank">AI Times</a></td>
+</tr>
+<tr>
+<td><strong>보안·지식재산 우려</strong></td>
+<td>공개된 코드와 데이터는 악용 가능성이 있어 국가 안보와 기업 경쟁력에 위협이 될 수 있다.</td>
+<td><a href="https://zdnet.co.kr/view/?no=20251124150907" target="_blank">ZDNet</a></td>
+</tr>
+<tr>
+<td><strong>정책 입안자</strong></td>
+<td>정부가 오픈소스 AI 정책을 정비하면 국내 AI 산업의 글로벌 경쟁력을 높일 수 있다.</td>
+<td><a href="https://www.goodmorningcc.com/news/articleView.html?idxno=435606" target="_blank">굿모닝충청</a></td>
+</tr>
+<tr>
+<td><strong>학계 전문가</strong></td>
+<td>AI 연구의 투명성과 재현성을 강화하지만, 데이터 품질과 윤리적 문제는 별도 해결이 필요하다.</td>
+<td><a href="https://www.skyedaily.com/news/news_view.html?ID=291864" target="_blank">Skyedaily</a></td>
+</tr>
+</tbody>
+</table>
+<p>토론회에서는 <strong>국가전략기술</strong>로서의 오픈소스 AI를 재정의하고, <strong>한국형 생태계</strong> 구축을 위한 구체적 정책 과제를 도출할 예정이다. 이는 과학기술정보통신부와 코리아스타트업포럼의 후원 아래 진행되며, 국내외 AI 전문가들의 참여가 기대된다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>① 토론회 개최 일정 및 장소, ② 주최·주관·후원 기관, ③ 발표자 및 주제 등. 모든 내용은 네이버뉴스, AI Times, 굿모닝충청, Skyedaily, ZDNet 등에서 확인 가능.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>현재까지는 없으며, 토론회 결과에 따른 정책 제안은 추후 발표 예정.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위·소속</th>
+<th>입장·관심사</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>황정아 의원</strong></td>
+<td>대전 유성구 국회의원, 과학기술정보통신위원회 소속</td>
+<td>오픈소스 AI 정책 정비 및 국내 AI 경쟁력 강화</td>
+</tr>
+<tr>
+<td><strong>김두현 교수</strong></td>
+<td>건국대 컴퓨터공학과 교수</td>
+<td>AI 연구 및 오픈소스 생태계 구축 방안 제시</td>
+</tr>
+<tr>
+<td><strong>김숙경 교수</strong></td>
+<td>KAIST 전산학과 교수</td>
+<td>AI 기술 발전과 정책 연계 논의</td>
+</tr>
+<tr>
+<td><strong>코딧 대표 정지은</strong></td>
+<td>AI 정책 플랫폼 기업 코딧 소속</td>
+<td>AI 정책 연구 및 실증 지원</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>정책 제안서 작성</strong><br />
+   토론회에서 도출된 과제와 방안을 바탕으로 황정아 의원이 정책 제안서를 작성, 과학기술정보통신부에 제출할 계획이다.</p>
+</li>
+<li>
+<p><strong>정부 정책 정비</strong><br />
+   오픈소스 AI를 국가전략기술로 공식화하면, 국내 기업·연구기관이 자체 AI 모델을 개발·배포할 수 있는 환경이 조성된다. 이는 글로벌 AI 시장에서의 경쟁력 강화로 이어질 전망이다.</p>
+</li>
+<li>
+<p><strong>보안·지식재산 이슈 해결</strong><br />
+   공개된 AI 모델과 데이터의 보안 위험을 최소화하기 위한 규제와 지침이 필요하다. 정부와 민간이 협력해 보안 프레임워크를 구축할 필요가 있다.</p>
+</li>
+<li>
+<p><strong>국제 협력 확대</strong><br />
+   한국형 오픈소스 AI 생태계가 정착되면, 해외 기업·연구기관과의 협력이 확대될 가능성이 있다. 이는 기술 교류와 투자 유치에 긍정적 영향을 미칠 수 있다.</p>
+</li>
+</ol>
+<p>황정아 의원이 주도한 이번 토론회는 한국 AI 산업의 미래를 재정의하는 중요한 기회가 될 전망이다. 정책 정비가 실제로 실행에 옮겨질지, 그리고 보안·지식재산 문제를 어떻게 해결할지가 향후 주목할 포인트가 될 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=ouTmbrpWqs0" target="_blank">[한국레드햇] 오픈소스 방식으로 알아보는 성공적인 생성...</a><a href="https://www.youtube.com/watch?v=LfYotFKR0QI" target="_blank">R&D 예산은 깎였지만... 한국 AI가 세계 1등인 ...</a><a href="https://www.youtube.com/watch?v=9qalh7C4EZ8" target="_blank">[기업] KT, 자체 개발한 한국형 AI 모델 '믿:음...</a><a href="https://www.youtube.com/watch?v=JkI1EZJkM-c" target="_blank">오픈소스 AI의 IPR 쟁점</a><a href="https://www.youtube.com/watch?v=CuyRIIK6aE4" target="_blank">오픈소스의 역설, 소버린 AI의 균열</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/002/0002416672" target="_blank">황정아 국회의원 '오픈소스 AI 정책 정비' 논의의 장 연다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.aitimes.kr/news/articleView.html?idxno=37357" target="_blank">“오픈소스, 한국 AI 도약의 엔진”…황정아 의원, 오픈소스 AI 확산 방안 ...</a><a href="https://www.goodmorningcc.com/news/articleView.html?idxno=435606" target="_blank">황정아 의원, '한국 AI 경쟁력 도약을 위한 오픈소스 정책 정비' 국회 ...</a><a href="https://www.skyedaily.com/news/news_view.html?ID=291864" target="_blank">황정아 의원, 오픈소스 AI 정책 정비 국회 토론회</a><a href="https://v.daum.net/v/20251130084248544" target="_blank">황정아, 1일 '한국 AI 도약 위한 오픈소스 정책 정비' 토론회 개최</a><a href="https://zdnet.co.kr/view/?no=20251124150907" target="_blank">"한국판 깃허브 나올까"…'오픈소스 AI 정책 토론회' 국회서 개최 - 지디 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
