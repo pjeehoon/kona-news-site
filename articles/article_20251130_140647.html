@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS, 2025 중형 픽업 안전도평가 결과 공개…무쏘EV·타스만 2등급 - 2025-11-30 14:06:47</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,무쏘EV,타스만,안전평가">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="무쏘EV,타스만,안전평가">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 14:06:47'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('TS, 2025 중형 픽업 안전도평가 결과 공개…무쏘EV·타스만 2등급')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TS, 2025 중형 픽업 안전도평가 결과 공개…무쏘EV·타스만 2등급</h1>
+            <p>
+                분석 시간: 2025-11-30 14:06:47
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> KGM의 무쏘 EV와 기아의 타스만이 2025년 중형 픽업 안전도평가에서 2등급을 획득했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 두 차량은 충돌·보행자·충돌‑예방 부문에서 높은 점수를 받았으나 페달 오버라이드 방지 장치와 V2X 통신 장치가 부재했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 한국교통안전공단은 12월 17일 전체 결과를 발표할 예정이며, 향후 평가 기준에 해당 장치가 포함될 가능성이 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/27bc462b6d12.png" 
+                     alt="TS, 2025 중형 픽업 안전도평가 결과 공개…무쏘EV·타스만 2등급" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 30일, 한국교통안전공단(이하 TS)과 한국신차안전평가원(KNCAP)은 중형 픽업 부문에서 KGM 무쏘 EV와 기아 타스만이 <strong>2등급</strong>을 획득했다고 발표했다. 두 차량은 충돌·보행자·충돌‑예방 등 세 가지 핵심 평가에서 높은 점수를 받았으나, <strong>페달 오버라이드 방지 장치와 V2X 통신 장치</strong>가 부재한 점이 지적되었다. TS는 12월 17일 ‘2025년 자동차안전도평가 콘퍼런스’에서 전체 결과를 공개할 예정이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 30일</td>
+<td>TS·KNCAP 발표</td>
+<td>무쏘 EV: 4★ 충돌, 5★ 보행자, 5★ 충돌‑예방, 2등급<br>타스만: 4★ 충돌, 4★ 보행자, 5★ 충돌‑예방, 2등급</td>
+<td><a href="https://www.news1.kr/realestate/general/5992688" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 30일</td>
+<td>무쏘 EV 전기차안전 등급</td>
+<td>4★ 전기차안전</td>
+<td><a href="https://www.newsis.com/view/NISX20251130_0003422340" target="_blank">뉴스이</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 30일</td>
+<td>발표 내용 요약</td>
+<td>두 차량 모두 <strong>페달 오버라이드 방지 장치와 V2X 통신 장치 부재</strong></td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128157600003" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 17일</td>
+<td>TS 콘퍼런스</td>
+<td>전체 2025년 안전도평가 결과 공개 예정</td>
+<td><a href="https://news.bbsi.co.kr/news/articleView.html?idxno=4056464" target="_blank">BBSI</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>무쏘 EV와 타스만이 2025 중형 픽업 부문에서 2등급을 획득</strong>했다.<br />
+▶ <strong>두 차량 모두 페달 오버라이드 방지 장치와 V2X 통신 장치가 부재</strong>했다.<br />
+▶ <strong>무쏘 EV는 전기차안전 등급에서도 4★를 기록</strong>했다.<br />
+▶ <strong>TS는 12월 17일에 전체 결과를 발표할 계획</strong>이다.  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>TS(한국교통안전공단)</strong><br />
+  TS는 이번 결과를 통해 <strong>안전도평가 시스템의 효과성을 강화</strong>하고자 한다는 입장을 밝혔다. 이는 정부가 자동차 안전에 대한 규제와 인증 체계를 강화하려는 움직임과 일치한다.  </p>
+</li>
+<li>
+<p><strong>KNCAP(한국신차안전평가원)</strong><br />
+  KNCAP은 평가 기준이 <strong>국제적 수준</strong>에 부합하도록 지속적으로 개선 중이며, 이번 평가에서도 <strong>충돌·보행자·충돌‑예방</strong> 부문에서 높은 점수를 부여했다.  </p>
+</li>
+<li>
+<p><strong>자동차 산업계</strong><br />
+  무쏘 EV와 타스만을 생산한 KGM과 기아는 <strong>안전 등급이 2등급</strong>이라는 점을 강조하면서도, <strong>전기차안전</strong>과 <strong>충돌‑예방</strong> 기술에서의 강점을 부각했다.  </p>
+</li>
+<li>
+<p><strong>소비자 단체</strong><br />
+  일부 소비자 단체는 <strong>페달 오버라이드 방지 장치와 V2X 통신 장치 부재</strong>를 안전성 향상을 위한 필수 요소로 지적하며, <strong>향후 평가 기준에 포함</strong>될 것을 요구했다.  </p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>무쏘 EV와 타스만이 2등급을 획득</td>
+<td><a href="https://www.news1.kr/realestate/general/5992688" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td></td>
+<td>무쏘 EV는 4★ 전기차안전 등급</td>
+<td><a href="https://www.newsis.com/view/NISX20251130_0003422340" target="_blank">뉴스이</a></td>
+</tr>
+<tr>
+<td></td>
+<td>두 차량 모두 페달 오버라이드 방지 장치와 V2X 통신 장치 부재</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128157600003" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>TS는 12월 17일에 전체 결과를 발표할 예정</td>
+<td><a href="https://news.bbsi.co.kr/news/articleView.html?idxno=4056464" target="_blank">BBSI</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>평가 결과가 소비자 안전에 미칠 장기적 영향</td>
+<td>현재까지 공식 발표가 없으며, 추정 수준</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>정용식 이사장 (TS)</strong><br />
+  TS의 이사장으로서 <strong>안전도평가 체계 강화</strong>를 주도하고 있다.  </li>
+<li><strong>김윤덕 장관 (국토교통부)</strong><br />
+  자동차 안전 정책을 총괄하며 <strong>KNCAP과 TS의 협력</strong>을 촉진하고 있다.  </li>
+<li><strong>KGM 무쏘 EV 및 기아 타스만</strong><br />
+  제조사 대표 및 기술 담당자들이 <strong>안전 등급 향상을 위한 기술 개발</strong>에 집중하고 있다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2025 년 12 월 17일 콘퍼런스</strong>에서 발표될 전체 안전도평가 결과가 <strong>다른 차량 모델의 등급</strong>과 <strong>정책 방향</strong>에 영향을 미칠 전망이다.  </li>
+<li><strong>페달 오버라이드 방지 장치와 V2X 통신 장치</strong>의 부재가 <strong>안전성 논란</strong>을 불러일으킬 수 있어, <strong>규제 강화</strong> 가능성이 있다.  </li>
+<li>무쏘 EV와 타스만이 <strong>전기차안전과 충돌‑예방</strong> 분야에서 높은 점수를 받은 점은 <strong>전기차 시장 진입</strong>과 <strong>차량 설계 전략</strong>에 긍정적 신호로 해석될 수 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 인용</strong><br />
+- “무쏘 EV와 타스만이 2025 중형 픽업 부문에서 2등급을 획득했다.” – <a href="https://www.news1.kr/realestate/general/5992688" target="_blank">뉴스1</a><br />
+- “두 차량 모두 페달 오버라이드 방지 장치와 V2X 통신 장치가 부재했다.” – <a href="https://www.yna.co.kr/view/AKR20251128157600003" target="_blank">연합뉴스</a><br />
+- “TS는 12월 17일에 전체 결과를 발표할 계획이다.” – <a href="https://news.bbsi.co.kr/news/articleView.html?idxno=4056464" target="_blank">BBSI</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=90nwVYqhYSE" target="_blank">[KNCAP] 2025년 자동차안전도평가 결과 공개 :...</a><a href="https://www.youtube.com/watch?v=KJIufNNm9D8" target="_blank">[KNCAP] 2025년 자동차안전도평가 결과 공개 :...</a><a href="https://www.youtube.com/watch?v=81VDY_XABPA" target="_blank">[KNCAP] 2025년 자동차안전도평가 결과 공개 :...</a><a href="https://www.youtube.com/watch?v=v4ocZOJkGuY" target="_blank">[KNCAP] 2025년 자동차안전도평가 결과 공개 :...</a><a href="https://www.youtube.com/watch?v=NKgkTfhbSTM" target="_blank">[KNCAP] 2025년 자동차안전도평가 결과 공개 :...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008632983" target="_blank">TS, 2025 중형 픽업 안전도평가 결과 공개…무쏘EV·타스만 2등급</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.yna.co.kr/view/AKR20251128157600003" target="_blank">기아 타스만·KGM 무쏘 EV, 車안전도 평가서 종합 2등급 | 연합뉴스</a><a href="https://www.news1.kr/realestate/general/5992688" target="_blank">TS, 2025 중형 픽업 안전도평가 결과 공개…무쏘EV·타스만 2등급 ...</a><a href="https://www.newsis.com/view/NISX20251130_0003422340" target="_blank">KGM 무쏘EV·기아 타스만, 車안전도 평가서 '종합 2등급'</a><a href="https://v.daum.net/v/20251130101839044" target="_blank">KGM 무쏘EV·기아 타스만, 車안전도 평가서 '종합 2등급'</a><a href="https://news.bbsi.co.kr/news/articleView.html?idxno=4056464" target="_blank">TS, 중형 픽업 2개 차종 차안전도 평가결과 발표</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
