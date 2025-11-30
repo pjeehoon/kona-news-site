@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日 가수 상하이 행사서 노래 부르던 중 강제로 퇴장당해 - 2025-11-30 11:05:42</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,오오츠키,상하이,반다이">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="오오츠키,상하이,반다이">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 11:05:42'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('日 가수 상하이 행사서 노래 부르던 중 강제로 퇴장당해')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>日 가수 상하이 행사서 노래 부르던 중 강제로 퇴장당해</h1>
+            <p>
+                분석 시간: 2025-11-30 11:05:42
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 28일 상하이 반다이 남코 페스티벌에서 일본 가수 오오츠키 마키가 무대 조명이 꺼지면서 공연이 중단되고 스태프에 의해 무대에서 강제 퇴장당했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 사건은 상하이에서 예정되었던 다른 일본 아티스트들의 공연 취소와 함께 중국과 일본 간의 문화적 긴장을 부각시켰다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이후 일본 아티스트들의 상하이 공연이 취소되는 등 파급 효과가 나타나며 양국 문화 교류에 부정적 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/ae4b06825879.png" 
+                     alt="日 가수 상하이 행사서 노래 부르던 중 강제로 퇴장당해" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 28일 상하이에서 열린 반다이 남코 페스티벌에서 일본 가수 오오츠키 마키가 무대 조명이 갑자기 꺼지면서 공연이 중단되고, 스태프에 의해 무대에서 강제로 퇴장당했다. 이 사건은 중국과 일본 간의 문화적 긴장을 부각시키며, 이후 일본 아티스트들의 상하이 공연이 취소되는 등 파급 효과를 낳았다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 28일</strong>  </li>
+<li>상하이 반다이 남코 페스티벌에서 오오츠키 마키가 “원피스” 엔딩곡 “Memories”를 부르던 중 무대 조명이 갑자기 꺼졌다.  </li>
+<li>공연이 중단된 뒤, 스태프가 그녀를 무대 밖으로 데려가 강제로 퇴장시켰다.  </li>
+<li>
+<p><a href="https://www.dt.co.kr/article/12032109" target="_blank">디지털타임스</a>와 <a href="https://www.truthdaily.co.kr/news/articleView.html?idxno=2457" target="_blank">트루스데일리</a>에서 같은 사실을 보도했다.</p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 29일</strong>  </p>
+</li>
+<li>상하이에서 예정되었던 하마사키 아유미 등 다른 일본 아티스트들의 공연이 “불가항력” 사유로 중단되었다.  </li>
+<li>
+<p>이는 같은 주최 측이 “안전 및 예기치 못한 상황”을 이유로 행사 전반을 취소한 것으로 전해졌다.</p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 27일</strong>  </p>
+</li>
+<li>중국 항공사 904편이 일본행 운항을 중단했다는 보도가 있었으며, 이는 중국 정부가 일본 아티스트의 공연을 제한하려는 조치와 연계된 것으로 보인다.  </li>
+<li><a href="https://namu.wiki/w/2025%EB%85%84%20%EC%A4%91%EC%9D%BC%20%EA%B0%88%EB%93%B1" target="_blank">나무위키</a>와 <a href="https://x.com/kairos0110" target="_blank">X</a>에서도 관련 내용이 언급되었다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>중국 측</strong>  </li>
+<li>일부 보도에서는 “안전 문제”와 “예기치 못한 기술적 결함”을 이유로 공연 중단을 정당화했다.  </li>
+<li>
+<p>그러나 인스타그램 리얼에서 “공연 중단은 중국 공산당의 지시”라는 내용이 유포되면서, 정치적 압력이라는 해석이 나오고 있다.</p>
+</li>
+<li>
+<p><strong>일본 측</strong>  </p>
+</li>
+<li>오오츠키 마키와 그녀의 소속사는 “불공정하고 무례한 대우”를 주장하며, 중국 정부의 문화 보복을 비판했다.  </li>
+<li>
+<p>일본 언론은 “중국 내 일본 아티스트에 대한 차별적 조치”로 보도하며, 양국 간 문화 교류의 위기를 경고했다.</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>  </p>
+</li>
+<li>문화 관계 전문가들은 “이 사건은 단순한 공연 사고가 아니라, 양국 간 정치적 긴장과 문화적 갈등이 겹친 사례”라고 분석했다.  </li>
+<li>한 학자는 “공연 중단이 실제로는 안전상의 이유가 아니라, 정치적 메시지를 전달하려는 의도일 가능성이 높다”고 지적했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>오오츠키 마키가 2025년 11월 28일 상하이에서 무대 조명이 꺼지며 공연이 중단되고, 스태프에 의해 강제로 퇴장당했다.</td>
+<td><a href="https://www.dt.co.kr/article/12032109" target="_blank">디지털타임스</a>, <a href="https://www.truthdaily.co.kr/news/articleView.html?idxno=2457" target="_blank">트루스데일리</a></td>
+</tr>
+<tr>
+<td></td>
+<td>상하이에서 예정되었던 일본 아티스트들의 공연이 11월 29일에 취소되었다.</td>
+<td><a href="https://www.dt.co.kr/article/12032109" target="_blank">디지털타임스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>중국 항공사 904편이 11월 27일에 일본행 운항을 중단했다.</td>
+<td><a href="https://namu.wiki/w/2025%EB%85%84%20%EC%A4%91%EC%9D%BC%20%EA%B0%88%EB%93%B1" target="_blank">나무위키</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>“공연 중단은 중국 공산당의 지시”라는 주장은 공식 발표가 없으며, 주로 소셜 미디어에서 유포된 내용이다.</td>
+<td>인스타그램 리얼, X</td>
+</tr>
+<tr>
+<td></td>
+<td>중국 정부가 일본 아티스트를 차별적으로 대우한다는 주장은 아직 공식 입장이 없다.</td>
+<td>인스타그램 리얼, X</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>오오츠키 마키</strong>  </li>
+<li>일본 가수, “원피스” 엔딩곡 “Memories”의 주연 가수.  </li>
+<li>
+<p>상하이 공연에서 강제 퇴장당해 일본 아티스트의 중국 내 공연에 대한 불만을 표명했다.</p>
+</li>
+<li>
+<p><strong>반다이 남코 페스티벌 주최 측</strong>  </p>
+</li>
+<li>
+<p>공연 중단과 강제 퇴장을 정당화하며 “안전 및 예기치 못한 상황”을 이유로 삼았다.</p>
+</li>
+<li>
+<p><strong>중국 정부 및 문화부</strong>  </p>
+</li>
+<li>
+<p>중국 내 일본 아티스트의 공연을 제한하거나 중단시키는 조치를 취한 것으로 보이며, 이는 양국 간 정치적 긴장과 연계된 것으로 해석된다.</p>
+</li>
+<li>
+<p><strong>일본 정부 및 문화부</strong>  </p>
+</li>
+<li>이번 사건을 문화 보복으로 비판하며, 양국 간 문화 교류의 재개를 촉구하고 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>문화 교류의 재개</strong>  </li>
+<li>양국 정부가 긴장을 완화하고 문화 교류를 재개하기 위한 협의가 필요할 것으로 보인다.  </li>
+<li>
+<p>일본 아티스트들의 중국 공연이 재개될 경우, 양국 간 문화적 신뢰 회복이 중요한 과제가 될 것이다.</p>
+</li>
+<li>
+<p><strong>정치적 긴장</strong>  </p>
+</li>
+<li>이번 사건은 중국과 일본 간의 정치적 긴장을 더욱 고조시킬 가능성이 있다.  </li>
+<li>
+<p>특히, 중국 내 일본 아티스트에 대한 제한이 지속될 경우, 양국 간 외교 관계에 부정적 영향을 미칠 수 있다.</p>
+</li>
+<li>
+<p><strong>산업적 영향</strong>  </p>
+</li>
+<li>일본 엔터테인먼트 산업은 중국 시장에서의 기회를 상실할 위험이 있다.  </li>
+<li>반대로, 중국 내 문화 산업은 외국 아티스트에 대한 접근성을 재검토해야 할 필요가 있다.</li>
+</ul>
+<p>이번 사건은 단순한 공연 사고를 넘어 양국 간 문화적, 정치적 갈등이 복합적으로 얽힌 사례로, 앞으로의 양국 관계와 문화 교류에 큰 영향을 미칠 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=btySA1cuK9g" target="_blank">Why China Forced the Cancellat...</a><a href="https://www.youtube.com/watch?v=7d8fTshnH_M" target="_blank">캐비 대형사고 #캐리비안베이</a><a href="https://www.youtube.com/watch?v=tMzjHQg3mhA" target="_blank">갑질당했다는 이무진?</a><a href="https://www.youtube.com/watch?v=9ooR-YgRlUw" target="_blank">The process of becoming a lady...</a><a href="https://www.youtube.com/watch?v=jaHHih178hM" target="_blank">리허설 중 강제퇴장😱반말 갑질 당한 이무진 #이무진#이...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/023/0003943967" target="_blank">노래 도중 불 꺼지더니 “나가세요”… 상하이서 끌려나간 일본 가수</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.instagram.com/reel/DRpCR9uE3c4/" target="_blank">일본 가수, 중국 내 공연 강제 중단당해...문화로 번지는 외교 갈등 심화 ...</a><a href="https://namu.wiki/w/2025%EB%85%84%20%EC%A4%91%EC%9D%BC%20%EA%B0%88%EB%93%B1" target="_blank">2025년 중일 갈등 - 나무위키</a><a href="https://x.com/kairos0110" target="_blank">계영배 (@kairos0110) / Posts / X</a><a href="https://www.dt.co.kr/article/12032109" target="_blank">日 가수 상하이 행사서 노래 부르던 중 강제로 퇴장당해 | 디지털타임스</a><a href="https://www.truthdaily.co.kr/news/articleView.html?idxno=2457" target="_blank">中, 공연 도중 日가수 공개 모욕… 문화보복 치졸함 극치 - 트루스데일리</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
