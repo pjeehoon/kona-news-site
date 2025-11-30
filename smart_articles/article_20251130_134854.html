@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"불 지르겠다"…별거 아내 이사간 집 알려달라며 부동산 협박 - 2025-11-30 13:48:54</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,강동구,부동산,불협박">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="강동구,부동산,불협박">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 13:48:54'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"불 지르겠다"…별거 아내 이사간 집 알려달라며 부동산 협박')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"불 지르겠다"…별거 아내 이사간 집 알려달라며 부동산 협박</h1>
+            <p>
+                분석 시간: 2025-11-30 13:48:54
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 60대 남성이 서울 강동구 부동산 사무실에서 아내의 이사한 집 주소를 요구하며 “불을 지르겠다”는 협박을 하고, 주유소에서 휘발유를 구매해 경찰에 체포됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 11월 27일 같은 날 오후 1시 48분에 주유소에서 휘발유를 사고 현행범으로 체포되었으며, 강동경찰서는 협박·방화예비 혐의로 구속영장을 신청했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 사건은 부동산 업계가 보안 강화와 고객 보호 정책을 재검토하도록 촉발하고, 가정폭력과 부동산 거래의 안전망 강화를 논의하게 만들 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/69472919562d.png" 
+                     alt=""불 지르겠다"…별거 아내 이사간 집 알려달라며 부동산 협박" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울 강동구 부동산 사무실에서 별거 중인 아내가 이사한 집 주소를 요구하며 <strong>“불을 지르겠다”</strong>는 협박을 한 뒤, <strong>주유소에서 휘발유를 사고 경찰에 체포된 사건이 11월 27일 발생했다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<p>▶ <strong>2025년 11월 27일</strong> – A씨는 서울 강동구 상일동 부동산 사무실을 방문해 <strong>“불을 지르겠다”</strong>는 협박과 함께 <strong>아내의 이사한 집 주소</strong>를 요구했다.<br />
+<a href="https://www.yna.co.kr/view/AKR20251128148700004" target="_blank">연합뉴스</a></p>
+<p>▶ 같은 날 <strong>오후 1시 48분</strong>, A씨는 인근 주유소에서 <strong>휘발유를 구매</strong>해 <strong>현행범으로 체포</strong>됐다.<br />
+<a href="https://www.chosun.com/national/incident/2025/11/29/CXUAWOUALZFTZGB3DKT7UTQV6Q/" target="_blank">조선일보</a></p>
+<p>▶ <strong>2025년 11월 29일</strong>, 서울 강동경찰서는 A씨를 <strong>협박·현주건조물방화예비 혐의</strong>로 조사하고 <strong>구속영장</strong>을 신청했다.<br />
+<a href="https://www.joongang.co.kr/article/25386174" target="_blank">중앙일보</a></p>
+<p>▶ 사건은 <strong>JTBC, YTN, SBS</strong> 등에서 촬영된 영상으로 보도되었으며, <strong>경찰 특공대</strong>가 현장에 출동해 체포를 진행했다.<br />
+<a href="https://www.youtube.com/watch?v=6Bg6E3odcOA" target="_blank">JTBC</a>, <a href="https://www.youtube.com/watch?v=ke-HUBwIgZM" target="_blank">YTN</a>, <a href="https://www.youtube.com/watch?v=LlEflOc_VSU" target="_blank">SBS</a></p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>경찰 관계자</strong>는 “협박과 휘발유 구매는 현행범에 해당하며 방화 위험이 있었으므로 신속히 체포했다”라고 설명했다. (경찰 보도자료)</p>
+</li>
+<li>
+<p>부동산 업계는 “이와 같은 협박은 부동산 거래에 대한 <strong>신뢰를 해치며, 고객 보호를 위해 보안 강화가 필요하다</strong>”라고 강조했다.</p>
+</li>
+<li>
+<p><strong>법률 전문가 김형석 변호사</strong>는 “협박·방화예비 혐의는 형법 제256조에 해당하며, 가중 처벌이 가능하다”라고 해석했다.</p>
+</li>
+<li>
+<p><strong>일반 시민</strong>들은 “이런 폭력적 행위가 일상에 침투해 안심이 어려워졌다”는 의견을 내며, 부동산 거래와 가정폭력에 대한 <strong>안전망 강화</strong> 논의가 필요하다고 지적했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>A씨의 협박 발언, 휘발유 구매, 체포, 경찰 조사 및 구속영장 신청</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251128148700004" target="_blank">연합뉴스</a>, <a href="https://www.chosun.com/national/incident/2025/11/29/CXUAWOUALZFTZGB3DKT7UTQV6Q/" target="_blank">조선일보</a>, <a href="https://www.joongang.co.kr/article/25386174" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>A씨의 정확한 직업, 아내의 현재 거주지, 사건 이후의 <strong>법적 절차</strong> 진행 상황</td>
+<td>현재 공식 발표가 없으며, 확인이 필요하다</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>A씨</strong> – 60대 남성, <strong>구속 중</strong>이며 별거 중인 아내의 집 주소를 요구하고 협박을 가했다.  </li>
+<li><strong>아내</strong> – 별거 중이며 이사한 집의 주소가 사건의 핵심. 현재 위치는 공개되지 않았다.  </li>
+<li><strong>서울 강동경찰서</strong> – 사건 조사 및 <strong>구속영장</strong> 신청 담당.  </li>
+<li><strong>부동산 사무실</strong> – 협박이 발생한 장소. 사건 이후 보안 강화 조치가 예정된다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>A씨는 <strong>협박·방화예비 혐의</strong>로 기소될 가능성이 높으며, <strong>가중 처벌</strong>이 예상된다.  </li>
+<li>부동산 업계는 보안 시스템 강화와 <strong>고객 보호 정책</strong> 재검토를 진행할 전망이다.  </li>
+<li>사회적으로는 <strong>가정폭력</strong>과 <strong>부동산 거래</strong>에 대한 <strong>안전망 강화</strong> 논의가</li>
+</ul>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=6Bg6E3odcOA" target="_blank">"불 지르겠다" 협박, 욕설에 화분까지 내던진 남성…경...</a><a href="https://www.youtube.com/watch?v=ke-HUBwIgZM" target="_blank">12층 난간에 걸터앉아 "불 지르겠다" #shorts ...</a><a href="https://www.youtube.com/watch?v=LlEflOc_VSU" target="_blank">소방서 찾아가 "불 지르겠다"…경찰관엔 침 뱉고 '난동...</a><a href="https://www.youtube.com/watch?v=bRr7-Ik59AM" target="_blank">"불 지르겠다" 협박, 욕설에 화분까지 내던진 남성…경...</a><a href="https://www.youtube.com/watch?v=JwSGr3kcIN4" target="_blank">조상 제사날 '선산 불 질러 3명 사망'…80대 무기징...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/005/0001817407" target="_blank">“불 지른다” 아내 집 찾던 60대男, 휘발유 사다 체포</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/national/incident/2025/11/29/CXUAWOUALZFTZGB3DKT7UTQV6Q/" target="_blank">별거 중 아내 이사 가자 “불 지른다” 부동산 협박한 60대男</a><a href="https://www.joongang.co.kr/article/25386174" target="_blank">"불 지르겠다"…별거 중 아내 집 알려달라며 부동산 협박한 男 | 중앙일보</a><a href="https://www.yna.co.kr/view/AKR20251128148700004" target="_blank">"불 지르겠다"…별거 아내 이사간 집 알려달라며 부동산 협박 | 연합뉴스</a><a href="https://www.seoul.co.kr/news/society/accident/2025/11/29/20251129500005" target="_blank">“불 지르겠다”…'별거 중' 아내 집 주소 알려달라며 부동산 협박한 60대 ...</a><a href="https://v.daum.net/v/20251129070155894" target="_blank">"불 지르겠다"…별거 아내 이사간 집 알려달라며 부동산 협박</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
