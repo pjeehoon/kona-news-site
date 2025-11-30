@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'관봉권·쿠팡 특검' 서초동에 사무실 마련…수사 준비 박차 - 2025-11-30 22:34:57</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,관봉권,쿠팡,서초동">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="관봉권,쿠팡,서초동">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 22:34:57'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'관봉권·쿠팡 특검\' 서초동에 사무실 마련…수사 준비 박차')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'관봉권·쿠팡 특검' 서초동에 사무실 마련…수사 준비 박차</h1>
+            <p>
+                분석 시간: 2025-11-30 22:34:57
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 16일 이재명 대통령이 안권섭 변호사를 상설특별검사로 임명하고 서초구 센트로빌딩에 특검 사무실을 마련해 관봉권 띠지 분실 및 쿠팡 퇴직금 불기소 의혹 수사를 가속화했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 사무실 개시는 12월 1일로 예정되며, 20일 준비기간 이후 최대 90일간 수사가 진행될 계획이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 조치는 정치적 압력 의혹을 해소하고 공정한 수사를 확보하려는 의도로, 향후 수사 결과가 법적·정치적 파장에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/9ec636138d54.png" 
+                     alt="'관봉권·쿠팡 특검' 서초동에 사무실 마련…수사 준비 박차" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 11월 16일, 이재명 대통령이 안권섭 변호사를 상설특별검사로 임명하면서 관봉권 띠지 분실 및 쿠팡 퇴직금 불기소 외압 의혹을 수사하기 위한 사무실이 서초구 센트로빌딩에 마련됐다. 수사 개시는 12월 1일로 예정돼 20일 준비기간 이후 최대 90일간 진행될 전망이다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 11월 16일</strong> – 안권섭 변호사가 상설특별검사로 임명돼 관봉권·쿠팡 사건 수사를 맡게 됨.<br />
+<a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 17일</strong> – 서울 여의도 사무실에서 공개 출현하며 사무실 준비 상황을 공개.<br />
+<a href="https://www.joongang.co.kr/article/25382598" target="_blank">중앙일보</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 11월 30일</strong> – 서초구 센트로빌딩에 사무실 계약을 마치고 입주 준비가 완료됨. 사무실은 서초동 법원 인근에 위치.<br />
+<a href="https://www.chosun.com/national/court_law/2025/11/17/66MIMJR5LVDBLEJFP3SEFOK4PA/" target="_blank">조선일보</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 12월 1일</strong> – 수사 개시 예정. 20일 준비기간 이후 최대 90일간 수사가 진행될 계획.<br />
+<a href="https://news.jtbc.co.kr/article/NB12271179" target="_blank">JTBC</a></p>
+</li>
+<li>
+<p><strong>▶ 관봉권 띠지 분실 의혹</strong> – 건진법사 관봉권의 띠지와 스티커가 수사 과정에서 분실됐다는 주장.<br />
+<a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 쿠팡 퇴직금 불기소 외압 의혹</strong> – 쿠팡 물류 자회사 쿠팡풀필먼트서비스(CFS)의 퇴직금 미지급 사건이 불기소 처분을 받았다는 외압 의혹.<br />
+<a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>중립적</td>
+<td>사무실 마련과 수사 개시 일정 공개, 의혹에 대한 공식 입장 없음</td>
+</tr>
+<tr>
+<td><strong>중앙일보</strong></td>
+<td>보수적</td>
+<td>특검 임명과 사무실 마련을 통해 정부가 사건에 적극적으로 대응하고 있다고 평가</td>
+</tr>
+<tr>
+<td><strong>조선일보</strong></td>
+<td>진보적</td>
+<td>특검이 수사 범위를 확대할 가능성을 언급하며, 의혹이 실제로는 정치적 압력에 불과할 수 있다고 지적</td>
+</tr>
+<tr>
+<td><strong>JTBC</strong></td>
+<td>중립적</td>
+<td>수사 개시 일정과 준비 기간을 강조하며, 실제 수사 진행 상황은 아직 미정</td>
+</tr>
+<tr>
+<td><strong>법률타임스</strong></td>
+<td>전문적</td>
+<td>특검의 법적 권한과 수사 범위, 그리고 사무실 위치가 법원 인근에 있다는 점이 수사 효율성을 높일 수 있다고 분석</td>
+</tr>
+<tr>
+<td><strong>한겨레</strong></td>
+<td>진보적</td>
+<td>특검이 정치적 압력에 휘둘릴 가능성을 제기하며, 의혹이 사실인지 여부를 명확히 할 필요가 있다고 주장</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>안권섭 변호사가 2025년 11월 16일 상설특별검사로 임명</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>사무실이 서초구 센트로빌딩에 위치하고 서초동 법원 인근</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/11/17/66MIMJR5LVDBLEJFP3SEFOK4PA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>수사 개시는 2025년 12월 1일 예정</td>
+<td><a href="https://news.jtbc.co.kr/article/NB12271179" target="_blank">JTBC</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>관봉권 띠지 분실 의혹</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>쿠팡 퇴직금 불기소 외압 의혹</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>안권섭 변호사</strong> – 상설특별검사로 임명, 관봉권·쿠팡 사건 수사 책임자.<br />
+<em>입장</em>: “막중한 책임을 느끼며 신속하고 공정한 수사를 진행하겠다.”<br />
+<em>출처</em>: <a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>관봉권 건진법사</strong> – 띠지 분실 의혹의 대상자.<br />
+<em>입장</em>: 아직 공식 입장을 발표하지 않음.</p>
+</li>
+<li>
+<p><strong>쿠팡</strong> – 퇴직금 불기소 외압 의혹의 대상 기업.<br />
+<em>입장</em>: 공식 성명을 발표하지 않았음.</p>
+</li>
+<li>
+<p><strong>이재명 대통령</strong> – 특검 임명과 사무실 마련을 승인한 행정 책임자.<br />
+<em>입장</em>: “공정한 수사를 위해 최선을 다하겠다.”<br />
+<em>출처</em>: <a href="https://www.joongang.co.kr/article/25382598" target="_blank">중앙일보</a></p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수사 개시</strong>: 12월 1일에 공식 개시 예정이며, 20일 준비기간 이후 최대 90일간 수사가 진행될 전망.  </li>
+<li><strong>사무실 운영</strong>: 서초동 법원 인근에 위치한 사무실은 수사팀의 접근성을 높여 신속한 자료 수집과 증거 확보가 가능할 것으로 보인다.  </li>
+<li><strong>의혹 해명</strong>: 관봉권 띠지 분실 및 쿠팡 퇴직금 불기소 외압 의혹에 대한 공식 조사 결과가 공개되면, 정치적 파장과 기업 이미지에 큰 영향을 미칠 수 있다.  </li>
+<li><strong>정치적 반응</strong>: 특검의 수사 범위와 결과에 따라 정부와 야당 간의 갈등이 심화될 가능성이 있다.  </li>
+<li><strong>법적 절차</strong>: 수사 결과에 따라 기소 여부가 결정되며, 이는 관련 인물과 기업의 법적 책임을 명확히 할 것이다.</li>
+</ul>
+<p><strong>▶</strong> 수사 개시와 사무실 마련이 실제로 진행되는 과정에서, 특검의 독립성과 공정성이 어떻게 보장될지 주목된다.<br />
+<strong>▶</strong> 관봉권·쿠팡 사건이 정치·법률적 파장을 일으킬 수 있는 만큼, 향후 보도와 공식 발표를 면밀히 관찰할 필요가 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=q6ZrmKPg0xo" target="_blank">수사개시 앞둔 '관봉권·쿠팡 특검'…서초동 법원 인근에...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015769983" target="_blank">수사개시 앞둔 '관봉권·쿠팡 특검'…서초동 법원 인근에 사무실</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.joongang.co.kr/article/25382598" target="_blank">李대통령, '관봉권 띠지·쿠팡 의혹' 상설특검에 안권섭 임명 | 중앙일보</a><a href="https://www.chosun.com/national/court_law/2025/11/17/66MIMJR5LVDBLEJFP3SEFOK4PA/" target="_blank">'관봉권 띠지 분실·쿠팡 불기소' 의혹 안권섭 특검 “막중한 책임 느껴”</a><a href="https://news.jtbc.co.kr/article/NB12271179" target="_blank">이대통령, '관봉권 띠지·쿠팡 불기소 외압' 의혹 특검에 안권섭 임명</a><a href="https://www.lawtimes.co.kr/news/213196" target="_blank">이재명 대통령, '관봉권 띠지·쿠팡 외압 의혹' 상설특검에 안권섭 변호사 ...</a><a href="https://www.hani.co.kr/arti/politics/bluehouse/1229565.html" target="_blank">안권섭 '관봉권 띠지·쿠팡 의혹' 상설특검 임명</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
