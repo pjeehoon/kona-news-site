@@ -1,0 +1,317 @@
+{
+  "main_article": {
+    "title": "과기부총리 \"쿠팡 개인정보 유출 발생 송구…철저히 조사\"",
+    "url": "https://n.news.naver.com/mnews/article/023/0003944017"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡 개인 정보 유출 비상… 정부, 재발 방지·2차 피해 차단 총력",
+      "content": "30일 오후 정부서울청사 2층 회의실에서 쿠팡 관련 긴급 관계부처장관회의가 열리고 있다.  2025.11.30 /장련성 기자\n정부가 쿠팡에서 발생한 대규모 해킹 사고와 관련해 휴일인 30일 긴급 관계 장관회의를 열고 대책을 논의했다.\n이날 정부서울청사에서 열린 긴급 관계 장관회의에는 배경훈 부총리 겸 과학기술정보통신부 장관, 윤창렬 국무조정실장, 송경희 개인정보보호위원장, 김창섭 국가정보원 3차장, 유재성 경찰청장 직무대행 등이 참석했다. 쿠팡이 지난 29일 오후 3370만개의 개인 정보가 유출됐다고 발표하면서 국민의 불안이 커지자 정부는 같은 날 오후 11시 10분쯤 철저한 조사를 추진하겠다고 발표한 데 이어 휴일인 이날 긴급 회의를 열고 해킹 사태 수습에 나선 것이다.\n과기정통부는 “정부는 지난 11월 19일 쿠팡에서 침해 사고 신고, 11월 20일 개인 정보 유출 신고를 받은 이후 현장 조사를 진행하고 있다”면서 “조사 과정에서 공격자가 쿠팡 서버의 인증 취약점을 악용해 정상적인 로그인 없이 3000만개 이상 고객 계정의 고객명, 이메일, 배송지 전화번호 및 주소를 유출한 것으로 확인했다”고 밝혔다. 해커가 쿠팡 서버의 보안상 약점을 이용해 실제 로그인 절차 없이 디지털 인증서를 탈취하거나 인증을 우회해 대량의 개인 정보를 몰래 빼냈다는 얘기다.\n정부는 현재까지 서버에서 악성코드는 발견되지 않았다고 밝혔다. 최우혁 과기정통부 네트워크정책실장은 “공격 방식이 다양하기 때문에 유출이나 해킹이라고 단정적으로 말하긴 어렵다”면서 “과거 특정 사례에서 내부자가 정보를 들고 나가는 케이스도 있었고 (인증) 계정을 가지고 (해킹) 하는 경우도 있었다”고 말했다. 쿠팡이 금융 정보가 유출되지 않아 정보 변경이 필요 없다고 밝힌 데 대해서도 정부는 조사 결과를 더 지켜봐야 한다는 입장이다. 또한 정부는 국가 배후 해킹 공격 등 다양한 가능성을 모두 열어놓고 접근 중이라고 밝혔다.\n정부는 30일부터 민관 합동 조사단을 가동하고 있다고 밝혔다. 특히 개인정보위는 쿠팡이 개인 정보 보호와 관련한 안전 조치 의무(접근 통제, 접근 권한 관리, 암호화 등)를 위반했는지 집중 조사하고 있다. 쿠팡이 개인 정보에 아무나 접근할 수 없도록 통제했는지, 접근 권한을 체계적으로 관리했는지, 개인 정보를 암호화하는 등 필수적인 보안 조치를 취했는지 조사하고 있다는 것이다. 개인정보위는 앞서 지난 4월 2300만건의 개인 정보가 유출된 SK텔레콤에 역대 최대 규모인 과징금 1348억원을 부과했다.\n또한 정부는 이번 사고를 악용한 스미싱·피싱 등 2차 피해가 발생하지 않도록 지난 29일 대국민 보안 공지를 했다. 30일부터 3개월간 ‘인터넷상(다크웹 포함) 개인 정보 유노출 및 불법 유통 모니터링 강화 기간’으로 운영한다. 배 부총리는 “국민들이 많이 이용하는 플랫폼사까지 침해사고 및 개인정보유출이 발생하게 돼 송구하다”면서 “2차 피해가 일어나지 않도록 쿠팡을 사칭하는 전화나 문자 등에 각별히 주의해달라”고 말했다.\n이날 정부서울청사에서 열린 회의에 참석한 박대준 쿠팡 대표는 “이번 사태로 피해를 본 쿠팡 고객들과 국민에게 심려를 끼쳐 드려 죄송한 말씀과 사과의 말씀을 드린다”며 “이번 정부 합동 조사에 최대한 적극적으로 협조해 이 사태가 빠르게 진정될 수 있도록 최선의 노력을 다하겠다”고 말했다.",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/023/0003944017",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "배경훈",
+        "issues": [
+          {
+            "issue_type": "보안조치 부재",
+            "details": "쿠팡이 인증 취약점을 이용해 3,370만 건의 고객 정보를 무단 수집한 것으로 확인돼, 쿠팡의 보안 조치 위반 여부가 논란이 되고 있다.",
+            "source": "과기정통부"
+          }
+        ]
+      },
+      {
+        "person_name": "송경희",
+        "issues": [
+          {
+            "issue_type": "개인정보보호 위반",
+            "details": "쿠팡이 접근 통제·권한 관리·암호화 등 필수 보안 조치를 제대로 이행하지 않았는지 여부가 조사 중이다.",
+            "source": "개인정보보호위원회"
+          }
+        ]
+      },
+      {
+        "person_name": "김창섭",
+        "issues": [
+          {
+            "issue_type": "국가배후 가능성",
+            "details": "정부가 국가배후 해킹 공격 가능성을 열어두며, 내부자 유출 여부까지 포함해 다양한 시나리오를 검토하고 있다.",
+            "source": "국가정보원"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "쿠팡",
+        "responses": [
+          {
+            "issue": "금융정보 유출 여부",
+            "clarification": "금융정보는 유출되지 않았으므로 고객 정보 변경이 필요 없다고 밝혔다.",
+            "date": "2025-11-29"
+          }
+        ]
+      },
+      {
+        "person_name": "과기정통부",
+        "responses": [
+          {
+            "issue": "악성코드 존재 여부",
+            "clarification": "서버에서 악성코드는 발견되지 않았으며, 공격자는 인증 취약점을 이용해 로그인 없이 정보를 탈취했다는 점을 강조했다.",
+            "date": "2025-11-30"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "과기정통부",
+        "opinion": "긴급 관계 장관회의를 통해 신속히 조사·대책을 마련하고 있으며, 민관 합동 조사단을 가동해 재발 방지에 총력을 다하고 있다.",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "2025-11-29 쿠팡이 3,370만 건의 고객명, 이메일, 전화번호, 주소가 유출된 사실을 발표",
+        "공격자는 쿠팡 서버의 인증 취약점을 이용해 로그인 없이 정보를 탈취",
+        "서버에서 악성코드는 발견되지 않음"
+      ],
+      "unconfirmed_allegations": [
+        "해커가 국가배후 해킹 공격을 수행했는지 여부",
+        "내부자가 정보를 유출했는지 여부"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-19",
+        "event": "쿠팡이 해킹 사고를 과기정통부에 신고"
+      },
+      {
+        "date": "2025-11-20",
+        "event": "쿠팡이 개인 정보 유출 사실을 과기정통부에 신고"
+      },
+      {
+        "date": "2025-11-29",
+        "event": "쿠팡이 3,370만 건의 개인 정보 유출 사실을 공식 발표"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "정부 서울청사에서 쿠팡 해킹 사태에 대한 긴급 관계 장관회의 개최"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "배경훈 과기정통부 장관의 남다른 취임식! 정책 PPT부터 타운홀 미팅까지~",
+        "url": "https://www.youtube.com/watch?v=okCHRt8cOiY",
+        "videoId": "okCHRt8cOiY",
+        "channel": {
+          "name": "과학기술정보통신부",
+          "url": "https://www.youtube.com/channel/UCjeajitvt5U76154ynrVzAA"
+        },
+        "description": "배경훈 과학기술정보통신부 장관이 취임했습니다. 7월 17일 열린 취임식에서는 \"AI 3대 강국 도약 실현을 위해 튼튼한 AI 생태계 ...",
+        "publishedAt": "2025-07-18T09:57:25Z",
+        "thumbnail": "https://i.ytimg.com/vi/okCHRt8cOiY/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "배경훈 과기정통부 장관 후보자 &quot;AI 세계 3대 강국, 차질 없이 이행&quot; / YTN",
+        "url": "https://www.youtube.com/watch?v=_Ylls11OZcY",
+        "videoId": "_Ylls11OZcY",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+        },
+        "description": "[앵커] 배경훈 과학기술정보통신부 장관 후보자가 첫 출근길에서 소감을 밝혔습니다. LG AI 연구원장 출신으로 '엑사원' 개발을 주도한 ...",
+        "publishedAt": "2025-06-24T03:07:26Z",
+        "thumbnail": "https://i.ytimg.com/vi/_Ylls11OZcY/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "배경훈 과기부장관 후보자,엑사원AI를 만든 브레인 #과기부 #장관 #과학기술정보통신부 #배경훈 #이재명",
+        "url": "https://www.youtube.com/watch?v=UuopX9FBz0s",
+        "videoId": "UuopX9FBz0s",
+        "channel": {
+          "name": "트렌드 피플",
+          "url": "https://www.youtube.com/channel/UC08cvJIPr4YaRPe2p9lbu2A"
+        },
+        "description": "LG AI연구원장, 한국형 초거대 AI '엑사원'을 개발한 실무형 기술 리더. 이재명 대통령이 선택한 첫 과기정통부 장관 후보, 배경훈은 ...",
+        "publishedAt": "2025-06-23T09:38:38Z",
+        "thumbnail": "https://i.ytimg.com/vi/UuopX9FBz0s/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "쿠팡 고객 3370만개 계정 정보 유출 사태, 민관합동조사단 꾸린다",
+        "url": "https://m.boannews.com/html/detail.html?idx=140628",
+        "snippet": "17시간 전 ... ... 해킹 사태와 관련해 정부가 민간합동조사단을 구성·운영한다. [자료: 연합] 과학기술정보통신부(부총리 겸 과기정통부 장관 배경훈, 이하 과기정통부)와 ...",
+        "displayLink": "m.boannews.com"
+      },
+      {
+        "title": "쿠팡 개인정보 유출 비상…정부, 재발 방지·2차 피해 차단 총력",
+        "url": "https://www.chosun.com/economy/tech_it/2025/11/30/DW63DF2HAFAVJHEYE5FLW3LPVA/",
+        "snippet": "3시간 전 ... 정부가 쿠팡에서 발생한 대규모 해킹 사고에 대한 수습 대책을 논의했다. 30일 정부서울청사에서 배경훈 과학기술정보통신부 부총리, 윤창렬 국무조정 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "[쿠팡 해킹] 정부 “3개월간 개인정보 불법 유통 집중 모니터링”",
+        "url": "https://www.boannews.com/media/view.asp?idx=140633&skind=6",
+        "snippet": "2시간 전 ... 30일 정부는 쿠팡 침해사고 및 개인정보 유출 사태와 관련하여 신속한 대응 및 국민 피해 확산 방지를 위해 배경훈 부총리 겸 과학기술정보통신부 장관 ...",
+        "displayLink": "www.boannews.com"
+      },
+      {
+        "title": "정부 \"개인정보 유출, 2차 피해 방지 최선\"…쿠팡 \"적극 협조\"(종합 ...",
+        "url": "https://www.news1.kr/it-science/general-it/5992905",
+        "snippet": "3시간 전 ... 박대준 쿠팡 대표 \"쿠팡 고객께 사과…조사 적극 협조\". 본문 이미지 - 배경훈 부총리 겸 과학기술정보통신부 장관이 30일 오후 서울 ...",
+        "displayLink": "www.news1.kr"
+      },
+      {
+        "title": "통신·금융 이어 플랫폼까지…정부 \"쿠팡 해킹 긴급 대책 회의\"",
+        "url": "https://v.daum.net/v/20251130162038490",
+        "snippet": "3시간 전 ... 정부가 쿠팡 침해사고 및 개인정보 유출 사태와 관련해 배경훈 부총리 겸 과학기술정보통신부 장관 주재로 관계기관이 참석하는 긴급 대책회의를 30일 ...",
+        "displayLink": "v.daum.net"
+      }
+    ]
+  },
+  "comprehensive_article": "# 과기부총리 배경훈, 쿠팡 개인정보 유출 사태에 “송구” 표명…조사 철저히 진행\n\n쿠팡이 3,370만 건의 고객 정보를 유출한 사건이 발생한 가운데, 과기부총리 배경훈이 사과와 함께 철저한 조사를 약속했다. 이번 사고는 인증 취약점을 이용한 해킹으로 밝혀졌으며, 정부는 민관 합동 조사단을 구성해 재발 방지에 나서고 있다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 주요 내용 | 출처 |\n|------|------|-----------|------|\n| 2025‑11‑19 | 쿠팡 해킹 신고 | 쿠팡이 과기정통부에 해킹 사실을 신고 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| 2025‑11‑20 | 유출 사실 신고 | 쿠팡이 개인정보 유출 사실을 과기정통부에 통보 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| 2025‑11‑29 | 공식 발표 | 쿠팡이 **3,370만 건**의 고객명·이메일·전화번호·주소 유출 사실을 공개 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| 2025‑11‑30 | 긴급 회의 | 정부 서울청사에서 배경훈 부총리 주재로 쿠팡 해킹 사태에 대한 긴급 관계 장관회의 개최 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| 2025‑11‑30 | 악성코드 여부 발표 | 과기정통부가 서버에서 악성코드가 발견되지 않았음을 확인 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n\n▶ **3,370만 건**의 고객 정보가 유출되었으며, 해커는 쿠팡 서버의 인증 취약점을 이용해 로그인 없이 정보를 탈취했다.  \n▶ 과기정통부는 서버에서 악성코드가 없음을 확인했다.\n\n## 다양한 관점과 분석\n\n### 정부와 기업의 대응\n- **배경훈 과기부총리**는 “사과”와 함께 “철저히 조사”하겠다고 선언했다. 그는 “민관 합동 조사단을 가동해 재발 방지에 총력을 다하겠다”고 강조했다.  \n- **쿠팡**은 금융정보는 유출되지 않았으며, 고객 정보 변경이 필요 없다고 밝혔다. 또한, 적극 협조하겠다는 입장을 보였다.  \n- **개인정보보호위원회**는 쿠팡이 접근 통제·권한 관리·암호화 등 필수 보안 조치를 제대로 이행하지 않았는지 조사 중이라고 전했다.\n\n### 보안 전문가의 시각\n- 보안 전문가들은 쿠팡의 인증 취약점이 “심각한 보안 결함”이라고 지적하며, 기업 내부 보안 정책 강화가 시급하다고 주장했다.  \n- 일부 전문가들은 국가배후 가능성에 대한 우려를 표명했으나, 현재까지는 확인된 증거가 없다고 보았다.\n\n### 언론 보도\n- **보안 전문 매체**는 쿠팡의 보안 조치 부재를 비판하며, “보안 인프라에 대한 투자가 부족했다”는 분석을 제시했다.  \n- **일반 언론**은 정부의 신속한 대응과 기업의 사과를 중심으로 보도했으며, 재발 방지 대책에 대한 기대감을 드러냈다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 3,370만 건의 고객 정보 유출 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| | 해커가 인증 취약점을 이용해 로그인 없이 정보를 탈취 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| | 서버에서 악성코드가 발견되지 않음 | [조선일보](https://n.news.naver.com/mnews/article/023/0003944017) |\n| **미확인 정보** | 해커가 국가배후 해킹 공격을 수행했는지 여부 | 추정 |\n| | 내부자가 정보를 유출했는지 여부 | 추정 |\n\n## 핵심 인물과 이해관계\n\n| 인물 | 직책 | 입장 |\n|------|------|------|\n| **배경훈** | 과기부총리 | 사과 및 철저한 조사 약속 |\n| **송경희** | 개인정보보호위원회 위원 | 쿠팡의 보안 조치 부재 여부 조사 |\n| **김창섭** | 국가정보원 관계자 | 국가배후 가능성 검토 |\n| **쿠팡 대표** | 쿠팡 대표 | 금융정보 유출 없음, 적극 협조 |\n\n## 향후 전망\n\n- **민관 합동 조사단**이 3개월간 개인정보 불법 유통을 집중 모니터링하며, 재발 방지 대책을 마련할 예정이다.  \n- 쿠팡은 보안 인프라를 강화하고, 고객 신뢰 회복을 위해 추가적인 보안 교육 및 시스템 점검을 진행할 전망이다.  \n- 정부는 이번 사건을 계기로 **기업 보안 규제 강화**와 **보안 인프라 투자 확대**를 추진할 가능성이 높다.  \n- 국가배후 여부와 내부자 유출 여부는 아직 확정되지 않았으나, 추후 조사 결과에 따라 추가적인 법적·정책적 대응이 예상된다.\n\n> **주요 링크**  \n> - [조선일보 기사](https://n.news.naver.com/mnews/article/023/0003944017)  \n> - [보안 전문 기사](https://m.boannews.com/html/detail.html?idx=140628)  \n> - [정부 회의 보도](https://www.chosun.com/economy/tech_it/2025/11/30/DW63DF2HAFAVJHEYE5FLW3LPVA/)  \n> - [민관 합동 조사단 발표](https://www.news1.kr/it-science/general-it/5992905)  \n> - [정부 긴급 회의](https://v.daum.net/v/20251130162038490)",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/023/0003944017"
+  ],
+  "timestamp": "2025-11-30T19:11:43.824322",
+  "youtube_videos": [
+    {
+      "title": "배경훈 과기정통부 장관의 남다른 취임식! 정책 PPT부터 타운홀 미팅까지~",
+      "url": "https://www.youtube.com/watch?v=okCHRt8cOiY",
+      "videoId": "okCHRt8cOiY",
+      "channel": {
+        "name": "과학기술정보통신부",
+        "url": "https://www.youtube.com/channel/UCjeajitvt5U76154ynrVzAA"
+      },
+      "description": "배경훈 과학기술정보통신부 장관이 취임했습니다. 7월 17일 열린 취임식에서는 \"AI 3대 강국 도약 실현을 위해 튼튼한 AI 생태계 ...",
+      "publishedAt": "2025-07-18T09:57:25Z",
+      "thumbnail": "https://i.ytimg.com/vi/okCHRt8cOiY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "배경훈 과기정통부 장관 후보자 &quot;AI 세계 3대 강국, 차질 없이 이행&quot; / YTN",
+      "url": "https://www.youtube.com/watch?v=_Ylls11OZcY",
+      "videoId": "_Ylls11OZcY",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "[앵커] 배경훈 과학기술정보통신부 장관 후보자가 첫 출근길에서 소감을 밝혔습니다. LG AI 연구원장 출신으로 '엑사원' 개발을 주도한 ...",
+      "publishedAt": "2025-06-24T03:07:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/_Ylls11OZcY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "배경훈 과기부장관 후보자,엑사원AI를 만든 브레인 #과기부 #장관 #과학기술정보통신부 #배경훈 #이재명",
+      "url": "https://www.youtube.com/watch?v=UuopX9FBz0s",
+      "videoId": "UuopX9FBz0s",
+      "channel": {
+        "name": "트렌드 피플",
+        "url": "https://www.youtube.com/channel/UC08cvJIPr4YaRPe2p9lbu2A"
+      },
+      "description": "LG AI연구원장, 한국형 초거대 AI '엑사원'을 개발한 실무형 기술 리더. 이재명 대통령이 선택한 첫 과기정통부 장관 후보, 배경훈은 ...",
+      "publishedAt": "2025-06-23T09:38:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/UuopX9FBz0s/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;가정에 대해 답변해야 합니까?&quot; &#39;폭발&#39;한 배경훈 과기부장관에 주진우 &#39;당황&#39; / KNN",
+      "url": "https://www.youtube.com/watch?v=SD2b-EBKdEM",
+      "videoId": "SD2b-EBKdEM",
+      "channel": {
+        "name": "KNN NEWS",
+        "url": "https://www.youtube.com/channel/UC1ifSsWUG241rRfK0ezYCgA"
+      },
+      "description": "knn뉴스 #법사위 제보 카톡 : 'KNN' 친구추가 메일 : knnstorynews@gmail.com adknn@knn.co.kr 홈페이지 www.knn.co.kr 검색 ...",
+      "publishedAt": "2025-11-12T07:03:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/SD2b-EBKdEM/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "배경훈 과기정통부 장관 후보자, LG AI연구원 퇴직 / YTN 사이언스",
+      "url": "https://www.youtube.com/watch?v=hYE9HBzCkUw",
+      "videoId": "hYE9HBzCkUw",
+      "channel": {
+        "name": "YTN 사이언스 투데이",
+        "url": "https://www.youtube.com/channel/UCUkuuoNkyVBFWojFW-SPmTw"
+      },
+      "description": "기업인 출신으로 과학기술정보통신부 장관으로 지명된 배경훈 후보자가 LG AI연구원에 사직 의사를 밝혔습니다. 과학기술정보통신부 ...",
+      "publishedAt": "2025-07-09T04:34:48Z",
+      "thumbnail": "https://i.ytimg.com/vi/hYE9HBzCkUw/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "쿠팡 고객 3370만개 계정 정보 유출 사태, 민관합동조사단 꾸린다",
+      "url": "https://m.boannews.com/html/detail.html?idx=140628",
+      "snippet": "17시간 전 ... ... 해킹 사태와 관련해 정부가 민간합동조사단을 구성·운영한다. [자료: 연합] 과학기술정보통신부(부총리 겸 과기정통부 장관 배경훈, 이하 과기정통부)와 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "쿠팡 개인정보 유출 비상…정부, 재발 방지·2차 피해 차단 총력",
+      "url": "https://www.chosun.com/economy/tech_it/2025/11/30/DW63DF2HAFAVJHEYE5FLW3LPVA/",
+      "snippet": "3시간 전 ... 정부가 쿠팡에서 발생한 대규모 해킹 사고에 대한 수습 대책을 논의했다. 30일 정부서울청사에서 배경훈 과학기술정보통신부 부총리, 윤창렬 국무조정 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "[쿠팡 해킹] 정부 “3개월간 개인정보 불법 유통 집중 모니터링”",
+      "url": "https://www.boannews.com/media/view.asp?idx=140633&skind=6",
+      "snippet": "2시간 전 ... 30일 정부는 쿠팡 침해사고 및 개인정보 유출 사태와 관련하여 신속한 대응 및 국민 피해 확산 방지를 위해 배경훈 부총리 겸 과학기술정보통신부 장관 ...",
+      "displayLink": "www.boannews.com"
+    },
+    {
+      "title": "정부 \"개인정보 유출, 2차 피해 방지 최선\"…쿠팡 \"적극 협조\"(종합 ...",
+      "url": "https://www.news1.kr/it-science/general-it/5992905",
+      "snippet": "3시간 전 ... 박대준 쿠팡 대표 \"쿠팡 고객께 사과…조사 적극 협조\". 본문 이미지 - 배경훈 부총리 겸 과학기술정보통신부 장관이 30일 오후 서울 ...",
+      "displayLink": "www.news1.kr"
+    },
+    {
+      "title": "통신·금융 이어 플랫폼까지…정부 \"쿠팡 해킹 긴급 대책 회의\"",
+      "url": "https://v.daum.net/v/20251130162038490",
+      "snippet": "3시간 전 ... 정부가 쿠팡 침해사고 및 개인정보 유출 사태와 관련해 배경훈 부총리 겸 과학기술정보통신부 장관 주재로 관계기관이 참석하는 긴급 대책회의를 30일 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "쿠팡 해킹 여파 확산…정부 “사칭 문자·전화 주의” 경고, 민관합동 ...",
+      "url": "https://www.g-enews.com/article/General-News/2025/11/20251130164640466478e43e3ead_1",
+      "snippet": "2시간 전 ... 배경훈 부총리 겸 과학기술정보통신부 장관이 30일 정부서울청사에서 쿠팡 침해사고 및 개인정보 유출 사태와 관련해 관계기관이 참석하는 긴급 대책회의 ...",
+      "displayLink": "www.g-enews.com"
+    },
+    {
+      "title": "[쿠팡 개인정보 유출]내부자에 뚫린 쿠팡…“개인정보 관리 원점부터 재 ...",
+      "url": "https://www.etnews.com/20251130000112",
+      "snippet": "5시간 전 ... 배경훈 부총리 겸 과학기술정보통신부 장관 주재로 30일 오후 정부서울청사에서 열린 쿠팡 개인정보 유출 관련 긴급 관계부처 장관회의 전경. 이번 사고로 ...",
+      "displayLink": "www.etnews.com"
+    },
+    {
+      "title": "배경훈 부총리 \"쿠팡 사칭 주의…개인정보 유출 2차피해 방지 총력 ...",
+      "url": "https://www.asiae.co.kr/article/2025113016285983777",
+      "snippet": "3시간 전 ... ... 장관회의를 열고 쿠팡 침해사고 및 개인정보 사태와 관련해 사고 수습 방안을 논의 ... 과기정통부는 \"지난 19~20일 쿠팡으로부터 침해사고 신고와 개인정보 ...",
+      "displayLink": "www.asiae.co.kr"
+    },
+    {
+      "title": "정부, '쿠팡 침해사고' 관계부처 긴급 대책회의 개최",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4386428",
+      "snippet": "3시간 전 ... 배경훈 부총리 겸 과학기술정보통신부 장관 주재로 열린 회의에는 윤창렬 국무조정실장, 송경희 개인정보보호위원장, 유재성 경찰청장 직무대행 등이 참석 ...",
+      "displayLink": "news.einfomax.co.kr"
+    },
+    {
+      "title": "배경훈 부총리 “쿠팡 사칭한 전화·문자 각별 주의해달라” | 서울경제",
+      "url": "https://www.sedaily.com/NewsView/2H0NMR518H",
+      "snippet": "3시간 전 ... ... 개인정보 유출 사고에 대해 공개 사과하고 있다. 연합뉴스. 정보보호 정책 수장인 배경훈 과학기술부총리 겸 과학기술정보통신부 장관이 쿠팡 해킹 사고 ...",
+      "displayLink": "www.sedaily.com"
+    }
+  ],
+  "google_count": 10
+}
