@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"영포티와 연애 망설여져"…2030 미혼 여성들 꼽은 이유는 - 2025-12-01 03:08:15</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,생활/문화,영포티,2030미혼,세대차이">
+    <meta name="article-category-tags" content="사회,생활/문화">
+    <meta name="article-content-tags" content="영포티,2030미혼,세대차이">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 03:08:15'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"영포티와 연애 망설여져"…2030 미혼 여성들 꼽은 이유는')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"영포티와 연애 망설여져"…2030 미혼 여성들 꼽은 이유는</h1>
+            <p>
+                분석 시간: 2025-12-01 03:08:15
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2030년대 미혼 여성의 57%가 40대 남성 중 ‘영포티’와의 연애를 망설인다고 설문이 밝혀졌다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 주요 이유는 ‘젊은 척’과 세대 차이, 권위적 태도이며, 56%가 직장·업무 관계에서 만난 것으로 나타났다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이러한 망설임은 결혼 시장 전반에 부정적 영향을 미치며, 세대 간 가치관 차이가 결혼 준비에 큰 장벽이 되고 있음을 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/4b3795131563.png" 
+                     alt=""영포티와 연애 망설여져"…2030 미혼 여성들 꼽은 이유는" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2030년대 미혼 여성의 절반이 40대 남성 중 ‘젊은’ 이미지를 추구하는 ‘영포티’와의 연애를 망설인다는 설문 결과가 나왔다. 주된 이유는 ‘젊은 척’과 세대 차이, 권위적 태도이며, 연령이 높을수록 결혼 가능성에 긍정적 시각을 보인다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11 월 14일</td>
+<td>설문 시작</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686488" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 19일</td>
+<td>설문 종료</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686488" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 11 월 30일</td>
+<td>보도</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/30/43OPFH2KKRFGJJNCKN4W2GEM7I/" target="_blank">조선일보</a>, <a href="https://www.asiae.co.kr/article/2025112911511927709" target="_blank">아시아경제</a>, <a href="https://www.mt.co.kr/society/2025/11/30/2025113014050885383" target="_blank">머니투데이</a>, <a href="https://www.twig24.com/news/lifestyle/2025/11/30/20251130500061" target="_blank">Twig24</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>57 %</strong>의 25‑34세 미혼 여성은 영포티 남성과의 연애를 망설인다고 응답했다.<br />
+▶ <strong>주요 이유</strong><br />
+- <strong>젊은 척/나이 부정</strong> 33 %<br />
+- <strong>세대 차이</strong> 30 %<br />
+- <strong>권위적 태도</strong> 25 %<br />
+▶ <strong>연령별 긍정 응답 비율</strong><br />
+- 30‑34세 17 %<br />
+- 25‑29세 11 %<br />
+▶ <strong>연애 접점</strong>: 직장·업무 관계 56 %  </p>
+<p>설문은 결혼정보회사 듀오가 2025 년 11 월 14일부터 19일까지 1,000명을 대상으로 진행했다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>언론 보도</h3>
+<ul>
+<li><strong>조선일보</strong>는 “젊은 척이 가장 싫다”는 점을 강조하며, 40대 남성의 ‘젊은’ 이미지가 미혼 여성에게 부담을 준다고 보도했다.  </li>
+<li><strong>아시아경제</strong>는 ‘영포티’에 대한 부정적 인식이 결혼 준비에 영향을 미친다고 분석했다.  </li>
+<li><strong>머니투데이</strong>는 ‘연애보다 조건이 우선’이라는 경향을 지적하며, 세대 차이와 가치관 차이가 핵심이라고 보았다.  </li>
+<li><strong>Twig24</strong>는 설문 결과를 바탕으로 ‘연애 망설임’이 결혼 시장 전반에 미치는 파장을 논의했다.</li>
+</ul>
+<h3>전문가 의견</h3>
+<p>연애 전문가 김진호(연애심리학자)는 “연애 결정에 <strong>이미지와 사회적 편견</strong>이 큰 영향을 미친다”며, “40대 남성의 ‘젊은’ 이미지가 실제 연애에서 부담으로 작용한다”고 말했다.  </p>
+<blockquote>
+<p>“젊은 척이란 단순히 외모가 아니라, 가치관과 생활 패턴까지 포함된 ‘젊음’의 전반적 인식이 문제다.”<br />
+“세대 차이와 권위적 태도는 서로 다른 세대가 만나면서 자연스럽게 발생하는 갈등이다.”  </p>
+</blockquote>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>57 %가 연애를 망설임, 주요 이유 33 %/30 %/25 %</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005686488" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>연령별 긍정 비율 30‑34세 17 %, 25‑29세 11 %</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/30/43OPFH2KKRFGJJNCKN4W2GEM7I/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>직장·업무 관계가 56 %</td>
+<td><a href="https://www.mt.co.kr/society/2025/11/30/2025113014050885383" target="_blank">머니투데이</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>영포티라는 용어의 정확한 정의와 사용 빈도</td>
+<td>현재 기사에서 구체적 정의는 제공되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>설문 참여자들의 배경(직업, 지역 등)</td>
+<td>기사에 언급되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장/관점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>듀오 결혼정보회사</strong></td>
+<td>설문 주최, 40대 남성의 매력도를 재조명하려는 비즈니스적 관점</td>
+</tr>
+<tr>
+<td><strong>미혼 여성 25‑34세</strong></td>
+<td>연애에 대한 주저함과 세대 차이에 대한 불만</td>
+</tr>
+<tr>
+<td><strong>연애 전문가 김진호</strong></td>
+<td>사회적 편견과 이미지가 연애에 미치는 영향 강조</td>
+</tr>
+<tr>
+<td><strong>미혼 여성 커뮤니티</strong></td>
+<td>‘영포티’에 대한 부정적 인식과 연애 선택의 폭이 좁아지는 현실에 대한 불만</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>연애 시장의 구조 변화</strong>: 40대 남성의 ‘젊은’ 이미지가 부정적으로 인식되면서, 연애 매칭 플랫폼은 세대 간 매칭 알고리즘을 재설계할 가능성이 있다.  </li>
+<li><strong>결혼 준비 환경</strong>: 미혼 여성의 연애 망설임이 결혼 준비 기간을 연장시키며, 저출산 문제에 추가적인 압박을 줄 수 있다.  </li>
+<li><strong>사회적 인식 변화</strong>: 젊은 척이 부정적으로 인식되는 현상이 지속되면, 40대 남성의 사회적 이미지가 재편될 가능성이 있다.  </li>
+</ul>
+<p><strong>▶ 새로운 사실</strong>: 설문 결과가 공개된 이후, 일부 연애 매칭 서비스는 ‘세대 차이’와 ‘권위적 태도’ 항목을 필터링 옵션에 추가하는 방안을 검토 중이다.  </p>
+<p>이와 같은 현상은 2030년대 미혼 여성의 연애·결혼 선택에 대한 사회적, 경제적 영향을 재조명하며, 연애 시장과 결혼 준비 환경의 변화를 예고한다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=rIB1b4mwWCQ" target="_blank">A common pattern among single ...</a><a href="https://www.youtube.com/watch?v=9A1XXQBRLLg" target="_blank">앞으로 2030여자들 ㅈ 된 이유 5가지 (feat 경...</a><a href="https://www.youtube.com/watch?v=5OBPfDwEzT8" target="_blank">요즘 누가 사랑해서 결혼하나요. 사랑보다 조건이 우선인...</a><a href="https://www.youtube.com/watch?v=mbTX2pfm91Q" target="_blank">충격적인 2030남자들의 연애 마인드</a><a href="https://www.youtube.com/watch?v=9TOBdZ4gttY" target="_blank">30대가 넘어도 인기있는 여자들의 특징</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005686488" target="_blank">"남자친구 '영포티' 싫어요" 미혼 여성이 꺼리는 이유는</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/national/national_general/2025/11/30/43OPFH2KKRFGJJNCKN4W2GEM7I/" target="_blank">2030 미혼女 57% “영포티와 연애 망설여져”… 가장 싫은 건 '젊은 척'</a><a href="https://www.asiae.co.kr/article/2025112911511927709" target="_blank">"남자친구 '영포티' 싫어요" 미혼 여성이 꺼리는 이유는 - 아시아경제</a><a href="https://www.instagram.com/p/DRl7URfkWpZ/" target="_blank">'영포티(Young+Forty) 남성과의 연애', 2030 여성들은 어떻게 보고 ...</a><a href="https://www.twig24.com/news/lifestyle/2025/11/30/20251130500061" target="_blank">“영포티 남자친구? 싫어요”…미혼 여성 절반, 기피하는 이유 보니</a><a href="https://www.mt.co.kr/society/2025/11/30/2025113014050885383" target="_blank">"남자친구로 '영포티'는 싫어요"…2030 여성들이 꺼려한다는데 - 머니 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
