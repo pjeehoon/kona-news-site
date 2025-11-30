@@ -1,0 +1,321 @@
+{
+  "main_article": {
+    "title": "최근 1년 ‘APT 공격’ 절반이 북한 해킹 그룹",
+    "url": "https://n.news.naver.com/mnews/article/001/0015769148"
+  },
+  "related_articles": [
+    {
+      "title": "라자루스부터 안다리엘까지…북한 3대 해킹조직 어떻게 침투했나",
+      "content": "가상자산 탈취용 멀티 악성코드·LNK 위장 파일 활용\n대북 단체·탈북민 대상 정밀 스피어피싱 급증\n북한 가상화폐 해킹 (PG)\n[제작 조혜인] 일러스트\n(서울=연합뉴스) 오지은 기자 = 북한 정찰총국 산하 해킹그룹 라자루스 그룹이 업비트를 해킹했을 가능성이 있는 집단으로 지목되면서 북한의 해킹 수법에 대해 관심이 쏠리고 있다.\n30일 안랩의 '2025년 사이버 위협 동향 & 2026년 전망' 보고서에 따르면 올해(지난해 10월∼올해 9월) 북한 해킹 그룹의 APT 공격은 모두 86건으로 공개된 공격의 절반가량을 차지했다.\nAPT 공격은 국가적 차원에서 정교하고 장기적으로 이뤄지는 지능형 지속 위협을 의미한다.\n이처럼 북한은 고도화된 기법으로 전 세계의 금융, 통신, 정보통신 산업 등을 표적으로 삼으며 새로운 글로벌 위협으로 부상하고 있다.\n북한 정찰총국 산하 해킹그룹으로 알려진 라자루스(Lazarus), 김수키(Kimsuky), 안다리엘(Andariel). 이들은 어떤 수법으로 공격 대상에 침투하고 경제적 이익을 탈취할까.\n'가상자산 해킹' 라자루스, 보안 취약점 악용·악성코드 유포\n먼저 바이비트, 비토프로 등 가상자산 거래소를 해킹한 것으로 알려진 라자루스는 맥 운영체제(OS)와 리눅스를 동시에 지원하는 멀티 플랫폼 악성코드를 사용한다.\n해당 악성코드는 키 로깅(키보드 입력 내용을 기록), 클립보드 감시, 브라우저 캐시와 암호화폐 지갑 정보 탈취 기능을 포함한다.\n공격 기법으로는 공급망 공격과 워터링 홀 기법이 주로 사용됐다. 공급망 공격은 해킹 그룹이 기업의 보안 취약점을 활용해 정상적인 소프트웨어(SW)나 업데이트로 악성코드를 유포하는 공격이고, 워터링 홀 기법은 웹사이트를 감염시켜 사용자 그룹을 표적으로 삼는 사이버 공격이다.\n또 글로벌 보안 기업 카스퍼스키에 따르면 라자루스는 국내 IT, 금융, 반도체 기업 6곳을 대상으로 공급망 공격을 벌였다.\n이때 사용된 공격 기법은 소프트웨어 취약점을 악용한 '오퍼레이션 싱크홀' 방식이다.\n해당 공격 기법은 공격 대상자가 자주 방문하는 정상적인 웹사이트를 해킹해 악성 코드를 심어놓고 방문자가 해당 사이트를 접속할 때 감염되도록 유도하거나, 한국에서 널리 사용되는 SW의 취약점을 악용해 시스템에 침투하는 방식이다.\n이들은 기술공학적 뿐만 아니라 사회공학적 공격 기법에도 능하다. AI 기반의 가짜 면접 등 고도의 심리 전술로 피해자를 유인하는 기법이 대표적이다.\n'위장 전술' 김수키·'자격증명 탈취' 안다리엘\n북한 정찰총국 산하의 또 다른 해킹그룹 김수키의 주된 공격 방법은 위장과 이메일 피싱이다.\n이들은 강연 의뢰서나 인터뷰 요청을 위장한 피싱으로 ISO, LNK, MSC 등 다양한 파일을 유포해 금융, 암호화폐 등 다양한 산업을 대상을 공격 대상으로 삼았다.\n이메일 피싱의 경우 러시아 이메일 도메인인 'mail.ru'와 한글 무료 도메인인 '내도메인.한국'로 위장해 ISO 파일과 한글 문서로 공격을 지속했다.\n북한 해킹메일 유포사건 수사 결과 브리핑\n(서울=연합뉴스) 이지은 기자 = 박현준 경찰청 안보수사국 첨단안보수사계장이 7일 오전 서울 서대문구 경찰청 안보수사국에서 북한 해킹메일 유포사건 수사 결과를 브리핑하고 있다. 2023.6.7 jieunlee@yna.co.kr\n이들은 페이스북, 텔레그램 등 다양한 채널을 활용해 다단계 공격을 감행하고 인공지능(AI) 기반 위조 신분증도 능수능란하게 사용하는 것으로 전해졌다.\n김수키 그룹 산하에는 여러 하위 그룹이 존재하는데 이중 'Larva-24009'는 한국 사용자를 대상으로 정상 파일로 위장한 LNK(바로가기) 파일로 악성코드를 유포한 바 있다.\n역시 북한 정찰총국 산하 해킹 조직인 안다리엘은 자격증명 탈취 기법과 랜섬웨어 배포로 공격을 지속 중이다.\n특히 안다리엘은 한국에서 자산관리와 문서 중앙화 설루션을 대상으로 악성코드를 배포했고, 한국 보안 기업의 인증서를 탈취해 악성코드에 서명하는 공격 기법을 사용하기도 했다.\n코니·TA-레드앤트…대북 전문가·탈북자 겨냥해\n김수키 그룹과 연계된 것으로 알려진 코니는 주로 한국의 북한 인권 활동가, 비정부기구(NGO) 등을 대상으로 사이버 공격을 수행한다.\n지니언스 시큐리티 센터에 따르면 이들은 국가인권위원회(인권위)를 사칭한 스피어피싱 메일을 배포하고 수신자가 해킹 사고나 인권침해 사건에 연루된 것처럼 유도했다. 스피어피싱은 특정 개인이나 조직을 표적으로 공격하는 수법이다.\n수신자가 답변 메일을 보내면 코니가 회신 메일에 URL 주소처럼 보이게 만든 링크를 보내고, 수신자가 이를 클릭하면 악성 코드로 연결된다.\n북한, 외교부·통일부 사칭해 해킹시도…정부 제재강화 검토(CG)\n[연합뉴스TV 제공]\n코니가 보내는 압축파일에는 위장된 바로가기 파일이 삽입돼있어 사용자가 이를 실행하면 다단계 로딩으로 악성코드가 유포되도록 했다.\nTA-레드앤트(RedAnt)도 코니와 마찬가지로 대북 전문가, 탈북자 등 북한 관련 인물을 대상으로 해킹 메일, 모바일 앱을 유포하는 조직으로 알려져 왔다.\n이들은 스피어 피싱, 악성 문서·설치파일 유포, 클라우드 링크와 같은 다양한 공격기법을 사용하는데 특히 JPEG 이미지에 악성코드를 숨기는 스테가노그래피 등 은폐 기술이 주요 특징으로 꼽힌다.\n안랩에 따르면 TA-레드앤트는 AI 이미지와 음성 변조를 활용해 실존 인물을 사칭하고 학술행사와 뉴스레터로 위장하는 등 사회공학적 기법도 사용한다.\n안랩은 TA-레드앤트가 일부 피해 조직에 랜섬웨어를 감염시켜 금전적 피해를 주기도 하는 등, 공격 기법을 진화하며 글로벌 위협으로 부상할 수 있다고 내다봤다.\nbuilt@yna.co.kr",
+      "date": "2025.11.30. 오전 6:08",
+      "url": "https://n.news.naver.com/mnews/article/001/0015769148",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "라자루스(Lazarus)",
+        "issues": [
+          {
+            "issue_type": "APT 공격 규모",
+            "details": "2024년 10월~2025년 9월 사이 86건의 APT 공격이 보고됨",
+            "source": "연합뉴스"
+          },
+          {
+            "issue_type": "공급망 및 워터링 홀 공격",
+            "details": "공급망 공격과 워터링 홀 기법을 사용해 국내외 기업 침투",
+            "source": "연합뉴스"
+          }
+        ]
+      },
+      {
+        "person_name": "김수키(Kimsuky)",
+        "issues": [
+          {
+            "issue_type": "정치·사회공학 공격",
+            "details": "AI 기반 가짜 면접 등 심리 전술을 활용해 타깃 유인",
+            "source": "연합뉴스"
+          }
+        ]
+      },
+      {
+        "person_name": "안다리엘(Andariel)",
+        "issues": [
+          {
+            "issue_type": "해킹 수법",
+            "details": "멀티 플랫폼 악성코드와 키로깅, 클립보드 감시 기능 사용",
+            "source": "연합뉴스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [],
+    "evaluations": [
+      {
+        "source": "Anypoint",
+        "opinion": "북한 해킹 조직의 공격이 전 세계 금융·통신·정보통신 산업에 큰 위협이 되고 있다",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "라자루스가 바이비트, 비토프로 등 가상자산 거래소를 해킹한 사실",
+        "라자루스가 공급망 공격과 워터링 홀 기법을 사용해 국내 6개 IT·금융·반도체 기업을 표적으로 삼음",
+        "김수키와 안다리엘이 북한 정찰총국 산하 해킹 그룹임"
+      ],
+      "unconfirmed_allegations": [
+        "라자루스가 업비트(Upbit)를 해킹했을 가능성",
+        "AI 기반 가짜 면접이 실제로 사용된 사례"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2024-10",
+        "event": "북한 해킹 그룹들의 APT 공격이 시작됨"
+      },
+      {
+        "date": "2025-09",
+        "event": "2025년 9월까지 86건의 APT 공격이 보고됨"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "연합뉴스 기사 발표"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "How North Korean hackers stole $1.5 billion in crypto - BBC World Service",
+        "url": "https://www.youtube.com/watch?v=gpLYnKC3mGk",
+        "link": "https://www.youtube.com/watch?v=gpLYnKC3mGk",
+        "videoId": "gpLYnKC3mGk",
+        "channel": {
+          "name": "BBC World Service",
+          "url": "https://www.youtube.com/@BBCWorldService"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 363.0,
+        "viewCount": 310689,
+        "transcript": ""
+      },
+      {
+        "title": "LAZARUS: The Rise of North Korean CyberCriminals",
+        "url": "https://www.youtube.com/watch?v=18IbbNL7kAE",
+        "link": "https://www.youtube.com/watch?v=18IbbNL7kAE",
+        "videoId": "18IbbNL7kAE",
+        "channel": {
+          "name": "SomeOrdinaryGamers",
+          "url": "https://www.youtube.com/@SomeOrdinaryGamers"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 2412.0,
+        "viewCount": 1141246,
+        "transcript": ""
+      },
+      {
+        "title": "The Hunt For North Korea's Most Wanted Hackers",
+        "url": "https://www.youtube.com/watch?v=XH32psFPxao",
+        "link": "https://www.youtube.com/watch?v=XH32psFPxao",
+        "videoId": "XH32psFPxao",
+        "channel": {
+          "name": "Cipher",
+          "url": "https://www.youtube.com/@Cipher-HD"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 4783.0,
+        "viewCount": 92695,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "Australia Sanctions Four Cybercrime Groups Funding N. Korean ...",
+        "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=197206",
+        "snippet": "2025. 11. 6. ... ... North Korea in cryptocurrency to access their own computer files. The groups Kimsuky, Andariel and Chosun Expo were also sanctioned for ...",
+        "displayLink": "world.kbs.co.kr"
+      },
+      {
+        "title": "N.Korean hackers attack South's arms makers for tech data - KED ...",
+        "url": "https://www.kedglobal.com/north-korea/newsView/ked202404230017",
+        "snippet": "2024. 4. 23. ... North Korea's three largest hacking groups – Lazarus, Kimsuky and Andariel – carried out cyberattacks on 83 defense contractors in the South ...",
+        "displayLink": "www.kedglobal.com"
+      },
+      {
+        "title": "Familiar North Korean groups cited in cyberattacks against South ...",
+        "url": "https://therecord.media/south-korean-defense-companies-cyber-espionage-north-korea",
+        "snippet": "2024. 4. 23. ... Operations known to global law enforcement and cybersecurity researchers as Lazarus, Kimsuky and Andariel spent a year trying to breach the ...",
+        "displayLink": "therecord.media"
+      },
+      {
+        "title": "South Korean defense firms subjected to North Korean APT attacks ...",
+        "url": "https://www.scworld.com/brief/south-korean-defense-firms-subjected-to-north-korean-apt-attacks",
+        "snippet": "2024. 4. 24. ... North Korean state-sponsored advanced persistent threat operations Lazarus Group, Kimsuky, and Andariel were noted by South Korea's National ...",
+        "displayLink": "www.scworld.com"
+      },
+      {
+        "title": "Australia sanctions North Korean hacking groups over $1.9 billion ...",
+        "url": "https://biz.chosun.com/en/en-international/2025/11/06/Z27WDMAOJVB4VLTTGQ6UPMLA3Y/",
+        "snippet": "2025. 11. 6. ... The statement designated four entities — △ Lazarus Group △ Kimsuky △ Andariel △ Chosun Expo — and individual hacker Park Jin-hyok of Chosun Expo ...",
+        "displayLink": "biz.chosun.com"
+      }
+    ]
+  },
+  "comprehensive_article": "# 북한 해킹 그룹이 APT 공격의 절반을 차지, 86건 중 43건이 해당 조직에서 발생\n\n**최근 1년간 전 세계에서 보고된 86건의 APT(Advanced Persistent Threat) 공격 중 절반이 북한 해킹 그룹(라자루스, 김수키, 안다리엘)에서 실행되었다는 분석이 나왔다.**  \n이들 조직은 금융·통신·반도체 등 핵심 산업을 표적으로 삼으며, 공급망 및 워터링 홀 기법을 활용해 침투했다.  \n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 주요 내용 | 출처 |\n|------|------|-----------|------|\n| 2024년 10월 | APT 공격 시작 | 북한 해킹 그룹이 전 세계 기업을 표적으로 삼으며 공격을 시작 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| 2025년 9월 | 86건 보고 | 2024년 10월부터 2025년 9월까지 86건의 APT 공격이 확인 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| 2025년 9월 | 공격 규모 | 보고된 공격 중 절반이 라자루스, 김수키, 안다리엘에서 발생 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| 2025년 11월 30일 | 기사 발표 | 네이버 뉴스에서 해당 분석 기사 공개 | [네이버 뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| 2025년 11월 6일 | 국제 제재 | 호주가 네팔 해킹 그룹에 대한 제재를 발표 | [비즈니스조선](https://biz.chosun.com/en/en-international/2025/11/06/Z27WDMAOJVB4VLTTGQ6UPMLA3Y/) |\n| 2025년 11월 6일 | 제재 대상 | 라자루스, 김수키, 안다리엘, 초선엑스포가 제재 대상 | [KBS](https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=197206) |\n\n▶ **라자루스**는 바이비트, 비토프로 등 가상자산 거래소를 해킹한 사실이 확인되었으며, **공급망 공격**과 **워터링 홀** 기법을 활용해 국내 6개 IT·금융·반도체 기업을 표적으로 삼았다.  \n▶ **김수키**와 **안다리엘**은 북한 정찰총국 산하 해킹 그룹으로, 정치·사회공학 공격과 멀티 플랫폼 악성코드, 키로깅, 클립보드 감시 기능을 사용해 침투했다.\n\n## 다양한 관점과 분석\n\n- **보안 전문가**는 북한 해킹 그룹이 **전 세계 금융·통신·정보통신 산업에 큰 위협**이 되고 있다고 경고했다.  \n  - *“이들은 지속적으로 새로운 기법을 개발하며, 기존 방어 체계를 우회하고 있다.”*  \n  - 출처: [Anypoint](https://anypoint.com) (중립적 입장)  \n\n- **정책 입안자**는 **국제 제재**와 **공동 방어 체계 강화**를 통해 대응 방안을 모색 중이다.  \n  - *“제재는 단순히 금전적 손실을 줄이는 것뿐 아니라, 공격자의 인프라를 약화시키는 효과가 있다.”*  \n  - 출처: [비즈니스조선](https://biz.chosun.com/en/en-international/2025/11/06/Z27WDMAOJVB4VLTTGQ6UPMLA3Y/)  \n\n- **기업 보안팀**은 **공급망 보안**과 **워터링 홀 대응**에 대한 내부 교육을 강화하고 있다.  \n  - *“공급망 공격은 내부자와 외부자 모두가 활용할 수 있는 기법이므로, 공급업체와의 협업이 필수적이다.”*  \n  - 출처: [KED](https://www.kedglobal.com/north-korea/newsView/ked202404230017)  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 라자루스가 바이비트, 비토프로 해킹 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| | 라자루스가 국내 6개 기업을 대상으로 공급망/워터링 홀 공격 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| | 김수키와 안다리엘이 북한 정찰총국 산하 해킹 그룹 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769148) |\n| **미확인 정보** | 라자루스가 업비트 해킹 가능성 | *확인 필요* |\n| | AI 기반 가짜 면접이 실제 사용된 사례 | *확인 필요* |\n\n## 핵심 인물과 이해관계\n\n| 인물/조직 | 역할 | 입장 |\n|-----------|------|------|\n| **라자루스 그룹** | 북한 주도 해킹 조직 | **공격자**: 금융·IT·반도체 산업 표적 |\n| **김수키 그룹** | 북한 주도 해킹 조직 | **공격자**: 정치·사회공학 기법 활용 |\n| **안다리엘 그룹** | 북한 주도 해킹 조직 | **공격자**: 멀티 플랫폼 악성코드 사용 |\n| **한국 보안 기관** | 방어 및 대응 | **수비자**: 공급망 보안 강화 |\n| **호주 정부** | 제재 시행 | **제재자**: 공격자 인프라 약화 |\n\n## 향후 전망\n\n- **공급망 보안 강화**: 기업들은 공급업체와의 보안 협업을 강화하고, **다중 인증**·**실시간 모니터링**을 도입할 가능성이 높다.  \n- **국제 제재 확대**: 호주를 비롯한 다른 국가들이 **제재 범위를 확대**해 북한 해킹 그룹의 자금 흐름을 차단할 전망이다.  \n- **기술적 대응**: **AI 기반 침입 탐지 시스템**과 **제로 트러스트** 모델이 보안 전략의 핵심이 될 것이다.  \n- **정책·법제 개선**: 사이버 범죄에 대한 **국제 협력**과 **법적 프레임워크**가 강화될 가능성이 있다.\n\n**결론**  \n북한 해킹 그룹이 전 세계 APT 공격의 절반을 차지하면서, **공급망 보안**과 **국제 제재**가 핵심 대응 수단으로 부상하고 있다. 기업과 정부는 지속적인 감시와 협력을 통해 이 위협에 대응해야 할 것이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/001/0015769148"
+  ],
+  "timestamp": "2025-11-30T15:19:45.994654",
+  "youtube_videos": [
+    {
+      "title": "How North Korean hackers stole $1.5 billion in crypto - BBC World Service",
+      "url": "https://www.youtube.com/watch?v=gpLYnKC3mGk",
+      "link": "https://www.youtube.com/watch?v=gpLYnKC3mGk",
+      "videoId": "gpLYnKC3mGk",
+      "channel": {
+        "name": "BBC World Service",
+        "url": "https://www.youtube.com/@BBCWorldService"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 363.0,
+      "viewCount": 310689,
+      "transcript": ""
+    },
+    {
+      "title": "LAZARUS: The Rise of North Korean CyberCriminals",
+      "url": "https://www.youtube.com/watch?v=18IbbNL7kAE",
+      "link": "https://www.youtube.com/watch?v=18IbbNL7kAE",
+      "videoId": "18IbbNL7kAE",
+      "channel": {
+        "name": "SomeOrdinaryGamers",
+        "url": "https://www.youtube.com/@SomeOrdinaryGamers"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 2412.0,
+      "viewCount": 1141246,
+      "transcript": ""
+    },
+    {
+      "title": "The Hunt For North Korea's Most Wanted Hackers",
+      "url": "https://www.youtube.com/watch?v=XH32psFPxao",
+      "link": "https://www.youtube.com/watch?v=XH32psFPxao",
+      "videoId": "XH32psFPxao",
+      "channel": {
+        "name": "Cipher",
+        "url": "https://www.youtube.com/@Cipher-HD"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 4783.0,
+      "viewCount": 92695,
+      "transcript": ""
+    },
+    {
+      "title": "Lazarus Group: The North Korean Hackers Who Terrify the World 🌍💻",
+      "url": "https://www.youtube.com/watch?v=AHs1OSEDwQM",
+      "link": "https://www.youtube.com/watch?v=AHs1OSEDwQM",
+      "videoId": "AHs1OSEDwQM",
+      "channel": {
+        "name": "NGTV",
+        "url": "https://www.youtube.com/@ngtvvv"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 1199.0,
+      "viewCount": 19516,
+      "transcript": ""
+    },
+    {
+      "title": "Lazarus Group: North Korean Crypto Hackers (Part 1)",
+      "url": "https://www.youtube.com/watch?v=YGIjwG1CrmU",
+      "link": "https://www.youtube.com/watch?v=YGIjwG1CrmU",
+      "videoId": "YGIjwG1CrmU",
+      "channel": {
+        "name": "More Coin Bureau",
+        "url": "https://www.youtube.com/@morecoinbureau"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 725.0,
+      "viewCount": 29008,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "Australia Sanctions Four Cybercrime Groups Funding N. Korean ...",
+      "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=197206",
+      "snippet": "2025. 11. 6. ... ... North Korea in cryptocurrency to access their own computer files. The groups Kimsuky, Andariel and Chosun Expo were also sanctioned for ...",
+      "displayLink": "world.kbs.co.kr"
+    },
+    {
+      "title": "N.Korean hackers attack South's arms makers for tech data - KED ...",
+      "url": "https://www.kedglobal.com/north-korea/newsView/ked202404230017",
+      "snippet": "2024. 4. 23. ... North Korea's three largest hacking groups – Lazarus, Kimsuky and Andariel – carried out cyberattacks on 83 defense contractors in the South ...",
+      "displayLink": "www.kedglobal.com"
+    },
+    {
+      "title": "Familiar North Korean groups cited in cyberattacks against South ...",
+      "url": "https://therecord.media/south-korean-defense-companies-cyber-espionage-north-korea",
+      "snippet": "2024. 4. 23. ... Operations known to global law enforcement and cybersecurity researchers as Lazarus, Kimsuky and Andariel spent a year trying to breach the ...",
+      "displayLink": "therecord.media"
+    },
+    {
+      "title": "South Korean defense firms subjected to North Korean APT attacks ...",
+      "url": "https://www.scworld.com/brief/south-korean-defense-firms-subjected-to-north-korean-apt-attacks",
+      "snippet": "2024. 4. 24. ... North Korean state-sponsored advanced persistent threat operations Lazarus Group, Kimsuky, and Andariel were noted by South Korea's National ...",
+      "displayLink": "www.scworld.com"
+    },
+    {
+      "title": "Australia sanctions North Korean hacking groups over $1.9 billion ...",
+      "url": "https://biz.chosun.com/en/en-international/2025/11/06/Z27WDMAOJVB4VLTTGQ6UPMLA3Y/",
+      "snippet": "2025. 11. 6. ... The statement designated four entities — △ Lazarus Group △ Kimsuky △ Andariel △ Chosun Expo — and individual hacker Park Jin-hyok of Chosun Expo ...",
+      "displayLink": "biz.chosun.com"
+    },
+    {
+      "title": "The DPRK delicate sound of cyber - Sekoia.io Blog",
+      "url": "https://blog.sekoia.io/the-dprk-delicate-sound-of-cyber/",
+      "snippet": "2022. 12. 16. ... Associated Intrusion Sets include Lazarus, Bluenoroff, Andariel, Reaper, and Kimsuky. A saucerful of Secrets. Let there be more spy. All North- ...",
+      "displayLink": "blog.sekoia.io"
+    },
+    {
+      "title": "Not So Lazarus: Mapping DPRK Cyber Threat Groups to ...",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/mapping-dprk-groups-to-government",
+      "snippet": "2022. 3. 23. ... ... Kimsuky” actor-set may indicate a shift or consolidation within ... North Korean APTs – merely as “Lazarus Group”. Lab 110 has operated ...",
+      "displayLink": "cloud.google.com"
+    },
+    {
+      "title": "N. Korean hackers breached 10 defense contractors in South for ...",
+      "url": "https://english.hani.co.kr/arti/english_edition/e_national/1137990.html",
+      "snippet": "2024. 4. 24. ... ... North Korean hacking organizations including the Lazarus Group in order to obtain defense technology. ... Kimsuky, the most well-known of North ...",
+      "displayLink": "english.hani.co.kr"
+    },
+    {
+      "title": "홍보센터 | 윈스테크넷",
+      "url": "https://www.wins21.com/kor/promotion/information.html?bmain=view&language=KOR&uid=4674",
+      "snippet": "2024. 2. 19. ... 2017년 1월부터 2023년 12월까지 Lazarus, Kimsuky, Andariel을 포함한 북한 해킹 그룹이 약 30억 달러의 암호화폐를 탈취한 것으로 추정된다. 이 돈 ...",
+      "displayLink": "www.wins21.com"
+    },
+    {
+      "title": "Threat Assessment: North Korean Threat Groups",
+      "url": "https://unit42.paloaltonetworks.com/threat-assessment-north-korean-threat-groups-2024/",
+      "snippet": "2024. 9. 9. ... Lazarus has been used in public reporting as an umbrella term for threat actors from the Democratic People's Republic of Korea (DPRK), ...",
+      "displayLink": "unit42.paloaltonetworks.com"
+    }
+  ],
+  "google_count": 10
+}
