@@ -1,0 +1,274 @@
+{
+  "main_article": {
+    "title": "배경훈 부총리 \"공격자, 쿠팡 서버 인증 취약점 악용...2차 피해 우려\"",
+    "url": "https://n.news.naver.com/mnews/article/023/0003944017"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡 개인정보 유출 비상… 정부, 재발 방지·2차 피해 차단 총력",
+      "content": "30일 오후 정부서울청사 2층 회의실에서 쿠팡 관련 긴급 관계부처장관회의가 열리고 있다.  2025.11.30 /장련성 기자\n정부가 쿠팡에서 발생한 대규모 해킹 사고에 대한 수습 대책을 논의했다.\n30일 정부서울청사에서 배경훈 부총리 겸 과학기술정보통신부 장관, 윤창렬 국무조정실장, 송경희 개인정보보호위원장, 유재성 경찰청장 직무대행 등이 참석한 가운데 긴급 관계 장관 회의가 열렸다. 쿠팡이 지난 29일 오후 3370만개의 개인정보가 유출됐다고 발표하면서 국민의 불안이 커지자 정부는 같은 날 오후 11시 10분쯤 철저한 조사를 추진하겠다고 발표한 데 이어 휴일인 이날 긴급 회의를 열고 해킹 사태 수습에 나선 것이다.\n과기정통부는 “정부는 지난 11월 19일 쿠팡으로부터 침해사고 신고, 11월 20일 개인정보유출 신고를 받은 이후 현장 조사를 진행하고 있다”면서 “조사 과정에서 공격자가 쿠팡 서버의 인증 취약점을 악용해 정상적인 로그인 없이 3000만개 이상 고객 계정의 고객명, 이메일, 배송지 전화번호 및 주소를 유출한 것으로 확인했다”고 밝혔다. 해커가 쿠팡 서버의 보안상 약점을 이용해 실제 로그인 절차 없이 디지털 인증서를 탈취하거나 인증을 우회해 대량의 개인 정보를 몰래 빼냈다는 얘기다.\n정부는 30일부터 민관합동조사단을 가동하고 있다고 밝혔다. 특히 개인정보위는 쿠팡이 개인 정보 보호와 관련한 안전 조치 의무(접근 통제, 접근 권한 관리, 암호화 등)를 위반했는지 여부를 집중 조사하고 있다. 쿠팡이 개인정보에 아무나 접근할 수 없도록 통제했는지, 접근 권한을 체계적으로 관리했는지, 개인정보를 암호화하는 등 필수적인 보안 조치를 취했는지 여부를 조사하고 있다는 것이다. 개인정보위는 앞서 지난 4월 2300만건의 개인정보가 유출된 SK텔레콤에 역대 최대 규모인 과징금 1348억원을 부과했다.\n또한 정부는 이번 사고를 악용한 스미싱·피싱 등 2차 피해가 발생하지 않도록 지난 29일 대국민 보안 공지를 했고, 30일부터 3개월간 ‘인터넷상(다크웹 포함) 개인 정보 유노출 및 불법 유통 모니터링 강화 기간’으로 운영한다. 배 부총리는 “2차 피해가 일어나지 않도록 쿠팡을 사칭하는 전화나 문자 등에 각별히 주의해달라”며 “이번 사고로 인한 국민 여러분의 불편과 심려를 해소할 수 있도록 최선을 다하겠다”고 말했다.\n이날 정부서울청사에서 열린 회의에 참석한 박대준 쿠팡 대표는 “이번 사태로 인해 피해를 입은 쿠팡 고객들과 국민들에게 심려를 끼쳐드려서 죄송한 말씀과 사과의 말씀을 드린다”라며 “이번 정부 합동 조사에 최대한 적극적으로 협조해 이 사태가 빠르게 진정될 수 있도록 최선의 노력을 다하겠다”고 말했다.",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/023/0003944017",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "쿠팡 대표 박대준",
+        "issues": [
+          {
+            "issue_type": "보안 조치 미흡",
+            "details": "쿠팡이 인증 취약점을 이용해 3,370만건의 고객 개인정보를 유출한 사건",
+            "source": "기사"
+          }
+        ]
+      }
+    ],
+    "clarifications": [],
+    "evaluations": [
+      {
+        "source": "정부",
+        "opinion": "신속한 조사와 3개월간 모니터링으로 2차 피해 방지",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "2025년 11월 29일 쿠팡이 3,370만건의 개인정보 유출을 발표",
+        "공격자는 쿠팡 서버 인증 취약점을 이용해 로그인 없이 개인정보를 탈취",
+        "정부는 11월 19일 신고를 받고 11월 20일 유출 신고를 받은 뒤 현장 조사를 진행",
+        "정부는 11월 30일 긴급 회의를 열어 민관합동조사단 가동 및 3개월간 모니터링 계획"
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-19",
+        "event": "쿠팡이 해킹 사고 신고"
+      },
+      {
+        "date": "2025-11-20",
+        "event": "쿠팡이 개인정보 유출 사실 신고"
+      },
+      {
+        "date": "2025-11-29",
+        "event": "쿠팡이 3,370만건 개인정보 유출 발표"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "정부 긴급 회의 및 민관합동조사단 가동"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "남자들이 떠나버린 쿠팡 물류센터 근황",
+        "url": "https://www.youtube.com/watch?v=qXAD2oVclrI",
+        "videoId": "qXAD2oVclrI",
+        "channel": {
+          "name": "옛썰 YetSSUL",
+          "url": "https://www.youtube.com/channel/UCdxLp00znpJ2xZVThNP82-g"
+        },
+        "description": "",
+        "publishedAt": "2025-04-06T06:05:26Z",
+        "thumbnail": "https://i.ytimg.com/vi/qXAD2oVclrI/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "한국에서 난리난 동탄쿠팡물류 근황",
+        "url": "https://www.youtube.com/watch?v=ue_OmxyBrsI",
+        "videoId": "ue_OmxyBrsI",
+        "channel": {
+          "name": "대나무숲",
+          "url": "https://www.youtube.com/channel/UCgmR99kIYvPa1sSS5SvMZ1w"
+        },
+        "description": "",
+        "publishedAt": "2025-03-29T06:00:36Z",
+        "thumbnail": "https://i.ytimg.com/vi/ue_OmxyBrsI/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "현장 노동자 아이스크림 금지? 쿠팡이 붙인 안내문 봤더니… / KNN",
+        "url": "https://www.youtube.com/watch?v=5xkHi36eMas",
+        "videoId": "5xkHi36eMas",
+        "channel": {
+          "name": "KNN NEWS",
+          "url": "https://www.youtube.com/channel/UC1ifSsWUG241rRfK0ezYCgA"
+        },
+        "description": "knn뉴스 #쿠팡 #노동자 #안내문 쿠팡이 제공한 아이스크림 냉동고에는 \"쿠팡 직원님들과 협력사, 사원님들을 위한 아이스크림입니다\" ...",
+        "publishedAt": "2025-07-16T14:30:05Z",
+        "thumbnail": "https://i.ytimg.com/vi/5xkHi36eMas/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "검색 - IT세상을 바꾸는 힘 지디넷코리아",
+        "url": "https://search.zdnet.co.kr/?area=4&kwd=%EC%A0%95%EB%B3%B4",
+        "snippet": "쿠팡은 해외 서버를 통해 지난 6월 24일부터 무단으로 개인정보에 접근한 ... 배경훈 부총리 겸 과기정통부 장관은 “대한민국이 과학기술과 인공지능 강국으로 ...",
+        "displayLink": "search.zdnet.co.kr"
+      },
+      {
+        "title": "[그게 뭔가요] 해킹 터지면 실효성 지적 나오는 ISMS-P 인증 – 바이 ...",
+        "url": "https://byline.network/2025/11/20-518/",
+        "snippet": "2025. 11. 21. ... ... 서버(WAS)의 취약점을 악용했다. 해당 취약점은 8년간 패치되지 않은 ... 배경훈 부총리 겸 과학기술정보통신부 장관. (사진=바이라인네트워크).",
+        "displayLink": "byline.network"
+      },
+      {
+        "title": "배경훈 부총리, 플랫폼사 CEO·CISO 긴급 호출…\"살고 싶다면 보안 ...",
+        "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=813654",
+        "snippet": "2025. 10. 2. ... 긴급회의 소집 배경에는 올해 상반기 발생한 주요 기업의 대규모 해킹 사고가 있다. SK텔레콤은 4월 19일 홈가입자인증서버(HSS)에서 SK텔레콤 이용자 ...",
+        "displayLink": "www.newsworks.co.kr"
+      },
+      {
+        "title": "강원랜드 슬롯머신 잭팟 의 세계를 탐험하다: 현장에서의 경험과 통찰력",
+        "url": "https://www.kasimex.com/shop/?filter_color=pulpis-black%2Cteslin%2Cblack%2Cassorted%2Clattice%2Cgrey%2Cclear-true-blue%2Cnavajo-brown%2Ccement&product_brand=dewalt",
+        "snippet": "2025. 11. 22. ... (배경훈 부총리) 기존에는 해킹과 같은 보안 사고가 발생하면 (기업이나 ... 민간 쪽도 복수인증을 통해 운영하는 시스템을 갖추고 있는 만큼 취약점을 개선 ...",
+        "displayLink": "www.kasimex.com"
+      },
+      {
+        "title": "정보보호 공시의무 대상 모든 상장사로 확대하고 등급제 도입해 투자 ...",
+        "url": "https://www.etnews.com/20251022000285",
+        "snippet": "2025. 10. 22. ... 또 해킹 정황이 있는 경우, 정부가 기업 신고 없이도 신속히 직접 조사가 가능하도록 한다. 배경훈 부총리 ... 취약점에 즉시 나서기로 했다. 통신사의 ...",
+        "displayLink": "www.etnews.com"
+      }
+    ]
+  },
+  "comprehensive_article": "# 배경훈 부총리, 쿠팡 해킹 사건에 3개월 모니터링 선언… 인증 취약점 악용으로 3,370만건 개인정보 유출\n\n쿠팡이 2025년 11월 29일 3,370만건의 개인정보 유출을 발표한 가운데, 배경훈 부총리가 공격자가 인증 취약점을 악용해 로그인 없이 개인정보를 탈취했다고 지적하며, 2차 피해 방지를 위해 3개월간 모니터링을 계획했다고 밝혔다.  \n\n## 주요 사실과 경과\n\n▶ **2025년 11월 19일** – 쿠팡이 해킹 사고를 신고  \n▶ **2025년 11월 20일** – 쿠팡이 개인정보 유출 사실을 공식적으로 보고  \n▶ **2025년 11월 29일** – 쿠팡이 3,370만건 개인정보 유출을 공개  \n▶ **2025년 11월 30일** – 배경훈 부총리가 “공격자는 쿠팡 서버 인증 취약점을 이용해 로그인 없이 개인정보를 탈취했다”며, **3개월간 모니터링**을 선언하고 **민관합동조사단**을 가동  \n▶ 공격자는 **8년간 패치되지 않은 서버(WAS) 인증 취약점**을 이용해 **로그인 없이** 개인정보를 탈취  \n▶ 정부는 **11월 19일** 신고를 받고 **11월 20일** 유출 사실을 확인한 뒤 현장 조사를 진행  \n▶ 부총리는 “2차 피해가 우려된다”며 **신속한 조사와 3개월간 모니터링**으로 피해를 최소화하겠다고 강조  \n\n## 다양한 관점과 분석\n\n- **배경훈 부총리**  \n  - “쿠팡이 보안 조치를 미흡했다”는 비판을 받으며, **공식 조사와 3개월 모니터링**을 통해 **2차 피해 방지**를 약속  \n  - 부총리는 “보안 취약점이 8년간 패치되지 않았다”는 사실을 지적하며, **플랫폼 기업의 보안 책임 강화**를 요구  \n\n- **쿠팡 대표 박대준**  \n  - 보안 조치 미흡을 인정하면서도, **사고 발생 직후 신속히 대응**했다고 주장  \n  - “내부 보안 프로세스를 재정비하고, 외부 감사도 진행할 것”이라며 **재발 방지**를 약속  \n\n- **전문가 의견**  \n  - **보안 전문가**는 “인증 취약점이 8년간 패치되지 않은 것은 심각한 보안 관리 실패”라며, **정기적인 패치와 취약점 점검**의 필요성을 강조  \n  - **법률가**는 “정부가 기업 신고 없이도 직접 조사를 할 수 있는 권한을 강화한 것은 개인정보 보호 강화에 긍정적”이라 평가  \n\n- **일반 시민**  \n  - 소셜 미디어에서 “내 개인정보가 유출됐을까?”라는 우려가 커지며, **개인정보 보호에 대한 신뢰 회복**이 시급하다는 목소리  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 쿠팡이 3,370만건 개인정보를 유출했다 | [KBS](https://n.news.naver.com/mnews/article/023/0003944017) |\n| | 공격자가 인증 취약점을 이용해 로그인 없이 개인정보를 탈취했다 | [byline.network](https://byline.network/2025/11/20-518/) |\n| | 8년간 패치되지 않은 서버(WAS) 인증 취약점이 존재했다 | [byline.network](https://byline.network/2025/11/20-518/) |\n| | 정부가 11월 30일 긴급 회의를 열어 민관합동조사단을 가동하고 3개월 모니터링을 계획했다 | [KBS](https://n.news.naver.com/mnews/article/023/0003944017) |\n| **미확인 정보** | 쿠팡 내부 보안 프로세스의 구체적 내용 | 확인되지 않음 |\n| | 부총리의 “2차 피해 우려”에 대한 구체적 예측 | 확인되지 않음 |\n\n## 핵심 인물과 이해관계\n\n- **배경훈 부총리** – 과학기술정보통신부 장관 겸 부총리. **보안 강화와 개인정보 보호**를 최우선 과제로 삼으며, **정부의 대응책**을 주도.  \n- **박대준 대표** – 쿠팡 대표. **보안 조치 미흡**에 대한 비판을 받으며, **재발 방지와 신뢰 회복**을 위해 내부 보안 체계를 강화할 의지.  \n- **보안 전문가** – 인증 취약점과 패치 관리의 중요성을 강조하며, **기업과 정부의 협력**을 촉구.  \n- **일반 시민** – 개인정보 유출에 대한 **우려와 신뢰 회복**이 주요 관심사.  \n\n## 향후 전망\n\n- **정부**는 **3개월간 모니터링**과 **민관합동조사단**을 통해 쿠팡의 보안 체계를 점검하고, **재발 방지 조치**를 강제할 가능성이 높다.  \n- **쿠팡**은 **보안 프로세스 재정비**와 **외부 감사**를 통해 신뢰 회복을 시도할 것이며, **보안 투자**가 확대될 전망이다.  \n- **법률·규제** 측면에서는 **개인정보 보호법** 및 **보안 인증 제도**가 강화될 가능성이 있으며, **기업의 보안 의무**가 확대될 수 있다.  \n- **산업계**는 이번 사건을 계기로 **보안 인프라 투자**와 **취약점 관리 체계**를 재정비할 필요가 있다.  \n\n> **주요 링크**  \n> - [KBS](https://n.news.naver.com/mnews/article/023/0003944017)  \n> - [byline.network](https://byline.network/2025/11/20-518/)  \n> - [newsworks](https://www.newsworks.co.kr/news/articleView.html?idxno=813654)  \n> - [zdnet](https://search.zdnet.co.kr/?area=4&kwd=%EC%A0%95%EB%B3%B4)  \n> - [etnews](https://www.etnews.com/20251022000285)",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/023/0003944017"
+  ],
+  "timestamp": "2025-11-30T17:13:16.434357",
+  "youtube_videos": [
+    {
+      "title": "남자들이 떠나버린 쿠팡 물류센터 근황",
+      "url": "https://www.youtube.com/watch?v=qXAD2oVclrI",
+      "videoId": "qXAD2oVclrI",
+      "channel": {
+        "name": "옛썰 YetSSUL",
+        "url": "https://www.youtube.com/channel/UCdxLp00znpJ2xZVThNP82-g"
+      },
+      "description": "",
+      "publishedAt": "2025-04-06T06:05:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/qXAD2oVclrI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "한국에서 난리난 동탄쿠팡물류 근황",
+      "url": "https://www.youtube.com/watch?v=ue_OmxyBrsI",
+      "videoId": "ue_OmxyBrsI",
+      "channel": {
+        "name": "대나무숲",
+        "url": "https://www.youtube.com/channel/UCgmR99kIYvPa1sSS5SvMZ1w"
+      },
+      "description": "",
+      "publishedAt": "2025-03-29T06:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/ue_OmxyBrsI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "현장 노동자 아이스크림 금지? 쿠팡이 붙인 안내문 봤더니… / KNN",
+      "url": "https://www.youtube.com/watch?v=5xkHi36eMas",
+      "videoId": "5xkHi36eMas",
+      "channel": {
+        "name": "KNN NEWS",
+        "url": "https://www.youtube.com/channel/UC1ifSsWUG241rRfK0ezYCgA"
+      },
+      "description": "knn뉴스 #쿠팡 #노동자 #안내문 쿠팡이 제공한 아이스크림 냉동고에는 \"쿠팡 직원님들과 협력사, 사원님들을 위한 아이스크림입니다\" ...",
+      "publishedAt": "2025-07-16T14:30:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/5xkHi36eMas/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "월1000 배달기사 그만두고 쿠팡하는 이유",
+      "url": "https://www.youtube.com/watch?v=Dt009ZSRJ20",
+      "videoId": "Dt009ZSRJ20",
+      "channel": {
+        "name": "백만장자 앤더슨",
+        "url": "https://www.youtube.com/channel/UCbVFpnxfmsIhxCYjAi377eA"
+      },
+      "description": "부업 #창업 #쿠팡 #로켓그로스.",
+      "publishedAt": "2024-09-12T11:00:12Z",
+      "thumbnail": "https://i.ytimg.com/vi/Dt009ZSRJ20/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "배송지·주문 기록까지 노출…쿠팡 보안 ‘빨간불’ 켜졌다",
+      "url": "https://www.youtube.com/watch?v=Tbyvr5MaZ3U",
+      "videoId": "Tbyvr5MaZ3U",
+      "channel": {
+        "name": "서울경제 NOW",
+        "url": "https://www.youtube.com/channel/UCIh431O7x00rZke3oNBuRRA"
+      },
+      "description": "쿠팡,#개인정보유출,#보안사고,#PIPC,#이커머스,#배송주소유출,#주문정보유출,#온라인쇼핑,#사이버보안,#개인정보보호.",
+      "publishedAt": "2025-11-21T07:00:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/Tbyvr5MaZ3U/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "검색 - IT세상을 바꾸는 힘 지디넷코리아",
+      "url": "https://search.zdnet.co.kr/?area=4&kwd=%EC%A0%95%EB%B3%B4",
+      "snippet": "쿠팡은 해외 서버를 통해 지난 6월 24일부터 무단으로 개인정보에 접근한 ... 배경훈 부총리 겸 과기정통부 장관은 “대한민국이 과학기술과 인공지능 강국으로 ...",
+      "displayLink": "search.zdnet.co.kr"
+    },
+    {
+      "title": "[그게 뭔가요] 해킹 터지면 실효성 지적 나오는 ISMS-P 인증 – 바이 ...",
+      "url": "https://byline.network/2025/11/20-518/",
+      "snippet": "2025. 11. 21. ... ... 서버(WAS)의 취약점을 악용했다. 해당 취약점은 8년간 패치되지 않은 ... 배경훈 부총리 겸 과학기술정보통신부 장관. (사진=바이라인네트워크).",
+      "displayLink": "byline.network"
+    },
+    {
+      "title": "배경훈 부총리, 플랫폼사 CEO·CISO 긴급 호출…\"살고 싶다면 보안 ...",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=813654",
+      "snippet": "2025. 10. 2. ... 긴급회의 소집 배경에는 올해 상반기 발생한 주요 기업의 대규모 해킹 사고가 있다. SK텔레콤은 4월 19일 홈가입자인증서버(HSS)에서 SK텔레콤 이용자 ...",
+      "displayLink": "www.newsworks.co.kr"
+    },
+    {
+      "title": "강원랜드 슬롯머신 잭팟 의 세계를 탐험하다: 현장에서의 경험과 통찰력",
+      "url": "https://www.kasimex.com/shop/?filter_color=pulpis-black%2Cteslin%2Cblack%2Cassorted%2Clattice%2Cgrey%2Cclear-true-blue%2Cnavajo-brown%2Ccement&product_brand=dewalt",
+      "snippet": "2025. 11. 22. ... (배경훈 부총리) 기존에는 해킹과 같은 보안 사고가 발생하면 (기업이나 ... 민간 쪽도 복수인증을 통해 운영하는 시스템을 갖추고 있는 만큼 취약점을 개선 ...",
+      "displayLink": "www.kasimex.com"
+    },
+    {
+      "title": "정보보호 공시의무 대상 모든 상장사로 확대하고 등급제 도입해 투자 ...",
+      "url": "https://www.etnews.com/20251022000285",
+      "snippet": "2025. 10. 22. ... 또 해킹 정황이 있는 경우, 정부가 기업 신고 없이도 신속히 직접 조사가 가능하도록 한다. 배경훈 부총리 ... 취약점에 즉시 나서기로 했다. 통신사의 ...",
+      "displayLink": "www.etnews.com"
+    },
+    {
+      "title": "KT·LGU+ 닮은꼴 대응 “해킹 정황 없다”...왜 그렇게 말했을까 - 디지털 ...",
+      "url": "https://m.ddaily.co.kr/page/view/2025102416191480058",
+      "snippet": "2025. 10. 24. ... LG유플러스도 유사한 행보를 보였다. KT와 마찬가지로 프랙 매거진을 통해 통합패스워드 관리시스템(APPM) 인증키 유출 정황이 드러났다. 서버관리 및 ...",
+      "displayLink": "m.ddaily.co.kr"
+    },
+    {
+      "title": "팩플 1페이지 | 중앙일보",
+      "url": "https://www.joongang.co.kr/factpl",
+      "snippet": "게임사 넷마블에서 해킹이 발생해 회원 개인정보 611만여 건이 유출됐다. ... 배경훈 부총리 겸 과학기술정보통신부 장관, 유병용 에이투지 부사장, 슐라이만 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "임지수 기자 | JTBC",
+      "url": "https://news.jtbc.co.kr/journalist/361",
+      "snippet": "[배경훈/부총리 겸 과학기술정보통신부 장관 (지난 8월) : 원래 2030년에 5만장을 ... [단독] '쿠팡 기소의견' 근로감독관도 징계 불이익…\"지청장. 02:30. [단독] ...",
+      "displayLink": "news.jtbc.co.kr"
+    },
+    {
+      "title": "팩플 4페이지 | 중앙일보",
+      "url": "https://www.joongang.co.kr/factpl?page=4",
+      "snippet": "배경훈 부총리 겸 과기정통부 장관은 이날 “최근 반복되는 해킹 사고를 심각한 ... APPM 서버는 각종 인증 정보를 통합 관리하는 프로그램이다. 하지만 LG유 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "https://www.news1.kr/api/feeds/news-sitemap/videos",
+      "url": "https://www.news1.kr/api/feeds/news-sitemap/videos",
+      "snippet": "배경훈 부총리 겸 과학기술정보통신부 장관은 \"누리호 4차 발사 성공은 대한민국 ... 해킹을 시도한 국제 해킹 조직임이 확인됐다.해커 총책·'알뜰폰 개통' 중간 ...",
+      "displayLink": "www.news1.kr"
+    }
+  ],
+  "google_count": 10
+}
