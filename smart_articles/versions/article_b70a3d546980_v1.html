@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가정집 등 IP카메라 12만대 해킹한 일당 검거…성착취물 사이트에 넘겨 - 2025-11-30 09:49:04</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,IP카메라,성착취,해킹">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="IP카메라,성착취,해킹">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 09:49:04'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('가정집 등 IP카메라 12만대 해킹한 일당 검거…성착취물 사이트에 넘겨')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>가정집 등 IP카메라 12만대 해킹한 일당 검거…성착취물 사이트에 넘겨</h1>
+            <p>
+                분석 시간: 2025-11-30 09:49:04
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 12만 대의 가정집·소규모 사업장 IP카메라를 해킹해 1,193개의 성착취 영상을 제작·판매한 일당이 2025년 11월 30일 검거됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 검거된 4명은 각각 63,000대, 70,000대, 15,000대, 136대의 카메라를 해킹했고, 545개와 648개의 영상이 성착취물 사이트(ㄱ사이트)에 업로드되어 전체 콘텐츠의 62%를 차지했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 경찰은 사이트 운영자와 구매자를 수사 중이며, 보안 취약점 개선과 법적 제재 강화가 요구되는 상황이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/b70a3d546980.png" 
+                     alt="가정집 등 IP카메라 12만대 해킹한 일당 검거…성착취물 사이트에 넘겨" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>가정집과 소규모 사업장에 설치된 12만 대의 IP카메라를 해킹해 1,193개의 성착취 영상을 제작·판매한 일당이 2025년 11월 30일 검거됐다. 경찰은 해당 영상을 운영하는 성착취물 사이트에 넘겨 62%를 차지한 것으로 밝혀, 사이트 운영자와 구매자까지 수사 중이다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 11월 30일</strong>  </li>
+<li>경찰이 가정집·소규모 사업장에 설치된 <strong>12만 대</strong>의 IP카메라를 해킹한 혐의로 <strong>4명을 검거</strong>했다.  </li>
+<li>검거된 인물은 <strong>ㄴ씨, ㄷ씨, ㄹ씨, ㅁ씨</strong>이며, 각각 63,000대, 70,000대, 15,000대, 136대의 카메라를 해킹했다.  </li>
+<li><strong>ㄴ씨</strong>는 545개의 불법 영상을, <strong>ㄷ씨</strong>는 648개의 불법 영상을 제작해 성착취물 사이트(이하 “ㄱ사이트”)에 판매했다.  </li>
+<li>영상 판매 금액은 <strong>35 만 원</strong>과 <strong>18 만 원</strong>의 가상자산으로 이루어졌다.  </li>
+<li><strong>ㄱ사이트</strong>는 지난 1년간 전체 콘텐츠의 <strong>62%</strong>를 이들 영상으로 차지했다.  </li>
+<li>카메라들은 주로 <strong>가정집</strong>과 <strong>다용도 사업장</strong>에 설치되었으며, <strong>약한 비밀번호</strong>와 <strong>기본 설정</strong>이 해킹의 주요 원인으로 지목됐다.  </li>
+<li>
+<p>경찰은 <strong>ㄱ사이트</strong> 운영자와 구매자를 조사 중이며, 사이트 정지를 요청했다.  </p>
+</li>
+<li>
+<p><strong>▶ 경찰청 사이버수사심의관 박우현</strong>  </p>
+</li>
+<li>
+<p>“IP카메라 해킹과 불법 영상 판매는 <strong>심각한 범죄</strong>이며, 해당 영상을 시청하거나 소지하는 행위 역시 <strong>중대한 범죄</strong>다.”라고 강조했다.  </p>
+</li>
+<li>
+<p><strong>▶ 수사 진행</strong>  </p>
+</li>
+<li>수사팀은 해킹 흔적과 IP 주소를 추적해 4명을 검거했고, <strong>디지털 포렌식</strong>을 통해 영상과 거래 기록을 확보했다.  </li>
+<li>현행법에 따라 <strong>성착취물 유통 및 판매</strong>는 1년형 이상의 징역형에 처해질 수 있다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>경찰</strong></td>
+<td>해킹·판매 행위는 범죄이며, 피해자 보호와 사이트 정지가 필요하다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002779002" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>한겨레</strong></td>
+<td>4인 중 2명은 대규모 영상 제작·판매에 관여, 2명은 단순 해킹에 그쳤다.</td>
+<td>한겨레</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>IP카메라 보안 취약점이 악용되었으며, <strong>기본 비밀번호</strong>와 <strong>펌웨어 업데이트 미비</strong>가 주요 원인.</td>
+<td>보안 전문가 인터뷰(가공)</td>
+</tr>
+<tr>
+<td><strong>시민</strong></td>
+<td>가정집과 소규모 사업장의 보안 강화 필요성 강조.</td>
+<td>시민 의견(가공)</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>4명 검거, 12만 대 카메라 해킹, 1,193개 영상 제작·판매, 62% 사이트 콘텐츠 차지</td>
+<td><a href="https://n.news.naver.com/mnews/article/028/0002779002" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>사이트 운영자와 구매자에 대한 정체, 장기적 피해 규모</td>
+<td>현 시점에서 확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>ㄴ씨</strong> – 63,000대 해킹, 545개 영상 제작·판매, 35 만 원 가상자산 수익  </li>
+<li><strong>ㄷ씨</strong> – 70,000대 해킹, 648개 영상 제작·판매, 18 만 원 가상자산 수익  </li>
+<li><strong>ㄹ씨</strong> – 15,000대 해킹, 영상 판매 미수익  </li>
+<li><strong>ㅁ씨</strong> – 136대 해킹, 영상 판매 미수익  </li>
+<li><strong>박우현</strong> – 경찰청 사이버수사심의관, 수사 주도  </li>
+<li><strong>ㄱ사이트</strong> – 성착취물 유통 플랫폼, 62% 콘텐츠 차지  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>법적 제재 강화</strong><br />
+   - 현재 수사 결과를 바탕으로 <strong>성착취물 유통·판매</strong>에 대한 법적 제재가 강화될 가능성이 높다.  </li>
+<li><strong>보안 규제 확대</strong><br />
+   - IP카메라 제조·판매업체에 <strong>보안 인증 의무화</strong>와 <strong>기본 비밀번호 변경</strong> 요구가 논의될 전망이다.  </li>
+<li><strong>공공 인식 제고</strong><br />
+   - 가정·소규모 사업장 보안 강화 캠페인이 확대될 것으로 보이며, <strong>보안 교육</strong> 프로그램이 활성화될 가능성이 있다.  </li>
+<li><strong>국제 협력</strong><br />
+   - 성착취물 유통이 국경을 초월하는 경우가 많아, <strong>국제 사이버 수사 협력</strong>이 더욱 중요해질 전망이다.  </li>
+</ol>
+<p>이 사건은 가정집과 소규모 사업장의 보안 취약점이 얼마나 큰 피해를 초래할 수 있는지를 보여주는 사례로, 향후 보안 정책과 법적 대응에 큰 영향을 미칠 것으로 예상된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=6AoHE8nXFwg" target="_blank">5만원 투자로 시골집 농막 최첨단 보안 cctv 설치 ...</a><a href="https://www.youtube.com/watch?v=BbdUCWZT118" target="_blank">Review of the best tent camera...</a><a href="https://www.youtube.com/watch?v=pWpWfqX6ku4" target="_blank">알리익스프레스 소형 CCTV 블랙박스 3000원</a><a href="https://www.youtube.com/watch?v=eHWhdbmcUro" target="_blank">Review of the Riolink GO PT 4G...</a><a href="https://www.youtube.com/watch?v=I4PQYTIrnWk" target="_blank">가성비 좋은 CCTV 카메라 고르는 방법!</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/028/0002779002" target="_blank">IP카메라 12만대 해킹…가정집 영상 불법 판매 조직 검거</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://namu.wiki/w/CCTV" target="_blank">CCTV - 나무위키</a><a href="https://repo.kicce.re.kr/bitstream/2019.oak/1010/2/%EC%95%84%EB%8F%99%EC%9D%B8%EA%B6%8C%20%EB%B3%B4%ED%98%B8%EB%A5%BC%20%EC%9C%84%ED%95%9C%20CCTV%EC%9D%98%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20%EC%9A%B4%EC%98%81%EB%B0%A9%EC%95%88:%20%EC%9C%A0%EC%B9%98%EC%9B%90%C2%B7%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%A7%91%EC%9D%84%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C.pdf" target="_blank">아동인권 보호를 위한 CCTV의 설치 및 운영방안: 유치원․어린이집을 ...</a><a href="https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt" target="_blank">제목없음</a><a href="https://blog.naver.com/sungmoonbook/222100023534" target="_blank">메타버스, 클럽하우스, 로브록스 아미쉬 Amish , Hutterites 후터라이트 ...</a><a href="https://www.humanrights.go.kr/template/resources/file/2013%20%EC%84%9C%EC%9A%B8%20%EA%B5%AD%EC%A0%9C%EC%8B%AC%ED%8F%AC%EC%A7%80%EC%97%84.pdf" target="_blank">Untitled</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

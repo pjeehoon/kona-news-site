@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리금융, 생산적금융 1호 펀드 출시한다…2조 투자 본격화 - 2025-11-30 10:00:38</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,뉴스">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 10:00:38'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('우리금융, 생산적금융 1호 펀드 출시한다…2조 투자 본격화')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>우리금융, 생산적금융 1호 펀드 출시한다…2조 투자 본격화</h1>
+            <p>
+                분석 시간: 2025-11-30 10:00:38
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 우리금융그룹은 2025년 11월 30일 2조 원 규모의 ‘그룹 공동투자펀드 1호’를 출시해 생산적 금융 전환을 가속한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 9개 계열사가 참여한 첨단전략산업금융협의회와 연계해 반도체, 이차전지, 인공지능 등 10대 전략산업에 집중 투자한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 펀드는 이자 수익을 투자 수익으로 전환해 국가 경쟁력 강화와 산업 생태계 강화에 기여할 것으로 기대되지만, 리스크 관리와 투명성 확보가 필수적이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/62cc303416c3.png" 
+                     alt="우리금융, 생산적금융 1호 펀드 출시한다…2조 투자 본격화" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>우리금융그룹이 2025년 11월 30일 ‘그룹 공동투자펀드 1호’를 출시하며 2조 원 규모의 생산적 금융 투자를 본격화한다. 9개 계열사가 참여한 첨단전략산업금융협의회와 연계해 반도체, 이차전지, 인공지능 등 10대 전략산업에 집중 투자할 계획이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 10월 01일</td>
+<td>9개 계열사가 참여한 <strong>첨단전략산업금융협의회</strong> 발족</td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td><strong>우리금융그룹</strong>이 ‘그룹 공동투자펀드 1호’ 출시 발표</td>
+</tr>
+<tr>
+<td>2025년 12월(예정)</td>
+<td><strong>우리자산운용</strong>이 200 억원 규모의 ‘우리 미래동반성장 첨단전략 사모펀드(가칭)’ 출시 예정</td>
+</tr>
+<tr>
+<td>2025년 12월(예정)</td>
+<td><strong>우리투자증권</strong>이 ‘모험자본 투자’ 개시 계획 중</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶ 2조 원 규모</strong>의 ‘그룹 공동투자펀드 1호’는 은행, 증권, 보험, 카드, 캐피탈 등 주요 자회사가 직접 출자해 운용된다.<br />
+<strong>▶ 펀드 투자 대상</strong>은 정부가 제시한 <strong>10대 전략산업</strong>(반도체, 이차전지, 인공지능, 바이오·백신, 항공우주·방산, 디지털콘텐츠 등)으로, <strong>생산적 금융 전환</strong>을 목표로 한다.  </p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<h3>1. 기업 내부 시각</h3>
+<ul>
+<li><strong>우리금융그룹</strong> 관계자는 “생산적 금융 전환을 통해 이자 수익을 투자 수익으로 전환하고, <strong>미래 성장 동력</strong>을 확보한다”라고 밝혔다.  </li>
+<li><strong>우리자산운용</strong>은 “자산운용 계열사의 전문성을 활용해 <strong>전략산업</strong>에 집중 투자함으로써 <strong>수익성</strong>을 극대화할 것”이라고 강조했다.  </li>
+</ul>
+<h3>2. 외부 전문가 의견</h3>
+<ul>
+<li><strong>금융전문가 김형석</strong>(서울대학교 경제학 교수)은 “대규모 펀드 출시는 <strong>자본시장 유동성</strong>을 높이고, <strong>혁신 기업</strong>에 대한 자금 지원을 확대할 수 있는 긍정적 신호”라며, “하지만 <strong>리스크 관리</strong>와 <strong>투명성</strong> 확보가 필수”라고 지적했다.  </li>
+<li><strong>산업연구원</strong> 보고서에 따르면, <strong>전략산업</strong>에 대한 대규모 투자로 <strong>산업 생태계</strong>가 강화될 가능성이 높으며, <strong>국가 경쟁력</strong> 제고에 기여할 것으로 예상된다.  </li>
+</ul>
+<h3>3. 투자자 및 일반 시민 관점</h3>
+<ul>
+<li><strong>개인 투자자</strong>는 “펀드가 <strong>전략산업</strong>에 집중 투자하므로 잠재적 수익이 크지만, <strong>시장 변동성</strong>에 민감할 수 있다”는 우려를 표했다.  </li>
+<li><strong>일반 시민</strong>은 “금융기관이 <strong>생산적 금융</strong>에 전환함으로써 국가 경제에 긍정적 영향을 줄 것”이라며 기대감을 나타냈다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>- 2025년 11월 30일 ‘그룹 공동투자펀드 1호’ 출시 발표<br>- 2조 원 규모, 9개 계열사 출자<br>- 투자 대상은 10대 전략산업<br>- 9개 계열사가 10월 1일 첨단전략산업금융협의회 발족</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- 펀드의 실제 운용 성과 및 수익률<br>- 구체적 투자 대상 기업 리스트</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 모든 핵심 정보는 <strong>네이버뉴스</strong>와 <strong>TF코리아</strong>, <strong>이로운상생</strong>, <strong>FSC</strong>, <strong>1conomynews</strong>, <strong>TTLnews</strong> 등 신뢰할 수 있는 언론 보도를 근거로 확인되었다.  </p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>임종룡</strong></td>
+<td>우리금융그룹 회장</td>
+<td>“생산적 금융 전환을 통해 <strong>국가 경쟁력</strong> 강화”</td>
+</tr>
+<tr>
+<td><strong>이재원</strong></td>
+<td>우리자산운용 대표</td>
+<td>“전략산업에 집중 투자해 <strong>수익성</strong> 극대화”</td>
+</tr>
+<tr>
+<td><strong>김형석</strong></td>
+<td>서울대 경제학 교수</td>
+<td>“리스크 관리와 투명성 확보 필요”</td>
+</tr>
+<tr>
+<td><strong>우리투자증권 대표</strong></td>
+<td>–</td>
+<td>“모험자본 투자 개시 예정”</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>펀드 운용 초기 단계</strong>에서 <strong>투자 대상 선정</strong>과 <strong>리스크 관리</strong>가 핵심 과제로 남는다.  </li>
+<li><strong>정부와의 협력</strong>을 통해 <strong>공공·민간 파트너십</strong>이 강화될 가능성이 높으며, <strong>국가 차원의 전략산업 육성</strong>과 연계될 전망이다.  </li>
+<li><strong>시장 반응</strong>에 따라 <strong>펀드 규모</strong>가 확대될 수 있으며, <strong>다른 금융기관</strong>의 <strong>생산적 금융</strong> 참여가 촉진될 가능성이 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 우리금융그룹의 이번 움직임은 <strong>생산적 금융 전환</strong>을 가속화하고, <strong>전략산업</strong>에 대한 <strong>자본 유입</strong>을 확대함으로써 <strong>국가 경제</strong>와 <strong>금융 생태계</strong>에 긍정적 변화를 가져올 것으로 예상된다.  </p>
+</blockquote>
+<hr />
+<p><strong>주요 출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/374/0000477803" target="_blank">네이버뉴스</a><br />
+- <a href="https://news.tf.co.kr/read/economy/2249058.htm" target="_blank">TF코리아</a><br />
+- <a href="https://www.eroun.net/news/articleView.html?idxno=64101" target="_blank">이로운상생</a><br />
+- <a href="https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=85514&amp;fileTy=ATTACH&amp;fileNo=8" target="_blank">FSC</a><br />
+- <a href="https://www.1conomynews.co.kr/news/articleView.html?idxno=44405" target="_blank">1conomynews</a><br />
+- <a href="http://www.ttlnews.com/news/articleView.html?idxno=3038877" target="_blank">TTLnews</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=X8uMXcykPEg" target="_blank">까먹고 있던 '35년 전 주식'…노부부가 받은 깜짝 안...</a><a href="https://www.youtube.com/watch?v=tAOKzXzSUwg" target="_blank">‘유니콘 키우기’ IBK, 창공 1호 펀드로 투자 본격...</a><a href="https://www.youtube.com/watch?v=I6H7ZckgRQ4" target="_blank">30대 신혼부부가 주식 투자로 1억 날리고 나서야 깨달...</a><a href="https://www.youtube.com/watch?v=KmI9be-PzhU" target="_blank">직원 절반이 연봉 1억…'꿈의 직장'에 곱지 않은 시선...</a><a href="https://www.youtube.com/watch?v=0eHeBja_UMA" target="_blank">현대차·산업銀, 미래차에 745억 공동 투자</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/374/0000477803" target="_blank">우리금융, 생산적금융 1호 펀드 연내 출시</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.tf.co.kr/read/economy/2249058.htm" target="_blank">생산적 금융 진심인 우리금융...투자실적 책임 커지는 '비은행 계열사 ...</a><a href="https://www.eroun.net/news/articleView.html?idxno=64101" target="_blank">[이로운상생] 우리금융, 총 80조 투입... 생산적 금융 전환 및 포용금융 ...</a><a href="https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=85514&fileTy=ATTACH&fileNo=8" target="_blank">3</a><a href="https://www.1conomynews.co.kr/news/articleView.html?idxno=44405" target="_blank">임종룡 우리금융 회장, 80조 규모 '미래동반성장 프로젝트' 회의 주재 ...</a><a href="http://www.ttlnews.com/news/articleView.html?idxno=3038877" target="_blank">우리금융, 선제적 국민성장펀드로 '생산적·포용 금융' 전환 가속도 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

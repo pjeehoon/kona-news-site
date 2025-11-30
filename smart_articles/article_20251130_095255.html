@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양종희 KB금융 회장, “AI와 함께 미래 준비해야”…KB테크포럼 개최 - 2025-11-30 09:52:55</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,양종희,KB금융,AI">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="양종희,KB금융,AI">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-11-30 09:52:55'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('양종희 KB금융 회장, “AI와 함께 미래 준비해야”…KB테크포럼 개최')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>양종희 KB금융 회장, “AI와 함께 미래 준비해야”…KB테크포럼 개최</h1>
+            <p>
+                분석 시간: 2025-11-30 09:52:55
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 양종희 KB금융 회장은 2025년 11월 28일 KB테크포럼에서 AI와 미래 대비의 중요성을 강조하며 디지털 전환 가속화 계획을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 200여 명이 참석해 AI 에이전트 도입과 ‘캐비’, ‘모두의’ 같은 AI 플랫폼 개발, 데이터 협업 방안이 논의되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> AI 도입은 금융 서비스 혁신과 운영 효율성을 높일 것으로 기대되지만, 일자리 감소와 개인정보 위험에 대한 우려도 제기된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/11/30/837344869f5b.png" 
+                     alt="양종희 KB금융 회장, “AI와 함께 미래 준비해야”…KB테크포럼 개최" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>KB금융 회장 양종희가 2025년 11월 28일에 열린 7회차 KB테크포럼에서 인공지능(AI)과 미래 대비의 중요성을 강조했다. 200여 명이 참석한 이번 포럼은 KB금융이 AI를 통한 디지털 전환 가속화 계획을 공개한 자리였다.</p>
+<h3>주요 사실과 경과</h3>
+<p>▶ <strong>2025년 11월 28일</strong> – KB테크포럼 7회차 개최<br />
+- <strong>양종희 회장</strong>이 인사말에서 “AI와 함께 미래를 준비해야 한다”는 메시지를 전달했다.<br />
+- <strong>200여 명</strong>이 참석해 디지털 전환에 대한 토론이 진행됐다.<br />
+- 포럼은 <strong>KB금융그룹</strong> 공식 홈페이지에 따르면 “디지털 전환 공유 자리”로 소개된다.<br />
+  - <a href="https://n.news.naver.com/mnews/article/001/0015769288" target="_blank">네이버뉴스</a></p>
+<p>▶ <strong>2025년 7월 13‑14일</strong> – AI 대전환 기회 강조<br />
+- 양 회장은 조선일보 기사에서 “AI 대전환은 금융에도 새로운 기회”라며 AI 도입 가속을 선언했다.<br />
+  - <a href="https://www.chosun.com/economy/money/2025/07/13/RMABFHVISJBC7FAYSZF2J4KWUU/" target="_blank">조선일보</a></p>
+<p>▶ <strong>AI 에이전트 도입 계획</strong><br />
+- KB금융은 PB(Private Banking)와 RM(Risk Management) 에이전트를 포함해 영업 현장과 본부 관리 영역에 AI 에이전트를 단계적으로 도입할 예정이다.<br />
+  - <a href="https://www.chosun.com/economy/money/2025/07/13/RMABFHVISJBC7FAYSZF2J4KWUU/" target="_blank">조선일보</a></p>
+<p>▶ <strong>AI 통합 금융 플랫폼 ‘캐비’ 및 ‘모두의’</strong><br />
+- KB증권은 AI 통합 금융 플랫폼 ‘캐비’를, KB카드는 ‘모두의’ AI 금융 서비스를 개발 중이다.<br />
+  - <a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=401319" target="_blank">비즈니스포스트</a></p>
+<p>▶ <strong>데이터 협업 강화</strong><br />
+- KB금융그룹은 여의도 신관에서 데이터와 최신 AI 기술을 활용해 계열사 간 데이터 협업 방안을 마련했다.<br />
+  - <a href="https://www.kbfg.com/kor/index.jsp" target="_blank">KB금융그룹</a></p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>양종희 회장</strong></td>
+<td>“AI와 함께 미래를 준비해야 한다”는 도전적 자세를 강조하며, AI가 금융 서비스 혁신을 이끌 것이라 주장.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015769288" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>회장의 발언을 “도전적 자세”로 평가하며, AI 도입이 금융 산업에 긍정적 변화를 가져올 가능성을 제시.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015769288" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>비판적 시각</strong></td>
+<td>AI 도입이 일자리 감소와 개인정보 유출 위험을 초래할 수 있다는 우려가 제기됨.</td>
+<td><a href="https://www.chosun.com/economy/money/2025/07/13/RMABFHVISJBC7FAYSZF2J4KWUU/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>AI가 고객 맞춤형 서비스와 운영 효율성을 높이는 동시에, 규제와 윤리적 문제를 해결해야 한다는 지적.</td>
+<td><a href="https://www.hankyung.com/article/2025071352331" target="_blank">한국경제</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>- 2025년 11월 28일 KB테크포럼 개최<br>- 양종희 회장의 인사말 내용<br>- 200여 명 참석<br>- KB금융의 AI 에이전트 및 플랫폼 도입 계획</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- AI 도입이 구체적으로 어느 정도의 비용 절감이나 수익 증대를 가져올지에 대한 수치<br>- AI 도입으로 인한 직무 구조 변화의 구체적 예측</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>양종희 회장</strong> – KB금융그룹 대표이사 회장, AI 전략 수립 및 실행 책임자.  </li>
+<li><strong>KB금융그룹</strong> – AI 기반 디지털 전환 가속화에 투자하고, 고객 경험 개선을 목표로 함.  </li>
+<li><strong>AI 기술 제공업체</strong> – PB, RM 에이전트, 캐비, 모두의 등 AI 솔루션을 공급.  </li>
+<li><strong>고객</strong> – AI 서비스를 통해 맞춤형 금융 상담 및 서비스 제공 기대.  </li>
+<li><strong>직원</strong> – AI 도입으로 인한 업무 프로세스 변화와 재교육 필요성.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>디지털 전환 가속화</strong>: KB금융은 AI 도입을 통해 고객 서비스와 내부 운영 효율성을 높이는 방향으로 나아갈 전망이다.  </li>
+<li><strong>규제 및 윤리</strong>: AI 활용에 따른 개인정보 보호와 윤리적 기준이 강화될 가능성이 높으며, 관련 규제 대응이 필요하다.  </li>
+<li><strong>일자리 변화</strong>: AI가 반복 업무를 대체함에 따라 일부 직무는 축소될 수 있으나, 새로운 AI 관리·개발 직무가 창출될 가능성도 있다.  </li>
+<li><strong>경쟁력 확보</strong>: AI 기반 금융 서비스가 경쟁 우위를 제공할 수 있으나, 기술 도입 비용과 리스크 관리가 핵심 과제로 남는다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>양종희 회장</strong>은 AI와 함께 미래를 준비해야 한다는 메시지를 강조했다.<br />
+- <strong>KB테크포럼</strong>은 AI 도입과 디지털 전환에 대한 전략을 공개한 자리였다.<br />
+- <strong>AI 도입</strong>은 금융 서비스 혁신과 동시에 규제·윤리적 과제를 동반한다.  </p>
+</blockquote>
+<p><em>본 기사에 인용된 모든 내용은 해당 언론사의 공식 보도와 KB금융그룹의 공식 발표를 근거로 작성되었으며, 사실 여부를 확인할 수 있는 출처를 명시하였다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015769288" target="_blank">양종희 KB금융 회장 "도전적 자세로 AI와 함께 미래 준비"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/economy/money/2025/07/13/RMABFHVISJBC7FAYSZF2J4KWUU/" target="_blank">KB 양종희 회장 “AI 대전환은 금융에도 새로운 기회”</a><a href="https://www.businesspost.co.kr/BP?command=article_view&num=401319" target="_blank">[Who Is ?] 양종희 KB금융지주 대표이사 회장</a><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202412270549200520101583" target="_blank">[KB금융 인사 풍향계]AI에 진심인 양종희 회장, 80년대생도 임원으로 ...</a><a href="https://www.kbfg.com/kor/index.jsp" target="_blank">KB금융그룹</a><a href="https://www.hankyung.com/article/2025071352331" target="_blank">양종희 회장 AI 대전환 시대…KB금융 부가가치 높일 기회 | 한국경제</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
