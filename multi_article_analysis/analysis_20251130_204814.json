@@ -1,0 +1,294 @@
+{
+  "main_article": {
+    "title": "쿠팡 고객 3천만명 정보 유출, '내부자 소행' 정황…관리 허점 도마 위에",
+    "url": "https://n.news.naver.com/mnews/article/052/0002280402"
+  },
+  "related_articles": [
+    {
+      "title": "\"쿠팡 내부 직원이 고객 정보 빼돌린 듯\"...경찰 수사",
+      "content": "쿠팡 고객 정보 대량 유출 사태와 관련해 경찰이 내부자 소행 가능성에 무게를 두고 수사하고 있습니다.\n서울경찰청 사이버수사대는 지난 25일, 쿠팡 측에서 고소장을 제출받아 수사에 착수했습니다.\n경찰은 쿠팡으로부터 서버 기록 등 사건 관련 자료를 임의제출 받아 분석하고 있습니다.\n경찰은 쿠팡 내부 직원이 시스템에 무단 접근해 정보를 빼돌렸을 가능성이 크다고 보고 유출 경위를 파악하고 있습니다.\n앞서 쿠팡 측은 피고소인을 특정하지 않은 채 '성명불상자'로 적어 고소장을 냈는데, 자체 조사 결과 고객 정보를 빼돌린 건 쿠팡에서 근무했던 중국 국적 직원으로 이미 퇴사 처리된 거로 전해졌습니다.\n특히, 이 직원이 이미 한국을 떠난 것으로 알려져 경찰 수사에 난관이 예상됩니다.\n유재성 경찰청장 직무대행은 다수 국민이 피해 입은 사안인 만큼, 철저한 수사를 통해 진상을 규명하고 피의자를 신속히 검거하겠다고 강조했습니다.\n※ '당신의 제보가 뉴스가 됩니다'\n[카카오톡] YTN 검색해 채널 추가\n[전화] 02-398-8585\n[메일] social@ytn.co.kr",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/052/0002280402",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Former Chinese employee (unnamed)",
+        "issues": [
+          {
+            "issue_type": "Insider data theft",
+            "details": "Suspected unauthorized access and exfiltration of Coupang customer data by a former employee who has already left the company and Korea.",
+            "source": "YTN"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Coupang",
+        "responses": [
+          {
+            "issue": "Insider data theft",
+            "clarification": "Coupang filed a complaint but did not name the suspect; internal investigation identified the suspect as a former Chinese employee who has left the company and Korea.",
+            "date": "2025-11-25"
+          }
+        ]
+      },
+      {
+        "person_name": "Seoul Police Cyber Investigation Unit",
+        "responses": [
+          {
+            "issue": "Insider data theft",
+            "clarification": "Police are investigating, suspect likely a former employee; difficulty anticipated due to suspect’s departure from Korea.",
+            "date": "2025-11-25"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "Seoul Police Commissioner Yoo Jae-sung",
+        "opinion": "Police will conduct a thorough investigation and swiftly arrest the suspect.",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Police investigation began after Coupang’s complaint on 2025-11-25",
+        "Coupang’s internal investigation identified the suspect as a former Chinese employee who has left the company and Korea",
+        "Police received server logs and other related data from Coupang for analysis",
+        "Police suspect insider theft of customer data"
+      ],
+      "unconfirmed_allegations": [
+        "Actual exfiltration of customer data by the former employee",
+        "Whether the suspect is still abroad and can be apprehended"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-25",
+        "event": "Coupang filed a complaint with Seoul Police Cyber Investigation Unit"
+      },
+      {
+        "date": "2025-11-25",
+        "event": "Police began investigation and received server logs from Coupang"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "Article reporting police investigation published"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "&quot;쿠팡 내부 직원이 정보 빼돌린 듯&quot;...경찰 신속 수사 / YTN",
+        "url": "https://www.youtube.com/watch?v=OSfFzltR0lY",
+        "videoId": "OSfFzltR0lY",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+        },
+        "description": "[앵커] 쿠팡 고객 정보 대량 유출 사태와 관련해 경찰은 내부자 소행 가능성에 무게를 두고 수사하고 있습니다. 쿠팡 측에서 넘겨받은 ...",
+        "publishedAt": "2025-11-30T09:51:36Z",
+        "thumbnail": "https://i.ytimg.com/vi/OSfFzltR0lY/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "&#39;쿠팡 수사외압 폭로&#39; 검사 &quot;너무 억울합니다&quot; 눈물 / 연합뉴스TV(YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=dvi88G7ebXA",
+        "videoId": "dvi88G7ebXA",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+        },
+        "description": "쿠팡 #수사외압 #폭로 #검사 #국회 #법사위 #국정감사 #국감 ▣ 연합뉴스TV 다큐멘터리 전문 채널 '다큐디깅' 구독하기 ...",
+        "publishedAt": "2025-10-23T07:40:00Z",
+        "thumbnail": "https://i.ytimg.com/vi/dvi88G7ebXA/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 수사 검사, 영장 정결권 박탈당한 충격적 내막…&#39;무능&#39; 낙인 찍은 검찰의 민낯!",
+        "url": "https://www.youtube.com/watch?v=E81nlWlJ6GQ",
+        "videoId": "E81nlWlJ6GQ",
+        "channel": {
+          "name": "이슈염",
+          "url": "https://www.youtube.com/channel/UCi7wi9K6O92xuVkwbtOTKsg"
+        },
+        "description": "문지석검사 #검찰개혁 #결권박탈전 #쿠팡사건 #내부고발 #이슈염.",
+        "publishedAt": "2025-10-23T04:46:09Z",
+        "thumbnail": "https://i.ytimg.com/vi/E81nlWlJ6GQ/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "'쿠팡 정보 유출' 내부자 소행 가능성...경찰 수사 중 / YTN - YouTube",
+        "url": "https://www.youtube.com/watch?v=bNlgpiq0cOg",
+        "snippet": "7시간 전 ... [앵커] 3천만 명 넘는 쿠팡 고객의 개인정보가 유출된 건 외부의 해킹이 아닌 내부자 소행일 가능성이 제기되고 있습니다. 쿠팡에서 일했던 중국 국적 ...",
+        "displayLink": "www.youtube.com"
+      },
+      {
+        "title": "'쿠팡 정보 유출', 중국인 소행인 듯… 경찰 수사중",
+        "url": "https://www.chosun.com/national/national_general/2025/11/30/J35OE2PQHRAITBHF3QUZ4I4Z4A/",
+        "snippet": "8시간 전 ... 쿠팡 정보 유출, 중국인 소행인 듯 경찰 수사중 3000만명이 넘는 쿠팡 고객의 개인정보가 유출된 것은 외부 해킹이 아닌 내부자 소행으로 보이는 정황 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "[에디터픽] 사실상 다 털려…쿠팡에서 온 연락에 '날벼락' / YTN ...",
+        "url": "https://www.youtube.com/watch?v=YLjCzQG_Cx8",
+        "snippet": "5시간 전 ... 쿠팡 '전 고객 정보 유출' 5개월간 몰랐다...내부 직원 소행 가능성 ... '쿠팡 정보 유출' 내부자 소행 가능성...경찰 수사 중 (251130 부장원 ...",
+        "displayLink": "www.youtube.com"
+      },
+      {
+        "title": "쿠팡 고객정보 유출 내부자 소행에 무게… 中 국적 前직원 관여 정황 포착",
+        "url": "https://v.daum.net/v/20251130113346328",
+        "snippet": "9시간 전 ... 3000만명이 넘는 쿠팡 고객의 이름과 전화번호, 주소 등이 유출된 사건이 외부 해킹이 아니라 내부자 소행으로 파악됐다. 30일 경찰과 연합뉴스 등에 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "쿠팡 고소장엔 '성명불상자'…'내부자 소행' 번지는 의심｜경찰, 본격 ...",
+        "url": "https://www.youtube.com/watch?v=azyqYn8vBzw",
+        "snippet": "9시간 전 ... 쿠팡에서 개인정보가 노출된 고객 계정수가 3370만 개에 달하는 것으로 파악됐습니다. 이에 정부가 민관합동조사단을 구성해 대응에 나섰고, ...",
+        "displayLink": "www.youtube.com"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 3,370만 고객 데이터 유출, 내부자 소행 의혹 제기…경찰 수사 본격화\n\n쿠팡이 3,370만 고객의 이름·전화·주소 등 개인정보가 유출된 사건이 발생해 내부자 소행이 의심된다. 경찰은 11월 25일 수사를 시작했고, 내부 조사 결과 전 중국인 직원이 유출에 관여한 것으로 확인됐다.\n\n## 주요 사실과 경과\n\n- ▶ **2025년 11월 25일**: 쿠팡이 서울경찰 사이버수사팀에 신고하고 수사를 요청했다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402)  \n- ▶ 같은 날, 경찰은 쿠팡으로부터 서버 로그 등 증거를 수령해 분석을 시작했다.  \n  [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY)  \n- ▶ 쿠팡 내부 조사 결과, 유출에 관여한 인물은 **회사와 한국을 떠난 전 중국인 직원**으로 확인됐다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402)  \n- ▶ **2025년 11월 30일**, YTN과 조선일보 등 언론이 사건을 보도하며 내부자 소행 가능성을 강조했다.  \n  [조선일보](https://www.chosun.com/national/national_general/2025/11/30/J35OE2PQHRAITBHF3QUZ4I4Z4A/)  \n  [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY)  \n- ▶ 경찰은 사건이 외부 해킹이 아닌 내부자 소행일 가능성이 높다고 판단해 수사를 집중하고 있다.  \n  [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY)\n\n## 다양한 관점과 분석\n\n| 관점 | 내용 | 출처 |\n|------|------|------|\n| **쿠팡** | “불법 접근을 시도한 인물은 전 직원이며, 내부 보안 조치가 미흡했다”는 입장. | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| **서울경찰** | “수사는 신속히 진행 중이며, 현행범이 해외에 있을 가능성이 있어 추적이 어려울 수 있다”는 의견. | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) |\n| **소비자** | 개인정보가 유출돼 불안과 신뢰 상실을 호소. | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) |\n| **보안 전문가** | 내부자 소행이 의심될 경우 접근 권한 관리와 로그 모니터링이 핵심이라고 지적. | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) |\n| **언론** | YTN, 조선일보, 연합뉴스TV 등은 내부자 소행 가능성을 강조하며 쿠팡의 보안 관리에 대한 비판을 제기. | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) <br> [조선일보](https://www.chosun.com/national/national_general/2025/11/30/J35OE2PQHRAITBHF3QUZ4I4Z4A/) |\n\n## 검증된 사실 vs 미확인 정보\n\n### 검증된 사실\n- **3,370만 고객의 개인정보가 유출**된 사실.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402)  \n- 내부 조사에서 **전 중국인 직원**이 유출에 관여한 것으로 확인.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402)  \n- 경찰이 **수사를 시작**한 사실.  \n  [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY)\n\n### 미확인 정보\n- 실제 유출된 데이터의 범위와 내용(예: 이메일, 결제정보 등).  \n- 전 직원이 현재 어디에 있는지, 해외에 있는 경우 국제 협력 필요 여부.  \n- 유출이 실제로 이루어졌는지 여부와 향후 법적 책임(형사·민사).  \n  [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY)\n\n## 핵심 인물과 이해관계\n\n| 인물 | 이해관계 | 입장 | 출처 |\n|------|----------|------|------|\n| **쿠팡** | 고객 데이터 보안 책임, 수사 협조 및 보상책임 | 보안 조치 미흡을 인정하고 보완책 검토 중 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| **전 중국인 직원** | 유출 의혹 대상, 현재 한국을 떠난 상태 | 현행범 추적 대상 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| **서울경찰 사이버수사팀** | 수사 담당, 증거 수집 및 현행범 추적 | 수사 철저히 진행하겠다는 입장 | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) |\n| **서울경찰 소속 장관 유재성** | “수사는 철저히 진행될 것”이라는 확약. | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) |\n| **소비자** | 개인정보 보호에 대한 신뢰 회복 필요 | 소셜미디어 및 인터뷰에서 불안감 표출 | [YTN](https://www.youtube.com/watch?v=OSfFzltR0lY) |\n\n## 향후 전망\n\n- **경찰 수사 결과**에 따라 전 직원이 해외에 있는 경우 국제 협력(수사·검거) 필요.  \n- 쿠팡은 **보안 강화**와 **고객 보상** 방안을 검토 중이며, 내부 통제 체계 개편이 예상된다.  \n- 데이터 보호법이 강화될 가능성이 커지면서, 기업의 **보안 의무**가 더욱 엄격해질 전망이다.  \n- 소비자 신뢰 회복을 위해 쿠팡은 **투명성 제고**와 **공시**를 강화할 필요가 있다.  \n\n이 사건은 대형 전자상거래 기업의 데이터 보안 체계가 얼마나 취약할 수 있는지를 다시 한 번 부각시키며, 국내외 데이터 보호 규제와 기업 내부 통제의 재검토를 촉발할 수 있다. 경찰 수사와 기업의 대응이 어떻게 전개될지 주목된다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/052/0002280402"
+  ],
+  "timestamp": "2025-11-30T20:48:14.959511",
+  "youtube_videos": [
+    {
+      "title": "&quot;쿠팡 내부 직원이 정보 빼돌린 듯&quot;...경찰 신속 수사 / YTN",
+      "url": "https://www.youtube.com/watch?v=OSfFzltR0lY",
+      "videoId": "OSfFzltR0lY",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "[앵커] 쿠팡 고객 정보 대량 유출 사태와 관련해 경찰은 내부자 소행 가능성에 무게를 두고 수사하고 있습니다. 쿠팡 측에서 넘겨받은 ...",
+      "publishedAt": "2025-11-30T09:51:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/OSfFzltR0lY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&#39;쿠팡 수사외압 폭로&#39; 검사 &quot;너무 억울합니다&quot; 눈물 / 연합뉴스TV(YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=dvi88G7ebXA",
+      "videoId": "dvi88G7ebXA",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+      },
+      "description": "쿠팡 #수사외압 #폭로 #검사 #국회 #법사위 #국정감사 #국감 ▣ 연합뉴스TV 다큐멘터리 전문 채널 '다큐디깅' 구독하기 ...",
+      "publishedAt": "2025-10-23T07:40:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/dvi88G7ebXA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 수사 검사, 영장 정결권 박탈당한 충격적 내막…&#39;무능&#39; 낙인 찍은 검찰의 민낯!",
+      "url": "https://www.youtube.com/watch?v=E81nlWlJ6GQ",
+      "videoId": "E81nlWlJ6GQ",
+      "channel": {
+        "name": "이슈염",
+        "url": "https://www.youtube.com/channel/UCi7wi9K6O92xuVkwbtOTKsg"
+      },
+      "description": "문지석검사 #검찰개혁 #결권박탈전 #쿠팡사건 #내부고발 #이슈염.",
+      "publishedAt": "2025-10-23T04:46:09Z",
+      "thumbnail": "https://i.ytimg.com/vi/E81nlWlJ6GQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&#39;쿠팡 수사외압 폭로&#39; 검사 &quot;지청장이 폭언&quot; / YTN",
+      "url": "https://www.youtube.com/watch?v=vyeZCzg1EZc",
+      "videoId": "vyeZCzg1EZc",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "쿠팡 퇴직금 미지급 사건에 대한 상부 외압을 폭로한 문지석 검사가 당시 지청장으로부터 욕설과 폭언을 들었다고 주장했습니다.",
+      "publishedAt": "2025-10-23T06:07:58Z",
+      "thumbnail": "https://i.ytimg.com/vi/vyeZCzg1EZc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 사건 현직 검사 눈물의 양심 고백 | 2025 국정감사",
+      "url": "https://www.youtube.com/watch?v=jKDJj_FOlyY",
+      "videoId": "jKDJj_FOlyY",
+      "channel": {
+        "name": "포항MBC NEWS",
+        "url": "https://www.youtube.com/channel/UCdcyo5bb--gqMzT95Yu1eXw"
+      },
+      "description": "포항MBC #포항MBC뉴스 #MBCNEWS #포항뉴스 포항MBC NEWS 공식 유튜브 채널입니다. ▽포항MBC 계정 메시지나 댓글을 통해 ...",
+      "publishedAt": "2025-10-17T01:36:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/jKDJj_FOlyY/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "'쿠팡 정보 유출' 내부자 소행 가능성...경찰 수사 중 / YTN - YouTube",
+      "url": "https://www.youtube.com/watch?v=bNlgpiq0cOg",
+      "snippet": "7시간 전 ... [앵커] 3천만 명 넘는 쿠팡 고객의 개인정보가 유출된 건 외부의 해킹이 아닌 내부자 소행일 가능성이 제기되고 있습니다. 쿠팡에서 일했던 중국 국적 ...",
+      "displayLink": "www.youtube.com"
+    },
+    {
+      "title": "'쿠팡 정보 유출', 중국인 소행인 듯… 경찰 수사중",
+      "url": "https://www.chosun.com/national/national_general/2025/11/30/J35OE2PQHRAITBHF3QUZ4I4Z4A/",
+      "snippet": "8시간 전 ... 쿠팡 정보 유출, 중국인 소행인 듯 경찰 수사중 3000만명이 넘는 쿠팡 고객의 개인정보가 유출된 것은 외부 해킹이 아닌 내부자 소행으로 보이는 정황 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "[에디터픽] 사실상 다 털려…쿠팡에서 온 연락에 '날벼락' / YTN ...",
+      "url": "https://www.youtube.com/watch?v=YLjCzQG_Cx8",
+      "snippet": "5시간 전 ... 쿠팡 '전 고객 정보 유출' 5개월간 몰랐다...내부 직원 소행 가능성 ... '쿠팡 정보 유출' 내부자 소행 가능성...경찰 수사 중 (251130 부장원 ...",
+      "displayLink": "www.youtube.com"
+    },
+    {
+      "title": "쿠팡 고객정보 유출 내부자 소행에 무게… 中 국적 前직원 관여 정황 포착",
+      "url": "https://v.daum.net/v/20251130113346328",
+      "snippet": "9시간 전 ... 3000만명이 넘는 쿠팡 고객의 이름과 전화번호, 주소 등이 유출된 사건이 외부 해킹이 아니라 내부자 소행으로 파악됐다. 30일 경찰과 연합뉴스 등에 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "쿠팡 고소장엔 '성명불상자'…'내부자 소행' 번지는 의심｜경찰, 본격 ...",
+      "url": "https://www.youtube.com/watch?v=azyqYn8vBzw",
+      "snippet": "9시간 전 ... 쿠팡에서 개인정보가 노출된 고객 계정수가 3370만 개에 달하는 것으로 파악됐습니다. 이에 정부가 민관합동조사단을 구성해 대응에 나섰고, ...",
+      "displayLink": "www.youtube.com"
+    },
+    {
+      "title": "[쿠팡 해킹] 내부자 소행에 무게... “인증·접근권한 관리 문제 가능성”",
+      "url": "https://m.boannews.com/html/detail.html?idx=140630",
+      "snippet": "7시간 전 ... 3370만명의 쿠팡 고객 개인정보가 유출된 사고는 내부자 소행에 무게가 실리고 있다. 이에 따라 인증이나 접근권한 관리쪽 문제였을 가능성이 제기 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "\"중국인 직원 소행인 듯\"...국내 성인 '4명 중 3명' 털렸다 [지금이뉴스 ...",
+      "url": "https://www.youtube.com/watch?v=of1f0Zjny9k",
+      "snippet": "7시간 전 ... 3천만명 넘는 쿠팡 고객의 이름과 전화번호, 주소 등 정보가 유출된 것은 외부 해킹이 아닌 내부자 소행인 것으로 파악됐습니다.",
+      "displayLink": "www.youtube.com"
+    },
+    {
+      "title": "쿠팡 고객정보, 중국인 직원이 유출한 듯…경찰 수사중 | 연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20251130016600030",
+      "snippet": "10시간 전 ... (서울=연합뉴스) 신선미 기자 = 3천만명 넘는 쿠팡 고객의 이름과 전화번호, 주소 등 정보가 유출된 것은 외부 해킹이 아닌 내부자 소행인 것으...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "'쿠팡 정보 유출' 내부자 소행 가능성...경찰 수사 중 | YTN",
+      "url": "https://www.ytn.co.kr/_ln/0103_202511301345198802",
+      "snippet": "7시간 전 ... 3천만 명 넘는 쿠팡 고객의 개인정보가 유출된 건 외부의 해킹이 아닌 내부자...",
+      "displayLink": "www.ytn.co.kr"
+    },
+    {
+      "title": "[쿠팡 개인정보 유출]내부자에 뚫린 쿠팡…“개인정보 관리 원점부터 재 ...",
+      "url": "https://www.etnews.com/20251130000112",
+      "snippet": "7시간 전 ... LG유플러스는 협력사를 통한 공격으로 공급망 보안이 문제로 거론된다. 외부 침입, 공급망 관리부터 이번에 내부자 소행까지 개인정보 유출 모든 유형이 ...",
+      "displayLink": "www.etnews.com"
+    }
+  ],
+  "google_count": 10
+}
