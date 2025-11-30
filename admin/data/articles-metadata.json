@@ -1,5 +1,29 @@
 [
   {
+    "id": "db4ee8dc78ab",
+    "title": "고령화 속 추락·낙상, 입원환자 절반이 해당 원인으로 75세 이상이 70%를 차지",
+    "created_at": "2025-11-30T16:00:56.969683",
+    "last_updated": "2025-11-30T16:00:56.969688",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "추락",
+        "낙상",
+        "고령"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "3ba3e56ba2c4",
     "title": "서울 지하철 1∼8호선 노조 내일부터 '준법운행'",
     "created_at": "2025-11-30T15:48:26.321965+09:00",
