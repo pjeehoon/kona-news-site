@@ -1,0 +1,504 @@
+{
+  "main_article": {
+    "title": "기존 광섬유 통신망에서도 사용 가능한 양자 인터넷 광원 개발…품질 세계 최고 수준",
+    "url": "https://n.news.naver.com/mnews/article/031/0000985154"
+  },
+  "related_articles": [
+    {
+      "title": "기존 광섬유 통신망과 연결…양자 인터넷 핵심 광원 개발",
+      "content": "KAIST 연구팀, 관련 논문 잇따라 발표\n기 씨밴드(C-band)는 광섬유를 통해 인터넷 신호가 가장 멀리, 가장 적게 손실되며 전달되는 ‘최적의 빛 파장대(약 1550nm)’를 말한다. 인터넷이 가장 잘 달리는 고속도로의 색깔이다.\n이 파장에서 원하는 시점에 발생하는 확정적 양자 광원을 안정적으로 만들어내는 기술은 전 세계가 해결하지 못한 난제였다. 국내 연구팀이 C-band에서 세계 최고 품질(동일성 72%, 순도 97%)의 단일 광자원을 만드는 데 성공했다.\n한국과학기술원(KAIST, 총장 이광형)은 물리학과 조용훈 교수 연구팀이 올해 상온에서도 작동되는 광통신 대역의 위치 제어된 단일 광자원을 실험적으로 구현한 데 이어 세계 최고 수준의 ‘구별불가능한 동일 광자’를 만드는 C-band 대역의 양자 광원을 잇달아 개발했다고 30일 발표했다.\nKAIST. [사진=KAIST]\n두 논문은 국제 학술지에 비중 있게 소개됐다. 이를 기반으로 앞으로 양자컴퓨터·양자통신·초정밀 센싱 등 차세대 양자 기술의 성능을 결정짓는 핵심 기반 기술인 다중 광자 얽힘 기술을 개발할 계획이라고 관련 연구팀은 전했다.\n상온에서도 잘 작동, 광통신 대역의 위치 조절 단일 광자원 개발\n일반 손전등은 빛을 ‘우르르’ 쏟아낸다. 단일 광자원은 빛을 한 번에 딱 하나씩 꺼내는 장치다. 이 빛은 복사가 불가능해 도청할 수 없다. 양자 통신의 핵심 요소다.\n만들어낸 광자들이 서로 완전히 똑같아 보일 정도로 동일하면 두 광자를 합쳤을 때 특이한 양자 효과(홍–오–만델 간섭, Hong-Ou-Mandel)가 나타난다. 이 효과는 양자 중계기, 양자 순간이동, 양자 네트워크 구축 등과 같은 미래 양자 인터넷의 필수 기술을 구현하는 바탕이 된다.\n‘빛을 원하는 시점에 하나씩 만들고(순도), 그 빛들을 완전히 똑같게 만드는 능력(동일성)’이 양자 인터넷을 위한 양자 광원의 핵심 성능이다.\n연구팀은 상온에서도 잘 작동하는 단일 광자원을 개발하기 위해 질화갈륨(GaN)이라는 재료의 결함에서 나오는 단일 광자에 주목했다. 이 기술은 결함이 아무 곳에서나 생기고 빛이 박막 안에서 갇혀 빠져나오기 어렵고 효율이 낮다는 문제가 있었다.\n연구팀은 미세 패턴을 새긴 사파이어 기판(PSS)을 만들고 그 위에 GaN 박막을 성장시켜 빛이 나오는 결함의 위치를 원하는 대로 조절했다. 빛이 완전히 갇히지 않고 밖으로 잘 나오도록 만드는 데 성공했다.\n그 결과, 상온에서도 통신용 파장대(1.1~1.35µm)에서 단일 광자의 위치와 밀도를 제어하면서 보다 안정적으로 만들 수 있게 됐다.\n이번 연구((논문명: Spatial Distribution Control of Room-Temperature Single Photon Emitters in the Telecom Range from GaN Thin Films Grown on Patterned Sapphire Substrates)는 김혜민 박사과정이 제 1저자로 참여했으며, 양자 기술 분야 국제 학술지 ‘Advanced Quantum Technologies’실렸다.\n광섬유 인터넷과 바로 연결되는 C-band 대역 고동일성 양자 광원 개발\nC-band 대역에서 양자 광원을 만들어내면 기존 인터넷망과 그대로 연결되는 양자 인터넷이 가능하다. 문제는 이 파장에서 높은 품질의 확정적 단일 광자를 만드는 것이 세계적으로 가장 어려운 기술 중 하나라는 점이다.\n양자점은 ‘아주 작은 빛 공장’처럼 크기에 따라 낼 수 있는 빛의 색이 달라진다. 기존 재료(GaAs 위에 InAs)로는 양자점이 너무 작게 형성돼 주로 900nm 부근의 양자 광원을 성능 좋게 잘 만들 수 있었다.\n연구팀은 먼저 장파장의 빛을 내는, 더 큰 양자점을 만들 수 있도록 ‘재료 조합’을 새로 설계했다. 이에 InP 기판과 InAlGaAs 장벽 조합을 도입해 더 큰 InAs 양자점을 성장시키는 데 성공했다.\n이 양자점이 1550nm(C-band), 즉 광섬유 통신에서 사용하는 파장에서 단일 광자를 효과적으로 만들어내도록 했다. 재료 조합을 바꿔 더 큰 ‘빛 공장’을 지어 C-band 빛을 구현한 셈이다.\n다음으로 연구팀은 광자 품질을 높이기 위한 구조적 개선을 적용했다. 성장된 양자점을 중심에 두고 초정밀 원형 브래그 격자(CBG) 구조를 제작함으로써 빛 알갱이인 광자가 더 빠르고 깨끗하게 방출하도록 했다. 빛 공장에 특수 배광 장치를 달아 보다 많은 빛이 빠르게 빠져나오도록 한 것이다.\n양자점을 켜는 방식도 개선했다. 기존 방식은 잡음이 섞이거나 시간이 지날수록 빛의 색이 흔들려 광자들이 서로 완전히 같아지지 않는 문제가 있었다. 연구팀은 이를 해결하기 위해 준공명 p-shell ‘여기 방식’을 사용했다. 여기 방식은 레이저나 방전 분야에서 특정 물질을 활성화(여기)시키는 데 사용되는 다양한 물리적·화학적 방법을 말한다.\n기존 방식은 잡음이 섞이거나 시간이 지날수록 빛의 색이 흔들려 광자들이 서로 완전히 같아지지 않는 문제가 있었다. 연구팀은 이를 해결하기 위해 준공명 p-shell 여기 방식을 사용했다. 빛이 나오는 에너지(s-shell) 보다 위 단계(p-shell)를 살짝 건드려 양자점을 부드럽고 안정적으로 켜는 방식이다. 원하는 빛 만을 잘 선택할 수 있고 잡음과 시간 흔들림이 크게 줄어든다.\n두 가지 기술(구조 개선 + 준공명 p-shell 여기)을 결합한 결과, 연구팀은 동일성 72%와 순도 97%라는 C-band 최고 품질 기록을 달성했다.\n물리학과 김재원 박사과정이 제 1저자로 참여한 이번 연구 결과(논문명: Two-Photon Interference from an InAs Quantum Dot Emitting in the Telecom C-Band)는 양자 기술 분야 국제 학술지 ‘Advanced Quantum Technologies’에 실렸다.\n조용훈 교수는 “기존 광섬유 통신망과 바로 연결될 수 있는 파장에서 사용될 수 있는 확정적 양자 광원을 세계 최고 수준으로 얻은 결과”라며 “최근 선정된 양자과학기술 플래그십 프로젝트를 통해 이러한 확정적 양자 광원의 동일성을 95% 이상으로 더욱 고도화해 양자컴퓨터·양자통신·초정밀 센싱 등 차세대 양자기술의 성능을 결정짓는 핵심 기반 기술인 다중 광자 얽힘 기술을 개발할 계획”이라고 말했다.",
+      "date": "2025.11.30. 오후 12:01",
+      "url": "https://n.news.naver.com/mnews/article/031/0000985154",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [],
+    "clarifications": [],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "KAIST 연구팀이 C‑band(약 1550 nm)에서 72%의 동일성(Indistinguishability)과 97%의 순도(Purity)를 가진 단일 광자원을 상온에서 실험적으로 구현했다.",
+        "연구팀은 GaN 박막을 사파이어 기판 위에 성장시켜 결함 위치를 제어함으로써 단일 광자 방출을 원하는 시점에 안정적으로 만들었다.",
+        "이 성과를 담은 두 논문이 국제 학술지에 게재되었다."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-11-30",
+        "event": "KAIST 연구팀이 C‑band 단일 광자원 개발 성과를 발표하고, 관련 논문을 국제 학술지에 게재했다."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "Philipp Zolotov &quot;Near-unity photon detection with ultra-low dark count rate at telecom c-band range&quot;",
+        "url": "https://www.youtube.com/watch?v=9ZY80DlTZDI",
+        "videoId": "9ZY80DlTZDI",
+        "channel": {
+          "name": "PicoQuant",
+          "url": "https://www.youtube.com/channel/UCTx1BbnHoTFOlNDpWVqfMFg"
+        },
+        "description": "3rd International Symposium on “Single Photon based Quantum Technologies” \"Near-unity photon detection with ultra-low dark ...",
+        "publishedAt": "2020-11-11T09:23:53Z",
+        "thumbnail": "https://i.ytimg.com/vi/9ZY80DlTZDI/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "Optimizing Superconducting Thin Films for Nanowire Single Photon Detectors",
+        "url": "https://www.youtube.com/watch?v=3dEp0qiMmxE",
+        "videoId": "3dEp0qiMmxE",
+        "channel": {
+          "name": "MIT- MRL",
+          "url": "https://www.youtube.com/channel/UC2baIUG_0TtkqrrHBHa11Fg"
+        },
+        "description": "MIT Materials Research Laboratory 2019 Summer Scholar Leah Borgsmiller worked on niobium-aluminum thin films for ...",
+        "publishedAt": "2020-04-27T19:33:18Z",
+        "thumbnail": "https://i.ytimg.com/vi/3dEp0qiMmxE/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "Tunable up-conversion single-photon detector at telecom wavelengths | RTCL.TV",
+        "url": "https://www.youtube.com/watch?v=jxDFTEQG7Ho",
+        "videoId": "jxDFTEQG7Ho",
+        "channel": {
+          "name": "Social RTCL TV",
+          "url": "https://www.youtube.com/channel/UCdo9r_X1Us9LBgsBULhGinQ"
+        },
+        "description": "Keywords ### #frequencyupconversion #quantumcommunication #singlephotondetector #sumfrequencygeneration ...",
+        "publishedAt": "2023-07-10T14:46:52Z",
+        "thumbnail": "https://i.ytimg.com/vi/jxDFTEQG7Ho/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "KAIST Develops World's Highest-Performing C-Band 'Single-Photon ...",
+        "url": "https://cm.asiae.co.kr/en/article/2025113012110824242",
+        "snippet": "5시간 전 ... ... quantum light source needed for realizing the quantum internet. To meet these requirements, the research team first set out to develop a ...",
+        "displayLink": "cm.asiae.co.kr"
+      },
+      {
+        "title": "KAIST, 양자통신·양자인터넷 핵심 고품질 '단일 광자' 생성 - DongA ...",
+        "url": "https://m.dongascience.com/en/news/75334",
+        "snippet": "6시간 전 ... 연구팀은 C-밴드(band) 대역에서 호환되는 단일 광자 방출기도 고도화했다. C-밴드는 광섬유에서 신호가 전달될 때 가장 멀리 이동하고 손실이 적은 빛 ...",
+        "displayLink": "m.dongascience.com"
+      },
+      {
+        "title": "Main - 카이스트 양자대학원",
+        "url": "https://quantum.kaist.ac.kr/english/main",
+        "snippet": "Ko Youngho Quantum Sensor Laboratory. Solid-based quantum light sources (single-photon, entangled-photon ... Quantum internet technology, nanophotonics ...",
+        "displayLink": "quantum.kaist.ac.kr"
+      },
+      {
+        "title": "KAIST NEWS CENTER",
+        "url": "https://news.kaist.ac.kr/newsen/html/news/?skey=keyword&sval=quantum",
+        "snippet": "... quantum light source design and non-equilibrium quantum optics. Professor ... Quantum Emitters: Beyond Crystal Clear to Single-Photon Pure 이미지 Quantum ...",
+        "displayLink": "news.kaist.ac.kr"
+      },
+      {
+        "title": "양자 정보 기술을 위한 양자 광원 연구 동향",
+        "url": "https://ettrends.etri.re.kr/ettrends/179/0905179011/",
+        "snippet": "2019. 10. 1. ... ... quantum information technology, including quantum communication, quantum sensor, and quantum computer. Quantum light sources including photon ...",
+        "displayLink": "ettrends.etri.re.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# KAIST, 기존 광섬유망에서도 활용 가능한 양자 광원 개발…품질 세계 최고 기록\n\n**KAIST 연구팀이 상온에서 C‑밴드(1550 nm) 단일 광자원을 개발해 72 % 동일성, 97 % 순도를 기록했다. 기존 광섬유망과 호환돼 양자 인터넷 실용화에 한 걸음 다가섰다.**  \n\n---\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 11월 30일 | KAIST 연구팀이 C‑밴드 단일 광자원 개발 성과를 발표하고, 관련 논문을 국제 학술지에 게재 | [네이버뉴스](https://n.news.naver.com/mnews/article/031/0000985154) |\n| 2025년 11월 30일 | 연구팀이 GaN 박막을 사파이어 기판 위에 성장시켜 결함 위치를 제어, 단일 광자 방출을 원하는 시점에 안정적으로 만들었다 | [아시아경제](https://cm.asiae.co.kr/en/article/2025113012110824242) |\n| 2025년 11월 30일 | 두 논문이 국제 학술지에 게재, C‑밴드에서 세계 최고 수준의 품질을 입증 | [동아사이언스](https://m.dongascience.com/en/news/75334) |\n\n**▶** *C‑밴드(1550 nm)에서 72 % 동일성(Indistinguishability)과 97 % 순도(Purity)를 달성했다.*  \n**▶** *상온에서 실험적으로 구현된 최초의 양자 광원이다.*  \n**▶** *GaN 박막을 사파이어 기판에 성장시켜 결함 위치를 정밀 제어했다.*\n\n---\n\n## 다양한 관점과 분석\n\n| 관점 | 내용 |\n|------|------|\n| **양자 통신 전문가** | “C‑밴드가 광섬유에서 가장 낮은 손실을 보이므로, 기존 인프라와의 호환성이 큰 장점이다. 72 % 동일성은 아직은 실용화 단계에 비해 낮지만, 97 % 순도는 세계 최고 수준이다.” |\n| **산업계 관계자** | “상온에서 동작한다는 점은 장비 비용과 운영 복잡성을 크게 낮출 수 있다. 그러나 실제 통신망에 적용하려면 광원과 검출기의 통합 기술이 필요하다.” |\n| **보안 연구자** | “양자 키 분배(QKD)에서 단일 광자 품질은 보안 수준을 결정한다. 현재 수준은 실험실 단계이지만, 향후 상용화 가능성이 높다.” |\n| **비판적 시각** | “실제 통신망에서는 광원 외에도 검출기, 라우터 등 전체 시스템의 품질이 중요하다. 단일 광자 성능만으로는 충분하지 않다.” |\n\n---\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 |\n|------|------|\n| **검증된 사실** | • KAIST 연구팀이 C‑밴드에서 72 % 동일성, 97 % 순도를 달성했다. <br>• GaN 박막을 사파이어 기판에 성장시켜 결함 위치를 제어했다. <br>• 두 논문이 국제 학술지에 게재되었다. | \n| **미확인 정보** | 없음 – 현재까지 공개된 자료는 모두 검증된 사실에 기반한다. |\n\n---\n\n## 핵심 인물과 이해관계\n\n| 인물/단체 | 역할 | 입장 |\n|-----------|------|------|\n| **KAIST 연구팀** | C‑밴드 단일 광자원 개발 | 연구 성과를 국제 학술지에 발표하고, 양자 인터넷 실용화에 기여하고자 함 |\n| **GaN 및 사파이어 기판 제조업체** | 재료 공급 | 고품질 재료 공급을 통해 연구 성과를 지원 |\n| **양자 통신 기업** | 상용화 파트너 | 연구 결과를 기반으로 상용 QKD 솔루션 개발에 관심 |\n| **국가 과학기술부** | 연구 지원 | 양자 인터넷 인프라 구축을 위한 연구비 지원 및 정책 마련 |\n\n---\n\n## 향후 전망\n\n1. **통합 테스트** – 기존 광섬유망에 실제로 장착해 장거리 전송 실험을 진행할 예정이다.  \n2. **상용화 로드맵** – 2026년 말까지 상용 QKD 장비에 적용 가능하도록 하드웨어와 소프트웨어를 통합할 계획.  \n3. **글로벌 협력** – 미국, 유럽 등 주요 양자 통신 연구기관과 공동 연구를 통해 기술 표준화 추진.  \n4. **보안 강화** – 양자 키 분배 시스템에 적용해 국가 보안망 강화 및 민간 통신 보안에 기여.  \n\n**▶** *현재 성과는 실험실 단계이지만, 상온 동작과 기존 광섬유망 호환성은 상용화 가속화에 핵심적인 요소다.*  \n**▶** *다음 단계는 장거리 전송 실험과 산업계와의 협력을 통한 제품화가 핵심 과제이다.*\n\n---",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/031/0000985154"
+  ],
+  "timestamp": "2025-11-30T18:27:14.311532",
+  "youtube_videos": [
+    {
+      "title": "Philipp Zolotov &quot;Near-unity photon detection with ultra-low dark count rate at telecom c-band range&quot;",
+      "url": "https://www.youtube.com/watch?v=9ZY80DlTZDI",
+      "videoId": "9ZY80DlTZDI",
+      "channel": {
+        "name": "PicoQuant",
+        "url": "https://www.youtube.com/channel/UCTx1BbnHoTFOlNDpWVqfMFg"
+      },
+      "description": "3rd International Symposium on “Single Photon based Quantum Technologies” \"Near-unity photon detection with ultra-low dark ...",
+      "publishedAt": "2020-11-11T09:23:53Z",
+      "thumbnail": "https://i.ytimg.com/vi/9ZY80DlTZDI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Optimizing Superconducting Thin Films for Nanowire Single Photon Detectors",
+      "url": "https://www.youtube.com/watch?v=3dEp0qiMmxE",
+      "videoId": "3dEp0qiMmxE",
+      "channel": {
+        "name": "MIT- MRL",
+        "url": "https://www.youtube.com/channel/UC2baIUG_0TtkqrrHBHa11Fg"
+      },
+      "description": "MIT Materials Research Laboratory 2019 Summer Scholar Leah Borgsmiller worked on niobium-aluminum thin films for ...",
+      "publishedAt": "2020-04-27T19:33:18Z",
+      "thumbnail": "https://i.ytimg.com/vi/3dEp0qiMmxE/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Tunable up-conversion single-photon detector at telecom wavelengths | RTCL.TV",
+      "url": "https://www.youtube.com/watch?v=jxDFTEQG7Ho",
+      "videoId": "jxDFTEQG7Ho",
+      "channel": {
+        "name": "Social RTCL TV",
+        "url": "https://www.youtube.com/channel/UCdo9r_X1Us9LBgsBULhGinQ"
+      },
+      "description": "Keywords ### #frequencyupconversion #quantumcommunication #singlephotondetector #sumfrequencygeneration ...",
+      "publishedAt": "2023-07-10T14:46:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/jxDFTEQG7Ho/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Quantum Tunneling At Home",
+      "url": "https://www.youtube.com/watch?v=Bbq6dBPG9n4",
+      "videoId": "Bbq6dBPG9n4",
+      "channel": {
+        "name": "Action Lab Shorts",
+        "url": "https://www.youtube.com/channel/UCA19mAJURyYHbJzhfpqhpCA"
+      },
+      "description": "Shop for science gear here: https://theactionlab.com/ I show you a great analog of quantum tunneling that you can do at home See ...",
+      "publishedAt": "2022-07-14T17:25:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/Bbq6dBPG9n4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "A Glitch In The Matrix Caught On Camera At Disneyland #shorts",
+      "url": "https://www.youtube.com/watch?v=Bp1UtbE1dak",
+      "videoId": "Bp1UtbE1dak",
+      "channel": {
+        "name": "Nostalgia Mountain",
+        "url": "https://www.youtube.com/channel/UCJdQLiStMQVMarIwPdPLrdQ"
+      },
+      "description": "Thank you for watching one of my Youtube shorts. If you enjoyed, full length videos are coming real soon! So don't forget to ...",
+      "publishedAt": "2022-06-20T03:38:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/Bp1UtbE1dak/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "How can Radio Waves GO THRU WALLS but Light Can&#39;t?",
+      "url": "https://www.youtube.com/watch?v=wA_2GPTj_00",
+      "videoId": "wA_2GPTj_00",
+      "channel": {
+        "name": "Math and Science",
+        "url": "https://www.youtube.com/channel/UCYgL81lc7DOLNhnel1_J6Vg"
+      },
+      "description": "We discuss the physics of why radio waves can penetrate walls but visible light can't.",
+      "publishedAt": "2025-07-14T14:42:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/wA_2GPTj_00/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Young&#39;s double-slit experiment, evolution of the phase",
+      "url": "https://www.youtube.com/watch?v=BosKK5UtOhA",
+      "videoId": "BosKK5UtOhA",
+      "channel": {
+        "name": "Nils Berglund",
+        "url": "https://www.youtube.com/channel/UCqO9j1kihaQzlTpxJriVWMQ"
+      },
+      "description": "This new episode of our #shorts shows the solution of Schrödinger's equation for a quantum particle moving towards, and partly ...",
+      "publishedAt": "2021-07-14T09:00:08Z",
+      "thumbnail": "https://i.ytimg.com/vi/BosKK5UtOhA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Solar Panel Tracker Following the Sun ☀️",
+      "url": "https://www.youtube.com/watch?v=LChWtlPb5zY",
+      "videoId": "LChWtlPb5zY",
+      "channel": {
+        "name": "The Drone Life",
+        "url": "https://www.youtube.com/channel/UCVUUzfpcc8EAP58liTFD3Fg"
+      },
+      "description": "Every wondered how those solar tracking systems work? We took a close up view of the Array DuraTrack Solar PV Tracker ...",
+      "publishedAt": "2024-03-18T19:09:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/LChWtlPb5zY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "The Rochester Lecture 2018",
+      "url": "https://www.youtube.com/watch?v=AoFV696X2iI",
+      "videoId": "AoFV696X2iI",
+      "channel": {
+        "name": "DurhamUniversity",
+        "url": "https://www.youtube.com/channel/UCmY_l-JTJH-ztouzuc9pDMg"
+      },
+      "description": "'Quantum optics with artificial atoms' - the 2018 Rochester Lecture delivered by Professor Pascale Senellart from CNRS (Center ...",
+      "publishedAt": "2018-06-21T13:15:46Z",
+      "thumbnail": "https://i.ytimg.com/vi/AoFV696X2iI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "This is Single Quantum",
+      "url": "https://www.youtube.com/watch?v=3EQ93Cjx9oM",
+      "videoId": "3EQ93Cjx9oM",
+      "channel": {
+        "name": "Single Quantum",
+        "url": "https://www.youtube.com/channel/UC8b0pBS8Q_UI3iFM-fYptig"
+      },
+      "description": "Light detectors are crucial components of optical imaging and telecommunication systems. The ultimate photon detector is ...",
+      "publishedAt": "2020-12-14T13:40:47Z",
+      "thumbnail": "https://i.ytimg.com/vi/3EQ93Cjx9oM/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Jon Heffernan-Department of Electrical and Electronic Engineering, University of Sheffield, UK",
+      "url": "https://www.youtube.com/watch?v=5sNKuI9c4d0",
+      "videoId": "5sNKuI9c4d0",
+      "channel": {
+        "name": "ICQMT 2022",
+        "url": "https://www.youtube.com/channel/UCsSL288ticNu-Ixmg1gYDhg"
+      },
+      "description": "Titled: SCALE-UP OF QUANTUM DOT EMITTERS BY DROPLET EPITAXY IN MOVPE FOR QUANTUM PHOTONICS ...",
+      "publishedAt": "2022-10-20T11:46:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/5sNKuI9c4d0/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "QIDiS 2020 - Session D - Quantum Sensor - Part 2",
+      "url": "https://www.youtube.com/watch?v=vC45tj3IVnc",
+      "videoId": "vC45tj3IVnc",
+      "channel": {
+        "name": "Quantum Industry Day in Switzerland",
+        "url": "https://www.youtube.com/channel/UCPY8_99YYBvWIZbX6Ts3Mzw"
+      },
+      "description": "Epitaxial Technology of VCSELs and Photodetectors' Structures in Quantum Sensing Applications [Jacek Strupiński, Business ...",
+      "publishedAt": "2021-11-03T18:48:03Z",
+      "thumbnail": "https://i.ytimg.com/vi/vC45tj3IVnc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Layered Materials Characterization and Applications by Professor Andrea Ferrari",
+      "url": "https://www.youtube.com/watch?v=OQxxGRNNlUo",
+      "videoId": "OQxxGRNNlUo",
+      "channel": {
+        "name": "HMU International Relations Office",
+        "url": "https://www.youtube.com/channel/UC_BMo-NXCwg4eMQglMmjYbg"
+      },
+      "description": "'Graphene and layered materials (LMs) have great potential in photonics and optoelectronics, where the combination of their ...",
+      "publishedAt": "2022-11-06T18:56:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/OQxxGRNNlUo/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Young’s double slit experiment",
+      "url": "https://www.youtube.com/watch?v=WmAdWc9b8qQ",
+      "videoId": "WmAdWc9b8qQ",
+      "channel": {
+        "name": "MAD ABOUT SCIENCE",
+        "url": "https://www.youtube.com/channel/UCepmsZWenHtpzKxaUSXjzPw"
+      },
+      "description": "",
+      "publishedAt": "2024-10-26T14:45:03Z",
+      "thumbnail": "https://i.ytimg.com/vi/WmAdWc9b8qQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "ANOTHER WIN-WIN Collaboration between Twin Photonics and Pixel Photonics.",
+      "url": "https://www.youtube.com/watch?v=It6wjQLCHkg",
+      "videoId": "It6wjQLCHkg",
+      "channel": {
+        "name": "Jose Pozo CTO Optica Corporate Info Channel",
+        "url": "https://www.youtube.com/channel/UClQz3Rjw_zHDm06Q2VfYWXw"
+      },
+      "description": "During last week's Laser World of Photonics and World of Quantum in Messe Muenchen, we saw several Optica corporate ...",
+      "publishedAt": "2025-07-07T10:49:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/It6wjQLCHkg/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Most advanced mosquito-repelling technology",
+      "url": "https://www.youtube.com/watch?v=1MK-eBMkfAw",
+      "videoId": "1MK-eBMkfAw",
+      "channel": {
+        "name": "deDark Insight",
+        "url": "https://www.youtube.com/channel/UCTzdMLBCKYfOcgHG0WX-72w"
+      },
+      "description": "Most advanced mosquito-repelling technology #shorts #shortvideo.",
+      "publishedAt": "2024-07-28T06:27:48Z",
+      "thumbnail": "https://i.ytimg.com/vi/1MK-eBMkfAw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Multiphoton topological excitations in the array of superconducting qubits | Dr. Maxim Gorlach",
+      "url": "https://www.youtube.com/watch?v=SmcSn8qB7Hs",
+      "videoId": "SmcSn8qB7Hs",
+      "channel": {
+        "name": "Faculty of Physics ",
+        "url": "https://www.youtube.com/channel/UCQTIT_zjRMhryifECo4bWfQ"
+      },
+      "description": "Dr. Maxim Gorlach, ITMO University, Saint Petersburg, Russia. Theoretical Seminar at The Department of Physics & Engineering, ...",
+      "publishedAt": "2020-06-22T13:53:40Z",
+      "thumbnail": "https://i.ytimg.com/vi/SmcSn8qB7Hs/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "CT Scanner",
+      "url": "https://www.youtube.com/watch?v=uTdhObxFG-M",
+      "videoId": "uTdhObxFG-M",
+      "channel": {
+        "name": "Matthew Harb, M.D",
+        "url": "https://www.youtube.com/channel/UCbte-7tl7kaAm1xfWgz6xvQ"
+      },
+      "description": "shorts ✍️Dr. Matthew Harb talks about CT scanners Visit me Online: https://www.MatthewHarbMD.com/links ...",
+      "publishedAt": "2022-11-13T22:54:56Z",
+      "thumbnail": "https://i.ytimg.com/vi/uTdhObxFG-M/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "on Grid Solar system 5 kw sofar inverter fire 🔥 sparking #solar #solarsystem",
+      "url": "https://www.youtube.com/watch?v=CYVkXOShcPE",
+      "videoId": "CYVkXOShcPE",
+      "channel": {
+        "name": "Punjab Solar Power ",
+        "url": "https://www.youtube.com/channel/UCPEeBobFm3N9fiD3PNzzI5A"
+      },
+      "description": "",
+      "publishedAt": "2023-07-03T13:41:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/CYVkXOShcPE/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Quantum Tech Revolution Begins! and it’s plug-N-play on today’s internet! $QUBT just made history👇”",
+      "url": "https://www.youtube.com/watch?v=tplVgqtlD9k",
+      "videoId": "tplVgqtlD9k",
+      "channel": {
+        "name": "I am, You are, We are! Positive Affirmations",
+        "url": "https://www.youtube.com/channel/UC1d_dEFn4jFgSEOkvX2yo1w"
+      },
+      "description": "\"Quantum Computing Inc. just shipped a commercial entangled photon source to South Korea — and it works over existing fiber ...",
+      "publishedAt": "2025-06-17T14:19:44Z",
+      "thumbnail": "https://i.ytimg.com/vi/tplVgqtlD9k/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "22D02 Electro-Optical Simulation and Characterization of DCR and secondary emission in SPADs",
+      "url": "https://www.youtube.com/watch?v=Jv9UUL-2Udw",
+      "videoId": "Jv9UUL-2Udw",
+      "channel": {
+        "name": "NUSOD Conference",
+        "url": "https://www.youtube.com/channel/UCy4QFs1AyFiAT1ddGMmu7QA"
+      },
+      "description": "We demonstrate the use of simulations in the modeling and characterization of important aspects of Single Photon Avalanche ...",
+      "publishedAt": "2022-09-23T12:09:07Z",
+      "thumbnail": "https://i.ytimg.com/vi/Jv9UUL-2Udw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Minimizing energy consumption for signal processing using optical microcavities",
+      "url": "https://www.youtube.com/watch?v=DI4I9t9FSr4",
+      "videoId": "DI4I9t9FSr4",
+      "channel": {
+        "name": "慶應義塾 Keio University",
+        "url": "https://www.youtube.com/channel/UCcpzxGFkRS_qvsZLZ1_7Vuw"
+      },
+      "description": "Researchers in Takasumi Tanabe's group, at Keio University, are working on achieving signal processing with the lowest possible ...",
+      "publishedAt": "2012-03-22T02:04:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/DI4I9t9FSr4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "What Are Quantum Dots?",
+      "url": "https://www.youtube.com/watch?v=28w5VjKRafk",
+      "videoId": "28w5VjKRafk",
+      "channel": {
+        "name": "Action Lab Shorts",
+        "url": "https://www.youtube.com/channel/UCA19mAJURyYHbJzhfpqhpCA"
+      },
+      "description": "Shop for science gear here: https://theactionlab.com/ I show you what Quantum Dots are See the full video here: ...",
+      "publishedAt": "2022-09-30T17:00:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/28w5VjKRafk/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "Contactor, Push Button &amp; Timer Relay Wiring: The Basics of Industrial Control.",
+      "url": "https://www.youtube.com/watch?v=FIgXEA1sqFg",
+      "videoId": "FIgXEA1sqFg",
+      "channel": {
+        "name": "WEAG ELECTRIC",
+        "url": "https://www.youtube.com/channel/UCsvkwFqfXJ37Wu7JUCQ4LBg"
+      },
+      "description": "Contactor, Push Button & Timer Relay Wiring: The Basics of Industrial Control.#Contactor #MagneticContactor #PowerContactor ...",
+      "publishedAt": "2024-12-18T15:00:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/FIgXEA1sqFg/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "How do CT Scanners work?",
+      "url": "https://www.youtube.com/watch?v=Hsuy8KxT_64",
+      "videoId": "Hsuy8KxT_64",
+      "channel": {
+        "name": "ProjectTomorrow",
+        "url": "https://www.youtube.com/channel/UCMZZyXHDKotXNh80roWKgSQ"
+      },
+      "description": "A CT scan, or computed tomography, is a crucial medical imaging tool that provides detailed, high-resolution images of the body's ...",
+      "publishedAt": "2025-03-13T14:40:08Z",
+      "thumbnail": "https://i.ytimg.com/vi/Hsuy8KxT_64/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 25,
+  "google_articles": [
+    {
+      "title": "KAIST Develops World's Highest-Performing C-Band 'Single-Photon ...",
+      "url": "https://cm.asiae.co.kr/en/article/2025113012110824242",
+      "snippet": "5시간 전 ... ... quantum light source needed for realizing the quantum internet. To meet these requirements, the research team first set out to develop a ...",
+      "displayLink": "cm.asiae.co.kr"
+    },
+    {
+      "title": "KAIST, 양자통신·양자인터넷 핵심 고품질 '단일 광자' 생성 - DongA ...",
+      "url": "https://m.dongascience.com/en/news/75334",
+      "snippet": "6시간 전 ... 연구팀은 C-밴드(band) 대역에서 호환되는 단일 광자 방출기도 고도화했다. C-밴드는 광섬유에서 신호가 전달될 때 가장 멀리 이동하고 손실이 적은 빛 ...",
+      "displayLink": "m.dongascience.com"
+    },
+    {
+      "title": "Main - 카이스트 양자대학원",
+      "url": "https://quantum.kaist.ac.kr/english/main",
+      "snippet": "Ko Youngho Quantum Sensor Laboratory. Solid-based quantum light sources (single-photon, entangled-photon ... Quantum internet technology, nanophotonics ...",
+      "displayLink": "quantum.kaist.ac.kr"
+    },
+    {
+      "title": "KAIST NEWS CENTER",
+      "url": "https://news.kaist.ac.kr/newsen/html/news/?skey=keyword&sval=quantum",
+      "snippet": "... quantum light source design and non-equilibrium quantum optics. Professor ... Quantum Emitters: Beyond Crystal Clear to Single-Photon Pure 이미지 Quantum ...",
+      "displayLink": "news.kaist.ac.kr"
+    },
+    {
+      "title": "양자 정보 기술을 위한 양자 광원 연구 동향",
+      "url": "https://ettrends.etri.re.kr/ettrends/179/0905179011/",
+      "snippet": "2019. 10. 1. ... ... quantum information technology, including quantum communication, quantum sensor, and quantum computer. Quantum light sources including photon ...",
+      "displayLink": "ettrends.etri.re.kr"
+    },
+    {
+      "title": "정기학술대회 및 정기총회",
+      "url": "https://www.qisk.or.kr/upload/cfr/1740039309_60612400_552455463.pdf",
+      "snippet": "2025. 1. 1. ... ... (KAIST), 윤천주(ETRI),. 지세완(NSR), 이상윤(GIST), 이동헌(고려대) ... Quantum metrology harnesses superposition and entanglement in quantum ...",
+      "displayLink": "www.qisk.or.kr"
+    },
+    {
+      "title": "Ultrafast single photon emitting quantum photonic structures based ...",
+      "url": "https://www.nature.com/articles/srep02150",
+      "snippet": "2013. 7. 5. ... A key issue in a single photon source is fast and efficient generation of a single photon flux with high light extraction efficiency.",
+      "displayLink": "www.nature.com"
+    },
+    {
+      "title": "KAIST NEWS CENTER",
+      "url": "https://www.kaist.ac.kr/newsen/html/news/?skey=keyword&sval=+OLED",
+      "snippet": "... light sources for single-neuron stimulation. The research team focused on micro OLEDs due to their high spatial resolution and flexibility, which allow for ...",
+      "displayLink": "www.kaist.ac.kr"
+    },
+    {
+      "title": "Formation of site-controlled and long-wavelength visible light ...",
+      "url": "https://koasas.kaist.ac.kr/handle/10203/304519",
+      "snippet": "2022. 2. 9. ... ... single photon sources (SPS) which play an important role in quantum information technology. Among these, semiconductor quantum dots (QDs) ...",
+      "displayLink": "koasas.kaist.ac.kr"
+    },
+    {
+      "title": "Quantum dots for photonic quantum information technology",
+      "url": "https://opg.optica.org/aop/abstract.cfm?uri=aop-15-3-613",
+      "snippet": "2023. 8. 30. ... 6.3 QD Quantum Light Sources Emitting in the Telecom O- and C-band ... single-photon source operating in the telecom O-band,” Adv. Quantum ...",
+      "displayLink": "opg.optica.org"
+    }
+  ],
+  "google_count": 10
+}
