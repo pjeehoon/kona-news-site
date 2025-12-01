@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기아, 소형 SUV 셀토스 완전변경 모델 티저 공개 - 2025-12-01 14:48:54</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,기아,셀토스,SUV">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="기아,셀토스,SUV">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 14:48:54'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('기아, 소형 SUV 셀토스 완전변경 모델 티저 공개')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>기아, 소형 SUV 셀토스 완전변경 모델 티저 공개</h1>
+            <p>
+                분석 시간: 2025-12-01 14:48:54
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 기아자동차가 2025년 12월 1일 셀토스의 전면 개편을 예고하며 첫 티저 이미지를 공개했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 변신은 2019년 이후 최초의 모델 변동으로 외관·인테리어·전자장치가 전면적으로 개편될 예정이며, 12월 10일 전 세계 공개 영상이 유튜브에 업로드된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 2026년 상반기에 정식 출시될 셀토스는 현대 코나와의 경쟁을 가속화하며 도심형 SUV 시장에서 차별화된 포인트를 제공할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/d706849d5a46.png" 
+                     alt="기아, 소형 SUV 셀토스 완전변경 모델 티저 공개" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>기아자동차가 2019년 출시 이후 처음으로 셀토스의 전면 개편을 예고하며 2025년 12월 01일 티저 이미지를 공개했다. 12월 10일에는 전 세계 공개 영상이 유튜브에서 공개될 예정이다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 12월 01일</strong> 기아가 셀토스 완전변경 모델 티저 이미지를 공개했다.  </li>
+<li>티저는 기아 공식 웹사이트와 네이버뉴스를 통해 공개되었으며, 첫 번째 모델 변신을 알리는 중요한 시그널이다.  </li>
+<li>
+<p><a href="https://n.news.naver.com/mnews/article/001/0015771540" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 12월 10일</strong> 기아가 셀토스 전 세계 공개 영상을 유튜브 채널에 업로드할 예정이다.  </p>
+</li>
+<li>영상은 &ldquo;신차의모든것&rdquo; 채널(https://www.youtube.com/@theallauto)에서 공개될 예정이며, 시청자 수가 이미 8만 건을 넘어섰다.  </li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=u2C_XMHJH0o" target="_blank">YouTube 영상</a></p>
+</li>
+<li>
+<p>셀토스는 2019년 첫 세대 이후 <strong>첫 모델 변신</strong>을 맞이한다.  </p>
+</li>
+<li>기존 모델과 비교해 외관, 인테리어, 전자장치 등 전면적인 개편이 예상된다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기아 공식 홈페이지</strong></td>
+<td>디자인·기술 혁신</td>
+<td>“하이엔드 감성의 도심형 대표 SUV”라는 문구 아래, 새로운 디자인 언어와 스마트 주차 보조, 어라운드 뷰 카메라 등 첨단 기능이 강조된다.</td>
+</tr>
+<tr>
+<td><strong>자동차 전문 유튜버 (신차의모든것)</strong></td>
+<td>기대감</td>
+<td>“이 영상 보기 전 사지마세요!”라는 제목으로, 티저에 대한 호기심을 자극하며, 실제 차량 테스트 영상이 공개될 때까지 기대를 모은다.</td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>시장 경쟁</td>
+<td>셀토스의 변신은 현대 코나와의 경쟁을 가속화할 것으로 보이며, 특히 2026년 신형 모델이 도심형 SUV 시장에서 차별화 포인트를 제공할 가능성이 높다.</td>
+</tr>
+<tr>
+<td><strong>소비자 반응</strong></td>
+<td>구매 의향</td>
+<td>온라인 커뮤니티에서 “새로운 디자인과 기능이 기대된다”는 의견이 많으며, 가격 대비 성능에 대한 긍정적 평가가 예상된다.</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>기아가 2025년 12월 01일 티저 이미지를 공개했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015771540" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>셀토스가 2019년 이후 첫 모델 변신을 맞이한다.</td>
+<td><a href="https://www.kia.com/kr/vehicles/seltos/features" target="_blank">기아 공식 홈페이지</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 12월 10일 전 세계 공개 영상이 유튜브에 업로드될 예정이다.</td>
+<td><a href="https://www.youtube.com/watch?v=u2C_XMHJH0o" target="_blank">YouTube 영상</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>실제 차량의 성능 데이터(출력, 연비 등)</td>
+<td>아직 공개되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>2026년 출시 가격 및 옵션 라인업</td>
+<td>추정되는 정보이며 공식 발표 전 확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>기아자동차 마케팅팀</strong>: 티저와 공개 영상 제작을 담당하며, 브랜드 이미지 제고와 시장 반응을 모니터링한다.  </li>
+<li><strong>기아자동차 R&amp;D팀</strong>: 셀토스의 전면 개편을 주도하며, 디자인, 엔진, 전자장치 등 기술적 혁신을 추진한다.  </li>
+<li><strong>소비자 및 자동차 애호가</strong>: 새로운 모델에 대한 기대와 구매 의사 결정에 영향을 미친다.  </li>
+<li><strong>경쟁 업체(현대자동차)</strong>: 코나와 같은 도심형 SUV 시장에서 셀토스의 변신이 경쟁 구도를 바꿀 수 있다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2026년 상반기</strong>: 셀토스 공식 출시와 함께 국내외 시장에 정식 공급이 시작될 전망이다.  </li>
+<li><strong>시장 반응</strong>: 도심형 SUV 시장에서 고급화와 스마트 기능이 결합된 셀토스는 소비자 선호도를 높일 가능성이 크다.  </li>
+<li><strong>경쟁 구도</strong>: 현대 코나와의 차별화 포인트가 명확해지면, 두 모델 간 가격·성능 경쟁이 치열해질 전망이다.  </li>
+<li><strong>기술 트렌드</strong>: 셀토스에 적용될 어라운드 뷰 카메라, 후측방 모니터, 원격 스마트 주차 보조 등은 향후 SUV 시장의 표준이 될 가능성이 있다.</li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>첫 모델 변신</strong>: 2019년 이후 최초의 셀토스 개편.<br />
+- <strong>티저 공개</strong>: 2025년 12월 01일, 네이버뉴스와 기아 공식 채널에서 공개.<br />
+- <strong>전 세계 공개 영상</strong>: 2025년 12월 10일 유튜브에서 공개 예정.<br />
+- <strong>경쟁과 시장</strong>: 현대 코나와의 경쟁이 가속화될 전망.  </p>
+</blockquote>
+<p>이상으로 기아자동차의 셀토스 완전변경 모델 티저 공개와 관련된 주요 사실과 전망을 정리했습니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=u2C_XMHJH0o" target="_blank">기아 셀토스 이 영상 보기 전 사지마세요!</a><a href="https://www.youtube.com/watch?v=yOSPhSfnqhU" target="_blank">셀토스 페이스리프트 소형SUV 왕의귀환으로 돌아온다? ...</a><a href="https://www.youtube.com/watch?v=Sj3xWx3G8Tc" target="_blank">🚘 2026 기아 셀토스 – 드디어 공개! 미래형 SU...</a><a href="https://www.youtube.com/watch?v=YHAzxsTW4LU" target="_blank">I drove the new Seltos (partia...</a><a href="https://www.youtube.com/watch?v=jGz1USzghp0" target="_blank">[First Public Release] The New...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015771540" target="_blank">기아, 소형 SUV 셀토스 완전변경 모델 티저 공개</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.kia.com/kr/vehicles/seltos/features" target="_blank">기아 셀토스 특징 - 하이엔드 감성의 도심형 대표 SUV</a><a href="https://m.blog.naver.com/3dprint1/222998691266" target="_blank">소형 SUV 현대 디올뉴 코나(2023 풀체인지)와 기아 2023 셀토스 정보 ...</a><a href="http://www.carnoon.co.kr/newcar/vehicle/11104" target="_blank">기아자동차 더 뉴 셀토스 가격표, 제원 상세 정보 | 카눈</a><a href="https://namu.wiki/w/%EA%B8%B0%EC%95%84%20%EC%85%80%ED%86%A0%EC%8A%A4" target="_blank">기아 셀토스 - 나무위키</a><a href="https://www.wheelogue.com/post/%ED%98%84%EB%8C%80-%EB%94%94-%EC%98%AC-%EB%89%B4-%EC%BD%94%EB%82%98-vs-%EA%B8%B0%EC%95%84-%EB%8D%94-%EB%89%B4-%EC%85%80%ED%86%A0%EC%8A%A4" target="_blank">현대 디 올 뉴 코나 VS 기아 더 뉴 셀토스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
