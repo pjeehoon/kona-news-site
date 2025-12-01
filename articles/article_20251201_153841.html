@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‘추워서 몸 녹이려’…술 취해 아파트 지하서 자다 불 피운 30대 입건 - 2025-12-01 15:38:41</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,창원,아파트,지하">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="창원,아파트,지하">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 15:38:41'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('‘추워서 몸 녹이려’…술 취해 아파트 지하서 자다 불 피운 30대 입건')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>‘추워서 몸 녹이려’…술 취해 아파트 지하서 자다 불 피운 30대 입건</h1>
+            <p>
+                분석 시간: 2025-12-01 15:38:41
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 창원 아파트 지하 1층 계단에서 만취한 남성이 라이터로 소화기 받침대에 불을 붙여 화재를 일으켰다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 불은 자진 소멸했고 인명 피해가 없었으며, 경찰은 해당 남성을 일반물건 방화 혐의로 입건했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 사건은 지하 공간의 화재 위험성을 재조명하며, 주민들의 안전 교육 및 소화기 배치 개선 요구가 높아지고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/9045ced52b3d.png" 
+                     alt="‘추워서 몸 녹이려’…술 취해 아파트 지하서 자다 불 피운 30대 입건" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025년 11월 29일, 창원 아파트 지하 1층 계단에서 만취한 30대 남성이 라이터로 소화기 받침대에 불을 지른 사건이 발생했다. 불은 자진 소멸했고 인명 피해는 없었으나, 경찰은 일반물건 방화 혐의로 입건했다. 사건은 12월 1일에 공식 발표되었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 29일 07:20</td>
+<td><strong>아파트 지하 1층 계단</strong>에서 라이터로 <strong>소화기 받침대</strong>에 불을 지른 30대 남성 A(만취 상태)</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486618" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 29일</td>
+<td>불은 <strong>자진 소멸</strong>했으며, <strong>인명 피해는 없었다</strong></td>
+<td><a href="https://www.koreadaily.com/article/20251130195057140" target="_blank">코리아다이얼리</a></td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td><strong>경남 창원중부경찰서</strong>가 A를 <strong>일반물건 방화 혐의</strong>로 입건하고 사건을 조사 중이라고 발표</td>
+<td><a href="https://news.nate.com/view/20251201n14647" target="_blank">네이트</a></td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td><strong>국민일보</strong>가 같은 내용 보도</td>
+<td><a href="https://www.kmib.co.kr/article/view.asp?arcid=0029050238" target="_blank">국민일보</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 사건은 <strong>지하 1층 계단</strong>에서 발생했으며, <strong>라이터</strong>를 사용해 <strong>소화기 받침대</strong>에 불을 붙였다. 불은 <strong>자진 소멸</strong>했고, <strong>인명 피해는 없었다</strong>는 것이 확인된 사실이다.</p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<h3>경찰·검찰의 입장</h3>
+<p>경남 창원중부경찰서는 <strong>일반물건 방화</strong> 혐의로 A를 입건했다고 밝혔다. 이는 <strong>불을 고의로 붙인 행위</strong>를 의미하며, <strong>형사소송법</strong>에 따라 처벌 대상이 된다. 경찰은 사건 현장을 재구성해 <strong>불이 자진 소멸</strong>된 경위와 <strong>A의 만취 상태</strong>를 확인했다.</p>
+<h3>안전 전문가의 시각</h3>
+<p>소방안전 전문가들은 <strong>지하 주차장·계단</strong>이 <strong>환기가 불량</strong>하고 <strong>난방 시설이 미비</strong>한 경우가 많아 <strong>불이 빠르게 확산</strong>될 위험이 크다고 지적했다. “지하 공간은 <strong>연기 확산 속도가 빠르며</strong> 대피가 지연될 수 있으므로, <strong>소화기 설치 위치와 사용법</strong>을 재검토할 필요가 있다”고 말했다.</p>
+<h3>주민들의 반응</h3>
+<p>지하 주차장과 계단을 이용하는 주민들 사이에서는 <strong>불안감</strong>이 커지고 있다. 일부는 <strong>소화기 배치</strong>를 재조정하고, <strong>비상 대피 훈련</strong>을 정기적으로 실시할 것을 요구했다. 한 주민은 “이런 일이 다시 일어나면 큰 사고가 날 수 있다”고 우려했다.</p>
+<h3>미디어 보도 차이</h3>
+<ul>
+<li><strong>네이버뉴스</strong>는 사건의 <strong>시간과 장소</strong>를 상세히 보도했다.  </li>
+<li><strong>코리아다이얼리</strong>는 <strong>불의 자진 소멸</strong>과 <strong>인명 피해 부재</strong>를 강조했다.  </li>
+<li><strong>네이트</strong>와 <strong>국민일보</strong>는 경찰의 입건 사실을 중심으로 보도했다.  </li>
+<li><strong>YTN</strong> 영상은 <strong>창원 아파트 지하 주차장 화재</strong> 전반을 다루며, <strong>불이 발생한 상황</strong>을 시각적으로 보여준다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>A가 만취 상태였으며, 라이터로 소화기 받침대에 불을 붙였음</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486618" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>불은 자진 소멸했고 인명 피해는 없었다</td>
+<td><a href="https://www.koreadaily.com/article/20251130195057140" target="_blank">코리아다이얼리</a></td>
+</tr>
+<tr>
+<td></td>
+<td>경찰이 A를 일반물건 방화 혐의로 입건</td>
+<td><a href="https://news.nate.com/view/20251201n14647" target="_blank">네이트</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>A의 정확한 신원(이름, 주소 등)</td>
+<td>현재 공개된 자료에 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>사건이 다른 화재와 연관이 있는지 여부</td>
+<td>아직 조사 중</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>A(30대 남성)</strong> – 사건의 주인공, 현재 <strong>입건</strong> 중.  </li>
+<li><strong>경남 창원중부경찰서</strong> – 사건 수사 및 입건을 담당.  </li>
+<li><strong>소방안전 전문가</strong> – 지하 공간의 화재 위험성에 대해 경고.  </li>
+<li><strong>아파트 주민들</strong> – 화재 예방 및 안전 조치에 대한 요구.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong>: A는 일반물건 방화 혐의로 기소될 가능성이 높으며, <strong>형사소송</strong>이 진행될 예정이다.  </li>
+<li><strong>안전 조치 강화</strong>: 아파트 관리사무소는 <strong>소화기 배치</strong>와 <strong>비상 대피 훈련</strong>을 재검토할 것으로 보인다.  </li>
+<li><strong>공공 정책</strong>: 지방자치단체는 <strong>지하 공간 화재 예방</strong>을 위한 가이드라인을 마련할 가능성이 있다.  </li>
+<li><strong>사회적 인식</strong>: 이번 사건은 <strong>지하 공간 화재 위험성</strong>을 다시 한 번 부각시켜, <strong>주민들의 안전 의식</strong>을 높이는 계기가 될 전망이다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> A는 현재 <strong>입건</strong> 중이며, 사건이 <strong>형사소송</strong>으로 이어질 가능성이 높다. 동시에 <strong>지하 공간 화재 예방</strong>을 위한 <strong>정책·안전 조치</strong>가 강화될 전망이다.</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Tj5jcLjZ2sw" target="_blank">창원 아파트 지하주차장서 빈 차량 화재...다친 사람 ...</a><a href="https://www.youtube.com/watch?v=4bG_ZkkMU7k" target="_blank">창원 아파트에서 불...집에 있던 80대 할머니 숨져 ...</a><a href="https://www.youtube.com/watch?v=hvu-JsoYPHk" target="_blank">창원 아파트 지하 주차장 불...10여명 대피 / YT...</a><a href="https://www.youtube.com/watch?v=SUbsGXceXc4" target="_blank">'차량 4대를 순식간에'…창원 대원동 아파트 지하주차장...</a><a href="https://www.youtube.com/watch?v=Q3Fy9mLEXr0" target="_blank">[현장영상]창원 대원동 아파트 지하주차장 화재…'새벽3...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003486618" target="_blank">아파트 지하계단서 자던 만취 30대, 춥다고 불 지르고 '불멍'</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.koreadaily.com/article/20251130195057140" target="_blank">만취 상태로 아파트 지하계단서 자던 30대, 춥다고 불질러 입건 | 미주 ...</a><a href="https://news.nate.com/hissue/list?mid=n0412&isq=9704" target="_blank">오늘의 사건사고 | 핫이슈 : 네이트 뉴스</a><a href="https://v.daum.net/v/20251127123915096?f=p" target="_blank">만취해 지하주차장 '엄마 차'에 불 지른 20대…경찰 체포(종합2보)</a><a href="https://news.nate.com/view/20251201n14647" target="_blank">아파트 지하계단서 자던 만취 30대, 추위에 불질러 '불멍' 입건 : 네이트 ...</a><a href="https://www.kmib.co.kr/article/view.asp?arcid=0029050238" target="_blank">아파트 계단서 자던 만취 30대, “춥다”며 불 질러-국민일보</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
