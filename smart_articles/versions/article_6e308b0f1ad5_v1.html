@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴욕시에 첫 대형 카지노 3곳 승인…한인사업가 업체 포함 - 2025-12-02 06:42:55</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴욕시,카지노,한인">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴욕시,카지노,한인">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 06:42:55'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('뉴욕시에 첫 대형 카지노 3곳 승인…한인사업가 업체 포함')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>뉴욕시에 첫 대형 카지노 3곳 승인…한인사업가 업체 포함</h1>
+            <p>
+                분석 시간: 2025-12-02 06:42:55
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 뉴욕시가 2025년 12월 1일에 Bally’s, Hard Rock, ResortWorld New York City 등 3개 대형 카지노를 승인해 한국계 사업가가 참여한 첫 사례를 만들었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 승인된 Bally’s는 김수형 대표가 이끄는 기업이 운영하며 트럼프 조직에 1억1천5백만 달러를 추가 지급했다는 논란이 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로 인해 지역 경제와 일자리 창출이 기대되지만 트럼프 조직과의 금전적 연계가 정치적 부정행위 논란을 일으켜 시의 이미지와 정책에 영향을 미칠 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/6e308b0f1ad5.png" 
+                     alt="뉴욕시에 첫 대형 카지노 3곳 승인…한인사업가 업체 포함" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>뉴욕시가 2025년 12월 1일에 대형 카지노 3곳을 승인하면서 한국계 사업가가 참여한 첫 사례가 등장했다. 승인된 Bally’s, Hard Rock, ResortWorld New York City는 지역 경제 활성화와 일자리 창출을 기대하지만, 트럼프 조직과의 금전적 연계가 정치적 논란을 불러일으키고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 01일</td>
+<td>NY 오락시설입지이사회 권고</td>
+<td>3개 사업체에 카지노 설립 허가 권고</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 02일</td>
+<td>보도</td>
+<td>뉴욕시 최초 대형 카지노 3곳 승인 소식 보도</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 02일</td>
+<td>김수형 입장</td>
+<td>트럼프 조직에 대한 추가 지급이 부정행위가 아님을 확인</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>Bally’s</strong>는 한국계 사업가 김수형이 이끄는 기업이 운영하며, <strong>트럼프 조직에 1억1천5백만 달러(약 1,700억원)</strong>를 추가 지급하기로 계약했다.<br />
+▶ <strong>Hard Rock</strong>과 <strong>ResortWorld New York City</strong>는 각각 미국 내 유명 브랜드와 협력해 카지노·호텔·리조트 사업을 진행한다.  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>경제적 기대</h3>
+<ul>
+<li><strong>긍정적 시각</strong>: 뉴욕시 경제학자들은 대형 카지노가 <strong>수천 개의 일자리</strong>를 창출하고, 지역 내 소비를 촉진할 것으로 전망한다.  </li>
+<li><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></li>
+</ul>
+<h3>정치·윤리적 논란</h3>
+<ul>
+<li><strong>부정적 시각</strong>: 트럼프 조직과의 금전적 연계가 <strong>트럼프 전 대통령의 대출사기 의혹</strong>과 연결될 가능성이 있어, 정치적 부정행위 논란이 제기된다.  </li>
+<li><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>중립적 평가</strong>: 연합뉴스는 “지역 경제와 일자리 창출에 긍정적 효과를 기대하지만, 트럼프 조직과의 연계가 정치적 논란을 일으킬 가능성이 있다”고 보도했다.  </li>
+<li><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>① 뉴욕시 오락시설입지이사회가 3개 사업체에 카지노 설립 허가 권고<br>② Bally’s가 김수형이 이끄는 기업이 운영<br>③ Bally’s가 트럼프 조직에 1억1천5백만 달러를 추가 지급</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인/추정</strong></td>
+<td>① 트럼프 전 대통령의 대출사기 의혹과 Bally’s 계약이 직접 연결<br>② 지급 금액이 부정행위에 사용될 가능성</td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김수형 (Kim Su‑hyung)</strong></td>
+<td>Bally’s 대표</td>
+<td>트럼프 조직에 대한 추가 지급이 부정행위가 아니며, 부동산 개발 계약의 일환이라고 설명</td>
+</tr>
+<tr>
+<td><strong>트럼프 조직 (Trump Organization)</strong></td>
+<td>계약 상대</td>
+<td>계약 금액이 부정행위와 연결된다는 주장에 대해 공식 입장을 밝히지 않음</td>
+</tr>
+<tr>
+<td><strong>뉴욕시 오락시설입지이사회</strong></td>
+<td>승인 권고</td>
+<td>대형 카지노가 지역 경제에 긍정적 기여를 할 것으로 판단</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>규제 및 감시 강화</strong>: 트럼프 조직과의 금전적 연계가 정치적 논란을 일으키면서, 뉴욕시와 연방 정부는 <strong>투명성 및 공정성</strong>을 강화할 가능성이 있다.  </li>
+<li><strong>사업 진행 일정</strong>: Bally’s, Hard Rock, ResortWorld New York City는 <strong>2026년 초</strong>에 시공을 시작할 계획이며, <strong>2027년</strong>에 개장할 전망이다.  </li>
+<li><strong>정치적 영향</strong>: 트럼프 전 대통령의 대출사기 의혹이 재조명되면서, <strong>정치적 압력</strong>이 사업 진행에 영향을 미칠 수 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 포인트</strong><br />
+- <strong>Bally’s</strong>는 한국계 사업가가 참여한 최초의 대형 카지노이다.<br />
+- <strong>트럼프 조직</strong>과의 금전적 연계가 정치적 논란을 불러일으키고 있다.<br />
+- 지역 경제와 일자리 창출이 기대되지만, <strong>투명성</strong>과 <strong>공정성</strong>이 중요해질 전망이다.  </p>
+</blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">네이버뉴스</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=h5SKVs-OVMk" target="_blank">Steve Cohen, Bally’s, Genting ...</a><a href="https://www.youtube.com/watch?v=Wtt13E7xFIo" target="_blank">Casino proposal approved in th...</a><a href="https://www.youtube.com/watch?v=w_DsuS2sB_k" target="_blank">Plan for $4 billion Bally’s Br...</a><a href="https://www.youtube.com/watch?v=bvz1kFWfvew" target="_blank">Steve Cohen, Bally’s Picked to...</a><a href="https://www.youtube.com/watch?v=Nul_Jzq2H1M" target="_blank">The push to build a casino in ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015772558" target="_blank">뉴욕시에 첫 대형 카지노 3곳 승인…한인사업가 업체 포함</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.thecity.nyc/2025/10/09/casino-license-final-decision-citi-field-resorts-world/" target="_blank">3 NYC Casino Plans Made It to the Final Round. Wha...</a><a href="https://www.facebook.com/HRCWORLDWIDE71/posts/hrc-worldwide-news-hard-rock-metro-park-advancesnews-broke-yesterday-that-the-ha/1354693356665966/" target="_blank">Resorts World New York City in Queens, MGM Empire ...</a><a href="https://www.cityandstateny.com/policy/2025/02/breaking-down-every-2025-new-york-casino-licenses-bid/402815/" target="_blank">Breaking down every 2025 New York casino license b...</a><a href="https://www.facebook.com/groups/609053829645024/posts/1893558124527915/" target="_blank">Bally's may soon have casinos in Atlantic City AND...</a><a href="https://www.nytimes.com/2025/10/12/nyregion/nyc-casinos.html" target="_blank">What to Know About the Battle for a Casino License...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
