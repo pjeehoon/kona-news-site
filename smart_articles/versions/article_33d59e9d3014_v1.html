@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中, 다카이치 '대만 지위 미정'에 또 발끈…"역사무지 현실오판" - 2025-12-01 18:10:02</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,국제,다카이치,대만,중국">
+    <meta name="article-category-tags" content="정치,국제">
+    <meta name="article-content-tags" content="다카이치,대만,중국">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 18:10:02'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('中, 다카이치 \'대만 지위 미정\'에 또 발끈…"역사무지 현실오판"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>中, 다카이치 '대만 지위 미정'에 또 발끈…"역사무지 현실오판"</h1>
+            <p>
+                분석 시간: 2025-12-01 18:10:02
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 일본 총리 다카이치가 대만의 지위가 미정이라고 발언해 중국이 역사무지와 현실오판이라며 강력히 비판했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 다카이치는 일본이 샌프란시스코 평화조약에 따라 대만에 대한 주권을 포기했다고 밝히며, 중국은 이를 전후 국제 질서에 대한 도전으로 해석했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 논란은 양국 간 외교적 긴장을 재점화하고, 아시아 지역 안보와 다자 회의에서 대만 문제에 새로운 변수를 추가할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/33d59e9d3014.png" 
+                     alt="中, 다카이치 '대만 지위 미정'에 또 발끈…"역사무지 현실오판"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 12월 1일, 중국 언론은 일본 총리 다카이치가 “대만의 지위가 미정”이라고 발언한 것을 <strong>역사적 무지와 현실오판</strong>이라며 강하게 비판했다. 다카이치는 일본이 대만에 대한 주권을 주장하지 않으며, 샌프란시스코 평화조약에 따라 모든 권리를 포기했다고 밝혔다. 이 논란은 양국 간 외교적 긴장을 재점화하고, 아시아 지역 안보 논의에 새로운 변수를 추가하고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 11월 26일</strong><br />
+  일본 총리 다카이치가 국회 질의에 응답하며 “일본은 대만에 대한 권리를 포기했고, 대만의 법적 지위는 미정”이라고 밝혔다.<br />
+<a href="https://n.news.naver.com/mnews/article/056/0012076998" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 12월 1일</strong><br />
+  중국 공산당 중앙당원인 <strong>People&rsquo;s Daily</strong>가 다카이치의 발언을 “역사무지”라며 비판하고, 이는 “전후 국제 질서에 대한 도전”이라고 주장했다.<br />
+  (출처: People&rsquo;s Daily, 링크 미제공)</p>
+</li>
+<li>
+<p><strong>▶ 2025년 12월 1일</strong><br />
+  다카이치가 발언을 한 뒤 일본 외무성은 공식 성명을 통해 “샌프란시스코 평화조약에 따라 일본은 대만에 대한 주권을 포기했다”는 입장을 재확인했다.</p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>핵심 내용</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>중국 비판</strong></td>
+<td>다카이치의 발언은 “역사적 무지”이며, 대만 문제에 대한 일본의 과도한 개입 시도로 해석</td>
+<td>[People&rsquo;s Daily]</td>
+</tr>
+<tr>
+<td><strong>일본 입장</strong></td>
+<td>일본은 대만에 대한 주권을 주장하지 않으며, 국제법상 대만의 지위는 미정이라고 강조</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>일부 국제법학자들은 샌프란시스코 평화조약이 일본의 대만에 대한 권리 포기를 명시하고 있음을 지적</td>
+<td>학계 논문(구체적 출처 미제공)</td>
+</tr>
+<tr>
+<td><strong>지역 안보</strong></td>
+<td>APEC 회의와 같은 다자간 포럼에서 대만 문제는 민감한 이슈로 남아 있으며, 이번 논란은 회의 일정에 영향을 줄 수 있다</td>
+<td>[네이버뉴스]</td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>다카이치가 “대만의 지위는 미정”이라고 발언</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td></td>
+<td>샌프란시스코 평화조약에 따라 일본은 대만에 대한 권리를 포기</td>
+<td>[네이버뉴스]</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>다카이치의 발언이 군사 개입 준비를 시사한다는 주장</td>
+<td>People&rsquo;s Daily (비판적 입장)</td>
+</tr>
+<tr>
+<td></td>
+<td>발언이 전후 국제 질서를 도전한다는 해석</td>
+<td>People&rsquo;s Daily (비판적 입장)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>다카이치 사나에</strong> – 일본 총리, 대만 문제에 대한 일본의 공식 입장을 대표.  </li>
+<li><strong>중국 공산당 중앙당원</strong> – People’s Daily를 통해 비판적 입장을 표명, 중국의 대만 정책을 지지.  </li>
+<li><strong>일본 외무성</strong> – 다카이치 발언에 대한 공식 입장을 재확인, 국제법적 근거를 강조.  </li>
+<li><strong>국제법학자</strong> – 샌프란시스코 평화조약 해석과 대만 지위 논의에 참여.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>외교적 긴장</strong>: 중국과 일본 간 대만 문제에 대한 견해 차이가 지속될 가능성이 높으며, 양국 간 외교적 접촉이 일시적으로 감소할 수 있다.  </li>
+<li><strong>아시아 안보</strong>: APEC 및 기타 다자간 회의에서 대만이 정회원으로 참여할 수 있는지 여부가 논란이 될 전망이다.  </li>
+<li><strong>국제법적 논의</strong>: 샌프란시스코 평화조약 해석을 둘러싼 국제법적 논의가 강화될 것이며, 이는 다른 국가들의 대만 정책에도 영향을 미칠 수 있다.  </li>
+<li><strong>미국의 역할</strong>: 미국은 대만과의 비공식적 관계를 유지하면서도 중국과의 균형을 모색할 가능성이 있다.  </li>
+</ul>
+<p>이와 같은 상황에서 양국은 대만 문제를 둘러싼 외교적 대화를 재개할 필요가 있으며, 국제사회는 중립적 입장에서 양측의 합리적 해결책을 모색해야 할 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/056/0012076998" target="_blank">중국, 다카이치 ‘타이완 지위 미정’ 발언에 “군사개입 준비 의도”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.nate.com/view/20251125n02553" target="_blank">트럼프·시진핑, 중일 갈등 속 통화…"타이완 중요성 이해" : 네이트 뉴스</a><a href="https://biz.heraldcorp.com/article/10602975" target="_blank">트럼프 APEC 격랑의 아시아 [라자 모한] - 헤럴드경제</a><a href="https://www.joongang.co.kr/thechina/news?page=4" target="_blank">뉴스(전체) 4페이지 | 더 차이나 | 중앙일보</a><a href="https://namu.wiki/w/APEC" target="_blank">APEC - 나무위키</a><a href="https://m.blog.naver.com/mrcd22/221509590072" target="_blank">안중근에 대한 주변 국가들의 이해 (일본인들의 평가를 중심으로 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
