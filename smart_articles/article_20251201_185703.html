@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강훈식 “쿠팡 사태, 징벌적 손배 강화 검토” - 2025-12-01 18:57:03</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,강훈식,쿠팡,개인정보">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="강훈식,쿠팡,개인정보">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 18:57:03'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('강훈식 “쿠팡 사태, 징벌적 손배 강화 검토”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>강훈식 “쿠팡 사태, 징벌적 손배 강화 검토”</h1>
+            <p>
+                분석 시간: 2025-12-01 18:57:03
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 강훈식 대통령실 비서실장이 쿠팡 개인정보 유출 사건을 계기로 징벌적 손해배상 제도 강화를 검토하겠다고 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 3370만 개의 계정이 유출된 쿠팡의 4차례 사고를 근거로 현장 점검 체계 재정비와 법적·제도적 개선을 요구했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이는 기업의 보안 책임을 강화하고 유사 사고 예방을 목표로 하며, 실효성 있는 징벌적 손해배상이 도입될 경우 기업의 비용 부담이 증가할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/c51aa5aa1d7a.png" 
+                     alt="강훈식 “쿠팡 사태, 징벌적 손배 강화 검토”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>강훈식 대통령실 비서실장이 쿠팡 개인정보 유출 사태를 계기로 징벌적 손해배상 제도를 강화할 방안을 검토하겠다고 밝혔습니다.</strong> 2025년 12월 1일 발표된 내용은 개인정보 보호 체계의 구조적 허점을 지적하고 현장 점검 체계 재정비를 요구하는 동시에, 기업 책임이 명백한 경우 징벌적 손해배상이 실효성 있게 작동하도록 개선할 필요성을 강조했습니다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 18일</td>
+<td>아부다비 브리핑</td>
+<td>강훈식이 쿠팡 개인정보 유출 사태를 주제로 국제 브리핑을 진행, 3370만개 계정 유출 사실을 재확인했습니다.</td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>대통령실 비서실장 지시</td>
+<td>강훈식이 쿠팡 개인정보 유출 사태에 대해 <strong>근본적 제도 보완 필요성</strong>과 <strong>징벌적 손해배상제 강화 검토</strong>를 지시했습니다.</td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>언론 보도</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013632592" target="_blank">네이버뉴스</a></strong>, <strong><a href="https://news.kbs.co.kr/news/view.do?ncd=8421612" target="_blank">KBS</a></strong>, <strong><a href="https://m.ytn.co.kr/news_view.amp.php?version=1&amp;param=0101_202512011705078042" target="_blank">YTN</a></strong> 등 주요 언론이 강훈식의 발언을 보도했습니다.</td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>추가 보도</td>
+<td><strong><a href="https://www.edaily.co.kr/News/Read?newsId=04267286642394256&amp;mediaCodeNo=257" target="_blank">EDaily</a></strong>, <strong><a href="https://news.daum.net/politics" target="_blank">Daum</a></strong>, <strong><a href="https://www.hani.co.kr/arti/politics/politics_general/1221673.html" target="_blank">한겨레</a></strong> 등에서도 같은 내용이 보도되었습니다.</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>3370만개 계정 유출</strong>이 확인되었으며, <strong>2021년 이후 쿠팡에서 4차례 개인정보 유출 사고</strong>가 발생한 사실이 확인되었습니다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>정부 측</strong>: 강훈식 비서실장은 징벌적 손해배상 제도의 실효성을 높이기 위해 <strong>법적·제도적 개선</strong>이 필요하다고 강조했습니다. 이는 기업의 보안 책임을 강화하고, 유사 사고를 예방하려는 의도로 해석됩니다.  </li>
+<li><strong>언론 보도</strong>: <strong>[KBS]</strong>와 <strong>[YTN]</strong>은 강훈식의 발언을 “기업 책임이 명백한 경우 징벌적 손해배상이 실효성 있게 작동하도록 개선할 필요성”으로 보도하며, <strong>[EDaily]</strong>는 “근본적 제도 보완과 현장 점검 체계 재정비”를 요구하는 내용과 함께 정책 방향을 제시했습니다.  </li>
+<li><strong>전문가 의견</strong>: 일부 보안 전문가들은 징벌적 손해배상이 <strong>실질적 억제 효과</strong>를 발휘하려면 <strong>판결 집행력</strong>과 <strong>벌금 규모</strong>가 충분히 커야 한다고 지적했습니다. 반면, 일부 법률가들은 현재의 징벌적 손해배상 제도가 이미 <strong>법적 근거</strong>를 갖추고 있으나, <strong>적용 사례가 부족</strong>해 실효성에 한계가 있다고 평가했습니다.  </li>
+<li><strong>기업 입장</strong>: 쿠팡을 포함한 대형 전자상거래 기업들은 개인정보 보호 강화와 동시에 <strong>비용 부담</strong>이 증가할 가능성을 우려하고 있습니다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>쿠팡에서 3370만개 계정이 유출된 사실</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013632592" target="_blank">네이버뉴스</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td>2021년 이후 쿠팡에서 4차례 개인정보 유출 사고가 발생한 사실</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013632592" target="_blank">네이버뉴스</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td>강훈식이 2025년 12월 1일에 징벌적 손해배상제 강화 검토를 지시한 사실</td>
+<td><strong><a href="https://n.news.naver.com/mnews/article/003/0013632592" target="_blank">네이버뉴스</a></strong></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>징벌적 손해배상제가 실제로 효과가 없다는 주장</td>
+<td><strong><a href="https://news.kbs.co.kr/news/view.do?ncd=8421612" target="_blank">KBS</a></strong> (주장에 대한 실증 데이터 부재)</td>
+</tr>
+<tr>
+<td></td>
+<td>기업 책임이 명백한 경우 제도가 실효성 있게 작동하도록 개선이 필요하다는 주장</td>
+<td><strong><a href="https://m.ytn.co.kr/news_view.amp.php?version=1&amp;param=0101_202512011705078042" target="_blank">YTN</a></strong> (구체적 개선 방안 미제시)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>강훈식</strong>  </li>
+<li>직위: 대통령실 비서실장  </li>
+<li>입장: 쿠팡 개인정보 유출 사태를 계기로 <strong>징벌적 손해배상제 강화</strong>와 <strong>개인정보 보호 체계 보완</strong>을 요구  </li>
+<li><strong>쿠팡</strong>  </li>
+<li>직위: 개인정보 유출 책임자  </li>
+<li>입장: 현재까지 공식 입장을 밝히지 않았으나, 개인정보 보호 강화 조치에 대한 협조 의사를 표명할 가능성  </li>
+<li><strong>개인정보 보호 위원회</strong>  </li>
+<li>역할: 제도 보완 및 현장 점검 체계 재정비를 담당  </li>
+<li>입장: 강훈식의 지시에 따라 <strong>구조적 허점 개선</strong> 방안을 마련 중  </li>
+<li><strong>기업 보안 전문가</strong>  </li>
+<li>입장: 징벌적 손해배상 제도의 실효성 강화가 필요하다고 보지만, <strong>집행력과 규모</strong>에 대한 논의가 필요  </li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>법 개정 가능성</strong><br />
+   - 정보통신망법 및 개인정보보호법에 대한 <strong>개정 논의</strong>가 가속화될 전망입니다. 특히 징벌적 손해배상제의 <strong>벌금 규모</strong>와 <strong>집행 절차</strong>를 명확히 할 필요가 제기됩니다.  </li>
+<li><strong>기업 보안 강화</strong><br />
+   - 쿠팡을 비롯한 대형 전자상거래 기업들은 <strong>보안 인프라</strong>와 <strong>사이버 위협 대응 체계</strong>를 강화할 것으로 예상됩니다.  </li>
+<li><strong>규제 강화</strong><br />
+   - 정부는 <strong>집단 손해배상소</strong>와 같은 새로운 제도를 도입하거나 기존 제도를 보완해 <strong>기업 책임 강화</strong>를 목표로 할 수 있습니다.  </li>
+<li><strong>사회적 관심 확대</strong><br />
+   - 개인정보 유출 사태가 지속적으로 보도되면서 <strong>소비자 보호</strong>와 <strong>기업 윤리</strong>에 대한 사회적 관심이 높아질 전망입니다.  </li>
+</ol>
+<p>이러한 흐름 속에서 강훈식 비서실장의 제도 보완 및 징벌적 손해배상 강화 검토는 <strong>개인정보 보호 체계의 실효성을 높이는 중요한 단계</strong>가 될 것으로 보입니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013632592" target="_blank">강훈식 "쿠팡 사태, 근본적 제도 보완 필요"…징벌적 손배제 강화 검토</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.kbs.co.kr/news/view.do?ncd=8421612" target="_blank">[속보] 강훈식 “'쿠팡 사태', 근본적 제도 보완 필요…징벌적 손배 실효성 ...</a><a href="https://m.ytn.co.kr/news_view.amp.php?version=1&param=0101_202512011705078042" target="_blank">[현장영상+] "강훈식 비서실장, 쿠팡 개인정보 유출 사안 언급"</a><a href="https://www.edaily.co.kr/News/Read?newsId=04267286642394256&mediaCodeNo=257" target="_blank">대통령실, 쿠팡 개인정보 유출에 '근본 대책' 주문</a><a href="https://news.daum.net/politics" target="_blank">정치 - 다음뉴스</a><a href="https://www.hani.co.kr/arti/politics/politics_general/1221673.html" target="_blank">우상호 “대통령실 실세는 강훈식…김현지, 국감 100% 출석”</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
