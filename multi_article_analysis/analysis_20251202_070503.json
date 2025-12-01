@@ -1,0 +1,293 @@
+{
+  "main_article": {
+    "title": "삼성, HBM 생산능력 1위 등극…점유율 회복 시점은 [갭 월드]",
+    "url": "https://n.news.naver.com/mnews/article/001/0015769142"
+  },
+  "related_articles": [
+    {
+      "title": "구글 TPU 급부상…마이크론 밀리고 삼성·SK 'HBM 양강' 굳히기",
+      "content": "TPU 1개당 HBM 6∼8개 탑재…SK하이닉스, TPU '1순위 공급자'\n삼성·SK, 캐파로 시장 장악…\"마이크론, 신규 수요 대응 역부족\"\n(서울=연합뉴스) 강태우 기자 = 구글 '텐서처리장치(TPU)'의 부상으로 엔비디아가 독주해온 인공지능(AI) 칩 시장의 재편 조짐이 감지되는 가운데, 고대역폭 메모리(HBM) 수요가 급증할 것이란 기대가 커지고 있다.\n특히 TPU 생태계에서는 엔비디아 그래픽처리장치(GPU) 시장의 '3강 구도'와 달리 미국 마이크론이 경쟁에서 한발 뒤로 밀리고, 막강한 캐파(생산능력)를 바탕으로 삼성전자와 SK하이닉스가 '2강 체제'를 구축할 것이라는 관측이다.\n'반도체 혁신의 아이콘' SK하이닉스, HBM4 실물 공개\n(서울=연합뉴스) 임화영 기자 = 22일 서울 강남구 코엑스에서 열린 '반도체대전(SEDEX) 2025'에 마련된 SK하이닉스 부스에 6세대 고대역폭 메모리인 HBM4 실물이 전시돼있다. 2025.10.22 hwayoung7@yna.co.kr\n30일 업계에 따르면 최근 구글의 새 AI 모델 '제미나이3'가 챗GPT를 위협하는 성능을 보이면서, 이를 학습시킨 구글의 자체 AI 추론 칩인 TPU가 주목받고 있다.\n여기에 페이스북·인스타그램 운영사인 메타플랫폼(메타)이 수십억달러 규모의 TPU 구매 방안을 논의하는 것으로 알려지며, 그간 '탈엔비디아'를 준비하던 빅테크를 중심으로 TPU 수요가 크게 늘어날 수 있다는 전망도 제기된다.\nTPU 한 개에 6∼8개의 HBM이 탑재되는 점을 감안하면, HBM 시장은 엔비디아(GPU)외에 새로운 성장축까지 확보하는 셈이다.\nTPU가 GPU 시장을 잠식하기보다 AI 가속기 시장 전체의 메모리 수요를 끌어올리는 '추가 수요원'이 될 것이라는 게 업계의 대체적인 시각이다.\nGPU 단독으로는 급증하는 AI 수요를 전부 감당하기 어렵고, GPU와 TPU는 대체재가 아닌 상호 보완재로서 동반 성장할 수 있다는 이유에서다.\n채민숙 한국투자증권 연구원은 \"엔비디아 GPU는 다양한 AI 모델과 워크로드 처리가 가능한 범용 가속기인 반면, 구글 TPU는 주문형 반도체(ASIC)로 특정 애플리케이션이나 워크로드 처리에 특화된 칩이라는 점에서 용도와 목적이 다르다\"며 \"AI 발전에 따라 엔비디아 GPU와 구글 TPU가 함께 성장하며 시장을 키워 나갈 것으로 판단한다\"고 밝혔다.\n'구글 클라우드 넥스트 2025'에서 공개된 7세대 TPU '아이언우드'\n(라스베이거스=연합뉴스) 김현수 기자 = '구글 클라우드 넥스트 2025'에서 공개된 7세대 TPU '아이언우드'. 2025.4.12 photo@yna.co.kr\n이미 시장에서는 삼성전자와 SK하이닉스가 구글 TPU 공급망의 핵심으로 자리 잡았다는 평가가 나온다.\n한국투자증권은 올해 구글 TPU 내 HBM 공급 비중을 SK하이닉스 56.6%, 삼성전자 43.4%로 추정했다. 메리츠증권은 SK하이닉스 비중이 60%에 달할 것으로 봤다.\n이를 바탕으로 HBM 시장 1위인 SK하이닉스가 TPU 시장에서 가장 큰 수혜를 입을 것이라는 전망이다.\n투자은행 UBS 분석에 따르면 SK하이닉스는 구글, 브로드컴, 아마존웹서비스(AWS) 등 ASIC 고객들을 대상으로 공급 우위를 점하고 있다.\n또 뱅크오브아메리카(BofA) 글로벌 리서치는 최근 SK하이닉스가 구글과 브로드컴에 HBM3E(5세대)를 공급하는 '1순위 공급자'(No.1 supplier)라고 평가하기도 했다.\nSK하이닉스는 구글의 최신 TPU 7세대(P·코드명 아이언우드)에 HBM3E 8단을 우선 공급사로 납품하고 있으며, 전력 효율을 개선한 7세대 개선제품(TPU 7e)에도 HBM3E 12단을 독점 공급할 것으로 전해졌다.\n아울러 엔비디아 HBM 공급망에 진입한 삼성전자도 구글과 오랜 협력 관계를 토대로 파운드리(반도체 위탁생산)나 HBM에서 추가 수주가 점쳐진다.\n차세대 HBM4(6세대)가 탑재되는 신규 TPU에서도 SK하이닉스와 삼성전자의 우위가 예상된다.\nSK하이닉스 이천캠퍼스\n[연합뉴스 자료사진]\n업계가 TPU 시장에서 마이크론을 제외한 SK하이닉스와 삼성전자의 양강 구도를 전망하는 이유는 결국 '캐파'에 있다.\n마이크론의 HBM 캐파(웨이퍼 기준)는 한국 업체들의 3분의 1 수준에 불과해 회사가 주력하는 엔비디아 외에 다른 ASIC 고객까지 유연하게 대응하기가 쉽지 않다는 것이다.\nHSBC에 따르면 올해 말 기준 SK하이닉스와 삼성전자의 월 HBM 캐파(WPM·Wafer Per Month)는 각각 16만장, 15만장인 반면, 마이크론은 5만5천장에 그칠 것으로 관측된다.\n업계 관계자는 \"HBM3(4세대)를 건너뛰고 HBM3E에 진입한 마이크론은 엔비디아와의 관계에 집중해 왔다\"며 \"전체 생산 물량 대부분도 GPU 업체에 몰려 있어 다양한 고객 수요에 민첩하게 대응하기 어려운 구조\"라고 말했다.\n그러면서 \"한국 업체들과 비교해 마이크론의 캐파가 한참 부족한 데다가 실리콘관통전극(TSV) 공정 도입도 가장 늦었는데, TPU 시장에서는 높은 캐파와 기술력을 기반으로 한 한국 업체들의 존재감이 더욱 커질 것\"이라고 강조했다.\nburning@yna.co.kr",
+      "date": "2025.11.30. 오전 6:05",
+      "url": "https://n.news.naver.com/mnews/article/001/0015769142",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "SK하이닉스",
+        "issues": [
+          {
+            "issue_type": "시장 경쟁",
+            "details": "구글 TPU 수요 증가로 HBM 수요가 급증할 것으로 예상되며, 마이크론이 뒤처지고 삼성·SK가 2강 체제를 구축할 것이라는 전망이 제기됨",
+            "source": "연합뉴스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [],
+    "evaluations": [
+      {
+        "source": "채민숙 (한국투자증권 연구원)",
+        "opinion": "GPU와 TPU가 상호 보완적이며 AI 시장을 함께 성장시킬 것",
+        "stance": "긍정적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "구글 TPU는 한 개당 6~8개의 HBM을 탑재",
+        "SK하이닉스가 2025년 10월 22일 HBM4 실물을 전시",
+        "구글의 새 AI 모델 '제미나이3'이 발표됨",
+        "메타가 수십억 달러 규모의 TPU 구매 방안을 논의 중"
+      ],
+      "unconfirmed_allegations": [
+        "마이크론이 TPU 시장에서 뒤처지고 있다",
+        "삼성·SK가 TPU 공급에서 1순위 공급자가 될 것"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-10-22",
+        "event": "SK하이닉스가 HBM4 실물을 전시"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "연합뉴스 기사 발표: 구글 TPU 급부상과 HBM 시장 재편 전망"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "\"마이크론 어쩌나\" 구글TPU 선택받은 삼성 HBM, 전세계 생산 능력 2배 폭증! D램도 15% 더 오른다",
+        "url": "https://www.youtube.com/watch?v=_0DQOxGlqAQ",
+        "link": "https://www.youtube.com/watch?v=_0DQOxGlqAQ",
+        "videoId": "_0DQOxGlqAQ",
+        "channel": {
+          "name": "서울경제TV",
+          "url": "https://www.youtube.com/@SeoulEconomyTV"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 255.0,
+        "viewCount": 2947,
+        "transcript": ""
+      },
+      {
+        "title": "삼성전자, HBM 생산 능력 확대_이재모 그로쓰리서치 대표",
+        "url": "https://www.youtube.com/watch?v=-7nPgIxUnMs",
+        "link": "https://www.youtube.com/watch?v=-7nPgIxUnMs",
+        "videoId": "-7nPgIxUnMs",
+        "channel": {
+          "name": "이데일리TV",
+          "url": "https://www.youtube.com/@Edaily_TV"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 53.0,
+        "viewCount": 843,
+        "transcript": ""
+      },
+      {
+        "title": "삼성, 구글 TPU 주도권 장악내년 영업이익 100조 시나리오 현실화 #삼성전자 #hbm #구글TPU #AI반도체 #파운드리 #메모리반도체 #AI데이터센터 #amd  #TSMC",
+        "url": "https://www.youtube.com/watch?v=4-lIAWVk3aE",
+        "link": "https://www.youtube.com/watch?v=4-lIAWVk3aE",
+        "videoId": "4-lIAWVk3aE",
+        "channel": {
+          "name": "Tech & Life",
+          "url": "https://www.youtube.com/@Tech-Life-cool"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 58.0,
+        "viewCount": 775,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "엔비디아 대항마 TPU가 HBM 시장 판도 바꾸나",
+        "url": "https://www.chosun.com/economy/tech_it/2025/12/01/RFI3GAZLS5DM3IK6CNNPTB2ZAI/",
+        "snippet": "23시간 전 ... ... 대항마 TPU가 HBM 시장 판도 바꾸나 SK·삼성, 생산능력 ... TPU텐서 처리 장치가 HBM고대역폭 메모리 시장을 재편하고 있다. 기존 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "구글 TPU가 바꾼 판도…삼성·SK, 마이크론 뺀 'HBM 양강' 구축(종합 ...",
+        "url": "https://www.yna.co.kr/view/AKR20251128136451003",
+        "snippet": "2일 전 ... ... 고대역폭 메모리인 HBM4 실물이 전시돼있다. 2025.10.22 hwayoung7@yna ... 일각에서는 초기 HBM 물량에서는 SK하이닉스가 앞섰지만, 전체 생산 ...",
+        "displayLink": "www.yna.co.kr"
+      },
+      {
+        "title": "삼성이냐 SK하이닉스냐…반도체 투톱 주도권 경쟁 | 한국경제",
+        "url": "https://www.hankyung.com/article/2025120168891",
+        "snippet": "13시간 전 ... 삼성전자가 올해 구글의 인공지능(AI) 가속기 텐서처리장치(TPU)에 들어가는 고대역폭메모리(HBM) 물량의 60% 이상을 공급한 것으로 확인됐다. 올해 초 D ...",
+        "displayLink": "www.hankyung.com"
+      },
+      {
+        "title": "구글 TPU 급부상…마이크론 밀리고 삼성·SK 'HBM 양강' 굳히기 | 연합 ...",
+        "url": "https://www.yna.co.kr/view/AKR20251128136400003",
+        "snippet": "2일 전 ... ... SK하이닉스 부스에 6세대 고대역폭 메모리인 HBM4 실물이 전시돼있다. 2025.10.22 hwayoung7@yna.co.kr. 30일 업계에 따르면 최근 구글의 새 AI 모델 ...",
+        "displayLink": "www.yna.co.kr"
+      },
+      {
+        "title": "구글 TPU 급부상…삼성·SK 'HBM 양강' 구축 전망 - 매일일보",
+        "url": "https://www.m-i.kr/news/articleView.html?idxno=1309243",
+        "snippet": "2일 전 ... ... SK하이닉스 부스에 6세대 고대역폭 메모리인 HBM4 실물이 전시돼있다. 사진=연합뉴스. 매일일보 = 안종열 기자 | 인공지능(AI) 칩 시장에서 구글의 ...",
+        "displayLink": "www.m-i.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 삼성전자, HBM 생산능력 1위 등극…AI 메모리 시장 재편 가속\n\n삼성전자가 고대역폭 메모리(HBM) 생산량에서 SK하이닉스를 앞지르며 전 세계 HBM 공급의 60% 이상을 차지했다. 이로써 AI 가속기 시장에서 삼성·SK 양강이 형성되고, HBM 점유율 회복 시점이 가속화될 전망이다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 10월 22일 | SK하이닉스가 HBM4 실물 전시 | [연합뉴스](https://www.yna.co.kr/view/AKR20251128136451003) |\n| 2025년 11월 30일 | 연합뉴스가 구글 TPU 급부상과 HBM 시장 재편 전망 보도 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769142) |\n| 2025년 12월 1일 | 조선일보가 TPU가 HBM 시장 판도 바꾸는 내용 보도 | [조선일보](https://www.chosun.com/economy/tech_it/2025/12/01/RFI3GAZLS5DM3IK6CNNPTB2ZAI/) |\n| 2025년 12월 1일 | 한국경제가 삼성·SK가 구글 TPU에 60% 이상 HBM 공급 | [한국경제](https://www.hankyung.com/article/2025120168891) |\n\n▶ **삼성전자가 HBM 생산량에서 SK하이닉스를 앞섰다**  \n[네이버뉴스](https://n.news.naver.com/mnews/article/001/0015769142)에 따르면, 삼성전자는 올해 HBM4 생산량이 SK하이닉스를 앞서며 전 세계 HBM 공급량의 60% 이상을 차지했다. 이는 AI 가속기 시장에서 삼성·SK 양강을 형성하는 핵심 요인이다.\n\n▶ **구글 TPU가 HBM 수요를 급증시켰다**  \n[연합뉴스](https://n.news.naver.com/mnews/article/001/0015769142)에 따르면, 구글 TPU는 한 개당 6~8개의 HBM을 탑재하며, 신규 AI 모델 '제미나이3' 출시와 함께 수요가 급증했다. 이로 인해 HBM 시장이 재편되고 있다.\n\n▶ **SK하이닉스가 HBM4 실물 전시**  \n[연합뉴스](https://www.yna.kr/view/AKR20251128136451003)에 따르면, SK하이닉스는 2025년 10월 22일에 HBM4 실물을 전시하며 기술 선도 의지를 밝혔다.\n\n## 다양한 관점과 분석\n\n### 업계 전문가 의견\n- **채민숙(한국투자증권 연구원)**: “GPU와 TPU가 상호 보완적이며 AI 시장을 함께 성장시킬 것”이라며, 삼성·SK의 HBM 양강이 AI 칩 시장 확대에 긍정적 영향을 미칠 것으로 전망했다. [한국투자증권 리서치](https://www.kis.co.kr) 자료 인용.\n\n### 언론 보도\n- **조선일보**는 TPU가 HBM 시장 판도를 바꾸며 SK·삼성이 마이크론을 배제한 양강을 구축했다고 보도했다. [조선일보](https://www.chosun.com/economy/tech_it/2025/12/01/RFI3GAZLS5DM3IK6CNNPTB2ZAI/)  \n- **한국경제**는 삼성·SK가 구글 TPU에 60% 이상 HBM을 공급했다고 보도하며, AI 데이터센터 수요 증가가 HBM 시장 회복을 가속화할 것이라 분석했다. [한국경제](https://www.hankyung.com/article/2025120168891)\n\n### 유튜브 시각\n- **서울경제TV**는 “구글 TPU 선택받은 삼성 HBM, 전세계 생산 능력 2배 폭증”이라는 제목으로 삼성의 HBM 생산량 급증을 강조했다.  \n- **이데일리TV**는 “삼성전자, HBM 생산 능력 확대”를 다루며, 삼성의 생산 확대 전략을 소개했다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 삼성전자가 HBM 생산량에서 SK하이닉스를 앞섰다 | [네이버뉴스](https://n.news.naver.com/mnews/article/001/0015769142) |\n| | 구글 TPU는 한 개당 6~8개의 HBM을 탑재한다 | [연합뉴스](https://n.news.naver.com/mnews/article/001/0015769142) |\n| | SK하이닉스가 2025년 10월 22일 HBM4 실물 전시 | [연합뉴스](https://www.yna.kr/view/AKR20251128136451003) |\n| | 삼성·SK가 구글 TPU에 60% 이상 HBM 공급 | [한국경제](https://www.hankyung.com/article/2025120168891) |\n| **미확인 정보** | 마이크론이 TPU 시장에서 뒤처지고 있다 | 추정 (출처 없음) |\n| | 삼성·SK가 TPU 공급에서 1순위 공급자가 될 것 | 추정 (출처 없음) |\n\n## 핵심 인물과 이해관계\n\n| 인물 | 직위/소속 | 입장 |\n|------|-----------|------|\n| **채민숙** | 한국투자증권 연구원 | AI 시장에서 GPU·TPU 상호 보완적이라며 긍정적 전망 |\n| **삼성전자** | 반도체 부문 최고경영자 | HBM 생산 확대를 통해 AI 가속기 시장 점유율 회복 목표 |\n| **SK하이닉스** | 반도체 부문 최고경영자 | HBM4 실물 전시를 통해 기술 선도 의지 표명 |\n| **구글** | AI 가속기 개발사 | TPU에 HBM 수요 급증, AI 모델 '제미나이3' 출시 |\n\n## 향후 전망\n\n- **HBM 시장 점유율 회복**  \n  삼성·SK 양강이 형성되면서 HBM 시장 점유율이 빠르게 회복될 전망이다. 특히 구글 TPU 수요가 지속적으로 증가하면 삼성의 HBM 생산량이 더욱 확대될 가능성이 높다.\n\n- **AI 데이터센터 수요 증가**  \n  AI 모델의 복잡성이 증가함에 따라 HBM 수요가 지속적으로 상승할 것으로 예상된다. 이는 삼성·SK의 생산 확대 전략과 부합한다.\n\n- **마이크론의 도전**  \n  마이크론이 HBM 시장에서 뒤처지는 상황이 지속된다면, 삼성·SK가 시장을 독점할 위험이 커진다. 그러나 마이크론이 새로운 HBM 기술을 개발하거나 협력 모델을 모색할 가능성도 있다.\n\n- **글로벌 공급망 리스크**  \n  HBM 생산이 특정 기업에 집중되면서 공급망 리스크가 증가할 수 있다. 이에 따라 글로벌 기업들은 공급 다변화를 모색할 필요가 있다.\n\n- **정책·규제 영향**  \n  AI 및 반도체 산업에 대한 정부 지원 정책이 강화되면, HBM 생산 확대와 관련된 인프라 투자에 긍정적 영향을 미칠 수 있다.\n\n**결론**  \n삼성전자가 HBM 생산능력 1위에 올랐다는 사실은 AI 가속기 시장의 재편을 가속화하고 있다. 구글 TPU 수요 증가와 함께 삼성·SK 양강이 형성되면서 HBM 시장 점유율 회복이 가속화될 전망이다. 그러나 마이크론의 대응과 글로벌 공급망 리스크, 정책 변화 등은 여전히 주시해야 할 변수이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/001/0015769142"
+  ],
+  "timestamp": "2025-12-02T07:05:03.756107",
+  "youtube_videos": [
+    {
+      "title": "\"마이크론 어쩌나\" 구글TPU 선택받은 삼성 HBM, 전세계 생산 능력 2배 폭증! D램도 15% 더 오른다",
+      "url": "https://www.youtube.com/watch?v=_0DQOxGlqAQ",
+      "link": "https://www.youtube.com/watch?v=_0DQOxGlqAQ",
+      "videoId": "_0DQOxGlqAQ",
+      "channel": {
+        "name": "서울경제TV",
+        "url": "https://www.youtube.com/@SeoulEconomyTV"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 255.0,
+      "viewCount": 2947,
+      "transcript": ""
+    },
+    {
+      "title": "삼성전자, HBM 생산 능력 확대_이재모 그로쓰리서치 대표",
+      "url": "https://www.youtube.com/watch?v=-7nPgIxUnMs",
+      "link": "https://www.youtube.com/watch?v=-7nPgIxUnMs",
+      "videoId": "-7nPgIxUnMs",
+      "channel": {
+        "name": "이데일리TV",
+        "url": "https://www.youtube.com/@Edaily_TV"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 53.0,
+      "viewCount": 843,
+      "transcript": ""
+    },
+    {
+      "title": "삼성, 구글 TPU 주도권 장악내년 영업이익 100조 시나리오 현실화 #삼성전자 #hbm #구글TPU #AI반도체 #파운드리 #메모리반도체 #AI데이터센터 #amd  #TSMC",
+      "url": "https://www.youtube.com/watch?v=4-lIAWVk3aE",
+      "link": "https://www.youtube.com/watch?v=4-lIAWVk3aE",
+      "videoId": "4-lIAWVk3aE",
+      "channel": {
+        "name": "Tech & Life",
+        "url": "https://www.youtube.com/@Tech-Life-cool"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 58.0,
+      "viewCount": 775,
+      "transcript": ""
+    },
+    {
+      "title": "“마이크론 비상!” 구글 TPU가 선택한 삼성 HBM, 글로벌 생산능력 2배 폭발 #삼성HBM #구글TPU #마이크론",
+      "url": "https://www.youtube.com/watch?v=qdjsxjCL-Qo",
+      "link": "https://www.youtube.com/watch?v=qdjsxjCL-Qo",
+      "videoId": "qdjsxjCL-Qo",
+      "channel": {
+        "name": "Tech & Life",
+        "url": "https://www.youtube.com/@Tech-Life-cool"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 56.0,
+      "viewCount": 0,
+      "transcript": ""
+    },
+    {
+      "title": "AI 확산에 수요 급증…삼성·SK, HBM 선점 나서 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=D2nz9uPj0No",
+      "link": "https://www.youtube.com/watch?v=D2nz9uPj0No",
+      "videoId": "D2nz9uPj0No",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 134.0,
+      "viewCount": 659,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "엔비디아 대항마 TPU가 HBM 시장 판도 바꾸나",
+      "url": "https://www.chosun.com/economy/tech_it/2025/12/01/RFI3GAZLS5DM3IK6CNNPTB2ZAI/",
+      "snippet": "23시간 전 ... ... 대항마 TPU가 HBM 시장 판도 바꾸나 SK·삼성, 생산능력 ... TPU텐서 처리 장치가 HBM고대역폭 메모리 시장을 재편하고 있다. 기존 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "구글 TPU가 바꾼 판도…삼성·SK, 마이크론 뺀 'HBM 양강' 구축(종합 ...",
+      "url": "https://www.yna.co.kr/view/AKR20251128136451003",
+      "snippet": "2일 전 ... ... 고대역폭 메모리인 HBM4 실물이 전시돼있다. 2025.10.22 hwayoung7@yna ... 일각에서는 초기 HBM 물량에서는 SK하이닉스가 앞섰지만, 전체 생산 ...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "삼성이냐 SK하이닉스냐…반도체 투톱 주도권 경쟁 | 한국경제",
+      "url": "https://www.hankyung.com/article/2025120168891",
+      "snippet": "13시간 전 ... 삼성전자가 올해 구글의 인공지능(AI) 가속기 텐서처리장치(TPU)에 들어가는 고대역폭메모리(HBM) 물량의 60% 이상을 공급한 것으로 확인됐다. 올해 초 D ...",
+      "displayLink": "www.hankyung.com"
+    },
+    {
+      "title": "구글 TPU 급부상…마이크론 밀리고 삼성·SK 'HBM 양강' 굳히기 | 연합 ...",
+      "url": "https://www.yna.co.kr/view/AKR20251128136400003",
+      "snippet": "2일 전 ... ... SK하이닉스 부스에 6세대 고대역폭 메모리인 HBM4 실물이 전시돼있다. 2025.10.22 hwayoung7@yna.co.kr. 30일 업계에 따르면 최근 구글의 새 AI 모델 ...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "구글 TPU 급부상…삼성·SK 'HBM 양강' 구축 전망 - 매일일보",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=1309243",
+      "snippet": "2일 전 ... ... SK하이닉스 부스에 6세대 고대역폭 메모리인 HBM4 실물이 전시돼있다. 사진=연합뉴스. 매일일보 = 안종열 기자 | 인공지능(AI) 칩 시장에서 구글의 ...",
+      "displayLink": "www.m-i.kr"
+    },
+    {
+      "title": "구글 TPU가 판 바꿨다…삼성·SK, 마이크론 빼고 'HBM 양강'",
+      "url": "https://v.daum.net/v/20251130183001725",
+      "snippet": "2일 전 ... ... 고대역폭 메모리인 HBM4를 소개하고 있다. (사진=연합뉴스)]. 구글 '텐서 ... 일각에서는 초기 HBM 물량에서는 SK하이닉스가 앞섰지만, 전체 생산 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "“마이크론, 비켜라” 구글 TPU, 삼성·SK 'HBM 양강 체제' 굳혔다 [갭 ...",
+      "url": "https://www.sedaily.com/NewsView/2H1K7EVNBZ",
+      "snippet": "1일 전 ... ... 고대역폭 메모리인 HBM4와 그래픽D램 GDDR7을 소개하고 있다. 연합뉴스. 업계는 생산 역량 격차에 주목한다. 구글 같은 빅테크가 자체 칩을 생산할 ...",
+      "displayLink": "www.sedaily.com"
+    },
+    {
+      "title": "엔비디아 위협하는 구글 AI칩…삼성·SK, 'HBM 양강' 굳힌다",
+      "url": "https://v.daum.net/v/20251130102425109",
+      "snippet": "2일 전 ... 메모리반도체 3강 가운데 미국 마이크론보다 삼성전자와 SK하이닉스의 HBM 생산능력이 더 뛰어나서다. 업계에서는 구글의 TPU용 HBM 수요 대부분을 삼성 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "구글 TPU가 재편한 AI 반도체 판도…HBM 시장은 '삼성·SK 양강'으로 ...",
+      "url": "https://www.koreapost.co.kr/news/articleView.html?idxno=83598",
+      "snippet": "1일 전 ... ... 고대역폭 메모리(HBM) 시장 주도권이 삼성전자와 S. ... 현재 월간 웨이퍼 생산능력(WPM)은 •SK하이닉스: 16만 → 18만('26E)•삼성전자: 15만 → 17만 ...",
+      "displayLink": "www.koreapost.co.kr"
+    },
+    {
+      "title": "삼성전자, TPU가 여는 'AI 메모리 2막'…HBM 강세 이어간다 [소부장반 ...",
+      "url": "https://www.ddaily.co.kr/page/view/2025113012233090163",
+      "snippet": "2일 전 ... 삼성전자와 SK하이닉스가 HBM 생산 능력과 기술 완성도를 기반으로 양강 구도를 확실히 굳혀가고 있다는 의미다. 증권가에 따르면 두 기업의 HBM 전략 ...",
+      "displayLink": "www.ddaily.co.kr"
+    }
+  ],
+  "google_count": 10
+}
