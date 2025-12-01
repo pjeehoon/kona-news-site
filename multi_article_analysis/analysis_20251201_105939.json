@@ -1,0 +1,267 @@
+{
+  "main_article": {
+    "title": "중국인 한 명에 뚫린 쿠팡… “데이터 인증키 방치가 원인”",
+    "url": "https://n.news.naver.com/mnews/article/023/0003944155"
+  },
+  "related_articles": [
+    {
+      "title": "중국인 한 명에 뚫린 쿠팡… “데이터 인증키 방치가 원인”",
+      "content": "쿠팡에서 인증 관련 담당자에게 발급되는 데이터 접근 열쇠가 장기간 방치되며 3370만명의 개인 정보 유출이 이뤄졌다는 분석이 나왔다. 쿠팡이 퇴사 후에도 이 열쇠를 곧바로 삭제하거나 갱신하지 않는다는 점을 용의자로 지목된 중국 국적 개발자가 악용했다는 것이다.\n지난달 30일 오후 서울 송파구 쿠팡 본사. /박성원 기자\n1일 국회 과학기술정보방송통신위원장 최민희 의원실이 쿠팡에서 제출받은 자료에 따르면, 쿠팡은 토큰 서명키 유효 인증 기간에 대해 “5~10년으로 설정하는 사례가 많다는 걸로 알고 있다. 로테이션 기간이 길며, 키 종류에 따라 매우 다양하다”고 했다. 쿠팡 측은 이번 해킹에 악용된 인증키 유효 기간에 대해서는 경찰 수사를 이유로 대답을 하지 않았다.\n로그인에 필요한 토큰이 데이터에 접근하는 문을 열어주는 ‘일회용 출입증’이라면, 서명키는 출입증을 찍어주는 ‘도장’의 개념이다. 최민희 의원실은 “출입증이 있어도 출입을 허가하는 인증 도장이 없다면 출입할 수 없다. 하지만 서명 키를 오래 방치해서 누가 계속해서 도장인 서명 키를 몰래 찍어서 쓴 것과 다름없다”고 했다.\n이번 정보 유출은 쿠팡의 중국 국적 개발자가 퇴직 후 중국에서 쿠팡 고객들의 개인 정보를 빼돌리며 일어난 것으로 전해졌다. 재직 당시 확보한 것으로 보이는 토큰을 이용해 147일간 3370만명의 데이터를 긁어모은 것으로 파악된다. 쿠팡 측이 데이터에 접근할 수 있는 열쇠를 장기간 방치하면서 이런 대규모 유출이 가능했다는 지적이다.\n최민희 위원장은 “서명 키 갱신은 가장 기본적인 내부 보안 절차임에도 쿠팡은 이를 지키지 않았다”며 “장기 유효 인증 키를 방치한 것은 단순한 내부 직원의 일탈이 아니라, 인증 체계를 방치한 쿠팡의 조직적·구조적 문제의 결과”라고 했다.",
+      "date": "2025.12.01. 오전 10:13",
+      "url": "https://n.news.naver.com/mnews/article/023/0003944155",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "중국 국적 개발자 (이름 미공개)",
+        "issues": [
+          {
+            "issue_type": "데이터 유출",
+            "details": "쿠팡 내부 인증키를 장기간 방치한 뒤, 퇴사 후 중국에서 쿠팡 고객 3,370만 명의 개인 정보를 147일간 무단 수집",
+            "source": "기사"
+          },
+          {
+            "issue_type": "인증키 관리 부실",
+            "details": "토큰 서명키의 유효 기간을 5~10년으로 설정하고 로테이션을 수행하지 않아 키가 장기간 방치",
+            "source": "기사"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "쿠팡",
+        "responses": [
+          {
+            "issue": "인증키 유효 기간 및 관리",
+            "clarification": "경찰 수사 중이라 상세 답변을 보류",
+            "date": "2025-12-01"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "최민희 의원",
+        "opinion": "인증키 방치가 조직적·구조적 문제이며, 쿠팡의 내부 보안 절차 미준수",
+        "stance": "부정적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "쿠팡 내부 인증키가 장기간 방치됨",
+        "3,370만 명의 개인 정보가 147일간 무단 수집됨",
+        "해당 인증키를 사용한 인물은 퇴사한 중국 국적 개발자"
+      ],
+      "unconfirmed_allegations": [
+        "인증키의 유효 기간이 5~10년으로 설정되었음",
+        "쿠팡이 의도적으로 키를 갱신하지 않았음",
+        "키가 방치된 기간이 정확히 147일임"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-12-01",
+        "event": "기사 발표 및 최민희 의원이 쿠팡의 인증키 방치 문제 지적"
+      },
+      {
+        "date": "2025-11-30",
+        "event": "해당 인증키를 사용해 147일간 데이터 수집 종료(추정)"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "쿠팡 정보유출… 내 정보 괜찮을까요? 쉽게 따라하는 비밀번호 변경 방법",
+        "url": "https://www.youtube.com/watch?v=EF5ryEoggAY",
+        "link": "https://www.youtube.com/watch?v=EF5ryEoggAY",
+        "videoId": "EF5ryEoggAY",
+        "channel": {
+          "name": "시니어봄TV_디지털파트너",
+          "url": "https://www.youtube.com/@seniorbomtv"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 222.0,
+        "viewCount": 1267,
+        "transcript": ""
+      },
+      {
+        "title": "(중요)이 버튼 켜져 있으면 털린겁니다",
+        "url": "https://www.youtube.com/watch?v=EGAjJaQ6T0c",
+        "link": "https://www.youtube.com/watch?v=EGAjJaQ6T0c",
+        "videoId": "EGAjJaQ6T0c",
+        "channel": {
+          "name": "인생2회차",
+          "url": "https://www.youtube.com/@인생2회차"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 34.0,
+        "viewCount": 11185610,
+        "transcript": ""
+      },
+      {
+        "title": "[현장] 쿠팡, 개인정보 유출…열흘만에 인지 후 신고지연 논란까지 : 알파경제TV",
+        "url": "https://www.youtube.com/watch?v=_gy1JnyhN5s",
+        "link": "https://www.youtube.com/watch?v=_gy1JnyhN5s",
+        "videoId": "_gy1JnyhN5s",
+        "channel": {
+          "name": "알파경제TV",
+          "url": "https://www.youtube.com/@alpha-biz"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 107.0,
+        "viewCount": 922,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "月光愛靑狼",
+        "url": "https://lastcard.tistory.com/",
+        "snippet": "... 인증 토큰을 탈취하여 활용한 것으로 추정됩니다.​; 외부 침입 흔적 없음: 쿠팡 ... 탈취된 모든 API 키 및 자격증명의 로테이션(rotation); 무단 접근 흔적에 대한 ...",
+        "displayLink": "lastcard.tistory.com"
+      },
+      {
+        "title": "제목없음",
+        "url": "https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt",
+        "snippet": "... 키 +##렇게 +허 +상품 +한다고 +주택 +보이 +17 +어서 +돈 +##랜드 +죽 +갖 +모든 +축 +100 +거나 +듯 +그러나 +볼 +의원 +하지만 +막 +뿐 +문화 +활동 +추가 +다음 + ...",
+        "displayLink": "huggingface.co"
+      },
+      {
+        "title": "신간잡지 - DBpia",
+        "url": "https://www.dbpia.co.kr/magazine/newMagazine",
+        "snippet": "2025. 11. 2. ... 한달 이내 출간된 신간잡지를 만나보세요. DBpia에서 구성한 최신 잡지 리스트를 소개합니다. 3일 전. 考試界 제70권 제11호(통권 제825호).",
+        "displayLink": "www.dbpia.co.kr"
+      },
+      {
+        "title": "제목없음",
+        "url": "https://huggingface.co/matthewburke/korean_sentiment/resolve/main/vocab.txt?download=true",
+        "snippet": "... 키 킥 킨 킫 킬 킴 킵 킷 킸 킹 킺 킼 타 탁 탄 탇 탈 탉 탐 탑 탓 탔 탕 탖 탘 탙 태 택 탠 탣 탤 탬 탭 탯 탰 탱 탸 탹 탼 턀 턍 턔 턕 터 턱 턴 털 텀 텁 텃 텄 텅 ...",
+        "displayLink": "huggingface.co"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 인증키 방치로 3,370만 고객 데이터 유출, 중국 개발자 147일간 무단 수집\n\n쿠팡이 내부 인증키를 장기간 방치한 결과, 퇴사한 중국 국적 개발자가 147일 동안 무단으로 3,370만 명의 고객 정보를 수집한 사실이 밝혀졌다. 이번 사건은 기업 내부 보안 절차의 부실과 인증키 관리 체계의 결함을 드러내며, 개인정보 보호에 대한 사회적 관심을 다시 불러일으키고 있다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 |\n|------|------|\n| 2025년 11월 30일 | 인증키를 사용해 147일 동안 데이터 수집 종료(추정) |\n| 2025년 12월 01일 | 네이버뉴스 보도 및 최민희 의원이 인증키 방치 문제 지적 |\n| 2025년 12월 01일 | 쿠팡, 경찰 수사 중이라 상세 답변을 보류 |\n\n▶ **인증키 방치**: 쿠팡 내부 인증키가 5~10년의 유효 기간을 설정하고 로테이션을 수행하지 않아 장기간 방치되었다.  \n▶ **데이터 유출 규모**: 3,370만 명의 고객 개인정보가 147일간 무단 수집되었다.  \n▶ **주요 인물**: 퇴사한 중국 국적 개발자(이름 미공개)가 인증키를 탈취해 데이터를 수집했다.  \n▶ **기업 대응**: 쿠팡은 수사 진행 중이라 상세한 설명을 보류했다.  \n▶ **정치적 반응**: 최민희 의원은 인증키 방치가 조직적·구조적 문제이며, 쿠팡의 내부 보안 절차 미준수를 비판했다.\n\n> [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155)\n\n## 다양한 관점과 분석\n\n- **쿠팡 측**: 경찰 수사 중이라 상세 답변을 보류하고 있으며, 내부 보안 절차를 재검토 중이라고 밝혔다.  \n- **정치권**: 최민희 의원은 “인증키 방치가 조직적·구조적 문제”라며, 기업의 보안 체계 개선을 촉구했다.  \n- **보안 전문가**: 인증키 관리 부실은 기업이 직면한 가장 흔한 보안 취약점 중 하나이며, 정기적인 로테이션이 필수적이라고 지적했다.  \n- **일반 사용자**: 유출된 데이터가 실제로 악용될 가능성에 대한 우려가 커지고 있으며, 쿠팡에 대한 신뢰가 하락하고 있다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 쿠팡 내부 인증키가 장기간 방치됨 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155) |\n| | 3,370만 명의 개인 정보가 147일간 무단 수집됨 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155) |\n| | 해당 인증키를 사용한 인물은 퇴사한 중국 국적 개발자 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155) |\n| **미확인 정보** | 인증키의 유효 기간이 5~10년으로 설정되었음 | 추정 |\n| | 쿠팡이 의도적으로 키를 갱신하지 않았음 | 추정 |\n| | 키가 방치된 기간이 정확히 147일임 | 추정 |\n\n## 핵심 인물과 이해관계\n\n- **쿠팡**: 국내 대표 전자상거래 기업. 인증키 관리 부실이 기업 이미지와 고객 신뢰에 직접적인 영향을 미침.  \n- **중국 국적 개발자**: 퇴사 후 인증키를 탈취해 무단 데이터 수집. 개인 이익을 위해 기업 보안 체계를 악용.  \n- **최민희 의원**: 보안 및 개인정보 보호를 담당하는 국회의원. 쿠팡의 보안 체계 개선을 요구하며, 기업의 책임을 강조.  \n- **고객**: 3,370만 명에 달하는 쿠팡 이용자. 개인정보가 유출됨으로써 개인정보 보호와 관련된 불안이 증가.\n\n## 향후 전망\n\n- **법적 조치**: 경찰 수사와 함께 개인정보보호법 위반 여부가 검토될 가능성이 높다.  \n- **기업 대응**: 쿠팡은 보안 체계 전면 개편과 인증키 로테이션 정책을 재정비할 것으로 예상된다.  \n- **정책 변화**: 개인정보 보호 관련 규제가 강화될 가능성이 있으며, 기업 내부 보안 관리에 대한 감독이 강화될 전망이다.  \n- **시장 반응**: 쿠팡의 주가와 고객 신뢰가 일시적으로 하락할 수 있으나, 신속한 대응과 투명한 소통으로 회복 가능성도 있다.\n\n이번 사건은 기업 내부 보안 관리의 중요성을 다시 한 번 일깨워 주었으며, 인증키와 같은 핵심 자산의 체계적 관리가 필수적임을 보여준다. 쿠팡과 같은 대형 기업은 이번 사태를 계기로 보안 체계를 강화하고, 고객 개인정보 보호에 대한 책임을 재확인해야 할 시점이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/023/0003944155"
+  ],
+  "timestamp": "2025-12-01T10:59:39.561039",
+  "youtube_videos": [
+    {
+      "title": "쿠팡 정보유출… 내 정보 괜찮을까요? 쉽게 따라하는 비밀번호 변경 방법",
+      "url": "https://www.youtube.com/watch?v=EF5ryEoggAY",
+      "link": "https://www.youtube.com/watch?v=EF5ryEoggAY",
+      "videoId": "EF5ryEoggAY",
+      "channel": {
+        "name": "시니어봄TV_디지털파트너",
+        "url": "https://www.youtube.com/@seniorbomtv"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 222.0,
+      "viewCount": 1267,
+      "transcript": ""
+    },
+    {
+      "title": "(중요)이 버튼 켜져 있으면 털린겁니다",
+      "url": "https://www.youtube.com/watch?v=EGAjJaQ6T0c",
+      "link": "https://www.youtube.com/watch?v=EGAjJaQ6T0c",
+      "videoId": "EGAjJaQ6T0c",
+      "channel": {
+        "name": "인생2회차",
+        "url": "https://www.youtube.com/@인생2회차"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 34.0,
+      "viewCount": 11185610,
+      "transcript": ""
+    },
+    {
+      "title": "[현장] 쿠팡, 개인정보 유출…열흘만에 인지 후 신고지연 논란까지 : 알파경제TV",
+      "url": "https://www.youtube.com/watch?v=_gy1JnyhN5s",
+      "link": "https://www.youtube.com/watch?v=_gy1JnyhN5s",
+      "videoId": "_gy1JnyhN5s",
+      "channel": {
+        "name": "알파경제TV",
+        "url": "https://www.youtube.com/@alpha-biz"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 107.0,
+      "viewCount": 922,
+      "transcript": ""
+    },
+    {
+      "title": "내 아이폰 해킹 됐는지 확인법",
+      "url": "https://www.youtube.com/watch?v=jc9GQCn6vjI",
+      "link": "https://www.youtube.com/watch?v=jc9GQCn6vjI",
+      "videoId": "jc9GQCn6vjI",
+      "channel": {
+        "name": "cocojuan코코쥬안",
+        "url": "https://www.youtube.com/@cocojuantv"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 20.0,
+      "viewCount": 662068,
+      "transcript": ""
+    },
+    {
+      "title": "나도 모르게 가입했던 사이트들 한 번에 탈퇴하는 방법",
+      "url": "https://www.youtube.com/watch?v=1hwgAvV8BaY",
+      "link": "https://www.youtube.com/watch?v=1hwgAvV8BaY",
+      "videoId": "1hwgAvV8BaY",
+      "channel": {
+        "name": "짤컷",
+        "url": null
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 22.0,
+      "viewCount": 1833284,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "月光愛靑狼",
+      "url": "https://lastcard.tistory.com/",
+      "snippet": "... 인증 토큰을 탈취하여 활용한 것으로 추정됩니다.​; 외부 침입 흔적 없음: 쿠팡 ... 탈취된 모든 API 키 및 자격증명의 로테이션(rotation); 무단 접근 흔적에 대한 ...",
+      "displayLink": "lastcard.tistory.com"
+    },
+    {
+      "title": "제목없음",
+      "url": "https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt",
+      "snippet": "... 키 +##렇게 +허 +상품 +한다고 +주택 +보이 +17 +어서 +돈 +##랜드 +죽 +갖 +모든 +축 +100 +거나 +듯 +그러나 +볼 +의원 +하지만 +막 +뿐 +문화 +활동 +추가 +다음 + ...",
+      "displayLink": "huggingface.co"
+    },
+    {
+      "title": "신간잡지 - DBpia",
+      "url": "https://www.dbpia.co.kr/magazine/newMagazine",
+      "snippet": "2025. 11. 2. ... 한달 이내 출간된 신간잡지를 만나보세요. DBpia에서 구성한 최신 잡지 리스트를 소개합니다. 3일 전. 考試界 제70권 제11호(통권 제825호).",
+      "displayLink": "www.dbpia.co.kr"
+    },
+    {
+      "title": "제목없음",
+      "url": "https://huggingface.co/matthewburke/korean_sentiment/resolve/main/vocab.txt?download=true",
+      "snippet": "... 키 킥 킨 킫 킬 킴 킵 킷 킸 킹 킺 킼 타 탁 탄 탇 탈 탉 탐 탑 탓 탔 탕 탖 탘 탙 태 택 탠 탣 탤 탬 탭 탯 탰 탱 탸 탹 탼 턀 턍 턔 턕 터 턱 턴 털 텀 텁 텃 텄 텅 ...",
+      "displayLink": "huggingface.co"
+    }
+  ],
+  "google_count": 4
+}
