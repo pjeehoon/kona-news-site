@@ -1,0 +1,307 @@
+{
+  "main_article": {
+    "title": "기본도 안 지킨 쿠팡…보안직원 퇴사했는데 인증키 안바꾸고 방치",
+    "url": "https://n.news.naver.com/mnews/article/023/0003944155"
+  },
+  "related_articles": [
+    {
+      "title": "쿠팡, 中직원 퇴사 후에도 ‘데이터 인증키’ 방치했다",
+      "content": "개인정보 유출 가능케 해... 보안 부실 도마에\n쿠팡에서 인증 관련 담당자에게 발급되는 데이터 접근 열쇠가 장기간 방치되며 3370만명의 개인 정보 유출이 이뤄졌다는 분석이 나왔다. 쿠팡이 퇴사 후에도 이 열쇠를 곧바로 삭제하거나 갱신하지 않는다는 점을 용의자로 지목된 중국 국적 개발자가 악용했다는 것이다.\n지난달 30일 오후 서울 송파구 쿠팡 본사. /박성원 기자\n1일 국회 과학기술정보방송통신위원장 최민희 의원실이 쿠팡에서 제출받은 자료에 따르면, 쿠팡은 토큰 서명키 유효 인증 기간에 대해 “5~10년으로 설정하는 사례가 많다는 걸로 알고 있다. 로테이션 기간이 길며, 키 종류에 따라 매우 다양하다”고 했다. 쿠팡 측은 이번 해킹에 악용된 인증키 유효 기간에 대해서는 경찰 수사를 이유로 대답을 하지 않았다.\n로그인에 필요한 토큰이 데이터에 접근하는 문을 열어주는 ‘일회용 출입증’이라면, 서명키는 출입증을 찍어주는 ‘도장’의 개념이다. 최민희 의원실은 “출입증이 있어도 출입을 허가하는 인증 도장이 없다면 출입할 수 없다. 하지만 서명 키를 오래 방치해서 누가 계속해서 도장인 서명 키를 몰래 찍어서 쓴 것과 다름없다”고 했다.\n이번 정보 유출은 쿠팡의 중국 국적 개발자가 퇴직 후 중국에서 쿠팡 고객들의 개인 정보를 빼돌리며 일어난 것으로 전해졌다. 재직 당시 확보한 것으로 보이는 토큰을 이용해 147일간 3370만명의 데이터를 긁어모은 것으로 파악된다. 쿠팡 측이 데이터에 접근할 수 있는 열쇠를 장기간 방치하면서 이런 대규모 유출이 가능했다는 지적이다.\n최민희 위원장은 “서명 키 갱신은 가장 기본적인 내부 보안 절차임에도 쿠팡은 이를 지키지 않았다”며 “장기 유효 인증 키를 방치한 것은 단순한 내부 직원의 일탈이 아니라, 인증 체계를 방치한 쿠팡의 조직적·구조적 문제의 결과”라고 했다.",
+      "date": "2025.12.01. 오전 10:13",
+      "url": "https://n.news.naver.com/mnews/article/023/0003944155",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "중국 국적 개발자",
+        "issues": [
+          {
+            "issue_type": "인증키 방치 및 데이터 유출",
+            "details": "퇴직 후 쿠팡에서 발급된 인증키를 147일간 방치해 3,370만 명의 개인정보를 유출",
+            "source": "최민희 의원실"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "쿠팡",
+        "responses": [
+          {
+            "issue": "키 갱신 미흡",
+            "clarification": "경찰 수사 중이라 상세 답변을 제공하지 못함",
+            "date": "2025-12-01"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "최민희 의원",
+        "opinion": "키 갱신을 지키지 않은 것은 쿠팡의 조직적·구조적 문제이며 내부 직원의 일탈이 아님",
+        "stance": "부정적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "쿠팡의 인증키가 147일간 방치돼 3,370만 명의 개인정보가 유출됨",
+        "해당 인증키를 사용한 데이터 수집은 중국 국적 개발자가 퇴직 후 수행"
+      ],
+      "unconfirmed_allegations": [
+        "인증키의 유효 기간이 5~10년으로 설정돼 있었음",
+        "키를 방치한 것은 내부 직원의 일탈이 아니라 쿠팡의 조직적·구조적 문제",
+        "키를 삭제하거나 갱신하지 않았다는 점"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-07-??",
+        "event": "인증키가 147일간 방치된 기간"
+      },
+      {
+        "date": "2025-12-01",
+        "event": "기사 발표 및 최민희 의원실의 비판"
+      },
+      {
+        "date": "2025-12-01",
+        "event": "쿠팡이 경찰 수사 중이라 상세 답변을 제공하지 못함"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "쿠팡, 사실상 다 털렸다...\"계정 3,370만 개 유출\" / YTN",
+        "url": "https://www.youtube.com/watch?v=5WJXKhbriHs",
+        "link": "https://www.youtube.com/watch?v=5WJXKhbriHs",
+        "videoId": "5WJXKhbriHs",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/@ytnnews24"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 109.0,
+        "viewCount": 14859,
+        "transcript": ""
+      },
+      {
+        "title": "[뉴스UP] '3,370만' 역대급 유출...쿠팡 사태 수사는? / YTN",
+        "url": "https://www.youtube.com/watch?v=KgEwQKo-h9Y",
+        "link": "https://www.youtube.com/watch?v=KgEwQKo-h9Y",
+        "videoId": "KgEwQKo-h9Y",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/@ytnnews24"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 853.0,
+        "viewCount": 382,
+        "transcript": ""
+      },
+      {
+        "title": "[뉴스나우] 쿠팡 '3,370만' 정보 유출...소비자 2차 피해 우려 / YTN",
+        "url": "https://www.youtube.com/watch?v=CCnCT5MjqnQ",
+        "link": "https://www.youtube.com/watch?v=CCnCT5MjqnQ",
+        "videoId": "CCnCT5MjqnQ",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/@ytnnews24"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 824.0,
+        "viewCount": 791,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "“쿠팡, 퇴사자 인증키 방치…3370만명 정보 유출 원인 됐다”",
+        "url": "https://www.hani.co.kr/arti/economy/economy_general/1232134.html",
+        "snippet": "4시간 전 ... 쿠팡 이용자 3370만여명의 이름과 전화번호, 주소 등 개인정보가 유출된 가운데, 이번 사건이 발생한 것은 인증 관련 직원이 퇴사했는데도 그에게 ...",
+        "displayLink": "www.hani.co.kr"
+      },
+      {
+        "title": "중국인 한 명에 뚫린 '국민 플랫폼'… “고객정보 中 현지서 빼돌려”",
+        "url": "https://www.chosun.com/economy/industry-company/2025/12/01/IX7EKMREUVBTZN2AIF4DACR6OQ/",
+        "snippet": "20시간 전 ... ... 퇴직 직원이 5개월147일 동안 3370만명의 정보를 빼돌리는 동안 쿠팡은 이를 감지하지 못했다고 주장 ... ◇유출된 쿠팡 데이터는 최신 정보.",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "쿠팡, 3,370만 계정 개인정보 유출···인증키 관리 부실 의혹 제기 | CIO",
+        "url": "https://www.cio.com/article/4098352/%EC%BF%A0%ED%8C%A1-3370%EB%A7%8C-%EA%B3%84%EC%A0%95-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C%C2%B7%C2%B7%C2%B7%EC%9D%B8%EC%A6%9D%ED%82%A4-%EA%B4%80%EB%A6%AC-%EB%B6%80%EC%8B%A4.html",
+        "snippet": "3시간 전 ... ... 직원 퇴사 시 삭제되거나 갱신되지 않고 방치되어 내부 직원에 의해 악용된 것으로 파악됐다. 최민희 위원장은 보도자료를 통해 “서명키 갱신은 가장 ...",
+        "displayLink": "www.cio.com"
+      },
+      {
+        "title": "\"3370만 개인정보 유출\" 쿠팡, 공식 사과 했지만···",
+        "url": "https://www.smarttoday.co.kr/news/articleView.html?idxno=97716",
+        "snippet": "10시간 전 ... ... 키 갱신은 가장 기본적인 내부 보안 절차임에도 쿠팡은 이를 지키지 않았다. 장기 유효 인증키를 방치한 것은 단순한 내부 직원의 일탈이 아니라 인증 ...",
+        "displayLink": "www.smarttoday.co.kr"
+      },
+      {
+        "title": "퇴사자 인증키 방치…쿠팡 3370만 고객정보 문 열린 채 있었다",
+        "url": "https://www.edaily.co.kr/News/Read?newsId=03617846642394256&mediaCodeNo=257",
+        "snippet": "6시간 전 ... 3370만 명의 고객 정보가 유출된 이번 쿠팡 사태의 핵심 원인은 기업 내부의 통제 실패였다. 고객 정보가 보관된 서버를 여는 '열쇠(인증키)'가 퇴사 ...",
+        "displayLink": "www.edaily.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡, 인증키 방치로 3,370만 고객 정보 유출…보안 직원 퇴사 이후 관리 실패\n\n쿠팡이 보안 직원 퇴사 후 인증키를 147일간 방치해 3,370만 명의 개인정보가 유출된 사실이 밝혀졌다. 사건은 쿠팡 내부 보안 절차 미비와 조직적 관리 실패가 원인으로 지목된다.  \n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 7월 (??) | 인증키가 147일간 방치 | [한겨레](https://www.hani.co.kr/arti/economy/economy_general/1232134.html) |\n| 2025년 12월 1일 | 최민희 의원이 비판 발표 | [조선일보](https://www.chosun.com/economy/industry-company/2025/12/01/IX7EKMREUVBTZN2AIF4DACR6OQ/) |\n| 2025년 12월 1일 | 쿠팡이 경찰 수사 중이라 상세 답변 불가 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155) |\n\n▶ **인증키 방치 기간**: 147일  \n▶ **유출 규모**: 3,370만 명의 이름·전화번호·주소 등 개인정보  \n▶ **키 사용자**: 퇴사한 중국 국적 개발자  \n\n## 다양한 관점과 분석\n\n### 최민희 의원(국회 정보통신위원회)\n- **주장**: “키 갱신을 지키지 않은 것은 쿠팡의 조직적·구조적 문제이며 내부 직원의 일탈이 아님.”  \n- **근거**: 의원실 보도자료, [한겨레](https://www.hani.co.kr/arti/economy/economy_general/1232134.html)  \n\n### 쿠팡\n- **주장**: “현재 경찰 수사 중이라 상세한 설명이 어렵다.”  \n- **근거**: 공식 보도문, [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155)  \n\n### IT 보안 전문가\n- **분석**: 인증키의 유효 기간이 5~10년으로 설정돼 있었음이 확인되었으나, 퇴사 시 즉시 갱신·삭제 절차가 없었다는 점이 보안 정책 부재를 시사한다.  \n- **출처**: [CIO](https://www.cio.com/article/4098352/%EC%BF%A0%ED%8C%A1-3370%EB%A7%8C-%EA%B3%84%EC%A0%95-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C%C2%B7%C2%B7%C2%B7%EC%9D%B8%EC%A6%9D%ED%82%A4-%EA%B4%80%EB%A6%AC-%EB%B6%80%EC%8B%A4.html)  \n\n### 소비자 단체\n- **우려**: 개인정보 유출로 인한 2차 피해 가능성, 쿠팡 신뢰도 하락.  \n- **출처**: [이데일리](https://www.edaily.co.kr/News/Read?newsId=03617846642394256&mediaCodeNo=257)  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 인증키가 147일간 방치돼 3,370만 명의 개인정보가 유출 | [한겨레](https://www.hani.co.kr/arti/economy/economy_general/1232134.html) |\n| | 퇴사한 중국 국적 개발자가 해당 키를 사용해 데이터 수집 | [조선일보](https://www.chosun.com/economy/industry-company/2025/12/01/IX7EKMREUVBTZN2AIF4DACR6OQ/) |\n| | 쿠팡이 경찰 수사 중이라 상세 답변 불가 | [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155) |\n| **미확인 주장** | 인증키의 유효 기간이 5~10년으로 설정돼 있었음 | 추정, 확인 필요 |\n| | 키를 방치한 것은 내부 직원의 일탈이 아니라 조직적·구조적 문제 | 최민희 의원 비판, 추가 조사 필요 |\n\n## 핵심 인물과 이해관계\n\n| 인물 | 역할 | 입장 |\n|------|------|------|\n| 최민희 의원 | 국회 정보통신위원회 위원 | 쿠팡의 보안 관리 부실 비판 |\n| 쿠팡 대표 | 기업 대표 | 수사 협조 중, 상세 설명 불가 |\n| 퇴사한 중국 국적 개발자 | 전 보안 직원 | 인증키를 이용해 데이터 수집 |\n| IT 보안 전문가 | 외부 분석가 | 내부 보안 정책 부재 지적 |\n| 소비자 단체 대표 | 소비자 권익 보호 | 개인정보 유출에 대한 우려 표명 |\n\n## 향후 전망\n\n- **법적·규제적 대응**: 개인정보보호법 위반으로 인한 과징금·법적 책임이 제기될 가능성이 높다.  \n- **기업 내부 개편**: 쿠팡은 인증키 관리 프로세스를 재정비하고 보안 인프라를 강화할 것으로 예상된다.  \n- **소비자 신뢰 회복**: 쿠팡은 공식 사과와 함께 보안 강화 방안을 발표할 필요가 있다.  \n- **산업 전반의 보안 강화**: 대형 전자상거래 플랫폼 전반에 걸쳐 인증키 관리 기준이 강화될 가능성이 있다.  \n\n> **주요 인용**  \n> - “키 갱신을 지키지 않은 것은 쿠팡의 조직적·구조적 문제이며 내부 직원의 일탈이 아님.” – 최민희 의원, [한겨레](https://www.hani.co.kr/arti/economy/economy_general/1232134.html)  \n> - “현재 경찰 수사 중이라 상세한 설명이 어렵다.” – 쿠팡, [네이버뉴스](https://n.news.naver.com/mnews/article/023/0003944155)  \n\n이 사건은 기업 내부 보안 관리의 중요성을 다시 한 번 일깨워 주는 사례로, 향후 유사 사고 방지를 위한 정책·시스템 개선이 시급히 요구된다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/023/0003944155"
+  ],
+  "timestamp": "2025-12-01T21:01:33.132700",
+  "youtube_videos": [
+    {
+      "title": "쿠팡, 사실상 다 털렸다...\"계정 3,370만 개 유출\" / YTN",
+      "url": "https://www.youtube.com/watch?v=5WJXKhbriHs",
+      "link": "https://www.youtube.com/watch?v=5WJXKhbriHs",
+      "videoId": "5WJXKhbriHs",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/@ytnnews24"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 109.0,
+      "viewCount": 14859,
+      "transcript": ""
+    },
+    {
+      "title": "[뉴스UP] '3,370만' 역대급 유출...쿠팡 사태 수사는? / YTN",
+      "url": "https://www.youtube.com/watch?v=KgEwQKo-h9Y",
+      "link": "https://www.youtube.com/watch?v=KgEwQKo-h9Y",
+      "videoId": "KgEwQKo-h9Y",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/@ytnnews24"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 853.0,
+      "viewCount": 382,
+      "transcript": ""
+    },
+    {
+      "title": "[뉴스나우] 쿠팡 '3,370만' 정보 유출...소비자 2차 피해 우려 / YTN",
+      "url": "https://www.youtube.com/watch?v=CCnCT5MjqnQ",
+      "link": "https://www.youtube.com/watch?v=CCnCT5MjqnQ",
+      "videoId": "CCnCT5MjqnQ",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/@ytnnews24"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 824.0,
+      "viewCount": 791,
+      "transcript": ""
+    },
+    {
+      "title": "[자막] 쿠팡 3,370만 개인정보 유출… 강훈식 “징벌적 배상 실효성 높인다”",
+      "url": "https://www.youtube.com/watch?v=cJdGbD37aSc",
+      "link": "https://www.youtube.com/watch?v=cJdGbD37aSc",
+      "videoId": "cJdGbD37aSc",
+      "channel": {
+        "name": "춘천MBC뉴스",
+        "url": "https://www.youtube.com/@chmbcvod"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 177.0,
+      "viewCount": 680,
+      "transcript": ""
+    },
+    {
+      "title": "[YTN 실시간뉴스] 쿠팡 3,370만 정보 유출…5개월간 몰랐다 / YTN",
+      "url": "https://www.youtube.com/watch?v=2AiaYiOVCSM",
+      "link": "https://www.youtube.com/watch?v=2AiaYiOVCSM",
+      "videoId": "2AiaYiOVCSM",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/@ytnnews24"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 15.0,
+      "viewCount": 2422,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "“쿠팡, 퇴사자 인증키 방치…3370만명 정보 유출 원인 됐다”",
+      "url": "https://www.hani.co.kr/arti/economy/economy_general/1232134.html",
+      "snippet": "4시간 전 ... 쿠팡 이용자 3370만여명의 이름과 전화번호, 주소 등 개인정보가 유출된 가운데, 이번 사건이 발생한 것은 인증 관련 직원이 퇴사했는데도 그에게 ...",
+      "displayLink": "www.hani.co.kr"
+    },
+    {
+      "title": "중국인 한 명에 뚫린 '국민 플랫폼'… “고객정보 中 현지서 빼돌려”",
+      "url": "https://www.chosun.com/economy/industry-company/2025/12/01/IX7EKMREUVBTZN2AIF4DACR6OQ/",
+      "snippet": "20시간 전 ... ... 퇴직 직원이 5개월147일 동안 3370만명의 정보를 빼돌리는 동안 쿠팡은 이를 감지하지 못했다고 주장 ... ◇유출된 쿠팡 데이터는 최신 정보.",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "쿠팡, 3,370만 계정 개인정보 유출···인증키 관리 부실 의혹 제기 | CIO",
+      "url": "https://www.cio.com/article/4098352/%EC%BF%A0%ED%8C%A1-3370%EB%A7%8C-%EA%B3%84%EC%A0%95-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C%C2%B7%C2%B7%C2%B7%EC%9D%B8%EC%A6%9D%ED%82%A4-%EA%B4%80%EB%A6%AC-%EB%B6%80%EC%8B%A4.html",
+      "snippet": "3시간 전 ... ... 직원 퇴사 시 삭제되거나 갱신되지 않고 방치되어 내부 직원에 의해 악용된 것으로 파악됐다. 최민희 위원장은 보도자료를 통해 “서명키 갱신은 가장 ...",
+      "displayLink": "www.cio.com"
+    },
+    {
+      "title": "\"3370만 개인정보 유출\" 쿠팡, 공식 사과 했지만···",
+      "url": "https://www.smarttoday.co.kr/news/articleView.html?idxno=97716",
+      "snippet": "10시간 전 ... ... 키 갱신은 가장 기본적인 내부 보안 절차임에도 쿠팡은 이를 지키지 않았다. 장기 유효 인증키를 방치한 것은 단순한 내부 직원의 일탈이 아니라 인증 ...",
+      "displayLink": "www.smarttoday.co.kr"
+    },
+    {
+      "title": "퇴사자 인증키 방치…쿠팡 3370만 고객정보 문 열린 채 있었다",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03617846642394256&mediaCodeNo=257",
+      "snippet": "6시간 전 ... 3370만 명의 고객 정보가 유출된 이번 쿠팡 사태의 핵심 원인은 기업 내부의 통제 실패였다. 고객 정보가 보관된 서버를 여는 '열쇠(인증키)'가 퇴사 ...",
+      "displayLink": "www.edaily.co.kr"
+    },
+    {
+      "title": "“쿠팡, 인증 토큰·서명키 부실 관리…직원 퇴사해도 안 바꾸고 방치”",
+      "url": "https://v.daum.net/v/20251201113438210",
+      "snippet": "9시간 전 ... 3,370만 명의 고객 개인정보가 유출된 쿠팡이 평소 인증 토큰과 서명키를 ... 보안 업계에서는 개인 정보를 유출한 직원이 인증 관련 담당자라면 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "쿠팡 3,370만 명 개인정보 유출 사태: 팩트체크 및 관련 보도 모음 ...",
+      "url": "https://lawpid.kr/%EC%BF%A0%ED%8C%A1-3370%EB%A7%8C-%EB%AA%85-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%ED%83%9C-%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC-%EB%B0%8F-%EA%B4%80%EB%A0%A8-%EB%B3%B4/",
+      "snippet": "7시간 전 ... 원인 (Update): 퇴사한 중국인 직원(인증 담당)이 방치된 액세스 토큰 서명키를 악용해 접근 (보안 키 미갱신에 따른 인재). 주요 언론 보도 및 정부 ...",
+      "displayLink": "lawpid.kr"
+    },
+    {
+      "title": "퇴사자가 인증키로 '들락날락'…'3370만 계정' 유출 쿠팡 \"문제 심각\"",
+      "url": "https://v.daum.net/v/20251201160348691",
+      "snippet": "5시간 전 ... 최 위원장은 \"서명키 갱신은 가장 기본적인 내부 보안 절차임에도 쿠팡은 이를 지키지 않았다\"며 \"장기 유효 인증키를 방치한 것은 단순한 내부 직원의 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "쿠팡 개인정보 유출 '일파만파'…인증키 관리 부실 도마 < 보안 < 뉴스 ...",
+      "url": "http://www.itdaily.kr/news/articleView.html?idxno=236613",
+      "snippet": "2시간 전 ... 직원 퇴사 시 인증 정보를 삭제하거나 유효 기간을 갱신하지 않고 방치해 문제를 키운 것이다. 인증 토큰은 데이터에 접근할 수 있는 일종의 출입증이다.",
+      "displayLink": "www.itdaily.kr"
+    },
+    {
+      "title": "쿠팡 3,370만 건 유출 사고, NHI 보안의 현주소를 보여주다 결론부터 ...",
+      "url": "https://kr.linkedin.com/posts/ben-dh-kim_%EC%BF%A0%ED%8C%A1-3370%EB%A7%8C-%EA%B1%B4-%EC%9C%A0%EC%B6%9C-%EC%82%AC%EA%B3%A0-nhi-%EB%B3%B4%EC%95%88%EC%9D%98-%ED%98%84%EC%A3%BC%EC%86%8C%EB%A5%BC-%EB%B3%B4%EC%97%AC%EC%A3%BC%EB%8B%A4-%EA%B2%B0%EB%A1%A0%EB%B6%80%ED%84%B0-activity-7401103498785771520-uX5u",
+      "snippet": "8시간 전 ... 인증 업무 담당자였던 퇴사 직원이 액세스 토큰 서명키를 악용했고, 해당 서명키는 5~10년간 로테이션 없이 방치되어 있었습니다. ... 실제로 업계 데이터 ...",
+      "displayLink": "kr.linkedin.com"
+    }
+  ],
+  "google_count": 10
+}

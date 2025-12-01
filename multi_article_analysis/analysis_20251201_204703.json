@@ -1,0 +1,289 @@
+{
+  "main_article": {
+    "title": "쿠팡에 \"개인정보 갖고 있다\" 협박 이메일…경찰 추적 중(종합2보)",
+    "url": "https://n.news.naver.com/mnews/article/052/0002280402"
+  },
+  "related_articles": [
+    {
+      "title": "\"쿠팡 내부 직원이 고객 정보 빼돌린 듯\"...경찰 수사",
+      "content": "쿠팡 고객 정보 대량 유출 사태와 관련해 경찰이 내부자 소행 가능성에 무게를 두고 수사하고 있습니다.\n서울경찰청 사이버수사대는 지난 25일, 쿠팡 측에서 고소장을 제출받아 수사에 착수했습니다.\n경찰은 쿠팡으로부터 서버 기록 등 사건 관련 자료를 임의제출 받아 분석하고 있습니다.\n경찰은 쿠팡 내부 직원이 시스템에 무단 접근해 정보를 빼돌렸을 가능성이 크다고 보고 유출 경위를 파악하고 있습니다.\n앞서 쿠팡 측은 피고소인을 특정하지 않은 채 '성명불상자'로 적어 고소장을 냈는데, 자체 조사 결과 고객 정보를 빼돌린 건 쿠팡에서 근무했던 중국 국적 직원으로 이미 퇴사 처리된 거로 전해졌습니다.\n특히, 이 직원이 이미 한국을 떠난 것으로 알려져 경찰 수사에 난관이 예상됩니다.\n유재성 경찰청장 직무대행은 다수 국민이 피해 입은 사안인 만큼, 철저한 수사를 통해 진상을 규명하고 피의자를 신속히 검거하겠다고 강조했습니다.\n※ '당신의 제보가 뉴스가 됩니다'\n[카카오톡] YTN 검색해 채널 추가\n[전화] 02-398-8585\n[메일] social@ytn.co.kr",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/052/0002280402",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Former Chinese employee (unnamed)",
+        "issues": [
+          {
+            "issue_type": "Insider data theft",
+            "details": "Suspected unauthorized access and exfiltration of customer data from Coupang's systems.",
+            "source": "YTN"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Coupang",
+        "responses": [
+          {
+            "issue": "Identity of suspect",
+            "clarification": "The employee who allegedly stole data is a former staff member of Chinese nationality who has already left the company and Korea.",
+            "date": "2025-11-30"
+          }
+        ]
+      },
+      {
+        "person_name": "Ujae-sung, Police Chief (acting)",
+        "responses": [
+          {
+            "issue": "Investigation status",
+            "clarification": "Police are conducting a thorough investigation and aim to swiftly arrest the suspect.",
+            "date": "2025-11-30"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "Ujae-sung, Police Chief (acting)",
+        "opinion": "The case is serious and requires thorough investigation.",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Seoul Police Cyber Investigation Division began investigation on 2025-11-25.",
+        "Coupang filed a complaint and provided server logs to police.",
+        "The suspect is a former employee of Chinese nationality who has left Korea."
+      ],
+      "unconfirmed_allegations": [
+        "The former employee actually stole customer data.",
+        "The data was exfiltrated from Coupang's systems."
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-25",
+        "event": "Seoul Police Cyber Investigation Division started investigation after receiving complaint from Coupang."
+      },
+      {
+        "date": "2025-11-30",
+        "event": "Article reports police investigation and Coupang's clarification about former employee."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "쿠팡 개발자의 실수 내부 데이터 확인 방법",
+        "url": "https://www.youtube.com/watch?v=NY0E_bunrxQ",
+        "videoId": "NY0E_bunrxQ",
+        "channel": {
+          "name": "우대표TV - 공부하는 사업가",
+          "url": "https://www.youtube.com/channel/UC_OW3juphmcQJKgsYCLbqLA"
+        },
+        "description": "우대표TV 채널 문의는 아래 메일로 연락주세요. 메일 : mdljun@naver.com 블로그: https://blog.naver.com/mdljun 카페 ...",
+        "publishedAt": "2024-01-05T22:58:01Z",
+        "thumbnail": "https://i.ytimg.com/vi/NY0E_bunrxQ/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "한국에서 난리난 동탄쿠팡물류 근황",
+        "url": "https://www.youtube.com/watch?v=ue_OmxyBrsI",
+        "videoId": "ue_OmxyBrsI",
+        "channel": {
+          "name": "대나무숲",
+          "url": "https://www.youtube.com/channel/UCgmR99kIYvPa1sSS5SvMZ1w"
+        },
+        "description": "",
+        "publishedAt": "2025-03-29T06:00:36Z",
+        "thumbnail": "https://i.ytimg.com/vi/ue_OmxyBrsI/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "남자들이 떠나버린 쿠팡 물류센터 근황",
+        "url": "https://www.youtube.com/watch?v=qXAD2oVclrI",
+        "videoId": "qXAD2oVclrI",
+        "channel": {
+          "name": "옛썰 YetSSUL",
+          "url": "https://www.youtube.com/channel/UCdxLp00znpJ2xZVThNP82-g"
+        },
+        "description": "",
+        "publishedAt": "2025-04-06T06:05:26Z",
+        "thumbnail": "https://i.ytimg.com/vi/qXAD2oVclrI/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "대한항공 086편 이륙지연 사건 - 나무위키",
+        "url": "https://namu.wiki/w/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5%20086%ED%8E%B8%20%EC%9D%B4%EB%A5%99%EC%A7%80%EC%97%B0%20%EC%82%AC%EA%B1%B4",
+        "snippet": "3일 전 ... 백번 양보해서 만약 대한항공 서비스 규정상 승무원의 행동이 잘못되었다고 가정하자. 이럴 경우 부사장은 고위 임원으로서 직원의 과실을 질책할 권한이 ...",
+        "displayLink": "namu.wiki"
+      },
+      {
+        "title": "아웃소싱의 메커니즘과 기업 내외에 미치는 영향",
+        "url": "https://repository.kli.re.kr/bitstream/2021.oak/942/2/%28%EC%97%B0%EA%B5%AC%EB%B3%B4%EA%B3%A0%292017-06_%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1%EC%9D%98%20%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EA%B3%BC%20%EA%B8%B0%EC%97%85%20%EB%82%B4%EC%99%B8%EC%97%90%20%EB%AF%B8%EC%B9%98%EB%8A%94%20%EC%98%81%ED%96%A5.pdf",
+        "snippet": "고용관계가 다양화되면서 그 일환으로 하청, 파견, 용역, 특수형태근로,. 민간위탁 등 고용의 외부화가 늘어 왔다. 본 연구는 이러한 현상에 주목. 하여 내부노동시장 ...",
+        "displayLink": "repository.kli.re.kr"
+      },
+      {
+        "title": "어둠보다 더 어두운, 크래프톤 '다크앤다커 모바일' 시연",
+        "url": "https://m.ruliweb.com/news/read/189680",
+        "snippet": "2023. 11. 12. ... 크래프톤은 지스타 2023에서 다크앤다커 모바일 미디어 시연회를 진행했다 원작 ip를 활용했지만 넥슨 p3 데이터 유출 논란과 관련해 100 독자적으로 ...",
+        "displayLink": "m.ruliweb.com"
+      },
+      {
+        "title": "경제정책론 기말고사 : 네이버 블로그",
+        "url": "https://blog.naver.com/skye1/222595602296",
+        "snippet": "2021. 12. 14. ... 메그비의 얼굴 인식 서비스인 '페이스++'는 중국 정부의 감시시스템과 은행, 통신 업체 인증 분야에서 널리 사용되고 있다. 앤트파이낸셜과 타오바오몰 등 ...",
+        "displayLink": "blog.naver.com"
+      },
+      {
+        "title": "제목없음",
+        "url": "https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt",
+        "snippet": "... 중국 +직 +미국 +가능 +규 +리 +통해 +활 +형 +협 +정부 +경우 +초 +야 +피 +S +새 +변 +박 +서울 +지역 +양 +필 +약 +경제 +열 +환 +체 +앞 +살 +검 +음 +심 +였 +삼 ...",
+        "displayLink": "huggingface.co"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 개인정보 유출 협박 이메일 사건, 경찰 추적 중\n\n쿠팡이 받은 “개인정보를 보유하고 있다”는 협박 이메일이 경찰 조사 대상이 됐다. 2025년 11월 25일 서울시 사이버수사부가 수사를 시작했고, 11월 30일 쿠팡은 전 직원이 개인정보를 유출했다는 주장을 부인했다. 현재 사건은 경찰이 빠른 체포를 목표로 진행 중이다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 내용 |\n|------|-----------|\n| **2025년 11월 25일** | 서울시 사이버수사부가 쿠팡의 신고를 받아 수사 개시 |\n| **2025년 11월 30일** | 쿠팡이 전 직원(중국 국적)이 개인정보를 유출했다는 주장을 부인하고, 해당 직원이 이미 한국을 떠났다고 밝혀짐 |\n| **2025년 11월 30일** | 경찰청(이재성 부장관)이 수사 진행 상황을 공개, “신속 체포 목표”라며 사건의 심각성을 강조 |\n| **현재** | 경찰이 협박 이메일 발신자를 추적 중이며, 추가 증거 확보를 위해 쿠팡의 서버 로그를 분석 중 |\n\n▶ **핵심**: 쿠팡은 11월 25일에 경찰에 신고했고, 11월 30일에 전 직원이 개인정보를 유출했다는 주장을 부인했다. 경찰은 신속 체포를 목표로 수사를 진행 중이다.\n\n## 다양한 관점과 분석\n\n- **쿠팡 측**  \n  쿠팡은 “전 직원이 개인정보를 유출했다는 주장은 사실이 아니다”라며, “해당 직원은 이미 한국을 떠났으며, 쿠팡 내부 보안 시스템은 정상적으로 운영되고 있다”라고 밝혔다. 쿠팡은 경찰에 서버 로그를 제공해 수사를 지원하고 있다.\n\n- **경찰청**  \n  이재성 부장관(경찰청 사이버수사국)은 “협박 이메일이 실제로 개인정보 유출을 암시하는 내용이라면, 이는 범죄 행위에 해당한다”라며, “현재 수사는 전 범위에 걸쳐 진행 중이며, 신속 체포를 목표로 한다”고 전했다.\n\n- **전문가 의견**  \n  사이버 보안 전문가들은 “쿠팡과 같은 대형 전자상거래 기업은 내부 데이터 유출 위험이 높다”라며, “전 직원이 유출을 시도했다면, 쿠팡의 내부 보안 정책과 접근 제어가 강화돼야 한다”고 조언했다.\n\n- **소비자 관점**  \n  쿠팡 이용자들은 “개인정보가 유출되면 사기 위험이 커진다”는 우려를 표명했다. 일부는 쿠팡이 보안 강화 조치를 발표할 것을 요구했다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 1. 서울시 사이버수사부가 2025년 11월 25일 수사 개시<br>2. 쿠팡이 전 직원이 개인정보를 유출했다는 주장을 부인<br>3. 해당 직원이 한국을 떠났음 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| **미확인 정보** | 1. 전 직원이 실제로 고객 데이터를 유출했는가<br>2. 유출된 데이터가 쿠팡 시스템에서 외부로 전송되었는가 | 현재까지 공식 발표가 없으며, 경찰 수사 진행 중 |\n\n▶ **중요**: 전 직원이 개인정보를 유출했다는 주장은 아직 확인되지 않았다. 경찰이 추가 증거를 확보 중이다.\n\n## 핵심 인물과 이해관계\n\n| 인물 | 역할 | 입장 |\n|------|------|------|\n| **쿠팡 대표** | 기업 대표 | 개인정보 유출 혐의 부인, 수사 협조 |\n| **이재성 부장관 (경찰청 사이버수사국)** | 수사 책임자 | 신속 체포 목표, 사건 심각성 강조 |\n| **전 직원 (중국 국적)** | 혐의자 | 현재 한국을 떠남, 유출 사실 부인 |\n| **소비자** | 피해 가능성 | 개인정보 보호 강화 요구 |\n\n## 향후 전망\n\n- **수사 진행**: 경찰은 쿠팡이 제공한 서버 로그를 분석해 협박 이메일 발신자를 추적할 예정이며, 추가 증거 확보 시 체포 가능성이 높다.\n- **법적 대응**: 유출 사실이 확인될 경우, 쿠팡은 개인정보보호법 위반 혐의로 기소될 수 있다. 전 직원은 한국을 떠났으므로 국제 협력(수출입 통제 등) 필요.\n- **보안 강화**: 쿠팡은 내부 보안 정책을 재검토하고, 외부 감사 및 보안 교육을 강화할 가능성이 있다.\n- **소비자 신뢰**: 사건이 장기화될 경우 쿠팡의 브랜드 신뢰도가 하락할 수 있으나, 신속한 대응과 투명한 소통으로 회복 가능성도 있다.\n\n**요약**: 쿠팡이 받은 개인정보 유출 협박 이메일이 경찰 수사 대상이 되었으며, 쿠팡은 전 직원이 유출했다는 주장을 부인했다. 경찰은 신속 체포를 목표로 수사를 진행 중이며, 사건의 최종 결론은 아직 미정이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/052/0002280402"
+  ],
+  "timestamp": "2025-12-01T20:47:03.426758",
+  "youtube_videos": [
+    {
+      "title": "쿠팡 개발자의 실수 내부 데이터 확인 방법",
+      "url": "https://www.youtube.com/watch?v=NY0E_bunrxQ",
+      "videoId": "NY0E_bunrxQ",
+      "channel": {
+        "name": "우대표TV - 공부하는 사업가",
+        "url": "https://www.youtube.com/channel/UC_OW3juphmcQJKgsYCLbqLA"
+      },
+      "description": "우대표TV 채널 문의는 아래 메일로 연락주세요. 메일 : mdljun@naver.com 블로그: https://blog.naver.com/mdljun 카페 ...",
+      "publishedAt": "2024-01-05T22:58:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/NY0E_bunrxQ/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "한국에서 난리난 동탄쿠팡물류 근황",
+      "url": "https://www.youtube.com/watch?v=ue_OmxyBrsI",
+      "videoId": "ue_OmxyBrsI",
+      "channel": {
+        "name": "대나무숲",
+        "url": "https://www.youtube.com/channel/UCgmR99kIYvPa1sSS5SvMZ1w"
+      },
+      "description": "",
+      "publishedAt": "2025-03-29T06:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/ue_OmxyBrsI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "남자들이 떠나버린 쿠팡 물류센터 근황",
+      "url": "https://www.youtube.com/watch?v=qXAD2oVclrI",
+      "videoId": "qXAD2oVclrI",
+      "channel": {
+        "name": "옛썰 YetSSUL",
+        "url": "https://www.youtube.com/channel/UCdxLp00znpJ2xZVThNP82-g"
+      },
+      "description": "",
+      "publishedAt": "2025-04-06T06:05:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/qXAD2oVclrI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "현장 노동자 아이스크림 금지? 쿠팡이 붙인 안내문 봤더니… / KNN",
+      "url": "https://www.youtube.com/watch?v=5xkHi36eMas",
+      "videoId": "5xkHi36eMas",
+      "channel": {
+        "name": "KNN NEWS",
+        "url": "https://www.youtube.com/channel/UC1ifSsWUG241rRfK0ezYCgA"
+      },
+      "description": "knn뉴스 #쿠팡 #노동자 #안내문 쿠팡이 제공한 아이스크림 냉동고에는 \"쿠팡 직원님들과 협력사, 사원님들을 위한 아이스크림입니다\" ...",
+      "publishedAt": "2025-07-16T14:30:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/5xkHi36eMas/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "진짜 빡셌던 쿠팡 면접 합격썰(와 이렇게까지 면접을 본다고?)",
+      "url": "https://www.youtube.com/watch?v=OfhHVzNL0GQ",
+      "videoId": "OfhHVzNL0GQ",
+      "channel": {
+        "name": "퇴사한아빠",
+        "url": "https://www.youtube.com/channel/UCbRPfngJms9A4QOczFl6qqg"
+      },
+      "description": "18년도 쿠팡 면접합격썰입니다.(6년 전이니 참고만하세요^^) 삼성전자, KPMG, 쿠팡, 배민 다 다녀본 퇴사한아빠의 커리어이야기 가장 ...",
+      "publishedAt": "2024-11-04T05:55:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/OfhHVzNL0GQ/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "대한항공 086편 이륙지연 사건 - 나무위키",
+      "url": "https://namu.wiki/w/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5%20086%ED%8E%B8%20%EC%9D%B4%EB%A5%99%EC%A7%80%EC%97%B0%20%EC%82%AC%EA%B1%B4",
+      "snippet": "3일 전 ... 백번 양보해서 만약 대한항공 서비스 규정상 승무원의 행동이 잘못되었다고 가정하자. 이럴 경우 부사장은 고위 임원으로서 직원의 과실을 질책할 권한이 ...",
+      "displayLink": "namu.wiki"
+    },
+    {
+      "title": "아웃소싱의 메커니즘과 기업 내외에 미치는 영향",
+      "url": "https://repository.kli.re.kr/bitstream/2021.oak/942/2/%28%EC%97%B0%EA%B5%AC%EB%B3%B4%EA%B3%A0%292017-06_%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1%EC%9D%98%20%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EA%B3%BC%20%EA%B8%B0%EC%97%85%20%EB%82%B4%EC%99%B8%EC%97%90%20%EB%AF%B8%EC%B9%98%EB%8A%94%20%EC%98%81%ED%96%A5.pdf",
+      "snippet": "고용관계가 다양화되면서 그 일환으로 하청, 파견, 용역, 특수형태근로,. 민간위탁 등 고용의 외부화가 늘어 왔다. 본 연구는 이러한 현상에 주목. 하여 내부노동시장 ...",
+      "displayLink": "repository.kli.re.kr"
+    },
+    {
+      "title": "어둠보다 더 어두운, 크래프톤 '다크앤다커 모바일' 시연",
+      "url": "https://m.ruliweb.com/news/read/189680",
+      "snippet": "2023. 11. 12. ... 크래프톤은 지스타 2023에서 다크앤다커 모바일 미디어 시연회를 진행했다 원작 ip를 활용했지만 넥슨 p3 데이터 유출 논란과 관련해 100 독자적으로 ...",
+      "displayLink": "m.ruliweb.com"
+    },
+    {
+      "title": "경제정책론 기말고사 : 네이버 블로그",
+      "url": "https://blog.naver.com/skye1/222595602296",
+      "snippet": "2021. 12. 14. ... 메그비의 얼굴 인식 서비스인 '페이스++'는 중국 정부의 감시시스템과 은행, 통신 업체 인증 분야에서 널리 사용되고 있다. 앤트파이낸셜과 타오바오몰 등 ...",
+      "displayLink": "blog.naver.com"
+    },
+    {
+      "title": "제목없음",
+      "url": "https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt",
+      "snippet": "... 중국 +직 +미국 +가능 +규 +리 +통해 +활 +형 +협 +정부 +경우 +초 +야 +피 +S +새 +변 +박 +서울 +지역 +양 +필 +약 +경제 +열 +환 +체 +앞 +살 +검 +음 +심 +였 +삼 ...",
+      "displayLink": "huggingface.co"
+    },
+    {
+      "title": "Untitled",
+      "url": "https://www.smu.ac.kr/_attach/file/2023/03/mDIUwkznQvyRgPlFfYWH.pdf",
+      "snippet": "2022. 11. 14. ... 이때, 로그인 기반 챗봇을 사용하는 경우는 개인 정보 노출의 위험이 있으므로 이를 ... 은 것은 '학습자의 데이터 유출'로 3명이 선택했다. 3.2 ...",
+      "displayLink": "www.smu.ac.kr"
+    },
+    {
+      "title": "제목없음",
+      "url": "https://huggingface.co/beomi/KcELECTRA-base-v2022/raw/main/vocab.txt",
+      "snippet": "... 빼 빽 뺀 뺃 뺄 뺌 뺍 뺏 뺐 뺑 뺒 뺕 뺘 뺠 뺨 뺴 뺵 뻇 뻐 뻑 뻔 뻗 뻘 뻠 뻡 뻣 뻤 뻥 뻬 뻰 뻴 뻿 뼈 뼉 뼌 뼘 뼛 뼝 뼤 뽀 뽁 뽂 뽄 뽈 뽐 뽑 뽕 뽚 뽜 뽝 뽤 뾰 ...",
+      "displayLink": "huggingface.co"
+    },
+    {
+      "title": "1126 뉴스 :: 대한민국 영어공장 (내신/수능 워크북)",
+      "url": "https://wayne.tistory.com/1523",
+      "snippet": "뉴스 112608::강아지 구충제 품절 사태 계속 이 미국 남성은 '펜벤다졸'이라는 성분의 '강아지 구충제'를 먹고 말기 암을 치료했다고 알려졌습니다.",
+      "displayLink": "wayne.tistory.com"
+    },
+    {
+      "title": "제목없음",
+      "url": "https://huggingface.co/beomi/KcELECTRA-base/commit/4cf9eb1dfeec0a672afe73059882fc998a299ceb.diff?file=vocab.txt",
+      "snippet": "... 빼 빽 @@ -1886,45 +2090,30 @@ z 뺒 뺕 뺘 -뺙 -뺜 뺠 뺨 -뺫 -뺭 뺴 뺵 -뺸 -뺼 -뻄 뻇 -뻈 -뻉 뻐 뻑 뻔 뻗 뻘 -뻙 뻠 뻡 뻣 뻤 뻥 -뻩 뻬 -뻭 뻰 뻴 뻿 -뼁 뼈 뼉 ...",
+      "displayLink": "huggingface.co"
+    },
+    {
+      "title": "'2020/02 글 목록 :: 대한민국 영어공장 (내신/수능 워크북)",
+      "url": "https://wayne.tistory.com/archive/202002",
+      "snippet": "블루티쳐영어연구소에서 제공하는 임희재 선생님의 워크북 공장입니다. 머신러닝(ML)과 A.I, 그리고 오랜시간의 연구로 만든 명작 워크북입니다. http://btstudy.com ...",
+      "displayLink": "wayne.tistory.com"
+    }
+  ],
+  "google_count": 10
+}

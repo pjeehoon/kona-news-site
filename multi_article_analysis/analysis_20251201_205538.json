@@ -1,0 +1,549 @@
+{
+  "main_article": {
+    "title": "쿠팡에 '개인정보 있다' 협박 이메일…경찰 추적 중",
+    "url": "https://n.news.naver.com/mnews/article/052/0002280402"
+  },
+  "related_articles": [
+    {
+      "title": "\"쿠팡 내부 직원이 고객 정보 빼돌린 듯\"...경찰 수사",
+      "content": "쿠팡 고객 정보 대량 유출 사태와 관련해 경찰이 내부자 소행 가능성에 무게를 두고 수사하고 있습니다.\n서울경찰청 사이버수사대는 지난 25일, 쿠팡 측에서 고소장을 제출받아 수사에 착수했습니다.\n경찰은 쿠팡으로부터 서버 기록 등 사건 관련 자료를 임의제출 받아 분석하고 있습니다.\n경찰은 쿠팡 내부 직원이 시스템에 무단 접근해 정보를 빼돌렸을 가능성이 크다고 보고 유출 경위를 파악하고 있습니다.\n앞서 쿠팡 측은 피고소인을 특정하지 않은 채 '성명불상자'로 적어 고소장을 냈는데, 자체 조사 결과 고객 정보를 빼돌린 건 쿠팡에서 근무했던 중국 국적 직원으로 이미 퇴사 처리된 거로 전해졌습니다.\n특히, 이 직원이 이미 한국을 떠난 것으로 알려져 경찰 수사에 난관이 예상됩니다.\n유재성 경찰청장 직무대행은 다수 국민이 피해 입은 사안인 만큼, 철저한 수사를 통해 진상을 규명하고 피의자를 신속히 검거하겠다고 강조했습니다.\n※ '당신의 제보가 뉴스가 됩니다'\n[카카오톡] YTN 검색해 채널 추가\n[전화] 02-398-8585\n[메일] social@ytn.co.kr",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/052/0002280402",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Unnamed Chinese national former Coupang employee",
+        "issues": [
+          {
+            "issue_type": "Data theft allegation",
+            "details": "Suspected unauthorized access and extraction of customer data from Coupang's systems.",
+            "source": "YTN"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Coupang",
+        "responses": [
+          {
+            "issue": "Unnamed employee",
+            "clarification": "Coupang filed a complaint without naming the defendant; internal investigation identified the employee as a former Chinese national who has already left the company.",
+            "date": "2025-11-25"
+          }
+        ]
+      },
+      {
+        "person_name": "Police (서울경찰청 사이버수사대)",
+        "responses": [
+          {
+            "issue": "Investigation status",
+            "clarification": "Police are analyzing server logs and suspect internal employee; investigation ongoing despite suspect's departure from Korea.",
+            "date": "2025-11-30"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "YTN",
+        "opinion": "Police emphasize thorough investigation and swift arrest of suspect.",
+        "stance": "Neutral"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Police investigation initiated on 2025-11-25 after complaint from Coupang.",
+        "Coupang identified suspect as a former Chinese national employee who has left the company and Korea.",
+        "Police are analyzing server logs for evidence of unauthorized access."
+      ],
+      "unconfirmed_allegations": [
+        "The former employee actually stole customer data.",
+        "Extent of data breach and number of affected customers."
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-25",
+        "event": "Coupang filed complaint; police investigation started."
+      },
+      {
+        "date": "2025-11-30",
+        "event": "YTN article reporting police investigation and suspect details."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "[단독] 쿠팡 3370만명 고객정보 털렸다…&quot;내부 직원이 유출&quot; [뉴스7]",
+        "url": "https://www.youtube.com/watch?v=spgzNeOb0xk",
+        "videoId": "spgzNeOb0xk",
+        "channel": {
+          "name": "뉴스TVCHOSUN",
+          "url": "https://www.youtube.com/channel/UCWlV3Lz_55UaX4JsMj-z__Q"
+        },
+        "description": "국내 최대 온라인 커머스 업체 #쿠팡 에서 대량의 #회원정보 가 #유출 됐습니다. 쿠팡의 회원은 3천만명이 훨씬 넘습니다. 인터넷 사용 ...",
+        "publishedAt": "2025-11-29T10:13:44Z",
+        "thumbnail": "https://i.ytimg.com/vi/spgzNeOb0xk/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 계정, 사실상 다 털려…&quot;직원 소행 가능성&quot; 무슨 일 / SBS 8뉴스",
+        "url": "https://www.youtube.com/watch?v=OU25rQixNl8",
+        "videoId": "OU25rQixNl8",
+        "channel": {
+          "name": "SBS 뉴스",
+          "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+        },
+        "description": "〈앵커〉 토요일 8시 뉴스는 또 발생한 대규모 개인정보 유출 사고 소식부터 전해드립니다. 국내 1위 유통 플랫폼 쿠팡에서 무려 3 ...",
+        "publishedAt": "2025-11-29T11:21:42Z",
+        "thumbnail": "https://i.ytimg.com/vi/OU25rQixNl8/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "쿠팡 &#39;전 고객 정보 유출&#39; 5개월간 몰랐다...내부 직원 소행 가능성 / YTN",
+        "url": "https://www.youtube.com/watch?v=jP9flebNZBE",
+        "videoId": "jP9flebNZBE",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+        },
+        "description": "[앵커] 고객 4천 명의 개인정보가 유출됐다고 한 쿠팡이 9일 만에 3천370만 명, 사실상 모든 고객 정보가 유출됐다고 말을 바꿨습니다.",
+        "publishedAt": "2025-11-30T03:01:55Z",
+        "thumbnail": "https://i.ytimg.com/vi/jP9flebNZBE/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "쿠팡, 中직원 퇴사 후에도 '데이터 인증키' 방치했다",
+        "url": "https://www.chosun.com/economy/stock-finance/2025/12/01/CGWH7JCGQ5DRBK65NNASPLG2HY/",
+        "snippet": "11시간 전 ... 이번 정보 유출은 쿠팡의 중국 국적 개발자가 퇴직 후 중국에서 쿠팡 고객들의 개인 정보를 빼돌리며 일어난 것으로 전해졌다. 재직 당시 확보한 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "[단독] 쿠팡 유출 직원은 '인증 업무 담당자'...'액세스 토큰 서명키' 장기 ...",
+        "url": "https://news.jtbc.co.kr/article/NB12273106",
+        "snippet": "12시간 전 ... 쿠팡 고객 개인정보 유출 사태의 핵심 인물로 퇴사한 중국인 직원 A씨가 지목된 가운데, 해당 직원이 쿠팡 내부에서 인증 업무를 담당했던 것으로 ...",
+        "displayLink": "news.jtbc.co.kr"
+      },
+      {
+        "title": "[단독]쿠팡 3370만개 정보 유출 직원은 '중국인'…이미 퇴사, 한국 ...",
+        "url": "https://news.nate.com/view/20251129n10088",
+        "snippet": "2일 전 ... 한눈에 보는 오늘 : 경제 - 뉴스 : 쿠팡, 3370만 고객 개인정보 무단 노출... 이름·주소 등 유출 서울 송파구 쿠팡 본사. /사진=뉴시스 쿠팡 대규모 ...",
+        "displayLink": "news.nate.com"
+      },
+      {
+        "title": "\"당신 개인정보 알고 있다\" 쿠팡 중국인 前 직원, 고객에 협박메일 | 중앙 ...",
+        "url": "https://www.joongang.co.kr/article/25386390",
+        "snippet": "16시간 전 ... 특히 쿠팡 내부 직원이 정보를 유출했을 가능성이 큰데, 쿠팡은 이를 5개월간 전혀 몰랐다. 해당 직원이 퇴사 후 소비자에게 협박성 이메일을 보낸 후에야 ...",
+        "displayLink": "www.joongang.co.kr"
+      },
+      {
+        "title": "쿠팡 정보 유출, 중국 국적 전 직원 범행인 듯…퇴사 후 출국 - 노컷뉴스",
+        "url": "https://www.nocutnews.co.kr/news/6435940",
+        "snippet": "1일 전 ... 3천만 명 이상 쿠팡 고객 정보가 외부 공격이 아닌 내부 직원에 의해 유출된 것으로 보이는 정황이 나왔다. 30일 관계 기관과 수사당국에 따르면 쿠팡 ...",
+        "displayLink": "www.nocutnews.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡, 전 직원이 보낸 개인정보 협박 이메일 수사 진행 중\n\n쿠팡이 전 직원이 보낸 “개인정보 있다” 협박 메일을 조사 중이다. 2025년 11월 25일 신고 이후 경찰은 서버 로그를 분석하고 있으며, 해당 직원은 중국 국적이었고 퇴사 후 한국을 떠난 상태다. 33.7 만 건 이상의 고객 정보가 유출된 가능성이 제기되고 있다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 11월 25일 | 쿠팡이 경찰에 신고하고 수사를 요청 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| 2025년 11월 25일 | 경찰이 서버 로그 분석 시작 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| 2025년 11월 30일 | YTN이 경찰 수사 진행 상황 보도 | [YTN YouTube](https://www.youtube.com/watch?v=jP9flebNZBE) |\n| 2025년 12월 01일 | 조선일보가 전 직원이 중국 국적임을 보도 | [조선일보](https://www.chosun.com/economy/stock-finance/2025/12/01/CGWH7JCGQ5DRBK65NNASPLG2HY/) |\n| 2025년 12월 01일 | JTBC가 전 직원이 인증 업무 담당자였다고 보도 | [JTBC](https://news.jtbc.co.kr/article/NB12273106) |\n| 2025년 12월 01일 | 중앙일보가 협박 메일 내용과 전 직원 퇴사 사실을 보도 | [중앙일보](https://www.joongang.co.kr/article/25386390) |\n\n### ▶ 핵심 사건\n- **전 직원**: 중국 국적, 쿠팡에서 인증 업무 담당자였으며 퇴사 후 한국을 떠남.  \n- **협박 메일**: “당신 개인정보 알고 있다”는 내용으로 고객에게 보낸 것으로 확인.  \n- **데이터 유출 규모**: 33.7 만 건 이상의 고객 정보가 유출된 것으로 추정.  \n- **수사 현황**: 경찰은 서버 로그를 분석 중이며, 전 직원이 한국을 떠난 뒤에도 메일을 보낸 것으로 판단.\n\n## 다양한 관점과 분석\n\n| 출처 | 시각 |\n|------|------|\n| **쿠팡** | 전 직원이 퇴사 후에도 내부 정보를 유출한 것으로 확인, 회사는 즉시 신고하고 내부 조사를 진행 중. |\n| **경찰** | 수사는 내부 직원이 유출한 것으로 보이지만, 외부 침해 가능성도 배제하지 않으며, 로그 분석을 통해 정확한 경로를 추적 중. |\n| **전문가** | 인증 키와 액세스 토큰이 장기간 방치되었다는 점이 보안 취약점으로 지적. 내부 직원이 인증 업무를 담당했다는 사실이 위험을 가중시킴. |\n| **고객** | 개인정보가 유출되고 협박 메일을 받은 고객들은 불안과 불신을 표명, 쿠팡에 대한 신뢰 회복이 시급하다고 주장. |\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 쿠팡이 2025년 11월 25일 경찰에 신고 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| | 전 직원이 중국 국적이며 퇴사 후 한국을 떠남 | [조선일보](https://www.chosun.com/economy/stock-finance/2025/12/01/CGWH7JCGQ5DRBK65NNASPLG2HY/) |\n| | 경찰이 서버 로그를 분석 중 | [네이버뉴스](https://n.news.naver.com/mnews/article/052/0002280402) |\n| | 협박 메일이 고객에게 전송된 사실 | [중앙일보](https://www.joongang.co.kr/article/25386390) |\n| **미확인 정보** | 실제 유출된 데이터의 정확한 범위와 고객 수 | 아직 공개되지 않음 |\n| | 전 직원이 유출한 데이터가 실제로 협박 메일에 사용된 것 | 추정, 확인 필요 |\n| | 외부 해커가 개입했는지 여부 | 아직 확정되지 않음 |\n\n## 핵심 인물과 이해관계\n\n- **쿠팡**: 내부 보안 강화와 고객 신뢰 회복을 위해 수사 협조 및 보안 조치를 진행 중.  \n- **전 직원(중국 국적)**: 퇴사 후 한국을 떠났으나, 쿠팡 내부 시스템에 접근해 개인정보를 유출한 혐의.  \n- **경찰(서울경찰청 사이버수사대)**: 수사 책임자이며, 내부 직원이 유출한 증거를 확보하고자 로그 분석 중.  \n- **고객**: 개인정보 유출 및 협박 메일 수신으로 인해 불안과 불신이 증가.  \n- **보안 전문가**: 인증 키와 토큰 관리 부실을 지적하며, 내부 직원에 대한 접근 통제 강화 필요성 강조.\n\n## 향후 전망\n\n- **수사 진행**: 경찰은 서버 로그와 메일 서버 기록을 분석해 전 직원의 행적을 추적할 예정이며, 필요 시 국제 협력을 통해 추적 범위를 확대할 가능성.  \n- **법적 조치**: 전 직원이 한국을 떠났으므로 국제형사재판이 필요할 수 있으며, 쿠팡은 관련 법규에 따라 민사 소송을 제기할 가능성.  \n- **보안 강화**: 쿠팡은 인증 키와 액세스 토큰 관리 체계를 재정비하고, 내부 직원에 대한 접근 권한을 최소화할 계획.  \n- **고객 신뢰 회복**: 쿠팡은 피해 고객에 대한 보상 및 보안 교육을 강화하고, 정기적인 보안 점검 결과를 공개해 신뢰를 회복하려 함.  \n- **산업 전반 영향**: 이 사건은 국내 전자상거래 기업들의 내부 보안 정책 재검토를 촉발할 것으로 예상되며, 외국 국적 직원에 대한 보안 검증 절차가 강화될 가능성.\n\n---\n\n**주요 인용**  \n- 쿠팡이 2025년 11월 25일 경찰에 신고하고 수사를 요청했다.  \n- 전 직원은 중국 국적이며 쿠팡에서 인증 업무를 담당했다.  \n- 협박 메일이 고객에게 전송된 사실이 확인되었다.  \n- 경찰은 서버 로그를 분석 중이며, 전 직원이 한국을 떠난 뒤에도 메일을 보낸 것으로 판단된다.  \n\n이 사건은 개인정보 보호와 내부 보안 관리의 중요성을 다시 한 번 일깨워 주는 사례로, 관련 기업과 기관은 보안 체계를 강화해야 할 필요가 있다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/052/0002280402"
+  ],
+  "timestamp": "2025-12-01T20:55:38.861779",
+  "youtube_videos": [
+    {
+      "title": "[단독] 쿠팡 3370만명 고객정보 털렸다…&quot;내부 직원이 유출&quot; [뉴스7]",
+      "url": "https://www.youtube.com/watch?v=spgzNeOb0xk",
+      "videoId": "spgzNeOb0xk",
+      "channel": {
+        "name": "뉴스TVCHOSUN",
+        "url": "https://www.youtube.com/channel/UCWlV3Lz_55UaX4JsMj-z__Q"
+      },
+      "description": "국내 최대 온라인 커머스 업체 #쿠팡 에서 대량의 #회원정보 가 #유출 됐습니다. 쿠팡의 회원은 3천만명이 훨씬 넘습니다. 인터넷 사용 ...",
+      "publishedAt": "2025-11-29T10:13:44Z",
+      "thumbnail": "https://i.ytimg.com/vi/spgzNeOb0xk/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 계정, 사실상 다 털려…&quot;직원 소행 가능성&quot; 무슨 일 / SBS 8뉴스",
+      "url": "https://www.youtube.com/watch?v=OU25rQixNl8",
+      "videoId": "OU25rQixNl8",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "〈앵커〉 토요일 8시 뉴스는 또 발생한 대규모 개인정보 유출 사고 소식부터 전해드립니다. 국내 1위 유통 플랫폼 쿠팡에서 무려 3 ...",
+      "publishedAt": "2025-11-29T11:21:42Z",
+      "thumbnail": "https://i.ytimg.com/vi/OU25rQixNl8/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 &#39;전 고객 정보 유출&#39; 5개월간 몰랐다...내부 직원 소행 가능성 / YTN",
+      "url": "https://www.youtube.com/watch?v=jP9flebNZBE",
+      "videoId": "jP9flebNZBE",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "[앵커] 고객 4천 명의 개인정보가 유출됐다고 한 쿠팡이 9일 만에 3천370만 명, 사실상 모든 고객 정보가 유출됐다고 말을 바꿨습니다.",
+      "publishedAt": "2025-11-30T03:01:55Z",
+      "thumbnail": "https://i.ytimg.com/vi/jP9flebNZBE/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;중국인 직원 소행인 듯&quot;...국내 성인 &#39;4명 중 3명&#39; 털렸다 [지금이뉴스] / YTN",
+      "url": "https://www.youtube.com/watch?v=of1f0Zjny9k",
+      "videoId": "of1f0Zjny9k",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "3천만명 넘는 쿠팡 고객의 이름과 전화번호, 주소 등 정보가 유출된 것은 외부 해킹이 아닌 내부자 소행인 것으로 파악됐습니다.",
+      "publishedAt": "2025-11-30T04:21:58Z",
+      "thumbnail": "https://i.ytimg.com/vi/of1f0Zjny9k/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[자막뉴스] 쿠팡 고객 아니어도 위험...&#39;정보 유출자&#39; 충격적인 정황 / YTN",
+      "url": "https://www.youtube.com/watch?v=Kz9P-SkNrtw",
+      "videoId": "Kz9P-SkNrtw",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "쿠팡은 어제 오후 개인정보가 노출된 고객 계정이 무려 3천370만 개로 확인됐다고 밝혔습니다. 쿠팡의 전체 회원 수는 정확히 ...",
+      "publishedAt": "2025-11-30T03:32:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/Kz9P-SkNrtw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "내부직원이 유출 쿠팡해킹 3300만개",
+      "url": "https://www.youtube.com/watch?v=VG4HjjBi8qM",
+      "videoId": "VG4HjjBi8qM",
+      "channel": {
+        "name": "콩만이",
+        "url": "https://www.youtube.com/channel/UCG0ahKU9wEtCmp_IoJapg9A"
+      },
+      "description": "내부직원이 유출 쿠팡해킹 3300만개.",
+      "publishedAt": "2025-11-29T13:06:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/VG4HjjBi8qM/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "절대 방치하면 안 되는 쿠팡 개인정보 내부 직원 유출 지금 당장 해야 할 행동 정리!!",
+      "url": "https://www.youtube.com/watch?v=m32gv3Y0SOc",
+      "videoId": "m32gv3Y0SOc",
+      "channel": {
+        "name": "뉴스 공사 반장 ",
+        "url": "https://www.youtube.com/channel/UCHmcNlgzic3aGnrnPQ25n4w"
+      },
+      "description": "쿠팡 #쿠팡개인정보 #쿠팡해킹 (이미지출처) - TVCHOSUN 쿠팡 개인정보 유출 안내 문자를 받았다면, 이미 피해 가능성이 매우 높은 ...",
+      "publishedAt": "2025-11-30T13:30:50Z",
+      "thumbnail": "https://i.ytimg.com/vi/m32gv3Y0SOc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 &#39;3천400만명&#39; 정보 유출은 중국인 직원 소행 추정 #shorts",
+      "url": "https://www.youtube.com/watch?v=wa7ITQUiMVk",
+      "videoId": "wa7ITQUiMVk",
+      "channel": {
+        "name": "연합뉴스 Yonhapnews",
+        "url": "https://www.youtube.com/channel/UCj3_t5p4L4aFsvdW3uHjnnw"
+      },
+      "description": "(서울=연합뉴스) 국내 이커머스(전자상거래) 시장 1위 업체인 쿠팡에서 약 3천400만건의 대규모 정보 유출 사고가 발생하면서 소비자 ...",
+      "publishedAt": "2025-11-30T06:51:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/wa7ITQUiMVk/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 정보 유출 &#39;내부 직원&#39; 추정 중국 국적에 한국 떠나 수사 난항?/ KNN",
+      "url": "https://www.youtube.com/watch?v=9wviVzSlEkw",
+      "videoId": "9wviVzSlEkw",
+      "channel": {
+        "name": "KNN NEWS",
+        "url": "https://www.youtube.com/channel/UC1ifSsWUG241rRfK0ezYCgA"
+      },
+      "description": "knn뉴스 #쿠팡 #정보유출 국내 전자상거래 시장 1위 업체인 쿠팡에서 약 3천400만 건의 대규모 정보 유출 사고가 발생하면서 소비자 ...",
+      "publishedAt": "2025-11-30T08:15:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/9wviVzSlEkw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[지금뉴스] 쿠팡, 3천만 계정 유출 범인은 ‘중국 국적 직원?’ 묻자…“수사에 영향” / KBS 2025.11.30.",
+      "url": "https://www.youtube.com/watch?v=AuUj2F2LX3A",
+      "videoId": "AuUj2F2LX3A",
+      "channel": {
+        "name": "KBS News",
+        "url": "https://www.youtube.com/channel/UCcQTRi69dsVYHN3exePtZ1A"
+      },
+      "description": "쿠팡이 3370만명의 대규모 개인정보 유출 사고에 대해 공개 사과했습니다. 박대준 쿠팡 대표는 오늘(30일) 오후 정부서울청사에서 ...",
+      "publishedAt": "2025-11-30T10:03:59Z",
+      "thumbnail": "https://i.ytimg.com/vi/AuUj2F2LX3A/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 고객 3천만 명 개인정보 유출…“내부 직원 소행”",
+      "url": "https://www.youtube.com/watch?v=docJOJCXRV8",
+      "videoId": "docJOJCXRV8",
+      "channel": {
+        "name": "스페셜타임스",
+        "url": "https://www.youtube.com/channel/UCkK6LIRebJFES-RIha2TMLA"
+      },
+      "description": "쿠팡 고객 3천만 명의 개인정보가 내부 직원에 의해 유출됐습니다. 외부 해킹이 아닌 전 직원의 소행으로 알려졌고, 그는 현재 한국을 ...",
+      "publishedAt": "2025-11-30T03:56:17Z",
+      "thumbnail": "https://i.ytimg.com/vi/docJOJCXRV8/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 고객정보 전부 털려…&quot;내부인 소행 가능성&quot; / SBS",
+      "url": "https://www.youtube.com/watch?v=1kxUrcKzDjc",
+      "videoId": "1kxUrcKzDjc",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "〈앵커〉 국내 1위 유통 플랫폼 쿠팡에서 약 3천370만 개 고객 계정정보가 외부에 유출된 것으로 드러났습니다. 사실상 쿠팡 모든 ...",
+      "publishedAt": "2025-11-29T22:32:18Z",
+      "thumbnail": "https://i.ytimg.com/vi/1kxUrcKzDjc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;쿠팡 내부 직원이 정보 빼돌린 듯&quot;...경찰 신속 수사 / YTN",
+      "url": "https://www.youtube.com/watch?v=OSfFzltR0lY",
+      "videoId": "OSfFzltR0lY",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "[앵커] 쿠팡 고객 정보 대량 유출 사태와 관련해 경찰은 내부자 소행 가능성에 무게를 두고 수사하고 있습니다. 쿠팡 측에서 넘겨받은 ...",
+      "publishedAt": "2025-11-30T09:51:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/OSfFzltR0lY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "보이스 피싱이 이제 더 심해집니다... 쿠팡 개인정보 3370만 건 유출 | 이름, 전화번호, 주소까지 ㄷㄷ",
+      "url": "https://www.youtube.com/watch?v=voliK9nTOTc",
+      "videoId": "voliK9nTOTc",
+      "channel": {
+        "name": "안될공학 - IT 테크 신기술",
+        "url": "https://www.youtube.com/channel/UCeN2YeJcBCRJoXgzF_OU3qw"
+      },
+      "description": "이번 영상에서는 최근 논란이 된 쿠팡 개인정보 유출 사건을 시간 순서대로 정리했습니다. 쿠팡과 정부가 공식적으로 밝힌 내용과, ...",
+      "publishedAt": "2025-11-29T18:42:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/voliK9nTOTc/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[자막뉴스] &#39;결정적 정보&#39; 유출...쿠팡 고객 지인까지 날벼락 / YTN",
+      "url": "https://www.youtube.com/watch?v=_2_kK2DGSzU",
+      "videoId": "_2_kK2DGSzU",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "쿠팡이 밝힌 개인정보 노출 고객 계정은 3천370만 개로 거의 모든 고객 정보가 유출됐습니다. 우리 국민 성인 4명 중 3명의 정보가 ...",
+      "publishedAt": "2025-11-30T09:22:03Z",
+      "thumbnail": "https://i.ytimg.com/vi/_2_kK2DGSzU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 고객 3370만명 정보 유출… 내부 직원 소행으로 드러났다",
+      "url": "https://www.youtube.com/watch?v=ktdq63Lq0l4",
+      "videoId": "ktdq63Lq0l4",
+      "channel": {
+        "name": "aiwithjjung",
+        "url": "https://www.youtube.com/channel/UCGMhmOXCNsqmm2BwoNptjLA"
+      },
+      "description": "쿠팡 고객 거의 전원… 3370만명 정보가 유출됐습니다.” 6일 오후, 쿠팡 고객 약 4500명의 계정에 비정상적 접근이 감지됐습니다.",
+      "publishedAt": "2025-11-30T10:01:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/ktdq63Lq0l4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "“로그인 없이 정보 유출”..용의자는 전직 직원? - [LIVE] MBC뉴스데스크 &amp; 스트레이트 2025년 11월 30일",
+      "url": "https://www.youtube.com/watch?v=yxb4-VVBahE",
+      "videoId": "yxb4-VVBahE",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/channel/UCF4Wxdo3inmxP-Y59wXDsFw"
+      },
+      "description": "'쿠팡 대규모 유출' 내부 직원 소행 가능성 경찰 수사...정부 민관합동조사단 가동 \"쿠팡 서버 인증 취약점 악용\" / 박대준 쿠팡 대표, 정부 ...",
+      "publishedAt": "2025-11-30T12:13:24Z",
+      "thumbnail": "https://i.ytimg.com/vi/yxb4-VVBahE/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;쿠팡 내부 직원이 정보 빼돌린 듯&quot;...경찰 신속 수사 / YTN",
+      "url": "https://www.youtube.com/watch?v=7gPWOkI6Bcg",
+      "videoId": "7gPWOkI6Bcg",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w"
+      },
+      "description": "[앵커] 쿠팡 고객 정보 대량 유출 사태와 관련해 경찰은 내부자 소행 가능성에 무게를 두고 수사하고 있습니다. 쿠팡 측에서 넘겨받은 ...",
+      "publishedAt": "2025-11-30T13:39:03Z",
+      "thumbnail": "https://i.ytimg.com/vi/7gPWOkI6Bcg/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡, ‘고객 정보 3370만 개 유출’에 중국인 전 직원 연루설 [현장영상] /채널A",
+      "url": "https://www.youtube.com/watch?v=1TXWvRPYG08",
+      "videoId": "1TXWvRPYG08",
+      "channel": {
+        "name": "채널A News",
+        "url": "https://www.youtube.com/channel/UCfq4V1DAuaojnr2ryvWNysw"
+      },
+      "description": "국내 최대 전자상거래 업체 쿠팡에서 벌어진 고객 계정 정보 3370만 개 유출 사건이 내부 소행일 가능성이 제기됐습니다. 중국 국적의 ...",
+      "publishedAt": "2025-11-30T05:28:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/1TXWvRPYG08/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[단독]美에 “직원 유출 위험” 보고했는데…쿠팡, 5개월간 몰랐다 / 채널A / 뉴스A",
+      "url": "https://www.youtube.com/watch?v=66kxbOQx4hY",
+      "videoId": "66kxbOQx4hY",
+      "channel": {
+        "name": "채널A News",
+        "url": "https://www.youtube.com/channel/UCfq4V1DAuaojnr2ryvWNysw"
+      },
+      "description": "[단독]美에 “직원 유출 위험” 보고했는데…쿠팡, 5개월간 몰랐다 이번 사태는 내부 직원 소행으로 추정되는 만큼 쿠팡의 보안 체계나 ...",
+      "publishedAt": "2025-11-30T11:13:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/66kxbOQx4hY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 해킹은 내부 직원 소행?…&#39;성명불상자&#39; 수사 착수｜보다못한 정부도 팔 걷었다…민관합동조사단 구성 [뉴스쏙] / 연합뉴스TV(YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=8ZliG95VUAw",
+      "videoId": "8ZliG95VUAw",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+      },
+      "description": "쿠팡에서 개인정보가 노출된 고객 계정수가 3370만 개에 달하는 것으로 파악됐습니다. 이에 정부가 민관합동조사단을 구성해 대응에 ...",
+      "publishedAt": "2025-11-30T05:54:17Z",
+      "thumbnail": "https://i.ytimg.com/vi/8ZliG95VUAw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "보안 철저하던 쿠팡, 내부 직원에 뚫렸다 #뉴스 #쇼츠뉴스 #대한민국 #쿠팡 #개인정보보호",
+      "url": "https://www.youtube.com/watch?v=Fn9xPvVmLvY",
+      "videoId": "Fn9xPvVmLvY",
+      "channel": {
+        "name": "지식다잇소",
+        "url": "https://www.youtube.com/channel/UCeGhbF6F_zqhNw12U99Ij1g"
+      },
+      "description": "대한민국 최대 e커머스 기업 쿠팡의 고객 정보 대규모 유출 사태. 내부 직원이 빼돌린 이 사건은 3370만 명의 개인 정보를 위협하고 ...",
+      "publishedAt": "2025-11-30T22:00:25Z",
+      "thumbnail": "https://i.ytimg.com/vi/Fn9xPvVmLvY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "&quot;쿠팡 IT 인력 절반 이상 중국인&quot;…내부 폭로에 &#39;발칵&#39; (자막뉴스) / SBS",
+      "url": "https://www.youtube.com/watch?v=ZS85HmWgJx4",
+      "videoId": "ZS85HmWgJx4",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "최근 직장인 익명 커뮤니티 '블라인드'에 올라온 게시글입니다. 글쓴이는 자신을 쿠팡 소속 개발자라고 밝히며, 현재 쿠팡의 IT 인력 ...",
+      "publishedAt": "2025-12-01T04:40:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/ZS85HmWgJx4/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "경찰, 쿠팡 서버 자료 확보…전 중국인 직원 유출 추정 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=bKjz0YNLKPI",
+      "videoId": "bKjz0YNLKPI",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+      },
+      "description": "쿠팡에서 3천만 건이 넘는 대규모 개인정보 유출 사고가 발생한 가운데 경찰이 쿠팡 내부 자료를 확보해 용의자를 추적하고 있습니다.",
+      "publishedAt": "2025-11-30T08:08:59Z",
+      "thumbnail": "https://i.ytimg.com/vi/bKjz0YNLKPI/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "쿠팡 고객정보 유출 수사 착수…민관 합동 조사도 / SBS",
+      "url": "https://www.youtube.com/watch?v=_bBkOu6ox_g",
+      "videoId": "_bBkOu6ox_g",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "〈앵커〉 국내 1위 전자상거래 업체 쿠팡에서 3천만 개가 넘는 고객 계정 정보가 유출된 것으로 드러났습니다. 쿠팡 내부 직원의 소행 ...",
+      "publishedAt": "2025-11-30T03:25:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/_bBkOu6ox_g/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 25,
+  "google_articles": [
+    {
+      "title": "쿠팡, 中직원 퇴사 후에도 '데이터 인증키' 방치했다",
+      "url": "https://www.chosun.com/economy/stock-finance/2025/12/01/CGWH7JCGQ5DRBK65NNASPLG2HY/",
+      "snippet": "11시간 전 ... 이번 정보 유출은 쿠팡의 중국 국적 개발자가 퇴직 후 중국에서 쿠팡 고객들의 개인 정보를 빼돌리며 일어난 것으로 전해졌다. 재직 당시 확보한 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "[단독] 쿠팡 유출 직원은 '인증 업무 담당자'...'액세스 토큰 서명키' 장기 ...",
+      "url": "https://news.jtbc.co.kr/article/NB12273106",
+      "snippet": "12시간 전 ... 쿠팡 고객 개인정보 유출 사태의 핵심 인물로 퇴사한 중국인 직원 A씨가 지목된 가운데, 해당 직원이 쿠팡 내부에서 인증 업무를 담당했던 것으로 ...",
+      "displayLink": "news.jtbc.co.kr"
+    },
+    {
+      "title": "[단독]쿠팡 3370만개 정보 유출 직원은 '중국인'…이미 퇴사, 한국 ...",
+      "url": "https://news.nate.com/view/20251129n10088",
+      "snippet": "2일 전 ... 한눈에 보는 오늘 : 경제 - 뉴스 : 쿠팡, 3370만 고객 개인정보 무단 노출... 이름·주소 등 유출 서울 송파구 쿠팡 본사. /사진=뉴시스 쿠팡 대규모 ...",
+      "displayLink": "news.nate.com"
+    },
+    {
+      "title": "\"당신 개인정보 알고 있다\" 쿠팡 중국인 前 직원, 고객에 협박메일 | 중앙 ...",
+      "url": "https://www.joongang.co.kr/article/25386390",
+      "snippet": "16시간 전 ... 특히 쿠팡 내부 직원이 정보를 유출했을 가능성이 큰데, 쿠팡은 이를 5개월간 전혀 몰랐다. 해당 직원이 퇴사 후 소비자에게 협박성 이메일을 보낸 후에야 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "쿠팡 정보 유출, 중국 국적 전 직원 범행인 듯…퇴사 후 출국 - 노컷뉴스",
+      "url": "https://www.nocutnews.co.kr/news/6435940",
+      "snippet": "1일 전 ... 3천만 명 이상 쿠팡 고객 정보가 외부 공격이 아닌 내부 직원에 의해 유출된 것으로 보이는 정황이 나왔다. 30일 관계 기관과 수사당국에 따르면 쿠팡 ...",
+      "displayLink": "www.nocutnews.co.kr"
+    },
+    {
+      "title": "[단독]쿠팡 3370만개 정보 유출 직원은 '중국인'...이미 퇴사, 한국 ...",
+      "url": "https://www.mt.co.kr/living/2025/11/29/2025112920282541860",
+      "snippet": "2일 전 ... 쿠팡 대규모 개인정보 유출 사태의 핵심 관련자가 중국 국적의 전(前) 직원인 것으로 확인됐다. 이 직원은 사건 발생 직후 한국을 떠나 중국으로 귀국 ...",
+      "displayLink": "www.mt.co.kr"
+    },
+    {
+      "title": "쿠팡 개인정보 3천370만건 유출…경찰, '중국인 근로자' 용의자 지목",
+      "url": "https://www.kyeonggi.com/article/20251130580045",
+      "snippet": "1일 전 ... 그러나 이 직원이 중국 국적인 데다 이미 한국을 떠난 것으로 알려져 조사와 수사가 난항을 겪을 것으로 보인다. 경찰 수사와 별개로 정부는 민간 전문가 ...",
+      "displayLink": "www.kyeonggi.com"
+    },
+    {
+      "title": "쿠팡 고객정보 유출 범인, 퇴사한 중국 직원 유력...경찰 수사 중",
+      "url": "https://v.daum.net/v/20251130123440634?f=p",
+      "snippet": "1일 전 ... 3천만명 넘는 쿠팡 고객 계정의 개인 정보가 외부 해킹이 아닌 쿠팡 직원으로부터 유출된 것으로 알려졌다. 30일 연합뉴스에 따르면 서울경찰청 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "중국 국적 전 직원이 유출한 듯‥'쿠팡' 민관조사",
+      "url": "https://imnews.imbc.com/replay/2025/nw1200/article/6780512_36769.html",
+      "snippet": "1일 전 ... 쿠팡 고객 개인정보 3천370만 건이 유출된 사실이 드러나면서, 정부가 민관합동조사단을 꾸려 즉각 대응에 나섰습니다. 이번 유출이 과거 쿠팡에 근무 ...",
+      "displayLink": "imnews.imbc.com"
+    },
+    {
+      "title": "쿠팡 고객정보, 퇴사한 중국인 직원이 유출한 듯…수사 난항 우려",
+      "url": "https://v.daum.net/v/20251130112346162",
+      "snippet": "1일 전 ... 3300만명 넘는 쿠팡 고객의 이름과 전화번호, 주소 등 정보가 유출된 것은 외부 해킹이 아닌 중국 국적의 직원 소행인 것으로 파악됐다.",
+      "displayLink": "v.daum.net"
+    }
+  ],
+  "google_count": 10
+}
