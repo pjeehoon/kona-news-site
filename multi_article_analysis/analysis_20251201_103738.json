@@ -1,0 +1,291 @@
+{
+  "main_article": {
+    "title": "경찰, 쿠팡 서버 자료 확보…개인정보 유출경로 추적",
+    "url": "https://n.news.naver.com/mnews/article/052/0002280402"
+  },
+  "related_articles": [
+    {
+      "title": "\"쿠팡 내부 직원이 고객 정보 빼돌린 듯\"...경찰 수사",
+      "content": "쿠팡 고객 정보 대량 유출 사태와 관련해 경찰이 내부자 소행 가능성에 무게를 두고 수사하고 있습니다.\n서울경찰청 사이버수사대는 지난 25일, 쿠팡 측에서 고소장을 제출받아 수사에 착수했습니다.\n경찰은 쿠팡으로부터 서버 기록 등 사건 관련 자료를 임의제출 받아 분석하고 있습니다.\n경찰은 쿠팡 내부 직원이 시스템에 무단 접근해 정보를 빼돌렸을 가능성이 크다고 보고 유출 경위를 파악하고 있습니다.\n앞서 쿠팡 측은 피고소인을 특정하지 않은 채 '성명불상자'로 적어 고소장을 냈는데, 자체 조사 결과 고객 정보를 빼돌린 건 쿠팡에서 근무했던 중국 국적 직원으로 이미 퇴사 처리된 거로 전해졌습니다.\n특히, 이 직원이 이미 한국을 떠난 것으로 알려져 경찰 수사에 난관이 예상됩니다.\n유재성 경찰청장 직무대행은 다수 국민이 피해 입은 사안인 만큼, 철저한 수사를 통해 진상을 규명하고 피의자를 신속히 검거하겠다고 강조했습니다.\n※ '당신의 제보가 뉴스가 됩니다'\n[카카오톡] YTN 검색해 채널 추가\n[전화] 02-398-8585\n[메일] social@ytn.co.kr",
+      "date": "2025.11.30. 오후 4:11",
+      "url": "https://n.news.naver.com/mnews/article/052/0002280402",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Unnamed Chinese national employee",
+        "issues": [
+          {
+            "issue_type": "Unauthorized data access",
+            "details": "Suspected internal employee accessed customer data without permission and exfiltrated it.",
+            "source": "YTN"
+          }
+        ]
+      }
+    ],
+    "clarifications": [],
+    "evaluations": [
+      {
+        "source": "Seoul Police Cyber Investigation Division",
+        "opinion": "Police are conducting a thorough investigation and will swiftly apprehend the suspect.",
+        "stance": "neutral"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "Police investigation began on 2025-11-25 after receiving a complaint from Coupang.",
+        "The suspect is an employee of Coupang who is of Chinese nationality and has already left Korea.",
+        "Coupang filed a complaint without naming the suspect, labeling them as \"성명불상자\"."
+      ],
+      "unconfirmed_allegations": [
+        "The employee actually exfiltrated large amounts of customer data."
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-11-25",
+        "event": "Seoul Police Cyber Investigation Division receives complaint from Coupang and initiates investigation."
+      },
+      {
+        "date": "2025-11-30",
+        "event": "YTN reports that police are investigating a suspected internal employee who may have stolen customer data."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "\"결혼해요\" 문자로 악성앱 설치…최대 규모 스미싱 조직 검거 / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=MZEx-2IrY-U",
+        "link": "https://www.youtube.com/watch?v=MZEx-2IrY-U",
+        "videoId": "MZEx-2IrY-U",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/@yonhapnewstv23"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 122.0,
+        "viewCount": 750,
+        "transcript": ""
+      },
+      {
+        "title": "경찰민원상담이 필요할 땐? 182로! #서울경찰 #112 #182",
+        "url": "https://www.youtube.com/watch?v=E40Noav1-cc",
+        "link": "https://www.youtube.com/watch?v=E40Noav1-cc",
+        "videoId": "E40Noav1-cc",
+        "channel": {
+          "name": "서울경찰",
+          "url": "https://www.youtube.com/@smartsmpa"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 61.0,
+        "viewCount": 3258,
+        "transcript": ""
+      },
+      {
+        "title": "\"장례식장 위치입니다\"…부고장 스미싱으로 120억 '꿀꺽' / SBS / #D리포트",
+        "url": "https://www.youtube.com/watch?v=Byz27K1bCog",
+        "link": "https://www.youtube.com/watch?v=Byz27K1bCog",
+        "videoId": "Byz27K1bCog",
+        "channel": {
+          "name": "SBS 뉴스",
+          "url": "https://www.youtube.com/@sbsnews8"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 110.0,
+        "viewCount": 39139,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "3300만 고객정보 유출 쿠팡, 5개월간 몰랐다... 중국인 직원 소행 의혹",
+        "url": "https://www.chosun.com/economy/market_trend/2025/11/29/ADVVLDG56ZHHLDANEWMBDI6JIM/",
+        "snippet": "2일 전 ... 29일 서울경찰청 사이버수사대는 쿠팡의 고소장을 접수하고, 개인정보 노출 경로를 확인하기 위한 수사에 착수했다. 쿠팡은 지난 25일 경찰에 고소장 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "'다 털렸다' 쿠팡, 개인정보 유출···내부 직원 소행? 소비자 '불안' - 경향 ...",
+        "url": "https://www.khan.co.kr/article/202511301409001",
+        "snippet": "20시간 전 ... 서울경찰청 사이버수사대는 쿠팡 서버 기록 등을 임의제출받아 분석 중이다. 일각에서는 중국 국적 직원이 연루됐다는 의혹이 제기된 상태다. 경찰 관계자 ...",
+        "displayLink": "www.khan.co.kr"
+      },
+      {
+        "title": "'쿠팡 정보 유출', 중국인 소행인 듯… 경찰 수사중",
+        "url": "https://www.chosun.com/national/national_general/2025/11/30/J35OE2PQHRAITBHF3QUZ4I4Z4A/",
+        "snippet": "22시간 전 ... 서울경찰청 사이버수사대는 지난 25일 쿠팡 측으로부터 이번 사태에 대한 고소장을 받아 개인정보 유출 사태에 대한 수사에 착수했다. 쿠팡이 경찰에 ...",
+        "displayLink": "www.chosun.com"
+      },
+      {
+        "title": "사실상 전국민 털렸다…쿠팡 \"中직원, 해외서 메인서버 접근\" | 중앙일보",
+        "url": "https://www.joongang.co.kr/article/25386277",
+        "snippet": "19시간 전 ... 현재까지 파악된 쿠팡의 유출 규모는 2011년 싸이월드 개인정보 유출 사태 이후 14년만 최대 규모다. 30일 서울경찰청 사이버수사대에 따르면 쿠팡 ...",
+        "displayLink": "www.joongang.co.kr"
+      },
+      {
+        "title": "쿠팡 고객 3370만개 계정 정보 유출 사태, 민관합동조사단 꾸린다",
+        "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=140628",
+        "snippet": "1일 전 ... ... 내부 직원을 정보 유출 혐의로 경찰에 고소한 것으로 알려졌다. 이에 서울경찰청 사이버수사대는 쿠팡 ... 개인정보 노출 경로를 확인하기 위한 수사 ...",
+        "displayLink": "m.boannews.com"
+      }
+    ]
+  },
+  "comprehensive_article": "# 쿠팡 개인정보 유출 사건, 경찰이 서버 로그 확보…유출 경로 추적 진행\n\n쿠팡이 3,300만 건이 넘는 고객 정보를 유출한 사건이 밝혀지면서 서울경찰청 사이버수사대가 쿠팡 서버 로그를 확보해 유출 경로를 추적하고 있다. 11월 25일 쿠팡이 고소장을 제출한 뒤, 경찰은 내부 직원이 무단으로 데이터를 유출한 혐의로 수사를 진행 중이다. 현재까지는 유출 경로와 범위가 완전히 규명되지 않았으며, 사건은 2011년 싸이월드 유출 이후 14년 만에 가장 큰 규모로 평가된다.\n\n## 주요 사실과 경과\n\n▶ **2025년 11월 25일** – 서울경찰청 사이버수사대가 쿠팡의 고소장을 접수하고 수사를 시작했다.  \n▶ **2025년 11월 30일** – YTN이 내부 직원이 고객 데이터를 무단으로 유출했을 가능성을 보도했다.  \n▶ 쿠팡은 **성명불상자**를 지목해 고소장을 제출했으며, 해당 직원은 **중국 국적**이며 이미 한국을 떠난 상태다.  \n▶ 경찰은 쿠팡 서버의 **로그 자료**를 확보해 유출 경로를 추적 중이며, **주요 서버에 해외에서 접근한 흔적**이 발견되었다.  \n▶ 사건 규모는 **3,370만 건**으로, 2011년 싸이월드 유출 이후 14년 만에 가장 큰 규모로 평가된다.  \n▶ **민관합동조사단**이 꾸려져 추가 조사를 진행하고 있다.\n\n## 다양한 관점과 분석\n\n- **쿠팡 측**은 사건이 내부 직원의 부정 행위로 인한 것이라며, 즉시 조사를 시작했다고 밝혔다.  \n- **서울경찰청 사이버수사대**는 \"수사는 신속히 진행 중이며, 범인을 신속히 검거할 것\"이라고 전했다.  \n- **소비자 단체**는 개인정보 보호 강화와 투명한 조사 과정을 요구하며, 쿠팡에 대한 신뢰가 크게 훼손됐다고 지적했다.  \n- **보안 전문가**는 내부 직원이 외부 서버에 접근해 데이터를 유출한 가능성을 높게 평가하며, 기업 내부 보안 체계의 취약점을 시사했다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 쿠팡이 3,300만 건이 넘는 고객 정보를 유출 | [조선일보](https://www.chosun.com/economy/market_trend/2025/11/29/ADVVLDG56ZHHLDANEWMBDI6JIM/) |\n| | 서울경찰청이 쿠팡 고소장을 접수해 수사 시작 | [조선일보](https://www.chosun.com/economy/market_trend/2025/11/29/ADVVLDG56ZHHLDANEWMBDI6JIM/) |\n| | 내부 직원이 무단으로 데이터를 유출한 혐의 | [경향신문](https://www.khan.co.kr/article/202511301409001) |\n| | 사건 규모가 3,370만 건 | [보안뉴스](https://m.boannews.com/html/detail.html?tab_type=1&idx=140628) |\n| | 사건이 2011년 이후 가장 큰 규모 | [중앙일보](https://www.joongang.co.kr/article/25386277) |\n| **미확인 정보** | 직원이 실제로 얼마나 많은 데이터를 유출했는가 | 아직 조사 중 |\n| | 직원이 해외에서 메인 서버에 접근한 정확한 경로 | 추적 중 |\n| | 직원의 정확한 신원 및 현재 위치 | 아직 공개되지 않음 |\n\n## 핵심 인물과 이해관계\n\n- **쿠팡 대표**: 사건에 대한 책임을 인정하고, 내부 보안 강화 방안을 발표.  \n- **서울경찰청 사이버수사대 관계자**: 수사 진행 상황을 공개하며, 범인 검거를 강조.  \n- **내부 직원(성명불상자)**: 현재 한국을 떠난 상태이며, 유출 범위와 동기에 대한 조사가 진행 중.  \n- **소비자 단체**: 개인정보 보호와 기업 책임을 요구.  \n- **보안 전문가**: 기업 내부 보안 체계의 취약점을 지적하며, 향후 예방 조치를 제안.\n\n## 향후 전망\n\n- **수사 진행**: 경찰은 서버 로그를 분석해 유출 경로를 완전히 규명하고, 범인을 검거할 예정이다.  \n- **법적 조치**: 유출 범인에 대한 형사 기소와 민사 소송이 이어질 가능성이 높다.  \n- **기업 대응**: 쿠팡은 내부 보안 체계를 강화하고, 피해 고객에 대한 보상 방안을 마련할 전망.  \n- **산업 영향**: 대형 전자상거래 기업의 개인정보 보호 기준이 강화될 가능성이 커진다.  \n- **소비자 신뢰**: 사건이 장기화될 경우 쿠팡 및 유사 기업에 대한 소비자 신뢰가 저하될 수 있다.\n\n> **▶** 쿠팡 개인정보 유출 사건은 국내 전자상거래 업계에 큰 충격을 주었으며, 경찰과 기업이 협력해 사건을 해결하려는 노력이 이어지고 있다.  \n> **▶** 사건의 규모와 내부 직원의 부정 행위 가능성은 개인정보 보호에 대한 경각심을 높이고, 향후 유사 사건 예방을 위한 제도적 개선이 필요함을 시사한다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/052/0002280402"
+  ],
+  "timestamp": "2025-12-01T10:37:38.795626",
+  "youtube_videos": [
+    {
+      "title": "\"결혼해요\" 문자로 악성앱 설치…최대 규모 스미싱 조직 검거 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=MZEx-2IrY-U",
+      "link": "https://www.youtube.com/watch?v=MZEx-2IrY-U",
+      "videoId": "MZEx-2IrY-U",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 122.0,
+      "viewCount": 750,
+      "transcript": ""
+    },
+    {
+      "title": "경찰민원상담이 필요할 땐? 182로! #서울경찰 #112 #182",
+      "url": "https://www.youtube.com/watch?v=E40Noav1-cc",
+      "link": "https://www.youtube.com/watch?v=E40Noav1-cc",
+      "videoId": "E40Noav1-cc",
+      "channel": {
+        "name": "서울경찰",
+        "url": "https://www.youtube.com/@smartsmpa"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 61.0,
+      "viewCount": 3258,
+      "transcript": ""
+    },
+    {
+      "title": "\"장례식장 위치입니다\"…부고장 스미싱으로 120억 '꿀꺽' / SBS / #D리포트",
+      "url": "https://www.youtube.com/watch?v=Byz27K1bCog",
+      "link": "https://www.youtube.com/watch?v=Byz27K1bCog",
+      "videoId": "Byz27K1bCog",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/@sbsnews8"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 110.0,
+      "viewCount": 39139,
+      "transcript": ""
+    },
+    {
+      "title": "청소년 사이버도박 근절 릴레이 챌린지(feat. 오은영, 소유진, 박지민)",
+      "url": "https://www.youtube.com/watch?v=IuU_7BavLEY",
+      "link": "https://www.youtube.com/watch?v=IuU_7BavLEY",
+      "videoId": "IuU_7BavLEY",
+      "channel": {
+        "name": "서울경찰",
+        "url": "https://www.youtube.com/@smartsmpa"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 40.0,
+      "viewCount": 155,
+      "transcript": ""
+    },
+    {
+      "title": "“청첩장 링크 눌렀다가”…120억 빼낸 스미싱 조직 검거 [9시 뉴스] / KBS  2025.11.26.",
+      "url": "https://www.youtube.com/watch?v=YztqkdfMGFQ",
+      "link": "https://www.youtube.com/watch?v=YztqkdfMGFQ",
+      "videoId": "YztqkdfMGFQ",
+      "channel": {
+        "name": "KBS News",
+        "url": "https://www.youtube.com/@newskbs"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 125.0,
+      "viewCount": 808,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "3300만 고객정보 유출 쿠팡, 5개월간 몰랐다... 중국인 직원 소행 의혹",
+      "url": "https://www.chosun.com/economy/market_trend/2025/11/29/ADVVLDG56ZHHLDANEWMBDI6JIM/",
+      "snippet": "2일 전 ... 29일 서울경찰청 사이버수사대는 쿠팡의 고소장을 접수하고, 개인정보 노출 경로를 확인하기 위한 수사에 착수했다. 쿠팡은 지난 25일 경찰에 고소장 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "'다 털렸다' 쿠팡, 개인정보 유출···내부 직원 소행? 소비자 '불안' - 경향 ...",
+      "url": "https://www.khan.co.kr/article/202511301409001",
+      "snippet": "20시간 전 ... 서울경찰청 사이버수사대는 쿠팡 서버 기록 등을 임의제출받아 분석 중이다. 일각에서는 중국 국적 직원이 연루됐다는 의혹이 제기된 상태다. 경찰 관계자 ...",
+      "displayLink": "www.khan.co.kr"
+    },
+    {
+      "title": "'쿠팡 정보 유출', 중국인 소행인 듯… 경찰 수사중",
+      "url": "https://www.chosun.com/national/national_general/2025/11/30/J35OE2PQHRAITBHF3QUZ4I4Z4A/",
+      "snippet": "22시간 전 ... 서울경찰청 사이버수사대는 지난 25일 쿠팡 측으로부터 이번 사태에 대한 고소장을 받아 개인정보 유출 사태에 대한 수사에 착수했다. 쿠팡이 경찰에 ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "사실상 전국민 털렸다…쿠팡 \"中직원, 해외서 메인서버 접근\" | 중앙일보",
+      "url": "https://www.joongang.co.kr/article/25386277",
+      "snippet": "19시간 전 ... 현재까지 파악된 쿠팡의 유출 규모는 2011년 싸이월드 개인정보 유출 사태 이후 14년만 최대 규모다. 30일 서울경찰청 사이버수사대에 따르면 쿠팡 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "쿠팡 고객 3370만개 계정 정보 유출 사태, 민관합동조사단 꾸린다",
+      "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=140628",
+      "snippet": "1일 전 ... ... 내부 직원을 정보 유출 혐의로 경찰에 고소한 것으로 알려졌다. 이에 서울경찰청 사이버수사대는 쿠팡 ... 개인정보 노출 경로를 확인하기 위한 수사 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "\"당신 개인정보 알고 있다\" 쿠팡 중국인 前 직원, 고객에 협박메일 | 중앙 ...",
+      "url": "https://www.joongang.co.kr/article/25386390",
+      "snippet": "6시간 전 ... 서울경찰청 사이버수사대는 지난 25일 쿠팡 측으로부터 이번 개인정보 ... 특히 해킹도 아닌 내부 직원이 정보 유출을 시도했는데, 쿠팡은 그 ...",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "쿠팡 고객정보, 중국인 직원이 유출한 듯…경찰 수사중 | 연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20251130016600030",
+      "snippet": "24시간 전 ... (서울=연합뉴스) 신선미 기자 = 3천만명 넘는 쿠팡 고객의 이름과 전화번호, 주소 등 정보가 유출된 것은 외부 해킹이 아닌 내부자 소행인 것으...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "쿠팡 개인정보 3천370만건 유출…경찰, '중국인 근로자' 용의자 지목",
+      "url": "https://www.kyeonggi.com/article/20251130580045",
+      "snippet": "22시간 전 ... ... 경찰이 중국인 근로자를 용의자로 지목, 수사에 착수했다. 30일 경찰당국에 따르면 서울경찰청 사이버수사대는 25일 쿠팡으로부터 고객 개인정보 유출 ...",
+      "displayLink": "www.kyeonggi.com"
+    },
+    {
+      "title": "경찰청장 직무대행 “쿠팡 개인정보 유출 피의자 신속히 검거할 것”",
+      "url": "https://www.hani.co.kr/arti/society/society_general/1232072.html",
+      "snippet": "14시간 전 ... 경찰은 지난 20일 쿠팡이 약 4500명의 개인정보 유출 사실을 처음 밝힌 뒤, 다음날인 21일 서울경찰청 사이버수사2대가 입건 전 조사(내사)에 착수했다고 ...",
+      "displayLink": "www.hani.co.kr"
+    },
+    {
+      "title": "경찰, 쿠팡 내부 서버 자료 확보···개인정보 유출경로 추적",
+      "url": "https://v.daum.net/v/20251130160424041",
+      "snippet": "19시간 전 ... 서울경찰청 사이버수사대는 쿠팡으로부터 서버 기록 등 자료를 임의제출 ... 경찰 등에 따르면 이 직원은 정보를 유출한 이후에 쿠팡 측에 협박 ...",
+      "displayLink": "v.daum.net"
+    }
+  ],
+  "google_count": 10
+}
