@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 출판계는 '한국문학 전성기'…연간 베스트셀러 1위는 '소년이 온다' - 2025-12-01 12:12:21</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 12:12:21'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('2025 출판계는 \'한국문학 전성기\'…연간 베스트셀러 1위는 \'소년이 온다\'')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2025 출판계는 '한국문학 전성기'…연간 베스트셀러 1위는 '소년이 온다'</h1>
+            <p>
+                분석 시간: 2025-12-01 12:12:21
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 한국 출판계에서 한강의 소설 ‘소년이 온다’가 연간 베스트셀러 1위를 차지했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> AI 키워드 도서 판매가 전년 대비 68.5% 증가하고 출간 종수가 거의 두 배로 늘어났으며, 50대 이상 독자층이 ‘한강 효과’로 재흥행을 보였다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 한국문학 전성기가 가속화되고 디지털 트렌드에 적극 대응하는 출판 전략이 확산될 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/f10acf86fa83.png" 
+                     alt="2025 출판계는 '한국문학 전성기'…연간 베스트셀러 1위는 '소년이 온다'" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 한국 출판계가 한강의 소설 <strong>“소년이 온다”</strong>가 연간 베스트셀러 1위를 차지하며 ‘한국문학 전성기’로 부상했다. AI 키워드 도서 판매가 68.5% 증가하고 출간 종수는 거의 두 배로 늘어났다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 12 월 1일</td>
+<td>교보문고가 발표한 연간 도서판매량 집계에서 <strong>“소년이 온다”</strong>가 1위</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486579" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 1일</td>
+<td>예스24도 동일한 결과를 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486579" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 1일</td>
+<td>교보문고가 AI 키워드 도서 판매가 전년 대비 68.5% 증가, 출간 종수는 거의 두 배로 늘었다고 진단</td>
+<td><a href="https://v.daum.net/v/20251201101856380" target="_blank">다음</a></td>
+</tr>
+<tr>
+<td>2025 년 6 월 20일</td>
+<td>교보문고 상반기 결산에서 <strong>“소년이 온다”</strong>가 상반기 베스트셀러 1위</td>
+<td><a href="https://event.kyobobook.co.kr/detail/236494" target="_blank">교보문고</a></td>
+</tr>
+<tr>
+<td>2024 년 12 월 3일</td>
+<td>조선일보 기사에서 ‘한강 효과’가 50대 이상 독자층 재흥행을 이끈 것으로 보도</td>
+<td><a href="https://www.chosun.com/culture-life/book/2024/12/03/EEN2VD23T5CGJFOXTQX6L3HGXM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025 년 12 월 1일</td>
+<td>중앙일보 기사에서 2025년 베스트셀러 1위가 <strong>“소년이 온다”</strong>임을 재확인</td>
+<td><a href="https://www.joongang.co.kr/article/25386451" target="_blank">중앙일보</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>“소년이 온다”</strong>는 2024년 노벨문학상 수상 이후 한강의 대표작으로서 독자층을 확대하며 2년 연속 연간 베스트셀러 1위를 기록했다.<br />
+▶ AI 키워드 도서 판매가 68.5% 증가한 것은 출판계가 디지털 트렌드에 적극 대응하고 있음을 시사한다.<br />
+▶ 출간 종수가 거의 두 배로 늘어난 것은 출판사들의 출간 전략 다변화와 독자 수요 확대를 반영한다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>출판사 관점</strong><br />
+  교보문고와 예스24는 <strong>“소년이 온다”</strong>의 판매 성공을 ‘한강 효과’와 AI 키워드 활용의 결합으로 평가한다. 출판사들은 AI 기반 추천 시스템이 독자 맞춤형 도서 제공에 기여했다고 주장한다.</p>
+</li>
+<li>
+<p><strong>독자 관점</strong><br />
+  50대 이상 독자층이 ‘한강 효과’로 인해 다시 책을 구매하는 현상이 두드러진다. 이는 전통적 문학에 대한 재관심이 디지털 시대에도 지속되고 있음을 보여준다.</p>
+</li>
+<li>
+<p><strong>학계·문학계 관점</strong><br />
+  문학학자들은 <strong>“소년이 온다”</strong>가 현대 한국 사회의 복잡성을 담아내며 독자와의 공감대를 형성했다고 평가한다. 동시에 AI 키워드 판매 증가가 문학의 질적 향상과는 별개로 상업적 성공을 부각시킨다는 비판도 있다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 교보문고·예스24 연간 베스트셀러 1위가 <strong>“소년이 온다”</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/025/0003486579" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 키워드 도서 판매가 68.5% 증가</td>
+<td><a href="https://v.daum.net/v/20251201101856380" target="_blank">다음</a></td>
+</tr>
+<tr>
+<td></td>
+<td>출간 종수가 거의 두 배로 늘어남</td>
+<td><a href="https://v.daum.net/v/20251201101856380" target="_blank">다음</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>AI 키워드 판매 증가가 문학적 품질 향상에 직접적인 영향을 미쳤다는 주장</td>
+<td>현재까지는 구체적 연구 결과가 부족</td>
+</tr>
+<tr>
+<td></td>
+<td>‘한강 효과’가 50대 이상 독자층 재흥행을 완전히 설명한다는 주장</td>
+<td>일부 기사에서 언급되었으나 통계적 근거 부족</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>한강</strong><br />
+  노벨문학상 수상 이후 작품에 대한 관심이 급증, <strong>“소년이 온다”</strong>의 판매 성과가 그녀의 문학적 영향력을 재확인시켰다.</p>
+</li>
+<li>
+<p><strong>교보문고·예스24</strong><br />
+  연간 베스트셀러 1위 발표를 통해 시장 지배력을 강화하고, AI 키워드 활용 전략을 홍보한다.</p>
+</li>
+<li>
+<p><strong>출판사·저자</strong><br />
+  AI 기반 추천 시스템 도입과 독자 맞춤형 마케팅으로 매출 증대를 도모하고 있다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>출판계의 디지털 전환 가속화</strong><br />
+  AI 키워드 도서 판매가 크게 증가한 만큼, 출판사들은 데이터 기반 마케팅과 맞춤형 콘텐츠 개발에 더 많은 투자를 할 전망이다.</p>
+</li>
+<li>
+<p><strong>한국문학의 글로벌 확장</strong><br />
+  한강의 국제적 인지도가 높아지면서 한국 소설의 해외 번역 및 유통이 확대될 가능성이 크다.</p>
+</li>
+<li>
+<p><strong>독자층 다변화</strong><br />
+  50대 이상 독자층의 재흥행과 함께 젊은 세대의 디지털 독서 습관이 결합해 새로운 독자층이 형성될 전망이다.</p>
+</li>
+<li>
+<p><strong>문학적 품질과 상업성의 균형</strong><br />
+  AI 키워드 판매 증가가 문학적 가치를 어떻게 보완할지에 대한 논의가 지속될 것으로 보인다.</p>
+</li>
+</ul>
+<p>2025년 출판계는 한강의 <strong>“소년이 온다”</strong>를 중심으로 ‘한국문학 전성기’라는 새로운 장을 열었으며, AI와 디지털 트렌드가 문학 시장을 재편하고 있다. 앞으로도 출판계와 독자, 학계가 함께 만들어갈 문학의 미래가 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=tMwpHr2O3x0" target="_blank">교보 문고에 있는 직원 금기 사항</a><a href="https://www.youtube.com/watch?v=Hd575C1v2yU" target="_blank">자기계발 분야 도서 판매량 급증…27.3%↑ [문화광장...</a><a href="https://www.youtube.com/watch?v=4gzSmixPMtc" target="_blank">한강 교보문고 사태 총정리..jpg</a><a href="https://www.youtube.com/watch?v=kV_NilR7SMg" target="_blank">한강 책 판매 제한?…교보문고 "동네 서점과 상생 위해...</a><a href="https://www.youtube.com/watch?v=z60q6gBsnco" target="_blank">"한강 소설 당분간 안 팝니다" 교보문고 판매 중단, ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/025/0003486579" target="_blank">올해 가장 많이 팔린 책은 한강의 『소년이 온다』, 2년 연속 1위</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.joongang.co.kr/article/25386451" target="_blank">올해 가장 많이 팔린 책은 한강의 『소년이 온다』, 2년 연속 1위 | 중앙 ...</a><a href="https://www.instagram.com/p/DDMg2xdTifw/" target="_blank">2024 #교보문고 종합 베스트셀러 종합 베스트셀러 1위 <소년이 온다 ...</a><a href="https://v.daum.net/v/20251201101856380" target="_blank">2025 출판계는 '한국문학 전성기'…연간 베스트셀러 1위는 '소년이 온다'</a><a href="https://event.kyobobook.co.kr/detail/236494" target="_blank">2025 상반기 북로그 - 교보문고</a><a href="https://www.chosun.com/culture-life/book/2024/12/03/EEN2VD23T5CGJFOXTQX6L3HGXM/" target="_blank">'한강 효과'로 문학의 시대 활짝… “50대 이상 다시 책 샀다”</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

@@ -1,5 +1,169 @@
 [
   {
+    "id": "f10acf86fa83",
+    "title": "2025 출판계는 '한국문학 전성기'…연간 베스트셀러 1위는 '소년이 온다'",
+    "created_at": "2025-12-01T12:12:21.895056+09:00",
+    "last_updated": "2025-12-01T12:12:21.895056+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "뉴스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "6968b947fe12",
+    "title": "상반기 주택 부정청약 의심사례 252건 적발...부모 위장전입 감소",
+    "created_at": "2025-12-01T12:10:14.853469+09:00",
+    "last_updated": "2025-12-01T12:10:14.853469+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "부정청약",
+        "위장전입",
+        "국토부"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "982b1b364481",
+    "title": "장동혁·조국, 오늘 만난다…'대장동 항소포기' 토론 조율 주목",
+    "created_at": "2025-12-01T12:06:20.692337+09:00",
+    "last_updated": "2025-12-01T12:06:20.692337+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "장동혁",
+        "조국",
+        "대장동"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "34a8e08f80ca",
+    "title": "LG CNS, AWS ‘에이전틱AI 스페셜라이제이션’ 국내 최초 획득",
+    "created_at": "2025-12-01T12:04:27.024509+09:00",
+    "last_updated": "2025-12-01T12:04:27.024509+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "IT/과학"
+      ],
+      "content_tags": [
+        "LGCNS",
+        "AWS",
+        "에이전틱"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "2fa346051a05",
+    "title": "삼성금융네트웍스, ‘뉴 모니모’ 출시",
+    "created_at": "2025-12-01T12:02:21.807652+09:00",
+    "last_updated": "2025-12-01T12:02:21.807652+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "뉴스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "4757c8b93b92",
+    "title": "HD현대오일뱅크, 美 커뮤케이션 제작물 평가대회서 대상",
+    "created_at": "2025-12-01T12:00:46.137327+09:00",
+    "last_updated": "2025-12-01T12:00:46.137327+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "HD현대",
+        "오일뱅크",
+        "LACP"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "1c0f568576d2",
+    "title": "대통령실, 이 대통령 사칭 SNS 경고···“법과 원칙에 따라 엄중 처벌”",
+    "created_at": "2025-12-01T11:57:52.298025+09:00",
+    "last_updated": "2025-12-01T11:57:52.298025+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "대통령실",
+        "이재명",
+        "사칭"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "0e6af7493922",
     "title": "“지금이 제일 싸다” 완성차 업계, 개소세 인하 막차 프로모션",
     "created_at": "2025-12-01T11:47:18.325281+09:00",
