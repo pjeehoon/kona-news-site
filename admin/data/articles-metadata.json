@@ -1,5 +1,77 @@
 [
   {
+    "id": "0e6af7493922",
+    "title": "“지금이 제일 싸다” 완성차 업계, 개소세 인하 막차 프로모션",
+    "created_at": "2025-12-01T11:47:18.325281+09:00",
+    "last_updated": "2025-12-01T11:47:18.325281+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "개소세",
+        "완성차",
+        "막차"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "e8a7acd69502",
+    "title": "'공장 지붕서 근로자 추락사' 도급 업체 대표 항소심서 법정구속",
+    "created_at": "2025-12-01T11:45:51.995127+09:00",
+    "last_updated": "2025-12-01T11:45:51.995127+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "공장지붕",
+        "추락사",
+        "대표A"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "7090de441330",
+    "title": "강원도, ‘그린바이오산업 육성지구 지정’ 정부 공모 선정",
+    "created_at": "2025-12-01T11:40:46.296227+09:00",
+    "last_updated": "2025-12-01T11:40:46.296227+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "강원도",
+        "그린바이오",
+        "육성지구"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "e9dc10826948",
     "title": "법무부 \"로스쿨 검찰실무 시험 공정성 우려…재실시 결정\"",
     "created_at": "2025-12-01T11:24:04.645999+09:00",
