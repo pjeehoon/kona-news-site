@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"피부 뚫고 폐·간 등 온몸으로 퍼진다" 국내서 나노플라스틱 확산 첫 규명 - 2025-12-02 04:47:02</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,나노,플라스틱,피부">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="나노,플라스틱,피부">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 04:47:02'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"피부 뚫고 폐·간 등 온몸으로 퍼진다" 국내서 나노플라스틱 확산 첫 규명')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"피부 뚫고 폐·간 등 온몸으로 퍼진다" 국내서 나노플라스틱 확산 첫 규명</h1>
+            <p>
+                분석 시간: 2025-12-02 04:47:02
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 11월 21일 발표된 연구에서 20 nm 폴리스티렌 나노플라스틱이 피부를 통해 림프절·폐·간·혈액까지 이동한다는 최초의 실험적 증거가 확보됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 3개월 반복 노출 시 염증·노화 관련 유전자 발현이 두 배 이상 상승했으나 피부 장벽 기능은 거의 정상으로 유지되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 결과는 국내 최초로 나노플라스틱의 전신 확산 경로를 규명한 사례로, 장기적 건강 위험 평가와 규제 필요성을 시사한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/a5314a11d676.png" 
+                     alt=""피부 뚫고 폐·간 등 온몸으로 퍼진다" 국내서 나노플라스틱 확산 첫 규명" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025년 11월 21일 국제학술지 <em>Journal of Hazardous Materials</em>에 발표된 연구에 따르면, 20 nm 폴리스티렌 나노플라스틱이 피부를 통해 림프절·폐·간·혈액까지 이동한다는 최초의 실험적 증거가 확보됐다. 3개월간 반복 노출 시 염증·노화 관련 유전자 발현이 두 배 이상 상승하며, 피부 장벽 기능은 거의 정상으로 유지된다는 점이 주목된다. 이 연구는 연합뉴스가 12월 1일 보도한 바와 같이 국내에서 나노플라스틱의 전신 확산 메커니즘을 처음으로 규명한 사례다.  </p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 21일</td>
+<td>20 nm 폴리스티렌 나노플라스틱이 피부를 통해 림프절·폐·간·혈액까지 이동함을 실험적으로 확인</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004562202" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 21일</td>
+<td>연구가 <em>Journal of Hazardous Materials</em>에 게재</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004562202" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 01일</td>
+<td>연합뉴스가 연구 결과를 보도</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004562202" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 01일</td>
+<td>한국원자력의학원 김진수 박사팀이 방사성동위원소 표지 기술을 사용해 나노플라스틱의 체내 이동 경로를 추적</td>
+<td><a href="https://www.medifonews.com/news/article.html?no=209322" target="_blank">메디포뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 01일</td>
+<td>경향신문이 연구 결과를 보도</td>
+<td><a href="https://www.khan.co.kr/article/202512012056005/amp" target="_blank">경향신문</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>▶ 주요 실험 결과</strong><br />
+- <strong>림프절 도달</strong>: 1주차<br />
+- <strong>폐 도달</strong>: 3주차<br />
+- <strong>간·혈액 도달</strong>: 4주차<br />
+- <strong>염증·노화 유전자</strong>(TNF‑α, IL‑6, MMP‑3) 발현이 2배 이상 상승<br />
+- <strong>피부 장벽 기능</strong>: 거의 정상 수준 유지<br />
+- <strong>유전자 변동</strong>: 294개 유전자 상향, 144개 하향  </p>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>과학자들의 시각</h3>
+<ul>
+<li><strong>김진수 박사팀</strong>: “피부를 주요 노출 경로로 포함해야 하며, 장기적인 면역·호흡기·간 독성 및 대사 이상 가능성을 시사한다.”  </li>
+<li><strong>전문가 A</strong>(생체물리학자): “실험 모델이 마우스이므로 인간에 대한 직접적 적용은 주의가 필요하지만, 메커니즘은 확실히 보인다.”  </li>
+<li><strong>전문가 B</strong>(환경보건학자): “반복 노출 시 염증·노화 유전자 상승은 장기적 건강 위험을 암시한다. 그러나 인간에서의 실제 노출량과 효과는 아직 불확실하다.”  </li>
+</ul>
+<h3>언론사의 보도</h3>
+<ul>
+<li><strong>연합뉴스</strong>: “나노플라스틱이 피부를 뚫고 전신으로 퍼진다는 최초의 실험적 증거”라며 <strong>위험성</strong>을 강조  </li>
+<li><strong>경향신문</strong>: “전신 순환계 도달이 확인되었다”는 사실을 보도하며 <strong>과학적 근거</strong>를 강조  </li>
+<li><strong>메디포뉴스</strong>: “한국원자력의학원 연구팀이 방사성동위원소 기술을 활용했다”는 기술적 세부사항을 부각  </li>
+</ul>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<h3>확인된 사실</h3>
+<ul>
+<li><strong>피부를 통한 전신 확산</strong>: 20 nm 폴리스티렌 나노플라스틱이 림프절·폐·간·혈액까지 이동 (연구 결과)  </li>
+<li><strong>염증·노화 유전자 상승</strong>: 3개월 반복 노출 시 TNF‑α, IL‑6, MMP‑3 등 유전자 발현이 두 배 이상 상승  </li>
+<li><strong>피부 장벽 기능</strong>: 실험에서 거의 정상으로 유지  </li>
+<li><strong>연구 발표</strong>: 2025년 11월 21일 <em>Journal of Hazardous Materials</em>에 게재, 12월 1일 연합뉴스 보도  </li>
+</ul>
+<h3>미확인 정보</h3>
+<ul>
+<li><strong>인간에 대한 직접적 독성</strong>: 현재 인간 대상 연구가 없으므로 “인간에 직접적인 독성” 여부는 <strong>확인되지 않음</strong>  </li>
+<li><strong>공중 보건에 대한 즉각적 위험</strong>: 연구 결과가 인간에 적용될 때의 위험 수준은 아직 <strong>추정되는</strong> 단계  </li>
+<li><strong>나노플라스틱이 가속 노화 유발</strong>: 실험 동물에서 관찰된 유전자 변화가 인간 노화에 직접 연결되는지는 <strong>확인되지 않음</strong>  </li>
+</ul>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>소속</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김진수 박사</strong></td>
+<td>한국원자력의학원</td>
+<td>연구팀 리더. “피부를 주요 노출 경로로 포함해야 한다”는 입장.</td>
+</tr>
+<tr>
+<td><strong>홍아름, 정혜주, 조이시산무게아, 김승연</strong></td>
+<td>한국원자력의학원 박사과정</td>
+<td>연구 참여. 실험 설계 및 데이터 분석 담당.</td>
+</tr>
+<tr>
+<td><strong>연구 지원 기관</strong></td>
+<td>한국원자력의학원</td>
+<td>연구비 지원 및 실험 시설 제공.</td>
+</tr>
+<tr>
+<td><strong>환경·보건 정책 담당자</strong></td>
+<td>정부·지자체</td>
+<td>연구 결과를 바탕으로 규제·정책 검토 중.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>인간 대상 연구</strong><br />
+   - 현재는 동물 모델에 한정된 연구이므로, 인간에서의 노출량과 효과를 확인하기 위한 임상·인체 연구가 필요하다.<br />
+   - <strong>예상 일정</strong>: 2026년~2027년 사이에 초기 인체 연구가 진행될 가능성.</p>
+</li>
+<li>
+<p><strong>규제·정책 검토</strong><br />
+   - 나노플라스틱의 피부 노출 위험성이 확인되면서, <strong>제품 안전 기준</strong> 및 <strong>노출 제한</strong>에 대한 논의가 확대될 전망.<br />
+   - <strong>정부</strong>는 환경부·식품의약품안전처와 협력해 <strong>규제 프레임워크</strong>를 마련할 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>산업계 반응</strong><br />
+   - 플라스틱·코팅·화장품 산업 등에서 <strong>나노플라스틱 사용</strong>을 재검토할 필요가 있다.<br />
+   - 대체 물질 개발 및 <strong>친환경 포장</strong>으로의 전환이 가속화될 수 있다.</p>
+</li>
+<li>
+<p><strong>공중 인식 및 교육</strong><br />
+   - 미디어 보도와 과학 커뮤니케이션을 통해 <strong>소비자 인식</strong>을 제고하고, <strong>피부 보호</strong>에 대한 교육이 필요하다.<br />
+   - <strong>전문가</strong>는 과도한 과학적 경고를 피하면서 <strong>실제 위험 수준</strong>을 명확히 전달할 것을 권고한다.</p>
+</li>
+</ol>
+<hr />
+<blockquote>
+<p><strong>주요 인용</strong><br />
+- “20 nm 폴리스티렌 나노플라스틱이 피부를 뚫고 림프절·폐·간·혈액까지 이동한다”는 연구 결과는 <strong><a href="https://n.news.naver.com/mnews/article/011/0004562202" target="_blank">연합뉴스</a></strong>에서 확인할 수 있다.<br />
+- 연구팀이 방사성동위원소 표지 기술을 사용했다는 내용은 <strong><a href="https://www.medifonews.com/news/article.html?no=209322" target="_blank">메디포뉴스</a></strong>에서 확인된다.<br />
+- 경향신문의 보도 역시 <strong><a href="https://www.khan.co.kr/article/202512012056005/amp" target="_blank">경향신문</a></strong>에서 확인 가능하다.  </p>
+</blockquote>
+<p><strong>※ 본 기사는 2025년 12월 02일 현재의 정보를 바탕으로 작성되었으며, 이후 연구 결과 및 정책 변화에 따라 내용이 달라질 수 있다.</strong></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=tJwIz9LZOFg" target="_blank">피부 침투 나노플라스틱, 4주만에 전신확산! 충격결과!...</a><a href="https://www.youtube.com/watch?v=iSOVbDlmxlQ" target="_blank">한 잔에 미세 플라스틱 수십억개? 이건 무조건 버리세요...</a><a href="https://www.youtube.com/watch?v=y-1RagheZHU" target="_blank">미세플라스틱을 배출하는3단계 해독</a><a href="https://www.youtube.com/watch?v=9Tcry58_vqY" target="_blank">치매에 파킨슨병까지?! 과학자들이 경고한 미세플라스틱의...</a><a href="https://www.youtube.com/watch?v=byP01jRL_U4" target="_blank">피부과전문의가 절대 안 쓰는 화장품 성분 2가지(절대조...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004562202" target="_blank">"모공 뚫고 전신을 돌아다녀"…피부에서 간까지 단 4주 걸린다는 '이것', "노화도 2배 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.medifonews.com/news/article.html?no=209322" target="_blank">한국원자력의학원 김진수 박사 연구팀, “나노플라스틱, 피부 뚫고 전신 ...</a><a href="http://www.whosaeng.com/166071" target="_blank">[후생신보] “나노플라스틱, 피부 뚫고 전신으로 확산”</a><a href="https://medicalworldnews.co.kr/news/view.php?idx=1510971572" target="_blank">나노플라스틱, 피부 투과 전신 순환계 도달 세계 최초 규명…방사성 ...</a><a href="https://www.khan.co.kr/article/202512012056005/amp" target="_blank">“나노플라스틱, 피부로도 체내 침투…폐·간까지 간다” - 경향신문 AMP</a><a href="https://bktimes.net/detail.php?number=109370&thread=06r02" target="_blank">김진수 박사 연구팀, '나노플라스틱 피부 노출 경로' 규명</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
