@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노타-퓨리오사AI, NPU 기반 AI 기술협력 MOU 체결 - 2025-12-01 08:58:53</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,노타,퓨리오사,NPU">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="노타,퓨리오사,NPU">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 08:58:53'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('노타-퓨리오사AI, NPU 기반 AI 기술협력 MOU 체결')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>노타-퓨리오사AI, NPU 기반 AI 기술협력 MOU 체결</h1>
+            <p>
+                분석 시간: 2025-12-01 08:58:53
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 노타와 퓨리오사AI가 2025년 12월 1일에 NPU 기반 AI 솔루션 개발·사업화 협력 MOU를 체결했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 양사는 AI 최적화 기술과 NPU 하드웨어를 결합해 전력 효율과 추론 속도를 극대화하고, 로봇·모빌리티 산업용 실증 모델을 국내외 시장에 선보일 계획이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 협력은 국내 AI 생태계 강화와 해외 기술 의존도 감소를 기대하며, 성공 시 국내 기업들의 해외 진출 기회를 확대할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/26136cccf6c2.png" 
+                     alt="노타-퓨리오사AI, NPU 기반 AI 기술협력 MOU 체결" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>노타(486990)와 AI 반도체 전문 기업 퓨리오사AI가 NPU(Neural Processing Unit) 기반 AI 솔루션 개발·사업화 협력을 위한 MOU를 체결했다. 양사는 AI 최적화 기술과 NPU 하드웨어를 결합해 전력 효율과 추론 속도를 극대화하고, 로봇·모빌리티 등 산업용 실증 모델을 국내외 시장에 선보일 계획이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 12월 01일</strong></td>
+<td>노타와 퓨리오사AI가 NPU 기반 AI 기술 협력 MOU 체결.</td>
+</tr>
+<tr>
+<td><strong>MOU 내용</strong></td>
+<td>AI 솔루션 개발, 사업화, 기술 파트너십 확대, 기술·사업성 검증 프로젝트 포함.</td>
+</tr>
+<tr>
+<td><strong>기술적 목표</strong></td>
+<td>노타의 AI 최적화 기술로 퓨리오사의 NPU 성능 향상 → 전력 효율·고속 추론 성능 극대화.</td>
+</tr>
+<tr>
+<td><strong>산업 적용</strong></td>
+<td>로봇, 모빌리티 등 산업에 적용 가능한 실증 모델 구축 및 국내·외 시장 진출 목표.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> MOU는 두 기업이 AI 솔루션과 하드웨어를 통합해 시장 경쟁력을 강화하려는 전략적 협력이다.<br />
+<a href="https://n.news.naver.com/mnews/article/018/0006174879" target="_blank">네이버뉴스</a></p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>네이버뉴스</strong></td>
+<td>양사 협력으로 국내 AI 생태계 강화 및 해외 기술 의존도 감소 기대.</td>
+</tr>
+<tr>
+<td><strong>전자신문</strong></td>
+<td>“국산 LLM·NPU 결합”을 통해 AI 인프라 자립화와 기술 주권 확보에 기여할 것이라 보도.</td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>AI 최적화와 NPU 결합은 전력 효율성 향상과 비용 절감에 긍정적이지만, 하드웨어와 소프트웨어 간의 통합 난이도가 과제로 남는다.</td>
+</tr>
+<tr>
+<td><strong>산업계</strong></td>
+<td>로봇·모빌리티 분야에서 실증 모델이 성공하면, 국내 기업들의 해외 진출 기회가 확대될 전망.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 업스테이지와 퓨리오사AI가 2025년 6월 25일에 체결한 MOU와 같은 사례가 증가하고 있다. 이는 국내 AI 반도체와 소프트웨어 기업 간 협력 트렌드를 보여준다.<br />
+<a href="https://www.etnews.com/20250625000194" target="_blank">전자신문</a> | <a href="https://www.aitimes.com/news/articleView.html?idxno=200067" target="_blank">AI타임스</a></p>
+</blockquote>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>• MOU 체결 일자 및 내용<br>• AI 최적화 기술이 NPU 성능을 향상시킬 것이라는 기술적 목표<br>• 로봇·모빌리티 실증 모델 구축 및 시장 진출 목표</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>• MOU 체결 이후 구체적 프로젝트 일정<br>• 양사 간 구체적 투자 규모<br>• 실증 모델의 성능 지표 및 시연 시점</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 모든 검증된 사실은 <strong>네이버뉴스</strong>와 <strong>전자신문</strong>의 보도를 근거로 한다. 미확인 정보는 추후 공식 발표를 통해 확인 필요.  </p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>역할 및 입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>노타(486990) 대표</strong></td>
+<td>AI 최적화 기술 개발 주도, NPU와의 시너지 창출을 통해 시장 확대 목표.</td>
+</tr>
+<tr>
+<td><strong>퓨리오사AI 대표</strong></td>
+<td>NPU 설계·제조 전문성 보유, 소프트웨어와의 통합을 통해 AI 솔루션 경쟁력 강화.</td>
+</tr>
+<tr>
+<td><strong>한국 정부(과기정통부)</strong></td>
+<td>AI 인프라 자립화와 기술 주권 확보를 위한 정책적 지원.</td>
+</tr>
+<tr>
+<td><strong>산업계(로봇·모빌리티 기업)</strong></td>
+<td>실증 모델 도입을 통해 제품 경쟁력 강화 기대.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 양사 대표의 구체적 발언은 아직 공개되지 않았으나, 공식 보도에 따르면 양사는 상호 보완적 기술을 활용해 시장 리더십을 확보하려는 의지를 표명했다.  </p>
+</blockquote>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>기술 통합 가속화</strong><br />
+   - AI 최적화와 NPU 결합으로 전력 효율이 크게 향상될 것으로 예상.<br />
+   - 하드웨어와 소프트웨어 간의 긴밀한 협업이 필요하며, 이를 위한 공동 연구개발 인프라가 구축될 전망.</p>
+</li>
+<li>
+<p><strong>산업 적용 확대</strong><br />
+   - 로봇·모빌리티 분야에서 실증 모델이 성공하면, 국내 기업들의 해외 진출이 가속화될 가능성이 높다.<br />
+   - 특히 자율주행, 산업용 로봇 등 고성능 AI가 요구되는 시장에서 경쟁력이 부각될 것으로 보인다.</p>
+</li>
+<li>
+<p><strong>시장 및 정책적 영향</strong><br />
+   - 국내 AI 반도체·소프트웨어 생태계가 한층 강화되며, 해외 기술 의존도가 감소할 전망.<br />
+   - 과기정통부의 AI 인프라 지원 정책과 시너지를 발휘해 국가 경쟁력 제고에 기여할 수 있다.</p>
+</li>
+<li>
+<p><strong>잠재적 과제</strong><br />
+   - 하드웨어와 소프트웨어 간의 호환성 확보, 통합 테스트 및 인증 절차가 주요 과제.<br />
+   - 시장 진입 시점과 비용 구조에 대한 명확한 로드맵이 필요하다.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>▶</strong> 노타와 퓨리오사AI의 협력은 국내 AI 산업의 기술적·시장적 진화를 가속화할 수 있는 중요한 발판이 될 것으로 기대된다.<br />
+<a href="https://n.news.naver.com/mnews/article/018/0006174879" target="_blank">네이버뉴스</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=woyV_aUoR1c" target="_blank">딥엑스 AI NPU 및 지능형관제 인프라 적용 세미나 ...</a><a href="https://www.youtube.com/watch?v=ScaV5fW6sTg" target="_blank">[FULL] 미래의 부 AI 반도체, 이 영상 하나로 ...</a><a href="https://www.youtube.com/watch?v=nEvxrbpntmg" target="_blank">SKT, 리벨리온과 AI 생태계 자립 강화(25.06....</a><a href="https://www.youtube.com/watch?v=Iu6iNeXBxY8" target="_blank">#댓글이벤트 삼성전기피디아 EP.4 - AI용 반도체 ...</a><a href="https://www.youtube.com/watch?v=NykDXfF3wbU" target="_blank">AI Optimization for Everyone! ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006174879" target="_blank">노타-퓨리오사AI, NPU 기반 AI 기술협력 MOU 체결</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.etnews.com/20250625000194" target="_blank">“국산 LLM·NPU 결합”…업스테이지, 퓨리오사AI와 협력 - 전자신문</a><a href="https://www.finance-scope.com/article/view/scp202509150005" target="_blank">고비용·고전력 GPU 대안 나왔다…와이즈넛·퓨리오사AI, 'NPU ...</a><a href="https://www.korea.kr/common/docViewer.do?fileId=197993839&tblKey=GMN" target="_blank">과기정통부, 인공지능 반도체 전문가들과 함께</a><a href="https://eiec.kdi.re.kr/policy/callDownload.do?num=261441&filenum=1&dtime=20241220192514" target="_blank">과기정통부, 인공지능 반도체 전문가들과 함께 기술사업화 추진을 ...</a><a href="https://www.aitimes.com/news/articleView.html?idxno=200067" target="_blank">업스테이지, 퓨리오사 반도체에 언어모델 '솔라' 탑재 MOU - AI타임스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
