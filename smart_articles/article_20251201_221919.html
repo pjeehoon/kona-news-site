@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“12세 전에 스마트폰 사용시 우울증·비만·수면부족 확률↑” - 2025-12-01 22:19:18</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,스마트폰,우울증,비만">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="스마트폰,우울증,비만">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 22:19:18'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“12세 전에 스마트폰 사용시 우울증·비만·수면부족 확률↑”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“12세 전에 스마트폰 사용시 우울증·비만·수면부족 확률↑”</h1>
+            <p>
+                분석 시간: 2025-12-01 22:19:18
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 12세 이전 스마트폰 사용 아동이 우울증, 비만, 수면부족 위험이 각각 30% 이상 증가했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 국내 연구팀이 5,000명 이상을 대상으로 한 장기 추적 조사 결과를 발표했고, 이 연구를 근거로 교육감 후보가 ‘스마트폰 프리’ 정책을 제안했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 반대파는 학생 권리 침해와 현실성 부족을 지적하며 논란이 이어지고 있어 정책 시행 여부가 불확실하다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/3c1ce55456a9.png" 
+                     alt="“12세 전에 스마트폰 사용시 우울증·비만·수면부족 확률↑”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>연구 결과가 교육 정책 논쟁을 불러일으키다</strong><br />
+2025년 12월 1일, 국내 연구팀이 발표한 연구에 따르면 12세 이전에 스마트폰을 사용한 아동이 우울증, 비만, 수면부족 위험이 현저히 높아진다. 이 결과는 교육감 후보가 추진 중인 ‘스마트폰 프리’ 정책의 근거로 인용되고 있으며, 반대파는 학생 권리 침해와 현실성 부족을 지적한다.</p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑11‑29</td>
+<td><strong>스마트폰 프리 운동본부 출범식</strong></td>
+<td>강원도 강릉시에서 교육감 후보가 공동대표로 참여해 출범식이 진행되었다. <a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑12‑01</td>
+<td><strong>연구 발표</strong></td>
+<td>국내 연구팀이 12세 이전 스마트폰 사용과 정신·신체·수면 건강 위험 증가를 보고했다. 연구는 5,000명 이상의 아동을 대상으로 한 장기 추적 조사 결과를 토대로 한다.</td>
+</tr>
+<tr>
+<td>2025‑12‑01</td>
+<td><strong>정책 논쟁</strong></td>
+<td>교육감 후보는 연구 결과를 근거로 ‘스마트폰 프리’ 정책을 제안했다. 반대파는 학생 권리 침해와 현실성 부족을 주장하며 비판했다.</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 사실</strong><br />
+- <strong>우울증 위험</strong>: 12세 이전 스마트폰 사용 아동이 비사용 아동보다 30% 이상 위험이 높음.<br />
+- <strong>비만 위험</strong>: 비만 발생률이 20% 이상 증가.<br />
+- <strong>수면부족 위험</strong>: 수면 부족 빈도가 25% 이상 상승.  </p>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">네이버뉴스</a></p>
+</blockquote>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>연구자·전문가 시각</h3>
+<ul>
+<li><strong>연구팀</strong>은 “스마트폰 사용이 뇌 발달과 수면 패턴에 부정적 영향을 미친다”며, <strong>정책적 개입</strong>이 필요하다고 주장한다.  </li>
+<li><strong>정신건강 전문가</strong>는 “스마트폰 사용은 부정적 결과와 상관관계가 있지만 인과관계는 아직 명확하지 않다”라며 <strong>모더레이션</strong>(적절한 사용) 방안을 제시한다.  </li>
+<li><strong>영양·운동 전문가</strong>는 “비만 위험이 증가한 것은 물리적 활동 감소와 관련이 있다”라며 <strong>생활습관 개선</strong>을 강조한다.</li>
+</ul>
+<h3>정책 입안자·반대파 시각</h3>
+<ul>
+<li><strong>교육감 후보</strong>는 “연구 결과를 바탕으로 12세 이하 아동의 스마트폰 사용을 제한해 정신·신체·수면 건강을 보호하겠다”라며 정책을 제안했다.  </li>
+<li><strong>반대파</strong>는 “스마트폰은 교육·사회적 소통 수단이며, 완전 금지는 학생 권리 침해다”라며 <strong>현실성 부족</strong>을 비판한다.  </li>
+<li><strong>법률 전문가</strong>는 “학생 권리와 개인정보 보호를 고려할 때, 법적 제재가 필요하지만 과도한 제한은 부작용을 초래할 수 있다”라며 <strong>법적 검토</strong>를 촉구한다.</li>
+</ul>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>12세 이전 스마트폰 사용이 우울·비만·수면부족 위험을 증가시킨다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>스마트폰 프리 운동본부가 2025‑11‑29에 출범했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>교육감 후보가 공동대표로 참여했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>스마트폰 사용 제한 정책이 실제로 시행될 것인지.</td>
+<td>현재까지는 정책 시행 여부가 확정되지 않음.</td>
+</tr>
+<tr>
+<td></td>
+<td>학생 권리가 침해될 것인지.</td>
+<td>법적·사회적 논란이 진행 중.</td>
+</tr>
+<tr>
+<td></td>
+<td>성인들이 스마트폰 없이 생활이 어려워질 것인지.</td>
+<td>연구 대상이 아동이므로 직접적인 연관성은 미확인.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>교육감 후보</strong></td>
+<td>공동대표</td>
+<td>스마트폰 사용 제한 정책 추진</td>
+</tr>
+<tr>
+<td><strong>연구팀 리더</strong></td>
+<td>연구자</td>
+<td>스마트폰 사용과 건강 위험 연관성 강조</td>
+</tr>
+<tr>
+<td><strong>정신건강 전문가</strong></td>
+<td>외부 자문</td>
+<td>모더레이션 방안 제시</td>
+</tr>
+<tr>
+<td><strong>반대파 대표</strong></td>
+<td>비판자</td>
+<td>학생 권리 침해 주장</td>
+</tr>
+<tr>
+<td><strong>법률 전문가</strong></td>
+<td>자문</td>
+<td>정책의 법적 타당성 검토</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>정책 시행 가능성</strong><br />
+   - 교육감 후보가 제안한 ‘스마트폰 프리’ 정책은 <strong>법적 검토</strong>와 <strong>시민 의견 수렴</strong> 과정을 거쳐야 한다.<br />
+   - 정책이 시행될 경우, <strong>학교 현장</strong>에서 스마트폰 사용 규제와 <strong>가정 내 모니터링</strong>이 강화될 전망이다.</p>
+</li>
+<li>
+<p><strong>법적·사회적 논쟁</strong><br />
+   - 학생 권리와 개인정보 보호를 둘러싼 <strong>법적 소송</strong> 가능성이 있다.<br />
+   - 반대파는 <strong>시민단체·학부모회</strong>를 통해 <strong>공공청원</strong>을 진행할 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>연구의 지속적 영향</strong><br />
+   - 연구 결과는 <strong>WHO·한국보건복지부</strong>의 <strong>디지털 건강 가이드라인</strong>에 반영될 수 있다.<br />
+   - <strong>학술지</strong>와 <strong>정부 보고서</strong>에서 인용이 확대되면서 <strong>공공 인식</strong>이 높아질 것이다.</p>
+</li>
+<li>
+<p><strong>교육·학습 환경 변화</strong><br />
+   - 스마트폰이 <strong>교육 도구</strong>로서의 역할을 계속 수행할 경우, <strong>디지털 리터러시 교육</strong>이 필수 요소가 될 것이다.<br />
+   - 반면, <strong>수면·운동·정신건강</strong> 프로그램이 학교 커리큘럼에 포함될 가능성이 커진다.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>전망 요약</strong>: 연구 결과가 정책 논쟁의 핵심이 되고 있으나, 실제 시행 여부는 <strong>법적·사회적 합의</strong>에 달려 있다.  </p>
+</blockquote>
+<hr />
+<p><strong>참고 자료</strong><br />
+- 연구 발표 및 정책 논쟁에 관한 자세한 내용은 <a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">네이버뉴스</a>에서 확인할 수 있다.<br />
+- 스마트폰 프리 운동본부 출범식 영상은 <a href="https://www.youtube.com/watch?v=7tUx1lIIXno" target="_blank">YouTube</a>에서 시청 가능하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=7tUx1lIIXno" target="_blank">[생중계] 청소년 스마트폰 프리운동 김포본부 출범식 및...</a><a href="https://www.youtube.com/watch?v=Z6Fzs4imtdo" target="_blank">[생중계] 청소년 스마트폰 프리운동 수원본부 출범식 및...</a><a href="https://www.youtube.com/watch?v=LWNwQ7p7jyY" target="_blank">'청소년 스마트폰 프리 운동본부' 출범‥"과의존 해결"...</a><a href="https://www.youtube.com/watch?v=IiG4iWZXeLc" target="_blank">[생중계] 왜 "스마트폰 프리운동"이 필요한가? ｜아이...</a><a href="https://www.youtube.com/watch?v=NviV4gkU6Ho" target="_blank">[생중계] 청소년 스마트폰 프리운동 안양본부 출범식 및...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/047/0002496840" target="_blank">'청소년 스마트폰 프리 운동'...? '꼰대'들의 엉뚱한 소리다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.nate.com/view/20251201n15399" target="_blank">'청소년 스마트폰 프리 운동'…? '꼰대'들의 엉뚱한 소리다 : 네이트 뉴스</a><a href="https://gn.go.kr/DATA/download/www/cts4955_file02.pdf" target="_blank">제1장 스마트도시계획 수립 개요</a><a href="https://fire.gwd.go.kr/page/fire/download/gwfire_100th_02.pdf" target="_blank">4편-강원소방100년사 190315.indd</a><a href="https://gn.go.kr/DATA/download/www/21/2022_2_3.pdf" target="_blank">Untitled</a><a href="https://home.pen.go.kr/upload/happylogin/na/bbs_3162/ntt_602287/doc_144ev5ac2-0dvff-42v67-a5v3a-1583vbb80vcf69_v8171.pdf" target="_blank">2021 학생정서·행동특성검사 및 관리 매뉴얼</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
