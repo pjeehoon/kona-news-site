@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이스라엘 네타냐후 총리, 대통령에 사면 요청…국가 통합 명분 - 2025-12-01 16:00:10</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,국제,네타냐후,사면,국가통합">
+    <meta name="article-category-tags" content="정치,국제">
+    <meta name="article-content-tags" content="네타냐후,사면,국가통합">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 16:00:10'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('이스라엘 네타냐후 총리, 대통령에 사면 요청…국가 통합 명분')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>이스라엘 네타냐후 총리, 대통령에 사면 요청…국가 통합 명분</h1>
+            <p>
+                분석 시간: 2025-12-01 16:00:10
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 네타냐후 이스라엘 총리가 부패 혐의 기소 중에도 111페이지 사면 청원서를 제출해 국가 통합을 주장했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 사면 청원서는 미국 전 대통령 트럼프의 서한을 인용해 정당성을 높였으며, 총리는 뇌물 혐의로 기소된 상태에서도 사면이 내부 분열을 치유할 수 있다고 강조했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 그러나 전문가들은 사면 승인 가능성이 낮으며, 승인되더라도 총리직에서 일정 기간 물러나도록 요구될 수 있어 정치적 이득을 위한 전략으로 비판하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/1282ed571834.png" 
+                     alt="이스라엘 네타냐후 총리, 대통령에 사면 요청…국가 통합 명분" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>네타냐후 총리가 부패 혐의 기소 중에도 사면을 요청하며, 국가 통합을 목표로 한다는 주장이 제기됐다.</strong><br />
+사건은 2025년 11월 30일, 네타냐후 총리실이 이츠하크 헤르조그 대통령에게 111페이지 분량의 사면 청원서를 제출하면서 시작됐다. 사면 요청은 미국 전 대통령 도널드 트럼프의 서한을 인용해 정당성을 높이려는 시도로 보인다. 이와 동시에 네타냐후는 부패 혐의로 기소된 상태에서 사면이 국가의 통합과 안정을 위해 필요하다고 주장한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 12일</td>
+<td>미국 트럼프 대통령이 헤르조그 대통령에게 사면 요청 서한 발송</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>네타냐후 총리실이 헤르조그 대통령에게 사면 청원서 제출, 트럼프 서한 인용</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>로이터 연합뉴스가 사면 요청 보도</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>사면 요청에 대한 네타냐후 총리의 입장 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>네타냐후는 샴페인·시가·보석 등 약 20만 달러 상당의 뇌물을, 카타르에서 6,500만 달러의 뇌물을 받은 혐의로 기소</strong>되었다.<br />
+▶ 사면 청원서는 111페이지에 달하며, 총리실은 사면이 “국가 내부의 분열을 치유하고 통합에 전력할 수 있다”고 주장했다.<br />
+▶ 트럼프 대통령의 서한은 사면 요청에 대한 외부 압력으로 활용되었다.</p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>관점</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>로이터 연합뉴스</strong></td>
+<td>사실 보도</td>
+<td>사면 청원서와 트럼프 서한 인용 사실을 중립적으로 전달</td>
+</tr>
+<tr>
+<td><strong>Financial Times (FT)</strong></td>
+<td>분석·평가</td>
+<td>사면은 보통 유죄 인정 이후에 이루어지며, 네타냐후가 유죄를 인정할지는 불투명하다고 지적. 헤르조그가 총리직에서 일정 기간 물러나도록 요구할 가능성도 언급</td>
+</tr>
+<tr>
+<td><strong>연합뉴스TV</strong></td>
+<td>시각 제공</td>
+<td>부패 혐의 기소 상황에서 사면 요청이 정치적 전략으로 보인다는 시각 제시</td>
+</tr>
+<tr>
+<td><strong>KBS 세계는지금</strong></td>
+<td>배경 설명</td>
+<td>네타냐후가 이스라엘 내에서 보수적 지지층과의 연계 강화 시도와 연계해 사면 요청을 정당화하려는 시도</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>네타냐후 측</strong>: 사면이 승인되면 “국가 내부의 분열을 치유하고 통합에 전력할 수 있다”는 입장.  </li>
+<li><strong>비판적 시각</strong>: 사면 요청이 부패 혐의에 대한 책임 회피이며, 정치적 이득을 위해 사용되는 수단으로 비판.  </li>
+<li><strong>전문가 의견</strong>: 사면이 실제로 부여될 가능성은 낮으며, 헤르조그가 사면을 승인하더라도 총리직에서 일정 기간 물러나도록 요구할 수 있다는 점이 우려된다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>네타냐후가 부패 혐의로 기소됨</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>사면 청원서가 헤르조그 대통령에게 제출됨</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프 대통령이 사면 요청 서한을 보낸 사실</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>헤르조그 대통령이 사면을 승인할 것인지</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>사면이 부여될 경우 헤르조그가 총리직에서 일정 기간 물러나도록 요구할 것인지</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프 서한이 헤르조그의 결정에 직접적인 영향을 미칠 것인지</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>벤자민 네타냐후</strong></td>
+<td>이스라엘 총리</td>
+<td>사면 승인 시 국가 통합에 기여할 것이라 주장</td>
+<td>부패 혐의 기소로 인한 정치적 위기 회피</td>
+</tr>
+<tr>
+<td><strong>이츠하크 헤르조그</strong></td>
+<td>이스라엘 대통령</td>
+<td>사면 승인 여부 미공개</td>
+<td>국가 안보·정치적 균형 유지</td>
+</tr>
+<tr>
+<td><strong>도널드 트럼프</strong></td>
+<td>미국 전 대통령</td>
+<td>사면 요청 서한 발송</td>
+<td>이스라엘 내 보수적 정당과의 관계 강화</td>
+</tr>
+<tr>
+<td><strong>검찰·법원</strong></td>
+<td>사법기관</td>
+<td>부패 혐의 기소 진행</td>
+<td>법적 절차와 공정성 확보</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>사면 승인 가능성</strong>: FT의 분석에 따르면 사면은 유죄 인정 이후에 이루어지는 경우가 많으며, 네타냐후가 유죄를 인정할지는 불투명하다. 따라서 사면이 실제로 부여될 가능성은 낮을 것으로 보인다.  </li>
+<li><strong>정치적 파장</strong>: 사면 요청이 승인되더라도 헤르조그가 총리직에서 일정 기간 물러나도록 요구할 수 있어, 이스라엘 내 정치적 불안정이 지속될 가능성이 있다.  </li>
+<li><strong>국제 관계</strong>: 미국 트럼프의 서한이 사면 결정에 직접적인 영향을 미칠지는 불확실하지만, 미국과 이스라엘 간의 정치적 연계가 강화될 수 있다.  </li>
+<li><strong>내부 분열</strong>: 네타냐후가 사면을 통해 국가 통합을 주장하지만, 부패 혐의에 대한 비판은 여전히 존재하며, 이는 이스라엘 사회 내 분열을 심화시킬 수 있다.</li>
+</ul>
+<p><strong>결론</strong>은 사면 요청이 정치적 전략으로 보이며, 실제 사면이 부여될 가능성은 낮아 보인다. 이 사건은 이스라엘 내 정치적 긴장과 부패 문제에 대한 논란을 한층 더 부각시킬 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=u3siN6OYF5c" target="_blank">이스라엘 네타냐후, 부패 혐의로 검찰 기소 / 연합뉴스...</a><a href="https://www.youtube.com/watch?v=D0dnI4NcGtU" target="_blank">Netanyahu, the center of Israe...</a><a href="https://www.youtube.com/watch?v=lRVtioz1XQo" target="_blank">이스라엘 네타냐후 총리는 전쟁 후 어떻게 될까 / #교...</a><a href="https://www.youtube.com/watch?v=QR4nz2iyCNE" target="_blank">'이스라엘 지지' 미국 여론, 20여 년 만에 최고 #...</a><a href="https://www.youtube.com/watch?v=4b-s3X3C9ZY" target="_blank">#Shorts / [이 시각 세계] '사법 무력화' 반...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004561850" target="_blank">이스라엘 네타냐후 총리, 대통령에 사면 요청…국가 통합 명분</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://m.sbs.co.kr/search/allSearchList.do?collection=nnews&sort=DATE&query=%EC%9C%A0%EB%A6%AC&m_searchclick=all_news_more_00_00" target="_blank">유리 : 뉴스 : 검색 : SBS</a><a href="https://www.yna.co.kr/international/all/2?site=footer_international_depth02" target="_blank">세계전체 | 세계 | 연합뉴스</a><a href="https://www.notizie.it/ko/%ED%85%94%EC%95%84%EB%B9%84%EB%B8%8C%EC%97%90%EC%84%9C-%EC%97%B4%EB%A6%B0-%EC%8B%9C%EC%9C%84%3A-%EB%84%A4%ED%83%80%EB%83%90%ED%9B%84%EC%97%90-%EB%8C%80%ED%95%9C-%EC%82%AC%EB%A9%B4-%EC%9A%94%EC%B2%AD%EC%9D%B4-%EC%9D%B4%EC%8A%A4%EB%9D%BC%EC%97%98%EC%9D%84-%EB%92%A4%ED%9D%94%EB%93%A4%EB%8B%A4./" target="_blank">텔아비브 시위: 네타냐후 사면 요구, 이스라엘을 뒤흔들다</a><a href="https://www.yna.co.kr/international/all/2?site=navi_international_depth02" target="_blank">세계전체 | 세계 | 연합뉴스</a><a href="https://www.dt.co.kr/world/general" target="_blank">일반 | 국제 | 디지털타임스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
