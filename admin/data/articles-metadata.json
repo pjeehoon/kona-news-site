@@ -1,5 +1,77 @@
 [
   {
+    "id": "01ea2ceec2ad",
+    "title": "클로징",
+    "created_at": "2025-12-02T02:00:22.578855+09:00",
+    "last_updated": "2025-12-02T02:00:22.578855+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "KBS",
+        "뉴스9",
+        "종영"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "e2f3c9a0f883",
+    "title": "옥스퍼드 올해의 단어 ‘분노 미끼’…캠브리지는 ‘유사 사회관계“",
+    "created_at": "2025-12-02T01:51:34.021653+09:00",
+    "last_updated": "2025-12-02T01:51:34.021653+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "옥스",
+        "캠브",
+        "분노미끼"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "fa39a6141e0c",
+    "title": "2025 여성과학기술인 어워드 개최…올해의 여성과기인 3명 선정",
+    "created_at": "2025-12-02T01:45:28.761541+09:00",
+    "last_updated": "2025-12-02T01:45:28.761541+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "신주영",
+        "이현주",
+        "홍수린"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "fcd2e5acfe3f",
     "title": "출범 20년 맞은 하나금융…함영주 회장 \"금융의 본질은 모두의 행복\"",
     "created_at": "2025-12-02T01:24:05.451325+09:00",
