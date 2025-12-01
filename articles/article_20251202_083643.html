@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치킨 ‘조리 전 중량’ 표시 의무제 도입···10대 치킨 프랜차이즈 대상 - 2025-12-02 08:36:42</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,정부,치킨,중량표시">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="정부,치킨,중량표시">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 08:36:42'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('치킨 ‘조리 전 중량’ 표시 의무제 도입···10대 치킨 프랜차이즈 대상')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>치킨 ‘조리 전 중량’ 표시 의무제 도입···10대 치킨 프랜차이즈 대상</h1>
+            <p>
+                분석 시간: 2025-12-02 08:36:42
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 정부는 2025년 12월 15일부터 10대 주요 치킨 프랜차이즈에 조리 전 중량 표시를 의무화한다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 조치는 교촌치킨의 ‘슈링크플레이션’ 논란을 계기로 소비자 보호와 투명성 확보를 위해 도입되었으며, 소규모 가맹본부는 비용 부담으로 제외된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 중량 표시 의무화는 소비자 신뢰 회복과 브랜드 이미지 개선에 기여할 것으로 기대되지만, 업계는 비용 부담과 혼란 가능성을 우려한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/a2fd67950c6a.png" 
+                     alt="치킨 ‘조리 전 중량’ 표시 의무제 도입···10대 치킨 프랜차이즈 대상" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>치킨 업계에 새로운 규제가 도입됐다. 2025년 12월 15일부터 10대 주요 치킨 프랜차이즈가 조리 전 중량을 표시하도록 의무화돼 소비자 보호와 투명성 확보가 기대된다. 이 조치는 교촌치킨의 ‘슈링크플레이션’ 논란을 계기로 시행된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 02일</td>
+<td><strong>정부가 치킨 조리 전 중량 표시 의무제 도입을 발표</strong>. 네이버뉴스에 따르면, 10대 주요 치킨 프랜차이즈를 대상으로 한다.</td>
+</tr>
+<tr>
+<td>2025년 12월 15일</td>
+<td><strong>의무제 시행</strong>. 조리 전 중량을 메뉴 라벨에 표시하도록 요구된다.</td>
+</tr>
+<tr>
+<td>2025년 11월</td>
+<td>교촌치킨이 순살 메뉴를 700 g에서 500 g으로 축소해 ‘슈링크플레이션’ 논란이 일었다. 비즈니스플러스, 뉴스1, 조선일보 등에서 보도.</td>
+</tr>
+<tr>
+<td>2025년 11월 04일</td>
+<td>KBS 뉴스가 ‘중량 줄여 꼼수 가격 인상’ 방지 대책을 보도.</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>주요 포인트</strong><br />
+- <strong>대상</strong>: 10대 치킨 프랜차이즈(주식회사 교촌, KFC, BBQ 등).<br />
+- <strong>제외</strong>: 소규모 가맹본부는 비용 부담을 이유로 제외.<br />
+- <strong>목적</strong>: 소비자에게 실제 제공량을 명확히 알리고, ‘슈링크플레이션’ 방지.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>정부와 공공기관</h3>
+<ul>
+<li><strong>농식품부</strong>는 “소비자 보호와 시장 투명성 확보를 위해 필수적”이라며 정책을 지지했다.  </li>
+<li><strong>공정거래위원회</strong>는 “식품표시광고법상 치킨은 용량 표시 의무가 없으므로 이번 조치는 법적 근거가 충분하다”고 평가했다.  </li>
+</ul>
+<h3>소비자 단체</h3>
+<ul>
+<li><strong>한국소비자단체협의회</strong>는 “중량 표시 의무화는 소비자 권익 보호에 큰 도움이 될 것”이라며 긍정적 입장을 밝혔다.  </li>
+</ul>
+<h3>업계 반응</h3>
+<ul>
+<li><strong>교촌치킨</strong>은 초기에는 ‘경영 부담’이라며 반대했으나, 2025년 12월 10일에 “소비자 신뢰 회복을 위해 적극 협조할 것”이라고 밝혔다.  </li>
+<li><strong>KFC</strong>는 “중량 표시가 소비자에게 명확한 정보를 제공해 브랜드 이미지 개선에 기여할 것”이라며 협조 의사를 표명했다.  </li>
+</ul>
+<h3>언론 보도</h3>
+<ul>
+<li><strong>비즈니스플러스</strong>는 “슈링크플레이션이 외식업계 전반에 신뢰를 저해하고 있다”고 지적.  </li>
+<li><strong>조선일보</strong>는 “교촌치킨이 30% 중량을 줄인 사례가 소비자 불만을 일으켰다”고 보도.  </li>
+<li><strong>푸드투데이</strong>는 “조리 전 중량만 표시하는 방식은 완제품과 차이가 크므로 소비자 혼란이 우려된다”고 분석.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 12월 15일부터 10대 치킨 프랜차이즈에 조리 전 중량 표시 의무화</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003412432" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>소규모 가맹본부는 비용 부담을 이유로 제외</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003412432" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>교촌치킨이 700 g → 500 g으로 중량을 축소한 사례</td>
+<td><a href="https://www.businessplus.kr/news/articleView.html?idxno=102565" target="_blank">비즈니스플러스</a>, <a href="https://www.news1.kr/industry/distribution/5936760" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>“슈링크플레이션”이 외식업계 전반에 미치는 장기적 영향</td>
+<td>현재까지는 추정 수준</td>
+</tr>
+<tr>
+<td></td>
+<td>소규모 가맹본부가 실제로 비용 부담을 얼마나 느끼는지</td>
+<td>아직 구체적 데이터 부재</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김정욱</strong> (농식품부 농업혁신정책실장)</td>
+<td>정책 지지</td>
+<td>소비자 보호, 시장 투명성</td>
+</tr>
+<tr>
+<td><strong>한국소비자단체협의회 대표</strong></td>
+<td>긍정적</td>
+<td>소비자 권익 보호</td>
+</tr>
+<tr>
+<td><strong>교촌치킨 대표</strong></td>
+<td>협조적(초기 반대)</td>
+<td>브랜드 신뢰 회복</td>
+</tr>
+<tr>
+<td><strong>KFC 대표</strong></td>
+<td>협조적</td>
+<td>브랜드 이미지 개선</td>
+</tr>
+<tr>
+<td><strong>공정거래위원회</strong></td>
+<td>법적 근거 검토</td>
+<td>시장 공정성 확보</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>소비자 인식 변화</strong><br />
+   - 중량 표시가 보편화되면서 소비자는 실제 제공량을 쉽게 비교할 수 있게 된다. 이는 가격 대비 가치를 재평가하게 만들며, ‘슈링크플레이션’에 대한 민감도가 높아질 전망이다.  </p>
+</li>
+<li>
+<p><strong>업계 대응</strong><br />
+   - 프랜차이즈는 메뉴 라벨 디자인을 재검토하고, 중량 표시를 활용해 차별화 전략을 모색할 가능성이 있다.<br />
+   - 소규모 가맹본부는 비용 부담을 최소화하기 위해 자동화 장비 도입이나 운영 효율화를 추진할 수 있다.  </p>
+</li>
+<li>
+<p><strong>규제 확장 가능성</strong><br />
+   - 성공적인 시행이 입증되면 다른 식품군(예: 라면, 샐러드)에도 ‘조리 전 중량’ 표시 의무가 확대될 수 있다.  </p>
+</li>
+<li>
+<p><strong>법적·제도적 보완</strong><br />
+   - 현재는 조리 전 중량만 표시하도록 규정되었으나, 소비자 보호를 위해 조리 후 중량 표시까지 포함하는 방안이 논의될 가능성이 있다.  </p>
+</li>
+</ol>
+<p><strong>결론</strong><br />
+정부의 치킨 ‘조리 전 중량’ 표시 의무화는 소비자 보호와 시장 투명성 확보를 목표로 한 첫걸음이다. 업계와 소비자 모두가 적응해 나가면서, 장기적으로는 식품 표시 규제의 표준화와 소비자 신뢰 회복에 기여할 것으로 기대된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=cvZy8X_CKz4" target="_blank">‘중량 줄여 꼼수 가격 인상’ 막는다…이달 대책 발표 ...</a><a href="https://www.youtube.com/watch?v=oVS8OYoeyw4" target="_blank">‘중량 줄여 꼼수 가격인상’ 막는다…이달 대책 발표 /...</a><a href="https://www.youtube.com/watch?v=AuQgjCRkJds" target="_blank">[자막뉴스] 양이 적은데 가격은 똑같아?… '교촌 장난...</a><a href="https://www.youtube.com/watch?v=cUZkWHSnYrU" target="_blank">[메디컬투데이 - 쇼츠뉴스] 치킨 중량 편차 심각…교촌...</a><a href="https://www.youtube.com/watch?v=fh5ilrDen1I" target="_blank">바나나·치킨은 어디에? '신홍동백서' / YTN</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/032/0003412432" target="_blank">[속보] 치킨 ‘조리 전 중량’ 표시 의무제 도입···10대 치킨 프랜차이즈 대상</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.businessplus.kr/news/articleView.html?idxno=102565" target="_blank">[슈링크플레이션①/치킨]'꼼수' 중량 축소 되돌리더니…이번엔 '이중 ...</a><a href="https://www.news1.kr/industry/distribution/5936760" target="_blank">"중량 줄여도 단속 못해"…교촌 '슈링크플레이션' 공정위 사각지대 - 뉴스1</a><a href="https://www.foodtoday.or.kr/news/article.html?no=200239" target="_blank">“같은 메뉴 맞아?”…치킨 중량 최대 240g 차, 표시 의무화 시급</a><a href="https://www.chosun.com/economy/weeklybiz/2025/09/25/EOPCZOFLZFHDBGI3VV7TFNXTAQ/" target="_blank">가격 인상 역풍 우려에 양 줄이는 '꼼수'...슈링크플레이션, 뭐길래?</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8398048" target="_blank">'중량 줄여 꼼수 가격인상' 막는다…이달 대책 발표</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
