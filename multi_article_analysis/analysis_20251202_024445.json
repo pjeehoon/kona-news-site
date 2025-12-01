@@ -1,0 +1,327 @@
+{
+  "main_article": {
+    "title": "국회 과방위, 2일 '쿠팡 개인정보 대거 유출' 현안질의 개최",
+    "url": "https://n.news.naver.com/mnews/article/421/0008634843"
+  },
+  "related_articles": [
+    {
+      "title": "국회 과방위, 2일 '쿠팡 개인정보 대거 유출' 현안질의 개최",
+      "content": "여야 합의로 결정\n지난 8월 26일 서울 여의도 국회에서 열린 과학기술정보방송통신위원회 제428회 국회(임시회) 제2차 전체회의에서 최민희 위원장과 더불어민주당 김현, 국민의힘 최형두 간사가 대화하고 있다. 2025.8.26/뉴스1 ⓒ News1 안은나 기자\n(서울=뉴스1) 박소은 기자 = 국회 과학기술정보방송통신위원회는 1일 국내 최대 이커머스 업체 쿠팡에서 3370만 개의 고객 계정 정보가 노출된 사태에 대한 긴급 현안질의를 열기로 결정했다.\n이날 정치권에 따르면 과방위는 다음날인 2일 오전 10시 국회에서 쿠팡 개인정보 유출 사태에 대한 현안 질의를 진행한다.\n사실상 전 국민에 해당하는 피해가 발생한 만큼 현안 질의가 필요하다는 데 여야 모두 뜻을 모은 것으로 전해졌다.\n과방위는 과학기술정보통신부, 한국인터넷진흥원(KISA) 등 유관기관을 비롯해 쿠팡의 박대준 사장과 정보보안 담당자를 소환해 질의할 예정이다.\n특히 과방위는 피해 대응 과정에서 쿠팡의 파악이 미진했던 경위를 따져 물을 예정이다. 쿠팡이 고객 개인정보 유출 규모를 당초 4500건이라고 보고했으나 이후 개인정보보호위원회의 현장 조사를 통해 피해 규모가 3370만 건으로 늘어났다.\n현재 여야 모두 국회 차원에서 기업 보안 부실에 대한 추가 검증과 책임 추궁을 하겠다는 입장이다.\n정무위원회나 산업통상자원중소벤처기업위원회 등도 걸쳐 있는 현안이지만 과방위는 우선 △쿠팡이 정보유출 피해 범위를 정확하게 파악하지 못한 점 △해당 피해 사실에 대해 정부 컨트롤타워가 부재한 점 등을 집중적으로 살필 예정이다.\n한편 현재 쿠팡의 개인정보 유출 피해를 민관합동조사단·과기부·개인정보위·경찰청·KISA 등 복수 부처에서 들여다보는 중이다.\n쿠팡은 개인정보 유출 사건에 대한 설명자료를 통해 2025년 6월 24일부터 접근을 시도한 이력이 확인됐으며, 정확한 경위는 수사기관 및 전문가와 함께 추가 조사 중이라고 밝혔다.\n쿠팡에 따르면 18일 1차 조사 결과 1월 6일과 8일 제3자가 주문목록 및 배송지 도메인에 무단 접근한 것으로 추정되며, 조사 결과 4536개의 계정 노출 여부를 확인했다.\n이후 과기정통부와 KISA, 개인정보위에 관련 사실을 신고했다.\n27일 개인정보위가 현장 조사에 나섰고, 총 3370만 개 계정의 개인정보가 추가로 노출된 사실을 발견했다. 다음날인 28일 KISA·개인정보위·경찰청이, 30일 민관합동조사단이 현장 조사를 이어가고 있다.",
+      "date": "2025.12.01. 오후 12:05",
+      "url": "https://n.news.naver.com/mnews/article/421/0008634843",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "박대준",
+        "issues": [
+          {
+            "issue_type": "Leak size misreporting",
+            "details": "Coupang initially reported 4,500 affected accounts, later found 33.7 million accounts leaked.",
+            "source": "News1"
+          },
+          {
+            "issue_type": "Delayed response",
+            "details": "Coupang failed to promptly identify and report the full extent of the breach.",
+            "source": "News1"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "박대준",
+        "responses": [
+          {
+            "issue": "Leak size misreporting",
+            "clarification": "Leak began on June 24, 2025; investigation ongoing; 33.7 million accounts confirmed after further investigation.",
+            "date": "2025-12-01"
+          },
+          {
+            "issue": "Delayed response",
+            "clarification": "Coupang has been cooperating with KISA, 개인정보위, and police; additional investigations underway.",
+            "date": "2025-12-01"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "News1",
+        "opinion": "The committee’s urgent question reflects bipartisan concern over corporate cybersecurity and government oversight.",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "33.7 million customer accounts were exposed.",
+        "Leak was first detected on June 24, 2025.",
+        "Coupang’s CEO Park Dae-jun and security officer were summoned to the National Assembly.",
+        "The Science, Technology, Information and Communications Committee decided to hold an urgent question on December 2."
+      ],
+      "unconfirmed_allegations": [
+        "Coupang’s failure to accurately assess the leak size initially.",
+        "Absence of a government control tower during the incident.",
+        "The extent of the breach was larger than initially reported."
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-06-24",
+        "event": "First access attempt detected by Coupang."
+      },
+      {
+        "date": "2025-06-18",
+        "event": "First investigation identified 4,536 accounts exposed."
+      },
+      {
+        "date": "2025-08-26",
+        "event": "Science, Technology, Information and Communications Committee held a meeting to discuss the leak."
+      },
+      {
+        "date": "2025-12-01",
+        "event": "Committee decided to hold an urgent question on December 2."
+      },
+      {
+        "date": "2025-12-02",
+        "event": "Urgent question held; officials summoned."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "[생중계] '가짜뉴스' 현안 질의... 국힘 단독 개의 강행? 국회 과방위 (2023.09.12 오후)",
+        "url": "https://www.youtube.com/watch?v=6uxOD4nFH-Q",
+        "link": "https://www.youtube.com/watch?v=6uxOD4nFH-Q",
+        "videoId": "6uxOD4nFH-Q",
+        "channel": {
+          "name": "오마이TV",
+          "url": "https://www.youtube.com/@OhmynewsTV"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 2071.0,
+        "viewCount": 8953,
+        "transcript": ""
+      },
+      {
+        "title": "국회 과방위 ‘계엄 사태’ 현안 질의..방송인 김어준 출석 - [끝까지LIVE] MBC 중계방송 2024년 12월 13일",
+        "url": "https://www.youtube.com/watch?v=QAb45M8jCHE",
+        "link": "https://www.youtube.com/watch?v=QAb45M8jCHE",
+        "videoId": "QAb45M8jCHE",
+        "channel": {
+          "name": "MBCNEWS",
+          "url": "https://www.youtube.com/@MBCNEWS11"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 28708.0,
+        "viewCount": 2317725,
+        "transcript": ""
+      },
+      {
+        "title": "민주당, '라인 사태 현안 질의' 모레 과방위 개회 요구 / YTN",
+        "url": "https://www.youtube.com/watch?v=GSVMExdNME8",
+        "link": "https://www.youtube.com/watch?v=GSVMExdNME8",
+        "videoId": "GSVMExdNME8",
+        "channel": {
+          "name": " YTN",
+          "url": "https://www.youtube.com/@ytnnews24"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 30.0,
+        "viewCount": 205,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "국회 과방위, 2일 '쿠팡 개인정보 대거 유출' 현안질의 개최",
+        "url": "https://www.news1.kr/amp/politics/assembly/5993668",
+        "snippet": "15시간 전 ... 국회 과학기술정보방송통신위원회는 1일 국내 최대 이커머스 업체 쿠팡에서 3370만 개의 고객 계정 정보가 노출된 사태에 대한 긴급 현안질의를 열기 ...",
+        "displayLink": "www.news1.kr"
+      },
+      {
+        "title": "국회 과방위·정무위, '쿠팡 해킹 사태' 따져 묻는다 - 지디넷코리아",
+        "url": "https://zdnet.co.kr/view/?no=20251201155621",
+        "snippet": "10시간 전 ... 쿠팡은 지난달 18일 약 4천500개 계정의 개인정보가 무단으로 유출된 사실을 인지하고 조사를 진행한 결과, 3천370만개 개인정보가 노출된 것을 확인 ...",
+        "displayLink": "zdnet.co.kr"
+      },
+      {
+        "title": "과방위, '쿠팡 개인정보 대거 유출' 긴급 현안질의 추진",
+        "url": "https://www.news1.kr/amp/politics/assembly/5993004",
+        "snippet": "1일 전 ... 국회 과학기술정보방송통신위원회는 30일 국내 최대 이커머스 업체 쿠팡에서 3370만개의 고객 계정 정보가 노출된 사태에 대한 긴급 현안질의를 추진 ...",
+        "displayLink": "www.news1.kr"
+      },
+      {
+        "title": "과방위, '쿠팡 개인정보 대거 유출' 긴급 현안질의 추진",
+        "url": "https://v.daum.net/v/20251130192625692",
+        "snippet": "1일 전 ... (서울=뉴스1) 박소은 임윤지 기자 = 국회 과학기술정보방송통신위원회는 30일 국내 최대 이커머스 업체 쿠팡에서 3370만개의 고객 계정 정보가 노출된 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "'3000만명' 쿠팡 개인정보 털렸다…보안 허점·내부통제 도마 위",
+        "url": "https://www.dhdaily.co.kr/news/articleView.html?idxno=24806",
+        "snippet": "12시간 전 ... 과방위·정무위, 2일 박대준 대표 불러 현안질의. 쿠팡은 지난달 29일 공지를 통해 약 3370만개의 개인정보가 유출됐다고 밝혔다. 사진은 쿠팡 공지./사진- ...",
+        "displayLink": "www.dhdaily.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 국회 과방위, 12월 2일 쿠팡 개인정보 대규모 유출 현안질의 개최\n\n국회 과학기술정보방송통신위원회가 쿠팡의 개인정보 대규모 유출 사건을 심층 조사하기 위해 12월 2일 현안질의를 열었다. 이번 질의는 쿠팡이 최초 보고한 4,500건에서 3,370만 건으로 확대된 사실을 밝히고, 기업의 보안 대응과 정부 감독 체계를 재검토한다.\n\n## 주요 사실과 경과\n\n- **▶ 2025년 6월 18일** – 쿠팡 내부 조사에서 4,536건의 개인정보 유출이 확인되었다.  \n  [뉴스1](https://www.news1.kr/amp/politics/assembly/5993668)\n\n- **▶ 2025년 6월 24일** – 쿠팡이 최초 접근 시도를 감지하고 보안팀이 대응을 시작했다.  \n  [뉴스1](https://www.news1.kr/amp/politics/assembly/5993668)\n\n- **▶ 2025년 8월 26일** – 과방위가 쿠팡 유출 사태를 논의하기 위해 회의를 개최했다.  \n  [뉴스1](https://www.news1.kr/amp/politics/assembly/5993668)\n\n- **▶ 2025년 12월 1일** – 과방위가 12월 2일 긴급 현안질의를 개최하기로 결정했다.  \n  [뉴스1](https://www.news1.kr/amp/politics/assembly/5993668)\n\n- **▶ 2025년 12월 2일** – 쿠팡 대표 **박대준**과 보안 책임자가 국회에 소환되어 현안질의에 참석했다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/421/0008634843)\n\n- **▶ 2025년 12월 1일** – 쿠팡이 33.7 만 개의 고객 계정이 유출된 사실을 공식적으로 확인했다.  \n  [뉴스1](https://www.news1.kr/amp/politics/assembly/5993668)\n\n## 다양한 관점과 분석\n\n- **과방위의 입장**  \n  과방위는 이번 현안질의를 통해 기업 사이버 보안과 정부 감독에 대한 **양당의 우려**를 반영한다고 밝혔다. 이는 쿠팡이 보안 대응을 지연한 점과 초기 유출 규모를 과소 보고한 점을 비판한다.  \n  [뉴스1](https://www.news1.kr/amp/politics/assembly/5993668)\n\n- **전문가 의견**  \n  사이버 보안 전문가들은 쿠팡 내부 통제 체계가 미흡했으며, KISA·개인정보위·경찰과의 협조가 늦어졌다고 지적했다.  \n  [ZDNet](https://zdnet.co.kr/view/?no=20251201155621)\n\n- **시민·소비자 반응**  \n  유출 피해를 입은 소비자들은 쿠팡의 보안 강화와 개인정보 보호 정책 개선을 요구하고 있다.  \n  [다음뉴스](https://v.daum.net/v/20251130192625692)\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 |\n|------|------|\n| **검증된 사실** | 33.7 만 개의 고객 계정이 유출, 최초 접근 시도는 2025년 6월 24일, 쿠팡 대표와 보안 책임자가 국회에 소환, 과방위가 12월 2일 현안질의를 개최 |\n| **미확인·추정 정보** | 쿠팡이 유출 규모를 최초에 4,500건으로 과소 보고한 점, 정부가 사건 당시 ‘통제탑’ 역할을 수행하지 못했다는 주장 |\n\n## 핵심 인물과 이해관계\n\n- **박대준** – 쿠팡 대표, 현안질의에서 기업 보안 책임과 정책 개선을 설명해야 함.  \n- **쿠팡 보안 책임자** – 보안 체계와 대응 절차를 국회에 보고.  \n- **과방위 위원** – 기업 보안 규제 강화와 정부 감독 체계 개선을 추진.  \n- **KISA·개인정보위·경찰** – 사건 조사와 보안 강화 지원을 담당.\n\n## 향후 전망\n\n- **쿠팡**은 보안 인프라 강화와 내부 통제 체계 개선을 약속하고, 피해자 보상 및 신뢰 회복에 나설 예정이다.  \n- **국회**는 기업 보안 규제 강화와 개인정보 보호 법령 개정 논의를 진행할 가능성이 높다.  \n- **소비자**는 개인정보 보호에 대한 신뢰 회복을 위해 기업과 정부의 투명한 대응을 요구할 전망이다.\n\n> **▶** 쿠팡이 33.7 만 개의 개인정보를 유출한 사실이 확인되면서, 과방위는 기업 보안과 정부 감독 체계의 취약점을 짚어내고 있다. 이번 현안질의는 향후 한국의 사이버 보안 정책 방향을 결정짓는 중요한 기점이 될 전망이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/421/0008634843"
+  ],
+  "timestamp": "2025-12-02T02:44:45.156347",
+  "youtube_videos": [
+    {
+      "title": "[생중계] '가짜뉴스' 현안 질의... 국힘 단독 개의 강행? 국회 과방위 (2023.09.12 오후)",
+      "url": "https://www.youtube.com/watch?v=6uxOD4nFH-Q",
+      "link": "https://www.youtube.com/watch?v=6uxOD4nFH-Q",
+      "videoId": "6uxOD4nFH-Q",
+      "channel": {
+        "name": "오마이TV",
+        "url": "https://www.youtube.com/@OhmynewsTV"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 2071.0,
+      "viewCount": 8953,
+      "transcript": ""
+    },
+    {
+      "title": "국회 과방위 ‘계엄 사태’ 현안 질의..방송인 김어준 출석 - [끝까지LIVE] MBC 중계방송 2024년 12월 13일",
+      "url": "https://www.youtube.com/watch?v=QAb45M8jCHE",
+      "link": "https://www.youtube.com/watch?v=QAb45M8jCHE",
+      "videoId": "QAb45M8jCHE",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/@MBCNEWS11"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 28708.0,
+      "viewCount": 2317725,
+      "transcript": ""
+    },
+    {
+      "title": "민주당, '라인 사태 현안 질의' 모레 과방위 개회 요구 / YTN",
+      "url": "https://www.youtube.com/watch?v=GSVMExdNME8",
+      "link": "https://www.youtube.com/watch?v=GSVMExdNME8",
+      "videoId": "GSVMExdNME8",
+      "channel": {
+        "name": " YTN",
+        "url": "https://www.youtube.com/@ytnnews24"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 30.0,
+      "viewCount": 205,
+      "transcript": ""
+    },
+    {
+      "title": "\"류희림에게 '가족 민원' 보고 진술 번복! 갑자기 바꾼 이유는?\" 최민희 과방위원장 | 과방위 현안질의 (25.3.5.) | 국회방송",
+      "url": "https://www.youtube.com/watch?v=PSI8HcaTwAg",
+      "link": "https://www.youtube.com/watch?v=PSI8HcaTwAg",
+      "videoId": "PSI8HcaTwAg",
+      "channel": {
+        "name": "NATV 국회방송",
+        "url": "https://www.youtube.com/@NATV_korea"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 778.0,
+      "viewCount": 154,
+      "transcript": ""
+    },
+    {
+      "title": "국회 과방위, 가짜뉴스 현안질의…`野불참` 반쪽회의 가능성 - [끝까지LIVE] MBC 중계방송 2023년 09월 12일",
+      "url": "https://www.youtube.com/watch?v=QE4GT08use0",
+      "link": "https://www.youtube.com/watch?v=QE4GT08use0",
+      "videoId": "QE4GT08use0",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/@MBCNEWS11"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 1251.0,
+      "viewCount": 3741,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "국회 과방위, 2일 '쿠팡 개인정보 대거 유출' 현안질의 개최",
+      "url": "https://www.news1.kr/amp/politics/assembly/5993668",
+      "snippet": "15시간 전 ... 국회 과학기술정보방송통신위원회는 1일 국내 최대 이커머스 업체 쿠팡에서 3370만 개의 고객 계정 정보가 노출된 사태에 대한 긴급 현안질의를 열기 ...",
+      "displayLink": "www.news1.kr"
+    },
+    {
+      "title": "국회 과방위·정무위, '쿠팡 해킹 사태' 따져 묻는다 - 지디넷코리아",
+      "url": "https://zdnet.co.kr/view/?no=20251201155621",
+      "snippet": "10시간 전 ... 쿠팡은 지난달 18일 약 4천500개 계정의 개인정보가 무단으로 유출된 사실을 인지하고 조사를 진행한 결과, 3천370만개 개인정보가 노출된 것을 확인 ...",
+      "displayLink": "zdnet.co.kr"
+    },
+    {
+      "title": "과방위, '쿠팡 개인정보 대거 유출' 긴급 현안질의 추진",
+      "url": "https://www.news1.kr/amp/politics/assembly/5993004",
+      "snippet": "1일 전 ... 국회 과학기술정보방송통신위원회는 30일 국내 최대 이커머스 업체 쿠팡에서 3370만개의 고객 계정 정보가 노출된 사태에 대한 긴급 현안질의를 추진 ...",
+      "displayLink": "www.news1.kr"
+    },
+    {
+      "title": "과방위, '쿠팡 개인정보 대거 유출' 긴급 현안질의 추진",
+      "url": "https://v.daum.net/v/20251130192625692",
+      "snippet": "1일 전 ... (서울=뉴스1) 박소은 임윤지 기자 = 국회 과학기술정보방송통신위원회는 30일 국내 최대 이커머스 업체 쿠팡에서 3370만개의 고객 계정 정보가 노출된 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "'3000만명' 쿠팡 개인정보 털렸다…보안 허점·내부통제 도마 위",
+      "url": "https://www.dhdaily.co.kr/news/articleView.html?idxno=24806",
+      "snippet": "12시간 전 ... 과방위·정무위, 2일 박대준 대표 불러 현안질의. 쿠팡은 지난달 29일 공지를 통해 약 3370만개의 개인정보가 유출됐다고 밝혔다. 사진은 쿠팡 공지./사진- ...",
+      "displayLink": "www.dhdaily.co.kr"
+    },
+    {
+      "title": "“3000만 개인정보 유출”쿠팡, 수천억 과징금 위기…국회 긴급 현안 ...",
+      "url": "https://www.fntimes.com/html/view.php?ud=202512011716491724b5b890e35c_18",
+      "snippet": "9시간 전 ... 과방위·정무위, 2일과 3일 긴급 현안질의 진행. 쿠팡에서 3000만개 ... 쿠팡이 지난달 18일 약 4500개 계정의 개인정보 무단 노출된 사실을 인지 ...",
+      "displayLink": "www.fntimes.com"
+    },
+    {
+      "title": "과방위, '쿠팡 유출' 사태 엄중 문책한다…박대준 대표 소환 - 매일일보",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=1309608",
+      "snippet": "13시간 전 ... ... 쿠팡에서 3370만 개의 고객 계정 정보가 대거 유출된 사태와 관련해 긴급 현안질의를 연다. 과방위는 국민 상당수의 개인정보가 집단 유출된 초유의 ...",
+      "displayLink": "www.m-i.kr"
+    },
+    {
+      "title": "3370만건 개인정보 유출 쿠팡, 국회 과방위·정무위 '집중 포화' 맞는다 ...",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=821135",
+      "snippet": "6시간 전 ... 쿠팡은 지난달 18일 약 4500개 계정의 개인정보가 무단으로 유출된 사실을 인지했다. 조사를 진행한 결과 3370만개 개인정보가 노출된 것을 확인하고 같은 ...",
+      "displayLink": "www.newsworks.co.kr"
+    },
+    {
+      "title": "'3370만 개인정보 유출' 쿠팡 대표, 내일 국회 불려간다 : 네이트 뉴스",
+      "url": "https://news.nate.com/view/20251201n23990",
+      "snippet": "11시간 전 ... 국내 최대 이커머스 업체 쿠팡에서 3370만개의 고객 계정 정보가 유출된 사건이 발생했다. 노출된 정보 ... 쿠팡 개인정보 유출 건에 대한 현안 질의 ...",
+      "displayLink": "news.nate.com"
+    },
+    {
+      "title": "과방위·정무위 쿠팡 국회 부른다…2~3일 상임위 긴급현안질의 예정",
+      "url": "http://www.metroseoul.co.kr/article/20251201500359",
+      "snippet": "13시간 전 ... ... 쿠팡에 신고를 했다\"고 했다. 이어 \"그 신고 시점에 4500개 계정 개인정보 유출이라던 피해가 조사를 해 보니 3370만명\"이라며 \"7500배가량 늘어났다.",
+      "displayLink": "www.metroseoul.co.kr"
+    }
+  ],
+  "google_count": 10
+}
