@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인권위" 양평군 공무원 사망…특검 수사관 고발한다" - 2025-12-01 22:31:10</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,양평군,인권위,특검">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="양평군,인권위,특검">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 22:31:10'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('인권위" 양평군 공무원 사망…특검 수사관 고발한다"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>인권위" 양평군 공무원 사망…특검 수사관 고발한다"</h1>
+            <p>
+                분석 시간: 2025-12-01 22:31:10
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국가인권위원회가 양평군 공무원 사망 사건에서 특검 수사관의 인권침해를 규정하고 검찰·경찰에 징계 권고를 제시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 조사 결과 특검 수사관이 사망자에게 진술 강요, 절차 위반, 8시간 초과 조사, 유족에게 유서 제공 거부 등 인권침해가 확인되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 결의는 공무원 사망 사건에 대한 투명성 강화와 특검 수사관의 책임성을 제고해 향후 유사 사건에 대한 법적·제도적 개선을 촉구한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/96d6bff55731.png" 
+                     alt="인권위" 양평군 공무원 사망…특검 수사관 고발한다"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>양평군 공무원 A가 사망한 사건에서 국가인권위원회가 특검 수사관의 인권침해를 규정하고 검찰·경찰에 징계 권고를 제시했다. 2025년 12월 1일 전원위원회 결의가 이뤄졌으며, 사건의 핵심은 진술 강요와 절차 위반이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 10월 2일</td>
+<td>사망</td>
+<td>양평군 공무원 A가 사망</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 10일</td>
+<td>발견</td>
+<td>사망한 채 발견</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 14일</td>
+<td>부검</td>
+<td>영결식 및 부검 절차 진행</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 23일</td>
+<td>직권조사 개시</td>
+<td>인권위가 김건희 특검에 직권조사 개시 통보</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/10/23/2O6MBVGORJGWVLRUXVEWSGXANA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 25일</td>
+<td>조사 보고서 공개</td>
+<td>인권위 조사 보고서에 인권침해 정황 담겨</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025년 11월 5일</td>
+<td>국감</td>
+<td>인권위 국감에서 특검 인권침해 고발 요구</td>
+<td><a href="https://www.newsis.com/view/NISX20251105_0003391020" target="_blank">뉴스이슈</a></td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>결의</td>
+<td>인권위 전원위원회에서 특검 수사관 고발·검찰·경찰 징계 권고 결정</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>특검 수사관이 A에게 거짓 진술을 강요</strong>하고, <strong>출석 통지에 피의 사실이 명시되지 않았으며</strong> 4회 급격히 일정이 변경된 뒤 <strong>조사 시간이 8시간 48분으로 상한 8시간을 초과</strong>했다는 사실이 확인됐다.<br />
+▶ <strong>특검 수사관이 유족에게 유서 원본·사본을 제공하지 않았다</strong>는 점도 문제로 지적되었다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>인권위</h3>
+<p>인권위는 <strong>특검 수사관의 인권침해 및 절차 위반을 규정</strong>하고, <strong>검찰에 고발·경찰에 징계 권고</strong>를 제시했다. 인권위는 “진술 강요와 회유 압박이 있었다는 조사 결과 보고가 있었음에도 특검 관련자들에 대한 징계와 고발 조치 결의가 연기됐다”라고 비판했다.<br />
+<a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">조선일보</a></p>
+<h3>특검 수사관</h3>
+<p>특검 수사관은 <strong>진술 강요가 없었다</strong>며 <strong>조사 목적이 공정했다</strong>는 입장을 밝혔다. 그러나 구체적 인용은 없으며, <strong>출석 통지서에 피의 사실이 명시되지 않은 점</strong>은 인정했다.<br />
+<a href="https://www.hani.co.kr/arti/society/society_general/1232178.html" target="_blank">한겨레</a></p>
+<h3>경찰·검찰</h3>
+<p>경찰은 <strong>조사 과정이 법적 절차를 준수했다</strong>는 입장을 내세웠으며, <strong>특검 수사관의 행위가 인권침해에 해당하지 않는다</strong>는 주장을 펼쳤다. 검찰은 <strong>특검 수사관에 대한 징계 권고를 검토 중</strong>이라고 밝혔다.<br />
+<a href="https://www.joongang.co.kr/article/25385676" target="_blank">중앙일보</a></p>
+<h3>유족 및 지역사회</h3>
+<p>유족은 <strong>특검 수사관의 강요와 절차 부정에 분노</strong>하며, <strong>공정한 사망 원인 규명이 필요</strong>하다고 요구했다. 지역사회는 <strong>공무원 사망 사건에 대한 투명한 조사와 책임자 처벌</strong>을 촉구하고 있다.<br />
+<a href="https://www.newsis.com/view/NISX20251105_0003391020" target="_blank">뉴스이슈</a></p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>A가 2025년 10월 2일 사망</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>특검 수사관이 진술 강요</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>출석 통지서에 피의 사실 미명시</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>일정 4회 급변, 조사 시간 8시간 48분 초과</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>유족에게 유서 원본·사본 미제공</td>
+<td><a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>인권위가 고발·징계 권고 결정</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>특검 수사관의 내부 동기 및 배경</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>경찰·검찰의 내부 의견</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책/소속</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>특검 수사관</strong></td>
+<td>김건희 특검 팀원</td>
+<td>진술 강요 부인, 절차 준수 주장</td>
+<td>사건 조사 책임, 직위 보호</td>
+</tr>
+<tr>
+<td><strong>인권위 위원</strong></td>
+<td>국가인권위원회 전원위원</td>
+<td>인권침해 규정, 고발·징계 권고</td>
+<td>인권 보호, 공정성 확보</td>
+</tr>
+<tr>
+<td><strong>경찰청</strong></td>
+<td>양평경찰서 소속 경찰관</td>
+<td>절차 준수 주장</td>
+<td>조직 명성, 내부 규정 준수</td>
+</tr>
+<tr>
+<td><strong>검찰청</strong></td>
+<td>검찰 수사관</td>
+<td>징계 권고 검토</td>
+<td>법적 책임, 조직 신뢰</td>
+</tr>
+<tr>
+<td><strong>유족</strong></td>
+<td>A의 가족</td>
+<td>공정한 사망 원인 규명 요구</td>
+<td>정당한 보상, 정의 실현</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong>: 인권위의 고발·징계 권고가 검찰·경찰에 전달되면서 <strong>특검 수사관에 대한 징계 절차</strong>가 진행될 가능성이 높다.  </li>
+<li><strong>정책 변화</strong>: 이번 사건이 <strong>특검 수사팀의 절차 개선</strong> 및 <strong>인권 침해 방지 가이드라인</strong>의 재검토를 촉발할 수 있다.  </li>
+<li><strong>정치적 파장</strong>: 인권위와 특검 팀 간 갈등이 확대되면 <strong>정치권 내부에서의 논쟁</strong>이 심화될 전망이다.  </li>
+<li><strong>공공 신뢰</strong>: 사건이 투명하게 해결되면 <strong>공공기관에 대한 신뢰 회복</strong>에 기여할 수 있으나, <strong>지연·불투명</strong>은 신뢰 하락으로 이어질 수 있다.</li>
+</ul>
+<p>이 사건은 공무원 사망과 관련된 인권침해 여부를 둘러싼 <strong>법적·정치적 갈등의 한 축</strong>이 되고 있다. 인권위의 결의가 실제로 어떻게 실행될지, 그리고 특검 수사관이 어떤 책임을 지게 될지는 향후 법원·검찰·경찰의 조치에 달려 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/366/0001127344" target="_blank">“진술 강요해”… 인권위, ‘양평 공무원 사망’ 관련 특검 수사관 고발</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/national/national_general/2025/11/25/CB7YQ3JEENHPZCW3PCHRXJMKOM/" target="_blank">인권위 조사 보고서에 '양평 사망 공무원 인권침해' 정황 담겨</a><a href="https://www.newsis.com/view/NISX20251105_0003391020" target="_blank">인권위 국감…與 "尹계엄은 인권침해" 野 "민중기 특검 檢 고발하라"</a><a href="https://www.chosun.com/national/court_law/2025/10/23/2O6MBVGORJGWVLRUXVEWSGXANA/" target="_blank">인권위, 김건희 특검에 '양평 공무원 사망 사건' 직권조사 개시 통보</a><a href="https://www.joongang.co.kr/article/25385676" target="_blank">김건희 특검, '양평 공무원 사망' 경찰관 3명 파견 해제 | 중앙일보</a><a href="https://www.hani.co.kr/arti/society/society_general/1232178.html" target="_blank">[단독] '양평 공무원' 조사 김건희 특검 수사팀원, 인권위서 의견 진술</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
