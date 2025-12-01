@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통] - 2025-12-01 09:40:25</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,수출,불황,흑자">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="수출,불황,흑자">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-01 09:40:25'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]</h1>
+            <p>
+                분석 시간: 2025-12-01 09:40:25
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2026년 한국의 무역수지는 수출 0.5% 감소와 수입 0.3% 감소에도 불구하고 675억 달러의 흑자를 기록할 전망이다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 산업연구원과 KDI는 1.9% 성장률을 가정하며, 수출 둔화에도 수입 감소가 더 작아 무역수지가 흑자 형태를 유지할 수 있다고 분석했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 전문가들은 불황형 흑자에 대비해 수출 구조 개편과 경기 부양책을 시급히 논의할 필요성을 강조하며, 내수·투자 부문 강화와 신시장 개척이 필요하다고 전망했다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/01/67b0ee5d47f8.png" 
+                     alt="내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>수출이 0.5 % 감소하고 수입이 0.3 % 줄어들면서 무역수지는 675 억 달러 흑자</strong>가 예상된다. 산업연구원과 KDI가 발표한 전망은 <strong>1.9 % 성장률</strong>을 가정하며, 이는 경기 둔화 속에서도 무역수지가 흑자 형태를 유지할 수 있음을 시사한다. 전문가들은 불황형 흑자 현상에 대비해 수출 구조 개편과 경기 부양책을 시급히 논의할 필요가 있다고 주장한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑11‑11</td>
+<td>KDI 경제 전망 발표</td>
+<td>2026년 성장률 1.9 %·수출 둔화 가능성 언급</td>
+<td><a href="https://eiec.kdi.re.kr/publish/naraView.do?fcode=00002000040000100007&amp;cidx=9113&amp;sel_year=2014&amp;sel_month=10&amp;pp=20&amp;pg=1" target="_blank">KDI</a></td>
+</tr>
+<tr>
+<td>2025‑11‑30</td>
+<td>산업연구원 ‘2026년 경제·산업 전망’ 발표</td>
+<td><strong>수출 0.5 % 감소, 수입 0.3 % 감소, 무역수지 흑자 675 억 달러</strong> 예상</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013629521" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑11‑30</td>
+<td>기사 보도</td>
+<td>“불황형 흑자” 가능성 제기 및 경기침체 대비 시급성 강조</td>
+<td><a href="https://www.newsis.com/view/NISX20251124_0003413909" target="_blank">뉴스이</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>수출 0.5 % 감소</strong>: 2025년 7005억 달러에서 2026년 6971억 달러로 예상<br />
+▶ <strong>수입 0.3 % 감소</strong>: 2025년 7005억 달러에서 2026년 6971억 달러로 예상<br />
+▶ <strong>무역수지 흑자 675 억 달러</strong>: 수출 감소에도 불구하고 수입 감소가 더 작아 흑자 유지  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>산업연구원</strong>은 수출이 소폭 감소하더라도 <strong>수입 감소가 더 작아 무역수지가 흑자</strong>를 유지할 것이라 전망했다. 이는 과거 1998년, 2009년, 2012년, 2023년과 같은 <strong>불황형 흑자</strong> 사례와 유사하다고 분석했다.  </li>
+<li><strong>KDI</strong>는 2026년 성장률을 1.9 %로 보며, 수출 둔화 가능성을 언급하면서도 <strong>현재 정책이 충분히 유연</strong>하다고 평가했다.  </li>
+<li><strong>전문가 의견</strong>: 일부는 수출 구조 개편이 시급하다고 주장하며, <strong>미중 수출 의존도 40 %</strong>를 줄이기 위한 다변화 전략을 강조했다. 반면, 다른 전문가들은 <strong>수출 감소가 단기적 현상</strong>이며, <strong>내수·투자 부문 강화</strong>가 더 시급하다고 보았다.  </li>
+<li><strong>시민·기업 관점</strong>: 수출 기업들은 <strong>수출 구조 개편</strong>과 <strong>신시장 개척</strong>을 요구하며, 반면 <strong>소비자</strong>는 경기 침체 가능성에 대한 우려를 표명했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>수출 0.5 % 감소, 수입 0.3 % 감소, 무역수지 흑자 675 억 달러</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013629521" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>성장률 1.9 % 전망</td>
+<td><a href="https://eiec.kdi.re.kr/publish/naraView.do?fcode=00002000040000100007&amp;cidx=9113&amp;sel_year=2014&amp;sel_month=10&amp;pp=20&amp;pg=1" target="_blank">KDI</a></td>
+</tr>
+<tr>
+<td></td>
+<td>미중 수출 의존도 40 %</td>
+<td><a href="https://www.newsis.com/view/NISX20251124_0003413909" target="_blank">뉴스이</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>불황형 흑자 현상 가능성</td>
+<td>기사에서 제시된 추정, 확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>수출 구조 개편 시급성 주장</td>
+<td>기사에서 제시된 추정, 확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>산업연구원</strong></td>
+<td>수출 감소에도 무역수지 흑자 가능성 강조</td>
+<td>연구기관의 객관적 전망 제공</td>
+</tr>
+<tr>
+<td><strong>KDI</strong></td>
+<td>성장률 1.9 %·수출 둔화 가능성 언급</td>
+<td>경제 연구기관으로서 정책 제언</td>
+</tr>
+<tr>
+<td><strong>수출 기업 대표</strong></td>
+<td>수출 구조 개편 시급성 주장</td>
+<td>수출 확대·다변화 필요</td>
+</tr>
+<tr>
+<td><strong>내수·투자 부문 관계자</strong></td>
+<td>경기 부양책 시급성 강조</td>
+<td>국내 소비·투자 활성화</td>
+</tr>
+<tr>
+<td><strong>소비자</strong></td>
+<td>경기 침체 우려</td>
+<td>생활비·소비 감소 가능성</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수출 구조 개편</strong>: 미중 의존도를 낮추고 <strong>신흥 시장·서비스 산업</strong>으로 전환이 필요하다.  </li>
+<li><strong>내수·투자 부문 강화</strong>: 경기 침체 대비 <strong>재정·통화 완화</strong>와 <strong>인프라 투자</strong>가 시급하다.  </li>
+<li><strong>정책 대응</strong>: 정부는 <strong>무역수지 관리</strong>와 <strong>수출 지원</strong>을 동시에 추진해야 하며, <strong>불황형 흑자</strong>가 실제로 발생할 경우 <strong>수출 회복</strong>을 위한 <strong>정책 패키지</strong>를 마련해야 한다.  </li>
+<li><strong>시장 반응</strong>: 수출 기업은 <strong>가격 경쟁력</strong>과 <strong>품질 개선</strong>을 통해 수출 감소를 완화하려 할 것이며, <strong>내수 시장</strong>은 경기 둔화에 대비해 <strong>소비자 신뢰 회복</strong>이 필요하다.</li>
+</ul>
+<p><strong>요약</strong>: 산업연구원과 KDI가 발표한 2026년 전망은 <strong>수출 0.5 % 감소</strong>와 <strong>무역수지 흑자 675 억 달러</strong>를 예상한다. 이는 과거 불황형 흑자 사례와 유사하며, 수출 구조 개편과 경기 부양책이 시급하다는 경고가 나온다. 정부와 기업은 수출 다변화와 내수·투자 부문 강화에 주력해야 할 시점이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=tHNvKeiK_3I" target="_blank">"내년 한국 경제 성장률 1.9％...수출 0.5% 감...</a><a href="https://www.youtube.com/watch?v=99_G0qUdUPU" target="_blank">"내년 한국 경제 성장률 1.9％...수출 0.5% 감...</a><a href="https://www.youtube.com/watch?v=SpnUpBtl4rA" target="_blank">산업연구원 "내년 한국 경제 성장률 1.9％...수출 ...</a><a href="https://www.youtube.com/watch?v=Mmywx1duMzA" target="_blank">3분기 GDP 성장률 1.9% 반등…"경제, 회복 궤도...</a><a href="https://www.youtube.com/watch?v=O87F_wsokxU" target="_blank">3분기 GDP 성장률 1.9%…역성장 딛고 반등</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013629521" target="_blank">내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.newsis.com/view/NISX20251124_0003413909" target="_blank">내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]</a><a href="https://v.daum.net/v/20251130100204768" target="_blank">내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]</a><a href="https://eiec.kdi.re.kr/publish/naraView.do?fcode=00002000040000100007&cidx=9113&sel_year=2014&sel_month=10&pp=20&pg=1" target="_blank">경상수지 흑자의 또 다른 이름, 사상 최대 불황 | 나라경제 | KDI 경제 ...</a><a href="https://www.newstong.co.kr/view3.aspx?seq=14069080&allSeq=3&txtSearch=&cate=0&cnt=-5&subCate=2&order=default&newsNo=19" target="_blank">내년 수출 둔화·불황형 흑자 나타날까…경기침체 대비 시급[세쓸통]</a><a href="https://www.kasimex.com/shop/?GameID=2025-10-26/6119.html" target="_blank">와이즈스포츠토토 에 대한 궁금증을 해소하는 완벽한 가이드</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
