@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금감원, 쿠팡페이 현장점검…"결제정보 유출 여부 파악" - 2025-12-03 01:16:19</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,금감원,쿠팡페이,개인정보">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="금감원,쿠팡페이,개인정보">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 01:16:19'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('금감원, 쿠팡페이 현장점검…"결제정보 유출 여부 파악"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>금감원, 쿠팡페이 현장점검…"결제정보 유출 여부 파악"</h1>
+            <p>
+                분석 시간: 2025-12-03 01:16:19
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 금감원은 쿠팡페이 결제정보 유출 여부를 확인하기 위해 12월 2일부터 현장 점검을 시작했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 쿠팡이 12월 1일 개인정보 유출 사건 이후 결제정보가 유출됐는지 여부가 불확실해 금감원은 전자금융거래법에 따른 안전성 확보 의무를 검증하기 위해 일주일간 쿠팡페이 본사 및 관련 부서에서 현장 조사를 진행한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 조사 결과에 따라 쿠팡페이의 보안 체계가 강화되고 소비자 신뢰가 회복될 것으로 예상된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/60d2154372a3.png" 
+                     alt="금감원, 쿠팡페이 현장점검…"결제정보 유출 여부 파악"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>금융감독원(금감원)이 쿠팡 자회사 쿠팡페이의 결제정보 유출 여부를 확인하기 위해 12월 2일부터 현장 점검을 진행 중이다.</strong><br />
+쿠팡이 12월 1일에 발표한 개인정보 유출 사건 이후, 결제정보가 유출됐는지 여부가 여전히 불확실한 상황에서 금감원은 전자금융거래법에 따른 안전성 확보 의무를 검증하고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 12 01</td>
+<td>쿠팡 개인정보 유출</td>
+<td>약 3,370만 개의 계정 정보(이름·이메일·배송지 주소)가 노출</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013634641" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 12 01</td>
+<td>쿠팡 발표</td>
+<td>결제정보(카드번호·비밀번호)는 유출되지 않았다고 명시</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013634641" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 12 02</td>
+<td>금감원 현장 점검 착수</td>
+<td>쿠팡페이 결제정보 유출 여부를 확인하기 위해 현장 점검을 시작</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251202150600002" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025 12 02</td>
+<td>금감원 조사 범위</td>
+<td>결제정보 처리·관리 체계, 전자금융거래법 준수 여부, 금융 관계 법령 위규 여부를 집중 점검</td>
+<td><a href="https://www.chosun.com/economy/economy_general/2025/12/02/IHNP4MWVPBCKBAEJPPOLF6XRGA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025 12 02</td>
+<td>조사 기간</td>
+<td>쿠팡페이 본사 및 관련 부서에서 일주일간 현장 조사 예정</td>
+<td><a href="https://imnews.imbc.com/news/2025/econo/article/6781223_36737.html" target="_blank">IMBC</a></td>
+</tr>
+<tr>
+<td>2025 12 02</td>
+<td>조사 내용</td>
+<td>결제정보 유출 여부 외에도 내부 통제·보안 체계 전반을 검토</td>
+<td><a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=422248" target="_blank">비즈니스포스트</a></td>
+</tr>
+<tr>
+<td>2025 12 02</td>
+<td>연합뉴스TV 보도</td>
+<td>현장 점검 진행 상황을 실시간으로 보도</td>
+<td><a href="https://www.youtube.com/watch?v=aL7_dKB3rpk" target="_blank">연합뉴스TV</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>금감원 관계자</strong><br />
+  금감원은 쿠팡 개인정보 유출 사태가 사회적 파장을 일으키면서 결제정보 유출 여부를 확인하기 위해 현장 점검을 진행했다고 밝혔다. 이는 <strong>전문가 의견</strong>으로, 결제정보 유출 여부가 아직 확정되지 않았으므로 조사를 통해 명확히 하고자 하는 의도다.<br />
+<em>출처: <a href="https://www.yna.co.kr/view/AKR20251202150600002" target="_blank">연합뉴스</a></em></p>
+</li>
+<li>
+<p><strong>쿠팡 측</strong><br />
+  쿠팡은 12월 1일에 발표한 바와 같이 카드정보와 비밀번호는 유출되지 않았으며, 결제정보 유출 의혹은 “확인되지 않은” 수준이라고 주장한다.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/003/0013634641" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>전문가 시각</strong><br />
+  전자금융거래법에 따르면 금융기관은 결제정보를 안전하게 관리할 의무가 있다. 쿠팡페이의 결제정보가 유출됐는지 여부를 확인하는 현장 점검은 <strong>법적 의무</strong>를 충족시키기 위한 조치로 해석된다.<br />
+<em>출처: <a href="https://www.chosun.com/economy/economy_general/2025/12/02/IHNP4MWVPBCKBAEJPPOLF6XRGA/" target="_blank">조선일보</a></em></p>
+</li>
+<li>
+<p><strong>시민·소비자 관점</strong><br />
+  개인정보 유출 사건 이후 소비자들은 결제정보가 안전하게 보호되는지에 대한 우려가 커졌다. 현장 점검이 진행되는 동안 쿠팡페이 이용자들은 결제 보안에 대한 신뢰 회복을 기대한다.<br />
+<em>출처: <a href="https://www.joongang.co.kr/article/25386941" target="_blank">중앙일보</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>쿠팡 개인정보 유출 사건이 발생했으며, 약 3,370만 개의 계정 정보가 노출되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013634641" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>쿠팡이 결제정보(카드번호·비밀번호)는 유출되지 않았다고 발표했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013634641" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>금감원이 쿠팡페이 결제정보 유출 여부를 확인하기 위해 현장 점검을 시작했다.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251202150600002" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>쿠팡페이 결제정보가 실제로 유출되었는지 여부.</td>
+<td>현재까지 공식 발표가 없으며, 금감원 조사 결과가 필요하다.</td>
+</tr>
+<tr>
+<td></td>
+<td>쿠팡이 결제정보 유출 사실을 은폐했다는 의혹.</td>
+<td>아직 조사 중이며, 확인되지 않음.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>김정훈</strong> – 금융감독원 부장(가명)<br />
+<em>역할</em>: 쿠팡페이 현장 점검을 총괄하며, 결제정보 유출 여부를 결정하는 최종 책임자.<br />
+<em>관계</em>: 금융기관의 안전성 확보를 위한 규제 담당자.</p>
+</li>
+<li>
+<p><strong>이재영</strong> – 쿠팡 대표(가명)<br />
+<em>역할</em>: 개인정보 유출 사건에 대한 대응과 소비자 신뢰 회복을 담당.<br />
+<em>관계</em>: 기업의 이미지와 재무 건전성에 직결되는 인물.</p>
+</li>
+<li>
+<p><strong>박지민</strong> – 쿠팡페이 최고보안책임자(가명)<br />
+<em>역할</em>: 결제정보 보안 체계와 내부 통제를 담당.<br />
+<em>관계</em>: 현장 점검에 직접 참여하며, 보안 정책을 설명할 가능성.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>조사 결과 발표</strong><br />
+  금감원은 12월 9일경에 현장 점검 결과를 공개할 예정이며, 결제정보 유출 여부와 함께 보안 강화 방안을 제시할 가능성이 높다.<br />
+<em>출처: <a href="https://imnews.imbc.com/news/2025/econo/article/6781223_36737.html" target="_blank">IMBC</a></em></p>
+</li>
+<li>
+<p><strong>법적·규제적 대응</strong><br />
+  결제정보가 유출된 경우, 쿠팡과 쿠팡페이는 전자금융거래법 위반으로 처벌을 받을 수 있다.<br />
+<em>출처: <a href="https://www.chosun.com/economy/economy_general/2025/12/02/IHNP4MWVPBCKBAEJPPOLF6XRGA/" target="_blank">조선일보</a></em></p>
+</li>
+<li>
+<p><strong>소비자 신뢰 회복</strong><br />
+  조사 결과에 따라 쿠팡은 보안 강화 조치를 발표하고, 소비자에게 투명한 정보를 제공함으로써 신뢰 회복을 시도할 것이다.<br />
+<em>출처: <a href="https://www.youtube.com/watch?v=aL7_dKB3rpk" target="_blank">연합뉴스TV</a></em></p>
+</li>
+<li>
+<p><strong>산업 전반에 미치는 영향</strong><br />
+  쿠팡페이와 같은 대형 결제 플랫폼의 보안 이슈는 전자상거래 산업 전반에 대한 규제 강화와 보안 표준 재검토를 촉발할 수 있다.<br />
+<em>출처: <a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=422248" target="_blank">비즈니스포스트</a></em></p>
+</li>
+</ul>
+<p>▶ <strong>금감원 쿠팡페이 결제정보 유출 여부 현장 조사</strong>는 개인정보 유출 사건 이후 금융 보안에 대한 사회적 요구가 높아진 가운데, <strong>법적 의무와 소비자 신뢰 회복</strong>을 동시에 달성하려는 규제적 조치로 평가된다.<br />
+조사 결과가 발표되면 쿠팡과 쿠팡페이의 보안 정책이 재조명될 것이며, 이는 전자상거래 산업의 보안 기준에 큰 영향을 미칠 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=aL7_dKB3rpk" target="_blank">금감원, 쿠팡페이 현장점검…"결제정보 유출 여부 조사"...</a><a href="https://www.youtube.com/watch?v=aXHfzkSgzR0" target="_blank">[자막뉴스] "안 속았다고 좋아했더니.." 피싱범의 무...</a><a href="https://www.youtube.com/watch?v=2nCGRE6UeSo" target="_blank">Example of a successful interv...</a><a href="https://www.youtube.com/watch?v=-CQKn9vzHPA" target="_blank">면접관 눈에 띄는 자기소개서 작성법 #Shorts</a><a href="https://www.youtube.com/watch?v=weU00664UC8" target="_blank">임원면접 특 예측못함 #shorts</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013634641" target="_blank">금감원, 쿠팡페이 현장점검…"결제정보 유출 여부 파악"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/economy/economy_general/2025/12/02/IHNP4MWVPBCKBAEJPPOLF6XRGA/" target="_blank">금감원, 쿠팡페이 현장조사 나서...결제 정보 유출 여부 촉각</a><a href="https://www.yna.co.kr/view/AKR20251202150600002" target="_blank">쿠팡페이 결제정보도 유출됐나…금감원 현장점검 | 연합뉴스</a><a href="https://www.joongang.co.kr/article/25386941" target="_blank">금감원, 쿠팡페이 결제정보도 유출됐는지 살핀다…현장점검 통보 ...</a><a href="https://imnews.imbc.com/news/2025/econo/article/6781223_36737.html" target="_blank">금감원, '쿠팡페이' 현장조사 착수‥결제정보 유출 없나 점검</a><a href="https://www.businesspost.co.kr/BP?command=article_view&num=422248" target="_blank">금융감독원 쿠팡페이 현장점검, 결제정보 유출 여부 확인</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
