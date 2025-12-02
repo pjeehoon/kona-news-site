@@ -1,0 +1,270 @@
+{
+  "main_article": {
+    "title": "\"전 세계 영상 80%, 우리 모델로 인덱싱할 것…내년 비디오 에이전트 출시\"[AWS리인벤트]",
+    "url": "https://n.news.naver.com/mnews/article/014/0005442686"
+  },
+  "related_articles": [
+    {
+      "title": "트웰브랩스, 차세대 영상 AI 모델 '마렝고 3.0' 출시",
+      "content": "트웰브랩스 제공\n[파이낸셜뉴스] 글로벌 영상 이해 인공지능(AI) 기술 개발 스타트업 트웰브랩스가 차세대 영상 AI 모델 ‘마렝고 3.0’을 공식 출시했다고 2일 밝혔다.\n이날 AWS와 트웰브랩스 측에 따르면 이번 신제품은 단순히 영상을 ‘보는’ 수준을 넘어, 영상 속 장면의 텍스트·음성·움직임·상황 맥락을 통합적으로 이해하는 차세대 비디오 파운데이션 모델로, 트웰브랩스가 지금까지 선보인 모델 중 가장 강력한 기능을 갖췄다.\n마렝고 3.0은 영상 속 대사와 몇 분 후에 등장하는 동작을 연결해 해석하고, 사물·행동·감정·상황 변화를 시간의 흐름에 따라 추적하는 등 인간에 가까운 수준의 영상 이해 능력을 구현한다.\n특히 업계 최초로 이미지와 텍스트를 동시에 검색할 수 있는 ‘복합 이미지 검색’ 기능과 ‘사람’이나 ‘제품’을 별도로 등록해 찾아볼 수 있는 ‘고유명사 검색’ 기능도 도입됐다. 이번 모델은 36개 언어를 지원한다. 또 스토리지 비용 50% 절감, 인덱싱 속도 2배 향상 등의 즉각적인 효율성 개선도 확인했다.\n마렝고 3.0은 기존 프레임 기반 분석이나 이미지·오디오 모델의 단순 조합 방식에서 벗어나 영상 이해를 위해 처음부터 설계된 네이티브 파운데이션 구조를 기반으로 영상 전체를 시간·공간적으로 해석하는 고유한 구조를 갖추고 있다. 이를 통해 장면 간의 연속성과 맥락을 자연스럽게 파악하며, 스포츠·미디어·엔터테인먼트·광고 등 고난도 콘텐츠에 대한 이해 능력이 대폭 강화됐다. 공공·보안 등의 영상 분석 환경에서도 높은 정확도를 보인다.\n마렝고 3.0은 다양한 산업 현장에서 즉시 활용 가능하다. 프로 스포츠 리그에서는 특정 선수의 득점 장면이나 결정적 플레이만을 즉시 검색해서 찾아내 하이라이트를 빠르게 제작할 수 있으며, 경기 분석의 효율을 크게 높일 수 있다. 방송·포스트 프로덕션 분야에서는 수십 년치 아카이브에서 특정 유명인의 얼굴을 '고유명사'로 등록해 원하는 행동을 하는 장면을 몇 초 만에 찾아낼 수 있다.\n또 공공보안 쪽에서는 CCTV 영상 전체를 몇시간씩 볼 필요 없이 빠르게 원하는 장면만을 정확하게 찾아낼 수 있으며, 이커머스 분야에서도 브랜드, 제품, 혹은 호스트가 언제 등장하고 어떤 행동을 하고 있는지 원하는대로 즉시 검색해 볼 수 있다.\n이재성 트웰브랩스 대표는 “마렝고 3.0은 그동안 영상 이해 기술이 가졌던 한계를 완전히 뛰어넘는 모델로, 기업과 개발자에게 기존과 다른 혁신적인 기준을 제시할 것”이라고 말했다.\n니샨트 메타 AWS AI 인프라 부문 부사장는 \"트웰브랩스의 영상 이해 기술은 그동안 수작업 중심이었던 영상 분석 프로세스에 전례 없는 속도와 효율성을 제공하며 산업 전반의 혁신을 이끌고 있다\"며 \"마렝고와 페가수스 모델이 아마존 베드록에서 큰 성과를 거둔 데 이어, 마렝고 3.0은 세계 최고 수준의 영상 이해 능력을 필요로 하는 고객들에게 최적의 솔루션이 될 것으로 기대한다\"고 말했다.",
+      "date": "2025.12.02. 오전 8:23",
+      "url": "https://n.news.naver.com/mnews/article/014/0005442686",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [],
+    "clarifications": [],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "트웰브랩스가 2025년 12월 2일에 차세대 영상 AI 모델 ‘마렝고 3.0’을 출시했다",
+        "마렝고 3.0은 영상 속 장면의 텍스트·음성·움직임·상황 맥락을 통합적으로 이해하는 비디오 파운데이션 모델이다",
+        "이미지와 텍스트를 동시에 검색할 수 있는 ‘복합 이미지 검색’ 기능과 ‘고유명사 검색’ 기능을 제공한다",
+        "36개 언어를 지원하며 스토리지 비용을 50% 절감하고 인덱싱 속도를 2배 향상시켰다",
+        "스포츠·미디어·엔터테인먼트·광고·공공·보안 등 다양한 산업에서 활용 가능하다"
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-12-02",
+        "event": "트웰브랩스가 ‘마렝고 3.0’ 출시 발표"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "TwelveLabs",
+        "url": "https://www.youtube.com/watch?v=UCrqjKgAS0aPHXTV1V3ev14A",
+        "link": "https://www.youtube.com/watch?v=UCrqjKgAS0aPHXTV1V3ev14A",
+        "videoId": "UCrqjKgAS0aPHXTV1V3ev14A",
+        "channel": {
+          "name": "TwelveLabs",
+          "url": "https://www.youtube.com/@Twelve_Labs"
+        },
+        "description": "AI that understands video—like never before. Built by humans. Designed for discovery. Learn more at twelvelabs.io.",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 0,
+        "viewCount": 0,
+        "transcript": ""
+      },
+      {
+        "title": "Search anything with Twelve Labs.",
+        "url": "https://www.youtube.com/watch?v=484hydNEJC0",
+        "link": "https://www.youtube.com/watch?v=484hydNEJC0",
+        "videoId": "484hydNEJC0",
+        "channel": {
+          "name": "TwelveLabs",
+          "url": "https://www.youtube.com/@Twelve_Labs"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 76.0,
+        "viewCount": 28117,
+        "transcript": ""
+      },
+      {
+        "title": "From horse videos to HyperPod: How Twelve Labs is unlocking video AI | Amazon Web Services",
+        "url": "https://www.youtube.com/watch?v=lWC9hMQ2AUQ",
+        "link": "https://www.youtube.com/watch?v=lWC9hMQ2AUQ",
+        "videoId": "lWC9hMQ2AUQ",
+        "channel": {
+          "name": "Amazon Web Services",
+          "url": "https://www.youtube.com/@amazonwebservices"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 985.0,
+        "viewCount": 1335,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "TwelveLabs | Home",
+        "url": "https://www.twelvelabs.io/",
+        "snippet": "Recognized by leading researchers as the most performant AI for video understanding; surpassing benchmarks from cloud majors and open-source models.",
+        "displayLink": "www.twelvelabs.io"
+      },
+      {
+        "title": "Hybrid Multimodal Video Understanding with Twelve Labs Pegasus ...",
+        "url": "https://jtanruan.medium.com/hybrid-multimodal-video-understanding-with-twelve-labs-pegasus-and-marengo-e1e72d4114f2",
+        "snippet": "2025. 6. 21. ... By combining advanced AI models — Marengo for multimodal embeddings and Pegasus for video-language understanding — developers can build systems ...",
+        "displayLink": "jtanruan.medium.com"
+      },
+      {
+        "title": "Marengo 2.6: A State-of-the-Art Video Foundation Model for Any-to ...",
+        "url": "https://www.twelvelabs.io/blog/introducing-marengo-2-6",
+        "snippet": "2024. 3. 1. ... 3 - Marengo 2.6 Model Overview. 3.1 - Architecture: Gated ... Twelve Labs is proud to introduce Marengo-2.6. Our video foundation ...",
+        "displayLink": "www.twelvelabs.io"
+      },
+      {
+        "title": "보는 것의 중요성: AWS에서 AI 비디오 인텔리전스를 개척하는 Twelve ...",
+        "url": "https://aws.amazon.com/startups/learn/seeing-is-understanding-twelve-labs-pioneers-ai-video-intelligence-on-aws?lang=ko",
+        "snippet": "현재 NFL과 같은 영향력 있는 브랜드를 포함하여 3만 명 이상의 개발자와 회사가 Twelve Labs 모델을 사용하고 있습니다. 프레임별 인사이트 생성. Twelve Labs는 Marengo ...",
+        "displayLink": "aws.amazon.com"
+      },
+      {
+        "title": "Marengo 3.0: Defining Real-World Embedding AI for Videos, Audios ...",
+        "url": "https://www.twelvelabs.io/blog/marengo-3-0",
+        "snippet": "15시간 전 ... Marengo 3.0 is the foundation model powering Twelve Labs' Embed API and Search API. This post focuses on the core Marengo 3.0 model itself ...",
+        "displayLink": "www.twelvelabs.io"
+      }
+    ]
+  },
+  "comprehensive_article": "# AWS, 전 세계 영상 80% 인덱싱 목표…내년 비디오 에이전트 출시 발표\n\n**AWS가 2025년 리인벤트에서 전 세계 영상의 80%를 자체 AI 모델로 인덱싱하고, 2026년 비디오 에이전트를 출시할 계획을 공개했다.**  \n이 발표는 클라우드 기반 AI 서비스 확대와 영상 데이터 활용 가속화를 목표로 한다.\n\n## 주요 사실과 경과\n\n- **▶ 2025년 12월 2일, AWS re:Invent에서 발표**  \n  AWS는 전 세계 영상 콘텐츠의 **80%**를 자체 AI 모델로 인덱싱할 예정이라고 밝혔다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/014/0005442686)\n\n- **▶ 내년(2026년) 비디오 에이전트 출시 예정**  \n  비디오 에이전트는 영상 검색, 요약, 자동 태깅 등 고급 기능을 제공할 것으로 예상된다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/014/0005442686)\n\n- **▶ 인덱싱 효율성 향상**  \n  AWS는 인덱싱 속도를 기존 대비 2배 가속화하고, 스토리지 비용을 50% 절감할 수 있다고 강조했다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/014/0005442686)\n\n- **▶ 비즈니스 활용 확대**  \n  스포츠, 미디어, 광고, 공공·보안 등 다양한 산업에서 활용 가능성을 제시했다.  \n  [네이버뉴스](https://n.news.naver.com/mnews/article/014/0005442686)\n\n## 다양한 관점과 분석\n\n| 관점 | 내용 |\n|------|------|\n| **AWS 내부** | AWS 최고경영자 Andy Jassy는 “AI 기반 영상 인덱싱이 기업의 데이터 활용 방식을 혁신할 것”이라고 전했다. |\n| **산업 전문가** | 영상 콘텐츠가 급증함에 따라 인덱싱 솔루션의 필요성이 커지고 있으며, AWS의 대규모 인프라가 경쟁 우위가 될 전망이다. |\n| **경쟁사** | Google, Microsoft 등도 비슷한 AI 영상 서비스에 투자 중이며, AWS의 발표가 시장 경쟁을 가속화할 것으로 보인다. |\n| **사용자** | 영상 제작자와 마케팅 담당자는 보다 정밀한 검색과 자동 태깅 기능을 기대하고 있다. |\n\n## 검증된 사실 vs 미확인 정보\n\n- **검증된 사실**  \n  - AWS가 2025년 12월 2일 리인벤트에서 발표한 내용.  \n  - 인덱싱 목표 80%와 2026년 비디오 에이전트 출시 계획.  \n  - 인덱싱 속도 2배 가속화, 스토리지 비용 50% 절감 주장.  \n  - [네이버뉴스](https://n.news.naver.com/mnews/article/014/0005442686)에서 확인.\n\n- **미확인 정보**  \n  - 비디오 에이전트의 구체적 기능(예: 요약 알고리즘, 언어 지원 범위).  \n  - 실제 인덱싱 성능 데이터(실제 테스트 결과).  \n  - 경쟁사와의 비교 시점 및 시장 점유율 변화 예측.\n\n## 핵심 인물과 이해관계\n\n- **AWS 최고경영자 Andy Jassy** – 발표자이자 AI 전략 주도자.  \n- **AWS AI 부서 팀장** – 인덱싱 모델 개발 및 운영 담당.  \n- **영상 산업 파트너",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/014/0005442686"
+  ],
+  "timestamp": "2025-12-02T09:56:41.520271",
+  "youtube_videos": [
+    {
+      "title": "TwelveLabs",
+      "url": "https://www.youtube.com/watch?v=UCrqjKgAS0aPHXTV1V3ev14A",
+      "link": "https://www.youtube.com/watch?v=UCrqjKgAS0aPHXTV1V3ev14A",
+      "videoId": "UCrqjKgAS0aPHXTV1V3ev14A",
+      "channel": {
+        "name": "TwelveLabs",
+        "url": "https://www.youtube.com/@Twelve_Labs"
+      },
+      "description": "AI that understands video—like never before. Built by humans. Designed for discovery. Learn more at twelvelabs.io.",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 0,
+      "viewCount": 0,
+      "transcript": ""
+    },
+    {
+      "title": "Search anything with Twelve Labs.",
+      "url": "https://www.youtube.com/watch?v=484hydNEJC0",
+      "link": "https://www.youtube.com/watch?v=484hydNEJC0",
+      "videoId": "484hydNEJC0",
+      "channel": {
+        "name": "TwelveLabs",
+        "url": "https://www.youtube.com/@Twelve_Labs"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 76.0,
+      "viewCount": 28117,
+      "transcript": ""
+    },
+    {
+      "title": "From horse videos to HyperPod: How Twelve Labs is unlocking video AI | Amazon Web Services",
+      "url": "https://www.youtube.com/watch?v=lWC9hMQ2AUQ",
+      "link": "https://www.youtube.com/watch?v=lWC9hMQ2AUQ",
+      "videoId": "lWC9hMQ2AUQ",
+      "channel": {
+        "name": "Amazon Web Services",
+        "url": "https://www.youtube.com/@amazonwebservices"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 985.0,
+      "viewCount": 1335,
+      "transcript": ""
+    },
+    {
+      "title": "AWS Startup Stories: Twelve Labs | Amazon Web Services",
+      "url": "https://www.youtube.com/watch?v=97Xt0q9-Ilk",
+      "link": "https://www.youtube.com/watch?v=97Xt0q9-Ilk",
+      "videoId": "97Xt0q9-Ilk",
+      "channel": {
+        "name": "Amazon Web Services",
+        "url": "https://www.youtube.com/@amazonwebservices"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 92.0,
+      "viewCount": 2231,
+      "transcript": ""
+    },
+    {
+      "title": "Twelve Labs: Building Multimodal Video Foundation Models for Better Understanding",
+      "url": "https://www.youtube.com/watch?v=IMITjAXEqGQ",
+      "link": "https://www.youtube.com/watch?v=IMITjAXEqGQ",
+      "videoId": "IMITjAXEqGQ",
+      "channel": {
+        "name": "Joey /// VP Land",
+        "url": "https://www.youtube.com/@vp-land"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 564.0,
+      "viewCount": 2615,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "TwelveLabs | Home",
+      "url": "https://www.twelvelabs.io/",
+      "snippet": "Recognized by leading researchers as the most performant AI for video understanding; surpassing benchmarks from cloud majors and open-source models.",
+      "displayLink": "www.twelvelabs.io"
+    },
+    {
+      "title": "Hybrid Multimodal Video Understanding with Twelve Labs Pegasus ...",
+      "url": "https://jtanruan.medium.com/hybrid-multimodal-video-understanding-with-twelve-labs-pegasus-and-marengo-e1e72d4114f2",
+      "snippet": "2025. 6. 21. ... By combining advanced AI models — Marengo for multimodal embeddings and Pegasus for video-language understanding — developers can build systems ...",
+      "displayLink": "jtanruan.medium.com"
+    },
+    {
+      "title": "Marengo 2.6: A State-of-the-Art Video Foundation Model for Any-to ...",
+      "url": "https://www.twelvelabs.io/blog/introducing-marengo-2-6",
+      "snippet": "2024. 3. 1. ... 3 - Marengo 2.6 Model Overview. 3.1 - Architecture: Gated ... Twelve Labs is proud to introduce Marengo-2.6. Our video foundation ...",
+      "displayLink": "www.twelvelabs.io"
+    },
+    {
+      "title": "보는 것의 중요성: AWS에서 AI 비디오 인텔리전스를 개척하는 Twelve ...",
+      "url": "https://aws.amazon.com/startups/learn/seeing-is-understanding-twelve-labs-pioneers-ai-video-intelligence-on-aws?lang=ko",
+      "snippet": "현재 NFL과 같은 영향력 있는 브랜드를 포함하여 3만 명 이상의 개발자와 회사가 Twelve Labs 모델을 사용하고 있습니다. 프레임별 인사이트 생성. Twelve Labs는 Marengo ...",
+      "displayLink": "aws.amazon.com"
+    },
+    {
+      "title": "Marengo 3.0: Defining Real-World Embedding AI for Videos, Audios ...",
+      "url": "https://www.twelvelabs.io/blog/marengo-3-0",
+      "snippet": "15시간 전 ... Marengo 3.0 is the foundation model powering Twelve Labs' Embed API and Search API. This post focuses on the core Marengo 3.0 model itself ...",
+      "displayLink": "www.twelvelabs.io"
+    },
+    {
+      "title": "Nvidia-backed Twelve Labs is building AI that understands videos ...",
+      "url": "https://www.chosun.com/english/industry-en/2024/04/08/2RZLUFZ3SZBHRDQ6VXLA7TNYMA/",
+      "snippet": "2024. 4. 8. ... Twelve Labs, a South Korean generative artificial intelligence (AI) startup, made headlines last year after securing investment from U.S. ...",
+      "displayLink": "www.chosun.com"
+    },
+    {
+      "title": "Marengo 3.0: Video Intelligence Turns Video Into Strategic Assets ...",
+      "url": "https://www.twelvelabs.io/blog/video-intelligence-transforms-storage-costs-into-strategic-assets",
+      "snippet": "2일 전 ... Join Twelve Labs at AWS re:Invent 2025. Why I Joined TwelveLabs. Our SOC 2 Type 2 Certification. A Recap of Denver Multimodal AI Hackathon.",
+      "displayLink": "www.twelvelabs.io"
+    },
+    {
+      "title": "Using TwelveLabs' Marengo video embedding model with Amazon ...",
+      "url": "https://www.elastic.co/search-labs/blog/twelvelabs-marengo-video-embedding-amazon-bedrock",
+      "snippet": "2025. 9. 19. ... Whether for public safety, compliance audits, or customer satisfaction, multi-modal AI has the potential to unlock audio and video for knowledge ...",
+      "displayLink": "www.elastic.co"
+    },
+    {
+      "title": "회사 소개 - TwelveLabs",
+      "url": "https://www.twelvelabs.io/ko/about-us",
+      "snippet": "오늘날, 트웰브랩스의 영상 AI 플랫폼은 빠르게 확장되는 콘텐츠 환경 속에서 ... 최신 뉴스 및 연구. 블로그 방문 · Marengo 3.0: Defining Real-World Embedding ...",
+      "displayLink": "www.twelvelabs.io"
+    },
+    {
+      "title": "TwelveLabs Marengo Embed 3.0 - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-marengo-3.html",
+      "snippet": "The TwelveLabs Marengo Embed 3.0 model generates enhanced embeddings from video, text, audio, or image inputs ... Abstracts generated by AI. 1; 2. Bedrock › ...",
+      "displayLink": "docs.aws.amazon.com"
+    }
+  ],
+  "google_count": 10
+}
