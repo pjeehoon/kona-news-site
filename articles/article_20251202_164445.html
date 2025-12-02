@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김영록 지사 “2028년 G20 정상회의, 전남 유치 준비하자” - 2025-12-02 16:44:45</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,김영록,전남,G20">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="김영록,전남,G20">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 16:44:45'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('김영록 지사 “2028년 G20 정상회의, 전남 유치 준비하자”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>김영록 지사 “2028년 G20 정상회의, 전남 유치 준비하자”</h1>
+            <p>
+                분석 시간: 2025-12-02 16:44:45
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 전라남도지사 김영록이 2025년 12월 2일 도청에서 2028년 G20 정상회의 전남 유치를 위한 준비를 당부했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 2026년 과학기술 진흥 원년을 선언하고, 경주 APEC 사례를 인용해 인프라 개선 방안을 모색하겠다고 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 전남은 G20 유치를 통해 지역 경제 활성화와 고용 창출을 기대하지만, 인프라 비용과 주민 우려가 동시에 존재한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/8a37c1261b6c.png" 
+                     alt="김영록 지사 “2028년 G20 정상회의, 전남 유치 준비하자”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>전라남도지사 김영록이 2025년 12월 2일 도청 서재필실에서 열린 실국 정책회의에서 <strong>2028년 G20 정상회의 전남 유치</strong>를 위한 준비를 당부했다. 그는 2026년 전라남도 과학기술 진흥 원년을 선언하고, 경주 APEC 정상회의 사례를 인용해 인프라 개선 방안을 모색하겠다고 밝혔다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 2일</td>
+<td>김영록 전라남도지사가 도청 서재필실에서 실국 정책회의를 주재, 2028년 G20 정상회의 전남 유치를 위한 준비를 당부</td>
+<td><a href="https://n.news.naver.com/mnews/article/005/0001817954" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>김영록이 2026년 전라남도 과학기술 진흥 원년을 만들겠다는 목표를 제시</td>
+<td><a href="https://www.asiae.co.kr/article/2025120212435913769" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>김영록이 경주 APEC 정상회의 사례를 인용해 전남 인프라 부족 문제 해결 방안을 모색하겠다고 밝힘</td>
+<td><a href="https://v.daum.net/v/20251202123546103" target="_blank">아이뉴스24</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>김영록이 전라남도가 G20 전남 유치를 위해 자문위원회를 통해 빠른 준비를 추진하겠다고 선언</td>
+<td><a href="https://go.seoul.co.kr/news/newsView.php?id=20251202500119" target="_blank">서울신문</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>김영록이 전라남도지사로서 2028년 G20 정상회의 전남 유치를 위한 정책 방향을 제시</td>
+<td><a href="http://www.nbnnews.co.kr/news/articleView.html?idxno=994695" target="_blank">내외뉴스통신</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>지자체·산업계</strong><br />
+  전라남도는 G20 유치를 통해 지역 경제 활성화와 고용 창출을 기대하고 있다. 김영록 지사는 과학기술 진흥 원년을 통해 지역 내 스타트업과 연구기관의 성장을 촉진하려는 의지를 보였다.<br />
+<em>출처: <a href="https://www.asiae.co.kr/article/2025120212435913769" target="_blank">아시아경제</a></em></p>
+</li>
+<li>
+<p><strong>인프라·환경 전문가</strong><br />
+  경주 APEC 사례를 인용한 김 지사의 발언은 인프라 부족 문제를 해결하기 위한 구체적 방안을 모색하겠다는 신호로 해석된다. 그러나 실제 인프라 개선 비용과 환경 영향 평가가 필요하다는 지적이 있다.<br />
+<em>출처: <a href="https://v.daum.net/v/20251202123546103" target="_blank">아이뉴스24</a></em></p>
+</li>
+<li>
+<p><strong>지역 주민</strong><br />
+  일부 주민은 G20 개최가 지역에 미칠 부정적 영향(교통 혼잡, 생활 불편 등)에 대해 우려를 표명했다. 반면, 지역 경제에 긍정적 효과를 기대하는 목소리도 있다.<br />
+<em>출처: <a href="https://go.seoul.co.kr/news/newsView.php?id=20251202500119" target="_blank">서울신문</a></em></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>김영록 전라남도지사가 2025년 12월 2일 도청 서재필실에서 G20 전남 유치 준비를 당부하고, 2026년 과학기술 진흥 원년을 선언했다.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>현재까지 전라남도와 중앙정부 간 공식 협의 결과가 공개되지 않았으며, G20 개최가 실제로 전남에 선정될지는 아직 확정되지 않았다.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>김영록 전라남도지사</strong><br />
+  전라남도 내 경제·과학기술 발전을 목표로 G20 유치를 추진.<br />
+<em>출처: <a href="https://n.news.naver.com/mnews/article/005/0001817954" target="_blank">네이버뉴스</a></em></p>
+</li>
+<li>
+<p><strong>전라남도 정부</strong><br />
+  지역 인프라 개선 및 과학기술 생태계 조성을 통해 G20 유치에 기여.<br />
+<em>출처: <a href="https://www.asiae.co.kr/article/2025120212435913769" target="_blank">아시아경제</a></em></p>
+</li>
+<li>
+<p><strong>전라남도 주민</strong><br />
+  G20 개최에 따른 경제적 이익과 생활 불편 사이에서 갈등.<br />
+<em>출처: <a href="https://go.seoul.co.kr/news/newsView.php?id=20251202500119" target="_blank">서울신문</a></em></p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>정책 추진</strong><br />
+  김영록 지사는 자문위원회를 통해 인프라 개선과 과학기술 진흥 원년을 가속화할 계획이다.<br />
+<em>출처: <a href="http://www.nbnnews.co.kr/news/articleView.html?idxno=994695" target="_blank">내외뉴스통신</a></em></p>
+</li>
+<li>
+<p><strong>중앙정부와의 협의</strong><br />
+  전라남도는 중앙정부와 협력해 G20 전남 유치 가능성을 높이려 할 것으로 보인다.<br />
+<em>출처: <a href="https://go.seoul.co.kr/news/newsView.php?id=20251202500119" target="_blank">서울신문</a></em></p>
+</li>
+<li>
+<p><strong>지역 경제·사회 영향</strong><br />
+  G20 개최가 지역 경제에 긍정적 효과를 가져올 수 있으나, 인프라 부담과 환경 영향에 대한 대비가 필요하다.<br />
+<em>출처: <a href="https://v.daum.net/v/20251202123546103" target="_blank">아이뉴스24</a></em></p>
+</li>
+</ul>
+<p>전라남도는 G20 전남 유치를 위한 구체적 준비를 진행 중이며, 지역 경제 활성화와 과학기술 발전을 동시에 도모하려는 전략을 펼치고 있다. 향후 중앙정부와의 협의 결과와 인프라 개선 상황이 전라남도의 G20 유치 가능성을 결정지을 핵심 변수로 작용할 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=awg5ZdoeAh0" target="_blank">2028년 G20 정상들이 한국에서 모인다! 이 대통령...</a><a href="https://www.youtube.com/watch?v=1y-aAluKcEs" target="_blank">2028년 G20 정상회의 한국 개최 확정! 대한민국의...</a><a href="https://www.youtube.com/watch?v=hK_wspCvgPE" target="_blank">이 대통령, "2028년 G20은 한국에서" 확정짓고 ...</a><a href="https://www.youtube.com/watch?v=qZ5TXF-cOVo" target="_blank">한국사상 첫 트리플 크라운 G20의장국 수임.. 202...</a><a href="https://www.youtube.com/watch?v=sjLYULPJ-qc" target="_blank">President Lee Jae-myung: "The ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/005/0001817954" target="_blank">김영록 지사 “2028년 G20 정상회의 전남 유치 준비” 당부</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="http://www.newsggam.com/news/articleView.html?idxno=146829" target="_blank">김영록 전남지사, “2028년 G20 정상회의 전남 유치 준비하자” - 뉴스깜</a><a href="https://v.daum.net/v/20251202123546103" target="_blank">김영록 전남도지사, 2028년 G20 정상회의 전남 유치 도전 주문</a><a href="https://www.asiae.co.kr/article/2025120212435913769" target="_blank">김영록 '2028년 G20 정상회의' 전남 유치 속도 - 아시아경제</a><a href="http://www.nbnnews.co.kr/news/articleView.html?idxno=994695" target="_blank">김영록 전남도지사, “2028년 G20 정상회의 전남 유치 준비하자”</a><a href="https://go.seoul.co.kr/news/newsView.php?id=20251202500119" target="_blank">김영록 지사, G20 정상회의의 전남 유치 도전</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
