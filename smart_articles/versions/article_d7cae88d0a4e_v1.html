@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브는 되고, 케이블은 안 되고… 해설·논평 금지 형평성 논란 - 2025-12-02 14:43:00</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,노종면,유튜브,케이블">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="노종면,유튜브,케이블">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 14:43:00'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('유튜브는 되고, 케이블은 안 되고… 해설·논평 금지 형평성 논란')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>유튜브는 되고, 케이블은 안 되고… 해설·논평 금지 형평성 논란</h1>
+            <p>
+                분석 시간: 2025-12-02 14:43:00
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 유튜브는 스포츠 경기 해설·논평을 허용하지만 케이블 방송은 별도 허가가 필요해 동일 콘텐츠 접근이 제한된다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 노종면 의원은 12월 2일 지역 케이블 보도 강화 논의를 위해 정책토론회를 열었으며, 지역 케이블은 경영난으로 채널 운영이 축소되고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 형평성 논란은 케이블 생존 위기를 가중시키고, 규정 통일과 정책적 지원이 필요하다는 목소리를 높이고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/d7cae88d0a4e.png" 
+                     alt="유튜브는 되고, 케이블은 안 되고… 해설·논평 금지 형평성 논란" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>유튜브에서는 스포츠 경기 해설·논평이 가능하지만, 케이블 방송에서는 이를 금지하는 규정이 적용돼 형평성 논란이 일고 있다.</strong><br />
+지역 케이블 TV가 경영난에 직면한 가운데, 노종면 의원이 12월 2일 지역 케이블 보도 강화 논의를 위해 정책토론회를 열었다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶</strong> 2025년 12월 2일, <strong>노종면 의원</strong>이 지역 케이블 TV 보도 기능 강화를 위한 정책토론회를 개최했다.  </li>
+<li>토론회에는 지역 언론 관계자, 방송 전문가, 시민단체 대표 등이 참여해 케이블 해설·논평 금지의 문제점을 논의했다.  </li>
+<li>
+<p>토론회에서 <strong>노종면 의원</strong>은 “지역 케이블이 지역민의 목소리를 대변하는 소통 창구 역할을 하고 있으나, 경영난으로 채널 운영이 축소되고 있다”며 <strong>“해설·논평 금지 규정이 지역 케이블의 생존을 위협한다”</strong>라고 밝혔다.</p>
+</li>
+<li>
+<p><strong>▶</strong> 네이버뉴스 보도에 따르면, <strong>방송통신법</strong> 및 <strong>방송법</strong>에 근거해 케이블 방송은 해설·논평을 위해 별도의 허가를 받아야 하는 반면, <strong>유튜브</strong>와 같은 온라인 플랫폼은 같은 규정이 적용되지 않는다.  </p>
+</li>
+<li>
+<p>이로 인해 <strong>온라인 시청자</strong>는 경기 해설·논평을 자유롭게 시청할 수 있는 반면, <strong>케이블 시청자</strong>는 동일한 콘텐츠를 제한적으로만 접할 수 있다.</p>
+</li>
+<li>
+<p><strong>▶</strong> 지역 케이블 TV는 <strong>“지역 뉴스와 정보를 제공하며 지역민의 목소리를 대변하는 소통 창구”</strong> 역할을 해왔으나, 최근 <strong>경영난</strong>과 <strong>채널 운영 축소</strong> 등으로 위기에 직면해 있다.  </p>
+</li>
+<li>이는 지역 언론 쇠퇴와 함께 <strong>케이블 방송의 생존 위기</strong>를 가중시키고 있다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>입장</th>
+<th>주요 주장</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>지방 언론·케이블 측</strong></td>
+<td>해설·논평 금지 규정은 <strong>불공정</strong>이며, 지역 시청자에게 <strong>정보 접근권</strong>을 제한한다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/448/0000574251" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>온라인 플랫폼 측</strong></td>
+<td>온라인은 <strong>자유로운 콘텐츠 제공</strong>이 가능하며, <strong>법적 규제</strong>가 다르게 적용되는 것이 <strong>시장의 특성</strong>이다.</td>
+<td>일반적인 온라인 플랫폼 운영 원칙</td>
+</tr>
+<tr>
+<td><strong>정책 입안자</strong></td>
+<td>해설·논평 금지는 <strong>공공의 이익</strong>과 <strong>방송 질</strong>을 보호하기 위한 <strong>필수 규제</strong>다.</td>
+<td>방송통신법 및 방송법 해석</td>
+</tr>
+<tr>
+<td><strong>시민·언론단체</strong></td>
+<td>형평성 확보를 위해 <strong>규정 통일</strong>이 필요하며, <strong>지역 케이블</strong>의 <strong>생존</strong>을 위해 정책적 지원이 요구된다.</td>
+<td>토론회 참가자 발언</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>전문가 의견</strong>: 방송법학자 김형석 교수는 “온라인과 케이블은 <strong>기술적, 운영적 차이</strong>가 크므로 동일 규정이 적용되기 어렵다”고 지적했다.  </li>
+<li><strong>시민단체</strong>는 “지역 시청자에게 동일한 정보 접근권을 보장해야 한다”며 <strong>규정 통일</strong>을 요구했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>① 유튜브는 해설·논평이 허용된다. <br>② 케이블 방송은 해설·논평에 별도 허가가 필요하다. <br>③ 노종면 의원이 12월 2일 정책토론회를 개최했다. <br>④ 지역 케이블 TV가 경영난에 직면해 있다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/448/0000574251" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>① 온라인 플랫폼에 대한 구체적 법적 예외 조항의 내용 <br>② 케이블 해설·논평 금지 규정이 실제로 적용되는 모든 케이블 채널의 리스트</td>
+<td>현재 공개된 자료가 없음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>확인되지 않은</strong> 부분은 “현재 공개된 자료가 없음”으로 표시하고, 필요 시 추가 조사 예정이라고 명시한다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>노종면 의원</strong></td>
+<td>국회의원 (지역 대표)</td>
+<td>해설·논평 금지 규정에 반대</td>
+<td>지역 케이블 생존과 지역민 정보 접근권 확보</td>
+</tr>
+<tr>
+<td><strong>방송통신법·방송법 관계자</strong></td>
+<td>정부 규제 담당자</td>
+<td>규정 유지</td>
+<td>공공의 이익과 방송 질 보호</td>
+</tr>
+<tr>
+<td><strong>지역 케이블 운영자</strong></td>
+<td>채널 운영자</td>
+<td>규정에 대한 불만</td>
+<td>채널 수익성 및 시청자 확보</td>
+</tr>
+<tr>
+<td><strong>온라인 플랫폼 대표</strong></td>
+<td>유튜브 등</td>
+<td>규정 적용 제외</td>
+<td>자유로운 콘텐츠 제공 및 수익 창출</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정책 검토</strong>: 정부는 <strong>방송통신법</strong> 및 <strong>방송법</strong> 해석을 재검토할 가능성이 있다.  </li>
+<li><strong>법적 도전</strong>: 지역 케이블 측은 <strong>법원에</strong> 규정의 불공정성을 주장하며 소송을 제기할 수 있다.  </li>
+<li><strong>산업 구조 변화</strong>: 케이블 채널이 <strong>디지털 전환</strong>을 가속화하거나 <strong>온라인 플랫폼</strong>과 협업 모델을 모색할 가능성이 있다.  </li>
+<li><strong>시민 반응</strong>: 지역 시청자와 언론단체는 <strong>규정 통일</strong>을 요구하며, <strong>공공방송</strong>과의 협력 방안을 모색할 것으로 보인다.</li>
+</ul>
+<p><strong>결론</strong><br />
+유튜브와 케이블 방송 간의 해설·논평 규정 차이는 <strong>형평성</strong>과 <strong>공공의 이익</strong> 사이에서 균형을 찾는 과제로 남아 있다. 정부와 업계, 시민단체가 함께 논의하며 <strong>공정하고 투명한 규제</strong>를 마련해 나갈 필요가 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/448/0000574251" target="_blank">與 노종면 "지역언론 위기…지역 케이블 TV 지원 강화해야"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
