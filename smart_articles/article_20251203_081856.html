@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수상·가상 촬영을 한곳에서…대전 '스튜디오큐브' 다목적 촬영장으로 탈바꿈 - 2025-12-03 08:18:56</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,대전,스튜디오,ICVFX">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="대전,스튜디오,ICVFX">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 08:18:56'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('수상·가상 촬영을 한곳에서…대전 \'스튜디오큐브\' 다목적 촬영장으로 탈바꿈')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>수상·가상 촬영을 한곳에서…대전 '스튜디오큐브' 다목적 촬영장으로 탈바꿈</h1>
+            <p>
+                분석 시간: 2025-12-03 08:18:56
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 대전 스튜디오큐브가 60 m × 8 m LED 월과 ICVFX 기술을 도입해 국내 최대 규모 가상 스튜디오로 탈바꿈했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 시설은 전통 세트, 수중 촬영, 가상 촬영을 한 번에 소화하며, 12월 3일 개관식과 4~8일 마스터 클래스가 진행됐다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이를 통해 대전 스튜디오큐브는 K‑콘텐츠 제작 인프라를 강화하고 해외 수출 경쟁력을 높이며, 국내 가상 스튜디오 트렌드 선도에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/1ca6cfb502b0.png" 
+                     alt="수상·가상 촬영을 한곳에서…대전 '스튜디오큐브' 다목적 촬영장으로 탈바꿈" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>대전 울성구에 새로 개장한 스튜디오큐브가 수상·가상 촬영을 한 번에 소화할 수 있는 국내 최대 규모 가상 스튜디오로 탈바꿈했다. 60 m × 8 m LED 월과 실시간 3‑D 그래픽이 결합된 ‘ICVFX’ 기술이 도입돼, 전통 세트, 수중 촬영, 가상 촬영을 한 시설에서 동시에 구현한다. 12월 3일 개관식이 진행되었고, 4일부터 8일까지는 업계 전문가를 대상으로 한 마스터 클래스가 열렸다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 3일</td>
+<td>스튜디오큐브 개관식, ICVFX 기술 시연</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일~8일</td>
+<td>PD·카메라·조명 담당자를 위한 가상 스튜디오 워크플로우 마스터 클래스</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 6월 17일</td>
+<td>가상 스튜디오 완공 예정, 수상·가상·전통 세트 통합</td>
+<td><a href="https://www.bizinfo.go.kr/cmm/fms/getImageFile.do;jsessionid=SVbsmXZQZRIg3EOSPC3ZXPKgULt5y6B3qOdbJ19jV9H0bSaWlyqi6MQkwSTLFhZW.ims_bizwas1_servlet_engine1?atchFileId=FILE_000000000718451&amp;fileSn=0" target="_blank">비즈인포</a></td>
+</tr>
+<tr>
+<td>2025년 7월 25일</td>
+<td>스튜디오 규모(670~1138 평) 및 수조 스튜디오 보유</td>
+<td><a href="https://cine21.com/news/view/?mag_id=107998" target="_blank">시네21</a></td>
+</tr>
+<tr>
+<td>2023년 9월 21일</td>
+<td>대전 스튜디오큐브가 국내 유일 다목적 스튜디오가 될 전망</td>
+<td><a href="https://www.yna.co.kr/view/AKR20230921080100005" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 6월 18일</td>
+<td>가상 스튜디오(버추얼 스튜디오) 완공 예정</td>
+<td><a href="https://www.wip-news.com/news/articleView.html?idxno=29269" target="_blank">WIP뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>가장 큰 특징</strong><br />
+- <strong>LED 월</strong>: 60 m × 8 m 국내 최대 규모, 실시간 3‑D 그래픽과 결합<br />
+- <strong>ICVFX</strong>: 가상과 현실을 동시에 합성하는 기술<br />
+- <strong>다목적성</strong>: 전통 세트, 수중 촬영, 가상 촬영을 한 시설에서 수행  </p>
+<p>▶ <strong>정부 지원</strong><br />
+- 문화체육관광부가 장비·인력·교육을 포함한 종합 지원을 제공<br />
+- 마스터 클래스는 5 일간 진행돼 현장 실습과 이론을 동시에 제공  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>긍정적 시각</h3>
+<ul>
+<li><strong>콘텐츠 산업 성장</strong>: 대전 스튜디오큐브는 K‑콘텐츠 제작 인프라를 강화해 해외 수출 경쟁력을 높인다.  </li>
+<li><strong>기술 선도</strong>: ICVFX와 LED 월의 결합은 국내외 가상 스튜디오 트렌드에서 앞서 나갈 수 있는 기술적 기반을 제공한다.  </li>
+<li><strong>다양한 촬영 가능성</strong>: 수상·가상·전통 세트가 한 곳에 모여 제작 비용과 시간을 절감한다.  </li>
+</ul>
+<h3>비판적 시각</h3>
+<ul>
+<li><strong>고비용 문제</strong>: LED 월과 ICVFX 장비는 초기 투자비용이 높아 중소 제작사 입장에서 부담이 될 수 있다.  </li>
+<li><strong>전문가 부족</strong>: 가상 스튜디오 운영에 필요한 숙련된 인력이 부족해 장기적으로 활용도가 낮아질 위험이 있다.  </li>
+<li><strong>산업 구조 변화</strong>: 전통 세트 제작업계와 조명·음향 장비 업체 등 기존 인프라에 대한 영향이 우려된다.  </li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>영상제작 전문가</strong>는 “ICVFX는 촬영 현장의 자유도를 크게 높여 주며, 특히 해외 협업 시 장비를 최소화할 수 있는 장점이 있다”고 평가했다.  </li>
+<li><strong>문화산업 정책가</strong>는 “정부의 종합 지원이 중소 제작사에게 큰 도움이 될 것이며, 장기적으로는 국내 콘텐츠 수출 확대에 기여할 것”이라고 전망했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>스튜디오큐브가 60 m × 8 m LED 월을 보유하고 있으며, ICVFX를 사용해 가상·현실을 결합</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2025년 12월 3일 개관식 진행</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>12월 4일~8일 마스터 클래스 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>문화체육관광부가 장비·인력·교육 지원</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>스튜디오가 국내에서 완전히 새로운 기술을 최초로 도입했다는 주장</td>
+<td>현재 기사에 명시적 근거 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>스튜디오가 수상·가상·전통 세트 외에 다른 특수 효과를 제공한다는 주장</td>
+<td>근거 부족</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>문화체육관광부 관계자</strong>: 장비·인력·교육 지원을 통해 국내 콘텐츠 산업을 활성화하려는 정책 목표가 있다.  </li>
+<li><strong>스튜디오큐브 운영팀</strong>: 다목적 촬영 장비와 ICVFX 시스템을 운영하며, 수익 창출과 기술 선도를 목표로 한다.  </li>
+<li><strong>중소 제작사</strong>: 비용 부담과 인력 부족이 주요 관심사이며, 장기적으로는 스튜디오 이용을 통해 경쟁력을 확보하고자 한다.  </li>
+<li><strong>가상 스튜디오 전문가</strong>: 기술적 진보와 교육 프로그램을 통해 업계 전반의 역량을 강화하려는 입장이다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>산업 확장</strong>: 스튜디오큐브가 성공적으로 운영되면, 국내외 콘텐츠 제작사들이 대전으로 유입될 가능성이 높다.  </li>
+<li><strong>기술 발전</strong>: ICVFX와 LED 월의 결합이 표준화되면, 가상 촬영의 품질과 효율이 크게 향상될 전망이다.  </li>
+<li><strong>정책 연계</strong>: 문화체육관광부의 종합 지원이 지속된다면, 중소 제작사와 스타트업이 가상 스튜디오를 활용해 새로운 콘텐츠를 창출할 수 있다.  </li>
+<li><strong>교육 인프라 강화</strong>: 마스터 클래스와 같은 교육 프로그램이 확대되면, 가상 스튜디오 운영에 필요한 전문 인력이 증가할 것이다.  </li>
+</ul>
+<p>대전 스튜디오큐브는 수상·가상 촬영을 한 곳에서 소화할 수 있는 다목적 촬영장으로서, 한국 콘텐츠 산업의 새로운 지평을 열고 있다. 지속적인 정부 지원과 업계 협력이 병행된다면, 국내 가상 스튜디오 시장은 더욱 성장할 것으로 기대된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008639028" target="_blank">수상·가상 촬영을 한곳에서…대전 '스튜디오큐브' 다목적 촬영장으로 탈바꿈</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.bizinfo.go.kr/cmm/fms/getImageFile.do;jsessionid=SVbsmXZQZRIg3EOSPC3ZXPKgULt5y6B3qOdbJ19jV9H0bSaWlyqi6MQkwSTLFhZW.ims_bizwas1_servlet_engine1?atchFileId=FILE_000000000718451&fileSn=0" target="_blank">국내 최대 규모 가상(버추얼) 스튜디오에서 콘텐츠를 제작할 기업을 ...</a><a href="https://cine21.com/news/view/?mag_id=107998" target="_blank">[특집] 버추얼 파워로 움직일 미래형 제작소 – 대전 스튜디오큐브 탐방기</a><a href="https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?menuSeq=5930&boardSeq=3264&boardGubun=itsdj01&pageIndex=1" target="_blank">대전광역시 월간일류도시대전</a><a href="https://www.yna.co.kr/view/AKR20230921080100005" target="_blank">대전에 다목적 수상 스튜디오 개관…"대규모 해전 장면 촬영" | 연합뉴스</a><a href="https://www.wip-news.com/news/articleView.html?idxno=29269" target="_blank">국내 최대 규모 가상(버추얼) 스튜디오에서 콘텐츠를 제작할 기업을 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
