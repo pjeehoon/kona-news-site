@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전국대리운전노조 "대리기사 매달고 달린 피의자 엄벌하라" - 2025-12-02 20:26:44</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,대리운전,대전시청,피의자">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="대리운전,대전시청,피의자">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 20:26:44'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('전국대리운전노조 "대리기사 매달고 달린 피의자 엄벌하라"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>전국대리운전노조 "대리기사 매달고 달린 피의자 엄벌하라"</h1>
+            <p>
+                분석 시간: 2025-12-02 20:26:44
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 대리기사 A가 2025년 12월 14일 만취 승객에 의해 차량에서 끌려 1.5km를 이동하다 숨진 사건이 발생했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 전국대리운전노조는 12월 2일 기자회견에서 플랫폼 기업의 안전책임 명문화와 산업안전보건법 전면 적용, 작업중지권 보장을 요구하며 콜 거절 시 불이익이 사망의 직접 원인이라고 주장했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사건은 플랫폼 노동자 보호 강화와 법적 책임 재정립을 촉구하며, 업계와 정부가 안전 규제와 노동자 권리 보장에 대한 논의를 재개하도록 압박하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/2d6a1481e527.png" 
+                     alt="전국대리운전노조 "대리기사 매달고 달린 피의자 엄벌하라"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>전국대리운전노조가 2025년 12월 2일 대전시청 앞에서 기자회견을 열고, 대리기사 매달고 달린 피의자에 대한 엄격한 처벌을 요구했다.</strong><br />
+대리기사 A가 12월 14일 만취 승객 B에 의해 1.5 km를 끌려 숨진 사건이 발생하면서, 노조는 플랫폼 기업의 안전책임과 산업안전보건법 전면 적용을 촉구하며 작업중지권 보장을 요구했다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 2일</td>
+<td>기자회견</td>
+<td>대전시청 앞에서 전국대리운전노조가 “작업중지권 보장”과 “산업안전보건법 전면 적용”을 요구하며, “콜 거절 시 불이익, 위험에 방치된 구조가 죽음을 불렀다”는 비판을 제기</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004091819" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 14일</td>
+<td>대리기사 사망</td>
+<td>대리기사 A가 만취 승객 B에 의해 차량 밖으로 밀려 1.5 km를 끌려 숨진 사건 발생</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004091819" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2010년</td>
+<td>별내IC 대리기사 살인 사건</td>
+<td>대리기사 사망 사건으로 대리운전 노동자 안전 논의가 시작</td>
+<td>(과거 사건, 출처 없음)</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 사실</strong><br />
+- <strong>대리기사 A</strong>가 12월 14일 만취 승객 B에 의해 1.5 km를 끌려 숨진 사건이 발생했다.<br />
+- <strong>전국대리운전노조</strong>는 12월 2일 기자회견에서 <strong>작업중지권 보장</strong>과 <strong>산업안전보건법 전면 적용</strong>을 요구했다.<br />
+- 노조는 <strong>“콜 거절 시 불이익”</strong>이 대리기사 사망의 직접적 원인이라고 주장했다.  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>노조의 입장</h3>
+<p>노조는 플랫폼 기업이 <strong>안전책임을 명문화하지 않아 사고가 재발할 위험</strong>이 크다고 비판한다. “대리기사 매달고 달린 피의자 엄벌”을 요구하며, <strong>작업중지권 보장</strong>을 통해 노동자들의 안전을 확보하고자 한다.  </p>
+<blockquote>
+<p>“콜 거절하면 불이익, 위험에 방치된 구조가 죽음을 불렀다”는 비판은 <a href="https://www.khan.co.kr/article/202512021432001/amp" target="_blank">경향신문</a>에서도 인용된다.</p>
+</blockquote>
+<h3>플랫폼 기업의 반응</h3>
+<p>현재까지 플랫폼 기업의 공식 입장은 공개되지 않았다. 일부 업계 관계자는 <strong>안전 교육과 승객 선별 절차 강화</strong>를 약속했으나, <strong>법적 책임 범위</strong>에 대한 명확한 답변은 아직 나오지 않았다.</p>
+<h3>전문가 의견</h3>
+<p>산업안전보건법 전문가들은 <strong>플랫폼 노동자에 대한 법 적용이 필요</strong>하다고 주장한다. 현재 법은 전통적 노동자에 초점을 맞추고 있어 <strong>플랫폼 노동자 보호가 미흡</strong>하다는 지적이다.  </p>
+<blockquote>
+<p>“산업안전보건법 전면 적용이 시급하다”는 의견은 <a href="http://worknworld.kctu.org/news/articleViewAmp.html?idxno=508376" target="_blank">worknworld</a>에서도 제시된다.</p>
+</blockquote>
+<h3>일반 시민의 목소리</h3>
+<p>일부 시민은 <strong>노동자 안전을 위한 노조의 요구</strong>를 지지하며, “플랫폼 기업이 책임을 져야 한다”는 목소리를 내고 있다. 반면, <strong>승객의 편의성</strong>을 우선시하는 시각도 존재한다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>대리기사 A 사망, 노조 기자회견, 노조 요구</td>
+<td><a href="https://n.news.naver.com/mnews/article/079/0004091819" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>플랫폼 기업의 구체적 안전책임 명문화 여부, 법적 책임 범위</td>
+<td>현재 공개 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>확인되지 않은 부분</strong><br />
+- 플랫폼 기업이 실제로 <strong>안전책임을 명문화</strong>했는지 여부<br />
+- <strong>산업안전보건법</strong>이 플랫폼 노동자에게 <strong>전면 적용</strong>될지 여부  </p>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>전국대리운전노조</strong></td>
+<td>노동자 대표</td>
+<td><strong>작업중지권 보장</strong> 및 <strong>엄벌</strong> 요구</td>
+</tr>
+<tr>
+<td><strong>대리기사 A</strong></td>
+<td>사망자</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>만취 승객 B</strong></td>
+<td>가해자</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>플랫폼 기업</strong></td>
+<td>서비스 제공자</td>
+<td>안전책임에 대한 명확한 입장 미공개</td>
+</tr>
+<tr>
+<td><strong>산업안전보건법 전문가</strong></td>
+<td>법률 전문가</td>
+<td><strong>전면 적용</strong> 필요성 강조</td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>사회적 관심자</td>
+<td>안전 강화에 대한 지지와 우려</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li><strong>법적 대응</strong><br />
+   - 노조의 요구가 <strong>산업안전보건법 전면 적용</strong>으로 이어질 경우, 플랫폼 기업은 <strong>안전 교육, 승객 선별, 사고 예방 장치</strong>를 강화해야 할 가능성이 높다.  </li>
+<li><strong>정책 제안</strong><br />
+   - 정부는 <strong>플랫폼 노동자 보호법</strong> 개정 논의를 재개할 수 있다.  </li>
+<li><strong>산업 구조 변화</strong><br />
+   - 안전 규제가 강화되면 <strong>플랫폼 기업의 운영 방식</strong>에 변화가 요구될 수 있다.  </li>
+<li><strong>노동자 인식 변화</strong><br />
+   - 이번 사건은 <strong>노동자 안전 인식</strong>을 높여, <strong>작업중지권</strong>과 같은 권리 확보를 가속화할 수 있다.  </li>
+</ol>
+<p><strong>전국대리운전노조의 요구는 대리기사의 생명과 안전을 최우선으로 두는 움직임이며, 플랫폼 산업 전반에 걸친 안전 규제 강화의 필요성을 다시 한 번 부각시키고 있다.</strong></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=fN8_FZRoJc0" target="_blank">오늘 대전시청 앞 김진태 기자회견</a><a href="https://www.youtube.com/watch?v=eRQF4uA5CMU" target="_blank">(대전 기자회견) 2022.02.28 20대 대통령선거...</a><a href="https://www.youtube.com/watch?v=sZSqCVgwffw" target="_blank">대전시장•교육감•유성구청장 &#39;학교 없는 도시개발...</a><a href="https://www.youtube.com/watch?v=qUIiIk6pQ_M" target="_blank">[민주당대전시당] 이장우 시장 국민의힘 규탄 기자회견 ...</a><a href="https://www.youtube.com/watch?v=EPRiyXiLnyc" target="_blank">[현장의재구성] 기자들이 탄성 자아낸 이유 #Short...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/079/0004091819" target="_blank">"대리기사 작업중지권 보장하라" 전국 대리운전 노조 대책 촉구</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="http://worknworld.kctu.org/news/articleViewAmp.html?idxno=508376" target="_blank">“대리기사 폭행 사망, 더 이상은 안 된다” 전국대리운전노조 대책 촉구 |</a><a href="https://www.khan.co.kr/article/202512021432001/amp" target="_blank">대리기사 사망 사건에 노조 “작업중지권 보장해야” - 경향신문 AMP</a><a href="https://www.cctoday.co.kr/news/articleView.html?idxno=2222487" target="_blank">대전 대리기사 사망, 이동노동자 안전은 없었다</a><a href="https://www.khan.co.kr/article/202512021432001" target="_blank">대리기사 사망 사건에 노조 “작업중지권 보장해야” - 경향신문</a><a href="https://v.daum.net/v/20251202172823972" target="_blank">대전 대리기사 사망, 이동노동자 안전은 없었다</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
