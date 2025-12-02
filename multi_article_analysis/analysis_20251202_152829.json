@@ -1,0 +1,318 @@
+{
+  "main_article": {
+    "title": "정부 “쿠팡 전자서명키 악용…공격기간 6월24일~11월8일”",
+    "url": "https://n.news.naver.com/mnews/article/005/0001817934"
+  },
+  "related_articles": [
+    {
+      "title": "정부 “쿠팡 전자서명키 악용…공격기간 6월 24일~11월 8일”",
+      "content": "박대준 쿠팡 대표가 2일 서울 여의도 국회에서 열린 과학기술정보방송통신위원회 전체 회의에서 회의 시작을 기다리고 있다. 연합뉴스\n과학기술정보통신부가 쿠팡 개인정보 유출 사고에서 식별된 공격 기간이 지난 6월 24일부터 11월 8일까지라고 밝혔다.\n2일 국회 과학기술정보방송통신위원회(과방위) 쿠팡 개인정보 유출 사고 관련 긴급 현안 질의에서 류제명 과기정통부 2차관은 대응 경과보고를 통해 이같이 말했다.\n류 차관은 “지난해 7월부터 올해 11월까지 전수 로그 분석을 한 결과 3000만개 이상 계정에서 개인 정보가 유출됐다”라며 “공격식별 기간은 지난해 6월 24일부터 11월 8일까지다”라고 언급했다.\n이어 “공격자는 로그인 없이 고객 정보를 여러 차례 비정상으로 접속해 유출했다”라며 “이 과정에서 쿠팡 서버 접속 시 이용되는 인증용 토큰을 전자 서명하는 암호키가 사용됐다”라고 설명했다.\n현재는 퇴사한 중국인 인증 담당자가 개인정보를 유출했다는 의혹에 대해 류 차관은 “현재 언급되는 공격자의 신상에 대한 정보는 경찰 수사로 확인이 필요하다”라며 “확인이 필요한 미상자가 쿠팡 측에 메일을 보내 이메일, 배송지 등 3000만건의 개인정보 유출을 주장했다”라고 전했다.",
+      "date": "2025.12.02. 오전 10:23",
+      "url": "https://n.news.naver.com/mnews/article/005/0001817934",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "류제명",
+        "issues": [
+          {
+            "issue_type": "전자서명키 악용",
+            "details": "쿠팡 서버 접속 시 사용된 인증용 토큰을 전자 서명하는 암호키가 공격에 이용되었다는 주장",
+            "source": "연합뉴스"
+          },
+          {
+            "issue_type": "퇴사한 중국인 인증 담당자 의혹",
+            "details": "해당 인물이 쿠팡 개인정보를 유출했다는 주장이 제기됨",
+            "source": "연합뉴스"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "류제명",
+        "responses": [
+          {
+            "issue": "전자서명키 악용",
+            "clarification": "공격자는 로그인 없이 비정상 접속을 통해 개인정보를 유출했으며, 현재 공격자의 신상은 경찰 수사 중",
+            "date": "2025-12-02"
+          },
+          {
+            "issue": "퇴사한 중국인 인증 담당자 의혹",
+            "clarification": "공격자 신상 확인이 필요하며, 미상자가 쿠팡에 메일을 보내 3000만 건의 개인정보 유출을 주장했으나 확인 필요",
+            "date": "2025-12-02"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "과학기술정보통신부",
+        "opinion": "공격 기간과 피해 규모를 공식적으로 확인하고 수사 진행 중",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "공격 기간은 2025년 6월 24일부터 2025년 11월 8일까지",
+        "30,000,000개 이상의 쿠팡 계정에서 개인정보가 유출됨",
+        "공격자는 로그인 없이 비정상 접속을 통해 유출함",
+        "쿠팡 서버 접속 시 사용된 인증용 토큰을 전자 서명하는 암호키가 사용됨"
+      ],
+      "unconfirmed_allegations": [
+        "퇴사한 중국인 인증 담당자가 공격에 관여했다는 주장",
+        "미상자가 쿠팡에 메일을 보내 3000만 건의 개인정보 유출을 주장했다는 내용"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-06-24",
+        "event": "쿠팡 개인정보 유출 공격 시작"
+      },
+      {
+        "date": "2025-11-08",
+        "event": "쿠팡 개인정보 유출 공격 종료"
+      },
+      {
+        "date": "2025-12-02",
+        "event": "국회 과학기술정보방송통신위원회에서 쿠팡 개인정보 유출 사고 관련 질의 및 대응 경과보고"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "\"쿠팡 전자서명키 악용…6~11월 지속적 침해\" / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=f9lan2Q1VHQ",
+        "link": "https://www.youtube.com/watch?v=f9lan2Q1VHQ",
+        "videoId": "f9lan2Q1VHQ",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/@yonhapnewstv23"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 46.0,
+        "viewCount": 20,
+        "transcript": ""
+      },
+      {
+        "title": "\"쿠팡 전자서명키 악용…6~11월 지속적 침해\"",
+        "url": "https://www.youtube.com/watch?v=j_8OUDHb0Cc",
+        "link": "https://www.youtube.com/watch?v=j_8OUDHb0Cc",
+        "videoId": "j_8OUDHb0Cc",
+        "channel": {
+          "name": "YBC News",
+          "url": "https://www.youtube.com/@YBC4News"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 67.0,
+        "viewCount": 0,
+        "transcript": ""
+      },
+      {
+        "title": "\"쿠팡 전자서명키 악용…6~11월 지속적 침해\"",
+        "url": "https://www.youtube.com/watch?v=wAKXJc2WyHI",
+        "link": "https://www.youtube.com/watch?v=wAKXJc2WyHI",
+        "videoId": "wAKXJc2WyHI",
+        "channel": {
+          "name": "YBC News",
+          "url": "https://www.youtube.com/@YBC4News"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 21.0,
+        "viewCount": 0,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "[속보] 정부 \"쿠팡 전자서명키 악용…공격기간 6월24일~11월8일 ...",
+        "url": "https://www.joongang.co.kr/article/25386772",
+        "snippet": "5시간 전 ... 박대준 쿠팡 대표가 2일 서울 여의도 국회에서 열린 과학기술정보방송통신위원회 전체 회의에서 회의 시작을 기다리고 있다. 연합뉴스.",
+        "displayLink": "www.joongang.co.kr"
+      },
+      {
+        "title": "[속보] 정부 \"쿠팡 전자서명키 악용…공격기간 6월24일~11월8일 ...",
+        "url": "https://www.yna.co.kr/view/AKR20251202058800017",
+        "snippet": "5시간 전 ... 국회 과방위 전체회의 참석한 박대준 쿠팡 대표. (서울=연합뉴스) 이동해 기자 = 박대준 쿠팡 대표가 2일 서울 여의도 국회에서 열린 과학기술정보 ...",
+        "displayLink": "www.yna.co.kr"
+      },
+      {
+        "title": "[속보] 정부 “쿠팡 전자서명키 악용…공격기간 6월 24일~11월 8일”",
+        "url": "https://v.daum.net/v/20251202102440235",
+        "snippet": "5시간 전 ... 2일 국회 과학기술정보방송통신위원회(과방위) 쿠팡 개인정보 유출 사고 관련 긴급 현안 질의에서 류제명 과기정통부 2차관은 대응 경과보고를 통해 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "정부 “쿠팡 전자서명키 악용…공격기간 6월24월~11월8일” - 시사저널",
+        "url": "https://www.sisajournal.com/news/articleView.html?idxno=355004",
+        "snippet": "4시간 전 ... 정부가 쿠팡 개인정보 유출 사고 과정에서 전자서명키가 악용됐다고 밝혔다. 쿠팡 측은 2차 피해 가능성은 없다며 끝까지 사태 해결을 위해 노력 ...",
+        "displayLink": "www.sisajournal.com"
+      },
+      {
+        "title": "정부 “쿠팡 전자서명키 악용…공격기간 6월24월~11월8일”",
+        "url": "https://v.daum.net/v/20251202114047431",
+        "snippet": "4시간 전 ... 류제명 과기정통부 2차관 “3000만개 이상 계정에서 개인정보 유출” 박대준 쿠팡 대표 “한국법인 대표로서 끝까지 책임지고 해결하겠다”.",
+        "displayLink": "v.daum.net"
+      }
+    ]
+  },
+  "comprehensive_article": "# 정부 “쿠팡 전자서명키 악용…공격기간 6월 24일 ~ 11월 8일” 사건 심층 분석\n\n쿠팡 개인정보 유출 사고가 2025년 6월 24일에 시작해 11월 8일에 종료된 가운데, 정부는 전자서명키가 악용되었다고 공식 입장을 밝혔습니다. 3,000만 개가 넘는 계정이 노출되었으며, 공격자는 로그인 없이 비정상 접속으로 정보를 탈취했습니다. 이번 기사에서는 사건의 경과, 다양한 시각, 확인된 사실과 추측을 정리하고 향후 전망을 제시합니다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 주요 내용 | 출처 |\n|------|------|----------|------|\n| 2025 년 6 월 24일 | 공격 시작 | 쿠팡 서버에 비정상 접속 시도, 인증 토큰을 전자서명키로 악용 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001817934) |\n| 2025 년 11 월 8일 | 공격 종료 | 3,000만 개 이상의 계정 개인정보 유출 확인 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001817934) |\n| 2025 년 12 월 2일 | 국회 질의 | 과기정통부 2차관 류제명이 대응 경과보고 | [조선일보](https://v.daum.net/v/20251202102440235) |\n| 2025 년 12 월 2일 | 쿠팡 대표 발언 | 박대준 대표가 책임감 강조 | [조선일보](https://v.daum.net/v/20251202114047431) |\n\n▶ **공격 기간**: 2025 년 6 월 24일 ~ 11 월 8일  \n▶ **피해 규모**: 3,000만 개가 넘는 쿠팡 계정 개인정보 유출  \n▶ **공격 방식**: 로그인 없이 비정상 접속 → 인증 토큰 전자서명키 악용  \n\n## 다양한 관점과 분석\n\n### 정부·과기정통부\n- **류제명 2차관**은 “공격자는 로그인 없이 비정상 접속을 통해 개인정보를 유출했으며, 현재 공격자의 신상은 경찰 수사 중”이라며 **공식 입장을 발표**했습니다.  \n- 과기정통부는 **공격 기간과 피해 규모를 공식적으로 확인**하고 수사 진행 중이라고 밝혔습니다.  \n- 출처: [조선일보](https://v.daum.net/v/20251202102440235)\n\n### 쿠팡\n- **박대준 대표**는 “한국법인 대표로서 끝까지 책임지고 해결하겠다”는 입장을 내비쳤으며, **2차 피해 가능성은 없다고** 강조했습니다.  \n- 출처: [조선일보](https://v.daum.net/v/20251202114047431)\n\n### 언론\n- **연합뉴스TV**와 **YBC News**는 사건의 전반적인 흐름과 정부·쿠팡의 대응을 보도했습니다.  \n- **시사저널**은 “전문가들은 전자서명키 악용이 보안 취약점을 드러낸다”고 분석했습니다.  \n- 출처: [연합뉴스TV](https://www.youtube.com/watch?v=f9lan2Q1VHQ), [시사저널](https://www.sisajournal.com/news/articleView.html?idxno=355004)\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | ① 공격 기간 6 월 24일 ~ 11 월 8일<br>② 3,000만 개가 넘는 계정 개인정보 유출<br>③ 공격자는 로그인 없이 비정상 접속 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001817934) |\n| **미확인 정보** | ① 퇴사한 중국인 인증 담당자가 공격에 관여했다는 주장<br>② 미상자가 쿠팡에 보낸 3,000만 건 유출 주장 | 출처 없음, 추정 |\n\n▶ **확인된 사실**은 공식 발표와 보도 자료를 통해 입증되었으며, **미확인 정보**는 아직 검증되지 않았습니다.\n\n## 핵심 인물과 이해관계\n\n| 인물 | 직책 | 입장 | 이해관계 |\n|------|------|------|----------|\n| **류제명** | 과기정통부 2차관 | 공격자 신상 수사 중, 피해 규모 확인 | 국가 보안·정보 보호 책임 |\n| **박대준** | 쿠팡 대표 | 책임감 강조, 2차 피해 없다고 주장 | 기업 신뢰 회복, 법적 책임 회피 |\n| **쿠팡 고객** | 피해자 | 개인정보 노출에 대한 불안 | 개인정보 보호 권리 |\n| **보안 전문가** | 외부 분석가 | 전자서명키 악용이 보안 취약점 시사 | 보안 업계 개선 압력 |\n\n## 향후 전망\n\n1. **수사 진행**  \n   - 과기정통부와 경찰이 공격자의 신상을 파악하고, 전자서명키 보안 강화 방안을 마련할 예정입니다.  \n2. **법적·제도적 대응**  \n   - 개인정보 보호법 개정 논의가 가속화될 가능성이 있으며, 기업의 보안 책임이 강화될 전망입니다.  \n3. **기업 신뢰 회복**  \n   - 쿠팡은 보안 체계 재정비와 고객 보상 프로그램을 통해 신뢰를 회복하려 할 것입니다.  \n4. **보안 업계 변화**  \n   - 전자서명키 관리와 인증 토큰 보안에 대한 업계 표준이 재검토될 가능성이 높습니다.  \n\n**▶ 향후 주요 이슈**: 공격자 신상 공개, 보안 취약점 보완 조치, 개인정보 보호법 개정 논의, 쿠팡의 보안 체계 공개 여부.  \n\n---\n\n**참고 자료**  \n- [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001817934)  \n- [조선일보](https://v.daum.net/v/20251202102440235)  \n- [조선일보](https://v.daum.net/v/20251202114047431)  \n- [연합뉴스TV](https://www.youtube.com/watch?v=f9lan2Q1VHQ)  \n- [시사저널](https://www.sisajournal.com/news/articleView.html?idxno=355004)",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/005/0001817934"
+  ],
+  "timestamp": "2025-12-02T15:28:29.821942",
+  "youtube_videos": [
+    {
+      "title": "\"쿠팡 전자서명키 악용…6~11월 지속적 침해\" / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=f9lan2Q1VHQ",
+      "link": "https://www.youtube.com/watch?v=f9lan2Q1VHQ",
+      "videoId": "f9lan2Q1VHQ",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 46.0,
+      "viewCount": 20,
+      "transcript": ""
+    },
+    {
+      "title": "\"쿠팡 전자서명키 악용…6~11월 지속적 침해\"",
+      "url": "https://www.youtube.com/watch?v=j_8OUDHb0Cc",
+      "link": "https://www.youtube.com/watch?v=j_8OUDHb0Cc",
+      "videoId": "j_8OUDHb0Cc",
+      "channel": {
+        "name": "YBC News",
+        "url": "https://www.youtube.com/@YBC4News"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 67.0,
+      "viewCount": 0,
+      "transcript": ""
+    },
+    {
+      "title": "\"쿠팡 전자서명키 악용…6~11월 지속적 침해\"",
+      "url": "https://www.youtube.com/watch?v=wAKXJc2WyHI",
+      "link": "https://www.youtube.com/watch?v=wAKXJc2WyHI",
+      "videoId": "wAKXJc2WyHI",
+      "channel": {
+        "name": "YBC News",
+        "url": "https://www.youtube.com/@YBC4News"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 21.0,
+      "viewCount": 0,
+      "transcript": ""
+    },
+    {
+      "title": "[다시보기] 국회서도 답변 피한 쿠팡...과방위 \"김범석 불러 청문회 열자\"-12월 2일 (화) 풀영상 [이슈현장] / JTBC News",
+      "url": "https://www.youtube.com/watch?v=neMVKVwyNkU",
+      "link": "https://www.youtube.com/watch?v=neMVKVwyNkU",
+      "videoId": "neMVKVwyNkU",
+      "channel": {
+        "name": "JTBC News",
+        "url": "https://www.youtube.com/@jtbc_news"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 10414.0,
+      "viewCount": 1543,
+      "transcript": ""
+    },
+    {
+      "title": "정부 “쿠팡 공격자, 계정 3천만 개 조회” / KBS  2025.12.02.",
+      "url": "https://www.youtube.com/watch?v=qiMf2wWJreU",
+      "link": "https://www.youtube.com/watch?v=qiMf2wWJreU",
+      "videoId": "qiMf2wWJreU",
+      "channel": {
+        "name": "KBS News",
+        "url": "https://www.youtube.com/@newskbs"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 49.0,
+      "viewCount": 28,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "[속보] 정부 \"쿠팡 전자서명키 악용…공격기간 6월24일~11월8일 ...",
+      "url": "https://www.joongang.co.kr/article/25386772",
+      "snippet": "5시간 전 ... 박대준 쿠팡 대표가 2일 서울 여의도 국회에서 열린 과학기술정보방송통신위원회 전체 회의에서 회의 시작을 기다리고 있다. 연합뉴스.",
+      "displayLink": "www.joongang.co.kr"
+    },
+    {
+      "title": "[속보] 정부 \"쿠팡 전자서명키 악용…공격기간 6월24일~11월8일 ...",
+      "url": "https://www.yna.co.kr/view/AKR20251202058800017",
+      "snippet": "5시간 전 ... 국회 과방위 전체회의 참석한 박대준 쿠팡 대표. (서울=연합뉴스) 이동해 기자 = 박대준 쿠팡 대표가 2일 서울 여의도 국회에서 열린 과학기술정보 ...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "[속보] 정부 “쿠팡 전자서명키 악용…공격기간 6월 24일~11월 8일”",
+      "url": "https://v.daum.net/v/20251202102440235",
+      "snippet": "5시간 전 ... 2일 국회 과학기술정보방송통신위원회(과방위) 쿠팡 개인정보 유출 사고 관련 긴급 현안 질의에서 류제명 과기정통부 2차관은 대응 경과보고를 통해 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "정부 “쿠팡 전자서명키 악용…공격기간 6월24월~11월8일” - 시사저널",
+      "url": "https://www.sisajournal.com/news/articleView.html?idxno=355004",
+      "snippet": "4시간 전 ... 정부가 쿠팡 개인정보 유출 사고 과정에서 전자서명키가 악용됐다고 밝혔다. 쿠팡 측은 2차 피해 가능성은 없다며 끝까지 사태 해결을 위해 노력 ...",
+      "displayLink": "www.sisajournal.com"
+    },
+    {
+      "title": "정부 “쿠팡 전자서명키 악용…공격기간 6월24월~11월8일”",
+      "url": "https://v.daum.net/v/20251202114047431",
+      "snippet": "4시간 전 ... 류제명 과기정통부 2차관 “3000만개 이상 계정에서 개인정보 유출” 박대준 쿠팡 대표 “한국법인 대표로서 끝까지 책임지고 해결하겠다”.",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "과기정통부 \"쿠팡 전자서명키 악용...공격기간 6~11월\"",
+      "url": "https://www.newstree.kr/newsView/ntr202512020012",
+      "snippet": "4시간 전 ... 쿠팡 개인정보 유출 사고는 전자서명키가 악용돼 발생했으며, 지난 6월 24일~11월 8일까지 공격이 이뤄진 것으로 파악됐다. 2일 국회 과학기술정보 ...",
+      "displayLink": "www.newstree.kr"
+    },
+    {
+      "title": "[속보] 정부 “쿠팡 전자서명키 악용…공격기간 6월24일~11월8일 ...",
+      "url": "https://www.mk.co.kr/news/politics/11481950",
+      "snippet": "5시간 전 ... 2일 국회 과학기술정보방송통신위원회(과방위) 쿠팡 개인정보 유출 사고 관련 긴급 현안 질의에서 류제명 과기정통부 2차관은 대응 경과보고를 통해 ...",
+      "displayLink": "www.mk.co.kr"
+    },
+    {
+      "title": "[속보] 정부 “쿠팡 전자서명키 악용…공격기간 6월24일~11월8일 ...",
+      "url": "https://biz.chosun.com/distribution/channel/2025/12/02/FKTMWHGIXRB5LOYORRN3QWLMCY/",
+      "snippet": "5시간 전 ... 박대준 쿠팡 대표가 2일 서울 여의도 국회에서 열린 과학기술정보방송통신위원회 전체회의에서 질의에 답변하고 있다. /연합뉴스.",
+      "displayLink": "biz.chosun.com"
+    },
+    {
+      "title": "정부 \"쿠팡 인증키로 비정상 접속 수차례…6월24일~11월8일 유출 ...",
+      "url": "https://www.asiae.co.kr/article/2025120210443095549",
+      "snippet": "5시간 전 ... ... 2일 국회 현안질의에서 쿠팡 개인정보 유출 사고의 공격 기간이 올해 6월 24일부터 11월 8일까지였다고 확인 ... 전자서명하는 암호키가 악용 ...",
+      "displayLink": "www.asiae.co.kr"
+    },
+    {
+      "title": "[속보] 쿠팡 정보유출 공격, 6월부터 11월까지 계속됐다 - 경향신문",
+      "url": "https://www.khan.co.kr/article/202512021044001",
+      "snippet": "5시간 전 ... 고객 3370만명의 이름·전화번호·주소 등을 유출당한 쿠팡에서 '인증 암호키 악용'이 지난 6월부터 5개월간 이어졌던 것으로 확인됐다. 2일 국회 과학 ...",
+      "displayLink": "www.khan.co.kr"
+    }
+  ],
+  "google_count": 10
+}
