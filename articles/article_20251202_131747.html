@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베네수엘라, ‘전쟁범죄로 미국 고발’ 준비착수…국회특위 구성 - 2025-12-02 13:17:47</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,베네수엘라,미국">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="베네수엘라,미국">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 13:17:47'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('베네수엘라, ‘전쟁범죄로 미국 고발’ 준비착수…국회특위 구성')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>베네수엘라, ‘전쟁범죄로 미국 고발’ 준비착수…국회특위 구성</h1>
+            <p>
+                분석 시간: 2025-12-02 13:17:47
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 베네수엘라 국회가 미국이 9월 2일 카리브해에서 선박을 폭격해 최소 83명을 살해한 사건을 전쟁범죄로 고발하기 위해 특별위원회를 구성했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 미국은 해당 선박이 마약 운반선이라고 주장하며 폭격을 정당화했으나, 베네수엘라 국회는 이를 국제법 위반으로 규정했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 조치는 미국에 대한 외교적 압박을 강화하고 국제사회에서 미국 군사 행동에 대한 비판을 촉발할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/c819c076d9d1.png" 
+                     alt="베네수엘라, ‘전쟁범죄로 미국 고발’ 준비착수…국회특위 구성" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>베네수엘라 국회가 12월 1일 미국이 9월 2일 카리브해에서 수행한 선박 폭격을 전쟁범죄로 고발하기 위해 특별위원회를 구성했다. 이 조치는 미국의 군사 행동에 대한 국제적 비판과 내부 정치적 압력의 결합으로 해석된다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 9월 2일</td>
+<td>미국 선박 폭격</td>
+<td>미국이 ‘마약 운반선’이라고 판단한 선박을 공격해 최소 83명을 살해</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월 30일</td>
+<td>현장 목격</td>
+<td>베네수엘라 해안 주민이 미국 공격을 목격</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 1일</td>
+<td>국회 특별위원회 구성</td>
+<td>‘중대한 초법적 민간인 처형’ 관련 조사를 위해 위원회 설립</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>국제 반응</td>
+<td>연합뉴스 기사 발표 및 미국 상원·하원 군사위원장들의 감시 약속</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>베네수엘라 국회는 미국의 군사 행동을 전쟁범죄로 고발할 준비를 진행 중</strong>이며, <strong>특별위원회가 12월 1일에 공식 설립</strong>되었다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>베네수엘라 측</strong>  </li>
+<li>국회는 미국이 베네수엘라 주권을 침해하고 국제법을 위반했다고 주장한다.  </li>
+<li>
+<p>‘전쟁범죄’ 고발은 베네수엘라 정부가 미국에 대한 외교적 압박을 강화하기 위한 전략으로 보인다.  </p>
+</li>
+<li>
+<p><strong>미국 측</strong>  </p>
+</li>
+<li>미국 국방부는 선박이 마약 운반을 목적으로 했다고 주장하며, <strong>전원 사살 명령</strong>은 부정확한 주장으로 부인한다.  </li>
+<li>
+<p>상원·하원 군사위원장 Roger Wicker와 Mike Rogers는 <strong>“엄격한 감시와 진실 규명”</strong>을 약속했다.  </p>
+</li>
+<li>
+<p><strong>국제 언론</strong>  </p>
+</li>
+<li><strong>CNN</strong>과 <strong>BBC</strong>는 미국의 카리브해 군사 행동이 ‘범죄에 해당’할 수 있다고 보도했다.  </li>
+<li><strong>Al Jazeera</strong>는 미국의 해상 배치가 ‘정권 교체를 위한 군사적 압력’이라 해석했다.  </li>
+<li><strong>Guardian</strong>는 폭격으로 사망한 민간인 수가 11명으로 보고되면서 “미국이 가난한 사람들을 죽이고 있다”는 비판을 제기했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>미국이 9월 2일 선박을 폭격해 최소 83명을 살해</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>베네수엘라 국회가 12월 1일에 ‘전쟁범죄’ 고발을 위한 특별위원회를 구성</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>미국 상원·하원 군사위원장들이 감시와 진실 규명을 약속</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인/추정</strong></td>
+<td>미국이 ‘전원 사살’ 명령을 내렸다는 주장</td>
+<td>연합뉴스 보도(확인 필요)</td>
+</tr>
+<tr>
+<td></td>
+<td>미국이 베네수엘라에 군사적 압박을 가한 주된 목적이 마약 차단이 아니라 정권 교체</td>
+<td>Al Jazeera 보도(추정)</td>
+</tr>
+<tr>
+<td></td>
+<td>미국이 카리브해 배치를 통해 베네수엘라 주권을 침해했다는 주장</td>
+<td>CNN/Guardian 보도(추정)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+<th>관련 발언</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jorge Rodríguez</strong></td>
+<td>베네수엘라 국회 의원</td>
+<td>미국 전쟁범죄 고발 지지</td>
+<td>“미국은 베네수엘라 주권을 침해했다”</td>
+</tr>
+<tr>
+<td><strong>Pete Hegseth</strong></td>
+<td>미국 국방부 장관</td>
+<td>전원 사살 명령 부인</td>
+<td>“미국은 국제법을 준수했다”</td>
+</tr>
+<tr>
+<td><strong>Roger Wicker</strong></td>
+<td>미국 상원 군사위원장</td>
+<td>감시와 진실 규명 약속</td>
+<td>“우리는 상황을 철저히 조사할 것”</td>
+</tr>
+<tr>
+<td><strong>Mike Rogers</strong></td>
+<td>미국 하원 군사위원장</td>
+<td>감시와 진실 규명 약속</td>
+<td>“미국의 군사 행동을 면밀히 검토할 것”</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>국제사법정</strong>  </li>
+<li>베네수엘라가 국제형사법원(ICC)에 사건을 제소할 가능성이 있다.  </li>
+<li>
+<p>미국은 국제사법정에서의 조사를 방어하기 위해 <strong>법적 대응</strong>을 준비할 것으로 보인다.  </p>
+</li>
+<li>
+<p><strong>미국-베네수엘라 관계</strong>  </p>
+</li>
+<li>미국의 감시 약속에도 불구하고 양국 간 긴장은 완화되지 않을 전망이다.  </li>
+<li>
+<p>베네수엘라 정부는 미국의 군사적 압박을 <strong>정치적 도구</strong>로 활용할 가능성이 있다.  </p>
+</li>
+<li>
+<p><strong>카리브해 지역 안보</strong>  </p>
+</li>
+<li>미국의 해상 배치가 지속될 경우, <strong>지역 내 군사적 긴장</strong>이 고조될 수 있다.  </li>
+<li>국제사회는 <strong>마약 밀수와 인권 침해</strong>를 동시에 다루는 방안을 모색할 필요가 있다.  </li>
+</ul>
+<p><strong>요약</strong><br />
+베네수엘라 국회는 미국이 9월 2일 카리브해에서 선박을 폭격해 83명을 살해한 사건을 전쟁범죄로 고발하기 위해 12월 1일 특별위원회를 구성했다. 미국은 전원 사살 명령을 부인하며, 상원·하원 군사위원장들은 감시와 진실 규명을 약속했다. 국제 언론은 미국의 군사 행동을 범죄로 규정하고, 베네수엘라 측은 주권 침해를 비판한다. 향후 국제사법정 제소 가능성과 미국-베네수엘라 관계의 긴장, 카리브해 지역 안보에 대한 영향이 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=mNEFbuoind8" target="_blank">Could Hegseth Face War Crimes ...</a><a href="https://www.youtube.com/watch?v=WZVvCuo63Bw" target="_blank">Is Trump about to start a new ...</a><a href="https://www.youtube.com/watch?v=rFLdupfSIyY" target="_blank">REPORT: Second strike to kill ...</a><a href="https://www.youtube.com/watch?v=sAP4AvTvOUI" target="_blank">US Defense Secretary Hegseth i...</a><a href="https://www.youtube.com/watch?v=2e6_aJHu7PE" target="_blank">ICC to probe crimes against hu...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015772524" target="_blank">베네수엘라, '전쟁범죄로 美고발' 준비착수…국회특위 구성</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.bbc.com/news/articles/c7810w37vwdo" target="_blank">Where are US military planes and ships stationed n...</a><a href="https://www.aljazeera.com/opinions/2025/10/24/the-us-warships-off-venezuela-arent-there-to-fight-drugs" target="_blank">The US warships off Venezuela aren't there to figh...</a><a href="https://www.bbc.com/news/articles/cd9kgqwnk8wo" target="_blank">US boat strikes are crimes against humanity, says ...</a><a href="https://www.cnn.com/2025/09/02/politics/us-military-strike-caribbean" target="_blank">US military kills 11 in strike on alleged drug boa...</a><a href="https://www.theguardian.com/world/2025/oct/17/trump-caribbean-venezuela-trinidad-boat-strikes" target="_blank">'Trump is killing poor people': Caribbean village ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
