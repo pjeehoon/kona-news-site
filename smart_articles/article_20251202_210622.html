@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'초코파이 절도 사건' 2심 무죄 확정…검찰, 상고 포기 - 2025-12-02 21:06:21</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,초코파이,절도,무죄">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="초코파이,절도,무죄">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 21:06:21'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'초코파이 절도 사건\' 2심 무죄 확정…검찰, 상고 포기')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'초코파이 절도 사건' 2심 무죄 확정…검찰, 상고 포기</h1>
+            <p>
+                분석 시간: 2025-12-02 21:06:21
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 12월 2일 전주지법 형사2부는 41세 보안업체 직원의 초코파이 절도 혐의에 대해 무죄를 선고했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 1심에서는 5만 원 벌금형이 내려졌으나, 항소심에서는 고의성이 없고 동의가 있었다는 점을 이유로 무죄가 확정되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 검찰은 항소심 판결을 존중하며 상고를 포기해 사건을 종결시켰고, 직장 내 간식 공유 문화와 절도에 대한 사회적 논의를 다시 불러일으켰다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/cd41818fce94.png" 
+                     alt="'초코파이 절도 사건' 2심 무죄 확정…검찰, 상고 포기" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>2025년 12월 02일</strong><br />
+40대 보안업체 직원이 사무실 냉장고에서 1,050원짜리 초코파이를 가져간 혐의로 기소돼 1심에서 벌금형을 선고받은 뒤, 2심에서 무죄 판결을 받고 검찰이 상고를 포기했다. 이번 사건은 직장 내 간식 문화와 절도 범죄에 대한 사회적 논의를 다시 불러일으켰다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 11월 27일</td>
+<td>항소심</td>
+<td>전주지법 형사2부는 피고인(41세 보안업체 직원)의 초코파이 절도 혐의에 대해 <strong>무죄</strong>를 선고했다. 판결문은 “고의성이 없으며, 사전 동의가 있었다”는 점을 강조했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002281336" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 02일</td>
+<td>검찰 결정</td>
+<td>검찰은 항소심 판결을 존중하며 <strong>상고를 포기</strong>했다. 이는 피고인에 대한 추가 법적 절차를 중단한다는 의미다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002281336" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>1심</strong>: 5만 원 벌금형이 선고되었으며, 피고인은 “동료가 허락해 주었다”는 주장을 제기했다.  </li>
+<li><strong>2심</strong>: 판결은 피고인의 행위가 “고의성 없이 일어난 실수”라고 판단했다.  </li>
+<li><strong>검찰</strong>: 항소심 판결을 존중하며 상고를 포기함으로써 사건은 법원에서 최종적으로 마무리되었다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>법원</strong></td>
+<td>“고의성 부재”를 이유로 무죄를 선고했다.</td>
+<td><a href="https://www.chosun.com/national/court_law/2025/11/27/V5QI6HNY6JBCTHYPTONSG6I5FE/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>검찰</strong></td>
+<td>항소심 판결을 존중하며 상고를 포기했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002281336" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>직장 문화 전문가</strong></td>
+<td>직장 내 간식 공유 문화가 절도 혐의로 오해받을 수 있다는 점을 지적했다.</td>
+<td><a href="https://www.hankookilbo.com/News/Read/A2025112709540003637" target="_blank">한국일보</a></td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>“간식이 사라지는 건 흔한 일”이라며 사건을 과소평가하는 의견이 많았다.</td>
+<td><a href="https://www.seoul.co.kr/news/society/law/2025/11/27/20251127500067" target="_blank">서울신문</a></td>
+</tr>
+<tr>
+<td><strong>법학자</strong></td>
+<td>“법원은 증거 부족과 고의성 부재를 근거로 무죄를 선고했다”는 분석을 제시했다.</td>
+<td><a href="https://www.tjb.co.kr/news06/bodo/view/id/89378" target="_blank">TJB</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>법원</strong>은 피고인의 행위가 “고의성 없이 일어난 실수”라고 판단했다.  </li>
+<li><strong>검찰</strong>은 항소심 판결을 존중하며 상고를 포기함으로써 사건을 종결했다.  </li>
+<li><strong>직장 문화 전문가</strong>는 직장 내 간식 공유가 절도 혐의와 혼동될 수 있음을 강조했다.  </li>
+<li><strong>일반 시민</strong>은 사건을 과소평가하며, 간식이 사라지는 것은 흔한 일이라며 비판했다.  </li>
+<li><strong>법학자</strong>는 증거 부족과 고의성 부재를 근거로 무죄 판결을 정당화했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. 피고인(41세 보안업체 직원)이 1,050원짜리 초코파이를 사무실 냉장고에서 가져간 혐의로 기소.<br>2. 1심에서 벌금 5만 원형이 선고.<br>3. 2심에서 무죄 판결.<br>4. 검찰이 상고를 포기.</td>
+<td><a href="https://n.news.naver.com/mnews/article/052/0002281336" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>1. 피고인과 39명의 다른 직원이 함께 수사를 진행했다는 주장.<br>2. 사건이 직장 내 간식 문화와 직접적으로 연관이 있다는 주장.</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>피고인과 39명의 다른 직원</strong>이 함께 수사를 진행했다는 주장은 일부 기사에서 언급되었으나, 공식적으로 확인된 바는 없다.  </li>
+<li><strong>직장 내 간식 문화와의 직접 연관</strong>은 전문가 의견에 기반한 추정이며, 법원 판결에는 포함되지 않았다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>피고인 (41세 보안업체 직원)</strong>  </li>
+<li><strong>입장</strong>: 초코파이를 동료의 허락으로 가져갔다며 절도 혐의에 대해 무죄를 주장했다.  </li>
+<li>
+<p><strong>이해관계</strong>: 직장 내 간식 문화와 개인의 자유를 주장하며, 법적 책임을 면하고자 한다.</p>
+</li>
+<li>
+<p><strong>검찰</strong>  </p>
+</li>
+<li><strong>입장</strong>: 항소심 판결을 존중하며 상고를 포기함으로써 사건을 종결했다.  </li>
+<li>
+<p><strong>이해관계</strong>: 법원 판결을 존중하고, 추가 소송 비용과 시간을 절감하려는 입장.</p>
+</li>
+<li>
+<p><strong>법원</strong>  </p>
+</li>
+<li><strong>입장</strong>: 피고인의 행위가 고의성이 없다고 판단해 무죄를 선고했다.  </li>
+<li>
+<p><strong>이해관계</strong>: 증거와 법리적 판단에 따라 공정한 판결을 내리려는 입장.</p>
+</li>
+<li>
+<p><strong>직장 문화 전문가</strong>  </p>
+</li>
+<li><strong>입장</strong>: 직장 내 간식 공유 문화가 절도 혐의와 혼동될 수 있음을 지적.  </li>
+<li><strong>이해관계</strong>: 직장 문화와 법적 해석 사이의 균형을 강조.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 측면</strong>: 검찰이 상고를 포기함으로써 사건은 법원에서 최종적으로 종결되었다. 피고인은 법적 책임이 면제되며, 재소득이 제한되지 않는다.  </li>
+<li><strong>사회적 영향</strong>: 직장 내 간식 문화와 절도 혐의가 어떻게 인식되는지에 대한 논의가 지속될 전망이다. 일부 기업은 간식 관리 방식을 재검토할 가능성이 있다.  </li>
+<li><strong>정책적 시사점</strong>: 직장 내 물품 관리와 직원 간의 신뢰 구축을 위한 가이드라인이 필요할 수 있다. 정부나 산업계가 관련 정책을 검토할 가능성도 있다.  </li>
+</ul>
+<p>이 사건은 작은 금액의 간식이 법적, 사회적 논란을 일으킬 수 있음을 보여주며, 직장 문화와 법률 사이의 미묘한 균형을 재조명한다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/052/0002281336" target="_blank">검찰, '초코파이 절도사건' 상고 포기...무죄 확정될 듯</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.chosun.com/national/court_law/2025/11/27/V5QI6HNY6JBCTHYPTONSG6I5FE/" target="_blank">1050원 초코파이 절도, 항소심 무죄... “나도 간식으로 먹어” 동료들 ...</a><a href="https://www.hankookilbo.com/News/Read/A2025112709540003637" target="_blank">'초코파이 절도 사건' 40대 보안업체 직원 항소심서 무죄 | 한국일보</a><a href="https://www.tjb.co.kr/news06/bodo/view/id/89378" target="_blank">'초코파이 절도' 항소심서 무죄…재판부 "고의성 없어"</a><a href="https://v.daum.net/v/20251127105023480" target="_blank">[속보] '초코파이 절도 사건' 40대 보안업체 직원 항소심서 무죄</a><a href="https://www.seoul.co.kr/news/society/law/2025/11/27/20251127500067" target="_blank">'1050원 초코파이 절도' 40대 보안업체 직원 항소심서 무죄 | 서울신문</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
