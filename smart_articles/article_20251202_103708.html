@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정은경 “의대 정원, 내년 초 마무리…공공의대는 증원 필요성” - 2025-12-02 10:37:08</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,정은경,보건복지,의대">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="정은경,보건복지,의대">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 10:37:08'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('정은경 “의대 정원, 내년 초 마무리…공공의대는 증원 필요성”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>정은경 “의대 정원, 내년 초 마무리…공공의대는 증원 필요성”</h1>
+            <p>
+                분석 시간: 2025-12-02 10:37:08
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 정은경 보건복지부 장관은 27학년도 의대 정원을 내년 초에 마무리할 예정이며, 공공의대 증원의 필요성을 강조했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 의료계와 정부 간 협의가 계속되고 있으며, 올해 공공의대 입법 목표를 세워 의대 재증원 논의가 뜨거운 이슈가 되고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 공공의대 설립과 정원 증원은 의료 인력 부족을 완화하고 지역 의료서비스를 향상시킬 것으로 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/a0769cdef7b1.png" 
+                     alt="정은경 “의대 정원, 내년 초 마무리…공공의대는 증원 필요성”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>정은경 보건복지부 장관이 27학년도 의대 정원 확정 시점을 내년 초로 잡고, 공공의대 정원 증원의 필요성을 강조했다.</strong><br />
+이와 함께 의료계와 정부 간 협의가 계속되는 가운데, 공공의대 설립과 의대 재증원 논의가 뜨거운 이슈로 부상하고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 02일</td>
+<td>정은경 장관이 기자간담회에서 27학년도 의대 정원 마무리 시점을 내년 초로 설정하고, 공공의대 증원 필요성을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006175821" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 02일</td>
+<td>의료계와 정부 간 의대 정원 관련 논의가 계속되고, 공공의대 입법 목표가 연내로 설정됨</td>
+<td><a href="https://www.hankookilbo.com/News/Read/A2025092313540005181" target="_blank">한국일보</a></td>
+</tr>
+<tr>
+<td>2025년 12월 02일</td>
+<td>의료타임즈가 “의정갈등 마무리…향후 쟁점은 27학년도 의대정원”을 보도</td>
+<td><a href="https://www.medicaltimes.com/Mobile/News/NewsView.html?ID=1164592" target="_blank">의료타임즈</a></td>
+</tr>
+<tr>
+<td>2025년 9월 23일</td>
+<td>KDI 연구보고서에서 보건의약계 현장 목소리를 듣고 정부와 신뢰·협력 필요성을 강조</td>
+<td><a href="https://eiec.kdi.re.kr/policy/callDownload.do?num=270559&amp;filenum=1&amp;dtime=20250923125013" target="_blank">KDI</a></td>
+</tr>
+<tr>
+<td>2025년 9월 16일</td>
+<td>전남지사와 정은경 장관이 국립의대 신설 요청을 논의</td>
+<td><a href="https://medigatenews.com/news/2259289289" target="_blank">메디게이트 뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 10월 15일</td>
+<td>아코미뉴스가 공공의료사관학교·공공의대 운영안 집중 점검 소식을 보도</td>
+<td><a href="https://www.akomnews.com/bbs/board.php?bo_table=news&amp;wr_id=64807" target="_blank">아코미뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>정은경 장관의 입장</strong><br />
+  장관은 “의대 정원은 내년 초에 마무리될 예정이며, 공공의대는 현재 정원에 비해 부족한 인력 수요를 충족하기 위해 증원이 필요하다”라고 밝혔다. 이는 보건복지부가 의료 인력 부족 문제를 해결하려는 전략적 방향을 반영한다.<br />
+<a href="https://n.news.naver.com/mnews/article/018/0006175821" target="_blank">연합뉴스</a></p>
+</li>
+<li>
+<p><strong>의료계의 반응</strong><br />
+  의료타임즈는 “의정갈등이 마무리되면서 27학년도 의대정원이 핵심 쟁점이 되고 있다”며, 의료계가 정원 증원에 대한 기대와 우려를 동시에 표명했다.<br />
+<a href="https://www.medicaltimes.com/Mobile/News/NewsView.html?ID=1164592" target="_blank">의료타임즈</a></p>
+</li>
+<li>
+<p><strong>공공의대 설립 논의</strong><br />
+  한국일보는 정은경 장관이 “올해 공공의대 입법 목표를 세웠으며, 의대 재증원 가능성도 언급했다”는 보도를 통해 공공의대 설립이 단순히 정원 증원만이 아니라 새로운 교육 모델을 도입하려는 의도임을 시사했다.<br />
+<a href="https://www.hankookilbo.com/News/Read/A2025092313540005181" target="_blank">한국일보</a></p>
+</li>
+<li>
+<p><strong>정책적 배경</strong><br />
+  KDI 연구보고서는 보건의약계 현장과 정부 간 신뢰·협력 필요성을 강조하며, 공공의대와 의대 정원 증원이 의료체계 전반의 지속가능성 확보에 기여할 것이라고 분석했다.<br />
+<a href="https://eiec.kdi.re.kr/policy/callDownload.do?num=270559&amp;filenum=1&amp;dtime=20250923125013" target="_blank">KDI</a></p>
+</li>
+<li>
+<p><strong>지역별 요구</strong><br />
+  전남지사는 국립의대 신설을 요청하며, 정은경 장관과의 논의에서 공공의대 정원 증원이 지역 의료서비스 향상에 필수적이라고 주장했다.<br />
+<a href="https://medigatenews.com/news/2259289289" target="_blank">메디게이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>운영안 검토</strong><br />
+  아코미뉴스는 공공의료사관학교·공공의대 운영안이 집중 점검 중이며, 정원 증원과 연계된 운영 모델이 논의되고 있다고 보도했다.<br />
+<a href="https://www.akomnews.com/bbs/board.php?bo_table=news&amp;wr_id=64807" target="_blank">아코미뉴스</a></p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>27학년도 의대 정원은 내년 초에 마무리될 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006175821" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>공공의대 정원 증원이 필요하다는 장관의 입장</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006175821" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>의료계와 정부 간 의대 정원 논의가 진행 중</td>
+<td><a href="https://www.medicaltimes.com/Mobile/News/NewsView.html?ID=1164592" target="_blank">의료타임즈</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>구체적인 공공의대 정원 증원 인원 수</td>
+<td>현재 기사에 명시되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>의대 재증원 시점과 규모에 대한 구체적 계획</td>
+<td>추정되는 내용, 공식 발표 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>정은경 보건복지부 장관</strong><br />
+<em>입장</em>: 내년 초 의대 정원 마무리, 공공의대 증원 필요성 강조.<br />
+<em>이해관계</em>: 의료 인력 부족 해소와 보건복지부 정책 목표 달성.</p>
+</li>
+<li>
+<p><strong>의료계 대표 기관 (예: 한국의학회)</strong><br />
+<em>입장</em>: 정원 증원에 대한 기대와 동시에 인력 수요 예측에 대한 우려.<br />
+<em>이해관계</em>: 의료 인력 확보와 교육 환경 개선.</p>
+</li>
+<li>
+<p><strong>전남지사</strong><br />
+<em>입장</em>: 지역 의료서비스 향상을 위해 국립의대 신설 및 공공의대 정원 증원 요구.<br />
+<em>이해관계</em>: 지역 의료 접근성 강화.</p>
+</li>
+<li>
+<p><strong>KDI 연구팀</strong><br />
+<em>입장</em>: 공공의대와 의대 정원 증원이 의료체계 지속가능성에 기여.<br />
+<em>이해관계</em>: 정책 연구 및 제언.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>정원 확정 시점</strong><br />
+  정은경 장관이 언급한 <strong>내년 초</strong>가 실제로 의대 정원 확정 시점이 될 가능성이 높다. 이는 정부가 의료 인력 부족 문제를 신속히 해결하려는 의지로 해석된다.</p>
+</li>
+<li>
+<p><strong>공공의대 입법</strong><br />
+  올해 <strong>공공의대 입법 목표</strong>가 설정된 만큼, 연말까지 입법이 완료될 가능성이 있다. 입법이 성사되면 공공의대 정원 증원과 연계된 교육·운영 모델이 실제로 도입될 전망이다.</p>
+</li>
+<li>
+<p><strong>의대 재증원</strong><br />
+  한국일보와 의료타임즈의 보도를 통해 <strong>의대 재증원 가능성</strong>이 제시되고 있으나, 구체적 규모와 시점은 아직 확정되지 않았다. 의료계는 정원 증원에 대한 기대와 동시에 인력 교육·배치에 대한 우려를 표명하고 있다.</p>
+</li>
+<li>
+<p><strong>지역 의료서비스</strong><br />
+  전남지사와 같은 지역별 요구가 지속될 경우, <strong>지역 의료서비스 향상</strong>을 위한 국립의대 신설이 가속화될 수 있다. 이는 공공의대 정원 증원과 연계된 정책으로 이어질 가능성이 크다.</p>
+</li>
+<li>
+<p><strong>운영 모델</strong><br />
+  아코미뉴스가 보도한 <strong>공공의료사관학교·공공의대 운영안</strong>이 집중 점검 중이므로, 정원 증원과 함께 <strong>운영 효율성</strong>을 높이는 방안이 논의될 전망이다.</p>
+</li>
+</ul>
+<p><strong>전반적으로</strong> 보건복지부는 의료 인력 부족 문제를 해결하기 위해 의대 정원과 공공의대 정원 증원을 동시에 추진하고 있다. 의료계와 지역별 요구가 상호작용하며, 정책적 결정이 의료체계 전반에 미칠 영향은 앞으로의 입법과 협의 과정을 통해 더욱 명확해질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=hxW-UPBrlpo" target="_blank">“국민의 건강과 행복, 경청과 소통으로 만들겠습니다“ ...</a><a href="https://www.youtube.com/watch?v=gOMf2lqAUyw" target="_blank">행복을 더하는 기부, 기부로 바꾸는 내일ㅣ정은경 보건복...</a><a href="https://www.youtube.com/watch?v=mqGnVM67Seg" target="_blank">행복을 더하는 기부, 기부로 바꾸는 내일  |  정은경...</a><a href="https://www.youtube.com/watch?v=sCfUeaCrCO4" target="_blank">정은경 보건복지부 장관 내정에 사직 전공의들 반색 [굿...</a><a href="https://www.youtube.com/watch?v=EjL3rWJ9H9w" target="_blank">[LIVE] 정은경 보건복지부 장관 후보자 출근길 생중...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006175821" target="_blank">정은경 장관, 고환율 시대 연기금 양면 전략 고심</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.medicaltimes.com/Mobile/News/NewsView.html?ID=1164592" target="_blank">마무리 돼가는 의정갈등…향후 쟁점은 27학년도 의대정원</a><a href="https://www.hankookilbo.com/News/Read/A2025092313540005181" target="_blank">정은경 "올해 공공의대 입법 목표"… 의대 재증원 가능성도 언급 | 한국 ...</a><a href="https://eiec.kdi.re.kr/policy/callDownload.do?num=270559&filenum=1&dtime=20250923125013" target="_blank">정은경 장관, 보건의약계 현장 목소리 듣고 정부와 신뢰·협력 필요성 강조</a><a href="https://medigatenews.com/news/2259289289" target="_blank">전남지사, 국립의대 신설 요청…정은경 장관 ... - MEDI:GATE NEWS</a><a href="https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=64807" target="_blank">지역의사제·공공의료사관학교·공공의대 운영안 집중 점검 > 뉴스 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
