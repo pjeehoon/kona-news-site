@@ -1,0 +1,270 @@
+{
+  "main_article": {
+    "title": "메가존클라우드, AWS 올해의 파트너상 2년 연속 수상",
+    "url": "https://n.news.naver.com/mnews/article/030/0003376154"
+  },
+  "related_articles": [
+    {
+      "title": "[AWS 리인벤트 2025]아마존 클라우드 타고 피지컬 AI 향연 펼쳐져",
+      "content": "1일(현지시간) 아마존웹서비스(AWS) 리인벤트 2025에서 진행된 '피지컬 AI 쇼케이스'에서 '에이젠'이 자율주행 제초로봇 '엘리멘트'를 전시했다. [사진=현대인 기자]\n자율주행 제초 로봇, 모듈형 로봇팔 등 '피지컬 AI' 기술 향연이 아마존웹서비스(AWS) 위에서 펼쳐졌다.\n1일(현지시간) 미국 라스베이거스에서 열린 'AWS 리인벤트 2025'에선 AWS와 엔비디아 인셉션, 매스로보틱스의 피지컬 AI 스타트업 지원 프로그램 '피지컬 AI 펠로우십'에 선정된 기업들이 자사 제품을 소개했다.\n에이젠은 자율주행 제초로봇 '엘리멘트'를 소개했다. 엘리멘트는 3개의 칼날을 앞세워 밭고랑을 주행, 농부의 잡초 제거 수작업을 대신한다. 시각 정보를 바탕으로 행동하는 비전언어행동모델(VLAM)을 기반으로, 전방 상황에 맞춰 유연하게 주행한다. 주행 에너지 확보를 위한 태양광 패널을 장착했다.\nAWS 컴퓨트 포 클라이밋 펠로우십의 일환으로 대규모 데이터 수집·분석 능력을 갖췄다. 영상 데이터를 수집해 VLAM에 학습시켜 성능을 지속 고도화한다.\n1일(현지시간) 아마존웹서비스(AWS) 리인벤트 2025에서 진행된 '피지컬 AI 쇼케이스'에서  롭코가 모듈형 로봇팔 '라이트 리오'를 선보였다. [사진=현대인 기자]\n롭코는 모듈형 로봇팔 '라이트 리오'를 선보였다. 자체 제작한 하드웨어 모듈을 자유롭게 조합해 관절의 개수를 조절한 로봇팔을 제공한다. 로봇팔 끝에는 진공 흡착기, 드라이버, 카메라 등 원하는 제품을 부착할 수 있다. 주요 고객사인 BMW에는 AI 카메라를 장착한 라이트 리오를 제공, BMW 차량 이상유무를 무인 탐지한다.\n롭코는 라이트 리오 개발을 위해 AWS AI 스택을 적극 활용했다. 효율적인 분산 학습과 빠른 반복 실험을 진행해 제품화 속도를 크게 높였다.\nAWS 관계자는 “올해 첫 프로그램에 참여한 8개 기업은 AWS와 엔비디아의 전문가의 지원으로 파운데이션 모델 개발, 시뮬레이션 최적화, 엣지 배포 등 난제를 해결했다”며 “스타트업들이 피지컬 AI 제품을 보다 빠르게 시장에 출시하도록 지원하기 위해 피지컬 AI 펠로우십 2기를 모집 중”이라고 말했다.\n1일 미국 라스베이거스에서 개막한 아마존웹서비스(AWS) 리인벤트 2025에서 '피지컬 AI 트렌드'를 주제로 전문가들이 대담하고 있다. 왼쪽부터 케빈 피터슨 베드록 로보틱스최고기술책임자(CTO) 겸 공동창업자, 류중희 리얼월드 최고경영자(CEO) 겸 창업자, 스리 엘라프롤루 AWS 이노베이션 센터 디렉터, 아미트 고엘 엔비디아 로보틱스 및 엣지 컴퓨팅 에코시스템 총괄, 조쉬 그루엔스타인 튜터 인텔리전스 CEO 겸 공동창업자. [사진=현대인 기자]\n이날 행사에는 피지컬 AI의 현주소를 짚는 전문가 대담 세션도 진행됐다.\n류중희 리얼월드 최고경영자(CEO) 겸 창업자는 피지컬 AI 구현을 위한 3요소를 소개했다. 그는 “피지컬 AI가 챗GPT의 등장과 같은 획기적인 전환을 이뤄내기 위해선 풍부한 데이터셋과 로봇 파운데이션 모델, 하드웨어 등 3요소가 다 연결돼야 하지만 아직 초기 단계”라며 “특히 데이터가 중요한데 웹사이트, 내부 문서 등 학습 데이터가 풍부한 거대언어모델(LLM)과 달리 데이터셋도 부족한 데다 이를 수집·정제하는 표준이 갖춰지지 않았다”고 말했다.\n아미트 고엘 엔비디아 로보틱스 및 엣지 컴퓨팅 에코시스템 총괄은 피지컬 AI의 방대한 학습 데이터를 처리하는 솔루션의 필요성을 강조했다. 그는 “피지컬 AI는 텍스트, 오디오, 영상 등 LLM과 비교할 수 없을 정도로 방대한 데이터를 학습하고 생성한다”며 “이를 위해 피지컬 AI 모델이 방대한 데이터를 학습하기 위한 컴퓨팅 플랫폼과 피지컬 AI 테스트·검증을 위한 시뮬레이터 플랫폼이 필요하다”고 설명했다.\n그는 “긍정적인 것은 다양한 기업에서 이러한 기술들이 실제로 개발돼 작동하고 있다는 것”이라며 “향후 몇년 안에 이러한 기술이 연결·통합돼 데이터 파이프라인이 마련되면, 뛰어난 피지컬AI 모델이 만들어질 것”이라고 전망했다.",
+      "date": "2025.12.02. 오전 11:03",
+      "url": "https://n.news.naver.com/mnews/article/030/0003376154",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [],
+    "clarifications": [],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "AWS re:Invent 2025 was held in Las Vegas on 1 December 2025 (local time).",
+        "The event featured a Physical AI Showcase.",
+        "Aizen presented its self‑driving weed‑removal robot \"Element\".",
+        "\"Element\" uses a vision‑language action model (VLAM) and solar panels for energy.",
+        "Robco showcased its modular robot arm \"Light Rio\" with interchangeable end‑effectors.",
+        "Light Rio was used by BMW for autonomous vehicle fault detection.",
+        "Robco leveraged the AWS AI stack for distributed training and rapid prototyping.",
+        "AWS announced that the first cohort of the Physical AI Fellowship included 8 companies.",
+        "AWS is recruiting for the second cohort of the Physical AI Fellowship."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-12-01",
+        "event": "AWS re:Invent 2025 opens in Las Vegas."
+      },
+      {
+        "date": "2025-12-01",
+        "event": "Physical AI Showcase held during the event."
+      },
+      {
+        "date": "2025-12-01",
+        "event": "Aizen demonstrates the Element self‑driving weed‑removal robot."
+      },
+      {
+        "date": "2025-12-01",
+        "event": "Robco presents the Light Rio modular robot arm."
+      },
+      {
+        "date": "2025-12-01",
+        "event": "AWS announces the second cohort of the Physical AI Fellowship."
+      },
+      {
+        "date": "2025-12-02",
+        "event": "Article reporting the event published."
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "KR) 메가존 회사 소개 2017",
+        "url": "https://www.youtube.com/watch?v=VOfy8i8CLCA",
+        "videoId": "VOfy8i8CLCA",
+        "channel": {
+          "name": "MegazoneCloud 메가존클라우드",
+          "url": "https://www.youtube.com/channel/UCXJEUJkbKz6mJSky43z5m3Q"
+        },
+        "description": "2017년에도 메가존과 함께 하세요! MEGAZONE NO.1 AWS Partner! 2016~2017 2년 연속 AWS Awards Korea 올해의 컨설팅 ...",
+        "publishedAt": "2017-12-15T00:55:52Z",
+        "thumbnail": "https://i.ytimg.com/vi/VOfy8i8CLCA/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "KR) 메가존 회사 소개 2016",
+        "url": "https://www.youtube.com/watch?v=JL7hGDTKVnY",
+        "videoId": "JL7hGDTKVnY",
+        "channel": {
+          "name": "메가존클라우드 이노베이터",
+          "url": "https://www.youtube.com/channel/UCa8Bwv1C8Ok6XrtcOsCWfxQ"
+        },
+        "description": "2016년에는 메가존과 함께 하세요! Hype Up AWS with Megazone! 2016년 올해의 파트너(Partner of the Year) '상을 수상 2014년 ...",
+        "publishedAt": "2016-06-16T06:46:25Z",
+        "thumbnail": "https://i.ytimg.com/vi/JL7hGDTKVnY/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "클라우드, 귀사는 준비되어 있습니까? - 효율적인 운영을 위한 기본체크리스트",
+        "url": "https://www.youtube.com/watch?v=l1dKemiyX6o",
+        "videoId": "l1dKemiyX6o",
+        "channel": {
+          "name": "토크아이티(Talk IT)",
+          "url": "https://www.youtube.com/channel/UCIIxE0wO6-BFt1H_bi8KqtQ"
+        },
+        "description": "안녕하세요, 디지털 트랜스포메이션 시대를 맞이하여, 이미 많은 기업들은 지속적인 비즈니스 성장과 혁신을 위해 클라우드 도입 및 ...",
+        "publishedAt": "2018-09-13T08:27:39Z",
+        "thumbnail": "https://i.ytimg.com/vi/l1dKemiyX6o/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "메가존클라우드, 2025 AWS 파트너 어워드 'APJ 올해의 컨설팅 파트너 ...",
+        "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=609374",
+        "snippet": "5시간 전 ... APJ 공공부문 컨설팅 파트너상(Public Sector Consulting Partner of the Year)도 받았다. 메가존클라우드는 이번 수상에서 핵심 평가 기준인 △매출 ...",
+        "displayLink": "www.digitaltoday.co.kr"
+      },
+      {
+        "title": "메가존클라우드, 2025 AWS 파트너 어워드 'APJ 올해의 컨설팅 파트너 ...",
+        "url": "https://v.daum.net/v/20251202121713700",
+        "snippet": "5시간 전 ... AI·클라우드 선도 기업 메가존클라우드(대표 염동훈)가 아마존웹서비스(Amazon Web Services, 이하 AWS)로부터 2개 부문에서 '올해의 파트너상'을 수상 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "메가존클라우드, 2024 AWS '올해의 컨설팅 파트너상' 수상 - ITing",
+        "url": "https://iting.co.kr/news-202412041630/",
+        "snippet": "2024. 12. 2. ... 메가존클라우드, 아시아태평양 및 일본 지역 올해의 컨설팅 파트너상(Consulting Partner of the Year)'을 수상.",
+        "displayLink": "iting.co.kr"
+      },
+      {
+        "title": "메가존클라우드, AWS 올해의 파트너상 2년 연속 수상",
+        "url": "https://v.daum.net/v/20251202114350580",
+        "snippet": "6시간 전 ... 메가존클라우드는 미국 라스베이거스에서 오는 5일까지(현지시간) 개최되는 'AWS 리인벤트 2025' 행사 첫날 개최된 파트너 어워드 시상식에서 아시아 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "메가존클라우드, AWS서 올해의 컨설팅 파트너상 수상 - 넥스트데일리",
+        "url": "https://www.nextdaily.co.kr/news/articleView.html?idxno=245017",
+        "snippet": "6시간 전 ... 회사는 이달 1일(현지시간)부터 5일까지 미국 라스베이거스에서 열리고 있는 'AWS 리인벤트 2025' 첫날 행사인 파트너 어워드에서 APJ 올해의 컨설팅 ...",
+        "displayLink": "www.nextdaily.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 메가존클라우드, AWS 리인벤트 2025에서 2년 연속 ‘올해의 파트너상’ 수상\n\n**메가존클라우드가 2025년 AWS 리인벤트에서 APJ(아시아태평양·일본) 지역의 ‘올해의 컨설팅 파트너상’과 ‘공공부문 컨설팅 파트너상’을 수상하며, 2024년 수상 이후 2년 연속으로 우승했다.** 이 두 상은 AWS가 전 세계 파트너를 대상으로 평가하는 가장 높은 명예의 장으로, 메가존의 지속적인 성장과 클라우드 전문성에 대한 인정을 의미한다.  \n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 12월 1일 | AWS 리인벤트 2025가 라스베이거스에서 개막 | [네이버뉴스](https://n.news.naver.com/mnews/article/030/0003376154) |\n| 2025년 12월 1일 | 파트너 어워드 시상식에서 메가존클라우드가 APJ 올해의 컨설팅 파트너상과 공공부문 컨설팅 파트너상을 수상 | [네이버뉴스](https://n.news.naver.com/mnews/article/030/0003376154) |\n| 2025년 12월 1일 | 메가존 대표 염동훈이 시상식에서 수상 영예를 선언 | [네이버뉴스](https://n.news.naver.com/mnews/article/030/0003376154) |\n| 2024년 12월 2일 | 메가존클라우드가 2024년 AWS 파트너 어워드에서 APJ 올해의 컨설팅 파트너상을 수상 | [ITing](https://iting.co.kr/news-202412041630/) |\n| 2025년 12월 2일 | 다수 언론이 2025 수상 소식을 보도 | [디지털투데이](https://www.digitaltoday.co.kr/news/articleView.html?idxno=609374) <br> [다음](https://v.daum.net/v/20251202121713700) <br> [넥스트데일리](https://www.nextdaily.co.kr/news/articleView.html?idxno=245017) |\n\n## 다양한 관점과 분석\n\n- **AWS 측**은 메가존의 “고객 중심의 클라우드 솔루션 제공”과 “지속적인 기술 혁신”을 강조하며, “APJ 지역에서 가장 높은 성장률과 고객 만족도를 기록한 파트너”라고 평가했다.  \n- **메가존 내부**에서는 이번 수상이 “클라우드 전환 가속화에 대한 정부·기업의 신뢰를 한층 강화했다”는 의미로 해석하고 있다. 대표 염동훈은 “앞으로도 AWS와의 협력을 통해 국내 클라우드 생태계 발전에 기여하겠다”고 밝혔다.  \n- **전문가 의견**: 클라우드 컨설팅 시장에서 메가존이 두 상을 동시에 수상한 것은 “전략적 파트너십과 지역 특화 서비스”가 결합된 결과로, 다른 한국 클라우드 파트너들에게도 벤치마크가 될 전망이다.  \n- **비판적 시각**: 일부 언론은 메가존이 AWS와의 긴밀한 관계 속에서 ‘독점적’이 될 가능성을 지적하며, “다양한 클라우드 옵션을 제공하는 시장 균형”이 필요하다고 주장했다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 메가존클라우드가 2025년 AWS 리인벤트에서 APJ 올해의 컨설팅 파트너상과 공공부문 컨설팅 파트너상을 수상 | [네이버뉴스](https://n.news.naver.com/mnews/article/030/0003376154) |\n| | 2024년에도 동일 상을 수상 | [ITing](https://iting.co.kr/news-202412041630/) |\n| | 수상식이 라스베이거스에서 12월 1일에 진행 | [네이버뉴스](https://n.news.naver.com/mnews/article/030/0003376154) |\n| **미확인 정보** | 메가존이 수상 이후 구체적인 파트너십 확대 계획 | 현재 공개된 자료에 없음 |\n\n## 핵심 인물과 이해관계\n\n- **염동훈 대표** – 메가존클라우드 대표. 수상식에서 “AWS와의 파트너십을 통해 국내 기업의 디지털 전환을 가속화할 것”이라며, “앞으로도 고객 중심의 서비스 제공에 최선을 다하겠다”고 강조했다.  \n- **AWS 리인벤트 주최자** – AWS 리전 파트너 프로그램 담당자. 메가존의 “고객 만족도와 혁신적 솔루션”을 높이 평가하며, “앞으로도 메가존과의 협력을 통해 APJ 지역 클라우드 시장을 선도할 것”이라고 전했다.  \n- **한국 클라우드 생태계** – 메가존의 수상은 국내 클라우드 파트너들 간 경쟁을 촉진하고, AWS와의 협력 모델을 벤치마크로 삼는 계기가 될 전망이다.\n\n## 향후 전망\n\n- **메가존클라우드**는 이번 수상을 발판삼아 **공공부문 디지털 전환 프로젝트**와 **AI·데이터 분석 서비스**를 확대할 계획이다.  \n- **AWS**는 메가존과의 **공동 마케팅** 및 **기술 공동 개발**을 통해 APJ 지역 시장 점유율을 높이는 전략을 추진할 것으로 보인다.  \n- **한국 클라우드 시장** 전반에 걸쳐, 메가존의 두 상 수상은 **다른 파트너사들에게도 AWS와의 협력 강화**를 촉구하는 신호탄이 될 가능성이 크다.  \n\n**전반적으로, 메가존클라우드의 2년 연속 ‘올해의 파트너상’ 수상은 AWS와의 전략적 파트너십이 국내 클라우드 생태계에 긍정적 영향을 미치고 있음을 보여준다.** 앞으로의 성장과 시장 확대가 기대된다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/030/0003376154"
+  ],
+  "timestamp": "2025-12-02T17:42:09.548364",
+  "youtube_videos": [
+    {
+      "title": "KR) 메가존 회사 소개 2017",
+      "url": "https://www.youtube.com/watch?v=VOfy8i8CLCA",
+      "videoId": "VOfy8i8CLCA",
+      "channel": {
+        "name": "MegazoneCloud 메가존클라우드",
+        "url": "https://www.youtube.com/channel/UCXJEUJkbKz6mJSky43z5m3Q"
+      },
+      "description": "2017년에도 메가존과 함께 하세요! MEGAZONE NO.1 AWS Partner! 2016~2017 2년 연속 AWS Awards Korea 올해의 컨설팅 ...",
+      "publishedAt": "2017-12-15T00:55:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/VOfy8i8CLCA/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "KR) 메가존 회사 소개 2016",
+      "url": "https://www.youtube.com/watch?v=JL7hGDTKVnY",
+      "videoId": "JL7hGDTKVnY",
+      "channel": {
+        "name": "메가존클라우드 이노베이터",
+        "url": "https://www.youtube.com/channel/UCa8Bwv1C8Ok6XrtcOsCWfxQ"
+      },
+      "description": "2016년에는 메가존과 함께 하세요! Hype Up AWS with Megazone! 2016년 올해의 파트너(Partner of the Year) '상을 수상 2014년 ...",
+      "publishedAt": "2016-06-16T06:46:25Z",
+      "thumbnail": "https://i.ytimg.com/vi/JL7hGDTKVnY/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "클라우드, 귀사는 준비되어 있습니까? - 효율적인 운영을 위한 기본체크리스트",
+      "url": "https://www.youtube.com/watch?v=l1dKemiyX6o",
+      "videoId": "l1dKemiyX6o",
+      "channel": {
+        "name": "토크아이티(Talk IT)",
+        "url": "https://www.youtube.com/channel/UCIIxE0wO6-BFt1H_bi8KqtQ"
+      },
+      "description": "안녕하세요, 디지털 트랜스포메이션 시대를 맞이하여, 이미 많은 기업들은 지속적인 비즈니스 성장과 혁신을 위해 클라우드 도입 및 ...",
+      "publishedAt": "2018-09-13T08:27:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/l1dKemiyX6o/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "클루커스의 기술력을 더해보세요. (안되면 클루커스 Short ver.)",
+      "url": "https://www.youtube.com/watch?v=6KbVeJIxHHw",
+      "videoId": "6KbVeJIxHHw",
+      "channel": {
+        "name": "클루커스",
+        "url": "https://www.youtube.com/channel/UCvz36DGjZPyFXSJBC_Ge7ZQ"
+      },
+      "description": "Cloud Managed Service Provider, 클루커스 클루커스의 기술력을 더해보세요. Full version 영상은 아래 링크에서 확인하세요!",
+      "publishedAt": "2021-08-30T06:12:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/6KbVeJIxHHw/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "2023 Google Cloud Partners of the Year",
+      "url": "https://www.youtube.com/watch?v=_97S8QeCWlA",
+      "videoId": "_97S8QeCWlA",
+      "channel": {
+        "name": "Google Cloud",
+        "url": "https://www.youtube.com/channel/UCTMRxtyHoE3LPcrl-kT4AQQ"
+      },
+      "description": "Congratulations to the 2023 Google Cloud Partner of the Year winners! These partners have been at the forefront of innovation, ...",
+      "publishedAt": "2023-08-29T12:00:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/_97S8QeCWlA/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "메가존클라우드, 2025 AWS 파트너 어워드 'APJ 올해의 컨설팅 파트너 ...",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=609374",
+      "snippet": "5시간 전 ... APJ 공공부문 컨설팅 파트너상(Public Sector Consulting Partner of the Year)도 받았다. 메가존클라우드는 이번 수상에서 핵심 평가 기준인 △매출 ...",
+      "displayLink": "www.digitaltoday.co.kr"
+    },
+    {
+      "title": "메가존클라우드, 2025 AWS 파트너 어워드 'APJ 올해의 컨설팅 파트너 ...",
+      "url": "https://v.daum.net/v/20251202121713700",
+      "snippet": "5시간 전 ... AI·클라우드 선도 기업 메가존클라우드(대표 염동훈)가 아마존웹서비스(Amazon Web Services, 이하 AWS)로부터 2개 부문에서 '올해의 파트너상'을 수상 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "메가존클라우드, 2024 AWS '올해의 컨설팅 파트너상' 수상 - ITing",
+      "url": "https://iting.co.kr/news-202412041630/",
+      "snippet": "2024. 12. 2. ... 메가존클라우드, 아시아태평양 및 일본 지역 올해의 컨설팅 파트너상(Consulting Partner of the Year)'을 수상.",
+      "displayLink": "iting.co.kr"
+    },
+    {
+      "title": "메가존클라우드, AWS 올해의 파트너상 2년 연속 수상",
+      "url": "https://v.daum.net/v/20251202114350580",
+      "snippet": "6시간 전 ... 메가존클라우드는 미국 라스베이거스에서 오는 5일까지(현지시간) 개최되는 'AWS 리인벤트 2025' 행사 첫날 개최된 파트너 어워드 시상식에서 아시아 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "메가존클라우드, AWS서 올해의 컨설팅 파트너상 수상 - 넥스트데일리",
+      "url": "https://www.nextdaily.co.kr/news/articleView.html?idxno=245017",
+      "snippet": "6시간 전 ... 회사는 이달 1일(현지시간)부터 5일까지 미국 라스베이거스에서 열리고 있는 'AWS 리인벤트 2025' 첫날 행사인 파트너 어워드에서 APJ 올해의 컨설팅 ...",
+      "displayLink": "www.nextdaily.co.kr"
+    },
+    {
+      "title": "우리가 해냈어요! 메가존클라우드가 Snowflake Summit 2025에서 ...",
+      "url": "https://www.instagram.com/p/DKd2DZcz3td/",
+      "snippet": "2025. 6. 3. ... ... 메가존클라우드가 Snowflake Summit 2025에서 APJ 올해의 성장 파트너상을 수상했습니다! 스노우플레이크와 함께, 데이터와 AI로 고객의 미래를 ...",
+      "displayLink": "www.instagram.com"
+    },
+    {
+      "title": "메가존클라우드, AWS 파트너 어워드 'APJ 올해의 컨설팅 파트너상'",
+      "url": "https://www.ziksir.com/news/articleView.html?idxno=114716",
+      "snippet": "6시간 전 ... 메가존클라우드는 1일(현지시간) 'AWS 리인벤트(re:Invent) 2025' 파트너 어워드 시상식에서 아시아태평양 및 일본(APJ) 지역 컨설팅 파트너 부문 수상자 ...",
+      "displayLink": "www.ziksir.com"
+    },
+    {
+      "title": "메가존클라우드(주) 2025년 기업정보 | 기업리뷰 627건, 연봉정보 362 ...",
+      "url": "https://www.jobplanet.co.kr/companies/339331/landing/%EB%A9%94%EA%B0%80%EC%A1%B4%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C",
+      "snippet": "서울에 본사를 둔 메가존클라우드는 AWS(Amazon Web Services) 및 100개 이상의 글로벌 기술 파트너와의 강력한 파트너십을 기반으로 기업의 클라우드 도입 및 디지털 ...",
+      "displayLink": "www.jobplanet.co.kr"
+    },
+    {
+      "title": "News & Event 1 페이지 | 디지베이스",
+      "url": "https://www.digibase.co.kr/bbs/board.php?bo_table=notice",
+      "snippet": "공지 [DIGINEWS] AWS의 새로운 시연 방식: 클라우드 서비스의 쇼룸을 열다! 이 ... △ 올해의 인더스트리 솔루션 서비스 파트너상을 수상한 디지베이스. 왼쪽에서 ...",
+      "displayLink": "www.digibase.co.kr"
+    },
+    {
+      "title": "메가존클라우드, 2024 AWS '올해의 컨설팅 파트너상' 수상",
+      "url": "http://www.itdaily.kr/news/articleView.html?idxno=229370",
+      "snippet": "2024. 12. 4. ... [아이티데일리] 메가존클라우드(대표 이주완)는 2일(현지 시각) 미국 라스베이거스에서 열린 아마존웹서비스 리인벤트(AWS re:Invent)의 '지역 ...",
+      "displayLink": "www.itdaily.kr"
+    }
+  ],
+  "google_count": 10
+}

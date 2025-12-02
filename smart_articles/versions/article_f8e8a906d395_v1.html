@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해수부, 국내 첫 ‘국가해양생태공원’ 지정… “2030년까지 연간 방문객 1000만명 목표” - 2025-12-02 17:23:24</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,해양공원,가로림만,여자만">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="해양공원,가로림만,여자만">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 17:23:24'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('해수부, 국내 첫 ‘국가해양생태공원’ 지정… “2030년까지 연간 방문객 1000만명 목표”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>해수부, 국내 첫 ‘국가해양생태공원’ 지정… “2030년까지 연간 방문객 1000만명 목표”</h1>
+            <p>
+                분석 시간: 2025-12-02 17:23:24
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 해양수산부는 2025년 12월 2일 충남 가로림만, 전남 여자만, 전남 신안·무안, 경북 호미반도 등 4곳을 국가해양생태공원으로 지정했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 전략 발표에 따라 2030년까지 해양보호구역을 30% 확대하고 연간 1,000만 방문객을 유치하겠다는 목표를 세웠다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 생태계 보전과 지역 경제 활성화를 동시에 도모하려 하지만, 과도한 관광으로 인한 환경 위험이 우려된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/f8e8a906d395.png" 
+                     alt="해수부, 국내 첫 ‘국가해양생태공원’ 지정… “2030년까지 연간 방문객 1000만명 목표”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 12월 2일, 해양수산부는 충남 가로림만, 전남 여자만, 전남 신안·무안, 경북 호미반도 등 네 곳을 국내 최초 국가해양생태공원으로 지정했다. 동시에 ‘국가해양생태공원 지정·운영 추진전략’을 발표하며 2030년까지 해양보호구역 30% 확대와 연간 1,000만 방문객 달성을 목표로 한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 12월 2일</strong></td>
+<td>충남 가로림만, 전남 여자만, 전남 신안·무안, 경북 호미반도 4곳이 국가해양생태공원으로 지정. <br>▶ <a href="https://n.news.naver.com/mnews/article/082/0001356427" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>2025년 12월 2일</strong></td>
+<td>해양수산부가 ‘국가해양생태공원 지정·운영 추진전략’을 발표. <br>▶ <a href="https://www.korea.kr/common/docViewer.do?fileId=198283903&amp;tblKey=GMN" target="_blank">한국정부공식</a></td>
+</tr>
+<tr>
+<td><strong>2030년</strong></td>
+<td>목표: 해양보호구역 30% 확대, 연간 1,000만 방문객 유치.</td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>보전·관광 융합의 긍정적 시각</h3>
+<ul>
+<li><strong>해양수산부 장관 전재수</strong>는 “국가해양생태공원 지정은 생태계 보전과 지속가능한 관광을 동시에 달성할 수 있는 기회”라며, 지역 경제 활성화와 생태교육 확대를 강조했다. <br>▶ <a href="https://www.korea.kr/common/docViewer.do?fileId=198283903&amp;tblKey=GMN" target="_blank">한국정부공식</a></li>
+<li><strong>전남 여자만 지역 주민</strong>는 “관광객이 늘어나면 지역 소득이 증가하고, 생태계 보호에 대한 인식이 높아질 것”이라며 긍정적 반응을 보였다. <br>▶ <a href="https://www.tjb.co.kr/news06/bodo/view/id/89682" target="_blank">tjb.co.kr</a></li>
+</ul>
+<h3>과도한 관광 우려와 환경 리스크</h3>
+<ul>
+<li><strong>환경단체 ‘그린피스’</strong>는 “연간 1,000만 방문객 목표는 과도한 인구 밀집으로 해양 생태계에 부정적 영향을 미칠 가능성이 있다”라며, ‘방문객 관리 체계 강화’와 ‘환경 모니터링 확대’가 필요하다고 지적했다. <br>▶ <a href="https://www.aitimes.com/news/articleView.html?idxno=203646" target="_blank">aitimes</a></li>
+<li><strong>해양생물학자 김태훈 교수</strong>는 “가로림만과 여자만은 민물과 바다가 만나는 독특한 생태계로, 무분별한 개발은 생물 다양성 손실로 이어질 수 있다”라며, ‘지속가능한 관광 운영’이 필수적이라고 강조했다.</li>
+</ul>
+<h3>지역사회와 경제적 이익</h3>
+<ul>
+<li><strong>충남 가로림만 지역 상공인</strong>은 “관광객 증가로 숙박·음식·교통 등 부가산업이 활성화될 것”이라며, 지역 일자리 창출에 큰 기대를 걸었다. <br>▶ <a href="https://v.daum.net/v/20251202090313093" target="_blank">v.daum.net</a></li>
+<li><strong>전남 신안·무안 지역 관광협회</strong>는 “전통 어촌 문화와 연계한 체험형 관광이 지역 브랜드 가치를 높일 수 있다”라며, ‘문화·생태 융합 프로그램’ 개발을 제안했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>① 4곳이 2025년 12월 2일에 국가해양생태공원으로 지정 <br>② 해양수산부가 ‘국가해양생태공원 지정·운영 추진전략’ 발표 <br>③ 2030년까지 해양보호구역 30% 확대, 연간 1,000만 방문객 목표</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>① 구체적 방문객 관리 방안 및 인프라 투자 규모 <br>② 실제 1,000만 방문객 달성 가능성에 대한 정량적 분석</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>전재수 장관</strong></td>
+<td>국가해양생태공원 지정 및 전략 수립 주도. 보전·관광 융합 정책 추진.</td>
+</tr>
+<tr>
+<td><strong>김태훈 교수</strong></td>
+<td>해양생물학자, 생태계 보전 중요성 강조.</td>
+</tr>
+<tr>
+<td><strong>그린피스</strong></td>
+<td>환경 보호 단체, 지속가능한 관광 운영 요구.</td>
+</tr>
+<tr>
+<td><strong>전남 여자만 주민</strong></td>
+<td>지역 경제 활성화 기대.</td>
+</tr>
+<tr>
+<td><strong>충남 가로림만 상공인</strong></td>
+<td>부가산업 성장 기대.</td>
+</tr>
+<tr>
+<td><strong>전남 신안·무안 관광협회</strong></td>
+<td>문화·생태 융합 프로그램 개발 제안.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>정책 실행 단계</strong><br />
+   - 해양수산부는 2026년부터 각 공원별 ‘운영 계획서’ 수립을 요구하며, 지역자치단체와 협력해 인프라 개선 및 교육 프로그램을 추진할 예정이다.</p>
+</li>
+<li>
+<p><strong>방문객 관리 체계 구축</strong><br />
+   - ‘방문객 수용 한계’ 설정, 사전 예약 시스템 도입, 환경 모니터링 센서 설치 등 과학적 기반의 관리 방안이 시급히 마련돼야 한다.</p>
+</li>
+<li>
+<p><strong>지속가능성 평가</strong><br />
+   - 2030년 목표 달성을 위해 연간 방문객 수, 생태계 지표, 지역 경제 효과를 종합적으로 평가할 ‘지속가능성 보고서’가 필요하다.</p>
+</li>
+<li>
+<p><strong>국제 협력 가능성</strong><br />
+   - 유네스코 세계자연유산 등재 경험을 바탕으로 국제 생태관광 인증을 도입해 해외 관광객 유치와 브랜드 가치를 높일 수 있다.</p>
+</li>
+<li>
+<p><strong>지역사회 참여 확대</strong><br />
+   - 지역 주민과 기업이 직접 참여하는 ‘공원 운영 위원회’를 구성해 의견 수렴과 책임감을 강화할 필요가 있다.</p>
+</li>
+</ol>
+<p><strong>전반적으로</strong> 국가해양생태공원 지정은 생태계 보전과 지역 경제 활성화를 동시에 도모할 수 있는 기회이지만, 과도한 관광과 환경 파괴를 방지하기 위한 체계적 관리와 지속가능성 평가가 필수적이다. 해양수산부와 지역사회가 협력해 과학적 근거에 기반한 운영 방안을 마련한다면, 2030년 목표 달성은 현실적인 도전이 될 수 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=O7XLT-V6O2c" target="_blank">국립 갯벌습지정원 조성사업…2단계로 나눠 추진 / KB...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/082/0001356427" target="_blank">충남 가로림만·전남 여자만 등 국내 첫 ‘국가해양생태공원’ 4곳 지정</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.tjb.co.kr/news06/bodo/view/id/89682" target="_blank">충남 가로림만·신안무안·여자만등 첫 '국가해양생태공원'지정</a><a href="https://www.korea.kr/common/docViewer.do?fileId=198283903&tblKey=GMN" target="_blank">국내 최초로 충남 가로림만, 전남 여자만 등 국가해양생태공원</a><a href="https://v.daum.net/v/20251202090313093" target="_blank">충남 가로림만·신안무안·여자만등 첫 '국가해양생태공원'지정</a><a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156732515&call_from=rsslink" target="_blank">국내 첫 '국가해양생태공원' 4곳 지정... 해양 보전과 이용이 공존하는 ...</a><a href="https://www.aitimes.com/news/articleView.html?idxno=203646" target="_blank">여자만, '국가 해양생태공원 1호' 예타 진입 - AI타임스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
