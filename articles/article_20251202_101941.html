@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'벤처 1세대 박대연 회장의 꿈' 티맥스ANC, 1년 이상 임금체불 논란 - 2025-12-02 10:19:41</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,경제,티맥스ANC">
+    <meta name="article-category-tags" content="IT/과학,경제">
+    <meta name="article-content-tags" content="티맥스ANC">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 10:19:41'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'벤처 1세대 박대연 회장의 꿈\' 티맥스ANC, 1년 이상 임금체불 논란')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'벤처 1세대 박대연 회장의 꿈' 티맥스ANC, 1년 이상 임금체불 논란</h1>
+            <p>
+                분석 시간: 2025-12-02 10:19:41
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 티맥스ANC는 2024년 9월부터 2025년 12월까지 약 300억 원 규모의 임금·퇴직금·연말정산을 1년 이상 체불했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 퇴사자들이 민사·형사 소송을 제기했고, 박대연 회장은 AI 플랫폼 ‘가이아’ 공개를 통해 재정난을 해소하려는 방안을 발표했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> ‘가이아’가 출시되면 매출 회복 가능성이 있지만, 재정난이 해결되지 않으면 플랫폼 출시가 지연될 위험이 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/1b045dac889d.png" 
+                     alt="'벤처 1세대 박대연 회장의 꿈' 티맥스ANC, 1년 이상 임금체불 논란" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>티맥스ANC이 2024년 9월부터 2025년 12월까지 직원 및 퇴사자에게 월급·퇴직금·연말정산을 1년 이상 체불해 약 300억 원 규모의 부채를 남겼다. 박대연 회장은 AI 플랫폼 ‘가이아’ 공개를 통해 재정난을 극복하려는 방안을 제시했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 9월</td>
+<td>월급 지급 중단</td>
+<td><a href="https://n.news.naver.com/mnews/article/469/0000900703" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>기사 발표 및 재정난 해소 계획 공개</td>
+<td><a href="https://n.news.naver.com/mnews/article/469/0000900703" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>AI ‘가이아’ 공개 지연 및 매출 영향 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/469/0000900703" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>퇴사자들이 민사·형사 소송 제기</td>
+<td><a href="https://n.news.naver.com/mnews/article/469/0000900703" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 6월 24일</td>
+<td>박대연 회장 사과 및 ‘가이아’ 공개 계획 발표</td>
+<td><a href="https://zdnet.co.kr/view/?no=20250624115300" target="_blank">ZDNET</a></td>
+</tr>
+<tr>
+<td>2025년 6월 25일</td>
+<td>‘티맥스ANC, 다시 스타트업이 되길’ 비판적 시각</td>
+<td><a href="https://byline.network/2025/06/0625-4/" target="_blank">바이라인네트워크</a></td>
+</tr>
+<tr>
+<td>2024년 10월 19일</td>
+<td>티맥스A&amp;C 대표이사 대거 교체</td>
+<td><a href="https://www.ddaily.co.kr/page/view/2024101816591003174" target="_blank">디지털데일리</a></td>
+</tr>
+<tr>
+<td>2025년 6월 24일</td>
+<td>경영난 속 ‘가이아’로 재도약 시도</td>
+<td><a href="http://www.itdaily.kr/news/articleView.html?idxno=233819" target="_blank">IT다이얼리</a></td>
+</tr>
+<tr>
+<td>2025년 6월 24일</td>
+<td>‘1분 앱 제작 현실화’·AI·노코드 플랫폼 공개</td>
+<td><a href="https://www.socialvalue.kr/news/view/1065593313415463" target="_blank">소셜밸류</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>▶</strong> 2024년 9월부터 2025년 12월까지 <strong>약 300억 원</strong> 규모의 임금·퇴직금·연말정산이 체불되었다.<br />
+<strong>▶</strong> 퇴사자들은 <strong>민사·형사 소송</strong>을 제기했다.<br />
+<strong>▶</strong> 박대연 회장은 <strong>AI 플랫폼 ‘가이아’</strong> 공개를 통해 재정난을 해소하려는 방안을 제시했다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>ZDNET</strong>은 박대연 회장이 공식 석상에서 사과하며 “가이아”를 통해 <strong>재정난을 극복할 것</strong>이라고 강조했다. 회장은 “자금난에 시달려 임금체불 논란을 빚었지만, ‘가이아’로 티맥스ANC를 돌파구로 삼겠다”고 말했다.  </li>
+<li><strong>바이라인네트워크</strong>는 “박 회장은 임금체불이라는 악조건에도 회사에 남아 있는 직원들에게 감사하지만, 투자자와 고객은 여전히 의구심을 갖고 있다”고 지적했다.  </li>
+<li><strong>디지털데일리</strong>는 2024년 10월에 발생한 <strong>대표이사 교체</strong>와 조직 위축을 언급하며, 임금체불이 내부 구조조정의 일환으로 보인다고 보도했다.  </li>
+<li><strong>IT다이얼리</strong>는 “경영난을 겪은 티맥스ANC가 AI·노코드 통합 플랫폼 ‘가이아’로 재도약을 시도하고 있다”고 보도했다.  </li>
+<li><strong>소셜밸류</strong>는 ‘가이아’ 공개가 <strong>1분 앱 제작</strong>을 현실화할 수 있는 플랫폼으로, 매출 회복에 기여할 것으로 기대된다고 분석했다.</li>
+</ul>
+<p>전문가들은 AI 플랫폼이 <strong>잠재적 성장 동력</strong>이 될 수 있지만, <strong>재정난이 해결되지 않으면</strong> 플랫폼 출시 자체가 지연될 가능성이 있다고 경고했다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1년 이상 임금·퇴직금·연말정산 체불, 300억 원 규모, 퇴사자 소송, AI ‘가이아’ 공개 지연, 재정난으로 인한 투자 유치 시도</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>사업 매각 논의에 대한 공식 발표 여부, 구체적 투자 금액 및 투자자 명단</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>박대연</strong> – 티맥스ANC 회장, 임금체불 사태의 책임자이자 ‘가이아’ 공개를 통해 회복을 시도 중.  </li>
+<li><strong>직원·퇴사자</strong> – 임금·퇴직금 체불 피해자, 민사·형사 소송을 제기.  </li>
+<li><strong>투자자·채권자</strong> – 재정난 해결을 위해 투자 유치와 채무 상환을 요구.  </li>
+<li><strong>규제기관</strong> – 노동법 위반 여부를 조사 중.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2026년 1분기</strong>까지 <strong>대규모 투자 유치</strong>를 목표로 하고 있으며, 자금 확보 시 체불된 임금·퇴직금을 지급할 계획이다.  </li>
+<li><strong>‘가이아’</strong>의 정식 출시가 <strong>2026년 상반기</strong>에 예정돼 있으며, 이는 매출 회복의 핵심 동력으로 작용할 전망이다.  </li>
+<li>그러나 <strong>법적 소송</strong>과 <strong>신뢰 회복</strong>이 동시에 진행되어야 하며, 실패 시 <strong>사업 매각</strong>이나 <strong>청산</strong> 가능성도 배제할 수 없다.</li>
+</ul>
+<p><strong>▶</strong> 티맥스ANC는 재정난 해소와 AI 플랫폼 출시를 통해 회복을 목표로 하고 있으나, <strong>법적·재정적 도전</strong>이 여전히 남아 있다. 지속적인 모니터링이 필요하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/469/0000900703" target="_blank">'벤처 1세대 박대연 회장의 꿈' 티맥스ANC, 1년 이상 임금체불 논란</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://zdnet.co.kr/view/?no=20250624115300" target="_blank">[현장] '임금체불'에 고개 숙인 박대연, '가이아'로 티맥스ANC 돌파구 ...</a><a href="https://byline.network/2025/06/0625-4/" target="_blank">[심재석의 입장] 티맥스ANC, 다시 스타트업이 되길 – 바이라인네트워크</a><a href="https://www.ddaily.co.kr/page/view/2024101816591003174" target="_blank">티맥스A&C, 임금체불 속 대표이사 대거 교체 …왜? - 디지털데일리</a><a href="http://www.itdaily.kr/news/articleView.html?idxno=233819" target="_blank">경영난 겪은 티맥스ANC, AI·노코드 통합 플랫폼 '가이아'로 재도약 ...</a><a href="https://www.socialvalue.kr/news/view/1065593313415463" target="_blank">“1분 앱 제작 현실화”…티맥스, AI·노코드 통합 플랫폼 '가이아' 공개</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
