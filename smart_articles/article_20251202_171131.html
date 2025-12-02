@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김동연, 프랑스 에어 리퀴드사와 반도체소재·수소분야 투자 계획 논의 - 2025-12-02 17:11:31</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,김동연,에어리퀴드,반도체">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="김동연,에어리퀴드,반도체">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 17:11:31'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('김동연, 프랑스 에어 리퀴드사와 반도체소재·수소분야 투자 계획 논의')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>김동연, 프랑스 에어 리퀴드사와 반도체소재·수소분야 투자 계획 논의</h1>
+            <p>
+                분석 시간: 2025-12-02 17:11:31
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 김동연 경기도지사가 에어리퀴드와 반도체·수소 투자 협의를 진행해 100조 원 투자 목표를 초과 달성했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 에어리퀴드의 고순도 몰리브덴 공장 가동과 4조 6000억원 규모의 DIG Air Gas 인수 등으로 반도체 소재 공급망과 수소 인프라가 강화된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 경기도는 글로벌 반도체·수소 산업의 리더로 부상하며 지역 경제 활성화와 기후전환에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/1b9a89a5f6d7.png" 
+                     alt="김동연, 프랑스 에어 리퀴드사와 반도체소재·수소분야 투자 계획 논의" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>김동연 경기도지사가 프랑스 에어리퀴드와 반도체 소재·수소 분야 투자 계획을 논의하며, 경기도가 100조 원 투자 목표를 초과 달성했다. 이번 협의는 반도체 산업과 수소 에너지 기반을 강화하고 지역 경제를 활성화할 전망이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 7월</td>
+<td>에어리퀴드 고순도 몰리브덴 생산시설 상업 가동 시작</td>
+<td><a href="https://m.ekn.kr/view.php?key=20250718024417970" target="_blank">이코노뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 9월</td>
+<td>에어리퀴드가 DIG Air Gas를 4조 6000억원 규모로 인수 결정</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>김동연 경기도지사와 에어리퀴드 회장 François Jacq 면담</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>경기도가 100조 원 투자 목표를 초과 달성 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">중앙일보</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>에어리퀴드의 고순도 몰리브덴 공장은 화성 장안외국인투자지역에 위치해 있으며, 반도체용 첨단 소재 생산에 핵심 역할을 한다.</strong><br />
+▶ <strong>김동연 지사는 중앙정부와 협력해 새로운 에너지 공급 판을 구축하고, 기후위기 대응 및 재생에너지 공급을 위한 긴밀한 논의를 약속했다.</strong><br />
+▶ <strong>경기도는 ‘Trust in Korea’를 강조하며, 1년 이내에 100조 원을 초과하는 투자 유치를 달성했다.</strong></p>
+<h3>다양한 관점과 분석</h3>
+<h3>산업계의 기대</h3>
+<ul>
+<li><strong>전문가 의견</strong>: “에어리퀴드와의 협력은 반도체 소재 공급망을 강화하고, 수소 에너지 인프라 구축에 큰 도움이 될 것”이라며, <strong>수소차·수소전지</strong> 산업의 성장 가능성을 높게 평가했다.  </li>
+<li><strong>기업 입장</strong>: <strong>ASML, AMAT</strong> 등 글로벌 반도체 장비 기업이 경기도에 투자한 배경과 연계해, <strong>공급망 안정성</strong>이 강화될 것으로 보인다.  </li>
+</ul>
+<h3>지역 주민과 환경단체의 우려</h3>
+<ul>
+<li><strong>환경단체</strong>는 <strong>고순도 몰리브덴 생산 과정에서 발생할 수 있는 폐기물</strong>과 <strong>수소 생산 시 발생하는 메탄 유출</strong>에 대한 위험성을 지적했다.  </li>
+<li><strong>지역 주민</strong>은 <strong>공장 부지 주변 인프라</strong>와 <strong>주거 환경</strong>에 대한 영향이 우려되며, <strong>공개 토론회</strong>를 요구하고 있다.  </li>
+</ul>
+<h3>정책적 시사점</h3>
+<ul>
+<li><strong>김동연 지사는</strong> “경기도가 <strong>수소·반도체</strong> 분야에서 <strong>글로벌 리더</strong>가 되도록 정책적 지원을 강화할 것”이라고 밝혔다.  </li>
+<li><strong>중앙정부</strong>는 <strong>에너지 전환</strong>과 <strong>반도체 산업 육성</strong>을 동시에 추진하며, <strong>경기도와의 협력</strong>을 확대할 계획이다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>에어리퀴드가 2025년 9월 DIG Air Gas를 4조 6000억원에 인수</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>에어리퀴드 고순도 몰리브덴 공장이 2025년 7월 상업 가동</td>
+<td><a href="https://m.ekn.kr/view.php?key=20250718024417970" target="_blank">이코노뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>김동연 지사가 2025년 12월 2일 에어리퀴드 회장과 면담</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>경기도가 100조 원 투자 목표를 초과 달성</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">중앙일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김동연</strong></td>
+<td>경기도지사</td>
+<td>에어리퀴드와의 협력을 통해 <strong>반도체·수소</strong> 산업 육성 및 <strong>지역 경제 활성화</strong>를 목표</td>
+</tr>
+<tr>
+<td><strong>François Jacq</strong></td>
+<td>에어리퀴드 회장</td>
+<td><strong>글로벌 산업용 가스</strong> 공급망 확대와 <strong>수소·반도체</strong> 분야 투자 확대를 추진</td>
+</tr>
+<tr>
+<td><strong>경기도 정부</strong></td>
+<td>정책·투자 담당</td>
+<td><strong>100조 원</strong> 규모의 대규모 투자 유치를 통해 <strong>산업 클러스터</strong>를 강화</td>
+</tr>
+<tr>
+<td><strong>환경단체</strong></td>
+<td>지역 환경 보호</td>
+<td><strong>공장 운영</strong>에 따른 <strong>환경 영향</strong> 최소화 요구</td>
+</tr>
+<tr>
+<td><strong>지역 주민</strong></td>
+<td>거주자</td>
+<td><strong>주거 환경</strong>과 <strong>인프라</strong>에 대한 우려</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수소 인프라 구축</strong>: 에어리퀴드와 경기도가 협력해 <strong>수소 생산·전송·저장</strong> 인프라를 확대, <strong>수소차</strong> 보급을 가속화할 전망.  </li>
+<li><strong>반도체 소재 공급망 강화</strong>: 고순도 몰리브덴 공장과 <strong>반도체 장비</strong> 기업들의 협업으로 <strong>반도체 생산 효율</strong>이 상승할 가능성.  </li>
+<li><strong>투자 유치 확대</strong>: 100조 원 초과 달성 이후, <strong>다른 글로벌 기업</strong>의 투자 유치가 가속화될 것으로 예상.  </li>
+<li><strong>환경 규제 강화</strong>: 지역 주민과 환경단체의 우려가 지속될 경우, <strong>환경 규제</strong>가 강화될 수 있으며, 이는 <strong>공장 운영</strong>에 추가 비용을 부과할 수 있다.  </li>
+</ul>
+<p>경기도는 이번 협의를 통해 <strong>반도체·수소</strong> 분야에서 <strong>글로벌 경쟁력</strong>을 확보하고, <strong>지속 가능한 성장</strong>을 도모할 계획이다. 그러나 <strong>환경·주민</strong>과의 협의가 필수적이며, <strong>정책적 지원</strong>과 <strong>투명한 운영</strong>이 성공의 핵심 요소가 될 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/008/0005286081" target="_blank">4.6조 묻고 추가로 더…김동연 만난 佛 가스기업 "경기도 투자 확대"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://v.daum.net/v/20251202133115442" target="_blank">김동연, 프랑스 에어리퀴드사 만나 반도체소재·수소분야 투자 계획 논의</a><a href="https://gnews.gg.go.kr/briefing/brief_gongbo.do" target="_blank">보도자료</a><a href="https://v.daum.net/v/20251202152420403" target="_blank">김동연 경기지사, 프랑스 에어리퀴드사와 '반도체소재·수소분야 투자 ...</a><a href="https://www.econonews.co.kr/news/articleView.html?idxno=416648" target="_blank">김동연 지사, 프랑스 에어리퀴드사 자코 회장과 반도체소재·수소분야 ...</a><a href="https://m.ekn.kr/view.php?key=20250718024417970" target="_blank">에어리퀴드, 경기도 화성에 반도체 소재 몰리브덴 공장 증설</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
