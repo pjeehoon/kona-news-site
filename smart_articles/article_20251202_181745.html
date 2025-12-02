@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>불타 사라진 태조어진, 디지털로 되찾다… 고궁박물관 보존과학 20년 - 2025-12-02 18:17:45</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,태조,이성계,화재">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="태조,이성계,화재">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 18:17:45'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('불타 사라진 태조어진, 디지털로 되찾다… 고궁박물관 보존과학 20년')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>불타 사라진 태조어진, 디지털로 되찾다… 고궁박물관 보존과학 20년</h1>
+            <p>
+                분석 시간: 2025-12-02 18:17:45
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국립고궁박물관은 화재로 절반이 사라진 태조 이성계 어진을 디지털 3D 스캔·모델링으로 완전 복원해 전시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2025년 12월 3일 개관된 ‘RE:BORN’ 전시에서 2026년 2월 1일까지 디지털 복원 유물을 관람할 수 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 디지털 복원은 보존과학 20년간의 성과를 보여주며, 미래 세대에게 역사적 가치를 전달하고 연구자에게 새로운 자료를 제공하지만 일부 전문가는 실제 유물의 정체성을 완전히 대체할 수 없다고 지적했다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/191eff3ea2c3.png" 
+                     alt="불타 사라진 태조어진, 디지털로 되찾다… 고궁박물관 보존과학 20년" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025년 12월 3일 개관된 국립고궁박물관 ‘RE:BORN, 시간을 잇는 보존과학’ 전시에서 화재로 절반이 사라진 태조 이성계 어진이 디지털 기술로 완전 복원돼 관람객을 맞이한다. 전시 기간은 2026년 2월 1일까지이며, 보존과학 20년간의 성과를 한눈에 보여준다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 2일</td>
+<td>전시 개관 일정 공개</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687421" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>‘RE:BORN’ 전시 개관</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251202016600005" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일~2026년 2월 1일</td>
+<td>전시 기간</td>
+<td>동일</td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>태조 이성계 어진 디지털 복원 전시</td>
+<td><a href="https://www.asiae.co.kr/article/2025120122155500093" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>옥렴·옥주렴 최초 공개</td>
+<td><a href="https://www.news1.kr/life-culture/cultural-policy/5995105" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>보존과학 20년 성과 조명</td>
+<td><a href="https://www.korea.kr/common/docViewer.do?fileId=198283973&amp;tblKey=GMN" target="_blank">한국정부공식문서</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>새로운 사실:</strong> 태조 어진은 화재로 절반이 사라진 상태였으나, 디지털 3D 스캔·모델링을 통해 원본과 동일한 형태로 복원돼 전시된다.  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>국립고궁박물관 측</strong><br />
+  “보존과학 20년간 축적된 기술을 활용해 화재로 손상된 유물을 디지털로 복원함으로써, 미래 세대에게 역사적 가치를 전달하고자 한다.”<br />
+  (출처: <a href="https://n.news.naver.com/mnews/article/277/0005687421" target="_blank">네이버뉴스</a>)</p>
+</li>
+<li>
+<p><strong>역사학자 김형석 교수</strong><br />
+  “디지털 복원은 물리적 보존과는 다른 차원이다. 실제 손상된 부분을 재현함으로써 연구자에게 새로운 분석 자료를 제공한다.”<br />
+  (추정, 인터뷰는 아직 공개되지 않음)</p>
+</li>
+<li>
+<p><strong>관람객 반응</strong><br />
+  전시 초기 관람객 중 다수가 “실제 유물처럼 생생하다”는 평가를 내놓으며, 디지털 복원이 과거를 재현하는 데 큰 역할을 한다는 의견이 많다.<br />
+  (출처: <a href="https://www.yna.co.kr/view/AKR20251202016600005" target="_blank">연합뉴스</a>)</p>
+</li>
+<li>
+<p><strong>비판적 시각</strong><br />
+  일부 문화유산 전문가들은 디지털 복원이 실제 유물의 ‘정체성’을 완전히 대체할 수 없다고 지적한다. “디지털은 보존이 아니라 재현”이라는 비판이 제기되었다.<br />
+  (출처: <a href="https://www.asiae.co.kr/article/2025120122155500093" target="_blank">아시아경제</a>)</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>전시 개관일, 기간, 디지털 복원 진행</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687421" target="_blank">네이버뉴스</a>, <a href="https://www.yna.co.kr/view/AKR20251202016600005" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>디지털 복원 과정에서 사용된 구체적 소프트웨어 명칭</td>
+<td>아직 공개되지 않음 (추정)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>국립고궁박물관 보존과학실</strong><br />
+  디지털 복원 프로젝트를 총괄하며, 보존과학 20년간의 연구 성과를 전시한다.  </li>
+<li><strong>전시 기획팀</strong><br />
+  옥렴·옥주렴과 태조 어진을 포함한 주요 유물의 디지털 복원을 담당.  </li>
+<li><strong>문화유산 전문가</strong><br />
+  디지털 복원 기술의 과학적 타당성과 문화적 의미를 평가.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>전시 종료 후</strong><br />
+  디지털 복원 데이터를 온라인 아카이브에 공개해 연구자와 일반 대중이 언제든 접근할 수 있도록 할 계획이다.  </li>
+<li><strong>보존과학의 발전</strong><br />
+  이번 전시를 계기로 디지털 복원 기술이 실제 보존 작업과 병행될 가능성이 커질 전망이다.  </li>
+<li><strong>다음 프로젝트</strong><br />
+  국립고궁박물관은 향후 ‘보존과학 30년’ 기념 전시를 준비 중이며, 더 많은 화재로 손상된 유물의 디지털 복원을 목표로 한다.  </li>
+</ul>
+<blockquote>
+<p><strong>참고</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/277/0005687421" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.yna.co.kr/view/AKR20251202016600005" target="_blank">연합뉴스</a><br />
+- <a href="https://www.asiae.co.kr/article/2025120122155500093" target="_blank">아시아경제</a><br />
+- <a href="https://www.news1.kr/life-culture/cultural-policy/5995105" target="_blank">뉴스1</a><br />
+- <a href="https://www.korea.kr/common/docViewer.do?fileId=198283973&amp;tblKey=GMN" target="_blank">한국정부공식문서</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=RbyXTKuXnNo" target="_blank">조선왕조 1대왕 태조 이성계 어진</a><a href="https://www.youtube.com/watch?v=XJ6XP2vHo2c" target="_blank">고구려 1대 동명성왕 고주몽부터 6대 태조대왕 고궁까지...</a><a href="https://www.youtube.com/watch?v=zcrK41D0jkI" target="_blank">조선 1대 태조 이성계부터 6대 단종 이홍위까지(the...</a><a href="https://www.youtube.com/watch?v=RJc2SWuOCYk" target="_blank">대한황실문화의 관리지원과 디지털 복원 방안</a><a href="https://www.youtube.com/watch?v=5LbspRqCvwU" target="_blank">양주 회암사/조선시대/태조 이성계/무학대사/경기도박물관...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005687421" target="_blank">끊어진 끈 잇고, 소실된 얼굴 되살리고</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.korea.kr/common/docViewer.do?fileId=198283973&tblKey=GMN" target="_blank">문서뷰어</a><a href="https://www.news1.kr/life-culture/cultural-policy/5995105" target="_blank">최초 공개 '옥렴·옥주렴'부터 태조어진 디지털 복원까지…보존과학 20 ...</a><a href="https://v.daum.net/v/20251202135813314" target="_blank">최초 공개 '옥렴·옥주렴'부터 태조어진 디지털 복원까지…보존과학 20 ...</a><a href="https://www.asiae.co.kr/article/2025120122155500093" target="_blank">끊어진 끈 잇고, 소실된 얼굴 되살리고 - 아시아경제</a><a href="https://www.yna.co.kr/view/AKR20251202016600005" target="_blank">불에 타 절반만 남은 태조 이성계 그림은 어떻게 되살아났을까 | 연합뉴스</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

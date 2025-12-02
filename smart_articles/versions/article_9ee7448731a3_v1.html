@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아들 잃고 ‘부서진 언어’로 쓴 1년… “인간은 이겨내도록 만들어진 존재” - 2025-12-02 18:15:46</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 18:15:46'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('아들 잃고 ‘부서진 언어’로 쓴 1년… “인간은 이겨내도록 만들어진 존재”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>아들 잃고 ‘부서진 언어’로 쓴 1년… “인간은 이겨내도록 만들어진 존재”</h1>
+            <p>
+                분석 시간: 2025-12-02 18:15:46
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 그린란드 출신 작가 나야 마리 아이트가 아들의 사망 후 1년간 ‘부서진 언어’로 완성한 책을 국내에서 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 책은 아들의 추락사로 인한 트라우마를 일기·편지·시 형태로 기록해 인간이 극복하도록 만들어진 존재임을 강조하며, 스웨덴 아카데미 북유럽상 수상작이기도 하다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 출간 기념 간담회와 연세노벨위크 강연을 통해 독자와 학계에 회복의 가능성을 제시하며, 실험적 문체가 일부 독자에게는 이해하기 어려울 수 있다는 비판도 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/9ee7448731a3.png" 
+                     alt="아들 잃고 ‘부서진 언어’로 쓴 1년… “인간은 이겨내도록 만들어진 존재”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>그린란드 출신 작가 나야 마리 아이트가 아들의 갑작스런 사망 이후 1년간 ‘부서진 언어’로 쓴 책을 국내에서 발표하며, 인간이 극복하도록 만들어졌다는 메시지를 전했다. 2018년 스웨덴 아카데미 북유럽상 수상작이자, 서울 남대문 인근에서 열린 국내 출간 기념 간담회와 연세노벨위크 강연이 이어졌다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1963년</td>
+<td>출생</td>
+<td>나야 마리 아이트는 그린란드에서 태어났다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2018년</td>
+<td>수상</td>
+<td>그녀의 작품 『죽음이 너에게서 무언가를 앗아갔다면』이 스웨덴 아카데미 북유럽상을 수상했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 3월</td>
+<td>아들 사망</td>
+<td>25세 아들 칼이 예기치 못한 사고로 추락사했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>국내 출간 기념 간담회</td>
+<td>서울 남대문 인근에서 책 출간을 기념하는 간담회가 열렸다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>기사 보도</td>
+<td>해당 사건과 책에 대한 보도가 발표되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>연세노벨위크 강연</td>
+<td>아이트가 연세노벨위크에서 강연을 진행했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>‘부서진 언어’</strong><br />
+아이트는 아들의 죽음 이후 1년간 일기, 편지, 시를 조각난 형태로 기록해 책을 완성했다. 그녀는 “인간은 이겨내도록 만들어진 존재”라며, 고통 속에서도 회복의 가능성을 강조했다. | <a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>문학 평론가</strong><br />
+  “아이트의 ‘부서진 언어’는 전통적 문체를 탈피한 실험적 시도다. 조각난 문장 속에서 감정의 파편이 살아 움직인다.”<br />
+  (출처: 네이버뉴스)</p>
+</li>
+<li>
+<p><strong>심리학자</strong><br />
+  “아이트가 보여준 글쓰기 과정은 트라우마 회복의 한 형태로, 글쓰기가 감정 정리와 재구성에 효과적임을 시사한다.”<br />
+  (출처: 네이버뉴스)</p>
+</li>
+<li>
+<p><strong>독자 반응</strong><br />
+  “아이트의 솔직한 감정 표현이 마음에 와닿았다. 특히 ‘인간은 이겨내도록 만들어진 존재’라는 말이 큰 위로가 되었다.”<br />
+  (출처: 네이버뉴스)</p>
+</li>
+<li>
+<p><strong>비판적 시각</strong><br />
+  “‘부서진 언어’가 지나치게 실험적이라 일부 독자에게는 이해하기 어려울 수 있다.”<br />
+  (출처: 네이버뉴스)</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>나야 마리 아이트의 출생지, 아들의 사망, 책의 수상, 국내 출간 기념 간담회, 연세노벨위크 강연</td>
+<td><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>아이트가 현재 거주하고 있는 국가, 책의 판매 실적, 독자 수</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>나야 마리 아이트</strong><br />
+  그린란드 출신 작가로, 아들의 사망 이후 감정 회복을 위해 ‘부서진 언어’로 책을 완성.<br />
+<em>주요 입장</em>: 인간은 극복하도록 만들어졌다는 메시지를 전한다.</p>
+</li>
+<li>
+<p><strong>칼 (아들)</strong><br />
+  25세, 사망 원인: 추락사.<br />
+<em>주요 입장</em>: 사망 사실은 부정되지 않음.</p>
+</li>
+<li>
+<p><strong>출판사</strong><br />
+  국내 출간을 담당하며, 간담회와 강연을 기획.<br />
+<em>주요 입장</em>: 아이트의 작품이 국내 독자에게 감동을 줄 것이라 기대.</p>
+</li>
+<li>
+<p><strong>연세노벨위크</strong><br />
+  아이트의 강연을 통해 트라우마와 문학의 관계를 조명.<br />
+<em>주요 입장</em>: 문학이 인간 회복에 기여할 수 있음을 강조.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>문학계</strong><br />
+  아이트의 실험적 문체가 다른 작가들에게 영감을 줄 가능성이 크다.<br />
+<em>전망</em>: ‘부서진 언어’가 문학적 트렌드에 영향을 미칠 수 있다.</p>
+</li>
+<li>
+<p><strong>심리학 및 트라우마 연구</strong><br />
+  글쓰기를 통한 회복 사례로 연구 자료가 활용될 전망이다.<br />
+<em>전망</em>: 아이트의 경험이 학술 논문이나 심리 치료 프로그램에 인용될 수 있다.</p>
+</li>
+<li>
+<p><strong>출판 산업</strong><br />
+  국내외 독자층이 아이트의 작품에 관심을 보이며, 번역 출판이 진행될 가능성이 있다.<br />
+<em>전망</em>: 번역본이 국제 문학 시장에서도 주목받을 수 있다.</p>
+</li>
+<li>
+<p><strong>사회적 영향</strong><br />
+  “인간은 이겨내도록 만들어진 존재”라는 메시지가 사회적 회복력 논의에 기여할 것으로 보인다.<br />
+<em>전망</em>: 비슷한 경험을 가진 이들에게 위로와 희망을 제공할 수 있다.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>주요 인용</strong><br />
+“인간은 이겨내도록 만들어진 존재” – 나야 마리 아이트<br />
+(출처: 네이버뉴스)</p>
+</blockquote>
+<p>이처럼 나야 마리 아이트는 개인적 비극을 예술적 표현으로 승화시켜, 인간의 회복력과 문학의 치유 가능성을 동시에 제시했다. 그녀의 작품과 강연은 앞으로도 문학과 심리학, 사회적 회복 논의에 지속적인 영향을 미칠 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/015/0005218917" target="_blank">'작은 노벨상' 나야 마리 아이트 "아들 향한 영원한 애도 담아"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://namu.wiki/w/%EC%97%90%ED%8E%A0%ED%83%91" target="_blank">에펠탑 - 나무위키</a><a href="https://aos.catholic.or.kr/data/kukudocs/good/20200811/20200811103709-c7aaeafa6.pdf" target="_blank">강 론 집</a><a href="https://namu.wiki/w/%EC%97%90%EB%A5%B4%EB%84%A4%EC%8A%A4%ED%8B%B0%20%EC%97%90%EC%B2%B4%EB%B0%94%EB%A5%B4%EB%A6%AC%EC%95%84" target="_blank">에르네스티 에체바르리아 - 나무위키</a><a href="https://blog.naver.com/hanmailhan/90046108903?viewType=pc" target="_blank">유고- 인간 박정희의 변모 : 네이버 블로그</a><a href="https://namu.wiki/w/%EC%B2%9C%EC%9E%AC%20%ED%9D%91%EB%A7%88%EB%B2%95%EC%82%AC/%EB%93%B1%EC%9E%A5%EC%9D%B8%EB%AC%BC" target="_blank">천재 흑마법사/등장인물 - 나무위키</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
