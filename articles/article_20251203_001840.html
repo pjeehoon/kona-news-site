@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>항공안전법 국회 본회의 통과…국힘 "대북전단금지법 부활" 반발 - 2025-12-03 00:18:40</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,국회,항공법,대북전단">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="국회,항공법,대북전단">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 00:18:40'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('항공안전법 국회 본회의 통과…국힘 "대북전단금지법 부활" 반발')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>항공안전법 국회 본회의 통과…국힘 "대북전단금지법 부활" 반발</h1>
+            <p>
+                분석 시간: 2025-12-03 00:18:40
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 12월 2일 국회 본회의에서 항공안전법 개정안이 156대 77으로 통과되면서 2kg 미만 무인기구 비행 금지와 대북전단 금지 조항이 재등장했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 개정안은 2023년 헌법재판소가 대북전단 금지 조항을 위헌 판결한 사실과 북한 오물풍선으로 인한 172건의 항공기 지연 사례를 근거로 항공 안전 확보를 주장한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 논란은 표현의 자유와 항공 안전 사이의 균형을 재검토하게 만들며, 향후 입법 심사와 규제 강화에 대한 기대와 우려가 동시에 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/3a2e758159cf.png" 
+                     alt="항공안전법 국회 본회의 통과…국힘 "대북전단금지법 부활" 반발" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>12월 2일 국회 본회의에서 항공안전법 개정안이 156대 77으로 통과돼 2 kg 미만 무인기구(풍선 등)의 비행을 금지하고 대북전단 금지 조항을 재등장시켰다. 여당과 야당, 인권단체가 입장 차이를 보이며 논란이 고조되고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>2025 12 02</strong> 국회 본회의에서 항공안전법 개정안이 <strong>찬성 156명, 반대 77명, 기권 1명</strong>으로 통과.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a>  </li>
+<li>개정안은 <strong>2 kg 미만 무인기구(풍선 등)의 비행 금지</strong>와 위반 시 처벌 규정을 포함.  </li>
+<li><strong>2023 ??</strong> 헌법재판소가 대북전단 금지 조항을 <strong>위헌</strong> 판결.  </li>
+<li>해당 판결은 개정안이 헌법을 우회하려는 시도로 비판받는 근거가 됨.  </li>
+<li><strong>2024 06 21</strong> 자유북한운동연합이 <strong>대북전단</strong>을 살포.  </li>
+<li><a href="https://www.news1.kr/politics/assembly/5923638" target="_blank">뉴스1</a>  </li>
+<li>대북전단과 북한 오물풍선으로 인한 <strong>항공기 지연 사례 172건</strong>이 기록.  </li>
+<li><a href="https://news.kbs.co.kr/news/view.do?ncd=8368080" target="_blank">KBS</a>  </li>
+<li><strong>이종욱(국민의힘)</strong>은 개정안이 헌법재판소 위헌 결정을 우회하려는 “꼼수” 입법이라며 항공안전과 무관하다고 주장.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a>  </li>
+<li><strong>복기왕(민주당)</strong>은 172건의 항공기 지연 사례를 들어 개정안이 항공 안전에 직접적 영향을 미친다고 주장.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a>  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>입장</th>
+<th>핵심 주장</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>국민의힘</strong></td>
+<td>개정안은 <strong>입법 독재</strong>이며 헌법을 무시한 꼼수 입법</td>
+<td>헌재 위헌 판결을 우회하려는 시도, 항공안전 핑계 어설프다는 비판</td>
+</tr>
+<tr>
+<td><strong>민주당</strong></td>
+<td>개정안은 <strong>항공 안전 확보</strong>를 위한 필수 조치</td>
+<td>172건 항공기 지연 사례, 북한 오물풍선으로 인한 위험성</td>
+</tr>
+<tr>
+<td><strong>인권단체</strong></td>
+<td>대북전단 금지 조항은 <strong>표현의 자유</strong>를 부당하게 제한</td>
+<td>대북전단이 표현의 자유에 해당한다는 주장</td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>법안의 <strong>법적 타당성</strong>은 헌법재판소 판결을 고려해야 함</td>
+<td>헌법재판소 판결이 개정안의 일부 조항을 위헌으로 판단할 가능성</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>이종욱</strong>은 “항공안전이라는 핑계는 ‘어설픈’ 것이라며 헌법을 무시한 입법 독재”라고 비판했다.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a>  </li>
+<li><strong>복기왕</strong>은 “항공 안전에 직접적 영향을 미친 사례가 많아 개정안이 필요하다”고 해명했다.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a>  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>2025 12 02 국회 본회의에서 항공안전법 개정안이 156대 77으로 통과</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>개정안은 2 kg 미만 무인기구 비행 금지 및 처벌 규정 포함</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2023년 헌법재판소가 대북전단 금지 조항을 위헌 판결</td>
+<td>헌법재판소 판결문 (공식 기록)</td>
+</tr>
+<tr>
+<td></td>
+<td>2024 06 21 자유북한운동연합이 대북전단 살포</td>
+<td><a href="https://www.news1.kr/politics/assembly/5923638" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td></td>
+<td>대북전단과 북한 오물풍선으로 인한 항공기 지연 사례 172건</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8368080" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>개정안이 항공 안전과 전혀 무관하다는 주장</td>
+<td>아직 공식 입장 발표 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>입법이 자유 표현을 부당하게 제한한다는 주장</td>
+<td>인권단체 의견, 공식 입장 미확인</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>소속</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>이종욱</strong></td>
+<td>국민의힘</td>
+<td>개정안 비판</td>
+<td>헌법 준수와 표현의 자유 보호</td>
+</tr>
+<tr>
+<td><strong>복기왕</strong></td>
+<td>민주당</td>
+<td>개정안 지지</td>
+<td>항공 안전 확보 및 북한의 위협 대응</td>
+</tr>
+<tr>
+<td><strong>국회 국토위</strong></td>
+<td>국회</td>
+<td>개정안 통과</td>
+<td>국가 안보와 항공 안전 강화</td>
+</tr>
+<tr>
+<td><strong>자유북한운동연합</strong></td>
+<td>비정부기구</td>
+<td>대북전단 살포</td>
+<td>북한과의 비공식 교류 촉진</td>
+</tr>
+<tr>
+<td><strong>인권단체</strong></td>
+<td>비정부기구</td>
+<td>대북전단 금지 조항 반대</td>
+<td>표현의 자유 보호</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 검토</strong>: 헌법재판소가 개정안의 일부 조항을 다시 검토할 가능성이 있다.  </li>
+<li><strong>실행 단계</strong>: 경찰 기동대 배치와 같은 실질적 실행이 진행될 것이며, 항공사와 공항 당국은 새로운 규정을 준수해야 한다.  </li>
+<li><strong>정치적 반응</strong>: 야당과 인권단체는 계속해서 입법의 정당성을 논의할 것이며, 여당은 항공 안전 확보를 강조할 전망이다.  </li>
+<li><strong>국제적 영향</strong>: 북한과의 비공식 교류가 줄어들면서 한반도 안보 상황에 미치는 영향이 주목된다.  </li>
+</ul>
+<p><strong>▶ 새로운 사실:</strong> 2025 12 02 국회 본회의에서 항공안전법 개정안이 156대 77으로 통과돼 2 kg 미만 무인기구 비행을 금지하고 대북전단 금지 조항을 재등장시켰다. 이로써 항공 안전과 표현의 자유 사이의 갈등이 다시 한 번 표면화되었다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013635227" target="_blank">'대북전단 금지' 항공안전법 개정안 국회 통과…국힘 "꼼수 입법"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.news1.kr/politics/assembly/5923638" target="_blank">'비행구역 내 대북전단 금지' 항공안전법, 與주도 국토위 소위 통과 ...</a><a href="https://www.bbc.com/korean/news-55313983" target="_blank">대북전단금지법 통과 두고 북한인권단체들 '과잉입법' 우려하는 이유 ...</a><a href="https://gnews.gg.go.kr/news/news_detail.do?number=202506270929435825C048&s_code=C048&newsType=N" target="_blank">[경기도가 막는다. 대북전단 살포] ③ 경기도의 노력-2 : 사회 : 경기도 ...</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8368080" target="_blank">'대북전단 금지' 항공법, 여당 주도 처리…야 “김여정 하명법”</a><a href="https://www.chosun.com/politics/north_korea/2025/06/16/TVZ65UAF4JGCDOVVLC4K6D5L3Y/" target="_blank">대북전단 처벌 세부 규정 만든다... 접경지에 경찰 기동대도 배치</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
