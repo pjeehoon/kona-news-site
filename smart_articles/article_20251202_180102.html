@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'빅쇼트' 버리, AI 거품론 이어 "테슬라도 고평가" - 2025-12-02 18:01:02</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,버리,테슬라,마스코">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="버리,테슬라,마스코">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 18:01:02'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'빅쇼트\' 버리, AI 거품론 이어 "테슬라도 고평가"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'빅쇼트' 버리, AI 거품론 이어 "테슬라도 고평가"</h1>
+            <p>
+                분석 시간: 2025-12-02 18:01:02
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 마이클 버리가 테슬라 주가를 과대평가했다고 주장하며 비판을 제기했고, 주가는 0.01% 하락하며 마감했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 버리는 Musk의 1조 달러 보상 패키지와 연간 3.6% 주식 희석, 유럽 매출 50% 감소를 지적했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 반면 애널리스트들은 테슬라의 기술력과 성장 전망을 지지하며 주가 과대평가 우려를 완화하고, 시장은 여전히 주의 깊게 관찰하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/194cee8c8a0e.png" 
+                     alt="'빅쇼트' 버리, AI 거품론 이어 "테슬라도 고평가"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 12월 2일, 빅쇼트 투자자 마이클 버리가 테슬라 주가 과대평가를 주장하며 비판을 제기했다. 주가는 0.01 % 하락했고, 시장은 배당·주식발행·Musk 보상 패키지 등에 주목했다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 년 11월 ??</td>
+<td>테슬라 주주총회</td>
+<td><strong>Elon Musk</strong>의 10년간 최대 1 조 달러 보상 패키지가 승인됨</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12월 1일</td>
+<td>버리의 비판 공개</td>
+<td><strong>마이클 버리</strong>가 테슬라 주가를 “과도하게 과대평가”라고 주장</td>
+<td><a href="https://www.youtube.com/watch?v=A9rSO8cAG-c" target="_blank">Yahoo Finance</a></td>
+</tr>
+<tr>
+<td>2025 년 12월 2일</td>
+<td>주가 반응</td>
+<td>테슬라 주가가 <strong>$430.14</strong>로 마감, 전일 대비 0.01 % 하락</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 년 12월 2일</td>
+<td>유럽 판매 감소</td>
+<td>유럽에서 11월 분 매출이 50 % 이상 감소</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>주요 비판 포인트</strong><br />
+- 테슬라가 연간 <strong>3.6 %</strong>의 주식 희석을 초래하는 신규 주식 발행을 지속해 왔음.<br />
+- 보상 패키지에 따라 <strong>Musk</strong>의 지분이 15 %에서 29 %로 증가할 가능성.<br />
+- 현재 시가 총액이 <strong>$8.5 조</strong>에 달하면 지분 비율이 29 %에 도달할 것이라는 주장.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>입장</th>
+<th>핵심 인용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reuters, Fox Business</strong></td>
+<td>과대평가 주장</td>
+<td>“Tesla’s market cap has been excessively inflated for a long period.”</td>
+</tr>
+<tr>
+<td><strong>Wall Street 애널리스트</strong></td>
+<td>긍정적</td>
+<td>“대부분의 애널리스트가 Tesla의 가치와 전망을 지지한다.”</td>
+</tr>
+<tr>
+<td><strong>Dan Ives (Wedbush Securities)</strong></td>
+<td>긍정적</td>
+<td>“Musk의 비전과 Tesla의 장기 가치는 여전히 신뢰할 만하다.”</td>
+</tr>
+<tr>
+<td><strong>YouTube (Yahoo Finance)</strong></td>
+<td>비판</td>
+<td>“Tesla is ridiculously overvalued.”</td>
+</tr>
+<tr>
+<td><strong>YouTube (Capital Conversations)</strong></td>
+<td>비판</td>
+<td>“2026년 시장 붕괴가 예상되는 분야는 Tesla.”</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>버리</strong>는 과거 ‘빅쇼트’로 유명하며, 이번 비판은 <strong>AI 거품론</strong>과 연계해 테슬라를 비판한다.  </li>
+<li>반면, <strong>애널리스트</strong>들은 테슬라의 기술력과 성장 전망을 강조하며 <strong>주가 과대평가</strong>에 대한 우려를 완화한다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>테슬라가 연간 3.6 % 주식 희석을 초래</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Musk의 보상 패키지가 승인됨</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>주가가 $430.14로 마감</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>유럽 매출이 50 % 이상 감소</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>테슬라 시가 총액이 과대평가되었다는 주장</td>
+<td><a href="https://www.reuters.com" target="_blank">Reuters, Fox Business</a></td>
+</tr>
+<tr>
+<td></td>
+<td>보상 패키지가 지분 비율을 29 %로 증가시킬 것</td>
+<td><a href="https://www.reuters.com" target="_blank">Reuters, Fox Business</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>미확인</strong> 항목은 버리의 주장에 기반하며, 현재 시장 데이터와 직접적으로 일치하지 않는다.  </li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>마이클 버리</strong>  </li>
+<li>과거 ‘빅쇼트’로 유명한 헤지펀드 매니저.  </li>
+<li>테슬라 주가 과대평가와 Musk 보상 패키지에 대해 공개적으로 비판.  </li>
+<li><strong>Elon Musk</strong>  </li>
+<li>테슬라 CEO, 10년간 최대 1 조 달러 보상 패키지 승인.  </li>
+<li>보상 패키지로 인해 지분 비율이 증가할 가능성.  </li>
+<li><strong>Wall Street 애널리스트</strong>  </li>
+<li>대부분이 테슬라를 긍정적으로 평가, 주가 과대평가에 대한 우려를 최소화.  </li>
+<li><strong>투자자</strong>  </li>
+<li>버리의 비판에 반응해 일부는 매도, 일부는 매수.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>주가 변동성</strong>: 버리의 비판이 시장에 미치는 영향은 단기적이며, 주가가 다시 상승할 가능성도 있다.  </li>
+<li><strong>Musk 보상 패키지</strong>: 시가 총액이 $8.5 조에 도달하면 지분 비율이 29 %로 증가할 수 있어, 주주 구조에 큰 변화를 가져올 수 있다.  </li>
+<li><strong>유럽 매출 감소</strong>: 유럽 시장에서의 매출 감소가 지속된다면, 테슬라의 글로벌 성장 전망이 재검토될 가능성.  </li>
+<li><strong>애널리스트 전망</strong>: 대부분이 긍정적이지만, 과대평가 우려가 지속될 경우 일부 애널리스트가 평가를 재조정할 수 있다.  </li>
+</ul>
+<p><strong>요약</strong><br />
+마이클 버리가 테슬라 주가 과대평가를 주장하며 비판을 제기한 2025년 12월 2일, 주가는 소폭 하락했다. 버리의 주장은 주식 희석과 Musk 보상 패키지에 초점을 맞추고 있으나, 대부분의 애널리스트는 테슬라의 장기 가치를 지지한다. 향후 주가 변동성과 보상 패키지의 영향이 주요 이슈가 될 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=A9rSO8cAG-c" target="_blank">Michael Burry takes aim at Tes...</a><a href="https://www.youtube.com/watch?v=OFyvvTVYywY" target="_blank">Michael Burry: If I Had to Bet...</a><a href="https://www.youtube.com/watch?v=XG5OsbGsyYc" target="_blank">[머플] 버리의 아픈손가락 &#39;테슬라&#39; 이...</a><a href="https://www.youtube.com/watch?v=CEC4VsyyJ2Y" target="_blank">Tesla Stock &quot;Ridiculously...</a><a href="https://www.youtube.com/watch?v=Q8nURy-rGVY" target="_blank">Michael Burry: The Fed&#39;s 2...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005687589" target="_blank">'AI 거품론' 마이클 버리, 테슬라에 "상당 기간 과대평가"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://fortune.com/2025/12/01/big-short-investor-michael-burry-short-bet-tesla-stock-tsla-elon-musk-ridiculously-overvalued/" target="_blank">'Big Short' investor Michael Burry revives a short...</a><a href="https://www.businessinsider.com/michael-burry-tesla-ridiculously-overvalued-elon-musk-2025-12" target="_blank">Michael Burry Says Tesla Is 'Ridiculously Overvalu...</a><a href="https://qz.com/michael-burry-tesla-overvalued-elon-musk-big-short" target="_blank">Michael Burry says Tesla stock is 'ridiculously ov...</a><a href="https://finance.yahoo.com/news/michael-burry-says-tesla-is-ridiculously-overvalued-slams-musk-pay-package-150113993.html" target="_blank">Michael Burry says Tesla is 'ridiculously overvalu...</a><a href="https://electrek.co/2025/12/01/the-big-short-michael-burry-slams-tesla-tsla/" target="_blank">'The Big Short' Michael Burry slams Tesla (TSLA) v...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
