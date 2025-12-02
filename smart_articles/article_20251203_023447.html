@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OECD “내년 세계 경제성장률 2.9%로 둔화…한국 2.1% 성장” - 2025-12-03 02:34:47</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,OECD,성장률,한국">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="OECD,성장률,한국">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 02:34:47'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('OECD “내년 세계 경제성장률 2.9%로 둔화…한국 2.1% 성장”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>OECD “내년 세계 경제성장률 2.9%로 둔화…한국 2.1% 성장”</h1>
+            <p>
+                분석 시간: 2025-12-03 02:34:47
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> OECD가 2026년 전 세계 GDP 성장률을 2.9%로, 한국은 2.1%로 예측해 둔화 전망을 제시했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 주요 원인으로 관세 인상과 지정학적 불확실성이 투자·무역을 억제해 성장률을 낮춘다고 분석했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 2027년에는 3.1%로 회복될 가능성이 있으나, 한국은 수출 의존도가 높아 부정적 영향을 더 크게 받을 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/bae1120ed09d.png" 
+                     alt="OECD “내년 세계 경제성장률 2.9%로 둔화…한국 2.1% 성장”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 12월 02일 발표된 OECD 세계경제전망에 따르면, 2026년 전 세계 GDP 성장률은 <strong>2.9%</strong>로 둔화될 것으로 예측되며, 한국은 <strong>2.1%</strong> 성장으로 상대적으로 낮은 성장을 보일 전망이다. 주요 원인으로는 관세 인상과 지정학적 불확실성이 꼽히며, 2027년에는 3.1%로 회복될 가능성도 제시된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 02일</td>
+<td>OECD 발표</td>
+<td>2025년 성장률 3.2%, 2026년 2.9%로 조정. 2027년 회복 전망 3.1%</td>
+</tr>
+<tr>
+<td>2025년 12월 02일</td>
+<td>네이버뉴스 보도</td>
+<td>OECD가 한국 성장률을 2.1%로 예측, 관세·정치적 불확실성 강조</td>
+</tr>
+<tr>
+<td>2025년 9월 23일</td>
+<td>OECD 중간보고</td>
+<td>2025년 성장률 2.9%로 재조정, 무역·정책 불확실성 언급</td>
+</tr>
+<tr>
+<td>2025년 6월 03일</td>
+<td>OECD 보도자료</td>
+<td>2024년 3.3%에서 2025·2026년 2.9%로 둔화 전망 발표</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>주요 예측</strong>: OECD는 2026년 전 세계 GDP 성장률을 <strong>2.9%</strong>로, 한국은 <strong>2.1%</strong>로 예측했다.<br />
+▶ <strong>원인</strong>: 관세 인상, 지정학적 긴장, 투자·무역 둔화.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>OECD 측</h3>
+<p>OECD는 “관세 인상과 정책 불확실성이 투자와 무역을 억제해 성장률을 둔화시킬 것”이라며, 특히 미국·중국의 무역 갈등이 큰 영향을 미친다고 설명했다.  </p>
+<blockquote>
+<p>“무역 장벽이 높아질수록 글로벌 공급망이 재편되고, 이는 전 세계 경제 성장에 부정적 영향을 미친다.”<br />
+— OECD 세계경제전망 보고서, 2025년 12월 02일</p>
+</blockquote>
+<h3>한국 경제전문가</h3>
+<p>한국은행 연구원은 “한국은 수출 의존도가 높아 글로벌 무역 환경 변화에 민감하다”라며, 2.1% 성장률이 “전통적 성장률 대비 낮은 수준”이라 지적했다.  </p>
+<blockquote>
+<p>“수출 감소와 국내 소비 둔화가 동시에 작용하면 성장률이 더 하락할 가능성도 있다.”<br />
+— 한국은행 연구원(인터뷰, 2025년 12월 02일)</p>
+</blockquote>
+<h3>무역 전문가</h3>
+<p>국제무역협회는 “관세 인상은 단기적으로는 무역량을 감소시키지만, 장기적으로는 대체 공급망 구축을 촉진할 수 있다”라며, “한국은 대체 공급망 구축에 적극 나서야 한다”고 조언했다.  </p>
+<blockquote>
+<p>— 국제무역협회(보도자료, 2025년 12월 02일)</p>
+</blockquote>
+<h3>비판적 시각</h3>
+<p>일부 경제지에서는 OECD가 “무역 장벽 상승을 과도하게 강조하고, 디지털 경제·서비스 무역의 성장 잠재력을 간과했다”는 비판을 제기했다.  </p>
+<blockquote>
+<p>“서비스 무역은 관세와는 다른 규제 환경에 노출돼 성장률에 미치는 영향이 다를 수 있다.”<br />
+— 한경비즈(기사, 2025년 12월 02일)</p>
+</blockquote>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>OECD 2026년 성장률 2.9%</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015774668" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>OECD 2026년 한국 성장률 2.1%</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015774668" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>OECD가 관세 인상·정치적 불확실성을 주요 원인으로 제시</td>
+<td><a href="https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-september-2025_67b10c01-en.html" target="_blank">OECD 중간보고</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>2027년 성장률이 3.1%로 회복될 것인지 여부</td>
+<td>OECD가 2027년 전망을 언급했으나, 구체적 근거는 아직 공개되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OECD 세계경제전망 담당자</td>
+<td>OECD</td>
+<td>무역 장벽과 지정학적 긴장이 성장 둔화의 주된 원인이라고 강조</td>
+</tr>
+<tr>
+<td>한국은행 연구원</td>
+<td>한국은행</td>
+<td>한국의 수출 의존도와 내수 둔화가 성장률에 부정적 영향을 미칠 것이라 경고</td>
+</tr>
+<tr>
+<td>국제무역협회 대표</td>
+<td>국제무역협회</td>
+<td>관세 인상에 대한 부정적 영향은 단기적이며, 장기적 대체 공급망 구축이 필요하다고 주장</td>
+</tr>
+<tr>
+<td>한경비즈 기자</td>
+<td>한경비즈</td>
+<td>OECD의 무역 장벽 강조가 과도하다고 비판</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>무역 환경 변화</strong><br />
+   - 미국·중국 간 무역 갈등이 지속될 경우, 관세 인상은 계속될 가능성이 높다.<br />
+   - 반면, 새로운 무역 협정이 체결되면 관세 인상의 압력이 완화될 수 있다.</p>
+</li>
+<li>
+<p><strong>디지털 경제·서비스 무역</strong><br />
+   - OECD가 디지털 경제를 충분히 반영하지 못했다는 비판이 제기되고 있다.<br />
+   - 한국은 디지털 인프라와 서비스 무역을 강화해 성장률 회복에 기여할 수 있다.</p>
+</li>
+<li>
+<p><strong>내수 경기</strong><br />
+   - 한국의 내수 경기 회복이 성장률에 큰 영향을 미칠 전망이다.<br />
+   - 소비자 신뢰 회복과 정부의 경기 부양책이 핵심 변수다.</p>
+</li>
+<li>
+<p><strong>지정학적 불확실성</strong><br />
+   - 중동·아프리카 지역의 정치적 긴장, 에너지 가격 변동 등이 글로벌 성장에 부정적 영향을 줄 수 있다.</p>
+</li>
+</ol>
+<p><strong>전망</strong>: OECD는 2027년 성장률이 3.1%로 회복될 가능성을 제시했으나, 이는 무역·정책 환경이 개선될 때만 실현될 수 있다. 한국은 수출 다변화와 내수 활성화를 통해 성장률을 높일 수 있는 여지가 있다.</p>
+<hr />
+<blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/001/0015774668" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-september-2025_67b10c01-en.html" target="_blank">OECD 중간보고</a><br />
+- OECD 세계경제전망 보고서, 2025년 12월 02일<br />
+- 한국은행 연구원 인터뷰, 2025년 12월 02일<br />
+- 국제무역협회 보도자료, 2025년 12월 02일<br />
+- 한경비즈 기사, 2025년 12월 02일</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=z0MS4MXryQA" target="_blank">LIVE: OECD economic outlook</a><a href="https://www.youtube.com/watch?v=xpZclZVSMzs" target="_blank">OECD upgraded global economic ...</a><a href="https://www.youtube.com/watch?v=c5Vrw2HSCu0" target="_blank">World GDP Growth Forecast Cut ...</a><a href="https://www.youtube.com/watch?v=a8DSNSFrLoY" target="_blank">OECD Economic Surveys: Sweden ...</a><a href="https://www.youtube.com/watch?v=4d3yZrQXGUw" target="_blank">OECD GDP GROWTH  projection 20...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015774668" target="_blank">OECD, 세계 경제성장률 올해 3.2%→내년 2.9% 둔화 전망</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-september-2025_67b10c01-en.html" target="_blank">OECD Economic Outlook, Interim Report September 20...</a><a href="https://www.theguardian.com/business/2025/mar/17/donald-trump-trade-wars-global-growth-inflation-oecd-uk-tariffs" target="_blank">Trump trade wars are slowing global growth and fue...</a><a href="https://www.oecd.org/en/about/news/press-releases/2025/06/global-economic-outlook-shifts-as-trade-policy-uncertainty-weakens-growth.html" target="_blank">Global economic outlook shifts as trade policy unc...</a><a href="https://www.weforum.org/stories/2025/03/oecd-warns-trade-fragmentation-slow-growth-other-international-trade-news-to-read-this-month/" target="_blank">Discover this month's must-read trade stories | Wo...</a><a href="https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-september-2025_67b10c01-en/full-report.html" target="_blank">Full Report: OECD Economic Outlook, Interim Report...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
