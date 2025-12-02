@@ -1,5 +1,125 @@
 [
   {
+    "id": "72e6971e7c91",
+    "title": "국힘 “대통령실특활비 82억 반영…예산, 여야 원만한 타협”",
+    "created_at": "2025-12-02T11:42:30.987074+09:00",
+    "last_updated": "2025-12-02T11:42:30.987074+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "국민의힘",
+        "대통령실",
+        "특활비"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "dc9f6b499cb6",
+    "title": "'막대한 투자' 자랑하더니 보안 허술…'김범석 책임론' 커진다",
+    "created_at": "2025-12-02T11:40:37.269216+09:00",
+    "last_updated": "2025-12-02T11:40:37.269216+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "쿠팡",
+        "김범석",
+        "개인정보"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "cbf3f78d399b",
+    "title": "불법계엄 1년 D-1···민주당 “12월3일, 민주화운동 기념일로 지정하겠다”",
+    "created_at": "2025-12-02T11:36:15.873507+09:00",
+    "last_updated": "2025-12-02T11:36:15.873507+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "사회"
+      ],
+      "content_tags": [
+        "민주당",
+        "김병기"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "ae1860bfd5c1",
+    "title": "‘최순실 태블릿 조작설’ 변희재, 다시 법정구속…항소심 징역 2년",
+    "created_at": "2025-12-02T11:31:25.093931+09:00",
+    "last_updated": "2025-12-02T11:31:25.093931+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "변희재",
+        "최순실",
+        "태블릿"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "c78784ec29a6",
+    "title": "김이탁 국토1차관 \"공급대책 후속조치에 정부 역량 총동원\"",
+    "created_at": "2025-12-02T11:27:15.101617+09:00",
+    "last_updated": "2025-12-02T11:27:15.101617+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "경제"
+      ],
+      "content_tags": [
+        "김이탁",
+        "국토교통"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "f46753a3d690",
     "title": "소비자단체 \"쿠팡 김범석 사죄하라…징벌적 손해배상 조속 도입\"",
     "created_at": "2025-12-02T11:12:30.907427+09:00",
