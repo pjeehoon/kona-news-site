@@ -1,5 +1,127 @@
 [
   {
+    "id": "357157f0ed0f",
+    "title": "크루즈터미널 ‘무인 자동심사대’ 도입…입국심사 단축",
+    "created_at": "2025-12-02T22:41:27.340573+09:00",
+    "last_updated": "2025-12-02T22:41:27.340573+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "제주",
+        "크루즈",
+        "무인심사"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "287e16a8ed0b",
+    "title": "교황, 첫 해외 순방 마무리…베이루트 해안 미사",
+    "created_at": "2025-12-02T22:39:58.591719+09:00",
+    "last_updated": "2025-12-02T22:39:58.591719+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "국제",
+        "사회"
+      ],
+      "content_tags": [
+        "Pope Leo 14"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "74c111988fad",
+    "title": "다카이치 \"닥치고 일본에 투자해\"…\"센스있다\" vs \"아슬아슬\"",
+    "created_at": "2025-12-02T22:38:33.671743+09:00",
+    "last_updated": "2025-12-02T22:38:33.671743+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "경제"
+      ],
+      "content_tags": [
+        "다카이치",
+        "FII Priority Asia Summit",
+        "진격의 거인",
+        "일본 투자",
+        "사우디아라비아"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "b4ec56ec6c45",
+    "title": "올트먼, 신사업 중단 '코드 레드' 선포…챗GPT '올인'",
+    "created_at": "2025-12-02T22:36:49.304982+09:00",
+    "last_updated": "2025-12-02T22:36:49.304982+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "샘올트먼",
+        "오픈AI",
+        "챗GPT"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "d2809f190bc7",
+    "title": "밤마다 사라진 담배 트럭…세금 61억 피한 ‘역밀수’",
+    "created_at": "2025-12-02T22:31:36.212956+09:00",
+    "last_updated": "2025-12-02T22:31:36.212956+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "서울세관",
+        "역밀수",
+        "담배세금"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "48010968d6aa",
     "title": "'미래 대응 능력' 최고 도시는 영국 런던…서울은 몇위?",
     "created_at": "2025-12-02T22:21:35.664995+09:00",
