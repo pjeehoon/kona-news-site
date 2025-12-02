@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"나 완전 건강"…트럼프, 건강이상설에 심장·복부 MRI 결과 공개 - 2025-12-02 08:56:02</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-02 08:56:02'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"나 완전 건강"…트럼프, 건강이상설에 심장·복부 MRI 결과 공개')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"나 완전 건강"…트럼프, 건강이상설에 심장·복부 MRI 결과 공개</h1>
+            <p>
+                분석 시간: 2025-12-02 08:56:02
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 트럼프 대통령은 12월 1일 발표에서 Walter Reed 병원에서 실시한 심장·복부 MRI 결과가 정상이라며 “완전 건강”이라고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 인지 기능 테스트도 통과했으며, MRI 결과는 곧 공식적으로 공개될 예정이라고 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 정상 결과가 발표되면 공중의 건강 우려가 완화될 가능성이 높지만, 일부 보수층은 여전히 비판적일 수 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/02/fd62ccd527f0.png" 
+                     alt=""나 완전 건강"…트럼프, 건강이상설에 심장·복부 MRI 결과 공개" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>트럼프 대통령이 10월에 Walter Reed 병원에서 실시한 심장·복부 MRI가 정상으로 나왔다고 밝혔습니다. 그는 인지 기능 테스트도 통과했으며, 결과는 곧 공개될 예정이라고 말했습니다.  </p>
+<h3>주요 사실과 경과</h3>
+<p>▶ <strong>2025년 10월</strong> – 트럼프는 Walter Reed 군사 의료 센터에서 <strong>심장·복부 MRI</strong>를 포함한 정기 건강검진을 받았습니다.<br />
+▶ <strong>2025년 11월 30일</strong> – Air Force One 비행 중 AP 기자에게 “MRI는 뇌가 아니라 심장·복부이며, 결과는 완벽하다”고 답변했습니다.<br />
+▶ <strong>2025년 12월 1일</strong> – Reuters가 보도하며 트럼프가 MRI 결과를 곧 공개하겠다고 선언했습니다.<br />
+▶ <strong>2025년 12월 1일</strong> – 트럼프는 인지 기능 테스트를 통과했으며, “전반적인 건강은 ‘완전’하고 ‘엄청난’ 상태”라고 말했습니다.  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>Reuters</strong>는 트럼프가 “완전 건강”이라고 강조한 점을 보도했으며, 결과 공개를 약속했습니다.  </li>
+<li><strong>AP</strong>는 트럼프가 MRI가 뇌가 아니라고 명확히 했지만, 여전히 일부 보도에서는 뇌 스캔 여부를 의심했습니다.  </li>
+<li><strong>New York Times</strong>는 트럼프의 최근 공개 모습이 “활력 저하”를 보여 건강에 대한 우려를 제기했습니다.  </li>
+<li><strong>ABC 7</strong>와 <strong>NBC News</strong>는 MRI가 심장·복부에 초점을 맞춘 예방적 스크리닝이었다고 해석했습니다.  </li>
+<li><strong>Cardiovascular Business</strong>는 트럼프의 심장 상태가 정상이라며, “심장 질환 위험이 낮다”는 의견을 제시했습니다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>트럼프가 10월에 Walter Reed 병원에서 심장·복부 MRI를 받았으며, 결과는 정상</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005285594" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프가 인지 기능 테스트를 통과했다</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005285594" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>MRI는 뇌가 아니라 심장·복부에 초점을 맞췄다</td>
+<td><a href="https://n.news.naver.com/mnews/article/008/0005285594" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>MRI가 뇌 스캔이었다는 주장</td>
+<td>추정, 확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>트럼프의 부상(멍, 부기)이 심각한 질환을 시사한다는 주장</td>
+<td>추정, 확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>도널드 J 트럼프</strong> – 미국 대통령, 건강 상태가 정치적·공공적 관심사.  </li>
+<li><strong>Sean P. Barbabella</strong> – 백악관 의사, MRI 결과를 “정상”이라고 평가.  </li>
+<li><strong>AP·Reuters·NYT 기자들</strong> – 보도와 해석을 통해 공중의 인식을 형성.  </li>
+<li><strong>의료 전문가</strong> – MRI 결과를 바탕으로 트럼프의 장기 건강 전망을 논의.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>MRI 결과 공개</strong>: 트럼프가 12월 중순에 결과를 공식 발표할 가능성이 높습니다.  </li>
+<li><strong>공중 인식</strong>: 정상 결과가 발표되면 건강에 대한 우려가 완화될 수 있으나, 일부 보수층은 여전히 비판적일 수 있습니다.  </li>
+<li><strong>정치적 활용</strong>: 정상 결과를 활용해 트럼프는 연설·정책 발표 시 “건강한 리더십”을 강조할 수 있습니다.  </li>
+<li><strong>미래 검진</strong>: 79세 대통령의 경우 정기 검진이 필수적이며, 향후 추가 검사 결과가 주목받을 것입니다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 트럼프가 “완전 건강”이라고 선언한 것은 12월 1일 보도 이후 가장 큰 주목을 받는 사실이며, 결과 공개는 곧 이어질 전망입니다.  </p>
+</blockquote>
+<hr />
+<p><strong>참고 링크</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/008/0005285594" target="_blank">네이버뉴스</a><br />
+- <a href="https://abc7.com/post/doctor-says-trump-had-preventative-screening-mri-heart-abdomen-perfectly-normal-results/18236127/" target="_blank">ABC 7</a><br />
+- <a href="https://www.nbcnews.com/politics/donald-trump/white-house-trump-underwent-mri-heart-abdomen-october-normal-rcna246837" target="_blank">NBC News</a><br />
+- <a href="https://news.sky.com/story/white-house-issues-update-on-donald-trumps-health-as-president-undergoes-mri-scan-13478072" target="_blank">Sky News</a><br />
+- <a href="https://abcnews.go.com/US/white-house-physician-trumps-imaging-test-results-perfectly/story?id=128010313" target="_blank">ABC News</a><br />
+- <a href="https://cardiovascularbusiness.com/topics/clinical/heart-health/cardiologist-seeks-answers-about-trumps-health-after-mri" target="_blank">Cardiovascular Business</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=Noo2NfHVkrs" target="_blank">Reporter To Trump: 'What Do Yo...</a><a href="https://www.youtube.com/watch?v=D4YvaF5eLqw" target="_blank">Trump issues MAJOR immigration...</a><a href="https://www.youtube.com/watch?v=UCAql2DyGU2un1Ei2nMYsqOA" target="_blank">Donald J Trump</a><a href="https://www.youtube.com/watch?v=tsEzSRjBZd0" target="_blank">BREAKING: Trump's health resul...</a><a href="https://www.youtube.com/watch?v=u-IRFpAkchI" target="_blank">Donald Trump is going to want ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/008/0005285594" target="_blank">트럼프, 건강 이상설 적극 부인…"MRI 검사 결과 곧 공개"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.sky.com/story/white-house-issues-update-on-donald-trumps-health-as-president-undergoes-mri-scan-13478072" target="_blank">White House issues update on Donald Trump's health...</a><a href="https://abc7.com/post/doctor-says-trump-had-preventative-screening-mri-heart-abdomen-perfectly-normal-results/18236127/" target="_blank">Doctor says Trump had preventative screening MRI o...</a><a href="https://www.nbcnews.com/politics/donald-trump/white-house-trump-underwent-mri-heart-abdomen-october-normal-rcna246837" target="_blank">White House said Trump underwent MRI on heart, abd...</a><a href="https://cardiovascularbusiness.com/topics/clinical/heart-health/cardiologist-seeks-answers-about-trumps-health-after-mri" target="_blank">Cardiologist seeks answers about Trump's health af...</a><a href="https://abcnews.go.com/US/white-house-physician-trumps-imaging-test-results-perfectly/story?id=128010313" target="_blank">White House physician says Trump's imaging test re...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
