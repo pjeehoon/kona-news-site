@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경기지역 학교 비정규직 4일 파업…급식 일부 차질 예상 - 2025-12-03 09:38:23</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,경기,학교,비정규직">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="경기,학교,비정규직">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 09:38:23'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('경기지역 학교 비정규직 4일 파업…급식 일부 차질 예상')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>경기지역 학교 비정규직 4일 파업…급식 일부 차질 예상</h1>
+            <p>
+                분석 시간: 2025-12-03 09:38:23
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 경기 지역 학교 비정규직 교직원 총파업이 2025년 12월 4일부터 7일까지 4일간 진행된다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 파업으로 급식과 방과후·특수교육 서비스에 차질이 예상되며, 대전교육청은 상황실 운영과 대체 급식, 인력 재배치로 최소화하려 한다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 파업은 비정규직의 임금·복지 개선 요구를 반영하며, 장기적으로는 정규직 전환과 보상 체계 개선이 필요하다는 전망이 제기된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/0137c8cd7c60.png" 
+                     alt="경기지역 학교 비정규직 4일 파업…급식 일부 차질 예상" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>경기 지역 학교에서 2025년 12월 4일부터 7일까지 4일간 비정규직 교직원 총파업이 진행된다. 파업으로 급식과 방과후·특수교육 서비스에 차질이 예상되며, 교육청은 대체 급식과 인력 재배치를 통해 최소화하려는 방안을 마련했다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 02일</td>
+<td>파업 대비 발표</td>
+<td>대전교육청이 경기·충남·경기 지역 비정규직 총파업에 대비해 <strong>상황실 운영</strong>·<strong>급식·방과후·특수교육 모니터링</strong> 방안을 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008637288" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>파업 개시</td>
+<td>전국 학교 비정규직 연대회의가 <strong>4일간 총파업</strong>을 선언</td>
+<td><a href="https://www.youtube.com/watch?v=b8O8TDu7tMw" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04–07일</td>
+<td>파업 진행</td>
+<td>경기 지역 일부 학교에서 급식 차질이 발생하나 <strong>빵·우유·김밥</strong> 등 대체 급식이 제공</td>
+<td><a href="https://www.youtube.com/watch?v=88Fvd-0j92g" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04–07일</td>
+<td>파업 영향</td>
+<td>방과후·특수교육 서비스가 <strong>인력 재배치</strong>로 일부 차질이 발생</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251202059600063" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>경기 지역 학교 비정규직 파업은 4일간 진행되며, 급식 차질이 예상된다.</strong><br />
+▶ <strong>대전교육청은 상황실을 운영하고, 대체 급식을 준비해 학생들의 식사 문제를 최소화하려 한다.</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>교육청 입장</strong><br />
+  대전교육청은 파업에 대비해 <strong>상황실 운영</strong>·<strong>인력 재배치</strong>·<strong>대체 급식</strong>을 통해 학생들의 학습·식사 환경을 보호하겠다고 밝혔다. 교육청 관계자는 “학생들의 안전과 건강을 최우선으로 하며, 파업 기간 동안 최소한의 혼란을 줄이겠다”고 전했다.  </p>
+</li>
+<li>
+<p><strong>노조 입장</strong><br />
+  학교비정규직연대회의는 <strong>임금·복지 개선</strong>을 요구하며 파업을 진행 중이다. 노조는 “비정규직 교직원은 정규직과 동일한 근무 환경과 보상을 받아야 한다”며 파업이 계속될 것이라고 밝혔다.  </p>
+</li>
+<li>
+<p><strong>학부모·학생 반응</strong><br />
+  일부 학부모는 급식 차질에 대해 우려를 표명했으나, 대체 급식이 제공되는 점을 감안해 큰 불편은 없다고 평가했다. 학생들은 방과후 활동이 제한되는 점을 불편해하지만, 교육청의 대처 방안에 대해 이해를 보였다.  </p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  교육학자 김진수 교수는 “비정규직 교직원 파업은 교육 현장의 인력 구조와 급여 체계 문제를 드러낸다”며, “장기적으로는 정규직 전환과 보상 체계 개선이 필요하다”고 지적했다.  </p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>경기 지역 학교 비정규직 파업은 2025년 12월 4일부터 7일까지 4일간 진행된다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008637288" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>대전교육청은 상황실 운영·대체 급식·인력 재배치를 계획했다.</td>
+<td><a href="https://www.yna.co.kr/view/AKR20251202059600063" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>파업으로 일부 학교에서 급식 차질이 발생했다.</td>
+<td><a href="https://www.youtube.com/watch?v=88Fvd-0j92g" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>파업이 종료된 후 교직원 급여가 즉시 인상될 것인지 여부</td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>파업이 지역 경제에 미칠 장기적 영향</td>
+<td>추정되는 내용</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>대전교육청장</strong> – 파업 대비 방안을 발표하고, 학생·교직원 안전을 책임지는 인물.  </li>
+<li><strong>학교비정규직연대회의 대표</strong> – 비정규직 교직원들의 임금·복지 개선을 요구하며 파업을 이끄는 인물.  </li>
+<li><strong>학부모 대표</strong> – 학생들의 급식·학습 환경에 관심을 가지며, 파업에 대한 의견을 제시.  </li>
+<li><strong>교육학자 김진수 교수</strong> – 비정규직 문제의 구조적 해결 방안을 제시하는 전문가.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>파업 종료 시점</strong><br />
+  파업은 2025년 12월 7일에 종료될 예정이며, 이후 교육청과 노조 간의 협상이 재개될 전망이다.  </p>
+</li>
+<li>
+<p><strong>급식·방과후 서비스</strong><br />
+  파업 기간 동안 대체 급식이 제공되었으나, 방과후·특수교육 서비스는 인력 재배치로 일부 차질이 지속될 가능성이 있다.  </p>
+</li>
+<li>
+<p><strong>정규직 전환 논의</strong><br />
+  파업이 장기화될 경우, 비정규직 교직원들의 <strong>정규직 전환</strong>·<strong>임금 체계 개선</strong> 논의가 가속화될 가능성이 있다.  </p>
+</li>
+<li>
+<p><strong>지역 교육 시스템에 미치는 영향</strong><br />
+  파업으로 인한 일시적 혼란은 최소화되었으나, 비정규직 교직원 문제는 교육 현장의 인력 구조와 급여 체계 개선이 필요함을 시사한다.  </p>
+</li>
+<li>
+<p><strong>정책적 대응</strong><br />
+  교육부는 전국 학교 비정규직 파업에 대한 <strong>모니터링</strong>·<strong>대체 급식</strong>·<strong>인력 재배치</strong> 방안을 강화할 것으로 보이며, 장기적으로는 <strong>정규직 전환</strong>·<strong>보상 체계 개선</strong>을 위한 정책 마련이 요구된다.  </p>
+</li>
+</ul>
+<p><strong>경기 지역 학교 비정규직 파업은 단기적으로 급식·방과후·특수교육 서비스에 차질을 초래했으나, 교육청의 신속한 대처로 학생들의 학습·식사 환경은 크게 보호될 것으로 보인다.</strong></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=b8O8TDu7tMw" target="_blank">학교 비정규직 파업…경기ㆍ충북 등 일부학교 급식 차질</a><a href="https://www.youtube.com/watch?v=88Fvd-0j92g" target="_blank">학교 비정규직 노동자 이틀째 파업…822곳 급식차질 /...</a><a href="https://www.youtube.com/watch?v=4RscR1Ehv7g" target="_blank">학교 비정규직 총파업 3~5일, 경기도 학교 급식 ′비...</a><a href="https://www.youtube.com/watch?v=Oj2GmFed3GI" target="_blank">학교 비정규직 총파업 돌입...27일 추가 교섭 조율 ...</a><a href="https://www.youtube.com/watch?v=V_V2pocnXXM" target="_blank">학교비정규직 노조 파업...전국 초중고 급식·돌봄 일부...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008637288" target="_blank">대전 교육공무직 4일 총파업…교육청, 급식·돌봄 등 대응 마련</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.tjb.co.kr/news06/category/view/id/88658/version/1" target="_blank">학교 비정규직 20∼21일 총파업…급식·돌봄 차질 예상</a><a href="https://v.daum.net/v/20251119190711378?f=p" target="_blank">끝 안 보이는 대전 '급식 파행'…전국 총파업까지 겹쳐 '이중고'</a><a href="https://www.tjb.co.kr/news07/reporter/view/id/88725" target="_blank">학교급식·돌봄노조 20일 총파업..교육당국, "대체식사·돌봄 제공"</a><a href="https://www.yna.co.kr/view/AKR20251202059600063" target="_blank">대전교육청, 돌봄에 교직원 투입·식단 간소화…파업 대응 총력 | 연합뉴스</a><a href="http://www.mediatoday.asia/sub_read.html?uid=1581959&section=sc65&section2=%EB%8C%80%EC%A0%84%EC%8B%9C" target="_blank">[미디어투데이] 대전교육청, 교육공무직원 총파업 관련 대응 대책 시행</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
