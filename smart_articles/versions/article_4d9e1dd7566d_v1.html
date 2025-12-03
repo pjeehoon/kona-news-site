@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"日, '내년 G7 시진핑 초청 검토' 프랑스에 신중 대응 요구" - 2025-12-04 03:17:15</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,시진핑,G7,프랑스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="시진핑,G7,프랑스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 03:17:15'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"日, \'내년 G7 시진핑 초청 검토\' 프랑스에 신중 대응 요구"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"日, '내년 G7 시진핑 초청 검토' 프랑스에 신중 대응 요구"</h1>
+            <p>
+                분석 시간: 2025-12-04 03:17:15
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 일본은 프랑스가 2026년 G7 정상회담에 중국 국가주석 시진핑을 초청할 가능성을 검토 중이라고 주장하며, G7의 자유·민주주의·법의 지배와 중국의 가치가 부합하지 않는다고 우려했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 프랑스는 2025년 12월 3일 마크롱 대통령이 중국을 국빈 방문하면서 시진핑 초청을 검토 중이며, 일본은 이에 대해 신중한 대응을 요구했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사안은 G7 내에서 정치적 긴장을 초래할 가능성이 있어, 일본은 중국과의 관계 재정비와 G7 내 입지 강화를 위해 프랑스와의 협상을 조심스럽게 진행할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/4d9e1dd7566d.png" 
+                     alt=""日, '내년 G7 시진핑 초청 검토' 프랑스에 신중 대응 요구"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>일본은 프랑스가 2026년 G7 정상회담에 중국 국가주석 시진핑을 초청할 가능성을 검토 중이라며, <strong>“G7이 지향하는 자유·민주주의·법의 지배”와 중국의 가치관이 일치하지 않는다</strong>는 우려를 표명했다. 프랑스는 2025년 12월 3일에 마크롱 대통령이 중국을 국빈 방문할 예정인 가운데, 일본은 프랑스와의 협상에서 신중한 태도를 요구했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 3일</td>
+<td>프랑스가 내년 G7 정상회담에 시진핑 초청을 검토 중임을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001313010" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>일본 총리(키시다 후미오)가 프랑스에 신중 대응을 요구</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001313010" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>마크롱 대통령이 중국을 국빈 방문 시작</td>
+<td><a href="https://biz.chosun.com/en/en-international/2025/12/03/4MRP4JC6IBEAPLYGC5AYBNTHQU/" target="_blank">비즈니스조선</a></td>
+</tr>
+<tr>
+<td>2025년 12월 5일</td>
+<td>마크롱 대통령이 중국 방문 종료</td>
+<td>비공식 보도</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>프랑스는 2026년 G7 정상회담에 시진핑 초청을 검토 중</strong>이며, 이는 일본이 우려하는 핵심 사안이다.<br />
+▶ <strong>일본은 G7이 추구하는 가치와 중국이 공유하지 않는다고 판단</strong>하고, 프랑스와의 협상에서 신중한 대응을 요구했다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>일본 측</strong><br />
+  일본은 G7 정상회담이 “자유·민주주의·법의 지배”를 기반으로 한 국제 질서의 상징이라고 강조했다. 시진핑 초청은 이러한 가치와 충돌할 수 있다는 우려를 표명하며, <strong>“다른 회원국과 중국 관련 문제를 공유하기 어려울 것”</strong>이라고 밝혔다. 이는 일본이 중국과의 관계를 재정비하면서도 G7 내에서의 입지를 강화하려는 전략적 판단으로 해석된다.  </p>
+</li>
+<li>
+<p><strong>프랑스 측</strong><br />
+  프랑스는 중국과의 대화를 통해 <strong>경제·안보 협력</strong>을 확대하려는 의도를 갖고 있다. 프랑스 정부는 G7 정상회담이 <strong>다양한 국가의 참여를 장려</strong>하는 플랫폼이라며, 시진핑 초청이 <strong>대화의 폭을 넓히는 기회</strong>가 될 수 있다고 주장한다.  </p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  국제정치학자들은 프랑스의 초청 검토가 <strong>“대화의 문을 열어 두는 전략”</strong>이라 평가하면서도, <strong>G7 내부의 가치 충돌</strong>이 발생할 가능성은 무시할 수 없다고 지적했다. 한 학자는 “프랑스가 시진핑을 초청하면 G7 내에서 <strong>정치적 긴장</strong>이 고조될 수 있다”고 경고했다.  </p>
+</li>
+<li>
+<p><strong>일반 시민 시각</strong><br />
+  일본 내 일부 시민 단체는 <strong>중국과의 경제 협력</strong>을 확대하는 것이 필요하다고 주장하지만, <strong>정치적 가치 충돌</strong>을 우려한다. 반면, 프랑스 시민 중 일부는 <strong>중국과의 대화를 통해 유럽의 글로벌 영향력을 강화</strong>할 수 있다고 보는 견해도 있다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>프랑스가 2026년 G7 정상회담에 시진핑 초청을 검토 중</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001313010" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>일본 총리가 프랑스에 신중 대응을 요구</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001313010" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>마크롱 대통령이 2025년 12월 3일에 중국을 국빈 방문</td>
+<td><a href="https://biz.chosun.com/en/en-international/2025/12/03/4MRP4JC6IBEAPLYGC5AYBNTHQU/" target="_blank">비즈니스조선</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>시진핑이 G7 정상회담에 참석하면 중국 관련 문제를 다른 회원국과 공유하기 어려울 것</td>
+<td>일본 총리 발언에 대한 <strong>추정</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>프랑스가 시진핑 초청을 통해 중국과의 관계를 강화하려는 의도</td>
+<td>프랑스 정부 공식 입장 미확인</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>키시다 후미오</strong></td>
+<td>일본 총리</td>
+<td>G7 가치와 중국 가치 충돌 우려</td>
+<td>일본의 국제적 입지 강화, 안보·경제적 이익</td>
+</tr>
+<tr>
+<td><strong>에마뉘엘 마크롱</strong></td>
+<td>프랑스 대통령</td>
+<td>중국과의 대화 확대</td>
+<td>프랑스의 글로벌 영향력 확대, 경제 협력</td>
+</tr>
+<tr>
+<td><strong>시진핑</strong></td>
+<td>중국 국가주석</td>
+<td>G7 정상회담 참여 가능성</td>
+<td>중국의 국제적 위상 강화, 경제·안보 협력</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>프랑스와 일본의 협상</strong><br />
+  프랑스는 G7 정상회담에서 <strong>다양한 국가의 참여</strong>를 강조하면서도, 일본이 제기한 가치 충돌 우려를 완화할 방안을 모색할 가능성이 있다.  </li>
+<li><strong>G7 정상회담의 진행</strong><br />
+  2026년 정상회담이 개최될 때, <strong>시진핑 초청 여부</strong>가 핵심 이슈가 될 것이며, 이는 G7 내부의 <strong>정치적 균형</strong>과 <strong>대외 정책</strong>에 큰 영향을 미칠 수 있다.  </li>
+<li><strong>중국과 유럽의 관계</strong><br />
+  프랑스가 중국과의 대화를 확대하려는 시도는 <strong>유럽 연합 내에서의 중국 정책</strong>에 변화를 가져올 수 있다. 일본은 이에 대해 <strong>경계적</strong>이지만, 경제적 이익을 위해 <strong>대화의 필요성</strong>을 인정할 수도 있다.  </li>
+<li><strong>국제 사회의 반응</strong><br />
+  미국과 다른 G7 국가들은 <strong>중국과의 대화</strong>를 지지하면서도 <strong>인권·자유·법의 지배</strong>를 강조할 가능성이 있다. 이는 G7 내부에서 <strong>정치적 긴장</strong>을 유발할 수 있다.</li>
+</ul>
+<p><strong>요약</strong><br />
+프랑스가 2026년 G7 정상회담에 시진핑 초청을 검토 중인 가운데, 일본은 G7의 핵심 가치와 중국의 가치가 일치하지 않는다고 우려하며 신중한 대응을 요구했다. 프랑스와 일본은 각각 <strong>대화 확대</strong>와 <strong>가치 충돌</strong>를 중심으로 입장을 조율할 것으로 보이며, 이는 2026년 정상회담과 이후 국제정치에 중요한 변수가 될 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=8tQiB_mFvaA" target="_blank">Device explodes near Japan's p...</a><a href="https://www.youtube.com/watch?v=E11f_ZT0h8k" target="_blank">Japanese Prime Minister Fumio ...</a><a href="https://www.youtube.com/watch?v=wNiJB95bB-I" target="_blank">Japan's new Prime Minister Fum...</a><a href="https://www.youtube.com/watch?v=K82VT1SEvcU" target="_blank">Japan's PM Fumio Kishida calls...</a><a href="https://www.youtube.com/watch?v=p7STX0iQNZc" target="_blank">Japanese Prime Minister Fumio ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/055/0001313010" target="_blank">"일본, '내년 G7 시진핑 초청 검토' 프랑스에 신중 대응 요구"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.aljazeera.com/news/2023/3/21/japans-fumio-kishida-heads-to-kyiv-to-meet-volodymyr-zelenskyy" target="_blank">Japan's Fumio Kishida heads to Kyiv to meet Volody...</a><a href="http://www.ifri.org/en/media-external-article/does-macrons-stance-taiwan-weaken-g7-deterrence-against-china" target="_blank">Does Macron's stance on Taiwan weaken G7 deterrenc...</a><a href="https://time.com/6278122/fumio-kishida-japan-prime-minister-interview-g7/" target="_blank">Exclusive: Fumio Kishida on Plans for a More Asser...</a><a href="https://biz.chosun.com/en/en-international/2025/12/03/4MRP4JC6IBEAPLYGC5AYBNTHQU/" target="_blank">Japan urges caution as France considers inviting X...</a><a href="https://www.nytimes.com/2023/03/21/world/europe/japan-kishida-ukraine.html" target="_blank">Japan's Prime Minister Fumio Kishida Visits Ukrain...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
