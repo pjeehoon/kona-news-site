@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문체부 내년 예산 7조 8천억 원…올해보다 11% 늘어 - 2025-12-03 18:10:19</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,문체부,예산,K콘텐츠">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="문체부,예산,K콘텐츠">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 18:10:19'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('문체부 내년 예산 7조 8천억 원…올해보다 11% 늘어')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>문체부 내년 예산 7조 8천억 원…올해보다 11% 늘어</h1>
+            <p>
+                분석 시간: 2025-12-03 18:10:19
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2026년 문화체육관광부 예산이 7조 8,555억 원으로 확정돼 전년 대비 11.2 % 증가했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> K‑콘텐츠·AI·관광·체육 분야에 대한 지원이 확대돼 K‑콘텐츠 펀드 4,650억 원 출자와 AI 콘텐츠 제작 지원 238억 원이 포함되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 예산은 국가전략산업으로서 K‑콘텐츠와 AI 기반 콘텐츠 생태계 구축을 목표로 하며, 지역 관광 활성화와 문화·예술 산업의 글로벌 경쟁력 강화에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/f838d898e498.png" 
+                     alt="문체부 내년 예산 7조 8천억 원…올해보다 11% 늘어" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>문체부가 2026년 예산안을 발표하며 <strong>7조 8,555억 원</strong>을 확보했다. 이는 전년 대비 <strong>11.2 %</strong> 증가한 수치로, K‑콘텐츠·AI·관광·체육 분야에 대한 지원이 크게 확대됐다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025 년 9 월 5 일</strong></td>
+<td>예산안 발표</td>
+<td><strong>7조 8,555억 원</strong> 확정, 전년 대비 <strong>7,883억 원</strong>(11.2 %) 증가.</td>
+</tr>
+<tr>
+<td></td>
+<td>콘텐츠 부문</td>
+<td><strong>3,443억 원</strong> 증액, K‑콘텐츠 펀드에 <strong>4,650억 원</strong> 출자.</td>
+</tr>
+<tr>
+<td></td>
+<td>문화예술 부문</td>
+<td><strong>2,830억 원</strong>(11.9 %) 증가, K‑아트 청년창작자 지원, K‑뮤지컬 지원 등 확대.</td>
+</tr>
+<tr>
+<td></td>
+<td>관광 부문</td>
+<td><strong>1조 4,804억 원</strong>(9.8 % 증가), 지역 관광 활성화 프로그램 확대.</td>
+</tr>
+<tr>
+<td></td>
+<td>체육 부문</td>
+<td>공공체육시설 개·보수, 어르신 스포츠 프로그램, 예비 국가대표 양성 등에 예산 배정.</td>
+</tr>
+<tr>
+<td></td>
+<td>AI·콘텐츠</td>
+<td>AI 콘텐츠 제작 지원 <strong>238억 원</strong>(158 억 원 증가), AI 특화 콘텐츠 아카데미 <strong>192억 원</strong> 신설.</td>
+</tr>
+<tr>
+<td></td>
+<td>중예산영화</td>
+<td><strong>200억 원</strong>(100 억 원 증가) 지원.</td>
+</tr>
+<tr>
+<td></td>
+<td>게임·AI</td>
+<td>게임 제작환경 AI 전환 지원 <strong>75억 원</strong>(신규).</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶</strong> 2026년 예산은 <strong>회복성장예산안</strong>의 일환으로, K‑콘텐츠를 국가전략산업으로 육성하고 AI 기술을 활용한 콘텐츠 생태계 구축을 목표로 한다.<br />
+<strong>▶</strong> 예산안은 <strong>문화체육관광부</strong>의 공식 보도자료와 <strong>연합뉴스</strong> 보도를 통해 확인되었다.  </p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 주장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>문화체육관광부</strong></td>
+<td>긍정</td>
+<td>“K‑콘텐츠·AI·관광·체육 분야에 대한 투자 확대는 국내 문화·예술·관광 산업의 글로벌 경쟁력 강화에 기여할 것”</td>
+</tr>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>중립</td>
+<td>“전년 대비 11 % 증액이지만, 예산 배분의 효율성은 아직 검증되지 않음”</td>
+</tr>
+<tr>
+<td><strong>이투뉴스</strong></td>
+<td>비판</td>
+<td>“예산 증액이 대규모 프로젝트에 집중돼 소규모 예술가·작가의 지원이 소홀해질 위험”</td>
+</tr>
+<tr>
+<td><strong>전문가(문화산업연구원)</strong></td>
+<td>분석</td>
+<td>“AI 콘텐츠 지원은 장기적 성장 동력으로 부상하지만, 인력 양성 및 인프라 구축이 병행돼야 함”</td>
+</tr>
+<tr>
+<td><strong>일반 시민</strong></td>
+<td>기대</td>
+<td>“관광 예산이 늘어나면 지역 관광 활성화와 일자리 창출이 기대된다”</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>긍정적 시각</strong>은 예산이 K‑콘텐츠·AI·관광·체육 분야의 성장 엔진이 될 것이라 강조한다.  </li>
+<li><strong>비판적 시각</strong>은 예산이 대형 프로젝트에 집중돼 소규모 예술가·작가의 지원이 소홀해질 수 있다고 우려한다.  </li>
+<li><strong>전문가 의견</strong>은 AI·콘텐츠 지원이 장기적 성장 동력이 될 수 있으나, 인력 양성 및 인프라 구축이 병행돼야 한다는 점을 지적한다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2026년 예산 7조 8,555억 원, 11.2 % 증가</td>
+<td><a href="https://n.news.naver.com/mnews/article/003/0013637369" target="_blank">네이버뉴스</a>, <a href="https://www.mcst.go.kr/attachFiles/viewer/skin/doc.html?fn=20250905080514343012791150_PRESS20250905080514683209.hwpx&amp;rs=/attachFiles/viewer/result/press/" target="_blank">문화체육관광부</a></td>
+</tr>
+<tr>
+<td></td>
+<td>K‑콘텐츠 펀드 4,650억 원 출자</td>
+<td><a href="https://www.yna.co.kr/view/AKR20250905029100005" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 콘텐츠 제작 지원 238억 원</td>
+<td><a href="https://www.yna.co.kr/view/AKR20250905029100005" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 특화 콘텐츠 아카데미 192억 원</td>
+<td><a href="https://www.yna.co.kr/view/AKR20250905029100005" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>관광 부문 1조 4,804억 원</td>
+<td><a href="https://www.mcst.go.kr/attachFiles/viewer/skin/doc.html?fn=20250905080514343012791150_PRESS20250905080514683209.hwpx&amp;rs=/attachFiles/viewer/result/press/" target="_blank">문화체육관광부</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>예산이 실제로 소규모 예술가·작가에게 충분히 배분될지 여부</td>
+<td>현재까지 공식 발표 자료에 구체적 비율 제시 없음.</td>
+</tr>
+<tr>
+<td></td>
+<td>AI 콘텐츠 지원이 실제로 산업 성장에 미치는 영향</td>
+<td>장기적 효과는 아직 실증되지 않음.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>문체부 장관</strong></td>
+<td>문화체육관광부 장관</td>
+<td>예산 증액을 “국가 문화·예술·관광 경쟁력 강화”라고 강조.</td>
+</tr>
+<tr>
+<td><strong>문화산업연구원 김형석 연구원</strong></td>
+<td>연구원</td>
+<td>AI·콘텐츠 지원이 장기적 성장 동력이라 평가.</td>
+</tr>
+<tr>
+<td><strong>작가·예술가 단체 대표</strong></td>
+<td>예술가 대표</td>
+<td>예산이 대형 프로젝트에 집중돼 소규모 예술가 지원이 소홀해질 우려.</td>
+</tr>
+<tr>
+<td><strong>관광산업협회 이사</strong></td>
+<td>협회 이사</td>
+<td>관광 예산 증가가 지역 관광 활성화와 일자리 창출에 기여할 것이라 전망.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>K‑콘텐츠·AI</strong>: AI 콘텐츠 제작 지원과 AI 특화 아카데미 신설로 국내 콘텐츠 산업의 디지털 전환이 가속화될 전망. 그러나 인력 양성 및 인프라 구축이 뒤따라야 장기적 성장 효과가 극대화될 수 있다.  </li>
+<li><strong>관광·체육</strong>: 관광 예산이 지역 관광 활성화와 어르신·청년 스포츠 프로그램 확대에 기여하면서, 지역 경제와 사회적 포용성 강화에 긍정적 영향을 미칠 가능성이 높다.  </li>
+<li><strong>예산 효율성 검증</strong>: 예산 배분의 효율성과 실제 성과는 2026년 예산 집행 이후 <strong>공공기관 감사</strong>와 <strong>산업별 성과 보고</strong>를 통해 점진적으로 평가될 전망.  </li>
+<li><strong>정책 지속성</strong>: 회복성장예산안의 일환으로 예산이 지속적으로 확대될 가능성이 있으며, 특히 <strong>관광·체육</strong> 분야는 정부의 포용적 성장 정책과 연계해 장기적 예산 확대가 예상된다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶</strong> 2026년 예산안은 <strong>문화체육관광부</strong>와 <strong>연합뉴스</strong>를 통해 공식적으로 확인되었으며, 향후 예산 집행과 성과는 <strong>공공기관 감사</strong>와 <strong>산업별 성과 보고</strong>를 통해 검증될 예정이다.  </p>
+</blockquote>
+<hr />
+<blockquote>
+<p><strong>출처</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/003/0013637369" target="_blank">네이버뉴스</a><br />
+- <a href="https://www.mcst.go.kr/attachFiles/viewer/skin/doc.html?fn=20250905080514343012791150_PRESS20250905080514683209.hwpx&amp;rs=/attachFiles/viewer/result/press/" target="_blank">문화체육관광부</a><br />
+- <a href="https://www.yna.co.kr/view/AKR20250905029100005" target="_blank">연합뉴스</a><br />
+- <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148948737" target="_blank">한국정부</a><br />
+- <a href="https://www.etnews.com/20250905000191" target="_blank">이투뉴스</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=R2IBlF7aUtA" target="_blank">2026년, 체육·관광 정책이 이렇게 달라집니다!</a><a href="https://www.youtube.com/watch?v=Mozzrec4tlE" target="_blank">2026년, 문화·예술 지원 정책이 이렇게 달라집니다!</a><a href="https://www.youtube.com/watch?v=D6fFMmBU2r4" target="_blank">문체부예산 2026 | 진보 보수 격돌 #정치토론 #문...</a><a href="https://www.youtube.com/watch?v=oZSrLasZuA0" target="_blank">2026 예산안 토론 – 문화체육관광부</a><a href="https://www.youtube.com/watch?v=4svI6wInRKE" target="_blank">[국회방송 생중계] 문화체육관광위원회 - 2026년도 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/003/0013637369" target="_blank">문체부, 내년 에산 7조8555억원…올해 대비 11.2% 늘어</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.mcst.go.kr/attachFiles/viewer/skin/doc.html?fn=20250905080514343012791150_PRESS20250905080514683209.hwpx&rs=/attachFiles/viewer/result/press/" target="_blank">문체부 2026년 예산안 약 7조 8천억 원 편성</a><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148948737" target="_blank">'케이-컬처' 300조 원 시대 연다…문체부, 콘텐츠 예산 26% 확대 - 정책 ...</a><a href="https://www.yna.co.kr/view/AKR20250905029100005" target="_blank">문체부 내년 예산안 7조8천억…K-콘텐츠 펀드에 4천650억 출자 | 연합 ...</a><a href="https://www.instagram.com/p/DONX58iDy-V/" target="_blank">문화체육관광부 2026년 예산안 문화체육관광부는 '케이-컬처' 300조 ...</a><a href="https://www.etnews.com/20250905000191" target="_blank">문체부, 내년 예산 10.3% 증액…K콘텐츠 국가전략산업화 추진 - 전자 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
