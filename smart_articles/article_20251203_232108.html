@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다 - 2025-12-03 23:21:07</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,이재명,내란,암수술">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="이재명,내란,암수술">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 23:21:07'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다</h1>
+            <p>
+                분석 시간: 2025-12-03 23:21:07
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이재명 대통령은 12·3 특별성명에서 ‘내란 척결은 암 수술’이라고 비유하며, 내란 청산이 2026년 6월 지방선거까지 이어질 가능성을 시사했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 전담재판부 설치와 3대 특검(김건희·채해병·내란 특검)의 연장 가능성을 언급해 법적 절차가 장기화될 수 있음을 강조했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 발언은 정치권과 시민사회에서 다양한 반응을 불러일으키며, 내란 청산 과정이 선거까지 지속될 경우 정치적 안정성에 부정적 영향을 미칠 수 있다는 우려가 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/080e6b5cb72f.png" 
+                     alt="李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>이재명 대통령이 12·3 특별성명에서 ‘내란 척결은 암 수술’이라고 비유하며, 내란 청산 과정이 2026년 6월 지방선거까지 지속될 가능성을 시사했다.</strong> 이 발언은 전담재판부와 특검 연장 가능성까지 언급하며, 정치권과 시민사회에서 다양한 반응을 불러일으키고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 3일</td>
+<td>이재명 대통령이 12·3 특별성명에서 “내란 척결은 암 수술”이라고 비유, 내란 청산이 2026년 지방선거까지 이어질 가능성 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600426" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>용산 대통령실에서 기자간담회 및 오찬 간담회 진행</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600426" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2026년 6월</td>
+<td>예정된 지방선거</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>내란 전담 재판부 설치와 3대 특검(김건희·채해병·내란 특검) 연장 가능성 시사</td>
+<td><a href="https://www.chosun.com/politics/politics_general/2025/12/03/H6JOJSKSXNBQJNJDNCMRYJYGUI/" target="_blank">조선일보</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 발언</h3>
+<ul>
+<li><strong>“내란 척결은 암 수술”</strong>: 이재명 대통령은 내란 사태를 몸속 깊이 박힌 암에 비유하며, 수술이 완전하게 끝나기까지 시간이 걸릴 것이라고 강조했다.  </li>
+<li><strong>청산정국의 연장</strong>: “내란 사태는 현재도 진행 중”이라며, <strong>내년 6월 지방선거</strong>까지 청산 과정이 이어질 가능성이 높다고 언급했다.  </li>
+<li><strong>전담재판부·특검 연장</strong>: 내란 전담 재판부 설치와 <strong>3대 특검</strong>의 연장 가능성을 시사하며, 법적 절차가 장기화될 수 있음을 암시했다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>지지자</strong></td>
+<td>내란 청산을 위한 철저한 진상 규명과 법적 절차가 필요하다고 주장. 암 수술 비유가 현실적인 접근을 강조한다고 평가.</td>
+<td><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003188125" target="_blank">오마이뉴스</a></td>
+</tr>
+<tr>
+<td><strong>반대자</strong></td>
+<td>비유가 과장되며, 정치적 목적이 강하다고 비판. 청산정국이 선거까지 끌고 가면 정치적 안정성에 부정적 영향을 미칠 수 있다고 우려.</td>
+<td><a href="https://www.hani.co.kr/arti/politics/bluehouse/1232563.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td><strong>전문가</strong></td>
+<td>내란 사태가 복합적이며, 수사·재판이 장기화될 가능성이 높다고 분석. 전담재판부와 특검 연장은 법적 공정성을 확보하는 데 필요하다고 평가.</td>
+<td><a href="https://www.chosun.com/politics/politics_general/2025/12/03/H6JOJSKSXNBQJNJDNCMRYJYGUI/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>시민사회</strong></td>
+<td>청산정국이 정치적 갈등을 심화시킬 수 있다는 우려와 동시에, 진상 규명이 필요하다는 의견이 혼재.</td>
+<td><a href="https://v.daum.net/v/20251203174507583" target="_blank">다음</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>이재명 대통령이 12·3 특별성명에서 “내란 척결은 암 수술”이라고 비유했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600426" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>내란 청산이 2026년 6월 지방선거까지 이어질 가능성이 언급되었다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600426" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>전담재판부 설치와 3대 특검 연장 가능성이 시사되었다.</td>
+<td><a href="https://www.chosun.com/politics/politics_general/2025/12/03/H6JOJSKSXNBQJNJDNCMRYJYGUI/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>내란 청산이 실제로 선거까지 끌어당길 것인지에 대한 확정적 예측은 아직 없음.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이재명 대통령</strong>  </li>
+<li><strong>입장</strong>: 내란 사태를 철저히 진상 규명하고, 법적 절차를 통해 청산을 완수해야 한다는 입장.  </li>
+<li>
+<p><strong>이해관계</strong>: 정치적 정당성 확보와 내란 사태에 대한 책임 회피 방지.  </p>
+</li>
+<li>
+<p><strong>김건희·채해병·내란 특검</strong>  </p>
+</li>
+<li><strong>입장</strong>: 특검 연장이 필요하다는 의견이 제시됨.  </li>
+<li>
+<p><strong>이해관계</strong>: 수사·재판의 공정성 확보와 사건의 종결을 위한 지속적 역할.  </p>
+</li>
+<li>
+<p><strong>시민사회 단체</strong>  </p>
+</li>
+<li><strong>입장</strong>: 진상 규명과 공정성을 요구하지만, 정치적 갈등이 심화될 수 있다는 우려.  </li>
+<li><strong>이해관계</strong>: 사회적 신뢰 회복과 정치적 안정성.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차의 장기화</strong>  </li>
+<li>
+<p>전담재판부와 특검 연장이 실제로 실행될 경우, 내란 청산 과정이 <strong>2026년 지방선거</strong>까지 지속될 가능성이 높다. 이는 정치적 불안정성을 증가시킬 수 있다.  </p>
+</li>
+<li>
+<p><strong>정치적 파장</strong>  </p>
+</li>
+<li>
+<p>청산정국이 선거까지 이어지면, <strong>정당 간 갈등</strong>이 심화될 수 있으며, 선거 캠페인에 부정적 영향을 미칠 수 있다.  </p>
+</li>
+<li>
+<p><strong>공정성 확보</strong>  </p>
+</li>
+<li>
+<p>특검과 전담재판부의 독립적 운영이 강화된다면, <strong>진상 규명의 신뢰성</strong>이 높아질 수 있다.  </p>
+</li>
+<li>
+<p><strong>시민 반응</strong>  </p>
+</li>
+<li>진상 규명에 대한 기대와 동시에, 정치적 갈등이 장기화될 경우 <strong>시민 불만</strong>이 증가할 가능성이 있다.  </li>
+</ul>
+<p><strong>결론</strong><br />
+이재명 대통령의 ‘내란 척결은 암 수술’ 비유는 내란 사태의 복잡성과 장기적 해결 필요성을 강조한다. 그러나 청산정국이 2026년 지방선거까지 이어질 가능성은 정치적 파장과 시민 불만을 동시에 야기할 수 있는 위험 요소다. 향후 법적 절차와 정치적 협의가 어떻게 진행될지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/009/0005600426" target="_blank">李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003188125" target="_blank">'완전한 내란 종식' 천명한 이 대통령 "몸속 깊숙이 박힌 암 치료, 쉽게 안 ...</a><a href="https://www.chosun.com/politics/politics_general/2025/12/03/H6JOJSKSXNBQJNJDNCMRYJYGUI/" target="_blank">李대통령, 계엄 수사·처벌은 “몸속 깊이박힌 치명적 암 치료하는 것”</a><a href="https://www.hani.co.kr/arti/politics/bluehouse/1232563.html" target="_blank">이 대통령 “내란 청산, '통합'이 '봉합' 뜻하지 않아…적당히 못 넘어간다”</a><a href="https://v.daum.net/v/20251203174507583" target="_blank">李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다</a><a href="https://www.mk.co.kr/news/politics/11483455" target="_blank">李 "내란척결은 암 수술"… 내년 선거까지 청산정국 끌고간다 - 매일경제</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
