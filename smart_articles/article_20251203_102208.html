@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이버보안 기업 옥타, 3분기 실적 ‘깜짝 실적’에도 주가 하락[종목+] - 2025-12-03 10:22:08</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,뉴스">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 10:22:08'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('사이버보안 기업 옥타, 3분기 실적 ‘깜짝 실적’에도 주가 하락[종목+]')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>사이버보안 기업 옥타, 3분기 실적 ‘깜짝 실적’에도 주가 하락[종목+]</h1>
+            <p>
+                분석 시간: 2025-12-03 10:22:08
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 옥타가 3분기 실적을 예상치를 웃돌았으나 2027년 가이던스 부재로 주가가 3% 하락했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 3분기 EPS는 82센트, 매출은 742백만 달러이며, 4분기 매출 가이던스는 748–750백만 달러, EPS 가이던스는 84–85센트로 전년 대비 12% 성장했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 주가 하락은 단기적 압박이지만, AI 에이전트 성장과 향후 가이던스 발표가 장기적으로 주가를 회복시킬 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/fcbc725fe749.png" 
+                     alt="사이버보안 기업 옥타, 3분기 실적 ‘깜짝 실적’에도 주가 하락[종목+]" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 12월 2일 발표된 옥타의 3분기 실적이 예상치를 웃돌았지만, 2027년 가이던스 부재로 주가가 3% 하락했다. 기업은 AI 에이전트 성장과 계절 변동성을 이유로 가이던스를 미루었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>▶</th>
+<th>날짜</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>82센트</strong></td>
+<td>2025년 12월 2일</td>
+<td>3분기 주당순이익(EPS) 82센트(전년 대비 12% 성장)</td>
+</tr>
+<tr>
+<td><strong>742백만 달러</strong></td>
+<td>2025년 12월 2일</td>
+<td>3분기 매출 742백만 달러(전년 대비 12% 증가)</td>
+</tr>
+<tr>
+<td><strong>748–750백만 달러</strong></td>
+<td>2025년 12월 2일</td>
+<td>4분기 매출 가이던스 (연속 성장 예상)</td>
+</tr>
+<tr>
+<td><strong>84–85센트</strong></td>
+<td>2025년 12월 2일</td>
+<td>4분기 EPS 가이던스</td>
+</tr>
+<tr>
+<td><strong>3%</strong></td>
+<td>2025년 12월 2일</td>
+<td>장외 거래에서 주가 3% 하락</td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>기사 발표</td>
+<td>네이버 뉴스에서 실적 및 주가 반응 보도</td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>시장 애널리스트</strong><br />
+  시장 분석가들은 “옥타가 3분기 실적을 크게 웃겼음에도 불구하고, 2027년 가이던스 부재가 투자자들의 기대를 저해해 주가가 하락했다”라고 평가했다.<br />
+<a href="https://n.news.naver.com/mnews/article/015/0005219287" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>옥타 경영진</strong><br />
+  CEO Brett Tyg는 “가이던스를 제공하지 않는 이유는 과도한 보수주의를 피하고, 계절적 변동성 때문에 정확한 예측이 어렵다”라고 설명했다.<br />
+  (옥타 보도자료, 2025년 12월 2일)</p>
+</li>
+<li>
+<p><strong>AI 전략 담당자</strong><br />
+  Todd McKinnon은 “새로운 AI 에이전트가 아직 현재 실적에 완전히 반영되지 않았지만, 향후 5년간 옥타의 총 주소 가능 시장(TAM)을 확대할 것”이라고 밝혔다.<br />
+  (옥타 보도자료, 2025년 12월 2일)</p>
+</li>
+<li>
+<p><strong>투자자 시각</strong><br />
+  일부 투자자는 “가이던스 부재가 단기적으로는 부정적이지만, 장기적으로는 AI 성장과 함께 회복될 가능성이 있다”라고 의견을 제시했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th><strong>확인된 사실</strong></th>
+<th><strong>미확인/추정</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3분기 EPS 82센트</td>
+<td>투자자 불만이 3% 주가 하락의 직접 원인</td>
+</tr>
+<tr>
+<td>3분기 매출 742백만 달러</td>
+<td>가이던스 부재가 주가 하락의 유일한 원인</td>
+</tr>
+<tr>
+<td>4분기 매출 가이던스 748–750백만 달러</td>
+<td>AI 에이전트가 현재 실적에 미치는 영향 규모</td>
+</tr>
+<tr>
+<td>4분기 EPS 가이던스 84–85센트</td>
+<td>2027년 가이던스 부재가 장기적 성장에 미치는 영향</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>Brett Tyg</strong> – CEO, 옥타<br />
+  가이던스 부재를 정당화하며, 계절 변동성에 따른 예측 어려움을 강조.  </li>
+<li><strong>Todd McKinnon</strong> – AI 전략 담당자, 옥타<br />
+  AI 에이전트가 장기 성장에 기여할 것이라 주장.  </li>
+<li><strong>시장 애널리스트</strong> – 주가 반응 분석<br />
+  가이던스 부재를 부정적 요인으로 지적.  </li>
+<li><strong>투자자</strong> – 단기 수익과 장기 성장 사이에서 갈등<br />
+  가이던스 부재에 대한 불만과 AI 성장 기대가 상충.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>재무 전망</strong><br />
+  4분기 매출과 EPS 가이던스는 전년 대비 성장세를 유지할 것으로 예상된다.  </li>
+<li><strong>AI 에이전트</strong><br />
+  AI 기반 솔루션이 점진적으로 매출에 반영되면서, 옥타의 TAM이 확대될 가능성이 높다.  </li>
+<li><strong>주가 동향</strong><br />
+  가이던스 부재가 단기적으로 주가를 압박하지만, 장기적으로는 AI 성장과 매출 확대가 주가를 회복시킬 수 있다.  </li>
+<li><strong>투자자 관계</strong><br />
+  옥타는 향후 2027년 가이던스를 발표할 시점에 주가에 큰 영향을 미칠 것으로 보인다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/015/0005219287" target="_blank">네이버뉴스</a><br />
+- <a href="https://kr.investing.com/equities/okta-inc-earnings" target="_blank">Investing.com – 옥타 실적</a><br />
+- 옥타 Investor Relations – 2025년 12월 2일 보도자료 (링크는 공개되지 않음)</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=c0r1Rlv3E2Q" target="_blank">What Is Okta?</a><a href="https://www.youtube.com/watch?v=paOzJv42Yt0" target="_blank">Okta Explained: The Full Analy...</a><a href="https://www.youtube.com/watch?v=fIhEG9FUQDQ" target="_blank">OKTA Training | OKTA Online Co...</a><a href="https://www.youtube.com/watch?v=HjjK_6C2ayo" target="_blank">Learn about the security of th...</a><a href="https://www.youtube.com/watch?v=to7JPUu3PKw" target="_blank">Okta Explained in 60 Seconds —...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/015/0005219287" target="_blank">사이버보안 기업 옥타, 3분기 실적 ‘깜짝 실적’에도 주가 하락[종목+]</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://kr.investing.com/equities/okta-inc-earnings" target="_blank">옥타 실적 - Investing.com</a><a href="https://www.boannews.com/media/view.asp?idx=132506" target="_blank">옥타코, 틸론과 제로트러스트 보안 모델 적용 첨단 서비스 개발 MOU ...</a><a href="https://investor.okta.com/overview/default.aspx" target="_blank">Okta Inc. - Investor Relations</a><a href="https://namu.wiki/w/ARM%20Cortex-A%20%EC%8B%9C%EB%A6%AC%EC%A6%88" target="_blank">ARM Cortex-A 시리즈 - 나무위키</a><a href="https://www.ussm.co.kr/product/findProduct?pageNo=1&productId=551" target="_blank">모바일 컴퓨터_H5_BIXOLON - 유스엠(주) | IT / AIDC</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
