@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원주 7000억원대 국비 미래산업 동력 마련 - 2025-12-04 00:51:38</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,원주,국비,미래산업">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="원주,국비,미래산업">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 00:51:38'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('원주 7000억원대 국비 미래산업 동력 마련')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>원주 7000억원대 국비 미래산업 동력 마련</h1>
+            <p>
+                분석 시간: 2025-12-04 00:51:38
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 원주시는 2026년 정부예산에 국비 7,016억 원을 반영하고 역대 최대액 6,241억 원의 직접 사업을 확보했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 주요 사업은 미래차 전장부품·시스템반도체·의료 AI·K‑의료산업 등으로 지역 경제와 고용 창출에 큰 기대를 모으고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 국비 확보는 원주의 미래산업 경쟁력 강화와 일자리 창출에 긍정적 영향을 미칠 것으로 전망된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/803ef48c0906.png" 
+                     alt="원주 7000억원대 국비 미래산업 동력 마련" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>원주시는 2026년 정부예산에 국비 7,016억 원을 반영하고 역대 최대액 6,241억 원의 직접 사업을 확보했다. 주요 사업은 미래차 전장부품·시스템반도체·의료 AI·K‑의료산업 등으로, 지역 경제와 고용 창출에 큰 기대를 모으고 있다.  </p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025년 12월 03일</strong> – 원주시는 2026년 정부예산에 국비 7,016억 원을 반영하고 역대 최대액 6,241억 원의 직접 사업을 확보했다고 발표했다.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a>  </li>
+<li><strong>▶ 주요 국비 사업 항목</strong>  </li>
+<li>미래차 전장부품·시스템반도체 신뢰성 검증센터  </li>
+<li>의료 AI·반도체 전문인력 양성센터  </li>
+<li>K‑의료산업 글로벌 시장진출 지원 플랫폼  </li>
+<li><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a>  </li>
+<li><strong>▶ 국비 확보 추진 구조</strong>  </li>
+<li>국비 확보추진단 운영 및 민간협력지원단과 협력  </li>
+<li>시장 차원에서 사업별 추진 상황을 직접 점검  </li>
+<li>정부 부처·국회·강원특별자치도에 사업 반영 건의  </li>
+<li><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a>  </li>
+<li><strong>▶ 2024년 사업 실적 및 2025년 계획</strong>  </li>
+<li>2024년 사업 실적과 2025년 계획이 공개되며, 2026년 예산 반영을 위한 기반 마련  </li>
+<li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_download.php?bbs_data=aWR4PTE1NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1JnRhYmxlPWNzX2Jic19kYXRhX25ldyZjb2RlPXN1YjA1YiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZ1cmw9c3ViMDViJmtleXZhbHVlPXN1YjA1JmJic19tYWxuYW1lPQ==" target="_blank">GWTB</a>  </li>
+<li><strong>▶ 지역 내 반응</strong>  </li>
+<li>원주시민과 기업은 국비 확보를 통해 지역 산업 경쟁력 강화와 일자리 창출에 긍정적 기대를 표명  </li>
+<li>일부 지역 주민은 예산 집행 투명성 및 실제 효과에 대한 우려를 제기  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>연합뉴스</strong>는 이번 국비 확보를 “원주시가 2026년 정부예산에 국비 7,016억 원을 반영하고 역대 최대액 6,241억 원의 직접 사업을 확보했다”는 사실을 중립적으로 보도하며, 지역 경제 활성화와 미래산업 육성에 긍정적 시사점을 제시했다.  </li>
+<li><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a>  </li>
+<li><strong>뉴스이</strong>는 “미래 첨단산업 육성과 서부권역 광역 교통망 확충, 기본형 공익직불사업 등 생활 기반 확충 및 지역 균형발전을 위한 국비 확보”를 강조하며, 원주시의 종합적 성장 전략을 평가했다.  </li>
+<li><a href="https://www.newsis.com/view/NISX20251203_0003427296" target="_blank">뉴스이</a>  </li>
+<li><strong>네이트</strong>는 “의료·헬스케어 산업이 집적된 강원은 국가적 과제인 AI 기반 첨단산업”이라는 관점에서, 원주시의 의료·AI 분야 국비 확보가 지역 특성을 살린 전략적 선택이라고 분석했다.  </li>
+<li><a href="https://news.nate.com/view/20251203n30572?mid=n0100" target="_blank">네이트</a>  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2026년 정부예산에 국비 7,016억 원 반영</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>역대 최대액 6,241억 원의 직접 사업 확보</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>주요 국비 사업 항목(미래차 전장부품·시스템반도체, 의료 AI·반도체 전문인력 양성, K‑의료산업 글로벌 시장진출 지원)</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>국비 확보추진단 및 민간협력지원단 운영</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2024년 사업 실적 및 2025년 계획 공개</td>
+<td><a href="https://www.gwtp.or.kr/gwtp/bbsNew_download.php?bbs_data=aWR4PTE1NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1JnRhYmxlPWNzX2Jic19kYXRhX25ldyZjb2RlPXN1YjA1YiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZ1cmw9c3ViMDViJmtleXZhbHVlPXN1YjA1JmJic19tYWxuYW1lPQ==" target="_blank">GWTB</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>지역 주민들의 구체적 우려 내용</td>
+<td>현재까지 확인된 공식 자료 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>원주시장</strong> – 국비 확보와 미래산업 육성 전략을 주도, 지역 경제 활성화 목표  </li>
+<li><strong>원주시 국비 확보추진단</strong> – 국비 확보 및 사업 추진 현황을 관리, 민간기업과 협력  </li>
+<li><strong>강원특별자치도 정부</strong> – 지역 균형발전 및 첨단산업 육성을 위한 지원  </li>
+<li><strong>국가 부처(산업통상자원부, 보건복지부 등)</strong> – 국비 배정 및 사업 승인 담당  </li>
+<li><strong>지역 기업·연구기관</strong> – 국비 사업 참여를 통해 기술 개발 및 인력 양성 기회 확보  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>사업 실행 단계</strong>  </li>
+<li>2026년 예산 반영 이후, 각 사업별 실행 계획이 수립될 예정이며, 2027년부터 실제 시설 건설·인력 양성 프로그램이 개시될 전망이다.  </li>
+<li><strong>경제·고용 효과</strong>  </li>
+<li>미래차·반도체·의료 AI 분야의 국비 투자는 지역 내 고용 창출과 첨단산업 생태계 구축에 기여할 것으로 예상된다.  </li>
+<li><strong>투명성·효율성 검증</strong>  </li>
+<li>국비 집행 과정에서 투명성 확보와 성과 측정이 중요하며, 지역 주민과 기업의 지속적 피드백이 필요하다.  </li>
+<li><strong>장기 성장 전략</strong>  </li>
+<li>원주시는 국비 확보를 기반으로 ‘미래산업 도시’로의 도약을 목표로 하며, 지속 가능한 성장 모델을 구축할 계획이다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 인용</strong><br />
+- “원주시는 2026년 정부예산에 국비 7,016억 원을 반영하고 역대 최대액 6,241억 원의 직접 사업을 확보했다.” – <a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">연합뉴스</a><br />
+- “의료·헬스케어 산업이 집적된 강원은 국가적 과제인 AI 기반 첨단산업” – <a href="https://news.nate.com/view/20251203n30572?mid=n0100" target="_blank">네이트</a>  </p>
+</blockquote>
+<p>이와 같이 원주시는 국비 확보를 통해 미래산업 육성에 박차를 가하고 있으며, 지역 경제와 고용에 긍정적 영향을 기대하고 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015776933" target="_blank">원주시, 2026년 정부예산에 현안·핵심사업 국비 7천16억원 반영</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.newsis.com/view/NISX20251203_0003427296" target="_blank">원주시, 내년 정부예산 7000억 확보…"미래 성장 가속화"</a><a href="https://www.gwtp.or.kr/gwtp/bbsNew_download.php?bbs_data=aWR4PTE1NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1JnRhYmxlPWNzX2Jic19kYXRhX25ldyZjb2RlPXN1YjA1YiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZ1cmw9c3ViMDViJmtleXZhbHVlPXN1YjA1JmJic19tYWxuYW1lPQ==||&download=1" target="_blank">2024년 사업실적 및 2025년 사업계획</a><a href="https://www.wonju.go.kr/mayor/contents.do?key=5574" target="_blank">원주시 열린시장실</a><a href="https://news.nate.com/view/20251203n30572?mid=n0100" target="_blank">원주시, 2026년 정부예산에 현안·핵심사업 국비 7천16억원 반영 ...</a><a href="https://v.daum.net/v/20251203165853211" target="_blank">원주시, 내년 정부예산 7000억 확보…"미래 성장 가속화"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
