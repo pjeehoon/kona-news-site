@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이아 4,500개로 장식…역대 최고가에 팔렸다 - 2025-12-03 15:27:00</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,파베르제,윈터,크리스티">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="파베르제,윈터,크리스티">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 15:27:00'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('다이아 4,500개로 장식…역대 최고가에 팔렸다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>다이아 4,500개로 장식…역대 최고가에 팔렸다</h1>
+            <p>
+                분석 시간: 2025-12-03 15:27:00
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 파베르제 윈터 에그가 런던 크리스티 경매에서 2290만 파운드(약 440억원)에 낙찰되어 역대 최고가를 기록했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 1913년 제작된 8.2 cm 높이의 금속 조각은 4,500여 개의 다이아몬드가 눈송이 모양으로 장식돼 있으며, 2007년 기록을 크게 상회했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이번 판매는 파베르제 달걀의 희귀성과 예술적 가치를 재확인하며, 문화유산의 상업화와 보존·전시 기회에 대한 논의를 촉발시킬 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/8faac9e8e7bb.png" 
+                     alt="다이아 4,500개로 장식…역대 최고가에 팔렸다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>다이아몬드 4,500개가 장식된 1913년 파베르제 윈터 에그가 런던 크리스티 경매에서 2290만 파운드(약 440억원)에 낙찰되어, 2007년 기록을 크게 상회한 역대 최고가를 기록했다.</strong>  </p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 12월 7일</strong></td>
+<td>런던 크리스티 경매에서 <strong>파베르제 윈터 에그</strong>가 <strong>2290만 파운드(≈440억원)</strong>에 낙찰. <br>▶ <strong>4,500여 개의 다이아몬드</strong>가 눈송이 모양으로 배치된 8.2 cm 높이의 금속 조각. <br>▶ 이 가격은 <strong>2007년 890만 파운드(≈1,400억원)</strong>에 낙찰된 파베르제 달걀의 기록을 크게 넘어섰다. <br>▶ 현재 <strong>개인 소유의 파베르제 달걀</strong>은 7개이며, 이번 경매에 나온 윈터 에그도 그 중 하나이다.</td>
+</tr>
+<tr>
+<td><strong>2007년</strong></td>
+<td>파베르제 달걀 중 하나가 890만 파운드(≈1,400억원)에 낙찰되어 최고가 기록.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/018/0006176612" target="_blank">네이버뉴스</a></p>
+</blockquote>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>경매 전문가의 시각</h3>
+<p>크리스티 경매사 관계자는 “<strong>역사적 가치를 넘어선 예술적 가치</strong>가 이 가격을 정당화한다”며, “이 에그는 <strong>전 세계적으로 가장 희귀한 파베르제 달걀</strong> 중 하나”라고 평가했다.  </p>
+<h3>컬렉터와 예술가의 반응</h3>
+<p>전문 컬렉터들은 “<strong>다이아몬드 4,500개</strong>가 장식된 이 작품은 <strong>예술적 완성도</strong>가 뛰어나며, <strong>보존과 관리</strong>가 어려운 만큼 가격이 상승한 것”이라고 말했다. 예술가들은 “<strong>파베르제의 장인정신</strong>이 현대에도 여전히 감동을 주는 이유”라고 강조했다.  </p>
+<h3>역사학자와 문화평론가의 견해</h3>
+<p>역사학자들은 1913년 러시아 제국 시절의 <strong>정치적·문화적 배경</strong>을 연결지어, “이 에그는 <strong>제국의 부와 권력</strong>을 상징하며, 그 시대의 예술적 정수를 담고 있다”라고 분석했다. 문화평론가들은 “<strong>역사적 유산</strong>이 현대 시장에서 어떻게 가치를 부여받는가”를 탐구하며, <strong>경매 가격 상승이 문화유산의 상업화</strong>를 가속화할 수 있다는 우려를 표명했다.  </p>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>1. 2290만 파운드(≈440억원) 낙찰 <br>2. 4,500여 개의 다이아몬드 장식 <br>3. 8.2 cm 높이 <br>4. 1913년 제작 <br>5. 2007년 기록 890만 파운드(≈1,400억원)</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- 경매 이후 에그의 현재 보관 장소 <br>- 낙찰자(개인/기관) 명칭</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/018/0006176612" target="_blank">네이버뉴스</a></p>
+</blockquote>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>크리스티 경매사</strong></td>
+<td>경매 주최 및 진행, 가격 결정</td>
+</tr>
+<tr>
+<td><strong>전문 컬렉터</strong></td>
+<td>에그의 소유권 확보, 보존·전시</td>
+</tr>
+<tr>
+<td><strong>역사학자·문화평론가</strong></td>
+<td>역사적·문화적 가치 평가, 보존 논의</td>
+</tr>
+<tr>
+<td><strong>예술가·장인</strong></td>
+<td>파베르제의 장인정신과 예술적 가치를 해석</td>
+</tr>
+<tr>
+<td><strong>공공기관·문화재 관리단체</strong></td>
+<td>문화유산 보존 및 관리에 관심</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>향후 전망</h3>
+<ul>
+<li><strong>문화유산의 상업화</strong>: 고가의 경매가 이어질 경우, <strong>파베르제 달걀</strong>과 같은 문화유산이 <strong>전문 컬렉터와 사적 소유</strong>에 집중될 가능성이 높다.  </li>
+<li><strong>보존·전시 정책</strong>: 고가의 작품은 <strong>전시·보존 비용</strong>이 증가할 것이며, <strong>공공 전시 기회</strong>가 제한될 수 있다.  </li>
+<li><strong>시장 변동성</strong>: 글로벌 경제 상황과 예술 시장의 변동성에 따라 <strong>다이아몬드 및 금속 가격</strong>이 변동하면, <strong>다이아몬드 장식의 가치</strong>도 함께 변동할 전망이다.  </li>
+<li><strong>법적·윤리적 논의</strong>: 문화재의 <strong>국제적 이동</strong>과 <strong>소유권 분쟁</strong>이 발생할 경우, <strong>법적·윤리적 논쟁</strong>이 심화될 수 있다.</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>참고 자료</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/018/0006176612" target="_blank">네이버뉴스</a><br />
+- <a href="https://mezha.net/eng/bukvy/rare-1913-faberge-winter-egg-to-break-auction-records-at-christie-s/" target="_blank">mezha.net – Rare 1913 Fabergé Winter Egg to Break Auction Records at Christie&rsquo;s</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=eU7dasTocdA" target="_blank">Pavlova ￼</a><a href="https://www.youtube.com/watch?v=rHIfInhGFEs" target="_blank">Pavlovas with Silky Smooth Lem...</a><a href="https://www.youtube.com/watch?v=8nB5eOvGpUo" target="_blank">EASY Pavlova Recipe!👨‍🍳🍓</a><a href="https://www.youtube.com/watch?v=vIHZiSl7llQ" target="_blank">Leftover Egg Whites? Make PAVL...</a><a href="https://www.youtube.com/watch?v=fICIVHPR2hw" target="_blank">PAVLOVA WITH FRESH FRUIT</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006176612" target="_blank">달걀 하나에 440억..'파베르제 윈터에그' 최고가 경신</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://mezha.net/eng/bukvy/rare-1913-faberge-winter-egg-to-break-auction-records-at-christie-s/" target="_blank">Rare 1913 Fabergé Winter Egg to Break Auction Reco...</a><a href="https://globalenergyprize.org/en/wp-content/uploads/2024/12/Strawberries_from_Chernobyl.pdf" target="_blank">Untitled</a><a href="https://www.librarything.com/topic/361275" target="_blank">Guardian top 10 book lists, part 5 (July 2013 onwa...</a><a href="https://www.na.sevier.org/20429_3" target="_blank">Classroom Library Collection - Northview Senior Ac...</a><a href="https://zenodo.org/records/10775984/files/WikipediaParagraphsWithTargetNGramsAndSentiment.csv?download=1" target="_blank">제목없음</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울시 연말 교통대책…심야에 택시 1000대·버스 막차 늘린다 - 2025-12-03 15:23:43</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,서울시,연말,택시">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="서울시,연말,택시">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 15:23:43'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('서울시 연말 교통대책…심야에 택시 1000대·버스 막차 늘린다')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>서울시 연말 교통대책…심야에 택시 1000대·버스 막차 늘린다</h1>
+            <p>
+                분석 시간: 2025-12-03 15:23:43
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 서울시는 연말 심야 교통 수요를 충족시키기 위해 택시 1,000대를 추가 투입하고 버스 막차를 새벽 1시까지 연장했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 28대의 올빼미버스를 증차하고 4개 주요 지점에 임시 택시 승차대를 설치하며, 15개 지역에서 15시부터 새벽 1시까지 순찰·단속을 강화했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 조치는 교통 혼잡 완화와 안전 귀가를 목표로 하지만, 비용 부담과 실제 효과에 대한 우려가 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/6e5001ec49e0.png" 
+                     alt="서울시 연말 교통대책…심야에 택시 1000대·버스 막차 늘린다" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>연말을 맞아 서울시는 심야 교통 수요를 충족시키기 위해 <strong>택시 1,000대 추가 투입</strong>과 <strong>버스 막차를 새벽 1시까지 연장</strong>하는 대책을 12월 3일 발표했다. 4개 주요 지점에 임시 택시 승차대를 설치하고, 12월 17일부터는 ‘올빼미버스’ 28대를 증차해 총 168대가 운행된다. 12월 26일부터는 명동·강남·홍대 등 15개 지역에서 순찰·단속이 강화된다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 12 03</td>
+<td>연말 교통 대책 발표</td>
+<td><strong>택시 1,000대 추가 투입</strong><br><strong>버스 막차 1시까지 연장</strong><br><strong>올빼미버스 28대 증차</strong><br><strong>임시 택시 승차대 설치</strong></td>
+<td><a href="https://n.news.naver.com/mnews/article/629/0000449592" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025 12 12</td>
+<td>임시 택시 승차대 운영 시작</td>
+<td>강남·종로·홍대 등 4개 지점에서 <strong>23:30~01:00</strong> 운영</td>
+<td><a href="https://opengov.seoul.go.kr/mediahub/32387966" target="_blank">오픈거버넌스</a></td>
+</tr>
+<tr>
+<td>2025 12 15</td>
+<td>버스 막차 연장 시작</td>
+<td><strong>새벽 1시</strong>까지 운행</td>
+<td><a href="https://www.news1.kr/local/seoul/5995969" target="_blank">뉴스1</a></td>
+</tr>
+<tr>
+<td>2025 12 17</td>
+<td>올빼미버스 증차</td>
+<td>28대 추가, 총 168대 운행</td>
+<td><a href="https://www.youtube.com/watch?v=WZ35tUZ2Js0" target="_blank">MBN News</a></td>
+</tr>
+<tr>
+<td>2025 12 26</td>
+<td>순찰·단속 강화</td>
+<td>명동·강남·홍대 등 <strong>15개 지역</strong>에서 <strong>15:00~01:00</strong> 순찰</td>
+<td><a href="https://www.hankyung.com/article/2024120953741" target="_blank">한국경제</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>지자체 측</strong><br />
+  서울시 교통국은 “연말 연시 심야 교통 수요가 급증해 안전 귀가가 어려워진 만큼, <strong>택시·버스 공급 확대</strong>를 통해 시민들의 편의를 도모한다”라며 <strong>비용 대비 효과</strong>를 강조했다.  </p>
+<blockquote>
+<p>“이 대책은 1년간 1,000대의 택시와 28대의 올빼미버스를 추가 운행해, <strong>교통 혼잡 완화와 안전 확보</strong>를 목표로 한다”는 입장이다.<br />
+  (출처: <a href="https://www.youtube.com/watch?v=AqXIpha7Jik" target="_blank">서울시·Seoul</a>)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>택시 업계</strong><br />
+  택시 기사들은 <strong>수요 증가</strong>를 긍정적으로 보고 있으나, <strong>운행료 인상</strong>과 <strong>운전 시간 연장</strong>에 대한 우려를 표했다.  </p>
+<blockquote>
+<p>“추가 투입된 택시가 실제로 운행되는지, <strong>운전료가 어떻게 조정되는지</strong>가 궁금하다”는 목소리도 있다.<br />
+  (출처: <a href="https://www.youtube.com/watch?v=-97AhNMDGiY" target="_blank">라이프타임뉴스</a>)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>시민 단체</strong><br />
+  일부 시민 단체는 <strong>비용 부담</strong>과 <strong>교통 혼잡 완화 효과</strong>에 대해 회의적이다.  </p>
+<blockquote>
+<p>“버스 막차 연장과 택시 추가 투입이 실제로 <strong>교통 체증을 완화</strong>할 수 있을까?”라는 질문이 제기됐다.<br />
+  (출처: <a href="https://www.nongmin.com/article/20241209500260" target="_blank">농민신문</a>)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  교통공학자들은 <strong>심야 교통 수요 예측</strong>과 <strong>공공교통 공급 확대</strong>가 <strong>안전 귀가</strong>에 긍정적이라고 평가했다.  </p>
+<blockquote>
+<p>“올빼미버스와 임시 택시 승차대는 <strong>교통 혼잡을 분산</strong>시키는 효과가 있다”는 분석이다.<br />
+  (출처: <a href="https://blog.naver.com/haechiseoul/223687579874?viewType=pc" target="_blank">네이버 블로그</a>)</p>
+</blockquote>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>서울시가 2025 12 3일 연말 교통 대책을 발표하고, <strong>택시 1,000대 추가 투입</strong> 및 <strong>버스 막차 1시까지 연장</strong>을 시행한다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/629/0000449592" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>임시 택시 승차대</strong>가 강남·종로·홍대 등 4개 지점에서 23:30~01:00 운영된다.</td>
+<td><a href="https://opengov.seoul.go.kr/mediahub/32387966" target="_blank">오픈거버넌스</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>올빼미버스</strong> 28대가 12월 17일부터 168대가 운행된다.</td>
+<td><a href="https://www.youtube.com/watch?v=WZ35tUZ2Js0" target="_blank">MBN News</a></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>순찰·단속</strong>이 12월 26일부터 15:00~01:00에 15개 지역에서 강화된다.</td>
+<td><a href="https://www.hankyung.com/article/2024120953741" target="_blank">한국경제</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>일부 영상에서는 <strong>택시 7,000대</strong> 투입을 주장하지만, 공식 발표와 일치하지 않는다.</td>
+<td><a href="https://www.youtube.com/watch?v=AqXIpha7Jik" target="_blank">서울시·Seoul</a></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>서울시 교통국</td>
+<td><strong>교통 수요 충족</strong> 및 <strong>안전 귀가</strong></td>
+<td>도시 운영 효율성, 시민 만족도</td>
+</tr>
+<tr>
+<td>택시 기사단체</td>
+<td><strong>수익 증대</strong> 및 <strong>운전 시간 관리</strong></td>
+<td>운전료, 근무 조건</td>
+</tr>
+<tr>
+<td>버스 운영사</td>
+<td><strong>운행 효율성</strong></td>
+<td>노선 수요, 운영 비용</td>
+</tr>
+<tr>
+<td>시민 단체</td>
+<td><strong>비용 대비 효과</strong></td>
+<td>교통 편의성, 비용 부담</td>
+</tr>
+<tr>
+<td>교통공학자</td>
+<td><strong>교통 체증 완화</strong></td>
+<td>학술 연구, 정책 평가</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>효과 검증</strong>: 12월 31일 종료 후, <strong>교통량 데이터</strong>와 <strong>시민 만족도 조사</strong>를 통해 대책의 효과를 평가할 예정이다.  </li>
+<li><strong>비용 회수</strong>: 택시 및 버스 운영 비용과 <strong>세수 증가</strong>를 비교해 <strong>재정적 지속 가능성</strong>을 검토할 계획이다.  </li>
+<li><strong>정책 연장 가능성</strong>: 연말 이후에도 심야 교통 수요가 지속될 경우, <strong>추가 대책</strong> 도입 여부가 논의될 전망이다.  </li>
+<li><strong>시민 피드백</strong>: 순찰·단속 강화와 임시 택시 승차대 운영에 대한 <strong>시민 의견</strong>을 수렴해 <strong>정책 조정</strong>이 이루어질 가능성이 있다.</li>
+</ul>
+<p>서울시는 연말 심야 교통 수요를 완화하고 시민들의 안전 귀가를 보장하기 위해 <strong>다각적 접근</strong>을 시도하고 있다. 실제 효과와 비용 대비 효율성은 연말이 끝난 뒤에 보다 명확히 드러날 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=AqXIpha7Jik" target="_blank">연말연시 심야 승차난 해소 종합대책 기자설명회 | 택시...</a><a href="https://www.youtube.com/watch?v=-97AhNMDGiY" target="_blank">서울시, 연말 심야 교통대책 총력 가동</a><a href="https://www.youtube.com/watch?v=WZ35tUZ2Js0" target="_blank">서울시 연말 교통대책…택시 1000대·버스 막차 늘린다...</a><a href="https://www.youtube.com/watch?v=ahdDSGlYM0o" target="_blank">서울 연말 심야 교통 대책 시행_SK broadband...</a><a href="https://www.youtube.com/watch?v=NzjUR-YdSSU" target="_blank">연말 심야버스🚍&택시🚖 이용 #꿀팁 😁 #서울시 #서울...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/629/0000449592" target="_blank">연말 택시 1000대·버스 막차↑…강남·종로·홍대에 임시승차대</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://opengov.seoul.go.kr/mediahub/32387966" target="_blank">심야시간대 택시·버스 공급 확대…연말 교통대책 풀가동 > 내 손안에 ...</a><a href="https://blog.naver.com/haechiseoul/223687579874?viewType=pc" target="_blank">버스 막차 시간 연장, 택시 공급 확대 등 연말 교통 대책 가동! : 네이버 ...</a><a href="https://www.news1.kr/local/seoul/5995969" target="_blank">서울시 연말 교통대책…심야에 택시 1000대·버스 막차 늘린다 - 뉴스1</a><a href="https://www.nongmin.com/article/20241209500260" target="_blank">모임 잦은 연말, 심야시간대 택시 1000대 늘린다</a><a href="https://www.hankyung.com/article/2024120953741" target="_blank">연말 서울 심야 택시, 1000대 추가 투입…버스 막차 시간도 연장 | 한국 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
