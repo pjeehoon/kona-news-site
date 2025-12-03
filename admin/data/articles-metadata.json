@@ -1,5 +1,53 @@
 [
   {
+    "id": "696074ee2d3a",
+    "title": "서울, 내일 아침 영하 9도·첫눈 예보…한파 주의보 발효",
+    "created_at": "2025-12-03T19:32:39.614429",
+    "last_updated": "2025-12-03T19:32:39.614435",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "서울",
+        "첫눈",
+        "한파"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "8d499799c943",
+    "title": "한국, 유니콘 기업 13개로 세계 11위… 성장 속도는 둔화",
+    "created_at": "2025-12-03T19:26:39.062546",
+    "last_updated": "2025-12-03T19:26:39.062552",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "경제"
+      ],
+      "content_tags": [
+        "한국",
+        "유니콘",
+        "성장"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "b2fc9c9e182f",
     "title": "개인정보위, 내년 예산 729억 확정…사전 예방 중심 전환",
     "created_at": "2025-12-03T18:54:45.574023+09:00",
