@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"승객 239명 태우고 감쪽같이 사라져"…실종된 말레이 비행기 11년 만에 수색 재개 - 2025-12-03 20:52:07</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,MH370,인도양,실종">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="MH370,인도양,실종">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 20:52:07'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"승객 239명 태우고 감쪽같이 사라져"…실종된 말레이 비행기 11년 만에 수색 재개')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"승객 239명 태우고 감쪽같이 사라져"…실종된 말레이 비행기 11년 만에 수색 재개</h1>
+            <p>
+                분석 시간: 2025-12-03 20:52:07
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 12월 30일 말레이시아 교통부가 MH370 항공기 실종 수색을 11년 만에 재개했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2014년 쿠알라룸푸르에서 출발해 239명 탑승한 보잉 777‑200ER이 인도양 남부에서 통신이 끊겨 사라진 사건이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 수색은 고성능 초음파 탐지기와 수중 드론 등 국제 협력 기술을 활용해 해저 지형을 정밀 조사하며, 재발견 가능성은 낮지만 단서 확보를 통해 비행기 실종 원인을 밝히려 한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/143898e751a1.png" 
+                     alt=""승객 239명 태우고 감쪽같이 사라져"…실종된 말레이 비행기 11년 만에 수색 재개" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>MH370 수색이 2025년 12월 30일 재개돼 11년 만에 다시 시작됐다. 2014년 쿠알라룸푸르에서 출발해 239명 탑승한 이 비행기는 인도양 남부에서 사라졌다. 수색은 말레이시아 교통부와 국제 협력으로 진행된다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2014년 3월 8일</strong>: <strong>MH370</strong>이 쿠알라룸푸르에서 출발해 <strong>1시간</strong> 만에 통신이 끊김.<br />
+<a href="https://n.news.naver.com/mnews/article/422/0000808214" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 239명</strong>이 탑승한 <strong>Boeing 777‑200ER</strong>이 인도양 남부에서 사라짐.<br />
+<a href="https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370" target="_blank">Wikipedia</a></p>
+</li>
+<li>
+<p><strong>▶ 2018년 보고서</strong>에서 비행기가 <strong>의도적으로 비행 경로를 벗어났을 가능성</strong>이 제시되었으나, 조작자에 대한 정황은 확인되지 않음.<br />
+<a href="https://n.news.naver.com/mnews/article/422/0000808214" target="_blank">네이버뉴스</a></p>
+</li>
+<li>
+<p><strong>▶ 2025년 12월 3일</strong>: 말레이시아 교통부가 <strong>12월 30일</strong>부터 수색을 재개하겠다고 발표.<br />
+<a href="https://www.aljazeera.com/news/2025/12/3/search-resumes-to-solve-mystery-of-missing-malaysia-airlines-flight-mh370" target="_blank">Al Jazeera</a></p>
+</li>
+<li>
+<p><strong>▶ 수색 범위</strong>는 인도양 남부의 광범위한 해역으로, 아직까지 <strong>해상 유해물</strong>이 발견되지 않아 <strong>사망이 전제</strong>된다.<br />
+<a href="https://www.bbc.com/news/articles/cy7v077dm0po" target="_blank">BBC</a></p>
+</li>
+<li>
+<p><strong>▶ 수색 방식</strong>은 고성능 초음파 탐지기, 수중 드론, 해저 탐사선 등을 활용해 <strong>해저 지형</strong>을 정밀 조사한다.<br />
+<a href="https://www.britannica.com/event/Malaysia-Airlines-flight-370-disappearance" target="_blank">Britannica</a></p>
+</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>공식 입장</strong></td>
+<td>말레이시아 교통부는 수색 재개를 통해 <strong>가능한 모든 단서</strong>를 찾겠다고 강조.</td>
+<td><a href="https://n.news.naver.com/mnews/article/422/0000808214" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>항공 안전 전문가들은 <strong>의도적 조작 가능성</strong>을 완전히 배제할 수 없으며, <strong>통신 장비 결함</strong>도 고려해야 한다고 지적.</td>
+<td><a href="https://www.aljazeera.com/news/2025/12/3/search-resumes-to-solve-mystery-of-missing-malaysia-airlines-flight-mh370" target="_blank">Al Jazeera</a></td>
+</tr>
+<tr>
+<td><strong>시민 관점</strong></td>
+<td>피해자 가족과 일반 시민은 <strong>재수색에 대한 희망</strong>을 표명하면서도 <strong>비용과 시간</strong>에 대한 우려를 표함.</td>
+<td><a href="https://www.bbc.com/news/articles/cy7v077dm0po" target="_blank">BBC</a></td>
+</tr>
+<tr>
+<td><strong>국제 협력</strong></td>
+<td>미국, 호주, 영국 등 여러 국가가 <strong>기술·자원</strong>을 지원하며, <strong>국제민간항공기구(ICAO)</strong>가 조정 역할을 맡음.</td>
+<td><a href="https://www.britannica.com/event/Malaysia-Airlines-flight-370-disappearance" target="_blank">Britannica</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>검증된 사실</th>
+<th>미확인/추정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>비행기 모델</strong></td>
+<td><strong>Boeing 777‑200ER</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>탑승 인원</strong></td>
+<td><strong>239명</strong> (227명 승객 + 12명 승무원)</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>통신 끊김 시점</strong></td>
+<td><strong>2014년 3월 8일 1시간 후</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>비행 경로 이탈</strong></td>
+<td><strong>의도적 이탈 가능성</strong> 제시 (2018년 보고서)</td>
+<td><strong>조작자 정황 미확인</strong></td>
+</tr>
+<tr>
+<td><strong>해상 유해물 발견 여부</strong></td>
+<td><strong>아직 발견되지 않음</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>수색 재개 일정</strong></td>
+<td><strong>2025년 12월 30일</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>말레이시아 교통부 장관</strong>: 수색 재개를 통해 <strong>국가적 책임</strong>을 다하고자 함.  </li>
+<li><strong>국제민간항공기구(ICAO) 대표</strong>: <strong>국제 협력</strong>을 조정하며 <strong>공동 조사</strong>를 진행.  </li>
+<li><strong>항공 안전 전문가</strong>: <strong>원인 규명</strong>과 <strong>안전 개선</strong>을 목표로 연구.  </li>
+<li><strong>피해자 가족</strong>: <strong>정확한 사망 원인</strong>과 <strong>보상</strong>을 요구.  </li>
+<li><strong>국제 수색팀</strong>: <strong>기술·자원</strong>을 제공하며 <strong>수색 효율성</strong>을 높이려 함.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수색 기간</strong>: 수색은 <strong>2026년 초까지</strong> 지속될 가능성이 높으며, <strong>예산</strong>은 수십억 달러에 달할 전망.  </li>
+<li><strong>결과 가능성</strong>: 해저 탐사 기술이 발전했음에도 <strong>유해물 발견</strong>이 어려울 수 있어 <strong>비극적 결말</strong>이 우려된다.  </li>
+<li><strong>안전 영향</strong>: 사건이 <strong>원인 규명</strong>에 이어 항공 안전 규정이 강화될 가능성이 커질 것이다.  </li>
+<li><strong>정서적 영향</strong>: 재수색은 <strong>피해자 가족</strong>과 <strong>국가</strong>에 <strong>희망과 동시에 부담</strong>을 동시에 제공한다.  </li>
+</ul>
+<p><strong>MH370 수색 재개는 11년 간의 공백을 메우는 시도이며, 국제 사회의 협력과 첨단 탐사 기술이 결합된 복합적 과제다.</strong> 수색이 진행되면서 새로운 단서가 발견될 수도, 결국 유해물 없이 사망이 확정될 수도 있다. 그럼에도 말레이시아와 전 세계는 <strong>진실을 찾기 위한 끈질긴 노력을</strong> 이어갈 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=z6R16mpmc5w" target="_blank">Malaysia Airlines Boarding Mus...</a><a href="https://www.youtube.com/watch?v=jKechb8Y25E" target="_blank">Malaysia Airlines a330neo vs a...</a><a href="https://www.youtube.com/watch?v=IRkYV1IxmDs" target="_blank">Malaysia Airlines Safety Video...</a><a href="https://www.youtube.com/watch?v=NnEEi66LnsA" target="_blank">MALAYSIA AIRLINES to PARIS onb...</a><a href="https://www.youtube.com/watch?v=vEaM3Kb6Ajs" target="_blank">The all-new award winning Mala...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/422/0000808214" target="_blank">'실종 미스테리' 말레이시아항공 수색 재개…사라진 239명 찾을까</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370" target="_blank">Malaysia Airlines Flight 370 - Wikipedia</a><a href="https://www.reddit.com/r/aviation/comments/1b9tueh/on_march_8_2014_malaysia_airlines_flight_mh370_a/" target="_blank">On March 8, 2014, Malaysia Airlines Flight MH370, ...</a><a href="https://www.aljazeera.com/news/2025/12/3/search-resumes-to-solve-mystery-of-missing-malaysia-airlines-flight-mh370" target="_blank">Search resumes to solve mystery of missing Malaysi...</a><a href="https://www.bbc.com/news/articles/cy7v077dm0po" target="_blank">MH370: Search for long-missing Malaysia Airlines f...</a><a href="https://www.britannica.com/event/Malaysia-Airlines-flight-370-disappearance" target="_blank">Malaysia Airlines flight 370 disappearance | Map, ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
