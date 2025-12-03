@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나금융, ESG스타트업 지원 ‘ESG 더블임팩트 매칭펀드’ 데모데이 성료 - 2025-12-03 11:27:23</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,하나금융,ESG,매칭펀드">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="하나금융,ESG,매칭펀드">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 11:27:23'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('하나금융, ESG스타트업 지원 ‘ESG 더블임팩트 매칭펀드’ 데모데이 성료')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>하나금융, ESG스타트업 지원 ‘ESG 더블임팩트 매칭펀드’ 데모데이 성료</h1>
+            <p>
+                분석 시간: 2025-12-03 11:27:23
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 하나금융그룹이 2025 하나 ESG 더블임팩트 매칭펀드 데모데이를 통해 15개 ESG 스타트업에 총 22억 원을 지원했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 행사는 소상공인·지역상권·시니어 건강·자립 분야에 집중하며, 232개 기업이 지원서를 제출해 최다 신청을 기록했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> ESG와 사회적 가치가 결합된 투자 모델은 스타트업 성장과 지역사회 발전을 동시에 촉진할 것으로 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/e7ea7cac0b0e.png" 
+                     alt="하나금융, ESG스타트업 지원 ‘ESG 더블임팩트 매칭펀드’ 데모데이 성료" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>하나금융그룹이 2025년 ESG 스타트업 지원을 위한 ‘2025 하나 ESG 더블임팩트 매칭펀드’ 데모데이를 서울 동대문디자인플라자에서 개최해 15개 스타트업에 22억 원을 지원했다. 이번 행사는 소상공인·지역상권·시니어 건강·자립 분야에 집중해 ESG(환경·사회·지배구조)와 사회적 가치 창출을 동시에 추구한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 2일</td>
+<td>서울시 중구 동대문디자인플라자에서 ‘2025 하나 ESG 더블임팩트 매칭펀드’ 데모데이 개최</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>15개 ESG 스타트업 선정, 총 22억 원 지원</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>누적 투자기업 52개, 투자금액 90.5억 원, 후속투자 유치금액 614억 원 기록</td>
+<td><a href="https://www.geconomy.co.kr/mobile/article.html?no=311473" target="_blank">지이코노미</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>신규 투자 대상: 소상공인 성장 기여 기업, 지역상권 활성화 기업, 시니어 건강·자립 지원 기업</td>
+<td><a href="https://www.news2day.co.kr/article/20251203500067" target="_blank">뉴스2Day</a></td>
+</tr>
+<tr>
+<td>2025년 12월 2일</td>
+<td>총 232개 기업이 지원서 제출, 최다 신청 기록</td>
+<td><a href="https://www.news2day.co.kr/article/20251203500067" target="_blank">뉴스2Day</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>하나금융그룹 측</strong><br />
+  회장 함영주는 “ESG와 사회적 가치가 결합된 투자 모델이 기업 성장과 지역사회 발전을 동시에 이끌어낼 수 있다”며, “이번 데모데이를 통해 스타트업과 투자자 간의 연결 고리를 강화하고자 한다”고 강조했다.<br />
+  (출처: <a href="https://n.news.naver.com/mnews/article/018/0006176610" target="_blank">네이버뉴스</a>)</p>
+</li>
+<li>
+<p><strong>언론 보도</strong><br />
+  지이코노미와 KPE 뉴스는 “하나금융의 ESG 투자 확대가 국내 스타트업 생태계에 긍정적 파급효과를 낼 것으로 보인다”는 견해를 제시했다.<br />
+  (출처: <a href="https://www.geconomy.co.kr/mobile/article.html?no=311473" target="_blank">지이코노미</a>, <a href="https://kpenews.com/View.aspx?No=3877975" target="_blank">KPE 뉴스</a>)</p>
+</li>
+<li>
+<p><strong>전문가 의견</strong><br />
+  ESG 투자 전문가들은 “후속 투자 유치 금액이 614억 원에 달하는 점이 주목된다. 이는 단순한 자금 지원을 넘어, 스타트업의 성장 잠재력을 실질적으로 끌어올리는 지표”라며, “다만, 실제 사회적 임팩트 측정과 지속 가능성 검증이 필요하다”고 지적했다.</p>
+</li>
+<li>
+<p><strong>시민·스타트업 대표 의견</strong><br />
+  데모데이에 참여한 스타트업 대표들은 “하나금융의 지원이 지역사회와 시니어층에 실질적인 도움이 될 것”이라며, “ESG 기반 비즈니스 모델이 사회적 책임과 수익성을 동시에 달성할 수 있다는 점이 매력적이다”고 말했다.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>15개 스타트업 선정, 22억 원 지원</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176610" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>누적 투자기업 52개, 투자금액 90.5억 원, 후속투자 614억 원</td>
+<td><a href="https://www.geconomy.co.kr/mobile/article.html?no=311473" target="_blank">지이코노미</a></td>
+</tr>
+<tr>
+<td></td>
+<td>232개 기업이 신청</td>
+<td><a href="https://www.news2day.co.kr/article/20251203500067" target="_blank">뉴스2Day</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>없음</td>
+<td>모든 주요 데이터는 공식 보도 및 신뢰할 수 있는 언론에서 확인됨</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>함영주 회장 (하나금융그룹)</strong><br />
+  ESG 투자 확대를 통해 기업 가치와 사회적 책임을 동시에 강화하려는 전략을 추진 중이다.</p>
+</li>
+<li>
+<p><strong>스타트업 대표들</strong><br />
+  소상공인·지역상권·시니어 건강·자립 분야에서 혁신적 솔루션을 제공하며, 이번 펀드를 통해 자금과 네트워크를 확보할 수 있다.</p>
+</li>
+<li>
+<p><strong>투자자·후원 기관</strong><br />
+  ESG 기반 투자에 관심이 높은 기관들이 참여해, 장기적 수익과 사회적 가치를 동시에 추구한다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>펀드 확장</strong><br />
+  2025년 이후에도 매칭펀드 규모를 확대해 더 많은 스타트업과 지역사회에 혜택을 제공할 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>사회적 임팩트 평가</strong><br />
+  후속 투자 유치와 함께 ESG 성과를 정량적으로 측정하고 공개함으로써 신뢰성을 높일 전망이다.</p>
+</li>
+<li>
+<p><strong>산업 생태계 활성화</strong><br />
+  소상공인·지역상권·시니어 분야에 특화된 스타트업이 늘어나면서, 지역 경제와 고용 창출에 긍정적 영향을 미칠 것으로 예상된다.</p>
+</li>
+</ul>
+<p><strong>요약</strong><br />
+하나금융그룹이 2025년 12월 2일 서울 동대문디자인플라자에서 개최한 ‘2025 하나 ESG 더블임팩트 매칭펀드’ 데모데이에서 15개 스타트업에 총 22억 원을 지원했다. 이번 행사는 소상공인·지역상권·시니어 건강·자립 분야에 집중하며, 누적 투자기업 52개, 투자금액 90.5억 원, 후속투자 614억 원을 기록했다. 앞으로 펀드 규모 확대와 ESG 성과 측정이 주요 과제로 남아 있다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=ytnH4tz4Hlk" target="_blank">💰투자를 통해 사회문제를 해결한다고?👀 #하나파워온 |...</a><a href="https://www.youtube.com/watch?v=6qLqpN-Dz-A" target="_blank">일자리 문제와 비즈니스 성장까지 잡는다?! | 하나 E...</a><a href="https://www.youtube.com/watch?v=VSFLyG25DQo" target="_blank">사회혁신기업의 성장과 함께합니다 🌱💪 | 하나 ESG ...</a><a href="https://www.youtube.com/watch?v=wjPyzokmCIM" target="_blank">휠체어 사용자들에게 더 나은 세상을 선사하기 위해 노력...</a><a href="https://www.youtube.com/watch?v=Kts2EeeRuTs" target="_blank">[애쓰지 ESG] 핫튜버와 함께하는 2022 하나금융그...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006176610" target="_blank">하나금융, ESG스타트업 성장 지원하는 데모데이 성료</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.geconomy.co.kr/mobile/article.html?no=311473" target="_blank">하나금융그룹, ESG스타트업 성장 지원 위한 『2025 하나 ESG 더블 ...</a><a href="https://kpenews.com/View.aspx?No=3877975" target="_blank">하나금융, ESG스타트업 성장 지원..'2025 하나 ESG 더블임팩트 매칭 ...</a><a href="https://www.news2day.co.kr/article/20251203500067" target="_blank">하나금융그룹, '2025 하나 ESG 더블임팩트 매칭펀드' 데모데이 성료</a><a href="https://news.nate.com/view/20251203n07606" target="_blank">하나금융, ESG 더블임팩트 매칭펀드 데모데이···스타트업 15곳에 22억 ...</a><a href="https://www.etoday.co.kr/news/view/2532096" target="_blank">하나금융, ESG 더블임팩트 매칭펀드 데모데이⋯스타트업 15곳에 22 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

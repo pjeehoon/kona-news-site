@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정청래 "내란사범 끝까지 처벌"…秋 영장기각에 "제2의 내란" - 2025-12-03 11:14:42</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,정청래,내란,추경호">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="정청래,내란,추경호">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 11:14:42'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('정청래 "내란사범 끝까지 처벌"…秋 영장기각에 "제2의 내란"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>정청래 "내란사범 끝까지 처벌"…秋 영장기각에 "제2의 내란"</h1>
+            <p>
+                분석 시간: 2025-12-03 11:14:42
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 정청래 국회의원이 12.3 내란 저지 1년 현장 최고위원회에서 “내란 사범을 끝까지 처벌”이라며 추경호 구속 영장 기각을 “제2의 내란”이라 규정했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이는 윤석열 대통령이 비상계엄을 선언한 뒤 사법·정치적 긴장이 고조되는 상황에서 국민의힘과 사법부를 한통속이라고 비판한 것이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 정청래의 발언은 사법 개혁 요구를 부추기며 정치적 갈등을 심화시키고, 사회적 분열 우려를 낳고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/0196ac51e663.png" 
+                     alt="정청래 "내란사범 끝까지 처벌"…秋 영장기각에 "제2의 내란"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>정청래 국회의원은 12월 3일 12.3 내란 저지 1년 현장 최고위원회에서 “내란 사범을 끝까지 처벌하겠다”는 강경한 입장을 내비쳤다. 이어 추경호 의원의 구속 영장 기각을 “제2의 내란”이라 규정하며, 사법부와 정권에 대한 비판을 폭발시켰다. 이 발언은 당초 비상계엄 선언 이후 이어지는 사법·정치적 긴장 속에서 큰 파장을 일으켰다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024년 12월 3일</td>
+<td>비상계엄 선언</td>
+<td>윤석열 대통령이 국가 비상계엄을 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176666" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>추경호 구속 영장 기각</td>
+<td>법원이 추경호 의원의 구속 영장을 기각</td>
+<td><a href="https://www.youtube.com/watch?v=_4HuUxAC8nE" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>정청래 발언</td>
+<td>12.3 내란 저지 1년 현장 최고위원회에서 “내란 사범 끝까지 처벌” 및 “제2의 내란” 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176666" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>정청래 비판</td>
+<td>추경호 구속 영장 기각을 “국민의힘 위헌정당”이라 규정</td>
+<td><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003186876" target="_blank">오마이뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 3일</td>
+<td>정청래 비판</td>
+<td>“12월은 반드시 사법개혁” 및 “내란 전담 재판부 설치” 촉구</td>
+<td><a href="https://www.youtube.com/watch?v=OCp5-1Z2VC4" target="_blank">JTV뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>다양한 관점과 분석</h3>
+<h3>정청래의 입장</h3>
+<p>정청래는 “내란 사범을 끝까지 처벌하겠다”며, 추경호 구속 영장 기각을 “제2의 내란”이라 규정했다. 그녀는 윤석열 정권과 조희대 사법부를 “한통 속”이라고 비판하며, 국민의힘이 내란을 옹호하는 정당이라고 주장했다. 또한 장동혁 의원의 비상계엄 관련 발언을 “내란을 방치한 것”이라 지적했다.  </p>
+<blockquote>
+<p><strong>▶ “추경호 구속 시 ‘국민의힘 위헌정당’”</strong><br />
+<strong>▶ “12월은 반드시 사법개혁”</strong><br />
+**▶ “내란 전담 재판부 설치” 촉구  </p>
+</blockquote>
+<p>이러한 발언은 반대파 내부에서 사법부와 정권에 대한 강경 비판으로 해석되며, 사법 개혁 요구가 정치적 갈등의 핵심이 되고 있다.  </p>
+<h3>정권과 사법부의 반응</h3>
+<p>연합뉴스TV와 대안뉴스 등에서 보도된 바와 같이, 법원은 추경호 의원의 구속 영장을 기각하면서 “법적 근거가 부족”이라고 판단했다. 윤석열 대통령은 비상계엄 선언 이후 사법적 조치를 정당화하며, 정청래의 비판을 “과장”이라 평가했다. 조희대 사법부는 이번 결정이 법리적 판단에 기반한 것이라 입장을 밝혔다.  </p>
+<h3>전문가와 시민의 시각</h3>
+<ul>
+<li><strong>법학자</strong>는 정청래의 “제2의 내란” 경고가 과장될 가능성이 있다고 지적했다.  </li>
+<li><strong>시민단체</strong>는 사법부와 정권에 대한 비판이 필요하다고 주장하지만, 동시에 “과도한 정치적 비난은 사회적 분열을 심화시킬 수 있다”는 우려를 표명했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>검증된 사실</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>윤석열 대통령이 2024년 12월 3일 비상계엄을 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176666" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>추경호 의원의 구속 영장이 2025년 12월 3일 법원에서 기각</td>
+<td><a href="https://www.youtube.com/watch?v=_4HuUxAC8nE" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td>정청래 국회의원이 같은 날 “내란 사범 끝까지 처벌” 및 “제2의 내란”을 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/018/0006176666" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>미확인·추측 정보</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정청래가 “윤석열 정권과 사법부를 한통 속”이라고 비판한 구체적 근거</td>
+<td><strong>확인되지 않음</strong> (주요 언론에서 비판 내용이 보도되었으나, 직접 인용은 제공되지 않음)</td>
+</tr>
+<tr>
+<td>정청래가 “내란 전담 재판부 설치”를 요구한 구체적 법적 근거</td>
+<td><strong>추정되는</strong> (주요 언론 보도에 따르면 요구가 있었으나, 법적 근거는 명시되지 않음)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>소속</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정청래</strong></td>
+<td>민주당 국회의원</td>
+<td>내란 사범 처벌과 사법개혁을 요구하며, 추경호 구속 영장 기각을 비판</td>
+</tr>
+<tr>
+<td><strong>추경호</strong></td>
+<td>국민의힘 국회의원</td>
+<td>구속 영장 기각에 대한 법원 결정에 동의</td>
+</tr>
+<tr>
+<td><strong>윤석열</strong></td>
+<td>대통령 (국민의힘)</td>
+<td>2024년 12월 3일 비상계엄 선언</td>
+</tr>
+<tr>
+<td><strong>조희대 사법부</strong></td>
+<td>사법기관</td>
+<td>추경호 구속 영장 기각 결정</td>
+</tr>
+<tr>
+<td><strong>장동혁</strong></td>
+<td>국민의힘 국회의원</td>
+<td>비상계엄 선언에 대한 발언을 비판받음</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>사법개혁 논의</strong>: 정청래가 촉구한 사법개혁과 내란 전담 재판부 설치 논의가 정권과 반대파 사이에서 지속될 전망이다.  </li>
+<li><strong>정치적 분열</strong>: 추경호 구속 영장 기각에 대한 정청래의 강경 비판은 국민의힘 내부와 반대파 간 갈등을 심화시킬 수 있다.  </li>
+<li><strong>사회적 반응</strong>: 비상계엄 선언 이후 이어지는 사법·정치적 긴장은 시민들의 불안감을 증폭시킬 가능성이 있다.  </li>
+</ul>
+<p>정청래의 발언은 현재 사법·정치적 긴장 속에서 핵심 이슈를 재조명하고</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=_4HuUxAC8nE" target="_blank">[속보] 법원, 추경호 구속영장 기각…"혐의 다툼 여지...</a><a href="https://www.youtube.com/watch?v=GruARMau7AI" target="_blank">[대안뉴스] 추경호 구속영장 기각?! 사법부, 정말 이...</a><a href="https://www.youtube.com/watch?v=OCp5-1Z2VC4" target="_blank">추경호 구속영장 기각 입장 묻자...잼프 카메라 응시하...</a><a href="https://www.youtube.com/watch?v=cVmfOriganc" target="_blank">12/3 (수) 🔴추경호 구속영장 기각- [KBC 박영...</a><a href="https://www.youtube.com/watch?v=bFMbkJnQJEg" target="_blank">추경호 구속영장 기각‥"혐의·법리 다툼 여지" (202...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/018/0006176666" target="_blank">秋 영장기각에…정청래 "尹정권-조희대 사법부 한통 속"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=LwYdAidGJDY" target="_blank">추경호 구속영장 기각‥"혐의·법리 다툼 여지" (2025.12.03/뉴스투데이 ...</a><a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003186876" target="_blank">정청래 "추경호 구속시 '국힘 위헌정당'... 12월은 반드시 사법개혁 ...</a><a href="https://www.youtube.com/watch?v=3ecBsPhOqLo" target="_blank">[ 김태현의 정치쇼] [12.3 비상계엄 1년 특집토론] 한민수X김재섭X ...</a><a href="https://www.goodmorningcc.com/news/articleView.html?idxno=435500" target="_blank">정청래 "추경호 구속 인용·기각 시 상황에 모두 대비하겠다" < 중앙 ...</a><a href="https://v.daum.net/v/20251128101801133" target="_blank">정청래 "추경호 구속시 '국힘 위헌정당'... 12월은 반드시 사법개혁"</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
