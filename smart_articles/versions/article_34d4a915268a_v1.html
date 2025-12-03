@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계엄 후에야 진행된 김건희 수사, 특검 연장될 때마다 혐의는 고구마처럼 ‘줄줄이’ - 2025-12-03 21:12:29</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,김건희,특검,고구마">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="김건희,특검,고구마">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 21:12:29'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('계엄 후에야 진행된 김건희 수사, 특검 연장될 때마다 혐의는 고구마처럼 ‘줄줄이’')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>계엄 후에야 진행된 김건희 수사, 특검 연장될 때마다 혐의는 고구마처럼 ‘줄줄이’</h1>
+            <p>
+                분석 시간: 2025-12-03 21:12:29
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 김건희 전 대통령 부인에 대한 특검 수사가 12·3 불법계엄 해제 이후 연장될 때마다 새로운 혐의가 추가되고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2025년 10월 1차 연장으로 4가지 혐의 기소, 11월 2차 연장으로 외환·증거인멸 혐의가 추가되었으며, 12월 3일 소환과 4일 소환시간 조정, 11일 재소환 예정, 28일 특검 종료 예정이 발표되었다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 특검 종료 후 수사 범위가 축소될 가능성이 있으며, 정치적 압박과 법적 절차의 투명성에 대한 우려가 지속되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/34d4a915268a.png" 
+                     alt="계엄 후에야 진행된 김건희 수사, 특검 연장될 때마다 혐의는 고구마처럼 ‘줄줄이’" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>김건희 전 대통령 부인에 대한 특검 수사가 12·3 불법계엄이 해제된 뒤 시작되었으며, 특검 기간이 연장될 때마다 새로운 혐의가 추가되는 모습이 보도되고 있다. 수사는 고가 금품 수수와 국가 자산 유용 등으로 이어지며, 각 연장마다 혐의가 “고구마 줄기처럼” 늘어나는 비유가 사용되었다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 10월</strong></td>
+<td>특검 연장</td>
+<td>1차 수사기간 연장, 한학자 통일교 총재를 정치자금법·청탁금지법 위반 등 4가지 혐의로 구속 기소</td>
+<td><a href="https://v.daum.net/v/20251203162456541" target="_blank">Daum</a></td>
+</tr>
+<tr>
+<td><strong>2025년 11월</strong></td>
+<td>특검 연장</td>
+<td>2차 연장, 김건희 일가에 대한 외환·증거인멸 혐의 추가</td>
+<td><a href="https://www.youtube.com/watch?v=2vr4K1DdhKg" target="_blank">YTN</a></td>
+</tr>
+<tr>
+<td><strong>2025년 12월 3일</strong></td>
+<td>소환</td>
+<td>김건희가 서울중앙지방법원에 <strong>오후 2시</strong> 소환</td>
+<td><a href="https://www.youtube.com/watch?v=qwTAnHae-Nk" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td><strong>2025년 12월 4일</strong></td>
+<td>소환 시간 조정</td>
+<td>특검팀이 <strong>오전 10시 → 오후 2시</strong>로 소환 시간 변경</td>
+<td><a href="https://www.youtube.com/watch?v=qwTAnHae-Nk" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td><strong>2025년 12월 11일</strong></td>
+<td>재소환 예정</td>
+<td>국가 자산 유용 혐의 조사 예정</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>2025년 12월 28일</strong></td>
+<td>특검 종료 예정</td>
+<td>특검 기간 최종 종료</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>특검 기간은 12월 28일까지 연장될 수 있으며, 이후 수사 범위가 축소될 가능성이 있다.</strong><br />
+▶ <strong>김건희는 도이치모터스 주가조작, 명태균 선거개입, 건진법사·통일교 청탁 혐의 등으로 구속 기소되었다.</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>연합뉴스TV</strong>는 “특검은 고가 금품 수수 의혹을 추궁하며, 소환 시간을 조정한 이유는 김건희의 건강 문제 때문”이라고 보도했다.  </li>
+<li><strong>YTN</strong>은 “특검이 재소환을 통보한 배경은 ‘건전한 수사 진행’과 ‘증거 확보’에 있다”고 전했다.  </li>
+<li><strong>한겨레</strong>는 “특검 연장에 따라 혐의가 늘어나는 과정이 ‘고구마 줄기처럼’ 이어진다고 비유하며, 정치적 압박이 작용할 가능성을 시사했다”고 분석했다.  </li>
+<li><strong>Khan</strong>은 “12·3 불법계엄 이후 ‘수사 방패막’이 허물어졌으며, 특검법 개정 논의가 진행 중”이라고 보도했다.  </li>
+</ul>
+<p>이처럼 언론은 수사의 진행 상황을 사실적으로 전달하면서도, 정치적 맥락과 법적 절차의 투명성에 대한 우려를 동시에 제기하고 있다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>김건희가 2025년 12월 3일 서울중앙지방법원에 <strong>오후 2시</strong> 소환</td>
+<td><a href="https://www.youtube.com/watch?v=qwTAnHae-Nk" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td></td>
+<td>특검팀이 12월 4일 소환 시간을 <strong>오전 10시 → 오후 2시</strong>로 조정</td>
+<td><a href="https://www.youtube.com/watch?v=qwTAnHae-Nk" target="_blank">연합뉴스TV</a></td>
+</tr>
+<tr>
+<td></td>
+<td>김건희가 도이치모터스 주가조작, 명태균 선거개입, 건진법사·통일교 청탁 혐의로 구속 기소</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>특검 기간은 12월 28일까지 연장 가능</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>고가 금품 수수 의혹(반클리프 아펠 목걸이, 금거북이, 바쉐론 시계 등)</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001313128" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>국가 자산 유용 혐의(종묘 차담, 해군 선박 파티 등)</td>
+<td>-</td>
+</tr>
+<tr>
+<td></td>
+<td>외환·증거인멸 혐의 추가</td>
+<td><a href="https://www.youtube.com/watch?v=2vr4K1DdhKg" target="_blank">YTN</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>고가 금품 수수와 국가 자산 유용 혐의는 아직 공식적으로 입증되지 않았으며, 특검팀이 추후 재소환을 통해 조사할 예정이다.</strong>  </p>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>김건희 전 대통령 부인</strong> – 수사 대상자이며, 현재 특검팀에 의해 재소환될 예정.  </li>
+<li><strong>특검팀</strong> – 수사 범위와 절차를 결정하며, 12·3 불법계엄 이후 수사 방패막이 해제된 상황에서 수사를 진행 중.  </li>
+<li><strong>이전 대통령 유권자 및 정치권</strong> – 일부는 수사를 정치적 압박으로 보며, 다른 일부는 책임 추궁의 필요성을 강조한다.  </li>
+<li><strong>정당·정치단체</strong> – 특검법 개정 논의와 연장에 따라 정치적 이미지와 선거 전략에 영향을 받을 수 있다.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>수사 종료 시점</strong>: 특검이 12월 28일에 종료되면, 수사 범위가 축소되거나 다른 법원으로 이관될 가능성이 있다.  </li>
+<li><strong>법적 절차</strong>: 김건희와 관련 인물들의 기소 여부는 최종적으로 법원 판결에 달려 있다.  </li>
+<li><strong>정치적 영향</strong>: 수사의 확대와 연장은 현재 정권에 대한 신뢰도와 대중의 정치적 인식에 큰 영향을 미칠 수 있다.  </li>
+<li><strong>선거·정책</strong>: 향후 지방·국회의원 선거에서 이슈가 될 가능성이 있으며, 정당 내부의 이미지 개선·정책 방향 재조정이 요구될 수 있다.  </li>
+</ul>
+<p>▶ <strong>특검이 종료되면, 수사 결과가 법원에 의해 최종 판단되며, 그 결과가 정치적 파장과 공공 신뢰에 지속적인 영향을 미칠 전망이다.</strong></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=qwTAnHae-Nk" target="_blank">특검, 김건희 내일 오후 2시 소환…고가 금품수수 의혹...</a><a href="https://www.youtube.com/watch?v=KtnAO4oCe4c" target="_blank">특검, 김건희 구속기간 31일까지 연장...내일 오후 ...</a><a href="https://www.youtube.com/watch?v=2vr4K1DdhKg" target="_blank">김건희 일가 내일 재소환...특검, 윤 외환 의혹 기소...</a><a href="https://www.youtube.com/watch?v=bvSWYI7jTFE" target="_blank">내일 김건희 특검 재소환…&#39;단전·단수&#39; ...</a><a href="https://www.youtube.com/watch?v=S9YQ1nWAeko" target="_blank">특검, 내일 김건희 첫 공개소환...윤석열 체포 시기도...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/055/0001313128" target="_blank">특검, 김건희 내일 오후 2시 소환…고가 금품수수 의혹 추궁</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://v.daum.net/v/20251203162456541" target="_blank">계엄 후에야 진행된 김건희 수사, 특검 연장될 때마다 혐의는 고구마 ...</a><a href="https://www.khan.co.kr/article/202512031623001" target="_blank">계엄 후에야 진행된 김건희 수사, 특검 연장될 때마다 혐의는 고구마 ...</a><a href="https://www.hani.co.kr/arti/politics/politics_general/1214392.html" target="_blank">“의혹이 고구마 줄기처럼 줄줄이”…민주, '김건희 특검법' 개정한다</a><a href="https://m.news.nate.com/search?q=%EB%AF%BC%EC%A4%91%EA%B8%B0&order=T" target="_blank">민중기 검색결과 : 네이트 뉴스</a><a href="https://www.newstomato.com/ReadNews.aspx?no=1278666" target="_blank">사실상 남은 기간 '한 달'…김건희특검, 추가 수사도 제한적</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
