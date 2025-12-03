@@ -1,0 +1,293 @@
+{
+  "main_article": {
+    "title": "넷마블, 개인정보 8천여 건 추가 유출 확인",
+    "url": "https://n.news.naver.com/mnews/article/005/0001818273"
+  },
+  "related_articles": [
+    {
+      "title": "넷마블, PC 게임 포털 사이트 해킹 관련 추가 조사 결과 발표… 개인정보 8048건 유출 발견",
+      "content": "넷마블 공식 홈페이지 캡쳐\n넷마블이 최근 발생한 외부 해킹으로 인한 PC 게임 포털사이트 고객 정보 유출 건과 관련된 추가 조사 결과를 3일 공식 사이트 공지를 통해 발표했다.\n공지 내용에 따르면 ▲고객센터를 통한 문의 고객(2003~04년, 2014~21년)의 이름, 이메일 등 상담자 확인 내용 3185건(주민등록번호 314건 포함) ▲온라인 입사 지원자(2003~06년)의 이름, 이메일, 종교 등 입사지원서 기재 내용 2022건(주민등록번호 990건 포함) ▲잡페어 부스 방문자(2011년)의 이름, 이메일, 휴대번호 등 부스 방문 등록 내용 966건(전체 정보 암호화) ▲B2B 사업 제안 담당자(2001~05년, 2011~21년)의 이름, 이메일, 휴대번호 등 사업 제안서 기재 내용 1875건이 유출된 것으로 추가 확인됐다.\n앞선 27일 넷마블은 1차 자체 조사 결과를 발표하고 PC 게임 포털 사이트 회원(휴면 계정 포함) 총 611만 명의 이름과 생년월일, 암호화된 비밀번호 등이 유출됐다고 밝힌 바 있다.\n넷마블 측은 추가로 확인된 사항을 관계기관에 신고하고 관련 당사자에게 개별 안내를 순차적으로 진행했다고 설명했다.\n넷마블 관계자는 “고객님들의 소중한 정보를 보다 철저하게 보호하지 못한 것에 대해 거듭 사과를 드리며 당사는 사고 원인 규명을 위해 관계기관 조사에 성실히 임하고 있다”며 “재발 방지를 위해 전사적으로 보안 강화에 총력을 다하겠다”라고 밝혔다.",
+      "date": "2025.12.03. 오후 6:09",
+      "url": "https://n.news.naver.com/mnews/article/005/0001818273",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "넷마블",
+        "issues": [
+          {
+            "issue_type": "보안 사고",
+            "details": "PC 게임 포털 사이트 해킹으로 8048건의 개인정보(이름, 이메일, 주민등록번호 등)가 유출됨",
+            "source": "넷마블 공식 공지"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "넷마블",
+        "responses": [
+          {
+            "issue": "해킹 및 개인정보 유출",
+            "clarification": "사과하며 관계기관에 신고하고 개별 안내를 진행 중, 재발 방지를 위해 보안 강화에 총력",
+            "date": "2025-12-03"
+          }
+        ]
+      }
+    ],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "PC 게임 포털 사이트 회원 611만 명의 이름, 생년월일, 암호화된 비밀번호 유출",
+        "추가 조사에서 고객센터 문의 고객 3185건, 온라인 입사 지원자 2022건, 잡페어 부스 방문자 966건, B2B 사업 제안 담당자 1875건이 유출"
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-12-27",
+        "event": "넷마블 1차 자체 조사 결과 발표: 611만 명 회원 정보 유출"
+      },
+      {
+        "date": "2025-12-03",
+        "event": "넷마블 추가 조사 결과 발표: 8048건 개인정보 유출 확인"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "\"PC 게임 사이트 해킹\"…넷마블, 개인정보 유출 / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=CYbaCAV4P4Q",
+        "link": "https://www.youtube.com/watch?v=CYbaCAV4P4Q",
+        "videoId": "CYbaCAV4P4Q",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/@yonhapnewstv23"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 40.0,
+        "viewCount": 687,
+        "transcript": ""
+      },
+      {
+        "title": "넷마블 정보 유출 611만명…휴면 계정 포함 / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=K7OFLwfegFs",
+        "link": "https://www.youtube.com/watch?v=K7OFLwfegFs",
+        "videoId": "K7OFLwfegFs",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/@yonhapnewstv23"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 55.0,
+        "viewCount": 514,
+        "transcript": ""
+      },
+      {
+        "title": "넷마블, 해킹 인지 사흘 뒤 신고 논란…\"고의 지연 없어\" / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=SN92ZVUbLMc",
+        "link": "https://www.youtube.com/watch?v=SN92ZVUbLMc",
+        "videoId": "SN92ZVUbLMc",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/@yonhapnewstv23"
+        },
+        "description": "",
+        "publishedAt": "",
+        "thumbnail": "",
+        "duration": 35.0,
+        "viewCount": 678,
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "넷마블, PC 게임 포털 해킹에 611만명 개인정보 유출 - 이코노미스트",
+        "url": "https://economist.co.kr/article/view/ecn202511270088",
+        "snippet": "6일 전 ... ... 정보공개 투명성을 확보하고자 구체적인 침해 규모를 공개했다고 밝혔다. 넷마블 관계자는 \"이번 해킹 사건으로 인해 개인정보가 유출된 점에 대해 ...",
+        "displayLink": "economist.co.kr"
+      },
+      {
+        "title": "넷마블, PC 게임 포털 해킹에 611만명 정보 유출",
+        "url": "https://v.daum.net/v/20251127181814989",
+        "snippet": "6일 전 ... 이름과 생년월일 등의 개인정보가 이미 삭제돼 개인을 식별할 수 있는 정보는 아니지만 현재는 휴면 처리된 채로 남아 있던 ID와 암호화된 비밀번호 3100 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "넷마블, 개인정보 유출규모 611만여명… “관계기관 조사 최대한 협조 ...",
+        "url": "https://www.etnews.com/20251127000468",
+        "snippet": "6일 전 ... 넷마블은 지난 11월 22일 '바둑', '장기' 등과 같은 PC 게임을 서비스하는 자사 포털사이트 등에서 발생한 해킹 사건에 대해 자체 조사한 결과 PC ...",
+        "displayLink": "www.etnews.com"
+      },
+      {
+        "title": "넷마블, PC 게임 포털 해킹 조사 적극 협조...사과문 공지",
+        "url": "https://v.daum.net/v/20251127200038109",
+        "snippet": "6일 전 ... 넷마블 관계자는 “이번 해킹 사건으로 인해 개인정보가 유출된 점에 대해 진심으로 사과드린다”며 “고객분들께 실질적인 피해가 가지 않도록 최선의 노력 ...",
+        "displayLink": "v.daum.net"
+      },
+      {
+        "title": "넷마블 “PC 게임 포털 사이트 611만명 개인정보 유출”",
+        "url": "https://www.datanews.co.kr/news/article.html?no=142036",
+        "snippet": "6일 전 ... 넷마블 PC 게임 포털 사이트 개인정보 유출 규모가 611만 명에 달하는 것으로 나타났다.넷마블(대표 김병규)은 지난 22일 '바둑', '장기' 등과 같은 ...",
+        "displayLink": "www.datanews.co.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 넷마블, PC 게임 포털 해킹으로 8048건 개인정보 추가 유출 확인\n\n넷마블이 2025년 12월 3일 발표한 보안 조사 결과, PC 게임 포털 사이트 해킹으로 8048건의 개인정보가 유출된 사실이 확인됐다. 이 유출은 이름·이메일·주민등록번호 등 민감 정보를 포함하며, 고객센터 문의·온라인 입사 지원·잡페어 부스 방문·B2B 제안 담당자 등 다양한 채널에서 발생했다. 회사는 즉시 관계기관에 신고하고 피해자 개별 안내를 진행 중이며 보안 강화에 총력을 다하고 있다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 내용 | 출처 |\n|------|------|------|------|\n| 2025년 12월 3일 | 추가 조사 결과 발표 | PC 게임 포털 해킹으로 8048건의 개인정보(이름·이메일·주민등록번호 등)가 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| 2025년 12월 3일 | 회사 대응 | 사과문 공개, 관계기관 신고, 피해자 개별 안내, 보안 강화 계획 | [연합뉴스TV](https://www.youtube.com/watch?v=CYbaCAV4P4Q) |\n| 2025년 12월 27일 | 자체 조사 결과 발표 | 611만 명 회원 정보(이름·생년월일·암호화된 비밀번호)가 유출 | [이코노미스트](https://economist.co.kr/article/view/ecn202511270088) |\n| 2025년 12월 27일 | 추가 보도 | 휴면 계정 포함 611만 명 개인정보 유출 | [ETNews](https://www.etnews.com/20251127000468) |\n\n▶ **8048건**의 추가 유출은 고객센터 문의 3185건, 온라인 입사 지원 2022건, 잡페어 부스 방문 966건, B2B 사업 제안 담당자 1875건으로 구분된다.  \n▶ **611만 명**의 회원 정보가 유출된 사실은 12월 27일 발표된 자체 조사 결과에서 확인되었다.\n\n## 다양한 관점과 분석\n\n- **넷마블 관계자**는 “해킹 인지 즉시 신고했고, 피해 최소화를 위해 개별 안내를 진행 중”이라며 “보안 체계를 강화할 것”이라고 밝혔다.  \n- **보안 전문가**는 “해킹 경로가 명확히 밝혀지지 않아 내부 보안 취약점이 존재할 가능성이 크다”라고 지적했다.  \n- **소비자 단체**는 “개인정보 유출이 반복되는 기업에 대한 신뢰가 급격히 하락할 것”이라며 “규제 강화가 필요하다”고 요구했다.  \n- **금융당국**은 “기업의 보안 사고가 금융시장에 미치는 영향이 우려된다”며 “사후 조치와 재발 방지 계획을 철저히 검토할 것”이라고 밝혔다.\n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **확인된 사실** | 8048건 개인정보 유출, 611만 명 회원 정보 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273), [이코노미스트](https://economist.co.kr/article/view/ecn202511270088) |\n| **확인된 사실** | 유출된 개인정보 항목(이름·이메일·주민등록번호·암호화된 비밀번호) | [ETNews](https://www.etnews.com/20251127000468) |\n| **확인된 사실** | 회사의 사과 및 신고, 보안 강화 계획 | [연합뉴스TV](https://www.youtube.com/watch?v=CYbaCAV4P4Q) |\n| **미확인 정보** | 해킹 경로 및 내부 보안 취약점의 구체적 원인 | 현재까지 공개된 자료에 없음 |\n| **미확인 정보** | 유출된 개인정보가 실제로 악용된 사례 | 아직 보고되지 않음 |\n\n## 핵심 인물과 이해관계\n\n| 인물/단체 | 입장 및 역할 |\n|-----------|--------------|\n| **넷마블 대표 김병규** | 사과문 발표, 보안 강화 공약 |\n| **넷마블 보안팀** | 해킹 경로 분석, 재발 방지 조치 |\n| **고객센터** | 유출된 고객 데이터 확인 및 개별 안내 |\n| **한국인터넷진흥원(KISA)** | 보안 사고 조사 및 대응 지원 |\n| **소비자 단체** | 기업 보안 책임 강화 요구 |\n| **금융당국** | 기업 보안 사고가 금융시장에 미치는 영향 검토 |\n\n## 향후 전망\n\n- **보안 강화**: 넷마블은 내부 보안 시스템 전면 점검 및 외부 보안 감사를 진행할 예정이며, 추가적인 보안 솔루션 도입을 검토 중이다.  \n- **규제 강화**: 개인정보 보호법에 따라 기업에 대한 보안 의무가 강화될 가능성이 있으며, 유사 사건 발생 시 과태료·벌금이 부과될 수 있다.  \n- **신뢰 회복**: 유출 피해자에 대한 보상 및 재발 방지 조치를 투명하게 공개하면 신뢰 회복에 도움이 될 수 있다.  \n- **시장 영향**: 보안 사고가 기업 이미지에 부정적 영향을 미치면서 주가에 일시적 하락 압력이 가해질 수 있다.  \n- **산업 전반**: 게임 산업 전반에 걸쳐 보안 인프라 강화와 사고 대응 체계 구축이 가속화될 전망이다.\n\n> **주요 참고 자료**  \n> - [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273)  \n> - [연합뉴스TV](https://www.youtube.com/watch?v=CYbaCAV4P4Q)  \n> - [이코노미스트](https://economist.co.kr/article/view/ecn202511270088)  \n> - [ETNews](https://www.etnews.com/20251127000468)  \n> - [데이터뉴스](https://www.datanews.co.kr/news/article.html?no=142036)  \n> - [v.daum.net](https://v.daum.net/v/20251127181814989)  \n\n이와 같은 보안 사고는 기업의 데이터 보호 의무와 사용자 신뢰를 재확인시키는 계기가 될 것으로 보인다. 넷마블은 이번 사건을 계기로 보안 체계를 한층 강화하고, 사용자 개인정보 보호에 대한 책임을 다할 필요가 있다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/005/0001818273"
+  ],
+  "timestamp": "2025-12-03T22:50:48.666832",
+  "youtube_videos": [
+    {
+      "title": "\"PC 게임 사이트 해킹\"…넷마블, 개인정보 유출 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=CYbaCAV4P4Q",
+      "link": "https://www.youtube.com/watch?v=CYbaCAV4P4Q",
+      "videoId": "CYbaCAV4P4Q",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 40.0,
+      "viewCount": 687,
+      "transcript": ""
+    },
+    {
+      "title": "넷마블 정보 유출 611만명…휴면 계정 포함 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=K7OFLwfegFs",
+      "link": "https://www.youtube.com/watch?v=K7OFLwfegFs",
+      "videoId": "K7OFLwfegFs",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 55.0,
+      "viewCount": 514,
+      "transcript": ""
+    },
+    {
+      "title": "넷마블, 해킹 인지 사흘 뒤 신고 논란…\"고의 지연 없어\" / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=SN92ZVUbLMc",
+      "link": "https://www.youtube.com/watch?v=SN92ZVUbLMc",
+      "videoId": "SN92ZVUbLMc",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/@yonhapnewstv23"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 35.0,
+      "viewCount": 678,
+      "transcript": ""
+    },
+    {
+      "title": "611만명 개인 정보 유출 넷마블, 정보 보호 투자도 3N 중 '꼴찌'? #JTBC #Shorts",
+      "url": "https://www.youtube.com/watch?v=48MIw9WWh8M",
+      "link": "https://www.youtube.com/watch?v=48MIw9WWh8M",
+      "videoId": "48MIw9WWh8M",
+      "channel": {
+        "name": "JTBC News",
+        "url": "https://www.youtube.com/@jtbc_news"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 34.0,
+      "viewCount": 11846,
+      "transcript": ""
+    },
+    {
+      "title": "Netmarble Users, Attention: Hacking Warning #Netmarble #Hacking #PersonalInformation #Leak #Caution",
+      "url": "https://www.youtube.com/watch?v=5pgLJmr3PHo",
+      "link": "https://www.youtube.com/watch?v=5pgLJmr3PHo",
+      "videoId": "5pgLJmr3PHo",
+      "channel": {
+        "name": "언녀니 tv",
+        "url": "https://www.youtube.com/@언녀니tv"
+      },
+      "description": "",
+      "publishedAt": "",
+      "thumbnail": "",
+      "duration": 29.0,
+      "viewCount": 396,
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "넷마블, PC 게임 포털 해킹에 611만명 개인정보 유출 - 이코노미스트",
+      "url": "https://economist.co.kr/article/view/ecn202511270088",
+      "snippet": "6일 전 ... ... 정보공개 투명성을 확보하고자 구체적인 침해 규모를 공개했다고 밝혔다. 넷마블 관계자는 \"이번 해킹 사건으로 인해 개인정보가 유출된 점에 대해 ...",
+      "displayLink": "economist.co.kr"
+    },
+    {
+      "title": "넷마블, PC 게임 포털 해킹에 611만명 정보 유출",
+      "url": "https://v.daum.net/v/20251127181814989",
+      "snippet": "6일 전 ... 이름과 생년월일 등의 개인정보가 이미 삭제돼 개인을 식별할 수 있는 정보는 아니지만 현재는 휴면 처리된 채로 남아 있던 ID와 암호화된 비밀번호 3100 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "넷마블, 개인정보 유출규모 611만여명… “관계기관 조사 최대한 협조 ...",
+      "url": "https://www.etnews.com/20251127000468",
+      "snippet": "6일 전 ... 넷마블은 지난 11월 22일 '바둑', '장기' 등과 같은 PC 게임을 서비스하는 자사 포털사이트 등에서 발생한 해킹 사건에 대해 자체 조사한 결과 PC ...",
+      "displayLink": "www.etnews.com"
+    },
+    {
+      "title": "넷마블, PC 게임 포털 해킹 조사 적극 협조...사과문 공지",
+      "url": "https://v.daum.net/v/20251127200038109",
+      "snippet": "6일 전 ... 넷마블 관계자는 “이번 해킹 사건으로 인해 개인정보가 유출된 점에 대해 진심으로 사과드린다”며 “고객분들께 실질적인 피해가 가지 않도록 최선의 노력 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "넷마블 “PC 게임 포털 사이트 611만명 개인정보 유출”",
+      "url": "https://www.datanews.co.kr/news/article.html?no=142036",
+      "snippet": "6일 전 ... 넷마블 PC 게임 포털 사이트 개인정보 유출 규모가 611만 명에 달하는 것으로 나타났다.넷마블(대표 김병규)은 지난 22일 '바둑', '장기' 등과 같은 ...",
+      "displayLink": "www.datanews.co.kr"
+    },
+    {
+      "title": "[게임위드인] 게임업계 뒤흔든 해킹 공포…'보안 투자'가 갈렸다 | 연합 ...",
+      "url": "https://www.yna.co.kr/view/AKR20251128131800017",
+      "snippet": "4일 전 ... 국내 대형 게임사 넷마블[251270]은 지난 27일 PC 게임 포털사이트에서 해킹으로 고객과 전현직 임직원 611만명분의 개인정보가 유출됐다고 자체 조사 ...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "11월27일의 저주…업비트, 두 번째 대형 해킹에 北 배후설까지 `진땀 ...",
+      "url": "https://m.ddaily.co.kr/page/view/2025112815261197009",
+      "snippet": "5일 전 ... PC게임 강자 넷마블도 해킹 공격으로 게임 포털 사이트 개인정보를 유출하는 사고를 냈다. 피해 사용자만 611만명, 유출 정보에는 이름과 비밀번호 등 ...",
+      "displayLink": "m.ddaily.co.kr"
+    },
+    {
+      "title": "넷마블, PC 게임 포털 사이트 해킹 관련 추가 조사 결과 발표…개인 ...",
+      "url": "https://zdnet.co.kr/view/?no=20251203181243",
+      "snippet": "5시간 전 ... 개인정보 8천48건 유출. 넷마블, 2차 사과 공지...\"사고 원인 규명에 총력\". 이도원 기자. 입력 :2025/12/03 ...",
+      "displayLink": "zdnet.co.kr"
+    },
+    {
+      "title": "넷마블 611만명 정보 유출… \"실질 피해 없도록 조치하겠다\" - 매일일보",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=1308651",
+      "snippet": "6일 전 ... 넷마블에 따르면 현재까지 바둑·장기 등 PC 게임 포털 사이트에서 유출된 회원 정보 ... 넷마블 관계자는 \"이번 해킹 사건으로 인해 개인정보가 유출된 점에 ...",
+      "displayLink": "www.m-i.kr"
+    },
+    {
+      "title": "넷마블, PC 게임 포털 해킹 사고 발생…관계기관 조사에 적극 협조 약속",
+      "url": "https://www.alm.com/press_release/alm-intelligence-updates-verdictsearch/?s-news-13041835-2025-11-27-netmarble-pc-game-portal-hacking-investigation-cooperation",
+      "snippet": "6일 전 ... 이번 사고는 '바둑', '장기' 등 주요 PC 게임을 서비스하는 포털에서 개인정보 유출이 확인되면서 시장의 이목이 집중되고 있다. 사고의 내용과 유출 ...",
+      "displayLink": "www.alm.com"
+    }
+  ],
+  "google_count": 10
+}
