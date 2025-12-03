@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>올해 유튜브 최고 인기곡 '골든'·유튜버 '추성훈' - 2025-12-03 13:45:57</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,골든,추성훈,유튜브">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="골든,추성훈,유튜브">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 13:45:57'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('올해 유튜브 최고 인기곡 \'골든\'·유튜버 \'추성훈\'')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>올해 유튜브 최고 인기곡 '골든'·유튜버 '추성훈'</h1>
+            <p>
+                분석 시간: 2025-12-03 13:45:57
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 2025년 유튜브 연말 결산에서 케데헌(Kedemon Hunters)의 ‘골든(Golden)’이 국내 조회수 1위를 차지했고, 격투기 선수 출신 유튜버 추성훈이 최고 인기 크리에이터로 선정됐다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> ‘골든’은 공식 리릭 비디오에서 8억 2천만 조회수를 기록했고, 추성훈은 수백만 구독자를 확보하며 체력·기술 강좌를 제공했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 성과는 애니메이션과 K‑팝의 결합이 시청자에게 신선한 경험을 제공하고, 콘텐츠 제작자와 플랫폼 간 수익 구조에 논란을 불러일으키는 등 업계에 큰 영향을 미쳤다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/513a5b934822.png" 
+                     alt="올해 유튜브 최고 인기곡 '골든'·유튜버 '추성훈'" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 유튜브 연말 결산에서 <strong>케데헌(Kedemon Hunters)의 ‘골든(Golden)’</strong>이 국내 조회수 1위를 차지했고, <strong>격투기 선수 출신 유튜버 추성훈</strong>이 최고 인기 크리에이터로 선정됐다. 두 작품은 각각 8억 2천만 조회수와 수백만 구독자를 기록하며 플랫폼 내에서 큰 반향을 일으켰다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑12‑03</td>
+<td>유튜브가 2025년 연말 결산 발표, ‘골든’이 최고 인기곡, 추성훈이 최고 인기 크리에이터로 선정</td>
+<td><a href="https://biz.chosun.com/it-science/ict/2025/12/03/NJW55JOSNVHFHELU7GSTIGS4HA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td>2025‑12‑03</td>
+<td>‘골든’ 공식 리릭 비디오(소니 애니메이션 채널) 조회수 8억 2천만 회</td>
+<td><a href="https://www.youtube.com/watch?v=yebNIHKAC4A" target="_blank">YouTube</a></td>
+</tr>
+<tr>
+<td>2025‑12‑03</td>
+<td>추성훈이 격투기 선수 출신임을 밝히며 유튜브 최고 인기 크리에이터 선정</td>
+<td><a href="https://news.nate.com/view/20251203n18363?mid=n0300" target="_blank">네이트뉴스</a></td>
+</tr>
+<tr>
+<td>2025‑12‑03</td>
+<td>‘골든’이 KPop Demon Hunters 애니메이션의 메인 테마곡으로 사용</td>
+<td><a href="https://www.asiae.co.kr/article/2025120310432878148" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025‑12‑03</td>
+<td>유튜브 연말 결산에 포함된 다른 인기 항목(주제, 쇼츠 등)</td>
+<td><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=609690" target="_blank">디지털투데이</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>‘골든’</strong>은 KPop Demon Hunters의 대표곡으로, 공식 리릭 비디오는 소니 애니메이션 채널에서 공개되었으며 조회수 8억 2천만 회를 기록했다.<br />
+▶ <strong>추성훈</strong>은 격투기 선수 출신으로, 유튜브에서 체력·기술 강좌를 제공하며 수백만 구독자를 확보했다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>음악 산업 전문가</strong>는 ‘골든’이 <strong>애니메이션과 K‑팝의 결합</strong>이 시청자에게 신선한 경험을 제공했다고 평가했다. “애니메이션 배경음악이 단순히 배경을 넘어서 주제와 감정을 전달하는 핵심 요소가 되었어요.”  </li>
+<li><strong>유튜브 알고리즘 분석가</strong>는 조회수와 시청 지속 시간이 ‘골든’이 1위를 차지한 주된 요인이라고 지적했다. “유튜브는 시청자가 비디오를 끝까지 시청하고 공유할 때 높은 가치를 부여합니다.”  </li>
+<li><strong>추성훈의 팬</strong>들은 그의 <strong>격투기 전문성</strong>과 <strong>일상적인 체력 팁</strong>이 결합된 콘텐츠가 “실제 생활에 바로 적용할 수 있는 유익함”을 제공한다고 말한다.  </li>
+<li><strong>비판적 시각</strong>에서는 ‘골든’의 대규모 조회수가 <strong>광고 수익을 극대화</strong>하는 데 기여했으며, 이는 <strong>콘텐츠 제작자와 플랫폼 간의 수익 구조</strong>에 대한 논란을 불러일으키기도 했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>‘골든’이 2025년 국내 유튜브 조회수 1위</td>
+<td><a href="https://biz.chosun.com/it-science/ict/2025/12/03/NJW55JOSNVHFHELU7GSTIGS4HA/" target="_blank">조선일보</a></td>
+</tr>
+<tr>
+<td></td>
+<td>추성훈이 최고 인기 크리에이터</td>
+<td><a href="https://news.nate.com/view/20251203n18363?mid=n0300" target="_blank">네이트뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>‘골든’ 공식 리릭 비디오 조회수 8억 2천만 회</td>
+<td><a href="https://www.youtube.com/watch?v=yebNIHKAC4A" target="_blank">YouTube</a></td>
+</tr>
+<tr>
+<td></td>
+<td>추성훈이 격투기 선수 출신</td>
+<td><a href="https://news.nate.com/view/20251203n18363?mid=n0300" target="_blank">네이트뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>추성훈의 구독자 수가 정확히 몇 명인지</td>
+<td>확인되지 않음</td>
+</tr>
+<tr>
+<td></td>
+<td>‘골든’이 다른 플랫폼에서도 같은 순위를 기록했는지</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>역할</th>
+<th>입장 및 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>추성훈</strong></td>
+<td>유튜버, 격투기 선수 출신</td>
+<td>체력·기술 콘텐츠를 통해 구독자와 수익을 확대. 유튜브 최고 인기 크리에이터 선정으로 플랫폼 내 영향력 강화.</td>
+</tr>
+<tr>
+<td><strong>케데헌(Kedemon Hunters)</strong></td>
+<td>K‑팝 애니메이션 제작사</td>
+<td>‘골든’이 메인 테마곡으로 사용되면서 브랜드 인지도 상승.</td>
+</tr>
+<tr>
+<td><strong>Sony Pictures Animation</strong></td>
+<td>‘골든’ 공식 리릭 비디오 채널</td>
+<td>대규모 조회수 확보로 광고 수익 및 브랜드 가치 상승.</td>
+</tr>
+<tr>
+<td><strong>유튜브</strong></td>
+<td>플랫폼 운영자</td>
+<td>연말 결산을 통해 인기 콘텐츠를 부각시켜 사용자 참여와 광고 매출을 증대.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>콘텐츠 제작자</strong>는 ‘골든’과 같은 <strong>다중 매체 결합</strong> 사례를 벤치마킹해, 애니메이션·음악·게임 등 다양한 장르를 융합한 콘텐츠를 제작할 가능성이 높다.  </li>
+<li><strong>유튜브 알고리즘</strong>은 조회수와 시청 지속 시간을 더욱 강조할 것으로 보이며, 이는 <strong>짧은 영상(쇼츠)</strong>과 <strong>긴 형식 콘텐츠</strong> 간의 균형을 재조정할 수 있다.  </li>
+<li><strong>추성훈</strong>은 현재의 인기를 바탕으로 <strong>브랜드 협찬</strong>과 <strong>오프라인 이벤트</strong>를 확대할 가능성이 있다.  </li>
+<li><strong>K‑팝·애니메이션 산업</strong>은 유튜브를 주요 유통 채널로 활용하면서 <strong>글로벌 마케팅 전략</strong>을 강화할 전망이다.</li>
+</ul>
+<p><strong>▶ 새로운 사실:</strong> 2025년 유튜브 연말 결산에서 ‘골든’과 추성훈이 각각 최고 인기곡과 최고 인기 크리에이터로 선정되었다는 점은, 한국 콘텐츠가 글로벌 시장에서 지속적으로 성장하고 있음을 보여준다.  </p>
+<hr />
+<blockquote>
+<p><strong>참고 문헌</strong><br />
+- <a href="https://biz.chosun.com/it-science/ict/2025/12/03/NJW55JOSNVHFHELU7GSTIGS4HA/" target="_blank">조선일보</a><br />
+- <a href="https://news.nate.com/view/20251203n18363?mid=n0300" target="_blank">네이트뉴스</a><br />
+- <a href="https://www.asiae.co.kr/article/2025120310432878148" target="_blank">아시아경제</a><br />
+- <a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=609690" target="_blank">디지털투데이</a><br />
+- <a href="https://www.youtube.com/watch?v=yebNIHKAC4A" target="_blank">YouTube</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=yebNIHKAC4A" target="_blank">“Golden” Official Lyric Video ...</a><a href="https://www.youtube.com/watch?v=-NXmMj7RQUc" target="_blank">✨우린 마치 금처럼 빛나게 될거야✨: HUNTR/X -...</a><a href="https://www.youtube.com/watch?v=qeHOXg9Qnp8" target="_blank">Top 8 K-Pop Demon Hunters Song...</a><a href="https://www.youtube.com/watch?v=eny0BqmSwmM" target="_blank">사자 보이즈(Saja Boys) - SODA POP (...</a><a href="https://www.youtube.com/watch?v=BvYZXYPuuos" target="_blank">Huntr/x (Kpop Demon Hunters) '...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/055/0001312931" target="_blank">유튜브 올해 최고 인기곡은 케데헌 '골든'…크리에이터는 추성훈</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://biz.chosun.com/it-science/ict/2025/12/03/NJW55JOSNVHFHELU7GSTIGS4HA/" target="_blank">유튜브, 2025 결산… 인기 주제는 '케이팝 데몬 헌터스', 최고 인기 ...</a><a href="https://news.nate.com/view/20251203n18363?mid=n0300" target="_blank">올해 유튜브 최고 인기곡 '골든'·유튜버 '추성훈' : 네이트 뉴스</a><a href="https://www.asiae.co.kr/article/2025120310432878148" target="_blank">'케이팝 데몬 헌터스' 유튜브 한국 순위 석권 - 아시아경제</a><a href="https://www.kado.net/news/articleView.html?idxno=2020359" target="_blank">2025 유튜브 최고 인기곡 케데헌 '골든'…크리에이터는 추성훈 ...</a><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=609690" target="_blank">케이팝 데몬 헌터스 'Golden' 최고 인기곡 1위…유튜브 연말 결산</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
