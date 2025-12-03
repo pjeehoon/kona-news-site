@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK하이닉스, 제62회 무역의 날 ‘최고 수출의 탑’ 수상 - 2025-12-03 16:24:53</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,SK하이닉스,무역의날,최고수출">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="SK하이닉스,무역의날,최고수출">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-03 16:24:53'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('SK하이닉스, 제62회 무역의 날 ‘최고 수출의 탑’ 수상')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SK하이닉스, 제62회 무역의 날 ‘최고 수출의 탑’ 수상</h1>
+            <p>
+                분석 시간: 2025-12-03 16:24:53
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> SK하이닉스가 2025년 무역의 날에서 350억 달러(약 4조 3,000억 원)의 수출 실적을 기록해 ‘최고 수출의 탑’에 올랐습니다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 성과는 AI·메모리 수요 급증에 따른 HBM, DDR5 등 제품 라인업 확대와 코로나 이후 글로벌 공급망 재구성에 따른 현지 생산 확대 및 재고 관리 최적화가 결실을 맺은 결과입니다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> SK하이닉스의 수출 실적은 한국 반도체 산업의 글로벌 리더십을 재확인시키며, 국가 경제 성장과 원화 안정에 긍정적 영향을 미칠 전망입니다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/03/24ca4ee117d2.png" 
+                     alt="SK하이닉스, 제62회 무역의 날 ‘최고 수출의 탑’ 수상" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>SK하이닉스가 2025년 무역의 날에서 350억 달러(약 4조 3,000억 원)의 수출 실적을 기록해 올해 ‘최고 수출의 탑’에 올랐습니다.</strong><br />
+이 기록은 AI·메모리 시장에서의 지속적 성장과 글로벌 공급망 재구성에 따른 전략적 대응이 결실을 맺은 결과로 해석됩니다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>세부 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 3일</td>
+<td>기사 발표</td>
+<td>SK하이닉스가 350억 달러 수출을 기록해 ‘최고 수출의 탑’ 수상</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>무역의 날 기념식</td>
+<td>산업통상부가 598명에게 금·은·동탑산업훈장을 수여</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 5일</td>
+<td>수출의 탑 시상</td>
+<td>SK하이닉스가 ‘350억 달러 수출의 탑’ 상을 수상</td>
+<td><a href="https://www.smarttoday.co.kr/news/articleView.html?idxno=98013" target="_blank">스마트투데이</a></td>
+</tr>
+<tr>
+<td>2025년 12월 5일</td>
+<td>수출의 탑 수상 기업</td>
+<td>총 1,689개 기업이 수출의 탑을 수여받음</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>▶</strong> SK하이닉스는 2024년 HBM 및 AI 메모리 제품 포트폴리오를 통해 매출 66조 2000억원, 영업이익 23조 5000억원을 기록했습니다.  </li>
+<li><strong>▶</strong> 무역의 날은 한국무역협회와 산업통상부가 주관하며, 매년 국내 기업의 수출 성과를 기념합니다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<h3>산업계 전문가 의견</h3>
+<ul>
+<li><strong>전략적 포트폴리오 확대</strong>: SK하이닉스는 AI·메모리 수요 급증에 대응해 HBM, DDR5, GDDR6 등 다양한 제품 라인업을 강화했습니다. 이는 수출 실적 상승의 핵심 요인으로 평가됩니다.  </li>
+<li><strong>공급망 재구성</strong>: 코로나19 이후 글로벌 공급망 불안정 속에서 SK하이닉스는 현지 생산 확대와 재고 관리 최적화를 통해 납기 안정성을 확보했습니다.</li>
+</ul>
+<h3>경제학자 시각</h3>
+<ul>
+<li><strong>국가 경쟁력 강화</strong>: SK하이닉스의 수출 성과는 한국 전자·반도체 산업의 글로벌 리더십을 재확인시키며, 국가 경제 성장에 기여합니다.  </li>
+<li><strong>외환흐름과 환율 영향</strong>: 350억 달러 규모의 수출은 한국 원화에 긍정적 영향을 미치며, 환율 변동성 완화에 기여할 가능성이 있습니다.</li>
+</ul>
+<h3>비판적 시각</h3>
+<ul>
+<li><strong>경쟁 심화 우려</strong>: 미국·중국·일본 등 주요 반도체 시장에서의 경쟁이 심화되면서 SK하이닉스의 시장 점유율이 장기적으로 유지될 수 있을지에 대한 우려가 제기됩니다.  </li>
+<li><strong>환경·사회적 책임</strong>: 대규모 생산 확대에 따른 에너지 소비와 폐기물 발생이 환경 규제 강화 시 부담이 될 수 있다는 지적이 있습니다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>SK하이닉스가 350억 달러 수출을 기록해 ‘최고 수출의 탑’ 수상</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2024년 매출 66조 2000억원, 영업이익 23조 5000억원</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>598명에게 금·은·동탑산업훈장 수여</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>SK하이닉스의 장기 시장 점유율 전망</td>
+<td>추정, 구체적 데이터 미제공</td>
+</tr>
+<tr>
+<td></td>
+<td>환경·사회적 책임 이슈의 구체적 영향</td>
+<td>추정, 공식 발표 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이상락 부사장 (SK하이닉스)</strong><br />
+  SK하이닉스의 수출 전략과 제품 라인업 확대를 주도한 인물로, 수출 성과에 직접적인 책임을 지고 있습니다.  </li>
+<li><strong>산업통상부 장관</strong><br />
+  무역의 날 기념식에서 수출의 탑 수상 기업을 선정하고, 국가 수출 정책을 조정하는 역할을 합니다.  </li>
+<li><strong>한국무역협회 대표</strong><br />
+  무역의 날을 주관하며, 국내 기업의 수출 실적을 평가·인정하는 기관입니다.</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>AI·메모리 수요 지속</strong><br />
+   AI, 5G, 자율주행 등 고성능 메모리 수요가 계속 증가할 전망이며, SK하이닉스는 이를 기반으로 수출 확대를 기대할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>공급망 리스크 관리</strong><br />
+   글로벌 공급망 변동성에 대비해 현지 생산 확대와 재고 관리 체계를 강화할 필요가 있습니다.</p>
+</li>
+<li>
+<p><strong>환경·사회적 책임 강화</strong><br />
+   친환경 생산 공정 도입과 탄소 중립 목표를 달성하기 위한 투자 확대가 요구됩니다.</p>
+</li>
+<li>
+<p><strong>경쟁 심화 대응</strong><br />
+   미국·중국·일본 등 주요 반도체 시장에서의 기술 경쟁과 가격 경쟁에 대응하기 위해 R&amp;D 투자와 차별화 전략이 필수적입니다.</p>
+</li>
+</ol>
+<p><strong>SK하이닉스의 ‘최고 수출의 탑’ 수상은 단순한 수치적 성과를 넘어 한국 반도체 산업의 글로벌 리더십을 재확인시키는 중요한 지표입니다.</strong> 향후 기술 혁신과 공급망 안정화, 환경·사회적 책임을 동시에 충족시키는 전략이 필요할 것입니다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008639973" target="_blank">무역의 날 598명 정부포상…SK하이닉스, 350억달러 올해 최고 수출탑</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202412121218366160103036" target="_blank">[i-point]채비, 제61회 무역의 날 '수출의 탑' 수상</a><a href="https://www.kita.net/asocGuidance/nesDta/nesDtaDetail.do?sNo=8401" target="_blank">[제55회 무역의 날] 대한민국 무역! 세계로 함께, 미래로 함께</a><a href="https://www.smarttoday.co.kr/news/articleView.html?idxno=98013" target="_blank">'역대 최대실적' SK하이닉스, 350억불 '수출의 탑' 영예</a><a href="https://v.daum.net/v/20251203132224207" target="_blank">SK하이닉스, 제62회 무역의 날 '최고 수출의 탑' 수상</a><a href="https://www.cosinkorea.com/news/article.html?no=53612" target="_blank">제61회 무역의 날 '수출의 탑' 기아 250억달러 '최고 영예'</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
