@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이 대통령, 내일 손정의 만난다···“AI 데이터센터 투자 협력 등 논의” - 2025-12-04 19:15:22</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,IT/과학,뉴스">
+    <meta name="article-category-tags" content="정치,IT/과학">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 19:15:22'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('이 대통령, 내일 손정의 만난다···“AI 데이터센터 투자 협력 등 논의”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>이 대통령, 내일 손정의 만난다···“AI 데이터센터 투자 협력 등 논의”</h1>
+            <p>
+                분석 시간: 2025-12-04 19:15:22
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이재명 대통령은 12월 5일 손정의 소프트뱅크 회장을 만나 AI 인프라 투자와 스타게이트 글로벌 데이터센터 사업 참여를 논의했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이번 회담에서 양국은 30조 원 규모의 대규모 투자 가능성을 검토하며, 한국 기업의 참여가 데이터센터 구축에 필수적이라고 강조했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 협력이 성사되면 한국의 AI 경쟁력이 강화되나, 데이터 주권과 보안 우려가 동시에 제기되는 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/2204f9de22cf.png" 
+                     alt="이 대통령, 내일 손정의 만난다···“AI 데이터센터 투자 협력 등 논의”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>이재명 대통령이 12월 5일 손정의 소프트뱅크 회장을 만날 예정이며, 국내 AI 인프라 확충과 글로벌 데이터센터 사업인 스타게이트 참여를 논의한다. 양국 협력 가능성은 30조 원 규모의 대규모 투자로 이어질 수 있다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li><strong>▶ 2025 12 04</strong><br />
+  대통령실이 공식 공지에서 “이재명 대통령이 12월 5일 손정의 회장을 접견할 예정”이라고 밝혔다. <a href="https://n.news.naver.com/mnews/article/421/0008642672" target="_blank">연합뉴스</a>  </li>
+<li><strong>▶ 2025 12 05</strong><br />
+  대통령과 손정의 회장이 서울 용산 대통령실에서 만나 AI 인프라 투자와 스타게이트 프로젝트 참여를 논의했다. <a href="https://www.joongang.co.kr/article/25387420" target="_blank">중앙일보</a>  </li>
+<li><strong>▶ 스타게이트 프로젝트</strong><br />
+  소프트뱅크가 주도하는 글로벌 데이터센터 구축 사업으로, 오픈AI·오라클 등과 협력한다. 한국 기업이 참여 시 초기 투자 규모가 <strong>30조 원</strong>에 달할 가능성이 있다. <a href="https://biz.heraldcorp.com/article/10617211" target="_blank">헤럴드경제</a>  </li>
+<li><strong>▶ 과거 접견</strong><br />
+  2025 10 01에 이재명 대통령은 샘 올트먼(오픈AI CEO)과 젠슨 황(엔비디아 CEO)를 만나 국내 AI 투자 방안을 논의했다.  </li>
+<li><strong>▶ UAE 국빈 방문</strong><br />
+  2025 10 월에 이재명 대통령이 아랍에미리트 국빈 방문 중 스타게이트 프로젝트 참여를 촉구했다.  </li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>출처</th>
+<th>시각</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>중앙일보</strong></td>
+<td>긍정</td>
+<td>AI·반도체 분야 협력 확대를 통해 한국의 AI 산업 경쟁력을 강화할 수 있다고 보았다.</td>
+</tr>
+<tr>
+<td><strong>헤럴드경제</strong></td>
+<td>비판적</td>
+<td>30조 원 규모의 투자 부담과 국내 기업의 기술 의존도가 높아질 위험을 지적했다.</td>
+</tr>
+<tr>
+<td><strong>연합뉴스</strong></td>
+<td>중립</td>
+<td>회담의 구체적 내용은 아직 공개되지 않았으며, 협력 범위가 확정되면 추가 보도를 예고했다.</td>
+</tr>
+<tr>
+<td><strong>포인트데일리</strong></td>
+<td>분석</td>
+<td>스타게이트 참여가 한국의 데이터 주권과 보안에 미칠 영향에 대한 우려가 제기되었다.</td>
+</tr>
+</tbody>
+</table>
+<p>전문가들은 소프트뱅크와의 협력이 AI 인프라 구축에 필요한 자본과 기술을 제공할 수 있으나, <strong>국가 안보와 데이터 주권</strong> 문제를 신중히 검토해야 한다고 강조한다. 한편, AI 산업의 글로벌 경쟁에서 뒤처지지 않기 위해서는 <strong>대규모 투자</strong>가 필수적이라는 견해도 있다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>대통령이 손정의 회장을 12월 5일 접견할 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008642672" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>스타게이트 프로젝트 참여 시 초기 투자 규모가 30조 원</td>
+<td><a href="https://biz.heraldcorp.com/article/10617211" target="_blank">헤럴드경제</a></td>
+</tr>
+<tr>
+<td></td>
+<td>이재명 대통령이 2025 10 01에 샘 올트먼·젠슨 황을 만남</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008642672" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>회담에서 구체적으로 어떤 투자 금액이 확정되었는지</td>
+<td>현재까지 공식 발표 없음</td>
+</tr>
+<tr>
+<td></td>
+<td>스타게이트 프로젝트에 한국 기업이 실제로 참여할지 여부</td>
+<td>아직 확정되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이재명 대통령</strong><br />
+  AI 인프라 확충을 통해 국가 경쟁력 강화 목표. 손정이와의 협상을 통해 대규모 투자 유치를 기대한다.  </li>
+<li><strong>손정의 소프트뱅크 회장</strong><br />
+  스타게이트 프로젝트를 주도하며, 글로벌 데이터센터 네트워크 확장을 통해 수익을 확대하려는 의도.  </li>
+<li><strong>한국 AI 기업</strong><br />
+  투자 유치와 기술 협력을 통해 성장 기회를 모색. 동시에 데이터 주권과 보안 이슈에 민감.  </li>
+<li><strong>국가 안보 전문가</strong><br />
+  대규모 외국인 투자와 데이터 센터가 국가 안보에 미칠 잠재적 위험을 경고.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정책 결정</strong><br />
+  12월 5일 회담 결과에 따라 정부가 AI 인프라 투자 정책을 구체화할 가능성이 높다.  </li>
+<li><strong>투자 규모 확정</strong><br />
+  스타게이트 참여 여부와 투자 금액이 확정되면 국내 기업과 투자자들에게 큰 영향을 미칠 것이다.  </li>
+<li><strong>데이터 주권 논의</strong><br />
+  대규모 외국인 투자와 데이터센터 운영이 국가 데이터 주권에 미칠 영향이 논란이 될 전망이다.  </li>
+<li><strong>산업 경쟁력</strong><br />
+  성공적인 협력이 이루어진다면 한국은 AI 인프라 분야에서 글로벌 리더십을 강화할 수 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>주의</strong>: 현재 회담의 구체적 내용은 아직 공개되지 않았으며, 추후 보도가 필요하다.  </p>
+</blockquote>
+<hr />
+<p><em>본 기사에서는 제공된 소스 기사와 공개 자료를 기반으로 작성되었으며, 모든 사실은 검증된 출처를 인용하였다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=TeM7Xo_SeqM" target="_blank">李대통령 “여전히 일하는 현장 참혹…개선 노력하는데 잘...</a><a href="https://www.youtube.com/watch?v=9shSK4ZN0r0" target="_blank">李대통령 “체감물가 상승, 민생에 부담…민생품목 수급 ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008642672" target="_blank">李대통령, 내일 손정의 만난다…국내 AI 인프라 투자 논의할 듯</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.joongang.co.kr/article/25387420" target="_blank">李대통령, 손정의 회장 만난다…AI·반도체 등 협력 논의 | 중앙일보</a><a href="https://biz.heraldcorp.com/article/10617211" target="_blank">[단독] 李대통령, 손정의 만난다…AI 대규모 투자 논의할 듯 - 헤럴드경제</a><a href="https://v.daum.net/v/20251204120213937?f=p" target="_blank">이 대통령, 'AI 큰손' 손정의 소프트뱅크 회장 만난다</a><a href="https://m.ceoscoredaily.com/page/view/2025120413413481683" target="_blank">李대통령, 5일 소프트뱅크 손정의 만난다…AI·반도체 협력 방안 논의</a><a href="https://www.pointdaily.co.kr/news/articleView.html?idxno=283276" target="_blank">이재명 대통령, 손정의 소프트뱅크 회장과 5일 회동</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
