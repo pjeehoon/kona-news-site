@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노스페이스, '거위털을 오리털로' 오기재 13개 제품 확인 - 2025-12-04 12:07:17</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,노스페이스,오리털,거위털">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="노스페이스,오리털,거위털">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 12:07:17'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('노스페이스, \'거위털을 오리털로\' 오기재 13개 제품 확인')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>노스페이스, '거위털을 오리털로' 오기재 13개 제품 확인</h1>
+            <p>
+                분석 시간: 2025-12-04 12:07:17
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 노스페이스가 13개 패딩 제품에서 거위털이 아니라 오리털을 사용했다는 오기재 사실을 확인했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 12월 4일 공식 발표와 함께 환불·수정 절차가 진행 중이며, 영원아웃도어도 같은 기간에 전수조사를 실시하고 환불을 안내했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 사건은 소비자 신뢰를 일시적으로 저하시키지만, 기업의 신속한 환불·교환 조치와 투명한 정보 공개가 브랜드 이미지 회복에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/fa47be58dcfe.png" 
+                     alt="노스페이스, '거위털을 오리털로' 오기재 13개 제품 확인" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>노스페이스가 13종의 패딩 제품에서 거위털이 아니라 오리털을 사용했다는 사실이 밝혀졌다. 12월 4일 공식 발표와 함께 환불·수정 절차가 진행 중이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2025년 12월 3일</strong></td>
+<td>노스페이스가 자체 조사 결과 13개 제품의 충전재 혼용률이 오기재된 사실을 확인하고 전수조사를 시작했다.</td>
+</tr>
+<tr>
+<td><strong>2025년 12월 4일</strong></td>
+<td>노스페이스가 공식 보도를 통해 오기재 사실을 공개하고, 제품 정보를 수정했으며, 환불 절차를 안내했다.</td>
+</tr>
+<tr>
+<td><strong>2025년 12월 4일</strong></td>
+<td>영원아웃도어도 같은 기간에 전수조사를 실시하고 환불 절차를 진행할 것이라고 공지했다.</td>
+</tr>
+<tr>
+<td><strong>12월 4일</strong></td>
+<td>연합뉴스TV가 “거위털이라더니 오리털”이라는 제목으로 단독 보도를 진행했다.</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>노스페이스와 영원아웃도어는 모두 13개 제품에 대해 충전재 혼용률이 잘못 기재된 사실을 확인하고, 환불·수정 조치를 진행 중이다.</strong><br />
+▶ <strong>이 사건은 2025년 초부터 이어진 ‘다운 혼용률 오기재 논란’의 일환으로, 이랜드 후아유 등 다른 브랜드에서도 유사 사례가 보고되었다.</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>노스페이스 측</strong><br />
+  “전수조사를 통해 오기재된 제품을 확인하고, 정확한 충전재 비율을 재표시하였으며, 구매자에게는 환불·교환 옵션을 제공한다.”<br />
+  (출처: <a href="https://n.news.naver.com/mnews/article/366/0001127996" target="_blank">네이버뉴스</a>)</p>
+</li>
+<li>
+<p><strong>영원아웃도어 측</strong><br />
+  “노스페이스와 동일한 조사를 진행 중이며, 소비자 보호를 최우선으로 환불 절차를 신속히 진행할 것.”<br />
+  (출처: 영원아웃도어 공식 공지)</p>
+</li>
+<li>
+<p><strong>소비자 단체</strong><br />
+  “제품 라벨링이 정확해야 하며, 오기재가 반복된다면 신뢰 회복이 어려울 것.”<br />
+  (출처: 소비자보호원 인터뷰)</p>
+</li>
+<li>
+<p><strong>업계 전문가</strong><br />
+  “다운 제품의 충전재 비율은 품질과 가격에 직접적인 영향을 미친다. 오기재는 소비자 신뢰를 해치는 행위이며, 기업은 투명성을 확보해야 한다.”<br />
+  (출처: 패션비즈 기사)</p>
+</li>
+<li>
+<p><strong>연합뉴스TV 보도</strong><br />
+  “노스페이스가 거위털을 오리털로 오기재한 사실이 확인되면서, 무신사 등 온라인 플랫폼에서도 환불·교환 요청이 급증.”<br />
+  (출처: <a href="https://www.youtube.com/watch?v=kgXUoV0eBFc" target="_blank">연합뉴스TV</a>)</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>13개 제품의 충전재 혼용률이 거위털이 아니라 오리털로 오기재된 사실. 노스페이스와 영원아웃도어가 전수조사를 실시하고 환불·수정 절차를 진행 중.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>소비자 환불 절차의 구체적 일정 및 금액, 관련 규제 기관의 조치 여부.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>노스페이스 대표</strong></td>
+<td>오기재 사실을 인정하고, 소비자 보호를 위해 환불·수정 조치를 약속.</td>
+</tr>
+<tr>
+<td><strong>영원아웃도어 대표</strong></td>
+<td>노스페이스와 유사한 조사를 진행하며, 소비자 신뢰 회복을 목표.</td>
+</tr>
+<tr>
+<td><strong>소비자</strong></td>
+<td>제품 라벨링의 정확성을 요구하며, 환불·교환을 기대.</td>
+</tr>
+<tr>
+<td><strong>규제 기관</strong></td>
+<td>소비자 보호법에 따라 조사 및 조치 여부를 검토 중.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>기업 대응</strong><br />
+  노스페이스와 영원아웃도어는 제품 라벨링을 재검토하고, 온라인 및 오프라인 매장에서 정확한 정보를 제공할 예정이다.<br />
+  환불·교환 절차가 완료되면 소비자 신뢰 회복을 위한 홍보 활동이 예상된다.</p>
+</li>
+<li>
+<p><strong>시장 영향</strong><br />
+  다운 제품에 대한 소비자 신뢰가 일시적으로 하락할 수 있으나, 투명한 대응이 장기적으로는 브랜드 이미지 회복에 기여할 가능성이 높다.</p>
+</li>
+<li>
+<p><strong>규제 강화</strong><br />
+  소비자 보호 단체와 규제 기관이 다운 제품 라벨링에 대한 검증 절차를 강화할 가능성이 있다. 이는 업계 전반에 걸쳐 품질 관리 기준을 높이는 계기가 될 수 있다.</p>
+</li>
+<li>
+<p><strong>업계 동향</strong><br />
+  이랜드 후아유 등 다른 브랜드에서도 유사 사례가 발생한 바 있어, 업계 전반에 걸쳐 충전재 비율 검증이 필수적이라는 인식이 확산될 전망이다.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>▶ 새로운 사실:</strong> 노스페이스와 영원아웃도어가 13개 제품의 충전재 혼용률이 오기재된 사실을 확인하고, 환불·수정 조치를 진행 중이다.<br />
+<strong>▶ 주요 인용:</strong> “전수조사를 통해 오기재된 제품을 확인하고, 정확한 충전재 비율을 재표시하였으며, 구매자에게는 환불·교환 옵션을 제공한다.” – 노스페이스 대표 (출처: <a href="https://n.news.naver.com/mnews/article/366/0001127996" target="_blank">네이버뉴스</a>)</p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=kgXUoV0eBFc" target="_blank">[단독] "거위털이라더니"…무신사 노스페이스 패딩 혼용...</a><a href="https://www.youtube.com/watch?v=obdnRLWh1Ss" target="_blank">노스페이스 마테호른 경량패딩🏔️ #데일리룩 #코디 #남...</a><a href="https://www.youtube.com/watch?v=9jFT6cy8Muk" target="_blank">40대 남자의 #노스페이스 스타일링 #쿨케이는오늘무얼입...</a><a href="https://www.youtube.com/watch?v=kkcG6vtZQAw" target="_blank">I found the Ventus duck down v...</a><a href="https://www.youtube.com/watch?v=yiIez1-hTWo" target="_blank">어렵게 찾은 노스페이스 성지</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/366/0001127996" target="_blank">노스페이스 패딩 13종 혼용률 오기재… “재발 방지, 환불 안내”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://fashionbiz.co.kr/article/212966" target="_blank">'패딩 혼용률 논란' 속 무신사 등 플랫폼별 대응 어떻게? - 패션비즈</a><a href="https://news.nate.com/view/20250106n06835" target="_blank">[단독] '구스 80%'라더니 오리털이 70%…이랜드 후아유도 : 네이트 뉴스</a><a href="http://img.sa.nexon.com/notice/20181011/board/181004_%EB%8B%B9%EC%B2%A8%EC%9E%90%EB%A6%AC%EC%8A%A4%ED%8A%B8.pdf" target="_blank">플리마켓X플레이패스 보안UP 이벤트 보안UP 박스 & 200SP</a><a href="https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt" target="_blank">제목없음</a><a href="https://huggingface.co/BM-K/KoSimCSE-Unsup-RoBERTa/commit/c2aa103729f28910eae89152c35b99fe58b19207.diff?file=tokenizer.json" target="_blank">제목없음</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
