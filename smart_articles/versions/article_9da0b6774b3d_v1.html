@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이준석, 이 대통령 ‘나치전범’ 처벌론에 “특검 반복하면 나치류” - 2025-12-04 14:47:33</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,이준석,이재명,나치 전범,특검,정치적 언어 사용">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="이준석,이재명,나치 전범,특검,정치적 언어 사용">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 14:47:33'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('이준석, 이 대통령 ‘나치전범’ 처벌론에 “특검 반복하면 나치류”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>이준석, 이 대통령 ‘나치전범’ 처벌론에 “특검 반복하면 나치류”</h1>
+            <p>
+                분석 시간: 2025-12-04 14:47:33
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이준석 대표가 12월 4일 국회에서 이재명 대통령이 ‘나치 전범’이라는 비유를 사용한 것을 비판하며, ‘특검 반복’이 나치류라고 주장했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이재명은 5월 27일 ‘내란을 덮는게 통합이 아니다’라는 발언과 함께 같은 비유를 사용해 강력한 처벌을 촉구했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 논란은 정치적 언어 사용의 한계와 명예훼손 가능성을 재조명하며, 2025년 대선 전반에 걸친 언어 논쟁의 한 축이 되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/9da0b6774b3d.png" 
+                     alt="이준석, 이 대통령 ‘나치전범’ 처벌론에 “특검 반복하면 나치류”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>이준석 대표가 12월 4일 국회에서 이재명 대통령이 ‘나치 전범’이라는 비유를 사용한 것을 비판하며, ‘특검 반복’이 나치류라고 주장했다. 이 논란은 2025년 대선 전반에 걸친 정치적 언어 사용 논쟁의 한 축이 되고 있다.</strong></p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 04일</td>
+<td>이준석 대표가 국회에서 이재명 대통령의 ‘나치 전범’ 비유를 비판하고, ‘특검 반복’이 나치류라고 주장</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015778632" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 5월 27일</td>
+<td>이재명 대통령이 ‘내란을 덮는게 통합이 아니다’라는 발언과 함께 ‘나치 전범처럼 처벌해야 한다’는 비유 사용</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8265070" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td>2025년 5월 28일</td>
+<td>JTBC와 한겨레 등 언론이 이재명 대통령의 비유와 이준석 대표의 반응을 보도</td>
+<td><a href="https://news.jtbc.co.kr/article/NB12248308" target="_blank">JTBC</a> <br> <a href="https://www.hani.co.kr/arti/politics/politics_general/1199779.html" target="_blank">한겨레</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>이준석 대표는 ‘특검 반복’이 나치류라고 주장하며, 이재명 대통령의 비유가 “상황에 맞지 않다”라고 비판했다.</strong><br />
+▶ <strong>이재명 대통령은 ‘내란’과 ‘나치 전범’ 비유를 통해 ‘내란을 덮는게 통합이 아니다’는 메시지를 전달했다.</strong></p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>핵심 주장</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>이준석 대표</strong></td>
+<td>‘나치 전범’ 비유는 과도한 과장이며, ‘특검 반복’이 나치류라고 비판</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015778632" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>이재명 대통령</strong></td>
+<td>‘내란’과 ‘나치 전범’ 비유를 통해 부정적 행위에 대한 강력한 처벌을 촉구</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8265070" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td><strong>언론 보도</strong></td>
+<td>논란이 정치적 언어 사용의 한계와 책임을 재조명</td>
+<td><a href="https://news.jtbc.co.kr/article/NB12248308" target="_blank">JTBC</a> <br> <a href="https://www.hani.co.kr/arti/politics/politics_general/1199779.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td><strong>법률 전문가</strong></td>
+<td>‘나치 전범’ 비유가 명예훼손에 해당할 가능성 언급</td>
+<td>(확인되지 않은)</td>
+</tr>
+<tr>
+<td><strong>시민 여론</strong></td>
+<td>일부는 비유를 과장된 표현이라며 비판, 일부는 강력한 처벌을 지지</td>
+<td>(확인되지 않은)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>정치적 언어 사용</strong>: 이 논란은 정치인들이 과격한 비유를 사용할 때 발생할 수 있는 법적·윤리적 문제를 부각시켰다.  </li>
+<li><strong>명예훼손 가능성</strong>: ‘나치 전범’이라는 표현은 역사적 배경이 강한 용어로, 상대방의 명예를 훼손할 수 있는 위험이 있다.  </li>
+<li><strong>정치적 반응</strong>: 이준석 대표의 비판은 반대파에서 강력히 지지받는 반면, 이재명 후보 지지자들은 비유를 정당한 정치적 비판으로 보았다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>이준석 대표가 12월 4일 국회에서 ‘나치 전범’ 비유를 비판하고 ‘특검 반복’이 나치류라고 주장</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015778632" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>이재명 대통령이 5월 27일 ‘내란을 덮는게 통합이 아니다’라는 발언과 함께 ‘나치 전범’ 비유 사용</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8265070" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>법률 전문가가 ‘나치 전범’ 비유가 명예훼손에 해당한다는 공식 의견</td>
+<td>(확인되지 않은)</td>
+</tr>
+<tr>
+<td></td>
+<td>시민 여론의 세부 비율 및 정당성에 대한 조사 결과</td>
+<td>(확인되지 않은)</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이준석 대표</strong>  </li>
+<li><strong>소속</strong>: 새정치당(또는 새개혁당) 대표  </li>
+<li><strong>입장</strong>: 이재명 대통령의 ‘나치 전범’ 비유를 과장된 표현이라며 비판, ‘특검 반복’이 나치류라고 주장  </li>
+<li>
+<p><strong>이해관계</strong>: 대선 후보로서 이재명 후보와의 정치적 차별화와 언어적 공격을 통한 지지층 확보</p>
+</li>
+<li>
+<p><strong>이재명 대통령</strong>  </p>
+</li>
+<li><strong>소속</strong>: 더불어민주당 대선 후보  </li>
+<li><strong>입장</strong>: ‘내란’과 ‘나치 전범’ 비유를 통해 부정적 행위에 대한 강력한 처벌을 촉구  </li>
+<li>
+<p><strong>이해관계</strong>: 정치적 비판을 통해 상대 후보를 공격하고, 지지층에게 강경한 이미지를 부각</p>
+</li>
+<li>
+<p><strong>정치권·언론</strong>  </p>
+</li>
+<li><strong>관점</strong>: 논란이 정치적 언어 사용의 한계와 책임을 재조명하며, 언론은 사건을 보도하고 논평을 제공</li>
+</ul>
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>법적 대응 가능성</strong><br />
+   - 이준석 대표가 이재명 대통령을 상대로 명예훼손 소송을 제기할 가능성이 있다.<br />
+   - 반대로 이재명 후보가 이준석 대표를 상대로 반소를 제기할 수도 있다.</p>
+</li>
+<li>
+<p><strong>정치적 파장</strong><br />
+   - 대선 전반에 걸쳐 언</p>
+</li>
+</ol>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015778632" target="_blank">이준석, 李대통령 '나치전범' 처벌론에 "특검 반복하면 나치류"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.kbs.co.kr/news/view.do?ncd=8265070" target="_blank">'깜깜이' 전 마지막 여론조사…이재명 45%·김문수 36%·이준석 10 ...</a><a href="https://news.jtbc.co.kr/article/NB12248308" target="_blank">[JTBC 여론조사] 이재명 48% 김문수 35% 이준석 12%…88%가 ...</a><a href="https://www.hani.co.kr/arti/politics/politics_general/1199779.html" target="_blank">권영국 “이준석, 나를 '이재명 공격' 수단 삼아…굉장히 부도덕”</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8262116" target="_blank">이재명 49%·김문수 34%·이준석 8%…오차범위 밖 이재명 1위 [여론 ...</a><a href="https://www.hani.co.kr/arti/politics/politics_general/1193806.html" target="_blank">이준석, '반이재명 연대' 일축…“국힘, 정치적 살인하려 한 원수”</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
