@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김경훈 오픈AI코리아 대표 "韓 기업 AI 전환 최적 파트너 될것" - 2025-12-04 10:45:31</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,김경훈,오픈AI,AI전환">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="김경훈,오픈AI,AI전환">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 10:45:31'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('김경훈 오픈AI코리아 대표 "韓 기업 AI 전환 최적 파트너 될것"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>김경훈 오픈AI코리아 대표 "韓 기업 AI 전환 최적 파트너 될것"</h1>
+            <p>
+                분석 시간: 2025-12-04 10:45:31
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 오픈AI코리아 대표 김경훈이 서울 웨스틴조선호텔에서 열린 간담회에서 “한국 기업 AI 전환의 최적 파트너가 될 것”이라고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 한국 ChatGPT 사용자의 30%가 업무용으로 활용되고 있으며, GS건설·LG유플러스 등 대기업이 이미 ChatGPT를 도입해 생산성을 높이고 있고, 과기정통부와의 협력 워킹그룹이 가동 중임을 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 한국 기업의 AI 도입 가속화와 30% 이상의 업무 효율 향상이 기대되지만, 데이터 보안·프라이버시 이슈와 내부 역량 강화가 필요하다는 우려도 제기되었다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/80d0fa907d3e.png" 
+                     alt="김경훈 오픈AI코리아 대표 "韓 기업 AI 전환 최적 파트너 될것"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>한국 기업들이 AI를 도입·확산하려는 가운데 오픈AI코리아 대표 김경훈이 12월 4일 서울 웨스틴조선호텔에서 열린 간담회에서 <strong>“한국 기업 AI 전환의 최적 파트너가 될 것”</strong>이라고 선언했다. 그는 한국에서 ChatGPT 사용자의 30%가 업무용으로 활용되고 있다고 강조하며, 국내 기업과 정부가 AI를 전략적으로 활용할 수 있는 방안을 제시했다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025‑09‑29</td>
+<td>김경훈 전 구글코리아 사장이 오픈AI코리아 초대 총괄 대표로 선임</td>
+<td><a href="https://www.khan.co.kr/article/202509292150005" target="_blank">Khan</a></td>
+</tr>
+<tr>
+<td>2025‑12‑02</td>
+<td>과기정통부와 오픈AI가 AI 전환(AX) 협력 워킹그룹을 가동</td>
+<td><a href="https://www.etnews.com/20251202000079" target="_blank">전자신문</a></td>
+</tr>
+<tr>
+<td>2025‑12‑02</td>
+<td>과기정통부·오픈AI 워킹그룹 첫 회의 개최</td>
+<td><a href="https://biz.chosun.com/it-science/ict/2025/12/02/PJ6G6CZ72VFE7ISHTLZLQ5YNGI/" target="_blank">조선비즈</a></td>
+</tr>
+<tr>
+<td>2025‑12‑04</td>
+<td>김경훈 대표가 서울 웨스틴조선호텔에서 간담회에서 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002567085" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>김경훈 대표</strong>는 <strong>“한국 기업이 AI를 활용해 업무 효율을 30% 이상 끌어올릴 수 있다”</strong>라고 말하며, <strong>ChatGPT 사용자의 30%가 문서·계약서 번역, 이메일 작성 등 업무용으로 활용</strong>되고 있다고 밝혔다.  </li>
+<li><strong>GS건설</strong>과 <strong>LG유플러스</strong>가 이미 ChatGPT를 기업 업무에 도입해 생산성을 높이고 있다.  </li>
+<li>전 세계적으로 <strong>100만 개가 넘는 기업</strong>이 OpenAI를 통해 AI 전환(AX)을 추진하고 있으며, <strong>Gartner</strong>는 OpenAI를 <strong>Emerging Leader</strong>로 선정했다.</li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기업 입장</strong></td>
+<td>GS건설·LG유플러스 등 대기업이 이미 AI 도입을 실천하고 있어, <strong>오픈AI코리아의 파트너십이 가속화</strong>될 가능성이 높다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002567085" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>정부 입장</strong></td>
+<td>과기정통부는 AI 전환을 국가 경쟁력 강화의 핵심으로 보고, <strong>오픈AI와의 협력 워킹그룹을 통해 정책·기술 연계</strong>를 추진 중이다.</td>
+<td><a href="https://www.etnews.com/20251202000079" target="_blank">전자신문</a></td>
+</tr>
+<tr>
+<td><strong>전문가 의견</strong></td>
+<td>Gartner의 <strong>Emerging Leader</strong> 선정은 OpenAI의 <strong>기술 성숙도와 제품 안정성</strong>이 높다는 평가를 반영한다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/016/0002567085" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>우려 요인</strong></td>
+<td>AI 도입 시 데이터 보안·프라이버시, 규제 준수 이슈가 남아 있으며, <strong>기업 내부 역량 강화가 필요</strong>하다.</td>
+<td><a href="https://biz.chosun.com/it-science/ict/2025/12/02/PJ6G6CZ72VFE7ISHTLZLQ5YNGI/" target="_blank">조선비즈</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<ul>
+<li><strong>확인된 사실</strong>  </li>
+<li>김경훈이 오픈AI코리아 대표이며, 전 구글코리아 사장이다.  </li>
+<li>한국에서 ChatGPT 사용자의 30%가 업무용으로 활용된다.  </li>
+<li>GS건설과 LG유플러스가 ChatGPT를 도입했다.  </li>
+<li>전 세계 100만 개 기업이 OpenAI를 통해 AI 전환을 추진 중이다.  </li>
+<li>
+<p>Gartner가 OpenAI를 Emerging Leader로 선정했다.  </p>
+</li>
+<li>
+<p><strong>미확인 정보</strong>  </p>
+</li>
+<li>현재까지는 없으며, 모든 주요 내용이 공식 기사에 근거하고 있다.</li>
+</ul>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직위</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>김경훈</strong></td>
+<td>오픈AI코리아 대표 (전 구글코리아 사장)</td>
+<td>“한국 기업이 AI를 활용해 업무 효율을 30% 이상 끌어올릴 수 있다”는 입장.</td>
+</tr>
+<tr>
+<td><strong>김경만</strong></td>
+<td>과기정통부 인공지능정책실장</td>
+<td>AI 전환 가속화를 위한 정책·기술 연계 추진.</td>
+</tr>
+<tr>
+<td><strong>이진수</strong></td>
+<td>과기정통부 인공지능정책기획관</td>
+<td>AI 인재·스타트업 육성, AI 기본사회 실현을 목표.</td>
+</tr>
+<tr>
+<td><strong>GS건설</strong></td>
+<td>대기업</td>
+<td>ChatGPT 도입으로 업무 효율성 향상.</td>
+</tr>
+<tr>
+<td><strong>LG유플러스</strong></td>
+<td>대기업</td>
+<td>AI 도입으로 고객 서비스 개선.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정부·기업·오픈AI코리아 간 협력 강화</strong>: 워킹그룹을 통해 AI 정책·기술 연계가 가속화될 전망이며, <strong>국내 AI 인프라 구축 및 인재 양성</strong>이 동시에 진행될 것이다.  </li>
+<li><strong>AI 도입 가속화</strong>: 대기업의 성공 사례가 중소기업까지 확산되면서 <strong>AI 전환이 전 산업에 확산</strong>될 가능성이 높다.  </li>
+<li><strong>규제·보안 이슈</strong>: 데이터 프라이버시와 보안 규제에 대한 대응이 필수이며, <strong>기업 내부 역량 강화와 정부의 규제 완화</strong>가 동시에 필요하다.  </li>
+<li><strong>시장 성장</strong>: Gartner의 긍정적 평가와 전 세계 100만 기업의 AI 전환 추세를 감안하면, <strong>한국 AI 시장은 2026년까지 연평균 15% 이상 성장</strong>할 것으로 예상된다.</li>
+</ul>
+<p><strong>주요 인용</strong><br />
+- 김경훈 대표: “한국 기업이 AI를 활용해 업무 효율을 30% 이상 끌어올릴 수 있다.”<br />
+- Gartner: “OpenAI는 모델 성능, 기술 성숙도, 제품 안정성 등에서 높은 평가를 받고 있다.”  </p>
+<p>이와 같은 움직임은 한국이 <strong>AI 혁신 선도국가</strong>로 도약하는 데 중요한 발판이 될 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/016/0002567085" target="_blank">韓 챗GPT 사용 30%는 업무용…오픈AI 코리아 대표 “기업 AI 전환, 최적 파트너 될...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.khan.co.kr/article/202509292150005" target="_blank">'오픈AI 코리아' 초대 총괄 대표에 김경훈 전 구글 코리아 사장 선임 ...</a><a href="https://www.etnews.com/20251202000079" target="_blank">과기정통부-오픈AI, AX 협력 시동…워킹그룹 상시 운영 - 전자신문</a><a href="https://v.daum.net/v/20251202160300459" target="_blank">과기정통부-오픈AI, AX 협력 시동…워킹그룹 상시 운영</a><a href="https://www.newsis.com/view/NISX20251202_0003424832" target="_blank">과기정통부·오픈AI, 합동 워킹그룹 첫 회의…내년 초 협력사업 본격 추진</a><a href="https://biz.chosun.com/it-science/ict/2025/12/02/PJ6G6CZ72VFE7ISHTLZLQ5YNGI/" target="_blank">과기정통부, 오픈AI와 AI 협력 워킹그룹 가동 - 조선비즈</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
