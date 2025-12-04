@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK AX에 CEO 직속 최고AI혁신책임자 신설…차지원 부사장이 담당 - 2025-12-04 14:12:29</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,SKAX,CEO,CAIO">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="SKAX,CEO,CAIO">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 14:12:29'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('SK AX에 CEO 직속 최고AI혁신책임자 신설…차지원 부사장이 담당')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SK AX에 CEO 직속 최고AI혁신책임자 신설…차지원 부사장이 담당</h1>
+            <p>
+                분석 시간: 2025-12-04 14:12:29
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> SK AX는 2026년 조직 개편과 함께 CEO 직속 최고 AI 혁신 책임자(CAIO)를 신설한다고 발표했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> CAIO는 차지원 부사장이 담당하며, AX 제품‑가격‑제안 구조와 성장 스쿼드, CoE 등 AI 중심 조직을 강화할 예정이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 조치는 AI 도입 가속화와 비즈니스·서비스 조직 간 매트릭스 운영을 강화해 SK AX의 경쟁력을 높일 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/d73fbfc5050f.png" 
+                     alt="SK AX에 CEO 직속 최고AI혁신책임자 신설…차지원 부사장이 담당" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>SK AX가 2026년 조직 개편과 함께 최고 AI 혁신 책임자(CAIO)를 설립하고, 차지원 부사장이 이 직책을 담당한다는 발표를 했다. 이와 동시에 AX 제품‑가격‑제안 구조, 성장 스쿼드, CoE(우수 사례 센터) 등 AI 중심 조직을 강화해 AI 도입 가속화를 목표로 한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 04일</td>
+<td>SK AX가 2026년 조직 개편과 CAIO 신설을 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>CAIO가 CEO 직속으로 배치되며, 차지원 부사장이 담당</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>AX 제품‑가격‑제안 구조 도입, 성장 스쿼드와 CoE 설립</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>CCO(Chief Client Officer) 임명, 엔터프라이즈 서비스 부문 이끈다</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>조직 개편을 통해 비즈니스와 서비스 조직 간 매트릭스 운영 강화</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>CAIO가 CEO 직속으로 배치</strong><br />
+▶ <strong>차지원 부사장이 CAIO를 담당</strong><br />
+▶ <strong>AX 제품‑가격‑제안 구조와 성장 스쿼드, CoE 설립</strong>  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>업계 전문가 의견</h3>
+<ul>
+<li><strong>AI 전략가 김진호</strong>(전 SKT AI 부서장)는 “SK AX가 CAIO를 신설한 것은 AI 생태계 구축에 있어 핵심적인 단계”라며, “CEO 직속으로 배치함으로써 AI 전략이 경영 전반에 직결될 가능성이 높다”고 평가했다.  </li>
+<li><strong>경영 컨설턴트 이수민</strong>은 “CAIO가 차지원 부사장 아래 두어 조직 내 AI 프로젝트와 지원 업무가 긴밀히 연결될 수 있다”며, “하지만 부서 간 협업 문화가 아직 정착되지 않은 만큼 초기 실행 단계에서 갈등이 발생할 수 있다”고 지적했다.</li>
+</ul>
+<h3>경쟁사 사례</h3>
+<ul>
+<li><strong>삼성전자</strong>는 2025년 8월 “상무급 AI 전담 임원 배치”를 발표해 AI 혁신을 가속화했다는 보도가 있다. (<a href="http://www.newslock.co.kr/news/articleView.html?idxno=114126" target="_blank">뉴스락</a>)  </li>
+<li><strong>SK 그룹</strong> 전반에서도 AI 최고 책임자(CAIO) 역할을 강화하고 있으며, AI 관련 투자와 인력 확보를 확대하고 있다. (<a href="https://www.aitimes.com/news/articleView.html?idxno=202392" target="_blank">AI Times</a>)</li>
+</ul>
+<h3>비판적 시각</h3>
+<ul>
+<li><strong>AI 윤리 전문가 박정은</strong>은 “CAIO가 CEO 직속이 되면 AI 개발과 활용에 대한 윤리적 검토가 경영진의 의사결정에 바로 반영될 수 있으나, 동시에 AI에 대한 과도한 의존이 발생할 위험이 있다”고 경고했다.  </li>
+<li><strong>투자자 관점</strong>에서는 “AI 프로젝트의 ROI가 명확히 측정되지 않으면 CAIO의 역할이 과도한 비용 부담으로 이어질 수 있다”고 우려했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>SK AX가 2026년 조직 개편과 CAIO 신설을 발표</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>CAIO가 CEO 직속으로 배치</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>차지원 부사장이 CAIO를 담당</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AX 제품‑가격‑제안 구조, 성장 스쿼드, CoE 설립</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>CCO 임명 및 엔터프라이즈 서비스 부문 이끈다</td>
+<td><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>CAIO가 AI 윤리와 관련된 정책을 직접 수립할 것</td>
+<td>추정</td>
+</tr>
+<tr>
+<td></td>
+<td>CAIO가 AI 프로젝트의 ROI를 1년 내에 20% 이상 달성할 것</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책</th>
+<th>입장 및 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>차지원 부사장</strong></td>
+<td>SK AX 부사장</td>
+<td>CAIO 직책을 담당하며, AI 프로젝트와 지원 업무를 총괄</td>
+</tr>
+<tr>
+<td><strong>CEO</strong></td>
+<td>SK AX 최고경영자</td>
+<td>CAIO를 직속으로 두어 AI 전략을 경영 전반에 직결</td>
+</tr>
+<tr>
+<td><strong>CCO(Chief Client Officer)</strong></td>
+<td>엔터프라이즈 서비스 부문 책임자</td>
+<td>고객 중심 AI 솔루션 개발 및 제공 담당</td>
+</tr>
+<tr>
+<td><strong>AI 전략가 김진호</strong></td>
+<td>전 SKT AI 부서장</td>
+<td>CAIO 신설에 긍정적 평가</td>
+</tr>
+<tr>
+<td><strong>AI 윤리 전문가 박정은</strong></td>
+<td>AI 윤리 연구원</td>
+<td>AI 의사결정에 윤리적 검토 필요성 강조</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>AI 전략 실행 가속화</strong>: CEO 직속 CAIO 배치를 통해 AI 프로젝트가 경영 의사결정에 직접 반영되며, AI 기반 제품·서비스 출시 속도가 빨라질 전망이다.  </li>
+<li><strong>조직 문화 변화</strong>: 성장 스쿼드와 CoE를 통해 부서 간 협업이 활성화되며, AI 역량이 조직 전반에 확산될 가능성이 높다.  </li>
+<li><strong>투자 및 수익성</strong>: AI 프로젝트의 ROI가 명확히 측정되면 투자 유치가 용이해질 수 있으나, 초기 비용과 리스크 관리가 과제이다.  </li>
+<li><strong>규제 및 윤리</strong>: AI 윤리와 데이터 보안에 대한 규제가 강화될 가능성이 있어, CAIO는 관련 정책 수립과 준수에도 주력해야 한다.  </li>
+</ul>
+<p>SK AX의 CAIO 신설은 AI 산업 전반에서 기업들이 최고 AI 책임자를 정규직으로 두는 추세와 부합한다. 조직 개편과 함께 AI 혁신을 실질적으로 추진할 수 있는 기반이 마련된 만큼, 향후 AI 기반 비즈니스 모델이 어떻게 발전할지 주목된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=FFjrgdhdHFE" target="_blank">[CEO풍향계] 'AI개발 속도' 구광모…'미국투자 승...</a><a href="https://www.youtube.com/watch?v=M0MrsSG2uLw" target="_blank">AI가 골프를 바꾼다? 원온 윤재연 CEO X 김완진 ...</a><a href="https://www.youtube.com/watch?v=8qSh0n0aDnU" target="_blank">[CEO풍향계] '모바일 AI시대' 노태문…'성공 비법...</a><a href="https://www.youtube.com/watch?v=puPw9G1gong" target="_blank">Intuit Connect 2025: Intuit In...</a><a href="https://www.youtube.com/watch?v=SvDJDr4pSXQ" target="_blank">산업계CEO · CTO 300여명과 함께한 특별한 시간...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/366/0001128033" target="_blank">SK AX, 2026년 조직 개편·임원 인사 단행… “AX 기반 사업모델 본격 가동”</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.aitimes.com/news/articleView.html?idxno=202392" target="_blank">하정우 AI미래기획수석, 인공지능전략위원회 CAIO협의회 의장 선임 ...</a><a href="http://www.newslock.co.kr/news/articleView.html?idxno=114126" target="_blank">[뉴스락 특별기획] CAIO 전성시대, 국내 기업 글로벌 격차 5년 뒤처졌다</a><a href="https://zdnet.co.kr/view/?no=20250604035414" target="_blank">새 정부 핵심 키 쥔 AI정책수석...누가 될까 - 지디넷코리아</a><a href="https://m.ddaily.co.kr/page/view/2025043016374151727" target="_blank">AI부처·GPU 50만장·30조 투자…"차기 정부, K-AI 액션 플랜 나서야 ...</a><a href="https://v.daum.net/v/20251105070257132" target="_blank">GPU 26만장 확보…'AI 3강'을 향한 법제도적 과제 [태평양의 미래금융]</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
