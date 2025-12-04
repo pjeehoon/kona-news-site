@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"AI는 '도구' 아닌 '동료 연구자'…신약 개발 패러다임 바뀐다" - 2025-12-04 16:08:12</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="IT/과학,AI,동료,신약">
+    <meta name="article-category-tags" content="IT/과학">
+    <meta name="article-content-tags" content="AI,동료,신약">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 16:08:12'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('"AI는 \'도구\' 아닌 \'동료 연구자\'…신약 개발 패러다임 바뀐다"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>"AI는 '도구' 아닌 '동료 연구자'…신약 개발 패러다임 바뀐다"</h1>
+            <p>
+                분석 시간: 2025-12-04 16:08:12
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 한국 바이오 산업이 AI를 신약 개발의 동료 연구자로 부각시키며, 2026년 구조적 전환과 AI 기반 제조, 바이오안전법 등 규제 변화가 가속화되고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2024년 한국 바이오 수출 비중이 59.8%에 달했고, KAIST는 2026년까지 AI 기반 신약 개발 도구를 상용화할 계획이며, AI 파운데이션 모델도 상용화될 전망이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> AI가 실험 설계와 데이터 분석을 자동화해 신약 개발 주기를 단축하고 비용을 절감함으로써 국내 바이오 기업의 글로벌 경쟁력이 강화될 것으로 기대된다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/387f7581c181.png" 
+                     alt=""AI는 '도구' 아닌 '동료 연구자'…신약 개발 패러다임 바뀐다"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>한국의 바이오 산업이 AI를 단순 도구가 아닌 <strong>동료 연구자</strong>로 인식하며 신약 개발 프로세스가 급변하고 있다. 2026년 구조적 전환과 AI 기반 제조, 바이오안전법 등 규제 변화가 가속화되면서 산업 전반에 혁신이 예고된다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 04일</td>
+<td>한국바이오협회 포럼에서 AI가 신약 개발의 <strong>동료 연구자</strong>로 부상하고, AI와 규제 대응의 필요성을 강조</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>AI 기반 제조 기술과 바이오안전법이 규제 요인으로 부상</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2024년</td>
+<td>한국 바이오 산업의 수출 비중이 <strong>59.8%</strong>에 달함</td>
+<td><a href="https://dataon.kisti.re.kr/news/newsList_R.do?mm=MENU00148&amp;sm=MENU00150" target="_blank">DataON</a></td>
+</tr>
+<tr>
+<td>2026년</td>
+<td>한국 바이오 산업의 구조적 전환이 예상</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2026년</td>
+<td>AI 파운데이션 모델이 상용화될 전망</td>
+<td><a href="https://dataon.kisti.re.kr/news/newsList_R.do?mm=MENU00148&amp;sm=MENU00150" target="_blank">DataON</a></td>
+</tr>
+<tr>
+<td>2026년</td>
+<td>KAIST가 AI를 활용한 신약 개발 도구를 발표</td>
+<td><a href="https://www.kaist.ac.kr/news/html/news/?skey=keyword&amp;sval=%EB%B0%94%EC%9D%B4%EC%98%A4" target="_blank">KAIST</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>AI가 동료 연구자</strong>로 부상하면서 신약 개발 주기 단축과 비용 절감이 기대된다.<br />
+▶ <strong>바이오안전법</strong>과 <strong>AI 기반 제조</strong>는 규제와 기술의 결합을 요구한다.<br />
+▶ <strong>한국 바이오 수출 비중</strong>이 2024년 59.8%를 기록하며 글로벌 경쟁력이 강화되고 있다.  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>긍정적 시각</h3>
+<ul>
+<li><strong>연구 속도와 효율성</strong>: AI가 실험 설계, 데이터 분석, 후보 물질 예측을 자동화해 신약 개발 주기를 단축한다.  </li>
+<li><strong>비용 절감</strong>: 대규모 실험을 가상 시뮬레이션으로 대체해 실험비용을 낮춘다.  </li>
+<li><strong>데이터 활용</strong>: 방대한 임상·전임상 데이터를 통합해 보다 정밀한 후보 물질을 도출한다.  </li>
+</ul>
+<h3>부정적 시각</h3>
+<ul>
+<li><strong>규제와 윤리</strong>: AI가 생성한 후보 물질에 대한 <strong>임상시험 승인</strong> 절차가 아직 명확하지 않다.  </li>
+<li><strong>데이터 프라이버시</strong>: 민감한 환자 데이터 활용 시 개인정보 보호 문제가 대두된다.  </li>
+<li><strong>인력 구조 변화</strong>: AI 도입으로 실험실 인력의 역할이 축소될 가능성이 있다.  </li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>한국바이오협회</strong> 관계자는 “AI가 <strong>동료 연구자</strong>로서 실험 설계와 데이터 해석을 지원하면, 연구자들은 보다 전략적 의사결정에 집중할 수 있다”고 말했다.  </li>
+<li><strong>KAIST</strong> 연구진은 “AI 기반 신약 개발 도구가 2026년까지 상용화될 전망이며, 이는 국내 바이오 기업의 경쟁력을 크게 높일 것”이라고 전망했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>AI가 신약 개발의 동료 연구자 역할을 확대</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2026년 한국 바이오 산업 구조 전환 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>AI 기반 제조와 바이오안전법이 규제 요인으로 부상</td>
+<td><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>한국 바이오 수출 비중 59.8% (2024)</td>
+<td><a href="https://dataon.kisti.re.kr/news/newsList_R.do?mm=MENU00148&amp;sm=MENU00150" target="_blank">DataON</a></td>
+</tr>
+<tr>
+<td></td>
+<td>KAIST AI 신약 개발 도구 발표</td>
+<td><a href="https://www.kaist.ac.kr/news/html/news/?skey=keyword&amp;sval=%EB%B0%94%EC%9D%B4%EC%98%A4" target="_blank">KAIST</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>AI가 완전히 인간 연구자를 대체할 것</td>
+<td>현재까지는 추정 수준</td>
+</tr>
+<tr>
+<td></td>
+<td>AI가 모든 규제 절차를 자동으로 통과할 것</td>
+<td>아직 검증되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>한국바이오협회</strong>: AI와 규제 대응 전략을 제시하며 산업 전반의 방향성을 제안.  </li>
+<li><strong>KAIST</strong>: AI 기반 신약 개발 도구를 개발·상용화하여 학계와 산업 간 협업을 촉진.  </li>
+<li><strong>DataON</strong>: AI 파운데이션 모델 개발과 데이터 공유 플랫폼을 제공, 연구 인프라 강화.  </li>
+<li><strong>정부(과학기술정보통신부, 보건복지부)</strong>: 바이오안전법 개정 및 AI 규제 프레임워크 수립.  </li>
+<li><strong>중국 바이오 기업</strong>: 시장 점유율 확대를 통해 한국 기업과의 경쟁 심화.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>2026년</strong>: AI 파운데이션 모델과 AI 기반 제조가 상용화되면서 신약 개발 주기가 <strong>30% 이상</strong> 단축될 것으로 예상.  </li>
+<li><strong>규제 환경</strong>: 바이오안전법 개정과 AI 윤리 가이드라인이 마련되어 AI 활용의 합법성과 투명성을 확보.  </li>
+<li><strong>산업 구조</strong>: AI와 데이터 기반 연구가 핵심 경쟁력으로 자리 잡으며, <strong>한국 바이오 산업의 글로벌 리더십</strong>이 강화될 전망.  </li>
+<li><strong>인력 재배치</strong>: 실험실 인력은 데이터 과학, AI 모델링, 임상 데이터 분석 등 <strong>전략적 역할</strong>로 전환될 가능성이 높음.  </li>
+</ul>
+<p><strong>결론</strong><br />
+AI가 신약 개발의 동료 연구자로 부상하면서 한국 바이오 산업은 구조적 전환의 길목에 서 있다. 규제와 기술이 동시에 진화함에 따라, 산업계는 <strong>협업과 규제준수</strong>를 동시에 추구해야 하며, 이는 궁극적으로 글로벌 경쟁력 강화와 혁신 가속화로 이어질 것이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=r1QVUiJ8k24" target="_blank">"Top 3 Biotech Promising Stock...</a><a href="https://www.youtube.com/watch?v=IpugFQDQ9zE" target="_blank">This certification is making a...</a><a href="https://www.youtube.com/watch?v=NKAMOZcOc3w" target="_blank">This company, a hidden leader ...</a><a href="https://www.youtube.com/watch?v=wCWxli8npE4" target="_blank">꿈의 산업 제약·바이오! 핵심 키워드는 비만 치료제?ㅣ...</a><a href="https://www.youtube.com/watch?v=bzu1_EqkL30" target="_blank">숙소도 주고 연봉도 높은데… 생산직 채용 지원자 0명,...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/421/0008643304" target="_blank">한국바이오협회의 경고…"전환기인 내년 AI·규제 대응 못하면 뒤처져"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://dataon.kisti.re.kr/news/newsList_R.do?mm=MENU00148&sm=MENU00150" target="_blank">DataON - 국가연구데이터플랫폼</a><a href="https://www.kaist.ac.kr/news/html/news/?skey=keyword&sval=%EB%B0%94%EC%9D%B4%EC%98%A4" target="_blank">NEWS</a><a href="https://www.vitalkorea.kr/uploads/trend/2020-2023%20%ED%95%B5%EC%8B%AC%EB%B0%94%EC%9D%B4%EC%98%A4%ED%97%AC%EC%8A%A4%20%EC%A0%95%EC%B1%85%EC%97%B0%EA%B5%AC.pdf" target="_blank">핵심</a><a href="https://www.jinhakpro.com/insight/160" target="_blank">포닥 연봉 9천만 원 보장하는 이노코어 사업 3분 요약 | 진학프로</a><a href="https://news.kaist.ac.kr/news/html/news/?&skey=&sval=%EB%A6%AC%EC%84%9C%EC%B9%98&list_s_date=&list_e_date=&&GotoPage=4" target="_blank">NEWS</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

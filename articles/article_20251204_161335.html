@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李대통령 "韓, 산업재해는 후진국…앞으로 선진화돼야" - 2025-12-04 16:13:35</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,이재명,산업재해,후진국">
+    <meta name="article-category-tags" content="정치">
+    <meta name="article-content-tags" content="이재명,산업재해,후진국">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 16:13:35'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('李대통령 "韓, 산업재해는 후진국…앞으로 선진화돼야"')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>李대통령 "韓, 산업재해는 후진국…앞으로 선진화돼야"</h1>
+            <p>
+                분석 시간: 2025-12-04 16:13:35
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 이재명 대통령은 청와대 오찬에서 산업재해가 아직 후진국 수준이라고 지적하며 산업 안전 선진화를 촉구했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 과거 산업 현장 경험을 바탕으로 현행 규제의 한계를 언급하고, 1년 내 사망률을 0에 가깝게 줄이겠다는 목표를 제시했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 발언은 산업계와 노동계, 학계에서 찬반 논란을 불러일으키며 산업 안전 정책 강화와 규제 개선에 대한 기대를 높였다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/e6bfc6d32e53.png" 
+                     alt="李대통령 "韓, 산업재해는 후진국…앞으로 선진화돼야"" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>요약</strong><br />
+2025년 12월 4일 청와대에서 열린 산업계 원로 90여 명과의 오찬에서 이재명 대통령은 “한국의 산업재해는 아직 후진국 수준”이라며 산업 안전의 선진화를 촉구했다. 그는 과거 산업 현장을 직접 체험한 경험을 바탕으로 현행 안전 규제의 한계를 지적하고, ‘산업재해 사망률 1년 내 0에 가깝게 줄이겠다’는 목표를 밝혔다. 이 발언은 산업계와 노동계, 학계에서 찬반 논란을 불러일으켰다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 3일</td>
+<td>군사 쿠데타 시도</td>
+<td>대통령이 쿠데타 시도와 민주주의 회복 과정을 언급</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005689000" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>청와대 오찬</td>
+<td>이재명 대통령이 산업계 원로 90여 명과 오찬을 진행하며 산업재해 문제를 강조</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005689000" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>산업재해 현황 언급</td>
+<td>“산업재해는 아직 후진국 수준”이라며 선진화 필요성 강조</td>
+<td><a href="https://www.asiae.co.kr/article/2025120409320786560" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td>2025년 7월 29일</td>
+<td>KBS 뉴스 보도</td>
+<td>“후진적 사고 영구 추방…산재 사망사고 근절 원년 돼야”라는 주제로 보도</td>
+<td><a href="https://www.youtube.com/watch?v=aOZFpmGzLH0" target="_blank">KBS 뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>MBC 뉴스 보도</td>
+<td>대통령의 발언과 오찬 현장을 실시간 보도</td>
+<td><a href="https://www.youtube.com/watch?v=1IbTn-zaFMg" target="_blank">춘천MBC뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 사실</strong><br />
+- 대통령은 산업계 원로와의 오찬에서 과거 산업 현장 경험(1세대 미싱사, 포스코 창립 멤버, 포니 개발자 등)을 토대로 산업재해의 심각성을 강조했다.<br />
+- “산업재해는 아직 후진국 수준”이라며 <strong>산업 안전 규제 강화와 1년 내 사망률 0에 가깝게 줄이겠다</strong>는 목표를 제시했다.  </p>
+<h3>다양한 관점과 분석</h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>산업계</strong></td>
+<td>일부 원로는 대통령의 발언을 “산업 발전에 대한 현실적인 인식”이라 평가하며, 규제 강화가 생산성에 부정적 영향을 미칠 수 있다는 우려를 표명했다.</td>
+<td><a href="https://www.asiae.co.kr/article/2025120409320786560" target="_blank">아시아경제</a></td>
+</tr>
+<tr>
+<td><strong>노동계</strong></td>
+<td>노동조합은 대통령의 목표를 환영하며, 현행 안전 규제의 실효성 강화를 요구했다.</td>
+<td><a href="https://www.joongang.co.kr/sunday/indepthstory" target="_blank">중앙SUNDAY</a></td>
+</tr>
+<tr>
+<td><strong>학계</strong></td>
+<td>안전공학 전문가들은 “산업재해 사망률이 OECD 평균보다 높음”을 지적하며, 대통령의 목표가 현실적이라고 평가했다.</td>
+<td><a href="https://www.joongang.co.kr/sunday/indepthstory" target="_blank">중앙SUNDAY</a></td>
+</tr>
+<tr>
+<td><strong>정치적 비판</strong></td>
+<td>일부 보수 언론은 대통령의 발언을 “정치적 과장”이라며, “대한민국이 전 세계 식민지에서 해방된 나라 가운데 산업화와 민주화를 동시에 이뤄낸 나라”라는 표현을 과도한 주장으로 비판했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005689000" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>긍정적 평가</strong></td>
+<td>연합뉴스는 대통령이 산업계 원로를 “진짜 영웅”이라 칭찬하며 국가의 위대함을 강조한 발언을 <strong>긍정적으로</strong> 평가했다.</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005689000" target="_blank">연합뉴스</a></td>
+</tr>
+</tbody>
+</table>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>- 대통령이 12월 4일 산업계 원로 90여 명과 오찬을 가졌음. <br> - 대통령이 산업재해를 “후진국 수준”이라고 언급. <br> - 대통령이 12월 3일 군사 쿠데타 시도와 민주주의 회복 과정을 언급.</td>
+<td><a href="https://n.news.naver.com/mnews/article/277/0005689000" target="_blank">연합뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>- 대통령이 산업재해 사망률을 1년 내 0에 가깝게 줄이겠다는 구체적 정책 세부안. <br> - 산업계 원로들의 구체적 반응(예: 규제 강화에 대한 반대).</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>이재명 대통령</strong> – 산업재해 문제를 국가적 과제로 삼고, 안전 규제 강화와 산업 안전 문화 정착을 촉구.  </li>
+<li><strong>산업계 원로 90여 명</strong> – 포스코 창립 멤버, 미싱사 대표 등 산업 발전의 핵심 인물. 규제 강화가 생산성에 미칠 영향에 대한 우려가 존재.  </li>
+<li><strong>노동조합 대표</strong> – 안전 규제 강화와 근로자 보호를 지지.  </li>
+<li><strong>안전공학 전문가</strong> – 산업재해 사망률이 OECD 평균보다 높음. 대통령의 목표를 현실적이라고 평가.  </li>
+<li><strong>정치적 비판자</strong> – 대통령의 발언을 과장된 정치적 주장으로 비판.  </li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>정책 제안</strong>: 대통령은 산업재해 사망률 0에 가깝게 줄이기 위해 <strong>안전 규제 강화, 감시 체계 확대, 산업 안전 교육 강화</strong>를 제안할 가능성이 높다.  </li>
+<li><strong>법률 개정</strong>: 산업안전보건법 개정이 논의될 수 있으며, <strong>산업재해에 대한 처벌 강화</strong>와 <strong>기업의 안전 책임 강화</strong>가 주요 포인트가 될 전망이다.  </li>
+<li><strong>산업계 반응</strong>: 규제 강화에 대한 <strong>반대와 협조</strong>가 동시에 나타날 것으로 예상된다. 기업들은 비용 상승과 생산성 저하를 우려하며, 정부는 산업계와 협의체를 통해 균형 잡힌 방안을 모색할 필요가 있다.  </li>
+<li><strong>노동계·학계</strong>: 노동조합과 안전공학 학계는 대통령의 목표를 지지하며, <strong>산업 안전 문화 정착</strong>을 위한 협력체계를 구축할 것으로 보인다.  </li>
+<li><strong>정치적 파장</strong>: 대통령의 발언이 <strong>정치적 과장</strong>으로 비판받는 가운데, 규제 강화가 정치적 갈등을 유발할 가능성도 있다.  </li>
+</ul>
+<p>이재명 대통령의 산업재해 선진화 촉구는 한국 산업의 안전 수준을 재조명하고, 국가 차원의 안전 문화 정착을 위한 논의의 시작점이 될 전망이다. 정책이 실제로 시행될 경우, 산업계와 노동계 간의 협력이 필수적이며, 장기적으로는 산업재해 사망률 감소와 함께 근로자 보호 수준이 향상될 것으로 기대된다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=1IbTn-zaFMg" target="_blank">[Subtitle] President Lee Jae-m...</a><a href="https://www.youtube.com/watch?v=aOZFpmGzLH0" target="_blank">이재명 대통령 "후진적 사고 영구 추방…산재 사망사고 ...</a><a href="https://www.youtube.com/watch?v=i9lWUfMVXh0" target="_blank">[자막] 이재명 대통령 “산재기업, 회생 못 할 정도로...</a><a href="https://www.youtube.com/watch?v=Reh2WrR81y0" target="_blank">[🔴풀영상 공개] 이재명 대통령 산업재해 발생률 감소를...</a><a href="https://www.youtube.com/watch?v=At-LlXjUJhI" target="_blank">'산재' 기업에 철퇴 때린다…과태료부터 등록말소까지 /...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/277/0005689000" target="_blank">소년공 출신 李대통령, '1세대 미싱사·포니 개발 주역'과 오찬…"나라를 위대하게 만든 영...</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.asiae.co.kr/article/2025120409320786560" target="_blank">소년공 출신 李대통령, '1세대 미싱사·포니 개발 주역'과 오찬…"나라를 ...</a><a href="https://www.joongang.co.kr/sunday/indepthstory" target="_blank">심층기획 1페이지 | 중앙SUNDAY</a><a href="https://blog.naver.com/trim9134/223936617656" target="_blank">정책지식 2025.7.17. : 네이버 블로그</a><a href="https://www.laborplus.co.kr/news/articleView.html?idxno=35736" target="_blank">[위클립] 5월 5주 - 참여와혁신</a><a href="https://www.dailian.co.kr/news/view/1011549/" target="_blank">"더운 날 일 시켰다가 감옥 갈라"…산업계 중대재해법 공포</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
