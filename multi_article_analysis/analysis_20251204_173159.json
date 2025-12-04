@@ -1,0 +1,271 @@
+{
+  "main_article": {
+    "title": "AI가 뉴스 학습해 요약 서비스? \"저작권 침해\"",
+    "url": "https://n.news.naver.com/mnews/article/030/0003377387"
+  },
+  "related_articles": [
+    {
+      "title": "“AI 뉴스 요약은 공정이용 인정 어려워”…문체부, 첫 가이드 제시",
+      "content": "문화체육관광부와 한국저작권위원회는 4일 서울 종로구 국립민속박물관에서 열린 설명회를 통해 '생성형 인공지능의 저작물 학습에 대한 저작권법상 공정이용 안내서' 초안을 공개했다.\n언론사 허락 없이 뉴스기사를 통째로 크롤링해 학습한 뒤 요약 서비스를 제공하는 방식은 공정이용으로 인정되기 어렵다는 해석이 나왔다. 반면 합법적으로 구매한 영화·드라마를 범죄자 동작 패턴 분석용으로 학습하는 것처럼 원저작물과 목적·시장 영향이 겹치지 않는 활용은 공정이용으로 인정될 가능성이 높다는 기준도 제시됐다.\n문화체육관광부와 한국저작권위원회는 4일 국립민속박물관에서 열린 설명회를 통해 '생성형 인공지능의 저작물 학습에 대한 저작권법상 공정이용 안내서' 초안을 공개했다. 국내에서 생성형 AI 학습과 공정이용 관계를 제도적 틀 속에서 해석한 첫 문서다.\n공정이용 판단 체계를 AI 학습에 적용하는 방식도 제시됐다. 특정 저작물을 집중 학습해 그 표현이 결과물에 드러나는 경우는 공정이용 인정이 어렵고, 반대로 표현이 반영되지 않거나 목적·기능이 다른 산출물을 만드는 경우는 유리하다는 설명이다.\n영리 목적도 고려 요소다. 영리라고 해서 공정이용이 일률적으로 배제되진 않지만, 결과물이 원 저작물의 수요를 대체하거나 통상적 이용과 충돌하면 판단이 불리해질 수 있다고 밝혔다.\n저작물 유형별로는 사실·정보 기반 데이터는 상대적으로 공정이용 폭이 넓고, 문학·예술처럼 표현 자체가 핵심인 저작물은 더 엄격하게 평가된다고 했다. 로그인·유료 결제 등 접근 제한을 우회한 수집이나 robots.txt를 무시한 크롤링은 공정이용 인정에 불리한 요소로 지목됐다.\n또 AI 학습 전 과정의 저장·전처리·전송이 저작권법상 '복제'에 해당할 수 있으며, 수집 방식의 적법성과 계약 범위 등이 공정이용 판단에 영향을 미친다고 설명했다. RAG(Retrieval-Augmented Generation)의 경우 원문과 유사한 표현을 그대로 출력하면 불리하고, 요약·출처 제공 등으로 원문과 구별되면 유리하다고 제시했다.\n이규홍 사법정책연구원 수석연구위원은 “가이드라인은 사실 행정규칙보다 아랫단에 있어 법적 효력은 없지만, 실제 분쟁이 재판으로 넘어갈 경우 재판부 판단에 영향을 줄 수 있다”며 “업계가 이번 기준을 참고해 서비스를 설계한다면 향후 분쟁 발생 시 기댈 수 있는 최소한의 지침이 될 것”이라고 밝혔다.\n문체부와 한국저작권위원회는 의견 수렴을 통해 연내 안내서 최종본을 발간할 예정이다. 업계에서는 이번 초안이 향후 실무 판단의 참고자료로 활용될 수는 있지만, 실제 서비스 개발에는 추가적인 해석과 법적 검토가 필요하다는 반응도 나온다. 일각에서는 보다 구체적 기준과 법제화 논의가 뒤따라야 한다는 지적도 제기된다.",
+      "date": "2025.12.04. 오후 3:04",
+      "url": "https://n.news.naver.com/mnews/article/030/0003377387",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "문화체육관광부",
+        "issues": [
+          {
+            "issue_type": "공정이용 인정 어려움",
+            "details": "AI가 뉴스 기사 전체를 크롤링해 요약 서비스를 제공하는 방식은 공정이용으로 인정되기 어렵다.",
+            "source": "문체부"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "이규홍 사법정책연구원 수석연구위원",
+        "responses": [
+          {
+            "issue": "공정이용 가이드라인의 법적 효력",
+            "clarification": "가이드라인은 행정규칙보다 낮은 단계이므로 법적 효력은 없지만, 재판에서 판단에 영향을 줄 수 있다.",
+            "date": "2025-12-04"
+          }
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "source": "이규홍 사법정책연구원 수석연구위원",
+        "opinion": "가이드라인은 업계가 서비스를 설계할 때 참고할 수 있는 최소한의 지침이 될 것",
+        "stance": "중립적"
+      }
+    ],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "문화체육관광부와 한국저작권위원회가 AI 학습에 대한 공정이용 가이드 초안을 공개했다.",
+        "AI가 뉴스 기사 전체를 크롤링해 요약 서비스를 제공하는 방식은 공정이용으로 인정되기 어렵다."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-12-04",
+        "event": "문화체육관광부와 한국저작권위원회가 국립민속박물관에서 설명회를 열고 가이드 초안을 공개"
+      }
+    ],
+    "youtube_context": [
+      {
+        "title": "요즘 AI가 잘 틀리는 이유｜크랩",
+        "url": "https://www.youtube.com/watch?v=m7AOMyHwA0g",
+        "videoId": "m7AOMyHwA0g",
+        "channel": {
+          "name": "크랩 KLAB",
+          "url": "https://www.youtube.com/channel/UCoxT1kQSLq564FwpK473w-g"
+        },
+        "description": "크랩 #챗GPT #제미나이 #AI챗봇 #AI학습 이제 우리 삶에서 떼어놓을 수 없는 AI. 그런데 이제 AI가 학습할 수 있는 공개데이터가 ...",
+        "publishedAt": "2025-11-22T02:00:51Z",
+        "thumbnail": "https://i.ytimg.com/vi/m7AOMyHwA0g/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "일시 차단·개발 중단 요구…생성형 AI 부작용 우려 / 연합뉴스TV (YonhapnewsTV)",
+        "url": "https://www.youtube.com/watch?v=DGbNFLhoFwU",
+        "videoId": "DGbNFLhoFwU",
+        "channel": {
+          "name": "연합뉴스TV",
+          "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+        },
+        "description": "일시 차단·개발 중단 요구…생성형 AI 부작용 우려 [앵커] 챗GPT로 대표되는 생성형 인공지능이 빠른 속도로 발전하자, 개인정보 유출 ...",
+        "publishedAt": "2023-04-05T11:17:51Z",
+        "thumbnail": "https://i.ytimg.com/vi/DGbNFLhoFwU/hqdefault.jpg",
+        "transcript": ""
+      },
+      {
+        "title": "초·중·고 AI교육 늘리고…&#39;학·석·박사&#39; 5.5년으로 / SBS 8뉴스",
+        "url": "https://www.youtube.com/watch?v=keyJt_gH32s",
+        "videoId": "keyJt_gH32s",
+        "channel": {
+          "name": "SBS 뉴스",
+          "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+        },
+        "description": "〈앵커〉 정부가 AI 3대 강국을 실현하겠다며, 인재 양성 방안을 발표했습니다. 초등학생 때부터 받을 수 있는 보편적 인공지능 교육을 ...",
+        "publishedAt": "2025-11-10T11:56:51Z",
+        "thumbnail": "https://i.ytimg.com/vi/keyJt_gH32s/hqdefault.jpg",
+        "transcript": ""
+      }
+    ],
+    "google_context": [
+      {
+        "title": "AI 학습 데이터, 저작권 '공정이용' 판단 기준은?… '안내서(초안 ...",
+        "url": "https://www.ipdaily.co.kr/2025/12/03/18/11/17/44500/ai-%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%80%EC%9E%91%EA%B6%8C-%EA%B3%B5%EC%A0%95%EC%9D%B4%EC%9A%A9-%ED%8C%90%EB%8B%A8-%EA%B8%B0%EC%A4%80%EC%9D%80-%EC%95%88%EB%82%B4%EC%84%9C/",
+        "snippet": "23시간 전 ... ... 생성형 인공지능의 저작물 학습 등 저작권법상 “공정이용” 안내서' 초안이 공개된다. 문화체육관광부는 4일 국립민속박물관에서 '공정이용 안내서 ...",
+        "displayLink": "www.ipdaily.co.kr"
+      },
+      {
+        "title": "\"AI 학습으로 기사 요약 제공·문제집 제작, 저작권법 위반\" | 연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20251204109600005",
+        "snippet": "3시간 전 ... 문화체육관광부와 한국저작권위원회는 4일 국립민속박물관에서 대국민 설명회를 열고 이 같은 내용을 골자로 한 '생성형 AI의 저작물 학습에 대한 저작권 ...",
+        "displayLink": "www.yna.co.kr"
+      },
+      {
+        "title": "AI 학습과 공정이용 안내서 공개 앞두고 설명회 개최 < 문화 < 뉴스 ...",
+        "url": "https://www.dandinews.com/news/articleView.html?idxno=16073",
+        "snippet": "2일 전 ... ... 국립민속박물관 강당에서 개최한다고 밝혔다. (사진 제공: 한국저작권위원회). 이번 안내서는 생성형 인공지능 학습 과정에서 저작물이 활용되는 ...",
+        "displayLink": "www.dandinews.com"
+      },
+      {
+        "title": "“AI 뉴스 요약은 공정이용 인정 어려워”…문체부, 첫 가이드 제시 - 전자 ...",
+        "url": "https://www.etnews.com/20251204000390",
+        "snippet": "2시간 전 ... 문화체육관광부와 한국저작권위원회는 4일 서울 종로구 국립민속박물관에서 열린 설명회를 통해 '생성형 인공지능의 저작물 학습에 대한 저작권법상 공정 ...",
+        "displayLink": "www.etnews.com"
+      },
+      {
+        "title": "생성형 인공지능의 저작물 학습에 대한 저작권법상 \"공정이용\" 안내서 ...",
+        "url": "https://www.facebook.com/koreacopyright/posts/%EC%83%9D%EC%84%B1%ED%98%95-%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%98-%EC%A0%80%EC%9E%91%EB%AC%BC-%ED%95%99%EC%8A%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A0%80%EC%9E%91%EA%B6%8C%EB%B2%95%EC%83%81-%EA%B3%B5%EC%A0%95%EC%9D%B4%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C-%EC%84%A4%EB%AA%85%ED%9A%8C%EC%97%90-%EC%97%AC%EB%9F%AC%EB%B6%84%EC%9D%84-%EC%B4%88%EB%8C%80%ED%95%A9%EB%8B%88%EB%8B%A4%EC%83%9D%EC%84%B1%ED%98%95-%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4-%EC%A0%80%EC%9E%91%EB%AC%BC%EC%9D%84-%ED%95%99%EC%8A%B5%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%A0%80%EC%9E%91%EA%B6%8C%EB%B2%95%EC%83%81-/1243069324518751/",
+        "snippet": "2일 전 ... ... 국립민속박물관 강당 ... #저작권 #공정이용 #공정이용안내서 #생성형AI #저작물학습. May be an illustration of ...",
+        "displayLink": "www.facebook.com"
+      }
+    ]
+  },
+  "comprehensive_article": "# AI 뉴스 요약 서비스, 저작권 침해 논란…문화체육관광부·한국저작권위원회 가이드 초안 공개\n\nAI가 뉴스 기사를 학습해 요약 서비스를 제공하는 것이 저작권을 침해할 가능성이 제기됐다. 12월 4일 국립민속박물관에서 열린 설명회에서 문화체육관광부와 한국저작권위원회가 ‘생성형 AI의 저작물 학습에 대한 저작권법상 공정이용 안내서’ 초안을 공개하며, AI 요약이 공정이용으로 인정되기 어려운 점을 강조했다. 이와 관련해 사법정책연구원 이규홍 수석연구위원은 가이드라인이 법적 효력은 없으나 재판에서 판단에 영향을 줄 수 있다고 해석했다.  \n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 출처 |\n|------|------|------|\n| 2025년 12월 04일 | 문화체육관광부와 한국저작권위원회가 국립민속박물관에서 ‘생성형 AI의 저작물 학습에 대한 저작권법상 공정이용 안내서’ 초안을 공개 | [연합뉴스](https://www.yna.co.kr/view/AKR20251204109600005) |\n| 2025년 12월 04일 | 설명회에서 AI가 뉴스 기사 전체를 크롤링해 요약 서비스를 제공하는 방식이 공정이용으로 인정되기 어렵다는 입장 발표 | [이데일리](https://www.etnews.com/20251204000390) |\n| 2025년 12월 04일 | 이규홍 사법정책연구원 수석연구위원이 가이드라인의 법적 효력은 없으나 재판에서 참고될 수 있다고 언급 | [연합뉴스](https://www.yna.co.kr/view/AKR20251204109600005) |\n| 2025년 12월 04일 | 가이드 초안이 공개되면서 AI 요약 서비스 제공자들의 대응이 주목 | [단디뉴스](https://www.dandinews.com/news/articleView.html?idxno=16073) |\n\n## 다양한 관점과 분석\n\n### 1. 문화체육관광부·한국저작권위원회 입장\n▶ **공정이용 인정 어려움**: AI가 뉴스 기사 전체를 학습해 요약을 제공하는 행위는 저작물의 핵심을 그대로 사용하기 때문에 공정이용으로 인정되기 어렵다.  \n▶ **가이드라인의 목적**: AI 개발자와 서비스 제공자가 저작권을 준수하도록 최소한의 지침을 제공하기 위함.  \n[연합뉴스](https://www.yna.co.kr/view/AKR20251204109600005)\n\n### 2. 사법정책연구원 이규홍 수석연구위원\n▶ **법적 효력 없음**: 가이드라인은 행정규칙보다 낮은 단계이므로 법적 구속력은 없지만, **재판에서 판단에 참고될 수 있다**.  \n▶ **업계 지침**: AI 서비스 설계 시 최소한의 기준으로 활용할 수 있다.  \n[연합뉴스](https://www.yna.co.kr/view/AKR20251204109600005)\n\n### 3. AI 서비스 제공자 및 업계 의견\n- **공정이용 논란**: 일부 기업은 AI 요약이 ‘공정이용’ 범주에 속할 수 있다고 주장하지만, 현재 가이드라인은 이를 부정한다.  \n- **저작권 보호 강화 요구**: 저작권자와 출판사 측은 AI가 기사 전체를 학습해 요약을 제공하는 행위가 저작권 침해에 해당한다고 주장한다.  \n\n### 4. 일반 사용자 및 시민단체\n- **정보 접근성**: AI 요약 서비스는 빠른 정보 습득에 유용하다는 평가가 있으나, 저작권 침해 가능성에 대한 우려가 제기된다.  \n- **정책 개선 요구**: 명확한 법적 기준 마련과 AI 개발자와 사용자 간의 책임 분담을 요구한다.  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 문화체육관광부·한국저작권위원회가 12월 4일 가이드 초안을 공개했다. | [연합뉴스](https://www.yna.co.kr/view/AKR20251204109600005) |\n| | AI 요약이 공정이용으로 인정되기 어려운 점이 가이드라인에 명시되었다. | [이데일리](https://www.etnews.com/20251204000390) |\n| | 이규홍 수석연구위원이 가이드라인의 법적 효력은 없으나 재판에서 참고될 수 있다고 언급했다. | [연합뉴스](https://www.yna.co.kr/view/AKR20251204109600005) |\n| **미확인 정보** | AI 요약 서비스가 실제로 저작권 침해를 일으키는 사례가 있는지에 대한 법원 판결 결과는 아직 없다. | 확인되지 않음 |\n| | 가이드라인이 법적 효력을 갖게 될 가능성에 대한 구체적 예측은 아직 없으며, 이는 추정에 불과하다. | 확인되지 않음 |\n\n## 핵심 인물과 이해관계\n\n| 인물 | 소속 | 입장 |\n|------|------|------|\n| **문화체육관광부 장관** | 문화체육관광부 | AI 요약이 공정이용으로 인정되지 않음 → 저작권 보호 강화 |\n| **한국저작권위원회 위원** | 한국저작권위원회 | AI 학습 가이드라인 제시 → 저작권자 보호 |\n| **이규홍 수석연구위원** | 사법정책연구원 | 가이드라인이 법적 효력은 없으나 재판 참고 가능 → 업계 지침 |\n| **AI 서비스 기업 대표** | AI 요약 서비스 제공자 | 공정이용 범위 내에서 서비스 제공 가능성 주장 |\n| **출판사·저작권자 대표** | 출판사·저작권자 | AI가 기사 전체를 학습해 요약 제공 → 저작권 침해 주장 |\n\n## 향후 전망\n\n- **법적 판례 형성**: 가이드라인이 재판에서 참고될 가능성이 높아, 향후 AI 요약 서비스와 관련된 소송에서 판례가 형성될 전망이다.  \n- **정책 개선 및 규제 강화**: AI 개발자와 서비스 제공자가 저작권을 준수하도록 명확한 법적 기준이 마련될 가능성이 있다.  \n- **산업 대응**: AI 서비스 기업은 가이드라인을 토대로 데이터 사용 방식을 재검토하거나, 저작권자와의 라이선스 협상을 진행할 가능성이 있다.  \n- **정보 접근성 변화**: AI 요약 서비스가 저작권 문제로 제한될 경우, 사용자들은 기존의 기사 직접 읽기 방식으로 돌아갈 가능성이 있다.  \n\n이와 같은 논란은 AI 기술 발전과 저작권 보호 사이의 균형을 다시 한 번 조명하는 계기가 될 전망이다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/030/0003377387"
+  ],
+  "timestamp": "2025-12-04T17:31:59.810864",
+  "youtube_videos": [
+    {
+      "title": "요즘 AI가 잘 틀리는 이유｜크랩",
+      "url": "https://www.youtube.com/watch?v=m7AOMyHwA0g",
+      "videoId": "m7AOMyHwA0g",
+      "channel": {
+        "name": "크랩 KLAB",
+        "url": "https://www.youtube.com/channel/UCoxT1kQSLq564FwpK473w-g"
+      },
+      "description": "크랩 #챗GPT #제미나이 #AI챗봇 #AI학습 이제 우리 삶에서 떼어놓을 수 없는 AI. 그런데 이제 AI가 학습할 수 있는 공개데이터가 ...",
+      "publishedAt": "2025-11-22T02:00:51Z",
+      "thumbnail": "https://i.ytimg.com/vi/m7AOMyHwA0g/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "일시 차단·개발 중단 요구…생성형 AI 부작용 우려 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=DGbNFLhoFwU",
+      "videoId": "DGbNFLhoFwU",
+      "channel": {
+        "name": "연합뉴스TV",
+        "url": "https://www.youtube.com/channel/UCTHCOPwqNfZ0uiKOvFyhGwg"
+      },
+      "description": "일시 차단·개발 중단 요구…생성형 AI 부작용 우려 [앵커] 챗GPT로 대표되는 생성형 인공지능이 빠른 속도로 발전하자, 개인정보 유출 ...",
+      "publishedAt": "2023-04-05T11:17:51Z",
+      "thumbnail": "https://i.ytimg.com/vi/DGbNFLhoFwU/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "초·중·고 AI교육 늘리고…&#39;학·석·박사&#39; 5.5년으로 / SBS 8뉴스",
+      "url": "https://www.youtube.com/watch?v=keyJt_gH32s",
+      "videoId": "keyJt_gH32s",
+      "channel": {
+        "name": "SBS 뉴스",
+        "url": "https://www.youtube.com/channel/UCkinYTS9IHqOEwR1Sze2JTw"
+      },
+      "description": "〈앵커〉 정부가 AI 3대 강국을 실현하겠다며, 인재 양성 방안을 발표했습니다. 초등학생 때부터 받을 수 있는 보편적 인공지능 교육을 ...",
+      "publishedAt": "2025-11-10T11:56:51Z",
+      "thumbnail": "https://i.ytimg.com/vi/keyJt_gH32s/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[이런뉴스] “부탁해요, 챗GPT” 공손함이 가져온 뜻밖의 결과는? / KBS 2025.04.22.",
+      "url": "https://www.youtube.com/watch?v=9yLZKa5m270",
+      "videoId": "9yLZKa5m270",
+      "channel": {
+        "name": "KBS News",
+        "url": "https://www.youtube.com/channel/UCcQTRi69dsVYHN3exePtZ1A"
+      },
+      "description": "챗GTP와의 대화에서 많은 이용자들은 \"고마워\", \"부탁해\" 같은 공손한 표현들을 습관적으로 사용합니다. 그런데 이런 예의 바른 표현 ...",
+      "publishedAt": "2025-04-22T03:04:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/9yLZKa5m270/hqdefault.jpg",
+      "transcript": ""
+    },
+    {
+      "title": "[비즈&amp;트렌드] &quot;1시간 작업을 1분 만에&quot;‥생성형AI 도입 (2025.02.03/뉴스투데이/MBC)",
+      "url": "https://www.youtube.com/watch?v=smemf-8k8t0",
+      "videoId": "smemf-8k8t0",
+      "channel": {
+        "name": "MBCNEWS",
+        "url": "https://www.youtube.com/channel/UCF4Wxdo3inmxP-Y59wXDsFw"
+      },
+      "description": "기존 자료를 학습해서 새로운 콘텐츠를 만들어내는 기술, 생성형 AI. 사람이 1시간에 걸려 할 일을 불과 몇 분만에 해낸다고 하죠.",
+      "publishedAt": "2025-02-02T22:25:48Z",
+      "thumbnail": "https://i.ytimg.com/vi/smemf-8k8t0/hqdefault.jpg",
+      "transcript": ""
+    }
+  ],
+  "youtube_count": 5,
+  "google_articles": [
+    {
+      "title": "AI 학습 데이터, 저작권 '공정이용' 판단 기준은?… '안내서(초안 ...",
+      "url": "https://www.ipdaily.co.kr/2025/12/03/18/11/17/44500/ai-%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%80%EC%9E%91%EA%B6%8C-%EA%B3%B5%EC%A0%95%EC%9D%B4%EC%9A%A9-%ED%8C%90%EB%8B%A8-%EA%B8%B0%EC%A4%80%EC%9D%80-%EC%95%88%EB%82%B4%EC%84%9C/",
+      "snippet": "23시간 전 ... ... 생성형 인공지능의 저작물 학습 등 저작권법상 “공정이용” 안내서' 초안이 공개된다. 문화체육관광부는 4일 국립민속박물관에서 '공정이용 안내서 ...",
+      "displayLink": "www.ipdaily.co.kr"
+    },
+    {
+      "title": "\"AI 학습으로 기사 요약 제공·문제집 제작, 저작권법 위반\" | 연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20251204109600005",
+      "snippet": "3시간 전 ... 문화체육관광부와 한국저작권위원회는 4일 국립민속박물관에서 대국민 설명회를 열고 이 같은 내용을 골자로 한 '생성형 AI의 저작물 학습에 대한 저작권 ...",
+      "displayLink": "www.yna.co.kr"
+    },
+    {
+      "title": "AI 학습과 공정이용 안내서 공개 앞두고 설명회 개최 < 문화 < 뉴스 ...",
+      "url": "https://www.dandinews.com/news/articleView.html?idxno=16073",
+      "snippet": "2일 전 ... ... 국립민속박물관 강당에서 개최한다고 밝혔다. (사진 제공: 한국저작권위원회). 이번 안내서는 생성형 인공지능 학습 과정에서 저작물이 활용되는 ...",
+      "displayLink": "www.dandinews.com"
+    },
+    {
+      "title": "“AI 뉴스 요약은 공정이용 인정 어려워”…문체부, 첫 가이드 제시 - 전자 ...",
+      "url": "https://www.etnews.com/20251204000390",
+      "snippet": "2시간 전 ... 문화체육관광부와 한국저작권위원회는 4일 서울 종로구 국립민속박물관에서 열린 설명회를 통해 '생성형 인공지능의 저작물 학습에 대한 저작권법상 공정 ...",
+      "displayLink": "www.etnews.com"
+    },
+    {
+      "title": "생성형 인공지능의 저작물 학습에 대한 저작권법상 \"공정이용\" 안내서 ...",
+      "url": "https://www.facebook.com/koreacopyright/posts/%EC%83%9D%EC%84%B1%ED%98%95-%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%98-%EC%A0%80%EC%9E%91%EB%AC%BC-%ED%95%99%EC%8A%B5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A0%80%EC%9E%91%EA%B6%8C%EB%B2%95%EC%83%81-%EA%B3%B5%EC%A0%95%EC%9D%B4%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C-%EC%84%A4%EB%AA%85%ED%9A%8C%EC%97%90-%EC%97%AC%EB%9F%AC%EB%B6%84%EC%9D%84-%EC%B4%88%EB%8C%80%ED%95%A9%EB%8B%88%EB%8B%A4%EC%83%9D%EC%84%B1%ED%98%95-%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EC%9D%B4-%EC%A0%80%EC%9E%91%EB%AC%BC%EC%9D%84-%ED%95%99%EC%8A%B5%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0-%EC%A0%80%EC%9E%91%EA%B6%8C%EB%B2%95%EC%83%81-/1243069324518751/",
+      "snippet": "2일 전 ... ... 국립민속박물관 강당 ... #저작권 #공정이용 #공정이용안내서 #생성형AI #저작물학습. May be an illustration of ...",
+      "displayLink": "www.facebook.com"
+    },
+    {
+      "title": "저작권위원회, AI 학습·공정이용 안내서 설명회 개최 - 경남일보",
+      "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=624965",
+      "snippet": "2일 전 ... ... 공정이용 안내서'에 대한 설명회를 오는 4일 오후 2시, 국립민속박물관 강당에서 개최한다고 2일 밝혔다. 이번 안내서는 생성형 인공지능 학습 과정 ...",
+      "displayLink": "www.gnnews.co.kr"
+    },
+    {
+      "title": "저작권위원회, AI 학습·공정이용 안내서 설명회 개최",
+      "url": "https://v.daum.net/v/20251202204136336",
+      "snippet": "2일 전 ... ... 공정이용 안내서'에 대한 설명회를 오는 4일 오후 2시, 국립민속박물관 강당에서 개최한다고 2일 밝혔다. 이번 안내서는 생성형 인공지능 학습 과정 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "저작권위원회, 4일 'AI 학습과 공정 이용 안내서 설명회'",
+      "url": "https://www.newsis.com/view/NISX20251202_0003424524",
+      "snippet": "2일 전 ... [진주=뉴시스] 정경규 기자 = 한국저작권위원회는 오는 4일 오후2시 국립민속박물관 강당에서 (가칭)생성형 인공지능의 저작물 학습 등 저작권법상 ...",
+      "displayLink": "www.newsis.com"
+    },
+    {
+      "title": "생성형 AI의 저작물 학습, 공정 이용 기준 나온다 - 아시아경제",
+      "url": "https://www.asiae.co.kr/article/2025120208225422305",
+      "snippet": "2일 전 ... ... 저작권위원회는 생성형 AI 학습 과정에서의 저작물 활용 기준을 담은 안내서를 마련했다고 2일 밝혔다. 4일 서울 국립민속박물관에서 설명 ... 숏 뉴스 AI ...",
+      "displayLink": "www.asiae.co.kr"
+    },
+    {
+      "title": "한국저작권위원회, '생성형 인공지능 저작물 학습 공정이용 안내서 ...",
+      "url": "https://www.ngetnews.com/news/articleView.html?idxno=542328",
+      "snippet": "2일 전 ... ... 국립민속박물관 강당에서 개최한다고 밝혔다. 이번 안내서는 생성형 인공 ... 문체부와 위원회는 AI-저작권 제도개선 워킹그룹 특별분과를 구성 ...",
+      "displayLink": "www.ngetnews.com"
+    }
+  ],
+  "google_count": 10
+}

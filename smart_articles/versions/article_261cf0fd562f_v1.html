@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소비쿠폰 사업, 신용·체크카드 지급액 99.8%인 9조 461억 원 사용 - 2025-12-04 17:36:15</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,민생회복,소비쿠폰,신용카드">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="민생회복,소비쿠폰,신용카드">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 17:36:15'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('소비쿠폰 사업, 신용·체크카드 지급액 99.8%인 9조 461억 원 사용')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>소비쿠폰 사업, 신용·체크카드 지급액 99.8%인 9조 461억 원 사용</h1>
+            <p>
+                분석 시간: 2025-12-04 17:36:15
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 민생회복 소비쿠폰 사업에서 신용·체크카드로 지급된 9조 668억 원 중 99.8%인 9조 461억 원이 실제 사용되었다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 1차 지급은 9조 693억 원, 2차 지급은 4조 4527억 원으로 총 13조 9000억 원 규모 중 신용·체크카드가 약 70%를 차지하며, 대중음식점이 40.3%, 마트·식료품이 16.0%, 편의점이 10.8%의 비중을 보였다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 높은 사용률은 경기 부양과 소상공인 매출 상승을 의미하며, 정부는 이를 정책 목표 달성의 지표로 평가하고, 카드 기반 지급이 일시적 인플레이션 압력을 가할 수 있으나 전반적으로 경제에 긍정적 효과를 기대한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/261cf0fd562f.png" 
+                     alt="소비쿠폰 사업, 신용·체크카드 지급액 99.8%인 9조 461억 원 사용" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>정부가 시행한 민생회복 소비쿠폰 사업에서 <strong>신용·체크카드로 지급된 9조 668억 원 중 99.8%인 9조 461억 원이 실제로 사용</strong>되었다는 공식 발표가 나왔다. 1차·2차 지급 규모와 업종별 사용 비중도 함께 공개됐다.</p>
+<h3>주요 사실과 경과</h3>
+<ul>
+<li>
+<p><strong>▶ 2025년 12월 4일</strong>, 행정안전부가 <strong>신용·체크카드 지급액 99.8% 사용</strong> 사실을 발표했다.<br />
+<a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">조선비즈</a></p>
+</li>
+<li>
+<p><strong>총 13조 9000억 원</strong> 규모의 민생회복 소비쿠폰 사업 중 <strong>신용·체크카드로 지급된 9조 668억 원</strong>이 사용됐다.<br />
+<a href="https://news.nate.com/view/20251204n28112?mid=n1101" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>1차 지급(2025년 7월 21일‑9월 12일)</strong>: 9조 693억 원 지급, <strong>2차 지급(2025년 9월 22일‑10월 31일)</strong>: 4조 4527억 원 지급.<br />
+<a href="https://news.nate.com/view/20251204n28199" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>신용·체크카드 건수</strong>: 1차 3464만 건, 2차 3049만 건으로 각각 69.2%와 68.5%를 차지.<br />
+<a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">조선비즈</a></p>
+</li>
+<li>
+<p><strong>업종별 사용 비중</strong>: 대중음식점 40.3%, 마트·식료품 16.0%, 편의점 10.8% 등.<br />
+<a href="https://news.nate.com/view/20251204n28112?mid=n1101" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>지급 수단 비중</strong>: 신용·체크카드가 전체 지급액의 약 70%를 차지.<br />
+<a href="https://news.nate.com/view/20251204n28199" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>시청자 반응</strong>: SBS, KBS 등 주요 방송사에서 1차·2차 지급 일정과 사용 비중을 보도하며 시청자들의 관심을 끌었다.  </p>
+</li>
+<li>SBS: “22일부터 2차 소비쿠폰…국민 90%, 1인당 10만 원”<br />
+<a href="https://www.youtube.com/watch?v=NAB1ulkEh_Q" target="_blank">SBS 뉴스</a>  </li>
+<li>KBS: “21일부터 1차 지급…1인당 15만 원”<br />
+<a href="https://www.youtube.com/watch?v=ddNKZ9jG0fs" target="_blank">KBS 뉴스</a></li>
+</ul>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>정부 입장</strong>: 민생회복 소비쿠폰은 경기 부양과 소상공인 지원을 목표로 한 정책으로, <strong>높은 사용률이 목표 달성의 지표</strong>라며 긍정적으로 평가했다.<br />
+<a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">조선비즈</a></p>
+</li>
+<li>
+<p><strong>소비자 반응</strong>: 카드 결제의 편리성 덕분에 <strong>대부분의 국민이 쿠폰을 적극 활용</strong>했다는 보도가 이어졌다.<br />
+<a href="https://news.nate.com/view/20251204n28199" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>소상공인 시각</strong>: 대중음식점과 마트 등 <strong>주요 업종에서 매출이 상승</strong>했다는 목소리가 많았다.<br />
+<a href="https://news.nate.com/view/20251204n28112?mid=n1101" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>전문가 의견</strong>: 일부 경제학자들은 <strong>카드 기반 지급이 인플레이션 압력</strong>을 일시적으로 증가시킬 수 있다고 지적했으나, 이는 아직 <strong>공식 자료가 발표되지 않은 추정</strong>이다.<br />
+  (해당 의견은 현재 확인된 출처가 없으므로 보류)</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>9조 461억 원 사용, 99.8% 사용률, 1차·2차 지급 규모, 업종별 비중, 카드 건수 비중 등.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>쿠폰이 인플레이션에 미친 영향, 특정 소득계층에 대한 접근성 문제 등은 아직 공식 자료가 없으며, 추측에 불과하다.</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li>
+<p><strong>행정안전부</strong>: 민생회복 소비쿠폰 사업을 총괄하며 사용률 데이터를 발표했다.<br />
+<a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">조선비즈</a></p>
+</li>
+<li>
+<p><strong>주요 정책 담당자</strong>: 쿠폰 지급과 사용 모니터링을 담당한 <strong>행정안전부 소속 관계자</strong>가 공식 발표를 통해 자료를 공개했다.<br />
+  (출처: 조선비즈 기사)</p>
+</li>
+<li>
+<p><strong>소비자와 소상공인</strong>: 쿠폰을 직접 사용하거나 매출에 영향을 받은 사람들로, <strong>정책의 직접 수혜자</strong>이다.</p>
+</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li>
+<p><strong>정책 평가</strong>: 높은 사용률은 <strong>정부가 설정한 소비 부양 목표가 어느 정도 달성되었음을 시사</strong>한다. 향후 유사한 경기 부양책 설계 시 <strong>카드 결제 기반의 접근성</strong>을 강화할 가능성이 있다.<br />
+<a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">조선비즈</a></p>
+</li>
+<li>
+<p><strong>소상공인 지원</strong>: 쿠폰 사용이 매출 상승에 기여했다는 점을 감안해 <strong>소상공인 지원 프로그램에 카드 결제 활용을 확대</strong>할 수 있는 방안이 논의될 전망이다.<br />
+<a href="https://news.nate.com/view/20251204n28112?mid=n1101" target="_blank">네이트 뉴스</a></p>
+</li>
+<li>
+<p><strong>인플레이션 우려</strong>: 쿠폰 사용이 일시적으로 소비를 촉진했으나, <strong>인플레이션에 미치는 장기적 영향</strong>은 아직 정리되지 않았다.<br />
+  (공식 자료가 발표되지 않아 추측 수준)</p>
+</li>
+<li>
+<p><strong>정책 개선 방향</strong>: 카드 결제 비중이 높았으나, <strong>현금·이체 등 다른 지급 수단의 사용률</strong>은 공개되지 않아 <strong>다양한 지급 방식의 효과성</strong>에 대한 추가 연구가 필요하다.<br />
+<a href="https://news.nate.com/view/20251204n28199" target="_blank">네이트 뉴스</a></p>
+</li>
+</ul>
+<hr />
+<p><strong>주요 인용</strong><br />
+- “신용·체크카드 지급액 99.8% 사용”이라는 공식 발표는 <strong>정부의 소비 부양 목표 달성</strong>을 입증하는 핵심 지표로 인식되고 있다.<br />
+<a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">조선비즈</a></p>
+<ul>
+<li>업종별 사용 비중이 <strong>대중음식점이 40.3%</strong>를 차지한 점은 <strong>소상공인 매출 회복</strong>과 직결된 중요한 데이터다.<br />
+<a href="https://news.nate.com/view/20251204n28112?mid=n1101" target="_blank">네이트 뉴스</a></li>
+</ul>
+<p>이러한 자료는 향후 경기 부양 정책 설계에 <strong>실제 사용 데이터를 기반으로 한 근거</strong>를 제공하며, 카드 결제 기반의 소비 쿠폰이 소비자와 소상공인에게 미친 긍정적 효과를 재확인하는 계기가 되었다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=e36CwHLYrUE" target="_blank">3차 민생지원금 ‘이렇게’ 받는다!! 1인당 20만원 ...</a><a href="https://www.youtube.com/watch?v=NAB1ulkEh_Q" target="_blank">22일부터 2차 소비쿠폰…국민 90%, 1인당 10만 ...</a><a href="https://www.youtube.com/watch?v=ddNKZ9jG0fs" target="_blank">&#39;민생 회복 소비쿠폰&#39;, 21일부터 1차...</a><a href="https://www.youtube.com/watch?v=TB4pm8B_O6A" target="_blank">오늘부터 민생회복 소비쿠폰 신청...출생연도 따라 요일...</a><a href="https://www.youtube.com/watch?v=IeWfkiD-57I" target="_blank">민생회복 소비쿠폰 21일부터 신청...&quot;15만...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/014/0005444414" target="_blank">소비쿠폰 사업, 신용·체크카드 지급액 99.8%인 9조 461억 원 사용</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://news.nate.com/view/20251204n28199" target="_blank">13조9000억 투입 소비쿠폰…신청·사용·만족 모두 '호응' : 네이트 뉴스</a><a href="https://www.instagram.com/p/DMeSkwwTP7j/" target="_blank">안녕하세요 공감파트너스 입니다. 이번주 월요일부터 시작된 민생회복 ...</a><a href="https://news.nate.com/view/20251204n28112?mid=n1101" target="_blank">13.9조 쓴 소비쿠폰, 소상공인 살렸다…사용률 99.8% 달성 : 네이트 뉴스</a><a href="https://www.mss.go.kr/" target="_blank">중소벤처기업부</a><a href="https://repository.jthink.kr/bitstream/2016.oak/1124/1/2022-26_22SU23_%EC%A7%80%EC%97%AD%EC%82%AC%EB%9E%91%EC%83%81%ED%92%88%EA%B6%8C%20%EC%A0%95%EC%B1%85%ED%9A%A8%EA%B3%BC%20%EB%B6%84%EC%84%9D%20%EC%97%B0%EA%B5%AC%EC%9A%A9%EC%97%AD.pdf" target="_blank">지역사랑상품권 정책효과 분석 연구용역</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
