@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美 국무부 부차관보 “한국과 협력해 대만해협, 인태 지역 평화 수호” - 2025-12-04 13:00:24</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,프리스트,한국,대만해협">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="프리스트,한국,대만해협">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 13:00:24'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('美 국무부 부차관보 “한국과 협력해 대만해협, 인태 지역 평화 수호”')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>美 국무부 부차관보 “한국과 협력해 대만해협, 인태 지역 평화 수호”</h1>
+            <p>
+                분석 시간: 2025-12-04 13:00:24
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 미국 국무부 부차관보 조나단 프리스트가 12월 4일 KF·CSIS 포럼에서 한국과 협력해 대만해협·인태 지역의 평화를 수호하겠다고 선언했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 그는 한미가 정보 공유·연합 훈련·군사적 억제를 확대하고, 한국의 핵잠수함 프로그램을 방어적 억제 수단으로 정의할 것이라고 밝혔다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 선언은 한미 안보 협력을 강화하고 중국의 군사적 팽창에 대응하려는 의도로 해석되지만, 중국은 이를 군사 팽창으로 비판하고 국제사회는 핵무기 확산 우려를 제기하고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/5b33505232a9.png" 
+                     alt="美 국무부 부차관보 “한국과 협력해 대만해협, 인태 지역 평화 수호”" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>미국 국무부 부차관보 조나단 프리스트가 12월 4일 KF·CSIS 포럼에서 “한국과 협력해 대만해협과 인태 지역의 평화를 수호하겠다”고 밝히며, 한미 안보 협력의 새로운 장을 열었다.</strong>  </p>
+<hr />
+<h3>주요 사실과 경과</h3>
+<p>▶ <strong>2025 10월</strong> – 미국과 한국이 <strong>핵추진 잠수함 건조</strong>에 합의.<br />
+▶ <strong>2025 11월</strong> – 양국이 공동 사실시트(“Joint Fact Sheet”)를 발표해 <strong>잠수함 프로그램</strong>과 <strong>방어적 억제</strong>를 공식화.<br />
+▶ <strong>2025 12월 4일</strong> – 조나단 프리스트가 KF·CSIS 포럼에서 <strong>대만해협·인태 지역 평화 수호</strong>를 강조하며 <strong>한미 협력</strong>을 선언.<br />
+▶ <strong>포럼 발표</strong>에서 프리스트는 <strong>한미 공동 방위</strong>를 위해 <strong>정보 공유, 연합 훈련, 군사적 억제</strong>를 확대할 것이라 말했다.<br />
+▶ <strong>프리스트는</strong> 미국이 <strong>한국의 핵잠수함 프로그램</strong>을 <strong>방어적 억제</strong>로 정의하며 <strong>중국의 군사적 팽창</strong>에 대응할 것이라고 덧붙였다.  </p>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://n.news.naver.com/mnews/article/055/0001313207" target="_blank">네이버뉴스</a>  </p>
+</blockquote>
+<hr />
+<h3>다양한 관점과 분석</h3>
+<h3>미국 측</h3>
+<ul>
+<li><strong>조나단 프리스트</strong>는 한미 안보 협력 강화와 <strong>대만해협의 안정을</strong> 강조하며, <strong>“한미가 함께 대만해협을 보호한다”</strong>는 메시지를 전달했다.  </li>
+<li>미국은 <strong>핵잠수함 프로그램</strong>을 <strong>“방어적 억제”</strong>로 포지셔닝해 <strong>중국과의 긴장 완화</strong>를 시도하고 있다.  </li>
+</ul>
+<h3>한국 측</h3>
+<ul>
+<li>한국은 <strong>한미 협력</strong>을 통해 <strong>대만해협</strong>과 <strong>인태 지역</strong>의 <strong>평화와 안보</strong>를 강화할 수 있다고 보고 있다.  </li>
+<li>한국은 <strong>핵잠수함</strong>을 <strong>“전략적 억제 수단”</strong>으로 활용해 <strong>북한·중국</strong>에 대한 <strong>방어적 억제</strong>를 강화하고 있다.  </li>
+</ul>
+<h3>중국 및 국제사회</h3>
+<ul>
+<li><strong>중국</strong>은 미국의 <strong>핵잠수함 지원</strong>과 <strong>대만해협</strong>에 대한 <strong>한미 협력</strong>을 <strong>군사적 팽창</strong>으로 해석해 <strong>비판</strong>하고 있다.  </li>
+<li><strong>국제사회</strong>는 <strong>한미 협력</strong>이 <strong>인태 지역 안보</strong>에 긍정적이지만, <strong>핵무기 확산</strong>에 대한 우려도 제기하고 있다.  </li>
+</ul>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://www.sisajournal.com/news/articleView.html?idxno=355298" target="_blank">시사저널</a>, <a href="https://www.spnews.co.kr/news/articleView.html?idxno=102093" target="_blank">SPNews</a>, <a href="https://news.kbs.co.kr/news/view.do?ncd=8424328" target="_blank">KBS</a>  </p>
+</blockquote>
+<hr />
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>미국 국무부 부차관보가 12월 4일 KF·CSIS 포럼에서 한미 협력·대만해협 평화 수호를 선언</td>
+<td><a href="https://n.news.naver.com/mnews/article/055/0001313207" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>미국과 한국이 10월에 핵잠수함 건조에 합의</td>
+<td><a href="https://news.kbs.co.kr/news/view.do?ncd=8424328" target="_blank">KBS</a></td>
+</tr>
+<tr>
+<td></td>
+<td>미국이 한국의 핵잠수함 프로그램을 방어적 억제로 정의</td>
+<td><a href="https://www.sisajournal.com/news/articleView.html?idxno=355298" target="_blank">시사저널</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>프리스트가 대만해협 평화 수호에 대한 구체적 군사 계획을 공개</td>
+<td>현재 공개 자료에 없음, 추가 확인 필요</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>조나단 프리스트</strong>  </li>
+<li>미국 국무부 선임 부차관보, 전 미국 대사(한국) 출신.  </li>
+<li>
+<p>한미 안보 협력 강화와 <strong>핵잠수함</strong> 지원을 통해 <strong>방어적 억제</strong>를 강조.  </p>
+</li>
+<li>
+<p><strong>한국 정부</strong>  </p>
+</li>
+<li><strong>한미 협력</strong>을 통해 <strong>대만해협</strong>과 <strong>인태 지역</strong>의 안정을 도모.  </li>
+<li>
+<p><strong>핵잠수함</strong>을 <strong>전략적 억제</strong> 수단으로 활용.  </p>
+</li>
+<li>
+<p><strong>중국 정부</strong>  </p>
+</li>
+<li>미국·한국의 <strong>핵잠수함</strong> 지원과 <strong>대만해협</strong> 협력을 <strong>군사적 팽창</strong>으로 인식.  </li>
+<li>
+<p>지역 안보 균형을 위협받는 것으로 해석.  </p>
+</li>
+<li>
+<p><strong>국제 안보 전문가</strong>  </p>
+</li>
+<li>한미 협력이 <strong>인태 지역 안보</strong>에 긍정적이라 평가.  </li>
+<li><strong>핵무기 확산</strong>에 대한 우려를 제기.  </li>
+</ul>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://www.youtube.com/watch?v=9vb5S4mJM00" target="_blank">연합뉴스TV</a>, <a href="https://www.youtube.com/watch?v=avInXWadEl4" target="_blank">KFN뉴스</a>  </p>
+</blockquote>
+<hr />
+<h3>향후 전망</h3>
+<ol>
+<li>
+<p><strong>한미 안보 협력 확대</strong><br />
+   - 대만해협과 인태 지역에서 <strong>정보 공유·연합 훈련</strong>이 정례화될 가능성이 높다.  </p>
+</li>
+<li>
+<p><strong>핵잠수함 프로그램의 실질적 영향</strong><br />
+   - 방어적 억제 수단으로서 <strong>북한·중국</strong>에 대한 <strong>억제 효과</strong>가 강화될 것으로 예상.<br />
+   - 동시에 <strong>핵무기 확산</strong>에 대한 국제적 우려가 지속될 전망.  </p>
+</li>
+<li>
+<p><strong>인태 지역 안보 구조의 재편</strong><br />
+   - 한미 협력이 <strong>다른 지역 파트너</strong>(일본, 대만 등)와의 <strong>협력 확대</strong>를 촉진할 수 있다.<br />
+   - 중국과의 <strong>군사적 긴장</strong>이 완화되거나 악화될 가능성은 여전히 존재한다.  </p>
+</li>
+</ol>
+<blockquote>
+<p><strong>출처</strong>: <a href="https://www.youtube.com/watch?v=TgvGNWbUjWc" target="_blank">연합뉴스TV</a>  </p>
+</blockquote>
+<hr />
+<p><strong>미국 국무부 부차관보의 선언은 한미 안보 협력의 새로운 방향을 제시하고, 대만해협·인태 지역의 평화와 안보를 위한 공동 노력의 필요성을 부각시켰다.</strong> 한편, 핵잠수함 프로그램에 대한 미국의 지원은 방어적 억제라는 입장을 유지하면서도 국제사회와 중국의 비판을 불러일으키고 있다. 향후 한미 협력의 구체적 실행과 지역 안보 구조의 변화가 어떻게 전개될지는 주목할 만하다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=avInXWadEl4" target="_blank">미 국무·국방부, 한반도 담당 부차관보 한국계 발탁 [...</a><a href="https://www.youtube.com/watch?v=9vb5S4mJM00" target="_blank">미 국무부 부차관보 "북과 언제든 마주앉을 준비돼" /...</a><a href="https://www.youtube.com/watch?v=TgvGNWbUjWc" target="_blank">美국무부 동아태 부차관보에 한국계 대북전문가 정 박 /...</a><a href="https://www.youtube.com/watch?v=S-Cfl-2aB74" target="_blank">美국무부 부차관보 "한일관계, 미국에 매우 중요…3국 ...</a><a href="https://www.youtube.com/watch?v=O438aN3iirk" target="_blank">미 국무부 차관보 "한·일 갈등에 적극 관여하고 있다"</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/055/0001313207" target="_blank">미 당국자 "한국 핵잠 건조, '역내 위협들'에 대항할 집단역량 강화"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.sisajournal.com/news/articleView.html?idxno=355298" target="_blank">美당국자 “韓 핵잠수함 건조, '역내 위협' 대항 집단역량 강화” - 시사저널</a><a href="https://www.spnews.co.kr/news/articleView.html?idxno=102093" target="_blank">美 당국자 "韓 핵잠 건조, 역내 위협들에 대항할 양자 협력 사례" < 미주 ...</a><a href="https://news.kbs.co.kr/news/view.do?ncd=8424328" target="_blank">미 국무부 부차관보, 한국 핵잠수함 중 군사 팽창 대응 '한미 공조 의지 ...</a><a href="https://v.daum.net/v/20251204093847196" target="_blank">美당국자 “韓 핵잠수함 건조, '역내 위협' 대항 집단역량 강화”</a><a href="https://m.tbs.seoul.kr/news/newsView.do?typ_800=4&idx_800=3535155&seq_800=20527989" target="_blank">미 당국자 "한국 핵잠 건조, '역내 위협들' 대항할 양자 협력 사례" | 서울 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
