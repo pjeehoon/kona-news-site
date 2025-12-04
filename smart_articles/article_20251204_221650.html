@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“60억짜리 압구정 아파트 감정가 39억으로 낮춰달라”… 국세청, 증여 2000여건 전수검증 - 2025-12-04 22:16:50</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,경제,압구정 아파트,국세청,증여">
+    <meta name="article-category-tags" content="정치,경제">
+    <meta name="article-content-tags" content="압구정 아파트,국세청,증여">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 22:16:50'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('“60억짜리 압구정 아파트 감정가 39억으로 낮춰달라”… 국세청, 증여 2000여건 전수검증')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“60억짜리 압구정 아파트 감정가 39억으로 낮춰달라”… 국세청, 증여 2000여건 전수검증</h1>
+            <p>
+                분석 시간: 2025-12-04 22:16:50
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 국세청은 강남·마용성 4구 아파트 증여 2,077건을 전수검증하며 압구정 아파트 감정가를 60억 원에서 39억 원으로 낮춘 사례를 중심으로 조사를 시작했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 2025년 11월에 검증이 시작된 가운데, 정부는 증여세 탈루와 편법 증여를 고발할 것이라 선언했다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 조치는 부동산 시장의 투명성을 높이고 세금 탈루를 방지하려는 의도지만, 전문가들은 감정가 조정이 시장 가격 왜곡을 초래할 수 있다고 우려한다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/4805b198e792.png" 
+                     alt="“60억짜리 압구정 아파트 감정가 39억으로 낮춰달라”… 국세청, 증여 2000여건 전수검증" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>서울 강남·마용성 지역 고가 아파트 증여가 급증하면서, 압구정에 위치한 60억 원짜리 아파트의 감정가를 39억 원으로 낮추라는 요구가 제기됐다. 이에 국세청은 2,077건의 증여 사례를 전수검증하며, 부동산 시장의 투명성 확보와 세금 탈루 방지를 목표로 한다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>주요 내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 1월 10일</td>
+<td>서울 집합건물 증여건수 기록</td>
+<td>총 7,708건 중 미성년자 증여 223건이 최고치</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004563496" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 11월</td>
+<td>국세청 전수검증 시작</td>
+<td>강남 4구(서초·강남·송파·강동)와 마용성(마포·용산·성동) 아파트 증여 2,077건을 정밀검증</td>
+<td><a href="https://www.hani.co.kr/arti/economy/economy_general/1232812.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>정부 고발 선언</td>
+<td>증여세 탈루 및 편법 증여에 대해 고발 불사 선언</td>
+<td><a href="https://www.seoul.co.kr/news/newsView.php?id=20251204113760" target="_blank">서울경제</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>국세청은 2,077건의 증여 사례를 전수검증하며, 첫 시도에 불과한 ‘사상 최초’ 조치를 시행한다.</strong><br />
+▶ <strong>압구정 아파트 감정가가 60억 원에서 39억 원으로 낮춰진 사례가 대표적이며, 이는 부동산 가격과 세금 부과 기준에 대한 논란을 불러일으키고 있다.</strong></p>
+<h3>다양한 관점과 분석</h3>
+<h3>정부·국세청 입장</h3>
+<p>정부는 “세금 추징과 필요 시 고발을 통해 불법 투기를 근절하고 실수요자 보호에 총력을 다하겠다”는 입장을 밝혔다. 국세청은 고가 아파트 증여가 부동산 시장 불안정과 세금 탈루를 초래할 수 있다고 강조하며, 전수검증을 통해 부정 거래를 차단하려 한다.</p>
+<h3>부동산 전문가 의견</h3>
+<p>부동산 전문가들은 “압구정과 같은 고가 지역에서 감정가를 낮추는 것은 시장 가격 왜곡을 초래할 수 있다”는 우려를 표명했다. 반면, 일부는 “감정가가 실제 시장가보다 과도하게 높아 세금 부담이 과도하게 늘어나는 경우가 있다”는 점을 지적하며, 전수검증이 필요하다고 주장했다.</p>
+<h3>시민·소비자 단체 시각</h3>
+<p>소비자 단체는 “실수요자 보호와 부동산 시장 안정이 최우선이어야 한다”는 입장을 내세우며, 정부의 적극적 개입을 지지했다. 한편, 일부 시민은 “감정가 조정이 부동산 가격을 인위적으로 낮추는 행위라면, 장기적으로 부동산 시장에 부정적 영향을 미칠 수 있다”는 우려를 표했다.</p>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>확인된 사실</strong></td>
+<td>2025년 1월 10일 서울 집합건물 증여건수 7,708건, 미성년자 223건</td>
+<td><a href="https://n.news.naver.com/mnews/article/011/0004563496" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>국세청이 2,077건의 증여 사례를 전수검증 중</td>
+<td><a href="https://www.hani.co.kr/arti/economy/economy_general/1232812.html" target="_blank">한겨레</a></td>
+</tr>
+<tr>
+<td></td>
+<td>정부가 증여세 탈루 및 편법 증여에 대해 고발 불사 선언</td>
+<td><a href="https://www.seoul.co.kr/news/newsView.php?id=20251204113760" target="_blank">서울경제</a></td>
+</tr>
+<tr>
+<td><strong>미확인·추정</strong></td>
+<td>증여세 탈루 여부</td>
+<td>확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>편법 증여(담보 이용, 사업소득 탈루 등)</td>
+<td>확인 필요</td>
+</tr>
+<tr>
+<td></td>
+<td>시가보다 낮은 신고 및 세대생략 증여</td>
+<td>확인 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/기관</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>국세청</strong></td>
+<td>전수검증 및 세금 부과</td>
+<td>부동산 시장 안정, 세수 확보</td>
+</tr>
+<tr>
+<td><strong>정부(내각)</strong></td>
+<td>고발 및 추징</td>
+<td>부동산 부정 거래 근절, 실수요자 보호</td>
+</tr>
+<tr>
+<td><strong>부동산 전문가</strong></td>
+<td>감정가 조정에 대한 의견</td>
+<td>시장 가격 안정, 투자자 보호</td>
+</tr>
+<tr>
+<td><strong>소비자 단체</strong></td>
+<td>실수요자 보호 강조</td>
+<td>부동산 가격 안정, 세금 부과 공정성</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<p>국세청의 전수검증이 진행됨에 따라, 증여세 탈루 및 편법 증여 사례가 밝혀질 가능성이 높다. 이는 부동산 시장에 대한 신뢰 회복과 세수 증대에 기여할 것으로 예상된다. 반면, 감정가 조정이 시장 가격에 미칠 영향은 아직 불확실하다. 정부는 “실수요자 보호와 부동산 시장 안정”을 최우선으로 삼으며, 추후 검증 결과를 토대로 추가 정책을 검토할 계획이다.</p>
+<p><strong>주요 시사점</strong><br />
+- <strong>부동산 가격과 세금 부과 기준의 투명성 강화</strong><br />
+- <strong>미성년자 증여에 대한 규제 강화</strong><br />
+- <strong>정부·국세청의 적극적 개입이 부동산 시장 안정을 가져올 수 있는 가능성</strong>  </p>
+<p><strong>관련 기사</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/011/0004563496" target="_blank">압구정 아파트 감정가 39억, 국세청 2,077건 전수검증 개시</a><br />
+- <a href="https://www.hani.co.kr/arti/economy/economy_general/1232812.html" target="_blank">한겨레, 국세청 전수검증 발표</a><br />
+- <a href="https://www.seoul.co.kr/news/newsView.php?id=20251204113760" target="_blank">서울경제, 정부 고발 선언</a></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=aokjAa78TxY" target="_blank">[공매] 감정가 6,900만원에 나온 압구정 현대아파트...</a><a href="https://www.youtube.com/watch?v=muuQMeVALWo" target="_blank">무려 감정가의 124%! 압구정현대아파트 경매 낙찰가....</a><a href="https://www.youtube.com/watch?v=fqzU3fOo1nU" target="_blank">압구정 현대아파트 경매! 62억 감정가, 입찰 전 꼭 ...</a><a href="https://www.youtube.com/watch?v=YbVOavkqvUw" target="_blank">감정가 44억, 낙찰가 55억 . 압구정 현대 7월 낙...</a><a href="https://www.youtube.com/watch?v=wEYlCKMX2pA" target="_blank">Apgujeong apartment sells for ...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/011/0004563496" target="_blank">미성년자 아파트 증여 절반이 강남·마용성…정부 "고발 불사"</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hani.co.kr/arti/economy/economy_general/1232812.html" target="_blank">60억 압구정 아파트 39억에 증여세 신고…국세청, 강남4구·마용성 ...</a><a href="https://marketin.edaily.co.kr/News/ReadE?newsId=03496486642395240" target="_blank">60억 압구정아파트, 39억에 증여?…강남·마용성, 다 뒤진다</a><a href="https://www.segye.com/newsView/20251204513760" target="_blank">“60억짜리 압구정 아파트 감정가 39억으로 낮춰달라”… 국세청, 증여 ...</a><a href="https://m.sbs.co.kr/search/allSearchList.do?collection=nnews&newsCode=0&sort=DATE&query=%EB%82%98%EB%8B%A4" target="_blank">나다 : 뉴스 : 검색 : SBS</a><a href="https://www.skyedaily.com/news/news_view.html?ID=292334" target="_blank">“압구정 60억이 39억으로 둔갑”…국세청, 불법 증여 여부 조사</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
