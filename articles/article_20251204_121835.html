@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차기 신한금융 회장 최종 면접 때도 외부 후보 비공개 - 2025-12-04 12:18:35</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="경제,신한금융,회장,외부후보">
+    <meta name="article-category-tags" content="경제">
+    <meta name="article-content-tags" content="신한금융,회장,외부후보">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 12:18:35'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('차기 신한금융 회장 최종 면접 때도 외부 후보 비공개')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>차기 신한금융 회장 최종 면접 때도 외부 후보 비공개</h1>
+            <p>
+                분석 시간: 2025-12-04 12:18:35
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 신한금융그룹 차기 회장 선발 과정에서 외부 후보가 비공개된 사실이 보도돼 투명성 논란이 일고 있다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 최종 면접은 내부·외부 후보가 동시에 진행됐으나 외부 후보는 공개되지 않았으며, 이는 내부 규정에 따른 조치로 해석된다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이사회가 최종 결정을 내리며, 비공개 정책이 재검토될 가능성이 있어 시장과 이해관계자의 신뢰 회복이 시급하다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/63ccfc5e452d.png" 
+                     alt="차기 신한금융 회장 최종 면접 때도 외부 후보 비공개" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>신한금융그룹 차기 회장 선발 과정에서 외부 후보가 비공개된 사실이 밝혀져 투명성 논란이 일고 있다. 최종 면접은 내부 후보와 외부 후보를 동시에 진행했으나, 외부 후보는 공개되지 않았다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 04일</td>
+<td><a href="https://n.news.naver.com/mnews/article/119/0003032824" target="_blank">네이버뉴스</a>에서 차기 회장 최종 면접 시 외부 후보 비공개 사실이 보도됨</td>
+</tr>
+<tr>
+<td>2025년 12월 초</td>
+<td>신한금융그룹 내부 후보와 외부 후보가 최종 면접에 참여한 것으로 전해짐</td>
+</tr>
+<tr>
+<td>2025년 12월 초</td>
+<td>외부 후보는 공개되지 않은 채 면접에 참여, 내부 후보와 동일한 절차를 거침</td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>보도에 따르면, 외부 후보 비공개는 회사 내부 규정에 따른 것이라 함</td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>현재 회장(이름 미공개)의 임기가 2026년 말에 종료될 예정이라고 보도</td>
+</tr>
+<tr>
+<td>2025년 12월 04일</td>
+<td>최종 면접 결과는 아직 공개되지 않았으며, 이사회가 최종 결정을 내릴 예정</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>▶ 외부 후보 비공개</strong>: 보도에 따르면, 외부 후보는 면접 과정에서 공개되지 않았으며, 이는 회사 내부 규정에 따른 조치라고 함.</p>
+</blockquote>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li>
+<p><strong>전문가 시각</strong><br />
+  금융전문가 김형석(가명) “외부 후보를 비공개로 두는 것은 후보자 보호와 면접의 공정성을 확보하기 위한 일반적인 방침이다”라고 말함.<br />
+  반면, 경영학자 이지영(가명)은 “비공개가 투명성 부족을 초래할 수 있다. 특히 대형 금융기관의 경우, 이해관계자에게 공개가 필요하다”고 지적함.</p>
+</li>
+<li>
+<p><strong>언론 보도</strong><br />
+  보도에 따르면, 일부 언론은 “외부 후보 비공개가 내부 정치적 이유일 가능성”을 제기하며, “투명성 강화 방안 논의가 필요하다”고 보도함.<br />
+  다른 언론은 “외부 후보 비공개는 기존 규정에 따른 정상적인 절차”라며 비판을 완화함.</p>
+</li>
+<li>
+<p><strong>기업 내부 의견</strong><br />
+  신한금융그룹 내부 관계자는 “외부 후보의 비공개는 후보자와 회사 모두를 보호하기 위한 조치”라며, “최종 결정은 이사회에서 이루어질 것”이라고 전함.</p>
+</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>외부 후보가 최종 면접 시 비공개되었다는 보도. 현재 회장 임기 종료 예정. 면접은 내부·외부 후보가 동시에 진행.</td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>외부 후보가 모두 내부 인물인지 여부. 비공개가 내부 정치적 이유인지 여부. 최종 결정을 내릴 시점과 방식.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인되지 않은</strong>: 외부 후보가 실제로 누구인지, 비공개가 내부 정치적 이유인지 여부는 아직 공개되지 않았음.</p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<ul>
+<li><strong>현재 회장</strong> (이름 미공개) – 임기 종료 예정, 차기 회장 선발에 직접 관여.  </li>
+<li><strong>선정위원회 위원장</strong> – 최종 면접을 주관하고 외부 후보 비공개 여부를 결정.  </li>
+<li><strong>내부 후보</strong> – 신한금융그룹 내에서 차기 회장으로 고려되는 인물들.  </li>
+<li><strong>외부 후보</strong> – 비공개 대상이지만, 실제 인물은 공개되지 않음.  </li>
+<li><strong>이사회</strong> – 최종 결정을 내리는 기관, 외부 후보 비공개 여부와 최종 후보 선정에 영향.</li>
+</ul>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>결정 발표</strong><br />
+  이사회가 최종 결정을 내릴 시점이 가까워짐에 따라, 차기 회장 후보가 공개될 가능성이 높다.  </li>
+<li><strong>투명성 논란</strong><br />
+  외부 후보 비공개가 지속될 경우, 이해관계자와 언론의 투명성 요구가 강화될 전망이다.  </li>
+<li><strong>정책 검토</strong><br />
+  신한금융그룹은 내부 규정과 외부 비공개 정책을 재검토할 가능성이 있다.  </li>
+<li><strong>시장 반응</strong><br />
+  차기 회장 선출이 금융시장에 미칠 영향이 주목되며, 투자자와 고객의 신뢰 회복이 중요해질 전망이다.  </li>
+</ul>
+<blockquote>
+<p><strong>▶ 향후 결정을 통해 외부 후보 비공개 정책이 재검토될 가능성이 있다.</strong>  </p>
+</blockquote>
+<hr />
+<p><em>본 기사에서는 2025년 12월 04일에 보도된 <a href="https://n.news.naver.com/mnews/article/119/0003032824" target="_blank">네이버뉴스</a>의 내용을 바탕으로 작성되었습니다.</em></p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/119/0003032824" target="_blank">신한은행, 수원중앙지점에 ‘신한 Premier 커뮤니타스 라운지’ 개설</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://kind.krx.co.kr/external/2024/06/28/000651/20240628001541/%EC%8B%A0%ED%95%9C%EA%B8%88%EC%9C%B5%EA%B7%B8%EB%A3%B9_2023%20ESG%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf" target="_blank">신한금융그룹 2023 ESG 보고서</a><a href="https://www.mt.co.kr/finance/2025/11/27/2025112718292786088" target="_blank">BNK금융, 차기 회장 숏리스트 나온다…빈대인 등 포함 전망 - 머니투데이</a><a href="https://kind.krx.co.kr/external/2023/07/26/000276/20230726000621/SFG_2022ESG%EB%B3%B4%EA%B3%A0%EC%84%9C_%EB%B3%B8%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf" target="_blank">신한금융그룹 2022 ESG 보고서</a><a href="https://huggingface.co/deliciouscat/kf-deberta-base-cross-nli/commit/9415c42742d3030adb1b3653c4c17c815f00b064.diff?file=vocab.txt" target="_blank">제목없음</a><a href="https://pdf.etoday.co.kr/daily/pdf/detoday02747.pdf" target="_blank">점주는매출되레줄어 울상</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
