@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화성특례시에 ‘국립고궁박물관 분관’ 건립 추진 - 2025-12-04 09:43:20</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,화성,고궁박,분관">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="화성,고궁박,분관">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 09:43:20'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('화성특례시에 ‘국립고궁박물관 분관’ 건립 추진')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>화성특례시에 ‘국립고궁박물관 분관’ 건립 추진</h1>
+            <p>
+                분석 시간: 2025-12-04 09:43:20
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 화성특례시와 국립고궁박물관이 2025년 12월 4일 MOU를 체결해 태안3 택지개발지구 부지에 분관 건립을 공식화했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 부지는 2만5000㎡ 공원부지이며, 2030년 준공을 목표로 하고 국가유산청에 무상 귀속될 예정이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이로써 경기 남부권 최초의 국립박물관이 되어 지역 문화·관광 활성화와 경제 성장에 기여할 전망이다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/96dacc933c7e.png" 
+                     alt="화성특례시에 ‘국립고궁박물관 분관’ 건립 추진" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>화성특례시가 국립고궁박물관의 분관을 건립하기 위해 2025년 12월 4일 MOU를 체결했다. 부지는 태안3 택지개발지구 내 공원부지(2만5000㎡)이며, 2030년 준공을 목표로 한다. 이로써 경기 남부권 최초의 국립박물관이 될 전망이다.  </p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2005년</td>
+<td>국립고궁박물관 서울 종로구 본관 개관</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>화성특례시와 국립고궁박물관이 분관 건립을 위한 MOU 체결</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600681" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>분관 부지로 태안3 택지개발지구 내 공원부지(2만5000㎡) 선정</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600681" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>부지는 국가유산청에 무상 귀속 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600681" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2030년</td>
+<td>분관 준공 목표</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>2025년 12월 4일</strong> 화성특례시와 국립고궁박물관이 <strong>MOU</strong>를 체결해 분관 건립을 공식화했다.<br />
+▶ 부지는 <strong>태안3 택지개발지구</strong> 내 공원부지(2만5000㎡)이며, <strong>국가유산청에 무상 귀속</strong>될 예정이다.<br />
+▶ 분관 준공 목표는 <strong>2030년</strong>으로 설정되었다.</p>
+<h3>다양한 관점과 분석</h3>
+<ul>
+<li><strong>국립고궁박물관 측</strong>  </li>
+<li>“경기 남부권 최초의 국립박물관 건립으로 문화유산 향유 기회 확대 및 지역균형발전에 기여한다”는 긍정적 입장을 밝혔다.  </li>
+<li>
+<p>박물관 관계자는 “조선왕실문화와 연계된 역사적·문화적 가치를 고려해 선정했다”고 강조했다.  </p>
+</li>
+<li>
+<p><strong>화성특례시 관계자</strong>  </p>
+</li>
+<li>시는 “문화·관광 활성화와 지역 경제 성장에 기여할 것”이라며, 분관 건립을 지역 발전의 핵심 프로젝트로 평가했다.  </li>
+<li>
+<p>또한, “태안3 택지개발지구의 교통 접근성이 뛰어나 방문객 유입이 용이하다”고 언급했다.  </p>
+</li>
+<li>
+<p><strong>지역 주민 및 문화계 전문가</strong>  </p>
+</li>
+<li>일부 주민은 “공원부지 활용이 지역 주민에게도 이익이 될 것”이라며 긍정적 반응을 보였다.  </li>
+<li>
+<p>한 문화계 전문가는 “분관 건립이 지역 문화 인프라를 강화할 수 있는 좋은 기회”라며 기대감을 표시했다.  </p>
+</li>
+<li>
+<p><strong>잠재적 우려</strong>  </p>
+</li>
+<li>아직 구체적 예산안이 공개되지 않아 <strong>건설 비용</strong>과 <strong>운영비용</strong>에 대한 우려가 제기되고 있다.  </li>
+<li>부지 주변 환경에 미칠 영향과 <strong>교통 혼잡</strong> 가능성도 논의되고 있다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>MOU 체결, 부지 선정, 2030년 준공 목표, 무상 귀속 예정</td>
+<td><a href="https://n.news.naver.com/mnews/article/009/0005600681" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>구체적 예산 규모, 건설 일정 상세, 운영 계획</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물/단체</th>
+<th>입장</th>
+<th>이해관계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국립고궁박물관 관계자</td>
+<td>분관 건립에 적극적</td>
+<td>문화유산 보존·전시 확대</td>
+</tr>
+<tr>
+<td>화성특례시 관계자</td>
+<td>지역 발전·관광 활성화</td>
+<td>시정책·경제 성장</td>
+</tr>
+<tr>
+<td>지역 주민</td>
+<td>대체로 긍정적</td>
+<td>생활환경·문화 접근성</td>
+</tr>
+<tr>
+<td>문화계 전문가</td>
+<td>기대·우려 혼재</td>
+<td>문화산업 발전</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>건설 단계</strong>: 2026년부터 착공이 시작될 가능성이 높으며, 2030년 준공을 목표로 한다.  </li>
+<li><strong>문화·관광 효과</strong>: 화성특례시가 경기 남부권 최초의 국립박물관이 됨으로써 지역 관광객 유입이 증가하고, 문화·예술 프로그램이 활성화될 전망이다.  </li>
+<li><strong>경제적 파급효과</strong>: 박물관 주변 상권과 숙박업계에 긍정적 영향을 미칠 것으로 예상된다.  </li>
+<li><strong>정책적 지원</strong>: 국가유산청과 지방자치단체가 협력해 예산·인프라 지원을 확대할 가능성이 크다.  </li>
+</ul>
+<p><strong>전반적으로</strong> 화성특례시의 국립고궁박물관 분관 건립은 지역 문화·경제 발전에 기여할 것으로 보이나, 예산·운영 계획이 구체화되기 전까지는 일부 우려가 남아 있다. 향후 시공 일정과 예산안이 공개되면 보다 명확한 평가가 가능할 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/009/0005600681" target="_blank">화성특례시에 ‘국립고궁박물관 분관’ 건립 추진</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://www.hsfocus.kr/news/articleView.html?idxno=1641" target="_blank">[데스크 칼럼] 정조의 얼이 깃든 화성, 국립고궁박물관 분관 유치로 ...</a><a href="http://ebook.pldworld.com/_eBook/%EB%AC%B8%ED%99%94%EC%9E%AC%EC%B2%AD/%ED%96%89%EC%A0%95%EC%A0%95%EB%B3%B4/%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8F%84%EC%84%9C/%EA%B0%84%ED%96%89%EB%AC%BC/2017%20%EB%AC%B8%ED%99%94%EC%9E%AC%EC%97%B0%EA%B0%90.pdf" target="_blank">2017 문화재연감</a><a href="https://blog.naver.com/yckim0521/222946846558" target="_blank">전국의 가을여행 명소 : 네이버 블로그</a><a href="https://hogangnono.com/community/apts/apts-7180127" target="_blank">서동탄역더샵파크시티 이야기 | 북오산IC 가까운 것 하나만으로도 ...</a><a href="https://www.nec.go.kr/files/policymorgue/manifesto/2012/05/29/55E14310A96611E1A32F0080C74455C6.pdf" target="_blank">제19대 국회의원선거</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

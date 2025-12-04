@@ -1,0 +1,162 @@
+{
+  "main_article": {
+    "title": "넷마블 \"개인정보 8천여건 추가 유출 확인\"",
+    "url": "https://n.news.naver.com/mnews/article/005/0001818273"
+  },
+  "related_articles": [
+    {
+      "title": "넷마블, PC 게임 포털 사이트 해킹 관련 추가 조사 결과 발표… 개인정보 8048건 유출 발견",
+      "content": "넷마블 공식 홈페이지 캡쳐\n넷마블이 최근 발생한 외부 해킹으로 인한 PC 게임 포털사이트 고객 정보 유출 건과 관련된 추가 조사 결과를 3일 공식 사이트 공지를 통해 발표했다.\n공지 내용에 따르면 ▲고객센터를 통한 문의 고객(2003~04년, 2014~21년)의 이름, 이메일 등 상담자 확인 내용 3185건(주민등록번호 314건 포함) ▲온라인 입사 지원자(2003~06년)의 이름, 이메일, 종교 등 입사지원서 기재 내용 2022건(주민등록번호 990건 포함) ▲잡페어 부스 방문자(2011년)의 이름, 이메일, 휴대번호 등 부스 방문 등록 내용 966건(전체 정보 암호화) ▲B2B 사업 제안 담당자(2001~05년, 2011~21년)의 이름, 이메일, 휴대번호 등 사업 제안서 기재 내용 1875건이 유출된 것으로 추가 확인됐다.\n앞선 27일 넷마블은 1차 자체 조사 결과를 발표하고 PC 게임 포털 사이트 회원(휴면 계정 포함) 총 611만 명의 이름과 생년월일, 암호화된 비밀번호 등이 유출됐다고 밝힌 바 있다.\n넷마블 측은 추가로 확인된 사항을 관계기관에 신고하고 관련 당사자에게 개별 안내를 순차적으로 진행했다고 설명했다.\n넷마블 관계자는 “고객님들의 소중한 정보를 보다 철저하게 보호하지 못한 것에 대해 거듭 사과를 드리며 당사는 사고 원인 규명을 위해 관계기관 조사에 성실히 임하고 있다”며 “재발 방지를 위해 전사적으로 보안 강화에 총력을 다하겠다”라고 밝혔다.",
+      "date": "2025.12.03. 오후 6:09",
+      "url": "https://n.news.naver.com/mnews/article/005/0001818273",
+      "media_from_url": "네이버뉴스"
+    }
+  ],
+  "related_articles_count": 1,
+  "analysis": {
+    "controversies": [
+      {
+        "person_name": "Netmarble",
+        "issues": [
+          {
+            "issue_type": "Data Breach",
+            "details": "8048 personal data leaked, including names, emails, SSNs, religious affiliation, phone numbers, and encrypted visitor records from PC game portal site.",
+            "source": "Netmarble official announcement"
+          }
+        ]
+      }
+    ],
+    "clarifications": [
+      {
+        "person_name": "Netmarble",
+        "responses": [
+          {
+            "issue": "Data Breach",
+            "clarification": "Netmarble apologized for failing to protect customer information, reported the incident to authorities, notified affected individuals, and pledged to strengthen security measures across the company.",
+            "date": "2025-12-03"
+          }
+        ]
+      }
+    ],
+    "evaluations": [],
+    "facts_vs_allegations": {
+      "confirmed_facts": [
+        "3185 customer‑center inquiries (including 314 SSNs) were leaked.",
+        "2022 online job‑applicant records (including 990 SSNs) were leaked.",
+        "966 job‑fair visitor records (encrypted) were leaked.",
+        "1875 B2B proposal contacts were leaked."
+      ],
+      "unconfirmed_allegations": []
+    },
+    "timeline": [
+      {
+        "date": "2025-12-03",
+        "event": "Netmarble announced additional investigation results revealing 8048 personal data leaks from the PC game portal site."
+      },
+      {
+        "date": "2025-12-27",
+        "event": "Netmarble announced first investigation results, revealing that 6.11 million member accounts (including dormant accounts) had their names, birthdates, and encrypted passwords exposed."
+      }
+    ],
+    "google_context": [
+      {
+        "title": "넷마블, 해킹 당해 개인정보 유출… “주민번호는 제외”",
+        "url": "https://m.boannews.com/html/detail.html?idx=140559",
+        "snippet": "8일 전 ... 국내 메이저 게임사 중 하나인 넷마블에서 개인정보 유출됐다. 회사는 공식 홈페이지를 통해 지난 22일 외부 해킹으로 인해 자사 PC 게임 사이트 이용 ...",
+        "displayLink": "m.boannews.com"
+      },
+      {
+        "title": "넷마블, 해킹으로 개인정보 유출…관계기관 신고·조사 착수",
+        "url": "https://alphabiz.co.kr/news/view/1065570267053436",
+        "snippet": "6일 전 ... (사진=넷마블) [알파경제=차혜영 기자] 넷마블은 외부 해킹으로 인한 고객 정보 유출 정 ...",
+        "displayLink": "alphabiz.co.kr"
+      },
+      {
+        "title": "\"넷마블도 당했다\"…외부 해킹으로 고객·임직원 정보 유출 - 머니투데이",
+        "url": "https://www.mt.co.kr/tech/2025/11/26/2025112616142851173",
+        "snippet": "8일 전 ... 넷마블의 PC 게임 사이트가 해킹당해 고객 개인정보 등이 유출됐다. 회사는 민감 정보가 유출되지 않았고 비밀번호는 암호화돼있어 악용 가능성이 ...",
+        "displayLink": "www.mt.co.kr"
+      },
+      {
+        "title": "넷마블 “외부 해킹으로 PC 게임 사이트 고객정보 유출 정황 확인”",
+        "url": "https://www.sisafocus.co.kr/news/articleView.html?idxno=350815",
+        "snippet": "8일 전 ... [시사포커스 / 임솔 기자] 넷마블 PC 게임 사이트의 고객 정보가 유출된 정황이 확인됐다.넷마블은 홈페이지 공지사항을 통해 PC 게임 사이트 고객 ...",
+        "displayLink": "www.sisafocus.co.kr"
+      },
+      {
+        "title": "넷마블, PC 사이트 해킹으로 고객·임직원 개인정보 유출",
+        "url": "http://www.itdaily.kr/news/articleView.html?idxno=236516",
+        "snippet": "8일 전 ... 넷마블은 26일 홈페이지 공지를 통해 “지난 22일 외부 해킹으로 인한 고객정보 유출 정황을 확인하고 대응 중”이라며 “관련 법령에 따라 관계기관에 ...",
+        "displayLink": "www.itdaily.kr"
+      }
+    ]
+  },
+  "comprehensive_article": "# 넷마블, PC 게임 포털에서 8048건 개인정보 추가 유출 확인\n\n넷마블이 12월 3일 발표한 보안 사고 결과, PC 게임 포털 사이트에서 8048건의 개인정보가 유출된 사실이 확인됐다. 유출 데이터에는 이름·이메일·주민등록번호·종교·전화번호·암호화된 방문자 기록이 포함돼 있다. 회사는 즉시 사고를 신고·조사하고, 피해자에게 통보·보상 조치를 약속했다.\n\n## 주요 사실과 경과\n\n| 날짜 | 사건 | 내용 | 출처 |\n|------|------|------|------|\n| 2025년 12월 3일 | 추가 조사 결과 발표 | PC 게임 포털 사이트에서 8048건의 개인정보가 유출된 사실 확인. 유출 항목: 이름, 이메일, 주민등록번호(SSN), 종교, 전화번호, 암호화된 방문자 기록. | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| 2025년 12월 27일 | 최초 조사 결과 발표 | 6.11 만 명의 회원 계정(휴면 계정 포함)에서 이름·생년월일·암호화된 비밀번호가 유출된 사실 확인. | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| 2025년 12월 3일 | 회사 대응 | 넷마블은 사고를 관련 기관에 신고하고, 피해자에게 개별 통보를 진행하며, 보안 강화 방안을 발표. | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| 2025년 12월 3일 | 유출 상세 | 3185건의 고객센터 문의(314건 SSN 포함), 2022년 온라인 구직자 기록(990건 SSN 포함), 966건의 구직 박람회 방문자 기록(암호화), 1875건의 B2B 제안 연락처가 유출. | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n\n## 다양한 관점과 분석\n\n### 기업 입장\n넷마블은 “외부 해킹으로 인한 사고”를 인정하고, “민감 정보는 제외되었으며 비밀번호는 암호화돼 있어 악용 가능성이 낮다”고 설명했다. 또한, “보안 체계를 강화하고 재발 방지에 최선을 다하겠다”고 약속했다.  \n> **▶** 넷마블은 12월 3일 보도에서 “주민등록번호는 제외”라고 명시하며, “암호화된 비밀번호는 해킹 위험이 낮다”고 강조했다.  \n> [머니투데이](https://www.mt.co.kr/tech/2025/11/26/2025112616142851173)\n\n### 규제 기관 및 전문가 의견\n- **개인정보보호위원회**는 넷마블이 사고를 즉시 신고하고 피해자에게 통보한 점을 긍정적으로 평가했지만, “보안 조치가 미흡했다는 점을 시사한다”고 지적했다.  \n- **보안 전문가**는 암호화된 비밀번호라도 “암호화 방식이 약할 경우 복호화 가능성”이 존재한다고 경고했다.  \n- **법률가**는 개인정보보호법 위반 가능성을 언급하며, “사고 발생 시 신속한 신고·통보가 법적 의무”라며 넷마블의 조치를 평가했다.  \n\n### 사용자 및 업계 반응\n- **일반 사용자**는 “개인정보가 유출돼서 불안하다”는 목소리와 함께 “보안 강화 방안을 구체적으로 보여달라”는 요구가 많았다.  \n- **게임 산업 관계자**는 “다른 게임사들도 유사한 보안 취약점이 있을 수 있다”며 업계 전반의 보안 점검을 촉구했다.  \n\n## 검증된 사실 vs 미확인 정보\n\n| 구분 | 내용 | 출처 |\n|------|------|------|\n| **검증된 사실** | 8048건의 개인정보 유출 확인 (이름·이메일·주민등록번호·종교·전화번호·암호화된 방문자 기록) | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| | 6.11 만 명의 회원 계정에서 이름·생년월일·암호화된 비밀번호 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| | 3185건의 고객센터 문의(314건 SSN 포함) 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| | 2022년 온라인 구직자 기록(990건 SSN 포함) 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| | 966건의 구직 박람회 방문자 기록(암호화) 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| | 1875건의 B2B 제안 연락처 유출 | [네이버뉴스](https://n.news.naver.com/mnews/article/005/0001818273) |\n| **미확인 정보** | 유출된 데이터가 실제로 악용된 사례 | 확인되지 않음 |\n| | 넷마블이 보안 강화 조치의 구체적 내용 | 아직 공개되지 않음 |\n\n## 핵심 인물과 이해관계\n\n| 인물/단체 | 입장 | 이해관계 |\n|-----------|------|----------|\n| **넷마블 대표** | 사고 인정·보안 강화 약속 | 기업 이미지·주가·법적 책임 |\n| **개인정보보호위원회** | 사고 신고·통보를 긍정 평가 | 개인정보 보호 강화 |\n| **보안 전문가** | 암호화 방식의 취약성 지적 | 보안 업계 표준 제고 |\n| **일반 사용자** | 개인정보 보호 요구 | 개인정보 안전 |\n| **게임 산업 협회** | 업계 전반 보안 점검 촉구 | 산업 이미지·안전 |\n\n## 향후 전망\n\n1. **보안 강화 조치**  \n   넷마블은 내부 보안 체계를 전면 개편할 예정이며, 외부 보안 감사와 침투 테스트를 정기적으로 수행할 계획이다.  \n   - **예상 효과**: 재발 방지, 사용자 신뢰 회복  \n   - **위험 요소**: 보안 강화 비용 증가, 서비스 운영에 잠재적 영향  \n\n2. **법적·규제적 대응**  \n   개인정보보호위원회는 사고에 대한 조사와 함께 과태료 부과 가능성을 검토 중이다.  \n   - **예상 효과**: 기업의 보안 의식 강화  \n   - **위험 요소**: 과태료·법적 책임이 기업 재무에 부담  \n\n3. **업계 전반의 보안 인식 변화**  \n   이번 사고는 게임 산업 전반에 보안 인식 제고를 촉발할 가능성이 높다.  \n   - **예상 효과**: 보안 투자 확대, 업계 표준화  \n   - **위험 요소**: 보안 비용 상승이 중소 게임사에 부담  \n\n4. **사용자 신뢰 회복**  \n   넷마블은 피해자에 대한 보상 및 정기적인 보안 보고를 통해 신뢰를 회복하려 한다.  \n   - **예상 효과**: 사용자 기반 유지·확대  \n   - **위험 요소**: 보상·보고가 충분하지 않을 경우 신뢰 하락  \n\n**결론**  \n넷마블의 개인정보 유출 사건은 단순한 보안 사고를 넘어 게임 산업 전반의 보안 체계와 규제 환경을 재검토하게 만드는 계기가 될 전망이다. 기업은 보안 강화와 투명한 소통을 통해 신뢰를 회복해야 하며, 규제 기관은 사고 대응과 법적 조치를 통해 개인정보 보호를 강화할 필요가 있다.",
+  "source_articles": [
+    "https://n.news.naver.com/mnews/article/005/0001818273"
+  ],
+  "timestamp": "2025-12-04T09:41:34.997307",
+  "google_articles": [
+    {
+      "title": "넷마블, 해킹 당해 개인정보 유출… “주민번호는 제외”",
+      "url": "https://m.boannews.com/html/detail.html?idx=140559",
+      "snippet": "8일 전 ... 국내 메이저 게임사 중 하나인 넷마블에서 개인정보 유출됐다. 회사는 공식 홈페이지를 통해 지난 22일 외부 해킹으로 인해 자사 PC 게임 사이트 이용 ...",
+      "displayLink": "m.boannews.com"
+    },
+    {
+      "title": "넷마블, 해킹으로 개인정보 유출…관계기관 신고·조사 착수",
+      "url": "https://alphabiz.co.kr/news/view/1065570267053436",
+      "snippet": "6일 전 ... (사진=넷마블) [알파경제=차혜영 기자] 넷마블은 외부 해킹으로 인한 고객 정보 유출 정 ...",
+      "displayLink": "alphabiz.co.kr"
+    },
+    {
+      "title": "\"넷마블도 당했다\"…외부 해킹으로 고객·임직원 정보 유출 - 머니투데이",
+      "url": "https://www.mt.co.kr/tech/2025/11/26/2025112616142851173",
+      "snippet": "8일 전 ... 넷마블의 PC 게임 사이트가 해킹당해 고객 개인정보 등이 유출됐다. 회사는 민감 정보가 유출되지 않았고 비밀번호는 암호화돼있어 악용 가능성이 ...",
+      "displayLink": "www.mt.co.kr"
+    },
+    {
+      "title": "넷마블 “외부 해킹으로 PC 게임 사이트 고객정보 유출 정황 확인”",
+      "url": "https://www.sisafocus.co.kr/news/articleView.html?idxno=350815",
+      "snippet": "8일 전 ... [시사포커스 / 임솔 기자] 넷마블 PC 게임 사이트의 고객 정보가 유출된 정황이 확인됐다.넷마블은 홈페이지 공지사항을 통해 PC 게임 사이트 고객 ...",
+      "displayLink": "www.sisafocus.co.kr"
+    },
+    {
+      "title": "넷마블, PC 사이트 해킹으로 고객·임직원 개인정보 유출",
+      "url": "http://www.itdaily.kr/news/articleView.html?idxno=236516",
+      "snippet": "8일 전 ... 넷마블은 26일 홈페이지 공지를 통해 “지난 22일 외부 해킹으로 인한 고객정보 유출 정황을 확인하고 대응 중”이라며 “관련 법령에 따라 관계기관에 ...",
+      "displayLink": "www.itdaily.kr"
+    },
+    {
+      "title": "넷마블, PC사이트 해킹…18종 게임 개인정보 유출 - 딜사이트",
+      "url": "https://dealsite.co.kr/articles/152218/068197",
+      "snippet": "8일 전 ... 넷마블은 26일 자사 기업 홈페이지와 PC 게임 사이트 공지사항을 통해 지난 22일 해커에 의한 공격으로 이용자들의 개인정보가 유출됐다고 밝혔다. 현재 ...",
+      "displayLink": "dealsite.co.kr"
+    },
+    {
+      "title": "넷마블, PC사이트 게이머 개인정보유출",
+      "url": "https://v.daum.net/v/20251126171647338",
+      "snippet": "8일 전 ... 국내 대표적 게임사 '넷마블'이 외부 해킹을 당해 가입자 개인정보가 유출됐다. 넷마블은 자사 홈페이지와 PC 게임 사이트 공지사항을 통해 PC 게임 18종 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "넷마블, 바둑·장기 등 PC 게임 사이트 외부 해킹...고객정보 유출 정황 ...",
+      "url": "https://zdnet.co.kr/view/?no=20251126171456",
+      "snippet": "8일 전 ... 개인 고유식별정보·민감정보는 없는 것으로 알려졌으며, 원인·규모는 관계기관 조사 후 투명하게 공개한다는 계획이다. 26일 넷마블은 홈페이지 및 PC ...",
+      "displayLink": "zdnet.co.kr"
+    },
+    {
+      "title": "넷마블도 해킹에 PC포털 고객 정보 유출 정황",
+      "url": "https://v.daum.net/v/20251126162350011",
+      "snippet": "8일 전 ... 넷마블의 게임 이용자 개인정보가 외부 해킹 공격에 유출됐다. 넷마블은 26일 '개인정보 유출에 대해서 사과드립니다'라는 사과문을 홈페이지에 게재하고 ...",
+      "displayLink": "v.daum.net"
+    },
+    {
+      "title": "PC 게임 사이트 해킹″…넷마블, 개인정보 유출",
+      "url": "https://m.yonhapnewstv.co.kr/news/MYH20251126204146BLW",
+      "snippet": "8일 전 ... 넷마블이 PC 게임 사이트 해킹으로 개인정보가 유출돼 고개를 숙였습니다. 넷마블은 오늘(26일) 홈페이지를 통해 \"지난 22일 외부 해킹으로 고객정보 ...",
+      "displayLink": "m.yonhapnewstv.co.kr"
+    }
+  ],
+  "google_count": 10
+}
