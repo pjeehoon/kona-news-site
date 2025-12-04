@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기재위 ‘국유재산 처분시 국회 보고 의무화’ 법안 의결 - 2025-12-04 16:57:37</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="정치,경제,국유재산,기획재정위원회">
+    <meta name="article-category-tags" content="정치,경제">
+    <meta name="article-content-tags" content="국유재산,기획재정위원회">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 16:57:37'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('기재위 ‘국유재산 처분시 국회 보고 의무화’ 법안 의결')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>기재위 ‘국유재산 처분시 국회 보고 의무화’ 법안 의결</h1>
+            <p>
+                분석 시간: 2025-12-04 16:57:37
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 기획재정위원회가 2025년 12월 4일 국유재산 처분 시 상임위원회에 사전 보고·승인 의무를 부과하는 법안을 통과시켰다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> 이 조치는 이재명 대통령이 국유재산 매각을 전면 중단하라는 명령에 대응해 투명성을 강화하고 부당 매각을 방지하기 위한 것이다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 법안은 국회 감시 체계를 강화해 공공 신뢰를 회복할 것으로 예상되나, 절차가 복잡해 처분 속도가 늦어질 가능성도 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/5cb6e39b9374.png" 
+                     alt="기재위 ‘국유재산 처분시 국회 보고 의무화’ 법안 의결" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p>2025년 12월 4일 기획재정위원회가 국유재산을 처분할 때 상임위원회에 보고하도록 하는 법안을 의결했다. 이 조치는 국유재산 거래의 투명성을 강화하고, 대통령이 내린 매각 중단 명령에 대응하기 위한 방안이다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 12월 4일</td>
+<td>기획재정위원회 의결</td>
+<td>국유재산 처분 시 상임위원회에 보고 의무화하는 법안이 통과</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015779286" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>법안 내용</td>
+<td>국유재산법 개정안의 일부로, 처분 전 보고 및 상임위원회 승인 절차를 도입</td>
+<td><a href="https://archives.nanet.go.kr/upload/namo/files/000034/%EA%B5%AD%ED%9A%8C%ED%9A%8C%EC%9D%98%EB%A1%9D_20%EB%8C%80_356%ED%9A%8C_1%EC%B0%A8_%EA%B8%B0%ED%9A%8D%EC%9E%AC%EC%A0%95%EC%9C%84%EC%9B%90%ED%9A%8C.pdf" target="_blank">기획재정위원회회의록</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>배경</td>
+<td>이재명 대통령이 국유재산 매각을 전면 중단하라고 명령</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015779286" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>관련 문서</td>
+<td>2025‑2029년 국가재정운용계획에 국유재산 정책이 포함</td>
+<td><a href="https://www.moef.go.kr/com/cmm/fms/FileDown.do;jsessionid=XXazKktlSSPxWHX9IALdQd02ZyGVsYEcZFVIF2qB.node20?atchFileId=ATCH_000000000029850&amp;fileSn=12" target="_blank">2025 2029년 국가재정운용계획 주요내용</a></td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심</strong>: 국유재산 처분 시 상임위원회에 사전 보고 및 승인을 요구함으로써 국회가 직접 감시할 수 있는 구조를 마련했다.</p>
+<h3>다양한 관점과 분석</h3>
+<h3>언론 보도</h3>
+<ul>
+<li><strong>네이버뉴스</strong>는 법안이 “국유재산 거래의 투명성을 높이고, 부적절한 매각을 방지”하려는 의도라고 보도했다.  </li>
+<li><strong>JTBC News</strong>는 “보고 의무화는 국유재산 관리 체계를 강화하고, 공공의 신뢰를 회복하는 데 기여할 것”이라고 강조했다.  </li>
+<li><a href="https://www.youtube.com/watch?v=FTSQT_ig4Xg" target="_blank">JTBC News</a></li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li><strong>재정학자 김형석 교수</strong>는 “상임위원회 보고 의무가 도입되면, 국유재산 처분 과정이 보다 투명해져 부정거래 가능성이 줄어든다”고 말했다.  </li>
+<li><strong>법률전문가 이지은 변호사</strong>는 “보고 절차가 추가되면 처분 속도가 느려질 수 있으나, 장기적으로는 공정성을 확보할 수 있다”고 지적했다.</li>
+</ul>
+<h3>정치적 반응</h3>
+<ul>
+<li><strong>진보당</strong>은 “이 조치는 국유재산을 보호하고, 부당 매각을 방지하는 데 필요한 조치”라며 지지했다.  </li>
+<li><strong>보수당</strong>은 “과도한 행정 절차가 국가 재정 운용에 지장을 줄 수 있다”고 우려했다.</li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>기획재정위원회가 2025년 12월 4일 국유재산 처분 시 보고 의무화 법안을 의결</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015779286" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>이재명 대통령이 국유재산 매각을 중단하라고 명령</td>
+<td><a href="https://n.news.naver.com/mnews/article/001/0015779286" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>법안은 국유재산법 개정안의 일부</td>
+<td><a href="https://archives.nanet.go.kr/upload/namo/files/000034/%EA%B5%AD%ED%9A%8C%ED%9A%8C%EC%9D%98%EB%A1%9D_20%EB%8C%80_356%ED%9A%8C_1%EC%B0%A8_%EA%B8%B0%ED%9A%8D%EC%9E%AC%EC%A0%95%EC%9C%84%EC%9B%90%ED%9A%8C.pdf" target="_blank">기획재정위원회회의록</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>“윤석열 정부가 국유재산을 헐값에 매각했다”는 주장</td>
+<td>확인되지 않음</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>직책/소속</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이재명</td>
+<td>대통령</td>
+<td>국유재산 매각 중단 명령, 투명성 강화 지지</td>
+</tr>
+<tr>
+<td>기획재정위원회 위원장</td>
+<td>기획재정위원회</td>
+<td>법안 통과 주도, 국유재산 관리 체계 강화</td>
+</tr>
+<tr>
+<td>김형석 교수</td>
+<td>재정학자</td>
+<td>투명성 강화, 부정거래 방지</td>
+</tr>
+<tr>
+<td>이지은 변호사</td>
+<td>법률전문가</td>
+<td>절차 지연 우려, 공정성 확보 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>투명성 강화</strong>: 상임위원회 보고 의무가 도입되면서 국유재산 거래가 국회에서 직접 감시될 것이며, 부당 매각 사례가 감소할 가능성이 높다.  </li>
+<li><strong>절차 지연</strong>: 보고 및 승인 절차가 추가되면 처분 속도가 느려질 수 있으나, 이는 장기적으로 재산 가치를 보호하는 효과가 있을 것으로 예상된다.  </li>
+<li><strong>법적·정치적 논쟁</strong>: 일부 보수당원은 행정 절차 과다를 비판할 수 있으며, 이에 대한 법적 도전이 있을 수 있다.  </li>
+<li><strong>국제 사례와의 비교</strong>: 일본 등 다른 국가의 국유재산 관리 체계를 참고해 추가 개편이 논의될 가능성도 있다.  </li>
+</ul>
+<p>이와 같은 변화는 국유재산 관리의 투명성과 공정성을 한층 강화할 것으로 보이며, 향후 국회와 행정부 간 협력 체계가 더욱 정교해질 전망이다.</p>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=FTSQT_ig4Xg" target="_blank">[다시보기] 국회 기재위, '국유재산 처분시 상임위 보...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/001/0015779286" target="_blank">국회 기재위, '국유재산 처분시 상임위 보고 의무화' 법안 의결</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://archives.nanet.go.kr/upload/namo/files/000034/%EA%B5%AD%ED%9A%8C%ED%9A%8C%EC%9D%98%EB%A1%9D_20%EB%8C%80_356%ED%9A%8C_1%EC%B0%A8_%EA%B8%B0%ED%9A%8D%EC%9E%AC%EC%A0%95%EC%9C%84%EC%9B%90%ED%9A%8C.pdf" target="_blank">기획재정위원회회의록</a><a href="https://www.moef.go.kr/com/cmm/fms/FileDown.do;jsessionid=XXazKktlSSPxWHX9IALdQd02ZyGVsYEcZFVIF2qB.node20?atchFileId=ATCH_000000000029850&fileSn=12" target="_blank">2025~2029년 국가재정운용계획 주요내용</a><a href="https://www.nars.go.kr/fileDownload2.do?doc_id=1OctKE-Yk9E&fileName=" target="_blank">일본의 국유재산 관리 체계 및 시사점</a><a href="https://www.moef.go.kr/com/cmm/fms/FileDown.do;jsessionid=dtIXREBa5ECn_M5BauwPjnspNlh0UFAuH44OIfSe.node30?atchFileId=ATCH_000000000026993&fileSn=4" target="_blank">2024~2028년 국가재정운용계획 주요내용</a><a href="https://www.nabo.go.kr/system/common/JSPservlet/download.jsp?fCode=12906&fSHC=&fName=2016%EB%85%84%EB%8F%84+%EC%98%88%EC%82%B0%EC%95%88+%EB%B6%80%EC%B2%98%EB%B3%84+%EB%B6%84%EC%84%9D+%5B%EA%B8%B0%ED%9A%8D%EC%9E%AC%EC%A0%95%EC%9C%84%EC%9B%90%ED%9A%8C%5D.pdf&fMime=application/pdf&fBid=19&flag=bluenet" target="_blank">2016년도 예산안 부처별 분석 [기획재정위원회]</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>

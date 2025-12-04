@@ -1,5 +1,123 @@
 [
   {
+    "id": "c1b9d5206cd7",
+    "title": "정부, 캄보디아 일부 지역 여행경보 하향 조정…“스캠 범죄 신고 접수 감소”",
+    "created_at": "2025-12-04T17:08:34.004019+09:00",
+    "last_updated": "2025-12-04T17:08:34.004019+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "뉴스"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "2dc23f4ad01a",
+    "title": "AI로 교과서 학습해 문제집 팔면 저작권 침해…정부, AI 학습 가이드라인 발표",
+    "created_at": "2025-12-04T17:06:40.843913+09:00",
+    "last_updated": "2025-12-04T17:06:40.843913+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치"
+      ],
+      "content_tags": [
+        "AI",
+        "교과서",
+        "문제집"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "5cb6e39b9374",
+    "title": "기재위 ‘국유재산 처분시 국회 보고 의무화’ 법안 의결",
+    "created_at": "2025-12-04T16:57:37.540762+09:00",
+    "last_updated": "2025-12-04T16:57:37.540762+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "정치",
+        "경제"
+      ],
+      "content_tags": [
+        "국유재산",
+        "기획재정위원회"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "cc7ec57dd0ca",
+    "title": "EU 절반 “러시아와 전쟁 날 수 있다”…폴란드, 77%가 ‘고위험’ 인식",
+    "created_at": "2025-12-04T16:55:54.731026+09:00",
+    "last_updated": "2025-12-04T16:55:54.731026+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "EU",
+        "전쟁",
+        "폴란드"
+      ]
+    },
+    "version_count": 1
+  },
+  {
+    "id": "21878cc989b2",
+    "title": "특검 \"한동훈 전 대표 오는 10일 참고인 출석 요구\"",
+    "created_at": "2025-12-04T16:54:16.887485+09:00",
+    "last_updated": "2025-12-04T16:54:16.887485+09:00",
+    "version": 1,
+    "parent_id": null,
+    "model": "gpt-4.1-nano",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost_usd": 0,
+    "tags": {
+      "category_tags": [
+        "사회"
+      ],
+      "content_tags": [
+        "한동훈",
+        "김건희",
+        "특검"
+      ]
+    },
+    "version_count": 1
+  },
+  {
     "id": "a7d8b49d374a",
     "title": "코스피, 외인 매도에 4020대 하락 마감…코스닥 시총 사상 첫 500조 돌파",
     "created_at": "2025-12-04T16:38:06.858156+09:00",
