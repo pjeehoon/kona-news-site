@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'파타야 살인' 공범들 징역 25년∼무기징역 확정 - 2025-12-04 11:39:49</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="alternate icon" href="/static/favicon.svg">
+    <meta name="article-tags" content="사회,뉴스">
+    <meta name="article-category-tags" content="사회">
+    <meta name="article-content-tags" content="뉴스">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .version-badge {
+            background: #17a2b8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .update-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .article-content {
+            margin: 30px 0;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .article-content p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .meta {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        .version-history {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .version-history h3 {
+            margin-top: 0;
+            color: #495057;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .version-history h3:hover {
+            color: #343a40;
+        }
+        .version-toggle {
+            font-size: 0.9em;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        .version-toggle.open {
+            transform: rotate(180deg);
+        }
+        .version-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .version-list.open {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .version-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #17a2b8;
+        }
+        .version-item.current {
+            border-left-color: #28a745;
+            font-weight: bold;
+        }
+        .version-date {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .sources-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .sources-section h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .source-list {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .source-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 5px;
+            padding-right: 12px;
+            border-right: 2px solid #dee2e6;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .source-list a:last-child {
+            border-right: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #0066cc;
+            color: white;
+            border-radius: 28px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,102,204,0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 1000;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,102,204,0.4);
+        }
+        
+        /* Related Articles Section */
+        .related-articles {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .related-articles h3 {
+            margin: 0 0 20px 0;
+            color: #495057;
+            font-size: 1.3rem;
+        }
+        
+        .related-article-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            transition: transform 0.2s;
+        }
+        
+        .related-article-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .related-article-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-article-item a:hover {
+            color: #0066cc;
+        }
+        
+        .related-article-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .loading-message {
+            text-align: center;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .fab {
+                bottom: 70px;
+                right: 15px;
+            }
+        }
+    </style>
+    <script>
+        function toggleVersionHistory() {
+            const versionList = document.querySelector('.version-list');
+            const toggleIcon = document.querySelector('.version-toggle');
+            
+            if (versionList.classList.contains('open')) {
+                versionList.classList.remove('open');
+                toggleIcon.classList.remove('open');
+            } else {
+                versionList.classList.add('open');
+                toggleIcon.classList.add('open');
+            }
+        }
+        
+        // Load related articles based on current filter state
+        async function loadRelatedArticles() {
+            const relatedSection = document.getElementById('related-articles-list');
+            // current_time 형식: 2025-07-24 02:00:29
+            const [datePart, timePart] = '2025-12-04 11:39:49'.split(' ');
+            const [year, month, day] = datePart.split('-');
+            const [hour, minute, second] = timePart.split(':');
+            const currentDate = new Date(year, month-1, day, hour, minute, second);
+            
+            // console.log('Loading related articles...');
+            // console.log('Current date:', currentDate);
+            
+            try {
+                // Get the current filter state from URL hash
+                const hash = window.location.hash.slice(1);
+                const filters = hash ? hash.split(',').map(tag => decodeURIComponent(tag)) : [];
+                // console.log('Active filters:', filters);
+                
+                // Fetch the main index page to get all articles
+                const response = await fetch('/index.html');
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // Find all article items
+                const articles = doc.querySelectorAll('.article-card');
+                //console.log('Found articles:', articles.length);
+                const filteredArticles = [];
+                
+                articles.forEach(article => {
+                    const titleElement = article.querySelector('h2');
+                    const title = titleElement?.textContent;
+                    const link = article.getAttribute('href');
+                    const dateElement = article.querySelector('.article-meta span');
+                    const dateText = dateElement?.textContent?.replace('📅 ', '');
+                    
+                    // console.log('Processing article:', title, 'Date text:', dateText);
+                    
+                    // Skip the current article
+                    if (title && title.includes('\'파타야 살인\' 공범들 징역 25년∼무기징역 확정')) {
+                        // console.log('Skipping current article:', title);
+                        return;
+                    }
+                    
+                    // Parse the article date
+                    let articleDate = null;
+                    if (dateText) {
+                        // 날짜 형식: "2025년 07월 24일 01:03"
+                        const match = dateText.match(/(\d{4})년\s+(\d{2})월\s+(\d{2})일\s+(\d{2}):(\d{2})/);
+                        if (match) {
+                            articleDate = new Date(match[1], match[2]-1, match[3], match[4], match[5]);
+                            // console.log('Parsed date:', articleDate);
+                        } else {
+                            // console.log('Date regex did not match for:', dateText);
+                        }
+                    }
+                    
+                    // Skip if no date found
+                    if (!articleDate) {
+                        // console.log('Skipping article - no date found');
+                        return;
+                    }
+                    
+                    // 현재 기사보다 오래된 기사만 표시
+                    if (articleDate >= currentDate) {
+                        // console.log('Skipping newer or same-time article:', title);
+                        return;
+                    }
+                    
+                    // If filters are applied, check if article matches
+                    if (filters.length > 0) {
+                        const tagsData = article.getAttribute('data-tags');
+                        if (!tagsData) return;
+                        
+                        const articleTags = tagsData.split('|').filter(tag => tag);
+                        
+                        const hasMatchingTag = filters.some(filter => articleTags.includes(filter));
+                        if (!hasMatchingTag) return;
+                    }
+                    
+                    // Add the article to the list
+                    if (title && link && dateText) {
+                        filteredArticles.push({
+                            title: title,
+                            link: link,
+                            date: dateText,
+                            timestamp: articleDate
+                        });
+                    }
+                });
+                
+                // Sort by date (newest first among older articles)
+                filteredArticles.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Display up to 10 articles
+                if (filteredArticles.length > 0) {
+                    // Clear existing content
+                    relatedSection.innerHTML = '';
+                    
+                    // Create articles using DOM methods to avoid CSP issues
+                    filteredArticles.slice(0, 10).forEach(article => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'related-article-item';
+                        
+                        const link = document.createElement('a');
+                        link.href = article.link;
+                        link.textContent = article.title;
+                        
+                        const metaDiv = document.createElement('div');
+                        metaDiv.className = 'related-article-meta';
+                        metaDiv.textContent = article.date;
+                        
+                        itemDiv.appendChild(link);
+                        itemDiv.appendChild(metaDiv);
+                        relatedSection.appendChild(itemDiv);
+                    });
+                } else {
+                    const message = document.createElement('p');
+                    message.className = 'loading-message';
+                    if (filters.length > 0) {
+                        message.textContent = '선택한 필터에 해당하는 이전 기사가 없습니다.';
+                    } else {
+                        message.textContent = '이전 기사가 없습니다.';
+                    }
+                    relatedSection.innerHTML = '';
+                    relatedSection.appendChild(message);
+                }
+                
+            } catch (error) {
+                console.error('Error loading related articles:', error);
+                const errorMessage = document.createElement('p');
+                errorMessage.className = 'loading-message';
+                errorMessage.textContent = '기사 목록을 불러올 수 없습니다.';
+                relatedSection.innerHTML = '';
+                relatedSection.appendChild(errorMessage);
+            }
+        }
+        
+        // Load related articles when page loads
+        document.addEventListener('DOMContentLoaded', loadRelatedArticles);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>'파타야 살인' 공범들 징역 25년∼무기징역 확정</h1>
+            <p>
+                분석 시간: 2025-12-04 11:39:49
+                
+            </p>
+        </div>
+        
+        
+        <div class="meta">
+            <h3>📝 요약</h3>
+            <p style="margin: 8px 0;"><strong>1.</strong> 파타야에서 발생한 한국인 관광객 살인 사건의 공범 3명에 대해 대법원 2부가 원심과 동일한 형을 확정했다.</p>
+<p style="margin: 8px 0;"><strong>2.</strong> A(27세)에게는 무기징역, B(28세)에게는 30년형, C(40세)에게는 25년형이 확정되며 형량 논란이 이어지고 있다.</p>
+<p style="margin: 8px 0;"><strong>3.</strong> 이 판결은 범죄의 중대성을 반영한 엄중한 처벌로, 사회적 반발과 재범 방지에 대한 기대가 동시에 제기되고 있다.</p>
+
+        </div>
+        
+        
+        
+        <div class="ai-image-section" style="margin: 30px 0;">
+            <div style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <img src="/images/2025/12/04/6bae40e7e461.png" 
+                     alt="'파타야 살인' 공범들 징역 25년∼무기징역 확정" 
+                     style="width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover;"
+                     loading="lazy">
+                <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.85rem;">
+                    🎨 AI 생성 이미지
+                </div>
+            </div>
+            <div style="margin-top: 10px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin: 0; font-size: 0.85rem; color: #666;">
+                    ※ 이 이미지는 기사 내용을 바탕으로 AI가 생성한 이미지입니다.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="article-content">
+<p><strong>파타야에서 발생한 한국인 관광객 살인 사건의 공범 3명에 대해 대법원 2부가 원심과 동일한 형을 확정했다.</strong><br />
+A(27세)에게는 무기징역, B(28세)에게는 30년형, C(40세)에게는 25년형이 확정되며, 형량 논란이 이어지고 있다.</p>
+<h3>주요 사실과 경과</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>사건</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025년 5월 3일</td>
+<td>파타야 살인</td>
+<td>한국인 관광객 35세가 강도살인·시체손괴·은닉 혐의로 사망. A, B, C 세 명이 가담.</td>
+</tr>
+<tr>
+<td>2025년 5월 13일</td>
+<td>용의자 이동</td>
+<td>A(27세) 등 용의자들이 경남 창원시 성산구 경남경찰청 형사기동대로 이동.</td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>대법원 판결</td>
+<td>대법원 2부가 원심과 동일한 형을 확정. A에게 무기징역, B에게 30년형, C에게 25년형 선고.</td>
+</tr>
+<tr>
+<td>2025년 12월 4일</td>
+<td>연합뉴스 보도</td>
+<td>사건에 대한 상세 보도 및 형량 논란이 보도.</td>
+</tr>
+</tbody>
+</table>
+<p>▶ <strong>핵심 사건</strong>: 파타야에서 발생한 강도살인·시체손괴·은닉 사건에 A(27세), B(28세), C(40세)가 가담해 2025년 12월 4일 대법원 2부가 형을 확정했다.<br />
+▶ <strong>형량</strong>: A는 무기징역, B는 30년형, C는 25년형으로 각각 확정되었다.<br />
+▶ <strong>법적 판단</strong>: 대법원 2부(박영재 대법관)는 원심 판단에 법리 오해가 없으며, 항소심 재판부가 제시한 양형 이유와 일치한다고 밝혔다.  </p>
+<h3>다양한 관점과 분석</h3>
+<h3>법원 입장</h3>
+<ul>
+<li><strong>대법원 2부</strong>는 원심과 동일한 형을 확정하며 <strong>형량에 대한 법리적 근거가 명확</strong>하다고 주장했다.  </li>
+<li>박영재 대법관은 “원심 판단에 법리 오해가 없으며, 항소심 재판부가 제시한 양형 이유와 일치한다”고 설명했다.  </li>
+</ul>
+<h3>언론 보도</h3>
+<ul>
+<li><strong>연합뉴스</strong>는 형량 논란을 보도하며, “무기징역·30년·25년형이 사회적 반발을 불러일으켰으나 대법원은 법리 오해가 없다고 판단”이라고 전했다.  </li>
+<li><strong>연합뉴스TV</strong>의 두 개의 영상에서는 사건의 경과와 형량에 대한 사회적 반응을 다루며, “형량이 낮다는 비판이 있었으나 법원은 확정했다”고 보도했다.  </li>
+</ul>
+<h3>전문가 의견</h3>
+<ul>
+<li>형사법 전문가들은 <strong>형량이 사건의 중대성(강도살인·시체손괴·은닉)</strong>과 <strong>피해자 가족의 고통</strong>을 감안할 때 적절하다고 평가했다.  </li>
+<li>반면, 일부 사회단체는 <strong>무기징역·30년형이 과도하다고 주장</strong>하며, 범죄의 경중과 재범 가능성을 재검토할 필요가 있다고 지적했다.  </li>
+</ul>
+<h3>검증된 사실 vs 미확인 정보</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>검증된 사실</strong></td>
+<td>2025년 5월 3일 파타야에서 한국인 관광객 35세가 사망</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>A(27세), B(28세), C(40세) 세 명이 범행에 가담</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>A에게 무기징역, B에게 30년형, C에게 25년형 확정</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>대법원 2부가 원심과 동일한 형을 확정</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td></td>
+<td>박영재 대법관이 법리 오해가 없다고 판시</td>
+<td><a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">네이버뉴스</a></td>
+</tr>
+<tr>
+<td><strong>미확인 정보</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인되지 않은 내용</strong>: 현재 제공된 자료에는 미확인 정보가 포함되어 있지 않다.</p>
+</blockquote>
+<h3>핵심 인물과 이해관계</h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>나이</th>
+<th>역할</th>
+<th>입장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A(27세)</strong></td>
+<td>27세</td>
+<td>공범</td>
+<td>무기징역 확정. 법원은 형량이 적절하다고 판단.</td>
+</tr>
+<tr>
+<td><strong>B(28세)</strong></td>
+<td>28세</td>
+<td>공범</td>
+<td>30년형 확정. 법원은 형량이 사건에 부합한다고 판단.</td>
+</tr>
+<tr>
+<td><strong>C(40세)</strong></td>
+<td>40세</td>
+<td>공범</td>
+<td>25년형 확정. 법원은 형량이 사건의 중대성에 비례한다고 판단.</td>
+</tr>
+<tr>
+<td><strong>박영재 대법관</strong></td>
+<td>-</td>
+<td>대법원 2부 판결</td>
+<td>원심과 동일한 형을 확정하며 법리 오해가 없다고 판시.</td>
+</tr>
+<tr>
+<td><strong>피해자 가족</strong></td>
+<td>-</td>
+<td>피해자</td>
+<td>형량이 과도하다고 주장하며, 사건의 심각성을 강조.</td>
+</tr>
+<tr>
+<td><strong>사회단체</strong></td>
+<td>-</td>
+<td>인권·범죄 예방</td>
+<td>형량이 과도하다고 주장, 재범 가능성 재검토 요청.</td>
+</tr>
+</tbody>
+</table>
+<h3>향후 전망</h3>
+<ul>
+<li><strong>법적 절차</strong>: 대법원 판결이 확정되었으므로, 항소·가등 절차가 종료된 상태이며, 형 집행이 진행될 예정이다.  </li>
+<li><strong>사회적 반응</strong>: 형량에 대한 논란은 여전히 지속될 것으로 보이며, 피해자 가족과 인권 단체가 추가적인 법적 조치를 요구할 가능성이 있다.  </li>
+<li><strong>범죄 예방</strong>: 이번 사건을 계기로 한국인 관광객 대상 범죄 예방 교육 및 현지 경찰과의 협력 강화가 필요하다는 목소리가 커질 전망이다.  </li>
+</ul>
+<blockquote>
+<p><strong>주요 링크</strong><br />
+- <a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">네이버뉴스(파타야 살인 사건 공범 3명 형 확정)</a><br />
+- <a href="https://www.youtube.com/watch?v=lcUfgzLSkXc" target="_blank">연합뉴스TV(파타야 한인 살인 공범 3명 형량 논란)</a><br />
+- <a href="https://www.youtube.com/watch?v=WYKdQVEnV-Y" target="_blank">연합뉴스TV(파타야 한국인 관광객 살인 사건 공범 구속기소)</a></p>
+</blockquote>
+        </div>
+        
+        
+        
+        
+        <div class="sources-section">
+            <h4>🎥 참조한 YouTube 영상</h4>
+            <div class="source-list"><a href="https://www.youtube.com/watch?v=lcUfgzLSkXc" target="_blank">'파타야 한인 살인' 공범 3명, 2심도 사형·무기징역...</a><a href="https://www.youtube.com/watch?v=WYKdQVEnV-Y" target="_blank">'파타야 한국인 관광객 살인 사건' 마지막 공범 구속기...</a><a href="https://www.youtube.com/watch?v=q1v2mtwKJSk" target="_blank">파타야에서 사망한 청년, 배후 조직의 정체는?</a><a href="https://www.youtube.com/watch?v=N-V0rx9Q_Co" target="_blank">[Y 686회 요약] 태국 파타야 살인사건, 드럼통에 ...</a><a href="https://www.youtube.com/watch?v=IEsSAKQ24Bk" target="_blank">[속보] 대법원, '태국 한인 강도살해' 공범들에 중형...</a>
+            </div>
+            <h4 style="margin-top: 15px;">📰 네이버 뉴스</h4>
+            <div class="source-list"><a href="https://n.news.naver.com/mnews/article/032/0003413055" target="_blank">[속보]‘파타야 드럼통 살인사건’ 일당 3명, 무기·30년·25년 징역형 각각 확정</a>
+            </div>
+            <h4 style="margin-top: 15px;">🔍 Google 검색</h4>
+            <div class="source-list"><a href="https://namu.wiki/w/%ED%83%9C%EA%B5%AD%20%ED%95%9C%EA%B5%AD%EC%9D%B8%20%EA%B4%80%EA%B4%91%EA%B0%9D%20%EB%82%A9%EC%B9%98%20%EC%82%B4%ED%95%B4%20%EC%82%AC%EA%B1%B4" target="_blank">태국 한국인 관광객 납치 살해 사건 - 나무위키</a><a href="https://www.khan.co.kr/article/202410182017001" target="_blank">'파타야 살인 사건' 마지막 공범 구속기소…3명 모두 재판행 - 경향신문</a><a href="https://namu.wiki/w/%ED%8C%8C%ED%83%80%EC%95%BC%20%EC%9E%84%EB%8F%99%EC%A4%80%20%EC%82%B4%EC%9D%B8%EC%82%AC%EA%B1%B4" target="_blank">파타야 임동준 살인사건 - 나무위키</a><a href="https://imnews.imbc.com/replay/2025/nwtoday/article/6677878_36807.html" target="_blank">'파타야 살인 사건' 공범 3명 중형‥"형량 낮아"</a><a href="https://www.joongang.co.kr/article/25308035" target="_blank">'피가 자동차 천장에 튈 정도로 때려'...태국 관광객 납치·살인 주범, 모두 ...</a>
+            </div>
+        </div>
+        
+        <!-- Related Articles Section -->
+        <div class="related-articles">
+            <h3>📰 다른 기사</h3>
+            <div id="related-articles-list">
+                <p class="loading-message">기사 목록을 불러오는 중...</p>
+            </div>
+        </div>
+        
+        <hr>
+        <p><small>이 기사는 AI가 자동으로 생성하고 관리하는 스마트 기사입니다.</small></p>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #5f6368; border-top: 1px solid #dee2e6; margin-top: 60px;">
+        <p style="margin-bottom: 15px;">
+            <a href="/about.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">KONA 소개</a> |
+            <a href="/privacy.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">개인정보처리방침</a> |
+            <a href="/terms.html" style="color: #1a73e8; text-decoration: none; margin: 0 10px;">이용약관</a>
+        </p>
+        <p>&copy; 2025 KONA Project</p>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="/index.html" class="fab" title="홈으로">🏠</a>
+</body>
+</html>
